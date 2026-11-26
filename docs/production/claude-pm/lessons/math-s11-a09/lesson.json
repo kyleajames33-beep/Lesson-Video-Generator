@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-a09",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "9ab54fc67168dccc24405ac18c91d10a047726460f07397690c0c2c8b533b74a",
+  "scenes": [
+    {
+      "id": "hook-how-much-water",
+      "title": "hook: how much does it hold?",
+      "voiceover": {
+        "text": "Last time we asked how much metal goes into this tank. Now the more useful question. How much water does it hold? That's its volume, the space inside, measured in cubic units, and then its capacity, in litres. The tank is about one point eight metres wide and two metres tall. A garden hose, a water bill, a fire safety rule, all of them care about that number. So how do volume and capacity work for prisms and cylinders?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "end-times-length",
+      "title": "one rule: the end times the length",
+      "voiceover": {
+        "text": "Start with the cereal box from last time. If you slice straight across it, every slice is the same rectangle, twenty centimetres by eight. That slice shape is called the cross-section. Stack those slices along the box's thirty centimetre length, and you've filled it. So the volume is the area of the end, a hundred and sixty square centimetres, times the length, thirty. That's forty-eight hundred cubic centimetres, which is four point eight litres. This works for any prism, any solid that's the same shape all the way through. Volume equals the area of the end, times the length. In symbols, V equals A h. Notice the box needed two thousand square centimetres of cardboard, but holds forty-eight hundred cubic centimetres. Different question, different units."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "triangle-ramp",
+      "title": "a triangle end: the concrete ramp",
+      "voiceover": {
+        "text": "The end doesn't have to be a rectangle. This entrance ramp is solid concrete. From the side, it's a right-angled triangle, five point six metres along the ground and rising nought point four of a metre. That triangle stays the same all the way across the ramp, which is one point five metres wide. So the end is the triangle, and the length it runs for is the width, one point five. The triangle's area is half of five point six times nought point four, one point one two square metres. Times one point five gives one point six eight cubic metres of concrete. Multiplying the three measurements together, and forgetting the half, would order twice as much concrete as you need."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cylinder-tank",
+      "title": "a circle end: the tank",
+      "voiceover": {
+        "text": "Back to the tank. A cylinder is a prism with a circle at each end, so its end is a circle, and its length is its height. The tank is one point eight metres wide, so the radius is nought point nine. The circle's area is pi times nought point nine squared. Times the height, two, that's one point six two pi, about five point nought nine cubic metres. Every cubic metre is a kilolitre, so the tank holds about five point nought nine kilolitres, around five thousand and ninety litres. For a cylinder, V equals pi r squared h. Halve the diameter first, and keep every measurement in metres before you multiply."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "sloping-pool",
+      "title": "a pool on its side",
+      "voiceover": {
+        "text": "Here's a backyard pool with a sloping floor. It's eight metres long and four metres wide, and its depth goes from one metre at the shallow end to two metres at the deep end. Look at it from the side. That side view is a trapezium, and it stays the same across the pool's four metre width. So the end is the trapezium, and the length it runs for is four. Its area is half of one plus two, times eight, twelve square metres. Times four, forty-eight cubic metres, or forty-eight kilolitres. Now here's something neat. Remember the flat pool in an earlier video, one point five metres deep everywhere? It held forty-eight kilolitres too. That's because one point five is the average of one and two. Level the water out, and it's the same pool."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hollow-pipe",
+      "title": "a hollow pipe",
+      "voiceover": {
+        "text": "Composite solids work by adding or taking away, just like composite shapes. A concrete drainage pipe is a cylinder with a smaller cylinder missing from the middle. Its outer radius is nought point five metres, its hole has a radius of nought point four, and it's two metres long. Its end is a ring, the outer circle minus the inner circle. That's pi times nought point five squared minus nought point four squared, nought point nought nine pi. Times the length, two, gives nought point one eight pi, about nought point five seven cubic metres of concrete. Same rule, the area of the end times the length."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So every prism and every cylinder follows one rule. Find the shape that stays the same, work out its area, and multiply by how far it runs. Volume equals the area of the end times the length."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A concrete retaining wall has a trapezium-shaped cross-section, with parallel sides of nought point five and nought point eight metres, and a perpendicular height of one point two metres. The wall is fifteen metres long. Find the volume of concrete. Then, if concrete costs two hundred and twenty dollars a cubic metre, which is an example price, find the cost. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The end's area is half of nought point five plus nought point eight, times one point two, nought point seven eight square metres. Times the fifteen metre length, that's eleven point seven cubic metres, and at two hundred and twenty dollars each, two thousand five hundred and seventy-four dollars. Leaving out the half doubles it, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A cylindrical rainwater tank has an internal diameter of two point four metres and a height of three metres. Find its capacity in kilolitres, correct to two decimal places. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The radius is one point two. Pi times one point two squared, times three, is four point three two pi, about thirteen point five seven cubic metres. That's thirteen point five seven kilolitres. Using two point four as the radius gives over fifty-four, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So prisms and cylinders are the end times the length. But some solids come to a point, so the end doesn't stay the same. Here's an ice-cream cone, and a cylinder with exactly the same radius and height. How many cones of water would it take to fill the cylinder? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

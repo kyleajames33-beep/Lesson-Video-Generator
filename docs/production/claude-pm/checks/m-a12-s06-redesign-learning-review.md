@@ -5,3 +5,10 @@
 Separate the continuous idealisation from the finite chip sample, whose exact counts are a selected illustrative realisation, not a property of every cookie. Explain the mode through density or narrow intervals, not the chance of an exact continuous value. Describe a flat density as having no unique mode. The principal source distributions and lifetime question are confirmed. The cookie and chip plates and their placements remain unbuilt.
 
 Mechanical inventory reports 6,036 narration characters in 16 scenes, no em dash and no unmatched bold cue phrase in its simple scan; this does not validate full cue order. The 536-second estimate is below the cap; measured duration and the course-wide anchor audit remain pending. No voice, render or design changes made.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `980c00cb51a8e91f47b9302b7cc2ddc88e9eaddc8e7c61550c12b557e1f428e9`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. CookieX nowcontinuous idealrandompoint radius,distinguished fromfinitechip selection. Fifteenperannulus identified asone designedsample,not universal sample property. Mode described asdensitypeak/mostlikelynearby,not positivepointprobability. Flatuniform hasno singlepeak. Existingquartiles2,2sqrt2,2sqrt3 andequalareaannuli remaincorrect;paintedcircle deviations remain forbuilderfitting.
+
+Independent recount:6169characters/16scene strings,noem dashes. Changed narration andauthor repairnotes comparedwith priorfullreview;unchanged calculations/live-sourcechecksretained. Current stringsinwork/brief240/root68-source-audit/s06.json. Nativeartmeasurements/guide deviationsretainedforbuilderfitting underdecision30;root68readytovoice. No paid speechorfinishedtake repeatedbythisreview. Measuredtiming,actualmotionandhumanlisteningremainseparategates.

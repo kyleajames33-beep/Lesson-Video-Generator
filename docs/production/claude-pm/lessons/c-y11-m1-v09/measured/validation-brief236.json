@@ -1,0 +1,2059 @@
+{
+  "lesson": "chem-y11-m1-v09",
+  "wave": 1,
+  "sourceSha256": "539b20f7027b470416e6156d65b27087ba0f960300e3194914769b5fcdbd859e",
+  "measuredPath": "docs/production/claude-pm/lessons/c-y11-m1-v09/measured/lesson.json",
+  "measuredSha256": "08ab2174f693f71264b84510aac4ca24ade5ceeed30721cce20452c469d5bab1",
+  "characters": 6188,
+  "totalSeconds": 478.8333333333333,
+  "under570": true,
+  "newRequests": 1,
+  "cachedTakes": 1,
+  "inputTokens": 76,
+  "outputTokens": 601,
+  "costUsd": 0.005447,
+  "worstWordGap": {
+    "scene": "feedback-1",
+    "seconds": 1.0430000000000135,
+    "after": "six.",
+    "before": "It's"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v09/hook.wav",
+      "seconds": 22.382,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.9401818181818182,
+          "end": 3.13
+        },
+        {
+          "text": "six",
+          "start": 18.66272727272727,
+          "end": 18.794181818181816
+        },
+        {
+          "text": "from",
+          "start": 21.818000000000026,
+          "end": 21.946800000000028
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8629999999999907,
+        "after": "five.",
+        "before": "And"
+      },
+      "peakFraction": 0.860748291015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.261,
+          "end": 0.482,
+          "score": 0.456
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's chlorine on the periodic table: thirty-five point four five. But we just saw that chlorine atoms come as chlorine-thirty-five and chlorine-thirty-seven. Not one of them has a mass of thirty-five point four five. And it isn't the simple average either. Halfway between thirty-five and thirty-seven is thirty-six. So where does thirty-five point four five come from?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "hundred-atoms",
+      "audio": "public/audio/chem-y11-m1-v09/hundred-atoms.wav",
+      "seconds": 36.21,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "seven",
+          "start": 8.895999999999994,
+          "end": 9.214636363636357
+        },
+        {
+          "text": "eight",
+          "start": 26.947000000000024,
+          "end": 27.147000000000023
+        },
+        {
+          "text": "eight",
+          "start": 31.018000000000058,
+          "end": 31.135500000000057
+        },
+        {
+          "text": "five",
+          "start": 33.06983333333335,
+          "end": 33.257166666666684
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8610000000000291,
+        "after": "them.",
+        "before": "Seventy-six"
+      },
+      "peakFraction": 0.898651123046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "It's",
+          "start": 2.8919999999999892,
+          "end": 2.9919999999999893,
+          "score": 0.454
+        },
+        {
+          "word": "a",
+          "start": 3.0119999999999894,
+          "end": 3.0529999999999893,
+          "score": 0.495
+        },
+        {
+          "word": "are",
+          "start": 9.616999999999994,
+          "end": 9.817999999999993,
+          "score": 0.264
+        },
+        {
+          "word": "are",
+          "start": 12.220999999999993,
+          "end": 12.280999999999992,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 28.33000000000006,
+          "end": 28.370000000000058,
+          "score": 0.458
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Think about a real sample of chlorine. It's a mixture of both isotopes, and they're not equally common. Out of every hundred chlorine atoms, about seventy-six are chlorine-thirty-five, and only about twenty-four are chlorine-thirty-seven. So to find the average mass of one atom, add up the masses of all hundred, then share the total among them. Seventy-six atoms at thirty-five, plus twenty-four atoms at thirty-seven, gives three thousand five hundred and forty-eight. Divide by a hundred atoms, and that's thirty-five point four eight. It's much closer to thirty-five, because most of the atoms are chlorine-thirty-five.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "weighted-average",
+      "audio": "public/audio/chem-y11-m1-v09/weighted-average.wav",
+      "seconds": 32.848,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "more",
+          "start": 7.851,
+          "end": 7.995
+        },
+        {
+          "text": "twelve",
+          "start": 16.47415384615384,
+          "end": 16.769999999999996
+        },
+        {
+          "text": "mass",
+          "start": 19.342000000000102,
+          "end": 19.518800000000102
+        },
+        {
+          "text": "given",
+          "start": 32.16500000000003,
+          "end": 32.34916666666669
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9429999999999943,
+        "after": "more.",
+        "before": "Relative"
+      },
+      "peakFraction": 0.836700439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 13.583999999999996,
+          "end": 13.623999999999995,
+          "score": 0.489
+        },
+        {
+          "word": "where",
+          "start": 15.908999999999995,
+          "end": 16.088999999999995,
+          "score": 0.495
+        },
+        {
+          "word": "a",
+          "start": 25.302000000000042,
+          "end": 25.322000000000045,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "That's a weighted average. Each isotope's mass counts as many times as that isotope occurs, so the common isotope counts more. Relative atomic mass, written A r, is this weighted average for the atoms in a natural sample of an element, on the scale where carbon-twelve is exactly twelve. Like any relative mass, it has no units. The percentages, called abundances, are measured with an instrument called a mass spectrometer, which sorts atoms by mass. How it works is a story for later. Here, the abundances are simply given.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "fractions",
+      "audio": "public/audio/chem-y11-m1-v09/fractions.wav",
+      "seconds": 42.86,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 3.382999999999996,
+          "end": 3.7483999999999957
+        },
+        {
+          "text": "two",
+          "start": 16.874999999999993,
+          "end": 17.055999999999994
+        },
+        {
+          "text": "seven",
+          "start": 20.22600000000009,
+          "end": 20.48700000000009
+        },
+        {
+          "text": "five",
+          "start": 20.52700000000009,
+          "end": 20.78800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6419999999999995,
+        "after": "hundred,",
+        "before": "multiply"
+      },
+      "peakFraction": 0.85406494140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "get",
+          "start": 29.74800000000004,
+          "end": 29.869000000000042,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "In questions, you'll use a shortcut. Turn each percentage into a fraction by dividing by a hundred, multiply each isotope's mass by its fraction, then add them up. For chlorine, the abundances are seventy-five point seven seven percent, and twenty-four point two three percent. Thirty-five times zero point seven five seven seven is twenty-six point five two. Thirty-seven times zero point two four two three is eight point nine seven. Add them, and you get thirty-five point four eight, about thirty-five point five. The periodic table says thirty-five point four five because it uses each isotope's exact mass, which is slightly less than thirty-five or thirty-seven.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "balance",
+      "audio": "public/audio/chem-y11-m1-v09/balance.wav",
+      "seconds": 17.97,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "is",
+          "start": 2.1030000000000006,
+          "end": 2.2182500000000007
+        },
+        {
+          "text": "it",
+          "start": 6.881,
+          "end": 6.961
+        },
+        {
+          "text": "crowd",
+          "start": 17.323999999999995,
+          "end": 17.54233333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6429999999999874,
+        "after": "is.",
+        "before": "The"
+      },
+      "peakFraction": 0.8428955078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.405,
+          "end": 0.567,
+          "score": 0.477
+        },
+        {
+          "word": "way",
+          "start": 0.648,
+          "end": 0.77,
+          "score": 0.376
+        },
+        {
+          "word": "to",
+          "start": 0.79,
+          "end": 0.83,
+          "score": 0.028
+        },
+        {
+          "word": "a",
+          "start": 2.8050000000000006,
+          "end": 2.8450000000000006,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a way to picture it. Put the isotopes on a beam, at their masses, and stack each one by how common it is. The relative atomic mass is where the beam would balance. With three quarters of the weight at thirty-five, the balance point sits close to it. The average leans toward the crowd.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "boron",
+      "audio": "public/audio/chem-y11-m1-v09/boron.wav",
+      "seconds": 31.197,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 7.563999999999995,
+          "end": 7.703999999999995
+        },
+        {
+          "text": "check",
+          "start": 13.707999999999995,
+          "end": 13.891333333333328
+        },
+        {
+          "text": "nine",
+          "start": 16.398,
+          "end": 16.598999999999997
+        },
+        {
+          "text": "one",
+          "start": 17.744,
+          "end": 17.884999999999998
+        },
+        {
+          "text": "figures",
+          "start": 30.43600000000004,
+          "end": 30.66350000000004
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000022,
+        "after": "check.",
+        "before": "Ten"
+      },
+      "peakFraction": 0.85906982421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight",
+          "start": 9.704999999999995,
+          "end": 9.844999999999995,
+          "score": 0.484
+        },
+        {
+          "word": "a",
+          "start": 13.267999999999995,
+          "end": 13.307999999999995,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Closer to eleven, because boron-eleven is the crowd. Let's check. As fractions, the abundances are zero point one nine nine, and zero point eight zero one, and they add to exactly one, which is a good first check. Ten times zero point one nine nine is one point nine nine. Eleven times zero point eight zero one is eight point eight one one. Add them, and A r is ten point eight zero one, or ten point eight to three significant figures.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "sense-check",
+      "audio": "public/audio/chem-y11-m1-v09/sense-check.wav",
+      "seconds": 24.04,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 7.584999999999994,
+          "end": 7.659999999999993
+        },
+        {
+          "text": "tests",
+          "start": 10.054999999999994,
+          "end": 10.355833333333328
+        },
+        {
+          "text": "atom",
+          "start": 13.129999999999987,
+          "end": 13.350999999999985
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8840000000000003,
+        "after": "one.",
+        "before": "Ten"
+      },
+      "peakFraction": 0.881378173828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight",
+          "start": 8.969999999999995,
+          "end": 9.130999999999995,
+          "score": 0.456
+        },
+        {
+          "word": "point",
+          "start": 14.576999999999986,
+          "end": 14.737999999999985,
+          "score": 0.402
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Always sense check your answer. It must land between the lightest and heaviest isotopes, and nearer the more common one. Ten point eight passes both tests. And notice that no single boron atom has a mass of ten point eight. Every atom is boron-ten or boron-eleven. Ten point eight is the average of the sample, not the mass number of any atom.",
+      "humanListening": "pending",
+      "durationInFrames": 722,
+      "runOn": {
+        "pass": true,
+        "seconds": 24.04,
+        "characters": 343,
+        "charactersPerSecond": 14.267886855241265,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief261/c-y11-m1-v09/sense-check/attempt1/candidate.wav",
+        "audioSha256": "6d4c30fe72f0c97bc6c53b10828cf6e231aec6075a2d929c346c4d7509311b05",
+        "evidence": "work/google-runon-checks/6d4c30fe72f0c97bc6c53b10828cf6e231aec6075a2d929c346c4d7509311b05.json"
+      },
+      "changed": true
+    },
+    {
+      "id": "silicon-setup",
+      "audio": "public/audio/chem-y11-m1-v09/silicon-setup.wav",
+      "seconds": 30.239,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nine",
+          "start": 15.833749999999988,
+          "end": 16.013949999999987
+        },
+        {
+          "text": "model",
+          "start": 20.23100000000009,
+          "end": 20.414333333333424
+        },
+        {
+          "text": "x",
+          "start": 21.63700000000009,
+          "end": 21.77800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9439999999999875,
+        "after": "abundances.",
+        "before": "In"
+      },
+      "peakFraction": 0.8214111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 8.24699999999999,
+          "end": 8.266999999999989,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now the question in reverse. Suppose you know the relative atomic mass, and you want the abundances. In this question, silicon has a relative atomic mass of twenty-eight point two two, and we assume it has only two isotopes, silicon-twenty-eight and silicon-twenty-nine. Real silicon also has some silicon-thirty, so this is a simplified model. Let x be the fraction of silicon-twenty-eight. With only two isotopes, the fractions add to one, so silicon-twenty-nine is one minus x.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v09/feedback-1.wav",
+      "seconds": 29.52,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "zero",
+          "start": 2.365,
+          "end": 2.705
+        },
+        {
+          "text": "two",
+          "start": 7.742699999999988,
+          "end": 7.874999999999988
+        },
+        {
+          "text": "six",
+          "start": 18.698000000000125,
+          "end": 18.909500000000126
+        },
+        {
+          "text": "avoid",
+          "start": 28.756000000000068,
+          "end": 29.057666666666734
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0430000000000135,
+        "after": "six.",
+        "before": "It's"
+      },
+      "peakFraction": 0.8516845703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 26.38200000000007,
+          "end": 26.442000000000068,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "As fractions, the abundances are zero point seven zero zero, and zero point three zero zero. Twenty-two times zero point seven zero zero is fifteen point four, and twenty-four times zero point three zero zero is seven point two. Together that's twenty-two point six. It's between twenty-two and twenty-four, and nearer twenty-two, the more common isotope. Twenty-three, the simple average, is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v09/handoff.wav",
+      "seconds": 27.221,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "rainbow",
+          "start": 21.693000000000065,
+          "end": 22.026375000000066
+        },
+        {
+          "text": "atom",
+          "start": 26.678000000000104,
+          "end": 26.886800000000108
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8240000000000371,
+        "after": "rainbow.",
+        "before": "Next"
+      },
+      "peakFraction": 0.83294677734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.644000000000066,
+          "end": 19.684000000000065,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So relative atomic mass is all about nuclei, and how common each isotope is. But remember, isotopes behave the same in reactions, because their electrons are the same. So what are those electrons actually doing? Our best clue comes from light. When hydrogen gas glows, it gives out only a few sharp colours, not a whole rainbow. Next time, we'll see what those colours reveal about the energy of electrons in an atom.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v09/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v09/hook.wav",
+      "seconds": 22.382,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.9401818181818182,
+          "end": 3.13
+        },
+        {
+          "text": "six",
+          "start": 18.66272727272727,
+          "end": 18.794181818181816
+        },
+        {
+          "text": "from",
+          "start": 21.818000000000026,
+          "end": 21.946800000000028
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8629999999999907,
+        "after": "five.",
+        "before": "And"
+      },
+      "peakFraction": 0.860748291015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.261,
+          "end": 0.482,
+          "score": 0.456
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's chlorine on the periodic table: thirty-five point four five. But we just saw that chlorine atoms come as chlorine-thirty-five and chlorine-thirty-seven. Not one of them has a mass of thirty-five point four five. And it isn't the simple average either. Halfway between thirty-five and thirty-seven is thirty-six. So where does thirty-five point four five come from?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "hundred-atoms",
+      "audio": "public/audio/chem-y11-m1-v09/hundred-atoms.wav",
+      "seconds": 36.21,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "seven",
+          "start": 8.895999999999994,
+          "end": 9.214636363636357
+        },
+        {
+          "text": "eight",
+          "start": 26.947000000000024,
+          "end": 27.147000000000023
+        },
+        {
+          "text": "eight",
+          "start": 31.018000000000058,
+          "end": 31.135500000000057
+        },
+        {
+          "text": "five",
+          "start": 33.06983333333335,
+          "end": 33.257166666666684
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8610000000000291,
+        "after": "them.",
+        "before": "Seventy-six"
+      },
+      "peakFraction": 0.898651123046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "It's",
+          "start": 2.8919999999999892,
+          "end": 2.9919999999999893,
+          "score": 0.454
+        },
+        {
+          "word": "a",
+          "start": 3.0119999999999894,
+          "end": 3.0529999999999893,
+          "score": 0.495
+        },
+        {
+          "word": "are",
+          "start": 9.616999999999994,
+          "end": 9.817999999999993,
+          "score": 0.264
+        },
+        {
+          "word": "are",
+          "start": 12.220999999999993,
+          "end": 12.280999999999992,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 28.33000000000006,
+          "end": 28.370000000000058,
+          "score": 0.458
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Think about a real sample of chlorine. It's a mixture of both isotopes, and they're not equally common. Out of every hundred chlorine atoms, about seventy-six are chlorine-thirty-five, and only about twenty-four are chlorine-thirty-seven. So to find the average mass of one atom, add up the masses of all hundred, then share the total among them. Seventy-six atoms at thirty-five, plus twenty-four atoms at thirty-seven, gives three thousand five hundred and forty-eight. Divide by a hundred atoms, and that's thirty-five point four eight. It's much closer to thirty-five, because most of the atoms are chlorine-thirty-five.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "weighted-average",
+      "audio": "public/audio/chem-y11-m1-v09/weighted-average.wav",
+      "seconds": 32.848,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "more",
+          "start": 7.851,
+          "end": 7.995
+        },
+        {
+          "text": "twelve",
+          "start": 16.47415384615384,
+          "end": 16.769999999999996
+        },
+        {
+          "text": "mass",
+          "start": 19.342000000000102,
+          "end": 19.518800000000102
+        },
+        {
+          "text": "given",
+          "start": 32.16500000000003,
+          "end": 32.34916666666669
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9429999999999943,
+        "after": "more.",
+        "before": "Relative"
+      },
+      "peakFraction": 0.836700439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 13.583999999999996,
+          "end": 13.623999999999995,
+          "score": 0.489
+        },
+        {
+          "word": "where",
+          "start": 15.908999999999995,
+          "end": 16.088999999999995,
+          "score": 0.495
+        },
+        {
+          "word": "a",
+          "start": 25.302000000000042,
+          "end": 25.322000000000045,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "That's a weighted average. Each isotope's mass counts as many times as that isotope occurs, so the common isotope counts more. Relative atomic mass, written A r, is this weighted average for the atoms in a natural sample of an element, on the scale where carbon-twelve is exactly twelve. Like any relative mass, it has no units. The percentages, called abundances, are measured with an instrument called a mass spectrometer, which sorts atoms by mass. How it works is a story for later. Here, the abundances are simply given.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "fractions",
+      "audio": "public/audio/chem-y11-m1-v09/fractions.wav",
+      "seconds": 42.86,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 3.382999999999996,
+          "end": 3.7483999999999957
+        },
+        {
+          "text": "two",
+          "start": 16.874999999999993,
+          "end": 17.055999999999994
+        },
+        {
+          "text": "seven",
+          "start": 20.22600000000009,
+          "end": 20.48700000000009
+        },
+        {
+          "text": "five",
+          "start": 20.52700000000009,
+          "end": 20.78800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6419999999999995,
+        "after": "hundred,",
+        "before": "multiply"
+      },
+      "peakFraction": 0.85406494140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "get",
+          "start": 29.74800000000004,
+          "end": 29.869000000000042,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "In questions, you'll use a shortcut. Turn each percentage into a fraction by dividing by a hundred, multiply each isotope's mass by its fraction, then add them up. For chlorine, the abundances are seventy-five point seven seven percent, and twenty-four point two three percent. Thirty-five times zero point seven five seven seven is twenty-six point five two. Thirty-seven times zero point two four two three is eight point nine seven. Add them, and you get thirty-five point four eight, about thirty-five point five. The periodic table says thirty-five point four five because it uses each isotope's exact mass, which is slightly less than thirty-five or thirty-seven.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "balance",
+      "audio": "public/audio/chem-y11-m1-v09/balance.wav",
+      "seconds": 17.97,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "is",
+          "start": 2.1030000000000006,
+          "end": 2.2182500000000007
+        },
+        {
+          "text": "it",
+          "start": 6.881,
+          "end": 6.961
+        },
+        {
+          "text": "crowd",
+          "start": 17.323999999999995,
+          "end": 17.54233333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6429999999999874,
+        "after": "is.",
+        "before": "The"
+      },
+      "peakFraction": 0.8428955078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.405,
+          "end": 0.567,
+          "score": 0.477
+        },
+        {
+          "word": "way",
+          "start": 0.648,
+          "end": 0.77,
+          "score": 0.376
+        },
+        {
+          "word": "to",
+          "start": 0.79,
+          "end": 0.83,
+          "score": 0.028
+        },
+        {
+          "word": "a",
+          "start": 2.8050000000000006,
+          "end": 2.8450000000000006,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a way to picture it. Put the isotopes on a beam, at their masses, and stack each one by how common it is. The relative atomic mass is where the beam would balance. With three quarters of the weight at thirty-five, the balance point sits close to it. The average leans toward the crowd.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v09/prediction.wav",
+      "seconds": 15.29,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 14.742999999999991,
+          "end": 14.912166666666657
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7240000000000002,
+        "after": "prediction.",
+        "before": "Boron"
+      },
+      "peakFraction": 0.84429931640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Quick prediction. Boron has two isotopes: boron-ten, at nineteen point nine percent, and boron-eleven, at eighty point one percent. Will its relative atomic mass be closer to ten, or closer to eleven? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "boron",
+      "audio": "public/audio/chem-y11-m1-v09/boron.wav",
+      "seconds": 31.197,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 7.563999999999995,
+          "end": 7.703999999999995
+        },
+        {
+          "text": "check",
+          "start": 13.707999999999995,
+          "end": 13.891333333333328
+        },
+        {
+          "text": "nine",
+          "start": 16.398,
+          "end": 16.598999999999997
+        },
+        {
+          "text": "one",
+          "start": 17.744,
+          "end": 17.884999999999998
+        },
+        {
+          "text": "figures",
+          "start": 30.43600000000004,
+          "end": 30.66350000000004
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000022,
+        "after": "check.",
+        "before": "Ten"
+      },
+      "peakFraction": 0.85906982421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight",
+          "start": 9.704999999999995,
+          "end": 9.844999999999995,
+          "score": 0.484
+        },
+        {
+          "word": "a",
+          "start": 13.267999999999995,
+          "end": 13.307999999999995,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Closer to eleven, because boron-eleven is the crowd. Let's check. As fractions, the abundances are zero point one nine nine, and zero point eight zero one, and they add to exactly one, which is a good first check. Ten times zero point one nine nine is one point nine nine. Eleven times zero point eight zero one is eight point eight one one. Add them, and A r is ten point eight zero one, or ten point eight to three significant figures.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "sense-check",
+      "audio": "public/audio/chem-y11-m1-v09/sense-check.wav",
+      "seconds": 24.04,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 7.584999999999994,
+          "end": 7.659999999999993
+        },
+        {
+          "text": "tests",
+          "start": 10.054999999999994,
+          "end": 10.355833333333328
+        },
+        {
+          "text": "atom",
+          "start": 13.129999999999987,
+          "end": 13.350999999999985
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8840000000000003,
+        "after": "one.",
+        "before": "Ten"
+      },
+      "peakFraction": 0.881378173828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight",
+          "start": 8.969999999999995,
+          "end": 9.130999999999995,
+          "score": 0.456
+        },
+        {
+          "word": "point",
+          "start": 14.576999999999986,
+          "end": 14.737999999999985,
+          "score": 0.402
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Always sense check your answer. It must land between the lightest and heaviest isotopes, and nearer the more common one. Ten point eight passes both tests. And notice that no single boron atom has a mass of ten point eight. Every atom is boron-ten or boron-eleven. Ten point eight is the average of the sample, not the mass number of any atom.",
+      "humanListening": "pending",
+      "durationInFrames": 722,
+      "runOn": {
+        "pass": true,
+        "seconds": 24.04,
+        "characters": 343,
+        "charactersPerSecond": 14.267886855241265,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief261/c-y11-m1-v09/sense-check/attempt1/candidate.wav",
+        "audioSha256": "6d4c30fe72f0c97bc6c53b10828cf6e231aec6075a2d929c346c4d7509311b05",
+        "evidence": "work/google-runon-checks/6d4c30fe72f0c97bc6c53b10828cf6e231aec6075a2d929c346c4d7509311b05.json"
+      },
+      "changed": true
+    },
+    {
+      "id": "silicon-setup",
+      "audio": "public/audio/chem-y11-m1-v09/silicon-setup.wav",
+      "seconds": 30.239,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nine",
+          "start": 15.833749999999988,
+          "end": 16.013949999999987
+        },
+        {
+          "text": "model",
+          "start": 20.23100000000009,
+          "end": 20.414333333333424
+        },
+        {
+          "text": "x",
+          "start": 21.63700000000009,
+          "end": 21.77800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9439999999999875,
+        "after": "abundances.",
+        "before": "In"
+      },
+      "peakFraction": 0.8214111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 8.24699999999999,
+          "end": 8.266999999999989,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now the question in reverse. Suppose you know the relative atomic mass, and you want the abundances. In this question, silicon has a relative atomic mass of twenty-eight point two two, and we assume it has only two isotopes, silicon-twenty-eight and silicon-twenty-nine. Real silicon also has some silicon-thirty, so this is a simplified model. Let x be the fraction of silicon-twenty-eight. With only two isotopes, the fractions add to one, so silicon-twenty-nine is one minus x.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "silicon-solve",
+      "audio": "public/audio/chem-y11-m1-v09/silicon-solve.wav",
+      "seconds": 32.2,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "two",
+          "start": 8.21299999999999,
+          "end": 8.37299999999999
+        },
+        {
+          "text": "two",
+          "start": 8.43299999999999,
+          "end": 8.56874999999999
+        },
+        {
+          "text": "eight",
+          "start": 15.635916666666652,
+          "end": 15.827999999999985
+        },
+        {
+          "text": "percent",
+          "start": 22.033000000000005,
+          "end": 22.313875000000007
+        },
+        {
+          "text": "two",
+          "start": 24.741400000000006,
+          "end": 24.904000000000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7609999999999957,
+        "after": "two.",
+        "before": "Expand"
+      },
+      "peakFraction": 0.894866943359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Now write the weighted average with x in it. Twenty-eight x, plus twenty-nine times one minus x, equals twenty-eight point two two. Expand the bracket, and the x terms combine to minus x, so twenty-nine minus x equals twenty-eight point two two. That makes x zero point seven eight. So silicon-twenty-eight is seventy-eight percent, and silicon-twenty-nine is twenty-two percent. Check it: twenty-one point eight four plus six point three eight gives back twenty-eight point two two.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v09/attempt-1.wav",
+      "seconds": 16.12,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8490000000000002,
+        "after": "mass.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.855072021484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. A model element has two isotopes, with masses twenty-two and twenty-four, and abundances of seventy point zero percent and thirty point zero percent. Calculate its relative atomic mass. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v09/feedback-1.wav",
+      "seconds": 29.52,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "zero",
+          "start": 2.365,
+          "end": 2.705
+        },
+        {
+          "text": "two",
+          "start": 7.742699999999988,
+          "end": 7.874999999999988
+        },
+        {
+          "text": "six",
+          "start": 18.698000000000125,
+          "end": 18.909500000000126
+        },
+        {
+          "text": "avoid",
+          "start": 28.756000000000068,
+          "end": 29.057666666666734
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0430000000000135,
+        "after": "six.",
+        "before": "It's"
+      },
+      "peakFraction": 0.8516845703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 26.38200000000007,
+          "end": 26.442000000000068,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "As fractions, the abundances are zero point seven zero zero, and zero point three zero zero. Twenty-two times zero point seven zero zero is fifteen point four, and twenty-four times zero point three zero zero is seven point two. Together that's twenty-two point six. It's between twenty-two and twenty-four, and nearer twenty-two, the more common isotope. Twenty-three, the simple average, is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v09/attempt-2.wav",
+      "seconds": 16.6,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.7449999999999957,
+        "after": "isotope.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.808990478515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 2,
+      "pronunciationText": "Last one. Assume an element has only two isotopes, with masses sixty-three and sixty-five, and a relative atomic mass of sixty-three point six zero. Calculate the percentage abundance of each isotope. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v09/feedback-2.wav",
+      "seconds": 29.859,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "zero",
+          "start": 10.385999999999996,
+          "end": 10.689999999999994
+        },
+        {
+          "text": "zero",
+          "start": 15.789999999999996,
+          "end": 16.029999999999998
+        },
+        {
+          "text": "percent",
+          "start": 19.97200000000006,
+          "end": 20.253000000000064
+        },
+        {
+          "text": "crowd",
+          "start": 29.115000000000045,
+          "end": 29.36666666666671
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7009999999999956,
+        "after": "isotope.",
+        "before": "Sixty-three"
+      },
+      "peakFraction": 0.84527587890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Let x be the fraction of the mass sixty-three isotope. Sixty-three x, plus sixty-five times one minus x, equals sixty-three point six zero, which simplifies to sixty-five minus two x equals sixty-three point six zero. So x is zero point seven zero: seventy percent mass sixty-three, and thirty percent mass sixty-five. Don't swap them. Sixty-three point six is near sixty-three, so sixty-three is the crowd.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v09/handoff.wav",
+      "seconds": 27.221,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "rainbow",
+          "start": 21.693000000000065,
+          "end": 22.026375000000066
+        },
+        {
+          "text": "atom",
+          "start": 26.678000000000104,
+          "end": 26.886800000000108
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8240000000000371,
+        "after": "rainbow.",
+        "before": "Next"
+      },
+      "peakFraction": 0.83294677734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.644000000000066,
+          "end": 19.684000000000065,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So relative atomic mass is all about nuclei, and how common each isotope is. But remember, isotopes behave the same in reactions, because their electrons are the same. So what are those electrons actually doing? Our best clue comes from light. When hydrogen gas glows, it gives out only a few sharp colours, not a whole rainbow. Next time, we'll see what those colours reveal about the energy of electrons in an atom.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v09/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality.",
+  "brief": 261,
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/c-y11-m1-v09/measured/lesson.json",
+  "canonicalMeasuredSha256": "08ab2174f693f71264b84510aac4ca24ade5ceeed30721cce20452c469d5bab1",
+  "changedTakes": 1,
+  "reusedTakes": 15,
+  "durationOver570": false,
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/c-y11-m1-v09/measured/lesson.json",
+    "lessonSha256": "08ab2174f693f71264b84510aac4ca24ade5ceeed30721cce20452c469d5bab1",
+    "srtSha256": "05f4231dbc008f00dbdbe9f487a45d98c4a00306473fa9f849e495fd1bc8915a",
+    "vttSha256": "7c9b688b08a8c425e38db52b48130f96958311dacdb7f6c87983c036ef9b42e4",
+    "cueCount": 166,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 14365,
+      "scenes": [
+        {
+          "id": "hook",
+          "startFrame": 0,
+          "endFrame": 672
+        },
+        {
+          "id": "hundred-atoms",
+          "startFrame": 672,
+          "endFrame": 1759
+        },
+        {
+          "id": "weighted-average",
+          "startFrame": 1759,
+          "endFrame": 2745
+        },
+        {
+          "id": "fractions",
+          "startFrame": 2745,
+          "endFrame": 4031
+        },
+        {
+          "id": "balance",
+          "startFrame": 4031,
+          "endFrame": 4631
+        },
+        {
+          "id": "prediction",
+          "startFrame": 4631,
+          "endFrame": 5180
+        },
+        {
+          "id": "boron",
+          "startFrame": 5180,
+          "endFrame": 6116
+        },
+        {
+          "id": "sense-check",
+          "startFrame": 6116,
+          "endFrame": 6838
+        },
+        {
+          "id": "silicon-setup",
+          "startFrame": 6838,
+          "endFrame": 7746
+        },
+        {
+          "id": "silicon-solve",
+          "startFrame": 7746,
+          "endFrame": 8713
+        },
+        {
+          "id": "attempt-1",
+          "startFrame": 8713,
+          "endFrame": 9497
+        },
+        {
+          "id": "feedback-1",
+          "startFrame": 9497,
+          "endFrame": 10413
+        },
+        {
+          "id": "attempt-2",
+          "startFrame": 10413,
+          "endFrame": 11212
+        },
+        {
+          "id": "feedback-2",
+          "startFrame": 11212,
+          "endFrame": 12138
+        },
+        {
+          "id": "handoff",
+          "startFrame": 12138,
+          "endFrame": 13015
+        },
+        {
+          "id": "key-notes",
+          "startFrame": 13015,
+          "endFrame": 14365
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "wordTimeDiff": {
+    "pass": true,
+    "changedScenes": [
+      "sense-check"
+    ],
+    "allOtherSceneObjectsIdentical": true,
+    "allOtherAlignmentFilesIdentical": true,
+    "allOtherBoldCueTimesIdentical": true,
+    "allOtherLocalCaptionsIdentical": true,
+    "allHoldsAndNotesDurationsIdentical": true,
+    "notesFrames": 1350,
+    "oldMeasuredSha256": "ddd3c14ec76f7884425bd56694f97e64766545c93d5f160d348879687fe81e71",
+    "newMeasuredSha256": "08ab2174f693f71264b84510aac4ca24ade5ceeed30721cce20452c469d5bab1",
+    "unalteredTakes": [
+      {
+        "id": "hook",
+        "audio": "public/audio/chem-y11-m1-v09/hook.wav",
+        "audioSha256": "d9daf359020f6cc42fd7cb3b4c48dcbd7cb1057d0e4c34cb041ec83853ee422b",
+        "alignmentSha256": "2991cf80017b22b1530521f74b87f5b4f83b5620ac8040921257e0f3efd8fb5f",
+        "generationSha256": "201846e767e47670a7910923af038901def59a1d3e8132a3bafb50174ee6f8e2"
+      },
+      {
+        "id": "hundred-atoms",
+        "audio": "public/audio/chem-y11-m1-v09/hundred-atoms.wav",
+        "audioSha256": "ae7e7169a08562a695818585a6095b20ba2756dd510f81e1f3973b3f241f1889",
+        "alignmentSha256": "b1e79f00cb7f48004ac1b39d88a4fe42be3884c35d015e3da355b49ba4a7bf89",
+        "generationSha256": "41e3045095548ab94678b41aad71ee9556809c7a1692929cf9dd8ab748940fd3"
+      },
+      {
+        "id": "weighted-average",
+        "audio": "public/audio/chem-y11-m1-v09/weighted-average.wav",
+        "audioSha256": "78105adda95c12cf36f4a72cc83442428c857692dd4565ec8b78faccfc788285",
+        "alignmentSha256": "00fbf01c1b6895d86c2985b9476e1d004ba07059c044930ca3c21eb5428dc288",
+        "generationSha256": "7b836e6aac31214b072150905f780c8d2d628558c88503cff631fc795432fc1c"
+      },
+      {
+        "id": "fractions",
+        "audio": "public/audio/chem-y11-m1-v09/fractions.wav",
+        "audioSha256": "d6be98010e9ed0c7fd5f78bbf8082f986cb431d569bde21fc00c7208566c4954",
+        "alignmentSha256": "0d4d778ab162a4a553abcf73968e1294132639d83e68f9f3697b893bb7804405",
+        "generationSha256": "634cc2d29cf631bb1cd9d6dcc6a2d9e55b68b2fbf070518c5aa6c8f63b8349ff"
+      },
+      {
+        "id": "balance",
+        "audio": "public/audio/chem-y11-m1-v09/balance.wav",
+        "audioSha256": "7443d65e5a11e7fc68510965981d6a0cc0a7462c203570f79013b1feeb6cde29",
+        "alignmentSha256": "2147ba0fe4455d755bba76fb1a0a4398087936bf3fca4c3f42ed1b3e5fd0806d",
+        "generationSha256": "dee6661af36e9a370c9e7982764d944ecaf7dcd90e89a641d7cbbe78267a89c2"
+      },
+      {
+        "id": "prediction",
+        "audio": "public/audio/chem-y11-m1-v09/prediction.wav",
+        "audioSha256": "e739390cb647a36390142138409b871ea84025f2c40770ad15e3fcddfeb9eeb3",
+        "alignmentSha256": "2ee347c8e5fb9009e3ebb752b2a99feda1dbd4936d3eacfab7596419099c964d",
+        "generationSha256": "49689fbebc807efa3f08cbd326a17d42ecb11af1ab7eacb612bd8558ef0a35a9"
+      },
+      {
+        "id": "boron",
+        "audio": "public/audio/chem-y11-m1-v09/boron.wav",
+        "audioSha256": "4c66957ba754f1170fe9903e0206e8a012f4896d4aa39254c39a297354d8b39d",
+        "alignmentSha256": "c41637eba73dd8ec9b91e01e0b463757ccc518c70b7373b4a56b76a1e44e1aae",
+        "generationSha256": "08a3c07fb2341a47c3d7fab364033e49900979679ed1cca542f9e65aa36926dc"
+      },
+      {
+        "id": "silicon-setup",
+        "audio": "public/audio/chem-y11-m1-v09/silicon-setup.wav",
+        "audioSha256": "a6d475c51d8cb7e46ab4967767cad90269832da023efa3b4602a93e229884185",
+        "alignmentSha256": "aadecf9c05565801fce3bb0cdebc5a0c147057e58fbab3ef7dc68a5285b4476e",
+        "generationSha256": "a9b7e1a58cad7fd33a2de6bb2f149e91a7b1863267ff262a31e4d3ccc1cfe775"
+      },
+      {
+        "id": "silicon-solve",
+        "audio": "public/audio/chem-y11-m1-v09/silicon-solve.wav",
+        "audioSha256": "936628bdb9e92c5f5eadce50f969f2cdcd5822207fb6f19f491071865ac1b3a2",
+        "alignmentSha256": "eb9a11244393442b97da8c9a359c203fedcec7d0548ddebe493890be0a5999a4",
+        "generationSha256": "6939eace03784350d591929dda74293bea464b7036bca05a0ba0fbd1ef2792cc"
+      },
+      {
+        "id": "attempt-1",
+        "audio": "public/audio/chem-y11-m1-v09/attempt-1.wav",
+        "audioSha256": "c8dbc5927e9195bba51bb7de55ac7c640de15ec8c02a9194a9eb68fa9ce4121c",
+        "alignmentSha256": "6b00acb65820fd903e56ba8b6edd681207000e30d78f1ea686a61a7ccba32c38",
+        "generationSha256": "307ea541351a5954cf1951cadd1be0a87060d80825fd2374a5f0d7b8f28cab12"
+      },
+      {
+        "id": "feedback-1",
+        "audio": "public/audio/chem-y11-m1-v09/feedback-1.wav",
+        "audioSha256": "c5ff7dbefd0be1f7fd069b247087a9026d2be0d22f76b2f6d8f4c8afc44c6083",
+        "alignmentSha256": "f270b2cad24ddc01e2ae538dcb935e1ceec2ddc38514141734a1e076c3718281",
+        "generationSha256": "f9ecc667263e0560c38a64e3b9a5eff8a13d78c464dca5fafb908a7c681488bf"
+      },
+      {
+        "id": "attempt-2",
+        "audio": "public/audio/chem-y11-m1-v09/attempt-2.wav",
+        "audioSha256": "b298fac31ecfe6f02f3f0dbe9704197a75800693b0838df250ffcfa4503e9501",
+        "alignmentSha256": "213dbc5967e034d2a90e83bfc2e2b40a3232bd1acca360ef48e405e934439169",
+        "generationSha256": "f9deb3fab16d0daa7465615e6519d80dc12eceee19bde6e4f4f2bed28a27199f"
+      },
+      {
+        "id": "feedback-2",
+        "audio": "public/audio/chem-y11-m1-v09/feedback-2.wav",
+        "audioSha256": "294a4f396d5045f52b3de019b5161e5637901e090e069b01423e9f57d8a38380",
+        "alignmentSha256": "180f593f33604e769c213ec04eef2c7116c75b30a373250b64189edb3ddd016a",
+        "generationSha256": "7fdc4d3c56dd33d36300fbea45e53e1d8827ce54ebb9c0b381cf8562e059356f"
+      },
+      {
+        "id": "handoff",
+        "audio": "public/audio/chem-y11-m1-v09/handoff.wav",
+        "audioSha256": "321a4af96fb086f478efef58db6c8bc62f8cc3f6cc8488a8dab4cc0a8e119e5b",
+        "alignmentSha256": "c067a9cc807454bdfbfa905756d0d560e20c5039cf4b3646ae11b848f488ee15",
+        "generationSha256": "385c18a569b901e3b78f84304fea371b93dc62988239c0b2794b4071189a137f"
+      },
+      {
+        "id": "key-notes",
+        "audio": "public/audio/chem-y11-m1-v09/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "alignmentSha256": "c44e03b1b093585fc4d20b9f8eabe7966e61847276ee1d11025db4d5fe225d55",
+        "generationSha256": "3c306f18a3b11269fb5b4f3e39df36baa0e78480844254a686e6d342ac214ed5"
+      }
+    ],
+    "cumulativeCaptionShift": "Derived from changed scene durations; unaffected local captions and cue times are identical"
+  },
+  "originalVoicingValidation": "docs/production/claude-pm/lessons/c-y11-m1-v09/measured.before-brief261/validation-brief236.json",
+  "machineChecks": "Exact source/provenance, run-on recognition, aligned character bounds, unchanged other scenes, cue times, holds and local captions. Human listening pending.",
+  "machineListenFindings": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v09/hook.wav",
+      "seconds": 22.382,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.9401818181818182,
+          "end": 3.13
+        },
+        {
+          "text": "six",
+          "start": 18.66272727272727,
+          "end": 18.794181818181816
+        },
+        {
+          "text": "from",
+          "start": 21.818000000000026,
+          "end": 21.946800000000028
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8629999999999907,
+        "after": "five.",
+        "before": "And"
+      },
+      "peakFraction": 0.860748291015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.261,
+          "end": 0.482,
+          "score": 0.456
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's chlorine on the periodic table: thirty-five point four five. But we just saw that chlorine atoms come as chlorine-thirty-five and chlorine-thirty-seven. Not one of them has a mass of thirty-five point four five. And it isn't the simple average either. Halfway between thirty-five and thirty-seven is thirty-six. So where does thirty-five point four five come from?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "hundred-atoms",
+      "audio": "public/audio/chem-y11-m1-v09/hundred-atoms.wav",
+      "seconds": 36.21,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "seven",
+          "start": 8.895999999999994,
+          "end": 9.214636363636357
+        },
+        {
+          "text": "eight",
+          "start": 26.947000000000024,
+          "end": 27.147000000000023
+        },
+        {
+          "text": "eight",
+          "start": 31.018000000000058,
+          "end": 31.135500000000057
+        },
+        {
+          "text": "five",
+          "start": 33.06983333333335,
+          "end": 33.257166666666684
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8610000000000291,
+        "after": "them.",
+        "before": "Seventy-six"
+      },
+      "peakFraction": 0.898651123046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "It's",
+          "start": 2.8919999999999892,
+          "end": 2.9919999999999893,
+          "score": 0.454
+        },
+        {
+          "word": "a",
+          "start": 3.0119999999999894,
+          "end": 3.0529999999999893,
+          "score": 0.495
+        },
+        {
+          "word": "are",
+          "start": 9.616999999999994,
+          "end": 9.817999999999993,
+          "score": 0.264
+        },
+        {
+          "word": "are",
+          "start": 12.220999999999993,
+          "end": 12.280999999999992,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 28.33000000000006,
+          "end": 28.370000000000058,
+          "score": 0.458
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Think about a real sample of chlorine. It's a mixture of both isotopes, and they're not equally common. Out of every hundred chlorine atoms, about seventy-six are chlorine-thirty-five, and only about twenty-four are chlorine-thirty-seven. So to find the average mass of one atom, add up the masses of all hundred, then share the total among them. Seventy-six atoms at thirty-five, plus twenty-four atoms at thirty-seven, gives three thousand five hundred and forty-eight. Divide by a hundred atoms, and that's thirty-five point four eight. It's much closer to thirty-five, because most of the atoms are chlorine-thirty-five.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "weighted-average",
+      "audio": "public/audio/chem-y11-m1-v09/weighted-average.wav",
+      "seconds": 32.848,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "more",
+          "start": 7.851,
+          "end": 7.995
+        },
+        {
+          "text": "twelve",
+          "start": 16.47415384615384,
+          "end": 16.769999999999996
+        },
+        {
+          "text": "mass",
+          "start": 19.342000000000102,
+          "end": 19.518800000000102
+        },
+        {
+          "text": "given",
+          "start": 32.16500000000003,
+          "end": 32.34916666666669
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9429999999999943,
+        "after": "more.",
+        "before": "Relative"
+      },
+      "peakFraction": 0.836700439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 13.583999999999996,
+          "end": 13.623999999999995,
+          "score": 0.489
+        },
+        {
+          "word": "where",
+          "start": 15.908999999999995,
+          "end": 16.088999999999995,
+          "score": 0.495
+        },
+        {
+          "word": "a",
+          "start": 25.302000000000042,
+          "end": 25.322000000000045,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "That's a weighted average. Each isotope's mass counts as many times as that isotope occurs, so the common isotope counts more. Relative atomic mass, written A r, is this weighted average for the atoms in a natural sample of an element, on the scale where carbon-twelve is exactly twelve. Like any relative mass, it has no units. The percentages, called abundances, are measured with an instrument called a mass spectrometer, which sorts atoms by mass. How it works is a story for later. Here, the abundances are simply given.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "fractions",
+      "audio": "public/audio/chem-y11-m1-v09/fractions.wav",
+      "seconds": 42.86,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 3.382999999999996,
+          "end": 3.7483999999999957
+        },
+        {
+          "text": "two",
+          "start": 16.874999999999993,
+          "end": 17.055999999999994
+        },
+        {
+          "text": "seven",
+          "start": 20.22600000000009,
+          "end": 20.48700000000009
+        },
+        {
+          "text": "five",
+          "start": 20.52700000000009,
+          "end": 20.78800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6419999999999995,
+        "after": "hundred,",
+        "before": "multiply"
+      },
+      "peakFraction": 0.85406494140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "get",
+          "start": 29.74800000000004,
+          "end": 29.869000000000042,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "In questions, you'll use a shortcut. Turn each percentage into a fraction by dividing by a hundred, multiply each isotope's mass by its fraction, then add them up. For chlorine, the abundances are seventy-five point seven seven percent, and twenty-four point two three percent. Thirty-five times zero point seven five seven seven is twenty-six point five two. Thirty-seven times zero point two four two three is eight point nine seven. Add them, and you get thirty-five point four eight, about thirty-five point five. The periodic table says thirty-five point four five because it uses each isotope's exact mass, which is slightly less than thirty-five or thirty-seven.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "balance",
+      "audio": "public/audio/chem-y11-m1-v09/balance.wav",
+      "seconds": 17.97,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "is",
+          "start": 2.1030000000000006,
+          "end": 2.2182500000000007
+        },
+        {
+          "text": "it",
+          "start": 6.881,
+          "end": 6.961
+        },
+        {
+          "text": "crowd",
+          "start": 17.323999999999995,
+          "end": 17.54233333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6429999999999874,
+        "after": "is.",
+        "before": "The"
+      },
+      "peakFraction": 0.8428955078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.405,
+          "end": 0.567,
+          "score": 0.477
+        },
+        {
+          "word": "way",
+          "start": 0.648,
+          "end": 0.77,
+          "score": 0.376
+        },
+        {
+          "word": "to",
+          "start": 0.79,
+          "end": 0.83,
+          "score": 0.028
+        },
+        {
+          "word": "a",
+          "start": 2.8050000000000006,
+          "end": 2.8450000000000006,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a way to picture it. Put the isotopes on a beam, at their masses, and stack each one by how common it is. The relative atomic mass is where the beam would balance. With three quarters of the weight at thirty-five, the balance point sits close to it. The average leans toward the crowd.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "boron",
+      "audio": "public/audio/chem-y11-m1-v09/boron.wav",
+      "seconds": 31.197,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 7.563999999999995,
+          "end": 7.703999999999995
+        },
+        {
+          "text": "check",
+          "start": 13.707999999999995,
+          "end": 13.891333333333328
+        },
+        {
+          "text": "nine",
+          "start": 16.398,
+          "end": 16.598999999999997
+        },
+        {
+          "text": "one",
+          "start": 17.744,
+          "end": 17.884999999999998
+        },
+        {
+          "text": "figures",
+          "start": 30.43600000000004,
+          "end": 30.66350000000004
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000022,
+        "after": "check.",
+        "before": "Ten"
+      },
+      "peakFraction": 0.85906982421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight",
+          "start": 9.704999999999995,
+          "end": 9.844999999999995,
+          "score": 0.484
+        },
+        {
+          "word": "a",
+          "start": 13.267999999999995,
+          "end": 13.307999999999995,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Closer to eleven, because boron-eleven is the crowd. Let's check. As fractions, the abundances are zero point one nine nine, and zero point eight zero one, and they add to exactly one, which is a good first check. Ten times zero point one nine nine is one point nine nine. Eleven times zero point eight zero one is eight point eight one one. Add them, and A r is ten point eight zero one, or ten point eight to three significant figures.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "sense-check",
+      "audio": "public/audio/chem-y11-m1-v09/sense-check.wav",
+      "seconds": 24.04,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 7.584999999999994,
+          "end": 7.659999999999993
+        },
+        {
+          "text": "tests",
+          "start": 10.054999999999994,
+          "end": 10.355833333333328
+        },
+        {
+          "text": "atom",
+          "start": 13.129999999999987,
+          "end": 13.350999999999985
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8840000000000003,
+        "after": "one.",
+        "before": "Ten"
+      },
+      "peakFraction": 0.881378173828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight",
+          "start": 8.969999999999995,
+          "end": 9.130999999999995,
+          "score": 0.456
+        },
+        {
+          "word": "point",
+          "start": 14.576999999999986,
+          "end": 14.737999999999985,
+          "score": 0.402
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Always sense check your answer. It must land between the lightest and heaviest isotopes, and nearer the more common one. Ten point eight passes both tests. And notice that no single boron atom has a mass of ten point eight. Every atom is boron-ten or boron-eleven. Ten point eight is the average of the sample, not the mass number of any atom.",
+      "humanListening": "pending",
+      "durationInFrames": 722,
+      "runOn": {
+        "pass": true,
+        "seconds": 24.04,
+        "characters": 343,
+        "charactersPerSecond": 14.267886855241265,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief261/c-y11-m1-v09/sense-check/attempt1/candidate.wav",
+        "audioSha256": "6d4c30fe72f0c97bc6c53b10828cf6e231aec6075a2d929c346c4d7509311b05",
+        "evidence": "work/google-runon-checks/6d4c30fe72f0c97bc6c53b10828cf6e231aec6075a2d929c346c4d7509311b05.json"
+      },
+      "changed": true
+    },
+    {
+      "id": "silicon-setup",
+      "audio": "public/audio/chem-y11-m1-v09/silicon-setup.wav",
+      "seconds": 30.239,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nine",
+          "start": 15.833749999999988,
+          "end": 16.013949999999987
+        },
+        {
+          "text": "model",
+          "start": 20.23100000000009,
+          "end": 20.414333333333424
+        },
+        {
+          "text": "x",
+          "start": 21.63700000000009,
+          "end": 21.77800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9439999999999875,
+        "after": "abundances.",
+        "before": "In"
+      },
+      "peakFraction": 0.8214111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 8.24699999999999,
+          "end": 8.266999999999989,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now the question in reverse. Suppose you know the relative atomic mass, and you want the abundances. In this question, silicon has a relative atomic mass of twenty-eight point two two, and we assume it has only two isotopes, silicon-twenty-eight and silicon-twenty-nine. Real silicon also has some silicon-thirty, so this is a simplified model. Let x be the fraction of silicon-twenty-eight. With only two isotopes, the fractions add to one, so silicon-twenty-nine is one minus x.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v09/feedback-1.wav",
+      "seconds": 29.52,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "zero",
+          "start": 2.365,
+          "end": 2.705
+        },
+        {
+          "text": "two",
+          "start": 7.742699999999988,
+          "end": 7.874999999999988
+        },
+        {
+          "text": "six",
+          "start": 18.698000000000125,
+          "end": 18.909500000000126
+        },
+        {
+          "text": "avoid",
+          "start": 28.756000000000068,
+          "end": 29.057666666666734
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0430000000000135,
+        "after": "six.",
+        "before": "It's"
+      },
+      "peakFraction": 0.8516845703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 26.38200000000007,
+          "end": 26.442000000000068,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "As fractions, the abundances are zero point seven zero zero, and zero point three zero zero. Twenty-two times zero point seven zero zero is fifteen point four, and twenty-four times zero point three zero zero is seven point two. Together that's twenty-two point six. It's between twenty-two and twenty-four, and nearer twenty-two, the more common isotope. Twenty-three, the simple average, is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v09/handoff.wav",
+      "seconds": 27.221,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "rainbow",
+          "start": 21.693000000000065,
+          "end": 22.026375000000066
+        },
+        {
+          "text": "atom",
+          "start": 26.678000000000104,
+          "end": 26.886800000000108
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8240000000000371,
+        "after": "rainbow.",
+        "before": "Next"
+      },
+      "peakFraction": 0.83294677734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.644000000000066,
+          "end": 19.684000000000065,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So relative atomic mass is all about nuclei, and how common each isotope is. But remember, isotopes behave the same in reactions, because their electrons are the same. So what are those electrons actually doing? Our best clue comes from light. When hydrogen gas glows, it gives out only a few sharp colours, not a whole rainbow. Next time, we'll see what those colours reveal about the energy of electrons in an atom.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v09/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ]
+}

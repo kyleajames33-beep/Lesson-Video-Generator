@@ -1,0 +1,819 @@
+1
+00:00:00,261 --> 00:00:02,992
+Last video ended here, with the integral from
+
+2
+00:00:03,052 --> 00:00:05,301
+minus two to one, of x squared.
+
+3
+00:00:05,984 --> 00:00:08,631
+The primitive is x cubed over three, so
+
+4
+00:00:08,672 --> 00:00:11,801
+we need one third, minus negative two cubed
+
+5
+00:00:11,923 --> 00:00:12,363
+over three.
+
+6
+00:00:13,068 --> 00:00:14,980
+It's like reading a thermometer on a frosty
+
+7
+00:00:15,021 --> 00:00:15,342
+morning.
+
+8
+00:00:15,806 --> 00:00:18,270
+The change is the later reading, minus the
+
+9
+00:00:18,411 --> 00:00:18,911
+earlier one,
+
+10
+00:00:19,433 --> 00:00:21,236
+and the earlier one can be below zero.
+
+11
+00:00:22,140 --> 00:00:23,713
+Before we work it out, look at the
+
+12
+00:00:23,755 --> 00:00:24,056
+graph.
+
+13
+00:00:24,741 --> 00:00:27,687
+X squared is never negative, so every strip
+
+14
+00:00:27,788 --> 00:00:29,050
+sits above the axis.
+
+15
+00:00:29,772 --> 00:00:31,800
+Should the answer be positive, or negative?
+
+16
+00:00:32,726 --> 00:00:34,438
+Here's a slip that happens all the time.
+
+17
+00:00:35,283 --> 00:00:37,268
+Negative two cubed is minus eight,
+
+18
+00:00:37,811 --> 00:00:40,719
+and someone writes one third minus eight thirds,
+
+19
+00:00:41,181 --> 00:00:42,524
+which is minus seven thirds.
+
+20
+00:00:43,268 --> 00:00:45,599
+A negative answer, from a region that's all
+
+21
+00:00:45,761 --> 00:00:46,604
+above the axis.
+
+22
+00:00:47,329 --> 00:00:48,395
+Something has gone wrong.
+
+23
+00:00:49,160 --> 00:00:52,033
+So how do we evaluate definite integrals without
+
+24
+00:00:52,075 --> 00:00:52,797
+losing signs?
+
+25
+00:00:56,441 --> 00:00:58,549
+The trouble is the second minus sign.
+
+26
+00:00:59,212 --> 00:01:00,003
+Think of the thermometer.
+
+27
+00:01:00,632 --> 00:01:03,143
+At six it read minus two degrees, and
+
+28
+00:01:03,164 --> 00:01:04,449
+at nine it read one degree.
+
+29
+00:01:05,133 --> 00:01:08,123
+It warmed by one, minus, bracket, minus two,
+
+30
+00:01:08,506 --> 00:01:11,054
+which is three degrees, not one minus two.
+
+31
+00:01:12,363 --> 00:01:13,733
+F of a works the same way.
+
+32
+00:01:14,439 --> 00:01:16,062
+F of a means the primitive at the
+
+33
+00:01:16,164 --> 00:01:17,587
+lower limit, the start.
+
+34
+00:01:18,290 --> 00:01:20,592
+Here that's F of minus two, which is
+
+35
+00:01:20,674 --> 00:01:23,417
+minus eight thirds, a negative number, and the
+
+36
+00:01:23,478 --> 00:01:25,200
+rule subtracts the whole of it.
+
+37
+00:01:25,882 --> 00:01:27,391
+So put F of a in its own
+
+38
+00:01:27,452 --> 00:01:27,813
+brackets,
+
+39
+00:01:28,377 --> 00:01:28,799
+every time.
+
+40
+00:01:29,543 --> 00:01:32,499
+One third, minus, bracket, minus eight thirds.
+
+41
+00:01:33,204 --> 00:01:34,730
+Subtracting a negative adds,
+
+42
+00:01:35,233 --> 00:01:37,602
+so that's one third plus eight thirds, which
+
+43
+00:01:37,643 --> 00:01:38,004
+is three.
+
+44
+00:01:38,669 --> 00:01:39,939
+Positive, as the picture said.
+
+45
+00:01:40,766 --> 00:01:42,573
+The minus sign in the rule belongs to
+
+46
+00:01:42,614 --> 00:01:43,316
+the subtraction.
+
+47
+00:01:43,819 --> 00:01:46,325
+The minus sign inside F of a belongs
+
+48
+00:01:46,366 --> 00:01:46,927
+to the number.
+
+49
+00:01:47,530 --> 00:01:49,397
+Keep them apart, and neither gets lost.
+
+50
+00:01:50,141 --> 00:01:51,770
+We can check that three another way.
+
+51
+00:01:52,415 --> 00:01:53,850
+Split the region at zero.
+
+52
+00:01:54,513 --> 00:01:57,037
+From minus two to zero, the integral is
+
+53
+00:01:57,237 --> 00:02:00,963
+zero, minus, bracket, minus eight thirds, which is
+
+54
+00:02:01,163 --> 00:02:01,744
+eight thirds.
+
+55
+00:02:02,386 --> 00:02:04,876
+From zero to one, it's one third minus
+
+56
+00:02:04,937 --> 00:02:06,563
+zero, which is one third.
+
+57
+00:02:07,288 --> 00:02:09,922
+Eight thirds plus one third is three, the
+
+58
+00:02:09,963 --> 00:02:10,424
+same answer.
+
+59
+00:02:11,189 --> 00:02:12,652
+The thermometer does the same thing,
+
+60
+00:02:13,154 --> 00:02:15,599
+two degrees up to zero, then one more.
+
+61
+00:02:16,322 --> 00:02:18,418
+That always works, for a continuous function.
+
+62
+00:02:18,842 --> 00:02:20,865
+The integral from a to b, plus the
+
+63
+00:02:20,906 --> 00:02:23,209
+integral from b to c, is the integral
+
+64
+00:02:23,230 --> 00:02:25,313
+from a to c, when b is between
+
+65
+00:02:25,354 --> 00:02:25,473
+them.
+
+66
+00:02:26,115 --> 00:02:28,879
+In primitives, that's F of b minus F
+
+67
+00:02:28,920 --> 00:02:31,483
+of a, plus F of c minus F
+
+68
+00:02:31,524 --> 00:02:31,824
+of b.
+
+69
+00:02:32,567 --> 00:02:34,857
+The middle value cancels, so you're left with
+
+70
+00:02:35,079 --> 00:02:36,766
+F of c minus F of a.
+
+71
+00:02:37,450 --> 00:02:39,715
+On the graph, two regions side by side
+
+72
+00:02:39,856 --> 00:02:40,778
+make one region.
+
+73
+00:02:41,428 --> 00:02:42,975
+What if the limits come the other way
+
+74
+00:02:43,076 --> 00:02:45,607
+round, from one down to minus two?
+
+75
+00:02:46,352 --> 00:02:48,141
+The rule still says F of the top,
+
+76
+00:02:48,323 --> 00:02:49,327
+minus F of the bottom.
+
+77
+00:02:50,031 --> 00:02:51,415
+Now the top is minus two,
+
+78
+00:02:51,957 --> 00:02:54,765
+so it's minus eight thirds, minus one third,
+
+79
+00:02:55,128 --> 00:02:56,090
+which is minus three.
+
+80
+00:02:56,894 --> 00:02:59,002
+Swapping the ends swaps the order of the
+
+81
+00:02:59,043 --> 00:03:01,392
+subtraction, so the answer changes sign.
+
+82
+00:03:02,177 --> 00:03:04,523
+On the thermometer, that's the evening, cooling from
+
+83
+00:03:04,705 --> 00:03:07,092
+one degree back to minus two, a change
+
+84
+00:03:07,113 --> 00:03:07,894
+of minus three.
+
+85
+00:03:08,718 --> 00:03:10,947
+That's how a backwards integral is defined.
+
+86
+00:03:11,490 --> 00:03:14,021
+The integral from b to a is minus
+
+87
+00:03:14,143 --> 00:03:15,529
+the integral from a to b.
+
+88
+00:03:16,293 --> 00:03:18,700
+Picture the strips running from right to left.
+
+89
+00:03:19,344 --> 00:03:22,057
+Every strip's width is negative, so every strip
+
+90
+00:03:22,158 --> 00:03:22,961
+flips its sign.
+
+91
+00:03:23,686 --> 00:03:25,373
+And if both ends are the same, there
+
+92
+00:03:25,394 --> 00:03:27,262
+are no strips at all, so the integral
+
+93
+00:03:27,343 --> 00:03:27,683
+is zero.
+
+94
+00:03:28,768 --> 00:03:31,293
+Signs get trickier when the primitive has a
+
+95
+00:03:31,394 --> 00:03:32,696
+minus sign of its own.
+
+96
+00:03:33,499 --> 00:03:36,153
+Find the integral from zero to pi, of
+
+97
+00:03:36,275 --> 00:03:36,817
+sine x.
+
+98
+00:03:37,541 --> 00:03:39,387
+A primitive is minus cos x.
+
+99
+00:03:40,232 --> 00:03:43,081
+At pi, that's minus cos pi, which is
+
+100
+00:03:43,243 --> 00:03:45,570
+minus, minus one, so it's one.
+
+101
+00:03:46,334 --> 00:03:48,738
+At zero, it's minus cos zero,
+
+102
+00:03:49,240 --> 00:03:50,202
+which is minus one.
+
+103
+00:03:50,864 --> 00:03:54,331
+So the answer is one, minus, bracket, minus
+
+104
+00:03:54,493 --> 00:03:55,734
+one, which is two.
+
+105
+00:03:56,637 --> 00:03:58,720
+Sine x is above the axis from zero
+
+106
+00:03:58,761 --> 00:04:01,285
+to pi, so a positive answer is what
+
+107
+00:04:01,306 --> 00:04:01,886
+we expect.
+
+108
+00:04:02,749 --> 00:04:05,455
+One minus one, giving zero, is the slip
+
+109
+00:04:05,596 --> 00:04:06,558
+the brackets prevent.
+
+110
+00:04:07,382 --> 00:04:09,396
+The same care works with an inside.
+
+111
+00:04:10,021 --> 00:04:12,204
+The integral from zero to pi over four,
+
+112
+00:04:12,445 --> 00:04:15,289
+of sine two x, has primitive minus a
+
+113
+00:04:15,390 --> 00:04:16,651
+half cos two x.
+
+114
+00:04:17,393 --> 00:04:19,558
+At the top that's zero, and at the
+
+115
+00:04:19,619 --> 00:04:21,343
+bottom it's minus a half.
+
+116
+00:04:21,865 --> 00:04:25,238
+So the answer is zero, minus, bracket, minus
+
+117
+00:04:25,279 --> 00:04:26,845
+a half, which is a half.
+
+118
+00:04:27,544 --> 00:04:28,799
+Next, an exponential.
+
+119
+00:04:29,402 --> 00:04:31,768
+Find the integral from zero to two, of
+
+120
+00:04:31,948 --> 00:04:33,472
+e to the x, plus x.
+
+121
+00:04:34,174 --> 00:04:35,966
+A primitive is e to the x, plus
+
+122
+00:04:36,147 --> 00:04:37,154
+x squared over two.
+
+123
+00:04:37,957 --> 00:04:40,325
+At two, that's e squared plus two.
+
+124
+00:04:40,967 --> 00:04:42,815
+At zero, it's e to the zero plus
+
+125
+00:04:42,855 --> 00:04:45,023
+zero, and e to the zero is one,
+
+126
+00:04:45,305 --> 00:04:45,807
+not zero.
+
+127
+00:04:46,470 --> 00:04:48,293
+So the answer is e squared plus two,
+
+128
+00:04:48,334 --> 00:04:50,578
+minus one, which is e squared plus one,
+
+129
+00:04:51,100 --> 00:04:52,481
+about eight point three nine.
+
+130
+00:04:53,627 --> 00:04:54,712
+Logs go the other way.
+
+131
+00:04:55,215 --> 00:04:57,080
+The integral from one to e, of one
+
+132
+00:04:57,141 --> 00:04:59,107
+over x, is the natural log of e,
+
+133
+00:04:59,430 --> 00:05:01,014
+minus the natural log of one.
+
+134
+00:05:01,656 --> 00:05:03,761
+The natural log of one is zero, so
+
+135
+00:05:03,802 --> 00:05:04,885
+that answer is just one.
+
+136
+00:05:05,788 --> 00:05:08,173
+Leave answers exact, like e squared plus one,
+
+137
+00:05:08,495 --> 00:05:10,438
+unless a question asks for a decimal.
+
+138
+00:05:11,017 --> 00:05:12,429
+The rule also runs backwards.
+
+139
+00:05:13,015 --> 00:05:15,620
+Find k, with k greater than one, so
+
+140
+00:05:15,641 --> 00:05:17,705
+that the integral from one to k of
+
+141
+00:05:17,826 --> 00:05:19,128
+two x equals eight.
+
+142
+00:05:20,012 --> 00:05:22,098
+A primitive of two x is x squared,
+
+143
+00:05:22,461 --> 00:05:25,049
+so the integral is k squared, minus one
+
+144
+00:05:25,090 --> 00:05:25,390
+squared.
+
+145
+00:05:25,995 --> 00:05:28,089
+Set k squared minus one equal to eight.
+
+146
+00:05:28,573 --> 00:05:30,839
+Then k squared is nine, so k is
+
+147
+00:05:30,960 --> 00:05:32,444
+three, or minus three.
+
+148
+00:05:33,232 --> 00:05:33,946
+Now the sign check.
+
+149
+00:05:34,468 --> 00:05:36,934
+Minus three fits the equation too, because the
+
+150
+00:05:37,036 --> 00:05:39,441
+integral from one down to minus three is
+
+151
+00:05:39,462 --> 00:05:41,507
+a backwards integral, and it comes out as
+
+152
+00:05:41,588 --> 00:05:42,570
+plus eight as well.
+
+153
+00:05:43,133 --> 00:05:43,956
+But the question says k
+
+154
+00:05:44,540 --> 00:05:47,131
+is greater than one, so k equals three.
+
+155
+00:05:47,810 --> 00:05:48,837
+Here's the line to remember.
+
+156
+00:05:49,526 --> 00:05:51,123
+Top, minus bracketed bottom.
+
+157
+00:05:51,688 --> 00:05:53,157
+Swap the ends, swap the sign.
+
+158
+00:05:53,780 --> 00:05:56,004
+Split at a point inside, and the pieces
+
+159
+00:05:56,025 --> 00:05:56,425
+add up.
+
+160
+00:05:59,063 --> 00:05:59,427
+Your turn.
+
+161
+00:06:00,053 --> 00:06:03,046
+Evaluate the integral from pi over three to
+
+162
+00:06:03,127 --> 00:06:04,814
+pi, of sine x.
+
+163
+00:06:05,376 --> 00:06:06,319
+Pause here to answer.
+
+164
+00:06:16,990 --> 00:06:18,584
+A primitive is minus cos x.
+
+165
+00:06:19,351 --> 00:06:20,436
+At pi, that's one.
+
+166
+00:06:21,363 --> 00:06:23,352
+At pi over three, it's minus a half.
+
+167
+00:06:24,235 --> 00:06:24,955
+So the answer is
+
+168
+00:06:25,516 --> 00:06:28,659
+one, minus, bracket, minus a half, which is
+
+169
+00:06:28,740 --> 00:06:29,360
+three halves.
+
+170
+00:06:30,289 --> 00:06:31,198
+A half is wrong.
+
+171
+00:06:31,704 --> 00:06:33,798
+It drops the bracket, and subtracts a half
+
+172
+00:06:33,899 --> 00:06:34,644
+instead of adding it.
+
+173
+00:06:36,286 --> 00:06:36,693
+Last one.
+
+174
+00:06:37,545 --> 00:06:39,461
+The function f is continuous.
+
+175
+00:06:40,044 --> 00:06:42,407
+The integral from zero to five of f
+
+176
+00:06:42,588 --> 00:06:44,870
+is seven, and the integral from zero to
+
+177
+00:06:44,950 --> 00:06:46,372
+two of f is three.
+
+178
+00:06:47,174 --> 00:06:49,308
+Find the integral from five to two of
+
+179
+00:06:49,329 --> 00:06:49,369
+f.
+
+180
+00:06:50,800 --> 00:06:51,715
+Pause here to answer.
+
+181
+00:07:02,344 --> 00:07:03,295
+Split at two.
+
+182
+00:07:04,182 --> 00:07:06,210
+The integral from zero to two, plus the
+
+183
+00:07:06,270 --> 00:07:08,720
+integral from two to five, is the integral
+
+184
+00:07:08,760 --> 00:07:09,824
+from zero to five.
+
+185
+00:07:10,667 --> 00:07:13,033
+So three plus the unknown is seven,
+
+186
+00:07:13,634 --> 00:07:15,519
+and the integral from two to five is
+
+187
+00:07:15,699 --> 00:07:16,000
+four.
+
+188
+00:07:16,763 --> 00:07:18,915
+But the question runs from five down to
+
+189
+00:07:18,955 --> 00:07:20,404
+two, so the sign flips.
+
+190
+00:07:21,028 --> 00:07:22,634
+The answer is minus four.
+
+191
+00:07:23,543 --> 00:07:24,454
+Four is wrong.
+
+192
+00:07:24,840 --> 00:07:26,476
+It forgets that the limits are reversed.
+
+193
+00:07:28,228 --> 00:07:30,472
+So keep F of a in brackets,
+
+194
+00:07:31,114 --> 00:07:32,637
+flip the sign when the limits swap,
+
+195
+00:07:33,179 --> 00:07:34,842
+and add the pieces at a split.
+
+196
+00:07:35,645 --> 00:07:37,892
+But a signed integral can surprise you.
+
+197
+00:07:38,655 --> 00:07:41,322
+The integral of sine x, from zero to
+
+198
+00:07:41,383 --> 00:07:42,826
+two pi, is zero.
+
+199
+00:07:43,510 --> 00:07:46,025
+The arch below the axis cancels the arch
+
+200
+00:07:46,086 --> 00:07:46,367
+above.
+
+201
+00:07:47,153 --> 00:07:49,782
+Yet the shaded region clearly isn't nothing.
+
+202
+00:07:50,506 --> 00:07:51,742
+So what's its area?
+
+203
+00:07:54,368 --> 00:07:55,170
+Here are the key notes.
+
+204
+00:07:55,814 --> 00:07:57,541
+Pause the video if you need more time
+
+205
+00:07:57,603 --> 00:07:58,084
+to copy them.

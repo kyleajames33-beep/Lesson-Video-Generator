@@ -1,0 +1,1439 @@
+{
+  "brief": 187,
+  "date": "2026-11-06",
+  "status": "20 source reports and10 new plates handed in; two drop-and-launch layers held for mechanism decision",
+  "newRequests": 14,
+  "newDelivered": 12,
+  "held": {
+    "status": "Sliding-shaft design accepted; generated base/slider pair fails geometry/registration and remains held",
+    "requestedPaths": [
+      "public/assets/physics/y12p-drop-launch-base-v1.png",
+      "public/assets/physics/y12p-drop-launch-slider-v1.png"
+    ],
+    "withdrawnPath": "public/assets/physics/y12p-drop-launch-arm-v1.png",
+    "brief222Evidence": "work/brief222/drop-launch-hold.json",
+    "originalBrief187Hold": {
+      "status": "Two requested drop-and-launch layers held for a mechanism decision",
+      "requestedPaths": [
+        "public/assets/physics/y12p-drop-launch-base-v1.png",
+        "public/assets/physics/y12p-drop-launch-arm-v1.png"
+      ],
+      "candidate": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-76ab0dd7-e56f-4355-8c53-a358f71ae5d2.png",
+      "finding": "The generated concept gives unequal support heights and an obstructing U-shaped cradle. It does not establish simultaneous withdrawal of support and a horizontal launch. It has not been copied to the requested paths or accepted as a working mechanism.",
+      "proposedRepair": "Specify a checked two-layer rotating mechanism, or revise the design to a sliding shaft and matching motion. Codex has not changed the design or narration. The real documented demonstration can support either a corrected apparatus choice or a clearer mechanical reference.",
+      "sources": [
+        {
+          "url": "https://www.pasco.com/products/lab-apparatus/mechanics/projectiles/drop-shoot-demo",
+          "observation": "Manufacturer confirms simultaneous spring release, but the product description alone does not validate the requested rotating geometry."
+        },
+        {
+          "url": "https://www.demos.smu.ca/demos/mechanics/125-simultaneous-freefall",
+          "observation": "University apparatus description uses a translating spring-loaded shaft, one holed sphere and one struck sphere. That is a different motion from the requested rotating arm."
+        }
+      ],
+      "firstGeneration": "Tool rejected output under its violence filter, request5e3bbb9e-60af-42a1-9180-b3e226359cff. A clearer classroom-apparatus request succeeded. This was not a user approval rejection.",
+      "newDesignOrNarrationEdit": false
+    }
+  },
+  "allRequestedDelivered": false,
+  "entries": [
+    {
+      "key": "launcher-base",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-4a25935f-89d1-4772-ac82-994db4ec25d8.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        132,
+        591,
+        1306,
+        907
+      ],
+      "minMarginAbove16": 0.09116022099447514,
+      "sha256": "43afad9960b15a61759d92aa65b610487659859ddbf4f3a27ff3779e2d02fdd3",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-4a25935f-89d1-4772-ac82-994db4ec25d8.png",
+      "file": "public/assets/physics/y12p-launcher-base-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "pivot": [
+          410,
+          644
+        ],
+        "muzzleAt0": [
+          1245,
+          644
+        ],
+        "pivotToMuzzle_px": 835,
+        "groundLine_y": 905,
+        "zeroAngle_deg": 0,
+        "qaAngles_deg": [
+          0,
+          30,
+          50,
+          90
+        ],
+        "registration": "Same native1448x1086 canvas. Base hole and rotating bolt overlay visibly at common origin. Small repaint differences are retained.",
+        "layoutRequirement": "At90degrees muzzle y=-191 relative to unrotated source origin. Use unclipped transform bounds and fit the whole assembly to the scene. QA uses expanded stage, not a clipped source rectangle."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "launcher-barrel",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b0992712-ebab-4f81-850e-17a13019dca7.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        215,
+        600,
+        1261,
+        687
+      ],
+      "minMarginAbove16": 0.12914364640883977,
+      "sha256": "b0f148dbb4948c352956bd72c78cede08e01fc01c51f162f55ca50b34ea15579",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b0992712-ebab-4f81-850e-17a13019dca7.png",
+      "file": "public/assets/physics/y12p-launcher-barrel-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "pivot": [
+          410,
+          644
+        ],
+        "muzzleAt0": [
+          1245,
+          644
+        ],
+        "pivotToMuzzle_px": 835,
+        "groundLine_y": 905,
+        "zeroAngle_deg": 0,
+        "qaAngles_deg": [
+          0,
+          30,
+          50,
+          90
+        ],
+        "registration": "Same native1448x1086 canvas. Base hole and rotating bolt overlay visibly at common origin. Small repaint differences are retained.",
+        "layoutRequirement": "At90degrees muzzle y=-191 relative to unrotated source origin. Use unclipped transform bounds and fit the whole assembly to the scene. QA uses expanded stage, not a clipped source rectangle."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "ramp-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c72acf04-3360-4b85-b3a8-a19676691aff.png",
+      "size": [
+        1774,
+        887
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        238,
+        155,
+        1527,
+        688
+      ],
+      "minMarginAbove16": 0.13416009019165728,
+      "sha256": "44ea5ffa800de19e03e5c8cea087d5fb4a0aae499b96be2af405a95794d5d2ce",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c72acf04-3360-4b85-b3a8-a19676691aff.png",
+      "file": "public/assets/physics/y12p-launch-ramp-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1774,
+          887
+        ],
+        "exitRunningLip": [
+          1525,
+          635
+        ],
+        "clampTabCentre": [
+          695,
+          493
+        ],
+        "topRunningContactApprox": [
+          292,
+          170
+        ],
+        "visibleBallDiameterAtDisplay600": 40,
+        "ballRadiusNative_px": 59.13333333333333,
+        "topBallCentreApprox": [
+          349,
+          154
+        ],
+        "qualification": "Approximate contact/seat coordinates need exact coded-path integration check. The final track has a connected tab and a horizontal open square exit; the earlier detached tab and upright stop were rejected."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "carbon",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-d1b0c6b8-7e6e-4cb2-8bf1-68ff047bacdb.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        132,
+        233,
+        2056,
+        510
+      ],
+      "minMarginAbove16": 0.053406998158379376,
+      "sha256": "fec0e23c8784bb312220b7405cc3d7d1207c0fdcbb5add2d26580af04fb0672e",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-d1b0c6b8-7e6e-4cb2-8bf1-68ff047bacdb.png",
+      "file": "public/assets/physics/y12p-carbon-paper-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          2172,
+          724
+        ],
+        "registrationOrigin": [
+          0,
+          0
+        ],
+        "whiteSource": "public/assets/physics/phys-y11-paper-sheet-flat-v1.png",
+        "inspection": "Paper/dark native-origin midpoint overlay inspected. Main edges align; lifted right corner differs by up to20native pixels, about3.7px at400width. Both source and carbon have less than8percent clear horizontal margin. Designer acceptance remains open."
+      },
+      "clearMargin8PercentPass": false,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "bob",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-0477c36c-de06-4da3-9e9f-9479a443c96f.png",
+      "size": [
+        971,
+        1619
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        334,
+        265,
+        636,
+        1287
+      ],
+      "minMarginAbove16": 0.16368128474366894,
+      "sha256": "c1c71e6f45f1dfa76d055abb27250eaf656688d072dcf7eb572fad98965625af",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-0477c36c-de06-4da3-9e9f-9479a443c96f.png",
+      "file": "public/assets/physics/y12p-plumb-bob-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          971,
+          1619
+        ],
+        "stringStubTop": [
+          485,
+          265
+        ],
+        "stringAttachment": [
+          485,
+          434
+        ],
+        "tip": [
+          481,
+          1285
+        ],
+        "inspection": "Side-on brass body with short string stub only. Tip differs4px horizontally from upper attachment; use the reported points rather than stretching the plate."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "level",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-91d591a9-94d3-41dc-b8a3-f7da1f1e7b40.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        193,
+        257,
+        1977,
+        458
+      ],
+      "minMarginAbove16": 0.08885819521178637,
+      "sha256": "5567716f7bb89a31355e57679147be41999e6c899f2ad672806f399fc3437ca7",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-91d591a9-94d3-41dc-b8a3-f7da1f1e7b40.png",
+      "file": "public/assets/physics/y12p-spirit-level-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          2172,
+          724
+        ],
+        "vialCentre": [
+          1086,
+          310
+        ],
+        "bubbleCentre": [
+          1086,
+          294
+        ],
+        "inspection": "One central vial, bubble centred between its two reference lines. Side-on aluminium body. Native aspect ratio3:1 differs from requested4:1; no stretching."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "nut",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b9ae558b-1e5b-4565-a9e6-c78108c35f06.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        378,
+        389,
+        876,
+        863
+      ],
+      "minMarginAbove16": 0.3014354066985646,
+      "sha256": "724f5228c10c3345fceb1691fe883c2a0ae53ff92aba24dab798aa2d7b9090d8",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b9ae558b-1e5b-4565-a9e6-c78108c35f06.png",
+      "file": "public/assets/physics/y12p-nut-plate-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1254,
+          1254
+        ],
+        "centre": [
+          627,
+          626
+        ],
+        "acrossFlats_px": 210,
+        "acrossCorners_px": 230,
+        "plateBoundsApprox": [
+          378,
+          389,
+          876,
+          863
+        ],
+        "inspection": "Top view, horizontal top and bottom nut faces. Mounting plate is about2.3times across-flats width, below requested about3times. Ring fit will be checked at common native scale."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "spanner-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-f31d7bf2-e697-452c-8b73-690c78e9174d.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        158,
+        183,
+        1993,
+        543
+      ],
+      "minMarginAbove16": 0.072744014732965,
+      "sha256": "2de61e42cf10d21ba682534ebe35bc13ffc36c5937640b2348c0f165b02fabe4",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-f31d7bf2-e697-452c-8b73-690c78e9174d.png",
+      "file": "public/assets/physics/y12p-spanner-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          2172,
+          724
+        ],
+        "ringCentre": [
+          330.1,
+          363.69
+        ],
+        "holeBounds": [
+          215,
+          244,
+          444,
+          483
+        ],
+        "forceApplication": [
+          1710,
+          363.69
+        ],
+        "ringToForce_px": 1379.9,
+        "representedDistance_m": 0.25,
+        "pixelsPerMetre": 5519.6,
+        "centreline_deg": 0,
+        "nutPlacementAtSameScale": [
+          -296.9,
+          -262.31
+        ],
+        "qualification": "Ring fit is judged from common-scale registered overlay, not separate fitted thumbnail sizes. No final asset was rescaled."
+      },
+      "clearMargin8PercentPass": false,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "seesaw-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-46dafb39-a2ce-446d-a0c1-1a0933b59e45.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        217,
+        194,
+        1955,
+        559
+      ],
+      "minMarginAbove16": 0.09990791896869244,
+      "sha256": "e6b113473b3e53b8f3315fbe84f465780a213cb19c6493af4d7f5d87e6af3cc1",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-46dafb39-a2ce-446d-a0c1-1a0933b59e45.png",
+      "file": "public/assets/physics/y12p-seesaw-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          2172,
+          724
+        ],
+        "hingeCentre": [
+          1086,
+          319
+        ],
+        "plankTopReference": [
+          1086,
+          293
+        ],
+        "plankLeftEnd": [
+          219,
+          293
+        ],
+        "plankRightEnd": [
+          1955,
+          293
+        ],
+        "plankLength_px": 1736,
+        "representedLength_m": 3,
+        "pixelsPerMetre": 578.6666666666666,
+        "qualification": "The painted hinge lies26px below the plank top. Both points are reported rather than calling them identical. Single PNG includes fixed stand: isolate or mask the plank before tilting; rotating the entire PNG would tilt the stand. No code or extra plate was added."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "crane-proportion-final",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-56b9d2b5-9be6-42aa-9d8d-0b8fb050655b.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        127,
+        100,
+        1322,
+        990
+      ],
+      "minMarginAbove16": 0.08701657458563536,
+      "sha256": "2d05ace407f157cbb4c6067b28df7c84a9b66c1d6d9e29d12cfe543980b54bac",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-56b9d2b5-9be6-42aa-9d8d-0b8fb050655b.png",
+      "file": "public/assets/physics/y12p-tower-crane-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "mastAtJib": [
+          395,
+          336
+        ],
+        "hookAttachment": [
+          1200,
+          550
+        ],
+        "counterweightCentre": [
+          234,
+          336
+        ],
+        "groundLine_y": 985,
+        "rightArm_px": 805,
+        "leftArm_px": 161,
+        "ratioFromRoundedAnchors": 5,
+        "requiredArmRatio": 5,
+        "anchorInspectionTolerance_px": 3,
+        "qualification": "Final correction selected after initial ratios about5.23 and4.7 were rejected. Rounded visually inspected anchors give5:1, within about3native pixels per painted centre. This is painting registration, not pixel-exact metrology. Use the same anchors for coded distance brackets and inspect their actual scene positions.",
+        "loadSourceAttachment": [
+          500,
+          211
+        ],
+        "qaLoadUniformScale": 0.24
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "plank",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-ae1a932c-fc13-4cc8-abd2-c3bdb1f4f674.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "sha256": "a1730ac3520c5150acf6d6b04aa8e3816525c3de32633b20ca4df1abd4ed00be",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alpha128Box": [
+        215,
+        194,
+        1957,
+        367
+      ],
+      "hingeCentre": [
+        1086,
+        319
+      ],
+      "file": "public/assets/physics/y12p-seesaw-plank-v1.png",
+      "status": "delivered native layer; three-background static tilt checks passed",
+      "brief": 222,
+      "qa": "docs/production/claude-pm/assets/brief222-qa/seesaw-tilt-check.jpg",
+      "limitation": "Generated split is not pixel-identical to old combined plate; alpha128 silhouette IoU0.9549. Both native canvases2172x724 and hinge(1086,319) retained. No gap or floating stand observed at -8,0,+8 degrees in static QA. Motion still requires playback."
+    },
+    {
+      "key": "stand",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-171ee5ca-8278-4d05-99ac-5a752b9bb4cf.png",
+      "dimensions": [
+        2172,
+        724
+      ],
+      "sha256": "8696a24271df30a55d843a6d0e713398aa61ca23146c1c657d1704436ae53eb2",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alpha128Box": [
+        935,
+        285,
+        1239,
+        557
+      ],
+      "hingeCentre": [
+        1086,
+        319
+      ],
+      "file": "public/assets/physics/y12p-seesaw-stand-v1.png",
+      "status": "delivered native layer; three-background static tilt checks passed",
+      "brief": 222,
+      "qa": "docs/production/claude-pm/assets/brief222-qa/seesaw-tilt-check.jpg",
+      "limitation": "Generated split is not pixel-identical to old combined plate; alpha128 silhouette IoU0.9549. Both native canvases2172x724 and hinge(1086,319) retained. No gap or floating stand observed at -8,0,+8 degrees in static QA. Motion still requires playback."
+    }
+  ],
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "phys-y11-moon-feather-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-moon-feather-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "phys-y11-moon-ground-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-moon-ground-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "phys-y11-phone-tripod-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-phone-tripod-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "phys-y11-sand-tray-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sand-tray-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "phys-y11-spring-launcher-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-spring-launcher-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "public/assets/physics/phys-y11-moon-hammer-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-moon-hammer-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "work/brief168/asset-contact.png",
+      "paths": [
+        "work/brief168/asset-contact.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "QA contact sheet"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "y12p-drop-launch-arm-v1.png",
+      "paths": [],
+      "exists": false,
+      "held": true,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v01",
+      "reference": "y12p-drop-launch-base-v1.png",
+      "paths": [],
+      "exists": false,
+      "held": true,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v02",
+      "reference": "phys-y11-protractor-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-protractor-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v02",
+      "reference": "phys-y11-spring-launcher-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-spring-launcher-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v02",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v02",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v02",
+      "reference": "y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v03",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v03",
+      "reference": "public/assets/physics/y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v03",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v04",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v04",
+      "reference": "public/assets/physics/y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v04",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v05",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v05",
+      "reference": "public/assets/physics/y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v05",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v06",
+      "reference": "phys-y11-spring-launcher-whole-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-spring-launcher-whole-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v06",
+      "reference": "phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v06",
+      "reference": "public/assets/physics/y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v06",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-paper-sheet-flat-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-paper-sheet-flat-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-ramp-plank-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-plank-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-spring-launcher-whole-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-spring-launcher-whole-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "public/assets/physics/phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "y12p-launch-ramp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launch-ramp-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-digital-timer-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-digital-timer-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-light-gate-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-light-gate-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-metre-rule-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metre-rule-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-paper-sheet-flat-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-paper-sheet-flat-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-phone-tripod-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-phone-tripod-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-ramp-hinge-block-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-hinge-block-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-ramp-plank-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-plank-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-sand-tray-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sand-tray-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-spring-launcher-whole-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-spring-launcher-whole-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "public/assets/physics/phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "y12p-carbon-paper-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-carbon-paper-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "y12p-launch-ramp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launch-ramp-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "y12p-plumb-bob-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-plumb-bob-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v08",
+      "reference": "y12p-spirit-level-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spirit-level-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "phys-y11-protractor-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-protractor-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "phys-y11-scrapyard-crane-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-scrapyard-crane-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "public/assets/physics/phys-y11-crane-load-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-crane-load-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "y12p-nut-plate-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-nut-plate-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "y12p-spanner-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spanner-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "y12p-tower-crane-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-tower-crane-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-box-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-box-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-mass-hanger-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-mass-hanger-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-metre-rule-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metre-rule-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-scrapyard-crane-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-scrapyard-crane-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-slotted-masses-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-slotted-masses-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-wooden-crate-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-wooden-crate-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "public/assets/physics/phys-y11-crane-load-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-crane-load-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "y12p-seesaw-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-seesaw-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "y12p-tower-crane-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-tower-crane-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    }
+  ],
+  "missingOtherReferences": [],
+  "reviewTotals": {
+    "blocker": 0,
+    "should fix": 3,
+    "optional": 1
+  },
+  "siteLogEntries": 11,
+  "qualification": "No design, narration, source scene, speech, render, website or release change. Native dimensions, two margin shortfalls, carbon corner, nut-plate proportion and seesaw moving-layer needs are documented. Designer acceptance remains open.",
+  "brief222": {
+    "state": "9 source reports complete;2 seesaw layers delivered;2 demonstrator layers held;edge cleanup awaits method instruction",
+    "seesawLayers": [
+      {
+        "key": "plank",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-ae1a932c-fc13-4cc8-abd2-c3bdb1f4f674.png",
+        "dimensions": [
+          2172,
+          724
+        ],
+        "sha256": "a1730ac3520c5150acf6d6b04aa8e3816525c3de32633b20ca4df1abd4ed00be",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alpha128Box": [
+          215,
+          194,
+          1957,
+          367
+        ],
+        "hingeCentre": [
+          1086,
+          319
+        ],
+        "file": "public/assets/physics/y12p-seesaw-plank-v1.png",
+        "status": "delivered native layer; three-background static tilt checks passed",
+        "brief": 222,
+        "qa": "docs/production/claude-pm/assets/brief222-qa/seesaw-tilt-check.jpg",
+        "limitation": "Generated split is not pixel-identical to old combined plate; alpha128 silhouette IoU0.9549. Both native canvases2172x724 and hinge(1086,319) retained. No gap or floating stand observed at -8,0,+8 degrees in static QA. Motion still requires playback."
+      },
+      {
+        "key": "stand",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-171ee5ca-8278-4d05-99ac-5a752b9bb4cf.png",
+        "dimensions": [
+          2172,
+          724
+        ],
+        "sha256": "8696a24271df30a55d843a6d0e713398aa61ca23146c1c657d1704436ae53eb2",
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alpha128Box": [
+          935,
+          285,
+          1239,
+          557
+        ],
+        "hingeCentre": [
+          1086,
+          319
+        ],
+        "file": "public/assets/physics/y12p-seesaw-stand-v1.png",
+        "status": "delivered native layer; three-background static tilt checks passed",
+        "brief": 222,
+        "qa": "docs/production/claude-pm/assets/brief222-qa/seesaw-tilt-check.jpg",
+        "limitation": "Generated split is not pixel-identical to old combined plate; alpha128 silhouette IoU0.9549. Both native canvases2172x724 and hinge(1086,319) retained. No gap or floating stand observed at -8,0,+8 degrees in static QA. Motion still requires playback."
+      }
+    ],
+    "qa": "work\\brief222\\seesaw-qa.json",
+    "newDelivered": 2
+  }
+}

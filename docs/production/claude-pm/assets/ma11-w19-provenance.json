@@ -1,0 +1,130 @@
+{
+  "brief": 247,
+  "lesson": "w19",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-1f44c6d0-3e8f-4911-be18-55371afb5953.png",
+      "sha256": "7a835b56f9dea705c35e345b1d1536c48bbd0334f54834d234cc288b1220153d",
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        20,
+        107,
+        1599,
+        954
+      ],
+      "marginFractions": [
+        0.012353304508956145,
+        0.1101956745623069,
+        0.012353304508956145,
+        0.017507723995880537
+      ],
+      "evidence": [
+        "work/brief247/w19-food-truck-candidate1-native-paper.jpg",
+        "work/brief247/w19-food-truck-candidate1-native-dark.jpg",
+        "work/brief247/w19-food-truck-candidate1-native-white.jpg",
+        "work/brief247/w19-food-truck-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-food-truck-v1.png",
+      "path": "public/assets/maths/ma11-food-truck-v1.png",
+      "brief": 247,
+      "lesson": "w19",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1200
+      ],
+      "qa": {
+        "result": "passed subject, alpha and price fit checks",
+        "observations": [
+          "Native paper/dark and1200px-wide counter/price composites inspected. No text in original plate, logos, people, hands or faces.",
+          "Truck margins about1.2percent at left/right, full bumpers and wheels visible. Tray margins are narrow but intact.",
+          "Tray alpha peaks254, effectively opaque material with transparent surround; no raw-preview background wash in composites.",
+          "No production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w19-generation.json",
+          "work/brief247/w15-w31/w19-food-truck-sidecar.json",
+          "work/brief247/w15-w31/w19-truck-1200-price-paper.jpg",
+          "work/brief247/w15-w31/w19-truck-1200-price-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-food-truck-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-6155012b-79f7-4cb7-afe8-b56b376926eb.png",
+      "sha256": "e40fb98b95cca4ea26e744b42db5e85bf9cba79c583fef6a3dedfe3c0aaba1b0",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        15,
+        110,
+        1517,
+        961
+      ],
+      "marginFractions": [
+        0.009765625,
+        0.107421875,
+        0.012369791666666666,
+        0.0615234375
+      ],
+      "evidence": [
+        "work/brief247/w19-dumpling-tray-candidate1-native-paper.jpg",
+        "work/brief247/w19-dumpling-tray-candidate1-native-dark.jpg",
+        "work/brief247/w19-dumpling-tray-candidate1-native-white.jpg",
+        "work/brief247/w19-dumpling-tray-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-dumpling-tray-v1.png",
+      "path": "public/assets/maths/ma11-dumpling-tray-v1.png",
+      "brief": 247,
+      "lesson": "w19",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        600
+      ],
+      "qa": {
+        "result": "passed subject, alpha and price fit checks",
+        "observations": [
+          "Native paper/dark and1200px-wide counter/price composites inspected. No text in original plate, logos, people, hands or faces.",
+          "Truck margins about1.2percent at left/right, full bumpers and wheels visible. Tray margins are narrow but intact.",
+          "Tray alpha peaks254, effectively opaque material with transparent surround; no raw-preview background wash in composites.",
+          "No production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w19-generation.json",
+          "work/brief247/w15-w31/w19-food-truck-sidecar.json",
+          "work/brief247/w15-w31/w19-truck-1200-price-paper.jpg",
+          "work/brief247/w15-w31/w19-truck-1200-price-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-dumpling-tray-v1.json"
+    }
+  ],
+  "result": "Food truck and tray delivered. Exactly10 dumplings counted in2 rows of5. Blank dark menu inner rectangle(1244,258)-(1536,537), counter top line(400,551)-(1195,551). At1200px truck width the board is about216x207px, and the52px $15 test fits clearly. Empty serving shelf remains usable for the separate tray. Both native alpha PNGs have clean edges on paper and dark backgrounds.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/w15-w31/w19-generation.json",
+    "work/brief247/w15-w31/w19-food-truck-sidecar.json",
+    "work/brief247/w15-w31/w19-truck-1200-price-paper.jpg",
+    "work/brief247/w15-w31/w19-truck-1200-price-dark.jpg"
+  ]
+}

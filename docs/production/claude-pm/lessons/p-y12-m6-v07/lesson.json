@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "6a1ea0b09bd6373ca0dc5c94b4d06a7f03f360e973dc461c0f139b1186cd5f8c",
+  "sourceDesignSha256": "44bd6a94a81422ac13b44f779bc5af0d99bd9af937960b0b79cd454a016177ec",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Which way will it swing this time?",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Which way will it swing this time?",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "inside-the-wire",
@@ -52,7 +62,7 @@
       "id": "angle",
       "title": "the angle: only the part across the field",
       "voiceover": {
-        "text": "But that's only true when the current runs straight across the field. Let's lay the field flat across the screen, and turn the wire so its current makes an angle theta with the field. Split the current's direction into two parts. One part runs across the field, and those charges get pushed. The other part runs along the field, and a charge moving along a field feels no force at all. So the force is B I l sine theta, which you'll also see written as F equals l I perpendicular B. At thirty degrees, sine is a half, so our force halves to zero point zero three zero newtons. At ninety degrees, it's the biggest it can be, B I l. And when the current runs along the field, theta is zero, and there's no force, however big the current."
+        "text": "But that's only true when the current runs straight across the field. Let's lay the field flat across the screen, and turn the wire so its current makes an angle theta with the field. Split the current's direction into two parts. One part runs across the field, and those charges get pushed. The other part runs along the field, and a charge moving along a field feels no force at all. Cos is close, so the part across the field, opposite theta, takes sine. So the force is B I l sine theta, which you'll also see written as F equals l I perpendicular B. At thirty degrees, sine is a half, so our force halves to zero point zero three zero newtons. At ninety degrees, it's the biggest it can be, B I l. And when the current runs along the field, theta is zero, and there's no force, however big the current."
       },
       "durationInFrames": 1,
       "holdSeconds": 0,

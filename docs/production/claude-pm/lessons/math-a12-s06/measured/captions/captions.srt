@@ -1,0 +1,823 @@
+1
+00:00:00,342 --> 00:00:02,636
+Last video ended here, with this density.
+
+2
+00:00:03,501 --> 00:00:05,267
+Where is X most likely to be,
+
+3
+00:00:05,830 --> 00:00:08,418
+and where's the middle, with half the probability
+
+4
+00:00:08,459 --> 00:00:09,060
+on each side?
+
+5
+00:00:09,924 --> 00:00:12,415
+For this symmetric hump, both answers are one,
+
+6
+00:00:12,818 --> 00:00:13,621
+right in the centre.
+
+7
+00:00:14,405 --> 00:00:17,357
+Now a cookie, four centimetres in radius, with
+
+8
+00:00:17,398 --> 00:00:18,984
+its choc chips spread evenly.
+
+9
+00:00:19,648 --> 00:00:21,633
+In the ideal model, a chip lands at
+
+10
+00:00:21,674 --> 00:00:23,217
+a random point on the cookie.
+
+11
+00:00:23,881 --> 00:00:25,657
+Let X be its distance from the centre.
+
+12
+00:00:26,343 --> 00:00:29,096
+Its density is x over eight, from zero
+
+13
+00:00:29,218 --> 00:00:29,619
+to four.
+
+14
+00:00:30,404 --> 00:00:32,129
+It climbs the whole way, because the outer
+
+15
+00:00:32,170 --> 00:00:33,233
+rings hold more cookie.
+
+16
+00:00:33,855 --> 00:00:35,782
+So distances near the edge are the most
+
+17
+00:00:35,883 --> 00:00:38,051
+likely, and the density peaks at four.
+
+18
+00:00:38,915 --> 00:00:41,825
+Yet half the probability lies within about two
+
+19
+00:00:41,886 --> 00:00:43,993
+point eight three centimetres of the centre.
+
+20
+00:00:44,898 --> 00:00:47,243
+So the most likely value and the middle
+
+21
+00:00:47,625 --> 00:00:48,647
+can be far apart.
+
+22
+00:00:49,330 --> 00:00:50,436
+How do we find each one?
+
+23
+00:00:51,088 --> 00:00:53,121
+The mode is the value where the density
+
+24
+00:00:53,283 --> 00:00:53,825
+is highest.
+
+25
+00:00:54,691 --> 00:00:56,576
+Here's why X is most likely to be
+
+26
+00:00:56,617 --> 00:00:57,499
+found near there.
+
+27
+00:00:58,383 --> 00:01:01,691
+Slide a narrow window, two tenths wide, along
+
+28
+00:01:01,712 --> 00:01:02,092
+the hump.
+
+29
+00:01:02,755 --> 00:01:04,722
+It catches the most area, and so the
+
+30
+00:01:04,764 --> 00:01:07,474
+most probability, near the top of this symmetric
+
+31
+00:01:07,535 --> 00:01:07,755
+hump.
+
+32
+00:01:08,599 --> 00:01:11,106
+Near one, it catches about zero point one
+
+33
+00:01:11,187 --> 00:01:11,547
+five,
+
+34
+00:01:12,050 --> 00:01:14,516
+and near zero point two, about zero point
+
+35
+00:01:14,578 --> 00:01:15,199
+zero five.
+
+36
+00:01:15,842 --> 00:01:17,486
+So the mode is at the peak of
+
+37
+00:01:17,808 --> 00:01:17,887
+f,
+
+38
+00:01:18,611 --> 00:01:19,132
+not of F.
+
+39
+00:01:20,316 --> 00:01:23,081
+F only builds up probability, so its top
+
+40
+00:01:23,343 --> 00:01:24,965
+doesn't tell you where f peaks.
+
+41
+00:01:25,608 --> 00:01:28,240
+Finding the peak is a maximum problem, like
+
+42
+00:01:28,281 --> 00:01:29,285
+the ones you've solved before.
+
+43
+00:01:30,049 --> 00:01:32,803
+Write f as six x minus three x
+
+44
+00:01:32,864 --> 00:01:33,949
+squared, over four.
+
+45
+00:01:34,693 --> 00:01:37,302
+Its derivative is six minus six x, over
+
+46
+00:01:37,383 --> 00:01:40,052
+four, which is zero at x equals one.
+
+47
+00:01:40,776 --> 00:01:43,508
+The second derivative is minus three halves, which
+
+48
+00:01:43,549 --> 00:01:45,276
+is negative, so that's a maximum.
+
+49
+00:01:46,100 --> 00:01:48,526
+The mode is one, where the density is
+
+50
+00:01:48,748 --> 00:01:49,429
+three quarters.
+
+51
+00:01:50,192 --> 00:01:52,615
+And because this hump is symmetric about one,
+
+52
+00:01:53,137 --> 00:01:55,721
+half the area lies on each side, so
+
+53
+00:01:55,742 --> 00:01:57,003
+the median is one as well.
+
+54
+00:01:57,748 --> 00:01:59,723
+F of one is a half, which checks
+
+55
+00:01:59,784 --> 00:01:59,844
+it.
+
+56
+00:02:00,416 --> 00:02:03,191
+But a density doesn't always have a stationary
+
+57
+00:02:03,252 --> 00:02:03,492
+point.
+
+58
+00:02:04,096 --> 00:02:06,360
+For the cookie, x over eight, from zero
+
+59
+00:02:06,381 --> 00:02:09,367
+to four, the derivative is one eighth, and
+
+60
+00:02:09,408 --> 00:02:10,069
+it's never zero.
+
+61
+00:02:10,892 --> 00:02:13,798
+The density keeps climbing, so its greatest value
+
+62
+00:02:13,919 --> 00:02:15,983
+is at the right-hand end, the edge of
+
+63
+00:02:16,004 --> 00:02:16,384
+the cookie.
+
+64
+00:02:16,987 --> 00:02:18,080
+The mode is four.
+
+65
+00:02:19,009 --> 00:02:21,581
+So, just like any global maximum, check the
+
+66
+00:02:21,683 --> 00:02:22,626
+endpoints as well.
+
+67
+00:02:23,532 --> 00:02:25,822
+And if a density is completely flat,
+
+68
+00:02:26,325 --> 00:02:27,631
+it has no single mode.
+
+69
+00:02:28,405 --> 00:02:29,196
+Now the middle.
+
+70
+00:02:29,782 --> 00:02:32,194
+The median, m, is the value with half
+
+71
+00:02:32,254 --> 00:02:33,460
+the probability below it.
+
+72
+00:02:34,183 --> 00:02:36,831
+That's an area on f, but F already
+
+73
+00:02:36,932 --> 00:02:37,774
+holds the areas.
+
+74
+00:02:38,155 --> 00:02:40,163
+So we solve F of m equals one
+
+75
+00:02:40,223 --> 00:02:40,464
+half.
+
+76
+00:02:41,166 --> 00:02:42,887
+For the cookie, F of x is the
+
+77
+00:02:42,967 --> 00:02:45,128
+fraction of the cookie within x of the
+
+78
+00:02:45,188 --> 00:02:45,528
+centre,
+
+79
+00:02:46,029 --> 00:02:48,610
+pi x squared over pi times sixteen, which
+
+80
+00:02:48,690 --> 00:02:50,271
+is x squared over sixteen.
+
+81
+00:02:50,873 --> 00:02:53,461
+Integrating x over eight from zero gives the
+
+82
+00:02:53,503 --> 00:02:53,762
+same.
+
+83
+00:02:54,305 --> 00:02:56,511
+So m squared over sixteen is a half,
+
+84
+00:02:56,993 --> 00:02:59,199
+m squared is eight, and m is two
+
+85
+00:02:59,260 --> 00:03:01,606
+root two, about two point eight three.
+
+86
+00:03:02,268 --> 00:03:04,391
+The negative root, minus two root two, is
+
+87
+00:03:04,553 --> 00:03:06,796
+outside zero to four, so we reject it,
+
+88
+00:03:06,998 --> 00:03:07,498
+and say so.
+
+89
+00:03:08,296 --> 00:03:11,031
+The quartiles split the probability into quarters.
+
+90
+00:03:11,615 --> 00:03:14,665
+The lower quartile solves F equals one quarter,
+
+91
+00:03:15,248 --> 00:03:17,755
+and the upper quartile solves F equals three
+
+92
+00:03:17,816 --> 00:03:18,136
+quarters.
+
+93
+00:03:18,819 --> 00:03:20,504
+Here, the lower quartile is two,
+
+94
+00:03:21,107 --> 00:03:23,193
+and the upper quartile is two root three,
+
+95
+00:03:23,676 --> 00:03:24,879
+about three point four six.
+
+96
+00:03:25,765 --> 00:03:26,555
+Now look at the cookie.
+
+97
+00:03:27,344 --> 00:03:29,831
+Circles at two, two point eight three and
+
+98
+00:03:29,912 --> 00:03:32,339
+three point four six cut it into four
+
+99
+00:03:32,400 --> 00:03:33,242
+pieces of equal area.
+
+100
+00:03:34,548 --> 00:03:37,222
+In this sample cookie, each holds fifteen of
+
+101
+00:03:37,263 --> 00:03:38,046
+its sixty chips.
+
+102
+00:03:38,831 --> 00:03:40,316
+A real cookie would only come close.
+
+103
+00:03:41,321 --> 00:03:43,786
+The pieces get narrower towards the edge, because
+
+104
+00:03:43,828 --> 00:03:45,331
+the density is higher there.
+
+105
+00:03:45,955 --> 00:03:48,289
+A quarter of the probability fits into less
+
+106
+00:03:48,390 --> 00:03:48,611
+width.
+
+107
+00:03:49,302 --> 00:03:50,230
+One trap to avoid.
+
+108
+00:03:50,673 --> 00:03:52,823
+The median comes from F, not f.
+
+109
+00:03:54,087 --> 00:03:56,330
+Setting x over eight equal to a half
+
+110
+00:03:56,450 --> 00:03:58,473
+gives four, which is just the end of
+
+111
+00:03:58,513 --> 00:03:59,014
+the domain.
+
+112
+00:03:59,575 --> 00:04:01,518
+The height of the density has nothing to
+
+113
+00:04:01,558 --> 00:04:02,640
+do with half the area.
+
+114
+00:04:03,231 --> 00:04:03,839
+Try one more.
+
+115
+00:04:04,467 --> 00:04:07,032
+A density is three x squared over eight,
+
+116
+00:04:07,293 --> 00:04:08,194
+from zero to two,
+
+117
+00:04:08,776 --> 00:04:11,080
+and its F is x cubed over eight.
+
+118
+00:04:11,863 --> 00:04:14,288
+The density keeps increasing, so the mode is
+
+119
+00:04:14,329 --> 00:04:15,351
+at the end, at two.
+
+120
+00:04:16,114 --> 00:04:16,793
+For the median,
+
+121
+00:04:17,295 --> 00:04:19,895
+x cubed over eight equals a half, so
+
+122
+00:04:20,076 --> 00:04:22,316
+x cubed is four, and m is the
+
+123
+00:04:22,357 --> 00:04:24,538
+cube root of four, about one point five
+
+124
+00:04:24,559 --> 00:04:24,798
+nine.
+
+125
+00:04:25,659 --> 00:04:27,924
+In the same way, the lower quartile is
+
+126
+00:04:27,965 --> 00:04:29,908
+the cube root of two, about one point
+
+127
+00:04:29,929 --> 00:04:30,289
+two six.
+
+128
+00:04:31,173 --> 00:04:32,909
+The median is well left of the mode.
+
+129
+00:04:33,494 --> 00:04:35,819
+The density is low near zero, so it
+
+130
+00:04:35,860 --> 00:04:37,603
+takes a lot of width there to collect
+
+131
+00:04:37,704 --> 00:04:38,585
+half the probability.
+
+132
+00:04:39,188 --> 00:04:41,154
+Here's why the difference matters in a real
+
+133
+00:04:41,215 --> 00:04:41,556
+problem.
+
+134
+00:04:42,139 --> 00:04:43,420
+A component's lifetime,
+
+135
+00:04:44,163 --> 00:04:48,030
+L hours, has density three times four minus
+
+136
+00:04:48,352 --> 00:04:50,937
+l, all squared, over sixty four, for l
+
+137
+00:04:51,038 --> 00:04:52,099
+from zero to four.
+
+138
+00:04:53,062 --> 00:04:56,047
+That density is highest at zero and falls
+
+139
+00:04:56,108 --> 00:04:58,813
+the whole way, so the mode is zero.
+
+140
+00:04:59,756 --> 00:04:59,875
+Its
+
+141
+00:05:00,437 --> 00:05:03,402
+F is one minus four minus l, cubed,
+
+142
+00:05:03,824 --> 00:05:04,685
+over sixty four.
+
+143
+00:05:05,629 --> 00:05:08,157
+Setting F equal to a half gives four
+
+144
+00:05:08,198 --> 00:05:10,486
+minus m, cubed, equals thirty two.
+
+145
+00:05:11,411 --> 00:05:13,557
+So m is four minus the cube root
+
+146
+00:05:13,578 --> 00:05:14,320
+of thirty two,
+
+147
+00:05:14,883 --> 00:05:16,728
+about zero point eight three hours.
+
+148
+00:05:17,894 --> 00:05:20,262
+Half of these components fail in under fifty
+
+149
+00:05:20,303 --> 00:05:22,651
+minutes, even though some last up to four
+
+150
+00:05:22,692 --> 00:05:22,972
+hours.
+
+151
+00:05:23,836 --> 00:05:26,141
+The most likely lifetime and the median
+
+152
+00:05:26,643 --> 00:05:27,825
+answer different questions.
+
+153
+00:05:28,556 --> 00:05:29,744
+Here's a way to keep them apart.
+
+154
+00:05:30,529 --> 00:05:32,095
+The mode is the top of f.
+
+155
+00:05:33,140 --> 00:05:35,643
+The median and quartiles go across from F.
+
+156
+00:05:36,806 --> 00:05:38,649
+For the median, go across from one half,
+
+157
+00:05:39,191 --> 00:05:40,272
+and down to the axis.
+
+158
+00:05:42,987 --> 00:05:43,396
+Your turn.
+
+159
+00:05:44,283 --> 00:05:47,512
+A density is twelve x squared, times one
+
+160
+00:05:47,552 --> 00:05:50,059
+minus x, for x from zero to one,
+
+161
+00:05:50,520 --> 00:05:51,503
+and zero elsewhere.
+
+162
+00:05:52,185 --> 00:05:54,555
+Find the mode, and justify your answer.
+
+163
+00:05:55,180 --> 00:05:55,992
+Pause here to answer.
+
+164
+00:06:06,860 --> 00:06:09,662
+Expand f, and its derivative is twenty four
+
+165
+00:06:09,902 --> 00:06:12,243
+x minus thirty six x squared,
+
+166
+00:06:12,884 --> 00:06:15,646
+or twelve x times two minus three x.
+
+167
+00:06:16,426 --> 00:06:19,182
+That's zero at x equals zero, and at
+
+168
+00:06:19,263 --> 00:06:19,886
+two thirds.
+
+169
+00:06:20,529 --> 00:06:22,554
+But f of zero is zero, the lowest
+
+170
+00:06:22,594 --> 00:06:25,040
+value, and f is zero at x equals
+
+171
+00:06:25,200 --> 00:06:25,661
+one too.
+
+172
+00:06:26,545 --> 00:06:29,440
+At two thirds, f is sixteen ninths, its
+
+173
+00:06:29,502 --> 00:06:30,164
+greatest value.
+
+174
+00:06:30,689 --> 00:06:32,141
+So the mode is two thirds.
+
+175
+00:06:32,971 --> 00:06:33,645
+Zero is wrong.
+
+176
+00:06:33,889 --> 00:06:35,779
+It's a stationary point, but a minimum.
+
+177
+00:06:37,373 --> 00:06:37,820
+Last one.
+
+178
+00:06:38,528 --> 00:06:41,311
+A continuous random variable has F of x
+
+179
+00:06:41,572 --> 00:06:44,355
+equals x squared plus two x, all over
+
+180
+00:06:44,436 --> 00:06:44,615
+eight,
+
+181
+00:06:45,157 --> 00:06:46,838
+for x from zero to two.
+
+182
+00:06:47,841 --> 00:06:49,918
+Find the lower quartile exactly.
+
+183
+00:06:50,687 --> 00:06:51,681
+Pause here to answer.
+
+184
+00:07:02,296 --> 00:07:04,453
+Solve F of x equals one quarter.
+
+185
+00:07:05,278 --> 00:07:07,365
+So x squared plus two x equals two.
+
+186
+00:07:08,149 --> 00:07:08,849
+Complete the square:
+
+187
+00:07:09,612 --> 00:07:12,055
+x plus one, all squared, is three, so
+
+188
+00:07:12,297 --> 00:07:14,621
+x is minus one, plus or minus root
+
+189
+00:07:14,662 --> 00:07:14,921
+three.
+
+190
+00:07:16,105 --> 00:07:18,691
+Minus one minus root three is outside zero
+
+191
+00:07:18,712 --> 00:07:19,894
+to two, so reject it.
+
+192
+00:07:20,517 --> 00:07:22,922
+The lower quartile is root three minus one,
+
+193
+00:07:23,385 --> 00:07:25,008
+about zero point seven three.
+
+194
+00:07:25,892 --> 00:07:27,528
+Keeping both roots is wrong.
+
+195
+00:07:27,974 --> 00:07:29,288
+Only one is in the domain.
+
+196
+00:07:31,055 --> 00:07:33,499
+So the mode is the peak of f,
+
+197
+00:07:33,921 --> 00:07:36,105
+and the median and quartiles come from F.
+
+198
+00:07:37,731 --> 00:07:38,770
+Next, a new question.
+
+199
+00:07:39,334 --> 00:07:42,162
+What if a density is completely flat, from
+
+200
+00:07:42,324 --> 00:07:42,965
+one to five?
+
+201
+00:07:43,387 --> 00:07:44,414
+There's no single peak.
+
+202
+00:07:45,120 --> 00:07:46,464
+How high must it be,
+
+203
+00:07:47,007 --> 00:07:48,491
+and what does its F look like?
+
+204
+00:07:51,195 --> 00:07:52,058
+Here are the key notes.
+
+205
+00:07:52,461 --> 00:07:54,008
+Pause the video if you need more time
+
+206
+00:07:54,050 --> 00:07:54,511
+to copy them.

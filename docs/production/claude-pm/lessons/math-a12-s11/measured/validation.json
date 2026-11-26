@@ -1,0 +1,983 @@
+{
+  "lesson": "math-a12-s11",
+  "sourceSha256": "e71aa4cd6ab98a3bc306bff5e56951253ef15f282913d36ac17df04f4c64d740",
+  "measuredPath": "work\\brief240\\voice-results\\s11\\lesson.json",
+  "measuredSha256": "a24ca50a1d4dfcbc5a75d93b8b9c38b14417bebf4891a483316d13c9062eedf0",
+  "changedTakes": 15,
+  "reusedTakes": 0,
+  "newRequests": 14,
+  "cachedTakes": 1,
+  "voicedCharacters": 5688,
+  "inputTokens": 1271,
+  "outputTokens": 9659,
+  "costUsd": 0.08756649999999998,
+  "totalSeconds": 457.56666666666666,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-11",
+    "seconds": 1.5039999999999978,
+    "after": "one.",
+    "before": "One"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
+    {
+      "scene": "scene-01",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.90399999999999,
+          "end": 19.94399999999999,
+          "score": 0.498
+        }
+      ]
+    },
+    {
+      "scene": "scene-02",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "or",
+          "start": 21.29100000000014,
+          "end": 21.392000000000138,
+          "score": 0.42
+        }
+      ]
+    },
+    {
+      "scene": "scene-03",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.702,
+          "end": 0.743,
+          "score": 0.435
+        }
+      ]
+    },
+    {
+      "scene": "scene-04",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "But",
+          "start": 18.19100000000006,
+          "end": 18.33100000000006,
+          "score": 0.477
+        }
+      ]
+    },
+    {
+      "scene": "scene-05",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "so",
+          "start": 5.654000000000001,
+          "end": 5.695,
+          "score": 0
+        },
+        {
+          "word": "to",
+          "start": 19.209999999999987,
+          "end": 19.28999999999999,
+          "score": 0.499
+        }
+      ]
+    },
+    {
+      "scene": "scene-07",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "or",
+          "start": 11.74999999999999,
+          "end": 11.82999999999999,
+          "score": 0.264
+        }
+      ]
+    },
+    {
+      "scene": "scene-08",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "low.",
+          "start": 26.256000000000064,
+          "end": 26.417000000000062,
+          "score": 0.485
+        }
+      ]
+    },
+    {
+      "scene": "scene-09",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.099999999999993,
+          "end": 5.119999999999994,
+          "score": 0
+        }
+      ]
+    },
+    {
+      "scene": "scene-10",
+      "possibleRetry": false,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": []
+    },
+    {
+      "scene": "scene-11",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "is",
+          "start": 11.355999999999987,
+          "end": 11.395999999999988,
+          "score": 0
+        },
+        {
+          "word": "one",
+          "start": 11.475999999999988,
+          "end": 11.535999999999987,
+          "score": 0
+        },
+        {
+          "word": "point",
+          "start": 11.555999999999989,
+          "end": 11.655999999999988,
+          "score": 0
+        }
+      ]
+    },
+    {
+      "scene": "scene-14",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.541,
+          "end": 0.561,
+          "score": 0
+        },
+        {
+          "word": "it",
+          "start": 17.726000000000067,
+          "end": 17.807000000000066,
+          "score": 0.324
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-01.wav",
+      "durationInFrames": 868,
+      "worstWordGap": {
+        "seconds": 0.762000000000068,
+        "after": "compared.",
+        "before": "We"
+      },
+      "cues": [
+        {
+          "text": "compared",
+          "start": 22.42499999999999,
+          "end": 22.799222222222213
+        },
+        {
+          "text": "ruler",
+          "start": 24.67300000000006,
+          "end": 24.957166666666726
+        },
+        {
+          "text": "catch",
+          "start": 27.65100000000008,
+          "end": 27.88600000000008
+        }
+      ],
+      "seconds": 28.92,
+      "peakFraction": 0.848419189453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.90399999999999,
+          "end": 19.94399999999999,
+          "score": 0.498
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 92,
+      "outputTokens": 723,
+      "costUsd": 0.006553,
+      "pronunciationText": "Last video ended here. This snapper is forty-five centimetres, five above the average snapper off this jetty. This golden perch is forty centimetres, four above the average perch in its river. Five looks bigger than four. But snapper here vary by about four centimetres, and these perch by only about two and a half, so the raw gaps can't be compared. We need a common ruler. Then we'll find the area beyond each catch."
+    },
+    {
+      "id": "scene-02",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-02.wav",
+      "durationInFrames": 1304,
+      "worstWordGap": {
+        "seconds": 1.0220000000001477,
+        "after": "sigmas.",
+        "before": "That"
+      },
+      "cues": [
+        {
+          "text": "sigmas",
+          "start": 9.142999999999992,
+          "end": 9.434428571428565
+        },
+        {
+          "text": "sigmas",
+          "start": 17.69599999999999,
+          "end": 18.00542857142856
+        },
+        {
+          "text": "deviation",
+          "start": 26.196000000000065,
+          "end": 26.738700000000065
+        },
+        {
+          "text": "above",
+          "start": 30.49000000000008,
+          "end": 30.791000000000082
+        },
+        {
+          "text": "five",
+          "start": 42.77799999999987,
+          "end": 43.00279999999987
+        }
+      ],
+      "seconds": 43.44,
+      "peakFraction": 0.8878173828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "or",
+          "start": 21.29100000000014,
+          "end": 21.392000000000138,
+          "score": 0.42
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 136,
+      "outputTokens": 1086,
+      "costUsd": 0.009842,
+      "pronunciationText": "The ruler is the standard deviation. For the snapper, sigma is four, so five centimetres is five over four, one point two five sigmas. For the perch, sigma is two point five, so four centimetres is four over two point five, one point six sigmas. That count is the zed score, or standardised score. Subtract the mean from the value, then divide by the standard deviation. It tells you how many standard deviations the value lies above or below the mean. A negative zed means below, positive means above. Both catches are above, and the perch is further out, because one point six sigmas is more than one point two five."
+    },
+    {
+      "id": "scene-03",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-03.wav",
+      "durationInFrames": 1220,
+      "worstWordGap": {
+        "seconds": 1.0620000000001149,
+        "after": "one.",
+        "before": "Any"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 6.28099999999999,
+          "end": 6.56979999999999
+        },
+        {
+          "text": "one",
+          "start": 11.194999999999993,
+          "end": 11.285749999999993
+        },
+        {
+          "text": "one",
+          "start": 20.58499999999999,
+          "end": 20.68999999999999
+        },
+        {
+          "text": "change",
+          "start": 34.715000000000074,
+          "end": 35.00642857142865
+        },
+        {
+          "text": "five",
+          "start": 36.9271999999999,
+          "end": 37.1439999999999
+        }
+      ],
+      "seconds": 40.64,
+      "peakFraction": 0.868072509765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.702,
+          "end": 0.743,
+          "score": 0.435
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 133,
+      "outputTokens": 1016,
+      "costUsd": 0.0092105,
+      "pronunciationText": "Here's what a zed score does to the whole curve. Subtracting the mean slides the bell so its centre sits at zero. Dividing by sigma squeezes it until its standard deviation is one. Do that to both bells, and they land on the same curve. It's the standard normal distribution, with mean zero and standard deviation one, written capital Z is N of zero, one. Any other normal, with mean mu and standard deviation sigma, is a non-standard normal. The value marks move with the curve, so the areas don't change. The area beyond forty-five centimetres is the area beyond one point two five."
+    },
+    {
+      "id": "scene-04",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-04.wav",
+      "durationInFrames": 1104,
+      "worstWordGap": {
+        "seconds": 1.0449999999999982,
+        "after": "ten.",
+        "before": "Alex"
+      },
+      "cues": [
+        {
+          "text": "ten",
+          "start": 15.165999999999988,
+          "end": 15.345999999999988
+        },
+        {
+          "text": "one",
+          "start": 21.46900000000006,
+          "end": 21.54475000000006
+        },
+        {
+          "text": "three",
+          "start": 25.00900000000006,
+          "end": 25.22650000000006
+        },
+        {
+          "text": "deviations",
+          "start": 32.32600000000009,
+          "end": 32.89054545454555
+        }
+      ],
+      "seconds": 36.8,
+      "peakFraction": 0.873565673828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "But",
+          "start": 18.19100000000006,
+          "end": 18.33100000000006,
+          "score": 0.477
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 117,
+      "outputTokens": 920,
+      "costUsd": 0.008338499999999999,
+      "pronunciationText": "Zed scores also compare results from different groups. Alex scored seventy-two in Maths, where the mean was sixty and the standard deviation twelve. Blake scored sixty-eight in English, with mean fifty-five and standard deviation ten. Alex has the higher mark. But Alex's zed score is twelve over twelve, which is one. Blake's is thirteen over ten, one point three. So Blake did better relative to the cohort, because Blake's mark is further above its mean, measured in standard deviations. To justify a comparison, quote both zed scores."
+    },
+    {
+      "id": "scene-05",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-05.wav",
+      "durationInFrames": 1641,
+      "worstWordGap": {
+        "seconds": 0.8220000000000027,
+        "after": "eight.",
+        "before": "Under"
+      },
+      "cues": [
+        {
+          "text": "zeds",
+          "start": 13.63399999999999,
+          "end": 13.85799999999999
+        },
+        {
+          "text": "five",
+          "start": 15.618999999999987,
+          "end": 15.923799999999988
+        },
+        {
+          "text": "four",
+          "start": 24.21300000000008,
+          "end": 24.43400000000008
+        },
+        {
+          "text": "six",
+          "start": 32.72000000000007,
+          "end": 32.91500000000007
+        },
+        {
+          "text": "eight",
+          "start": 41.17399999999989,
+          "end": 41.32399999999989
+        },
+        {
+          "text": "catch",
+          "start": 53.95799999999992,
+          "end": 54.208833333333246
+        }
+      ],
+      "seconds": 54.68,
+      "peakFraction": 0.843292236328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "so",
+          "start": 5.654000000000001,
+          "end": 5.695,
+          "score": 0
+        },
+        {
+          "word": "to",
+          "start": 19.209999999999987,
+          "end": 19.28999999999999,
+          "score": 0.499
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 178,
+      "outputTokens": 1367,
+      "costUsd": 0.012392,
+      "pronunciationText": "Now the areas. Every normal curve becomes the same standard normal, so one table works for all of them. This table gives the probability that Z is less than zed, the area to the left, for positive zeds. For one point two five, go down to the row for one point two, then across to the column for zero point zero five. The entry is zero point eight nine four four. That's the area to the left, so the area beyond the snapper is one minus that, zero point one zero five six. At one point six, the table gives zero point nine four five two, so beyond the perch is zero point zero five four eight. Under these normal models, about one snapper in ten is at least that long, but only about one perch in eighteen. Further out means a smaller tail, so the perch is the more unusual catch."
+    },
+    {
+      "id": "scene-06",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-06.wav",
+      "durationInFrames": 1074,
+      "worstWordGap": {
+        "seconds": 0.8429999999999849,
+        "after": "that.",
+        "before": "A"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 7.1029999999999855,
+          "end": 7.363999999999985
+        },
+        {
+          "text": "six",
+          "start": 25.65800000000001,
+          "end": 25.868750000000006
+        },
+        {
+          "text": "ninety",
+          "start": 29.62600000000001,
+          "end": 29.883142857142865
+        }
+      ],
+      "seconds": 35.8,
+      "peakFraction": 0.84393310546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 120,
+      "outputTokens": 895,
+      "costUsd": 0.008114999999999999,
+      "pronunciationText": "This table has no negative zeds, and symmetry fixes that. A drink-bottle filling machine aims for five hundred millilitres, with sigma eight. A bottle with four ninety is ten below, so zed is minus one point two five. The area below minus one point two five matches the area above plus one point two five, the snapper's tail. So it's zero point one zero five six, and about ten point six percent of bottles fall below four ninety. Any negative zed works the same way: flip to the other side, then take one minus the table."
+    },
+    {
+      "id": "scene-07",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-07.wav",
+      "durationInFrames": 796,
+      "worstWordGap": {
+        "seconds": 0.7409999999999997,
+        "after": "five.",
+        "before": "Zed"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 8.82399999999999,
+          "end": 9.184999999999988
+        },
+        {
+          "text": "tails",
+          "start": 21.09400000000007,
+          "end": 21.328166666666736
+        }
+      ],
+      "seconds": 26.52,
+      "peakFraction": 0.850494384765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "or",
+          "start": 11.74999999999999,
+          "end": 11.82999999999999,
+          "score": 0.264
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 96,
+      "outputTokens": 663,
+      "costUsd": 0.006015,
+      "pronunciationText": "For a middle, use symmetry again. Bolts are normal, with mean fifty millimetres and standard deviation zero point three, and pass between forty-nine point five and fifty point five. Zed is plus or minus one point six seven, so each tail is one minus zero point nine five two five, which is zero point zero four seven five. The middle is one minus both tails, about zero point nine zero five. So about ninety point five percent of bolts pass."
+    },
+    {
+      "id": "scene-08",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-08.wav",
+      "durationInFrames": 897,
+      "worstWordGap": {
+        "seconds": 0.7829999999999959,
+        "after": "five.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 11.113999999999988,
+          "end": 11.322799999999988
+        },
+        {
+          "text": "six",
+          "start": 20.463999999999984,
+          "end": 20.658999999999985
+        },
+        {
+          "text": "low",
+          "start": 26.256000000000064,
+          "end": 26.37675000000006
+        },
+        {
+          "text": "machine",
+          "start": 29.195000000000068,
+          "end": 29.45925000000007
+        }
+      ],
+      "seconds": 29.88,
+      "peakFraction": 0.849456787109375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "low.",
+          "start": 26.256000000000064,
+          "end": 26.417000000000062,
+          "score": 0.485
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 102,
+      "outputTokens": 747,
+      "costUsd": 0.006774,
+      "pronunciationText": "Zed scores also support judgements. A quality check finds a bottle holding four seventy-four millilitres. Its zed score is minus twenty-six over eight, which is minus three point two five. The table gives zero point nine nine nine four at three point two five, so the tail below is about zero point zero zero zero six. If the machine is still working as modelled, only about six bottles in ten thousand would be that low. So finding one is a good reason to check the machine."
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-09.wav",
+      "durationInFrames": 418,
+      "worstWordGap": {
+        "seconds": 0.9250000000000007,
+        "after": "table.",
+        "before": "This"
+      },
+      "cues": [
+        {
+          "text": "side",
+          "start": 11.198999999999991,
+          "end": 11.422999999999991
+        }
+      ],
+      "seconds": 11.92,
+      "peakFraction": 0.845977783203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.099999999999993,
+          "end": 5.119999999999994,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 40,
+      "outputTokens": 298,
+      "costUsd": 0.002702,
+      "pronunciationText": "Here's a way to remember the table. This table looks left. For a right tail, take one minus. For a negative zed, use the mirror tail on the other side."
+    },
+    {
+      "id": "scene-10",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-10.wav",
+      "durationInFrames": 443,
+      "worstWordGap": {
+        "seconds": 0.7849999999999886,
+        "after": "results.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 4.76,
+      "peakFraction": 1,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 14,
+      "outputTokens": 119,
+      "costUsd": 0.001078,
+      "pronunciationText": "Your turn. Compare the two results. Pause here to answer."
+    },
+    {
+      "id": "scene-11",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-11.wav",
+      "durationInFrames": 814,
+      "worstWordGap": {
+        "seconds": 1.5039999999999978,
+        "after": "one.",
+        "before": "One"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 5.962,
+          "end": 6.1708
+        },
+        {
+          "text": "one",
+          "start": 8.92369999999999,
+          "end": 9.109999999999989
+        },
+        {
+          "text": "cohort",
+          "start": 17.778999999999986,
+          "end": 18.174999999999986
+        },
+        {
+          "text": "spreads",
+          "start": 25.335000000000036,
+          "end": 25.651750000000035
+        }
+      ],
+      "seconds": 26.12,
+      "peakFraction": 0.866180419921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "is",
+          "start": 11.355999999999987,
+          "end": 11.395999999999988,
+          "score": 0
+        },
+        {
+          "word": "one",
+          "start": 11.475999999999988,
+          "end": 11.535999999999987,
+          "score": 0
+        },
+        {
+          "word": "point",
+          "start": 11.555999999999989,
+          "end": 11.655999999999988,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 88,
+      "outputTokens": 653,
+      "costUsd": 0.005921,
+      "pronunciationText": "In English, zed is seventy-four minus sixty-two, over eight, which is one point five. In Maths, zed is eighty-one minus seventy, over ten, which is one point one. One point five is bigger, so Priya did better in English, relative to the cohort. Choosing Maths because eighty-one is the higher mark is wrong. The two marks come from groups with different means and spreads."
+    },
+    {
+      "id": "scene-12",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-12.wav",
+      "durationInFrames": 442,
+      "worstWordGap": {
+        "seconds": 0.6670000000000004,
+        "after": "one.",
+        "before": "Use"
+      },
+      "cues": [],
+      "seconds": 4.72,
+      "peakFraction": 0.856536865234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 17,
+      "outputTokens": 118,
+      "costUsd": 0.0010705,
+      "pronunciationText": "Last one. Use the table values on the card. Pause here to answer."
+    },
+    {
+      "id": "scene-13",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-13.wav",
+      "durationInFrames": 722,
+      "worstWordGap": {
+        "seconds": 1.0850000000001359,
+        "after": "eight.",
+        "before": "A"
+      },
+      "cues": [
+        {
+          "text": "three",
+          "start": 2.469,
+          "end": 2.6531666666666665
+        },
+        {
+          "text": "five",
+          "start": 5.036999999999991,
+          "end": 5.357999999999991
+        },
+        {
+          "text": "eight",
+          "start": 17.20299999999999,
+          "end": 17.319666666666656
+        },
+        {
+          "text": "sigma",
+          "start": 22.377000000000027,
+          "end": 22.661166666666695
+        }
+      ],
+      "seconds": 23.04,
+      "peakFraction": 0.871368408203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 81,
+      "outputTokens": 576,
+      "costUsd": 0.0052245,
+      "pronunciationText": "The variance is nine, so sigma is three. Zed is forty-six point five minus forty-two, over three, which is one point five. The table gives zero point nine three three two to the left, so the right tail is one minus that, zero point zero six six eight. A zed of zero point five is wrong. That divides by the variance, not by sigma."
+    },
+    {
+      "id": "scene-14",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-14.wav",
+      "durationInFrames": 634,
+      "worstWordGap": {
+        "seconds": 0.9029999999999916,
+        "after": "look-up.",
+        "before": "Next,"
+      },
+      "cues": [
+        {
+          "text": "mean",
+          "start": 18.393000000000068,
+          "end": 18.667400000000068
+        }
+      ],
+      "seconds": 19.12,
+      "peakFraction": 0.884185791015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.541,
+          "end": 0.561,
+          "score": 0
+        },
+        {
+          "word": "it",
+          "start": 17.726000000000067,
+          "end": 17.807000000000066,
+          "score": 0.324
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 57,
+      "outputTokens": 478,
+      "costUsd": 0.0043305,
+      "pronunciationText": "So a zed score counts standard deviations, compares results, and turns any normal area into a table look-up. Next, the question runs backwards. The company wants only one percent of bottles below four ninety, and sigma stays at eight. Where must it set the mean?"
+    },
+    {
+      "id": "scene-15",
+      "changed": true,
+      "audio": "public/audio/math-a12-s11/scene-15.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.5220000000000002,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 4.32,
+      "peakFraction": 0.880706787109375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 0,
+      "possibleRetry": false,
+      "inputTokens": 19,
+      "outputTokens": 108,
+      "costUsd": 0.0009815,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them."
+    }
+  ],
+  "machineChecks": "Text hashes, alignment, request attempts, audio peaks and quiet blocks. Forced alignment and signal checks do not establish complete word recognition or human listening.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-s11/measured/lesson.json",
+  "canonicalMeasuredSha256": "163c0036e712530baa85662af50c6b33b72295463e60cb3fb67070e6739b3753",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-s11/measured/lesson.json",
+    "lessonSha256": "163c0036e712530baa85662af50c6b33b72295463e60cb3fb67070e6739b3753",
+    "srtSha256": "8be4506ef8ea2ad98356e4db310e709e3974713ed9c308b0536b9089ef24d0d5",
+    "vttSha256": "93b40ce8577107871fdb6b6ac22e0db6d8d31c78366202e22f81ebdbbe8264e7",
+    "cueCount": 168,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 13727,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 868
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 868,
+          "endFrame": 2172
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 2172,
+          "endFrame": 3392
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 3392,
+          "endFrame": 4496
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 4496,
+          "endFrame": 6137
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 6137,
+          "endFrame": 7211
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 7211,
+          "endFrame": 8007
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 8007,
+          "endFrame": 8904
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 8904,
+          "endFrame": 9322
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 9322,
+          "endFrame": 9765
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 9765,
+          "endFrame": 10579
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 10579,
+          "endFrame": 11021
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 11021,
+          "endFrame": 11743
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 11743,
+          "endFrame": 12377
+        },
+        {
+          "id": "scene-15",
+          "startFrame": 12377,
+          "endFrame": 13727
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [],
+  "provenance": "docs/production/claude-pm/assets/brief240-manifest.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-s11-redesign-learning-review.md",
+      "result": "0 source blockers for current reviewed source; historical findings retained"
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-s11-redesign-maths-check.md",
+      "result": "0 source blockers for current reviewed source; historical findings retained"
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false
+}

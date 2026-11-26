@@ -1,0 +1,142 @@
+{
+  "brief": 238,
+  "design": "i09",
+  "assets": [
+    {
+      "name": "ma12-frost-thermometer-v1.png",
+      "path": "public\\assets\\maths\\ma12-frost-thermometer-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-ededa9de-e3ae-4d8b-a59d-65217b164fcc.png",
+      "generatorNativeSize": [
+        819,
+        1920
+      ],
+      "nativeSize": [
+        1000,
+        2400
+      ],
+      "sha256": "698614605bd02577fda5aa3fed1918bffdb1650ee88423eeef652899582cc818",
+      "alphaBox": [
+        155,
+        259,
+        843,
+        2130
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "backingBox": [
+          418,
+          430,
+          578,
+          1670
+        ],
+        "bulbCentre": [
+          498,
+          1577
+        ],
+        "bulbInnerRadius": 22,
+        "tubeCentreTop": [
+          498.5,
+          505
+        ],
+        "tubeCentreBottom": [
+          498.5,
+          1560
+        ],
+        "majorTickYs": [
+          532,
+          629,
+          726,
+          823,
+          920,
+          1017,
+          1114,
+          1211,
+          1308,
+          1405,
+          1502
+        ],
+        "majorSpacingPx": 97,
+        "minorTickYs": [
+          551,
+          571,
+          590,
+          610,
+          648,
+          668,
+          687,
+          707,
+          745,
+          765,
+          784,
+          804,
+          842,
+          862,
+          881,
+          901,
+          939,
+          959,
+          978,
+          998,
+          1036,
+          1056,
+          1075,
+          1095,
+          1133,
+          1153,
+          1172,
+          1192,
+          1230,
+          1250,
+          1269,
+          1289,
+          1327,
+          1347,
+          1366,
+          1386,
+          1424,
+          1444,
+          1463,
+          1483
+        ],
+        "minorTicksPerInterval": 4,
+        "codedTemperatureMapping": "y=1017-97*T;top+5,bottom-5",
+        "testColumnTops": {
+          "minus2": 1211,
+          "plus1": 920
+        }
+      },
+      "operations": [
+        "Removedalpha<8noise;nativepadding(90,240)to1000x2400",
+        "Narrowedenamelbackingto160pxbyreplacingouterwhitebandswithgeneratedtimbertexture;preservedfrost/post/tube/bulbart",
+        "Replacedgeneratedtickswith11majorsat97pxspacingand4minorsperintervalusingauthorisedlocalpixelmarks",
+        "Clearedconnectedtubebulbinteriorforcodedredcolumn;deliveredimagehasnoredfill/numbers"
+      ],
+      "wholePlateResized": false,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "qa": "work\\brief238\\i09-thermometer-qa.jpg",
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Asset ma12-frost-thermometer-v1.png,final1000x2400pxportrait5:12. One long outdoor garden thermometer fixed upright to a weathered timber fence post on a frosty morning,straight-on centred. White enamel backingboardabout160pxwide centredx500,plain evenly spaced tick marks ONLY,elevenmajor ticks with fourminorticksbetween each pair. NO NUMBERS,NO letters,NO degree signs. Clear long thin glass tube androundbulbatbottom,painted EMPTY/CLEAR,NO red liquid. White frost crystals on posttop and boardupperedge,a few frostedgrass tufts atbase,smallirregulartransparentgroundedge. Fineink and restrained watercolour. Wholepost/thermometer/ground visible with at least8%clearoutermargins. No sky,fencerails,buildings,people,hands,animals,text,logos,labels,glow or groundshadow. Exacttubeandtickpositions will be finishedlocally;keepthe whiteboardflat,face-on andunobscured. Tickrangeupfromnearboardbottom tonearboardtop,no printedscale.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Inspected paper at 300/520px tall, coded minus2/plus1 test columns and black/white edges. Eleven major marks at exactly97px spacing and four minor marks per gap; blank scale and empty tube in delivered plate. Frost and post remain readable;8% margins pass. Test columns are QA only.",
+    "qaFiles": [
+      "work/brief238/i09-thermometer-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,1 should fix (REVERSE-SUM remains a build instruction finding)",
+    "findings": []
+  },
+  "sourceDesignSha256": "4d373842a16222036b9b7789efb83e8fb33fe5c0babb4a25b02285f156762d7d"
+}

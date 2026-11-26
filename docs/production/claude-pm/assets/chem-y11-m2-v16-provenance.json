@@ -1,0 +1,79 @@
+{
+  "design": "chem-y11-m2-v16",
+  "sourceSHA256": "c9bb503a9d9f1789e20036d980f678ed975464d003a9fb6ace260ae71c629297",
+  "newRequests": [],
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "biology/y11-balloon-large-v1.png",
+      "paths": [
+        "public/assets/biology/y11-balloon-large-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "biology/y11-gas-syringe-rig-v1.png",
+      "paths": [
+        "public/assets/biology/y11-gas-syringe-rig-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "c4a-cylinder-body-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-cylinder-body-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "c4a-cylinder-piston-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-cylinder-piston-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "c4a-syringe-plunger-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-plunger-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "public/assets/chemistry/c4a-syringe-barrel-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-barrel-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "public/assets/chemistry/y11c-gas-jar-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-gas-jar-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v16",
+      "reference": "y11c-gas-jar-v2.png",
+      "paths": [
+        "public/assets/chemistry/y11c-gas-jar-v2.png"
+      ],
+      "exists": true
+    }
+  ],
+  "generationTool": null,
+  "status": "source reviews handed in; painting not yet done",
+  "brief242Recheck": {
+    "date": "2026-11-16",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m2-v16-native-qa-16-nov.json",
+    "reviewedSourceSha256": "af31eb8bfe4ce79d6ab5d1a0ba0dfc87b4764b73deb0963393a327ceb3cc6d01",
+    "result": "Two new native syringe-part records. Horizontal translation at three positions and a coded nozzle cap fit without stretching or clipping; arbitrary travel remains a build check. Existing jar, burner and thermometer hashes confirmed and their Revision 3 uses added to the inventory. Both question pictures pass static answer-data QA. All 15 narration strings remain unchanged (5,573 characters). No whole-lesson clearance."
+  }
+}

@@ -1,0 +1,11 @@
+# Brief237 v22: Revision2 source repair error check
+
+11 November2026. Source SHA256 `8bf206e59f9c2a1dadeb323b9963c832f74392d8dc2cd385f5c02eb6fa2d2a08`.
+
+**0 blockers; 0 new factual should-fix in the repaired portions.**
+
+The halite hardness repair is present: salt is softer and brittle, with MgO used for the hard example. The practical narration and tags now use teacher demonstration or approved video; molten salt is explicitly footage, not a school practical. This resolves the earlier approval claim without purporting to approve a specific school method. Public NSW guidance remains the applicable source for risk assessment: https://education.nsw.gov.au/teaching-and-learning/curriculum/science/science-safety-and-compliance . The eight-site layer shifted one pitch leaves seven overlapping pairs, agreeing with 0 to 7 in the stylised cross-section. The 2852/801 ratio is 3.5605; conversion to kelvin gives 2.9094, so the rejected Celsius strength ratio remains correctly rejected. Root decision25 retains the site's MgO2852 value. Earlier independent evidence and its stated limitations for the unchanged melting values are retained; no new CRC read is claimed.
+
+Mechanical checks: 5,983 characters summed from 19 scene strings; no em dash. Every bold narration phrase is quoted in its corresponding visual. Unchanged cue-order and source checks reuse brief179; new readouts were independently recomputed in `work/brief237/independent-new-readouts.json`. The estimated duration is below570s; measured duration is unavailable until recording. No people/hands/faces are requested by the new assets. The source handoff objects and tags follow the preceding/following designs, including v21 between v20/v22 and v27 into m2-v01; this is a written contract check, not a pixel-matched built-frame check.
+
+The two attempt cards retain questions and conditions before feedback; countdowns remain3s prediction and10s attempts, with45s notes. Learning/science repairs were checked against the previous reports and root decisions37/38. No design, narration or scene edits. All voiced timing, exact built cue occurrence, full motion and human listening remain later checks, not claimed here. No speech requested.

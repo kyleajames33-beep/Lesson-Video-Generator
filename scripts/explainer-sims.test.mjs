@@ -1091,3 +1091,65 @@ test('chain: the early generations are followed event by event, each with its pa
 	const none = chainKit.runChain({seed: 1, generations: 5, start: 5, chance: 0});
 	assert.deepEqual(none.events, [5, 0, 0, 0, 0], 'no chance, no chain');
 });
+
+// ---------------------------------------------------------------- projectile kit (src/explainer/physics/projectile/flight.ts)
+const flight = await load('src/explainer/physics/projectile/flight.ts');
+test('projectile kit: horizontal launch from 1.2 m lands after 0.4949 s, 0.99 m out at 2.0 m/s', () => {
+	const T = flight.fallT(1.2);
+	assert.ok(Math.abs(T - 0.494872) < 1e-6);
+	assert.ok(Math.abs(flight.landT(2, 0, 1.2) - T) < 1e-12);
+	assert.ok(Math.abs(2 * T - 0.989743) < 1e-6);
+	assert.ok(Math.abs(flight.fallT(1.25) - 0.505076) < 1e-6);
+	// strobe drops 0.049, 0.196, 0.441, 0.784 m and v_y = -0.98 per 0.1 s
+	const drops = flight.strobeTimes(0.1, T).map(t => flight.dropBelowLine(t));
+	assert.deepEqual(drops.map(d => +d.toFixed(3)), [0.049, 0.196, 0.441, 0.784]);
+	assert.ok(Math.abs(flight.vel(2, 0, 0.4)[1] + 3.92) < 1e-9);
+	assert.equal(flight.vel(2, 0, 0.4)[0], 2);
+});
+test('projectile kit: the field-motion run agrees with the formulas at launch, mid-flight and landing', () => {
+	for (const l of [{u: 2, deg: 0, drop: 1.2}, {u: 20, deg: 30, drop: 0}, {u: 15, deg: 40, drop: 12}]) {
+		const run = flight.runFlight(l);
+		const T = flight.landT(l.u, l.deg, l.drop);
+		assert.ok(Math.abs(run.duration - T) < 1e-9);
+		for (const t of [0, T / 3, T / 2, T]) {
+			const s = flight.flightAt(run, t), [x, y] = flight.pos(l.u, l.deg, t), [vx, vy] = flight.vel(l.u, l.deg, t);
+			assert.ok(Math.abs(s.x - x) < 1e-6 && Math.abs(s.y - y) < 1e-6, `position at ${t}`);
+			assert.ok(Math.abs(s.vx - vx) < 1e-6 && Math.abs(s.vy - vy) < 1e-6, `velocity at ${t}`);
+		}
+		assert.ok(Math.abs(flight.flightAt(run, T).y + l.drop) < 1e-6);
+	}
+	// level ground: T = 2u sin θ / g, R = u² sin 2θ / g, H = u² sin² θ / 2g, peak at u sin θ / g
+	assert.ok(Math.abs(flight.flightT(20, 30) - 2.040816) < 1e-6);
+	assert.ok(Math.abs(flight.range(20, 30) - 35.347) < 1e-3);
+	assert.ok(Math.abs(flight.maxH(20, 30) - 5.102) < 1e-3);
+	assert.ok(Math.abs(flight.pos(20, 30, flight.peakT(20, 30))[1] - flight.maxH(20, 30)) < 1e-9);
+});
+test('projectile kit: clocks hold before launch and after landing; formats use a true minus and no -0', () => {
+	assert.equal(flight.clockAt(10, 20, 0.5), 0);
+	assert.equal(flight.clockAt(20 + 30 * 8, 20, 0.5, 8), 0.5);
+	assert.ok(Math.abs(flight.clockAt(20 + 12, 20, 0.5, 8) - 0.05) < 1e-12);
+	assert.equal(flight.fx(-0.0001, 2), '0.00');
+	assert.equal(flight.fx(-3.92, 2), '−3.92');
+	assert.equal(flight.sf(0.98974, 2), '0.99');
+	assert.equal(flight.sf(1.979, 2), '2.0');
+});
+// ---------------------------------------------------------------- projectile kit: landing below the launch level (height.ts)
+const height = await load('src/explainer/physics/projectile/height.ts');
+test('projectile kit: 20 m/s from a 30 m cliff lands at 3.70 s, 64.0 m (30°), 4.31 s, 60.9 m (45°), 4.81 s, 48.1 m (60°)', () => {
+	const near = (a, b, e, m) => assert.ok(Math.abs(a - b) < e, `${m}: ${a} vs ${b}`);
+	const [tp, tm] = height.landRoots(20, 30, 30);
+	near(tp, 3.696914, 1e-6, '30° positive root'); near(tm, -1.656097, 1e-6, '30° negative root');
+	near(height.landDisc(20, 30, 30), 688, 1e-9, 'discriminant'); near(height.landDisc(20, 45, 30), 788, 1e-9, '45°'); near(height.landDisc(20, 60, 30), 888, 1e-9, '60°');
+	near(height.rangeFrom(20, 30, 30), 64.032423, 1e-5, '30° range');
+	near(height.landRoots(20, 45, 30)[0], 4.307497, 1e-6, '45° time'); near(height.rangeFrom(20, 45, 30), 60.917211, 1e-5, '45° range');
+	near(height.landRoots(20, 60, 30)[0], 4.808147, 1e-6, '60° time'); near(height.rangeFrom(20, 60, 30), 48.081466, 1e-5, '60° range');
+	// time below the launch level equals the size of the negative root; level ground gives the level-ground range
+	for (const [d, e] of [[30, 1.656097], [45, 1.421347], [60, 1.273349]]) { near(height.belowT(20, d, 30), e, 1e-6, `${d}° below`); near(-height.landRoots(20, d, 30)[1], e, 1e-6, `${d}° root`); }
+	near(height.rangeFrom(20, 30, 0), flight.range(20, 30), 1e-9, 'level ground');
+	const best = height.bestAngle(20, 30);
+	near(best.deg, 32.47, 0.006, 'best angle'); near(best.R, 64.147892, 1e-4, 'best range');
+	// the attempt cases: 10.0 m/s at 30° from 5.0 m; horizontal 6.0 m/s from 5.0 m
+	const [a, b] = height.landRoots(10, 30, 5);
+	near(a, 1.641891, 1e-6, 'A2 root'); near(b, -0.621483, 1e-6, 'A2 negative root');
+	near(height.landRoots(6, 0, 5)[0], 1.010153, 1e-6, 'A1 time'); near(height.rangeFrom(6, 0, 5), 6.060915, 1e-6, 'A1 distance');
+});

@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m4-v01.md",
+  "sourceSha256": "f5ba9e812490210dff22f4f916b711552e257f9bce08ebf6665ea8844b19483c",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "The flask warmed by eleven and a half degrees, and nothing was heating it. The energy came from the reaction itself. But some changes do the opposite. Here's ammonium chloride, about to be stirred into water in a foam cup. So, quick prediction. Will the water's temperature go up, stay the same, or go down?",
+      "audioFile": "public/audio/chem-y11-m4-v01/hook-prediction.wav"
+    },
+    {
+      "id": "measuring-changes",
+      "text": "Down, from twenty-one degrees to about fifteen. Record the starting temperature, start the change, then record the highest or lowest temperature reached. Burning ethanol under a can of water warms the water, from nineteen point five to thirty-one point two degrees. Dissolving ammonium chloride cools it. So which way is the energy flowing?",
+      "audioFile": "public/audio/chem-y11-m4-v01/measuring-changes.wav"
+    },
+    {
+      "id": "system-surroundings",
+      "text": "To answer that, split the world in two. The system is the chemicals that are changing. In the cup, that's the ammonium chloride breaking up into ions. The surroundings are everything else, the water, the cup, the thermometer, and the air. And notice where the thermometer is. It sits in the surroundings, so it tells us what's happening to the surroundings, not directly to the system.",
+      "audioFile": "public/audio/chem-y11-m4-v01/system-surroundings.wav"
+    },
+    {
+      "id": "exo-endo",
+      "text": "When the surroundings warm up, energy has flowed out of the system and into them. That's called exothermic. When the surroundings cool down, energy has flowed from the surroundings into the system. That's endothermic, like dissolving ammonium chloride. So it's the surroundings that get hot or cold. The water got colder because the system took energy from it.",
+      "audioFile": "public/audio/chem-y11-m4-v01/exo-endo.wav"
+    },
+    {
+      "id": "enthalpy-change",
+      "text": "Chemists track the system's energy with a quantity called enthalpy, H. Think of it as the chemical energy stored in the substances, in their bonds and in how their particles are arranged. We can't measure H itself, but we can measure how it changes. Delta H equals the enthalpy of the products minus the enthalpy of the reactants. In an exothermic change, the system loses energy, so delta H is negative. In an endothermic change, it's positive.",
+      "audioFile": "public/audio/chem-y11-m4-v01/enthalpy-change.wav"
+    },
+    {
+      "id": "drawing-profile",
+      "text": "An energy profile shows this as a picture. The vertical axis is enthalpy. The horizontal axis is the progress of the reaction, from reactants to products, not time. Take methane burning in a Bunsen burner. The reactants, methane and oxygen, start at one level. The products, carbon dioxide and water, end eight hundred and ninety kilojoules per mole lower. That drop is delta H, minus eight hundred and ninety.",
+      "audioFile": "public/audio/chem-y11-m4-v01/drawing-profile.wav"
+    },
+    {
+      "id": "activation-hill",
+      "text": "But if burning methane releases so much energy, why doesn't the gas catch fire by itself? Remember activation energy from the rates videos. Before new bonds can form, collisions have to start breaking the old ones, so the energy has to rise first. On the profile, that's a hill. Its top is called the transition state, and the height from the reactants up to the top is the activation energy. A spark gives the first collisions enough energy. After that, the heat released keeps the reaction going.",
+      "audioFile": "public/audio/chem-y11-m4-v01/activation-hill.wav"
+    },
+    {
+      "id": "two-arrows",
+      "text": "Two arrows to get right. The activation energy arrow starts at the reactants' level, not at the bottom of the axis, and goes up to the peak. The delta H arrow starts at the reactants and ends at the products. Here it points down, so delta H is negative.",
+      "audioFile": "public/audio/chem-y11-m4-v01/two-arrows.wav"
+    },
+    {
+      "id": "endothermic-profile",
+      "text": "Now an endothermic change. Heating limestone, calcium carbonate, breaks it down into calcium oxide and carbon dioxide. Here the products end higher than the reactants, by about a hundred and seventy-eight kilojoules per mole, so delta H is positive and the arrow points up. The system has to take in that energy, which is why a lime kiln must be heated the whole time. The activation energy is still measured from the reactants to the peak.",
+      "audioFile": "public/audio/chem-y11-m4-v01/endothermic-profile.wav"
+    },
+    {
+      "id": "enthalpy-not-temperature",
+      "text": "Here's a trap. In the exothermic profile, the products sit lower. Does that mean they're colder? No. The flame is hot, and the water above it warms up. The vertical axis is enthalpy, the energy stored in the chemicals, not temperature. The products store less energy because the rest has flowed out as heat, and that's exactly what makes the surroundings hotter.",
+      "audioFile": "public/audio/chem-y11-m4-v01/enthalpy-not-temperature.wav"
+    },
+    {
+      "id": "thermometer-to-profile",
+      "text": "So you can go from a thermometer to a profile. If the surroundings warm up, energy left the system, the products sit lower, and delta H is negative. If the surroundings cool down, energy went into the system, the products sit higher, and delta H is positive. So dissolving ammonium chloride gets a profile with the products higher.",
+      "audioFile": "public/audio/chem-y11-m4-v01/thermometer-to-profile.wav"
+    },
+    {
+      "id": "thermochemical-equation",
+      "text": "We can also write delta H next to the equation. That's called a thermochemical equation. Methane plus two oxygen gives carbon dioxide plus two water, with every state shown, and delta H equals minus eight hundred and ninety kilojoules per mole. Per mole here means for the equation as written, so one mole of methane burning. The states matter, because liquid water and steam store different amounts of energy.",
+      "audioFile": "public/audio/chem-y11-m4-v01/thermochemical-equation.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's a way to keep the words straight. Exothermic, energy exits. Endothermic, energy enters.",
+      "audioFile": "public/audio/chem-y11-m4-v01/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. In an instant cold pack, solid ammonium nitrate dissolves in water, and the pack's temperature falls from twenty-two degrees to four degrees. Classify the change as exothermic or endothermic, and justify your answer using the system and surroundings. Then state the sign of delta H, and where the products sit on an energy profile. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v01/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Endothermic. The temperature of the surroundings fell, so energy flowed from the surroundings, the water and the pack, into the system, the dissolving ammonium nitrate. So delta H is positive, and the products sit higher than the reactants. A temperature fall doesn't mean a negative delta H. Delta H describes the system.",
+      "audioFile": "public/audio/chem-y11-m4-v01/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Use the energy profile to determine the activation energy and the enthalpy change for this reaction, and state whether it's exothermic or endothermic. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m4-v01/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The activation energy is from the reactants at forty up to the peak at a hundred and sixty, so a hundred and twenty kilojoules per mole. Delta H is products minus reactants, minus fifty minus forty, which is minus ninety kilojoules per mole. Negative, so it's exothermic. A hundred and sixty is the peak's height from zero, not the activation energy.",
+      "audioFile": "public/audio/chem-y11-m4-v01/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So an energy profile shows an exothermic change with the products below the reactants and a negative delta H, and an endothermic change with the products above and a positive delta H, both with an activation energy hill. A thermometer in the surroundings tells you which one you've got. But how much energy flowed? The water in this can warmed by eleven point seven degrees. How can that temperature rise tell us how many joules flowed into it?",
+      "audioFile": "public/audio/chem-y11-m4-v01/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m4-v01/key-notes.wav"
+    }
+  ]
+}

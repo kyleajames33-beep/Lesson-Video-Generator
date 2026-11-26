@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-s09.md",
+  "sourceSha256": "ecb10557f156a4d68f4819ad6b80e0c5e20639e874a745ed7cee39ea53778055",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with these thousand simulated bags of chips. The machine aims for one hundred and seventy-five grams. Most bags land close to that, a few land further away, and the two sides look like mirror images. Watch a few more bags fill. Each one gets about ninety chips, and each chip is a little heavier or lighter than the last. Heights, measurement errors and many other natural measurements often make a similar bell shape. So why does it keep turning up? When can we use it as a model? And what does its shape tell us?",
+      "audioFile": "public/audio/math-a12-s09/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Here's one reason. A bag's mass isn't set by one thing. Lots of small effects push it a little up or a little down, like one more chip, a bigger chip, or a few crumbs. Watch dots fall through twelve rows of pegs. Each peg nudges a dot left or right, with equal chance. To land at the far left, a dot has to go left all twelve times, and only one path does that. To land one bin in from the edge, it needs just one right nudge, and that nudge can come at any of the twelve rows, so twelve paths do. To land in the middle, it needs six of each, in any order, and nine hundred and twenty-four paths do that. So the dots pile up in the middle and thin out towards the edges, the same on both sides. When many small, independent effects add up, the total often has a shape close to a bell.",
+      "audioFile": "public/audio/math-a12-s09/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "The smooth bell that fits this shape is called the normal distribution. It's a continuous probability distribution, and it's used to model many naturally occurring things, like adult heights in one population, measurement errors, and products from a machine. A bag can have any mass, not just a whole number of grams, so the model is a smooth curve, not bars. Just as in the histogram, the area over an interval is the probability. The fit is never perfect. It's a model, worth trying when the data bunch symmetrically around one peak, and then the tails have to match too.",
+      "audioFile": "public/audio/math-a12-s09/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "So what does the shape mean? The curve is symmetric about its mean, mu. Fold it at mu and the two halves match. So half the area is on each side, which makes mu the median too. The curve is highest at mu, so mu is also the mode. Mean, median and mode are the same value. Most of the area sits close to the mean, and the curve gets lower and lower further out. That's why most bags land within a few grams of one seventy-five. Its tails get closer and closer to the axis, but never touch it. So the curve goes on forever, in both directions.",
+      "audioFile": "public/audio/math-a12-s09/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "We write X is normal, with mean mu and variance sigma squared, like this. The first number is the mean. The second is the variance, not the standard deviation. The bags are N of one seventy-five, sixteen, so sigma is the square root of sixteen, which is four grams. Change mu, and the whole bell slides along the axis. Make sigma bigger, and the bell spreads out and gets lower, because the total area has to stay one. Make it one and a half times as wide, and its peak drops to two thirds of the height.",
+      "audioFile": "public/audio/math-a12-s09/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "So when is a normal model useful? Look for continuous data that bunch around one peak and thin out evenly in both directions. Then lay the bell over the data and check that the tails match too. These are clues, not a proof. Many small, independent effects adding up is a good sign. Household water use isn't like that. Most homes use a moderate amount, but a few use a lot, so the tail stretches far to the right. The bus wait from two videos ago is flat, not a bell. And a component's lifetime piles up near zero, then trails off. For those, a normal model would put the probability in the wrong places.",
+      "audioFile": "public/audio/math-a12-s09/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "In a normal model, probability is still area. A bag is underweight if it holds less than one hundred and seventy grams. That's the area to the left of one seventy, and it runs all the way out to minus infinity. A single value has zero probability, so less than one seventy and at most one seventy give the same area. The model even gives a tiny area to impossible bags, like negative masses. For these bags, that area is so small it doesn't matter, so the model is still useful. A bag over one hundred and eighty grams is the area to the right, out to plus infinity.",
+      "audioFile": "public/audio/math-a12-s09/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "One eighty is five grams above the mean, and one seventy is five below. So by symmetry, these two tails have the same area. And the bags between them are what's left over. That's one, minus both tails. The mean splits the curve too. Each half is exactly a half, so the bags from one seventy up to one seventy-five are a half, minus that left tail. You can find all three regions from one tail, using nothing but the shape of the curve.",
+      "audioFile": "public/audio/math-a12-s09/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's a way to remember the shape. Mirror, middle, forever. The halves mirror each other, the mean, median and mode share one middle, and the tails go on forever.",
+      "audioFile": "public/audio/math-a12-s09/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. State these four values. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s09/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "The first number is the mean, so mu is sixty-four. The curve is symmetric with one peak, so the median and the mode are sixty-four too. The second number, thirty-six, is the variance. So sigma is the square root of thirty-six, which is six millimetres. A standard deviation of thirty-six is wrong. Thirty-six is sigma squared.",
+      "audioFile": "public/audio/math-a12-s09/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. Use the shape of the curve. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s09/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Two fifty-eight is eight grams above the mean, and two forty-two is eight grams below. The curve is symmetric, so the right tail has the same area: zero point zero five four eight. The middle is one minus two lots of zero point zero five four eight, which is zero point eight nine zero four. One minus zero point zero five four eight is wrong. That removes only the left tail.",
+      "audioFile": "public/audio/math-a12-s09/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So check the peak, symmetry and tails against the normal model, and a normal shape tells us the mean, median and mode are the same. Next, a new question. Mark one sigma either side of the mean. How much of the area lies between those marks? And what about two sigma, or three?",
+      "audioFile": "public/audio/math-a12-s09/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-s09/scene-15.wav"
+    }
+  ]
+}

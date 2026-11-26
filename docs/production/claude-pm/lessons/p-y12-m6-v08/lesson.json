@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "eba32c8d734b580864f20200de0ad40d74bf8757d7035d840b8af5c9ab304a7a",
+  "sourceDesignSha256": "5574af944a3433193122891167ab5b75066cc4ae047368e718652a17a5c7d507",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Make your prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "one-wire-field",

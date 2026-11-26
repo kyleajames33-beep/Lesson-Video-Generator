@@ -1,0 +1,154 @@
+{
+  "design": "phys-y12-m6-v07",
+  "sourceSHA256": "955f51b9eb56066b2b9398d6addf882d836974fb78d22fa44c9977b36754499e",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-knife-switch-blade-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-blade-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-loudspeaker-cone-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-loudspeaker-cone-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-retort-stand-electromagnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-electromagnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-top-pan-balance-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-top-pan-balance-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-knife-switch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-loudspeaker-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-loudspeaker-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-rod-copper-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rod-copper-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "y12p-horseshoe-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-horseshoe-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "horseshoe-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-573e6ad5-ff28-435c-b87e-320b144abdd4.png",
+      "size": [
+        1341,
+        1173
+      ],
+      "alpha16Bounds": [
+        178,
+        302,
+        1152,
+        899
+      ],
+      "marginFraction": [
+        0.13273676360924683,
+        0.257459505541347,
+        0.14093959731543623,
+        0.23358908780903667
+      ],
+      "file": "public/assets/physics/y12p-horseshoe-magnet-v1.png",
+      "sha256": "45940ff4d4aa51c05180f3e968218682071389412668ebe9c495f958387cc34e",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "anchors": {
+        "gapRectangle": [
+          440,
+          519,
+          1144,
+          714
+        ],
+        "upperPoleFaceCentre": [
+          792,
+          497
+        ],
+        "lowerPoleFaceCentre": [
+          792,
+          745
+        ],
+        "rodCentreLineY": 614,
+        "rodNativeScaleFor15PercentEachEnd": 0.5678793256433009,
+        "rodLayerOrigin": [
+          241,
+          408
+        ],
+        "note": "Coordinates estimated from native view. Rod visible endpoints native x200and1971. Target face width704occupies70percent of rod length; remaining15percent extends beyond each face edge. Coded leads needed. Curved return lies behind front rod in the assembly."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief189-qa",
+      "status": "delivered for designer inspection; coded scene and motion pending",
+      "qualification": "Native imagegen dimensions retained. No stretching, upsampling or scripted creative modification. Nominal requested canvas sizes differ; meter layers have identical actual canvas."
+    }
+  ],
+  "heldCRT": null,
+  "reuseCheckEvidence": "work/brief189/reuse-checks.json",
+  "qa": "docs/production/claude-pm/assets/brief189-qa",
+  "status": "source findings, scene integration, exact voiced preview and listening remain open"
+}

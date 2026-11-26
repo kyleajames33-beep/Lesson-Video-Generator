@@ -1,0 +1,84 @@
+[
+  {
+    "file": "public/assets/chemistry/y11c-gas-pressure-sensor-v1.png",
+    "nativeSize": [
+      1671,
+      941
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      244,
+      320,
+      1671,
+      811
+    ],
+    "clearMarginFractionAbove1": [
+      0.14602034709754638,
+      0.34006376195536664,
+      0.0,
+      0.1381509032943677
+    ],
+    "evidence": [
+      "work/brief242/y11c-gas-pressure-sensor-v1-native-paper.jpg",
+      "work/brief242/y11c-gas-pressure-sensor-v1-native-dark.jpg"
+    ],
+    "id": "y11c-gas-pressure-sensor-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "11f58a66aed3868a89aaa34e910b07231158d0d9fe1692b01987e83581e8c66b",
+    "qa": {
+      "result": "static pass; intentional cable-edge join pending",
+      "observations": [
+        "Blank sensor without display or text. Luer tip and cable-end sidecar coordinates agree with visible joins. Cable intentionally exits the right edge; the built cable must continue it.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-gas-pressure-sensor-v1-native-paper.jpg",
+        "work/brief242/y11c-gas-pressure-sensor-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/physics/phys-y11-data-logger-v1.png",
+    "nativeSize": [
+      1400,
+      900
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      126,
+      101,
+      1274,
+      799
+    ],
+    "clearMarginFractionAbove1": [
+      0.09,
+      0.11222222222222222,
+      0.09,
+      0.11222222222222222
+    ],
+    "evidence": [
+      "work/brief242/phys-y11-data-logger-v1-native-paper.jpg",
+      "work/brief242/phys-y11-data-logger-v1-native-dark.jpg"
+    ],
+    "id": "phys-y11-data-logger-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "0c8628f4a581894dda9cc1b81db6bcfe98958b79d9e8b0b9d181454f52f99349",
+    "qa": {
+      "result": "static pass; coded readout must stay inside screen",
+      "observations": [
+        "Blank dark screen and two unlabelled sockets. Sidecar rectangle includes bezel; conservative inner readout rectangle [365,310,1020,485] stays on the visible screen.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/phys-y11-data-logger-v1-native-paper.jpg",
+        "work/brief242/phys-y11-data-logger-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

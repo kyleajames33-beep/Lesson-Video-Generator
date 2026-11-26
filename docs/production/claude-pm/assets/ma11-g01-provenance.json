@@ -1,0 +1,68 @@
+{
+  "brief": 249,
+  "lesson": "g01",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-6ecb0329-8cd4-4af6-87b7-8671b955bb24.png",
+      "sha256": "7abc00b54bc0da483e93a4d4c7f978eb540a824f4afc40fcc76446473abbe011",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        181,
+        2172,
+        540
+      ],
+      "marginFractions": [
+        0.0,
+        0.25,
+        0.0,
+        0.2541436464088398
+      ],
+      "evidence": [
+        "work/brief249/g01-track-native-paper.jpg",
+        "work/brief249/g01-track-native-dark.jpg",
+        "work/brief249/g01-track-native-white.jpg",
+        "work/brief249/g01-track-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-track-lanes-strip-v1.png",
+      "path": "public/assets/maths/ma11-track-lanes-strip-v1.png",
+      "brief": 249,
+      "lesson": "g01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        600
+      ],
+      "qa": {
+        "result": "Three lanes and one start line confirmed; paper1700/900/native and native dark alpha inspected. Narrow edge fade recorded.",
+        "evidence": [
+          "work/brief249/g01-track-native-black.jpg",
+          "work/brief249/g01-track-native-dark.jpg",
+          "work/brief249/g01-track-native-paper.jpg",
+          "work/brief249/g01-track-native-white.jpg",
+          "work/brief249/g01-track-qa-paper-dark-dark.jpg",
+          "work/brief249/g01-track-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-track-lanes-strip-v1.json"
+    }
+  ],
+  "result": "Three-lane running track delivered at native2172x724. Four white horizontal boundaries and start line atx177; lane centres246,360,475. Nominal64nativepx/m fits0to30m fromx177to2097. Native/1700/900px paper and dark alpha checks pass. Canvas differs from requested2400x600, and top/bottom fade is narrow; preserve native proportions.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/g01-track-candidate-measurements.json",
+    "work/brief249/g01-track-generation.json",
+    "work/brief249/g01-track-geometry.json",
+    "work/brief249/g01-track-qa.json"
+  ]
+}

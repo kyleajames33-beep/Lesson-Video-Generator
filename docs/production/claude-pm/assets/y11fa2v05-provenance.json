@@ -1,0 +1,307 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "47a1f3cde10b4f55d0698197d570deae78f55342e97e8072c684e8c8625fd5b8",
+  "newHealthyPlate": {
+    "file": "public/assets/biology/y11-potted-plant-healthy-v1.png",
+    "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2a1b31a5-256e-4efe-af9d-b8d3e6edee47.png",
+    "sha256": "b7dd960954585c18458138f2a1942ad53f3087afb0ee610f411b5b9e5e55624d",
+    "method": "Built-in imagegen, native PNG copied unchanged.",
+    "scope": "Static native paper/dark and 600 px painted-height inspection. Exact 1600 canvas and pixel registration were not met. No playback or voice clearance.",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "paintedBoundsAbove1": [
+      404,
+      273,
+      851,
+      1069
+    ],
+    "paintedMargins": [
+      0.32216905901116427,
+      0.21770334928229665,
+      0.32137161084529503,
+      0.14752791068580542
+    ],
+    "anchors": {
+      "coordinateSystem": "Native 1254 square pixels, manual guides within 10 px.",
+      "soilSurfaceLine": [
+        [
+          460,
+          740
+        ],
+        [
+          800,
+          740
+        ]
+      ],
+      "potRimBox": [
+        408,
+        675,
+        850,
+        745
+      ],
+      "rootZoneCentre": [
+        625,
+        895
+      ],
+      "stemBase": [
+        628,
+        740
+      ],
+      "stemTop": [
+        628,
+        370
+      ],
+      "leafTips": [
+        [
+          420,
+          300
+        ],
+        [
+          830,
+          296
+        ],
+        [
+          840,
+          472
+        ]
+      ]
+    },
+    "registration": {
+      "originalCanvas": [
+        1600,
+        1600
+      ],
+      "newCanvas": [
+        1254,
+        1254
+      ],
+      "originalToNewLinearScale": 0.78375,
+      "comparison": "Uniform original resample for QA only. Production PNGs unchanged.",
+      "changedVisibleRGBAWithinPotRectangle": 141030,
+      "potRectangle": [
+        400,
+        675,
+        860,
+        1075
+      ],
+      "anchors": {
+        "coordinateSystem": "Native 1254 square pixels, manual guides within 10 px.",
+        "soilSurfaceLine": [
+          [
+            460,
+            740
+          ],
+          [
+            800,
+            740
+          ]
+        ],
+        "potRimBox": [
+          408,
+          675,
+          850,
+          745
+        ],
+        "rootZoneCentre": [
+          625,
+          895
+        ],
+        "stemBase": [
+          628,
+          740
+        ],
+        "stemTop": [
+          628,
+          370
+        ],
+        "leafTips": [
+          [
+            420,
+            300
+          ],
+          [
+            830,
+            296
+          ],
+          [
+            840,
+            472
+          ]
+        ]
+      }
+    },
+    "promptSet": "work/brief242/healthy-plant-prompts-17-nov.json"
+  },
+  "diagnostic": {
+    "healthy": {
+      "originalCanvas": [
+        1600,
+        1600
+      ],
+      "newCanvas": [
+        1254,
+        1254
+      ],
+      "originalToNewLinearScale": 0.78375,
+      "comparison": "Uniform original resample for QA only. Production PNGs unchanged.",
+      "changedVisibleRGBAWithinPotRectangle": 141030,
+      "potRectangle": [
+        400,
+        675,
+        860,
+        1075
+      ],
+      "anchors": {
+        "coordinateSystem": "Native 1254 square pixels, manual guides within 10 px.",
+        "soilSurfaceLine": [
+          [
+            460,
+            740
+          ],
+          [
+            800,
+            740
+          ]
+        ],
+        "potRimBox": [
+          408,
+          675,
+          850,
+          745
+        ],
+        "rootZoneCentre": [
+          625,
+          895
+        ],
+        "stemBase": [
+          628,
+          740
+        ],
+        "stemTop": [
+          628,
+          370
+        ],
+        "leafTips": [
+          [
+            420,
+            300
+          ],
+          [
+            830,
+            296
+          ],
+          [
+            840,
+            472
+          ]
+        ]
+      }
+    },
+    "stomaPair": {
+      "canvas": [
+        2000,
+        2000
+      ],
+      "alphaIoU": 0.9928837687736691,
+      "changedVisibleRGBAOutsideGuardCellRectangle": 1120253,
+      "guardCellRectangle": [
+        600,
+        550,
+        1400,
+        1420
+      ],
+      "poreCentre": [
+        1005,
+        990
+      ],
+      "coordinatePrecision": "Manual centre within 20 px. Same native canvas; inspect composition as well as alpha."
+    },
+    "reusedShaChecks": [
+      {
+        "file": "public/assets/biology/y11-chlorosis-leaf-v1.png",
+        "sha256": "b8b27e58665e4fcb988758cbadd77c7bcf8daaea54fae4cc973b21888f281426",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/biology/y11-fertiliser-bag-v1.png",
+        "sha256": "03f0dc7cc9443a4842a75e370f9247bb66ede751bd8e837fa2f68ea238896627",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/biology/y11-root-cell-v1.png",
+        "sha256": "15a6a8cd27a760341d7a1ba8886e184c1678cb361a04289c67cf3f4351ffe5f9",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/biology/y11-potted-plant-waterlogged-v1.png",
+        "sha256": "d84d4a733cfb78b9408ddc62c4bdfad4938cddcefa95abb88ef8754f7a011496",
+        "matchingNativeQa": true
+      }
+    ]
+  },
+  "numbers": {
+    "diffusionCoefficientRatio": 10000,
+    "openSoilSpaces": {
+      "start": 12,
+      "end": 0,
+      "condition": "Must count the actual twelve drawn spaces."
+    },
+    "glucoseElements": [
+      "C",
+      "H",
+      "O"
+    ],
+    "glucoseElementCount": 3,
+    "waterJobCount": 4,
+    "mineralIonCount": 4,
+    "storeModel": {
+      "startPercent": 65,
+      "endPercent": 0,
+      "drawnRelativeChangePercentagePoints": 65,
+      "noCalibratedTimeClaim": true
+    },
+    "requirementsMap": {
+      "connections": [
+        [
+          "leaf",
+          "light"
+        ],
+        [
+          "leaf",
+          "carbon dioxide"
+        ],
+        [
+          "leaf",
+          "oxygen"
+        ],
+        [
+          "root",
+          "water"
+        ],
+        [
+          "root",
+          "mineral ions"
+        ],
+        [
+          "root",
+          "oxygen"
+        ]
+      ],
+      "connectionCount": 6,
+      "distinctRequirementCategories": 5,
+      "afterRootOxygenRemoved": 5,
+      "finding": "Counter labels six requirements but counts oxygen twice, at two entry locations. Resolve the count meaning before build."
+    },
+    "emDashCount": 0,
+    "u2061Count": 0,
+    "scope": "Independent arithmetic and counter-definition check. No configured simulation run."
+  },
+  "priorReview": "checks/y11b-fa2-v05-error-check.md",
+  "scope": "Static artwork, counter definitions and unchanged narration check. No production design edits."
+}

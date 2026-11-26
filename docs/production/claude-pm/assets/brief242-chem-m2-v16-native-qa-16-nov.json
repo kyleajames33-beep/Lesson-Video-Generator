@@ -1,0 +1,84 @@
+[
+  {
+    "file": "public/assets/chemistry/c4a-syringe-barrel-v1.png",
+    "nativeSize": [
+      2062,
+      1031
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      561,
+      366,
+      1834,
+      665
+    ],
+    "clearMarginFractionAbove1": [
+      0.27206595538312317,
+      0.35499515033947626,
+      0.11057225994180407,
+      0.35499515033947626
+    ],
+    "evidence": [
+      "work/brief242/c4a-syringe-barrel-v1-native-paper.jpg",
+      "work/brief242/c4a-syringe-barrel-v1-native-dark.jpg"
+    ],
+    "id": "c4a-syringe-barrel-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "1f040047ba429e00f7478c66560824f657df86ca76570f4e3e0bc71a035bbcae",
+    "qa": {
+      "result": "static pass; axis/cap fit demonstrated at three positions",
+      "observations": [
+        "Unnumbered ticks, transparent barrel interior, separate plunger. Native-axis proposals at x -200, 0 and 120 px retain the seal inside and thumb disc outside. Arbitrary travel is not cleared.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/c4a-syringe-barrel-v1-native-paper.jpg",
+        "work/brief242/c4a-syringe-barrel-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/c4a-syringe-plunger-v1.png",
+    "nativeSize": [
+      2062,
+      1031
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      343,
+      389,
+      1264,
+      633
+    ],
+    "clearMarginFractionAbove1": [
+      0.16634335596508246,
+      0.3773035887487876,
+      0.38700290979631424,
+      0.3860329776915616
+    ],
+    "evidence": [
+      "work/brief242/c4a-syringe-plunger-v1-native-paper.jpg",
+      "work/brief242/c4a-syringe-plunger-v1-native-dark.jpg"
+    ],
+    "id": "c4a-syringe-plunger-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "af9f8b23db3c6f8746da48ebacd0b329c30ee027abceeffff125617faba74e13",
+    "qa": {
+      "result": "static pass; travel must respect flange",
+      "observations": [
+        "Separate plunger and seal. Shares native horizontal axis with barrel. Root must limit travel so the thumb disc never passes through the barrel flange.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/c4a-syringe-plunger-v1-native-paper.jpg",
+        "work/brief242/c4a-syringe-plunger-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

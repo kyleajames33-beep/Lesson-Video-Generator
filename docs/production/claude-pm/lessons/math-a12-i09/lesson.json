@@ -1,0 +1,158 @@
+{
+  "id": "math-a12-i09",
+  "fps": 30,
+  "status": "Brief238 reviewed narration input;not voiced or built",
+  "sourceDesignSha256": "4d373842a16222036b9b7789efb83e8fb33fe5c0babb4a25b02285f156762d7d",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (should the answer be negative?)",
+      "voiceover": {
+        "text": "Last video ended here, with the integral from minus two to one, of x squared. The primitive is x cubed over three, so we need one third, minus negative two cubed over three. It's like reading a thermometer on a frosty morning. The change is the later reading, minus the earlier one, and the earlier one can be below zero. Before we work it out, look at the graph. X squared is never negative, so every strip sits above the axis. Should the answer be positive, or negative? Here's a slip that happens all the time. Negative two cubed is minus eight, and someone writes one third minus eight thirds, which is minus seven thirds. A negative answer, from a region that's all above the axis. Something has gone wrong. So how do we evaluate definite integrals without losing signs?"
+      },
+      "holdSeconds": 3,
+      "holdKind": "visual",
+      "durationInFrames": 1,
+      "planningInternalPredictionHold": {
+        "seconds": 3,
+        "placement": "Use source visual cue when building;current audio measurement budgets this as a scene hold. Built preview pending."
+      }
+    },
+    {
+      "id": "scene-02",
+      "title": "bracket the bottom",
+      "voiceover": {
+        "text": "The trouble is the second minus sign. Think of the thermometer. At six it read minus two degrees, and at nine it read one degree. It warmed by one, minus, bracket, minus two, which is three degrees, not one minus two. F of a works the same way. F of a means the primitive at the lower limit, the start. Here that's F of minus two, which is minus eight thirds, a negative number, and the rule subtracts the whole of it. So put F of a in its own brackets, every time. One third, minus, bracket, minus eight thirds. Subtracting a negative adds, so that's one third plus eight thirds, which is three. Positive, as the picture said. The minus sign in the rule belongs to the subtraction. The minus sign inside F of a belongs to the number. Keep them apart, and neither gets lost."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "split the region at zero",
+      "voiceover": {
+        "text": "We can check that three another way. Split the region at zero. From minus two to zero, the integral is zero, minus, bracket, minus eight thirds, which is eight thirds. From zero to one, it's one third minus zero, which is one third. Eight thirds plus one third is three, the same answer. The thermometer does the same thing, two degrees up to zero, then one more. That always works, for a continuous function. The integral from a to b, plus the integral from b to c, is the integral from a to c, when b is between them. In primitives, that's F of b minus F of a, plus F of c minus F of b. The middle value cancels, so you're left with F of c minus F of a. On the graph, two regions side by side make one region."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "swap the ends: reversed limits",
+      "voiceover": {
+        "text": "What if the limits come the other way round, from one down to minus two? The rule still says F of the top, minus F of the bottom. Now the top is minus two, so it's minus eight thirds, minus one third, which is minus three. Swapping the ends swaps the order of the subtraction, so the answer changes sign. On the thermometer, that's the evening, cooling from one degree back to minus two, a change of minus three. That's how a backwards integral is defined. The integral from b to a is minus the integral from a to b. Picture the strips running from right to left. Every strip's width is negative, so every strip flips its sign. And if both ends are the same, there are no strips at all, so the integral is zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "a primitive with its own minus sign",
+      "voiceover": {
+        "text": "Signs get trickier when the primitive has a minus sign of its own. Find the integral from zero to pi, of sine x. A primitive is minus cos x. At pi, that's minus cos pi, which is minus, minus one, so it's one. At zero, it's minus cos zero, which is minus one. So the answer is one, minus, bracket, minus one, which is two. Sine x is above the axis from zero to pi, so a positive answer is what we expect. One minus one, giving zero, is the slip the brackets prevent. The same care works with an inside. The integral from zero to pi over four, of sine two x, has primitive minus a half cos two x. At the top that's zero, and at the bottom it's minus a half. So the answer is zero, minus, bracket, minus a half, which is a half."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "e to the zero is one, ln one is zero",
+      "voiceover": {
+        "text": "Next, an exponential. Find the integral from zero to two, of e to the x, plus x. A primitive is e to the x, plus x squared over two. At two, that's e squared plus two. At zero, it's e to the zero plus zero, and e to the zero is one, not zero. So the answer is e squared plus two, minus one, which is e squared plus one, about eight point three nine. Logs go the other way. The integral from one to e, of one over x, is the natural log of e, minus the natural log of one. The natural log of one is zero, so that answer is just one. Leave answers exact, like e squared plus one, unless a question asks for a decimal."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "working backwards: find the limit",
+      "voiceover": {
+        "text": "The rule also runs backwards. Find k, with k greater than one, so that the integral from one to k of two x equals eight. A primitive of two x is x squared, so the integral is k squared, minus one squared. Set k squared minus one equal to eight. Then k squared is nine, so k is three, or minus three. Now the sign check. Minus three fits the equation too, because the integral from one down to minus three is a backwards integral, and it comes out as plus eight as well. But the question says k is greater than one, so k equals three."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the line to remember. Top, minus bracketed bottom. Swap the ends, swap the sign. Split at a point inside, and the pieces add up."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Evaluate the integral from pi over three to pi, of sine x. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "A primitive is minus cos x. At pi, that's one. At pi over three, it's minus a half. So the answer is one, minus, bracket, minus a half, which is three halves. A half is wrong. It drops the bracket, and subtracts a half instead of adding it."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. The function f is continuous. The integral from zero to five of f is seven, and the integral from zero to two of f is three. Find the integral from five to two of f. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Split at two. The integral from zero to two, plus the integral from two to five, is the integral from zero to five. So three plus the unknown is seven, and the integral from two to five is four. But the question runs from five down to two, so the sign flips. The answer is minus four. Four is wrong. It forgets that the limits are reversed."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So keep F of a in brackets, flip the sign when the limits swap, and add the pieces at a split. But a signed integral can surprise you. The integral of sine x, from zero to two pi, is zero. The arch below the axis cancels the arch above. Yet the shaded region clearly isn't nothing. So what's its area?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

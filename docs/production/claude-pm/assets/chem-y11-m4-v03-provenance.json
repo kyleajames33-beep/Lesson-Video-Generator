@@ -1,0 +1,105 @@
+{
+  "design": "chem-y11-m4-v03",
+  "sourceSHA256": "523f7e137565b743f81e3e733522bb69a5e8f22f42f2f8254dd94ec04b884343",
+  "reuse": [
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "c8-thermometer-hot-v1.png",
+      "resolvedName": "c8-thermometer-hot-v1.png",
+      "paths": [
+        "public/assets/chemistry/c8-thermometer-hot-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "m5x-hot-pack-v1.png",
+      "resolvedName": "m5x-hot-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-hot-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "m7-camping-gas-burner-v1.png",
+      "resolvedName": "m7-camping-gas-burner-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-camping-gas-burner-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "resolvedName": "m5x-cold-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-cold-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png",
+      "resolvedName": "m6-foam-cup-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-shield-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-sooty-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-sooty-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-sooty-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-on-balance-v1.png",
+      "resolvedName": "m7-spirit-burner-on-balance-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-on-balance-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    }
+  ],
+  "assets": [],
+  "qa": "docs/production/claude-pm/assets/brief184-qa",
+  "status": "source findings and actual scene/voiced-preview checks remain open",
+  "brief242Recheck": {
+    "date": "2026-11-17",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m4-v03-native-qa-17-nov.json",
+    "reviewedSourceSha256": "6aff996d299875cb7c1d428aa77ef3443ca5e03ef5c18f1f9c20817915b302d3",
+    "result": "Three native records; narration unchanged at 5,998 characters. Root finding: the uncapped burner crop remains lit, contrary to the no-flame evaporation scene/question. Soot/shield static states useful; exact cross-fades unapproved, clean-cut shield fallback available. Generic pack mechanism qualification retained. No new plate or whole-lesson clearance."
+  }
+}

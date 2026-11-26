@@ -1,0 +1,160 @@
+{
+  "design": "phys-y12-m5-v14",
+  "sourceSHA256": "a70d53f432456f938ef16f377336d4d93aac48e3f50077c05a4c28823d54ed9a",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "phys-y11-ramp-hinge-block-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-hinge-block-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "phys-y11-ramp-plank-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-plank-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "phys-y11-truck-side-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-truck-side-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "public/assets/physics/phys-y11-car-top-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-car-top-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "public/assets/physics/phys-y11-wooden-block-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-wooden-block-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v14",
+      "reference": "y12p-car-rear-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-car-rear-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "car-rear",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-f93c3591-a7af-409e-b8c2-f1b89629cc71.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alpha16Bounds": [
+        237,
+        113,
+        1210,
+        975
+      ],
+      "marginFraction": [
+        0.16367403314917128,
+        0.10405156537753223,
+        0.1643646408839779,
+        0.10220994475138122
+      ],
+      "file": "public/assets/physics/y12p-car-rear-v1.png",
+      "sha256": "8fd7bbffcca44f0b72e9d70ae74de71e22d83e00e52810946289967ace44180c",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "leftTyreContact": [
+          337,
+          974
+        ],
+        "rightTyreContact": [
+          1112,
+          974
+        ],
+        "groundLine": [
+          [
+            337,
+            974
+          ],
+          [
+            1112,
+            974
+          ]
+        ],
+        "rotationPivot": [
+          724,
+          974
+        ],
+        "centreOfMassSchematic": [
+          724,
+          629
+        ],
+        "note": "Schematic COM at40percent of visible car height above contact line. Two tyres share one horizontal baseline."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    }
+  ],
+  "qa": "docs/production/claude-pm/assets/brief188-qa",
+  "holds": "Source findings unresolved. v16 method blocked. Old paper clip backdrop confirmed in v15/v16; clean replacement request requires Claude/root decision, no replacement painted.",
+  "motionListeningRelease": "pending"
+}

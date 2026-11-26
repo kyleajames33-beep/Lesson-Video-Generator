@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a06.md",
+  "sourceSha256": "c4a6056a57216b53ff5ff0eaec9427d53b6121289ab6f017306a71813c3245e7",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-home-to-second",
+      "text": "On a softball diamond, the bases are about eighteen point three metres apart, and the base paths meet at right angles. A runner goes home to first to second, the long way round. But a catcher throws straight from home to second, across the diamond, to stop a runner stealing the base, so every metre counts. That throw is longer than eighteen point three metres, but it's a lot shorter than going round, thirty-six point six. So how long is it, exactly? And how does Pythagoras' theorem find a missing side?",
+      "audioFile": "public/audio/math-s11-a06/hook-home-to-second.wav"
+    },
+    {
+      "id": "hypotenuse",
+      "text": "Pythagoras only works in a right-angled triangle, one with a square corner. So step one is always to find the right angle. It's marked with a little square. The side across from that corner has a special name, the hypotenuse. The hypotenuse is the longest side, opposite the right angle. Watch this triangle turn and flip. Wherever it ends up, the hypotenuse is still the side across from the little square. In the diamond, the right angle is at first base, so the hypotenuse is the throw from home to second. The other two sides, the ones that make the right angle, are the base paths. They're sometimes just called the shorter sides.",
+      "audioFile": "public/audio/math-s11-a06/hypotenuse.wav"
+    },
+    {
+      "id": "squares-on-sides",
+      "text": "Here's the idea behind the theorem. Take the garden bed triangle from before, with sides of three, four and five metres. Draw a square on each side. The square on the three side holds nine unit squares. The square on the four side holds sixteen. Now slide all of those into the big square on the hypotenuse. Nine plus sixteen is twenty-five, and they fill it exactly. So the square on the hypotenuse equals the two other squares added together. In symbols, c squared equals a squared plus b squared, where c is the hypotenuse. It works for every right-angled triangle. Change the sides, and the two totals always match. But bend that corner away from ninety degrees, and they stop matching. No right angle, no Pythagoras. The rule is named after Pythagoras, a Greek mathematician, but people in Babylon and India knew this pattern before him.",
+      "audioFile": "public/audio/math-s11-a06/squares-on-sides.wav"
+    },
+    {
+      "id": "find-hypotenuse",
+      "text": "Back to the throw. The two base paths are eighteen point three metres each, and the throw is the hypotenuse. So c squared is eighteen point three squared plus eighteen point three squared. That's three thirty-four point eight nine, plus the same again, six hundred and sixty-nine point seven eight. That's c squared, not c. To get c, take the square root. On a calculator, type the whole sum first, then press square root, so nothing gets rounded on the way. The square root of six six nine point seven eight is twenty-five point eight eight metres. Check it makes sense. It's more than eighteen point three, and less than thirty-six point six, just as we thought. So to find the hypotenuse, square the two sides, add them, then square root.",
+      "audioFile": "public/audio/math-s11-a06/find-hypotenuse.wav"
+    },
+    {
+      "id": "find-shorter-side",
+      "text": "Sometimes you know the hypotenuse and need a shorter side. This flying fox platform has a ladder leaning against it. The ladder is three point two metres long, and its foot is one point one metres out from the platform. How high does it reach? The ladder is the hypotenuse, because it's opposite the right angle at the ground. So the height squared is three point two squared minus one point one squared. Ten point two four minus one point two one is nine point nought three, and its square root is about three point nought metres. Notice we subtracted. If you add instead, you get three point three eight metres, which is longer than the ladder itself. That can't be right. A shorter side always comes out shorter than the hypotenuse.",
+      "audioFile": "public/audio/math-s11-a06/find-shorter-side.wav"
+    },
+    {
+      "id": "screen-diagonal",
+      "text": "Pythagoras is hiding in your pocket too. Phone screens are measured along the diagonal. A screen seven point one centimetres wide and fifteen point four tall has a diagonal that's the hypotenuse of a right-angled triangle. Seven point one squared plus fifteen point four squared is two eight seven point five seven. The square root is sixteen point nine six, about seventeen centimetres. Keep every digit until the very end. If you round the squares to fifty and two thirty-seven first, the last digit of your answer changes.",
+      "audioFile": "public/audio/math-s11-a06/screen-diagonal.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's how to choose. If you want the longest side, square, add, then square root. If you want a shorter side, square, subtract, then square root.",
+      "audioFile": "public/audio/math-s11-a06/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A gate is two point four metres wide and one point eight metres tall. A diagonal brace runs from one corner to the opposite corner. How long is the brace? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a06/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The brace is the hypotenuse. Two point four squared plus one point eight squared is five point seven six plus three point two four, which is nine. The square root of nine is three metres. Adding the sides, to get four point two, is the slip. Square them first.",
+      "audioFile": "public/audio/math-s11-a06/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A wheelchair ramp is six point five metres long and rises nought point four five of a metre. How far does it reach horizontally? Give your answer correct to two decimal places. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a06/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The ramp itself is the hypotenuse, so subtract. Six point five squared minus nought point four five squared is forty-two point two five minus nought point two nought two five, forty-two point nought four seven five. The square root is six point four eight metres. Adding gives six point five two, which is longer than the ramp, so that's the slip.",
+      "audioFile": "public/audio/math-s11-a06/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So any right-angled triangle gives up its missing side. That's handy on a block of land. This block has a straight front, two sides at right angles to it, and a back fence that slants across. How big is the block, and how much fence does that slanted back need? That's next.",
+      "audioFile": "public/audio/math-s11-a06/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a06/key-notes.wav"
+    }
+  ]
+}

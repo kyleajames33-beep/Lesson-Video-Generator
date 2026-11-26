@@ -1,0 +1,74 @@
+{
+  "brief": 238,
+  "design": "i06",
+  "assets": [
+    {
+      "name": "ma12-rain-gauge-v1.png",
+      "path": "public\\assets\\maths\\ma12-rain-gauge-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-2fe6ae6e-4f27-4622-86eb-00a215353eef.png",
+      "generatorNativeSize": [
+        793,
+        1983
+      ],
+      "nativeSize": [
+        800,
+        2000
+      ],
+      "sha256": "f53f2beb3257063a2e3af9bf7186e080798c5938d8bf88c266ad32e3889663ca",
+      "alphaBox": [
+        85,
+        169,
+        713,
+        1840
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "innerLeft": 300,
+        "innerRight": 500,
+        "innerTop": 420,
+        "insideFloor": 1500,
+        "innerHeight": 1080,
+        "halfHeightFillY": 960
+      },
+      "apertureChecks": {
+        "leftGlass299y1000": 245,
+        "inside300y1000": 0,
+        "inside499y1000": 0,
+        "rightGlass500y1000": 243,
+        "floorCentre1500": 232
+      },
+      "operations": [
+        "Removedalpha<8noise",
+        "Transparentpadding(3,8)to800x2000;retainednativepixels",
+        "Removed18rowsfromstraightcylinderand54rowsfromlowerpost,withoutresizing/stretching",
+        "Clearedexactcylinderinterior300/500/420/1500toalpha0forcodedwater;noalteredmathprofile"
+      ],
+      "wholePlateResized": false,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "qa": "work\\brief238\\i06-rain-cloud-qa.jpg",
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Project asset ma12-rain-gauge-v1.png,final800x2000pxportrait2:5. One backyard rain gauge upright centred:empty clear plastic measuring cylinder with wide funnel at top,clipped to a short timber post rooted in a small grass tuft. Exactly straight-on,no perspective tilt. Fineink/watercolour house style. Empty see-through cylinder,genuine transparent alpha inside and around;no water or fixed liquid line. EXACT interiorguide in finalpixels:straight verticalwalls x300and500,inner top y420justbelowfunnel,flatinnerfloor y1500;1080pxtall200pxwide. Funnel spanswider above,postandgrassbelowfloor. Atleast8%clearoutermargins. No printed scale,ticks,numbers,text,letters,brands,logos,people,hands,rainclouds,rain drops,sky,background,groundshadowbeyondgrasstuft or glow. Entiregauge/funnel/post/grassvisible. Cylinderwallsdelicate and clear for coded water level behind.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Paper300/600pxtall beside520pxreusedthundercloud,halfheighttestfill,andblack/whiteedgesinspected. Exactclearcylinder/watermaskaligned,emptyversionhasnofixedwaterline/scales/text.8%margins pass. Handoffbathtubplate remainsheldwithi07;thisdoesnotcompletei06visualpackage.",
+    "qaFiles": [
+      "work/brief238/i06-rain-cloud-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,2 should fix retained (stale units,notes fit);bath handoff asset dependency held",
+    "findings": []
+  },
+  "sourceDesignSha256": "b6e67c5a7c0c6a5ae9b5081bf98431a33425ae211bdb38c214cc60e7f7b4dc3e"
+}

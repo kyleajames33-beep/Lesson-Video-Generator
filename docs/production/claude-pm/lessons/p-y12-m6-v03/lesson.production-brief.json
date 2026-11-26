@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v03/lesson.json",
-    "lessonSha256": "6ff03960d4e0e4780c6d57d2836d767453932f14926efa40d31d39f51373f889"
+    "lessonSha256": "5dc44b45dfebadef0cbd0198be4bfeaa350afcfd3c24527f637a72857deac309"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -38,12 +38,13 @@
       "teachingReason": "Last time, the electron left the plates a little faster than it went in, so the field gave it energy. An electron gun uses exactly that. Electrons start almost at rest, and a voltage speeds them up into a beam. Here's the puzzle. Double the voltage of the gun. Does the electron come out twice as fast? Make a prediction.",
       "narrationCue": "beam / fast",
       "motionPurpose": "opens on v02's final frame (see \"Opening frame\"); the two K bars pulse. Camera change to the CRT plate (`y12p-crt-tube-v1.png`, from v02; held by brief 189, see Assets for the fallback), pushed in on the gun end; a coded label \"0 V\" at the cathode and \"+5000 V\" at the anode. Anchor (Revision 2): the painted supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) sits below the tube with two coded leads to the cathode and anode, its display reading \"5000 V\" (52 px, grey-ink). Hand tags: orange \"energy in\" with a pen arrow to the exit K bar (before the camera change); teal \"start ≈ rest\" at the cathode. On \"beam\" a coded beam leaves the anode with a speed readout ticking up. On \"fast\" the supply display ticks to \"10 000 V\", a second readout \"10 000 V: v = ?\" appears, and the 3 s `Countdown` runs beside chips \"× 2\", \"× 4\", \"× 1.41\".",
-      "motionRole": "explain",
+      "motionRole": "hold",
       "onScreenChange": "opens on v02's final frame (see \"Opening frame\"); the two K bars pulse. Camera change to the CRT plate (`y12p-crt-tube-v1.png`, from v02; held by brief 189, see Assets for the fallback), pushed in on the gun end; a coded label \"0 V\" at the cathode and \"+5000 V\" at the anode. Anchor (Revision 2): the painted supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) sits below the tube with two coded leads to the cathode and anode, its display reading \"5000 V\" (52 px, grey-ink). Hand tags: orange \"energy in\" with a pen arrow to the exit K bar (before the camera change); teal \"start ≈ rest\" at the cathode. On \"beam\" a coded beam leaves the anode with a speed readout ticking up. On \"fast\" the supply display ticks to \"10 000 V\", a second readout \"10 000 V: v = ?\" appears, and the 3 s `Countdown` runs beside chips \"× 2\", \"× 4\", \"× 1.41\".",
       "motionTools": [
-        "Source diagrams, painted plates and cue-directed changes"
+        "Source diagrams, painted plates and cue-directed changes",
+        "Countdown"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make a prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "work-qv",
@@ -260,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v03/recording-source-check.json",
-      "sha256": "572bdc28dbc76ba1e6a338cfd84f8d4a0c91879a20c4fa317875227c7808fab0"
+      "sha256": "c624ab4f93ecd91636fb45c314b9b5085ae20047a63e6d0a26b1877ad7cd25ec"
     }
   },
   "studentLearningReview": {
@@ -271,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v03/recording-source-check.json",
-      "sha256": "572bdc28dbc76ba1e6a338cfd84f8d4a0c91879a20c4fa317875227c7808fab0"
+      "sha256": "c624ab4f93ecd91636fb45c314b9b5085ae20047a63e6d0a26b1877ad7cd25ec"
     }
   },
   "voicedPreview": {

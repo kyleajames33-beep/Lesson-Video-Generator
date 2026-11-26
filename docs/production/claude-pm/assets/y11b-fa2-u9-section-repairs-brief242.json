@@ -1,0 +1,215 @@
+[
+  {
+    "id": "y11-glomerular-filter-section-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-glomerular-filter-section-v2.png",
+    "sha256": "f4289bc0225ebf0c9fcc5d36d79ae344ef8200f2b1235a346fb023264eeff81b",
+    "nativeSize": [
+      1620,
+      971
+    ],
+    "originalPreserved": "public/assets/biology/y11-glomerular-filter-section-v1.png",
+    "originalSha256": "3dd24b2d802dcde61fbce8204ac3c65e9c26f5fc18e09f4c229ced71e8d09878",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a769281b-1fda-4950-a68a-2be77ecb36ec.png",
+    "prompt": "Repair this exact ink-and-watercolour glomerular filtration tissue cutaway for a Year 11 Biology lesson. Preserve all internal anatomy and positions: the pink capillary region at top with one large red blood cell and purple protein clusters, the thin fenestrated wall with its small pores, continuous basement membrane, and cream/gold podocyte foot processes below with their filtration gaps. Preserve the native landscape aspect and the cream tissue interiors. Change only these defects: remove the pale white/grey external glow outside the tissue silhouette, and add one fine dark charcoal ink keyline around the OUTER silhouette, including the top of the capillary tissue, left/right cut ends and the bottom cream tissue edge, so its outline remains clear on cream paper. No shadow, glow, halo or external wash. Truly transparent empty background outside the outlined tissue, retaining internal pores and gaps as in the reference. Keep original object scale and position as closely as possible, not a new diagram. No text, numbers, labels, arrows, people, hands or faces. Deliver a new transparent PNG sibling y11-glomerular-filter-section-v2.png; preserve v1.",
+    "method": "Built-in image edit. Generated PNG copied unchanged. Python used only for measurements and QA composites.",
+    "lessons": "v23",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAny": [
+      59,
+      111,
+      1558,
+      911
+    ],
+    "alphaAbove1": [
+      64,
+      112,
+      1557,
+      906
+    ],
+    "alphaAbove8": [
+      66,
+      114,
+      1555,
+      901
+    ],
+    "anchorsApproximatePixels": {
+      "bloodCellCentre": [
+        829,
+        269
+      ],
+      "filterWall": [
+        812,
+        485
+      ],
+      "basementMembrane": [
+        812,
+        519
+      ],
+      "podocyteFoot": [
+        813,
+        634
+      ]
+    },
+    "qa": {
+      "result": "pass requested outer-outline repair and external halo check",
+      "evidence": [
+        "work/brief242/y11-glomerular-filter-section-v2-native-paper.jpg",
+        "work/brief242/y11-glomerular-filter-section-v2-native-dark.jpg"
+      ],
+      "observations": [
+        "Fine dark outer keyline is visible on cream. Actual dark composite is clean, without the earlier filter halo.",
+        "Main tissue regions, colours and orientation retained. Brush detail is regenerated, not pixel identity.",
+        "Cream air spaces and tissue interiors are intentional anatomy. Empty exterior has true alpha. No faces, hands, people, text, labels or question data.",
+        "Filter and alveolar canvases are 1620 by 971, one pixel wider than v1. Tubule remains 1774 by 887. Use native aspect and recheck pointer positions.",
+        "Margins retain the narrow original layout. Tubule outline is only a few pixels from the side edges; add scene padding. Low-alpha stray pixels affect raw bounds but are invisible on the inspected composites."
+      ]
+    },
+    "limitation": "Static plate checks only. Root/builder must select v2, apply measured anchors and check scene fit and motion. No whole-lesson voice or playback approval."
+  },
+  {
+    "id": "y11-alveolar-wall-section-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-alveolar-wall-section-v2.png",
+    "sha256": "344a143d12483ba5cf9b87941f2b51ea1abe3c3dcf3a29a67c94f7d3bfa3119f",
+    "nativeSize": [
+      1620,
+      971
+    ],
+    "originalPreserved": "public/assets/biology/y11-alveolar-wall-section-v1.png",
+    "originalSha256": "b393ce99f9573c08bf1df3bbae586baf2ba34b7c8cd2bbf7a813018ea4a386d8",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ac20595b-fab9-49b8-81ba-12ce7af0046d.png",
+    "prompt": "Edit this exact educational alveolar-wall tissue section, keeping its internal anatomy, colours, ink-watercolour texture, landscape native aspect, object position and scale. Add a thin continuous dark charcoal ink outline around the OUTSIDE rectangular cutaway boundary so the cream air space remains visible on cream paper. Preserve the large cream air-space region above, the thin blue moist surface, thin orange alveolar wall and lower capillary with red blood cells. These cream areas are anatomical content and must stay. Clean any external white/grey halo or stray wash outside the outlined rectangle to true transparency. Do not add a backdrop or shadow. Change only the outer keyline and external alpha cleanup; keep all internal structures as close to the reference as possible. No text, numbers, arrows, labels, people, faces or hands. Deliver true transparent PNG new sibling y11-alveolar-wall-section-v2.png and preserve v1.",
+    "method": "Built-in image edit. Generated PNG copied unchanged. Python used only for measurements and QA composites.",
+    "lessons": "v22",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAny": [
+      62,
+      60,
+      1558,
+      912
+    ],
+    "alphaAbove1": [
+      62,
+      61,
+      1558,
+      909
+    ],
+    "alphaAbove8": [
+      64,
+      63,
+      1556,
+      907
+    ],
+    "anchorsApproximatePixels": {
+      "airSpaceCentre": [
+        810,
+        280
+      ],
+      "moistSurface": [
+        810,
+        520
+      ],
+      "thinWall": [
+        810,
+        550
+      ],
+      "bloodCellCentre": [
+        804,
+        683
+      ]
+    },
+    "qa": {
+      "result": "pass requested outer-outline repair and external halo check",
+      "evidence": [
+        "work/brief242/y11-alveolar-wall-section-v2-native-paper.jpg",
+        "work/brief242/y11-alveolar-wall-section-v2-native-dark.jpg"
+      ],
+      "observations": [
+        "Fine dark outer keyline is visible on cream. Actual dark composite is clean, without the earlier filter halo.",
+        "Main tissue regions, colours and orientation retained. Brush detail is regenerated, not pixel identity.",
+        "Cream air spaces and tissue interiors are intentional anatomy. Empty exterior has true alpha. No faces, hands, people, text, labels or question data.",
+        "Filter and alveolar canvases are 1620 by 971, one pixel wider than v1. Tubule remains 1774 by 887. Use native aspect and recheck pointer positions.",
+        "Margins retain the narrow original layout. Tubule outline is only a few pixels from the side edges; add scene padding. Low-alpha stray pixels affect raw bounds but are invisible on the inspected composites."
+      ]
+    },
+    "limitation": "Static plate checks only. Root/builder must select v2, apply measured anchors and check scene fit and motion. No whole-lesson voice or playback approval."
+  },
+  {
+    "id": "y11-tubule-capillary-section-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-tubule-capillary-section-v2.png",
+    "sha256": "05e35b20e083f6d84730f804418925f035647d795116e2cfffe0bc07af40c7c3",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "originalPreserved": "public/assets/biology/y11-tubule-capillary-section-v1.png",
+    "originalSha256": "d34ec106fb711ed58b1c99ee83f89a2694b9b200645a7870909373774cdb6fc0",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ab4e3dda-a01e-4ec2-8a73-2e3235b851ea.png",
+    "prompt": "Repair this exact Year 11 Biology ink-watercolour kidney tubule and capillary tissue cutaway. Preserve the arrangement and colours: cream lumen above a single row of yellow epithelial cells with brush-border microvilli, purple nuclei and small brown mitochondria, a thin pale layer below the cells, then pink capillary with four red blood cells. Keep the native wide 2:1 aspect and all relative anatomy. Add a fine continuous dark charcoal ink keyline around the entire OUTSIDE cut-section silhouette, including the cream top edge and both cut ends, so it reads on cream paper. Remove only external haze or wash outside the tissue. Cream internal lumen and tissue are anatomical content, not background. Fit the complete outlined section inside the canvas with a small transparent margin on every side, uniformly scaling the complete object if necessary; never stretch. No text, labels, numbers, arrows, people, hands, faces, background, shadow or glow. True transparent PNG outside the tissue. New sibling y11-tubule-capillary-section-v2.png; preserve v1.",
+    "method": "Built-in image edit. Generated PNG copied unchanged. Python used only for measurements and QA composites.",
+    "lessons": "v24 and v32",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAny": [
+      0,
+      37,
+      1774,
+      802
+    ],
+    "alphaAbove1": [
+      0,
+      154,
+      1774,
+      795
+    ],
+    "alphaAbove8": [
+      3,
+      156,
+      1771,
+      793
+    ],
+    "anchorsApproximatePixels": {
+      "lumenCentre": [
+        887,
+        235
+      ],
+      "brushBorder": [
+        887,
+        322
+      ],
+      "epithelialCellCentre": [
+        887,
+        430
+      ],
+      "capillaryCentre": [
+        887,
+        679
+      ]
+    },
+    "qa": {
+      "result": "pass requested outer-outline repair and external halo check",
+      "evidence": [
+        "work/brief242/y11-tubule-capillary-section-v2-native-paper.jpg",
+        "work/brief242/y11-tubule-capillary-section-v2-native-dark.jpg"
+      ],
+      "observations": [
+        "Fine dark outer keyline is visible on cream. Actual dark composite is clean, without the earlier filter halo.",
+        "Main tissue regions, colours and orientation retained. Brush detail is regenerated, not pixel identity.",
+        "Cream air spaces and tissue interiors are intentional anatomy. Empty exterior has true alpha. No faces, hands, people, text, labels or question data.",
+        "Filter and alveolar canvases are 1620 by 971, one pixel wider than v1. Tubule remains 1774 by 887. Use native aspect and recheck pointer positions.",
+        "Margins retain the narrow original layout. Tubule outline is only a few pixels from the side edges; add scene padding. Low-alpha stray pixels affect raw bounds but are invisible on the inspected composites."
+      ]
+    },
+    "limitation": "Static plate checks only. Root/builder must select v2, apply measured anchors and check scene fit and motion. No whole-lesson voice or playback approval."
+  }
+]

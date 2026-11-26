@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m7-v10",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "8ae8878ba660220803d168d6071a1853a1a3a69508c94f6e5a5c38545fa28f63",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (two lamps, one winner)",
+      "voiceover": {
+        "text": "Here's the puzzle from last time. A clean zinc plate sits under two lamps. The ultraviolet lamp is dim, but electrons fly off the zinc straight away. The red lamp is far brighter, and nothing comes off, even turned right up. Which lamp should the wave model of light favour, the bright one, or the high-frequency one? Make your prediction. Waves say brightness should win. It doesn't. So why can bright low-frequency light fail to eject electrons?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "effect-work-function",
+      "title": "the photoelectric effect and the work function",
+      "voiceover": {
+        "text": "Light knocking electrons out of a metal is called the photoelectric effect. In the lab we use a photocell, an evacuated tube with a metal plate called the cathode, and a collecting wire called the anode. Light hits the cathode, electrons cross the gap, and an ammeter measures the photocurrent. Inside the metal, electrons are held in by the positive ions. The minimum energy needed to free one from the surface is called the work function, phi. Zinc's is about four point three electron volts, and one electron volt is one point six zero two times ten to the minus nineteen joules."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "wave-predictions",
+      "title": "what the wave model predicts",
+      "voiceover": {
+        "text": "In the wave model, light's energy is spread smoothly across the wavefront, and brighter light delivers more energy every second. An electron should soak up energy gradually until it has enough to escape. That gives three clear predictions. Any frequency should work, if the light is bright enough or shines long enough. Brighter light should give the escaping electrons more kinetic energy. And dim light should need time to build up, so there should be a delay."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "threshold",
+      "title": "observation 1: a threshold frequency",
+      "voiceover": {
+        "text": "Experiments said no to all three. First, every metal has a threshold frequency, f zero. Below it, no electrons come out at all, however bright the light, and however long you wait. Above it, electrons come out. For zinc, the threshold is in the ultraviolet, so red light never works."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "frequency-vs-intensity",
+      "title": "observation 2: frequency sets the energy, brightness sets the number",
+      "voiceover": {
+        "text": "Second, the electrons' maximum kinetic energy depends on the frequency, not the brightness. Raise the frequency, and the fastest electrons come out faster. Make the light brighter at the same frequency, and you get more electrons each second, a bigger photocurrent, but the fastest ones are no faster."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "no-delay",
+      "title": "observation 3: no delay",
+      "voiceover": {
+        "text": "Third, there's no delay. Even with very dim light above the threshold, electrons appear within about a billionth of a second. The wave model predicts a long wait. Picture a dim lamp delivering one watt per square metre, and an electron collecting all the energy falling on an area the size of one atom, ten to the minus twenty square metres. Collecting zinc's four point three electron volts would take over a minute. The real delay is tens of billions of times shorter."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "photons",
+      "title": "Einstein's photons",
+      "voiceover": {
+        "text": "In 1905, Einstein proposed a radical answer. Light's energy isn't spread smoothly. It arrives in packets called photons, and each photon carries energy E equals h f. That's Planck's packet, now applied to light itself. Brighter light at the same frequency just means more photons each second. And here's the key rule. One photon gives all its energy to one electron, in one go."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-threshold",
+      "title": "why there is a threshold",
+      "voiceover": {
+        "text": "Now the threshold makes sense. If a photon's energy h f is less than the work function, that photon can't free an electron. And photons don't team up on one electron, so it doesn't matter how many arrive. Below the threshold, nothing comes out, however bright the light. The threshold is where one photon just pays the work function, h times f zero equals phi. A brighter red lamp just sends more photons that are each too weak."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "other-observations",
+      "title": "the other two observations",
+      "voiceover": {
+        "text": "The other two observations follow. A photon above the threshold frees an electron, and any energy left over becomes the electron's kinetic energy. Higher frequency means bigger photons, so the fastest electrons are faster. More photons means more electrons, and a bigger current. And there's no delay, because the energy arrives in a single packet. Nothing has to build up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-red",
+      "title": "worked check: the red photon on zinc",
+      "voiceover": {
+        "text": "Let's check the zinc with numbers. Take red light of wavelength seven hundred nanometres. Photon energy is h f, and f is c over lambda, so E equals h c over lambda. Six point six two six times ten to the minus thirty four, times three point zero zero times ten to the eight, over seven hundred times ten to the minus nine, is two point eight four times ten to the minus nineteen joules. Divide by one point six zero two times ten to the minus nineteen, and that's one point seven seven electron volts."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-uv",
+      "title": "worked check: the ultraviolet photon",
+      "voiceover": {
+        "text": "Zinc needs four point three, so a red photon falls well short, and no number of them will do. For the ultraviolet, the same working gives seven point nine five times ten to the minus nineteen joules, which is four point nine six electron volts. That's more than four point three, so each ultraviolet photon can free an electron, with about zero point seven electron volts to spare."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. One photon, one electron. Frequency decides whether an electron gets out. Brightness only decides how many."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Potassium has a work function of two point three electron volts. A bright orange lamp emits light of wavelength six hundred nanometres, and a dim violet lamp emits light of wavelength four hundred nanometres. Calculate the energy of a photon from each lamp in electron volts, and state which lamp ejects electrons from potassium. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "E equals h c over lambda. The orange photon is two point zero seven electron volts, below two point three, so no electrons, however bright. The violet photon is three point one zero electron volts, so the violet lamp ejects electrons. The slip is choosing the brighter lamp. Brightness sets the number of photons, not their energy."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student claims that if dim red light shines on zinc for long enough, electrons will eventually be ejected. Evaluate this claim. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The claim is incorrect. Each red photon has less energy than zinc's work function, and one photon interacts with one electron, so photon energies can't add up. Waiting longer only delivers more photons that are too weak. The claim is exactly what the wave model predicted, and experiments ruled it out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So light hands over its energy in packets, one photon to one electron, and whatever is left after paying the work function becomes kinetic energy. That's an energy statement you can write as an equation, and test with a graph. So how do photoelectric graphs reveal Planck's constant and the work function?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+// Pure planning and filesystem inspection only. Never requests speech.
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {planGoogleBatches} from './google-batch-checks.mjs';
+export const readVoiceJson=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
+export const voiceModule=(row,stage)=>stage.moduleId??'C-M'+(row.lesson.match(/-m(\d)-/)?.[1]??stage.skillsModule??'unknown');
+export function missingVoiceTakes(manifest){
+  return manifest.scenes.filter(s=>s.text?.trim()).map(s=>{
+    const hash=createHash('sha256').update(s.text).digest('hex');let audio=s.audioFile;
+    const meta=audio.replace(/\.wav$/,'.generation.json');
+    if(fs.existsSync(meta)&&readVoiceJson(meta).textSha256!==hash)audio=audio.replace(/\.wav$/,`-${hash.slice(0,12)}.wav`);
+    const cache=`work/google-tts-cache/${s.id}-${hash}/whole-scene.wav`;
+    return {id:s.id,textHash:hash,audio,cache,needsRequest:!fs.existsSync(audio)&&!fs.existsSync(cache)};
+  });
+}
+export function estimateVoiceRow(row){
+  const manifest=readVoiceJson(row.manifest),takes=missingVoiceTakes(manifest),missing=new Set(takes.filter(t=>t.needsRequest).map(t=>t.id));
+  const plannedRequests=planGoogleBatches(manifest.scenes,missing).length;
+  return {lesson:row.lesson,characters:row.characters,missingScenes:missing.size,plannedRequests,
+    maximumWithOneQualityRetry:plannedRequests+missing.size,takes};
+}
+export function selectNightModule(rows,stage,isDelivered){
+  const remaining=rows.filter(r=>!isDelivered(r));if(!remaining.length)return {moduleId:null,rows:[]};
+  const moduleId=voiceModule(remaining[0],stage);
+  return {moduleId,rows:remaining.filter(r=>voiceModule(r,stage)===moduleId)};
+}
+export function fitVoiceRows(estimates,cap=99){
+  let used=0;const selected=[];
+  for(const row of estimates){if(used+row.plannedRequests>cap)break;selected.push(row);used+=row.plannedRequests;}
+  return {rows:selected,plannedRequests:used,unusedPlannedRequests:cap-used};
+}
+export function threeNightVoicePlan(config){
+  const wave2=readVoiceJson('work/brief236/wave2-preparation.json');
+  const delivered=new Set(wave2.filter(r=>fs.existsSync(`work/brief236/wave2/${r.lesson}/hand-in.json`)).map(r=>r.lesson));
+  const tonightRemaining=wave2.filter(r=>!delivered.has(r.lesson));
+  const first=fitVoiceRows(tonightRemaining.map(estimateVoiceRow),config.dailyRequestCap);
+  const nights=[{date:'2026-11-21',start:'19:00 Australia/Sydney',stage:'C2 preserved remainder',
+    lessons:first.rows.map(({takes,...r})=>r),plannedRequests:first.plannedRequests,
+    note:'No-failure batch estimate only. The live worker retains the 99-request cap; fallbacks may leave a remainder for the following night. No new stream tonight.'}];
+  for(const r of first.rows)delivered.add(r.lesson);
+  const stages=config.stages.map(stage=>({...stage,rows:readVoiceJson(stage.preparation),readiness:stage.status?readVoiceJson(stage.status):null}));
+  const projected=new Set(),completed=new Set();
+  for(const stage of stages)for(const row of stage.rows)if(fs.existsSync(`${stage.workRoot}/${row.lesson}/hand-in.json`))projected.add(stage.id+'/'+row.lesson);
+  for(const date of ['2026-11-22','2026-11-23']){
+    const c2=wave2.filter(r=>!delivered.has(r.lesson));
+    if(c2.length){const fit=fitVoiceRows(c2.map(estimateVoiceRow),config.dailyRequestCap);nights.push({date,stage:'C2 remainder before new order',lessons:fit.rows.map(({takes,...r})=>r),plannedRequests:fit.plannedRequests});for(const r of fit.rows)delivered.add(r.lesson);continue;}
+    const stage=stages.find(s=>!fs.existsSync(s.aggregate)&&!completed.has(s.id));
+    if(!stage){nights.push({date,state:'configured queue complete'});continue;}
+    const rows=stage.rows,status=stage.readiness;
+    const group=selectNightModule(rows,stage,r=>projected.has(stage.id+'/'+r.lesson));
+    if(!rows.length||!group.rows.length&&status?.pendingReadiness?.length){nights.push({date,stage:stage.id,state:'readiness hold',unreviewed:status?.pendingReadiness??[],
+      note:'No unreviewed design enters a wave. Root must supply current source readiness, then re-run Physics preparation. Any actual C2 remainder takes precedence.'});continue;}
+    const fit=fitVoiceRows(group.rows.map(estimateVoiceRow),config.dailyRequestCap);nights.push({date,stage:stage.id,moduleId:group.moduleId,lessons:fit.rows.map(({takes,...r})=>r),plannedRequests:fit.plannedRequests});
+    for(const row of fit.rows)projected.add(stage.id+'/'+row.lesson);
+    if(rows.every(r=>projected.has(stage.id+'/'+r.lesson))&&!status?.pendingReadiness?.length)completed.add(stage.id);
+  }
+  return {generatedAt:new Date().toISOString(),speechRequests:0,cap:config.dailyRequestCap,assumptions:'Current prepared files and current hand-ins; no future readiness approvals assumed. Estimates do not reserve fallback requests.',nights};
+}

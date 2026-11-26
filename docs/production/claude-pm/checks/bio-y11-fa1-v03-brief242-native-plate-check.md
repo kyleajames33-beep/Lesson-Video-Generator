@@ -1,0 +1,15 @@
+# Brief 242: Biology FA1 v03 plant states and phagocytosis
+
+17 November 2026.
+
+Narration is unchanged at 5,775 characters, with no em dash. Eleven new native records cover the healthy/wilted plant, leaf montage, tonicity strip, four macrophage states, root cell, prokaryote and wild rabbit. All retain true outer alpha/native aspect and carry no human figure, hand, text, labels or numerical answer. The rabbit is the explicitly requested whole-animal biological subject, not an avatar. Its mouth/eyes remain part of that accepted subject.
+
+Root cortex cell is tan/cream with no green or chloroplasts, a large blue vacuole, lateral nucleus, orange mitochondria and pale starch-store bodies. Separate uniform fits put root and leaf-cell painted heights at460px without stretching their different2000square/1529by1984canvases. The sapling/leaf/cell montage must crop to its leaf for the question; displaying the chloroplast-filled cell beside a leaf-function question could reveal the intended reason. Tonicity strip must expose only its first two panels in this lesson. The third plasmolysed panel remains hidden until v11.
+
+Plant pair hashes match brief114's reference and repaired wilted files. All1,123,265 protected pixels are byte-identical RGBA under the saved mask, including the preserved pot/root/stem-base regions. Current300px midpoint proof keeps the pot fixed; changing leaves/soil account for different alpha support. Exact timed wilting animation remains a playback check. The root cutaway window is illustrative, not an open pot to replicate.
+
+The macrophage sequence shows reaching, wrapping, a closed phagosome and digested material. Preserve the existing masked-transition rule: the nucleus/body must remain fixed, with the changing arm region staged so that the bacterium never appears doubled. A broad whole-plate dissolve is not approved. Native dark composites show a narrow pale-grey rim around parts of the blue-cell contour, particularly wrap/digest; strict halo-free dark-board use remains qualified. No repeat painting or local pixel cleanup was performed. Existing commissioned canvas/margin/detail limits in brief101 remain, including earlier1254-to2000resizing; current native inspection does not add lost detail.
+
+The proposed gas-like particle-box pressure is a qualitative analogy, not a physical liquid-vacuole/turgor solver. The design's two-bar fallback avoids implying that water behaves like a dilute gas; root should use it unless the exact particle-lens mapping is shown to teach the intended outward push without a false mechanism. Day/night glucose-made and glucose-respired counters must share one dial clock, with production stopped in darkness and respiration continuing. No configured run was supplied. Question organelle images retain supplied structure only, with no added function label. No new commission, source edit, playback, listening or whole-lesson clearance.
+
+Evidence: `assets/brief242-bio-fa1-v03-native-qa-17-nov.json`. Reviewed design SHA256: `fe58127876676fddfc4c1c9289d013a7b67b920e7b7353b02f2c49b45c6a7c8a`. No source edits or whole-lesson clearance.

@@ -1,0 +1,84 @@
+[
+  {
+    "file": "public/assets/chemistry/m5x-stopper-v1.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      569,
+      614,
+      1436,
+      1392
+    ],
+    "clearMarginFractionAbove1": [
+      0.2845,
+      0.307,
+      0.282,
+      0.304
+    ],
+    "evidence": [
+      "work/brief242/m5x-stopper-v1-native-paper.jpg",
+      "work/brief242/m5x-stopper-v1-native-dark.jpg"
+    ],
+    "id": "m5x-stopper-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "8b08cce752d590489955f353618b701c0681f252294b3ebaa00cccb04425d45c",
+    "qa": {
+      "result": "static pass; flask fit feasible with front-rim mask",
+      "observations": [
+        "Solid rubber stopper, no holes, text or numbers. Uniform scale 0.5 fits conical-flask neck with the front rim restored over it; a coded tube port is still required.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m5x-stopper-v1-native-paper.jpg",
+        "work/brief242/m5x-stopper-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/c8-pressure-vessel-v1.png",
+    "nativeSize": [
+      1280,
+      1920
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      355,
+      360,
+      927,
+      1555
+    ],
+    "clearMarginFractionAbove1": [
+      0.27734375,
+      0.1875,
+      0.27578125,
+      0.19010416666666666
+    ],
+    "evidence": [
+      "work/brief242/c8-pressure-vessel-v1-native-paper.jpg",
+      "work/brief242/c8-pressure-vessel-v1-native-dark.jpg"
+    ],
+    "id": "c8-pressure-vessel-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "bdf69364b6f5a99cfbfc93abb927f4fe9dab14b36d910c66797686a9cccb1276",
+    "qa": {
+      "result": "static pass for untagged rigid-container question picture",
+      "observations": [
+        "Closed rigid vessel with unnumbered dial ticks and a needle. No numerical pressure, units, temperature or answer data. No replacement school pressure-sensor use is inferred.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/c8-pressure-vessel-v1-native-paper.jpg",
+        "work/brief242/c8-pressure-vessel-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

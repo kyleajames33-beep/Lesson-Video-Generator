@@ -1,0 +1,154 @@
+{
+  "id": "math-a12-f08",
+  "fps": 30,
+  "status": "Brief240 reviewed narration input; no speech or build",
+  "sourceDesignSha256": "b8223fcdb1cb4813e5d569a1d3971a4f1608edb3c9e52719d3b7d84e9d7e61f9",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (after six years)",
+      "voiceover": {
+        "text": "Last video ended with this question. A town of twenty thousand people grows by five per cent each year. How many people after six years? A common answer uses the sixth term, twenty thousand times one point zero five to the five. But count the growth steps. After one year, there's been one. After six years, there have been six. So it's twenty thousand times one point zero five to the six, which is about twenty-six thousand, eight hundred. The start, at time zero, is the first term, so six years later is the seventh term. How do we set up models like this without getting the count wrong?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "a fixed percentage is a fixed ratio",
+      "voiceover": {
+        "text": "First, why is this geometric? Each year, the population is multiplied by the same factor. Growing by five per cent means keeping all one hundred per cent, and adding five more. So each value is multiplied by one point zero five. Falling by twenty per cent means keeping eighty per cent, so r is zero point eight. Either way, every period multiplies by the same number, so the values make a geometric sequence. Arithmetic models add the same amount. Geometric models multiply by the same factor."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "counting from time zero",
+      "voiceover": {
+        "text": "Now the timing. Call the starting amount A, at time zero. After one period, it's A times r. After t periods, it's been multiplied t times, so the amount is A, times r to the t. Time is in the power, so the quantity is an exponential function of time. In sequence language, the start is the first term, so after t periods we're at term t plus one. Some questions call the value after the first period the first term instead. Then after t periods, you're at term t. So always ask what time the first term is."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "worked example: a chain message passes a million",
+      "voiceover": {
+        "text": "When does a chain message reach a million people? Five hundred people have it at the start, and the number who have it triples every hour. Set five hundred times three to the t above one million. Divide by five hundred, so three to the t is more than two thousand. Take logs, and divide by log three, which is positive, so the inequality stays the same way round. Then t is more than about six point nine two. So seven is the first whole hour with more than a million. Check: after six hours it's three hundred and sixty-four thousand, five hundred, and after seven, one million, ninety-three thousand, five hundred."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "worked example: a camper trailer that loses value",
+      "voiceover": {
+        "text": "Now decay. A camper trailer costs thirty thousand dollars new, and loses fifteen per cent of its value each year. So r is zero point eight five, and after n years it's worth thirty thousand, times zero point eight five to the n. After five years, that's about thirteen thousand three hundred and eleven dollars. When is it first worth less than ten thousand? Divide by thirty thousand, so zero point eight five to the n is less than a third. Take logs. But log of zero point eight five is negative, and dividing by a negative number flips the inequality. So n is more than about six point seven six, and the answer is seven years. Check: after six years it's worth about eleven thousand three hundred dollars, and after seven, about nine thousand six hundred."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "geometric against arithmetic decay",
+      "voiceover": {
+        "text": "Compare that with an arithmetic model. If the trailer lost a fixed four thousand five hundred dollars every year, which is fifteen per cent of its first price, it would be worth nothing after six and two thirds years. The geometric model takes fifteen per cent of what's left, so each year's loss is smaller than the one before. Its value gets closer and closer to zero, but never reaches it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a total over time: the oil well",
+      "voiceover": {
+        "text": "An oil well produces fifty thousand barrels in its first year, and each year after that, ten per cent less than the year before. Here the first term is the first year's output, so year n is term n. So a is fifty thousand, and r is zero point nine. Over the first ten years, the well produces S ten. That's fifty thousand, times one minus zero point nine to the ten, over zero point one, which is about three hundred and twenty-five thousand, six hundred and sixty-one barrels. And since r is less than one, the totals settle. S infinity is fifty thousand over zero point one, which is five hundred thousand. However long it runs, the well can never produce more than five hundred thousand barrels."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "For any of these models, use three steps. Find the start. Find the ratio, from the percentage. Then count the multiplications from time zero. Start, ratio, count."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A concert ticket costs one hundred and twenty dollars this year. Ticket prices rise by four per cent each year. Find the price after five years, to the nearest cent. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Rising by four per cent means multiplying by one point zero four each year. The start is one hundred and twenty dollars, at time zero, so after five years there have been five multiplications. One hundred and twenty times one point zero four to the five is one hundred and forty-six dollars, to the nearest cent. A hundred and forty dollars and thirty-eight cents is wrong. It uses the power four, as if the start were the first multiplication."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A new mine produces eighty thousand tonnes of ore in its first year. Each year after that, it produces five per cent less than the year before. Its total output can never pass a certain amount. Find that amount. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Five per cent less each year means keeping ninety-five per cent, so r is zero point ninety-five. The first year's output is the first term, so a is eighty thousand. Since r is less than one, the totals settle, and the limiting sum is eighty thousand over zero point zero five, which is one million six hundred thousand tonnes. About eighty-four thousand tonnes is wrong. It uses zero point zero five as the ratio, instead of zero point ninety-five."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a geometric model multiplies by the same ratio every period, from a start at time zero, and its sums give totals over time. But some quantities are multiplied, and then have something taken away. A car loan of thirty thousand dollars grows by zero point six per cent interest each month, so it's multiplied by one point zero zero six. Then a six hundred dollar repayment comes off. What happens to the balance, month by month?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

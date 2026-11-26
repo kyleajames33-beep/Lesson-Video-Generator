@@ -1,0 +1,81 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/hms-y11-m2-v15.md",
+  "sourceSha256": "fc2ad02c7b9c1d2a21ebd8137ef725ef3f5c99b91005bb50267792f82abfb06c",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's a class results table. Eighteen students train aerobically for six weeks. Their average resting heart rate falls from seventy-four to sixty-eight, and the class concludes that aerobic training lowers resting heart rate. That conclusion happens to be true. But their investigation doesn't support it. How many reasons can you find? And why is a true conclusion from weak evidence still a failure?",
+      "audioFile": "public/audio/hms-y11-m2-v15/hook.wav"
+    },
+    {
+      "id": "question",
+      "text": "Earlier, you met the research cycle: question, method, sample, ethics, quality, findings and the next question. Run this investigation round it. The question is where it first goes wrong. A usable question names what's measured, in whom, under what conditions, and compared with what. Does six weeks of training at seventy to eighty per cent of maximum heart rate lower resting heart rate in sixteen-year-olds, compared with a matched group who don't train? That last part, a control group, is the one students leave out. Without it, any change has endless possible causes.",
+      "audioFile": "public/audio/hms-y11-m2-v15/question.wav"
+    },
+    {
+      "id": "method",
+      "text": "Next, the method. At school, you've got a few real options, and each has a weakness. A pulse count needs no equipment, but counting errors creep in, and after exercise the rate's already falling while you count. A heart rate monitor records the whole session, if the strap fits. A sub-maximal step test estimates aerobic fitness, but many versions rely on the maximum heart rate guess from earlier. A beep test is maximal, so it measures motivation as well as fitness, and carries the most risk. Choose the method that can answer your question, and say one thing it can't tell you.",
+      "audioFile": "public/audio/hms-y11-m2-v15/method.wav"
+    },
+    {
+      "id": "ethics",
+      "text": "Then ethics. You met consent and anonymity earlier. Measuring bodies adds more. Anyone under eighteen needs a parent or guardian's consent too, and everyone can stop at any time, with no consequence. A maximal test needs screening for health conditions first, and supervision, and nobody should be pushed past the point they want to stop. Results should be de-identified and stored securely. And testing in front of classmates isn't neutral. It can be humiliating, and for some students it touches body image. So ask more than whether they signed. Ask whether they could realistically have said no.",
+      "audioFile": "public/audio/hms-y11-m2-v15/ethics.wav"
+    },
+    {
+      "id": "quality",
+      "text": "Now quality. Earlier, you met three checks: did you measure the right thing, would you get it again, and can you trust the source? They come apart. A scale that always reads three kilos heavy is perfectly reliable, and wrong every time. So reliable doesn't mean valid. For heart rate, validity means controlling what else could change it: a control group, the same time of day, and no caffeine, hard exercise or poor sleep beforehand, because each can shift the result on its own. Reliability means the same measurer, the same method, repeated and averaged. Credibility means reporting your full method and every result. The class had none of these. Their conclusion is true, but their investigation isn't why we believe it.",
+      "audioFile": "public/audio/hms-y11-m2-v15/quality.wav"
+    },
+    {
+      "id": "findings",
+      "text": "Then findings. Show the spread, not just the average. Eighteen people averaging six beats lower could mean everyone fell a little, or a few fell a lot and four didn't change. Choose the display for the question, and don't let the axis argue for you. Starting it at sixty-six turns six beats into a cliff. Then write a conclusion no bigger than the evidence: in this group of sixteen-year-olds, resting heart rate fell by about six beats in six weeks, but without a control group, we can't say the training caused it. And the next questions come from what you couldn't show. Would a control group change the answer? Why did four people not change? Would three weeks have been enough?",
+      "audioFile": "public/audio/hms-y11-m2-v15/findings.wav"
+    },
+    {
+      "id": "debate",
+      "text": "Now the bigger question: should we test fitness at all? The answer changes with the group. For elite athletes, testing sets training intensities and shows whether they're recovering, though they can end up training for the test. For school students, a test can give a baseline and teach self-monitoring, but public, ranked testing can humiliate the students who most need encouragement. For adults, screening can catch heart risk early, but a poor score can put someone off starting, and a maximal test without screening is risky. For older adults, balance and chair-rise tests predict falls, but tests designed for young athletes aren't valid or safe for them. Two ideas settle most of it. The harm is usually in the purpose and the comparison, not the measurement. Comparing yourself with your own earlier result, privately, is very different from a public ranking. And a test is only worth doing if a decision follows from it.",
+      "audioFile": "public/audio/hms-y11-m2-v15/debate.wav"
+    },
+    {
+      "id": "memory",
+      "text": "Two things to remember. Draw a conclusion no bigger than your evidence. And if no decision follows, don't run the test.",
+      "audioFile": "public/audio/hms-y11-m2-v15/memory.wav"
+    },
+    {
+      "id": "attempt",
+      "text": "Two exam questions. First. A student's research question is: does exercise improve breathing? Rewrite it so that it could actually be investigated, and explain why your version is better. Pause here to answer.",
+      "audioFile": "public/audio/hms-y11-m2-v15/attempt.wav"
+    },
+    {
+      "id": "feedback-one",
+      "text": "For example: does eight weeks of continuous running, three times a week, lower resting breathing rate in Year 11 students, compared with a matched group who don't train? It now names the measure, who, the conditions, and a comparison, so a result could actually prove it wrong. The classic mistake is leaving out the comparison.",
+      "audioFile": "public/audio/hms-y11-m2-v15/feedback-one.wav"
+    },
+    {
+      "id": "attempt-two",
+      "text": "Second. After a beep test run in front of the whole team, a coach asks each player to count their own pulse for sixty seconds, starting whenever they're ready. Identify one problem with the data and one ethical problem, and suggest a fix for each. Pause here to answer.",
+      "audioFile": "public/audio/hms-y11-m2-v15/attempt-two.wav"
+    },
+    {
+      "id": "feedback-two",
+      "text": "Data: players start at different times, count their own way, and heart rate falls during a long count, so the results aren't reliable. Fix: one start signal and a fifteen-second count, or monitors. Ethics: a public maximal test adds pressure and risk. Fix: screen, supervise, let players stop, and keep results private. The classic mistake is a problem without a fix.",
+      "audioFile": "public/audio/hms-y11-m2-v15/feedback-two.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So, for any investigation, ask: compared with what, measured how, and is the conclusion the size of the evidence? But a fitness score only measures what the body can do now. It says nothing about how someone learns a new skill. So how do people actually learn movement skills?",
+      "audioFile": "public/audio/hms-y11-m2-v15/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/hms-y11-m2-v15/key-notes.wav"
+    }
+  ]
+}

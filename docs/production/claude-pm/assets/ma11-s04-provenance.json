@@ -1,0 +1,70 @@
+{
+  "brief": 249,
+  "lesson": "s04",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-98b14e3c-0c2a-492e-9743-e273bd35a527.png",
+      "sha256": "62cb982c4f1b07076bb79a155fc44fd28c3981b9bfc065aed54fc5e58176a7c4",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        44,
+        1448,
+        1086
+      ],
+      "marginFractions": [
+        0.0,
+        0.040515653775322284,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief249/s04-hotel-v2-native-paper.jpg",
+        "work/brief249/s04-hotel-v2-native-dark.jpg",
+        "work/brief249/s04-hotel-v2-native-white.jpg",
+        "work/brief249/s04-hotel-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-hotel-facade-v1.png",
+      "path": "public/assets/maths/ma11-hotel-facade-v1.png",
+      "brief": 249,
+      "lesson": "s04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1800
+      ],
+      "qa": {
+        "result": "Exactly40windows confirmed:5floors times8positions. Native/900paper/dark alpha and all40rectangle registrations inspected. Low-alpha sand fringe at canvas edges recorded.",
+        "evidence": [
+          "work/brief249/s04-hotel-v2-count-proof-dark.jpg",
+          "work/brief249/s04-hotel-v2-count-proof-paper.jpg",
+          "work/brief249/s04-hotel-v2-native-black.jpg",
+          "work/brief249/s04-hotel-v2-native-dark.jpg",
+          "work/brief249/s04-hotel-v2-native-paper.jpg",
+          "work/brief249/s04-hotel-v2-native-white.jpg",
+          "work/brief249/s04-hotel-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/s04-hotel-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-hotel-facade-v1.json"
+    }
+  ],
+  "result": "Hotel facade delivered at native1448x1086 after correcting first candidate32windows to exactly40. Five rows of eight plain windows, each with balcony rail; all40frame rectangles recorded by floor/position, ground floor1.900/native paper/dark alpha and coded count proof inspected. Sand fade touches canvas sides/bottom at very low alpha; building roof and walls complete. Public file remains native, no resampling.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/s04-hotel-v2-candidate-measurements.json",
+    "work/brief249/s04-hotel-v2-generation.json",
+    "work/brief249/s04-hotel-v2-geometry.json",
+    "work/brief249/s04-hotel-v2-qa.json"
+  ]
+}

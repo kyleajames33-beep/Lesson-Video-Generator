@@ -1,0 +1,71 @@
+{
+  "brief": 247,
+  "lesson": "w09",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-60e73884-1168-4b9e-a7f0-7df7526a785a.png",
+      "sha256": "c9285ac9c76c78c55b27dff695e11a6f3b676a978ad5f47480adba13e9b0d11e",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        216,
+        206,
+        1029,
+        1031
+      ],
+      "marginFractions": [
+        0.1722488038277512,
+        0.16427432216905902,
+        0.17942583732057416,
+        0.17783094098883573
+      ],
+      "evidence": [
+        "work/brief247/ma11-pizza-top-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-pizza-top-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-pizza-top-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-pizza-top-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-pizza-top-v1.png",
+      "path": "public/assets/maths/ma11-pizza-top-v1.png",
+      "brief": 247,
+      "lesson": "w09",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Whole uncut cheese/tomato/basil pizza on round timber board. No printed sector, answer or text.",
+          "Native paper/dark alpha, 240/620 px views and 12 equal sector overlay inspected. Margins exceed 16 percent. Cut radius stays inside crust."
+        ],
+        "evidence": [
+          "work/brief247/pizza-size-paper.jpg",
+          "work/brief247/pizza-size-dark.jpg",
+          "work/brief247/pizza-sectors-paper.jpg",
+          "work/brief247/pizza-sectors-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-pizza-top-v1.json"
+    }
+  ],
+  "result": "Pizza delivered for w08 handoff with centre and conservative inside-crust radius. Native alpha, 240/620 px and 12-sector overlay pass. w09 ramp handoff is reported with w10. Square-root mnemonic source finding remains for root.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/pizza-size-paper.jpg",
+    "work/brief247/pizza-size-dark.jpg",
+    "work/brief247/pizza-sectors-paper.jpg",
+    "work/brief247/pizza-sectors-dark.jpg",
+    "work/brief247/pizza-size-transforms.json"
+  ]
+}

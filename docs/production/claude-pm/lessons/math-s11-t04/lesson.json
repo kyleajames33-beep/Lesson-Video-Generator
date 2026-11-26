@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-t04",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "b52d534210360641703f78c3e99252e31f144a09cd20ff187aa05c795344411b",
+  "scenes": [
+    {
+      "id": "hook-noon",
+      "title": "hook: noon at different times",
+      "voiceover": {
+        "text": "Here's the globe, lit by the Sun. As the Earth turns, sunlight sweeps across it, and noon, when the Sun is highest, reaches Sydney first, and Perth a little later. The same happens with sunrise and sunset, every single day. So clocks in different places should read different times. But how much later? Is there a way to work out a time difference from longitude alone? There is, and it rests on one number. So how does longitude give time differences?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-15-degrees",
+      "title": "why 15 degrees is one hour",
+      "voiceover": {
+        "text": "The Earth spins once a day. That's a full turn, three hundred and sixty degrees, in twenty-four hours. Divide, and every hour it turns fifteen degrees. So fifteen degrees of longitude is one hour of time. Watch the noon line sweep. Every hour, it moves another fifteen degrees west. We can go smaller, too. One hour is sixty minutes, and sixty divided by fifteen is four, so one degree of longitude is four minutes of time. Move one degree east, and the Sun's noon comes four minutes sooner. Fifteen degrees is an hour, and one degree is four minutes. And because the Earth spins towards the east, the Sun always reaches the eastern place first. So the place further east is ahead, and the place further west is behind."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "same-side",
+      "title": "same side of Greenwich: subtract",
+      "voiceover": {
+        "text": "Let's use it. Sydney is at about a hundred and fifty-one degrees east, and Perth at about a hundred and sixteen degrees east. Both are east of Greenwich, on the same side, so subtract to find the gap. A hundred and fifty-one minus a hundred and sixteen is thirty-five degrees. Each degree is four minutes, so thirty-five degrees is a hundred and forty minutes, two hours and twenty minutes. Or divide by fifteen, and you get two and a third hours, the same thing. Careful, two and a third hours is two hours twenty, not two hours thirty-three, because a third of sixty minutes is twenty. Sydney is further east, so it's ahead. When the Sun says noon in Sydney, it says nine forty in Perth. Now here's the surprise. Real clocks in Perth are two hours behind Sydney on standard time, three during daylight saving, and never two hours twenty. Regions round their clocks to whole hours, or sometimes half hours, so everyone in a region shares one time. Longitude gives the Sun's time. The clocks are a choice, and that's coming up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "from-greenwich",
+      "title": "measuring from Greenwich",
+      "voiceover": {
+        "text": "The same idea explains a number you'll see a lot. The meridian at a hundred and fifty degrees east is a hundred and fifty degrees from Greenwich. A hundred and fifty divided by fifteen is ten, so it's ten hours ahead of Greenwich. When it's noon at Greenwich, it's ten pm there. A place at a hundred and five degrees east is seven hours ahead, so noon at Greenwich is seven pm there. And Sydney, at a hundred and fifty-one east, is one degree past a hundred and fifty, so by the Sun it's ten hours and four minutes ahead of Greenwich. That's why the clocks in eastern Australia are set ten hours ahead of Greenwich, the nearest whole hour, before any daylight saving."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "opposite-sides",
+      "title": "opposite sides: add, and watch the day",
+      "voiceover": {
+        "text": "What if the two places are on opposite sides of Greenwich, one east and one west? Then the gap runs through nought, so you add. Tokyo is at about a hundred and forty degrees east, and New York at about seventy-four degrees west. A hundred and forty plus seventy-four is two hundred and fourteen degrees. Times four minutes, that's eight hundred and fifty-six minutes, which is fourteen hours sixteen minutes. Tokyo is east, so it's ahead. If it's nine am on Wednesday in Tokyo, take off fourteen hours sixteen. Going back past midnight takes you into the day before. So by longitude, it's six forty-four pm on Tuesday in New York. When a time difference crosses midnight, check the day as well as the time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-slips",
+      "title": "two slips to avoid",
+      "voiceover": {
+        "text": "Two slips catch people here. The first is subtracting when the places are on opposite sides. Seventy-four from a hundred and forty is sixty-six degrees, which would put New York only four hours twenty-four behind Tokyo, and that's far too close. The second is the direction. Adding the hours to the western place puts it ahead, but the Sun reaches the east first, so east is always ahead."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's longitude and time in one card. Fifteen degrees is an hour, and one degree is four minutes. Same side, subtract the longitudes. Opposite sides, add them. And east is ahead, because the Sun gets there first."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Town A is at thirty degrees east, and town B is at one hundred and five degrees east. Using longitude only, when it's eight am in town A, what time is it in town B? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Both are east, so subtract. A hundred and five minus thirty is seventy-five degrees, and seventy-five divided by fifteen is five hours. Town B is further east, so it's ahead, and the time there is one pm. Taking the five hours off, to get three am, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Ship A is at ninety degrees east, and ship B is at forty-five degrees west. It's three pm on ship A. Using longitude only, find the time difference, and the time on ship B. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The ships are on opposite sides of Greenwich, so add. Ninety plus forty-five is a hundred and thirty-five degrees, and divided by fifteen, that's nine hours. Ship B is west, so it's behind. Three pm take away nine hours is six am. Subtracting, to get forty-five degrees and three hours, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: Australian time zones",
+      "voiceover": {
+        "text": "So that's longitude and time. Fifteen degrees an hour, and east ahead. But remember the surprise. Real clocks don't follow every degree. Australia shares just three time zones, each with one time on its clocks, rounded from the Sun's time, and some states move their clocks in summer while others don't. How do Australian time zones and daylight saving work? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

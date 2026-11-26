@@ -1,0 +1,179 @@
+{
+  "brief": 195,
+  "date": "2026-11-06",
+  "sourceSHA256": "edb2b1c3d6a86fccf3bc22067b47126f33a593ff32ac1944f3c150e3e7f1e1f5",
+  "status": "three assets generated; visual QA pass with native-size/alpha qualifications; source findings remain",
+  "assetClearance": "work/brief195/asset-clearance.md",
+  "rootDecision": "Two new flasks dropped. Reuse the existing Biology straight-neck clear/cloudy pair.",
+  "generationTool": "Built-in image_gen.imagegen; no CLI/API fallback",
+  "requests": [
+    {
+      "candidate": "work\\brief195\\field-candidate-v2.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "rawAlphaBounds": [
+        0,
+        19,
+        1134,
+        1073
+      ],
+      "visibleBoundsAlphaAbove16": [
+        186,
+        180,
+        1061,
+        1070
+      ],
+      "solidBoundsAlphaAbove128": [
+        187,
+        181,
+        1060,
+        1069
+      ],
+      "visibleMargins": [
+        0.14832535885167464,
+        0.14354066985645933,
+        0.15390749601275916,
+        0.1467304625199362
+      ],
+      "minimumVisibleMargin": 0.14354066985645933,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "nearTransparentPixelsAlpha1to16": 5196,
+      "sha256": "b616b2c3db9b4a6e1f5c192d5b6b20fdf7f2994ad4c846f5ab8072ca669b6ace",
+      "path": "public/assets/maths/ma12-microscope-field-v1.png",
+      "generated": true,
+      "generationTool": "image_gen.imagegen (built-in)",
+      "generatedOriginal": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-2481dead-08ea-408f-81dd-4a9b009a316f.png",
+      "sidecar": "public/assets/maths/ma12-microscope-field-v1.json",
+      "qa": "Visual pass at paper 300/600px, black/white, checkerboard and field/phone overlay. Native canvas sizes differ from design request; retain native aspect and fit painted bounds. Minor near-transparent alpha noise is disclosed."
+    },
+    {
+      "candidate": "work\\brief195\\rod-candidate-v1.png",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "rawAlphaBounds": [
+        0,
+        0,
+        1760,
+        887
+      ],
+      "visibleBoundsAlphaAbove16": [
+        334,
+        274,
+        1432,
+        616
+      ],
+      "solidBoundsAlphaAbove128": [
+        335,
+        275,
+        1431,
+        615
+      ],
+      "visibleMargins": [
+        0.1882750845546787,
+        0.3089064261555806,
+        0.1927846674182638,
+        0.3055242390078918
+      ],
+      "minimumVisibleMargin": 0.1882750845546787,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "nearTransparentPixelsAlpha1to16": 8800,
+      "sha256": "22407f52af1f78872797d0e251d43e88d146d5035806ca0001920d48ec29749d",
+      "path": "public/assets/maths/ma12-rod-cell-v1.png",
+      "generated": true,
+      "generationTool": "image_gen.imagegen (built-in)",
+      "generatedOriginal": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-793c0152-035c-4001-86f6-27dbe2262cb4.png",
+      "sidecar": "public/assets/maths/ma12-rod-cell-v1.json",
+      "qa": "Visual pass at paper 300/600px, black/white, checkerboard and field/phone overlay. Native canvas sizes differ from design request; retain native aspect and fit painted bounds. Minor near-transparent alpha noise is disclosed."
+    },
+    {
+      "candidate": "work\\brief195\\dividing-candidate-v2.png",
+      "nativeSize": [
+        1983,
+        793
+      ],
+      "mode": "RGBA",
+      "rawAlphaBounds": [
+        57,
+        108,
+        1888,
+        695
+      ],
+      "visibleBoundsAlphaAbove16": [
+        360,
+        301,
+        1624,
+        489
+      ],
+      "solidBoundsAlphaAbove128": [
+        361,
+        301,
+        1623,
+        488
+      ],
+      "visibleMargins": [
+        0.1815431164901664,
+        0.37957124842370743,
+        0.1810388300554715,
+        0.3833543505674653
+      ],
+      "minimumVisibleMargin": 0.1810388300554715,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "nearTransparentPixelsAlpha1to16": 5722,
+      "sha256": "5bfeafd2bc2e28297def62c918b0897c16dd91a1e88ba5f248065a7a153133e9",
+      "divisionPinch": {
+        "x": 989,
+        "canvasCentreX": 991.5,
+        "offsetPx": -2.5,
+        "heightPx": 58,
+        "maxBodyHeightPx": 187,
+        "neckToBodyThickness": 0.31016042780748665,
+        "connectedAtCentre": true,
+        "splitAtCanvasX": 991.5
+      },
+      "path": "public/assets/maths/ma12-rod-cell-dividing-v1.png",
+      "generated": true,
+      "generationTool": "image_gen.imagegen (built-in)",
+      "generatedOriginal": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-58f10d1c-4b7a-48e5-aecc-498af4fb4336.png",
+      "sidecar": "public/assets/maths/ma12-rod-cell-dividing-v1.json",
+      "qa": "Visual pass at paper 300/600px, black/white, checkerboard and field/phone overlay. Native canvas sizes differ from design request; retain native aspect and fit painted bounds. Minor near-transparent alpha noise is disclosed."
+    }
+  ],
+  "references": [
+    "public/assets/biology/b6a-bacterium-v1.png",
+    "public/assets/biology/y11-cheek-cells-field-v1.png"
+  ],
+  "qaDirectory": "docs/production/claude-pm/assets/ma12-d01-qa",
+  "rejectedCandidates": [
+    {
+      "path": "work/brief195/field-candidate-v1.png",
+      "reason": "Field filled too much of canvas; requested wider framing."
+    },
+    {
+      "path": "work/brief195/dividing-candidate-v1.png",
+      "reason": "Painted body only about 5.6 percent from horizontal edges; requested wider framing."
+    }
+  ],
+  "buildNotes": [
+    "Use paintedBounds to fit the field to the desired visible diameter.",
+    "Use the rod and division painted body heights to select a common uniform scale; do not give both full canvases the same width. The division then has about twice the visible body length.",
+    "The division is connected at the canvas centre. Its lowest sampled column is 2.5 native pixels left of centre, within the broad pinched neck; splitting at the exact canvas centre stays inside that neck.",
+    "Generated native sizes are 1254x1254, 1774x887 and 1983x793, not the design-requested canvases. PNGs were copied without stretching or other raster editing.",
+    "Raw alpha has some values 1 to 16 outside the visible artwork. Visible bounds at alpha above16 leave at least14 percent margin; absolute zero-alpha margin is not claimed.",
+    "Four script findings remain open for Claude. No maths kit, d01 scene, speech or render was changed."
+  ]
+}

@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "f28a0378c4cb5d0be5a29573fa71a4c66fc5ce49aad5ec83fcac3c903bee1b0d",
+  "sourceDesignSha256": "61798eb0d07b526d0851daca563e013b12e3b3f975374d34edc2f24ea92a406e",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Make your prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "parts",
@@ -42,7 +52,7 @@
       "id": "torque-formula",
       "title": "how big is the torque?",
       "voiceover": {
-        "text": "How strong is that turning effect? You've met torque before: it's r F sine theta. Each long side is half the coil's width from the axle, and with n turns, its force is n I l B. Here's the neat part. The angle that matters turns out to be the angle between the field, and the coil's area normal, the arrow at right angles to its face, the same normal we used for flux. Add the two sides, and the width times the length is the area. So the torque is n I A B sine theta. That's the form we'll use, with theta measured from the normal."
+        "text": "How strong is that turning effect? You've met torque before: it's r F sine theta. Each long side is half the coil's width from the axle, and with n turns, its force is n I l B. Here's the neat part. The angle that matters turns out to be the angle between the field, and the coil's area normal, the arrow at right angles to its face, the same normal we used for flux. Add the two sides, and the width times the length is the area. Cos is close, so the turning part of each force, opposite theta, takes sine. So the torque is n I A B sine theta. That's the form we'll use, with theta measured from the normal."
       },
       "durationInFrames": 1,
       "holdSeconds": 0,

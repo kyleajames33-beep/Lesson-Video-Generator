@@ -1,0 +1,92 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/lessons/math-s11-m07.md",
+  "assets": [
+    {
+      "name": "ms11-electricity-meter-v1.png",
+      "path": "public/assets/maths/ms11-electricity-meter-v1.png",
+      "requestedDestination": "public/assets/maths/ms11-electricity-meter-v1.png",
+      "status": "accepted",
+      "sha256": "426b7011dec205d3598b906c8f4250dd1722f4e149a7aeaf339e6f117e448d5d",
+      "size": [
+        1100,
+        1429
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        97,
+        117,
+        939,
+        1345
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/math-s11-m07.md",
+      "sourceBriefSha256": "5ec57b4a459ccc15b240cbd363406b05902d1b63128d345ad03188e5c2fa572f",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/ms11-electricity-meter-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-89770c2d-e6dd-4379-ba5c-b622b4cba76d.png",
+      "prompt": "Create a new isolated teaching object plate. 1. `ms11-electricity-meter-v1.png` (about 900 \u00d7 1300 px, portrait): a household electricity meter in a small grey metal meter box with the door open, front view, mounted on a strip of painted brick wall; the meter has a **blank rectangular display window** (left plain for coded digits) and a small blank label area. No numbers, brand or utility name. It must read clearly at 260 px tall. House style: fine charcoal ink outlines and restrained layered watercolour washes, clear realistic object geometry, not vector clipart or a photograph. True transparent PNG outside the object and its small brick mounting strip. Blank display and blank label are essential for later coded numbers. At least12percent clear transparent margin; native portrait composition. No text, numbers, digits, arrows, logos, brands, people, human hands or human faces. Clean alpha silhouette without coloured halo, white paper fringe or glow. No entire wall or room.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "scaleReview": {
+        "paper": "#f6f1e7",
+        "sizes": [
+          800,
+          600,
+          300
+        ],
+        "axis": "width",
+        "sheet": "work/brief264/qa/ms11-electricity-meter-v1-sizes.jpg",
+        "result": "Object and blank display/door features remain legible"
+      }
+    },
+    {
+      "name": "ms11-water-meter-v1.png",
+      "path": "public/assets/maths/ms11-water-meter-v1.png",
+      "requestedDestination": "public/assets/maths/ms11-water-meter-v1.png",
+      "status": "accepted",
+      "sha256": "a4e836d3bf161c86246e9ba0ef7a190a144268d41131c91c8f56008659144776",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        19,
+        107,
+        1431,
+        1054
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/math-s11-m07.md",
+      "sourceBriefSha256": "5ec57b4a459ccc15b240cbd363406b05902d1b63128d345ad03188e5c2fa572f",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/ms11-water-meter-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-652b0bee-afec-4d94-ae2c-cdd0265229b7.png",
+      "prompt": "Create one isolated educational object plate, not a scene with people. Exact asset specification: 2. `ms11-water-meter-v1.png` (about 1200 \u00d7 900 px): a domestic water meter on a short copper pipe at ground level beside a garden path edge, three-quarter view, brass body with a **blank round dial face** and a **blank rectangular counter window** (left plain for coded digits). No numbers, brand or utility name. It must read clearly at 300 px wide. Fine dark ink outlines and realistic layered watercolour washes in restrained natural colours. True transparent PNG outside the listed objects. Preserve the requested native portrait/landscape proportions; do not stretch. At least12percent transparent margin. All meter dial faces and number windows must be completely blank for coded readings. No text, digits, labels, logos, brands, arrows, people, human hands or human faces. Clean alpha, no coloured fringe, white outline or glow; no background room. Render only this one requested plate.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "scaleReview": {
+        "paper": "#f6f1e7",
+        "sizes": [
+          800,
+          600,
+          300
+        ],
+        "axis": "width",
+        "sheet": "work/brief264/qa/ms11-water-meter-v1-sizes.jpg",
+        "result": "Object and blank display/door features remain legible"
+      }
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

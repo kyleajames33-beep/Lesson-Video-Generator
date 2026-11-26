@@ -1,0 +1,631 @@
+WEBVTT
+
+00:00:00.442 --> 00:00:03.153
+Last video ended here, with F of x
+
+00:00:03.314 --> 00:00:05.101
+equals x squared over nine.
+
+00:00:05.829 --> 00:00:06.577
+Let's give it a meaning.
+
+00:00:07.325 --> 00:00:09.655
+A parcel tracker says your delivery will come
+
+00:00:09.697 --> 00:00:11.062
+between nine and twelve.
+
+00:00:11.925 --> 00:00:14.148
+X is the arrival time in hours after
+
+00:00:14.189 --> 00:00:16.352
+nine, and F of x is the chance
+
+00:00:16.413 --> 00:00:17.995
+the parcel has arrived by then.
+
+00:00:19.080 --> 00:00:22.155
+F climbs slowly near zero, and steeply near
+
+00:00:22.256 --> 00:00:22.537
+three.
+
+00:00:23.402 --> 00:00:25.773
+Compare two strips of the same width, a
+
+00:00:25.854 --> 00:00:26.678
+tenth of an hour.
+
+00:00:27.482 --> 00:00:29.765
+From zero point five to zero point six,
+
+00:00:30.307 --> 00:00:32.891
+F only rises by about zero point zero
+
+00:00:33.052 --> 00:00:33.512
+one two.
+
+00:00:34.394 --> 00:00:36.380
+From two point five to two point six,
+
+00:00:36.823 --> 00:00:39.331
+it rises by about zero point zero five
+
+00:00:39.432 --> 00:00:39.692
+seven.
+
+00:00:40.355 --> 00:00:43.180
+So the same width holds almost five times
+
+00:00:43.282 --> 00:00:45.505
+as much probability near two point five.
+
+00:00:46.651 --> 00:00:49.265
+Steep means the arrival times are packed closely.
+
+00:00:49.990 --> 00:00:51.477
+So how do we measure that packing?
+
+00:00:52.321 --> 00:00:54.504
+Divide the rise in F by the width
+
+00:00:54.564 --> 00:00:56.868
+of the strip, and you get probability per
+
+00:00:57.008 --> 00:00:59.092
+unit of x, here per hour.
+
+00:00:59.913 --> 00:01:02.199
+Make the strip thinner and thinner, and that
+
+00:01:02.320 --> 00:01:03.824
+becomes the gradient of F.
+
+00:01:04.586 --> 00:01:07.111
+So we define the probability density function, f
+
+00:01:07.151 --> 00:01:09.876
+of x, as F prime of x, wherever
+
+00:01:10.156 --> 00:01:11.278
+F has a gradient.
+
+00:01:12.060 --> 00:01:14.368
+Here, f of x is two x over
+
+00:01:14.428 --> 00:01:17.719
+nine, between zero and three, and zero everywhere
+
+00:01:17.759 --> 00:01:17.900
+else.
+
+00:01:18.663 --> 00:01:19.605
+At one point five,
+
+00:01:20.208 --> 00:01:23.016
+F has gradient one third, so the density
+
+00:01:23.057 --> 00:01:24.802
+there is one third per hour.
+
+00:01:25.705 --> 00:01:27.273
+A density isn't a probability.
+
+00:01:27.636 --> 00:01:30.165
+It's probability per unit of x, like a
+
+00:01:30.247 --> 00:01:32.094
+rope's density in grams per metre.
+
+00:01:32.858 --> 00:01:35.446
+A high density means probability is packed in
+
+00:01:35.528 --> 00:01:36.289
+near that value,
+
+00:01:36.873 --> 00:01:38.538
+not that the exact value is likely.
+
+00:01:39.162 --> 00:01:39.949
+Here's why that matters.
+
+00:01:40.453 --> 00:01:42.706
+Go back to the reaction-time histogram from last
+
+00:01:42.747 --> 00:01:43.109
+video.
+
+00:01:43.813 --> 00:01:46.245
+Divide each relative frequency by the class width,
+
+00:01:46.648 --> 00:01:47.492
+one tenth of a second.
+
+00:01:48.276 --> 00:01:51.442
+The heights become one, two point five, three
+
+00:01:51.503 --> 00:01:53.486
+point five, two and one,
+
+00:01:53.988 --> 00:01:54.588
+per second.
+
+00:01:55.291 --> 00:01:58.141
+Now each bar's area, height times width, is
+
+00:01:58.202 --> 00:01:58.964
+its probability,
+
+00:01:59.467 --> 00:02:00.851
+and the areas add to one.
+
+00:02:01.617 --> 00:02:03.590
+Three point five is bigger than one, and
+
+00:02:03.632 --> 00:02:04.114
+that's fine.
+
+00:02:04.518 --> 00:02:06.706
+A density can be bigger than one, because
+
+00:02:06.747 --> 00:02:09.418
+the probability is the area, not the height.
+
+00:02:10.249 --> 00:02:12.723
+So for a density, probability is area.
+
+00:02:13.669 --> 00:02:15.170
+For the density models we use,
+
+00:02:15.772 --> 00:02:17.153
+F is a primitive of f,
+
+00:02:18.356 --> 00:02:20.978
+so the area under f from c to
+
+00:02:21.000 --> 00:02:23.442
+d is F of d minus F of
+
+00:02:23.563 --> 00:02:23.802
+c.
+
+00:02:24.705 --> 00:02:27.511
+That's exactly the probability that X is between
+
+00:02:27.713 --> 00:02:28.393
+c and d.
+
+00:02:29.276 --> 00:02:31.539
+For the parcel, the area under two x
+
+00:02:31.681 --> 00:02:34.144
+over nine from one to two is four
+
+00:02:34.205 --> 00:02:36.869
+ninths minus one ninth, which is one third.
+
+00:02:37.612 --> 00:02:39.718
+That's the chance it arrives between ten and
+
+00:02:39.779 --> 00:02:42.708
+eleven, the same one third last video found
+
+00:02:42.890 --> 00:02:43.371
+from F.
+
+00:02:44.214 --> 00:02:47.221
+And since single values carry no probability, the
+
+00:02:47.362 --> 00:02:48.965
+ends of the interval still don't matter.
+
+00:02:49.597 --> 00:02:51.310
+Every density has two properties.
+
+00:02:52.216 --> 00:02:55.064
+First, f of x is never negative, because
+
+00:02:55.386 --> 00:02:58.314
+F never decreases, so its gradient can't be
+
+00:02:58.335 --> 00:02:58.976
+below zero.
+
+00:02:59.980 --> 00:03:02.765
+Second, the total area under f is one,
+
+00:03:03.127 --> 00:03:04.669
+because that's all of the probability.
+
+00:03:05.432 --> 00:03:07.276
+If X lives on an interval from a
+
+00:03:07.337 --> 00:03:09.381
+to b, the integral from a to b
+
+00:03:09.583 --> 00:03:09.983
+is one.
+
+00:03:10.846 --> 00:03:12.812
+If X can be any real number, the
+
+00:03:12.873 --> 00:03:15.944
+integral from minus infinity to infinity is one.
+
+00:03:16.971 --> 00:03:18.204
+Check two x over nine.
+
+00:03:18.831 --> 00:03:21.337
+It's never negative from zero to three, and
+
+00:03:21.399 --> 00:03:22.782
+its area is a triangle,
+
+00:03:23.305 --> 00:03:25.631
+half of three times two thirds, which is
+
+00:03:25.832 --> 00:03:25.932
+one.
+
+00:03:26.635 --> 00:03:28.442
+These two properties solve problems.
+
+00:03:29.085 --> 00:03:31.766
+A second courier's arrival time, X hours after
+
+00:03:31.867 --> 00:03:35.188
+eight, has density k times four minus x,
+
+00:03:35.609 --> 00:03:37.750
+for x from zero to four, and zero
+
+00:03:37.851 --> 00:03:38.190
+elsewhere.
+
+00:03:38.974 --> 00:03:40.922
+Their stop is early on the route, so
+
+00:03:41.064 --> 00:03:42.711
+early arrivals are most likely.
+
+00:03:43.296 --> 00:03:43.799
+Find k.
+
+00:03:44.950 --> 00:03:46.503
+The total area must be one.
+
+00:03:47.127 --> 00:03:49.214
+The graph is a triangle with base four
+
+00:03:49.335 --> 00:03:51.904
+and height four k, so its area is
+
+00:03:51.925 --> 00:03:52.385
+eight k.
+
+00:03:53.129 --> 00:03:54.583
+Integrating gives the same answer.
+
+00:03:55.230 --> 00:03:57.877
+So eight k equals one, and k is
+
+00:03:58.039 --> 00:03:58.459
+one eighth.
+
+00:03:59.263 --> 00:04:00.909
+It has to be positive, because a density
+
+00:04:00.950 --> 00:04:01.632
+can't be negative.
+
+00:04:02.215 --> 00:04:04.444
+Now find the probability that X is less
+
+00:04:04.485 --> 00:04:04.886
+than one,
+
+00:04:05.530 --> 00:04:07.296
+so this courier comes before nine.
+
+00:04:08.041 --> 00:04:10.778
+Integrate four minus x, over eight, from zero
+
+00:04:10.859 --> 00:04:11.200
+to one.
+
+00:04:12.043 --> 00:04:14.324
+That's one eighth of four minus a half,
+
+00:04:14.705 --> 00:04:16.005
+which is seven sixteenths.
+
+00:04:16.928 --> 00:04:18.759
+Just under half of the probability sits in
+
+00:04:18.780 --> 00:04:20.248
+the first hour of the four.
+
+00:04:21.236 --> 00:04:23.409
+That fits, because this density is highest at
+
+00:04:23.450 --> 00:04:23.771
+zero.
+
+00:04:24.411 --> 00:04:26.027
+We can also build F from f.
+
+00:04:26.269 --> 00:04:29.055
+F of x is the area under f
+
+00:04:29.216 --> 00:04:30.719
+from the start of the domain up to
+
+00:04:30.920 --> 00:04:31.060
+x.
+
+00:04:31.563 --> 00:04:31.722
+So
+
+00:04:32.326 --> 00:04:34.252
+F of x is the integral from zero
+
+00:04:34.293 --> 00:04:36.601
+to x of f of t, d t.
+
+00:04:37.346 --> 00:04:39.536
+The letter t is a dummy variable, because
+
+00:04:39.698 --> 00:04:41.004
+x is already the upper limit.
+
+00:04:41.768 --> 00:04:44.478
+Here, that gives eight x minus x squared,
+
+00:04:44.640 --> 00:04:47.229
+over sixteen, for x from zero to four.
+
+00:04:48.020 --> 00:04:48.586
+Check the ends.
+
+00:04:49.212 --> 00:04:51.078
+F of zero is zero, and F of
+
+00:04:51.240 --> 00:04:54.149
+four is thirty two minus sixteen, over sixteen,
+
+00:04:54.531 --> 00:04:55.012
+which is one.
+
+00:04:55.695 --> 00:04:58.261
+And F of one is seven sixteenths, the
+
+00:04:58.363 --> 00:04:59.344
+area we just found.
+
+00:05:00.256 --> 00:05:02.023
+Going the other way takes one step.
+
+00:05:02.691 --> 00:05:03.380
+Differentiate.
+
+00:05:04.226 --> 00:05:06.647
+A variable has F of x equals x
+
+00:05:06.708 --> 00:05:09.909
+squared times three minus x, over four, for
+
+00:05:10.090 --> 00:05:11.430
+x from zero to two.
+
+00:05:12.274 --> 00:05:13.298
+First check the ends.
+
+00:05:14.003 --> 00:05:16.150
+F of zero is zero, and F of
+
+00:05:16.271 --> 00:05:19.121
+two is four times one, over four, which
+
+00:05:19.162 --> 00:05:19.482
+is one.
+
+00:05:20.287 --> 00:05:21.735
+Expand it, and differentiate.
+
+00:05:22.277 --> 00:05:24.704
+The density is three x times two minus
+
+00:05:24.885 --> 00:05:25.687
+x, over four.
+
+00:05:26.470 --> 00:05:28.535
+Both factors are positive between zero and two,
+
+00:05:28.877 --> 00:05:30.260
+so f is never negative.
+
+00:05:30.782 --> 00:05:33.087
+And f is zero elsewhere, because the flat
+
+00:05:33.128 --> 00:05:35.032
+pieces of F have gradient zero.
+
+00:05:35.656 --> 00:05:37.163
+Here's a picture to hold on to.
+
+00:05:37.968 --> 00:05:39.555
+Think of the parcel tracker.
+
+00:05:40.339 --> 00:05:42.142
+F is the chance it has arrived so
+
+00:05:42.244 --> 00:05:45.370
+far, and f is how fast that chance
+
+00:05:45.451 --> 00:05:46.653
+is building at x.
+
+00:05:47.397 --> 00:05:48.931
+Differentiate F to get f.
+
+00:05:49.960 --> 00:05:51.366
+Integrate f to get F.
+
+00:05:52.150 --> 00:05:53.620
+And by the end of the window, F
+
+00:05:53.782 --> 00:05:54.970
+reaches exactly one.
+
+00:05:57.716 --> 00:05:58.119
+Your turn.
+
+00:05:58.725 --> 00:06:01.091
+A density is k times x plus one,
+
+00:06:01.514 --> 00:06:03.820
+for x from zero to two, and zero
+
+00:06:03.981 --> 00:06:04.361
+elsewhere.
+
+00:06:04.964 --> 00:06:07.654
+Find k, then find the probability that X
+
+00:06:07.796 --> 00:06:08.678
+is greater than one.
+
+00:06:09.342 --> 00:06:10.249
+Pause here to answer.
+
+00:06:20.920 --> 00:06:24.067
+The total area is k times x squared
+
+00:06:24.087 --> 00:06:26.431
+over two plus x, from zero to two,
+
+00:06:26.972 --> 00:06:27.674
+which is four k.
+
+00:06:28.516 --> 00:06:30.105
+So k is one quarter.
+
+00:06:31.027 --> 00:06:32.869
+Then the probability that X is more than
+
+00:06:33.109 --> 00:06:35.471
+one is the integral from one to two
+
+00:06:35.491 --> 00:06:37.552
+of x plus one, over four.
+
+00:06:38.414 --> 00:06:40.520
+That's one quarter of four minus one and
+
+00:06:40.541 --> 00:06:42.024
+a half, which is five eighths.
+
+00:06:42.890 --> 00:06:43.895
+Three quarters is wrong.
+
+00:06:44.380 --> 00:06:46.194
+That's the height of f at two, not
+
+00:06:46.215 --> 00:06:46.678
+an area.
+
+00:06:48.251 --> 00:06:48.676
+Last one.
+
+00:06:49.528 --> 00:06:52.432
+A continuous random variable has F of x
+
+00:06:52.834 --> 00:06:55.999
+equals four x minus x squared, over four,
+
+00:06:56.480 --> 00:06:57.962
+for x from zero to two,
+
+00:06:58.504 --> 00:07:01.328
+with F equal to zero below zero, and
+
+00:07:01.630 --> 00:07:02.470
+one above two.
+
+00:07:03.253 --> 00:07:05.222
+Find its probability density function.
+
+00:07:05.869 --> 00:07:06.817
+Pause here to answer.
+
+00:07:18.218 --> 00:07:19.572
+Differentiate the middle piece.
+
+00:07:20.175 --> 00:07:22.757
+Four minus two x, over four, is two
+
+00:07:22.838 --> 00:07:25.619
+minus x, over two, for x from zero
+
+00:07:25.640 --> 00:07:25.959
+to two.
+
+00:07:26.702 --> 00:07:27.687
+It's never negative there.
+
+00:07:28.452 --> 00:07:29.414
+Outside that interval,
+
+00:07:30.036 --> 00:07:32.321
+f is zero, because the flat pieces of
+
+00:07:32.563 --> 00:07:34.025
+F have gradient zero.
+
+00:07:34.829 --> 00:07:37.162
+Saying f is one for x above two
+
+00:07:37.345 --> 00:07:37.867
+is wrong.
+
+00:07:38.451 --> 00:07:40.729
+The derivative of a constant is zero, not
+
+00:07:40.830 --> 00:07:40.910
+one.
+
+00:07:42.580 --> 00:07:44.482
+So the density is the gradient of F,
+
+00:07:45.022 --> 00:07:47.044
+probabilities are areas under it,
+
+00:07:47.584 --> 00:07:49.546
+and the total area is one.
+
+00:07:50.409 --> 00:07:51.597
+Next, a new question.
+
+00:07:52.178 --> 00:07:54.160
+Here's the density we found a moment ago,
+
+00:07:54.760 --> 00:07:57.523
+three x times two minus x, over four.
+
+00:07:58.245 --> 00:08:00.235
+Where is X most likely to be?
+
+00:08:01.079 --> 00:08:03.511
+And where's the middle, with half the probability
+
+00:08:03.672 --> 00:08:04.416
+on each side?
+
+00:08:07.528 --> 00:08:08.391
+Here are the key notes.
+
+00:08:08.794 --> 00:08:10.341
+Pause the video if you need more time
+
+00:08:10.383 --> 00:08:10.844
+to copy them.

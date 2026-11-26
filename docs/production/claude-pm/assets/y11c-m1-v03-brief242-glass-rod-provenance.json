@@ -1,0 +1,72 @@
+{
+  "file": "public/assets/chemistry/y11c-glass-rod-v1.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-72cb895e-a8cc-427c-8af0-f5611ba1bd81.png",
+  "lesson": "chem-y11-m1-v03",
+  "consumers": [
+    "chem-y11-m1-v03",
+    "chem-y11-m1-v06"
+  ],
+  "title": "Chemistry M1 v03 glass stirring rod, also used by v06",
+  "requestedSize": [
+    2000,
+    300
+  ],
+  "reportName": "y11c-m1-v03-upgrade-glass-rod-check.md",
+  "provenanceName": "y11c-m1-v03-brief242-glass-rod-provenance.json",
+  "anchors": {
+    "axis": [
+      [
+        78,
+        363
+      ],
+      [
+        2096,
+        363
+      ]
+    ],
+    "leftEndCentre": [
+      97,
+      362
+    ],
+    "rightEndCentre": [
+      2075,
+      362
+    ]
+  },
+  "prompt": "One new chemistry production asset y11c-glass-rod-v1.png: a SINGLE clear glass laboratory STIRRING ROD, horizontal straight cylinder with softly rounded solid ends, NOT a hollow tube, no handle and no enlarged ends. Requested canvas2000by300, very wide approximately6.67:1 if possible. Rod centred from left to right, lying perfectly horizontal in side view, long/slender natural laboratory proportions about25length to1diameter. Gentle upper-left light, fine blue-grey dark ink contours, layered restrained watercolour realism, subtle internal glass highlights only, readable on cream paper. Leave at least8percent clear transparent canvas margin all round. Entire rod fully inside frame. True transparent PNG alpha. No liquid, crystals, numbers, graduations, text, logos, people, hands, faces, shadow, ground, white matte, glow, halo, surrounding wash or background. No plastic straw, open bore or metal.",
+  "qa": {
+    "result": "static pass with canvas and margin limits",
+    "observations": [
+      "Single straight transparent glass rod, solid rounded ends, no hollow bore, labels, people, printed data or crystals.",
+      "Actual native paper and dark views inspected. Thin contours and internal glass highlight are clean, without external halo or white matte.",
+      "Returned 2172 by 724 rather than 2000 by 300; fit from visible-object anchors and scale uniformly. Side margins about three percent need extra scene padding.",
+      "Use for both v03 and v06; code-added crystals and contact placement remain scene checks."
+    ],
+    "evidence": [
+      "work/brief242/glass-rod-native-paper.jpg",
+      "work/brief242/glass-rod-native-dark.jpg"
+    ]
+  },
+  "reportText": "Delivered `public/assets/chemistry/y11c-glass-rod-v1.png` and sidecar, shared by M1 v03 and v06. The single straight clear rod has solid rounded ends. No text, people, question data or painted crystals. Actual native paper and dark views pass static edge QA without an external halo.\n\nReturned 2172 by 724 differs from requested 2000 by 300. Preserve native aspect, fit using visible rod bounds and scale uniformly. About three percent side margins need extra scene padding. Stirring/contact positions and code-added crystal placement remain build checks.",
+  "statusText": "Delivered shared y11c-glass-rod-v1.png, sidecar, provenance and manifest for M1 v03 and v06. Rounded solid glass ends and actual native paper/dark static QA pass. Returned canvas differs from request and side margins are narrow: fit visible bounds uniformly with extra padding. Contact and crystals remain scene checks.",
+  "id": "y11c-glass-rod-v1",
+  "brief": 242,
+  "sha256": "68f6db7b549154a567335f6aea56283dd7dc7b646f4c15a293eee86ad09a970a",
+  "nativeSize": [
+    2172,
+    724
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    68,
+    327,
+    2106,
+    398
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false,
+  "currentRootDecision": "Decision 2 requires coded rod; this PNG is an optional extra, not a required missing commission or an approved replacement."
+}

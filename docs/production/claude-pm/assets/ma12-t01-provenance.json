@@ -1,0 +1,220 @@
+{
+  "brief": 240,
+  "assets": [
+    {
+      "name": "ma12-surf-beach-strip-v1.png",
+      "path": "public/assets/maths/ma12-surf-beach-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a7bbfd35-fcfc-418b-b420-f904bf7581c2.png",
+      "designs": [
+        "t01"
+      ],
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        3200,
+        900
+      ],
+      "sha256": "c4e2cb1233b42f85085db109ec0b826a95af34a5017880bf2f0c4434d57c154d",
+      "alphaBox": [
+        162,
+        19,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        633,
+        309,
+        2172,
+        561
+      ],
+      "approxBasePoint": [
+        1402.5,
+        560
+      ],
+      "topY": 309,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "seaLineY": 560,
+      "seaLineXRange": [
+        633,
+        2171
+      ],
+      "leftClearFraction": 0.2914364640883978,
+      "profilePoints": [
+        [
+          633,
+          549
+        ],
+        [
+          900,
+          500
+        ],
+        [
+          1200,
+          452
+        ],
+        [
+          1500,
+          410
+        ],
+        [
+          1800,
+          350
+        ],
+        [
+          2100,
+          313
+        ]
+      ],
+      "profileFinding": "Native2172x724 vs requested3200x900. Meaningful sea edge rows559to560; left clear fraction29.1percent rather than one third. Reported actual profile; no stretching.",
+      "anchorUncertaintyPx": 8,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Native2172x724 differs from3200x900; sea row563 measured. Left clear region is29percent rather than full third. Builder must reconcile actual profile, no stretching.",
+        "Native2172x724 vs requested3200x900. Meaningful sea edge rows559to560; left clear fraction29.1percent rather than one third. Reported actual profile; no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.2914364640883978,
+        0.42679558011049723,
+        0.0,
+        0.22513812154696133
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied.",
+      "seaLineRowRange": [
+        559,
+        560
+      ]
+    },
+    {
+      "name": "ma12-marker-buoy-v1.png",
+      "path": "public/assets/maths/ma12-marker-buoy-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f2462d74-bfee-4677-95a7-b951bc356fe0.png",
+      "designs": [
+        "t01"
+      ],
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "requestedSize": [
+        800,
+        1200
+      ],
+      "sha256": "f492a76b2fca31659ac75dd313eeae11363a9e08826778a2948050279173e023",
+      "alphaBox": [
+        0,
+        37,
+        1010,
+        1512
+      ],
+      "alpha32Box": [
+        198,
+        127,
+        825,
+        1421
+      ],
+      "approxBasePoint": [
+        511.5,
+        1420
+      ],
+      "topY": 127,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "waterlineY": 876,
+      "floatWidestSpan": [
+        200,
+        823
+      ],
+      "floatCentreX": 512,
+      "profileFinding": "Cross-shaped topmark is diagonal rather than a plus. Near-symmetry is visual, not exact mirrored pixels.",
+      "anchorUncertaintyPx": 7,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Cross-shaped topmark is diagonal rather than a plus. Near-symmetry is visual, not exact mirrored pixels."
+      ],
+      "meaningfulMarginFractions": [
+        0.193359375,
+        0.08268229166666667,
+        0.1943359375,
+        0.07486979166666667
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-marker-buoy-orange-v1.png",
+      "path": "public/assets/maths/ma12-marker-buoy-orange-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-4d5373f7-dcff-4011-b92b-6581f0abcce5.png",
+      "designs": [
+        "t01"
+      ],
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "requestedSize": [
+        800,
+        1200
+      ],
+      "sha256": "fa386a1234d2be27d5a3ee2343d8282f846319897898ca734818e290f0b017af",
+      "alphaBox": [
+        0,
+        0,
+        1024,
+        1536
+      ],
+      "alpha32Box": [
+        198,
+        127,
+        825,
+        1421
+      ],
+      "approxBasePoint": [
+        511.5,
+        1420
+      ],
+      "topY": 127,
+      "visualQAInspected": true,
+      "state": "exact-overlay-tolerance-held",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "waterlineY": 876,
+      "floatWidestSpan": [
+        200,
+        823
+      ],
+      "floatCentreX": 512,
+      "alphaPixelIdenticalToYellow": false,
+      "maxAlpha32EdgeDisplacementPx": 1.0,
+      "profileFinding": "Native size and alpha32 box match yellow. Alpha is not pixel identical; alpha32 edges differ by up to1 native pixel. Strict no-edge-movement condition not certified.",
+      "anchorUncertaintyPx": 7,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Same native canvas and alpha32 bounding box as yellow; exact edge match is measured separately.",
+        "Native size and alpha32 box match yellow. Alpha is not pixel identical; alpha32 edges differ by up to1 native pixel. Strict no-edge-movement condition not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.193359375,
+        0.08268229166666667,
+        0.1943359375,
+        0.07486979166666667
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    }
+  ],
+  "note": "Native aspect preserved; source review findings retained; no speech or render"
+}

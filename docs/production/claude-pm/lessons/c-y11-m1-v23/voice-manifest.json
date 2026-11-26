@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v23.md",
+  "sourceSha256": "fc8f0be46ebecdb9bd94239b9c82f83dfbfaa9ae0f4d8e9d3f3973a5e0f3c4cc",
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Carbon dioxide and water have a lot in common. Each molecule has one central atom joined to two others, and each has two polar bonds to oxygen. Yet water molecules are polar, and carbon dioxide molecules are not. That one difference changes how they boil and what they dissolve, as we'll see in later videos. The difference isn't in the bonds. It's in the shape.",
+      "audioFile": "public/audio/chem-y11-m1-v23/hook.wav"
+    },
+    {
+      "id": "bond-dipoles",
+      "text": "Two videos ago, we saw that when two atoms share a pair of electrons unequally, the pair sits closer to the more electronegative atom. That atom gets a small negative charge, delta minus, and the other gets delta plus. We can draw a polar bond as an arrow, called a bond dipole, pointing toward the delta minus end. Oxygen is more electronegative than carbon, so in carbon dioxide both arrows point out toward the oxygens.",
+      "audioFile": "public/audio/chem-y11-m1-v23/bond-dipoles.wav"
+    },
+    {
+      "id": "adding-pulls",
+      "text": "So is the whole molecule polar? Treat each bond dipole as a pull, with a size and a direction, like two ropes tied to one knot. If two equal pulls point in opposite directions, the knot doesn't move. The dipoles cancel, and the molecule is non-polar, even though its bonds are polar. If the pulls don't cancel, there's an overall dipole, with one end of the molecule slightly negative and the other slightly positive. That's a polar molecule. So we need to know the shape.",
+      "audioFile": "public/audio/chem-y11-m1-v23/adding-pulls.wav"
+    },
+    {
+      "id": "vsepr",
+      "text": "Here's the rule that sets the shape. Around a central atom, groups of electrons repel each other, so they spread out as far apart as possible. A group can be a single bond, a double bond, or a lone pair, which is a pair of electrons that isn't shared. This is called VSEPR, short for valence shell electron pair repulsion. Start from the Lewis diagram, and count the electron groups around the central atom.",
+      "audioFile": "public/audio/chem-y11-m1-v23/vsepr.wav"
+    },
+    {
+      "id": "two-three-groups",
+      "text": "Carbon dioxide's carbon has two groups, both double bonds, and no lone pairs. Two groups get furthest apart on opposite sides, so the molecule is linear, with a bond angle of a hundred and eighty degrees. Boron trichloride, B Cl three, has three single bonds on boron, and no lone pairs. Three groups spread out flat, a hundred and twenty degrees apart. That shape is called trigonal planar.",
+      "audioFile": "public/audio/chem-y11-m1-v23/two-three-groups.wav"
+    },
+    {
+      "id": "four-groups",
+      "text": "Four groups get furthest apart in three dimensions. Methane's carbon has four bonds, pointing to the corners of a tetrahedron, about a hundred and nine and a half degrees apart. Ammonia's nitrogen also has four groups, but one is a lone pair. We name the shape from the atoms only, so ammonia is trigonal pyramidal, like a short tripod. Water's oxygen has two bonds and two lone pairs, so the atoms make a bent shape. Lone pairs push a little harder than bonds, which squeezes the angles to about a hundred and seven degrees in ammonia, and a hundred and four and a half in water.",
+      "audioFile": "public/audio/chem-y11-m1-v23/four-groups.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Carbon dioxide is linear, and water is bent. In which molecule do the bond dipoles cancel? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v23/prediction.wav"
+    },
+    {
+      "id": "cancel-or-add",
+      "text": "Carbon dioxide. Its two bond dipoles are the same size, and they point in exactly opposite directions, so they cancel. Carbon dioxide is non-polar. In water, the two arrows both lean toward the oxygen side. They add up to an overall dipole, with the oxygen end slightly negative, and the hydrogen end slightly positive. Water is polar. Same kind of bond, different shape, different result.",
+      "audioFile": "public/audio/chem-y11-m1-v23/cancel-or-add.wav"
+    },
+    {
+      "id": "lone-pairs",
+      "text": "Boron trichloride follows the same pattern. Three equal B Cl dipoles, spread evenly in a flat triangle, pull equally in three directions, so they cancel. Ammonia's three N H dipoles all lean toward the nitrogen, on the same side as its lone pair, so they don't cancel. Ammonia is polar. Here's the clue. A lone pair on the central atom usually breaks the symmetry.",
+      "audioFile": "public/audio/chem-y11-m1-v23/lone-pairs.wav"
+    },
+    {
+      "id": "outer-atoms",
+      "text": "Symmetry also needs matching outer atoms. Tetrachloromethane, C Cl four, is tetrahedral, with four identical polar bonds. They pull equally in every direction, so they cancel, and the molecule is non-polar. Now swap three chlorines for hydrogens, to make chloromethane, C H three Cl. It's still roughly tetrahedral, but C H bonds are only very slightly polar, so the strong C Cl dipole isn't balanced. Chloromethane is polar.",
+      "audioFile": "public/audio/chem-y11-m1-v23/outer-atoms.wav"
+    },
+    {
+      "id": "method",
+      "text": "So here's the method. One, check for polar bonds. With none, the molecule is non-polar. Two, find the shape from the electron groups. Three, ask whether the shape is symmetrical, with no lone pair on the central atom and identical outer atoms. If it is, the dipoles cancel. If not, the molecule is polar. A short way to remember it: polar bonds plus perfect symmetry make a non-polar molecule.",
+      "audioFile": "public/audio/chem-y11-m1-v23/method.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. In hydrogen sulfide, H two S, the sulfur atom has two bonding pairs and two lone pairs. Identify the shape of the molecule, and explain whether it's polar. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v23/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Bent, like water. Sulfur has four electron groups, and two are lone pairs, so the three atoms make a bent shape. The S H bonds are slightly polar, and in a bent shape their dipoles don't cancel, so hydrogen sulfide is a polar molecule. Calling it linear because it has three atoms is the classic slip.",
+      "audioFile": "public/audio/chem-y11-m1-v23/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Silicon tetrachloride, Si Cl four, and phosphorus trichloride, P Cl three, both have polar bonds to chlorine. The phosphorus atom has one lone pair, and the silicon atom has none. Explain why one of these molecules is polar and the other is not. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v23/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Si Cl four has four groups and no lone pairs, so it's tetrahedral. Four equal dipoles cancel, so it's non-polar. P Cl three has four groups, one a lone pair, so it's trigonal pyramidal. Its three dipoles don't cancel, so it's polar. Saying both are non-polar because they both have chlorine outer atoms is the trap.",
+      "audioFile": "public/audio/chem-y11-m1-v23/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Notice where every outer electron in these molecules is. Each one is held in a bond or a lone pair, inside its own molecule. So substances made of molecules, like pure water, don't carry an electric current well. Metals are different. Their outer electrons aren't held by any one atom, and a copper wire can be bent into any shape and still conduct. Next time, we'll find out why a metal can bend and still conduct electricity.",
+      "audioFile": "public/audio/chem-y11-m1-v23/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v23/key-notes.wav"
+    }
+  ]
+}

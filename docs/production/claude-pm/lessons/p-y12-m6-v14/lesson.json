@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "debf7dc58eaffb6ca6fe2d0b056464de1b8eea577699cde3ed0c8c2cc0eeb358",
+  "sourceDesignSha256": "0cc66dadc49c8c3dd7dd7ad4f6b7303e1c8f57b8756fc3a6003540b077c1ff0f",
   "scenes": [
     {
       "id": "hook",
@@ -22,7 +22,7 @@
         "text": "We compare them with efficiency. Efficiency is the useful power out, divided by the power in. Here that's one hundred and four over one hundred and fifteen, about ninety per cent. Remember the three assumptions behind the ideal model. All the flux links both coils, the windings have no resistance, and no energy is lost in the core. A real transformer breaks each one, just a little. Let's find out how."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 3,
       "holdKind": "visual"
     },
     {
@@ -32,7 +32,7 @@
         "text": "Start with the windings. They're long coils of copper wire, and real wire has resistance. Whenever current flows through resistance, it heats it. From Year 11, the heating power is I squared R. Double the current, and the heating goes up four times. Here's the surprise. The secondary carries ten amps. Even with a resistance of only zero point zero five zero ohms, it loses five point zero watts. The primary has much more resistance, four point zero ohms, but carries only zero point five zero amps, so it loses just one point zero watt. Because the current is squared, here the high-current winding loses more, even with far less resistance. So designers give it thicker wire, with less resistance. Big transformers also use oil and cooling fins, to carry the heat away."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 2,
       "holdKind": "visual"
     },
     {
@@ -52,7 +52,7 @@
         "text": "The fix is clever. Instead of a solid block, build the core from thin sheets of iron, each one coated with insulation. The sheets lie along the flux, so the field still runs through. But now each swirl of current is trapped inside one thin sheet. A thin loop goes round much less flux, so its emf is smaller, and its narrow path has more resistance. In a simple model, sheets ten times thinner cut the eddy current heating about a hundred times. That's why a real transformer core is laminated."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 3,
       "holdKind": "visual"
     },
     {

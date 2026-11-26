@@ -13,3 +13,10 @@ Geometry independently agrees: integrals0to6=36,6to8=-4,0to8=32;2x+1 over1to3=10
 Live site9November2026: https://hscscience.com.au/subjects/maths-advanced/year12/integral-calculus/lesson07.sa ,we-3 all3 steps fully revealed:12-2t,zero6,displacement32,pieces36/-4,site distance40. This design correctly defers the distance calculation. https://hscscience.com.au/subjects/maths-advanced/year12/integral-calculus/lesson02.sa ,we-1 all3 steps fully revealed: same2x+1,bounds1/3,result10,positive throughout. Site uses primitives; video uses equivalent geometry,not a claim that the site itself uses trapezia. No answers submitted; reveals award progress. Other unused site examples not inspected.
 
 5775characters/16scenes and no em dashes confirmed from frozen source. Cue collision requires correction before alignment.518s is an estimate;45s notes,recorded cue/caption timings,machine listening,human listening and exact voiced review remain pending. No design,narration,scene or measured-file edits.
+
+
+### Current source repair recheck,11November2026
+
+Current source SHA256 `4d3b39828dbe9de55cc917992d3b3cc2bf25e517ee57601b3a7e2f1a7376a5b8`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. The nonpositive-integral rule now gives<=0 and makes strict negativity conditional on a continuous nonzero region over a<b. Zero function is correctly included. For12-2t, six positive left strips,one zero andone negative are correct at n8; left/right sums at n256 are32.25/31.75. New long cue uniquely identifies the left value. Triangle0..6 gives36 and6..8 gives-4,total32litres over8minutes. Old seconds wording corrected. Source blockers resolved; bathtub geometry pending.
+
+Independent current recount:5861characters,16scene strings,declared total matches. Strings/cues in work/brief238/i07-repaired-source.json. Earlier blocker disposition is superseded for this source revision only; actual plate geometry,voiced timing and built playback are separate gates. No speech or source edit.

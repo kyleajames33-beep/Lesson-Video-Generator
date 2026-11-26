@@ -5,3 +5,10 @@
 Exact results in `work/brief240/f07-calculations.json`: bounce-height partial sums 64 through 127½, gap at n = 14 equal to 1/128, 2⁻¹⁰ = 1/1024, total travel 384 cm, 12/(1 − 1/3) = 18, alternating partial sums 8, 4, 6, 5, 11/2 and limit 16/3, repeating decimal 3/11, ratio 3/4 for the 40 limit, and 21,000 after one year for the handoff. With the first term −8 and r = −1/2 the limiting sum is −16/3, greater than −8. For 1 + 2x + 4x² + …, |2x| < 1 gives convergence and 1/(1 − 2x); x = 0 converges even though r = 0 falls outside the prior strict GP convention.
 
 Live site https://hscscience.com.au/subjects/maths-advanced/year12/sequences-and-series/lesson04.sa confirms Problem 2's 18 and 3/11, and MC Q4's ratio 3/4. NESA's geometric definition specifies a nonzero ratio and its limiting-sum point uses |r| < 1. Written f06/f07/f08 handoffs match. Arithmetic does not certify built motion or listening.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `a584d472fb586c5504f63692023868c2cd6fc220039279a6bf72116d5e83ba09`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. The smaller-than-first-term claim is scoped to a positive first term.16/3<8. At ratio0 the series1+0+...still sums1, and the screen distinguishes that from the course GP definition. Both findings resolved.
+
+Recount:5841characters in16spoken strings; all declared counts agree, no em dash. New narration scenes:7. Exact strings and cues in work/brief240/f07-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

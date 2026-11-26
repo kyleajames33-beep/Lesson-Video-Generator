@@ -1,0 +1,69 @@
+{
+  "brief": 248,
+  "lesson": "c17",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-4ef93ea2-9a91-4cff-8a9e-c1a535d01292.png",
+      "sha256": "3daafa43c81dea6d8fc1db7e8486aa51f6576e595c1ee42adf4246cb08bdf543",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        174,
+        2172,
+        627
+      ],
+      "marginFractions": [
+        0.0,
+        0.24033149171270718,
+        0.0,
+        0.13397790055248618
+      ],
+      "evidence": [
+        "work/brief248/c17-shuttle-run-native-paper.jpg",
+        "work/brief248/c17-shuttle-run-native-dark.jpg",
+        "work/brief248/c17-shuttle-run-native-white.jpg",
+        "work/brief248/c17-shuttle-run-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-shuttle-run-v1.png",
+      "path": "public/assets/maths/ma11-shuttle-run-v1.png",
+      "brief": 248,
+      "lesson": "c17",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2800,
+        700
+      ],
+      "qa": {
+        "result": "passed: two lines/four cones, horizontal calibration, alpha and900/full-width checks",
+        "observations": [
+          "Native3:1 aspect recorded; no axis stretching.",
+          "Dot test at0,10,20m aligns to the measured line centres at y400."
+        ],
+        "evidence": [
+          "work/brief248/c17-shuttle-registration-paper.jpg",
+          "work/brief248/c17-shuttle-registration-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-shuttle-run-v1.json"
+    }
+  ],
+  "result": "Shuttle-run strip delivered at native2172x724. Two white lines and four orange cones, low picket fence, no extra field objects. Horizontal tracky400 crosses line centresx256and1908, giving82.6px/m across20m.900/full-width paper/dark checks pass. Use this same horizontal track for code positions despite the slightly slanted painted transverse lines.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c17-generation.json",
+    "work/brief248/c17-shuttle-geometry.json",
+    "work/brief248/qa-shuttle.py",
+    "work/brief248/c17-shuttle-registration-paper.jpg",
+    "work/brief248/c17-shuttle-registration-dark.jpg"
+  ]
+}

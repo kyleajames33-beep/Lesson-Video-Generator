@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-s08.md",
+  "sourceSha256": "8f4683d1369f831aa10d4b044fe20ec45886136ba61747dc6fdacf1a8c7aaa04",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with this question. The train's waiting-time density is flat from one to five. Where does it balance? Right in the middle, at three, because the two halves are mirror images. But most densities aren't flat. Think of a running playlist on shuffle. Song lengths run from about two to six minutes. How long is a song on average, and so roughly how many songs fit in a forty-minute run? We'll build the method on a simpler density first: f of x equals x over eight, from zero to four. It's taller on the right, so it should balance somewhere right of two. Where exactly? And how spread out is it? In a discrete model we added up values times probabilities. Here there's no list of values to add.",
+      "audioFile": "public/audio/math-a12-s08/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "So let's make a list. Cut the interval into four strips. Each strip's area is about f of x times its width, delta x. That's roughly the probability that X lands in the strip. So treat each strip like a single value at its middle, with that probability. Values further out, and with more probability, pull harder on the beam. Now it's a discrete model, and its balance point is the sum of x times f of x delta x. That's two point six two five. With eight strips, it's two point six five six. With sixteen, two point six six four. As the strips get thinner, the sum becomes an integral. So the expected value is the integral from a to b of x times f of x, dx.",
+      "audioFile": "public/audio/math-a12-s08/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Let's evaluate it. Multiply x by x over eight, and you get x squared over eight. Its integral from zero to four is one eighth of x cubed over three, from zero to four. That's sixty-four over twenty-four, which is eight thirds, about two point six seven. The beam levels there, right of the middle, pulled over by the taller part of the density. And the strip sums were closing in on exactly this number. You've met this density before. It's the cookie from two videos ago, so the average chip sits about two point six seven centimetres from the centre, a third kind of middle, just inside the median of two point eight three. Like a discrete mean, it's also the long-run average. Take many values of X, and their average settles near eight thirds.",
+      "audioFile": "public/audio/math-a12-s08/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Does this agree with symmetry? For the train, f is a quarter from one to five. So we integrate x over four, which gives x squared over eight, from one to five. That's twenty-five minus one, over eight, which is three, the middle. The integral and the symmetry agree, so the formula passes a test we can check by eye. For any uniform distribution from a to b, the mean is a plus b over two, the midpoint.",
+      "audioFile": "public/audio/math-a12-s08/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Now, spread. The variance is still the expected squared distance from mu. So we weight each squared distance, x minus mu, squared, by f of x dx, and integrate. And the quicker form carries over too. Expanding the square works exactly as it did for a discrete model. The integral of f is one, and the integral of x f is mu, just like the sums were. That means you don't need to expand a squared bracket inside the integral. So the variance is the integral of x squared f of x, minus mu squared.",
+      "audioFile": "public/audio/math-a12-s08/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "For x over eight, E of X squared, the average of the squared values, is the integral of x cubed over eight, from zero to four. That's one eighth of x to the fourth over four, or two hundred and fifty-six over thirty-two, which is eight. Subtract mu squared, sixty-four ninths, and the variance is eight ninths. Here's a quick check. E of X squared, eight, must be at least mu squared, about seven point one, or the variance would be negative. So sigma is the square root of eight ninths, about zero point nine four. It measures the spread around eight thirds. For a uniform from a to b, the same steps give b minus a, squared, over twelve. For the train, that's sixteen over twelve, which is four thirds.",
+      "audioFile": "public/audio/math-a12-s08/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now the playlist. Suppose song lengths, X minutes, have density pi over eight, times sin of pi times x minus two, over four, from two to six. It is a density. It's never negative there, and its integral from two to six is one. But E of X needs the integral of x times that sine. No rule in this course integrates x times a sine function. So write the set-up in full, with its limits, and use an online computational application. Then say that you used one. The app gives four minutes, which matches the symmetry of the curve. For the variance, set up the integral of x squared f of x, minus mu squared. The app gives about zero point seven six, so sigma is about zero point eight seven minutes, roughly fifty-two seconds. Shuffle sixty songs, and their running average settles near four. So as a rough guide, forty minutes is about ten songs' worth, and the last one may not finish. Show the limits, x f of x or x squared f of x, the result, and the tool you used.",
+      "audioFile": "public/audio/math-a12-s08/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a way to remember the switch. Sum becomes integral, and P of x becomes f of x dx. That turns each discrete formula for E and the variance into its continuous one.",
+      "audioFile": "public/audio/math-a12-s08/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Find E of X and the variance of X for this density. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s08/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "E of X is the integral of x times two x, which is two x squared. From zero to one, that's two thirds. E of X squared is the integral of two x cubed, which is a half. So the variance is a half minus four ninths, which is one eighteenth. An expected value of one is wrong. That integrates f by itself, which always gives one.",
+      "audioFile": "public/audio/math-a12-s08/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Write the integrals you would enter into an online computational application. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s08/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "E of X is the integral from zero to pi over two of x cos x, dx. The variance is the integral of x squared cos x over the same limits, minus mu squared. The app gives mu as pi over two minus one, and the variance as pi minus three, about zero point one four two. Squaring the whole integrand, x cos x, is wrong. Only x is squared, and that set-up even gives a negative variance.",
+      "audioFile": "public/audio/math-a12-s08/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So the expected value is the integral of x f of x, and the variance is the integral of x squared f, minus mu squared, by hand or with an app. Every density so far came with a formula on an interval. Next, a new question. Here are a thousand simulated bags of chips, each filled towards one hundred and seventy-five grams. They pile up in a bell around the target. Why that shape? And when can we model it?",
+      "audioFile": "public/audio/math-a12-s08/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-s08/scene-14.wav"
+    }
+  ]
+}

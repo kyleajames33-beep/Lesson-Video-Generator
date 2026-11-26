@@ -8,3 +8,10 @@ On 11 November the live site lesson at https://hscscience.com.au/subjects/maths-
 
 
 Source follow-up,11November: Current module index verified. Historical footer defect not reproduced in current Learn/Practice views; Review is locked. See work/brief240/source-followups-nov11.md. Existing findings retained.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `c33aaaa5f5b539f00fba4ed953a82fff8712effbfc66876a589972005ae62b72`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. The test now distinguishes checking a finite list from proving a constant difference for every n from a rule. Source finding resolved.
+
+Recount:5980characters in15spoken strings; all declared counts agree, no em dash. New narration scenes:2. Exact strings and cues in work/brief240/f02-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

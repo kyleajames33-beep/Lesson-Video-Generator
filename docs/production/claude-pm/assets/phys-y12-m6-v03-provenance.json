@@ -1,0 +1,131 @@
+{
+  "design": "phys-y12-m6-v03",
+  "sourceSHA256": "10957bbebf6a2bfe14bfd2f6098c1f199c9038de62130b7f975f2a5feff6ff4d",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v03",
+      "reference": "y12p-crt-tube-v1.png",
+      "paths": [],
+      "exists": false,
+      "held": false,
+      "acceptedCodedFallback": true,
+      "resolutionEvidence": "work/brief232/crt-retry-and-fallback.json"
+    }
+  ],
+  "newAssets": [],
+  "reuseCheckEvidence": "work/brief189/reuse-checks.json",
+  "qa": "docs/production/claude-pm/assets/brief189-qa",
+  "status": "CRT asset requirement resolved by recorded root-accepted coded design;source check clean;scene integration,voicing,motion and listening pending",
+  "previousHeldCRT": {
+    "requestedPath": "public/assets/physics/y12p-crt-tube-v1.png",
+    "status": "held for geometry and native-resolution requirements",
+    "reason": "Three generated candidates remain below the explicit2400pixel minimum and do not register with the5cm plate length,2cm gap and20cm screen-after-exit geometry at one scale. Latest also draws an axial metal link between gun cylinders in the beam corridor. No candidate is published as the requested plate.",
+    "candidates": [
+      {
+        "key": "crt",
+        "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-51825cd0-0f4c-4088-bd8c-c2a5a57d6aa7.png",
+        "size": [
+          2172,
+          724
+        ],
+        "alpha16Bounds": [
+          116,
+          86,
+          2059,
+          652
+        ],
+        "marginFraction": [
+          0.053406998158379376,
+          0.11878453038674033,
+          0.05202578268876611,
+          0.09944751381215469
+        ]
+      },
+      {
+        "key": "crt-fixed",
+        "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-a9014342-8106-4292-9120-b8b93c678495.png",
+        "size": [
+          1920,
+          819
+        ],
+        "alpha16Bounds": [
+          153,
+          147,
+          1728,
+          657
+        ],
+        "marginFraction": [
+          0.0796875,
+          0.1794871794871795,
+          0.1,
+          0.1978021978021978
+        ]
+      },
+      {
+        "key": "crt-wide",
+        "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-fa0c74b6-aa7f-4bc0-a883-0ce468df1635.png",
+        "size": [
+          2172,
+          724
+        ],
+        "alpha16Bounds": [
+          161,
+          139,
+          1961,
+          583
+        ],
+        "marginFraction": [
+          0.07412523020257827,
+          0.1919889502762431,
+          0.09714548802946593,
+          0.19475138121546962
+        ]
+      }
+    ],
+    "fallback": "Brief/root permits a coded tube outline. Designer decides whether to use that fallback or request another artwork approach. No fallback scene implemented in this review-only brief."
+  },
+  "acceptedCodedCRT": {
+    "brief": 232,
+    "date": "2026-11-09",
+    "requestedAsset": "y12p-crt-tube-v1.png",
+    "attemptsThisBrief": 1,
+    "tool": "built-in image_gen",
+    "prompt": "work/brief232/crt-retry-prompt.txt",
+    "promptSha256": "47e06e130c135371a1f051d2f7124ec152e0984e181222a5d26a090a09854103",
+    "result": "tool rejected output;no image returned",
+    "error": {
+      "http": 400,
+      "code": "moderation_blocked",
+      "stage": "output",
+      "category": "violence"
+    },
+    "geometryQA": "not possible;no returned image",
+    "nativeResolutionQA": "not possible;no returned image",
+    "furtherGenerationAttempted": false,
+    "decision": "accepted coded-outline fallback",
+    "authority": "docs/production/claude-pm/checks/root-decisions-phys-y12-m6.md,After brief189/190 repairs,CRT plate;brief232 Then plates",
+    "scope": [
+      "phys-y12-m6-v02",
+      "phys-y12-m6-v03"
+    ],
+    "rasterDelivered": false,
+    "codedSceneImplemented": false,
+    "designEdits": false,
+    "fallbackSpec": {
+      "style": "ink glass-envelope outline,soft grey fill,gun cylinders,one horizontal parallel plate pair,edge-on phosphor screen",
+      "geometry": "one uniform scale:plate length50mm,gap20mm,exit-to-screen200mm,unobstructed beam axis",
+      "anchors": "gun exit,plate ends,screen inner centre,axis line",
+      "sceneIntegration": "future build;use accepted coded outline instead of requiring missing CRT raster"
+    }
+  },
+  "brief232ErrorCheck": {
+    "design": "phys-y12-m6-v03",
+    "sourceSha256": "0fafbaecb2318e12e9bbfe7d6d741c114040275f0173e054aeb46bed986e3138",
+    "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v03-rev2-error-check.md",
+    "blockers": 0,
+    "shouldFix": 0,
+    "optional": 0,
+    "characters": 6013,
+    "estimatedSeconds": 541.0
+  }
+}

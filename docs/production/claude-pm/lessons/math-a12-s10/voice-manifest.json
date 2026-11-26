@@ -1,0 +1,92 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-s10.md",
+  "sourceSha256": "1ce5ad46e57ffa10f3dd415bbb49d524796d8ecb8b6c78bbf5f6dd77990dff64",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with this question. Mark one sigma either side of the mean. How much of the area lies between those marks? This curve has no simple area formula, so today a graphing calculator does the measuring. An orchard grades its apples by mass, and the masses are normal, with mean one hundred and fifty grams and standard deviation fifteen. Then we'll turn what we find into a rule you can use with no technology at all.",
+      "audioFile": "public/audio/math-a12-s10/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "This is the normal probability density function, and each part has a job. The power of e is minus the squared distance from the mean, over two sigma squared. The same distance either side squares to the same value, so the curve is symmetric. Further out, the power gets more negative, so the curve drops towards zero. But e to any power is positive, so it never reaches the axis. The number in front makes the total area exactly one. For the apples, two sigma squared is four hundred and fifty.",
+      "audioFile": "public/audio/math-a12-s10/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Where's the highest point? By the chain rule, f prime of x is the derivative of the power, times f of x itself. Since f of x is always positive, the sign of the gradient comes from minus x minus mu. Left of the mean the gradient is positive, so the curve rises. Right of the mean it's negative, so the curve falls. It rises all the way to mu and falls all the way after, so x equals mu is the global maximum, not just a local one. Its height is one over sigma root two pi.",
+      "audioFile": "public/audio/math-a12-s10/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now the points of inflection. Differentiate again with the product rule, and factorise. Again f of x is positive, so the sign of the second derivative comes from this bracket. It's zero when the quantity x minus mu, squared, equals sigma squared, so at mu plus or minus sigma. Between those points the bracket is negative, so the curve is concave down, like a cap over the peak. Outside them it's concave up, and the tails flatten out. The concavity changes, so these are points of inflection, at one thirty-five and one sixty-five. So one sigma is where the bell changes its bend.",
+      "audioFile": "public/audio/math-a12-s10/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Back to the question. Ask the calculator for the area from one thirty-five to one sixty-five. It works out the area numerically: zero point six eight two seven. So in the model, about sixty-eight percent of apples land within one sigma. Widen the band to two sigma and it gives zero point nine five four five, and three sigma gives zero point nine nine seven three. If you use a calculator or app in an answer, say that you did.",
+      "audioFile": "public/audio/math-a12-s10/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Is that just these apples? Try last video's chip bags, with mean one seventy-five grams and standard deviation four. From one seventy-one to one seventy-nine, the calculator gives zero point six eight two seven again. Here's why. Changing mu slides the bell along. Changing sigma stretches it sideways and squashes it down by the same factor, so the area between matching marks doesn't change. Measured in sigmas from the mean, every normal curve is the same curve.",
+      "audioFile": "public/audio/math-a12-s10/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "That's the empirical rule. For any normal distribution, approximately sixty-eight percent of the data lie within one standard deviation of the mean, approximately ninety-five percent within two, and approximately ninety-nine point seven percent within three. They're approximate, because the calculator gave sixty-eight point two seven, and so on. Symmetry gives the tails. Outside one sigma is thirty-two percent, so sixteen percent in each tail. Outside two sigma, two and a half percent each side. Outside three sigma, zero point one five percent each side.",
+      "audioFile": "public/audio/math-a12-s10/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Heights of Year 12 students are normal, with mean one seventy centimetres and standard deviation eight. What percentage are between one sixty-two and one seventy-eight? That's eight either side, one sigma, so about sixty-eight percent. What percentage are taller than one eighty-six? That's two eights above, so two sigma. Outside two sigma is five percent, and half of that is above, so about two point five percent.",
+      "audioFile": "public/audio/math-a12-s10/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "The rule also helps you judge. Is a student of one ninety-six centimetres unusual? Three sigma above is one ninety-four. Only about zero point one five percent are above that, so even fewer are above one ninety-six. Very unusual. Now the small apples. Apples under one hundred and thirty grams go to juice. One thirty sits between one sigma below and two sigma below. So that tail is between two point five and sixteen percent. For an actual value, we need the area to the left of one thirty.",
+      "audioFile": "public/audio/math-a12-s10/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "That's the cumulative distribution function. Capital F of x is the probability that X is at most x, the area to the left of x. Graph it on the calculator, and it draws an S shape. It starts near zero, and at the mean it's exactly a half, because half the area is on each side. Its slope is the density, so it climbs fastest at mu, where the bell is highest. Then it levels off towards one. At one thirty, the calculator reads zero point zero nine one two, so the model says about nine percent go to juice.",
+      "audioFile": "public/audio/math-a12-s10/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Here's a way to remember the rule. Sixty-eight, ninety-five, ninety-nine point seven, for one, two and three sigma. And for a tail, find what's outside, then halve it.",
+      "audioFile": "public/audio/math-a12-s10/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Your turn. Use the empirical rule. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s10/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "The second number is the variance, so sigma is six. Sixty-eight and ninety-two are twelve either side of eighty, which is two sigma. So that probability is about ninety-five percent. Eighty-six is one sigma above. Outside one sigma is thirty-two percent, and half of that is above, so about sixteen percent. Thirty-two percent is wrong. That counts both tails.",
+      "audioFile": "public/audio/math-a12-s10/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Last one. Read the features from the formula. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s10/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Match it to the general formula. The mean is forty, and the number in front has five where sigma goes, so sigma is five. The global maximum is at x equals forty, with height one over five root two pi. The points of inflection are one sigma either side, at thirty-five and forty-five. Forty plus or minus root fifty is wrong. Fifty is two sigma squared, not sigma squared.",
+      "audioFile": "public/audio/math-a12-s10/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "So the calculator shows where the curve peaks and bends, verifies the empirical rule, and graphs the CDF. Next, a new question. A forty-five centimetre snapper is five centimetres above the average snapper off one jetty. A forty centimetre golden perch is four above the average perch in one river. Which catch is more unusual, and how much area lies beyond each?",
+      "audioFile": "public/audio/math-a12-s10/scene-16.wav"
+    },
+    {
+      "id": "scene-17",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-s10/scene-17.wav"
+    }
+  ]
+}

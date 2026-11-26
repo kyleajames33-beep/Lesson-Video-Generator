@@ -1,0 +1,362 @@
+{
+  "brief": 169,
+  "date": "2026-11-05",
+  "tool": "built-in image_gen",
+  "entries": [
+    {
+      "key": "flat",
+      "file": "public/assets/physics/phys-y11-paper-sheet-flat-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "e36241299e06dbe84a4640a182687e3851a325434cde0a66ad2ed5ae79bb32f1",
+      "alphaBounds": [
+        130,
+        35,
+        2150,
+        706
+      ],
+      "alphaZeroPixels": 1064904,
+      "opaquePixels": 14,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-72bbfa47-5d7e-44a0-bf93-cdf3ee98bcf1.png",
+      "prompt": "Create one scientific educational asset for a Year 11 physics explainer. A single plain white A4 sheet, horizontal, viewed almost edge-on from slightly above so its rectangular upper surface is narrow in depth, slight curl at one corner, faint real paper fibres. Ink outlines with delicate neutral watercolour shading, matching a hand painted school apparatus illustration. Sheet long side spans 80 percent of a wide landscape canvas. Isolated on a genuinely transparent background, at least 8 percent clear margin all sides. No ground, backdrop, shadow rectangle, glow, text, labels, numbers, hands, people, faces, logos or extra objects. This sheet will be animated falling horizontally, so show the full outline and keep it flat.",
+      "editPrompt": "Clean only the outer contour of the supplied painted white paper sheet. Preserve sheet shape, subtle texture, perspective, curled corner, dimensions and ink outline. Remove the stray white flecks and coloured fringing outside the intended continuous sheet silhouette. Make all pixels outside that contour fully transparent, with a smooth antialiased edge and no halo or added shadow. Do not crop the sheet or change its material. Add nothing.",
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/flat-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/flat-phone.png"
+      ]
+    },
+    {
+      "key": "crumpled",
+      "file": "public/assets/physics/phys-y11-paper-sheet-crumpled-v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "f8833f54e0fa514271fdda8d3d0b133f7f9b59cd0b11c68095042f02325b2287",
+      "alphaBounds": [
+        0,
+        18,
+        1208,
+        1254
+      ],
+      "alphaZeroPixels": 1111184,
+      "opaquePixels": 130,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-e9532f52-ddac-4d73-8a86-8ce6fb9dd1a8.png",
+      "prompt": "Scientific educational painted apparatus plate. A single tightly crumpled ball made from plain white A4 paper, roughly golf-ball sized, visible folds and ink contour with delicate neutral watercolour shading. Isolated, full object on a genuinely transparent background, no shadow, ground, frame, text, numbers, people, hands or other objects. House style: precise fine dark contours with subtle textured neutral grey washes, realistic object, matching a painted steel ball. Canvas square, generous clear margin. This is the crumpled version of a flat A4 sheet, intended display width one fifth of that flat sheet's long side. Keep full silhouette with a clear lowest point.",
+      "editPrompt": null,
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/crumpled-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/crumpled-phone.png"
+      ]
+    },
+    {
+      "key": "hammer",
+      "file": "public/assets/physics/phys-y11-moon-hammer-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "6c052a28f4ad0634aa4fb0306ac12a9c0a08455e8c4056d1ca3524d546752f24",
+      "alphaBounds": [
+        27,
+        23,
+        2142,
+        698
+      ],
+      "alphaZeroPixels": 1294387,
+      "opaquePixels": 325,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-17ec8001-878a-43ab-9eaa-9b6f7d00fbeb.png",
+      "prompt": "One scientific educational painted cutout of the Apollo 15 geological hammer: short all-metal aluminium geological hammer with metal handle and geological hammer head, no wooden handle, no branding. Side view floating horizontally, entire hammer visible. Fine ink contours and subtle neutral watercolour shading matching painted laboratory apparatus. Isolated on genuinely transparent background. At least 10 percent clear margin. No ground, background, cast shadow, text, people, hands, astronauts, feather or any other object. This cutout will fall toward a separate lunar-ground layer in a physics explanation.",
+      "editPrompt": null,
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/hammer-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/hammer-phone.png"
+      ]
+    },
+    {
+      "key": "feather",
+      "file": "public/assets/physics/phys-y11-moon-feather-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "27f3aad38e9847c04ecfac6b8484ef7581c35ef2e1985a93e6235a2704371fee",
+      "alphaBounds": [
+        31,
+        25,
+        2136,
+        724
+      ],
+      "alphaZeroPixels": 1042027,
+      "opaquePixels": 11,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-405df762-60d3-4a24-872c-79323c120417.png",
+      "prompt": "One scientific educational painted cutout of a single long pale falcon feather, side view, nearly horizontal with natural slight curve, visible central quill and softly detailed pale grey vanes, clearly a feather. Fine ink contours and subtle neutral watercolour washes matching painted laboratory apparatus. Isolated on genuinely transparent background, entire feather with at least 10 percent margin. No ground, cast shadow, backdrop, text, people, hands, astronauts, hammer, or other object. This feather will be animated falling next to a geological hammer in an Apollo 15 physics explanation.",
+      "editPrompt": null,
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/feather-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/feather-phone.png"
+      ]
+    },
+    {
+      "key": "ground",
+      "file": "public/assets/physics/phys-y11-moon-ground-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "60d17f1631eaa7ed6ca5a25fa521bd12e29cb2b226866d894197902c7afc8cbd",
+      "alphaBounds": [
+        60,
+        49,
+        2111,
+        724
+      ],
+      "alphaZeroPixels": 1308244,
+      "opaquePixels": 503,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-1e0ab201-b19e-4660-98ed-b1c7026a800f.png",
+      "prompt": "Scientific educational painted layer: a single low strip of pale grey dusty lunar regolith, slightly uneven top edge with a few tiny stones, side-on ground surface, wide landscape aspect, low profile occupying only the lower quarter. Ink and watercolour textured illustration matching neutral painted laboratory apparatus. Isolated on genuinely transparent background above and around this ground strip, minimum 8 percent margin. No sky, horizon scenery, hills, lander, flag, footprints, astronaut, people, hammer, feather, text or any objects above the surface. This is the separate landing-ground layer for an Apollo 15 hammer-feather drop demonstration.",
+      "editPrompt": null,
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/ground-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/ground-phone.png"
+      ]
+    },
+    {
+      "key": "circle",
+      "file": "public/assets/physics/phys-y11-paper-circle-slit-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "sha256": "5149b6ccf72317253731419c73d12831685846b4c3510382fe579f7176c4c29f",
+      "alphaBounds": [
+        0,
+        32,
+        1210,
+        1183
+      ],
+      "alphaZeroPixels": 864560,
+      "opaquePixels": 178,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-f7ec08b6-21d8-41b8-a488-6e202ee42456.png",
+      "prompt": "Scientific educational apparatus plate, one perfectly round plain white paper circle viewed directly from above. One straight radial slit from its rightmost edge to its exact centre, cut edges just touching so a fine dark cut line is visible without a wedge missing. Subtle paper fibre texture and delicate neutral grey watercolour shading, fine ink circle contour. Full circle isolated on genuinely transparent background with at least 10 percent clear margin. No shadow, backdrop, scissors, ruler, labels, lines except the single physical slit, numbers, text, hands, people or other objects.",
+      "editPrompt": null,
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/circle-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/circle-phone.png"
+      ]
+    },
+    {
+      "key": "scissors",
+      "file": "public/assets/physics/phys-y11-scissors-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "af4d0ff18f5ac47f66bb41ee91949571ae2bd9affdfe5ba29cd7f43833aa30be",
+      "alphaBounds": [
+        33,
+        52,
+        1514,
+        990
+      ],
+      "alphaZeroPixels": 1284606,
+      "opaquePixels": 0,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-9f01e48e-f2cc-4b24-a7d6-213f611438b6.png",
+      "prompt": "Scientific educational apparatus plate: a single pair of ordinary school scissors with short metal blades, plain dark grey rounded plastic finger loops, fully open, viewed directly from above. Blades pointing upper right, handles lower left. Fine ink contour, subtle neutral watercolour material shading in house painted laboratory-apparatus style. Entire object visible, at least 10 percent clear margin, genuinely transparent background. No shadow, paper, ground, backdrop, text, numbers, brand, hands, people or any other object.",
+      "editPrompt": "Edit only the background/alpha of this scissors asset. Preserve the scissors, their shape, ink detail, colour, size, orientation and material texture exactly. Remove the grey ambient glow and every background pixel around the scissors AND inside both handle holes. Background and handle holes must be truly transparent alpha zero up to a clean antialiased object contour, with no dark/white fringe, halo, rectangular background or cast shadow. Keep the entire scissors with margin. Add nothing.",
+      "qa": "passed-object-and-alpha",
+      "finding": "No material contour or background defect in correctly alpha-composited QA.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/scissors-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/scissors-phone.png"
+      ]
+    },
+    {
+      "key": "cone10",
+      "file": "public/assets/physics/phys-y11-paper-cone-10cm-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "2d623350e6e1374c0db40de91359736e3a7e555e0a2841807f9f088c5e1a90ab",
+      "alphaBounds": [
+        0,
+        31,
+        1512,
+        1001
+      ],
+      "alphaZeroPixels": 1180782,
+      "opaquePixels": 0,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-4fc5c6cb-b956-4902-8d4d-cfd78dc64dbf.png",
+      "prompt": "Scientific educational painted apparatus cutout. Exactly one plain white paper cone formed by overlapping a radial slit in an untrimmed paper circle. Side view slightly above, point down and circular rim a narrow horizontal ellipse. Cone slant length 10 cm, rim diameter 10 cm, cone vertical height 8.66 cm, hence visibly tall and narrow, triangular silhouette with side slope about 60 degrees from horizontal. Fine dark ink contour, delicate neutral grey watercolour washes, subtle paper fibres, one visible overlap seam and one tiny strip of clear tape. Full cone isolated on genuinely transparent background, at least 10 percent clear margin. No text, numbers, labels, scales, ground, shadow, backdrop, people, hands or other objects. The paper must look light and thin, not ceramic. Preserve the stated width to height proportions.",
+      "editPrompt": "Correct the geometry of this painted paper cone while preserving its thin white paper, ink/watercolour treatment, overlap seam, tiny tape strip and side view. Rim diameter is 10 units, slant edge 10 units, vertical height 8.66 units. Thus measured from the MIDPOINT BETWEEN THE RIM LEFT AND RIGHT EXTREME POINTS to the tip, the vertical height must be 0.866 times the horizontal rim diameter. The current cone is too tall. Redraw it shorter to meet those proportions, with a narrow ellipse for the opening. Do not stretch an existing bitmap. Remove all white flecks and coloured fringe outside the clean cone silhouette. Genuine transparent background, no glow, shadow, backdrop, text, numbers or extra objects.",
+      "qa": "geometry-pending",
+      "finding": "Constant-slant geometry is not verified; the 10 cm cone remains disproportionate after a targeted repair.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/cone10-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/cone10-phone.png"
+      ]
+    },
+    {
+      "key": "cone12",
+      "file": "public/assets/physics/phys-y11-paper-cone-12cm-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "afc935b4ca5f95045b8c201806ec1f52647337f133a8d8fa63427a62c87582c7",
+      "alphaBounds": [
+        127,
+        47,
+        1506,
+        989
+      ],
+      "alphaZeroPixels": 1257977,
+      "opaquePixels": 0,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-a8b2a2d9-a53a-4234-888a-7885b41a3f79.png",
+      "prompt": "Scientific educational painted apparatus cutout. Exactly one plain white paper cone formed by overlapping one radial slit in the same untrimmed 20 cm diameter paper circle. Side view slightly above, point down and circular rim a narrow horizontal ellipse. Essential geometry: cone slant length 10 cm, rim diameter 12 cm, vertical height 8 cm. The cone is moderately tall, width-to-height ratio 1.5. Fine dark ink contour, delicate neutral grey watercolour washes, subtle paper fibres, one visible overlap seam and one tiny strip of clear tape. Full cone isolated on genuinely transparent background, at least 10 percent clear margin. No text, numbers, labels, scales, ground, shadow, backdrop, people, hands or other objects. Paper is light and thin, not ceramic. Preserve the stated width and height proportions, as this is part of a five-cone physics set with constant slant length.",
+      "editPrompt": "Correct and clean this painted paper cone. Preserve thin white paper material, ink/watercolour style, overlap seam and tiny clear tape. Rim diameter is 12 units, slant edge 10 units, vertical height 8 units. Measured from the midpoint between the leftmost and rightmost RIM points to the TIP, vertical height must be exactly two thirds of horizontal rim width. Redraw the cone slightly shorter as needed, with a narrow elliptical opening; do not stretch a bitmap. Remove the entire grey glow and all background outside the cone. Background must be genuine transparent alpha zero up to a clean antialiased edge, no halo, fringe, shadow, text, labels or other objects.",
+      "qa": "geometry-pending",
+      "finding": "Constant-slant geometry is not verified; the 10 cm cone remains disproportionate after a targeted repair.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/cone12-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/cone12-phone.png"
+      ]
+    },
+    {
+      "key": "cone14",
+      "file": "public/assets/physics/phys-y11-paper-cone-14cm-v1.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "682a33e5b44921e9057984ecaa9b856f369089c18cdc5314802bb5ac7b66d960",
+      "alphaBounds": [
+        63,
+        19,
+        1754,
+        839
+      ],
+      "alphaZeroPixels": 1131632,
+      "opaquePixels": 186,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-ba5989fa-c925-4864-9a19-60ed34e9af18.png",
+      "prompt": "Scientific educational painted apparatus cutout. Exactly one plain white paper cone formed by overlapping one radial slit in the same untrimmed 20 cm diameter paper circle. Side view slightly above, point down and circular rim a narrow horizontal ellipse. Essential geometry: cone slant length 10 cm, rim diameter 14 cm, vertical height 7.14 cm. The cone is moderately wide, width-to-height ratio 1.9607843137254903. Fine dark ink contour, delicate neutral grey watercolour washes, subtle paper fibres, one visible overlap seam and one tiny strip of clear tape. Full cone isolated on genuinely transparent background, at least 10 percent clear margin. No text, numbers, labels, scales, ground, shadow, backdrop, people, hands or other objects. Paper is light and thin, not ceramic. Preserve the stated width and height proportions, as this is part of a five-cone physics set with constant slant length.",
+      "editPrompt": null,
+      "qa": "geometry-pending",
+      "finding": "Constant-slant geometry is not verified; the 10 cm cone remains disproportionate after a targeted repair.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/cone14-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/cone14-phone.png"
+      ]
+    },
+    {
+      "key": "cone16",
+      "file": "public/assets/physics/phys-y11-paper-cone-16cm-v1.png",
+      "size": [
+        1774,
+        887
+      ],
+      "sha256": "e10a104ec3404e245efdef6788b5e4cf0ed2be7ff0872438ddcea4c5a408e1bd",
+      "alphaBounds": [
+        39,
+        9,
+        1734,
+        853
+      ],
+      "alphaZeroPixels": 960256,
+      "opaquePixels": 249,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-12e8259f-aefb-49d4-bab4-109938795112.png",
+      "prompt": "Scientific educational painted apparatus cutout. Exactly one plain white paper cone formed by overlapping one radial slit in the same untrimmed 20 cm diameter paper circle. Side view slightly above, point down and circular rim a narrow horizontal ellipse. Essential geometry: cone slant length 10 cm, rim diameter 16 cm, vertical height 6 cm. The cone is wide and fairly shallow, width-to-height ratio 2.6666666666666665. Fine dark ink contour, delicate neutral grey watercolour washes, subtle paper fibres, one visible overlap seam and one tiny strip of clear tape. Full cone isolated on genuinely transparent background, at least 10 percent clear margin. No text, numbers, labels, scales, ground, shadow, backdrop, people, hands or other objects. Paper is light and thin, not ceramic. Preserve the stated width and height proportions, as this is part of a five-cone physics set with constant slant length.",
+      "editPrompt": null,
+      "qa": "geometry-pending",
+      "finding": "Constant-slant geometry is not verified; the 10 cm cone remains disproportionate after a targeted repair.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/cone16-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/cone16-phone.png"
+      ]
+    },
+    {
+      "key": "cone18",
+      "file": "public/assets/physics/phys-y11-paper-cone-18cm-v1.png",
+      "size": [
+        2172,
+        724
+      ],
+      "sha256": "52269a4387d18b43c97c3b8b75167368938cd1138ccaa8a397f451bbcf5bc5e7",
+      "alphaBounds": [
+        104,
+        19,
+        2073,
+        700
+      ],
+      "alphaZeroPixels": 949939,
+      "opaquePixels": 411,
+      "sourceCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1a80c-93a0-7ca2-abcd-a9f7cce841a0\\exec-5c6ed7bb-a5b8-433a-a521-681fa42633f1.png",
+      "prompt": "Scientific educational painted apparatus cutout. Exactly one plain white paper cone formed by overlapping one radial slit in the same untrimmed 20 cm diameter paper circle. Side view slightly above, point down and circular rim a narrow horizontal ellipse. Essential geometry: cone slant length 10 cm, rim diameter 18 cm, vertical height 4.36 cm. The cone is very wide and shallow, width-to-height ratio 4.128440366972477. Fine dark ink contour, delicate neutral grey watercolour washes, subtle paper fibres, one visible overlap seam and one tiny strip of clear tape. Full cone isolated on genuinely transparent background, at least 10 percent clear margin. No text, numbers, labels, scales, ground, shadow, backdrop, people, hands or other objects. Paper is light and thin, not ceramic. Preserve the stated width and height proportions, as this is part of a five-cone physics set with constant slant length.",
+      "editPrompt": null,
+      "qa": "geometry-pending",
+      "finding": "Constant-slant geometry is not verified; the 10 cm cone remains disproportionate after a targeted repair.",
+      "qaFiles": [
+        "docs/production/claude-pm/assets/brief169-qa/cone18-black-white.png",
+        "docs/production/claude-pm/assets/brief169-qa/cone18-phone.png"
+      ]
+    }
+  ],
+  "reuse": [
+    {
+      "file": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "exists": true,
+      "sha256": "81996315de8961ef8b6dafe183bbad07c7e54f36c7e29d31798b54f3a2d594b5"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-phone-tripod-v1.png",
+      "exists": true,
+      "sha256": "e4e33f5f7e45f99883205bca59e2432e498a864fcf75e434e48f318a40ba8c1c"
+    },
+    {
+      "file": "public/assets/physics/phys-y11-cricket-ball-v1.png",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "file": "public/assets/physics/phys-y11-air-track-v1.png",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "file": "public/assets/physics/phys-y11-air-glider-v1.png",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "file": "public/assets/physics/phys-y11-glider-flag-v1.png",
+      "exists": false,
+      "sha256": null
+    },
+    {
+      "file": "public/assets/physics/phys-y11-glider-mass-v1.png",
+      "exists": false,
+      "sha256": null
+    }
+  ],
+  "inspection": "Every source asset inspected at full size; correctly alpha-composited black/white sheets inspected, plus phone mockups. Full-size black composites verify flat and scissors. Apparent grey glows in the raw viewer are RGB in alpha-zero pixels and do not appear in composited output. Contact sheets are not lesson frames.",
+  "status": "Seven object layers passed object/alpha QA; five cone candidates held for geometry. No Python asset editing used.",
+  "unresolved": [
+    "Cone geometry and registration require repair, especially the 10 cm cone. Targeted image-tool geometry edit did not achieve the constant-slant specification.",
+    "Cricket ball and air-track set do not exist at requested paths."
+  ]
+}

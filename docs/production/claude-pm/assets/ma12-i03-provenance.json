@@ -1,0 +1,70 @@
+{
+  "brief": 238,
+  "design": "i03",
+  "assets": [
+    {
+      "name": "ma12-phone-dock-v1.png",
+      "path": "public\\assets\\maths\\ma12-phone-dock-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-1efd84a3-ab02-41e1-81e1-91697f92fa9f.png",
+      "generatorNativeSize": [
+        971,
+        1619
+      ],
+      "nativeSize": [
+        1200,
+        2000
+      ],
+      "sha256": "bafc8cee74563a8bbed55bf5ba0ea42b757ccb9d9308a862a36443ce8cba3ff2",
+      "alphaBox": [
+        272,
+        302,
+        1021,
+        1543
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "screenBox": [
+          330,
+          330,
+          870,
+          1390
+        ],
+        "screenCornerRadius": 32,
+        "dockBaseLineApprox": 1540,
+        "dockUncertaintyPx": 2
+      },
+      "operations": [
+        "Removedalpha<8noise",
+        "Removed57rowsfromblankmiddlescreen/devicebody;retainedothernativepixels",
+        "Transparentpadding/translation(117,139)to1200x2000",
+        "Matchedblankdarkrounded-screenexactlyto330/870/330/1390guidesusingauthorisedpixeloutlines"
+      ],
+      "wholePlateResized": false,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "qa": "work\\brief238\\i03-phone-qa.jpg",
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Project asset ma12-phone-dock-v1.png. One modern smartphone upright portrait in a plain low charging dock,seen exactly straight on,centred,no perspective tilt. Ink/watercolour house style,fine dark outlines,dark neutral metal phoneframe,low warm grey dock. Genuine transparent alpha outside. Intended1200x2000pxportrait3:5. Geometry:blank evenly dark screen flat rectanglewithslightlyroundedcornersfromx330tox870,y330toy1390 (540x1060). Phoneframearoundthatrectangle,dockbelowphone. Thin charging cableleavesbackofdockandcurvesawaytolower right,endingnear dock,no plug or wall. Atleast8%clearoutermargins. NO screenicons,clock,digits,buttons withsymbols,words,logos,brands,people,hands,background,paperrectangle,glow or groundshadow. Blank darkscreen must be flat and face-on for a coded display. Entirephoneanddock/cablevisible,do not addearbuds or accessories. Fine ink and restrained painted material finish.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Paper300/620px tall,test light text inside exact screen,and black/white edges inspected. Blank face-on screen clear;dock/cable complete,no icons/logos/text in delivered asset.8%margins pass. Phone-tripod metal/outline reference visually compared. No profile deformation or nonuniform stretching.",
+    "qaFiles": [
+      "work/brief238/i03-phone-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,0 should fix,0 optional",
+    "findings": []
+  },
+  "sourceDesignSha256": "40231d5b5fcf5869c563b70929fb04181f7b8d88db13194eb06717f403402536"
+}

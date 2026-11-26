@@ -1,0 +1,134 @@
+{
+  "design": "chem-y11-m4-v14",
+  "sourceSHA256": "c9720b40aae5b861ed9b22cb7ab99bd4343d36284e3edf5e963b7c8e3c03afd2",
+  "reuse": [
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "c9-no2-tube-brown-v1.png",
+      "resolvedName": "c9-no2-tube-brown-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-no2-tube-brown-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "m5x-limestone-cave-v1.png",
+      "resolvedName": "m5x-limestone-cave-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-limestone-cave-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "public/assets/chemistry/c9-ice-cube-v1.png",
+      "resolvedName": "c9-ice-cube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-ice-cube-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "public/assets/chemistry/y11c-limestone-lumps-v1.png",
+      "resolvedName": "y11c-limestone-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-limestone-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "public/assets/chemistry/y11c-quicklime-lumps-v1.png",
+      "resolvedName": "y11c-quicklime-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-quicklime-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "y11c-limestone-lumps-v1.png",
+      "resolvedName": "y11c-limestone-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-limestone-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    }
+  ],
+  "assets": [
+    {
+      "key": "limestone",
+      "file": "public/assets/chemistry/y11c-limestone-lumps-v1.png",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c9cefa94-b134-40b5-a12f-a968802f015f.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        247,
+        361,
+        1010,
+        894
+      ],
+      "minMarginAbove16": 0.19457735247208932,
+      "sha256": "e687f8d681ddc6047a0f3f0fb00702e2d0d4757be5ed2bbb61a0ac350342d4b8",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "300px paper/dark/white before-after rows and50% midpoint overlays inspected. Pale grey limestone becomes white/off-white chalky porous quicklime. Pile silhouette and individual lump positions align visibly. Alpha-aware boards show clean cutouts without the earlier cloudy backing.",
+      "qualification": "Native1254x1254 outputs retained, not upsampled to requested2000x2000. Heap fills about61% of canvas width rather than the requested about70%. Painted bounds differ by up to3native pixels; this is visible registration, not pixel identity. Designer acceptance and actual cross-fade playback remain pending.",
+      "promptEvidence": [
+        "work/brief184/limestone-prompt.json",
+        "work/brief184/limestone-alpha-correction-prompt.json",
+        "work/brief184/limestone-framing-prompt.json",
+        "work/brief184/quicklime-prompt.json"
+      ]
+    },
+    {
+      "key": "quicklime",
+      "file": "public/assets/chemistry/y11c-quicklime-lumps-v1.png",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-7d6ae779-fa00-4968-952f-86eb3a078bf4.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        244,
+        360,
+        1011,
+        893
+      ],
+      "minMarginAbove16": 0.1937799043062201,
+      "sha256": "5e9ec285d737506d84d1f737403d73d344cf6b6ed3694731b2041f81a4c3ca60",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "300px paper/dark/white before-after rows and50% midpoint overlays inspected. Pale grey limestone becomes white/off-white chalky porous quicklime. Pile silhouette and individual lump positions align visibly. Alpha-aware boards show clean cutouts without the earlier cloudy backing.",
+      "qualification": "Native1254x1254 outputs retained, not upsampled to requested2000x2000. Heap fills about61% of canvas width rather than the requested about70%. Painted bounds differ by up to3native pixels; this is visible registration, not pixel identity. Designer acceptance and actual cross-fade playback remain pending.",
+      "promptEvidence": [
+        "work/brief184/limestone-prompt.json",
+        "work/brief184/limestone-alpha-correction-prompt.json",
+        "work/brief184/limestone-framing-prompt.json",
+        "work/brief184/quicklime-prompt.json"
+      ]
+    }
+  ],
+  "qa": "docs/production/claude-pm/assets/brief184-qa",
+  "status": "source findings and actual scene/voiced-preview checks remain open"
+}

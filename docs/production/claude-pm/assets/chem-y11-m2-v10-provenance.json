@@ -1,0 +1,106 @@
+{
+  "design": "chem-y11-m2-v10",
+  "sourceSHA256": "cc31acc4bbafb48a446c710d0a0b8be2e1b3fe33a2fc93f9fdda4a8e5af8608d",
+  "newRequests": [
+    {
+      "file": "y11c-beaker-colourless-solution-v1.png",
+      "designs": [
+        "chem-y11-m2-v10"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reference": "public/assets/chemistry/m6-beaker-v1.png",
+      "artifact": {
+        "candidate": "work\\brief181\\beaker-colourless-candidate-v1.png",
+        "generatedOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-fbd97cc9-20f8-42ae-9ec5-0dea6762c1a6.png",
+        "sha256": "1fdd704acc33b703afb20d74528ddf66a499038f5da4c79631c841b6aabfe49e",
+        "size": [
+          1254,
+          1254
+        ],
+        "sourceSize": [
+          2048,
+          2048
+        ],
+        "visibleBoundsAlpha16": [
+          171,
+          100,
+          1083,
+          1154
+        ],
+        "sourceVisibleBoundsAlpha16": [
+          278,
+          164,
+          1769,
+          1884
+        ],
+        "state": "Visual QA pass on paper and dark at uniform display scale; native-size qualification",
+        "qualification": "Native generated canvas is 1254 square, not requested 2048 square. No raster editing or upsampling. Pixel-identical outline not claimed; compare appearance at uniform display scale.",
+        "file": "public\\assets\\chemistry\\y11c-beaker-colourless-solution-v1.png"
+      }
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "c11-cuso4-beaker-dissolved-v1.png",
+      "paths": [
+        "public/assets/chemistry/c11-cuso4-beaker-dissolved-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "m5x-graduated-pipette-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-graduated-pipette-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "m6-beaker-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-beaker-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "public/assets/chemistry/m6-volumetric-flask-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-volumetric-flask-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "public/assets/chemistry/m6-volumetric-pipette-filler-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-volumetric-pipette-filler-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "y11c-beaker-colourless-solution-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v10",
+      "reference": "y11c-flask-acid-plug-spent-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "generationTool": null,
+  "status": "source reviews handed in; painting not yet done",
+  "assetHandInSourceSHA256": "cc31acc4bbafb48a446c710d0a0b8be2e1b3fe33a2fc93f9fdda4a8e5af8608d",
+  "sourceStillMatchesReviewAtAssetHandIn": true,
+  "brief242Recheck": {
+    "date": "2026-11-14",
+    "record": "docs/production/claude-pm/assets/y11c-m2-v10-native-qa.json",
+    "reviewedSourceSha256": "e4ee98f4bc42394f711bf7d21b0ea912c20903b67d82c61a97853585b4c1eb54",
+    "result": "Volumetric flask and bulb pipette with red filler pass static content and alpha checks on paper and dark. Full native composites and native-pixel neck/filler details inspected. Neither has printed question data. The flask has one unnumbered neck mark. Current Assets section read back: three unused alternatives excluded. Existing QA for clear filled beaker, cotton-plug flask, calcium-chloride sample and clear bottle remains applicable within its stated limits. Preserve native aspect. Scene 9 liquid line must remain visible over pale painted glass and reach the etched mark; scene 5/6 pipette motion, liquid column, model-window counts and sample readouts still need build/playback review. No exact swap, calibrated capacity, technique or whole-lesson clearance. No new plate requested."
+  }
+}

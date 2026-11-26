@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-f14.md",
+  "sourceSha256": "3dd0d5388468aa0e89e0f843cb71842d2375e2ad9faf96cc2778bab2ac659eb3",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's last video's plan in a savings app, a digital tool like a spreadsheet or a financial calculator. Three hundred dollars a month, at four point eight per cent a year, compounded monthly, for five years, gives twenty thousand, two hundred and ninety-eight dollars and five cents. You can change four things: the deposit, the rate, the number of years, or some money in the account at the start. Which change makes the biggest difference? Make a guess.",
+      "audioFile": "public/audio/math-a12-f14/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "An app like this just runs the same rule we've been using, very fast. To see what each input does, change one thing at a time, and keep the rest fixed. That way, any change in the answer comes from that one input. And in an exam, you still show the formula. The tool is for exploring and checking. Right now, the twenty thousand, two hundred and ninety-eight dollars is eighteen thousand dollars of deposits, plus two thousand, two hundred and ninety-eight dollars and five cents of interest.",
+      "audioFile": "public/audio/math-a12-f14/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "First, with no starting balance, double the deposit to six hundred dollars a month. The future value becomes forty thousand, five hundred and ninety-six dollars and eleven cents, exactly double, to within a cent. Here's why. Every term in the sum has the deposit as a factor. Double the deposit, and every term doubles, so the total doubles. The interest doubles too, so it's still the same share of the total.",
+      "audioFile": "public/audio/math-a12-f14/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now put the deposit back to three hundred, and start with five thousand dollars in the account. That five thousand earns interest for all sixty months, longer than any deposit. It grows like compound interest, to five thousand times one point zero zero four to the sixty, which is six thousand, three hundred and fifty-three dollars and twenty cents. The deposits still give twenty thousand, two hundred and ninety-eight dollars and five cents, so the total is twenty-six thousand, six hundred and fifty-one dollars and twenty-six cents. The two parts just add.",
+      "audioFile": "public/audio/math-a12-f14/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Next, double the rate to nine point six per cent, with no starting balance. After five years the balance is twenty-two thousand, nine hundred and eighty-seven dollars and sixteen cents. That's only about thirteen per cent more. Why so little? The deposits are still eighteen thousand dollars. Only the interest changes. It does more than double, because the interest it earns is also earning interest at the higher rate, and it reaches four thousand, nine hundred and eighty-seven dollars sixteen. But over five years, the interest is a small part of the total, so even doubling it moves the total only a little.",
+      "audioFile": "public/audio/math-a12-f14/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now go back to four point eight per cent, and change the time instead. Five years gives about twenty thousand dollars. Ten years gives forty-six thousand and eighty-nine dollars fifty-nine, more than double. Twenty years gives a hundred and twenty thousand, and thirty years gives two hundred and forty thousand, six hundred and forty-four dollars. Each extra year does two things. It adds twelve more deposits, and it gives every earlier deposit another year to grow.",
+      "audioFile": "public/audio/math-a12-f14/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now try the higher rate over thirty years. At four point eight per cent, thirty years gives about two hundred and forty thousand dollars. At nine point six per cent, it gives six hundred and twenty-two thousand, nine hundred and twenty-three dollars and ninety-seven cents, more than two and a half times as much. Over five years, the higher rate added thirteen per cent. Over thirty, it more than doubles the balance. The rate works through one plus r to the n, so the longer the time, the bigger its effect.",
+      "audioFile": "public/audio/math-a12-f14/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's how big this gets. Nine thousand two hundred dollars goes into a retirement fund at the end of every year, in a model with a fixed seven per cent a year. After forty years, that's one million, eight hundred and thirty-six thousand, six hundred and forty-three dollars, from just three hundred and sixty-eight thousand dollars of deposits. Start ten years later, and after thirty years it's eight hundred and sixty-nine thousand dollars. Those first ten deposits cost only ninety-two thousand dollars, but missing them costs nearly a million. They're the deposits that grow the longest.",
+      "audioFile": "public/audio/math-a12-f14/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Which change wins depends on how big it is, and for how long. But the four inputs act in two different ways. The deposit and the starting balance scale or add to the balance. The rate and the time act through the power, so their effect starts small and grows enormous. Here's a way to remember it. Money in adds up. Rate and time compound.",
+      "audioFile": "public/audio/math-a12-f14/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. What happens to the future value, and why? Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f14/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "The future value doubles, exactly. In the formula, M multiplies everything, and r and n haven't changed. For example, two hundred dollars a month gives thirty-two thousand, seven hundred and seventy-five dollars eighty-seven, and four hundred gives twice that. Saying it more than doubles is the classic mistake. Each deposit still grows for the same time, at the same rate.",
+      "audioFile": "public/audio/math-a12-f14/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. Which plan gives the larger balance? Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f14/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "At zero point zero zero five a month, Plan A's two hundred and forty deposits grow to a hundred and eighty-four thousand, eight hundred and sixteen dollars thirty-six. Plan B's hundred and twenty grow to a hundred and thirty-one thousand, one hundred and three dollars forty-eight. Plan A is larger, because its deposits have longer to grow. Saying they're equal is wrong. Equal deposits don't mean equal interest.",
+      "audioFile": "public/audio/math-a12-f14/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So money in adds up, while rate and time compound. Now flip the question around. Say you're saving for a holiday, with a goal of six thousand dollars in two years, at six per cent a year, compounded monthly. What monthly deposit gets you there?",
+      "audioFile": "public/audio/math-a12-f14/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-f14/scene-15.wav"
+    }
+  ]
+}

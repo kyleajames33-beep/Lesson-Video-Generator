@@ -1,0 +1,17 @@
+# math-s11-a01: maths-check preflight hold
+
+25 November 2026. Source SHA-256: `44600567cd41704f2c601c508bbf5c51d2025f5885cd16367c7ddbebf105d775`.
+
+Result: 0 blockers, 2 should fix. No recording approval.
+
+- {"code": "count-mismatch", "declared": "5,750", "actual": 5738}
+
+The narration count must be the sum of the 13 scene strings, which is 5738. The declared count appears to include spaces between scenes. No source or narration was edited. Full arithmetic, syllabus-description, playlist-join and anchor checks remain pending. Evidence: work/brief271/source-inventory.json.
+
+Official facts and root-application holds: checks/maths-standard-y11-official-facts.md. Human listening pending.
+
+## Additional source-contract review
+
+Every quoted syllabus content statement in this description matches the captured official crosswalk. The description's Builds on/Next title links were checked in playlist order. This is a metadata join check, not full visual frame continuity or anchor approval. Evidence: work/brief271/source-contract-results.json.
+
+- Should fix, scene2, cue-order: Visual first cues "biggest at the top", then returns to "prefix", "Milli", "Centi" and "kilo", which narration says earlier. Order the cue plan by the actual spoken positions. The later generic "metres" and "kilometre" cues also need explicit occurrences.

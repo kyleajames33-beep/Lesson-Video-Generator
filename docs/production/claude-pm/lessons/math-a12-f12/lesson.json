@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-f12",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "7190c884bf3ba787ad253f6528f555b96c526f0749d0457d3a734710d70155c0",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (two accounts that look opposite)",
+      "voiceover": {
+        "text": "Last video ended with saving instead of borrowing: two hundred dollars into an account at the end of every month, towards a first apartment, and the balance climbs. Now put a second account beside it. A hundred thousand dollars sits in a fund, and one thousand and fifty dollars ninety-one comes out at the end of every month, so the balance falls. One grows and one shrinks, but they're the same kind of thing. What do these two have in common?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "what makes an annuity",
+      "voiceover": {
+        "text": "An annuity is a run of equal payments made at regular times, with interest compounding on the balance every period. Compounding means the interest is added to the balance, so next period it earns interest too. There are two kinds. In the first, you make equal contributions into an investment account, and interest is added at the end of each period. In the second, you invest one single sum, then make equal withdrawals from it. Same size, same gap, the same rate each period. That's the pattern to look for."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "what isn't an annuity",
+      "voiceover": {
+        "text": "Let's test the idea. Two thousand dollars invested once and left to grow. Is that an annuity? Make a guess. It isn't. It earns compound interest, but there are no regular payments, so it's just compound interest, like the growth models in the sequences videos. Deposits of fifty, then eighty, then a hundred and ten dollars a month aren't equal, so that's not an annuity either. And putting money in whenever you have spare cash isn't regular. But two hundred dollars at the end of every quarter, with interest each quarter, is."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "inside one period: the apartment savings",
+      "voiceover": {
+        "text": "Now look inside the apartment savings. Say it earns six per cent a year, compounded monthly, which is zero point five per cent a month. So each month the balance is multiplied by one point zero zero five, and then the two hundred dollar deposit goes in. Month one starts with nothing, so there's no interest, and the balance is just two hundred. In month two, the two hundred earns one dollar, then the next deposit arrives, giving four hundred and one dollars. Month three gives six hundred and three dollars and one cent. It's one rule, used again and again. The next balance is one plus r, times this balance, plus M. The first deposit earns nothing in its own month, because it arrives at the end, after the interest."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "the cash-flow diagram",
+      "voiceover": {
+        "text": "A cash-flow diagram shows the same thing on a time line. Time zero is when the account opens, and nothing goes in yet. Each arrow is one deposit, at the end of a period: at one, two, three, and so on, up to n. So n periods give n deposits. The future value is the balance at the end, at time n, straight after the last deposit. That last deposit has had no time to earn any interest yet."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "the second kind: the fund",
+      "voiceover": {
+        "text": "Now the fund. A hundred thousand dollars earns four point eight per cent a year, compounded monthly, so the rate per month is zero point zero zero four. In the first month it earns four hundred dollars interest. Then the withdrawal of one thousand and fifty dollars ninety-one comes out, leaving ninety-nine thousand, three hundred and forty-nine dollars and nine cents. Here's the rule. The next balance is one plus r, times this balance, minus M. That's exactly the loan rule. A loan has the same cash flows, seen from the lender's side. One sum goes out, and equal amounts come back."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "why the fund runs down",
+      "voiceover": {
+        "text": "Why does the fund run down? Each month the withdrawal is bigger than the interest, so the balance drops, and next month there's less to earn interest on. So it falls slowly at first, then faster, and runs out at the hundred and twentieth withdrawal, which is ten years. That last one is a little smaller, because the withdrawal is rounded up to the cent. If you only took out four hundred dollars, exactly the interest, the balance would stay at a hundred thousand forever. The withdrawal was set, the same way a loan repayment is set, so that the fund lasts ten years."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "matching the period",
+      "voiceover": {
+        "text": "One more condition. In this course, interest compounds as often as the payments are made, so the rate and the count match the payments. Five hundred dollars a month for two years, at six per cent a year compounded monthly, has r equal to zero point zero zero five per month, and n equal to twenty-four months, not two. For quarterly payments, divide the annual rate by four. For fortnightly, divide by twenty-six. In this course, every payment comes at the end of its period."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to spot one. Same size, same gap, interest every gap. In goes a contribution, or out goes a withdrawal, but always the same amount, at the same interval, with interest compounding in between."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Which of these four are annuities? Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "B and D are annuities. B has equal deposits every fortnight, with interest each fortnight. D starts with one sum and makes equal yearly withdrawals, with interest each year. C isn't, because the deposits aren't equal. Choosing A is the classic mistake. It earns compound interest, but compound interest alone isn't an annuity. There are no regular payments."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Write a recurrence for this account, and find its balance after three deposits. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Six per cent a year is zero point zero zero five a month. So A sub n plus one equals one point zero zero five A sub n, plus four hundred, with A nought equal to zero. Then A three is one thousand two hundred and six dollars and one cent. A one isn't four hundred and two. The first deposit earns no interest in its first month."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So an annuity is equal payments at regular times, in or out, with interest compounding every period. Super works this way too. Picture a super account where two hundred dollars goes in at the end of every month, earning a steady six per cent a year. After five years, that's sixty deposits, twelve thousand dollars in total. Will the balance be exactly twelve thousand, a little more, or a lot more?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

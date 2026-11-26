@@ -1,0 +1,5010 @@
+{
+  "brief": 247,
+  "state": "w10 ramp, w14 hammock pair and w17 golf bank installed in follow-up. Named fallbacks and remaining exact-geometry holds recorded per asset.",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-1b0772ad-a9df-46e3-ba2c-746930ab5b48.png",
+      "sha256": "7cad9078e181b47f9039be10967c01592abc809f6a30cf2f68e1ad9292b4a87e",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        279,
+        229,
+        975,
+        1042
+      ],
+      "marginFractions": [
+        0.22248803827751196,
+        0.18261562998405104,
+        0.22248803827751196,
+        0.16905901116427433
+      ],
+      "evidence": [
+        "work/brief247/block-cube-v2-native-paper.jpg",
+        "work/brief247/block-cube-v2-native-dark.jpg",
+        "work/brief247/block-cube-v2-native-white.jpg",
+        "work/brief247/block-cube-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-block-cube-v1.png",
+      "path": "public/assets/maths/ma11-block-cube-v1.png",
+      "brief": 247,
+      "lesson": "w01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "static pass for whole-cube fallback",
+        "observations": [
+          "Native dimensions 1254 by 1254 preserved; no upsampling to requested 1600 canvas.",
+          "Root ruling 2 authorises whole cube with coded face tints when separate pieces fail registration."
+        ],
+        "evidence": [
+          "work/brief247/block-registration.json",
+          "work/brief247/block-size-check-paper.jpg",
+          "work/brief247/block-size-check-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-block-cube-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-677d8125-1fa0-4971-80ff-2759accbef62.png",
+      "sha256": "bddad8035bec4ef6daf3753802e369f1c98b5bc64c59f2bea76529b0ffbade69",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        280,
+        532,
+        974,
+        1074
+      ],
+      "marginFractions": [
+        0.22328548644338117,
+        0.42424242424242425,
+        0.22328548644338117,
+        0.14354066985645933
+      ],
+      "evidence": [
+        "work/brief247/block-layer-v1-native-paper.jpg",
+        "work/brief247/block-layer-v1-native-dark.jpg",
+        "work/brief247/block-layer-v1-native-white.jpg",
+        "work/brief247/block-layer-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-block-layer-v1.png",
+      "path": "work/brief247/ma11-block-layer-v1.png",
+      "brief": 247,
+      "lesson": "w01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "failed 3 px stacking registration; retained as candidate only",
+        "observations": [
+          "Native dimensions 1254 by 1254 preserved; no upsampling to requested 1600 canvas.",
+          "Root ruling 2 authorises whole cube with coded face tints when separate pieces fail registration."
+        ],
+        "evidence": [
+          "work/brief247/block-registration.json",
+          "work/brief247/block-size-check-paper.jpg",
+          "work/brief247/block-size-check-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "deliveryDecision18Nov": {
+        "status": "fallback selected",
+        "ruling": "Root w01 ruling 2",
+        "builderAction": "Use the published whole cube with coded face tints.",
+        "replacementAsset": "public/assets/maths/ma11-block-cube-v1.png"
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-e8aa3eaf-f03b-4a9d-86e7-5c08a9dd3857.png",
+      "sha256": "b06849d6445a81cb4cd84dc335f2e08eeb086c5d3734bfddce27bf7193966e00",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        277,
+        642,
+        738,
+        1042
+      ],
+      "marginFractions": [
+        0.22089314194577353,
+        0.5119617224880383,
+        0.41148325358851673,
+        0.16905901116427433
+      ],
+      "evidence": [
+        "work/brief247/block-row-v1-native-paper.jpg",
+        "work/brief247/block-row-v1-native-dark.jpg",
+        "work/brief247/block-row-v1-native-white.jpg",
+        "work/brief247/block-row-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-block-row-v1.png",
+      "path": "work/brief247/ma11-block-row-v1.png",
+      "brief": 247,
+      "lesson": "w01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "failed 3 px stacking registration; retained as candidate only",
+        "observations": [
+          "Native dimensions 1254 by 1254 preserved; no upsampling to requested 1600 canvas.",
+          "Root ruling 2 authorises whole cube with coded face tints when separate pieces fail registration."
+        ],
+        "evidence": [
+          "work/brief247/block-registration.json",
+          "work/brief247/block-size-check-paper.jpg",
+          "work/brief247/block-size-check-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "deliveryDecision18Nov": {
+        "status": "fallback selected",
+        "ruling": "Root w01 ruling 2",
+        "builderAction": "Use the published whole cube with coded face tints.",
+        "replacementAsset": "public/assets/maths/ma11-block-cube-v1.png"
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-4336c82c-8888-4780-8955-1c07202b2d91.png",
+      "sha256": "427765b9431a13732ea8ad6d7134c86e8a8520cee38c0bf386a3155b334ab54c",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        516,
+        836,
+        738,
+        1073
+      ],
+      "marginFractions": [
+        0.41148325358851673,
+        0.6666666666666666,
+        0.41148325358851673,
+        0.14433811802232854
+      ],
+      "evidence": [
+        "work/brief247/block-single-v1-native-paper.jpg",
+        "work/brief247/block-single-v1-native-dark.jpg",
+        "work/brief247/block-single-v1-native-white.jpg",
+        "work/brief247/block-single-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-block-single-v1.png",
+      "path": "work/brief247/ma11-block-single-v1.png",
+      "brief": 247,
+      "lesson": "w01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "failed 3 px stacking registration; retained as candidate only",
+        "observations": [
+          "Native dimensions 1254 by 1254 preserved; no upsampling to requested 1600 canvas.",
+          "Root ruling 2 authorises whole cube with coded face tints when separate pieces fail registration."
+        ],
+        "evidence": [
+          "work/brief247/block-registration.json",
+          "work/brief247/block-size-check-paper.jpg",
+          "work/brief247/block-size-check-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "deliveryDecision18Nov": {
+        "status": "fallback selected",
+        "ruling": "Root w01 ruling 2",
+        "builderAction": "Use the published whole cube with coded face tints.",
+        "replacementAsset": "public/assets/maths/ma11-block-cube-v1.png"
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-0135df08-7b3e-4392-aaff-9676821b65d1.png",
+      "sha256": "6234d27282d8a1ae58aebe4ad67cb2e9da44f8c6df17ed0474ddb2d0d24ea25e",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        130,
+        128,
+        1407,
+        930
+      ],
+      "marginFractions": [
+        0.08463541666666667,
+        0.125,
+        0.083984375,
+        0.091796875
+      ],
+      "evidence": [
+        "work/brief247/chocolate-block-revised-native-paper.jpg",
+        "work/brief247/chocolate-block-revised-native-dark.jpg",
+        "work/brief247/chocolate-block-revised-native-white.jpg",
+        "work/brief247/chocolate-block-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-chocolate-block-v1.png",
+      "path": "public/assets/maths/ma11-chocolate-block-v1.png",
+      "brief": 247,
+      "lesson": "w02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "static 24-piece handoff pass; w02 grid and row animation held",
+        "observations": [
+          "Native paper/dark and 300/600 px comparisons inspected. Exactly four rows of six faces, no text or people.",
+          "Visible cell widths 209 to 221 px; heights 190 to 205 px. Mean width/height 1.0675, so the requested identical-square grid is not achieved.",
+          "After translation only, row edge errors at 2000 px equivalent are 3.91, 5.21, 14.32 and 9.11 px. No stretching or artificial pass."
+        ],
+        "evidence": [
+          "work/brief247/chocolate-registration.json",
+          "work/brief247/chocolate-row-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-chocolate-block-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-85bd3064-aa9c-44ca-8f6d-c21368baf6fa.png",
+      "sha256": "984480423edb56ed8be59d388c42cf7aae99e563af32e79ddbcd6d26dc1479dd",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        129,
+        127,
+        1408,
+        353
+      ],
+      "marginFractions": [
+        0.083984375,
+        0.1240234375,
+        0.08333333333333333,
+        0.6552734375
+      ],
+      "evidence": [
+        "work/brief247/chocolate-row-revised-native-paper.jpg",
+        "work/brief247/chocolate-row-revised-native-dark.jpg",
+        "work/brief247/chocolate-row-revised-native-white.jpg",
+        "work/brief247/chocolate-row-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-chocolate-row-v1.png",
+      "path": "work/brief247/ma11-chocolate-row-v1-revised.png",
+      "brief": 247,
+      "lesson": "w02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "failed 3 px row registration; retained candidate only",
+        "observations": [
+          "Native paper/dark and 300/600 px comparisons inspected. Exactly four rows of six faces, no text or people.",
+          "Visible cell widths 209 to 221 px; heights 190 to 205 px. Mean width/height 1.0675, so the requested identical-square grid is not achieved.",
+          "After translation only, row edge errors at 2000 px equivalent are 3.91, 5.21, 14.32 and 9.11 px. No stretching or artificial pass."
+        ],
+        "evidence": [
+          "work/brief247/chocolate-registration.json",
+          "work/brief247/chocolate-row-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/ma11-chocolate-row-v1-sidecar.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-chocolate-row-candidate.png",
+        "sha256": "acb5e0c6b8dd5b8f67e0a9aedbdf4ddd30bc76fe3c595eacae120b18f1961d3f",
+        "nativeSize": [
+          2172,
+          724
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          152,
+          219,
+          2021,
+          542
+        ],
+        "reason": "Six square faces, but native width differs from the block and row does not meet the 3px registration tolerance."
+      },
+      "geometryRepaint18Nov": {
+        "status": "held after follow-up QA",
+        "file": "work/maths-plate-geometry-pilot/chocolate-row-candidate.png",
+        "sha256": "d84d8b69d10b782880fe83857a6d4149ebe7b718b79d1ccfb6e926eda08b79d0",
+        "reason": "The edited six-piece row measures 202 px tall. The target rows range from 190 to 205 px. Translation cannot give the required under-3-pixel overlap on all rows."
+      },
+      "review20Nov": {
+        "status": "held",
+        "reason": "The existing block has row heights of 190 to 205 px. Even a perfectly sized single row translated onto all four rows misses by at least 4.88 px at 2000 px against a strict under-3 px target. A matched block and row repaint together would be required.",
+        "candidate": {
+          "candidate": "work/maths-plate-geometry-pilot/20-nov-chocolate-row-candidate.png",
+          "imagegenOutput": "exec-7c570f04-8127-40f0-9663-f90600fc84cc.png",
+          "sha256": "ca55cbfcc1ff3a0568600b63bc27b4e9ccfe07b5135d729d0a1d16bd5241e7c5",
+          "nativeSize": [
+            1536,
+            1024
+          ],
+          "alphaRange": [
+            0,
+            254
+          ],
+          "alphaBounds": [
+            131,
+            134,
+            1406,
+            350
+          ],
+          "candidateHeight": 216,
+          "modelRowHeights": [
+            205,
+            203,
+            190,
+            197
+          ],
+          "minimumPossibleErrorAt2000": 4.8828125,
+          "verticalEdgeErrorsAt2000": [
+            7.161458333333333,
+            8.463541666666666,
+            16.927083333333332,
+            12.369791666666666
+          ],
+          "passQA": false
+        }
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-18150ee1-caa2-4c14-b4ef-cf939cdc74a3.png",
+      "sha256": "69cabf668b09bd6181129bb40c281d99c478b3d4d23381c9110786924c29798c",
+      "nativeSize": [
+        1630,
+        965
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        286,
+        241,
+        1344,
+        743
+      ],
+      "marginFractions": [
+        0.1754601226993865,
+        0.24974093264248703,
+        0.1754601226993865,
+        0.23005181347150258
+      ],
+      "evidence": [
+        "work/brief247/ma11-rug-top-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-rug-top-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-rug-top-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-rug-top-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-rug-top-v1.png",
+      "path": "public/assets/maths/ma11-rug-top-v1.png",
+      "brief": 247,
+      "lesson": "w04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2200,
+        1300
+      ],
+      "qa": {
+        "result": "static pass; source trial-wording finding remains",
+        "observations": [
+          "Native paper/dark and 300/600 px checks inspected. Quiet woven rug, short fringes only at short ends, no text or people.",
+          "Second framing has more than 17 percent clear margin. Body aspect about 1.98, compared with approximately 1.8 requested; fixed artwork is a context image, coded outline carries exact changing dimensions.",
+          "Native 1630 by 965 preserved, not upsampled to requested 2200 by 1300."
+        ],
+        "evidence": [
+          "work/brief247/rug-size-paper.jpg",
+          "work/brief247/rug-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-rug-top-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-d300b80b-667a-4e11-a397-3d1f7c8d8e7b.png",
+      "sha256": "50fd607645ad50768044984a1aa93691ac95b6ead7a6f5cc919100375ffaf272",
+      "nativeSize": [
+        1642,
+        958
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        257,
+        177,
+        1376,
+        796
+      ],
+      "marginFractions": [
+        0.15651644336175397,
+        0.1847599164926931,
+        0.16199756394640683,
+        0.16910229645093947
+      ],
+      "evidence": [
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-kayak-jetty-v1.png",
+      "path": "public/assets/maths/ma11-kayak-jetty-v1.png",
+      "brief": 247,
+      "lesson": "w05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1400
+      ],
+      "qa": {
+        "result": "static artwork pass; coded price-sign text fit held",
+        "observations": [
+          "Three kayaks on rack, paddle, short timber jetty and blank A-frame sign. No people, prices or logos. Native paper/dark and 300/600 px views inspected.",
+          "Clear outer margins exceed 15 percent after reframing. Native 1642 by 958 retained.",
+          "The small sign cannot carry the requested full price text at the lesson type size. Artwork does not clear that built label."
+        ],
+        "evidence": [
+          "work/brief247/kayak-sign-face-overlay.jpg",
+          "work/brief247/kayak-size-paper.jpg",
+          "work/brief247/kayak-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-kayak-jetty-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-904dd941-e8b9-4420-a1cc-f6747076c762.png",
+      "sha256": "791cff6898a73c631e624bb35b9cc07cc5bb4e9c67168861f4c7478aad8045ad",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        292,
+        257,
+        734,
+        1283
+      ],
+      "marginFractions": [
+        0.28515625,
+        0.16731770833333334,
+        0.283203125,
+        0.16471354166666666
+      ],
+      "evidence": [
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-travel-card-reader-v1.png",
+      "path": "public/assets/maths/ma11-travel-card-reader-v1.png",
+      "brief": 247,
+      "lesson": "w06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        2200
+      ],
+      "qa": {
+        "result": "static pass; coded balance-display fit held",
+        "observations": [
+          "Blank reader screen and unlabelled tap pad; card has a wave and contactless symbol, no text, balance or network logo. No people or faces.",
+          "Native paper/dark and 300/600 px comparisons inspected. The reader has clear margins over 16 percent. Card major painted margins exceed 11 percent; very low-alpha specks remain recorded, with no visible halo.",
+          "Reader display is too small for the full balance at the requested 52 px text when the whole plate is only 520 px tall. Root must resolve that composition."
+        ],
+        "evidence": [
+          "work/brief247/travel-card-size-paper.jpg",
+          "work/brief247/travel-card-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-travel-card-reader-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-7f663602-4b78-4e50-b714-c9183804dd0d.png",
+      "sha256": "0a48090248539cb7c7056b0e2d52fbec28d816fc936f93f2d6ef9a093bfc3a22",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        161,
+        1363,
+        863
+      ],
+      "marginFractions": [
+        0,
+        0.1572265625,
+        0.11263020833333333,
+        0.1572265625
+      ],
+      "evidence": [
+        "work/brief247/ma11-travel-card-v1-native-paper.jpg",
+        "work/brief247/ma11-travel-card-v1-native-dark.jpg",
+        "work/brief247/ma11-travel-card-v1-native-white.jpg",
+        "work/brief247/ma11-travel-card-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-travel-card-v1.png",
+      "path": "public/assets/maths/ma11-travel-card-v1.png",
+      "brief": 247,
+      "lesson": "w06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        900
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Blank reader screen and unlabelled tap pad; card has a wave and contactless symbol, no text, balance or network logo. No people or faces.",
+          "Native paper/dark and 300/600 px comparisons inspected. The reader has clear margins over 16 percent. Card major painted margins exceed 11 percent; very low-alpha specks remain recorded, with no visible halo.",
+          "Reader display is too small for the full balance at the requested 52 px text when the whole plate is only 520 px tall. Root must resolve that composition."
+        ],
+        "evidence": [
+          "work/brief247/travel-card-size-paper.jpg",
+          "work/brief247/travel-card-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-travel-card-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-fd604f7f-06d1-4465-b05e-a2ee8d4d8aae.png",
+      "sha256": "33b930c6f4117f6b1c262d7abe49d4e10348c67c8c29afe7cacc548c6968c96b",
+      "nativeSize": [
+        1920,
+        819
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        354,
+        191,
+        1577,
+        676
+      ],
+      "marginFractions": [
+        0.184375,
+        0.23321123321123322,
+        0.17864583333333334,
+        0.1746031746031746
+      ],
+      "evidence": [
+        "work/brief247/ma11-taxi-side-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-taxi-side-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-taxi-side-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-taxi-side-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-taxi-side-v1.png",
+      "path": "public/assets/maths/ma11-taxi-side-v1.png",
+      "brief": 247,
+      "lesson": "w08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1000
+      ],
+      "qa": {
+        "result": "static pass; meter type fit held",
+        "observations": [
+          "Native paper and dark alpha composites inspected. Taxi wheels level, blank roof sign, no occupants or words. Ten pins in triangle with plain blue ball.",
+          "Taxi 360/640 px, meter 300/420 px and pins 360 px inspected on paper and dark. Road two-copy native seam inspected, kerb and footpath line remain continuous.",
+          "Meter safe display is only about 51 px tall at 420 px file width, so specified 64 px readout type cannot fit. Root resolves composition. Road native aspect differs from requested; no stretching."
+        ],
+        "evidence": [
+          "work/brief247/taxi-size-paper.jpg",
+          "work/brief247/taxi-size-dark.jpg",
+          "work/brief247/road-two-copy-paper.jpg",
+          "work/brief247/road-two-copy-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-taxi-side-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-a462579c-dff8-485a-aa9c-4d59eb5e947f.png",
+      "sha256": "51bfa5a7a48bb939938599d099bccd459287ed72df0ec36d96dba9f7b10023b5",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        164,
+        189,
+        1368,
+        868
+      ],
+      "marginFractions": [
+        0.10677083333333333,
+        0.1845703125,
+        0.109375,
+        0.15234375
+      ],
+      "evidence": [
+        "work/brief247/ma11-taxi-meter-v1-native-paper.jpg",
+        "work/brief247/ma11-taxi-meter-v1-native-dark.jpg",
+        "work/brief247/ma11-taxi-meter-v1-native-white.jpg",
+        "work/brief247/ma11-taxi-meter-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-taxi-meter-v1.png",
+      "path": "public/assets/maths/ma11-taxi-meter-v1.png",
+      "brief": 247,
+      "lesson": "w08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        900
+      ],
+      "qa": {
+        "result": "static pass; meter type fit held",
+        "observations": [
+          "Native paper and dark alpha composites inspected. Taxi wheels level, blank roof sign, no occupants or words. Ten pins in triangle with plain blue ball.",
+          "Taxi 360/640 px, meter 300/420 px and pins 360 px inspected on paper and dark. Road two-copy native seam inspected, kerb and footpath line remain continuous.",
+          "Meter safe display is only about 51 px tall at 420 px file width, so specified 64 px readout type cannot fit. Root resolves composition. Road native aspect differs from requested; no stretching."
+        ],
+        "evidence": [
+          "work/brief247/taxi-size-paper.jpg",
+          "work/brief247/taxi-size-dark.jpg",
+          "work/brief247/road-two-copy-paper.jpg",
+          "work/brief247/road-two-copy-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-taxi-meter-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-64cbbafe-73c9-477b-8f4e-7e9d7cfdf61d.png",
+      "sha256": "b53301b0125ded6497733bdf615abc5b01d6865097abdc2b7d1bc45c9028adc4",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        387,
+        2172,
+        724
+      ],
+      "marginFractions": [
+        0,
+        0.5345303867403315,
+        0,
+        0
+      ],
+      "evidence": [
+        "work/brief247/ma11-city-road-strip-v1-native-paper.jpg",
+        "work/brief247/ma11-city-road-strip-v1-native-dark.jpg",
+        "work/brief247/ma11-city-road-strip-v1-native-white.jpg",
+        "work/brief247/ma11-city-road-strip-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-city-road-strip-v1.png",
+      "path": "public/assets/maths/ma11-city-road-strip-v1.png",
+      "brief": 247,
+      "lesson": "w08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        300
+      ],
+      "qa": {
+        "result": "static pass; meter type fit held",
+        "observations": [
+          "Native paper and dark alpha composites inspected. Taxi wheels level, blank roof sign, no occupants or words. Ten pins in triangle with plain blue ball.",
+          "Taxi 360/640 px, meter 300/420 px and pins 360 px inspected on paper and dark. Road two-copy native seam inspected, kerb and footpath line remain continuous.",
+          "Meter safe display is only about 51 px tall at 420 px file width, so specified 64 px readout type cannot fit. Root resolves composition. Road native aspect differs from requested; no stretching."
+        ],
+        "evidence": [
+          "work/brief247/taxi-size-paper.jpg",
+          "work/brief247/taxi-size-dark.jpg",
+          "work/brief247/road-two-copy-paper.jpg",
+          "work/brief247/road-two-copy-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-city-road-strip-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-23592ea4-773f-4dcd-9dc7-eca0c798fd99.png",
+      "sha256": "887ff993751f21ef65fa2410a4b61690e655034477f58ef6b1ec57169b2b6258",
+      "nativeSize": [
+        1466,
+        1073
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        340,
+        211,
+        1068,
+        838
+      ],
+      "marginFractions": [
+        0.23192360163710776,
+        0.1966449207828518,
+        0.27148703956343795,
+        0.2190121155638397
+      ],
+      "evidence": [
+        "work/brief247/ma11-bowling-pins-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-bowling-pins-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-bowling-pins-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-bowling-pins-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-bowling-pins-v1.png",
+      "path": "public/assets/maths/ma11-bowling-pins-v1.png",
+      "brief": 247,
+      "lesson": "w08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1000
+      ],
+      "qa": {
+        "result": "static pass; meter type fit held",
+        "observations": [
+          "Native paper and dark alpha composites inspected. Taxi wheels level, blank roof sign, no occupants or words. Ten pins in triangle with plain blue ball.",
+          "Taxi 360/640 px, meter 300/420 px and pins 360 px inspected on paper and dark. Road two-copy native seam inspected, kerb and footpath line remain continuous.",
+          "Meter safe display is only about 51 px tall at 420 px file width, so specified 64 px readout type cannot fit. Root resolves composition. Road native aspect differs from requested; no stretching."
+        ],
+        "evidence": [
+          "work/brief247/taxi-size-paper.jpg",
+          "work/brief247/taxi-size-dark.jpg",
+          "work/brief247/road-two-copy-paper.jpg",
+          "work/brief247/road-two-copy-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-bowling-pins-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-60e73884-1168-4b9e-a7f0-7df7526a785a.png",
+      "sha256": "c9285ac9c76c78c55b27dff695e11a6f3b676a978ad5f47480adba13e9b0d11e",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        216,
+        206,
+        1029,
+        1031
+      ],
+      "marginFractions": [
+        0.1722488038277512,
+        0.16427432216905902,
+        0.17942583732057416,
+        0.17783094098883573
+      ],
+      "evidence": [
+        "work/brief247/ma11-pizza-top-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-pizza-top-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-pizza-top-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-pizza-top-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-pizza-top-v1.png",
+      "path": "public/assets/maths/ma11-pizza-top-v1.png",
+      "brief": 247,
+      "lesson": "w09",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Whole uncut cheese/tomato/basil pizza on round timber board. No printed sector, answer or text.",
+          "Native paper/dark alpha, 240/620 px views and 12 equal sector overlay inspected. Margins exceed 16 percent. Cut radius stays inside crust."
+        ],
+        "evidence": [
+          "work/brief247/pizza-size-paper.jpg",
+          "work/brief247/pizza-size-dark.jpg",
+          "work/brief247/pizza-sectors-paper.jpg",
+          "work/brief247/pizza-sectors-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-pizza-top-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-4037995e-3812-4768-bf1e-a8015911af36.png",
+      "sha256": "02259ba32e09fc365010688143b4cec22e789cb14d6b4aa75a2d1e57dee96993",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        114,
+        99,
+        1200,
+        1254
+      ],
+      "marginFractions": [
+        0.09090909090909091,
+        0.07894736842105263,
+        0.0430622009569378,
+        0
+      ],
+      "evidence": [
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-paper.jpg",
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-dark.jpg",
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-white.jpg",
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-softball-diamond-top-v1.png",
+      "path": "public/assets/maths/ma11-softball-diamond-top-v1.png",
+      "brief": 247,
+      "lesson": "w03",
+      "method": "ImageGen paint with separately placed stock painted base faces. No resampling. Centres measured from connected opaque white faces.",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "installed, geometry and alpha verified",
+        "evidence": [
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-paper.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-white.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-black.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-overlay.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-softball-diamond-top-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-softball-diamond-top-candidate.png",
+        "sha256": "92807e0eb94c3069eea431ecb35e9b104b06b72810fdebb01c9bafe3b506862f",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "boundsAbove20": [
+          119,
+          97,
+          1129,
+          1141
+        ],
+        "reason": "Four correctly oriented bases, but the left-right and home-second diagonals differ by more than 0.5 percent."
+      },
+      "geometryRepaint18Nov": {
+        "status": "held after follow-up QA",
+        "file": "work/maths-plate-geometry-pilot/softball-diamond-top-candidate.png",
+        "sha256": "d5f30f3c004733297135c046c9fbbe7b71d735538ed43442a3360797f28c7971",
+        "reason": "The four white base centroids nearly match. The home-to-second diagonal divided by the square-root-of-two side target misses by up to 0.516 percent. Limit 0.5 percent."
+      },
+      "thirdRepaint18Nov": {
+        "file": "work/maths-plate-geometry-pilot/softball-diamond-top-third-candidate.png",
+        "sha256": "28659736809010d6948926df383698fa253e6790ad8a7f0f8af1176d6109af86",
+        "result": "held",
+        "edgeErrorPercent": 0.5363,
+        "limitPercent": 0.5,
+        "evidence": "work/maths-plate-geometry-pilot/softball-diamond-top-third-measurements.json"
+      },
+      "review20Nov": {
+        "status": "installed",
+        "path": "public/assets/maths/ma11-softball-diamond-top-v1.png",
+        "sidecar": "public/assets/maths/ma11-softball-diamond-top-v1.json",
+        "sha256": "02259ba32e09fc365010688143b4cec22e789cb14d6b4aa75a2d1e57dee96993",
+        "nativeSize": [
+          2000,
+          2000
+        ],
+        "method": "ImageGen paint with separately placed stock painted base faces. No resampling. Centres measured from connected opaque white faces.",
+        "evidence": [
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-paper.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-white.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-black.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-softball-exact-overlay.jpg"
+        ],
+        "rawRepaints": [
+          {
+            "candidate": "work/maths-plate-geometry-pilot/20-nov-softball-diamond-top-candidate.png",
+            "imagegenOutput": "exec-8a2f6d70-d2b0-4687-9960-f23bf6147b68.png",
+            "sha256": "2680da666184f8ee7ddf62c9b1437b5e1f649a80f38cbb841104eb5895047761",
+            "nativeSize": [
+              1254,
+              1254
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "alphaBounds": [
+              127,
+              127,
+              1127,
+              1122
+            ],
+            "baseCentres": {
+              "home": [
+                625.4579863739591,
+                1061.9606358819076
+              ],
+              "first": [
+                1068.8742554599603,
+                626.9973527465255
+              ],
+              "second": [
+                625.5627009646303,
+                185.01479099678457
+              ],
+              "third": [
+                183.61770623742456,
+                627.0154258886653
+              ]
+            },
+            "sides": [
+              620.0001361670794,
+              621.1368974437596,
+              625.9981783040024,
+              625.0439501421124
+            ],
+            "diagonals": [
+              876.9458511370174,
+              885.2565494070238
+            ],
+            "maxDiagonalToSideErrorPercent": 0.963027693081342,
+            "passQA": false
+          },
+          {
+            "candidate": "work/maths-plate-geometry-pilot/20-nov-repaint-softball-diamond-top-candidate.png",
+            "imagegenOutput": "exec-49f1ca9e-4287-4eb2-8687-517fa7fc149f.png",
+            "sha256": "ca86639698044692125937c4d51deb989b53c7bdfb021001c1b92bdf4323701f",
+            "nativeSize": [
+              1254,
+              1254
+            ],
+            "alphaRange": [
+              0,
+              253
+            ],
+            "alphaBounds": [
+              97,
+              82,
+              1157,
+              1153
+            ],
+            "baseCentres": {
+              "home": [
+                625.3053097345132,
+                1076.9771386430677
+              ],
+              "first": [
+                1072.5021971123665,
+                624.5084745762712
+              ],
+              "second": [
+                625.5169762972454,
+                168.96989109545163
+              ],
+              "third": [
+                176.87293519695044,
+                624.4745870393901
+              ]
+            },
+            "sides": [
+              637.0636967691975,
+              636.1705337744212,
+              638.2093611557685,
+              639.3481083430082
+            ],
+            "diagonals": [
+              908.0072722185278,
+              895.6292625565101
+            ],
+            "maxDiagonalToSideErrorPercent": 0.9451163272937047,
+            "passQA": false
+          }
+        ]
+      }
+    },
+    {
+      "source": "work/maths-plate-geometry-pilot/entrance-ramp-final-candidate.png",
+      "sha256": "f523c551bc2c4258d156c8d6a1c8b9b46c7c510c348f33aa9c6da4c755054709",
+      "nativeSize": [
+        2086,
+        754
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        77,
+        114,
+        1991,
+        636
+      ],
+      "marginFractions": [
+        0.0371442354076218,
+        0.1503957783641161,
+        0.039556198745779064,
+        0.16094986807387862
+      ],
+      "evidence": [
+        "work/brief247/ma11-entrance-ramp-v1-revised-native-paper.jpg",
+        "work/brief247/ma11-entrance-ramp-v1-revised-native-dark.jpg",
+        "work/brief247/ma11-entrance-ramp-v1-revised-native-white.jpg",
+        "work/brief247/ma11-entrance-ramp-v1-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-entrance-ramp-v1.png",
+      "path": "public/assets/maths/ma11-entrance-ramp-v1.png",
+      "brief": 247,
+      "lesson": "w10",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        3600,
+        1100
+      ],
+      "qa": {
+        "result": "installed under measured-anchor ruling",
+        "observations": [
+          "Minimum clear margin exceeds 19 percent. The painted run to rise is 14.43. Align to the reported landmarks and keep exact scale in the coded construction."
+        ],
+        "evidence": [
+          "work/maths-plate-geometry-pilot/entrance-ramp-900-paper-anchors.jpg",
+          "work/maths-plate-geometry-pilot/entrance-ramp-900-dark-anchors.jpg",
+          "work/maths-plate-geometry-pilot/entrance-ramp-1500-paper-anchors.jpg",
+          "work/maths-plate-geometry-pilot/entrance-ramp-1500-dark-anchors.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-entrance-ramp-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-entrance-ramp-candidate.png",
+        "sha256": "ac95e49d04ca433f8155fd603e34a1b95f3bedb9cd67b862925d1d0190b0a5c2",
+        "nativeSize": [
+          2172,
+          724
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          8,
+          131,
+          2164,
+          661
+        ],
+        "reason": "New revision has less than 1 percent horizontal clear margin; previous revision also failed the equal-scale ramp."
+      },
+      "previousQA": {
+        "result": "held after revision",
+        "observations": [
+          "Ramp revised but held: measured run/rise is about 18.34 instead of 14, and horizontal/vertical scale estimates differ. Side margins are about 3.8 percent, below 8 percent. Native 900/1500 px and anchor checks recorded. Root may fit coded points to actual anchors under the source ruling, but must resolve the equal-scale claim and margins. No warping; work candidate only, so w09 handoff remains incomplete."
+        ],
+        "evidence": [
+          "work/brief247/ramp-geometry.json",
+          "work/brief247/ramp-anchors.jpg",
+          "work/brief247/ramp-size-paper.jpg",
+          "work/brief247/ramp-size-dark.jpg",
+          "work/brief247/ramp-size-transforms.json"
+        ]
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-0dc1c6e3-5a19-4c5e-adbc-56d5bf2dcc0d.png",
+      "sha256": "0b8a721bd6a4cf43de7350a438d7cd9e5b0172955f4a0a890b2379fc1efead56",
+      "nativeSize": [
+        1402,
+        1122
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        354,
+        215,
+        1042,
+        934
+      ],
+      "marginFractions": [
+        0.2524964336661912,
+        0.19162210338680927,
+        0.25677603423680456,
+        0.16755793226381463
+      ],
+      "evidence": [
+        "work/brief247/ma11-lemonade-stall-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-lemonade-stall-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-lemonade-stall-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-lemonade-stall-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-lemonade-stall-v1.png",
+      "path": "public/assets/maths/ma11-lemonade-stall-v1.png",
+      "brief": 247,
+      "lesson": "w13",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1600
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark and requested display-size checks inspected. All outer clear margins exceed 8 percent. No words, logos, prices, people or drivers.",
+          "Stall has blank banner, dispenser, lemons and cup stack. Separate cup, unlettered van, blue goggles and blank T-shirt meet their contexts. Native aspect retained."
+        ],
+        "evidence": [
+          "work/brief247/lemonade-size-paper.jpg",
+          "work/brief247/lemonade-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-lemonade-stall-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-087390fe-45a3-4442-b638-e22433e1bfe8.png",
+      "sha256": "60d15c50a34abd0a7123ab6ccba6c5ba1b7bbc2cb2cf7e72a36ddcbb04427392",
+      "nativeSize": [
+        1145,
+        1374
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        169,
+        153,
+        976,
+        1182
+      ],
+      "marginFractions": [
+        0.14759825327510917,
+        0.11135371179039301,
+        0.14759825327510917,
+        0.13973799126637554
+      ],
+      "evidence": [
+        "work/brief247/ma11-lemonade-cup-v1-native-paper.jpg",
+        "work/brief247/ma11-lemonade-cup-v1-native-dark.jpg",
+        "work/brief247/ma11-lemonade-cup-v1-native-white.jpg",
+        "work/brief247/ma11-lemonade-cup-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-lemonade-cup-v1.png",
+      "path": "public/assets/maths/ma11-lemonade-cup-v1.png",
+      "brief": 247,
+      "lesson": "w13",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        500,
+        600
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark and requested display-size checks inspected. All outer clear margins exceed 8 percent. No words, logos, prices, people or drivers.",
+          "Stall has blank banner, dispenser, lemons and cup stack. Separate cup, unlettered van, blue goggles and blank T-shirt meet their contexts. Native aspect retained."
+        ],
+        "evidence": [
+          "work/brief247/lemonade-size-paper.jpg",
+          "work/brief247/lemonade-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-lemonade-cup-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-0c612001-c0ae-486d-a196-c5f554408106.png",
+      "sha256": "0180f8e0ab7accb93d53372699ae5bc28f5b0efc77ccb8427dc954241f5ca299",
+      "nativeSize": [
+        1754,
+        897
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        323,
+        205,
+        1447,
+        728
+      ],
+      "marginFractions": [
+        0.18415051311288483,
+        0.22853957636566333,
+        0.1750285062713797,
+        0.18840579710144928
+      ],
+      "evidence": [
+        "work/brief247/ma11-trade-van-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-trade-van-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-trade-van-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-trade-van-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-trade-van-v1.png",
+      "path": "public/assets/maths/ma11-trade-van-v1.png",
+      "brief": 247,
+      "lesson": "w13",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1000
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark and requested display-size checks inspected. All outer clear margins exceed 8 percent. No words, logos, prices, people or drivers.",
+          "Stall has blank banner, dispenser, lemons and cup stack. Separate cup, unlettered van, blue goggles and blank T-shirt meet their contexts. Native aspect retained."
+        ],
+        "evidence": [
+          "work/brief247/lemonade-size-paper.jpg",
+          "work/brief247/lemonade-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-trade-van-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-cd18f415-4ebc-4244-9e6d-70cae9dedb03.png",
+      "sha256": "af0be771d8d8cdf5543405b4290acbfa757c5e771d116b4ab253a7bba03e4e16",
+      "nativeSize": [
+        1620,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        308,
+        277,
+        1306,
+        680
+      ],
+      "marginFractions": [
+        0.19012345679012346,
+        0.28527291452111225,
+        0.19382716049382717,
+        0.2996910401647786
+      ],
+      "evidence": [
+        "work/brief247/ma11-swim-goggles-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-swim-goggles-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-swim-goggles-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-swim-goggles-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-swim-goggles-v1.png",
+      "path": "public/assets/maths/ma11-swim-goggles-v1.png",
+      "brief": 247,
+      "lesson": "w13",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1000,
+        600
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark and requested display-size checks inspected. All outer clear margins exceed 8 percent. No words, logos, prices, people or drivers.",
+          "Stall has blank banner, dispenser, lemons and cup stack. Separate cup, unlettered van, blue goggles and blank T-shirt meet their contexts. Native aspect retained."
+        ],
+        "evidence": [
+          "work/brief247/lemonade-size-paper.jpg",
+          "work/brief247/lemonade-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-swim-goggles-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-adf66ca8-0666-4aaf-a11d-041d59ca1905.png",
+      "sha256": "b1e694db58ab252c6bd9cd00819cf202ec8094d5f4db939546f5cbffcec9ed37",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        129,
+        160,
+        1123,
+        1094
+      ],
+      "marginFractions": [
+        0.10287081339712918,
+        0.12759170653907495,
+        0.10446570972886762,
+        0.12759170653907495
+      ],
+      "evidence": [
+        "work/brief247/ma11-tshirt-v1-native-paper.jpg",
+        "work/brief247/ma11-tshirt-v1-native-dark.jpg",
+        "work/brief247/ma11-tshirt-v1-native-white.jpg",
+        "work/brief247/ma11-tshirt-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-tshirt-v1.png",
+      "path": "public/assets/maths/ma11-tshirt-v1.png",
+      "brief": 247,
+      "lesson": "w13",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1000,
+        1000
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark and requested display-size checks inspected. All outer clear margins exceed 8 percent. No words, logos, prices, people or drivers.",
+          "Stall has blank banner, dispenser, lemons and cup stack. Separate cup, unlettered van, blue goggles and blank T-shirt meet their contexts. Native aspect retained."
+        ],
+        "evidence": [
+          "work/brief247/lemonade-size-paper.jpg",
+          "work/brief247/lemonade-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-tshirt-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-5ce8e505-f873-4e9f-aa0c-01329fa1028e.png",
+      "sha256": "a856d74e7c28c5db153e12dda2a27b07379fbbf6c2051ba896958a31ad65956b",
+      "nativeSize": [
+        1517,
+        1037
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        235,
+        177,
+        1285,
+        851
+      ],
+      "marginFractions": [
+        0.15491100856954515,
+        0.17068466730954676,
+        0.15293342122610415,
+        0.17936354869816779
+      ],
+      "evidence": [
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-town-rooftops-texture-v1.png",
+      "path": "public/assets/maths/ma11-town-rooftops-texture-v1.png",
+      "brief": 247,
+      "lesson": "w11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "fallback static pass",
+        "observations": [
+          "Roadless texture with quiet rooftops, gardens and grass, no people, labels or axes. Clear margins exceed 15 percent.",
+          "Native paper/dark alpha, 820/1300 px and exact equal-scale coded-street overlay inspected. Streets are code, so rooftop texture carries no false geometric constraint."
+        ],
+        "evidence": [
+          "work/brief247/town-size-paper.jpg",
+          "work/brief247/town-size-dark.jpg",
+          "work/brief247/town-fallback-overlay-paper.jpg",
+          "work/brief247/town-fallback-overlay-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-town-rooftops-texture-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-cee8da73-9373-4681-afe5-7f85a849dc50.png",
+      "sha256": "84917d264ca127540c37ba456f0120d30e345f135fa102842dfd76a0bcaeb255",
+      "nativeSize": [
+        1499,
+        1049
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        130,
+        111,
+        1370,
+        940
+      ],
+      "marginFractions": [
+        0.0867244829886591,
+        0.10581506196377502,
+        0.08605737158105403,
+        0.10390848427073403
+      ],
+      "evidence": [
+        "work/brief247/ma11-town-blocks-top-v1-native-paper.jpg",
+        "work/brief247/ma11-town-blocks-top-v1-native-dark.jpg",
+        "work/brief247/ma11-town-blocks-top-v1-native-white.jpg",
+        "work/brief247/ma11-town-blocks-top-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-town-blocks-top-v1.png",
+      "path": "work/brief247/ma11-town-blocks-top-v1.png",
+      "brief": 247,
+      "lesson": "w11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "held; fallback applies",
+        "observations": [
+          "Original painted roads fail shared equal-scale registration: 95th percentile16.17px and max18.67px exceed1 percent width14.99px. Do not use as exact streets."
+        ],
+        "evidence": [
+          "work/brief247/town-map-equal-scale-overlay.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/ma11-town-blocks-top-v1-sidecar.json",
+      "deliveryDecision18Nov": {
+        "status": "fallback selected",
+        "ruling": "Root w11 ruling 14",
+        "builderAction": "Use the coded map over the published rooftop texture with the checked street centre lines.",
+        "replacementAsset": "public/assets/maths/ma11-town-rooftops-texture-v1.png"
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-2ff1b3a0-12ba-4055-8cad-06fce14e7d9f.png",
+      "sha256": "b68c27aa5cb602b06438dfb93731cd963b025b38b09fdaf9f5620850b0d61ea2",
+      "nativeSize": [
+        1568,
+        1003
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        179,
+        134,
+        1390,
+        874
+      ],
+      "marginFractions": [
+        0.11415816326530612,
+        0.13359920239282153,
+        0.11352040816326531,
+        0.12861415752741776
+      ],
+      "evidence": [
+        "work/brief247/ma11-gym-membership-card-v1-native-paper.jpg",
+        "work/brief247/ma11-gym-membership-card-v1-native-dark.jpg",
+        "work/brief247/ma11-gym-membership-card-v1-native-white.jpg",
+        "work/brief247/ma11-gym-membership-card-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-gym-membership-card-v1.png",
+      "path": "public/assets/maths/ma11-gym-membership-card-v1.png",
+      "brief": 247,
+      "lesson": "w12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1000
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark alpha and requested display sizes inspected. No prices, mass markings, words, driver or answers. Card retains blank text area.",
+          "Trolley and box use uniform scales. Five-box row and six-row stack checked on the level front deck edge; shallow painted depth is not stretched.",
+          "Tank hose ends inside the plate after reframing, rather than running to the file edge. It remains a context picture with no gauge or answer."
+        ],
+        "evidence": [
+          "work/brief247/gym-size-paper.jpg",
+          "work/brief247/gym-size-dark.jpg",
+          "work/brief247/trolley-boxes-paper.jpg",
+          "work/brief247/trolley-boxes-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-gym-membership-card-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-004708da-f2f6-4f6e-b491-3ab6775f31d1.png",
+      "sha256": "a624319689c7a7a14f72bf9cbd8a9f776d3fcf17333bf0b80515eeea34fda025",
+      "nativeSize": [
+        1197,
+        1314
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        319,
+        255,
+        871,
+        1057
+      ],
+      "marginFractions": [
+        0.26649958228905596,
+        0.19406392694063926,
+        0.2723475355054302,
+        0.19558599695585996
+      ],
+      "evidence": [
+        "work/brief247/ma11-kettlebell-v1-clean-native-paper.jpg",
+        "work/brief247/ma11-kettlebell-v1-clean-native-dark.jpg",
+        "work/brief247/ma11-kettlebell-v1-clean-native-white.jpg",
+        "work/brief247/ma11-kettlebell-v1-clean-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-kettlebell-v1.png",
+      "path": "public/assets/maths/ma11-kettlebell-v1.png",
+      "brief": 247,
+      "lesson": "w12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1000,
+        1100
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark alpha and requested display sizes inspected. No prices, mass markings, words, driver or answers. Card retains blank text area.",
+          "Trolley and box use uniform scales. Five-box row and six-row stack checked on the level front deck edge; shallow painted depth is not stretched.",
+          "Tank hose ends inside the plate after reframing, rather than running to the file edge. It remains a context picture with no gauge or answer."
+        ],
+        "evidence": [
+          "work/brief247/gym-size-paper.jpg",
+          "work/brief247/gym-size-dark.jpg",
+          "work/brief247/trolley-boxes-paper.jpg",
+          "work/brief247/trolley-boxes-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-kettlebell-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-fecbf3c7-471f-47da-a711-031cda1548fc.png",
+      "sha256": "d3ffddc7de2f950c1741b02aaad578af2f709a2684939f3d686b45c0adc5fec8",
+      "nativeSize": [
+        1663,
+        946
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        321,
+        180,
+        1345,
+        784
+      ],
+      "marginFractions": [
+        0.19302465423932652,
+        0.19027484143763213,
+        0.19122068550811785,
+        0.17124735729386892
+      ],
+      "evidence": [
+        "work/brief247/ma11-flatbed-trolley-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-flatbed-trolley-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-flatbed-trolley-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-flatbed-trolley-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-flatbed-trolley-v1.png",
+      "path": "public/assets/maths/ma11-flatbed-trolley-v1.png",
+      "brief": 247,
+      "lesson": "w12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        1000
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark alpha and requested display sizes inspected. No prices, mass markings, words, driver or answers. Card retains blank text area.",
+          "Trolley and box use uniform scales. Five-box row and six-row stack checked on the level front deck edge; shallow painted depth is not stretched.",
+          "Tank hose ends inside the plate after reframing, rather than running to the file edge. It remains a context picture with no gauge or answer."
+        ],
+        "evidence": [
+          "work/brief247/gym-size-paper.jpg",
+          "work/brief247/gym-size-dark.jpg",
+          "work/brief247/trolley-boxes-paper.jpg",
+          "work/brief247/trolley-boxes-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-flatbed-trolley-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-1006b6a2-d698-4141-bc5a-1b1aa0092d54.png",
+      "sha256": "3864c50b57dd7ef43cd926dfe9d04cc993d847d56c84baa984efe5c89c77be77",
+      "nativeSize": [
+        1374,
+        1145
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        331,
+        206,
+        1040,
+        937
+      ],
+      "marginFractions": [
+        0.24090247452692867,
+        0.1799126637554585,
+        0.2430858806404658,
+        0.18165938864628822
+      ],
+      "evidence": [
+        "work/brief247/ma11-weights-box-v1-native-paper.jpg",
+        "work/brief247/ma11-weights-box-v1-native-dark.jpg",
+        "work/brief247/ma11-weights-box-v1-native-white.jpg",
+        "work/brief247/ma11-weights-box-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-weights-box-v1.png",
+      "path": "public/assets/maths/ma11-weights-box-v1.png",
+      "brief": 247,
+      "lesson": "w12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        500
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark alpha and requested display sizes inspected. No prices, mass markings, words, driver or answers. Card retains blank text area.",
+          "Trolley and box use uniform scales. Five-box row and six-row stack checked on the level front deck edge; shallow painted depth is not stretched.",
+          "Tank hose ends inside the plate after reframing, rather than running to the file edge. It remains a context picture with no gauge or answer."
+        ],
+        "evidence": [
+          "work/brief247/gym-size-paper.jpg",
+          "work/brief247/gym-size-dark.jpg",
+          "work/brief247/trolley-boxes-paper.jpg",
+          "work/brief247/trolley-boxes-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-weights-box-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-3437950c-7836-4ab1-adce-55d6fd869b43.png",
+      "sha256": "503503fa0bf9cddccba373da608f4b4c0b066ff48bbfd2f5a08e30a0b671858b",
+      "nativeSize": [
+        1671,
+        941
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        311,
+        258,
+        1361,
+        710
+      ],
+      "marginFractions": [
+        0.18611609814482347,
+        0.27417640807651433,
+        0.1855176540993417,
+        0.2454835281615303
+      ],
+      "evidence": [
+        "work/brief247/ma11-go-kart-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-go-kart-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-go-kart-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-go-kart-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-go-kart-v1.png",
+      "path": "public/assets/maths/ma11-go-kart-v1.png",
+      "brief": 247,
+      "lesson": "w12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        900
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark alpha and requested display sizes inspected. No prices, mass markings, words, driver or answers. Card retains blank text area.",
+          "Trolley and box use uniform scales. Five-box row and six-row stack checked on the level front deck edge; shallow painted depth is not stretched.",
+          "Tank hose ends inside the plate after reframing, rather than running to the file edge. It remains a context picture with no gauge or answer."
+        ],
+        "evidence": [
+          "work/brief247/gym-size-paper.jpg",
+          "work/brief247/gym-size-dark.jpg",
+          "work/brief247/trolley-boxes-paper.jpg",
+          "work/brief247/trolley-boxes-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-go-kart-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-2d8d2a78-c62f-4eb8-a3e8-266685b0688c.png",
+      "sha256": "62d0d8f19927a0a274fa66ef4cd11d4e313c9ed548109c402420da87f5d100d6",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        239,
+        304,
+        913,
+        1206
+      ],
+      "marginFractions": [
+        0.22007366482504603,
+        0.20994475138121546,
+        0.15930018416206262,
+        0.1671270718232044
+      ],
+      "evidence": [
+        "work/brief247/ma11-water-tank-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-water-tank-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-water-tank-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-water-tank-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-water-tank-v1.png",
+      "path": "public/assets/maths/ma11-water-tank-v1.png",
+      "brief": 247,
+      "lesson": "w12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        1200
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Native paper/dark alpha and requested display sizes inspected. No prices, mass markings, words, driver or answers. Card retains blank text area.",
+          "Trolley and box use uniform scales. Five-box row and six-row stack checked on the level front deck edge; shallow painted depth is not stretched.",
+          "Tank hose ends inside the plate after reframing, rather than running to the file edge. It remains a context picture with no gauge or answer."
+        ],
+        "evidence": [
+          "work/brief247/gym-size-paper.jpg",
+          "work/brief247/gym-size-dark.jpg",
+          "work/brief247/trolley-boxes-paper.jpg",
+          "work/brief247/trolley-boxes-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-water-tank-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-9c487358-24e8-4dbd-8477-f40c830e5360.png",
+      "sha256": "22cf1db7fc194846227e78d04db8ed4ef75bc21ac1f3af1522d85952c8ec82d5",
+      "nativeSize": [
+        1796,
+        876
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        141,
+        158,
+        1655,
+        842
+      ],
+      "marginFractions": [
+        0.07850779510022271,
+        0.18036529680365296,
+        0.07850779510022271,
+        0.03881278538812785
+      ],
+      "evidence": [
+        "work/brief247/ma11-hammock-frame-high-v1-revised-native-paper.jpg",
+        "work/brief247/ma11-hammock-frame-high-v1-revised-native-dark.jpg",
+        "work/brief247/ma11-hammock-frame-high-v1-revised-native-white.jpg",
+        "work/brief247/ma11-hammock-frame-high-v1-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-hammock-frame-high-v1.png",
+      "path": "public/assets/maths/ma11-hammock-frame-high-v1.png",
+      "brief": 247,
+      "lesson": "w14",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2100,
+        900
+      ],
+      "qa": {
+        "result": "static high-state handoff only; model and cross-fade held",
+        "observations": [
+          "Native paper/dark alpha inspected. No text, people, pets, loads or spreader bars. Cloth high clears ground; corrected touch reaches it; drag lies flat across the centre.",
+          "Native files differ by one pixel in width and the frame was redrawn slightly between states. It is not an identical registered frame set. Static cross-fade diagnostic shows ghosting.",
+          "Equal-scale hook heights miss by about116px against27.3px tolerance. Outer eighths also miss. Central cloth sections are closer, but that is not a whole-profile pass. Root must resolve coded profile fit and common-frame cross-fade. No warping."
+        ],
+        "evidence": [
+          "work/brief247/hammock-high-model-paper.jpg",
+          "work/brief247/hammock-high-model-dark.jpg",
+          "work/brief247/hammock-touch-model-paper.jpg",
+          "work/brief247/hammock-touch-model-dark.jpg",
+          "work/brief247/hammock-drag-model-paper.jpg",
+          "work/brief247/hammock-drag-model-dark.jpg",
+          "work/brief247/hammock-1000-paper.jpg",
+          "work/brief247/hammock-1000-dark.jpg",
+          "work/brief247/hammock-1200-paper.jpg",
+          "work/brief247/hammock-1200-dark.jpg",
+          "work/brief247/hammock-crossfade-paper.jpg",
+          "work/brief247/hammock-crossfade-dark.jpg",
+          "work/brief247/hammock-profile-measurements.json",
+          "public\\assets\\maths\\ma11-hammock-frame-v1.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-hammock-frame-high-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-c460891e-af22-4e49-8358-eb5f88a11d3d.png",
+      "sha256": "f676ea6844c8d95518523b378b6b01038175b9902a0dbeeddd98f7f9a8178d63",
+      "nativeSize": [
+        1795,
+        876
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        133,
+        149,
+        1665,
+        844
+      ],
+      "marginFractions": [
+        0.07409470752089137,
+        0.17009132420091325,
+        0.07242339832869081,
+        0.0365296803652968
+      ],
+      "evidence": [
+        "work/brief247/ma11-hammock-frame-touch-v1-revised-native-paper.jpg",
+        "work/brief247/ma11-hammock-frame-touch-v1-revised-native-dark.jpg",
+        "work/brief247/ma11-hammock-frame-touch-v1-revised-native-white.jpg",
+        "work/brief247/ma11-hammock-frame-touch-v1-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-hammock-frame-touch-v1.png",
+      "path": "public/assets/maths/ma11-hammock-frame-touch-v1.png",
+      "brief": 247,
+      "lesson": "w14",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2100,
+        900
+      ],
+      "qa": {
+        "result": "held: profile/registration miss",
+        "observations": [
+          "Native paper/dark alpha inspected. No text, people, pets, loads or spreader bars. Cloth high clears ground; corrected touch reaches it; drag lies flat across the centre.",
+          "Native files differ by one pixel in width and the frame was redrawn slightly between states. It is not an identical registered frame set. Static cross-fade diagnostic shows ghosting.",
+          "Equal-scale hook heights miss by about116px against27.3px tolerance. Outer eighths also miss. Central cloth sections are closer, but that is not a whole-profile pass. Root must resolve coded profile fit and common-frame cross-fade. No warping."
+        ],
+        "evidence": [
+          "work/brief247/hammock-high-model-paper.jpg",
+          "work/brief247/hammock-high-model-dark.jpg",
+          "work/brief247/hammock-touch-model-paper.jpg",
+          "work/brief247/hammock-touch-model-dark.jpg",
+          "work/brief247/hammock-drag-model-paper.jpg",
+          "work/brief247/hammock-drag-model-dark.jpg",
+          "work/brief247/hammock-1000-paper.jpg",
+          "work/brief247/hammock-1000-dark.jpg",
+          "work/brief247/hammock-1200-paper.jpg",
+          "work/brief247/hammock-1200-dark.jpg",
+          "work/brief247/hammock-crossfade-paper.jpg",
+          "work/brief247/hammock-crossfade-dark.jpg",
+          "work/brief247/hammock-profile-measurements.json",
+          "public\\assets\\maths\\ma11-hammock-frame-v1.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-hammock-frame-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-hammock-frame-touch-candidate.png",
+        "sha256": "d038ab75ee0614e936a8548eef1b5987926889300d35498e2b937b3c02311d29",
+        "nativeSize": [
+          1795,
+          876
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          61,
+          157,
+          1733,
+          839
+        ],
+        "reason": "Cloth reaches the timber frame above the ground instead of touching the ground line; not a compatible registered state."
+      },
+      "deliveryDecision18Nov": {
+        "status": "installed under measured-profile fallback",
+        "builderAction": "Keep the ideal model and its units on the separate graph. Align the art overlay to measured cloth. Use one registered placement per state and an on-cue cut between states because their painted frames show ghosting during a cross-fade. Keep the ground-contact teaching visible.",
+        "evidence": [
+          "work/brief247/hammock-touch-model-paper.jpg",
+          "work/brief247/hammock-touch-model-dark.jpg"
+        ]
+      }
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-f3d5287e-d0b9-4001-807d-ad4db2535fbc.png",
+      "sha256": "d511d4fa9c4020b5777fc5685fb5fc9dcfb6e7c9896ae08fcd29a3847df9e77b",
+      "nativeSize": [
+        1795,
+        876
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        134,
+        157,
+        1659,
+        844
+      ],
+      "marginFractions": [
+        0.07465181058495822,
+        0.17922374429223745,
+        0.07576601671309192,
+        0.0365296803652968
+      ],
+      "evidence": [
+        "work/brief247/ma11-hammock-frame-drag-v1-native-paper.jpg",
+        "work/brief247/ma11-hammock-frame-drag-v1-native-dark.jpg",
+        "work/brief247/ma11-hammock-frame-drag-v1-native-white.jpg",
+        "work/brief247/ma11-hammock-frame-drag-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-hammock-frame-drag-v1.png",
+      "path": "public/assets/maths/ma11-hammock-frame-drag-v1.png",
+      "brief": 247,
+      "lesson": "w14",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2100,
+        900
+      ],
+      "qa": {
+        "result": "held: profile/registration miss",
+        "observations": [
+          "Native paper/dark alpha inspected. No text, people, pets, loads or spreader bars. Cloth high clears ground; corrected touch reaches it; drag lies flat across the centre.",
+          "Native files differ by one pixel in width and the frame was redrawn slightly between states. It is not an identical registered frame set. Static cross-fade diagnostic shows ghosting.",
+          "Equal-scale hook heights miss by about116px against27.3px tolerance. Outer eighths also miss. Central cloth sections are closer, but that is not a whole-profile pass. Root must resolve coded profile fit and common-frame cross-fade. No warping."
+        ],
+        "evidence": [
+          "work/brief247/hammock-high-model-paper.jpg",
+          "work/brief247/hammock-high-model-dark.jpg",
+          "work/brief247/hammock-touch-model-paper.jpg",
+          "work/brief247/hammock-touch-model-dark.jpg",
+          "work/brief247/hammock-drag-model-paper.jpg",
+          "work/brief247/hammock-drag-model-dark.jpg",
+          "work/brief247/hammock-1000-paper.jpg",
+          "work/brief247/hammock-1000-dark.jpg",
+          "work/brief247/hammock-1200-paper.jpg",
+          "work/brief247/hammock-1200-dark.jpg",
+          "work/brief247/hammock-crossfade-paper.jpg",
+          "work/brief247/hammock-crossfade-dark.jpg",
+          "work/brief247/hammock-profile-measurements.json",
+          "public\\assets\\maths\\ma11-hammock-frame-v1.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-hammock-frame-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-hammock-frame-drag-candidate.png",
+        "sha256": "dd8c712190d0e79de3bdf86f6c9d3aee8db8580af2e0387e87eac803449210f6",
+        "nativeSize": [
+          1795,
+          876
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          139,
+          157,
+          1657,
+          839
+        ],
+        "reason": "Cloth bunches on the frame above the ground; the frame shifts against the base image and cannot cross-fade."
+      },
+      "deliveryDecision18Nov": {
+        "status": "installed under measured-profile fallback",
+        "builderAction": "Keep the ideal model and its units on the separate graph. Align the art overlay to measured cloth. Use one registered placement per state and an on-cue cut between states because their painted frames show ghosting during a cross-fade. Keep the ground-contact teaching visible.",
+        "evidence": [
+          "work/brief247/hammock-drag-model-paper.jpg",
+          "work/brief247/hammock-drag-model-dark.jpg"
+        ]
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-c16ac0e3-e47b-4fce-82ea-1b6e450b92c0.png",
+      "sha256": "44668ebc4bcbae92493d47cc330ec413247d7aeeede167e866cc00ac8cf48ac7",
+      "nativeSize": [
+        1341,
+        1173
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        147,
+        249,
+        1182,
+        1125
+      ],
+      "marginFractions": [
+        0.10961968680089486,
+        0.21227621483375958,
+        0.1185682326621924,
+        0.04092071611253197
+      ],
+      "evidence": [
+        "work/brief247/w15-fountain-candidate2-native-paper.jpg",
+        "work/brief247/w15-fountain-candidate2-native-dark.jpg",
+        "work/brief247/w15-fountain-candidate2-native-white.jpg",
+        "work/brief247/w15-fountain-candidate2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-drinking-fountain-v1.png",
+      "path": "work/brief247/w15-w31/w15-fountain-candidate2.png",
+      "brief": 247,
+      "lesson": "w15",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1400
+      ],
+      "qa": {
+        "result": "held for geometry",
+        "observations": [
+          "Native 1341 x 1173 RGBA, alpha 0 to 255; actual paper and dark composites have clean edges without the raw-preview colour fringe.",
+          "At 820 px tall, apparatus and water stream read clearly, but the red model overlay visibly misses the painted arc.",
+          "No people, text, logos or faces. Native dimensions preserved. No production image edits outside built-in imagegen."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w15-fountain-820-model-paper.jpg",
+          "work/brief247/w15-w31/w15-fountain-820-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-drinking-fountain-v1-sidecar.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-drinking-fountain-candidate.png",
+        "sha256": "4152479859d25717d2c95b007a056394a5e299f74427a867aa5c56e567849165",
+        "nativeSize": [
+          1774,
+          887
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          475,
+          83,
+          1303,
+          851
+        ],
+        "reason": "New arc lands below the spout and does not register to the model at equal scale."
+      },
+      "deliveryDecision18Nov": {
+        "status": "coded-jet fallback selected",
+        "ruling": "w15 Open decision 1, owner direction to apply named fallback on QA failure",
+        "builderAction": "Use a coded jet over the hammock-frame background in scene 6. Draw equal-height endpoints around the centred maximum. Retain the algebra and question."
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-71e43540-712d-4dea-9c06-0bb33983f9a5.png",
+      "sha256": "bf7ff1776e3c6c0073a59e677191c9e2ea4a170f0bfab15fedb6693029554d56",
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        78,
+        180,
+        1540,
+        923
+      ],
+      "marginFractions": [
+        0.04817788758492897,
+        0.18537590113285274,
+        0.04879555281037678,
+        0.04943357363542739
+      ],
+      "evidence": [
+        "work/brief247/w16-polytunnel-end-candidate1-native-paper.jpg",
+        "work/brief247/w16-polytunnel-end-candidate1-native-dark.jpg",
+        "work/brief247/w16-polytunnel-end-candidate1-native-white.jpg",
+        "work/brief247/w16-polytunnel-end-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-polytunnel-end-v1.png",
+      "path": "public/assets/maths/ma11-polytunnel-end-v1.png",
+      "brief": 247,
+      "lesson": "w16",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        900
+      ],
+      "qa": {
+        "result": "qualified: exact profile fails, measured-profile fallback required",
+        "observations": [
+          "Paper and dark 1200px-wide model composites inspected. Clean alpha edges, no raw-preview colour fringe, no text or people.",
+          "Closed zip door and seedlings present on end plate. Bare hoop interior clear.",
+          "Red model curve visibly falls inside painted hoop. Preserve native pixels and aspect ratio."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-paper.jpg",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-polytunnel-end-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-92d14f8a-677a-4b5f-8bb9-230952f4cac6.png",
+      "sha256": "60407f40463a6014526aaffe018bcf78b4032502c761b8c2f923baee8c3dc848",
+      "nativeSize": [
+        1620,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        76,
+        176,
+        1544,
+        927
+      ],
+      "marginFractions": [
+        0.04691358024691358,
+        0.18125643666323377,
+        0.04691358024691358,
+        0.04531410916580844
+      ],
+      "evidence": [
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-paper.jpg",
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-dark.jpg",
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-white.jpg",
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-polytunnel-hoop-v1.png",
+      "path": "public/assets/maths/ma11-polytunnel-hoop-v1.png",
+      "brief": 247,
+      "lesson": "w16",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        900
+      ],
+      "qa": {
+        "result": "qualified: exact profile fails, measured-profile fallback required",
+        "observations": [
+          "Paper and dark 1200px-wide model composites inspected. Clean alpha edges, no raw-preview colour fringe, no text or people.",
+          "Closed zip door and seedlings present on end plate. Bare hoop interior clear.",
+          "Red model curve visibly falls inside painted hoop. Preserve native pixels and aspect ratio."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-paper.jpg",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-polytunnel-hoop-v1.json"
+    },
+    {
+      "source": "work/maths-plate-geometry-pilot/golf-bank-candidate.png",
+      "sha256": "6217af75b77fc5d96a41a36614bd564bc43f2e640d1f9397017940244bf01276",
+      "nativeSize": [
+        2010,
+        782
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        43,
+        120,
+        1965,
+        685
+      ],
+      "marginFractions": [
+        0.02141434262948207,
+        0.1532567049808429,
+        0.02141434262948207,
+        0.1251596424010217
+      ],
+      "evidence": [
+        "work/brief247/w17-golf-bank-candidate1-native-paper.jpg",
+        "work/brief247/w17-golf-bank-candidate1-native-dark.jpg",
+        "work/brief247/w17-golf-bank-candidate1-native-white.jpg",
+        "work/brief247/w17-golf-bank-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-golf-bank-v1.png",
+      "path": "public/assets/maths/ma11-golf-bank-v1.png",
+      "brief": 247,
+      "lesson": "w17",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        700
+      ],
+      "qa": {
+        "result": "bank geometry passes at native scale",
+        "observations": [
+          "Actual 1-in-5 bank edge stays within 1.8 native px. At 8 metres the flight meets the bank within 1 px. Visible flat approach is about 1.85 metres."
+        ],
+        "evidence": [
+          "work/maths-plate-geometry-pilot/golf-bank-1400-model-paper.jpg",
+          "work/maths-plate-geometry-pilot/golf-bank-1400-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-golf-bank-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-golf-bank-candidate.png",
+        "sha256": "57ea5adbf6c6196bb88f0e3af1cc22567e9dbc50edbd224f653f59cbef3b6623",
+        "nativeSize": [
+          2172,
+          724
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          23,
+          122,
+          2149,
+          590
+        ],
+        "reason": "The rendered rise is too shallow for the 1-in-5 bank. Flag and grass pass subject QA."
+      },
+      "previousQA": {
+        "result": "held for exact geometry",
+        "observations": [
+          "Paper and dark composites inspected at lesson display size. No people, text, logos or raw-preview colour fringe.",
+          "Bank has a pale painted soil cut edge on dark background. Ball is white and dimpled, branch enters at right and has long gum leaves.",
+          "Native dimensions preserved without production resampling."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w17-generation.json",
+          "work/brief247/w15-w31/w17-golf-bank-geometry.json",
+          "work/brief247/w15-w31/w17-bank-1400-model-paper.jpg",
+          "work/brief247/w15-w31/w17-bank-1400-model-dark.jpg",
+          "work/brief247/w17-ball-branch-size-paper.jpg",
+          "work/brief247/w17-ball-branch-size-dark.jpg",
+          "work/brief247/w17-ball-branch-size-transforms.json"
+        ]
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-f4642710-8b48-4c6e-9cbf-2246d4fc9f0e.png",
+      "sha256": "73c7948edde6c208120c0ea86bd7bdaf228ed74d9027a4b913f1ad2fa9c4ebaa",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        186,
+        193,
+        1055,
+        1077
+      ],
+      "marginFractions": [
+        0.14832535885167464,
+        0.15390749601275916,
+        0.15869218500797447,
+        0.14114832535885166
+      ],
+      "evidence": [
+        "work/brief247/w17-golf-ball-candidate1-native-paper.jpg",
+        "work/brief247/w17-golf-ball-candidate1-native-dark.jpg",
+        "work/brief247/w17-golf-ball-candidate1-native-white.jpg",
+        "work/brief247/w17-golf-ball-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-golf-ball-v1.png",
+      "path": "public/assets/maths/ma11-golf-ball-v1.png",
+      "brief": 247,
+      "lesson": "w17",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        200,
+        200
+      ],
+      "qa": {
+        "result": "passed subject/alpha check",
+        "observations": [
+          "Paper and dark composites inspected at lesson display size. No people, text, logos or raw-preview colour fringe.",
+          "Bank has a pale painted soil cut edge on dark background. Ball is white and dimpled, branch enters at right and has long gum leaves.",
+          "Native dimensions preserved without production resampling."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w17-generation.json",
+          "work/brief247/w15-w31/w17-golf-bank-geometry.json",
+          "work/brief247/w15-w31/w17-bank-1400-model-paper.jpg",
+          "work/brief247/w15-w31/w17-bank-1400-model-dark.jpg",
+          "work/brief247/w17-ball-branch-size-paper.jpg",
+          "work/brief247/w17-ball-branch-size-dark.jpg",
+          "work/brief247/w17-ball-branch-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-golf-ball-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-d76c256b-f0d2-467b-8be7-2e4448c41f90.png",
+      "sha256": "7ea98aa9db0645539e860c97d9e060eb70346df4cde5f9fb6dc76da4f25674ab",
+      "nativeSize": [
+        1983,
+        793
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        56,
+        213,
+        1983,
+        770
+      ],
+      "marginFractions": [
+        0.028240040342914774,
+        0.2686002522068096,
+        0,
+        0.029003783102143757
+      ],
+      "evidence": [
+        "work/brief247/w17-gum-branch-candidate1-native-paper.jpg",
+        "work/brief247/w17-gum-branch-candidate1-native-dark.jpg",
+        "work/brief247/w17-gum-branch-candidate1-native-white.jpg",
+        "work/brief247/w17-gum-branch-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-gum-branch-v1.png",
+      "path": "public/assets/maths/ma11-gum-branch-v1.png",
+      "brief": 247,
+      "lesson": "w17",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        360
+      ],
+      "qa": {
+        "result": "passed subject/alpha check",
+        "observations": [
+          "Paper and dark composites inspected at lesson display size. No people, text, logos or raw-preview colour fringe.",
+          "Bank has a pale painted soil cut edge on dark background. Ball is white and dimpled, branch enters at right and has long gum leaves.",
+          "Native dimensions preserved without production resampling."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w17-generation.json",
+          "work/brief247/w15-w31/w17-golf-bank-geometry.json",
+          "work/brief247/w15-w31/w17-bank-1400-model-paper.jpg",
+          "work/brief247/w15-w31/w17-bank-1400-model-dark.jpg",
+          "work/brief247/w17-ball-branch-size-paper.jpg",
+          "work/brief247/w17-ball-branch-size-dark.jpg",
+          "work/brief247/w17-ball-branch-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-gum-branch-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-5001097f-da77-4f2a-8a94-51a102725a36.png",
+      "sha256": "bfd55f6bda46ca7fc7c64951b4a1e07a352b830feaf9833fc281e0d32c752a2d",
+      "nativeSize": [
+        1153,
+        1364
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        21,
+        7,
+        1083,
+        1326
+      ],
+      "marginFractions": [
+        0.01821335646140503,
+        0.005131964809384164,
+        0.060711188204683436,
+        0.02785923753665689
+      ],
+      "evidence": [
+        "work/brief247/w18-club-hoodie-candidate1-native-paper.jpg",
+        "work/brief247/w18-club-hoodie-candidate1-native-dark.jpg",
+        "work/brief247/w18-club-hoodie-candidate1-native-white.jpg",
+        "work/brief247/w18-club-hoodie-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-club-hoodie-v1.png",
+      "path": "public/assets/maths/ma11-club-hoodie-v1.png",
+      "brief": 247,
+      "lesson": "w18",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1100,
+        1300
+      ],
+      "qa": {
+        "result": "passed subject, alpha and tag fit checks",
+        "observations": [
+          "Front view, hood behind, kangaroo pocket, drawstrings and plain wooden hanger. No logo, text, person, hands or face.",
+          "Paper and dark composites have clean edges and clear cuff attachment. Reused swing tag remains a separate coded layer.",
+          "Native dimensions retained without stretch."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w18-hoodie-640-tag-paper.jpg",
+          "work/brief247/w15-w31/w18-hoodie-640-tag-dark.jpg",
+          "work/brief247/w15-w31/w18-hoodie-tag-fit.json",
+          "work/brief247/w15-w31/w18-generation.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-club-hoodie-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-1f44c6d0-3e8f-4911-be18-55371afb5953.png",
+      "sha256": "7a835b56f9dea705c35e345b1d1536c48bbd0334f54834d234cc288b1220153d",
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        20,
+        107,
+        1599,
+        954
+      ],
+      "marginFractions": [
+        0.012353304508956145,
+        0.1101956745623069,
+        0.012353304508956145,
+        0.017507723995880537
+      ],
+      "evidence": [
+        "work/brief247/w19-food-truck-candidate1-native-paper.jpg",
+        "work/brief247/w19-food-truck-candidate1-native-dark.jpg",
+        "work/brief247/w19-food-truck-candidate1-native-white.jpg",
+        "work/brief247/w19-food-truck-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-food-truck-v1.png",
+      "path": "public/assets/maths/ma11-food-truck-v1.png",
+      "brief": 247,
+      "lesson": "w19",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1200
+      ],
+      "qa": {
+        "result": "passed subject, alpha and price fit checks",
+        "observations": [
+          "Native paper/dark and1200px-wide counter/price composites inspected. No text in original plate, logos, people, hands or faces.",
+          "Truck margins about1.2percent at left/right, full bumpers and wheels visible. Tray margins are narrow but intact.",
+          "Tray alpha peaks254, effectively opaque material with transparent surround; no raw-preview background wash in composites.",
+          "No production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w19-generation.json",
+          "work/brief247/w15-w31/w19-food-truck-sidecar.json",
+          "work/brief247/w15-w31/w19-truck-1200-price-paper.jpg",
+          "work/brief247/w15-w31/w19-truck-1200-price-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-food-truck-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-6155012b-79f7-4cb7-afe8-b56b376926eb.png",
+      "sha256": "e40fb98b95cca4ea26e744b42db5e85bf9cba79c583fef6a3dedfe3c0aaba1b0",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        15,
+        110,
+        1517,
+        961
+      ],
+      "marginFractions": [
+        0.009765625,
+        0.107421875,
+        0.012369791666666666,
+        0.0615234375
+      ],
+      "evidence": [
+        "work/brief247/w19-dumpling-tray-candidate1-native-paper.jpg",
+        "work/brief247/w19-dumpling-tray-candidate1-native-dark.jpg",
+        "work/brief247/w19-dumpling-tray-candidate1-native-white.jpg",
+        "work/brief247/w19-dumpling-tray-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-dumpling-tray-v1.png",
+      "path": "public/assets/maths/ma11-dumpling-tray-v1.png",
+      "brief": 247,
+      "lesson": "w19",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        600
+      ],
+      "qa": {
+        "result": "passed subject, alpha and price fit checks",
+        "observations": [
+          "Native paper/dark and1200px-wide counter/price composites inspected. No text in original plate, logos, people, hands or faces.",
+          "Truck margins about1.2percent at left/right, full bumpers and wheels visible. Tray margins are narrow but intact.",
+          "Tray alpha peaks254, effectively opaque material with transparent surround; no raw-preview background wash in composites.",
+          "No production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w19-generation.json",
+          "work/brief247/w15-w31/w19-food-truck-sidecar.json",
+          "work/brief247/w15-w31/w19-truck-1200-price-paper.jpg",
+          "work/brief247/w15-w31/w19-truck-1200-price-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-dumpling-tray-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-640759e5-6154-47bc-9614-148f3eac81ec.png",
+      "sha256": "0b2513cd4ebd73dc96e3137a90baed351593185ea5cd4b69ee5b51064a9080cf",
+      "nativeSize": [
+        1413,
+        1113
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        50,
+        71,
+        1363,
+        1043
+      ],
+      "marginFractions": [
+        0.035385704175513094,
+        0.0637915543575921,
+        0.035385704175513094,
+        0.06289308176100629
+      ],
+      "evidence": [
+        "work/brief247/w20-card-sheet-cut-candidate1-native-paper.jpg",
+        "work/brief247/w20-card-sheet-cut-candidate1-native-dark.jpg",
+        "work/brief247/w20-card-sheet-cut-candidate1-native-white.jpg",
+        "work/brief247/w20-card-sheet-cut-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-card-sheet-cut-v1.png",
+      "path": "work/brief247/w15-w31/w20-card-sheet-cut-candidate1.png",
+      "brief": 247,
+      "lesson": "w20",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1300,
+        900
+      ],
+      "qa": {
+        "result": "held for exact geometry/shared projection",
+        "observations": [
+          "Paper/dark native and600px-wide/cross-fade diagnostics inspected. Material reads as plain kraft card with no text, people, logos, food or scissors.",
+          "No raw-preview background wash remains in actual alpha composites.",
+          "Base corners are manually measured; obscured points are marked inferred in common sidecar. Exact scale/projection is not a pass.",
+          "Production PNGs keep native dimensions. QA uniform resizing and translations do not modify them."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/ma11-card-tray-v1.json",
+          "public/assets/maths/ma11-card-tray-v1.json",
+          "work/brief247/w15-w31/w20-generation-part1.json",
+          "work/brief247/w15-w31/w20-generation-part2.json",
+          "work/brief247/w15-w31/w20-sheet-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-candidate2-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-600-model-paper.jpg",
+          "work/brief247/w15-w31/w20-sheet-600-model-dark.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-paper.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-dark.jpg",
+          "work/brief247/w15-w31/w20-card-sheet-cut-candidate2.png",
+          "work/brief247/w15-w31/w20-card-tray-8-candidate1.png"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-card-sheet-cut-v1-sidecar.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-card-sheet-cut-candidate.png",
+        "sha256": "96e6e873381e978be3b34f670ea61b5767fada719b92d3412b16b567090b8de6",
+        "nativeSize": [
+          1507,
+          1044
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          107,
+          105,
+          1401,
+          938
+        ],
+        "reason": "Orthographic sheet, but non-square notches and incorrect full-sheet ratio."
+      },
+      "deliveryDecision18Nov": {
+        "status": "documented coded-graph fallback selected after shared geometry failed",
+        "ruling": "w20 Open decision 1 and owner instruction to use named fallbacks for QA holds",
+        "builderAction": "Use the coded graphs with the pack crate badge. Preserve the actual cut dimensions and all problem data in the coded construction. Do not cross-fade the held trays."
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-055757eb-8add-42c6-910e-2d93c9497062.png",
+      "sha256": "062d879a5d2b0095a97cfea75626f15111e10115bd44be17bab15affb26786ad",
+      "nativeSize": [
+        1425,
+        1104
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        174,
+        275,
+        1346,
+        1026
+      ],
+      "marginFractions": [
+        0.12210526315789473,
+        0.24909420289855072,
+        0.05543859649122807,
+        0.07065217391304347
+      ],
+      "evidence": [
+        "work/brief247/w20-card-tray-5-candidate1-native-paper.jpg",
+        "work/brief247/w20-card-tray-5-candidate1-native-dark.jpg",
+        "work/brief247/w20-card-tray-5-candidate1-native-white.jpg",
+        "work/brief247/w20-card-tray-5-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-card-tray-5-v1.png",
+      "path": "public/assets/maths/ma11-card-tray-5-v1.png",
+      "brief": 247,
+      "lesson": "w20",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        900
+      ],
+      "qa": {
+        "result": "qualified: static handoff only",
+        "observations": [
+          "Paper/dark native and600px-wide/cross-fade diagnostics inspected. Material reads as plain kraft card with no text, people, logos, food or scissors.",
+          "No raw-preview background wash remains in actual alpha composites.",
+          "Base corners are manually measured; obscured points are marked inferred in common sidecar. Exact scale/projection is not a pass.",
+          "Production PNGs keep native dimensions. QA uniform resizing and translations do not modify them."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/ma11-card-tray-v1.json",
+          "public/assets/maths/ma11-card-tray-v1.json",
+          "work/brief247/w15-w31/w20-generation-part1.json",
+          "work/brief247/w15-w31/w20-generation-part2.json",
+          "work/brief247/w15-w31/w20-sheet-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-candidate2-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-600-model-paper.jpg",
+          "work/brief247/w15-w31/w20-sheet-600-model-dark.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-paper.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-dark.jpg",
+          "work/brief247/w15-w31/w20-card-sheet-cut-candidate2.png",
+          "work/brief247/w15-w31/w20-card-tray-8-candidate1.png"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-card-tray-5-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-3614b4e4-5196-4bae-9a34-0490ea31538f.png",
+      "sha256": "640c0438b6734fe7556cdc8e1ae79a583a9875c14bfa35b9416dcb39b3d05016",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        137,
+        231,
+        1477,
+        943
+      ],
+      "marginFractions": [
+        0.08919270833333333,
+        0.2255859375,
+        0.038411458333333336,
+        0.0791015625
+      ],
+      "evidence": [
+        "work/brief247/w20-card-tray-2-candidate1-native-paper.jpg",
+        "work/brief247/w20-card-tray-2-candidate1-native-dark.jpg",
+        "work/brief247/w20-card-tray-2-candidate1-native-white.jpg",
+        "work/brief247/w20-card-tray-2-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-card-tray-2-v1.png",
+      "path": "work/brief247/w15-w31/w20-card-tray-2-candidate1.png",
+      "brief": 247,
+      "lesson": "w20",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        900
+      ],
+      "qa": {
+        "result": "held for exact geometry/shared projection",
+        "observations": [
+          "Paper/dark native and600px-wide/cross-fade diagnostics inspected. Material reads as plain kraft card with no text, people, logos, food or scissors.",
+          "No raw-preview background wash remains in actual alpha composites.",
+          "Base corners are manually measured; obscured points are marked inferred in common sidecar. Exact scale/projection is not a pass.",
+          "Production PNGs keep native dimensions. QA uniform resizing and translations do not modify them."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/ma11-card-tray-v1.json",
+          "public/assets/maths/ma11-card-tray-v1.json",
+          "work/brief247/w15-w31/w20-generation-part1.json",
+          "work/brief247/w15-w31/w20-generation-part2.json",
+          "work/brief247/w15-w31/w20-sheet-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-candidate2-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-600-model-paper.jpg",
+          "work/brief247/w15-w31/w20-sheet-600-model-dark.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-paper.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-dark.jpg",
+          "work/brief247/w15-w31/w20-card-sheet-cut-candidate2.png",
+          "work/brief247/w15-w31/w20-card-tray-8-candidate1.png"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-card-tray-2-v1-sidecar.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-card-tray-2-candidate.png",
+        "sha256": "a89adf6dd728cc66f126bec2493c80a5da348313be564e7d91686fab74ddeca7",
+        "nativeSize": [
+          1424,
+          1104
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "boundsAbove20": [
+          85,
+          305,
+          1389,
+          994
+        ],
+        "reason": "Low walls and correct subject family, but common base centre and scale do not register to the 5cm tray."
+      },
+      "deliveryDecision18Nov": {
+        "status": "documented coded-graph fallback selected after shared geometry failed",
+        "ruling": "w20 Open decision 1 and owner instruction to use named fallbacks for QA holds",
+        "builderAction": "Use the coded graphs with the pack crate badge. Preserve the actual cut dimensions and all problem data in the coded construction. Do not cross-fade the held trays."
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e5c14179-785f-4858-8720-44f62ca9541a.png",
+      "sha256": "c7386bbfa2caad28506265c761840fc93b41ceb6a3def70be68a446264e6b09b",
+      "nativeSize": [
+        1424,
+        1105
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        284,
+        153,
+        1174,
+        1002
+      ],
+      "marginFractions": [
+        0.199438202247191,
+        0.13846153846153847,
+        0.175561797752809,
+        0.09321266968325792
+      ],
+      "evidence": [
+        "work/brief247/w20-card-tray-8-candidate2-native-paper.jpg",
+        "work/brief247/w20-card-tray-8-candidate2-native-dark.jpg",
+        "work/brief247/w20-card-tray-8-candidate2-native-white.jpg",
+        "work/brief247/w20-card-tray-8-candidate2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-card-tray-8-v1.png",
+      "path": "work/brief247/w15-w31/w20-card-tray-8-candidate2.png",
+      "brief": 247,
+      "lesson": "w20",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        900
+      ],
+      "qa": {
+        "result": "held for exact geometry/shared projection",
+        "observations": [
+          "Paper/dark native and600px-wide/cross-fade diagnostics inspected. Material reads as plain kraft card with no text, people, logos, food or scissors.",
+          "No raw-preview background wash remains in actual alpha composites.",
+          "Base corners are manually measured; obscured points are marked inferred in common sidecar. Exact scale/projection is not a pass.",
+          "Production PNGs keep native dimensions. QA uniform resizing and translations do not modify them."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/ma11-card-tray-v1.json",
+          "public/assets/maths/ma11-card-tray-v1.json",
+          "work/brief247/w15-w31/w20-generation-part1.json",
+          "work/brief247/w15-w31/w20-generation-part2.json",
+          "work/brief247/w15-w31/w20-sheet-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-candidate2-geometry.json",
+          "work/brief247/w15-w31/w20-sheet-600-model-paper.jpg",
+          "work/brief247/w15-w31/w20-sheet-600-model-dark.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-paper.jpg",
+          "work/brief247/w15-w31/w20-trays-600-crossfade-dark.jpg",
+          "work/brief247/w15-w31/w20-card-sheet-cut-candidate2.png",
+          "work/brief247/w15-w31/w20-card-tray-8-candidate1.png"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-card-tray-8-v1-sidecar.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-card-tray-8-candidate.png",
+        "sha256": "6543a50b82b2eb2d88dd5017f733bcfe0f5e23966752d787bff97d4356743998",
+        "nativeSize": [
+          1424,
+          1104
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "boundsAbove20": [
+          176,
+          174,
+          1355,
+          1050
+        ],
+        "reason": "Tall walls and correct subject family, but common base centre and scale do not register to the 5cm tray."
+      },
+      "deliveryDecision18Nov": {
+        "status": "documented coded-graph fallback selected after shared geometry failed",
+        "ruling": "w20 Open decision 1 and owner instruction to use named fallbacks for QA holds",
+        "builderAction": "Use the coded graphs with the pack crate badge. Preserve the actual cut dimensions and all problem data in the coded construction. Do not cross-fade the held trays."
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-6528f33c-60fc-470b-83b0-4c604ffe0274.png",
+      "sha256": "591ca30b88354ba739af839b1a92c06652e593675e6e99ebba870776209e8394",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        322,
+        2172,
+        398
+      ],
+      "marginFractions": [
+        0,
+        0.4447513812154696,
+        0,
+        0.45027624309392267
+      ],
+      "evidence": [
+        "work/brief247/w22-road-side-strip-candidate1-native-paper.jpg",
+        "work/brief247/w22-road-side-strip-candidate1-native-dark.jpg",
+        "work/brief247/w22-road-side-strip-candidate1-native-white.jpg",
+        "work/brief247/w22-road-side-strip-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-road-side-strip-v1.png",
+      "path": "public/assets/maths/ma11-road-side-strip-v1.png",
+      "brief": 247,
+      "lesson": "w22",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        260
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Paper and dark lesson-size composites inspected. No text, prices, labels, logos, people, hands or faces.",
+          "Four closed books counted; fabric roll unrolls over a short table edge; cake and watermelon contain no question-answer data.",
+          "Road band reaches both side edges with flat top, large transparent vertical padding remains in native file.",
+          "Native dimensions retained, no production stretch or resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-w22-plates-v1.json",
+          "work/brief247/w15-w31/w22-generation-part1.json",
+          "work/brief247/w15-w31/w22-generation-part2.json",
+          "work/brief247/w15-w31/w22-road-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate2-geometry.json",
+          "work/brief247/w15-w31/w22-cake-alpha-bounds.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1.png",
+          "work/brief247/w22-small-pictures-size-transforms.json",
+          "work/brief247/w15-w31/w22-road-car-seam-paper.jpg",
+          "work/brief247/w15-w31/w22-road-car-seam-dark.jpg",
+          "work/brief247/w22-small-pictures-size-paper.jpg",
+          "work/brief247/w22-small-pictures-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-road-side-strip-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-9610606e-13e5-4bfe-9ac5-1f3de9d7a3d4.png",
+      "sha256": "12d7b5268c3e43d0f5feafb289f2634007e62c11d7c9b4fbabfbac0b6787f331",
+      "nativeSize": [
+        1454,
+        1082
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        60,
+        117,
+        1388,
+        1014
+      ],
+      "marginFractions": [
+        0.04126547455295736,
+        0.10813308687615526,
+        0.0453920220082531,
+        0.06284658040665435
+      ],
+      "evidence": [
+        "work/brief247/w22-book-stack-candidate1-native-paper.jpg",
+        "work/brief247/w22-book-stack-candidate1-native-dark.jpg",
+        "work/brief247/w22-book-stack-candidate1-native-white.jpg",
+        "work/brief247/w22-book-stack-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-book-stack-v1.png",
+      "path": "public/assets/maths/ma11-book-stack-v1.png",
+      "brief": 247,
+      "lesson": "w22",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        700,
+        520
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Paper and dark lesson-size composites inspected. No text, prices, labels, logos, people, hands or faces.",
+          "Four closed books counted; fabric roll unrolls over a short table edge; cake and watermelon contain no question-answer data.",
+          "Road band reaches both side edges with flat top, large transparent vertical padding remains in native file.",
+          "Native dimensions retained, no production stretch or resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-w22-plates-v1.json",
+          "work/brief247/w15-w31/w22-generation-part1.json",
+          "work/brief247/w15-w31/w22-generation-part2.json",
+          "work/brief247/w15-w31/w22-road-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate2-geometry.json",
+          "work/brief247/w15-w31/w22-cake-alpha-bounds.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1.png",
+          "work/brief247/w22-small-pictures-size-transforms.json",
+          "work/brief247/w15-w31/w22-road-car-seam-paper.jpg",
+          "work/brief247/w15-w31/w22-road-car-seam-dark.jpg",
+          "work/brief247/w22-small-pictures-size-paper.jpg",
+          "work/brief247/w22-small-pictures-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-book-stack-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2ab7d9a5-6db7-4d71-aae0-2b42e75e6494.png",
+      "sha256": "a4424322d116d160b8ee6206fa2a1e9e5df160546b6e6e6ac43151b7661db718",
+      "nativeSize": [
+        1650,
+        953
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        19,
+        17,
+        1632,
+        937
+      ],
+      "marginFractions": [
+        0.011515151515151515,
+        0.017838405036726127,
+        0.01090909090909091,
+        0.016789087093389297
+      ],
+      "evidence": [
+        "work/brief247/w22-fabric-roll-candidate1-native-paper.jpg",
+        "work/brief247/w22-fabric-roll-candidate1-native-dark.jpg",
+        "work/brief247/w22-fabric-roll-candidate1-native-white.jpg",
+        "work/brief247/w22-fabric-roll-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-fabric-roll-v1.png",
+      "path": "public/assets/maths/ma11-fabric-roll-v1.png",
+      "brief": 247,
+      "lesson": "w22",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        520
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Paper and dark lesson-size composites inspected. No text, prices, labels, logos, people, hands or faces.",
+          "Four closed books counted; fabric roll unrolls over a short table edge; cake and watermelon contain no question-answer data.",
+          "Road band reaches both side edges with flat top, large transparent vertical padding remains in native file.",
+          "Native dimensions retained, no production stretch or resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-w22-plates-v1.json",
+          "work/brief247/w15-w31/w22-generation-part1.json",
+          "work/brief247/w15-w31/w22-generation-part2.json",
+          "work/brief247/w15-w31/w22-road-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate2-geometry.json",
+          "work/brief247/w15-w31/w22-cake-alpha-bounds.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1.png",
+          "work/brief247/w22-small-pictures-size-transforms.json",
+          "work/brief247/w15-w31/w22-road-car-seam-paper.jpg",
+          "work/brief247/w15-w31/w22-road-car-seam-dark.jpg",
+          "work/brief247/w22-small-pictures-size-paper.jpg",
+          "work/brief247/w22-small-pictures-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-fabric-roll-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e6845ce2-dbc4-4332-a8bc-d2abfb987943.png",
+      "sha256": "fe40e5421c03756a3da4a05b3322feaa9a8453dd03ca168e76c76d062903b9ab",
+      "nativeSize": [
+        1734,
+        907
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        202,
+        62,
+        1544,
+        848
+      ],
+      "marginFractions": [
+        0.11649365628604383,
+        0.06835722160970231,
+        0.10957324106113034,
+        0.06504961411245866
+      ],
+      "evidence": [
+        "work/brief247/w22-gobstoppers-candidate2-native-paper.jpg",
+        "work/brief247/w22-gobstoppers-candidate2-native-dark.jpg",
+        "work/brief247/w22-gobstoppers-candidate2-native-white.jpg",
+        "work/brief247/w22-gobstoppers-candidate2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-gobstoppers-v1.png",
+      "path": "work/brief247/w15-w31/w22-gobstoppers-candidate2.png",
+      "brief": 247,
+      "lesson": "w22",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        800,
+        420
+      ],
+      "qa": {
+        "result": "held; approved coded-slot fallback",
+        "observations": [
+          "Paper and dark lesson-size composites inspected. No text, prices, labels, logos, people, hands or faces.",
+          "Four closed books counted; fabric roll unrolls over a short table edge; cake and watermelon contain no question-answer data.",
+          "Road band reaches both side edges with flat top, large transparent vertical padding remains in native file.",
+          "Native dimensions retained, no production stretch or resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-w22-plates-v1.json",
+          "work/brief247/w15-w31/w22-generation-part1.json",
+          "work/brief247/w15-w31/w22-generation-part2.json",
+          "work/brief247/w15-w31/w22-road-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate2-geometry.json",
+          "work/brief247/w15-w31/w22-cake-alpha-bounds.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1.png",
+          "work/brief247/w22-small-pictures-size-transforms.json",
+          "work/brief247/w15-w31/w22-road-car-seam-paper.jpg",
+          "work/brief247/w15-w31/w22-road-car-seam-dark.jpg",
+          "work/brief247/w22-small-pictures-size-paper.jpg",
+          "work/brief247/w22-small-pictures-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-gobstoppers-v1-sidecar.json",
+      "deliveryDecision18Nov": {
+        "status": "fallback selected",
+        "ruling": "Root w15 to w31 ruling 5",
+        "builderAction": "Draw two coded circles in the picture slot with diameters in the ratio 1 to 2.",
+        "replacementAsset": null
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2f91e173-2868-4781-8504-e0bc127fb5c1.png",
+      "sha256": "d68cbe13bf5acf6873328fa4dcf84cffa1e49c46b4b8de98891e33ede6dec3ed",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        112,
+        18,
+        1326,
+        1086
+      ],
+      "marginFractions": [
+        0.07734806629834254,
+        0.016574585635359115,
+        0.08425414364640885,
+        0
+      ],
+      "evidence": [
+        "work/brief247/w22-round-cake-candidate1-native-paper.jpg",
+        "work/brief247/w22-round-cake-candidate1-native-dark.jpg",
+        "work/brief247/w22-round-cake-candidate1-native-white.jpg",
+        "work/brief247/w22-round-cake-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-round-cake-v1.png",
+      "path": "public/assets/maths/ma11-round-cake-v1.png",
+      "brief": 247,
+      "lesson": "w22",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        800,
+        600
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Paper and dark lesson-size composites inspected. No text, prices, labels, logos, people, hands or faces.",
+          "Four closed books counted; fabric roll unrolls over a short table edge; cake and watermelon contain no question-answer data.",
+          "Road band reaches both side edges with flat top, large transparent vertical padding remains in native file.",
+          "Native dimensions retained, no production stretch or resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-w22-plates-v1.json",
+          "work/brief247/w15-w31/w22-generation-part1.json",
+          "work/brief247/w15-w31/w22-generation-part2.json",
+          "work/brief247/w15-w31/w22-road-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate2-geometry.json",
+          "work/brief247/w15-w31/w22-cake-alpha-bounds.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1.png",
+          "work/brief247/w22-small-pictures-size-transforms.json",
+          "work/brief247/w15-w31/w22-road-car-seam-paper.jpg",
+          "work/brief247/w15-w31/w22-road-car-seam-dark.jpg",
+          "work/brief247/w22-small-pictures-size-paper.jpg",
+          "work/brief247/w22-small-pictures-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-round-cake-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-c773254c-ca60-4a23-94a7-fe268038bb70.png",
+      "sha256": "913fd68fd6d11e9eb43de2f5504d67e13224b56862a54b1d7051c07a22e500e8",
+      "nativeSize": [
+        1355,
+        1161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        214,
+        112,
+        1129,
+        1067
+      ],
+      "marginFractions": [
+        0.15793357933579336,
+        0.09646856158484066,
+        0.16678966789667896,
+        0.08096468561584841
+      ],
+      "evidence": [
+        "work/brief247/w22-watermelon-candidate1-native-paper.jpg",
+        "work/brief247/w22-watermelon-candidate1-native-dark.jpg",
+        "work/brief247/w22-watermelon-candidate1-native-white.jpg",
+        "work/brief247/w22-watermelon-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-watermelon-v1.png",
+      "path": "public/assets/maths/ma11-watermelon-v1.png",
+      "brief": 247,
+      "lesson": "w22",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        700,
+        600
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Paper and dark lesson-size composites inspected. No text, prices, labels, logos, people, hands or faces.",
+          "Four closed books counted; fabric roll unrolls over a short table edge; cake and watermelon contain no question-answer data.",
+          "Road band reaches both side edges with flat top, large transparent vertical padding remains in native file.",
+          "Native dimensions retained, no production stretch or resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-w22-plates-v1.json",
+          "work/brief247/w15-w31/w22-generation-part1.json",
+          "work/brief247/w15-w31/w22-generation-part2.json",
+          "work/brief247/w15-w31/w22-road-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1-geometry.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate2-geometry.json",
+          "work/brief247/w15-w31/w22-cake-alpha-bounds.json",
+          "work/brief247/w15-w31/w22-gobstoppers-candidate1.png",
+          "work/brief247/w22-small-pictures-size-transforms.json",
+          "work/brief247/w15-w31/w22-road-car-seam-paper.jpg",
+          "work/brief247/w15-w31/w22-road-car-seam-dark.jpg",
+          "work/brief247/w22-small-pictures-size-paper.jpg",
+          "work/brief247/w22-small-pictures-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-watermelon-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-364341bc-18ed-4c66-816b-afe2387e74d5.png",
+      "sha256": "e306a7cdf900f5b04ac952cacefe7fe88ca2e4dbc89032bb647d996925e5db09",
+      "nativeSize": [
+        1300,
+        820
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        51,
+        90,
+        1486,
+        941
+      ],
+      "marginFractions": [
+        0.033203125,
+        0.087890625,
+        0.032552083333333336,
+        0.0810546875
+      ],
+      "evidence": [
+        "work/brief247/w23-tiled-floor-empty-candidate1-native-paper.jpg",
+        "work/brief247/w23-tiled-floor-empty-candidate1-native-dark.jpg",
+        "work/brief247/w23-tiled-floor-empty-candidate1-native-white.jpg",
+        "work/brief247/w23-tiled-floor-empty-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-tiled-floor-empty-v1.png",
+      "path": "public/assets/maths/ma11-tiled-floor-empty-v1.png",
+      "brief": 247,
+      "lesson": "w23",
+      "method": "Built-in ImageGen painting assembled as unscaled screed and skirting patches on the specified native canvas.",
+      "requestedSize": [
+        1300,
+        820
+      ],
+      "qa": {
+        "result": "installed, exact full-floor grid and alpha verified",
+        "evidence": [
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-paper.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-white.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-black.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-grid.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-tiled-floor-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief247/18-nov-tiled-floor-empty-candidate.png",
+        "sha256": "543d68df75bf3da8da26b982d9a9a2b4ecdff74c0c9b16c9a0b0406b87649792",
+        "nativeSize": [
+          1619,
+          971
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          43,
+          73,
+          1576,
+          897
+        ],
+        "reason": "The available floor interior is not 5:3 at equal scale, so there is no full-floor fit for the square grid."
+      },
+      "geometryRepaint18Nov": {
+        "status": "held after follow-up QA",
+        "file": "work/maths-plate-geometry-pilot/tiled-floor-empty-final-candidate.png",
+        "sha256": "9ad13e911f3225cd608fa08bf22653e2148e5221318e9814ec78f24d8a80e593",
+        "reason": "Final inside skirting measures approximately 1384 by 740 px, ratio 1.87. The earlier repaint was closer, about 1.72. Neither fits a full 30 by 18 square grid at equal scale."
+      },
+      "repaint19Nov": {
+        "result": "held",
+        "file": "work/maths-plate-geometry-pilot/19-nov-tiled-floor-candidate.png",
+        "sha256": "2cb39d8e53a64b6cb2c0d85a2f98e96ef6a985b41018419dc989ddbcc39c1249",
+        "reason": "The inner screed is about 1.71:1 and cannot take the 5:3 square-cell overlay without a visible strip or stretching.",
+        "proofs": [
+          "work/maths-plate-geometry-pilot/19-nov-tiled-floor-paper.jpg",
+          "work/maths-plate-geometry-pilot/19-nov-tiled-floor-dark.jpg"
+        ]
+      },
+      "review20Nov": {
+        "status": "installed",
+        "rawCandidate": {
+          "candidate": "work/maths-plate-geometry-pilot/20-nov-tiled-floor-empty-candidate.png",
+          "imagegenOutput": "exec-370730bc-b82e-43cc-92d9-8bf4155b1e36.png",
+          "sha256": "bd68a1bde03a12616df86159e54053eb2bec472ae2ef41298612e1da5198b612",
+          "nativeSize": [
+            1580,
+            996
+          ],
+          "alphaRange": [
+            0,
+            255
+          ],
+          "alphaBounds": [
+            60,
+            60,
+            1521,
+            936
+          ],
+          "interiorEdges": [
+            [
+              79,
+              1501
+            ],
+            [
+              80,
+              916
+            ]
+          ],
+          "interiorSize": [
+            1422,
+            836
+          ],
+          "interiorRatio": 1.700956937799043,
+          "passQA": false
+        },
+        "path": "public/assets/maths/ma11-tiled-floor-empty-v1.png",
+        "sha256": "e306a7cdf900f5b04ac952cacefe7fe88ca2e4dbc89032bb647d996925e5db09",
+        "nativeSize": [
+          1300,
+          820
+        ],
+        "insideCorners": [
+          [
+            50,
+            50
+          ],
+          [
+            1250,
+            50
+          ],
+          [
+            1250,
+            770
+          ],
+          [
+            50,
+            770
+          ]
+        ],
+        "insideSizePixels": [
+          1200,
+          720
+        ],
+        "pixelsPerMetre": 200,
+        "gridColumns": 30,
+        "gridRows": 18,
+        "squareGridCellPixels": 40,
+        "method": "Built-in ImageGen painting assembled as unscaled screed and skirting patches on the specified native canvas.",
+        "evidence": [
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-paper.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-white.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-black.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-floor-exact-grid.jpg"
+        ]
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-348364c7-c396-4a47-afd3-fecbdca638f7.png",
+      "sha256": "8531f9da9e6709b608f515ad6548e67b1ebc5ecbd8cf462b81e5644a9643ee79",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        78,
+        77,
+        1176,
+        1177
+      ],
+      "marginFractions": [
+        0.06220095693779904,
+        0.06140350877192982,
+        0.06220095693779904,
+        0.06140350877192982
+      ],
+      "evidence": [
+        "work/brief247/w23-floor-tile-30-candidate1-native-paper.jpg",
+        "work/brief247/w23-floor-tile-30-candidate1-native-dark.jpg",
+        "work/brief247/w23-floor-tile-30-candidate1-native-white.jpg",
+        "work/brief247/w23-floor-tile-30-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-floor-tile-30-v1.png",
+      "path": "public/assets/maths/ma11-floor-tile-30-v1.png",
+      "brief": 247,
+      "lesson": "w23",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        340,
+        340
+      ],
+      "qa": {
+        "result": "qualified: measured uniform tile calibration",
+        "observations": [
+          "Native alpha and paper/dark lesson-size or model composites inspected. No text, logos, people, hands or faces.",
+          "Tile edge calibration is necessary: raw native width ratio is 1.52089 rather than 1.5. After separate uniform placement, model body widths are 200 and 300px, with about0.3px height uncertainty.",
+          "Printer has blank pages and blank controls; jug has no graduations, numbers or answer data.",
+          "Production PNGs retain native dimensions. No stretch or production resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-tiled-floor-v1.json",
+          "work/brief247/w15-w31/w23-generation-part1.json",
+          "work/brief247/w15-w31/w23-generation-part2.json",
+          "work/brief247/w15-w31/w23-generation-part3.json",
+          "work/brief247/w15-w31/w23-floor-geometry.json",
+          "work/brief247/w15-w31/w23-tile-geometry.json",
+          "work/brief247/w15-w31/w23-floor-1100-grid-paper.jpg",
+          "work/brief247/w15-w31/w23-floor-1100-grid-dark.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-paper.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-dark.jpg",
+          "work/brief247/w15-w31/w23-tiled-floor-empty-candidate2.png",
+          "work/brief247/w23-printer-jug-size-paper.jpg",
+          "work/brief247/w23-printer-jug-size-dark.jpg",
+          "work/brief247/w23-printer-jug-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-floor-tile-30-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e89e585d-167a-43e6-91ac-b9402e1e6870.png",
+      "sha256": "44c62344576a888ebbe324a5c564a929099597ee795aeaf8299ea74ceee575bc",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        263,
+        262,
+        990,
+        988
+      ],
+      "marginFractions": [
+        0.20972886762360446,
+        0.20893141945773525,
+        0.21052631578947367,
+        0.21212121212121213
+      ],
+      "evidence": [
+        "work/brief247/w23-floor-tile-20-candidate1-native-paper.jpg",
+        "work/brief247/w23-floor-tile-20-candidate1-native-dark.jpg",
+        "work/brief247/w23-floor-tile-20-candidate1-native-white.jpg",
+        "work/brief247/w23-floor-tile-20-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-floor-tile-20-v1.png",
+      "path": "public/assets/maths/ma11-floor-tile-20-v1.png",
+      "brief": 247,
+      "lesson": "w23",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        240,
+        240
+      ],
+      "qa": {
+        "result": "qualified: measured uniform tile calibration",
+        "observations": [
+          "Native alpha and paper/dark lesson-size or model composites inspected. No text, logos, people, hands or faces.",
+          "Tile edge calibration is necessary: raw native width ratio is 1.52089 rather than 1.5. After separate uniform placement, model body widths are 200 and 300px, with about0.3px height uncertainty.",
+          "Printer has blank pages and blank controls; jug has no graduations, numbers or answer data.",
+          "Production PNGs retain native dimensions. No stretch or production resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-tiled-floor-v1.json",
+          "work/brief247/w15-w31/w23-generation-part1.json",
+          "work/brief247/w15-w31/w23-generation-part2.json",
+          "work/brief247/w15-w31/w23-generation-part3.json",
+          "work/brief247/w15-w31/w23-floor-geometry.json",
+          "work/brief247/w15-w31/w23-tile-geometry.json",
+          "work/brief247/w15-w31/w23-floor-1100-grid-paper.jpg",
+          "work/brief247/w15-w31/w23-floor-1100-grid-dark.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-paper.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-dark.jpg",
+          "work/brief247/w15-w31/w23-tiled-floor-empty-candidate2.png",
+          "work/brief247/w23-printer-jug-size-paper.jpg",
+          "work/brief247/w23-printer-jug-size-dark.jpg",
+          "work/brief247/w23-printer-jug-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-floor-tile-20-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-054a9154-53dd-4ac9-8d2e-d38998492940.png",
+      "sha256": "744b429b2819df2b45f3c7175e2f4fb88d121cd4bcb7e00cf18d82699a907869",
+      "nativeSize": [
+        1402,
+        1122
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        46,
+        40,
+        1361,
+        1095
+      ],
+      "marginFractions": [
+        0.03281027104136947,
+        0.035650623885918005,
+        0.029243937232524966,
+        0.02406417112299465
+      ],
+      "evidence": [
+        "work/brief247/w23-office-printer-candidate1-native-paper.jpg",
+        "work/brief247/w23-office-printer-candidate1-native-dark.jpg",
+        "work/brief247/w23-office-printer-candidate1-native-white.jpg",
+        "work/brief247/w23-office-printer-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-office-printer-v1.png",
+      "path": "public/assets/maths/ma11-office-printer-v1.png",
+      "brief": 247,
+      "lesson": "w23",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        800,
+        640
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Native alpha and paper/dark lesson-size or model composites inspected. No text, logos, people, hands or faces.",
+          "Tile edge calibration is necessary: raw native width ratio is 1.52089 rather than 1.5. After separate uniform placement, model body widths are 200 and 300px, with about0.3px height uncertainty.",
+          "Printer has blank pages and blank controls; jug has no graduations, numbers or answer data.",
+          "Production PNGs retain native dimensions. No stretch or production resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-tiled-floor-v1.json",
+          "work/brief247/w15-w31/w23-generation-part1.json",
+          "work/brief247/w15-w31/w23-generation-part2.json",
+          "work/brief247/w15-w31/w23-generation-part3.json",
+          "work/brief247/w15-w31/w23-floor-geometry.json",
+          "work/brief247/w15-w31/w23-tile-geometry.json",
+          "work/brief247/w15-w31/w23-floor-1100-grid-paper.jpg",
+          "work/brief247/w15-w31/w23-floor-1100-grid-dark.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-paper.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-dark.jpg",
+          "work/brief247/w15-w31/w23-tiled-floor-empty-candidate2.png",
+          "work/brief247/w23-printer-jug-size-paper.jpg",
+          "work/brief247/w23-printer-jug-size-dark.jpg",
+          "work/brief247/w23-printer-jug-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-office-printer-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-1363ffe4-02db-4f8c-8ce6-66e8edcf0ee5.png",
+      "sha256": "8c3fcc5ba9ae3a961449e89bb48fe651a6dbf0e3498d61aa6ca51517546242f5",
+      "nativeSize": [
+        1081,
+        1455
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        23,
+        129,
+        1063,
+        1376
+      ],
+      "marginFractions": [
+        0.02127659574468085,
+        0.088659793814433,
+        0.016651248843663275,
+        0.05429553264604811
+      ],
+      "evidence": [
+        "work/brief247/w23-water-jug-candidate1-native-paper.jpg",
+        "work/brief247/w23-water-jug-candidate1-native-dark.jpg",
+        "work/brief247/w23-water-jug-candidate1-native-white.jpg",
+        "work/brief247/w23-water-jug-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-water-jug-v1.png",
+      "path": "public/assets/maths/ma11-water-jug-v1.png",
+      "brief": 247,
+      "lesson": "w23",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        520,
+        700
+      ],
+      "qa": {
+        "result": "passed subject and alpha checks",
+        "observations": [
+          "Native alpha and paper/dark lesson-size or model composites inspected. No text, logos, people, hands or faces.",
+          "Tile edge calibration is necessary: raw native width ratio is 1.52089 rather than 1.5. After separate uniform placement, model body widths are 200 and 300px, with about0.3px height uncertainty.",
+          "Printer has blank pages and blank controls; jug has no graduations, numbers or answer data.",
+          "Production PNGs retain native dimensions. No stretch or production resampling."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-tiled-floor-v1.json",
+          "work/brief247/w15-w31/w23-generation-part1.json",
+          "work/brief247/w15-w31/w23-generation-part2.json",
+          "work/brief247/w15-w31/w23-generation-part3.json",
+          "work/brief247/w15-w31/w23-floor-geometry.json",
+          "work/brief247/w15-w31/w23-tile-geometry.json",
+          "work/brief247/w15-w31/w23-floor-1100-grid-paper.jpg",
+          "work/brief247/w15-w31/w23-floor-1100-grid-dark.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-paper.jpg",
+          "work/brief247/w15-w31/w23-tiles-physical-size-dark.jpg",
+          "work/brief247/w15-w31/w23-tiled-floor-empty-candidate2.png",
+          "work/brief247/w23-printer-jug-size-paper.jpg",
+          "work/brief247/w23-printer-jug-size-dark.jpg",
+          "work/brief247/w23-printer-jug-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-water-jug-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-8ec39861-1c38-4a1e-bf53-4ee4808819c9.png",
+      "sha256": "c384fdc0128a280bbb849a63c26e5ad4f13c95bba55057baf3235443ffe600b9",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        13,
+        1239,
+        1243
+      ],
+      "marginFractions": [
+        0,
+        0.01036682615629984,
+        0.011961722488038277,
+        0.008771929824561403
+      ],
+      "evidence": [
+        "work/brief247/w24-dartboard-candidate1-native-paper.jpg",
+        "work/brief247/w24-dartboard-candidate1-native-dark.jpg",
+        "work/brief247/w24-dartboard-candidate1-native-white.jpg",
+        "work/brief247/w24-dartboard-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-dartboard-v1.png",
+      "path": "public/assets/maths/ma11-dartboard-v1.png",
+      "brief": 247,
+      "lesson": "w24",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        2000
+      ],
+      "qa": {
+        "result": "qualified: explicit measured-wire fallback",
+        "observations": [
+          "Board inspected at400px and760px, with nominal and measured-circle overlays. Full plain black number band has no numbers.",
+          "Dart has a silver grooved barrel, blue flights, one visible sharp steel tip and no printed marks.",
+          "Paper and dark composites have clean alpha edges without raw-preview colour fringe. Board opaque bounds1226x1225px read as face-on circle.",
+          "Native PNGs copied without production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w24-generation.json",
+          "work/brief247/w15-w31/w24-dartboard-geometry.json",
+          "work/brief247/w15-w31/w24-dart-sidecar.json",
+          "work/brief247/w15-w31/w24-board-circles-paper.jpg",
+          "work/brief247/w15-w31/w24-board-circles-dark.jpg",
+          "work/brief247/w15-w31/w24-dart-join-paper.jpg",
+          "work/brief247/w15-w31/w24-dart-join-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-dartboard-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-ec63513c-6ce8-4cc2-b0e8-0a728c913691.png",
+      "sha256": "6d2f2948ed1d8fb1e8ea45dc655238e56f49eaa47bcca6443bb4b37be5732b91",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        71,
+        70,
+        1206,
+        1201
+      ],
+      "marginFractions": [
+        0.05661881977671451,
+        0.05582137161084529,
+        0.03827751196172249,
+        0.04226475279106858
+      ],
+      "evidence": [
+        "work/brief247/w24-dart-candidate1-native-paper.jpg",
+        "work/brief247/w24-dart-candidate1-native-dark.jpg",
+        "work/brief247/w24-dart-candidate1-native-white.jpg",
+        "work/brief247/w24-dart-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-dart-v1.png",
+      "path": "public/assets/maths/ma11-dart-v1.png",
+      "brief": 247,
+      "lesson": "w24",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        900
+      ],
+      "qa": {
+        "result": "passed subject, alpha and tip-registration checks",
+        "observations": [
+          "Board inspected at400px and760px, with nominal and measured-circle overlays. Full plain black number band has no numbers.",
+          "Dart has a silver grooved barrel, blue flights, one visible sharp steel tip and no printed marks.",
+          "Paper and dark composites have clean alpha edges without raw-preview colour fringe. Board opaque bounds1226x1225px read as face-on circle.",
+          "Native PNGs copied without production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w24-generation.json",
+          "work/brief247/w15-w31/w24-dartboard-geometry.json",
+          "work/brief247/w15-w31/w24-dart-sidecar.json",
+          "work/brief247/w15-w31/w24-board-circles-paper.jpg",
+          "work/brief247/w15-w31/w24-board-circles-dark.jpg",
+          "work/brief247/w15-w31/w24-dart-join-paper.jpg",
+          "work/brief247/w15-w31/w24-dart-join-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-dart-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-18e43cda-cd57-468b-b555-c98b0ff83289.png",
+      "sha256": "06605f429c724cdf3673837117fee1206882c9a185d9286da901c7877f85c09c",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        3,
+        251
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "marginFractions": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "evidence": [
+        "work/brief247/w25-netball-court-top-candidate2-native-paper.jpg",
+        "work/brief247/w25-netball-court-top-candidate2-native-dark.jpg",
+        "work/brief247/w25-netball-court-top-candidate2-native-white.jpg",
+        "work/brief247/w25-netball-court-top-candidate2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-netball-court-top-v1.png",
+      "path": "public/assets/maths/ma11-netball-court-top-v1.png",
+      "brief": 247,
+      "lesson": "w25",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        3050,
+        1525
+      ],
+      "qa": {
+        "result": "qualified: uniform court and coded arc scale pass; small centre-circle painted-stroke deviation",
+        "observations": [
+          "Court delivered at native1774x887, exact2:1 canvas. Blank goal-end thirds accept coded4.9m semicircles at285.003px radius using one uniform58.163934px/m scale. Goal-line centres(5.5,442.75),(1768.5,442.75). Targeted edit reduced centre-circle outside bounds from63x63px to53x54px versus requested52.35px; small painted-stroke deviation recorded, not a full nominal-dimensions pass. Paper/dark alpha and coded full-court/rotated near-goal crop inspected. No image stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w25-court-circles-paper.jpg",
+          "work/brief247/w15-w31/w25-court-circles-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-netball-court-top-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-65902040-add7-4e8b-8176-3e1916c564bd.png",
+      "sha256": "7c82f388ae1759b93cefa59731f078b5133e5e0045fdd7480a2ac1a10bd25b5c",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        73,
+        125,
+        814,
+        1649
+      ],
+      "marginFractions": [
+        0.08229988726042842,
+        0.07046223224351747,
+        0.08229988726042842,
+        0.07046223224351747
+      ],
+      "evidence": [
+        "work/brief247/w26-domino-1-4-native-paper.jpg",
+        "work/brief247/w26-domino-1-4-native-dark.jpg",
+        "work/brief247/w26-domino-1-4-native-white.jpg",
+        "work/brief247/w26-domino-1-4-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-domino-1-4-v1.png",
+      "path": "public/assets/maths/ma11-domino-1-4-v1.png",
+      "brief": 247,
+      "lesson": "w26",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        1200
+      ],
+      "qa": {
+        "result": "passed: subject, own symmetry and alpha at220/420tall",
+        "observations": [
+          "1|4 mirror and1|2 neither claims pass. Painted3|3 held: first candidate body aspect differs17.3% and half-turn error9.42px; second body matches but half-turn error67.924px (16.081px at420tall). Blank painted tile and exact coded grid prepared for documented root fallback. No source or scene edited."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w26-domino-1-4-symmetry-paper.jpg",
+          "work/brief247/w15-w31/w26-domino-1-4-symmetry-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-domino-1-4-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-5856793d-ff15-476f-bfdc-d05773c23bc4.png",
+      "sha256": "0c4663e85afed3b2dc565f0c73b2f1b36376cdfed7562e0377edaeb8d231ac16",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        70,
+        124,
+        815,
+        1653
+      ],
+      "marginFractions": [
+        0.07891770011273957,
+        0.06989853438556934,
+        0.08117249154453213,
+        0.06820744081172492
+      ],
+      "evidence": [
+        "work/brief247/w26-domino-3-3-candidate2-native-paper.jpg",
+        "work/brief247/w26-domino-3-3-candidate2-native-dark.jpg",
+        "work/brief247/w26-domino-3-3-candidate2-native-white.jpg",
+        "work/brief247/w26-domino-3-3-candidate2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-domino-3-3-v1.png",
+      "path": "work/brief247/w15-w31/w26-domino-3-3-candidate2.png",
+      "brief": 247,
+      "lesson": "w26",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        1200
+      ],
+      "qa": {
+        "result": "held: painted half-turn registration fails",
+        "observations": [
+          "1|4 mirror and1|2 neither claims pass. Painted3|3 held: first candidate body aspect differs17.3% and half-turn error9.42px; second body matches but half-turn error67.924px (16.081px at420tall). Blank painted tile and exact coded grid prepared for documented root fallback. No source or scene edited."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w26-domino-3-3-symmetry-paper.jpg",
+          "work/brief247/w15-w31/w26-domino-3-3-symmetry-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-domino-3-3-v1-sidecar.json",
+      "deliveryDecision18Nov": {
+        "status": "fallback selected",
+        "ruling": "w26 asset QA fallback",
+        "builderAction": "Use the published blank tile and place the six coded pips on its sidecar grid. Both halves run along the same diagonal.",
+        "replacementAsset": "public/assets/maths/ma11-domino-blank-v1.png"
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-3e524e8b-bfef-4a76-b35d-6404f7f19322.png",
+      "sha256": "a9d0db88bc1cfc79e4d3af7094d116eef1d6aecc3af4b174a942f097d315186c",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        72,
+        124,
+        816,
+        1650
+      ],
+      "marginFractions": [
+        0.08117249154453213,
+        0.06989853438556934,
+        0.08004509582863585,
+        0.06989853438556934
+      ],
+      "evidence": [
+        "work/brief247/w26-domino-1-2-native-paper.jpg",
+        "work/brief247/w26-domino-1-2-native-dark.jpg",
+        "work/brief247/w26-domino-1-2-native-white.jpg",
+        "work/brief247/w26-domino-1-2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-domino-1-2-v1.png",
+      "path": "public/assets/maths/ma11-domino-1-2-v1.png",
+      "brief": 247,
+      "lesson": "w26",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        1200
+      ],
+      "qa": {
+        "result": "passed: subject, own symmetry and alpha at220/420tall",
+        "observations": [
+          "1|4 mirror and1|2 neither claims pass. Painted3|3 held: first candidate body aspect differs17.3% and half-turn error9.42px; second body matches but half-turn error67.924px (16.081px at420tall). Blank painted tile and exact coded grid prepared for documented root fallback. No source or scene edited."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w26-domino-1-2-symmetry-paper.jpg",
+          "work/brief247/w15-w31/w26-domino-1-2-symmetry-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-domino-1-2-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2a251a09-95dc-4cd6-9d66-2845cd9ef687.png",
+      "sha256": "2f470178139176b0badc92041f55118a3c28295b64aa9f2963f8e59c0825853a",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        70,
+        124,
+        815,
+        1650
+      ],
+      "marginFractions": [
+        0.07891770011273957,
+        0.06989853438556934,
+        0.08117249154453213,
+        0.06989853438556934
+      ],
+      "evidence": [
+        "work/brief247/w26-domino-blank-native-paper.jpg",
+        "work/brief247/w26-domino-blank-native-dark.jpg",
+        "work/brief247/w26-domino-blank-native-white.jpg",
+        "work/brief247/w26-domino-blank-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-domino-blank-v1.png",
+      "path": "public/assets/maths/ma11-domino-blank-v1.png",
+      "brief": 247,
+      "lesson": "w26",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        1200
+      ],
+      "qa": {
+        "result": "qualified: documented blank-tile fallback prepared; root adoption pending",
+        "observations": [
+          "1|4 mirror and1|2 neither claims pass. Painted3|3 held: first candidate body aspect differs17.3% and half-turn error9.42px; second body matches but half-turn error67.924px (16.081px at420tall). Blank painted tile and exact coded grid prepared for documented root fallback. No source or scene edited."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w26-blank-coded-3-3-paper.jpg",
+          "work/brief247/w15-w31/w26-blank-coded-3-3-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-domino-blank-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2dda429c-580a-4646-afea-f18658196101.png",
+      "sha256": "06d6fe450aaf363ceeeac48cdb564d0e9672fa8571c4b19f157c3017f5902e91",
+      "nativeSize": [
+        1685,
+        933
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        54,
+        61,
+        1635,
+        887
+      ],
+      "marginFractions": [
+        0.032047477744807124,
+        0.06538049303322616,
+        0.02967359050445104,
+        0.04930332261521972
+      ],
+      "evidence": [
+        "work/brief247/w27-sneakers-native-paper.jpg",
+        "work/brief247/w27-sneakers-native-dark.jpg",
+        "work/brief247/w27-sneakers-native-white.jpg",
+        "work/brief247/w27-sneakers-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-sneakers-v1.png",
+      "path": "public/assets/maths/ma11-sneakers-v1.png",
+      "brief": 247,
+      "lesson": "w27",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        1000
+      ],
+      "qa": {
+        "result": "passed: subject, alpha, requested display sizes and attachment/text fit",
+        "observations": [
+          "Sneakers and blank coupon delivered. Pair of white/teal unbranded tied sneakers, gum soles and a clear brown-string attachment point(420,577). Blank cream coupon has violet left third, dashed border and torn right edge. Paper/dark alpha and300/560px-wide QA inspected. Coded $10 off fits safe coupon box at24/40px in the two sizes. Existing w27 source count/colour findings and literal Status hold remain."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w27-sneakers-paper-dark-paper.jpg",
+          "work/brief247/w15-w31/w27-sneakers-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-sneakers-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-0f6c3e8c-1014-4f1b-9bd6-23f2bd6bd505.png",
+      "sha256": "c82144d553f5bb14ca95e38ce92eab6de12816bc9807ce483bfef80e69d03fde",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        34,
+        44,
+        1742,
+        845
+      ],
+      "marginFractions": [
+        0.019165727170236752,
+        0.0496054114994363,
+        0.018038331454340473,
+        0.04735062006764374
+      ],
+      "evidence": [
+        "work/brief247/w27-coupon-native-paper.jpg",
+        "work/brief247/w27-coupon-native-dark.jpg",
+        "work/brief247/w27-coupon-native-white.jpg",
+        "work/brief247/w27-coupon-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-coupon-v1.png",
+      "path": "public/assets/maths/ma11-coupon-v1.png",
+      "brief": 247,
+      "lesson": "w27",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        600
+      ],
+      "qa": {
+        "result": "passed: subject, alpha, requested display sizes and attachment/text fit",
+        "observations": [
+          "Sneakers and blank coupon delivered. Pair of white/teal unbranded tied sneakers, gum soles and a clear brown-string attachment point(420,577). Blank cream coupon has violet left third, dashed border and torn right edge. Paper/dark alpha and300/560px-wide QA inspected. Coded $10 off fits safe coupon box at24/40px in the two sizes. Existing w27 source count/colour findings and literal Status hold remain."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w27-coupon-paper-dark-paper.jpg",
+          "work/brief247/w15-w31/w27-coupon-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-coupon-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-d14d4932-eac5-4a2e-b928-a721254bbce1.png",
+      "sha256": "bd0b42cb47cb4dd0d1f38b9a1dd88383a94b304545bd1489a6df8c1a984e702b",
+      "nativeSize": [
+        1555,
+        1011
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        66,
+        74,
+        1494,
+        965
+      ],
+      "marginFractions": [
+        0.04244372990353698,
+        0.07319485657764589,
+        0.03922829581993569,
+        0.04549950544015826
+      ],
+      "evidence": [
+        "work/brief247/w28-share-ebike-native-paper.jpg",
+        "work/brief247/w28-share-ebike-native-dark.jpg",
+        "work/brief247/w28-share-ebike-native-white.jpg",
+        "work/brief247/w28-share-ebike-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-share-ebike-v1.png",
+      "path": "public/assets/maths/ma11-share-ebike-v1.png",
+      "brief": 247,
+      "lesson": "w28",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1300
+      ],
+      "qa": {
+        "result": "passed: subject, alpha and300/900px-wide paper/dark checks",
+        "observations": [
+          "Step-through frame, basket, battery, mudguards, blank display, rear wheel lock and kickstand present."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w28-ebike-paper-dark-paper.jpg",
+          "work/brief247/w15-w31/w28-ebike-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-af110a57-1532-4fd9-b4a3-25908b518046.png",
+      "sha256": "97da9b5bcc4529cfc0933657bbd090b3493c224f521599881cb6addbc004b4de",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        17,
+        76,
+        1030,
+        1422
+      ],
+      "marginFractions": [
+        0.015370705244122965,
+        0.053445850914205346,
+        0.06871609403254973,
+        0
+      ],
+      "evidence": [
+        "work/brief247/w29-coin-dryer-native-paper.jpg",
+        "work/brief247/w29-coin-dryer-native-dark.jpg",
+        "work/brief247/w29-coin-dryer-native-white.jpg",
+        "work/brief247/w29-coin-dryer-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-coin-dryer-v1.png",
+      "path": "public/assets/maths/ma11-coin-dryer-v1.png",
+      "brief": 247,
+      "lesson": "w29",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1800
+      ],
+      "qa": {
+        "result": "passed: subject, alpha and280/520px-tall paper/dark checks; floor fringe recorded",
+        "observations": [
+          "Complete cabinet and feet visible; tile strip fades to transparency, low-alpha fringe at bottom canvas."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w29-dryer-paper-dark-paper.jpg",
+          "work/brief247/w15-w31/w29-dryer-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-5ff374e4-db2a-4118-84d4-efc220fa4cab.png",
+      "sha256": "dd7397dbe967603e06294965bdb1b7306f5d5af8ee2ff5f3bed32da331d227b3",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        126,
+        2172,
+        551
+      ],
+      "marginFractions": [
+        0,
+        0.17403314917127072,
+        0,
+        0.23895027624309392
+      ],
+      "evidence": [
+        "work/brief247/w30-rail-trail-native-paper.jpg",
+        "work/brief247/w30-rail-trail-native-dark.jpg",
+        "work/brief247/w30-rail-trail-native-white.jpg",
+        "work/brief247/w30-rail-trail-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-rail-trail-v1.png",
+      "path": "public/assets/maths/ma11-rail-trail-v1.png",
+      "brief": 247,
+      "lesson": "w30",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        3800,
+        700
+      ],
+      "qa": {
+        "result": "qualified:19posts and text fit pass; exact native spacing fails, uniform coded map prepared for root",
+        "observations": [
+          "Rail trail delivered with geometry qualification. Exactly19 blank post faces and central station confirmed. Native2172x724, fitted spacing114.346px, adjacent112..118px, max5.204px residual; requested200px spacing/3800x700 is not a pass. Sidecar records measured centres and a uniform coded map x=1088+114k. All coded labels from-9 to9 at36px fit within the faces at1600/1900wide on paper/dark, with maximum7px native offset from painted face centre. Root must use one exact linear map for labels and distance bars, rather than varying the mathematical scale with painted spacing. No warp or upsampling. Alpha at ends reaches the canvas; no post is cut."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w30-rail-coded-paper.jpg",
+          "work/brief247/w15-w31/w30-rail-coded-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-rail-trail-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-0275b5c0-2457-43c1-b46d-a6f10199e82a.png",
+      "sha256": "673a894f520d526cf34eaf0a367aeab6f22ff5af4ee57874ffbed755af41aa88",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        13,
+        54,
+        1074,
+        1432
+      ],
+      "marginFractions": [
+        0.011970534069981584,
+        0.03729281767955801,
+        0.011049723756906077,
+        0.011049723756906077
+      ],
+      "evidence": [
+        "work/brief247/w31-jellybean-jar-native-paper.jpg",
+        "work/brief247/w31-jellybean-jar-native-dark.jpg",
+        "work/brief247/w31-jellybean-jar-native-white.jpg",
+        "work/brief247/w31-jellybean-jar-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-jellybean-jar-v1.png",
+      "path": "public/assets/maths/ma11-jellybean-jar-v1.png",
+      "brief": 247,
+      "lesson": "w31",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: subject and alpha pass;36px tag text fits narrowly at560tall, fails300tall",
+        "observations": [
+          "300tall is a subject thumbnail check only. When350beans carries reasoning, use readable coded label and sufficient jar size."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w31-jar-paper-dark-paper.jpg",
+          "work/brief247/w15-w31/w31-jar-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-jellybean-jar-v1.json"
+    },
+    {
+      "brief": 247,
+      "lesson": "w07",
+      "name": "ma11-vending-machine-v1.png",
+      "path": "public/assets/maths/ma11-vending-machine-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1eb33-acbf-7601-87c2-29c1582a25a7\\exec-2b8279d8-54e7-4a46-a81f-5b2c7bd2d972.png",
+      "sha256": "69071a982e87eba425954f9572cf6474bf4cbe67585503a80ae333b72d762f47",
+      "nativeSize": [
+        1060,
+        1484
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove20": [
+        228,
+        364,
+        832,
+        1158
+      ],
+      "marginFractions": [
+        0.21509433962264152,
+        0.24528301886792453,
+        0.21509433962264152,
+        0.2196765498652291
+      ],
+      "method": "built-in imagegen with transparent framing revision",
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "qa": {
+        "result": "static paper and dark plate pass",
+        "observations": "Four blank coils and keypad buttons.",
+        "evidence": [
+          "work/brief247/vending-machine-18-nov-paper-300.jpg",
+          "work/brief247/vending-machine-18-nov-paper-600.jpg",
+          "work/brief247/vending-machine-18-nov-paper-1060.jpg",
+          "work/brief247/vending-machine-18-nov-dark-300.jpg",
+          "work/brief247/vending-machine-18-nov-dark-600.jpg",
+          "work/brief247/vending-machine-18-nov-dark-1060.jpg",
+          "work/brief247/vending-machine-18-nov-coded-fit.jpg"
+        ]
+      },
+      "sidecar": "public/assets/maths/ma11-vending-machine-v1.json"
+    },
+    {
+      "brief": 247,
+      "lesson": "w07",
+      "name": "ma11-muesli-bar-v1.png",
+      "path": "public/assets/maths/ma11-muesli-bar-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1eb33-acbf-7601-87c2-29c1582a25a7\\exec-ca30f956-6001-487a-beb5-65f70587b62e.png",
+      "sha256": "ae68c399aea248382c843f54d379517fb1d64c606c1159e3a8cbd6d94c8950c2",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove20": [
+        414,
+        175,
+        1755,
+        588
+      ],
+      "marginFractions": [
+        0.19060773480662985,
+        0.24171270718232044,
+        0.1919889502762431,
+        0.1878453038674033
+      ],
+      "method": "built-in imagegen with transparent framing revision",
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "qa": {
+        "result": "static paper and dark plate pass",
+        "observations": "Unprinted kraft wrapper with green band and crimped ends.",
+        "evidence": [
+          "work/brief247/muesli-bar-18-nov-paper-300.jpg",
+          "work/brief247/muesli-bar-18-nov-paper-600.jpg",
+          "work/brief247/muesli-bar-18-nov-paper-2172.jpg",
+          "work/brief247/muesli-bar-18-nov-dark-300.jpg",
+          "work/brief247/muesli-bar-18-nov-dark-600.jpg",
+          "work/brief247/muesli-bar-18-nov-dark-2172.jpg"
+        ]
+      }
+    }
+  ],
+  "handIn": "docs/production/claude-pm/checks/brief247-w01-w14-hand-in-16-nov.md",
+  "counts": {
+    "records": 33,
+    "publicNativePngs": 24,
+    "heldWorkCandidates": 9,
+    "w07Skipped": 2
+  },
+  "qaNote": "Hammock cross-fade QA corrected to blend already-composited RGB, avoiding hidden straight-alpha colours. Corrected strip inspected. No production plate edit.",
+  "continuation18Nov": {
+    "newPublicPngs": 2,
+    "fallbackAssetNames": 6,
+    "repaintHolds": 11
+  },
+  "plateReview20Nov": {
+    "ma11-chocolate-row-v1.png": {
+      "status": "held",
+      "reason": "The existing block has row heights of 190 to 205 px. Even a perfectly sized single row translated onto all four rows misses by at least 4.88 px at 2000 px against a strict under-3 px target. A matched block and row repaint together would be required.",
+      "candidate": {
+        "candidate": "work/maths-plate-geometry-pilot/20-nov-chocolate-row-candidate.png",
+        "imagegenOutput": "exec-7c570f04-8127-40f0-9663-f90600fc84cc.png",
+        "sha256": "ca55cbfcc1ff3a0568600b63bc27b4e9ccfe07b5135d729d0a1d16bd5241e7c5",
+        "nativeSize": [
+          1536,
+          1024
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "alphaBounds": [
+          131,
+          134,
+          1406,
+          350
+        ],
+        "candidateHeight": 216,
+        "modelRowHeights": [
+          205,
+          203,
+          190,
+          197
+        ],
+        "minimumPossibleErrorAt2000": 4.8828125,
+        "verticalEdgeErrorsAt2000": [
+          7.161458333333333,
+          8.463541666666666,
+          16.927083333333332,
+          12.369791666666666
+        ],
+        "passQA": false
+      }
+    },
+    "ma11-softball-diamond-top-v1.png": {
+      "status": "installed",
+      "path": "public/assets/maths/ma11-softball-diamond-top-v1.png",
+      "sidecar": "public/assets/maths/ma11-softball-diamond-top-v1.json",
+      "sha256": "02259ba32e09fc365010688143b4cec22e789cb14d6b4aa75a2d1e57dee96993",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "method": "ImageGen paint with separately placed stock painted base faces. No resampling. Centres measured from connected opaque white faces.",
+      "evidence": [
+        "work/maths-plate-geometry-pilot/20-nov-softball-exact-paper.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-softball-exact-white.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-softball-exact-black.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-softball-exact-overlay.jpg"
+      ],
+      "rawRepaints": [
+        {
+          "candidate": "work/maths-plate-geometry-pilot/20-nov-softball-diamond-top-candidate.png",
+          "imagegenOutput": "exec-8a2f6d70-d2b0-4687-9960-f23bf6147b68.png",
+          "sha256": "2680da666184f8ee7ddf62c9b1437b5e1f649a80f38cbb841104eb5895047761",
+          "nativeSize": [
+            1254,
+            1254
+          ],
+          "alphaRange": [
+            0,
+            255
+          ],
+          "alphaBounds": [
+            127,
+            127,
+            1127,
+            1122
+          ],
+          "baseCentres": {
+            "home": [
+              625.4579863739591,
+              1061.9606358819076
+            ],
+            "first": [
+              1068.8742554599603,
+              626.9973527465255
+            ],
+            "second": [
+              625.5627009646303,
+              185.01479099678457
+            ],
+            "third": [
+              183.61770623742456,
+              627.0154258886653
+            ]
+          },
+          "sides": [
+            620.0001361670794,
+            621.1368974437596,
+            625.9981783040024,
+            625.0439501421124
+          ],
+          "diagonals": [
+            876.9458511370174,
+            885.2565494070238
+          ],
+          "maxDiagonalToSideErrorPercent": 0.963027693081342,
+          "passQA": false
+        },
+        {
+          "candidate": "work/maths-plate-geometry-pilot/20-nov-repaint-softball-diamond-top-candidate.png",
+          "imagegenOutput": "exec-49f1ca9e-4287-4eb2-8687-517fa7fc149f.png",
+          "sha256": "ca86639698044692125937c4d51deb989b53c7bdfb021001c1b92bdf4323701f",
+          "nativeSize": [
+            1254,
+            1254
+          ],
+          "alphaRange": [
+            0,
+            253
+          ],
+          "alphaBounds": [
+            97,
+            82,
+            1157,
+            1153
+          ],
+          "baseCentres": {
+            "home": [
+              625.3053097345132,
+              1076.9771386430677
+            ],
+            "first": [
+              1072.5021971123665,
+              624.5084745762712
+            ],
+            "second": [
+              625.5169762972454,
+              168.96989109545163
+            ],
+            "third": [
+              176.87293519695044,
+              624.4745870393901
+            ]
+          },
+          "sides": [
+            637.0636967691975,
+            636.1705337744212,
+            638.2093611557685,
+            639.3481083430082
+          ],
+          "diagonals": [
+            908.0072722185278,
+            895.6292625565101
+          ],
+          "maxDiagonalToSideErrorPercent": 0.9451163272937047,
+          "passQA": false
+        }
+      ]
+    },
+    "ma11-tiled-floor-empty-v1.png": {
+      "status": "installed",
+      "rawCandidate": {
+        "candidate": "work/maths-plate-geometry-pilot/20-nov-tiled-floor-empty-candidate.png",
+        "imagegenOutput": "exec-370730bc-b82e-43cc-92d9-8bf4155b1e36.png",
+        "sha256": "bd68a1bde03a12616df86159e54053eb2bec472ae2ef41298612e1da5198b612",
+        "nativeSize": [
+          1580,
+          996
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          60,
+          60,
+          1521,
+          936
+        ],
+        "interiorEdges": [
+          [
+            79,
+            1501
+          ],
+          [
+            80,
+            916
+          ]
+        ],
+        "interiorSize": [
+          1422,
+          836
+        ],
+        "interiorRatio": 1.700956937799043,
+        "passQA": false
+      },
+      "path": "public/assets/maths/ma11-tiled-floor-empty-v1.png",
+      "sha256": "e306a7cdf900f5b04ac952cacefe7fe88ca2e4dbc89032bb647d996925e5db09",
+      "nativeSize": [
+        1300,
+        820
+      ],
+      "insideCorners": [
+        [
+          50,
+          50
+        ],
+        [
+          1250,
+          50
+        ],
+        [
+          1250,
+          770
+        ],
+        [
+          50,
+          770
+        ]
+      ],
+      "insideSizePixels": [
+        1200,
+        720
+      ],
+      "pixelsPerMetre": 200,
+      "gridColumns": 30,
+      "gridRows": 18,
+      "squareGridCellPixels": 40,
+      "method": "Built-in ImageGen painting assembled as unscaled screed and skirting patches on the specified native canvas.",
+      "evidence": [
+        "work/maths-plate-geometry-pilot/20-nov-floor-exact-paper.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-floor-exact-white.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-floor-exact-black.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-floor-exact-grid.jpg"
+      ]
+    }
+  }
+}

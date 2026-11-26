@@ -1,0 +1,84 @@
+{
+  "brief": 238,
+  "design": "i05",
+  "assets": [
+    {
+      "name": "ma12-solar-panels-v1.png",
+      "path": "public\\assets\\maths\\ma12-solar-panels-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-603bb899-ea31-43f6-a682-9d1465989fa9.png",
+      "generatorNativeSize": [
+        1619,
+        971
+      ],
+      "nativeSize": [
+        2000,
+        1200
+      ],
+      "sha256": "5e11a3da39b82489a92affab38817887fe6f12707f630ba1260785034900f8ac",
+      "alphaBox": [
+        221,
+        244,
+        1776,
+        1039
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "arrayOuterCornersClockwise": [
+          [
+            408,
+            244
+          ],
+          [
+            1584,
+            244
+          ],
+          [
+            1763,
+            854
+          ],
+          [
+            235,
+            854
+          ]
+        ],
+        "grassLineYApprox": 1034,
+        "measurementUncertaintyPx": 4,
+        "panelCount": 6,
+        "arrangement": [
+          2,
+          3
+        ]
+      },
+      "operations": [
+        "Removedalpha<8noise",
+        "Transparentpadding190pxleft/191right,114top/115bottomonly;noresizing/stretching"
+      ],
+      "wholePlateResized": false,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "qa": "work\\brief238\\i05-solar-sun-qa.jpg",
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Asset ma12-solar-panels-v1.png,final2000x1200pxlandscape5:3. One freestanding solar array of EXACTLY SIX dark blue photovoltaic panels arranged TWO ROWS of THREE on a simple galvanised steel frame,seen from front and slightly above,faces visible and tilted back. Darkblue glass-covered cells,thin silver gridlines,subtle sky reflection confined to panels;shortlegs on thin strip of green grass. Fine ink and natural restrained watercolour house style,clean readable silhouette at560pxwide. Entirearray/frame/grass isolated on genuine transparent alpha,centred with8%clearoutermargins. NO people,hands,text,numbers,labels,logos,brands,wires,towers,buildings,skybackground,glow or groundshadow beyond grasspatch. Keepall six panel rectangles clearly countable,not extra rows or3D stackedpanelbanks.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Paper300/560pxwide with140pxreusedsun,black/whiteedges inspected. Sixglass-facedpanels clearly countable in2rows/3columns,steellegs/grass present,no people/text/skybackground/shadow.8%margins pass. No image resampling/stretching.",
+    "qaFiles": [
+      "work/brief238/i05-solar-sun-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,1 notes-fit should fix retained",
+    "findings": []
+  },
+  "sourceDesignSha256": "c1e394c184b2eedc7622401cb4c86433759b6c350eb1efce1536467a2ef3b1bf"
+}

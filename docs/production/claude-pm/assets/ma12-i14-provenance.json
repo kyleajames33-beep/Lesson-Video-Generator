@@ -1,0 +1,175 @@
+{
+  "brief": 238,
+  "design": "i14",
+  "assets": [
+    {
+      "name": "ma12-robot-vacuum-top-v1.png",
+      "path": "public\\assets\\maths\\ma12-robot-vacuum-top-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-c0cc653f-a5ad-4e81-9b60-3adb48686d1c.png",
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "nativeSize": [
+        800,
+        800
+      ],
+      "sha256": "e8fbb395f6d016024c0031489bad42169eea52a285878f3d0d2aba9e2c4a11bd",
+      "alphaBox": [
+        135,
+        153,
+        675,
+        656
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "centreApprox": [
+          379,
+          404
+        ],
+        "bodyRadiusPxApprox": 249,
+        "radiusUncertaintyPx": 5,
+        "frontDirectionDegrees": 0,
+        "sideBrushAt": "upperright;front points right"
+      },
+      "operations": [
+        "Removed alpha<8 noise",
+        "Uniform0.5reduction1254to627square,pad86,86"
+      ],
+      "uniformResampling": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    },
+    {
+      "name": "ma12-hallway-floor-v1.png",
+      "path": "public\\assets\\maths\\ma12-hallway-floor-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-5921868f-e2f0-4b89-9125-2283d2877673.png",
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "nativeSize": [
+        2400,
+        400
+      ],
+      "sha256": "5478f721eaf0c8a4dffc2432db9da47cbb53252eab6b30532021f291e9f905c7",
+      "alphaBox": [
+        0,
+        0,
+        2400,
+        338
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "horizontalEdgeMaxRgbaDifference": 0,
+        "centralJoinMaxRgbaDifference": 0,
+        "transparentLowerMarginPx": 62,
+        "skirtingEdge": "top",
+        "boardsDirection": "horizontal"
+      },
+      "operations": [
+        "Removed alpha<8 noise",
+        "Uniform2172x724to1200x400;mirrorsecondcopyatx1200 to make2400x400periodicstrip"
+      ],
+      "uniformResampling": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "marginPass": true,
+      "marginException": "Tile runs to top and side edges by brief;only bottom requires8%",
+      "state": "delivered",
+      "findings": []
+    },
+    {
+      "name": "ma12-snow-post-v1.png",
+      "path": "public\\assets\\maths\\ma12-snow-post-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-0f64912a-1f06-4332-811a-94cbc81b722a.png",
+      "generatorNativeSize": [
+        897,
+        1752
+      ],
+      "nativeSize": [
+        900,
+        2000
+      ],
+      "sha256": "42a801e8c3b32a49d61b7beee84ba9ae355d49c6607a2193c4d8d27165c84844",
+      "alphaBox": [
+        93,
+        266,
+        805,
+        1757
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "groundPointAtPostBaseApprox": [
+          446,
+          1686
+        ],
+        "majorTickYsTopToBottom": [
+          516,
+          750,
+          984,
+          1218,
+          1452,
+          1686
+        ],
+        "majorValuesCmTopToBottom": [
+          250,
+          200,
+          150,
+          100,
+          50,
+          0
+        ],
+        "majorPitchPx": 234,
+        "tickSpacingMaxErrorPx": 0,
+        "postCentreX": 446,
+        "cmToYMapping": "y=1686-4.68*depthCm",
+        "groundMeasurementUncertaintyPx": 4
+      },
+      "operations": [
+        "Removed alpha<8 noise",
+        "Clonegeneratedwoodtextureover6unevenblackmarks",
+        "Uniform0.9reduction897x1752to807x1577,pad46,210",
+        "Paint6evenlyspacedmajorbandswith234pxpitch;no text or snow"
+      ],
+      "uniformResampling": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "robot": "Scientific educational asset ma12-robot-vacuum-top-v1.png,800x800square. One modern circular robot vacuum cleaner viewed EXACTLYDIRECTLYABOVE orthographicplan,no perspective. Matt darkgrey charcoal top,lightgrey rim bumper,small raisedround sensor turret offsetslightlyleftofcentre,ONEsidebrush protrudes at right/frontedge. Frontdirection RIGHT. No buttonswithsymbols,no logos,brands,letters,writing,numbers,eyes,face,lights,glow or floor. Fineinkandwatercolour houseillustration,sensiblerestraint,subtlepapergrainwithinobjectonly. Faint shadowring ONLYwithin its own roundoutline. Centre(400,400),outerradiusabout260px,sidebrushwhiskersaroundx680;leaveatleast8%cleartransparentmarginall4sides. Wholeobject isolated onrealtransparentalpha,not whitepaperrectangle. No furniture,hands,people,wall,background.",
+    "floor": "Scientific educational painted asset ma12-hallway-floor-v1.png,2400x400panoramic6:1 strip,exactly directly overhead view of warm light honey oak timber hallwayfloorboards running LEFTTORIGHT. Plain clean white painted skirtingboard continuous along TOPEDGE seen from above. Floorboardstrip fills horizontalwidth tobothedges so horizontalrepetition can be finishedseamlessly. Timberboards fineinkgrainedanddelicatewatercolour,subtlevariation,notdarkhighcontrastknots. Bottom edge horizontal with at least40px transparentclearance beneath the boards. Authentic real transparentalpha belowstrip,no whitepaperrectangle,nomargins atleft/right. No perspective,no floorvanishingpoint,no wallview,rugs,furniture,shoes,people,writing,logos,symbols,skirtingcorners or doors. Simpleuniformstrip,notbusy,for roundrobotvacuum todrivealong.",
+    "snow": "Scientific educational ma12-snow-post-v1.png,900x2000portrait9:20. One tall slender timber snowdepthmarkerpost upright straight-on on bare damp alpineground gentle slope,small snowgumbranch behind on ONEside. Fineink natural grey-brown watercolour. NO SNOW on ground orpost: snow willbe drawnbycode. Six evenlyspaced paintedmajor tick marks/bandsONLY for0to250cm in50cmincrements;NO numbers,letters,units,writing,symbols,labels,signs,faces. Post extends fromabouty200to1700,groundatbasey1700,tickscentresy1700,1420,1140,860,580,300(bottomtotop),postcentre450. Thinblack horizontalmajor marks on paleweatheredpaintstripe,smallplainalternatingbands,NO minor ticksrequired. Wholepostgroundbranchcontainedwithin8%cleartransparentmarginsallsides. Baregroundsoftirregulartransparentedge,nosky,backgroundpaper,buildings,skis,lifts,people,hands,animals,tools or castshadow. Exact tickmarks finishedlocally.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Inspected robot150px onpaper,wholefloor repeated twice andblack/whiteedges,post280/560px tall. Floor joins visually continuous withRGBA edge difference0;top skirting intentionally touches top edge,onlylower margin required and62px clear. Post6major ticks234px apart,0cm tick atgroundbase;no digits or snow. Robot andpost8% margins pass.",
+    "qaFiles": [
+      "work/brief238/i14-art-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,2 should fix (REFERENCE-POINT and STALE-UNITS retained)",
+    "findings": []
+  },
+  "sourceDesignSha256": "a96c245217259579764a63ec567b9eccf190787a212d7872ef6efeb2b086ea28"
+}

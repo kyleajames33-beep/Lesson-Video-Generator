@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "27b15a85f8d4ba81d52f7fa0a033765836a0f1ffe38a3a58aadea87ad2da4f98",
+  "numbers": {
+    "means": [
+      8.0,
+      14.0,
+      26.0,
+      33.0,
+      35.0
+    ],
+    "spreads": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "relativeIntensitiesExact": [
+      "25/4",
+      "100/9",
+      "25",
+      "400/9",
+      "100"
+    ],
+    "relativeIntensitiesRounded": [
+      6,
+      11,
+      25,
+      44,
+      100
+    ],
+    "ghostDistances": [
+      17.5,
+      13.5,
+      12.0
+    ],
+    "ghostIntensitiesExact": [
+      "1600/49",
+      "40000/729",
+      "625/9"
+    ],
+    "ghostIntensitiesRounded": [
+      33,
+      55,
+      69
+    ],
+    "distanceHalvedLightMultiplier": 4,
+    "bicarbonateRatio": 3,
+    "sensitivityMean": 36.5,
+    "sensitivityAbove10cmMean": 1.5,
+    "contrastedMeans": [
+      8,
+      15,
+      30,
+      44,
+      58
+    ],
+    "contrastedDifferences": [
+      0,
+      1,
+      4,
+      11,
+      23
+    ],
+    "contrastedLastSegmentStillRises": true,
+    "temperatureDataset": [
+      [
+        15,
+        22
+      ],
+      [
+        20,
+        34
+      ],
+      [
+        25,
+        45
+      ],
+      [
+        30,
+        41
+      ],
+      [
+        35,
+        27
+      ],
+      [
+        40,
+        9
+      ]
+    ],
+    "temperaturePeak": [
+      25,
+      45
+    ],
+    "attemptMeans": [
+      6,
+      16,
+      26,
+      23,
+      10
+    ],
+    "attemptPeakSample": [
+      30,
+      26
+    ],
+    "attemptTemperatureGaps": [
+      10,
+      10,
+      10,
+      5
+    ],
+    "reusedShaChecks": [
+      {
+        "file": "public/assets/biology/y11-pondweed-tube-v1.png",
+        "sha256": "cbfeb9c628ee6e6484d51531ca88e67573e2a718b9a47749bedb534b9a768151",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/biology/y11-bench-lamp-v1.png",
+        "sha256": "671b4563190de025952141964b697d769fbfeb67986de169fac69679d91ddf92",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/biology/y11-heat-shield-tank-v1.png",
+        "sha256": "04544790cae6449ae9f51c3c471743ef64aa2c0b997454f9cceb2a2708131530",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/biology/y11-pondweed-gas-collection-v1.png",
+        "sha256": "05f475e15f910ebdb0a16d5774e752307e3772e00d4f4bc1f3bbd3d41b647629",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public/assets/chemistry/g1-tree-v1.png",
+        "sha256": "ccb0862ccc94be7ffb3f4a91acc7e324750551b0a73797ffd683e2182197336f",
+        "matchingNativeQa": true
+      }
+    ],
+    "emDashCount": 0,
+    "u2061Count": 0,
+    "scope": "Exact arithmetic and unchanged asset SHA checks. No physical lamp photometry, interpolation fit, gas calibration or engine run."
+  },
+  "priorErrorCheck": "checks/y11b-fa2-v08-rev3-error-check.md",
+  "scope": "Unchanged narration, independent numerical recalculation, current plate SHA and static thumbnail/context inspection. No new plates or production source edits."
+}

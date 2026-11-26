@@ -1,0 +1,82 @@
+{
+  "file": "public/assets/biology/y11-tetrapod-trackway-v1.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-fbb9ec3e-df80-49fe-aa7e-e51f304522e0.png",
+  "lesson": "bio-y11-fa3-v20",
+  "title": "Biology FA3 v20 tetrapod trackway",
+  "requestedSize": [
+    1800,
+    1200
+  ],
+  "reference": "public/assets/biology/y11-trilobite-phacops-v1.png",
+  "reportName": "y11b-fa3-v20-upgrade-plate-check.md",
+  "provenanceName": "y11fa3v20-brief242-trackway-provenance.json",
+  "anchors": {
+    "printCentres": [
+      [
+        534,
+        819
+      ],
+      [
+        822,
+        664
+      ],
+      [
+        568,
+        508
+      ],
+      [
+        864,
+        381
+      ],
+      [
+        645,
+        261
+      ],
+      [
+        908,
+        132
+      ]
+    ],
+    "slabBoundingBoxApprox": [
+      90,
+      17,
+      1448,
+      1010
+    ]
+  },
+  "prompt": "Create one new matching biology fossil plate y11-tetrapod-trackway-v1. Reference is stone texture and fine ink/soft painted style ONLY, do NOT draw trilobite. Landscape aspect approximately1800 by1200. A complete irregular slab of grey-brown weathered Devonian dolomite, seen straight down from above, gently lit upper left. In its surface a SHORT TRACKWAY of about SIX shallow FOUR-TOED tetrapod footprints, in two staggered alternating rows, with a very faint narrow central drag mark. Three footprints on left, three on right, all progressing toward the upper edge. Each footprint is a shallow natural depressed small animal foot impression with FOUR readable short toe marks at its forward end, no claws exaggerated. No human footprints or hands. The fossil impressions should be darker stone depressions with small rim highlights, not painted icons, paw pads or living animals. Keep every print well inside the slab and at least8percent clear transparent canvas margin around the entire slab. Natural broken rock outline with a fine dark edge. True transparent PNG, no external wash, halo, white border, cast shadow, ground, text, numbers, arrows, scale bars, labels, people, faces or modern objects. Teaching illustration of a fossil trace, not an authenticated photograph. No imposed question answers or measurements. Maintain native landscape ratio.",
+  "qa": {
+    "result": "static pass with margin limit",
+    "observations": [
+      "Six shallow four-toed impressions, staggered in two rows, and a faint central trace. No human prints or actual hands.",
+      "Actual native paper and dark composites have clean rock edges without surrounding wash or fringe. Raw generated preview's brown surround is not present in actual composites.",
+      "Returned 1536 by 1024 rather than approximate 1800 by 1200. Aspect remains 3:2. Top and bottom margins are below requested eight percent; allow extra scene padding.",
+      "Painted teaching illustration only, not a locality specimen photograph. Scene placement and labels remain pending."
+    ],
+    "evidence": [
+      "work/brief242/trackway-native-paper.jpg",
+      "work/brief242/trackway-native-dark.jpg"
+    ]
+  },
+  "reportText": "Delivered `public/assets/biology/y11-tetrapod-trackway-v1.png` and sidecar. Six shallow four-toed animal impressions lie in two staggered rows with a faint central trace on grey-brown stone. No people, actual hands, printed labels or question data.\n\nNative paper and dark composites pass static QA without a surrounding halo. The returned 1536 by 1024 canvas preserves the requested 3:2 aspect but is smaller than approximate 1800 by 1200. Narrow top and bottom margins need extra scene padding. This is a painted teaching illustration, not an authenticated photograph of the Polish specimen. Scene fit and label review remain pending.",
+  "statusText": "Delivered y11-tetrapod-trackway-v1.png, sidecar, provenance and manifest. Six four-toed impressions in two staggered rows; actual native paper/dark static QA passes. Native 1536 by 1024, 3:2 aspect; narrow vertical margins need extra scene padding. Teaching illustration only. Scene fit remains pending.",
+  "id": "y11-tetrapod-trackway-v1",
+  "brief": 242,
+  "sha256": "3b2cc82489ec970e67c29ceea6d528e29fc5811b4aad87d89f6136d7f49c797a",
+  "nativeSize": [
+    1536,
+    1024
+  ],
+  "alphaRange": [
+    0,
+    254
+  ],
+  "alphaAbove1": [
+    89,
+    14,
+    1452,
+    1014
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false
+}

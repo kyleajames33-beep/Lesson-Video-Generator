@@ -1,0 +1,500 @@
+{
+  "brief": 242,
+  "state": "five files delivered, exact registered-set acceptance pending",
+  "plates": [
+    {
+      "id": "y11-induced-fit-open-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-induced-fit-open-v1.png",
+      "sha256": "9409d54b892ed35f1c30469d022631280d7c5e0be00e04795a7323bc51f7973d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-b51ef018-7880-4312-ab86-807612d5bc16.png",
+      "prompt": "Final edit from the closed sibling: remove all gold, relax right-facing pocket into wider/taller smooth non-complementary U, approximately y440 to830 and deepest x535. Preserve far-side body, canvas, palette and texture. Original request was 2000 square; actual matched sibling canvas is 1254 square. No gold, text, people, exterior halo, wash or ground; genuine alpha. First narrower attempt rejected.",
+      "method": "Built-in image edits; generated PNG copied unchanged. Python only for QA alpha masks, measurements and preview overlays.",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAbove1": [
+        179,
+        236,
+        840,
+        1025
+      ],
+      "anchors": {
+        "canvasCentre": [
+          627,
+          627
+        ],
+        "substrateClosedCentre": [
+          705,
+          638
+        ],
+        "openPocketCentre": [
+          674,
+          625
+        ]
+      },
+      "qa": {
+        "result": "conditional static delivery; exact matched-set registration hold",
+        "observations": [
+          "Paper/dark native composites have clean alpha; teal/gold/lilac roles and intended open/closed contrast are legible. No people, text or question data.",
+          "Actual 1254 square differs from requested 2000 square. Do not claim requested canvas or pixel identity.",
+          "Open/closed far-side mask IoU 0.99418 in x<400, mean RGB difference 8.50/255; not identical. Cross-fade needs root acceptance or further matched art repair.",
+          "Closed gold versus isolated substrate mask IoU about 0.95590, not exact reproduction.",
+          "Loose-open state substrate can use code translation [0,-25] with zero opaque overlap. Near-miss at [0,-25] still has 18 overlapping opaque pixels of59686; static preview looks loose but exact no-intersection requirement is not certified.",
+          "Products are two pieces at x588..991,y486..785; do not claim they already sit outside the pocket. Release translation and scale must be set in code and checked."
+        ],
+        "evidence": [
+          "work\\brief242\\induced-fit-open-native-paper.jpg",
+          "work\\brief242\\induced-fit-open-native-dark.jpg"
+        ]
+      },
+      "registrationMeasurements": "work\\brief242\\induced-fit-registration-measurements.json",
+      "openPlacement": {
+        "substrate": {
+          "overlapPixels": 0,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        },
+        "near-miss": {
+          "overlapPixels": 18,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        }
+      },
+      "limitation": "Files delivered for root review, not build/voice clearance. Exact canvas, far-body identity, substrate registration and outgoing product placement remain held."
+    },
+    {
+      "id": "y11-induced-fit-closed-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-induced-fit-closed-v1.png",
+      "sha256": "ff90c594a3c9c1087d86e48fd8f978ee831b036a7cf9d3944947991dca23d6a3",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-fe8b9d7a-6d74-449a-a207-30f34454e98b.png",
+      "prompt": "Edit open teal enzyme using m5x enzyme-substrate only as gold-shape reference. Preserve far-side lobes and canvas position. Insert gold three-lobed substrate at original scale and curl both pocket lips inward closely around it without gap. Only pocket region changes. Fine ink-watercolour, true alpha, no extra molecules, text, people, halo or ground.",
+      "method": "Built-in image edits; generated PNG copied unchanged. Python only for QA alpha masks, measurements and preview overlays.",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAbove1": [
+        179,
+        236,
+        864,
+        1025
+      ],
+      "anchors": {
+        "canvasCentre": [
+          627,
+          627
+        ],
+        "substrateClosedCentre": [
+          705,
+          638
+        ],
+        "openPocketCentre": [
+          674,
+          625
+        ]
+      },
+      "qa": {
+        "result": "conditional static delivery; exact matched-set registration hold",
+        "observations": [
+          "Paper/dark native composites have clean alpha; teal/gold/lilac roles and intended open/closed contrast are legible. No people, text or question data.",
+          "Actual 1254 square differs from requested 2000 square. Do not claim requested canvas or pixel identity.",
+          "Open/closed far-side mask IoU 0.99418 in x<400, mean RGB difference 8.50/255; not identical. Cross-fade needs root acceptance or further matched art repair.",
+          "Closed gold versus isolated substrate mask IoU about 0.95590, not exact reproduction.",
+          "Loose-open state substrate can use code translation [0,-25] with zero opaque overlap. Near-miss at [0,-25] still has 18 overlapping opaque pixels of59686; static preview looks loose but exact no-intersection requirement is not certified.",
+          "Products are two pieces at x588..991,y486..785; do not claim they already sit outside the pocket. Release translation and scale must be set in code and checked."
+        ],
+        "evidence": [
+          "work\\brief242\\induced-fit-closed-native-paper.jpg",
+          "work\\brief242\\induced-fit-closed-native-dark.jpg"
+        ]
+      },
+      "registrationMeasurements": "work\\brief242\\induced-fit-registration-measurements.json",
+      "openPlacement": {
+        "substrate": {
+          "overlapPixels": 0,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        },
+        "near-miss": {
+          "overlapPixels": 18,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        }
+      },
+      "limitation": "Files delivered for root review, not build/voice clearance. Exact canvas, far-body identity, substrate registration and outgoing product placement remain held."
+    },
+    {
+      "id": "y11-induced-fit-substrate-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-induced-fit-substrate-v1.png",
+      "sha256": "9c04769f392d3f13a5b5fa35c1d0eabcbb6b808fbfcde93b62bf68ba83ddfc8f",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ed61c107-2107-4ed0-83a8-e23ec60b4792.png",
+      "prompt": "From closed sibling remove all teal, keep only existing gold three-lobed substrate at exact same canvas position, scale, outline and texture; do not recenter. Same 1254 square alpha canvas, no other objects, halo, text or people.",
+      "method": "Built-in image edits; generated PNG copied unchanged. Python only for QA alpha masks, measurements and preview overlays.",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAbove1": [
+        545,
+        488,
+        865,
+        787
+      ],
+      "anchors": {
+        "canvasCentre": [
+          627,
+          627
+        ],
+        "substrateClosedCentre": [
+          705,
+          638
+        ],
+        "openPocketCentre": [
+          674,
+          625
+        ]
+      },
+      "qa": {
+        "result": "conditional static delivery; exact matched-set registration hold",
+        "observations": [
+          "Paper/dark native composites have clean alpha; teal/gold/lilac roles and intended open/closed contrast are legible. No people, text or question data.",
+          "Actual 1254 square differs from requested 2000 square. Do not claim requested canvas or pixel identity.",
+          "Open/closed far-side mask IoU 0.99418 in x<400, mean RGB difference 8.50/255; not identical. Cross-fade needs root acceptance or further matched art repair.",
+          "Closed gold versus isolated substrate mask IoU about 0.95590, not exact reproduction.",
+          "Loose-open state substrate can use code translation [0,-25] with zero opaque overlap. Near-miss at [0,-25] still has 18 overlapping opaque pixels of59686; static preview looks loose but exact no-intersection requirement is not certified.",
+          "Products are two pieces at x588..991,y486..785; do not claim they already sit outside the pocket. Release translation and scale must be set in code and checked."
+        ],
+        "evidence": [
+          "work\\brief242\\induced-fit-substrate-native-paper.jpg",
+          "work\\brief242\\induced-fit-substrate-native-dark.jpg"
+        ]
+      },
+      "registrationMeasurements": "work\\brief242\\induced-fit-registration-measurements.json",
+      "openPlacement": {
+        "substrate": {
+          "overlapPixels": 0,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        },
+        "near-miss": {
+          "overlapPixels": 18,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        }
+      },
+      "limitation": "Files delivered for root review, not build/voice clearance. Exact canvas, far-body identity, substrate registration and outgoing product placement remain held."
+    },
+    {
+      "id": "y11-induced-fit-products-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-induced-fit-products-v1.png",
+      "sha256": "5fcd5fc77dba4198e30602e9073b07be6c9b85e2b2737ec057ffacaa9934cc85",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-6351bdcb-4ea9-45a6-8447-b66707fc1cb0.png",
+      "prompt": "Split gold substrate into exactly two gold pieces along one clean vertical break, preserve scale and lobe outline, separate slightly just right of pocket mouth; requested centre about x960,y620 and span under350 on1254 square. No intact extra molecule, enzyme, text, people, halo or ground. Actual returned placement differs and requires code movement, recorded.",
+      "method": "Built-in image edits; generated PNG copied unchanged. Python only for QA alpha masks, measurements and preview overlays.",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAbove1": [
+        588,
+        486,
+        991,
+        785
+      ],
+      "anchors": {
+        "canvasCentre": [
+          627,
+          627
+        ],
+        "substrateClosedCentre": [
+          705,
+          638
+        ],
+        "openPocketCentre": [
+          674,
+          625
+        ]
+      },
+      "qa": {
+        "result": "conditional static delivery; exact matched-set registration hold",
+        "observations": [
+          "Paper/dark native composites have clean alpha; teal/gold/lilac roles and intended open/closed contrast are legible. No people, text or question data.",
+          "Actual 1254 square differs from requested 2000 square. Do not claim requested canvas or pixel identity.",
+          "Open/closed far-side mask IoU 0.99418 in x<400, mean RGB difference 8.50/255; not identical. Cross-fade needs root acceptance or further matched art repair.",
+          "Closed gold versus isolated substrate mask IoU about 0.95590, not exact reproduction.",
+          "Loose-open state substrate can use code translation [0,-25] with zero opaque overlap. Near-miss at [0,-25] still has 18 overlapping opaque pixels of59686; static preview looks loose but exact no-intersection requirement is not certified.",
+          "Products are two pieces at x588..991,y486..785; do not claim they already sit outside the pocket. Release translation and scale must be set in code and checked."
+        ],
+        "evidence": [
+          "work\\brief242\\induced-fit-products-native-paper.jpg",
+          "work\\brief242\\induced-fit-products-native-dark.jpg"
+        ]
+      },
+      "registrationMeasurements": "work\\brief242\\induced-fit-registration-measurements.json",
+      "openPlacement": {
+        "substrate": {
+          "overlapPixels": 0,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        },
+        "near-miss": {
+          "overlapPixels": 18,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        }
+      },
+      "limitation": "Files delivered for root review, not build/voice clearance. Exact canvas, far-body identity, substrate registration and outgoing product placement remain held."
+    },
+    {
+      "id": "y11-induced-fit-near-miss-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-induced-fit-near-miss-v1.png",
+      "sha256": "c219c04c1dc379ca3602a40b388bd3f2d318b6761c13a6f54bcc0c58b5e18e9d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-b1f7deb6-1c2c-42c7-b032-3430ee3e6e82.png",
+      "prompt": "From gold substrate preserve approximate size/position on1254 square. Change colour to muted lilac-grey. Square off and slightly lengthen only left-facing lobe, retain other rounded lobes. Fine ink-watercolour; no enzyme, other molecules, labels, people, halo, wash or ground.",
+      "method": "Built-in image edits; generated PNG copied unchanged. Python only for QA alpha masks, measurements and preview overlays.",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAbove1": [
+        517,
+        488,
+        865,
+        789
+      ],
+      "anchors": {
+        "canvasCentre": [
+          627,
+          627
+        ],
+        "substrateClosedCentre": [
+          705,
+          638
+        ],
+        "openPocketCentre": [
+          674,
+          625
+        ]
+      },
+      "qa": {
+        "result": "conditional static delivery; exact matched-set registration hold",
+        "observations": [
+          "Paper/dark native composites have clean alpha; teal/gold/lilac roles and intended open/closed contrast are legible. No people, text or question data.",
+          "Actual 1254 square differs from requested 2000 square. Do not claim requested canvas or pixel identity.",
+          "Open/closed far-side mask IoU 0.99418 in x<400, mean RGB difference 8.50/255; not identical. Cross-fade needs root acceptance or further matched art repair.",
+          "Closed gold versus isolated substrate mask IoU about 0.95590, not exact reproduction.",
+          "Loose-open state substrate can use code translation [0,-25] with zero opaque overlap. Near-miss at [0,-25] still has 18 overlapping opaque pixels of59686; static preview looks loose but exact no-intersection requirement is not certified.",
+          "Products are two pieces at x588..991,y486..785; do not claim they already sit outside the pocket. Release translation and scale must be set in code and checked."
+        ],
+        "evidence": [
+          "work\\brief242\\induced-fit-near-miss-native-paper.jpg",
+          "work\\brief242\\induced-fit-near-miss-native-dark.jpg"
+        ]
+      },
+      "registrationMeasurements": "work\\brief242\\induced-fit-registration-measurements.json",
+      "openPlacement": {
+        "substrate": {
+          "overlapPixels": 0,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        },
+        "near-miss": {
+          "overlapPixels": 18,
+          "translation": [
+            0,
+            -25
+          ],
+          "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+        }
+      },
+      "limitation": "Files delivered for root review, not build/voice clearance. Exact canvas, far-body identity, substrate registration and outgoing product placement remain held."
+    }
+  ],
+  "registration": {
+    "plates": [
+      {
+        "id": "open",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-b51ef018-7880-4312-ab86-807612d5bc16.png",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaAbove1": [
+          179,
+          236,
+          840,
+          1025
+        ]
+      },
+      {
+        "id": "closed",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-fe8b9d7a-6d74-449a-a207-30f34454e98b.png",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaAbove1": [
+          179,
+          236,
+          864,
+          1025
+        ]
+      },
+      {
+        "id": "substrate",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-ed61c107-2107-4ed0-83a8-e23ec60b4792.png",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaAbove1": [
+          545,
+          488,
+          865,
+          787
+        ]
+      },
+      {
+        "id": "products",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-6351bdcb-4ea9-45a6-8447-b66707fc1cb0.png",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaAbove1": [
+          588,
+          486,
+          991,
+          785
+        ]
+      },
+      {
+        "id": "near-miss",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-b1f7deb6-1c2c-42c7-b032-3430ee3e6e82.png",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "alphaAbove1": [
+          517,
+          488,
+          865,
+          789
+        ]
+      }
+    ],
+    "farBodyOpenClosed": {
+      "region": "canvas x less than 400, original 1254 square",
+      "alphaMaskIoU": 0.9941784508617356,
+      "meanRgbAbsoluteDifferenceOnCommonOpaquePixels": 8.504488972056937,
+      "exactPixelEquality": false
+    },
+    "overlayAtUnchangedCanvasCoordinates": {
+      "substrateWithOpenEnzymePixels": 1040,
+      "substrateOpaquePixels": 55398,
+      "nearMissWithOpenEnzymePixels": 1189,
+      "nearMissOpaquePixels": 59686,
+      "closedGoldToSubstrateMaskIoU": 0.955900935051807
+    },
+    "requestedCanvas": [
+      2000,
+      2000
+    ],
+    "actualCanvas": [
+      1254,
+      1254
+    ],
+    "noProductionPixelEdits": true
+  },
+  "openPlacement": {
+    "substrate": {
+      "overlapPixels": 0,
+      "translation": [
+        0,
+        -25
+      ],
+      "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+    },
+    "near-miss": {
+      "overlapPixels": 18,
+      "translation": [
+        0,
+        -25
+      ],
+      "method": "Uniform canvas translation for loose-open state only; closed state remains original anchor"
+    }
+  }
+}

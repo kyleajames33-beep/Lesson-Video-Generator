@@ -1,0 +1,122 @@
+{
+  "brief": 248,
+  "lesson": "e04",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-26993454-d15c-4fb7-8335-094d3f67f45a.png",
+      "sha256": "814afae1ba0fe7577a6ca84c3a64f2e9a365cd310353d894d26edb5eb747fae8",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        12,
+        242,
+        2160,
+        501
+      ],
+      "marginFractions": [
+        0.0055248618784530384,
+        0.3342541436464088,
+        0.0055248618784530384,
+        0.3080110497237569
+      ],
+      "evidence": [
+        "work/brief248/e04-slide-rule-body-native-paper.jpg",
+        "work/brief248/e04-slide-rule-body-native-dark.jpg",
+        "work/brief248/e04-slide-rule-body-native-white.jpg",
+        "work/brief248/e04-slide-rule-body-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-slide-rule-body-v1.png",
+      "path": "public/assets/maths/ma11-slide-rule-body-v1.png",
+      "brief": 248,
+      "lesson": "e04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        4000,
+        600
+      ],
+      "qa": {
+        "result": "qualified: native common scale and vertical groove clip demonstrated; blank bands, alpha and1600/full-width checks pass",
+        "observations": [
+          "Generated slide is thicker than groove; scene must clip it, not stretch an axis.",
+          "Numbers/ticks/cursor exist only in QA overlay; source PNG faces are blank."
+        ],
+        "evidence": [
+          "work/brief248/e04-slide-rule-fit-paper.jpg",
+          "work/brief248/e04-slide-rule-fit-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-slide-rule-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-75ad7b3e-c1ff-402f-b0f1-7fbb2408a86e.png",
+      "sha256": "a42c602530f36aca4c29f03154ff211ef8a43d06f0c63118b1931f0024cb87fb",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        14,
+        335,
+        2157,
+        405
+      ],
+      "marginFractions": [
+        0.006445672191528545,
+        0.462707182320442,
+        0.006906077348066298,
+        0.44060773480662985
+      ],
+      "evidence": [
+        "work/brief248/e04-slide-rule-slide-native-paper.jpg",
+        "work/brief248/e04-slide-rule-slide-native-dark.jpg",
+        "work/brief248/e04-slide-rule-slide-native-white.jpg",
+        "work/brief248/e04-slide-rule-slide-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-slide-rule-slide-v1.png",
+      "path": "public/assets/maths/ma11-slide-rule-slide-v1.png",
+      "brief": 248,
+      "lesson": "e04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        4000,
+        160
+      ],
+      "qa": {
+        "result": "qualified: native common scale and vertical groove clip demonstrated; blank bands, alpha and1600/full-width checks pass",
+        "observations": [
+          "Generated slide is thicker than groove; scene must clip it, not stretch an axis.",
+          "Numbers/ticks/cursor exist only in QA overlay; source PNG faces are blank."
+        ],
+        "evidence": [
+          "work/brief248/e04-slide-rule-fit-paper.jpg",
+          "work/brief248/e04-slide-rule-fit-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Slide-rule stock and slide delivered, each native2172x724, with shared2030px log-scale length and indexx70..2100. Qualified fit: slide is thicker than groove, so overlay at0,15 and clip visible thickness toy352..402; no single-axis stretch.1600/native-width paper/dark proofs show30px numerals and the slide1 over body2, slide3 over body6 alignment within0.10px after integer translation. Root owns masks/motion. Requested shared sidecar ma11-slide-rule-v1.json installed.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/e04-generation.json",
+    "work/brief248/e04-slide-rule-geometry.json",
+    "work/brief248/qa-slide-rule.py",
+    "work/brief248/e04-slide-rule-fit-paper.jpg",
+    "work/brief248/e04-slide-rule-fit-dark.jpg"
+  ]
+}

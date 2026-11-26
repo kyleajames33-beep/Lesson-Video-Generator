@@ -5,3 +5,10 @@
 The bus model needs an explicitly uniform arrival phase within the ten-minute cycle. A random arrival independent of the timetable alone does not guarantee uniform phase, and even perfectly regular buses do not imply it. Likewise a rounding error is uniform only under a suitable model for the original measurements' fractional parts. Say equal-width intervals have equal probabilities rather than suggesting any exact wait has a positive probability. The interval-width rule in the memory aid must use only the overlap with the support when a query extends beyond it. The formula F(x)=(x−a)/(b−a) applies inside [a,b], with the stated constant pieces outside.
 
 Direct browser inspection of lesson 09 card 05 confirms the bus on [0,10] and its 0.4 and 0.4 probabilities; Q2 confirms the train on [1,5], its 1/4 density and (t−1)/4 CDF, 0.375 and 0.5 answers, and no unique mode.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `831272b700107971f520fced50e9677ac7a584f332aa837cdf73aba3fefe9c0d`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Uniformarrivalphase nowexplicit assumption;equal-width intervals compared instead ofpointprobabilities. Roundingerror uniformity conditionalon fractionalparts notbunched nearwholeunits. Widthratio formula expressly intersectssupport[a,b]. Flatdensity1/(b-a),CDFpieces,andbuswait values remainunchanged.
+
+Independent recount:5859characters/16scene strings,noem dashes. Changed narration andauthor repairnotes comparedwith priorfullreview;unchanged calculations/live-sourcechecksretained. Current stringsinwork/brief240/root68-source-audit/s07.json. Nativeartmeasurements/guide deviationsretainedforbuilderfitting underdecision30;root68readytovoice. No paid speechorfinishedtake repeatedbythisreview. Measuredtiming,actualmotionandhumanlisteningremainseparategates.

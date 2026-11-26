@@ -1,0 +1,101 @@
+{
+  "design": "phys-y12-m7-v14",
+  "sourceSha256": "c4bb6144315cb500f098bb657c2c28670b740e30b91e3f5f6bbf46f6be477090",
+  "new": [
+    {
+      "key": "space-station",
+      "name": "y12p-space-station-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-b7015bf4-e669-4152-b652-4e6f8550a6cd.png",
+      "sha256": "7aaaa69718a5f4340da394ef72fa913291218d1e6b1eb1c5441ab042fa98971d",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        272,
+        79,
+        1901,
+        668
+      ],
+      "visibleBoundsAt16": [
+        282,
+        279,
+        1893,
+        508
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.1298,
+        0.3854,
+        0.1285,
+        0.2983
+      ],
+      "anchors": {
+        "flatDeckLineApprox": [
+          [
+            442,
+            280
+          ],
+          [
+            1760,
+            280
+          ]
+        ],
+        "tolerancePixels": 10
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/space-station.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-space-station-v1.png"
+    }
+  ],
+  "reuse": [
+    {
+      "reference": "phys-y11-metre-rule-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metre-rule-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-space-station-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-space-station-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-spacecraft-exhaust-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spacecraft-exhaust-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-spacecraft-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spacecraft-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "nativeAspectRatioPreserved": true,
+  "newImagesTool": "image_gen.imagegen",
+  "humanListening": "not applicable to static art; pending for lesson",
+  "builtMotion": "pending",
+  "conditionalFilament": "Existing phys-y11-filament-lamp-v1.png has true varying alpha0..254 and a clean visible composite; no replacement requested.",
+  "optionalPolariser": "Root permitted coded discs as fallback; optional painted mount not generated."
+}

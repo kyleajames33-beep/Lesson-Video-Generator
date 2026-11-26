@@ -1,0 +1,219 @@
+[
+  {
+    "id": "m5x-pencil-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/biology/m5x-pencil-v1.png",
+    "sha256": "9f70255faf98f7c7f00bce068177a3d0e78f185514447d2c9246aee9c0685866",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      160,
+      214,
+      1840,
+      1786
+    ],
+    "qa": {
+      "result": "static pass",
+      "observations": [
+        "Plain sharpened wooden pencil with clean alpha. No writing or people.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m5x-pencil-v1-native-paper.jpg",
+        "work/brief242/m5x-pencil-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "m8-balance-watch-glass-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/m8-balance-watch-glass-v1.png",
+    "sha256": "e5f4320c70f3c4c8900e0efdf8f5675a5264e7069e175a3897dd5c8f697ee9e7",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      548,
+      373,
+      1567,
+      1681
+    ],
+    "qa": {
+      "result": "static pass for M1 v05 handoff only",
+      "observations": [
+        "Blank-display analytical balance in draught shield, with powder on paper in a watch glass. M1 v06 explicitly excludes this balance. No precision claim inferred.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m8-balance-watch-glass-v1-native-paper.jpg",
+        "work/brief242/m8-balance-watch-glass-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-chromatography-jar-back-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-chromatography-jar-back-v1.png",
+    "sha256": "96367231f889d3c698feb37d3558a4c5ac698458ba1be6acdcb0f92bc422b509",
+    "nativeSize": [
+      926,
+      1698
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      143,
+      304,
+      782,
+      1439
+    ],
+    "qa": {
+      "result": "static alpha pass; paired scene check pending",
+      "observations": [
+        "Empty blue glass jar, clean actual exterior alpha. Inner floor approximately y1350, inner walls x164 and x762. Width at 900-pixel plate height is about 317 pixels, enough for the requested 220-pixel coded strip.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-chromatography-jar-back-v1-native-paper.jpg",
+        "work/brief242/y11c-chromatography-jar-back-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-chromatography-jar-front-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-chromatography-jar-front-v1.png",
+    "sha256": "179da05d8eb8810ba412fea4e67f5940964a06feccbbf9cd5de440a35295f0e1",
+    "nativeSize": [
+      926,
+      1699
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      0,
+      102,
+      926,
+      1445
+    ],
+    "qa": {
+      "result": "exterior alpha wash hold; pair registration pending",
+      "observations": [
+        "Actual dark composite shows a faint wash outside the jar walls. Alpha samples at (90,600), (120,900), (800,600), (830,900) are 7, 1, 6, 1. This is visible exterior paint, not just a raw-preview background. Front is one pixel taller than back. QA-only white strip and baseline remain legible between layers; that does not clear the exterior wash or the final animation.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-chromatography-jar-front-v1-native-paper.jpg",
+        "work/brief242/y11c-chromatography-jar-front-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-top-pan-balance-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-top-pan-balance-v1.png",
+    "sha256": "1012f17ff0c0128a714315dfb734d546a12ac7c6dd6e54169b977890c52491c8",
+    "nativeSize": [
+      1402,
+      1122
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      49,
+      135,
+      1325,
+      1030
+    ],
+    "qa": {
+      "result": "static pass; scene placement pending",
+      "observations": [
+        "Empty broad pan, blank dark display and two blank buttons. Pan centre approximately (641,299), width 890. Display approximate bounding box (432,515) to (1138,726), but the window is a quadrilateral. Native left margin about 3.5 percent needs extra scene padding.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-top-pan-balance-v1-native-paper.jpg",
+        "work/brief242/y11c-top-pan-balance-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-evaporating-basin-empty-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-evaporating-basin-empty-v1.png",
+    "sha256": "a283773051a14cfca2f6acb849597a3890fa480aea4afaabc716b1d60b74c601",
+    "nativeSize": [
+      1402,
+      1122
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      291,
+      367,
+      1065,
+      772
+    ],
+    "qa": {
+      "result": "static pass; exact pair registration pending",
+      "observations": [
+        "Empty dry porcelain basin on the grey mat retained by the original paint prompt. Same 1402 by 1122 canvas as crystals partner, alpha overlap 0.9925, not exact shared pixels. The mat must be handled consistently when weighing by difference. No mass correction invented.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-evaporating-basin-empty-v1-native-paper.jpg",
+        "work/brief242/y11c-evaporating-basin-empty-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-sand-salt-dry-beaker-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-sand-salt-dry-beaker-v1.png",
+    "sha256": "23eeb58de5d6bba30d0b722344f490f19a01d68ca17e62d69d987030345d31d8",
+    "nativeSize": [
+      1182,
+      1330
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      158,
+      144,
+      986,
+      1215
+    ],
+    "qa": {
+      "result": "existing fill-height hold confirmed; alpha passes",
+      "observations": [
+        "Dry golden sand and white salt grains, no water. Contents read closer to half full than the requested one-third, confirming the old brief 177 finding rather than a new duplicate. Root acceptance or repaint choice remains pending.",
+        "Actual native paper and dark views inspected. No people, faces, printed numbers or new question data. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-sand-salt-dry-beaker-v1-native-paper.jpg",
+        "work/brief242/y11c-sand-salt-dry-beaker-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

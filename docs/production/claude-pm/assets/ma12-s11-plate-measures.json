@@ -1,0 +1,121 @@
+{
+  "brief": 240,
+  "lessons": [
+    "s11",
+    "s12"
+  ],
+  "path": "public/assets/chemistry/m7-pet-bottle-v1.png",
+  "sha256": "d2389645ff63f995b3541916ade24be8b189a4d7d22cf81a0c059e81793cd2e2",
+  "nativeSize": [
+    2000,
+    2000
+  ],
+  "alphaBox": [
+    789,
+    400,
+    1211,
+    1600
+  ],
+  "measurementMethod": "Visual measurement on original asset displayed at0.8scale, coordinates converted to native file pixels; conservative interior, approximate8-15px uncertainty. Not a liquid-volume calibration.",
+  "liquidCavity": {
+    "neckTopY": 570,
+    "bottomCentreY": 1510,
+    "safeBodyFillRangeY": [
+      850,
+      1390
+    ],
+    "innerBodyRect": [
+      840,
+      880,
+      1160,
+      1380
+    ],
+    "recommendedInteriorMaskPolygon": [
+      [
+        960,
+        575
+      ],
+      [
+        1040,
+        575
+      ],
+      [
+        1040,
+        600
+      ],
+      [
+        1080,
+        650
+      ],
+      [
+        1150,
+        760
+      ],
+      [
+        1180,
+        835
+      ],
+      [
+        1170,
+        880
+      ],
+      [
+        1170,
+        1380
+      ],
+      [
+        1130,
+        1450
+      ],
+      [
+        1080,
+        1480
+      ],
+      [
+        1000,
+        1510
+      ],
+      [
+        920,
+        1480
+      ],
+      [
+        870,
+        1450
+      ],
+      [
+        830,
+        1380
+      ],
+      [
+        830,
+        880
+      ],
+      [
+        820,
+        835
+      ],
+      [
+        850,
+        760
+      ],
+      [
+        920,
+        650
+      ],
+      [
+        960,
+        600
+      ]
+    ],
+    "uncertaintyPx": 15,
+    "note": "Use the interior mask and painted outline rather than a rectangular overlay. Base indent and shoulder mean linear y is not linear volume; these are drawing anchors only."
+  },
+  "reuse": {
+    "fishWidth": 360,
+    "bottleHeight": 300,
+    "keepNativeAspect": true,
+    "nonuniformStretch": false,
+    "builderMustCheck": "Coded fill remains inside painted bottle; cap removal/fill action belongs to build, not this plate."
+  }
+}

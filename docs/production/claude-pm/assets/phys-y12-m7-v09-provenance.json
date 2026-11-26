@@ -1,0 +1,302 @@
+{
+  "design": "phys-y12-m7-v09",
+  "sourceSha256": "b624d15261fb586b037088a3764f807add0575f8d541855ae4e0875e758ef953",
+  "new": [
+    {
+      "key": "bar-heater",
+      "name": "y12p-bar-heater-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-8b73b98d-3c74-49e7-bcfe-517ed4ca4b55.png",
+      "sha256": "67827b283a339fc4f04dd4b3a1c49b5ff52a0f16399ff2bbf6cea100898fb7eb",
+      "size": [
+        1586,
+        992
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        25,
+        23,
+        1526,
+        992
+      ],
+      "visibleBoundsAt16": [
+        140,
+        233,
+        1441,
+        859
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.0883,
+        0.2349,
+        0.0914,
+        0.1341
+      ],
+      "anchors": {},
+      "qa": "docs/production/claude-pm/assets/brief191-qa/bar-heater.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-bar-heater-v1.png"
+    },
+    {
+      "key": "bar-heater-glow",
+      "name": "y12p-bar-heater-glow-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-dc6d3442-48e8-4f81-a378-e3502e8b0709.png",
+      "sha256": "ceff999e7b51fc4dad70a61ff91d5f62c04c641eda3e5325068f74651366ca2e",
+      "size": [
+        1585,
+        992
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        25,
+        33,
+        1485,
+        954
+      ],
+      "visibleBoundsAt16": [
+        138,
+        230,
+        1441,
+        861
+      ],
+      "status": "held: crossfade registration requirement not met",
+      "visibleMarginsFraction": [
+        0.0871,
+        0.2319,
+        0.0909,
+        0.1321
+      ],
+      "anchors": {},
+      "qa": "docs/production/claude-pm/assets/brief191-qa/bar-heater-glow.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "issue": "Cold native canvas1586x992, hot candidate1585x992. Two image edits did not preserve the exact canvas/outline registration. Do not use for a pixel-aligned crossfade. Cold plate is delivered; hot originals remain in generated_images. No raster was resized, padded or cropped."
+    },
+    {
+      "key": "bench-lamp",
+      "name": "y12p-bench-lamp-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-ac705a69-a084-4dd6-a7f2-d15a6025d948.png",
+      "sha256": "e002b025341f72e5abb8c0409f5240284613156756716483ffe7f2c56361c235",
+      "size": [
+        1484,
+        1060
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        25,
+        17,
+        1470,
+        1010
+      ],
+      "visibleBoundsAt16": [
+        103,
+        127,
+        1224,
+        959
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.0694,
+        0.1198,
+        0.1752,
+        0.0953
+      ],
+      "anchors": {
+        "apertureCentreApprox": [
+          1125,
+          358
+        ],
+        "tolerancePixels": 15
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/bench-lamp.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-bench-lamp-v1.png"
+    }
+  ],
+  "reuse": [
+    {
+      "reference": "phys-y11-filament-lamp-v2.png",
+      "paths": [
+        "public/assets/physics/phys-y11-filament-lamp-v2.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-panel-heater-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-panel-heater-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-thermal-camera-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-thermal-camera-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-toaster-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-toaster-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-metal-plate-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metal-plate-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-sun-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sun-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-bar-heater-glow-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "reference": "y12p-bar-heater-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-bar-heater-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-bench-lamp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-bench-lamp-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "nativeAspectRatioPreserved": true,
+  "newImagesTool": "image_gen.imagegen",
+  "humanListening": "not applicable to static art; pending for lesson",
+  "builtMotion": "pending",
+  "conditionalFilament": "Existing phys-y11-filament-lamp-v1.png has true varying alpha0..254 and a clean visible composite; no replacement requested.",
+  "optionalPolariser": "Root permitted coded discs as fallback; optional painted mount not generated.",
+  "brief233": {
+    "sourceSha256": "d8e5ee9f44642c27e9a204edb32d4fbeaf28b0df4109bdc9d8ca85649070c0e7",
+    "date": "2026-11-09",
+    "historicalProvenanceRetained": true,
+    "repairReport": "checks/p-y12-m7-v09-rev2-error-check.md",
+    "newSensor": null,
+    "glow": {
+      "path": "public/assets/physics/y12p-bar-heater-glow-v1.png",
+      "sha256": "08dae6e7d055768f12efdf5ede12a6620a329544c6bd8b0d87a331d1abb3a6f6",
+      "size": [
+        1586,
+        992
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        25,
+        23,
+        1526,
+        992
+      ],
+      "visibleBoundsAt16": [
+        140,
+        233,
+        1441,
+        859
+      ],
+      "source": {
+        "path": "public/assets/physics/y12p-bar-heater-v1.png",
+        "sha256": "67827b283a339fc4f04dd4b3a1c49b5ff52a0f16399ff2bbf6cea100898fb7eb",
+        "size": [
+          1586,
+          992
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": [
+          25,
+          23,
+          1526,
+          992
+        ],
+        "visibleBoundsAt16": [
+          140,
+          233,
+          1441,
+          859
+        ]
+      },
+      "method": "One local colour-only registered retry using approved pixel edits; coil and reflector masks; foreground guard excluded. Original alpha identical, geometry identical, all pixels outside edit mask identical.",
+      "nativeUnaltered": false,
+      "alphaExactlyEqual": true,
+      "outsideEditMaskExactlyEqual": true,
+      "changedPixels": 362826,
+      "coilMaskPolygon": [
+        [
+          365,
+          468
+        ],
+        [
+          1289,
+          439
+        ],
+        [
+          1289,
+          486
+        ],
+        [
+          365,
+          518
+        ]
+      ],
+      "elementCoilBoundsApprox": [
+        365,
+        439,
+        1290,
+        519
+      ],
+      "rodIncludingCeramicBoundsApprox": [
+        276,
+        430,
+        1360,
+        541
+      ],
+      "coordinateConvention": "native1586x992; right/bottom exclusive; approximate visible feature bounds, use polygon and guard exclusions for an overlay",
+      "builtCrossfade": "pending",
+      "heldPath": "work/brief233/held-bar-heater-glow-local.png",
+      "publicPathPublished": false,
+      "status": "held after visual QA: geometric registration passes, but rectangular tint boundaries and misplaced guard exclusions are visible; use root-approved coded glow instead",
+      "qa": "docs/production/claude-pm/assets/brief191-qa/bar-heater-glow-registered-nov09.jpg",
+      "retryCount": 1,
+      "furtherRetryPlanned": false
+    },
+    "markedOldSensor": null,
+    "builtMotion": "pending",
+    "humanListening": "pending"
+  }
+}

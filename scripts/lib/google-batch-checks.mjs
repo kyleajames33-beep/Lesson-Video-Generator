@@ -146,6 +146,31 @@ export function compareGoogleWords(expected, heard) {
 }
 
 export const riskyGoogleScene = text => text.length > 900 || /\bPause here to answer\./i.test(text);
+
+// These holds are explicit pause marks carried over from the design. They do
+// not excuse inserted speech. Other deliberate pauses can be marked explicitly.
+export const googleSceneHasLongPause = scene => scene.deliberateLongPauses === true ||
+  scene.holdKind === 'notes' || (scene.holdKind === 'countdown' &&
+    Number(scene.planningResponseInterval?.countdownSeconds ?? scene.holdSeconds) >= 3);
+
+// Brief 257: recognition differences may need review, but extra speech must fail.
+// Use the same edit alignment for both new and historical recognition results.
+export function checkGoogleRunOn({text, seconds, comparison, deliberateLongPauses = false, expectedText = text}) {
+  if (!(seconds > 0) || !Array.isArray(comparison?.mismatches)) throw Error('Missing run-on check inputs');
+  const insertions = comparison.mismatches.filter(m => m.expected === '' && m.recognised);
+  const insertedWords = insertions.reduce((n, m) => n + tokenize(m.recognised).length, 0);
+  const endIndex = tokenize(expectedText).length;
+  const trailingInsertedWords = insertions.filter(m => m.wordIndex === endIndex)
+    .reduce((n, m) => n + tokenize(m.recognised).length, 0);
+  const charactersPerSecond = text.length / seconds;
+  const rateExempt = seconds < 3 || deliberateLongPauses === true;
+  const failures = [];
+  if (!rateExempt && charactersPerSecond < 10) failures.push('speech rate below 10 characters per second');
+  if (insertedWords > 12) failures.push('more than 12 inserted words');
+  if (trailingInsertedWords >= 5) failures.push('at least 5 trailing inserted words');
+  return {pass: failures.length === 0, seconds, characters: text.length, charactersPerSecond,
+    rateExempt, insertedWords, trailingInsertedWords, failures};
+}
 export function planGoogleBatches(scenes, missing) {
   const groups = [];
   let block = [];

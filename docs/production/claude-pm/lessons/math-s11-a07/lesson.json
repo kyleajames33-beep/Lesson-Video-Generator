@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-a07",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "8ce624cd81b3cd9ad861839933abf95040c5c5109624168a47f1b85ae7b47d06",
+  "scenes": [
+    {
+      "id": "hook-block-for-sale",
+      "title": "hook: a block with one slanted fence",
+      "voiceover": {
+        "text": "Here's a house block for sale. A block of land is shown on a plan from above, and its boundaries are where the fences go. This one has a straight front of twenty metres, a left side of forty, and a right side of thirty, both at right angles to the front. But the back fence slants across. The real estate listing needs the block's area, and before you buy, you'll want to know how much fencing it needs. There's no single formula for a shape like this. So how do we find the perimeter and area of an irregular block of land, by cutting it up?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cut-at-right-angles",
+      "title": "cut at right angles",
+      "voiceover": {
+        "text": "The trick is to cut the block into shapes we already know, a rectangle, a triangle or a trapezium. Where you cut matters. Draw a line straight across the block, at right angles to the sides, at the height of the shorter side, thirty metres. Now the block is a rectangle, twenty by thirty, with a triangle sitting on top. The triangle's base is twenty, the width of the block. And its height is forty minus thirty, ten metres. Every piece now has a base and a height we know. Write the plan first. Block equals rectangle plus triangle. Twenty times thirty is six hundred square metres. Half of twenty times ten is a hundred. Together, seven hundred square metres. That's the number for the listing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "second-cut-check",
+      "title": "cut it another way: the check",
+      "voiceover": {
+        "text": "Here's a good habit. Cut it a different way, and see if you get the same answer. Look at the block as a whole. The left and right sides are parallel, both at right angles to the front, so the whole block is a trapezium. Its parallel sides are forty and thirty, and they're twenty metres apart. A half, times forty plus thirty, times twenty, is seven hundred square metres. Two completely different cuts, and the same answer. That's a strong sign the area is right. And if the two answers don't match, one of the pieces was measured or worked out wrong, so you know to look again."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "slanted-fence-perimeter",
+      "title": "the slanted fence and the perimeter",
+      "voiceover": {
+        "text": "Now the fencing. The front, the left side and the right side are given, but the back fence isn't. Look at the triangle piece again. The back fence is its sloping edge, opposite the right angle. It's a hypotenuse! The two shorter sides are twenty and ten. Twenty squared plus ten squared is five hundred, and the square root is twenty-two point three six metres. The perimeter goes all the way around the outside. Twenty, forty, twenty-two point three six and thirty, a hundred and twelve point three six metres. The cut line we drew is inside the block, so it isn't part of the perimeter. If the front stays open, the fence for the back and sides is ninety-two point three six metres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "paddock-hectares",
+      "title": "a bigger block: a paddock in hectares",
+      "voiceover": {
+        "text": "Rural blocks work the same way, just bigger. This paddock's plan shows a rectangle, a hundred and twenty metres by eighty, with a triangular piece on top. The triangle's base is the same hundred and twenty metres, and its perpendicular height, the dashed line, is forty-five. The rectangle is ninety-six hundred square metres, and the triangle is half of a hundred and twenty times forty-five, twenty-seven hundred. Altogether, twelve thousand three hundred square metres. Land this size is usually given in hectares, and a hectare is ten thousand square metres, so that's one point two three hectares. For the perimeter, the two slanted sides each sit on a right-angled triangle, with the dashed height as one side. The apex is forty metres in from the left, so the right-hand piece is a hundred and twenty minus forty, eighty metres wide. The slanted sides come out at ninety-one point seven nine and sixty point two one metres. Add the three straight sides, and the paddock's boundary is four hundred and thirty-two metres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "good-cuts",
+      "title": "choosing good cuts",
+      "voiceover": {
+        "text": "So how do you choose where to cut? Any cut works, as long as every piece gets a base and a perpendicular height you can read or work out. Try a diagonal cut, corner to corner, as a third check. This triangle has a right angle at the front, so its area is half of twenty times thirty, three hundred square metres. The other one has the forty metre side as its base, and its height is the block's width, twenty, measured at right angles to that side. That's four hundred. Seven hundred again. The slip is a slanted edge used as a height. Half of twenty-two point three six times forty treats the slanted back fence as a height, and that's wrong. Cuts at right angles to a side make the heights easiest to see. Some blocks need more than one cut. An L-shaped block with a slanted corner might need three pieces, and that's fine. More pieces just means more lines in the plan."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's the method. Split it, label it, add it. And fence only the outside. Cut at right angles, so that every piece has a base and a height."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A block of land is a thirty metre by twenty-five metre rectangle, with a right-angled triangle cut from one corner. The triangle's shorter sides are ten metres and eight metres along the boundaries. Find the area of the block. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The plan is rectangle minus triangle. Thirty times twenty-five is seven hundred and fifty, and the triangle is half of ten times eight, forty. So the block is seven hundred and ten square metres. Adding the forty is the slip. That corner was cut away."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A block is a trapezium. Its front boundary is forty-five metres, and its back boundary is thirty metres and parallel to the front. Its left side is forty metres long, at right angles to both. Find the length of the slanted right side, the perimeter of the block, and its area in hectares. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The slanted side is the hypotenuse of a triangle with sides forty, and forty-five minus thirty, fifteen. That's forty-two point seven two metres. The perimeter is a hundred and fifty-seven point seven two metres. The area is half of seventy-five times forty, fifteen hundred square metres, nought point one five hectares. Calling the slanted side forty metres is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So flat shapes, even messy ones, can always be cut into pieces we know. Next, we go three-dimensional. A cereal box is made of flat cardboard faces folded together. How much cardboard does it take to make one? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "stopped on HTTP429 at propanal JCAMP request",
+  "noRetry": true,
+  "evidence": "work/brief220/download-ir.ps1 breaks early only when Response.StatusCode.value__ equals429. Session6629 ended after propanal failed. Earlier successful downloads preserved in ir-jcamp-fetch-log.json. The stop record was not persisted by the first script before its break; this checkpoint records the observed early termination.",
+  "remaining": "No further NIST requests made after stop."
+}

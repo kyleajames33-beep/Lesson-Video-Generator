@@ -1,0 +1,142 @@
+{
+  "design": "phys-y12-m5-v07",
+  "sourceSHA256": "83871037effa67d52082d00958ff1d04a4ada0d2497515a3051a88fe4a93157c",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-paper-sheet-flat-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-paper-sheet-flat-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-ramp-plank-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-plank-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-spring-launcher-whole-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-spring-launcher-whole-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "public/assets/physics/phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v07",
+      "reference": "y12p-launch-ramp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launch-ramp-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    }
+  ],
+  "assets": [
+    {
+      "key": "ramp-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c72acf04-3360-4b85-b3a8-a19676691aff.png",
+      "size": [
+        1774,
+        887
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        238,
+        155,
+        1527,
+        688
+      ],
+      "minMarginAbove16": 0.13416009019165728,
+      "sha256": "44ea5ffa800de19e03e5c8cea087d5fb4a0aae499b96be2af405a95794d5d2ce",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c72acf04-3360-4b85-b3a8-a19676691aff.png",
+      "file": "public/assets/physics/y12p-launch-ramp-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1774,
+          887
+        ],
+        "exitRunningLip": [
+          1525,
+          635
+        ],
+        "clampTabCentre": [
+          695,
+          493
+        ],
+        "topRunningContactApprox": [
+          292,
+          170
+        ],
+        "visibleBallDiameterAtDisplay600": 40,
+        "ballRadiusNative_px": 59.13333333333333,
+        "topBallCentreApprox": [
+          349,
+          154
+        ],
+        "qualification": "Approximate contact/seat coordinates need exact coded-path integration check. The final track has a connected tab and a horizontal open square exit; the earlier detached tab and upright stop were rejected."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    }
+  ],
+  "heldRequests": [],
+  "qa": "docs/production/claude-pm/assets/brief187-qa",
+  "status": "source findings, documented art differences and exact voiced-preview checks remain open"
+}

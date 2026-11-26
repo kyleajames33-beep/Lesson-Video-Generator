@@ -1,0 +1,174 @@
+{
+  "id": "math-a12-s06",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "980c00cb51a8e91f47b9302b7cc2ddc88e9eaddc8e7c61550c12b557e1f428e9",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: the most likely value or the middle?",
+      "voiceover": {
+        "text": "Last video ended here, with this density. Where is X most likely to be, and where's the middle, with half the probability on each side? For this symmetric hump, both answers are one, right in the centre. Now a cookie, four centimetres in radius, with its choc chips spread evenly. In the ideal model, a chip lands at a random point on the cookie. Let X be its distance from the centre. Its density is x over eight, from zero to four. It climbs the whole way, because the outer rings hold more cookie. So distances near the edge are the most likely, and the density peaks at four. Yet half the probability lies within about two point eight three centimetres of the centre. So the most likely value and the middle can be far apart. How do we find each one?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "the mode is the peak of f",
+      "voiceover": {
+        "text": "The mode is the value where the density is highest. Here's why X is most likely to be found near there. Slide a narrow window, two tenths wide, along the hump. It catches the most area, and so the most probability, near the top of this symmetric hump. Near one, it catches about zero point one five, and near zero point two, about zero point zero five. So the mode is at the peak of f, not of F. F only builds up probability, so its top doesn't tell you where f peaks."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "finding the mode by calculus",
+      "voiceover": {
+        "text": "Finding the peak is a maximum problem, like the ones you've solved before. Write f as six x minus three x squared, over four. Its derivative is six minus six x, over four, which is zero at x equals one. The second derivative is minus three halves, which is negative, so that's a maximum. The mode is one, where the density is three quarters. And because this hump is symmetric about one, half the area lies on each side, so the median is one as well. F of one is a half, which checks it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "a mode at an endpoint",
+      "voiceover": {
+        "text": "But a density doesn't always have a stationary point. For the cookie, x over eight, from zero to four, the derivative is one eighth, and it's never zero. The density keeps climbing, so its greatest value is at the right-hand end, the edge of the cookie. The mode is four. So, just like any global maximum, check the endpoints as well. And if a density is completely flat, it has no single mode."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "the median: half the area, from F",
+      "voiceover": {
+        "text": "Now the middle. The median, m, is the value with half the probability below it. That's an area on f, but F already holds the areas. So we solve F of m equals one half. For the cookie, F of x is the fraction of the cookie within x of the centre, pi x squared over pi times sixteen, which is x squared over sixteen. Integrating x over eight from zero gives the same. So m squared over sixteen is a half, m squared is eight, and m is two root two, about two point eight three. The negative root, minus two root two, is outside zero to four, so we reject it, and say so."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "the quartiles",
+      "voiceover": {
+        "text": "The quartiles split the probability into quarters. The lower quartile solves F equals one quarter, and the upper quartile solves F equals three quarters. Here, the lower quartile is two, and the upper quartile is two root three, about three point four six. Now look at the cookie. Circles at two, two point eight three and three point four six cut it into four pieces of equal area. In this sample cookie, each holds fifteen of its sixty chips. A real cookie would only come close. The pieces get narrower towards the edge, because the density is higher there. A quarter of the probability fits into less width."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a trap: the median comes from F",
+      "voiceover": {
+        "text": "One trap to avoid. The median comes from F, not f. Setting x over eight equal to a half gives four, which is just the end of the domain. The height of the density has nothing to do with half the area."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "a second density: 3x squared over 8",
+      "voiceover": {
+        "text": "Try one more. A density is three x squared over eight, from zero to two, and its F is x cubed over eight. The density keeps increasing, so the mode is at the end, at two. For the median, x cubed over eight equals a half, so x cubed is four, and m is the cube root of four, about one point five nine. In the same way, the lower quartile is the cube root of two, about one point two six. The median is well left of the mode. The density is low near zero, so it takes a lot of width there to collect half the probability."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "in context: component lifetimes",
+      "voiceover": {
+        "text": "Here's why the difference matters in a real problem. A component's lifetime, L hours, has density three times four minus l, all squared, over sixty four, for l from zero to four. That density is highest at zero and falls the whole way, so the mode is zero. Its F is one minus four minus l, cubed, over sixty four. Setting F equal to a half gives four minus m, cubed, equals thirty two. So m is four minus the cube root of thirty two, about zero point eight three hours. Half of these components fail in under fifty minutes, even though some last up to four hours. The most likely lifetime and the median answer different questions."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to keep them apart. The mode is the top of f. The median and quartiles go across from F. For the median, go across from one half, and down to the axis."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A density is twelve x squared, times one minus x, for x from zero to one, and zero elsewhere. Find the mode, and justify your answer. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Expand f, and its derivative is twenty four x minus thirty six x squared, or twelve x times two minus three x. That's zero at x equals zero, and at two thirds. But f of zero is zero, the lowest value, and f is zero at x equals one too. At two thirds, f is sixteen ninths, its greatest value. So the mode is two thirds. Zero is wrong. It's a stationary point, but a minimum."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A continuous random variable has F of x equals x squared plus two x, all over eight, for x from zero to two. Find the lower quartile exactly. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Solve F of x equals one quarter. So x squared plus two x equals two. Complete the square: x plus one, all squared, is three, so x is minus one, plus or minus root three. Minus one minus root three is outside zero to two, so reject it. The lower quartile is root three minus one, about zero point seven three. Keeping both roots is wrong. Only one is in the domain."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the mode is the peak of f, and the median and quartiles come from F. Next, a new question. What if a density is completely flat, from one to five? There's no single peak. How high must it be, and what does its F look like?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

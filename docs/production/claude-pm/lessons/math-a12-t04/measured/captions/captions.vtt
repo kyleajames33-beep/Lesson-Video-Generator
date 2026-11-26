@@ -1,0 +1,547 @@
+WEBVTT
+
+00:00:00.261 --> 00:00:02.867
+Here's a phone's storage on an ordinary ruler,
+
+00:00:03.368 --> 00:00:04.911
+from zero to two hundred and fifty six
+
+00:00:04.952 --> 00:00:05.413
+gigabytes.
+
+00:00:06.155 --> 00:00:08.422
+A text message is about a kilobyte, a
+
+00:00:08.503 --> 00:00:11.233
+photo about three megabytes, and a film about
+
+00:00:11.354 --> 00:00:12.216
+four gigabytes.
+
+00:00:12.958 --> 00:00:14.779
+But on this ruler, the text and the
+
+00:00:14.820 --> 00:00:17.581
+photo are squashed almost onto zero, and the
+
+00:00:17.702 --> 00:00:18.942
+film sits near the left.
+
+00:00:19.586 --> 00:00:21.164
+Only the whole phone has room.
+
+00:00:21.967 --> 00:00:24.211
+When does an ordinary axis fail like this,
+
+00:00:24.332 --> 00:00:26.896
+and what kind of scale gives every file
+
+00:00:26.997 --> 00:00:27.797
+its own place?
+
+00:00:29.559 --> 00:00:30.650
+The trouble is the range.
+
+00:00:31.235 --> 00:00:33.979
+A kilobyte is a thousand bytes, a megabyte
+
+00:00:34.041 --> 00:00:36.805
+is a million, a gigabyte a billion, and
+
+00:00:36.826 --> 00:00:38.808
+a terabyte a million million.
+
+00:00:39.572 --> 00:00:41.358
+Each name is a thousand times the one
+
+00:00:41.379 --> 00:00:41.660
+before.
+
+00:00:42.442 --> 00:00:44.262
+One factor of ten is called an order
+
+00:00:44.303 --> 00:00:46.644
+of magnitude, so a text message and a
+
+00:00:46.725 --> 00:00:48.865
+full phone are more than eight orders of
+
+00:00:48.906 --> 00:00:49.706
+magnitude apart.
+
+00:00:50.387 --> 00:00:52.768
+On an ordinary axis, the biggest value sets
+
+00:00:52.809 --> 00:00:55.490
+the scale, so everything a thousand times smaller
+
+00:00:55.791 --> 00:00:56.951
+is crushed against zero.
+
+00:00:57.735 --> 00:00:59.679
+So space the values by their powers of
+
+00:00:59.801 --> 00:01:00.702
+ten instead.
+
+00:01:01.325 --> 00:01:03.112
+Ten to the three bytes goes at three,
+
+00:01:03.596 --> 00:01:05.242
+ten to the six at six, and so
+
+00:01:05.324 --> 00:01:05.423
+on.
+
+00:01:05.926 --> 00:01:08.295
+That's taking log base ten of each value.
+
+00:01:08.918 --> 00:01:11.584
+Now every step along the axis means multiplying
+
+00:01:11.625 --> 00:01:14.190
+by ten, because log of ten times a
+
+00:01:14.251 --> 00:01:16.476
+number is one more than the log of
+
+00:01:16.497 --> 00:01:16.877
+the number.
+
+00:01:17.500 --> 00:01:20.368
+Equal steps mean equal factors, not equal differences.
+
+00:01:20.991 --> 00:01:22.398
+That's a logarithmic scale.
+
+00:01:22.981 --> 00:01:26.592
+Kilobyte, megabyte, gigabyte and terabyte sit three steps
+
+00:01:26.633 --> 00:01:28.940
+apart, and every file has its own place.
+
+00:01:29.556 --> 00:01:30.701
+So when should you use one?
+
+00:01:31.307 --> 00:01:32.601
+Compare two sets of data.
+
+00:01:33.206 --> 00:01:35.269
+The brightness of some stars runs from about
+
+00:01:35.390 --> 00:01:37.795
+three times ten to the minus thirteen, to
+
+00:01:37.916 --> 00:01:39.518
+one point four times ten to the minus
+
+00:01:39.620 --> 00:01:39.779
+eight:
+
+00:01:40.301 --> 00:01:42.425
+a factor of about forty seven thousand.
+
+00:01:43.248 --> 00:01:45.374
+On a log scale, they spread out nicely.
+
+00:01:46.038 --> 00:01:47.702
+But the heights of a class run from
+
+00:01:47.883 --> 00:01:49.868
+one fifty two to one eighty seven centimetres:
+
+00:01:50.390 --> 00:01:52.456
+a factor of only one point two three.
+
+00:01:53.179 --> 00:01:55.085
+A log scale adds nothing for such a
+
+00:01:55.146 --> 00:01:55.848
+narrow range,
+
+00:01:56.351 --> 00:01:58.257
+and heights are compared by differences anyway.
+
+00:01:58.981 --> 00:02:00.865
+So use a log scale when the values
+
+00:02:00.927 --> 00:02:02.550
+span several powers of ten,
+
+00:02:03.133 --> 00:02:05.299
+and when comparing by factors makes sense.
+
+00:02:06.211 --> 00:02:07.604
+Decibels are a log scale too.
+
+00:02:08.289 --> 00:02:10.652
+The sound level L is ten times log
+
+00:02:10.694 --> 00:02:13.057
+base ten of I over I nought.
+
+00:02:13.900 --> 00:02:15.563
+I is the intensity, the power of the
+
+00:02:15.584 --> 00:02:17.949
+sound arriving on each square metre, and I
+
+00:02:18.010 --> 00:02:19.633
+nought is ten to the minus twelve,
+
+00:02:20.155 --> 00:02:22.179
+a conventional reference near the threshold of hearing.
+
+00:02:23.202 --> 00:02:25.726
+Multiply the intensity by ten, and the log
+
+00:02:25.827 --> 00:02:27.810
+goes up by one, so the level goes
+
+00:02:27.871 --> 00:02:28.952
+up by ten decibels.
+
+00:02:29.775 --> 00:02:32.600
+So a factory measuring ninety five decibels, against
+
+00:02:32.641 --> 00:02:34.746
+a limit of eighty five, has a reading
+
+00:02:34.847 --> 00:02:37.532
+about twelve percent higher, but the sound isn't
+
+00:02:37.634 --> 00:02:38.515
+twelve percent stronger.
+
+00:02:39.158 --> 00:02:41.995
+Ten decibels more means ten times the intensity.
+
+00:02:42.619 --> 00:02:44.607
+And a three decibel rise is a factor
+
+00:02:44.708 --> 00:02:47.018
+of ten to the point three, about two.
+
+00:02:47.850 --> 00:02:48.995
+Let's compare two places.
+
+00:02:49.619 --> 00:02:52.065
+A library is thirty decibels, and a café
+
+00:02:52.187 --> 00:02:52.727
+is seventy.
+
+00:02:53.451 --> 00:02:55.357
+How many times more intense is the café?
+
+00:02:56.302 --> 00:02:58.562
+Divide each level by ten and use it
+
+00:02:58.643 --> 00:02:59.243
+as a power:
+
+00:02:59.824 --> 00:03:01.884
+the library's intensity is ten to the three
+
+00:03:01.965 --> 00:03:04.366
+times I nought, and the café's is ten
+
+00:03:04.387 --> 00:03:05.987
+to the seven times I nought.
+
+00:03:06.709 --> 00:03:08.595
+Divide them, and I nought cancels:
+
+00:03:09.158 --> 00:03:11.868
+ten to the four, ten thousand times as
+
+00:03:11.909 --> 00:03:12.229
+intense.
+
+00:03:13.053 --> 00:03:15.218
+A quicker way: the difference is forty decibels,
+
+00:03:15.620 --> 00:03:17.424
+and forty over ten is four.
+
+00:03:17.921 --> 00:03:20.348
+Earthquake magnitude can work the same way, with
+
+00:03:20.448 --> 00:03:21.491
+no ten in front.
+
+00:03:22.172 --> 00:03:23.753
+In a simplified local magnitude,
+
+00:03:24.333 --> 00:03:26.875
+M is log base ten of A over
+
+00:03:27.035 --> 00:03:29.176
+A nought, where A is the size of
+
+00:03:29.216 --> 00:03:31.237
+the wiggle on a seismograph, measured at the
+
+00:03:31.277 --> 00:03:32.898
+same distance with the same instrument,
+
+00:03:33.438 --> 00:03:36.039
+so each step of one means ten times
+
+00:03:36.099 --> 00:03:36.660
+the amplitude.
+
+00:03:37.742 --> 00:03:39.950
+Earthquake A is magnitude five.
+
+00:03:40.594 --> 00:03:43.882
+Earthquake B has a seismograph trace fifty times
+
+00:03:43.983 --> 00:03:44.343
+as tall.
+
+00:03:45.027 --> 00:03:47.438
+Its magnitude is five plus log of fifty,
+
+00:03:47.881 --> 00:03:48.885
+about six point seven.
+
+00:03:49.609 --> 00:03:51.834
+Fifty times the wiggle shows up as only
+
+00:03:52.075 --> 00:03:53.859
+one point seven more on the scale.
+
+00:03:54.380 --> 00:03:57.625
+For dilute solutions, pH is minus log base
+
+00:03:57.665 --> 00:04:01.190
+ten of the hydrogen ion concentration, so more
+
+00:04:01.230 --> 00:04:03.133
+hydrogen ions mean a lower pH.
+
+00:04:04.076 --> 00:04:05.630
+Each step of one is a factor of
+
+00:04:05.711 --> 00:04:05.933
+ten.
+
+00:04:06.617 --> 00:04:09.041
+A solution at pH four has ten to
+
+00:04:09.061 --> 00:04:11.685
+the minus four moles per litre, and pH
+
+00:04:11.745 --> 00:04:13.308
+seven has ten to the minus seven.
+
+00:04:13.990 --> 00:04:16.417
+So pH four has a thousand times the
+
+00:04:16.458 --> 00:04:19.567
+hydrogen ion concentration, even though the numbers differ
+
+00:04:19.629 --> 00:04:20.390
+by only three.
+
+00:04:21.561 --> 00:04:23.747
+Star magnitudes have a minus sign and a
+
+00:04:23.768 --> 00:04:24.389
+two point five.
+
+00:04:24.931 --> 00:04:27.316
+The difference in magnitudes is minus two point
+
+00:04:27.376 --> 00:04:29.761
+five times log of the brightness ratio.
+
+00:04:30.302 --> 00:04:33.373
+So brighter stars get smaller magnitudes, and five
+
+00:04:33.413 --> 00:04:35.219
+magnitudes is a factor of ten to the
+
+00:04:35.259 --> 00:04:36.042
+two, a hundred.
+
+00:04:36.925 --> 00:04:39.194
+A magnitude one star is a hundred times
+
+00:04:39.254 --> 00:04:41.061
+as bright as a magnitude six star.
+
+00:04:42.108 --> 00:04:44.144
+Here's one rule for all four scales.
+
+00:04:44.790 --> 00:04:47.023
+Each one is a number times log base
+
+00:04:47.064 --> 00:04:48.150
+ten of a ratio.
+
+00:04:48.893 --> 00:04:50.414
+To turn a step on the scale back
+
+00:04:50.455 --> 00:04:52.515
+into a factor, divide the step by that
+
+00:04:52.576 --> 00:04:54.397
+number, and raise ten to the power.
+
+00:04:55.204 --> 00:04:56.577
+Decibels: divide by ten.
+
+00:04:57.302 --> 00:04:58.688
+Earthquakes: divide by one.
+
+00:04:59.453 --> 00:05:02.189
+pH: divide by minus one, so the direction
+
+00:05:02.291 --> 00:05:02.592
+flips.
+
+00:05:03.217 --> 00:05:05.666
+Stars: divide by minus two point five.
+
+00:05:08.338 --> 00:05:08.724
+Your turn.
+
+00:05:09.455 --> 00:05:11.440
+A lawnmower measures ninety decibels,
+
+00:05:11.942 --> 00:05:13.747
+and a conversation measures sixty.
+
+00:05:14.488 --> 00:05:17.229
+Using L equals ten log base ten of
+
+00:05:17.250 --> 00:05:18.510
+I over I nought,
+
+00:05:19.091 --> 00:05:21.631
+how many times more intense is the lawnmower's
+
+00:05:21.672 --> 00:05:21.972
+sound?
+
+00:05:22.854 --> 00:05:23.698
+Pause here to answer.
+
+00:05:34.788 --> 00:05:36.415
+The difference is thirty decibels.
+
+00:05:36.898 --> 00:05:37.565
+Divide by ten:
+
+00:05:38.194 --> 00:05:38.416
+three.
+
+00:05:39.183 --> 00:05:40.951
+So the ratio is ten to the three,
+
+00:05:41.374 --> 00:05:42.881
+a thousand times as intense.
+
+00:05:43.665 --> 00:05:45.369
+One and a half times compares the decibel
+
+00:05:45.410 --> 00:05:47.214
+numbers, as if the scale were ordinary.
+
+00:05:48.870 --> 00:05:49.252
+Last one.
+
+00:05:49.898 --> 00:05:52.323
+Set A lists the populations of ten towns
+
+00:05:52.445 --> 00:05:54.689
+and cities, from twelve hundred to five point
+
+00:05:54.731 --> 00:05:55.532
+three million people.
+
+00:05:56.154 --> 00:05:58.780
+Set B lists daily top temperatures over a
+
+00:05:58.821 --> 00:06:00.986
+month, from twenty one to thirty one degrees.
+
+00:06:01.730 --> 00:06:03.617
+Which set suits a logarithmic scale?
+
+00:06:04.121 --> 00:06:05.449
+Justify using the ranges.
+
+00:06:05.973 --> 00:06:06.736
+Pause here to answer.
+
+00:06:18.112 --> 00:06:18.439
+Set A.
+
+00:06:19.029 --> 00:06:21.213
+Five point three million divided by twelve hundred
+
+00:06:21.375 --> 00:06:23.900
+is about four thousand, more than three powers
+
+00:06:23.942 --> 00:06:24.181
+of ten.
+
+00:06:24.924 --> 00:06:27.852
+Set B only spans ten degrees, and temperatures
+
+00:06:27.873 --> 00:06:28.915
+are compared by differences.
+
+00:06:29.858 --> 00:06:32.039
+It's the ratio that matters, not the size
+
+00:06:32.060 --> 00:06:32.559
+of the numbers:
+
+00:06:33.241 --> 00:06:34.741
+a million to one and a half million
+
+00:06:34.922 --> 00:06:36.383
+spans less than a factor of two.
+
+00:06:38.348 --> 00:06:41.111
+So a log scale turns equal factors into
+
+00:06:41.232 --> 00:06:43.856
+equal steps, and it suits data that spans
+
+00:06:44.017 --> 00:06:44.918
+many powers of ten.
+
+00:06:45.622 --> 00:06:47.151
+That's the end of the trig graphs and
+
+00:06:47.213 --> 00:06:47.997
+modelling videos.
+
+00:06:48.461 --> 00:06:49.507
+Next, a new question.
+
+00:06:50.071 --> 00:06:52.695
+Here's cos x, from zero to pi over
+
+00:06:52.716 --> 00:06:55.240
+two, with thin rectangles standing against it.
+
+00:06:55.923 --> 00:06:57.807
+What happens when we add them up, and
+
+00:06:57.848 --> 00:06:59.351
+make them thinner and thinner?
+
+00:07:02.428 --> 00:07:03.291
+Here are the key notes.
+
+00:07:03.694 --> 00:07:05.241
+Pause the video if you need more time
+
+00:07:05.283 --> 00:07:05.744
+to copy them.

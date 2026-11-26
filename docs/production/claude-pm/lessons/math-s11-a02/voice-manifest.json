@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a02.md",
+  "sourceSha256": "393bb3d08625bd51967cbb743fd8b2cda4c9daf43340db037424601f1cc086cc",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-square-metre",
+      "text": "Last time ended with a puzzle. A metre is a hundred centimetres, so is a square metre a hundred square centimetres? Most people say yes. It seems to follow. But look at this floor tile. It's thirty centimetres on each side, and it covers less than a tenth of the square metre. If a square metre were only a hundred square centimetres, this tile would be nine times too big. Something doesn't add up. So why do area and volume conversions work differently from length?",
+      "audioFile": "public/audio/math-s11-a02/hook-square-metre.wav"
+    },
+    {
+      "id": "square-units",
+      "text": "Start small. A square centimetre is the area of a square one centimetre on each side. Now measure that square in millimetres. Each side is ten millimetres, so the square holds ten rows of ten little squares. That's a hundred square millimetres. The length factor, ten, gets used twice, once for each side. Ten times ten is a hundred. Area is length times length, so when you change the unit, both lengths change. That's why area factors are squared. Going back up, from square millimetres to square centimetres, you divide by a hundred.",
+      "audioFile": "public/audio/math-s11-a02/square-units.wav"
+    },
+    {
+      "id": "square-metre-fill",
+      "text": "Back to the square metre. Each side is a hundred centimetres, so a row along the bottom holds a hundred centimetre squares, and there are a hundred rows. A hundred times a hundred is ten thousand. So one square metre is ten thousand square centimetres, not a hundred. Now say a floor is five square metres. In square centimetres that's five times ten thousand, fifty thousand square centimetres. Multiplying by a hundred gives five hundred, and that's the classic slip. It only converts one side of the square. Going back up is a divide. A small tile of four hundred square centimetres is four hundred divided by ten thousand, nought point nought four of a square metre.",
+      "audioFile": "public/audio/math-s11-a02/square-metre-fill.wav"
+    },
+    {
+      "id": "hectares",
+      "text": "Land is measured in bigger squares. A hectare is the area of a square a hundred metres on each side. A hundred times a hundred, so one hectare is ten thousand square metres. How big is that? A netball court is about four hundred and sixty-five square metres, so a hectare has the area of about twenty-one and a half courts. A square kilometre is a square a thousand metres on each side. A thousand times a thousand is a million square metres, which is a hundred hectares. So a paddock of three point six hectares is three point six times ten thousand, thirty-six thousand square metres, or nought point nought three six of a square kilometre.",
+      "audioFile": "public/audio/math-s11-a02/hectares.wav"
+    },
+    {
+      "id": "tiles",
+      "text": "Here's where this matters. A bathroom floor is two point four metres by one point eight metres, and the tiles are thirty centimetres square. How many tiles, ignoring the gaps? The floor's area is two point four times one point eight, four point three two square metres. In square centimetres, times ten thousand, that's forty-three thousand two hundred. Each tile is thirty times thirty, nine hundred square centimetres. Forty-three thousand two hundred divided by nine hundred is forty-eight tiles. Here's a check that skips the area units completely. Convert the lengths first. Two hundred and forty centimetres holds eight tiles across, a hundred and eighty holds six down, and eight times six is forty-eight again. Writing four point three two square metres as four hundred and thirty-two square centimetres gives under half a tile, which can't be right.",
+      "audioFile": "public/audio/math-s11-a02/tiles.wav"
+    },
+    {
+      "id": "cubic-units",
+      "text": "Volume works the same way, but a cube has three directions. A cubic centimetre is the space inside a cube one centimetre on each side. In millimetres, it's ten by ten by ten, a thousand cubic millimetres. This toy block shows the idea. It's three small cubes along each edge, so its face has nine squares, but the whole block has twenty-seven cubes. Watch the slider. Double the length, and the area is four times bigger, but the volume is eight times bigger. So one cubic metre is a hundred times a hundred times a hundred, a million cubic centimetres. And a cubic kilometre is a thousand cubed, a billion cubic metres. To go up, divide. A cereal box of forty-eight hundred cubic centimetres is forty-eight hundred divided by a million, nought point nought nought four eight of a cubic metre.",
+      "audioFile": "public/audio/math-s11-a02/cubic-units.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So, here's the rule. For area, square the length factor. For volume, cube it. Going down to a smaller unit you multiply, and going up to a bigger one you divide, just like before. Or skip the factor completely. Convert the lengths first, then multiply.",
+      "audioFile": "public/audio/math-s11-a02/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Convert two point five square metres to square centimetres. Then, a paddock has an area of thirty-six thousand square metres. Write this area in hectares. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a02/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Square metres to square centimetres is times ten thousand, so two point five square metres is twenty-five thousand square centimetres. A hectare is ten thousand square metres, so thirty-six thousand divided by ten thousand is three point six hectares. Multiplying by a hundred is the slip.",
+      "audioFile": "public/audio/math-s11-a02/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A concrete paver measures twenty-five centimetres by twelve point five centimetres by ten centimetres. Find its volume in cubic centimetres and in cubic metres. Then, ignoring gaps, how many whole pavers fit in a cube one metre on each side? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a02/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Twenty-five times twelve point five times ten is thirty-one twenty-five cubic centimetres. Divide by a million, nought point nought nought three one two five cubic metres. A million divided by thirty-one twenty-five is three hundred and twenty, and stacking agrees, four by eight by ten, three hundred and twenty pavers. Dividing by a hundred is the slip.",
+      "audioFile": "public/audio/math-s11-a02/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So areas use the factor twice, and volumes three times. But water isn't sold in cubic centimetres. It's sold in litres and kilolitres. How much does a cube one centimetre on each side actually hold? That's next.",
+      "audioFile": "public/audio/math-s11-a02/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a02/key-notes.wav"
+    }
+  ]
+}

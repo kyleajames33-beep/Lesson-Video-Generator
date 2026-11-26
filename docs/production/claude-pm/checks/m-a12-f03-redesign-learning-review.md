@@ -9,3 +9,10 @@ Should fix 240-F03-PAIRING-CLAIM, scene 9: the narration says only arithmetic se
 The two-copy tin arrangement explains the factor one-half, the symbolic rows carry it to the formula, and the threshold and two-root examples show why checking whole-number roots matters. Both attempt cards retain their demands and withhold the solution. The written f02/f03/f04 handoffs match the current Revision 2 decisions; older Boundary text is superseded. Plates, changing visuals, colour roles, large lines, two simulations and a framed memory aid are specified; actual geometry and type require a build check.
 
 All 15 spoken strings total 5,742 characters; bold cue phrases appear in the visual descriptions in order. No em dash occurs. The estimated 528 seconds and 45-second notes require measured confirmation. The supermarket display is an everyday anchor; the full-course duplication audit remains pending. No plates, speech, source edits or commits.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `34b8d7f1bfa7c8bab005f281556eceba1b43163fa0fe7e0402fa02b3ed23f11e`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. Pairing is now a guarantee for arithmetic sequences rather than an exclusive property. The non-AP counterexample1,4,2,5 has both paired totals6. Source finding resolved.
+
+Recount:5776characters in15spoken strings; all declared counts agree, no em dash. New narration scenes:9. Exact strings and cues in work/brief240/f03-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

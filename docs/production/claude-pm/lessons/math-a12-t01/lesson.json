@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-t01",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "13db7859876998906da4b3c8c3cfdd96646ccf4beac74a8a9bb78cb45d0e1d52",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (the minus sign that moves the peak right)",
+      "voiceover": {
+        "text": "Here's the cosine curve, with x in radians. Let's give it a meaning. It's the swell at a marker buoy off a surf beach: x is the time in seconds, which this model also uses as the angle in radians, one radian per second, and y is the buoy's height in metres above calm water. Now change the equation to y equals two cos of x minus pi over three, plus one. That's a second buoy further along the beach, on a day with bigger swell and a higher tide. The curve gets taller, lifts up and slides. But look at the peak. The bracket says minus pi over three, yet the peak has moved right, to pi over three. Each part of the equation does one job. Let's take them one at a time."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "outside: multiply every height (vertical dilation, amplitude, reflection)",
+      "voiceover": {
+        "text": "Start outside the bracket. In y equals two cos x, every height is multiplied by two: a swell twice as big. Peaks at one rise to two, troughs fall to minus two, and the points on the axis stay put, because two times zero is still zero. This is a vertical dilation by a factor of two. The amplitude, the distance from the middle line up to a peak, is now two. What if the factor is minus two? Every height changes sign, so the curve flips over the x-axis. The amplitude is still two, because a distance can't be negative."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "outside: add to every height (vertical translation, midline, range)",
+      "voiceover": {
+        "text": "Now add one, outside the bracket. That's the tide coming in: every height goes up by one, so the whole curve slides up one unit. Its middle line, the midline, moves from the x-axis to y equals one. The shape doesn't change, so the amplitude is still two. The highest value is the midline plus the amplitude, three, and the lowest is the midline minus the amplitude, minus one. So the range is from minus one to three."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "inside: the bracket sign (horizontal translation)",
+      "voiceover": {
+        "text": "Now the surprising one, inside the bracket. The second buoy is further along the beach, so each wave reaches it a little later. Its height now is what the first buoy's height was pi over three seconds ago. That's cos of x minus pi over three. The first buoy peaked where the inside was zero. Now the inside is zero when x equals pi over three. Everything happens pi over three later, so the graph slides right by pi over three. That's a horizontal translation. The minus sign means later, a slide to the right. A plus sign would mean earlier, a slide to the left."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "inside: a number multiplying x (horizontal dilation, period)",
+      "voiceover": {
+        "text": "What about a number multiplying x? A choppy swell brings waves twice as often. In y equals cos two x, the inside runs twice as fast as x. One full cycle needs the inside to go from zero to two pi, and that's finished when x reaches pi. So the period, the time for one cycle, halves to pi, about three seconds. The graph is squashed towards the y-axis, a horizontal dilation by a factor of one half. For sine and cosine with positive a, the period is two pi divided by a. A half inside would double the period to four pi, a long, slow groundswell."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "factor out a before reading the slide",
+      "voiceover": {
+        "text": "When there's a number multiplying x and a number added, take the number out first. Here's y equals sine of two x plus pi. It's tempting to say it slides left by pi. But the inside is zero when two x plus pi is zero, which is at x equals minus pi over two. Factor out the two, and you get sine of two, bracket x plus pi over two. So, squash by a factor of a half, then slide left by pi over two. Sliding left by pi would land right back on sine two x, which is wrong: the true curve is upside down compared with it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "tan follows the same rules",
+      "voiceover": {
+        "text": "The same rules work for tan x, with two differences. Tan x repeats every pi, not two pi, so in y equals tan two x, the period is pi divided by two, pi over two. The asymptotes, the vertical lines the curve never meets, move with the squash, to pi over four, three pi over four, and so on, every pi over two. And tan has no highest or lowest value. Its range is all real numbers, so it has no amplitude. A number in front still stretches it vertically, by that dilation factor, but it's not called an amplitude."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "worked example: describe and state the features",
+      "voiceover": {
+        "text": "Let's put it together. For y equals minus three cos of two x minus pi over two, minus one, describe the transformations, and state the amplitude, period, horizontal translation and range. Factor the inside first: two, bracket x minus pi over four. So, squash horizontally by a factor of a half: the period is pi. Slide right by pi over four. Stretch vertically by a factor of three and reflect in the x-axis: the amplitude is three. Then shift down one, so the midline is y equals minus one. The range runs from minus four to two. To sketch it, mark one cycle from pi over four to five pi over four, with a key point every quarter period. At pi over four, the inside is zero, cos is one, and y is minus four: a trough, as the reflection predicts."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "graphing check and memory aid",
+      "voiceover": {
+        "text": "Try this on a graphing app: build the curve one change at a time, and each step lands exactly where the rules say. Here's a way to remember it. Outside the bracket changes y, and does what it says: times minus three, then minus one. Inside the bracket changes x, and does the opposite: times two squashes by a half, and, once you've factored, minus pi over four slides right."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A buoy's height above the sea floor, in metres, after x seconds, is y equals minus two cos of three x minus pi over two, plus four. State the amplitude, the period, the horizontal translation, and the range. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The amplitude is two. The period is two pi over three. Factor the inside: three, bracket x minus pi over six, so it slides right by pi over six. The midline is four, so the range is from two to six metres. Sliding right by pi over two forgets to factor out the three."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Describe the transformations that map y equals tan x onto y equals tan of x over two, plus one. Then state the period and the range. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Inside, x over two does the opposite of halving: it's a horizontal dilation by a factor of two. Outside, plus one shifts the graph up one unit. Tan repeats every pi, so the period is pi divided by a half: two pi. The range is all real numbers. Four pi comes from using the sine and cos rule, two pi over a, for tan."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So outside changes the heights as written, and inside changes the x values the opposite way. Next, we'll use these graphs to solve equations. Here's a city's daylight over one year: twelve plus two sine of x minus pi over six hours, where the whole year is two pi. On which days is there exactly thirteen hours of daylight, and how can we be sure we've found every one?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

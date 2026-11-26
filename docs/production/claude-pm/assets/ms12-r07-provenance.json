@@ -1,0 +1,134 @@
+{
+  "brief": 253,
+  "lesson": "r07",
+  "assets": [
+    {
+      "name": "ms12-creek-block-aerial-v1.png",
+      "briefedIn": "r07",
+      "firstUsedIn": "r07",
+      "candidate": "work/brief253/creek-block-aerial-final.png",
+      "imagegenOutput": "exec-e5bceed4-0db8-42b2-a840-9b197cca0ec2.png",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "sha256": "96a660185714e0d6c1c2314673bc51019669db7c3c1ab8f41a71d49f7603276b",
+      "sourceMode": "RGB",
+      "evidence": [
+        "work/brief253/creek-block-fence-registration.jpg",
+        "work/brief253/creek-block-aerial-final-300w.jpg",
+        "work/brief253/creek-block-aerial-final-760w.jpg",
+        "work/brief253/creek-block-aerial-final-1000w.jpg"
+      ],
+      "sourceDesign": "docs/production/claude-pm/lessons/math-s12-r07.md",
+      "status": "installed",
+      "earlierCandidate": {
+        "path": "work/brief253/ms12-creek-block-aerial-v1-candidate.png",
+        "sha256": "ba3f06c6c92e90bca060147f578de2910ead52e52ce9f0c4e9ff7b884f785583",
+        "reason": "Baked checkerboard and short right boundary."
+      },
+      "path": "public/assets/maths/ms12-creek-block-aerial-v1.png",
+      "sidecar": "public/assets/maths/ms12-creek-block-aerial-v1.json",
+      "method": "Built-in ImageGen full-frame opaque painting; native pixel spacing",
+      "geometry": {
+        "nativeSize": [
+          1536,
+          1024
+        ],
+        "fenceVertices": [
+          [
+            173,
+            212
+          ],
+          [
+            173,
+            861
+          ],
+          [
+            1302,
+            861
+          ],
+          [
+            1302,
+            338
+          ]
+        ],
+        "frontPx": 1129.0,
+        "sidesPx": [
+          649.0,
+          523.0
+        ],
+        "scaledApproximateSidesFor30mFront": [
+          17.25,
+          13.9
+        ],
+        "scope": "Approximate painted aerial proportions. The exact widths and offsets belong to the coded plan."
+      }
+    },
+    {
+      "name": "ms12-farm-dam-aerial-v1.png",
+      "briefedIn": "r07",
+      "firstUsedIn": "r07",
+      "candidate": "work/brief253/farm-dam-registered.png",
+      "imagegenOutput": "exec-7320d3d5-c340-4cbc-b408-c8c6dffdc16b.png",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        255,
+        255
+      ],
+      "paintedBoundsAbove32": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "sha256": "39d32f67bea543c8dc5aaf44743622c3a361936680e62a04134ec15d4ef7fe90",
+      "sourceMode": "RGB",
+      "cornerSamples": [
+        [
+          254,
+          255,
+          255,
+          255
+        ],
+        [
+          236,
+          236,
+          237,
+          255
+        ],
+        [
+          239,
+          239,
+          239,
+          255
+        ],
+        [
+          254,
+          253,
+          254,
+          255
+        ]
+      ],
+      "evidence": [
+        "work/brief253/farm-dam-measured-overlay.jpg",
+        "work/brief253/farm-dam-registered-300w.jpg",
+        "work/brief253/farm-dam-registered-760w.jpg",
+        "work/brief253/farm-dam-registered-1000w.jpg"
+      ],
+      "sourceDesign": "docs/production/claude-pm/lessons/math-s12-r07.md",
+      "status": "installed",
+      "earlierCandidate": {
+        "path": "work/brief253/ms12-farm-dam-aerial-v1-candidate.png",
+        "sha256": "304fac861206ed063307a4918166085a81df0e1ad97cc48fbc616d9b7ef17aad",
+        "reason": "Native water shape misses model geometry and has checkerboard baked into RGB."
+      },
+      "path": "public/assets/maths/ms12-farm-dam-aerial-v1.png",
+      "sidecar": "public/assets/maths/ms12-farm-dam-aerial-v1.json",
+      "method": "Built-in ImageGen paddock and water paint at unscaled native pixel spacing. The water matte follows the model and the painted track forms the baseline."
+    }
+  ]
+}

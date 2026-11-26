@@ -1,0 +1,687 @@
+1
+00:00:00,302 --> 00:00:02,258
+Last video ended with this question.
+
+2
+00:00:02,883 --> 00:00:04,771
+Until now, we've known the mean and the
+
+3
+00:00:04,812 --> 00:00:07,122
+standard deviation, and found a probability.
+
+4
+00:00:07,847 --> 00:00:09,905
+This time the probability is fixed.
+
+5
+00:00:10,591 --> 00:00:12,502
+The filling machine has a dial that sets
+
+6
+00:00:12,564 --> 00:00:13,267
+the mean fill.
+
+7
+00:00:14,012 --> 00:00:15,953
+Only one percent of bottles can be under
+
+8
+00:00:16,054 --> 00:00:18,796
+four ninety, sigma stays at eight, and the
+
+9
+00:00:18,857 --> 00:00:20,137
+mean is the unknown.
+
+10
+00:00:21,105 --> 00:00:22,316
+Where must the dial be set?
+
+11
+00:00:22,963 --> 00:00:24,098
+Here's the key idea.
+
+12
+00:00:24,762 --> 00:00:26,905
+Turn the dial up, and the bell slides
+
+13
+00:00:26,966 --> 00:00:29,350
+to the right, so four ninety ends up
+
+14
+00:00:29,410 --> 00:00:31,413
+further out in the tail, and the tail
+
+15
+00:00:31,453 --> 00:00:32,115
+gets smaller.
+
+16
+00:00:33,037 --> 00:00:35,181
+At a mean of five hundred, the tail
+
+17
+00:00:35,221 --> 00:00:37,466
+was zero point one zero five six.
+
+18
+00:00:38,228 --> 00:00:40,315
+Fill two hundred bottles there, and in one
+
+19
+00:00:40,397 --> 00:00:42,746
+simulated run, nineteen come up short.
+
+20
+00:00:43,551 --> 00:00:45,621
+Keep turning, and at some point the tail
+
+21
+00:00:45,723 --> 00:00:47,089
+is exactly one percent.
+
+22
+00:00:47,774 --> 00:00:50,550
+In sigmas, every normal curve is the same
+
+23
+00:00:50,611 --> 00:00:50,912
+curve.
+
+24
+00:00:51,275 --> 00:00:53,683
+So a one percent tail always ends the
+
+25
+00:00:53,744 --> 00:00:56,253
+same number of sigmas below the mean, whatever
+
+26
+00:00:56,274 --> 00:00:56,775
+the mean is.
+
+27
+00:00:57,458 --> 00:00:59,114
+That number is a zed score.
+
+28
+00:00:59,679 --> 00:01:01,128
+So the job is to find the zed
+
+29
+00:01:01,209 --> 00:01:02,557
+first, then the mean.
+
+30
+00:01:03,162 --> 00:01:05,435
+The table gives areas to the left, for
+
+31
+00:01:05,475 --> 00:01:06,119
+positive zeds.
+
+32
+00:01:06,863 --> 00:01:09,153
+A one percent tail on the left mirrors
+
+33
+00:01:09,254 --> 00:01:10,780
+a one percent tail on the right.
+
+34
+00:01:11,545 --> 00:01:13,716
+And a right tail of one percent means
+
+35
+00:01:13,938 --> 00:01:15,546
+ninety-nine percent to the left.
+
+36
+00:01:16,310 --> 00:01:18,802
+So search inside the table for zero point
+
+37
+00:01:18,862 --> 00:01:19,425
+nine nine.
+
+38
+00:01:20,370 --> 00:01:22,833
+At two point three two it's zero point
+
+39
+00:01:22,914 --> 00:01:23,995
+nine eight nine eight,
+
+40
+00:01:24,537 --> 00:01:26,840
+and at two point three three it's zero
+
+41
+00:01:26,901 --> 00:01:28,603
+point nine nine zero one.
+
+42
+00:01:29,386 --> 00:01:31,694
+Zero point nine nine zero one is closer,
+
+43
+00:01:32,097 --> 00:01:34,425
+so zed is about two point three three.
+
+44
+00:01:35,389 --> 00:01:37,634
+Four ninety is below the mean, so zed
+
+45
+00:01:37,675 --> 00:01:39,799
+is negative: minus two point three three.
+
+46
+00:01:40,221 --> 00:01:42,110
+Now put it into the zed score formula.
+
+47
+00:01:42,632 --> 00:01:45,517
+Zed is x minus mu, over sigma, so
+
+48
+00:01:45,817 --> 00:01:48,823
+minus two point three three equals four ninety
+
+49
+00:01:48,883 --> 00:01:50,245
+minus mu, all over eight.
+
+50
+00:01:50,867 --> 00:01:53,794
+Multiply by eight: four ninety minus mu is
+
+51
+00:01:53,974 --> 00:01:55,778
+minus eighteen point six four.
+
+52
+00:01:56,361 --> 00:01:58,432
+So mu is five hundred and eight point
+
+53
+00:01:58,492 --> 00:01:59,478
+six four millilitres.
+
+54
+00:02:00,343 --> 00:02:02,452
+With the table's rounding, that leaves a tail
+
+55
+00:02:02,593 --> 00:02:04,782
+just under one percent, so it meets the
+
+56
+00:02:04,823 --> 00:02:05,043
+limit.
+
+57
+00:02:05,807 --> 00:02:08,110
+In words, four ninety has to sit two
+
+58
+00:02:08,191 --> 00:02:11,456
+point three three standard deviations, eighteen point six
+
+59
+00:02:11,477 --> 00:02:13,119
+four millilitres, below the mean.
+
+60
+00:02:13,764 --> 00:02:14,354
+Check it forwards.
+
+61
+00:02:15,001 --> 00:02:17,222
+Four ninety minus five oh eight point six
+
+62
+00:02:17,282 --> 00:02:19,904
+four, over eight, is minus two point three
+
+63
+00:02:19,964 --> 00:02:22,725
+three, and the tail is one minus zero
+
+64
+00:02:22,786 --> 00:02:24,246
+point nine nine zero one,
+
+65
+00:02:24,987 --> 00:02:26,928
+zero point zero zero nine nine.
+
+66
+00:02:27,573 --> 00:02:28,846
+That's just under one percent.
+
+67
+00:02:29,531 --> 00:02:31,683
+Fill two hundred bottles at this setting, and
+
+68
+00:02:31,723 --> 00:02:32,930
+only two come up short.
+
+69
+00:02:33,613 --> 00:02:36,097
+And the picture agrees: a higher mean moves
+
+70
+00:02:36,138 --> 00:02:38,562
+the bell away from four ninety, so the
+
+71
+00:02:38,583 --> 00:02:39,163
+tail shrinks.
+
+72
+00:02:40,107 --> 00:02:42,637
+So, using the table's zed, a setting of
+
+73
+00:02:42,759 --> 00:02:44,687
+five hundred and eight point six four is
+
+74
+00:02:44,748 --> 00:02:45,028
+safe.
+
+75
+00:02:45,693 --> 00:02:46,918
+If you round, round up.
+
+76
+00:02:47,508 --> 00:02:49,796
+The spread can be the unknown instead.
+
+77
+00:02:50,519 --> 00:02:52,181
+Bolts are made with a mean length of
+
+78
+00:02:52,282 --> 00:02:54,686
+fifty millimetres, and a bolt is rejected if
+
+79
+00:02:54,727 --> 00:02:56,970
+it's more than one millimetre from fifty.
+
+80
+00:02:57,673 --> 00:03:00,401
+Right now sigma is zero point five, so
+
+81
+00:03:00,442 --> 00:03:02,106
+the limits sit at two sigma,
+
+82
+00:03:02,609 --> 00:03:04,253
+and about five percent are rejected.
+
+83
+00:03:04,997 --> 00:03:07,208
+The maker wants that down to about zero
+
+84
+00:03:07,249 --> 00:03:07,972
+point three percent.
+
+85
+00:03:08,677 --> 00:03:11,965
+That means ninety-nine point seven percent inside, which
+
+86
+00:03:12,027 --> 00:03:12,848
+is three sigma.
+
+87
+00:03:13,652 --> 00:03:16,142
+So the one millimetre limits must be three
+
+88
+00:03:16,203 --> 00:03:17,929
+standard deviations from the mean.
+
+89
+00:03:18,693 --> 00:03:21,419
+Three sigma equals one, so sigma is one
+
+90
+00:03:21,520 --> 00:03:22,522
+third of a millimetre.
+
+91
+00:03:23,386 --> 00:03:26,499
+Shrinking sigma squeezes the bell, and the tails
+
+92
+00:03:26,621 --> 00:03:27,604
+pull inside the limits.
+
+93
+00:03:28,121 --> 00:03:30,293
+When the percentage isn't on a whole sigma,
+
+94
+00:03:30,856 --> 00:03:31,399
+use the table.
+
+95
+00:03:32,123 --> 00:03:34,979
+Cereal boxes must hold at least three seventy-five
+
+96
+00:03:35,019 --> 00:03:35,341
+grams.
+
+97
+00:03:35,803 --> 00:03:37,913
+The mean is three eighty, and fewer than
+
+98
+00:03:37,953 --> 00:03:39,922
+zero point five percent can be underweight.
+
+99
+00:03:40,747 --> 00:03:42,461
+What's the largest sigma allowed?
+
+100
+00:03:43,647 --> 00:03:45,631
+A left tail of zero point zero zero
+
+101
+00:03:45,691 --> 00:03:48,577
+five mirrors to zero point nine nine five
+
+102
+00:03:48,617 --> 00:03:49,038
+to the left.
+
+103
+00:03:49,740 --> 00:03:51,963
+The table gives zero point nine nine four
+
+104
+00:03:52,045 --> 00:03:53,847
+nine at two point five seven,
+
+105
+00:03:54,389 --> 00:03:56,392
+and zero point nine nine five one at
+
+106
+00:03:56,814 --> 00:03:59,659
+two point five eight, so zed is about
+
+107
+00:04:00,020 --> 00:04:01,743
+minus two point five seven five.
+
+108
+00:04:02,645 --> 00:04:04,868
+Then five over sigma is two point five
+
+109
+00:04:04,909 --> 00:04:07,834
+seven five, so sigma is about one point
+
+110
+00:04:07,895 --> 00:04:08,796
+nine four grams.
+
+111
+00:04:09,619 --> 00:04:12,004
+To one decimal place, round down to one
+
+112
+00:04:12,045 --> 00:04:12,566
+point nine.
+
+113
+00:04:13,349 --> 00:04:14,872
+Round up to two, and the tail grows
+
+114
+00:04:14,893 --> 00:04:17,018
+to about zero point six percent, which fails.
+
+115
+00:04:17,721 --> 00:04:19,567
+So there are two levers for the same
+
+116
+00:04:19,628 --> 00:04:20,008
+condition.
+
+117
+00:04:20,812 --> 00:04:23,279
+Keep sigma at two grams instead, and the
+
+118
+00:04:23,341 --> 00:04:24,283
+mean has to move up.
+
+119
+00:04:24,984 --> 00:04:29,146
+Three seventy-five minus mu, over two, is minus
+
+120
+00:04:29,247 --> 00:04:30,748
+two point five seven five,
+
+121
+00:04:31,389 --> 00:04:34,850
+so mu is three seventy-five plus five point
+
+122
+00:04:34,932 --> 00:04:37,432
+one five, which is three hundred and eighty
+
+123
+00:04:37,513 --> 00:04:38,333
+point one five.
+
+124
+00:04:39,035 --> 00:04:41,441
+That's just short, so round up to three
+
+125
+00:04:41,481 --> 00:04:43,405
+hundred and eighty point one six grams.
+
+126
+00:04:44,590 --> 00:04:46,174
+Either move the mean away from the limit,
+
+127
+00:04:46,616 --> 00:04:47,518
+or shrink the spread.
+
+128
+00:04:48,270 --> 00:04:49,523
+Here's a way to remember the method.
+
+129
+00:04:50,350 --> 00:04:53,434
+Area to zed, then zed to the unknown.
+
+130
+00:04:54,157 --> 00:04:56,720
+Find the zed from the probability first, then
+
+131
+00:04:56,861 --> 00:04:59,324
+solve for the mean or sigma, and check
+
+132
+00:04:59,365 --> 00:05:00,505
+the direction on a sketch.
+
+133
+00:05:03,241 --> 00:05:03,730
+Your turn.
+
+134
+00:05:04,219 --> 00:05:04,982
+Find the mean.
+
+135
+00:05:05,586 --> 00:05:06,591
+Pause here to answer.
+
+136
+00:05:17,240 --> 00:05:19,662
+Two percent on the left mirrors to zero
+
+137
+00:05:19,702 --> 00:05:22,124
+point nine eight, and zero point nine seven
+
+138
+00:05:22,164 --> 00:05:25,506
+nine eight is closer, so zed is minus
+
+139
+00:05:25,566 --> 00:05:26,687
+two point oh five,
+
+140
+00:05:27,508 --> 00:05:30,030
+negative because a thousand grams is below the
+
+141
+00:05:30,070 --> 00:05:30,350
+mean.
+
+142
+00:05:31,111 --> 00:05:34,117
+Sigma is three, so mu is a thousand
+
+143
+00:05:34,217 --> 00:05:37,142
+plus six point one five, about one thousand
+
+144
+00:05:37,182 --> 00:05:38,645
+and six point one five grams.
+
+145
+00:05:39,487 --> 00:05:41,795
+A thousand minus six point one five is
+
+146
+00:05:42,117 --> 00:05:42,397
+wrong.
+
+147
+00:05:42,700 --> 00:05:44,236
+It puts the mean below the cut-off.
+
+148
+00:05:45,985 --> 00:05:46,410
+Last one.
+
+149
+00:05:46,855 --> 00:05:47,825
+Find sigma.
+
+150
+00:05:48,371 --> 00:05:49,257
+Pause here to answer.
+
+151
+00:05:59,968 --> 00:06:03,293
+Four percent above fifty-seven leaves zero point nine
+
+152
+00:06:03,394 --> 00:06:05,898
+six below it, so zed is one point
+
+153
+00:06:05,939 --> 00:06:06,539
+seven five,
+
+154
+00:06:07,121 --> 00:06:09,224
+positive because fifty-seven is above the mean.
+
+155
+00:06:10,046 --> 00:06:12,407
+Seven over sigma is one point seven five,
+
+156
+00:06:12,768 --> 00:06:14,409
+so sigma is about four hours.
+
+157
+00:06:15,312 --> 00:06:17,520
+A zed of minus one point seven five
+
+158
+00:06:17,641 --> 00:06:17,981
+is wrong.
+
+159
+00:06:18,405 --> 00:06:20,959
+It makes sigma negative, and a standard deviation
+
+160
+00:06:21,181 --> 00:06:21,784
+can't be negative.
+
+161
+00:06:23,501 --> 00:06:25,707
+So a probability fixes a zed score,
+
+162
+00:06:26,208 --> 00:06:28,534
+and the zed score fixes the unknown mean
+
+163
+00:06:28,694 --> 00:06:29,136
+or spread.
+
+164
+00:06:30,099 --> 00:06:32,228
+That's the last of the normal distribution videos.
+
+165
+00:06:32,610 --> 00:06:34,777
+You can now go from values to probabilities,
+
+166
+00:06:35,118 --> 00:06:37,043
+and from probabilities back to the mean or
+
+167
+00:06:37,124 --> 00:06:37,445
+sigma.
+
+168
+00:06:38,127 --> 00:06:40,356
+Later practice videos mix these skills with the
+
+169
+00:06:40,416 --> 00:06:41,019
+rest of the course.
+
+170
+00:06:43,688 --> 00:06:44,571
+Here are the key notes.
+
+171
+00:06:45,094 --> 00:06:46,862
+Pause the video if you need more time
+
+172
+00:06:46,883 --> 00:06:47,364
+to copy them.

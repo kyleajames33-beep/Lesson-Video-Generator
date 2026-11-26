@@ -1,0 +1,1071 @@
+{
+  "lesson": "chem-y11-m1-v04",
+  "wave": 1,
+  "sourceSha256": "43eec7c60d23f68464b503ace940fdf3335d3c450edcf23c53b6242ee3811d29",
+  "measuredPath": "work/brief236/wave1/chem-y11-m1-v04/voiced/lesson.json",
+  "measuredSha256": "8e39f505f5de3eb4a725655b1f6588365010fa815680adc9a236e4434da3d46f",
+  "characters": 6186,
+  "totalSeconds": 460.93333333333334,
+  "under570": true,
+  "newRequests": 9,
+  "cachedTakes": 1,
+  "inputTokens": 1320,
+  "outputTokens": 9744,
+  "costUsd": 0.08835600000000002,
+  "worstWordGap": {
+    "scene": "feedback-2",
+    "seconds": 0.9630000000000045,
+    "after": "P.",
+    "before": "And"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v04/hook.wav",
+      "seconds": 26.243,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "liquid",
+          "start": 8.014999999999999,
+          "end": 8.255857142857142
+        },
+        {
+          "text": "separation",
+          "start": 25.198000000000043,
+          "end": 25.709818181818225
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000449,
+        "after": "one.",
+        "before": "So"
+      },
+      "peakFraction": 0.838287353515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 5.587999999999999,
+          "end": 5.667999999999999,
+          "score": 0.493
+        },
+        {
+          "word": "vapour",
+          "start": 6.289999999999999,
+          "end": 6.590999999999999,
+          "score": 0.485
+        },
+        {
+          "word": "a",
+          "start": 7.934999999999999,
+          "end": 7.975,
+          "score": 0.495
+        },
+        {
+          "word": "a",
+          "start": 17.772,
+          "end": 17.811999999999998,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, the water escaped as steam, and we just let it go. To keep it, we have to catch that vapour and cool it back into a liquid. That's called distillation, and it works well for salt water. But with two liquids, like ethanol and water, a simple setup does a poor job, and adding a tall column packed with glass beads does a much better one. So why does a fractionating column improve liquid separation?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "simple-distillation",
+      "audio": "public/audio/chem-y11-m1-v04/simple-distillation.wav",
+      "seconds": 32.097,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "temperatures",
+          "start": 13.713999999999992,
+          "end": 14.084153846153837
+        },
+        {
+          "text": "water",
+          "start": 18.064999999999987,
+          "end": 18.344999999999985
+        },
+        {
+          "text": "flask",
+          "start": 31.168000000000095,
+          "end": 31.471333333333426
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9019999999999939,
+        "after": "temperatures.",
+        "before": "The"
+      },
+      "peakFraction": 0.846435546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.502,
+          "end": 0.743,
+          "score": 0.409
+        },
+        {
+          "word": "at",
+          "start": 13.432999999999993,
+          "end": 13.492999999999991,
+          "score": 0.218
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's simple distillation. Heat salt water in a flask. Water molecules escape as vapour, which just means a substance in its gas state, but the salt ions don't. Salt is non-volatile, so it doesn't evaporate at these temperatures. The vapour flows into the condenser, a tube with cold water running through an outer jacket. The cold glass takes energy from the vapour, so it condenses back into liquid water. That liquid is called the distillate, and it drips into the receiver. The salt stays behind in the flask.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "surprise-two-liquids",
+      "audio": "public/audio/chem-y11-m1-v04/surprise-two-liquids.wav",
+      "seconds": 31.916,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "degrees",
+          "start": 4.176,
+          "end": 4.526875
+        },
+        {
+          "text": "away",
+          "start": 25.551000000000077,
+          "end": 25.743000000000077
+        },
+        {
+          "text": "water",
+          "start": 31.273000000000085,
+          "end": 31.47383333333342
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8649999999999984,
+        "after": "behind.",
+        "before": "That's"
+      },
+      "peakFraction": 0.8416748046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.901000000000001,
+          "end": 5.941000000000001,
+          "score": 0.48
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Now try two liquids. Ethanol boils at seventy eight degrees, and water boils at a hundred. You might expect the ethanol to boil off at seventy eight, and leave the water behind. That's not what happens. A mixture that's seventeen percent ethanol by mass starts boiling at about eighty nine degrees, and both kinds of molecule escape. Ethanol molecules are held less strongly by their neighbours, so more of them get away. The vapour is richer in ethanol, about sixty two percent, but that's still a lot of water.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "staircase",
+      "audio": "public/audio/chem-y11-m1-v04/staircase.wav",
+      "seconds": 28.744,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "ethanol",
+          "start": 6.982999999999988,
+          "end": 7.264749999999989
+        },
+        {
+          "text": "nine",
+          "start": 11.023999999999994,
+          "end": 11.249599999999994
+        },
+        {
+          "text": "many",
+          "start": 28.01800000000007,
+          "end": 28.19560000000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8430000000001101,
+        "after": "easily.",
+        "before": "Notice"
+      },
+      "peakFraction": 0.83770751953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "if",
+          "start": 0.865,
+          "end": 0.945,
+          "score": 0.016
+        },
+        {
+          "word": "it",
+          "start": 1.146,
+          "end": 1.207,
+          "score": 0.384
+        },
+        {
+          "word": "you",
+          "start": 27.63500000000007,
+          "end": 27.71600000000007,
+          "score": 0.372
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So what if we do it again? Condense that vapour, and boil the new liquid. Now the vapour is about eighty percent ethanol. Do it again, and it's about eighty six, then about eighty nine. Each cycle of boiling and condensing enriches the vapour, which means it raises the share of the more volatile liquid, the one that evaporates more easily. Notice the steps are getting smaller. Simple distillation gives you only one cycle. To separate two liquids well, you need many.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "beads-and-fractions",
+      "audio": "public/audio/chem-y11-m1-v04/beads-and-fractions.wav",
+      "seconds": 25.564,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "better",
+          "start": 11.389,
+          "end": 11.595571428571427
+        },
+        {
+          "text": "receiver",
+          "start": 24.643000000000058,
+          "end": 24.981666666666726
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.882999999999992,
+        "after": "better.",
+        "before": "You"
+      },
+      "peakFraction": 0.860137939453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "so",
+          "start": 4.691,
+          "end": 4.731,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 21.50000000000006,
+          "end": 21.56000000000006,
+          "score": 0.34
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The beads matter because they give the vapour a huge surface to condense on, so lots of these little cycles happen in a short height. A longer column gives even more cycles, so the separation gets better. You collect the distillate in parts, called fractions. While the thermometer stays near seventy eight, the fraction is mostly ethanol. When the reading climbs towards a hundred, the ethanol is running out, so you swap in a new receiver.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "azeotrope",
+      "audio": "public/audio/chem-y11-m1-v04/azeotrope.wav",
+      "seconds": 29.546,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nothing",
+          "start": 14.472999999999988,
+          "end": 14.70049999999999
+        },
+        {
+          "text": "purity",
+          "start": 28.6040000000001,
+          "end": 28.93057142857153
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9029999999999889,
+        "after": "mass.",
+        "before": "At"
+      },
+      "peakFraction": 0.8331298828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 23.49100000000007,
+          "end": 23.53100000000007,
+          "score": 0.496
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "But here's the limit. However tall the column, the distillate never gets past about ninety six percent ethanol by mass. At that composition, the vapour has exactly the same composition as the liquid, so another cycle changes nothing. A mixture like this, which boils without changing its composition, is called an azeotrope. It boils at one steady temperature, just like a pure substance. So a steady thermometer reading is a hint, not proof of purity.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "choosing",
+      "audio": "public/audio/chem-y11-m1-v04/choosing.wav",
+      "seconds": 34.09,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "diesel",
+          "start": 33.20700000000011,
+          "end": 33.44785714285725
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9240000000000457,
+        "after": "it.",
+        "before": "Oil"
+      },
+      "peakFraction": 0.844696044921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "So",
+          "start": 0.422,
+          "end": 0.583,
+          "score": 0.296
+        },
+        {
+          "word": "are",
+          "start": 7.199000000000001,
+          "end": 7.259,
+          "score": 0.349
+        },
+        {
+          "word": "a",
+          "start": 19.561000000000092,
+          "end": 19.601000000000095,
+          "score": 0.495
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So which should you choose? If one part doesn't evaporate at all, like salt in water, or the boiling points are far apart, one cycle is enough. That's simple distillation. If two liquids mix and their boiling points are close, use fractional distillation. You'll sometimes hear twenty five degrees apart as a rough guide, but it isn't a law. What matters is how much more easily one liquid evaporates, and how pure you need it. Oil refineries use giant columns like this to split crude oil into fractions, like petrol and diesel.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "safety-and-memory-aid",
+      "audio": "public/audio/chem-y11-m1-v04/safety-and-memory-aid.wav",
+      "seconds": 20.72,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "open",
+          "start": 9.69,
+          "end": 9.898
+        },
+        {
+          "text": "azeotrope",
+          "start": 19.796999999999993,
+          "end": 20.284799999999994
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8429999999999982,
+        "after": "open.",
+        "before": "Here's"
+      },
+      "peakFraction": 0.8819580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 2,
+      "pronunciationText": "Ethanol catches fire easily, so it's heated with an electric heating mantle or a water bath, never a flame, with the apparatus clamped and the receiver open. Here's a way to remember the column. Simple distillation is one step up the ladder. A column climbs many steps, and the ladder ends at the azeotrope.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v04/attempt-1.wav",
+      "seconds": 14.4,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8239999999999981,
+        "after": "it.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.8463134765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.5040000000000004,
+          "end": 3.5440000000000005,
+          "score": 0.472
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. A solution contains water and a dissolved blue dye that doesn't evaporate when heated. Name and explain a technique that could collect the water, and explain why filtration can't do it. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v04/handoff.wav",
+      "seconds": 16.408,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "distances",
+          "start": 15.403999999999995,
+          "end": 15.855799999999995
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8849999999999909,
+        "after": "evaporate.",
+        "before": "But"
+      },
+      "peakFraction": 0.83154296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.249999999999991,
+          "end": 5.289999999999991,
+          "score": 0.498
+        },
+        {
+          "word": "we'll",
+          "start": 11.447999999999995,
+          "end": 11.688999999999995,
+          "score": 0.326
+        },
+        {
+          "word": "a",
+          "start": 12.130999999999995,
+          "end": 12.170999999999994,
+          "score": 0.496
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Distillation separates by how easily things evaporate. But what about a single drop of black ink? It's a mixture of several dyes, and there's only a tiny amount. Next time, we'll put it on a strip of paper, and find out why its dyes travel different distances.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v04/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v04/hook.wav",
+      "seconds": 26.243,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "liquid",
+          "start": 8.014999999999999,
+          "end": 8.255857142857142
+        },
+        {
+          "text": "separation",
+          "start": 25.198000000000043,
+          "end": 25.709818181818225
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000449,
+        "after": "one.",
+        "before": "So"
+      },
+      "peakFraction": 0.838287353515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 5.587999999999999,
+          "end": 5.667999999999999,
+          "score": 0.493
+        },
+        {
+          "word": "vapour",
+          "start": 6.289999999999999,
+          "end": 6.590999999999999,
+          "score": 0.485
+        },
+        {
+          "word": "a",
+          "start": 7.934999999999999,
+          "end": 7.975,
+          "score": 0.495
+        },
+        {
+          "word": "a",
+          "start": 17.772,
+          "end": 17.811999999999998,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, the water escaped as steam, and we just let it go. To keep it, we have to catch that vapour and cool it back into a liquid. That's called distillation, and it works well for salt water. But with two liquids, like ethanol and water, a simple setup does a poor job, and adding a tall column packed with glass beads does a much better one. So why does a fractionating column improve liquid separation?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "simple-distillation",
+      "audio": "public/audio/chem-y11-m1-v04/simple-distillation.wav",
+      "seconds": 32.097,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "temperatures",
+          "start": 13.713999999999992,
+          "end": 14.084153846153837
+        },
+        {
+          "text": "water",
+          "start": 18.064999999999987,
+          "end": 18.344999999999985
+        },
+        {
+          "text": "flask",
+          "start": 31.168000000000095,
+          "end": 31.471333333333426
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9019999999999939,
+        "after": "temperatures.",
+        "before": "The"
+      },
+      "peakFraction": 0.846435546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.502,
+          "end": 0.743,
+          "score": 0.409
+        },
+        {
+          "word": "at",
+          "start": 13.432999999999993,
+          "end": 13.492999999999991,
+          "score": 0.218
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's simple distillation. Heat salt water in a flask. Water molecules escape as vapour, which just means a substance in its gas state, but the salt ions don't. Salt is non-volatile, so it doesn't evaporate at these temperatures. The vapour flows into the condenser, a tube with cold water running through an outer jacket. The cold glass takes energy from the vapour, so it condenses back into liquid water. That liquid is called the distillate, and it drips into the receiver. The salt stays behind in the flask.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "thermometer-and-safety",
+      "audio": "public/audio/chem-y11-m1-v04/thermometer-and-safety.wav",
+      "seconds": 21.06,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "degrees",
+          "start": 11.095999999999991,
+          "end": 11.395249999999992
+        },
+        {
+          "text": "burst",
+          "start": 20.07899999999999,
+          "end": 20.312333333333324
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9250000000000007,
+        "after": "degrees.",
+        "before": "And"
+      },
+      "peakFraction": 0.820404052734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Two details matter. The thermometer bulb sits level with the side arm, so it measures the vapour that's about to leave, not the boiling liquid. For pure water, it reads a steady hundred degrees. And the apparatus must never be sealed. The receiver stays open to the air, because heating a closed system builds up pressure, and the glass could burst.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "surprise-two-liquids",
+      "audio": "public/audio/chem-y11-m1-v04/surprise-two-liquids.wav",
+      "seconds": 31.916,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "degrees",
+          "start": 4.176,
+          "end": 4.526875
+        },
+        {
+          "text": "away",
+          "start": 25.551000000000077,
+          "end": 25.743000000000077
+        },
+        {
+          "text": "water",
+          "start": 31.273000000000085,
+          "end": 31.47383333333342
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8649999999999984,
+        "after": "behind.",
+        "before": "That's"
+      },
+      "peakFraction": 0.8416748046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.901000000000001,
+          "end": 5.941000000000001,
+          "score": 0.48
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Now try two liquids. Ethanol boils at seventy eight degrees, and water boils at a hundred. You might expect the ethanol to boil off at seventy eight, and leave the water behind. That's not what happens. A mixture that's seventeen percent ethanol by mass starts boiling at about eighty nine degrees, and both kinds of molecule escape. Ethanol molecules are held less strongly by their neighbours, so more of them get away. The vapour is richer in ethanol, about sixty two percent, but that's still a lot of water.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "staircase",
+      "audio": "public/audio/chem-y11-m1-v04/staircase.wav",
+      "seconds": 28.744,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "ethanol",
+          "start": 6.982999999999988,
+          "end": 7.264749999999989
+        },
+        {
+          "text": "nine",
+          "start": 11.023999999999994,
+          "end": 11.249599999999994
+        },
+        {
+          "text": "many",
+          "start": 28.01800000000007,
+          "end": 28.19560000000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8430000000001101,
+        "after": "easily.",
+        "before": "Notice"
+      },
+      "peakFraction": 0.83770751953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "if",
+          "start": 0.865,
+          "end": 0.945,
+          "score": 0.016
+        },
+        {
+          "word": "it",
+          "start": 1.146,
+          "end": 1.207,
+          "score": 0.384
+        },
+        {
+          "word": "you",
+          "start": 27.63500000000007,
+          "end": 27.71600000000007,
+          "score": 0.372
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So what if we do it again? Condense that vapour, and boil the new liquid. Now the vapour is about eighty percent ethanol. Do it again, and it's about eighty six, then about eighty nine. Each cycle of boiling and condensing enriches the vapour, which means it raises the share of the more volatile liquid, the one that evaporates more easily. Notice the steps are getting smaller. Simple distillation gives you only one cycle. To separate two liquids well, you need many.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "column",
+      "audio": "public/audio/chem-y11-m1-v04/column.wav",
+      "seconds": 33.18,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "down",
+          "start": 15.71799999999999,
+          "end": 15.92679999999999
+        },
+        {
+          "text": "below",
+          "start": 17.86299999999999,
+          "end": 18.18399999999999
+        },
+        {
+          "text": "degrees",
+          "start": 32.39600000000008,
+          "end": 32.64187500000008
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000005,
+        "after": "top.",
+        "before": "Rising"
+      },
+      "peakFraction": 0.875640869140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "That's what a fractionating column does, automatically. It's a tall tube packed with glass beads, between the flask and the condenser. It's hottest at the bottom and cooler towards the top. Rising vapour condenses on the cooler beads, and that liquid trickles down. Hotter vapour rising from below boils some of it again, and more of the ethanol escapes. This happens over and over up the column, so each level holds vapour a little richer in ethanol than the level below. By the top, the vapour is mostly ethanol, at about seventy eight degrees.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "beads-and-fractions",
+      "audio": "public/audio/chem-y11-m1-v04/beads-and-fractions.wav",
+      "seconds": 25.564,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "better",
+          "start": 11.389,
+          "end": 11.595571428571427
+        },
+        {
+          "text": "receiver",
+          "start": 24.643000000000058,
+          "end": 24.981666666666726
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.882999999999992,
+        "after": "better.",
+        "before": "You"
+      },
+      "peakFraction": 0.860137939453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "so",
+          "start": 4.691,
+          "end": 4.731,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 21.50000000000006,
+          "end": 21.56000000000006,
+          "score": 0.34
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The beads matter because they give the vapour a huge surface to condense on, so lots of these little cycles happen in a short height. A longer column gives even more cycles, so the separation gets better. You collect the distillate in parts, called fractions. While the thermometer stays near seventy eight, the fraction is mostly ethanol. When the reading climbs towards a hundred, the ethanol is running out, so you swap in a new receiver.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "azeotrope",
+      "audio": "public/audio/chem-y11-m1-v04/azeotrope.wav",
+      "seconds": 29.546,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nothing",
+          "start": 14.472999999999988,
+          "end": 14.70049999999999
+        },
+        {
+          "text": "purity",
+          "start": 28.6040000000001,
+          "end": 28.93057142857153
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9029999999999889,
+        "after": "mass.",
+        "before": "At"
+      },
+      "peakFraction": 0.8331298828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 23.49100000000007,
+          "end": 23.53100000000007,
+          "score": 0.496
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "But here's the limit. However tall the column, the distillate never gets past about ninety six percent ethanol by mass. At that composition, the vapour has exactly the same composition as the liquid, so another cycle changes nothing. A mixture like this, which boils without changing its composition, is called an azeotrope. It boils at one steady temperature, just like a pure substance. So a steady thermometer reading is a hint, not proof of purity.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "choosing",
+      "audio": "public/audio/chem-y11-m1-v04/choosing.wav",
+      "seconds": 34.09,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "diesel",
+          "start": 33.20700000000011,
+          "end": 33.44785714285725
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9240000000000457,
+        "after": "it.",
+        "before": "Oil"
+      },
+      "peakFraction": 0.844696044921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "So",
+          "start": 0.422,
+          "end": 0.583,
+          "score": 0.296
+        },
+        {
+          "word": "are",
+          "start": 7.199000000000001,
+          "end": 7.259,
+          "score": 0.349
+        },
+        {
+          "word": "a",
+          "start": 19.561000000000092,
+          "end": 19.601000000000095,
+          "score": 0.495
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So which should you choose? If one part doesn't evaporate at all, like salt in water, or the boiling points are far apart, one cycle is enough. That's simple distillation. If two liquids mix and their boiling points are close, use fractional distillation. You'll sometimes hear twenty five degrees apart as a rough guide, but it isn't a law. What matters is how much more easily one liquid evaporates, and how pure you need it. Oil refineries use giant columns like this to split crude oil into fractions, like petrol and diesel.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "safety-and-memory-aid",
+      "audio": "public/audio/chem-y11-m1-v04/safety-and-memory-aid.wav",
+      "seconds": 20.72,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "open",
+          "start": 9.69,
+          "end": 9.898
+        },
+        {
+          "text": "azeotrope",
+          "start": 19.796999999999993,
+          "end": 20.284799999999994
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8429999999999982,
+        "after": "open.",
+        "before": "Here's"
+      },
+      "peakFraction": 0.8819580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 2,
+      "pronunciationText": "Ethanol catches fire easily, so it's heated with an electric heating mantle or a water bath, never a flame, with the apparatus clamped and the receiver open. Here's a way to remember the column. Simple distillation is one step up the ladder. A column climbs many steps, and the ladder ends at the azeotrope.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v04/attempt-1.wav",
+      "seconds": 14.4,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8239999999999981,
+        "after": "it.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.8463134765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.5040000000000004,
+          "end": 3.5440000000000005,
+          "score": 0.472
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. A solution contains water and a dissolved blue dye that doesn't evaporate when heated. Name and explain a technique that could collect the water, and explain why filtration can't do it. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v04/feedback-1.wav",
+      "seconds": 24.24,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "water",
+          "start": 3.8930000000000002,
+          "end": 4.1530000000000005
+        },
+        {
+          "text": "avoid",
+          "start": 23.534000000000045,
+          "end": 23.786500000000046
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7030000000000136,
+        "after": "water.",
+        "before": "Filtration"
+      },
+      "peakFraction": 0.843963623046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Use simple distillation. Heat the solution, and the water evaporates while the non-volatile dye stays in the flask. The vapour condenses in the condenser and collects as pure water. Filtration can't work, because the dye is dissolved. Its particles are far smaller than the pores, so they pass straight through with the water. Filtering out the dye is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v04/attempt-2.wav",
+      "seconds": 22.8,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8220000000000027,
+        "after": "two.",
+        "before": "Their"
+      },
+      "peakFraction": 0.94403076171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. Two liquids, P and Q, mix completely. Pure P boils at sixty eight degrees, and pure Q boils at seventy two. Their first vapour is only slightly richer in P than the liquid. Explain why simple distillation would separate them poorly, and how a fractionating column improves the separation. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v04/feedback-2.wav",
+      "seconds": 28.712,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "azeotrope",
+          "start": 22.287999999999993,
+          "end": 22.793799999999994
+        },
+        {
+          "text": "avoid",
+          "start": 27.98900000000002,
+          "end": 28.256500000000017
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9630000000000045,
+        "after": "P.",
+        "before": "And"
+      },
+      "peakFraction": 0.8504638671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "The boiling points are only four degrees apart, so both liquids evaporate together, and one cycle gives vapour only a little richer in P. A column gives many cycles of condensing and boiling again, each one enriching the vapour in P. And no, the boiling points alone can't guarantee pure P, because the mixture might form an azeotrope. Saying P boils off first at sixty eight, leaving pure Q, is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v04/handoff.wav",
+      "seconds": 16.408,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "distances",
+          "start": 15.403999999999995,
+          "end": 15.855799999999995
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8849999999999909,
+        "after": "evaporate.",
+        "before": "But"
+      },
+      "peakFraction": 0.83154296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.249999999999991,
+          "end": 5.289999999999991,
+          "score": 0.498
+        },
+        {
+          "word": "we'll",
+          "start": 11.447999999999995,
+          "end": 11.688999999999995,
+          "score": 0.326
+        },
+        {
+          "word": "a",
+          "start": 12.130999999999995,
+          "end": 12.170999999999994,
+          "score": 0.496
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Distillation separates by how easily things evaporate. But what about a single drop of black ink? It's a mixture of several dyes, and there's only a tiny amount. Next time, we'll put it on a strip of paper, and find out why its dyes travel different distances.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v04/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

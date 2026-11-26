@@ -1,0 +1,125 @@
+[
+  {
+    "file": "public/assets/physics/phys-y11-balloon-v1.png",
+    "nativeSize": [
+      1246,
+      1263
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      209,
+      146,
+      1007,
+      1152
+    ],
+    "clearMarginFractionAbove1": [
+      0.16773675762439808,
+      0.11559778305621536,
+      0.19181380417335472,
+      0.08788598574821853
+    ],
+    "evidence": [
+      "work/brief242/phys-y11-balloon-v1-native-paper.jpg",
+      "work/brief242/phys-y11-balloon-v1-native-dark.jpg"
+    ],
+    "id": "phys-y11-balloon-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "252f3b7d5ccdfa4c1210c6599434f7286e0512a4930e852aeedf9b0306fd5f5b",
+    "qa": {
+      "result": "static pass at 300 and 600 px visible width",
+      "observations": [
+        "Yellow balloon with no text. Native painted width 798 px; both target sizes use uniform downscaling. No visible softness in the 1920 by 1080 dark-board comparison.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/phys-y11-balloon-v1-native-paper.jpg",
+        "work/brief242/phys-y11-balloon-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/c8-round-flask-v1.png",
+    "nativeSize": [
+      1002,
+      1800
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      96,
+      177,
+      903,
+      1622
+    ],
+    "clearMarginFractionAbove1": [
+      0.09580838323353294,
+      0.09833333333333333,
+      0.09880239520958084,
+      0.09888888888888889
+    ],
+    "evidence": [
+      "work/brief242/c8-round-flask-v1-native-paper.jpg",
+      "work/brief242/c8-round-flask-v1-native-dark.jpg"
+    ],
+    "id": "c8-round-flask-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "7d0f98d68cb8e029dcad0dd631695a08fe4b929a9bdc7f54761f892de4b6351b",
+    "qa": {
+      "result": "static artwork pass; M2 v19 attempt 1 liquid mismatch",
+      "observations": [
+        "Corked round flask visibly contains liquid. It does not fit the 2.00 L nitrogen-only question, because liquid reduces gas volume. Hold that question-picture use; other liquid-containing uses are separate.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/c8-round-flask-v1-native-paper.jpg",
+        "work/brief242/c8-round-flask-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/y11c-flask-chips-acid-bung-fizz-v1.png",
+    "nativeSize": [
+      1106,
+      1422
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      264,
+      113,
+      970,
+      1202
+    ],
+    "clearMarginFractionAbove1": [
+      0.23869801084990958,
+      0.07946554149085795,
+      0.12296564195298372,
+      0.15471167369901548
+    ],
+    "evidence": [
+      "work/brief242/y11c-flask-chips-acid-bung-fizz-v1-native-paper.jpg",
+      "work/brief242/y11c-flask-chips-acid-bung-fizz-v1-native-dark.jpg"
+    ],
+    "id": "y11c-flask-chips-acid-bung-fizz-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "eadd19de67a228ec8b5c6a307d41f93ab757fa02d12cbe8c6fc5354efd8d1fbc",
+    "qa": {
+      "result": "static pass; coded delivery-tube join pending",
+      "observations": [
+        "Bung, open bent delivery tube, colourless liquid, chips and bubbles. Sidecar opening (960,131) agrees with the visible tip. Actual tubing join and flow remain built-scene checks.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-flask-chips-acid-bung-fizz-v1-native-paper.jpg",
+        "work/brief242/y11c-flask-chips-acid-bung-fizz-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

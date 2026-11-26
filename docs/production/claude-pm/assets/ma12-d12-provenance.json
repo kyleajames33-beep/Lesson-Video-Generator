@@ -1,0 +1,78 @@
+{
+  "brief": 235,
+  "design": "math-a12-d12",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-tower-block-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-6a2c8a82-b3f8-4c00-8524-8b4b002fda81.png",
+      "nativeSize": [
+        809,
+        1942
+      ],
+      "sha256": "254c7dbf7ee3d231f2d9fa309f1db3c6466a79d50e8da6359b2d60c9c8ec4825",
+      "alphaBox": [
+        186,
+        362,
+        623,
+        1642
+      ],
+      "visibleAlphaBoxThreshold8": [
+        187,
+        363,
+        622,
+        1641
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "resampled": false,
+      "anchors": {
+        "roofRightCornerEstimate": [
+          604,
+          364
+        ],
+        "footingBottomLeftEstimate": [
+          188,
+          1639
+        ],
+        "footingBottomRightEstimate": [
+          620,
+          1639
+        ]
+      },
+      "generatorNativeSize": [
+        809,
+        1942
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-tower-block-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Retained flat roof and footing; cleaned outside alpha",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    }
+  ],
+  "state": "finished-plates-delivered",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "visualResult": "Final240/480px tower heights with120px sun inspected; flat roof, square corners, level footing and clean alpha"
+}

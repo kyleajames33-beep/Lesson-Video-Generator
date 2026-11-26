@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v20/lesson.json",
-    "lessonSha256": "d1e36f8da396c1452ad131241fc208d536fca645238bef7778d11b333ba2b6bd"
+    "lessonSha256": "8c588164325850aec04a84c2bd25e403079653a103f1ce22eebe89879dbe7009"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -44,7 +44,7 @@
         "Countdown",
         "QuestionCard"
       ],
-      "holdPurpose": "Retain the design's 3 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "eddy-currents",
@@ -261,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v20/recording-source-check.json",
-      "sha256": "4ee4133a1f943dac775a75cbf077c221553e14b6caa7477da3dbd773c6e34118"
+      "sha256": "3b6e465ec354d9d7bb744d71a9bd94b78ce37f4529e9dd1113544075738b7ee6"
     }
   },
   "studentLearningReview": {
@@ -272,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v20/recording-source-check.json",
-      "sha256": "4ee4133a1f943dac775a75cbf077c221553e14b6caa7477da3dbd773c6e34118"
+      "sha256": "3b6e465ec354d9d7bb744d71a9bd94b78ce37f4529e9dd1113544075738b7ee6"
     }
   },
   "voicedPreview": {

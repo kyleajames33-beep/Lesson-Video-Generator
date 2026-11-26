@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-t02.md",
+  "sourceSha256": "06f6c577f60cbcaed9a17426f96009fdd553aa5fe2e6a6992d903f50788d2d3f",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's the city's daylight over one year, and the line at thirteen hours. Between zero and two pi, they cross twice, once in late October and once in late February. A calculator's inverse sine gives you only one angle, so where does the second day come from, and how do we know there isn't a third? The graph answers both. Every solution is a crossing, and every crossing must sit inside the stated domain, here one year.",
+      "audioFile": "public/audio/math-a12-t02/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "First, make the equation simpler. Twelve plus two sine of the bracket equals thirteen, so take twelve from both sides: two sine of the bracket equals one. Divide by two, and sine of the bracket equals a half. Sliding both graphs down, then squashing both, moves the curve and the line together, so the crossings stay at exactly the same x values. Now the question is: where does sine of x minus pi over six equal a half, for x from zero to two pi?",
+      "audioFile": "public/audio/math-a12-t02/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Call the inside u, so u equals x minus pi over six. When x runs from zero to two pi, u runs from minus pi over six to eleven pi over six. That's the window we search on the plain sine curve. Sine u is a half at pi over six, and, by symmetry about the peak, at five pi over six. The next ones, thirteen pi over six and minus seven pi over six, are outside the window. Now undo the substitution: x is u plus pi over six. So x is pi over three, or pi: a sixth of the way through the year, and halfway. That's the same slide right by pi over six that we saw for the graph.",
+      "audioFile": "public/audio/math-a12-t02/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "A number multiplying x packs more cycles into the domain, like two years of daylight on one graph. Solve two sine two x equals root three, for x from zero to two pi. Divide by two: sine two x is root three over two. Let u equal two x. As x runs from zero to two pi, u runs from zero to four pi. That's two full cycles, so expect four crossings. In the first cycle, u is pi over three and two pi over three. Add two pi for the second cycle: seven pi over three and eight pi over three. Halve them all: x is pi over six, pi over three, seven pi over six, and four pi over three. Stop at two, and you lose half the answers.",
+      "audioFile": "public/audio/math-a12-t02/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Here's why counting works. In one cycle, the curve rises through every height between its lowest and highest values once, and falls through it once. So a line strictly between them crosses twice per cycle, unless an end of the domain lands on it, which we check next. Raise the line to fourteen hours, the longest day, and it only touches, once per cycle. Raise it to fourteen and a half, and no day has that much daylight at all. So count the cycles, and check where the line sits.",
+      "audioFile": "public/audio/math-a12-t02/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "But watch the ends of the domain. Solve two cos of x minus pi over four equals root two, from zero to two pi, with both ends included. Cos of the bracket is root two over two. The window for u runs from minus pi over four to seven pi over four. Cos u is root two over two at pi over four, but also at minus pi over four and seven pi over four, the two ends of the window. So x is zero, pi over two, and two pi. That's three solutions in one cycle, because both ends of the domain are included, and both land on the line.",
+      "audioFile": "public/audio/math-a12-t02/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Graphs also answer questions that algebra finds awkward. For which values of k does two sine of x minus pi over six equal k exactly twice, for x from zero to two pi? Slide a level line up and down. The curve starts and ends at minus one: the same date, a year apart. It rises to two, and falls to minus two. Between minus one and two, the line crosses twice. Between minus two and minus one, it crosses twice too. But at exactly minus one, it also hits both ends, giving three, and at two or minus two, it only touches. So k is between minus two and minus one, or between minus one and two.",
+      "audioFile": "public/audio/math-a12-t02/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Tan works the same way, with one crossing on each complete branch. Solve tan two x equals one, for x from zero to pi. Let u equal two x, so u runs from zero to two pi. Tan repeats every pi, so tan u is one at pi over four, and again at five pi over four. Halve them: x is pi over eight, or five pi over eight. The asymptotes, at pi over four and three pi over four, are never solutions, because tan isn't defined there.",
+      "audioFile": "public/audio/math-a12-t02/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "You can check any of these on a graphing app. Plot both sides, and read the crossings. For the first example, the app shows about one point zero four seven and three point one four two, which match pi over three and pi. The graph answers inequalities too. The curve is above the line between those crossings, so two sine of x minus pi over six is at least one for x from pi over three to pi. The app gives decimals, the algebra gives exact values, and the graph tells you how many to expect.",
+      "audioFile": "public/audio/math-a12-t02/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's the rule to remember. Do to the domain what you do to x. If the inside is two x, double the endpoints. If it's x minus pi over six, subtract pi over six from both. Then find every solution in that new window, and undo the steps to get back to x.",
+      "audioFile": "public/audio/math-a12-t02/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Solve two cos of x minus pi over three equals root three, for x from zero to two pi. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-t02/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Cos of the bracket is root three over two. The u-window runs from minus pi over three to five pi over three. Cos u is root three over two at pi over six, and at minus pi over six. Add pi over three: x is pi over six, or pi over two. Thirteen pi over six is outside the domain.",
+      "audioFile": "public/audio/math-a12-t02/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. Solve tan of x over two equals root three, for x from minus two pi to two pi. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-t02/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Let u equal x over two. Halve the endpoints: u runs from minus pi to pi. Tan u is root three at pi over three, and one period earlier, at minus two pi over three. Double them: x is two pi over three, or minus four pi over three. Stopping at two pi over three misses the negative one.",
+      "audioFile": "public/audio/math-a12-t02/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So the graph tells you how many solutions to expect, and the shifted window finds every one. Next, these graphs meet the real world. At a harbour boat ramp, the tide board reads seven and a half metres at high tide, at time zero, and one and a half metres at low tide, six hours later. If the tide rises and falls like a smooth wave, can we write an equation that predicts the water level at any time?",
+      "audioFile": "public/audio/math-a12-t02/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-t02/scene-16.wav"
+    }
+  ]
+}

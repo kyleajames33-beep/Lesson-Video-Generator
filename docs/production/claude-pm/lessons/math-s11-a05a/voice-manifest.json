@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a05a.md",
+  "sourceSha256": "036df725b0d7149bbe9899036344b8e8a87cab884414dd6455eff07ba130ec65",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-edging-or-mulch",
+      "text": "Here's a backyard. The lawn is twelve metres by eight, and in one corner there's a triangular garden bed. You need two things from the hardware store. Edging, to run around the outside of the lawn, and mulch, to cover the garden bed. They sound similar, but they're completely different questions. Edging is a length, measured in metres. Mulch is sold by volume, but to know how much you need, you first need the area it covers, in square metres. Buy the wrong amount of either, and it's another trip to the shop. So how do we find the perimeter and area of rectangles, triangles, parallelograms and trapeziums, and of shapes made from them?",
+      "audioFile": "public/audio/math-s11-a05a/hook-edging-or-mulch.wav"
+    },
+    {
+      "id": "rectangle",
+      "text": "First, the two words. Perimeter is the distance around the outside edge. Area is the space covered inside, counted in squares. For the lawn on its own, the perimeter is twelve plus eight plus twelve plus eight, or two lots of twelve and two lots of eight, forty metres. For the area, imagine one metre squares across the lawn. There are twelve in each row and eight rows, so twelve times eight, ninety-six square metres. Same lawn, two answers, and different units. The forty is metres of edging. The ninety-six is square metres of grass.",
+      "audioFile": "public/audio/math-s11-a05a/rectangle.wav"
+    },
+    {
+      "id": "parallelogram",
+      "text": "Not everything is a rectangle. An angled parking bay is a parallelogram, a four-sided shape with two pairs of parallel sides. This one has a base of five point five metres, and its slanted sides are two point six metres long. But the height we need is the perpendicular height, measured at right angles to the base, and that's two point four metres. Here's why. Slide the triangle off one end across to the other end, and the parallelogram becomes a rectangle, five point five by two point four. So its area is base times perpendicular height, thirteen point two square metres. Using the slanted side gives fourteen point three, which is too big. Watch the bay lean further over. The slanted side gets longer, but the area doesn't change at all. The slanted side is still useful though. The painted line around the bay is two lots of five point five plus two point six, sixteen point two metres.",
+      "audioFile": "public/audio/math-s11-a05a/parallelogram.wav"
+    },
+    {
+      "id": "triangle",
+      "text": "Now the triangle. Take any triangle and make an exact copy. Turn the copy round and fit it against the first, and together they make a parallelogram, with the same base and the same perpendicular height. So one triangle is half of it. Area equals a half, times base, times height. The garden bed is a right-angled triangle, with sides of three metres and four metres meeting at the corner, and a sloping edge of five metres. The two sides that meet at the right angle are a base and a height already. Half of three times four is six square metres of mulch. And if you wanted edging around the bed itself, add all three sides, three plus four plus five, twelve metres. A very common slip is forgetting the half. That doubles the mulch you buy.",
+      "audioFile": "public/audio/math-s11-a05a/triangle.wav"
+    },
+    {
+      "id": "trapezium",
+      "text": "A trapezium has just one pair of parallel sides. Picture a vegetable plot whose parallel sides are six metres and ten metres, four metres apart. Use the same trick. Copy it, turn the copy upside down, and fit them together. They make a parallelogram whose base is six plus ten, sixteen metres, and whose height is four. That's sixty-four square metres, and one trapezium is half of it, thirty-two square metres. So the area of a trapezium is a half, times a plus b, times h. There's another way to see it. Half of six plus ten is eight, the average of the two parallel sides. So a trapezium has the same area as a rectangle eight metres wide and four metres high. Average the two parallel sides, then times the height. That idea comes back later in the course.",
+      "audioFile": "public/audio/math-s11-a05a/trapezium.wav"
+    },
+    {
+      "id": "composite",
+      "text": "Back to the backyard, with the bed in the corner. The grass is the lawn with the triangle cut out, a composite shape. Before touching any numbers, write the plan. Lawn equals rectangle minus triangle. Ninety-six minus six is ninety square metres of turf. Now the edging, which only goes along the outside of the grass. Trace it. Twelve along the top, eight down the side, nine along the bottom, because the bed takes three, then four up the side, because the bed takes four, and five along the bed's sloping edge. That's thirty-eight metres. The edges inside the shape, and the parts the bed took, don't count. Only the outside.",
+      "audioFile": "public/audio/math-s11-a05a/composite.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's the pattern behind all four shapes. Every area is base times perpendicular height, or half of it. And a perimeter just adds the outside edges.",
+      "audioFile": "public/audio/math-s11-a05a/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A triangular shade sail has a base of three point two metres and a perpendicular height of four point five metres. Its sloping edge is four point eight metres long. Find the area of the sail. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a05a/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "A triangle is half of base times perpendicular height. Half of three point two times four point five is seven point two square metres. Using the sloping edge, four point eight, is the slip. It isn't at right angles to the base.",
+      "audioFile": "public/audio/math-s11-a05a/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. An L-shaped floor is a seven metre by five metre rectangle, with a three metre by two metre rectangle removed from one corner. Find its area and its perimeter. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a05a/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The area is thirty-five minus six, twenty-nine square metres. For the perimeter, trace the outside. Seven, five, four, two, three and three, which is twenty-four metres, exactly the same as the full rectangle. The cut takes two edges away, but adds two back. Subtracting three and two, to get nineteen, is the slip.",
+      "audioFile": "public/audio/math-s11-a05a/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So straight edges are sorted. But plenty of things are round. A pizza slice has two straight edges, and one curved crust. How long is that crust, and how much pizza is in the slice? That's next.",
+      "audioFile": "public/audio/math-s11-a05a/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a05a/key-notes.wav"
+    }
+  ]
+}

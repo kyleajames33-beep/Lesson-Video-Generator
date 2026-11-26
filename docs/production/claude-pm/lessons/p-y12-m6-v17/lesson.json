@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "bf40c77468f4dca367ffff1f885ca290f4e5500509330919f2febd529aa2e37e",
+  "sourceDesignSha256": "2822d543247d5e8e736df9ac90d46ab586303516fa0bbd763d759ba066edc297",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Make your prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "also-a-generator",
@@ -55,7 +65,7 @@
         "text": "Now follow the motor as it spins up. Just as it starts, before the coil is turning, there's no back emf. The full twelve volts drives current through two point zero ohms, giving six point zero amps. As the coil speeds up, the back emf grows. For a fixed field, it's proportional to the speed. At full speed, the back emf here is ten volts. That leaves only two volts to drive the current, so the current is two volts over two point zero ohms, one point zero amp. The faster it spins, the bigger the back emf, and the smaller the current."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 2,
       "holdKind": "visual"
     },
     {

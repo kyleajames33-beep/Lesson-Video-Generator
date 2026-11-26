@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v22.md",
+  "sourceSha256": "a23dde97c37b7c5873ecef7387b28fb004342afcca0df753848e48447a0189e5",
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, we saw that salt is built from sodium and chloride ions, each attracting every neighbour around it. Here's a single salt crystal. Give it a sharp blow, and it doesn't bend. It breaks into pieces with flat faces. And it's full of charged ions, yet as a solid, it doesn't conduct electricity at all. Melt it, or dissolve it in water, and suddenly it does. One structure explains all of this.",
+      "audioFile": "public/audio/chem-y11-m1-v22/hook.wav"
+    },
+    {
+      "id": "lattice",
+      "text": "That structure is called an ionic lattice. It's a giant, regular, three-dimensional pattern of ions, repeating in every direction. In sodium chloride, each sodium ion is surrounded by six chloride ions, and each chloride ion by six sodium ions. There are no separate molecules. The attractions act in every direction at once, and the formula, N a C l, only tells you the ratio of ions, one to one.",
+      "audioFile": "public/audio/chem-y11-m1-v22/lattice.wav"
+    },
+    {
+      "id": "melting",
+      "text": "First, melting. To melt, the ions have to break out of their fixed places, and start moving past each other. But every ion is held by strong attractions to all of its neighbours, so that takes a lot of energy. That's why salt doesn't melt until eight hundred and one degrees Celsius.",
+      "audioFile": "public/audio/chem-y11-m1-v22/melting.wav"
+    },
+    {
+      "id": "charge",
+      "text": "The charges on the ions matter too. Magnesium oxide is made of magnesium two plus and oxide two minus ions, double the charges in sodium chloride. Bigger charges attract more strongly, so magnesium oxide melts at about two thousand eight hundred and fifty degrees, far higher than salt. It's even used to line furnaces. Smaller ions sit closer together, so they attract more strongly too.",
+      "audioFile": "public/audio/chem-y11-m1-v22/charge.wav"
+    },
+    {
+      "id": "ratio-trap",
+      "text": "Don't divide these temperatures. Two thousand eight hundred and fifty, divided by eight hundred and one, is about three and a half. But that doesn't mean the attraction is three and a half times stronger. Zero on the Celsius scale isn't zero energy, so the ratio means nothing. Just say it plainly. Higher charges, stronger attraction, higher melting point.",
+      "audioFile": "public/audio/chem-y11-m1-v22/ratio-trap.wav"
+    },
+    {
+      "id": "hardness",
+      "text": "Second, hardness. To dent an ionic crystal, you'd have to push ions out of their places, against all those strong attractions. So ionic solids resist denting, and some, like magnesium oxide, are very hard. Salt is softer, but it still breaks rather than bends.",
+      "audioFile": "public/audio/chem-y11-m1-v22/hardness.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Suppose a sharp blow shifts one layer of ions along, by just one position. What happens to the charges that end up next to each other? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v22/prediction.wav"
+    },
+    {
+      "id": "brittleness",
+      "text": "Before the shift, every positive ion sits next to negative ions. After the shift, positive ions line up next to positive ions, and negative next to negative. Like charges repel. So instead of bending, the layers push apart, and the crystal splits along a flat plane. That's why ionic solids are brittle, and why salt breaks into pieces with flat, smooth faces.",
+      "audioFile": "public/audio/chem-y11-m1-v22/brittleness.wav"
+    },
+    {
+      "id": "conducting-needs",
+      "text": "Now electricity. An electric current is a flow of charge. For a substance to conduct, it needs charged particles that are free to move. These are called charge carriers. In a metal wire, the carriers are electrons. In an ionic compound, the carriers can only be the ions themselves.",
+      "audioFile": "public/audio/chem-y11-m1-v22/conducting-needs.wav"
+    },
+    {
+      "id": "solid",
+      "text": "Here's a teacher demonstration with solid salt. Two carbon electrodes sit in the dry crystals, wired to a battery and a lamp. The lamp stays off. The ions are charged, but they're locked in the lattice. They can vibrate in place, but they can't travel toward the electrodes. Charged, but not free to move, so there's no current.",
+      "audioFile": "public/audio/chem-y11-m1-v22/solid.wav"
+    },
+    {
+      "id": "molten",
+      "text": "Now melt the salt. At eight hundred and one degrees, the lattice breaks down, and the ions can move past each other. Connect the electrodes, and the lamp lights up. The positive sodium ions drift toward the negative electrode, and the negative chloride ions drift toward the positive one. The moving ions carry the current. This needs a furnace, so it's a demonstration you'd see in footage, not a school practical.",
+      "audioFile": "public/audio/chem-y11-m1-v22/molten.wav"
+    },
+    {
+      "id": "aqueous",
+      "text": "Dissolving does the same job at room temperature. Water molecules have slightly charged ends. They crowd around each ion, and pull it away from the lattice, so the ions spread out through the water. A solution in water is called aqueous. Now the ions are free to move, and the lamp lights again. Your teacher may show this one as a demonstration, or you'll see it on video.",
+      "audioFile": "public/audio/chem-y11-m1-v22/aqueous.wav"
+    },
+    {
+      "id": "whole-answer",
+      "text": "So here's the whole answer. Strong attractions in every direction give ionic solids high melting points, and resist ions being pushed out of place. Shifting a layer lines up like charges, so they're brittle. And they conduct only when the lattice is broken, by melting or dissolving, because only then can the ions move. No moving charges, no current.",
+      "audioFile": "public/audio/chem-y11-m1-v22/whole-answer.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Calcium chloride is an ionic compound. Explain why solid calcium chloride does not conduct electricity, but an aqueous solution of calcium chloride does. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v22/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "In the solid, the calcium and chloride ions are fixed in the lattice, so they can't move to carry charge. In solution, water separates the ions, so they're free to move toward the electrodes, and carry the current. Saying the solution conducts because electrons flow through it is the trap. In an ionic substance, the ions carry the charge.",
+      "audioFile": "public/audio/chem-y11-m1-v22/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Sodium chloride melts at eight hundred and one degrees Celsius, and magnesium oxide melts at two thousand eight hundred and fifty-two. Explain this difference in melting points. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v22/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Melting means overcoming the attractions between the ions in the lattice. Magnesium oxide's ions have charges of plus two and minus two, while sodium chloride's are only plus one and minus one. Higher charges attract more strongly, so more energy is needed, and the melting point is higher. Claiming the bonds are three and a half times stronger, by dividing the temperatures, is the slip.",
+      "audioFile": "public/audio/chem-y11-m1-v22/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Notice that salt has no molecules at all, just ions. But many substances are made of molecules. Last time, we saw that water and carbon dioxide both contain polar bonds. A polar bond, with its delta plus and delta minus ends, is called a bond dipole. Yet water molecules have charged ends, and carbon dioxide molecules don't. The difference is their shape. Next time, we'll see how shape decides whether bond dipoles cancel.",
+      "audioFile": "public/audio/chem-y11-m1-v22/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v22/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+[
+  {
+    "file": "public/assets/chemistry/m6-antacid-tablets-v1.png",
+    "nativeSize": [
+      2048,
+      2048
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      164,
+      369,
+      1884,
+      1679
+    ],
+    "clearMarginFractionAbove1": [
+      0.080078125,
+      0.18017578125,
+      0.080078125,
+      0.18017578125
+    ],
+    "evidence": [
+      "work/brief242/m6-antacid-tablets-v1-native-paper.jpg",
+      "work/brief242/m6-antacid-tablets-v1-native-dark.jpg"
+    ],
+    "id": "m6-antacid-tablets-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "2e4ce7850066f876c59324bbea461c02a795806c5a4d58f5593c2e7d78786902",
+    "qa": {
+      "result": "static pass for ingredient comparison",
+      "observations": [
+        "Plain white tablets with no ingredient text; code labels each chemistry case.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m6-antacid-tablets-v1-native-paper.jpg",
+        "work/brief242/m6-antacid-tablets-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/m6-clip-baking-soda-vinegar-before-v1.png",
+    "nativeSize": [
+      2048,
+      1700
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      420,
+      136,
+      1628,
+      1564
+    ],
+    "clearMarginFractionAbove1": [
+      0.205078125,
+      0.08,
+      0.205078125,
+      0.08
+    ],
+    "evidence": [
+      "work/brief242/m6-clip-baking-soda-vinegar-before-v1-native-paper.jpg",
+      "work/brief242/m6-clip-baking-soda-vinegar-before-v1-native-dark.jpg"
+    ],
+    "id": "m6-clip-baking-soda-vinegar-before-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "946bfbbbdb03f42ce96e5e2a423a1b78d155bd1819338c8535b7a050ea73df91",
+    "qa": {
+      "result": "static pass; paired transition pending",
+      "observations": [
+        "White powder in liquid, no bubbles. Native pair support masks match; no pixel-identity claim.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m6-clip-baking-soda-vinegar-before-v1-native-paper.jpg",
+        "work/brief242/m6-clip-baking-soda-vinegar-before-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/m6-clip-phenolphthalein-colourless-v1.png",
+    "nativeSize": [
+      2048,
+      1700
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      561,
+      136,
+      1487,
+      1564
+    ],
+    "clearMarginFractionAbove1": [
+      0.27392578125,
+      0.08,
+      0.27392578125,
+      0.08
+    ],
+    "evidence": [
+      "work/brief242/m6-clip-phenolphthalein-colourless-v1-native-paper.jpg",
+      "work/brief242/m6-clip-phenolphthalein-colourless-v1-native-dark.jpg"
+    ],
+    "id": "m6-clip-phenolphthalein-colourless-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "5d1325cbf6a81ab127590807fde22a893203336dec78325b3ca4c333edd7c105",
+    "qa": {
+      "result": "static pass; engine timing pending",
+      "observations": [
+        "Clear indicator flask. Colour must follow one specified titration run, no pH display.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m6-clip-phenolphthalein-colourless-v1-native-paper.jpg",
+        "work/brief242/m6-clip-phenolphthalein-colourless-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/m8-carbonate-tube-before-v1.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      383,
+      207,
+      1615,
+      1791
+    ],
+    "clearMarginFractionAbove1": [
+      0.1915,
+      0.1035,
+      0.1925,
+      0.1045
+    ],
+    "evidence": [
+      "work/brief242/m8-carbonate-tube-before-v1-native-paper.jpg",
+      "work/brief242/m8-carbonate-tube-before-v1-native-dark.jpg"
+    ],
+    "id": "m8-carbonate-tube-before-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "f302cd68575a4ffea5eb0bb8e7c8baf6773589267498d75f004055618c26964f",
+    "qa": {
+      "result": "static object pass; solution-only question use held",
+      "observations": [
+        "Visible solid at tube bottom conflicts withK2CO3(aq)question. No answer data leaked.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m8-carbonate-tube-before-v1-native-paper.jpg",
+        "work/brief242/m8-carbonate-tube-before-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/m8-carbonate-tube-fizz-v1.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      382,
+      215,
+      1614,
+      1791
+    ],
+    "clearMarginFractionAbove1": [
+      0.191,
+      0.1075,
+      0.193,
+      0.1045
+    ],
+    "evidence": [
+      "work/brief242/m8-carbonate-tube-fizz-v1-native-paper.jpg",
+      "work/brief242/m8-carbonate-tube-fizz-v1-native-dark.jpg"
+    ],
+    "id": "m8-carbonate-tube-fizz-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "9db52308465a3151ba086a21386718ec67aeedca738b056a3eb291f6253b03dd",
+    "qa": {
+      "result": "static reaction pass; gas collection join held",
+      "observations": [
+        "Fizzing solid/liquid in open tube. Gas-tight connector required before coded delivery to limewater.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m8-carbonate-tube-fizz-v1-native-paper.jpg",
+        "work/brief242/m8-carbonate-tube-fizz-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

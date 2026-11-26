@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v01.md",
+  "sourceSha256": "13b0c0d5207b7930e79e4a8251d59d3ce281e7b712e1115c5436678beb294406",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here are the two plates we ended on last time. The top plate is positive, the bottom one negative, and there's a voltage across them. A proton between them accelerates steadily, like a dropped ball. So here's the puzzle. Double the voltage, and what happens to its acceleration? Keep the voltage, but pull the plates twice as far apart. Or swap the proton for an electron. Make your predictions now.",
+      "audioFile": "public/audio/phys-y12-m6-v01/hook.wav"
+    },
+    {
+      "id": "uniform-field",
+      "text": "An electric field is a region where a charge feels a force. Its direction is the way a positive charge would be pushed, so between these plates it points from the positive plate to the negative one. Between two large plates, the field lines are straight, parallel and evenly spaced. That means the field is uniform, the same strength and the same direction everywhere in the gap. Near the edges of the plates the lines bulge, so we use the middle region, where the plates are wide compared with the gap.",
+      "audioFile": "public/audio/phys-y12-m6-v01/uniform-field.wav"
+    },
+    {
+      "id": "e-equals-v-over-d",
+      "text": "So how strong is the field? The voltage tells us. In Year eleven, a volt was a joule per coulomb. So if one coulomb of positive charge moves from the positive plate to the negative plate, the field does V joules of work on it. The field pushes that coulomb with a force of E newtons, across the distance d, so the work is also E times d. That means V equals E d, and E equals V over d. A wider gap spreads the same voltage over more metres, so the field is weaker.",
+      "audioFile": "public/audio/phys-y12-m6-v01/e-equals-v-over-d.wav"
+    },
+    {
+      "id": "field-numbers",
+      "text": "Try it with real numbers. Two plates two centimetres apart, connected to a hundred volt supply. That's a hundred volts over zero point zero two metres, which is five thousand volts per metre, pointing from the top plate down. Double the voltage to two hundred volts, and the field doubles, to ten thousand. Keep a hundred volts, but move the plates four centimetres apart, and it halves, to two and a half thousand.",
+      "audioFile": "public/audio/phys-y12-m6-v01/field-numbers.wav"
+    },
+    {
+      "id": "force-sign",
+      "text": "Now put a charge in the field. The force on it is F equals q E, the charge times the field. For a positive charge, the force points the same way as the field, towards the negative plate. For a negative charge, like an electron, q is negative, so the force points against the field, towards the positive plate. A common slip is to think the electron goes the way the field arrows point. It doesn't. The arrows show the push on a positive charge, so the electron is pushed the opposite way.",
+      "audioFile": "public/audio/phys-y12-m6-v01/force-sign.wav"
+    },
+    {
+      "id": "acceleration-chain",
+      "text": "Newton's second law turns that force into an acceleration. a equals F over m, which is q E over m. And because the field is uniform, the force is the same everywhere in the gap, so the acceleration is constant, just like g near the ground. Put the whole chain together. The voltage and the gap set the field. The field and the charge set the force. The force and the mass set the acceleration. So a equals q V over m d.",
+      "audioFile": "public/audio/phys-y12-m6-v01/acceleration-chain.wav"
+    },
+    {
+      "id": "worked-electron",
+      "text": "Now the electron version, in the same field of five thousand volts per metre, pointing down. An electron is released near the bottom plate. The force on the electron is one point six oh two times ten to the minus nineteen, times five thousand, which is eight point oh one times ten to the minus sixteen newtons, upwards, towards the positive plate. Divide by the electron's mass, nine point one oh nine times ten to the minus thirty-one kilograms, and the acceleration is eight point eight times ten to the fourteen metres per second squared, also upwards.",
+      "audioFile": "public/audio/phys-y12-m6-v01/worked-electron.wav"
+    },
+    {
+      "id": "gravity-check",
+      "text": "That's about ninety thousand billion times g, so for an electron, gravity is far too small to matter. Check it, though. A proton in the same field feels the same size of force, but it's about eighteen hundred times more massive, so its acceleration is that many times smaller, and it heads for the negative plate. For a charged oil drop, which is far more massive, gravity really does matter. That's how Millikan held oil drops perfectly still, with the electric force upwards balancing the weight downwards.",
+      "audioFile": "public/audio/phys-y12-m6-v01/gravity-check.wav"
+    },
+    {
+      "id": "puzzle-answers",
+      "text": "So, back to the puzzle. Double the voltage, and the field doubles, so the force and the acceleration double. Pull the plates twice as far apart at the same voltage, and the field halves, so the acceleration halves. Swap in an electron, and the force flips, to point against the field. Its acceleration is also about eighteen hundred times bigger, because the electron is so much lighter.",
+      "audioFile": "public/audio/phys-y12-m6-v01/puzzle-answers.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a chain to remember. V over d gives the field. Times q gives the force. Over m gives the acceleration. And for direction, the field arrows show where a positive charge is pushed, so a negative charge goes the other way.",
+      "audioFile": "public/audio/phys-y12-m6-v01/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Two parallel plates are two point five centimetres apart, connected to a hundred and fifty volt supply. A proton is released from rest next to the positive plate. Calculate the electric field strength, then the magnitude of the proton's acceleration, and state its direction. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v01/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "E equals V over d. A hundred and fifty volts over zero point zero two five metres is six point zero times ten to the three volts per metre. Then q E over the proton's mass gives an acceleration of five point seven times ten to the eleven metres per second squared, towards the negative plate. The classic slip is leaving the gap in centimetres.",
+      "audioFile": "public/audio/phys-y12-m6-v01/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. An oil drop has a mass of one point six times ten to the minus fourteen kilograms, and a charge of minus three point two times ten to the minus nineteen coulombs. It sits between two horizontal plates, sixteen millimetres apart. What voltage holds it still, and which plate must be positive? Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v01/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "To hold still, the size of q E must balance m g, so E equals m g over the size of q, four point nine times ten to the five volts per metre. Then V equals E d, which is seven point eight times ten to the three volts. The drop is negative and needs an upward push, so the field must point down, and the top plate must be positive. The classic slip is pointing the field upwards, the way the drop needs to be pushed.",
+      "audioFile": "public/audio/phys-y12-m6-v01/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the voltage and the gap set the field, and the field sets a constant force and acceleration, with a direction set by the charge's sign. Now let's fire an electron in sideways, parallel to the plates. It still feels that steady upward push, while it keeps moving across. So why does its path look like a ball thrown off a cliff?",
+      "audioFile": "public/audio/phys-y12-m6-v01/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v01/key-notes.wav"
+    }
+  ]
+}

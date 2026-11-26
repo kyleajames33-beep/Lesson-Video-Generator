@@ -1,0 +1,461 @@
+{
+  "design": "phys-y12-m6-v20",
+  "sourceSHA256": "5ffa5a4cd56416c9e33188037a6c7db4d7c6b89b91c7e9df121646a814bfed12",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "07-slotted-white-corrected.png",
+      "paths": [],
+      "exists": false,
+      "disposition": "optional historical white candidate unavailable; new copper-tube pair painted per root15",
+      "requiredRaster": false
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "out/checks/physics-eddy-tube-2026-10-25/raw/04-intact-white-base.png",
+      "paths": [
+        "out/checks/physics-eddy-tube-2026-10-25/raw/04-intact-white-base.png"
+      ],
+      "exists": true,
+      "disposition": "optional historical white candidate unavailable; new copper-tube pair painted per root15",
+      "requiredRaster": false
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "phys-y11-metal-plate-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metal-plate-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-coaster-brake-rail-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-coaster-brake-rail-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-coaster-car-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-coaster-car-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-copper-pendulum-slotted-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-copper-pendulum-slotted-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-copper-pendulum-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-copper-pendulum-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-copper-tube-slotted-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-copper-tube-slotted-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-copper-tube-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-copper-tube-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-neodymium-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-neodymium-magnet-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v20",
+      "reference": "y12p-plastic-tube-v1.png",
+      "paths": [],
+      "exists": false,
+      "disposition": "coded plastic tube required by root15; no raster delivered",
+      "requiredRaster": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "copper-pendulum-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-e624de8e-a4db-45ee-afd7-95c308a2dd2b.png",
+      "size": [
+        1003,
+        1568
+      ],
+      "bbox": [
+        350,
+        221,
+        654,
+        1307
+      ],
+      "marginFraction": [
+        0.3489531405782652,
+        0.14094387755102042,
+        0.34795613160518446,
+        0.16645408163265307
+      ],
+      "alphaZeroFraction": 0.925429069933058,
+      "file": "public/assets/physics/y12p-copper-pendulum-v1.png",
+      "sha256": "b8f7ffb3a0eb5545352b4d8133daf84b374bf895d53d17025368992f2dad1fb4",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "pivot": [
+          501,
+          247
+        ],
+        "plateRectangle": [
+          351,
+          1020,
+          653,
+          1305
+        ],
+        "rodLine": [
+          [
+            501,
+            272
+          ],
+          [
+            501,
+            1020
+          ]
+        ],
+        "note": "Pair shares canvas but has small contour/texture differences. See pair diagnostics; exact seamless swap is not certified."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "copper-pendulum-slotted-hole",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-d1e889bf-ae91-498d-b788-1e148cb799d0.png",
+      "size": [
+        1003,
+        1568
+      ],
+      "bbox": [
+        346,
+        212,
+        657,
+        1306
+      ],
+      "marginFraction": [
+        0.34496510468594216,
+        0.13520408163265307,
+        0.34496510468594216,
+        0.16709183673469388
+      ],
+      "alphaZeroFraction": 0.926123415467882,
+      "file": "public/assets/physics/y12p-copper-pendulum-slotted-v1.png",
+      "sha256": "b23c021baf132f7c560b1089c7bbc036719b3730b5f28bfd31c5bfc39379f0cd",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "pivot": [
+          501,
+          244
+        ],
+        "plateRectangle": [
+          348,
+          1017,
+          655,
+          1304
+        ],
+        "rodLine": [
+          [
+            501,
+            272
+          ],
+          [
+            501,
+            1017
+          ]
+        ],
+        "slots": 5,
+        "note": "Top pivot hole reopened in final edit. Five open-bottom slots stop near upper quarter. Align using each pivot, not assumed pixel-identical texture."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "neodymium-magnet",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-6551f8a3-2520-4d68-b252-de46b800afdf.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bbox": [
+        239,
+        320,
+        1025,
+        973
+      ],
+      "marginFraction": [
+        0.19059011164274323,
+        0.2551834130781499,
+        0.18261562998405104,
+        0.2240829346092504
+      ],
+      "alphaZeroFraction": 0.8306872553284037,
+      "file": "public/assets/physics/y12p-neodymium-magnet-v1.png",
+      "sha256": "a3f0b6b486ee7f07c8a5612239a86493fae4c0dc1f4565bd99778b1467d8703b",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "longAxisApprox": [
+          [
+            380,
+            840
+          ],
+          [
+            934,
+            449
+          ]
+        ],
+        "diameterApprox": 324,
+        "fitting": {
+          "rotationDegreesCounterclockwise": 55,
+          "rotatedAlphaBBox": [
+            726,
+            439,
+            1050,
+            1317
+          ],
+          "rotatedWidth": 324,
+          "uniformScaleRelativeToTubeNative": 0.3395061728395062,
+          "targetDiameter": 110,
+          "tubeInnerWidthApprox": 137,
+          "radialClearanceApproxPerSide": 13.5,
+          "note": "Uniform scale and rotation only. Opaque wall requires masking/coded cutaway to show internal magnet."
+        },
+        "note": "Diameter324is rotated silhouette width after55degree QA rotation. Native end face is foreshortened. Use uniform scale and rotation, no stretching."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "copper-tube-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-6372be93-647f-40f4-ab79-f31337488c80.png",
+      "size": [
+        946,
+        1663
+      ],
+      "bbox": [
+        392,
+        288,
+        555,
+        1373
+      ],
+      "marginFraction": [
+        0.4143763213530655,
+        0.17318099819603128,
+        0.41331923890063427,
+        0.17438364401683704
+      ],
+      "alphaZeroFraction": 0.8846260928376466,
+      "file": "public/assets/physics/y12p-copper-tube-v1.png",
+      "sha256": "daa56a0412189bbbc4259dba5b6e9e1a5bc78e23f16813165e370e0b39c4ac56",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "outerRectangle": [
+          392,
+          288,
+          555,
+          1373
+        ],
+        "topBoreWidthApprox": 137,
+        "topBoreCentre": [
+          473,
+          315
+        ],
+        "note": "Opaque copper. Internal magnet requires coded cutaway/masking. Optional older white-background candidates absent; root permits new painting."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "copper-tube-slotted",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-8feb74e0-a9b8-4f9b-9f5e-90c3d0e164ab.png",
+      "size": [
+        946,
+        1663
+      ],
+      "bbox": [
+        390,
+        287,
+        557,
+        1378
+      ],
+      "marginFraction": [
+        0.41226215644820297,
+        0.17257967528562837,
+        0.41120507399577166,
+        0.1713770294648226
+      ],
+      "alphaZeroFraction": 0.8805935425801457,
+      "file": "public/assets/physics/y12p-copper-tube-slotted-v1.png",
+      "sha256": "211a004615b33b8269ee66ba077ffb4f56841c6c1ba81410e93d45d1eb8181cf",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "outerRectangle": [
+          390,
+          287,
+          557,
+          1378
+        ],
+        "topBoreWidthApprox": 137,
+        "slotCentreLineApprox": [
+          [
+            473,
+            343
+          ],
+          [
+            473,
+            1374
+          ]
+        ],
+        "note": "One full-length front-wall slot, far wall remains copper. Pair canvas matches with up to5native-pixel contour difference and texture changes."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "coaster-car-fin",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-3ddee2f9-a282-4ff3-8e5c-acbbfd3c6968.png",
+      "size": [
+        1663,
+        946
+      ],
+      "bbox": [
+        322,
+        221,
+        1325,
+        789
+      ],
+      "marginFraction": [
+        0.1936259771497294,
+        0.23361522198731502,
+        0.20324714371617558,
+        0.16596194503171247
+      ],
+      "alphaZeroFraction": 0.7616689062660899,
+      "file": "public/assets/physics/y12p-coaster-car-v1.png",
+      "sha256": "2f5ecade762c441eaa8826b420eba24eb611561a7037149fac1dc820f647e3a1",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "finRectangle": [
+          580,
+          645,
+          1087,
+          789
+        ],
+        "wheelContactLine": [
+          [
+            430,
+            707
+          ],
+          [
+            1205,
+            707
+          ]
+        ],
+        "note": "Empty seats only. Final fin extends below wheel-contact line. Coordinates verified from final native view; scene track is coded."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "coaster-brake-rail-alpha",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b42d4bae-9541-4f75-bc90-a0f3e301c18c.png",
+      "size": [
+        2172,
+        724
+      ],
+      "bbox": [
+        235,
+        218,
+        1938,
+        565
+      ],
+      "marginFraction": [
+        0.10819521178637201,
+        0.3011049723756906,
+        0.10773480662983426,
+        0.21961325966850828
+      ],
+      "alphaZeroFraction": 0.6916430104901152,
+      "file": "public/assets/physics/y12p-coaster-brake-rail-v1.png",
+      "sha256": "1ad2957162db73a3798ee6d0b72e904fb667fade0814ef7caaf3163181ceaa70",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "note": "Front/back opposed magnet rows with open-ended fin corridor. Native channel coordinates and car registration are in car-rail-check.json. Front row needs foreground masking, not transparent physical magnets."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

@@ -1,0 +1,15 @@
+# Brief 242: Biology FA1 v12 animal anchor and pump-state crops
+
+17 November 2026.
+
+Narration unchanged at5,547characters, no em dash. One new native animal-cell record inspected on paper/dark: nucleus, three orange mitochondria, rough ER/ribosomes, smooth ER, Golgi and vesicles. Complete cell with true exterior alpha, native aspect, no human figure, text or answer labels. It reads at480px painted height; the membrane contour can anchor the concentration inset without treating this whole-cell illustration as a literal measured cross-section.
+
+Root finding: existing root-cell plate has FIVE visible orange mitochondria, not the Assets section's six. Their approximate centres are[640,475],[540,980],[605,1495],[1515,990],[1465,1490] on2000squarecanvas. Do not ring a sixth pale starch body as a mitochondrion. Narration says many, so speech does not require a count change; root corrects the visual ringing plan. Root cell has a large vacuole and no chloroplasts, with clean outer contour on the already inspected dark composite. Optional many-mito replacement has not been commissioned or required by the current learning review; no missing mandatory plate is inferred.
+
+Carrier file crops cleanly into two complete same-scale states with upper/lower binding pockets visible. QA rectangles[160,180,780,850] and[760,180,1380,850] demonstrate visibility only. They are not pixel-matched bilayer states: head positions, protein silhouette and surrounding lipid details differ. Trim neighbouring-state edge remnants and register the binding pocket before the cross-fade; do not imply a stationary bilayer from an untested whole-crop dissolve. This same carrier serves the accepted passive/pump roles with labels changing by lesson, as root decision5 allows.
+
+Volvox300px question prop has no potassium values, ATP symbols or transport-direction answer painted. The full given concentration/respiration-inhibitor conditions stay on the card while it is shown. Existing animal tonicity crops retain their physical state labels only when the corresponding case is taught/revealed; the source's normal-to-swollen comparison is qualitative and does not measure pump failure time.
+
+One-ion illustrative pump cycle is distinct from the named sodium-potassium pump's3Na-out/2K-in ratio. A model pump must move one counted particle from one chamber to the other per cycle and increment ATP once; stopping ATP stops pumping while passive leak continues. Restart restores pumping without duplicating or losing particles. Model counts30/6 and19/17 both conserve36; the exact scripted cycle/leak sequence and source readouts must come from one configured run. No empirical rate or actual run approval. Existing electrical-force condition, secondary-transport author notes, R1/R2 and earlier plate qualifications remain. No new commission, source edit, listening or whole-lesson clearance.
+
+Evidence: `assets/brief242-bio-fa1-v12-native-qa-17-nov.json`. Reviewed design SHA256: `3412ba997158ca8c43bc33399806e2f0873036f309b0f0e06c4bc84b3c13601c`. No source edits or whole-lesson clearance.

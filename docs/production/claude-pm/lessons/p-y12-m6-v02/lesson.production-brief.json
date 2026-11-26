@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v02/lesson.json",
-    "lessonSha256": "e216cdb76a811f29af69af977edc24521a447084df5a2d702bc1ca972233a2af"
+    "lessonSha256": "10c1cf44ca2f071c0453784004683d5916ff5049ff8cddf0d00be3400e535034"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -38,12 +38,13 @@
       "teachingReason": "Here's our electron again, at the entrance to the plates. This time it's fired in sideways, parallel to the plates, at three times ten to the seven metres per second. As it moves across, it's pushed steadily upwards, towards the positive plate. Its path curves, just like a ball thrown sideways off a cliff, only upside down. Is that a coincidence? Straight line, parabola or circle: what shape is the path?",
       "narrationCue": "curves / down / path",
       "motionPurpose": "opens on v01's final frame (see \"Opening frame\"). The electron moves right at constant speed into the gap; on \"curves\" its path bends up (strobe trajectory mode, true scale, 18 px per mm, plates 5.0 cm long and 2.0 cm apart, navy brackets \"L = 5.0 cm\", \"d = 2.0 cm\"). On \"down\" the cliff inset's parabola flips vertically and slides beside the electron's path, tag \"same shape?\". On \"path\" the 3 s `Countdown` runs beside chips \"straight line\", \"parabola\", \"circle\". Revision 2: the painted supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) stays at the left with its leads to the plates, display \"400 V\" (52 px, navy). Hand tags: teal \"steady across\" under the v arrow, amber \"steady push up\" with a pen arrow to the force arrow, grey \"upside-down cliff?\" by the flipped parabola.",
-      "motionRole": "explain",
+      "motionRole": "hold",
       "onScreenChange": "opens on v01's final frame (see \"Opening frame\"). The electron moves right at constant speed into the gap; on \"curves\" its path bends up (strobe trajectory mode, true scale, 18 px per mm, plates 5.0 cm long and 2.0 cm apart, navy brackets \"L = 5.0 cm\", \"d = 2.0 cm\"). On \"down\" the cliff inset's parabola flips vertically and slides beside the electron's path, tag \"same shape?\". On \"path\" the 3 s `Countdown` runs beside chips \"straight line\", \"parabola\", \"circle\". Revision 2: the painted supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) stays at the left with its leads to the plates, display \"400 V\" (52 px, navy). Hand tags: teal \"steady across\" under the v arrow, amber \"steady push up\" with a pen arrow to the force arrow, grey \"upside-down cliff?\" by the flipped parabola.",
       "motionTools": [
-        "Source diagrams, painted plates and cue-directed changes"
+        "Source diagrams, painted plates and cue-directed changes",
+        "Countdown"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Straight line, parabola or circle: what shape is the path?\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "two-motions",
@@ -260,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v02/recording-source-check.json",
-      "sha256": "6f6c2810877e28edd08e9955d483883a7f6ce6fd7abf53cae16a8cba8715d954"
+      "sha256": "5ec3117a8a3a7d8add602aea0317f97206d2e51f6ed9e4d4f634502fa248fd3b"
     }
   },
   "studentLearningReview": {
@@ -271,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v02/recording-source-check.json",
-      "sha256": "6f6c2810877e28edd08e9955d483883a7f6ce6fd7abf53cae16a8cba8715d954"
+      "sha256": "5ec3117a8a3a7d8add602aea0317f97206d2e51f6ed9e4d4f634502fa248fd3b"
     }
   },
   "voicedPreview": {

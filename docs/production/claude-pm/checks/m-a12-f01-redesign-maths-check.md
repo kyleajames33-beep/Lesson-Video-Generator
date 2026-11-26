@@ -10,3 +10,10 @@ The live site lesson at https://hscscience.com.au/subjects/maths-advanced/year12
 
 
 Source follow-up,11November: Current module index verified as four lessons. Historical lesson03 footer not visible in current Learn/Practice views; Review remains locked, so no current footer defect claimed. See work/brief240/source-followups-nov11.md. Existing findings retained.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `3345043a9d031234d65d69380fcd21d8fa4abda0098d1ddb069dd7ab9def780a`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. End-of-over sampling now matches cricket scoring. Counter m stays distinct from upper bound j; numeric sum remains135. Both source findings resolved.
+
+Recount:6050characters in16spoken strings; all declared counts agree, no em dash. New narration scenes:1, 7. Exact strings and cues in work/brief240/f01-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

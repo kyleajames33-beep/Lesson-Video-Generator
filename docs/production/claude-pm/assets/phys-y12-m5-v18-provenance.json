@@ -1,0 +1,151 @@
+{
+  "design": "phys-y12-m5-v18",
+  "sourceSHA256": "1fb055486757ed1807475ccfa86fc5b950807563add4b33f4c0a3a8804101b7b",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v18",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v18",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v18",
+      "reference": "y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v18",
+      "reference": "y12p-moon-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-moon-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v18",
+      "reference": "y12p-satellite-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-satellite-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v18",
+      "reference": "y12p-spanner-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spanner-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "moon",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-7227d570-f505-4be3-bf46-d93b5071cc61.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha16Bounds": [
+        158,
+        150,
+        1092,
+        1106
+      ],
+      "marginFraction": [
+        0.12599681020733652,
+        0.11961722488038277,
+        0.1291866028708134,
+        0.11802232854864433
+      ],
+      "file": "public/assets/physics/y12p-moon-v1.png",
+      "sha256": "9b9d1dbd580048136dc7f05270b94541ca1463309c718527fbe219c099bf4c01",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "centre": [
+          625,
+          628
+        ],
+        "radius": 473,
+        "note": "Hand-painted full disc, limb width934,height956pixels. Uniform scale only; use inspected radius for Earth/Moon size comparison, not an exact geometric outline."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    },
+    {
+      "key": "satellite",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-c98ed96f-5f63-436f-9c73-9006e229086e.png",
+      "size": [
+        1585,
+        992
+      ],
+      "alpha16Bounds": [
+        188,
+        399,
+        1395,
+        671
+      ],
+      "marginFraction": [
+        0.11861198738170348,
+        0.4022177419354839,
+        0.11987381703470032,
+        0.3235887096774194
+      ],
+      "file": "public/assets/physics/y12p-satellite-v1.png",
+      "sha256": "c1c2cbddce3908878065f4034199bc1bf8ea8a13cc3862d7708446ab162c0e1e",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "bodyCentre": [
+          791,
+          487
+        ],
+        "overallWidth": 1207,
+        "dishTip": [
+          791,
+          669
+        ],
+        "note": "Solar wings horizontal; dish faces down in native plate."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    }
+  ],
+  "qa": "docs/production/claude-pm/assets/brief188-qa",
+  "holds": "Source findings unresolved. v16 method blocked. Old paper clip backdrop confirmed in v15/v16; clean replacement request requires Claude/root decision, no replacement painted.",
+  "motionListeningRelease": "pending"
+}

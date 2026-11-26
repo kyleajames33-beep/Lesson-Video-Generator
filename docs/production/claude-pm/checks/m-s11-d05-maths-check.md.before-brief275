@@ -1,0 +1,19 @@
+# math-s11-d05: maths-check preflight hold
+
+25 November 2026. Source SHA-256: `c5ba0ff5cee24b53128456350d550c2b0a12fe2aed62b535c35d6cf2b1e7fe75`.
+
+Result: 0 blockers, 2 should fix. No recording approval.
+
+- {"code": "count-mismatch", "declared": "5,521", "actual": 5509}
+
+The narration count must be the sum of the 13 scene strings, which is 5509. The declared count appears to include spaces between scenes. No source or narration was edited. Full arithmetic, syllabus-description, playlist-join and anchor checks remain pending. Evidence: work/brief272/source-inventory.json.
+
+Official facts and root-application holds: checks/maths-standard-y11-official-facts.md. Human listening pending.
+
+## Additional source-contract review
+
+Every quoted syllabus content statement in this description matches the captured official crosswalk. The description's Builds on/Next title links were checked in playlist order. This is a metadata join check, not full visual frame continuity or anchor approval. Evidence: work/brief272/source-contract-results.json.
+
+- Should fix, scene2, cue-not-verbatim: The quoted cue "Where the phone charges, how rested, how you get to school" omits "you feel, and" from the spoken sentence. Use an exact shorter cue or the full actual sentence.
+
+The resolution log explicitly leaves this source unchanged because no learning blocker or should-fix required a revision. Its old Revision1 header is not treated as a new learning-review hold.

@@ -1,0 +1,256 @@
+{
+  "design": "phys-y12-m6-v18",
+  "sourceSHA256": "aab312c8a49d1586bb1431c3e63f829434d5ce51f2c7d726af74df0a63318a2e",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "phys-y11-filament-lamp-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-filament-lamp-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "phys-y11-power-station-v2.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-station-v2.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "public/assets/physics/phys-y11-lamp-holder-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-lamp-holder-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "public/assets/physics/phys-y11-oscilloscope-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-oscilloscope-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "public/assets/physics/phys-y11-power-station-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-station-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "y12p-hobby-motor-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-hobby-motor-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "y12p-motor-flywheel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-motor-flywheel-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v18",
+      "reference": "y12p-squirrel-cage-rotor-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-squirrel-cage-rotor-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "hobby-motor-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-04c9d90d-78db-4193-9e3b-9fe377164808.png",
+      "size": [
+        1585,
+        992
+      ],
+      "bbox": [
+        384,
+        249,
+        1210,
+        746
+      ],
+      "marginFraction": [
+        0.24227129337539433,
+        0.25100806451612906,
+        0.23659305993690852,
+        0.24798387096774194
+      ],
+      "alphaZeroFraction": 0.8409687595400427,
+      "file": "public/assets/physics/y12p-hobby-motor-v1.png",
+      "sha256": "66772c67bf8bc8a981bcf1abc21a367bf38b53625664b78dc96bd1f6999fdb13",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "shaftRoot": [
+          955,
+          492
+        ],
+        "shaftTip": [
+          1188,
+          539
+        ],
+        "flywheelMount": [
+          1100,
+          525
+        ],
+        "terminalCentres": [
+          [
+            429,
+            347
+          ],
+          [
+            408,
+            489
+          ]
+        ],
+        "canHotRegion": [
+          508,
+          350,
+          865,
+          623
+        ],
+        "visibleCanDiameterApprox": 300,
+        "note": "Separate family from school demonstration model is approved in root12. Shaft points right and slightly towards viewer."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "motor-flywheel-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-8e6c9534-35b5-4e09-958d-6a09b80d2016.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bbox": [
+        202,
+        194,
+        1042,
+        1052
+      ],
+      "marginFraction": [
+        0.16108452950558214,
+        0.1547049441786284,
+        0.16905901116427433,
+        0.16108452950558214
+      ],
+      "alphaZeroFraction": 0.6581694558274764,
+      "file": "public/assets/physics/y12p-motor-flywheel-v1.png",
+      "sha256": "96ceb0c4669954cf0cdb39c8c77fed27c875f891991b5686cd05a917a5916852",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "pivot": [
+          627,
+          627
+        ],
+        "outerRadiusApprox": 423,
+        "uniformScaleRelativeToMotorNative": 0.5325443786982249,
+        "note": "Four holes and one continuous diagonal index stripe. Face-on layer as requested; painted outer circle and hub are approximate, not CAD-perfect. Eight45degree QA views inspected. Confirm wobble at actual playback."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "squirrel-cage-rotor-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-af77deec-684b-4540-8451-7ca9331a612e.png",
+      "size": [
+        1568,
+        1003
+      ],
+      "bbox": [
+        175,
+        180,
+        1393,
+        841
+      ],
+      "marginFraction": [
+        0.11160714285714286,
+        0.1794616151545364,
+        0.11160714285714286,
+        0.16151545363908276
+      ],
+      "alphaZeroFraction": 0.6576940098073127,
+      "file": "public/assets/physics/y12p-squirrel-cage-rotor-v1.png",
+      "sha256": "8d6123fc2b0183d9a6ed25eb2f5c54bbface04b28d38666a86f902bf4e8aa1e9",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "axisApprox": [
+          [
+            175,
+            515
+          ],
+          [
+            1393,
+            515
+          ]
+        ],
+        "endRingCentresApprox": [
+          [
+            451,
+            510
+          ],
+          [
+            1110,
+            510
+          ]
+        ],
+        "nearBarLoopApprox": [
+          [
+            410,
+            469
+          ],
+          [
+            1070,
+            469
+          ],
+          [
+            1078,
+            521
+          ],
+          [
+            413,
+            521
+          ]
+        ],
+        "note": "Bare conducting cage, straight bars and end rings, broad hub webs, no iron core. Highlight a pair of bars and joining end-ring arcs, not shaft. End-on rotation remains coded."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

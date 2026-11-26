@@ -1,0 +1,56 @@
+{
+  "id": "y11-rocky-shore-v2",
+  "brief": 242,
+  "file": "public/assets/biology/y11-rocky-shore-v2.png",
+  "sha256": "4e3f77ecd9e1b2ce17a7f5d1ee4ca11fededec4f6732b17317867ece784a4e7d",
+  "nativeSize": [
+    1049,
+    1500
+  ],
+  "originalPreserved": "public/assets/biology/y11-rocky-shore-v1.png",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-3e0f8162-03a3-448e-bf81-13636e43f94b.png",
+  "method": "Built-in image edit; PNG copied unchanged. Python only measured and made QA composites.",
+  "prompt": "Repair rocky-shore plate to original specification. Fine dark ink and layered muted watercolour portrait vignette about 1400 by 2000. Broad bare sloping grey intertidal rock from above high tide at top to sea only at bottom; empty zones for coded barnacle patches/tide overlays. Little brown seaweed and wave wash at base. Remove underwater split view, water column, shafts and caustics. No painted barnacles, starfish, counts, tide lines, text, people, faces, hands, litter or buildings. True alpha outside ragged silhouette, no halo/shadow/wash. Eight percent clear margins, complete native portrait aspect, no stretch. Original v1 preserved.",
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    54,
+    142,
+    992,
+    1401
+  ],
+  "anchors": {
+    "upperBareRock": [
+      523,
+      525
+    ],
+    "middleBareRock": [
+      524,
+      833
+    ],
+    "lowerBareRock": [
+      525,
+      1110
+    ],
+    "waveWash": [
+      695,
+      1350
+    ]
+  },
+  "qa": {
+    "result": "static composition and alpha pass with margin limits",
+    "observations": [
+      "Actual native paper/dark composites are clean, no exterior halo. No underwater cutaway, light shafts or caustics remain.",
+      "Broad exposed grey rock available for code overlays, small brown seaweed and wave wash at base, no prepainted barnacle counts or question data.",
+      "Native canvas 1049 by 1500 differs by one pixel in height from v1 1049 by 1499; do not reuse old pixel transforms blindly.",
+      "Side clear margins about five percent and bottom about 6.6 percent, below requested eight. Leave extra scene padding.",
+      "Exact tide lines, barnacle patch anchors, removal overlay and scene motion remain pending. No whole-lesson clearance."
+    ],
+    "evidence": [
+      "work\\brief242\\rocky-shore-v2-native-paper.jpg",
+      "work\\brief242\\rocky-shore-v2-native-dark.jpg"
+    ]
+  }
+}

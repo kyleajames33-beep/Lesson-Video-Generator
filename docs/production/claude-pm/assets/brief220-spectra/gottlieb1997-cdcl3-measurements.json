@@ -1,0 +1,147 @@
+{
+  "source": "Gottlieb,Kotlyar,Nudelman1997,J.Org.Chem.62,7512-7515",
+  "doi": "10.1021/jo971176v",
+  "url": "https://nmr.chem.ucsb.edu/docs/NMR_Impurities.pdf",
+  "download": "docs\\production\\claude-pm\\assets\\brief220-spectra\\fulmer2010-nmr-impurities.pdf",
+  "sha256": "27b0cbfb5a8cfcc53b2e5ca1307e992b8b4c661fb04ea3ded181b8c7063f386c",
+  "fileContents": "Combined9-page document: page1 repeats Fulmer2010; pages2to5 are Gottlieb1997; pages6to9 are Fulmer2010. Do not misattribute the1997 table to Fulmer.",
+  "recordIds": [
+    "Gottlieb1997 Table1 CDCl3 column,PDFpage3",
+    "Gottlieb1997 Table2 CDCl3 column,PDFpage4"
+  ],
+  "solvent": "CDCl3",
+  "H1MHz": 300.1,
+  "C13MHz": 75.5,
+  "temperatureC": "24 +/-1",
+  "methodPage": 2,
+  "tablePagesVisuallyInspected": [
+    3,
+    4
+  ],
+  "type": "Primary published measured shift tables,additional to database records,not a new database accession",
+  "rows": [
+    {
+      "compound": "ethanol",
+      "C13ppm": [
+        18.41,
+        58.28
+      ],
+      "H1ppm": [
+        1.25,
+        3.72
+      ],
+      "H1patterns": [
+        "triplet,J7",
+        "quartet,J7"
+      ],
+      "note": "OH variable; measured impurity sample OH1.32 does not set a universal shift."
+    },
+    {
+      "compound": "ethyl-ethanoate",
+      "C13ppm": [
+        14.19,
+        21.04,
+        60.49,
+        171.36
+      ],
+      "H1ppm": [
+        1.26,
+        2.05,
+        4.12
+      ],
+      "H1patterns": [
+        "triplet,J7",
+        "singlet",
+        "quartet,J7"
+      ]
+    },
+    {
+      "compound": "2-methylpropan-2-ol",
+      "C13ppm": [
+        31.25,
+        69.15
+      ],
+      "H1ppm": [
+        1.28
+      ],
+      "H1patterns": [
+        "singlet"
+      ],
+      "note": "Exchanging OH not certified as one fixed resonance."
+    },
+    {
+      "compound": "butan-2-one",
+      "C13ppm": [
+        7.86,
+        29.49,
+        36.89,
+        209.56
+      ],
+      "H1ppm": [
+        1.06,
+        2.14,
+        2.46
+      ],
+      "H1patterns": [
+        "triplet,J7",
+        "singlet",
+        "quartet,J7"
+      ]
+    },
+    {
+      "compound": "propan-2-ol",
+      "C13ppm": [
+        25.14,
+        64.5
+      ],
+      "H1ppm": [
+        1.22,
+        4.04
+      ],
+      "H1patterns": [
+        "doublet,J6",
+        "septet,J6"
+      ]
+    },
+    {
+      "compound": "ethanoic-acid",
+      "C13ppm": [
+        20.81,
+        175.99
+      ],
+      "H1ppm": [
+        2.1
+      ],
+      "H1patterns": [
+        "singlet"
+      ],
+      "note": "Acid proton omitted from this table, not evidence of absence."
+    },
+    {
+      "compound": "propanone",
+      "C13ppm": [
+        30.92,
+        207.07
+      ],
+      "H1ppm": [
+        2.17
+      ],
+      "H1patterns": [
+        "singlet"
+      ]
+    },
+    {
+      "compound": "cyclohexane",
+      "C13ppm": [
+        26.94
+      ],
+      "H1ppm": [
+        1.43
+      ],
+      "H1patterns": [
+        "singlet"
+      ]
+    }
+  ],
+  "comparison": "All values actually drawn for these compounds remain within the stated1ppm carbon and0.1ppm proton tolerances of the design. OH shifts remain variable. These tables resolve missing database conditions for these particular measurements,not the remaining compounds or IR holds."
+}

@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d08.md",
+  "sourceSha256": "649608cae950b3f973c4656ca1abec80363e526ea00c8611d73a08c1385ef7f4",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-each-display",
+      "text": "In an exam, the graph is usually drawn for you, and the marks are for reading it. Every display has its own rules, but the same routine works for all of them. Read the key and the scale. Read a value. Count the values that fit a condition. Compare. And then say what it means, in context. We'll use it on six displays, starting with this batter's season. So how do we read dot plots, stem-and-leaf plots, line graphs, sector graphs and divided bar charts?",
+      "audioFile": "public/audio/math-s11-d08/hook-each-display.wav"
+    },
+    {
+      "id": "stem-and-leaf",
+      "text": "A stem-and-leaf plot keeps every value. The stem is the leading digit, the leaf is the last digit, and the key tells you how they join. Two, four is twenty-four runs. Without the key, two four could just as easily mean two point four. The leaves are in order, so the batter's fifteen scores run from nought, four and seven, up to eighty-seven. How many times did the batter score thirty or more? Count the leaves from the three stem down. Thirty-three, thirty-six, forty-one, fifty-eight, sixty-three, eighty-seven. Six innings. And because the values are in order, the middle score is easy to find. Fifteen scores, so the eighth one, twenty-four. In context, this batter usually scores under forty, with the occasional big innings.",
+      "audioFile": "public/audio/math-s11-d08/stem-and-leaf.wav"
+    },
+    {
+      "id": "back-to-back",
+      "text": "To compare two batters, share the stems. Batter B's leaves go to the right, as usual. Batter A's leaves go to the left, reading outwards from the stem, so four, two on the left is twenty-four, not forty-two. Now compare row by row. Batter A has three scores under ten, and Batter B has just one. Batter A also has the three biggest scores, fifty-eight, sixty-three and eighty-seven, while Batter B never passes forty-five. Their middle scores are close, twenty-four and twenty-eight. So Batter B is the more consistent batter, and Batter A is more likely to fail, or to win you the game.",
+      "audioFile": "public/audio/math-s11-d08/back-to-back.wav"
+    },
+    {
+      "id": "dot-plot",
+      "text": "The same season, from the bowler's end. This dot plot shows how many wickets one bowler took in each of sixteen matches. Each dot is one match, sitting above its number of wickets. Every dot is a real match, so nothing is grouped or lost. The tallest stack is above two, so two wickets was the most common result. In how many matches did she take three or more wickets? Count the dots, not the heights. Three above three, one above four, one above five, five matches. A dot plot shows every value and where they bunch up, and it works best for small sets of numbers, like these.",
+      "audioFile": "public/audio/math-s11-d08/dot-plot.wav"
+    },
+    {
+      "id": "line-graph",
+      "text": "A line graph shows change over time. Here's a phone's battery level through one day, measured ten times through the day, from a hundred per cent at seven in the morning. Read a value. At one in the afternoon it's sixty per cent. Then look at the shape. It falls all day, except between four and five, where it jumps by thirty. That rise only makes sense one way. It was on the charger. Where's the steepest fall? From seven to nine at night, fifty-eight down to forty-one, seventeen points in two hours, perhaps a movie on the way home. The line between the points shows the trend, but only the dots were actually measured.",
+      "audioFile": "public/audio/math-s11-d08/line-graph.wav"
+    },
+    {
+      "id": "sector-and-divided-bar",
+      "text": "Sector graphs and divided bar charts both show parts of one whole. Here's a student's two hundred dollar weekly budget as a sector graph. The whole circle is three hundred and sixty degrees, so each sector's share is its angle out of three sixty. Food is a hundred and eight degrees. That's a hundred and eight out of three sixty, thirty per cent, and thirty per cent of two hundred dollars is sixty dollars. Now unroll the circle into a bar. Same parts, same order, now as lengths. A divided bar chart works the same way, with length instead of angle. Either way, the parts must add to the whole, a full circle or the full bar. This twenty centimetre bar shows how our two hundred Year 11 students get to school. Bus takes six centimetres, six out of twenty, thirty per cent, sixty students. The angle or the length gives the share. The share times the total gives the amount.",
+      "audioFile": "public/audio/math-s11-d08/sector-and-divided-bar.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card, for any display. Key, value, count, compare, say it. Read the key and the scale first, and answer with a number from the graph, plus what it means in context.",
+      "audioFile": "public/audio/math-s11-d08/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A sector graph shows how forty students travelled to a concert. Train, a hundred and thirty-five degrees. Car, ninety degrees. Bus, eighty-one degrees. Walk, fifty-four degrees. How many students travelled by train? And what percentage of the students walked? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d08/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Train is a hundred and thirty-five out of three sixty of the forty students. That's three eighths of forty, fifteen students. Walking is fifty-four out of three sixty, nought point one five, fifteen per cent. Answering a hundred and thirty-five students is the slip.",
+      "audioFile": "public/audio/math-s11-d08/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. This back-to-back stem-and-leaf plot shows two cafés' daily coffee sales over ten days. Café A is on the left, and Café B on the right. Which café had the highest single day? And which café sold fifty or more coffees on more days? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d08/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Café B's top leaf is seven, one, seventy-one coffees, the highest single day. For fifty or more, count leaves on the five and six stems. Café A has six days, and Café B has three, so Café A. Choosing Café B because it had the highest day is the slip.",
+      "audioFile": "public/audio/math-s11-d08/feedback-2.wav"
+    },
+    {
+      "id": "handoff-shape",
+      "text": "Reading values is one skill. Seeing the shape is another. Look at these three. Screen time piles up on the left, and trails off to the right. Our sleep data bunch up on the right, with one lonely dot far out to the left. And the masses of sixty apples rise and fall evenly, both sides the same. Each display has a tail, or two matching ones. Which way is the tail, and what does it tell us? That's next.",
+      "audioFile": "public/audio/math-s11-d08/handoff-shape.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d08/key-notes.wav"
+    }
+  ]
+}

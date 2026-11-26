@@ -13,3 +13,10 @@ Channel right half integrates√y0to1=2/3,whole4/3m². Complement2-integralx²-1
 Live-source comparison:all numerical worked examples in this design are original. Actual earlier reads of https://hscscience.com.au/subjects/maths-advanced/year12/integral-calculus/lesson07.sa establish the FTC/rate-unit interpretation and signed-versus-total distinction;reuse i07-i10evidence. The site's motion examples are deliberately not reused here. Applications lesson03 numerical comparison is for i14,not falsely claimed done here. No new site worked problem is asserted to match original air-conditioner/channel tasks.
 
 5687characters/14scenes,cue order/no em dashes checked.515s estimated,notes45s. Actual artwork,alignment/captions,machine listening,human listening and exact voiced review pending. No design,narration,scene code or measured edits;art/speech skipped while blocker remains.
+
+
+### Current source repair recheck,11November2026
+
+Current source SHA256 `9a512234f163777f98cf6af8408c2ca9f83a6b6af307a6a845209dc32a37d625`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Final note now requires x>=0 for area against the y-axis, with doubling confined to a symmetric right half. Integrating a total is no longer called universally useless; it is distinguished by units from the requested change in profit. Integral100..200(50-.2x)dx=2000. Notes split is specified. Source blocker resolved; air-conditioner/channel plates pending.
+
+Independent current recount:5700characters,14scene strings,declared total matches. Strings/cues in work/brief238/i13-repaired-source.json. Earlier blocker disposition is superseded for this source revision only; actual plate geometry,voiced timing and built playback are separate gates. No speech or source edit.

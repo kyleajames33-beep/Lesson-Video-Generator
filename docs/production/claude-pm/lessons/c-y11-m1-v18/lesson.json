@@ -1,0 +1,198 @@
+{
+  "id": "chem-y11-m1-v18",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "3a444852204bfaac83b831fefd02e3de25728481c775f61336c7a966ae05fa63",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: which element is left?",
+      "voiceover": {
+        "text": "Last time, we met the three kinds of radiation. Now let's write down exactly what happens. When uranium-two-thirty-eight gives out an alpha particle, the nucleus left behind is a different element. But which one? To find out, we track two numbers on each side of the arrow, and make them match. That's how we balance a nuclear reaction."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-rules",
+      "title": "two numbers, two rules",
+      "voiceover": {
+        "text": "Remember nuclide notation. The top number, the mass number, counts the protons and neutrons in the nucleus. Together, they're called nucleons. The bottom number, the atomic number, counts the protons, so it's also the charge on the nucleus. In a nuclear reaction, nucleons get rearranged, but none appear from nothing, and neither does charge. So the top numbers must add up to the same total on both sides, and so must the bottom numbers."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "particle-numbers",
+      "title": "every particle gets two numbers",
+      "voiceover": {
+        "text": "To use this, every particle needs the same two numbers. An alpha particle is a helium nucleus, so it's written as helium, with four on top and two on the bottom. A beta particle is an electron. It isn't a nucleon, so its top number is zero, and its charge is minus one, so its bottom number is minus one. A gamma ray has neither, so it's zero and zero. And a neutron is one on top, and zero on the bottom, because it has no charge."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "alpha-uranium",
+      "title": "alpha decay: uranium-238",
+      "voiceover": {
+        "text": "Let's balance the uranium. On the left, uranium-two-thirty-eight has two hundred and thirty-eight on top, and ninety-two on the bottom. On the right, the alpha particle takes four and two. So the new nucleus must have two hundred and thirty-eight minus four on top, which is two hundred and thirty-four. And ninety-two minus two on the bottom, which is ninety. Now, which element has ninety protons? The periodic table says thorium. Check both rows. Two thirty-four plus four is two thirty-eight, and ninety plus two is ninety-two. It's balanced."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. Carbon-fourteen gives out a beta particle. What happens to its top number, and to its bottom number? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "beta-carbon",
+      "title": "beta decay: carbon-14",
+      "voiceover": {
+        "text": "The top number stays at fourteen, because the beta particle carries away no nucleons. But the bottom number goes up by one. Here's why. Inside the nucleus, a neutron turns into a proton and an electron. The electron leaves as the beta particle, but the new proton stays, so the nucleus now has seven protons. Seven protons means nitrogen. Check the bottom row. Six on the left, and seven plus minus one on the right, which is also six. Charge is conserved."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "gamma",
+      "title": "gamma: only energy leaves",
+      "voiceover": {
+        "text": "Gamma rays are the easy case. Technetium-ninety-nine M, from our hospital example, has a nucleus with extra energy. That's what the M means. When it gives out a gamma ray, both numbers stay the same, so it's still technetium-ninety-nine. Only energy leaves."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "pattern",
+      "title": "the pattern",
+      "voiceover": {
+        "text": "So here's the pattern. Alpha takes four off the top and two off the bottom, so the element moves two places back in the periodic table. Beta leaves the top alone, and adds one to the bottom, so the element moves one place forward. Gamma changes neither. You don't need to memorise these, if you remember one line. Top counts nucleons, bottom counts charge."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "human-made",
+      "title": "a human-made reaction: making cobalt-60",
+      "voiceover": {
+        "text": "Now a reaction people make happen. In a nuclear reactor, cobalt-fifty-nine is hit with neutrons. When its nucleus absorbs one, the top number goes up by one, from fifty-nine to sixty. The bottom number stays at twenty-seven, because a neutron has no charge. So it's still cobalt, just a heavier isotope, cobalt-sixty. That's how the cobalt-sixty used in cancer treatment is made. A neutron can also split a heavy nucleus into two smaller ones, which is called fission. When uranium-two-thirty-five absorbs a neutron, it splits into barium-one-forty-one and krypton-ninety-two, and three neutrons fly out. The tops add to two thirty-six on both sides, and the bottoms to ninety-two, so the same two rules hold."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "missing-particle",
+      "title": "finding a missing particle",
+      "voiceover": {
+        "text": "Sometimes the missing piece is the particle, not the nucleus. High in the atmosphere, a neutron from cosmic rays hits nitrogen-fourteen, and makes carbon-fourteen plus something else. On the left, the tops add to fifteen, and the bottoms to seven. Carbon-fourteen accounts for fourteen and six. So the missing particle has a top of one, and a bottom of one. One nucleon, with a charge of plus one, is a proton."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "nucleus-changes",
+      "title": "what changes in the nucleus",
+      "voiceover": {
+        "text": "So what actually changes in each nucleus? Alpha decay removes two protons and two neutrons. Beta decay turns one neutron into a proton. Both change the number of protons, so both turn one element into another. That's called transmutation. Gamma changes no particles at all. And adding a neutron keeps the same element, but makes a heavier isotope."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "trap",
+      "title": "the trap: check both rows",
+      "voiceover": {
+        "text": "Here is the trap. Students balance the top numbers, and forget the bottom. In beta decay, the top number doesn't change at all, so it's tempting to think nothing has. But the bottom number goes up by one, and that's a new element. Always check both rows, separately."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Americium-two-forty-one, the isotope in smoke alarms, decays by alpha emission. Write a balanced nuclear equation for this decay, and identify the new nuclide. Use the periodic table extract. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Take four off the top, and two off the bottom. Two forty-one minus four is two thirty-seven, and ninety-five minus two is ninety-three. Element ninety-three is neptunium, so it's neptunium-two-thirty-seven. Check: two thirty-seven plus four is two forty-one, and ninety-three plus two is ninety-five. Taking four off the bottom as well is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Cobalt-sixty, made in a reactor, decays by beta emission. Write a balanced nuclear equation for this decay, and name the element formed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The top stays at sixty, and the bottom goes up by one, from twenty-seven to twenty-eight. Element twenty-eight is nickel, so it's nickel-sixty, plus a beta particle. Check: sixty equals sixty plus zero, and twenty-seven equals twenty-eight plus minus one. Taking one off the bottom, because an electron left, is the trap. That electron came from a neutron that became a proton."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: chemistry moves only electrons",
+      "voiceover": {
+        "text": "Notice that nuclear reactions change the nucleus itself. Ordinary chemical reactions never do. They only move electrons. When a sodium atom loses one electron, it keeps its eleven protons, so it becomes a sodium ion, with a charge of plus one. A chlorine atom that gains one electron becomes a chloride ion, minus one. Next time, we'll use charges like these to work out the formula of a compound."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

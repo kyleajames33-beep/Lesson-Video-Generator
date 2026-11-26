@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d03.md",
+  "sourceSha256": "56cb986d241838cc5314245f4bfffc58db6a2a0112c6d3b58c2e6d21af9b5ecb",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-which-twenty",
+      "text": "Two hundred Year 11 students, and we want to ask twenty. Sixty of them catch the early bus, so they get up sooner, and they might sleep less. If our twenty were mostly bus students, our results would make the whole year look more tired than it is. If there were none, it would look less tired. Either way, the sample wouldn't look like the population. So which sampling method gives a sample that represents the population?",
+      "audioFile": "public/audio/math-s11-d03/hook-which-twenty.wav"
+    },
+    {
+      "id": "census-and-random",
+      "text": "Asking every member of the population is called a census. It's the most complete, but it takes time and money, and for big populations it's often impossible. So we sample. And a sample is only useful if it's representative, meaning it looks like the population in the ways that matter for our question. Here, that's where students live. The first method is a random sample, where every member has the same chance of being chosen. That's not the everyday meaning of random, just grabbing whoever. It means a fair draw, like a random number generator on a calculator, picking students by their roll numbers. Let's run it. This draw picked four bus students. Run it again, nine. Again, six. Random sampling is fair, because nobody chooses who's in. But with a small sample, chance can still give you a lopsided one.",
+      "audioFile": "public/audio/math-s11-d03/census-and-random.wav"
+    },
+    {
+      "id": "systematic",
+      "text": "A systematic sample picks every k-th member from a list. Divide the population by the sample size. Two hundred divided by twenty is ten, so we take every tenth student on the roll. Start at a random place between one and ten, say seven. Then seven, seventeen, twenty-seven, and so on, up to one ninety-seven. That's twenty students, spread evenly through the list. It's quick, and it usually behaves like a random sample. The catch is a list with a pattern. If every tenth student on the roll happened to be a bus student, a step of ten could pick all bus students, or none.",
+      "audioFile": "public/audio/math-s11-d03/systematic.wav"
+    },
+    {
+      "id": "stratified",
+      "text": "A stratified sample makes sure the groups that matter are there in the right amounts. Split the population into groups, then randomly choose from each group in proportion to its size. A hundred and forty of two hundred is seventy per cent, so seventy per cent of twenty, fourteen students from nearby. Sixty of two hundred is thirty per cent, so six bus students. Then choose the fourteen and the six at random. Every run gives fourteen and six, so the bus students are always fairly represented. A common slip is ten from each group. That gives bus students far more say than their share of the year.",
+      "audioFile": "public/audio/math-s11-d03/stratified.wav"
+    },
+    {
+      "id": "self-selected",
+      "text": "The last method is a self-selected sample, where people choose to take part themselves. Say we pin a poster in the corridor. Scan this code to tell us about your sleep. Twenty replies come in, and fourteen say they slept under seven hours. Does that mean most of Year 11 is short on sleep? Not necessarily. Students who feel tired have a reason to answer, and students who sleep well might walk straight past. The sample chose itself, so it leans. And getting two hundred replies wouldn't fix it. A bigger self-selected sample still leans the same way. Asking whoever's easiest to reach, like the canteen queue, called a convenience sample, has the same problem.",
+      "audioFile": "public/audio/math-s11-d03/self-selected.wav"
+    },
+    {
+      "id": "comparing-methods",
+      "text": "So how do they compare? Random gives everyone the same chance, but a small sample can be unlucky. Systematic is quick and spreads out, if the list has no pattern. Stratified guarantees the groups that matter are in proportion, but you need to know the groups first. Self-selected is easy, but it leans towards people with strong feelings. To justify whether a sample is representative, look at how it was chosen. Did every member, or every group, get a fair chance? For our sleep survey, stratified is the best choice, because where students live affects when they wake up.",
+      "audioFile": "public/audio/math-s11-d03/comparing-methods.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. Random gives everyone the same chance. Stratified keeps the groups in proportion. And whatever the method, judge a sample by how it was chosen, not by how big it is.",
+      "audioFile": "public/audio/math-s11-d03/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A sports club has three hundred members, a hundred and eighty juniors and a hundred and twenty seniors. How many of each belong in a stratified sample of forty? Then give one reason a stratified sample is more likely to represent the club than an online poll that members choose to answer. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "A hundred and eighty of three hundred is sixty per cent, and sixty per cent of forty is twenty-four juniors. The seniors are forty per cent, sixteen seniors. It's more representative because juniors and seniors appear in the club's own proportions, chosen at random, while a poll only hears from members who choose to answer. Twenty of each is the slip.",
+      "audioFile": "public/audio/math-s11-d03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Name the sampling method in each case. One, every fiftieth ticket scanned at a concert gate. Two, a poll on the band's website. Three, names drawn by a random number generator from the ticket list. Which is least likely to be representative, and why? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Every fiftieth ticket is a fixed step, so it's systematic. The website poll is self-selected, and the names drawn by a generator are a random sample. The poll is least representative, because only fans who visit the site and choose to answer are heard. Calling the every-fiftieth sample random is the slip.",
+      "audioFile": "public/audio/math-s11-d03/feedback-2.wav"
+    },
+    {
+      "id": "handoff-faults",
+      "text": "Our stratified sample is chosen, fourteen nearby and six bus students, and the answers are in. Twelve charge their phone in the bedroom, and eight somewhere else. Then a headline appears. Phones in bedrooms steal two hours of sleep! Can our survey really show that? Even with a fair sample, a lot can go wrong between asking and claiming. That's next.",
+      "audioFile": "public/audio/math-s11-d03/handoff-faults.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d03/key-notes.wav"
+    }
+  ]
+}

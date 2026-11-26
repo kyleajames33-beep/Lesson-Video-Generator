@@ -1,0 +1,128 @@
+{
+  "design": "phys-y12-m7-v10",
+  "sourceSha256": "975922e7d6bf7414a851b67d8e591ee023ebb1ffc629536b2cf12a06512f91c0",
+  "new": [
+    {
+      "key": "photocell",
+      "name": "y12p-photocell-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-346acdbb-4779-4b8d-b7c0-596ef6e3de85.png",
+      "sha256": "9afb50ef51c2bdfa1658c7651a04305d2756a8931a8dc8b90403a2290ca8e280",
+      "size": [
+        1073,
+        1466
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        0,
+        0,
+        1059,
+        1420
+      ],
+      "visibleBoundsAt16": [
+        183,
+        71,
+        878,
+        1416
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.1705,
+        0.0484,
+        0.1817,
+        0.0341
+      ],
+      "anchors": {
+        "terminalCentresApprox": [
+          [
+            394,
+            1188
+          ],
+          [
+            651,
+            1188
+          ]
+        ],
+        "anodeLineApprox": [
+          [
+            557,
+            335
+          ],
+          [
+            557,
+            900
+          ]
+        ],
+        "cathodeInnerFaceApprox": [
+          [
+            300,
+            295
+          ],
+          [
+            470,
+            690
+          ]
+        ],
+        "tolerancePixels": 12
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/photocell.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-photocell-v1.png"
+    }
+  ],
+  "reuse": [
+    {
+      "reference": "phys-y11-light-meter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-light-meter-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-torch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-torch-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-digital-multimeter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-digital-multimeter-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-metal-plate-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metal-plate-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-bench-lamp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-bench-lamp-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-photocell-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-photocell-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "nativeAspectRatioPreserved": true,
+  "newImagesTool": "image_gen.imagegen",
+  "humanListening": "not applicable to static art; pending for lesson",
+  "builtMotion": "pending",
+  "conditionalFilament": "Existing phys-y11-filament-lamp-v1.png has true varying alpha0..254 and a clean visible composite; no replacement requested.",
+  "optionalPolariser": "Root permitted coded discs as fallback; optional painted mount not generated."
+}

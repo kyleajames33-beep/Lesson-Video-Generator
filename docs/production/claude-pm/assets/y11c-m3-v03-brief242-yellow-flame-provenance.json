@@ -1,0 +1,81 @@
+{
+  "file": "public/assets/chemistry/y11c-bunsen-yellow-flame-v1.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-375a79b8-4f43-4b0c-a504-dd719bdcadc4.png",
+  "lesson": "chem-y11-m3-v03",
+  "consumers": [
+    "chem-y11-m3-v03",
+    "chem-y11-m3-v04"
+  ],
+  "title": "Chemistry M3 v03 yellow Bunsen flame, also used by v04",
+  "requestedSize": [
+    2000,
+    2800
+  ],
+  "reference": "public/assets/chemistry/m8-flame-blue-v2.png",
+  "reportName": "y11c-m3-v03-upgrade-yellow-flame-check.md",
+  "provenanceName": "y11c-m3-v03-brief242-yellow-flame-provenance.json",
+  "anchors": {
+    "burnerMouthCentre": [
+      519,
+      787
+    ],
+    "baseBottomCentre": [
+      518,
+      1354
+    ],
+    "yellowFlameTipApprox": [
+      522,
+      249
+    ],
+    "smokeTipApprox": [
+      532,
+      140
+    ],
+    "closedCollarCentre": [
+      519,
+      1103
+    ],
+    "gasTapEnd": [
+      713,
+      1187
+    ],
+    "referenceBlueAirHoleState": "Three dark oval openings visible: open collar confirmed."
+  },
+  "prompt": "Edit reference into matching CHEMISTRY BUNSEN SAFETY FLAME plate y11c-bunsen-yellow-flame-v1. Required output canvas2000x2800 portrait: extend reference by800pixels of transparent space ABOVE it, shifting existing burner down exactly800px without resizing it. Original burner mouth about[970,760] becomes[970,1560]; base bottom abouty1830 becomes2630. Preserve burner body, base, gas tap, viewpoint, metal brushwork and pixel scale identically wherever not changed. Two changes ONLY: (1) Rotate the brass AIR-HOLE COLLAR CLOSED so ALL dark oval air openings are covered by continuous brass, no black air hole visible. Keep base and gas tap identical. (2) Replace blue flame with a TALL WAVY LUMINOUS YELLOW-ORANGE SAFETY FLAME about1050px tall, from mouth near y1560 to tip near y510. About1.8times original blue flame height; asymmetric softly ragged top, bright yellow core and orange edge, faint narrow grey smoke wisp above. NO blue inner cone. Flame still clean painted contours, NO surrounding glow or dark/white background. Entire burner and flame inside generous transparent margin, top at least224px. Gentle top-left light and house fine-ink painted style. True transparent PNG alpha. No text, labels, scale marks, numbers, hands, people, faces, floor, shadow, halo or external wash. It must align with reference burner by bottom edges, never stretch or change hardware proportions.",
+  "qa": {
+    "result": "static plate pass; strict matched-pair registration pending",
+    "observations": [
+      "Collar is fully closed with no dark openings; reference blue plate has three clearly open oval holes. Yellow-orange wavy flame has no blue inner cone and has a faint smoke wisp.",
+      "Actual native paper and dark composites inspected: clean exterior alpha, no broad surrounding glow, people, text or question data. All margins exceed eight percent.",
+      "Returned 1060 by 1484 preserves requested 5:7 aspect, but differs from requested 2000 by 2800. Same native pixel scale/position was not preserved.",
+      "Uniform reference fit at scale 0.5314 aligns approximate mouth and base. Measured flame-height ratio about1.74, close to requested about1.8. Unchanged shaft paint is not pixel-identical (mean RGB difference about23.54/255 in QA sample). Root must accept the regenerated matched hardware/anchors before a strict registered pair is declared complete. No production resampling or masking performed."
+    ],
+    "evidence": [
+      "work/brief242/yellow-bunsen-native-paper.jpg",
+      "work/brief242/yellow-bunsen-native-dark.jpg",
+      "work/brief242/yellow-blue-bunsen-uniform-fit-preview.jpg",
+      "work/brief242/yellow-bunsen-registration.json"
+    ]
+  },
+  "reportText": "Delivered `public/assets/chemistry/y11c-bunsen-yellow-flame-v1.png` and sidecar. Closed collar, tall wavy yellow-orange flame and faint smoke wisp; no blue inner cone. Reference blue plate visibly has open air holes. Native paper and dark static edge QA passes.\n\nReturned 1060 by 1484 preserves the requested 5:7 aspect but not native 2000 by 2800 pixels. A uniform reference fit aligns mouth/base and gives an approximate flame-height ratio of 1.74, close to the requested about 1.8. Regenerated shaft paint is not pixel-identical. Strict matched-pair registration remains pending root acceptance of the new hardware and scene anchors. The old blue file is unchanged. No production resampling or masking.\n\nRegistration measurements: `work/brief242/yellow-bunsen-registration.json`; paper comparison: `work/brief242/yellow-blue-bunsen-uniform-fit-preview.jpg`.",
+  "statusText": "Delivered y11c-bunsen-yellow-flame-v1.png, sidecar, provenance and manifest for M3 v03/v04. Closed collar and yellow-orange safety flame, clean actual native paper/dark edges. Blue reference open holes confirmed. Native 1060 by 1484 preserves 5:7 aspect, but same-pixel registration was not retained. Uniform pair preview and measurements supplied; root acceptance of regenerated hardware and scene fit still required.",
+  "id": "y11c-bunsen-yellow-flame-v1",
+  "brief": 242,
+  "sha256": "7abc07a9ec892bb26a0e70fce62bae9033a4565077b89f791b38faac21169331",
+  "nativeSize": [
+    1060,
+    1484
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    352,
+    138,
+    719,
+    1361
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false
+}

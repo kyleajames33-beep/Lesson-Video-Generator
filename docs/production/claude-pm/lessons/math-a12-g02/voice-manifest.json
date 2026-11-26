@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-g02.md",
+  "sourceSha256": "2a2a73b0301c24fb4beba55ad75a7a6fcaa02d10424c75648dd435a7f93eee30",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's the rate graph from the end of the last video. Water flows into this rainwater tank at two t times e to the t squared litres per second, so the graph shows how fast the water is coming in, not how much is there. A question could ask how much water flows in during the first second. It could ask for the volume at any time t. Another question could ask for an area, or give you only a table of readings. Every one of those needs an integral, but not the same one. So how do you tell which integral a question needs?",
+      "audioFile": "public/audio/math-a12-g02/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "The first thing to read is what the question asks for. If it asks for the function itself, use an indefinite integral, and a known value fixes the plus C. Starting from the known value and adding a definite integral works too. If it asks how much something changes between two times, use a definite integral. A definite integral adds up rate times a small time, so it gives the change, and parts below the axis count as negative. If it asks for the area between a graph and the axis, or a distance, split where the graph crosses zero, and add the parts as positive amounts. And if it gives you only readings, there's no formula to integrate, so estimate with the trapezoidal rule. Which one does \"how much flows in\" need? Think for three seconds. It's a change between two times, so it's a definite integral.",
+      "audioFile": "public/audio/math-a12-g02/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So find the integral from zero to one of two t, times e to the t squared. Look inside first. The inside is t squared, and its derivative, two t, is out the front. So a primitive is e to the t squared. At one, that's e, and at zero it's one, so the water added is e minus one litres, about one point seven two. The rate is never negative here, so this is also the area under the curve. On the tank's gauge, that's the water added in the first second.",
+      "audioFile": "public/audio/math-a12-g02/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now the second question. The tank held five litres at the start. Find the volume at time t. This asks for a function, so use the indefinite integral. V of t is e to the t squared, plus C. At t equals zero, that's one plus C, and it has to be five, so C is four. So V of t is e to the t squared, plus four. Here's a good check. V of one minus V of zero is e plus four, minus five, which is e minus one. It's the same amount as before, because the C cancels when you subtract.",
+      "audioFile": "public/audio/math-a12-g02/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Here's a different graph. A small boat on a canal moves with velocity t squared minus two t metres per second, from t equals zero to three. How far does it travel? The integral from zero to three is zero. That's the displacement. The boat ends exactly where it started. But it did move. The velocity is negative until t equals two, so it drifts back first, then comes forward. Split at two. The first piece is minus four thirds, and the second is four thirds. Count both as positive, and the distance is eight thirds of a metre. Zero is the classic wrong answer here.",
+      "audioFile": "public/audio/math-a12-g02/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Last kind. A different tank's inflow is read every two minutes: three, five, six, four and two litres per minute, from t equals zero to eight. Estimate the water added. There's no formula, so we can't integrate it exactly. Use the trapezoidal rule. Each trapezium joins two neighbouring readings with a straight line. The strips are two minutes wide, so h is two. The ends count once, and the inside readings count twice. That's two over two, times three, plus two times fifteen, plus two, which is thirty-five. So about thirty-five litres flowed in. It's an estimate, because we don't know the rate between readings.",
+      "audioFile": "public/audio/math-a12-g02/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now a quick sort. For each question, decide which kind it is, but don't work it out yet. First, a town's population, in thousands, grows at three e to the half t per year, and it starts at ten. Find the population at time t. Think for three seconds. It asks for a function, so integrate with plus C, and the start fixes the C. Second, find the area between y equals sine x and the x-axis, from zero to two pi. The curve crosses the axis at pi, so split there. The integral alone is zero, but the area is four. Third, estimate the integral from zero to one of e to the minus x squared. This time there's a formula, but it has no primitive you can write down in this course, so it's the trapezoidal rule again.",
+      "audioFile": "public/audio/math-a12-g02/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's the decision as four short questions. Function? Plus C. Change? Limits. Area? Split. Table? Trapezia. Then look inside the integral for a matched inside before you integrate.",
+      "audioFile": "public/audio/math-a12-g02/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. A tank holds twenty litres at t equals zero, and its volume changes at a rate of six minus two t litres per minute. Find the volume when t equals five. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-g02/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "It asks for the volume, so find the function. V equals six t minus t squared, plus C, and V of zero is twenty, so C is twenty. At t equals five, that's thirty, minus twenty-five, plus twenty, which is twenty-five litres. Five litres is wrong. That's the change from zero to five, not the volume.",
+      "audioFile": "public/audio/math-a12-g02/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Find the area bounded by y equals two x over x squared plus one, the x-axis, and the lines x equals minus one and x equals two. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-g02/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "The top is the derivative of the bottom, so a primitive is the natural log of the quantity x squared plus one. The curve is below the axis for negative x, so split at zero. The left piece is minus log two, and the right piece is log five. Add them as positive amounts: log two plus log five is the natural log of ten. Log of five over two is wrong. It lets the negative piece cancel.",
+      "audioFile": "public/audio/math-a12-g02/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So for any integral question, read what it asks for first, then pick the integral. Next, the same kind of decision for money and chance. Here are two investments that differ by just one phrase. One earns simple interest, and the other is compounded annually. Which model does each one need?",
+      "audioFile": "public/audio/math-a12-g02/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-g02/scene-14.wav"
+    }
+  ]
+}

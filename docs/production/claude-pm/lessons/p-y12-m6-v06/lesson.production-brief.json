@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v06/lesson.json",
-    "lessonSha256": "7f223fa47b0b1b63c068c9ae2f603c193b8f34804c00747bc6b21b638d925e38"
+    "lessonSha256": "792988e970f6e0f91afc16206dd5b4a71607e14ef9686a4137c98252b8301b46"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -38,12 +38,13 @@
       "teachingReason": "Here are our crossed fields. The electric field points down, between the plates, and the magnetic field points into the page, filling the same space. Now fire in a beam of electrons with lots of different speeds. Most of them are pushed off line, and hit the barrier. Only one speed makes it straight through the slit. Which speed is it? And would protons at that speed get through too?",
       "narrationCue": "speeds / slit / too",
       "motionPurpose": "opens on v05's final frame (see \"Opening frame\"). On \"speeds\" a spread of electrons enters at mid-gap, each with a speed tag (slow to fast) and a teal v arrow of matching length. Schematic short deflections (tag \"initial deflection, not to scale\"): slower ones bend up, faster ones bend down, all striking the barrier around the slit. On \"slit\" one electron travels straight through the slit and its tag reads \"v = ?\". On \"too\" a proton \"(+)\" ghost waits at the entrance with \"?\", and the 3 s `Countdown` runs beside chips \"yes\", \"no\", \"depends on its mass\". Anchor (Revision 2): from the first sentence the painted supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 280 px tall) sits at the lower left with coded leads to the plates, display \"80 V\" (52 px, navy), and an inset at the top left (about 280 px wide) shows the painted horseshoe magnet (`y12p-horseshoe-magnet-v1.png`) with a slate hand tag \"looking down through the gap: B into the page\". Hand tags: teal \"many speeds\" by the beam; teal \"one gets through\" with a pen ring round the slit.",
-      "motionRole": "explain",
+      "motionRole": "hold",
       "onScreenChange": "opens on v05's final frame (see \"Opening frame\"). On \"speeds\" a spread of electrons enters at mid-gap, each with a speed tag (slow to fast) and a teal v arrow of matching length. Schematic short deflections (tag \"initial deflection, not to scale\"): slower ones bend up, faster ones bend down, all striking the barrier around the slit. On \"slit\" one electron travels straight through the slit and its tag reads \"v = ?\". On \"too\" a proton \"(+)\" ghost waits at the entrance with \"?\", and the 3 s `Countdown` runs beside chips \"yes\", \"no\", \"depends on its mass\". Anchor (Revision 2): from the first sentence the painted supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 280 px tall) sits at the lower left with coded leads to the plates, display \"80 V\" (52 px, navy), and an inset at the top left (about 280 px wide) shows the painted horseshoe magnet (`y12p-horseshoe-magnet-v1.png`) with a slate hand tag \"looking down through the gap: B into the page\". Hand tags: teal \"many speeds\" by the beam; teal \"one gets through\" with a pen ring round the slit.",
       "motionTools": [
-        "Source diagrams, painted plates and cue-directed changes"
+        "Source diagrams, painted plates and cue-directed changes",
+        "Countdown"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "3 second response hold immediately after \"And would protons at that speed get through too?\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "compare-forces",
@@ -260,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v06/recording-source-check.json",
-      "sha256": "e45fd007dc4e9b492514a314ad0222894c5e94724ccf73a5da5e059e27320998"
+      "sha256": "6c8bdf63c509046f3c491d2f66db37885bf519f0f8c19b6bd3b1fab202d2d8e9"
     }
   },
   "studentLearningReview": {
@@ -271,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v06/recording-source-check.json",
-      "sha256": "e45fd007dc4e9b492514a314ad0222894c5e94724ccf73a5da5e059e27320998"
+      "sha256": "6c8bdf63c509046f3c491d2f66db37885bf519f0f8c19b6bd3b1fab202d2d8e9"
     }
   },
   "voicedPreview": {

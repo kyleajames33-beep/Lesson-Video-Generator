@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v04/lesson.json",
-    "lessonSha256": "68315faeb289645e55075a0e2d1da198ad7dd73d6b079541b3290aa55288722d"
+    "lessonSha256": "f4d7d6e2ce2f871ea305afcba8fb2aadf620faa4efd80e970389f644d4a25f02"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -19,7 +19,7 @@
   ],
   "teaching": {
     "task": "# Year 12 Physics M6 V04: Magnetic force on a moving charge. When does a magnetic field exert a force on a moving charge? (design)",
-    "causalExplanation": "Only one of them. The proton sitting still feels nothing, because a magnetic field only pushes on charges that are moving. Fired straight along the field lines, it feels nothing either, and carries on in a straight line. Fired across the field lines, it's pushed sideways. That's a big contrast with an electric field, which pushes on a charge even when it's sitting still. Magnetic fields are three dimensional, so on a flat page, we need symbols. A cross means the field points into the page, like the tail feathers of an arrow flying away from you. A dot means the field points out of the page, like the tip of an arrow coming towards you. Turn our view to face the page, and these field lines become a grid of crosses. Exam questions almost always draw magnetic fields this way. How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular, which is v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all.",
+    "causalExplanation": "Only one of them. The proton sitting still feels nothing, because a magnetic field only pushes on charges that are moving. Fired straight along the field lines, it feels nothing either, and carries on in a straight line. Fired across the field lines, it's pushed sideways. That's a big contrast with an electric field, which pushes on a charge even when it's sitting still. Magnetic fields are three dimensional, so on a flat page, we need symbols. A cross means the field points into the page, like the tail feathers of an arrow flying away from you. A dot means the field points out of the page, like the tip of an arrow coming towards you. Turn our view to face the page, and these field lines become a grid of crosses. Exam questions almost always draw magnetic fields this way. How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular. Cos is close, so the part across the field, opposite theta, takes sine. It's v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all.",
     "conversationalApproach": "Here's our electron beam, curving inside a magnetic field, without speeding up or slowing down. But a magnetic field doesn't always push. Put a proton in the same field, sitting still. Then fire it along the field lines. Then fire it across them. Which of these feel a force? Make your prediction. Only one of them. The proton sitting still feels nothing, because a magnetic field only pushes on charges that are moving. Fired straight along the field lines, it feels nothing either, and carries on in a straight line. Fired across the field lines, it's pushed sideways. That's a big contrast with an electric field, which pushes on a charge even when it's sitting still. Magnetic fields are three dimensional, so on a flat page, we need symbols. A cross means the field points into the page, like the tail feathers of an arrow flying away from you. A dot means the field points out of the page, like the tip of an arrow coming towards you. Turn our view to face the page, and these field lines become a grid of crosses. Exam questions almost always draw magnetic fields this way.",
     "openingDecision": "opens on v03's final frame (see \"Opening frame\"). Camera rotates to an oblique 3D view of the same region (3D field box): the crosses tilt into parallel slate arrows running down the screen and into the depth, and the beam is seen moving across them. Anchor (Revision 2): as the tilt finishes, the painted horseshoe magnet (`y12p-horseshoe-magnet-v1.png`, uniform scale, about 520 px wide) fades in around the box so the arrows run from its upper (north, red) pole face to its lower (south, grey) pole face, tags \"N\" and \"S\" (36 px). The beam fades. On \"still\" a proton \"(+)\" appears at rest in the box. On \"along\" a second proton ghost with a teal arrow parallel to the field arrows; on \"across\" a third with a teal arrow at right angles to them. On \"prediction\" the 3 s `Countdown` runs beside a \"force?\" chip under each of the three. Hand tags: slate \"B: N to S\" with a pen arrow along one field arrow; teal \"along\" and \"across\" under the two moving protons.",
     "understandingCheck": "Your turn. A proton moves at five point zero times ten to the five metres per second, at thirty degrees to a uniform magnetic field of zero point four zero tesla. Calculate the magnitude of the magnetic force on it. Pause here to answer. Last one. An electron moves up the page, through a uniform magnetic field pointing out of the page. What's the direction of the force on it? And what would the force be if the same electron moved out of the page instead? Pause here to answer.",
@@ -38,12 +38,13 @@
       "teachingReason": "Here's our electron beam, curving inside a magnetic field, without speeding up or slowing down. But a magnetic field doesn't always push. Put a proton in the same field, sitting still. Then fire it along the field lines. Then fire it across them. Which of these feel a force? Make your prediction.",
       "narrationCue": "still / along / across / prediction",
       "motionPurpose": "opens on v03's final frame (see \"Opening frame\"). Camera rotates to an oblique 3D view of the same region (3D field box): the crosses tilt into parallel slate arrows running down the screen and into the depth, and the beam is seen moving across them. Anchor (Revision 2): as the tilt finishes, the painted horseshoe magnet (`y12p-horseshoe-magnet-v1.png`, uniform scale, about 520 px wide) fades in around the box so the arrows run from its upper (north, red) pole face to its lower (south, grey) pole face, tags \"N\" and \"S\" (36 px). The beam fades. On \"still\" a proton \"(+)\" appears at rest in the box. On \"along\" a second proton ghost with a teal arrow parallel to the field arrows; on \"across\" a third with a teal arrow at right angles to them. On \"prediction\" the 3 s `Countdown` runs beside a \"force?\" chip under each of the three. Hand tags: slate \"B: N to S\" with a pen arrow along one field arrow; teal \"along\" and \"across\" under the two moving protons.",
-      "motionRole": "explain",
+      "motionRole": "hold",
       "onScreenChange": "opens on v03's final frame (see \"Opening frame\"). Camera rotates to an oblique 3D view of the same region (3D field box): the crosses tilt into parallel slate arrows running down the screen and into the depth, and the beam is seen moving across them. Anchor (Revision 2): as the tilt finishes, the painted horseshoe magnet (`y12p-horseshoe-magnet-v1.png`, uniform scale, about 520 px wide) fades in around the box so the arrows run from its upper (north, red) pole face to its lower (south, grey) pole face, tags \"N\" and \"S\" (36 px). The beam fades. On \"still\" a proton \"(+)\" appears at rest in the box. On \"along\" a second proton ghost with a teal arrow parallel to the field arrows; on \"across\" a third with a teal arrow at right angles to them. On \"prediction\" the 3 s `Countdown` runs beside a \"force?\" chip under each of the three. Hand tags: slate \"B: N to S\" with a pen arrow along one field arrow; teal \"along\" and \"across\" under the two moving protons.",
       "motionTools": [
-        "Source diagrams, painted plates and cue-directed changes"
+        "Source diagrams, painted plates and cue-directed changes",
+        "Countdown"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "when-force",
@@ -77,11 +78,11 @@
       "sceneId": "size",
       "visualDecision": "new",
       "visualReference": "docs/production/claude-pm/lessons/phys-y12-m6-v04.md#scene-4",
-      "teachingReason": "How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular, which is v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all.",
+      "teachingReason": "How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular. Cos is close, so the part across the field, opposite theta, takes sine. It's v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all.",
       "narrationCue": "field / theta / B / all",
-      "motionPurpose": "camera change back to the 3D field box with one proton. Equation strip: \"F = qvB sin θ\". On \"field\" a θ arc draws between the proton's teal v arrow and a field arrow. On \"theta\" v resolves into dashed teal \"v∥ = v cos θ\" along the field and \"v⊥ = v sin θ\" across it; v∥ greys out, tag \"only v⊥ counts: F = qv⊥B\". On \"B\" θ sweeps to 90°: the amber arrow grows to its maximum, \"F = qvB\". On \"all\" θ sweeps to 0°: the arrow shrinks to nothing, \"F = 0\". A screen tag \"1 T = 1 N A⁻¹ m⁻¹\" (30 px). Revision 2: \"F = qvB sin θ\" framed (60 px); teal hand tag \"only the across part\" with a pen ring round v⊥; amber hand tag \"max at 90°\".",
+      "motionPurpose": "camera change back to the 3D field box with one proton. Equation strip: \"F = qvB sin θ\". On \"field\" a θ arc draws between the proton's teal v arrow and a field arrow. On \"Cos is close\" v resolves into dashed teal \"v∥ = v cos θ\" along the field and \"v⊥ = v sin θ\" across it, and a small recall chip (the m5-v02 card style) writes \"Cos is close: v cos θ is next to θ; v⊥ is opposite, so v sin θ\". On \"theta\" v∥ greys out, tag \"only v⊥ counts: F = qv⊥B\", teal hand tag \"only the across part\" with a pen ring round v⊥. On \"B\" θ sweeps to 90°: the amber arrow grows to its maximum, \"F = qvB\", amber hand tag \"max at 90°\". On \"all\" θ sweeps to 0°: the arrow shrinks to nothing, \"F = 0\". A screen tag \"1 T = 1 N A⁻¹ m⁻¹\" (30 px). \"F = qvB sin θ\" framed (60 px).",
       "motionRole": "explain",
-      "onScreenChange": "camera change back to the 3D field box with one proton. Equation strip: \"F = qvB sin θ\". On \"field\" a θ arc draws between the proton's teal v arrow and a field arrow. On \"theta\" v resolves into dashed teal \"v∥ = v cos θ\" along the field and \"v⊥ = v sin θ\" across it; v∥ greys out, tag \"only v⊥ counts: F = qv⊥B\". On \"B\" θ sweeps to 90°: the amber arrow grows to its maximum, \"F = qvB\". On \"all\" θ sweeps to 0°: the arrow shrinks to nothing, \"F = 0\". A screen tag \"1 T = 1 N A⁻¹ m⁻¹\" (30 px). Revision 2: \"F = qvB sin θ\" framed (60 px); teal hand tag \"only the across part\" with a pen ring round v⊥; amber hand tag \"max at 90°\".",
+      "onScreenChange": "camera change back to the 3D field box with one proton. Equation strip: \"F = qvB sin θ\". On \"field\" a θ arc draws between the proton's teal v arrow and a field arrow. On \"Cos is close\" v resolves into dashed teal \"v∥ = v cos θ\" along the field and \"v⊥ = v sin θ\" across it, and a small recall chip (the m5-v02 card style) writes \"Cos is close: v cos θ is next to θ; v⊥ is opposite, so v sin θ\". On \"theta\" v∥ greys out, tag \"only v⊥ counts: F = qv⊥B\", teal hand tag \"only the across part\" with a pen ring round v⊥. On \"B\" θ sweeps to 90°: the amber arrow grows to its maximum, \"F = qvB\", amber hand tag \"max at 90°\". On \"all\" θ sweeps to 0°: the arrow shrinks to nothing, \"F = 0\". A screen tag \"1 T = 1 N A⁻¹ m⁻¹\" (30 px). \"F = qvB sin θ\" framed (60 px).",
       "motionTools": [
         "Source diagrams, painted plates and cue-directed changes"
       ],
@@ -274,10 +275,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Codex brief278 current cue-order and freshness check",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v04/recording-source-check.json",
-      "sha256": "28be4962f7959810123d05684d29d953dc30f455d262fc8d0db0d99a2a06a98b"
+      "sha256": "e26d76d8456f1b06aece52b2ea45bca1fb2589fb4c0913e414317c45d6eac022"
     }
   },
   "studentLearningReview": {
@@ -285,7 +286,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v04/recording-source-check.json",
-      "sha256": "28be4962f7959810123d05684d29d953dc30f455d262fc8d0db0d99a2a06a98b"
+      "sha256": "e26d76d8456f1b06aece52b2ea45bca1fb2589fb4c0913e414317c45d6eac022"
     }
   },
   "voicedPreview": {

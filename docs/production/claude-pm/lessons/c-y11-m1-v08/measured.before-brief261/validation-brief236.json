@@ -1,0 +1,1227 @@
+{
+  "lesson": "chem-y11-m1-v08",
+  "wave": 1,
+  "sourceSha256": "dadd43962cf9aa97ce60ecea12040f5b3c49399a60fb6c97f27723b21428205c",
+  "measuredPath": "work/brief236/wave1/chem-y11-m1-v08/voiced/lesson.json",
+  "measuredSha256": "cc1e3c6cd92a8a04764cc6189a0a3d3e0d08d065a4bf1a6a45c6b5889840318e",
+  "characters": 5885,
+  "totalSeconds": 460.1,
+  "under570": true,
+  "newRequests": 9,
+  "cachedTakes": 1,
+  "inputTokens": 1313,
+  "outputTokens": 9648,
+  "costUsd": 0.0874885,
+  "worstWordGap": {
+    "scene": "hook",
+    "seconds": 1.4030000000001976,
+    "after": "ion.",
+    "before": "So"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v08/hook.wav",
+      "seconds": 25.033,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "atom",
+          "start": 10.502999999999997,
+          "end": 10.663799999999997
+        },
+        {
+          "text": "describes",
+          "start": 18.37599999999999,
+          "end": 18.79089999999999
+        },
+        {
+          "text": "ion",
+          "start": 20.55899999999999,
+          "end": 20.69399999999999
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.4030000000001976,
+        "after": "ion.",
+        "before": "So"
+      },
+      "peakFraction": 0.8575439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.133,
+          "end": 3.173,
+          "score": 0.271
+        },
+        {
+          "word": "a",
+          "start": 8.373999999999995,
+          "end": 8.414999999999996,
+          "score": 0.485
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, we saw chlorine written like this, with a thirty-five above and a seventeen below. It's called nuclide notation, and it's a compact label for what's inside an atom. By the end of this video, you'll be able to read any label like this, and count exactly how many protons, neutrons and electrons it describes, for an atom or an ion. So let's start with the three particles we're counting.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "particles",
+      "audio": "public/audio/chem-y11-m1-v08/particles.wav",
+      "seconds": 33.535,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "all",
+          "start": 3.1425,
+          "end": 3.243
+        },
+        {
+          "text": "one",
+          "start": 7.682999999999996,
+          "end": 7.788749999999997
+        },
+        {
+          "text": "zero",
+          "start": 26.21100000000005,
+          "end": 26.483000000000047
+        },
+        {
+          "text": "atom",
+          "start": 32.67,
+          "end": 32.8308
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.188000000000038,
+        "after": "one.",
+        "before": "Around"
+      },
+      "peakFraction": 0.8756103515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 23.14500000000005,
+          "end": 23.18500000000005,
+          "score": 0.499
+        },
+        {
+          "word": "it",
+          "start": 25.42900000000005,
+          "end": 25.509000000000047,
+          "score": 0.308
+        },
+        {
+          "word": "a",
+          "start": 28.14200000000007,
+          "end": 28.18200000000007,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Every atom has a tiny, dense centre called the nucleus. It holds protons, which each carry a charge of plus one, and neutrons, which carry no charge at all. Protons and neutrons have almost the same mass, so we give each a relative mass of one. Around the nucleus are the electrons. Each has a charge of minus one, but its mass is less than a thousandth of a proton's, so we count it as almost zero. This drawing is a model, not to scale. A real nucleus is far smaller, compared with the whole atom.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "mass-number",
+      "audio": "public/audio/chem-y11-m1-v08/mass-number.wav",
+      "seconds": 21.533,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "neutrons",
+          "start": 8.389999999999992,
+          "end": 8.78288888888888
+        },
+        {
+          "text": "neutrons",
+          "start": 13.809999999999988,
+          "end": 14.308666666666655
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0229999999999917,
+        "after": "A.",
+        "before": "It"
+      },
+      "peakFraction": 0.890411376953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 2.446,
+          "end": 2.687,
+          "score": 0.434
+        },
+        {
+          "word": "A.",
+          "start": 4.071,
+          "end": 4.111,
+          "score": 0.437
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "The top number, thirty-five, is the mass number, written A. It counts every particle in the nucleus, protons plus neutrons. Electrons aren't counted, because they add almost no mass. So to find the neutrons, take the mass number and subtract the atomic number. Thirty-five minus seventeen gives eighteen neutrons.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "ions",
+      "audio": "public/audio/chem-y11-m1-v08/ions.wav",
+      "seconds": 36.659,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "electrons",
+          "start": 0.907,
+          "end": 1.3786
+        },
+        {
+          "text": "right",
+          "start": 25.372000000000043,
+          "end": 25.52200000000004
+        },
+        {
+          "text": "electrons",
+          "start": 29.944000000000063,
+          "end": 30.34090000000006
+        },
+        {
+          "text": "same",
+          "start": 36.03699999999993,
+          "end": 36.19779999999993
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8469999999999835,
+        "after": "electrons.",
+        "before": "Notice"
+      },
+      "peakFraction": 0.8548583984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.334,
+          "end": 2.374,
+          "score": 0.483
+        },
+        {
+          "word": "a",
+          "start": 23.56800000000004,
+          "end": 23.60800000000004,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "What about electrons? In a neutral atom, the plus and minus charges cancel, so the number of electrons equals the number of protons. This chlorine atom has seventeen electrons. But in salt, chlorine isn't a neutral atom. It has gained one extra electron, so it carries a charge of minus one. That makes it an ion, a charged particle, written with a small minus sign at the top right. The chloride ion has seventeen protons and eighteen electrons. Notice what didn't change. The protons, and so the element, stayed exactly the same.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v08/prediction.wav",
+      "seconds": 13.35,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 12.602999999999986,
+          "end": 12.787999999999986
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0239999999999867,
+        "after": "chlorine-thirty-seven.",
+        "before": "Is"
+      },
+      "peakFraction": 0.844970703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Quick",
+          "start": 0.343,
+          "end": 0.504,
+          "score": 0.405
+        },
+        {
+          "word": "Here's",
+          "start": 1.4710000000000005,
+          "end": 1.7120000000000004,
+          "score": 0.484
+        },
+        {
+          "word": "Have",
+          "start": 12.380999999999986,
+          "end": 12.481999999999985,
+          "score": 0.364
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Quick prediction. Here's another kind of chlorine atom, chlorine-thirty-seven. Is it still chlorine? And what's different inside it, compared with chlorine-thirty-five? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "isotopes",
+      "audio": "public/audio/chem-y11-m1-v08/isotopes.wav",
+      "seconds": 30.832,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "protons",
+          "start": 4.089,
+          "end": 4.52825
+        },
+        {
+          "text": "eighteen",
+          "start": 13.151999999999994,
+          "end": 13.472888888888884
+        },
+        {
+          "text": "isotopes",
+          "start": 18.572999999999986,
+          "end": 19.00144444444443
+        },
+        {
+          "text": "it",
+          "start": 30.28900000000011,
+          "end": 30.32966666666678
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.2439999999999927,
+        "after": "eighteen.",
+        "before": "Atoms"
+      },
+      "peakFraction": 0.8236083984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 17.909999999999986,
+          "end": 17.970999999999986,
+          "score": 0.332
+        },
+        {
+          "word": "And",
+          "start": 19.89800000000008,
+          "end": 19.97800000000008,
+          "score": 0.172
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Yes, it's still chlorine, because it still has seventeen protons. The difference is in the neutrons. Thirty-seven minus seventeen gives twenty, two more than chlorine-thirty-five's eighteen. Atoms of the same element with different numbers of neutrons are called isotopes. And because both have seventeen electrons, arranged the same way, they react in essentially the same way. Chemistry is mostly about electrons, and neutrons hardly change it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "audio": "public/audio/chem-y11-m1-v08/memory-line.wav",
+      "seconds": 20.898,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "isotope",
+          "start": 8.147999999999989,
+          "end": 8.536499999999988
+        },
+        {
+          "text": "charge",
+          "start": 10.363999999999988,
+          "end": 10.759999999999987
+        },
+        {
+          "text": "ion",
+          "start": 20.012000000000075,
+          "end": 20.162750000000074
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9450000000000003,
+        "after": "charge.",
+        "before": "Change"
+      },
+      "peakFraction": 0.820770263671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "here's",
+          "start": 3.109,
+          "end": 3.29,
+          "score": 0.481
+        },
+        {
+          "word": "a",
+          "start": 13.177999999999988,
+          "end": 13.21799999999999,
+          "score": 0.498
+        },
+        {
+          "word": "got",
+          "start": 15.868999999999996,
+          "end": 16.008999999999997,
+          "score": 0.48
+        },
+        {
+          "word": "a",
+          "start": 16.028999999999996,
+          "end": 16.068999999999996,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So each particle has its own job, and here's a line to hold onto. Protons pick the element. Neutrons pick the isotope. Electrons pick the charge. Change the protons, and you've got a different element. Change the neutrons, and you've got a different isotope. Change the electrons, and you've got an ion.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "stability",
+      "audio": "public/audio/chem-y11-m1-v08/stability.wav",
+      "seconds": 47.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "radiation",
+          "start": 12.579999999999988,
+          "end": 13.105599999999987
+        },
+        {
+          "text": "together",
+          "start": 23.869000000000025,
+          "end": 24.154333333333355
+        },
+        {
+          "text": "neutrons",
+          "start": 32.120000000000104,
+          "end": 32.49422222222233
+        },
+        {
+          "text": "video",
+          "start": 46.857999999999926,
+          "end": 47.05883333333326
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8419999999998851,
+        "after": "neutrons.",
+        "before": "With"
+      },
+      "peakFraction": 0.894134521484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 5.194999999999993,
+          "end": 5.255999999999993,
+          "score": 0.451
+        },
+        {
+          "word": "but",
+          "start": 6.096999999999993,
+          "end": 6.176999999999993,
+          "score": 0.324
+        },
+        {
+          "word": "are",
+          "start": 29.3340000000001,
+          "end": 29.4540000000001,
+          "score": 0.22
+        },
+        {
+          "word": "a",
+          "start": 38.0740000000001,
+          "end": 38.114000000000104,
+          "score": 0.439
+        },
+        {
+          "word": "a",
+          "start": 46.53699999999992,
+          "end": 46.57699999999993,
+          "score": 0.417
+        },
+        {
+          "word": "later",
+          "start": 46.616999999999926,
+          "end": 46.83799999999992,
+          "score": 0.365
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Isotopes can also differ in another way. Carbon-twelve and carbon-thirteen are stable, but carbon-fourteen is unstable, or radioactive. Sooner or later, its nucleus breaks down and gives out radiation. Why? Inside a nucleus, the positive protons repel each other. A very short-range attraction, called the strong nuclear force, holds all the protons and neutrons together. Neutrons add that attraction without adding any repulsion. Small nuclei are stable with roughly equal numbers of protons and neutrons, while heavy ones need extra neutrons, like lead-two-hundred-and-eight, with eighty-two protons and a hundred and twenty-six neutrons. With too many or too few neutrons, a nucleus is unstable. What it gives out when it breaks down is for a later video.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v08/handoff.wav",
+      "seconds": 21.522,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "all",
+          "start": 14.602999999999987,
+          "end": 14.692999999999987
+        },
+        {
+          "text": "is",
+          "start": 18.633000000000017,
+          "end": 18.739888888888906
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0290000000000017,
+        "after": "all.",
+        "before": "Next"
+      },
+      "peakFraction": 0.8177490234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "as",
+          "start": 8.58499999999999,
+          "end": 8.684999999999992,
+          "score": 0.427
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So a mass number is always a whole number, because it counts whole particles. But look up chlorine on the periodic table, and its mass is listed as thirty-five point four five. Not thirty-five, not thirty-seven, and not a whole number at all. Next time, we'll see why. It's an average over both isotopes, weighted by how common each one is.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v08/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v08/hook.wav",
+      "seconds": 25.033,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "atom",
+          "start": 10.502999999999997,
+          "end": 10.663799999999997
+        },
+        {
+          "text": "describes",
+          "start": 18.37599999999999,
+          "end": 18.79089999999999
+        },
+        {
+          "text": "ion",
+          "start": 20.55899999999999,
+          "end": 20.69399999999999
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.4030000000001976,
+        "after": "ion.",
+        "before": "So"
+      },
+      "peakFraction": 0.8575439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.133,
+          "end": 3.173,
+          "score": 0.271
+        },
+        {
+          "word": "a",
+          "start": 8.373999999999995,
+          "end": 8.414999999999996,
+          "score": 0.485
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, we saw chlorine written like this, with a thirty-five above and a seventeen below. It's called nuclide notation, and it's a compact label for what's inside an atom. By the end of this video, you'll be able to read any label like this, and count exactly how many protons, neutrons and electrons it describes, for an atom or an ion. So let's start with the three particles we're counting.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "particles",
+      "audio": "public/audio/chem-y11-m1-v08/particles.wav",
+      "seconds": 33.535,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "all",
+          "start": 3.1425,
+          "end": 3.243
+        },
+        {
+          "text": "one",
+          "start": 7.682999999999996,
+          "end": 7.788749999999997
+        },
+        {
+          "text": "zero",
+          "start": 26.21100000000005,
+          "end": 26.483000000000047
+        },
+        {
+          "text": "atom",
+          "start": 32.67,
+          "end": 32.8308
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.188000000000038,
+        "after": "one.",
+        "before": "Around"
+      },
+      "peakFraction": 0.8756103515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 23.14500000000005,
+          "end": 23.18500000000005,
+          "score": 0.499
+        },
+        {
+          "word": "it",
+          "start": 25.42900000000005,
+          "end": 25.509000000000047,
+          "score": 0.308
+        },
+        {
+          "word": "a",
+          "start": 28.14200000000007,
+          "end": 28.18200000000007,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Every atom has a tiny, dense centre called the nucleus. It holds protons, which each carry a charge of plus one, and neutrons, which carry no charge at all. Protons and neutrons have almost the same mass, so we give each a relative mass of one. Around the nucleus are the electrons. Each has a charge of minus one, but its mass is less than a thousandth of a proton's, so we count it as almost zero. This drawing is a model, not to scale. A real nucleus is far smaller, compared with the whole atom.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "atomic-number",
+      "audio": "public/audio/chem-y11-m1-v08/atomic-number.wav",
+      "seconds": 26.392,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nucleus",
+          "start": 6.658999999999992,
+          "end": 7.063249999999991
+        },
+        {
+          "text": "argon",
+          "start": 17.783999999999992,
+          "end": 17.984833333333324
+        },
+        {
+          "text": "box",
+          "start": 25.770000000000056,
+          "end": 25.980750000000057
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0259999999999998,
+        "after": "nucleus.",
+        "before": "And"
+      },
+      "peakFraction": 0.826568603515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Now the bottom number. Seventeen is the atomic number, written Z. It's the number of protons in the nucleus. And the number of protons decides which element it is. Every atom with seventeen protons is chlorine. Give it one more proton, and it isn't chlorine any more, it's argon. That's also why the periodic table runs in order of atomic number. Chlorine is element seventeen, so it sits in the seventeenth box.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "mass-number",
+      "audio": "public/audio/chem-y11-m1-v08/mass-number.wav",
+      "seconds": 21.533,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "neutrons",
+          "start": 8.389999999999992,
+          "end": 8.78288888888888
+        },
+        {
+          "text": "neutrons",
+          "start": 13.809999999999988,
+          "end": 14.308666666666655
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0229999999999917,
+        "after": "A.",
+        "before": "It"
+      },
+      "peakFraction": 0.890411376953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 2.446,
+          "end": 2.687,
+          "score": 0.434
+        },
+        {
+          "word": "A.",
+          "start": 4.071,
+          "end": 4.111,
+          "score": 0.437
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "The top number, thirty-five, is the mass number, written A. It counts every particle in the nucleus, protons plus neutrons. Electrons aren't counted, because they add almost no mass. So to find the neutrons, take the mass number and subtract the atomic number. Thirty-five minus seventeen gives eighteen neutrons.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "ions",
+      "audio": "public/audio/chem-y11-m1-v08/ions.wav",
+      "seconds": 36.659,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "electrons",
+          "start": 0.907,
+          "end": 1.3786
+        },
+        {
+          "text": "right",
+          "start": 25.372000000000043,
+          "end": 25.52200000000004
+        },
+        {
+          "text": "electrons",
+          "start": 29.944000000000063,
+          "end": 30.34090000000006
+        },
+        {
+          "text": "same",
+          "start": 36.03699999999993,
+          "end": 36.19779999999993
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8469999999999835,
+        "after": "electrons.",
+        "before": "Notice"
+      },
+      "peakFraction": 0.8548583984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.334,
+          "end": 2.374,
+          "score": 0.483
+        },
+        {
+          "word": "a",
+          "start": 23.56800000000004,
+          "end": 23.60800000000004,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "What about electrons? In a neutral atom, the plus and minus charges cancel, so the number of electrons equals the number of protons. This chlorine atom has seventeen electrons. But in salt, chlorine isn't a neutral atom. It has gained one extra electron, so it carries a charge of minus one. That makes it an ion, a charged particle, written with a small minus sign at the top right. The chloride ion has seventeen protons and eighteen electrons. Notice what didn't change. The protons, and so the element, stayed exactly the same.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "iron",
+      "audio": "public/audio/chem-y11-m1-v08/iron.wav",
+      "seconds": 29.048,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "right",
+          "start": 5.751,
+          "end": 5.9185
+        },
+        {
+          "text": "six",
+          "start": 9.23572727272727,
+          "end": 9.367181818181816
+        },
+        {
+          "text": "thirty",
+          "start": 12.931999999999993,
+          "end": 13.189999999999994
+        },
+        {
+          "text": "four",
+          "start": 21.375166666666665,
+          "end": 21.53583333333333
+        },
+        {
+          "text": "matches",
+          "start": 28.254000000000048,
+          "end": 28.521750000000047
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8849999999999989,
+        "after": "right.",
+        "before": "Protons:"
+      },
+      "peakFraction": 0.858154296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Let's try iron, with fifty-six on top, twenty-six below, and two plus at the top right. Protons: that's the atomic number, twenty-six. Neutrons: fifty-six minus twenty-six, which is thirty. Electrons: a neutral iron atom would have twenty-six, but two plus means it has lost two, so it has twenty-four. Check the charge: twenty-six positive protons and twenty-four negative electrons leave plus two. It matches.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v08/prediction.wav",
+      "seconds": 13.35,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 12.602999999999986,
+          "end": 12.787999999999986
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0239999999999867,
+        "after": "chlorine-thirty-seven.",
+        "before": "Is"
+      },
+      "peakFraction": 0.844970703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Quick",
+          "start": 0.343,
+          "end": 0.504,
+          "score": 0.405
+        },
+        {
+          "word": "Here's",
+          "start": 1.4710000000000005,
+          "end": 1.7120000000000004,
+          "score": 0.484
+        },
+        {
+          "word": "Have",
+          "start": 12.380999999999986,
+          "end": 12.481999999999985,
+          "score": 0.364
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Quick prediction. Here's another kind of chlorine atom, chlorine-thirty-seven. Is it still chlorine? And what's different inside it, compared with chlorine-thirty-five? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "isotopes",
+      "audio": "public/audio/chem-y11-m1-v08/isotopes.wav",
+      "seconds": 30.832,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "protons",
+          "start": 4.089,
+          "end": 4.52825
+        },
+        {
+          "text": "eighteen",
+          "start": 13.151999999999994,
+          "end": 13.472888888888884
+        },
+        {
+          "text": "isotopes",
+          "start": 18.572999999999986,
+          "end": 19.00144444444443
+        },
+        {
+          "text": "it",
+          "start": 30.28900000000011,
+          "end": 30.32966666666678
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.2439999999999927,
+        "after": "eighteen.",
+        "before": "Atoms"
+      },
+      "peakFraction": 0.8236083984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 17.909999999999986,
+          "end": 17.970999999999986,
+          "score": 0.332
+        },
+        {
+          "word": "And",
+          "start": 19.89800000000008,
+          "end": 19.97800000000008,
+          "score": 0.172
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Yes, it's still chlorine, because it still has seventeen protons. The difference is in the neutrons. Thirty-seven minus seventeen gives twenty, two more than chlorine-thirty-five's eighteen. Atoms of the same element with different numbers of neutrons are called isotopes. And because both have seventeen electrons, arranged the same way, they react in essentially the same way. Chemistry is mostly about electrons, and neutrons hardly change it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "audio": "public/audio/chem-y11-m1-v08/memory-line.wav",
+      "seconds": 20.898,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "isotope",
+          "start": 8.147999999999989,
+          "end": 8.536499999999988
+        },
+        {
+          "text": "charge",
+          "start": 10.363999999999988,
+          "end": 10.759999999999987
+        },
+        {
+          "text": "ion",
+          "start": 20.012000000000075,
+          "end": 20.162750000000074
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9450000000000003,
+        "after": "charge.",
+        "before": "Change"
+      },
+      "peakFraction": 0.820770263671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "here's",
+          "start": 3.109,
+          "end": 3.29,
+          "score": 0.481
+        },
+        {
+          "word": "a",
+          "start": 13.177999999999988,
+          "end": 13.21799999999999,
+          "score": 0.498
+        },
+        {
+          "word": "got",
+          "start": 15.868999999999996,
+          "end": 16.008999999999997,
+          "score": 0.48
+        },
+        {
+          "word": "a",
+          "start": 16.028999999999996,
+          "end": 16.068999999999996,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So each particle has its own job, and here's a line to hold onto. Protons pick the element. Neutrons pick the isotope. Electrons pick the charge. Change the protons, and you've got a different element. Change the neutrons, and you've got a different isotope. Change the electrons, and you've got an ion.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "stability",
+      "audio": "public/audio/chem-y11-m1-v08/stability.wav",
+      "seconds": 47.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "radiation",
+          "start": 12.579999999999988,
+          "end": 13.105599999999987
+        },
+        {
+          "text": "together",
+          "start": 23.869000000000025,
+          "end": 24.154333333333355
+        },
+        {
+          "text": "neutrons",
+          "start": 32.120000000000104,
+          "end": 32.49422222222233
+        },
+        {
+          "text": "video",
+          "start": 46.857999999999926,
+          "end": 47.05883333333326
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8419999999998851,
+        "after": "neutrons.",
+        "before": "With"
+      },
+      "peakFraction": 0.894134521484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 5.194999999999993,
+          "end": 5.255999999999993,
+          "score": 0.451
+        },
+        {
+          "word": "but",
+          "start": 6.096999999999993,
+          "end": 6.176999999999993,
+          "score": 0.324
+        },
+        {
+          "word": "are",
+          "start": 29.3340000000001,
+          "end": 29.4540000000001,
+          "score": 0.22
+        },
+        {
+          "word": "a",
+          "start": 38.0740000000001,
+          "end": 38.114000000000104,
+          "score": 0.439
+        },
+        {
+          "word": "a",
+          "start": 46.53699999999992,
+          "end": 46.57699999999993,
+          "score": 0.417
+        },
+        {
+          "word": "later",
+          "start": 46.616999999999926,
+          "end": 46.83799999999992,
+          "score": 0.365
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Isotopes can also differ in another way. Carbon-twelve and carbon-thirteen are stable, but carbon-fourteen is unstable, or radioactive. Sooner or later, its nucleus breaks down and gives out radiation. Why? Inside a nucleus, the positive protons repel each other. A very short-range attraction, called the strong nuclear force, holds all the protons and neutrons together. Neutrons add that attraction without adding any repulsion. Small nuclei are stable with roughly equal numbers of protons and neutrons, while heavy ones need extra neutrons, like lead-two-hundred-and-eight, with eighty-two protons and a hundred and twenty-six neutrons. With too many or too few neutrons, a nucleus is unstable. What it gives out when it breaks down is for a later video.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v08/attempt-1.wav",
+      "seconds": 15.96,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8050000000000033,
+        "after": "related.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.819671630859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. Magnesium-twenty-four two plus and magnesium-twenty-five two plus both have atomic number twelve. State the number of protons, neutrons and electrons in each, and identify how the two particles are related. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v08/feedback-1.wav",
+      "seconds": 27.04,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "lost",
+          "start": 7.425,
+          "end": 7.665
+        },
+        {
+          "text": "thirteen",
+          "start": 13.586999999999993,
+          "end": 13.961222222222215
+        },
+        {
+          "text": "charge",
+          "start": 20.242999999999988,
+          "end": 20.55242857142856
+        },
+        {
+          "text": "gained",
+          "start": 26.456000000000067,
+          "end": 26.680571428571497
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9829999999999952,
+        "after": "thirteen.",
+        "before": "Same"
+      },
+      "peakFraction": 0.858795166015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Both have twelve protons, since that's the atomic number, and both have ten electrons, because two plus means two electrons were lost. The neutrons differ. Twenty-four minus twelve is twelve, and twenty-five minus twelve is thirteen. Same element with different neutrons, so they're isotopes, and both are ions with the same charge. Fourteen electrons is the classic slip. A positive charge means electrons were lost, not gained.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v08/attempt-2.wav",
+      "seconds": 13.36,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.7840000000000001,
+        "after": "one.",
+        "before": "A"
+      },
+      "peakFraction": 0.91241455078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A particle has sixteen protons, eighteen neutrons and eighteen electrons. Write its nuclide notation, including its charge, and name the element. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v08/feedback-2.wav",
+      "seconds": 23.278,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "sulfur",
+          "start": 2.697,
+          "end": 2.990142857142857
+        },
+        {
+          "text": "thirty-four",
+          "start": 5.669999999999991,
+          "end": 6.148499999999991
+        },
+        {
+          "text": "minus",
+          "start": 10.184999999999985,
+          "end": 10.453333333333319
+        },
+        {
+          "text": "electrons",
+          "start": 22.49300000000008,
+          "end": 22.909700000000083
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8839999999999932,
+        "after": "thirty-four.",
+        "before": "It"
+      },
+      "peakFraction": 0.830780029296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Sixteen protons makes it element sixteen, sulfur. The mass number is sixteen plus eighteen, thirty-four. It has two more electrons than protons, so its charge is two minus. So it's sulfur-thirty-four, with thirty-four on top, sixteen below, and two minus at the top right. Writing fifty-two on top is the slip. The mass number counts the nucleus only, never the electrons.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v08/handoff.wav",
+      "seconds": 21.522,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "all",
+          "start": 14.602999999999987,
+          "end": 14.692999999999987
+        },
+        {
+          "text": "is",
+          "start": 18.633000000000017,
+          "end": 18.739888888888906
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0290000000000017,
+        "after": "all.",
+        "before": "Next"
+      },
+      "peakFraction": 0.8177490234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "as",
+          "start": 8.58499999999999,
+          "end": 8.684999999999992,
+          "score": 0.427
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So a mass number is always a whole number, because it counts whole particles. But look up chlorine on the periodic table, and its mass is listed as thirty-five point four five. Not thirty-five, not thirty-seven, and not a whole number at all. Next time, we'll see why. It's an average over both isotopes, weighted by how common each one is.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v08/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

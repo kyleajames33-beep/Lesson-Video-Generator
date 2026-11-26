@@ -5,3 +5,10 @@
 The statement f=F′ needs its usual qualification: it holds where the CDF is differentiable, or almost everywhere for an absolutely continuous distribution. In the opening piecewise example the derivative at the right support endpoint does not exist even though a density value can be assigned there without affecting probability. Similarly F is an integral of f for the continuous density models used, but not for every possible continuous CDF without additional absolute-continuity assumptions. State that scope. A density is nonnegative almost everywhere; its chosen point values are immaterial to probabilities. A higher density at a point is a local concentration, not a positive probability of that exact point.
 
 Direct browser inspection of https://hscscience.com.au/subjects/maths-advanced/year12/random-variables/lesson09.sa.html confirms Problems 1–3: k(4−x) on [0,4], k=1/8, P(X<1)=7/16, its CDF setup, and F=x²(3−x)/4 on [0,2]. The latter derivative was independently recalculated above.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `ace0f6a8b498ddb79d483c7c0d057d8f4e8bb89ad08f5fa879e1c8cca3093df8`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. f=Fprime qualified whereF hasgradient;piecewise corners neednot define derivative,andisolateddensityvalues change no area. Primitive relation scopedtodensitymodels usedhere. Highdensity meanslocal concentration,not positiveprobability ofanexact value. F=x2/9 andf=2x/9 giveinterval1..2probability1/3 aspreviouslyverified.
+
+Independent recount:6264characters/16scene strings,noem dashes. Changed narration andauthor repairnotes comparedwith priorfullreview;unchanged calculations/live-sourcechecksretained. Current stringsinwork/brief240/root68-source-audit/s05.json. Nativeartmeasurements/guide deviationsretainedforbuilderfitting underdecision30;root68readytovoice. No paid speechorfinishedtake repeatedbythisreview. Measuredtiming,actualmotionandhumanlisteningremainseparategates.

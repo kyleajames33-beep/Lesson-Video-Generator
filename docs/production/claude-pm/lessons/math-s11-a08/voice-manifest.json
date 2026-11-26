@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a08.md",
+  "sourceSha256": "c91f4f37c210cb641394b71c39bcb70a143645eacaa8dd705c0f22211349bad0",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-how-much-cardboard",
+      "text": "A cereal box is thirty centimetres tall, twenty wide and eight deep. How much cardboard does it take to make one? That's a question about the outside skin, every face you'd have to cover. Its total is called the surface area, the total area of all the outside faces. It's measured in square units, because it's flat cardboard. Next time we'll measure the space inside, the volume, in cubic units. Same box, a different question. So how do we find the surface area of prisms, cylinders, spheres and solids made from them?",
+      "audioFile": "public/audio/math-s11-a08/hook-how-much-cardboard.wav"
+    },
+    {
+      "id": "box-net",
+      "text": "The easiest way to see every face is to unfold the box flat. That flat shape is called a net, the solid unfolded with every face showing once. A box has six faces, in three matching pairs. The front and back are thirty by twenty, six hundred square centimetres each. The two sides are thirty by eight, two hundred and forty each. And the top and bottom are twenty by eight, a hundred and sixty each. So the surface area is two lots of six hundred plus two forty plus one sixty, two thousand square centimetres, ignoring the flaps that glue it together. Listing the pairs first means you can't forget a face.",
+      "audioFile": "public/audio/math-s11-a08/box-net.wav"
+    },
+    {
+      "id": "triangular-prism",
+      "text": "A box is one kind of prism, a solid with the same shape all the way through. A chocolate bar box with triangle ends is another. Its ends are right-angled triangles with shorter sides of nine and twelve centimetres, and the box is twenty centimetres long. The two ends are half of nine times twelve, fifty-four each, so a hundred and eight altogether. The sides are three rectangles, one for each edge of the triangle. But we only know two of the edges. The third is the hypotenuse, the square root of nine squared plus twelve squared, fifteen centimetres. Now here's a shortcut. Unroll the three sides and they make one long rectangle. Its width is the triangle's perimeter, nine plus twelve plus fifteen, thirty-six, and its length is twenty. That's seven hundred and twenty. Altogether, eight hundred and twenty-eight square centimetres. Five faces, and none missing.",
+      "audioFile": "public/audio/math-s11-a08/triangular-prism.wav"
+    },
+    {
+      "id": "cylinder-label",
+      "text": "A food tin is a cylinder, a prism with a circle at each end. This one has a radius of four centimetres and a height of eleven. The two ends are circles, pi r squared each. The curved side is the tricky part, so peel off the label. Flat, it's a rectangle. Its height is the tin's height, eleven. Its width is the distance once round the tin, the circumference, two pi r. So the curved area is two pi r times h, eighty-eight pi, two hundred and seventy-six point four six square centimetres. Add the two ends, thirty-two pi, and the whole tin is a hundred and twenty pi, three hundred and seventy-six point nine nine square centimetres. If a cylinder is open at the top, like a cup or a tank with no lid, only count one end.",
+      "audioFile": "public/audio/math-s11-a08/cylinder-label.wav"
+    },
+    {
+      "id": "sphere-four-circles",
+      "text": "A sphere is a perfectly round ball, like a golf ball. There's no net for a sphere, but there's a lovely fact. The surface of a sphere is exactly four circles with the same radius. A golf ball is about four point two seven centimetres across, so its radius is two point one three five. Four pi r squared is about fifty-seven point two eight square centimetres. Now cut a sphere in half, and you get a hemisphere, half a sphere. Its curved part is half of four pi r squared, two pi r squared. But cutting it made a brand new flat face, a circle, pi r squared. So a solid hemisphere has three pi r squared altogether. Forgetting that flat face is the classic slip.",
+      "audioFile": "public/audio/math-s11-a08/sphere-four-circles.wav"
+    },
+    {
+      "id": "polytunnel-face-list",
+      "text": "Real objects are often parts of solids joined together. This garden polytunnel is half a cylinder lying on its side, three metres wide, so a radius of one point five, and six metres long. The plastic covers the curved roof and the two half-circle ends, but not the floor, which is the ground. So, list first. Roof, exposed. Two ends, exposed. Floor, hidden. The roof is half of two pi r times the length, nine pi. The two half-circle ends make one whole circle, pi times one point five squared, two point two five pi. That's eleven point two five pi, about thirty-five point three four square metres of plastic. Adding the floor as well would buy eighteen square metres you don't need.",
+      "audioFile": "public/audio/math-s11-a08/polytunnel-face-list.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So for any solid, the method's the same. List every face, cross out the hidden ones, then add up the rest. And keep the formulas for the curved ones handy.",
+      "audioFile": "public/audio/math-s11-a08/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A closed cylindrical tin has a diameter of ten centimetres and a height of fourteen centimetres. Find its total surface area, correct to two decimal places. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a08/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The radius is five. Two ends are fifty pi, and the curved side is two pi times five times fourteen, a hundred and forty pi. That's a hundred and ninety pi, five hundred and ninety-six point nine square centimetres. Using ten as the radius is the slip. Halve the diameter first.",
+      "audioFile": "public/audio/math-s11-a08/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A bollard is a cylinder with a radius of nought point one five metres and a height of nought point nine metres, with a hemisphere of the same radius on top. Its base stands in the ground. Find the area to be painted, correct to two decimal places. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a08/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "List the faces. The curved side and the dome are painted. The base is in the ground, and the cylinder's top and the dome's flat face are hidden at the join. Curved side, nought point two seven pi, plus dome, nought point nought four five pi, is about nought point nine nine square metres. Counting the hidden circles at the join is the slip.",
+      "audioFile": "public/audio/math-s11-a08/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So surface area is the outside skin. Now the inside. This rainwater tank is a cylinder about one point eight metres wide and two metres tall. Not how much metal is it made of, but how much water does it hold? That's next.",
+      "audioFile": "public/audio/math-s11-a08/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a08/key-notes.wav"
+    }
+  ]
+}

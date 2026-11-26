@@ -1,0 +1,779 @@
+1
+00:00:00,402 --> 00:00:03,360
+So far, every random variable counted something.
+
+2
+00:00:03,902 --> 00:00:05,828
+Now X can be any value in an
+
+3
+00:00:05,950 --> 00:00:07,333
+interval, because we measure it.
+
+4
+00:00:08,196 --> 00:00:10,741
+At an athletics carnival, sensors in the starting
+
+5
+00:00:10,762 --> 00:00:13,487
+blocks time each sprinter's reaction to the start
+
+6
+00:00:13,508 --> 00:00:13,808
+signal.
+
+7
+00:00:14,511 --> 00:00:16,619
+One reads zero point three five seconds.
+
+8
+00:00:17,123 --> 00:00:19,853
+But a finer timer shows zero point three
+
+9
+00:00:19,914 --> 00:00:22,583
+five one seven, with more digits after that.
+
+10
+00:00:23,347 --> 00:00:25,876
+So what's the probability that a reaction time
+
+11
+00:00:26,017 --> 00:00:28,807
+is exactly zero point three five seconds?
+
+12
+00:00:29,632 --> 00:00:30,136
+Make a guess.
+
+13
+00:00:30,901 --> 00:00:33,206
+Here's an example set of two hundred reaction
+
+14
+00:00:33,247 --> 00:00:34,830
+times, from the carnival's heats.
+
+15
+00:00:35,632 --> 00:00:38,618
+Time is a continuous random variable, which here
+
+16
+00:00:38,700 --> 00:00:40,302
+means it can take any value in an
+
+17
+00:00:40,364 --> 00:00:40,663
+interval.
+
+18
+00:00:41,426 --> 00:00:44,571
+For an ideal continuous measurement, exact repeats have
+
+19
+00:00:44,672 --> 00:00:47,937
+probability zero, so counting each value gives just
+
+20
+00:00:48,198 --> 00:00:48,378
+ones.
+
+21
+00:00:49,302 --> 00:00:52,253
+Instead, we group the times into classes, each
+
+22
+00:00:52,415 --> 00:00:53,740
+a tenth of a second wide.
+
+23
+00:00:54,464 --> 00:00:57,152
+Twenty land between zero point one and zero
+
+24
+00:00:57,174 --> 00:01:00,645
+point two seconds, then fifty, seventy, forty and
+
+25
+00:01:00,706 --> 00:01:01,026
+twenty.
+
+26
+00:01:01,673 --> 00:01:02,384
+That's a histogram.
+
+27
+00:01:02,830 --> 00:01:05,517
+Its bars touch, because the classes leave no
+
+28
+00:01:05,579 --> 00:01:05,879
+gaps.
+
+29
+00:01:06,561 --> 00:01:08,425
+What's the probability that a time is at
+
+30
+00:01:08,465 --> 00:01:10,991
+least zero point two, but less than zero
+
+31
+00:01:11,051 --> 00:01:12,013
+point four seconds?
+
+32
+00:01:12,695 --> 00:01:15,289
+Two classes cover that range, with fifty and
+
+33
+00:01:15,391 --> 00:01:16,134
+seventy times.
+
+34
+00:01:16,818 --> 00:01:18,619
+So the estimate is one hundred and twenty
+
+35
+00:01:18,760 --> 00:01:20,782
+out of two hundred, which is zero point
+
+36
+00:01:20,842 --> 00:01:21,021
+six.
+
+37
+00:01:21,864 --> 00:01:24,688
+Each class's relative frequency is its count over
+
+38
+00:01:24,750 --> 00:01:26,913
+two hundred, and they add to one, because
+
+39
+00:01:27,074 --> 00:01:29,338
+every time lands in exactly one class.
+
+40
+00:01:30,069 --> 00:01:32,262
+What about a time under zero point two
+
+41
+00:01:32,324 --> 00:01:32,826
+five seconds?
+
+42
+00:01:33,649 --> 00:01:35,430
+That cuts the second class in half,
+
+43
+00:01:35,971 --> 00:01:37,972
+and the histogram doesn't say where its fifty
+
+44
+00:01:38,033 --> 00:01:38,752
+times sit.
+
+45
+00:01:39,634 --> 00:01:41,904
+The usual assumption is that they're spread evenly.
+
+46
+00:01:42,710 --> 00:01:44,702
+Then about twenty five are below zero point
+
+47
+00:01:44,723 --> 00:01:45,245
+two five.
+
+48
+00:01:45,951 --> 00:01:47,536
+Add the twenty from the first class, and
+
+49
+00:01:47,577 --> 00:01:50,168
+that's forty five out of two hundred, zero
+
+50
+00:01:50,229 --> 00:01:51,252
+point two two five.
+
+51
+00:01:52,057 --> 00:01:54,004
+In an exam, write that assumption down.
+
+52
+00:01:54,648 --> 00:01:56,534
+The class from zero point three to zero
+
+53
+00:01:56,575 --> 00:01:59,565
+point four has probability about zero point three
+
+54
+00:01:59,646 --> 00:01:59,967
+five.
+
+55
+00:02:00,771 --> 00:02:02,480
+Shrink it to one hundredth of a second,
+
+56
+00:02:02,762 --> 00:02:04,149
+centred on zero point three five.
+
+57
+00:02:04,673 --> 00:02:07,101
+With the times spread evenly, it holds a
+
+58
+00:02:07,162 --> 00:02:09,831
+tenth as many, so about zero point zero
+
+59
+00:02:09,872 --> 00:02:10,393
+three five.
+
+60
+00:02:11,176 --> 00:02:13,421
+Shrink it to one thousandth, and it's about
+
+61
+00:02:13,542 --> 00:02:15,747
+zero point zero zero three five.
+
+62
+00:02:16,550 --> 00:02:19,402
+Under that even spread, the probability shrinks in
+
+63
+00:02:19,524 --> 00:02:20,507
+step with the width.
+
+64
+00:02:21,392 --> 00:02:24,878
+A single exact value has width zero, so
+
+65
+00:02:24,919 --> 00:02:28,045
+for a continuous random variable, its probability is
+
+66
+00:02:28,106 --> 00:02:28,465
+zero.
+
+67
+00:02:28,975 --> 00:02:32,003
+But someone's time really is zero point three
+
+68
+00:02:32,064 --> 00:02:32,886
+five something.
+
+69
+00:02:33,469 --> 00:02:36,059
+Probability zero isn't the same as impossible.
+
+70
+00:02:36,602 --> 00:02:39,829
+Some exact time always happens, but no single
+
+71
+00:02:39,870 --> 00:02:41,995
+value carries any probability on its own.
+
+72
+00:02:42,778 --> 00:02:45,443
+Intervals do, like zero point three four to
+
+73
+00:02:45,505 --> 00:02:46,907
+zero point three six seconds,
+
+74
+00:02:47,450 --> 00:02:48,812
+and those are the events we'll use.
+
+75
+00:02:49,476 --> 00:02:51,626
+The ends of an interval are single values,
+
+76
+00:02:51,788 --> 00:02:53,376
+so they carry no probability.
+
+77
+00:02:53,678 --> 00:02:56,266
+So including or excluding the ends makes no
+
+78
+00:02:56,308 --> 00:02:56,648
+difference.
+
+79
+00:02:57,271 --> 00:02:58,819
+That's not true for a discrete variable.
+
+80
+00:02:59,423 --> 00:03:01,948
+For a fair die, two to five including
+
+81
+00:03:01,989 --> 00:03:04,474
+both ends has probability four sixths,
+
+82
+00:03:04,996 --> 00:03:07,360
+but strictly between them it's two sixths.
+
+83
+00:03:07,802 --> 00:03:09,291
+The ends carry a sixth each.
+
+84
+00:03:09,921 --> 00:03:11,549
+There are infinitely many intervals,
+
+85
+00:03:12,112 --> 00:03:13,901
+but one function holds them all.
+
+86
+00:03:14,383 --> 00:03:17,170
+The cumulative distribution function, or C D F,
+
+87
+00:03:17,812 --> 00:03:20,379
+is F of x equals the probability that
+
+88
+00:03:20,579 --> 00:03:22,585
+X is less than or equal to x.
+
+89
+00:03:23,348 --> 00:03:24,957
+Cumulative means running total.
+
+90
+00:03:25,681 --> 00:03:28,175
+For the reaction times, the data only estimate
+
+91
+00:03:28,396 --> 00:03:28,456
+F.
+
+92
+00:03:29,281 --> 00:03:31,423
+Add the classes from the left: zero point
+
+93
+00:03:31,565 --> 00:03:34,108
+one, zero point three five, zero point seven,
+
+94
+00:03:34,490 --> 00:03:36,112
+zero point nine and one.
+
+95
+00:03:37,015 --> 00:03:39,478
+Now the probability between zero point two and
+
+96
+00:03:39,519 --> 00:03:42,102
+zero point four is about F of zero
+
+97
+00:03:42,123 --> 00:03:44,326
+point four minus F of zero point two.
+
+98
+00:03:44,887 --> 00:03:47,032
+That's zero point seven minus zero point one,
+
+99
+00:03:47,474 --> 00:03:48,155
+zero point six,
+
+100
+00:03:48,857 --> 00:03:49,538
+the same as before.
+
+101
+00:03:50,280 --> 00:03:52,582
+As x moves right, the event that X
+
+102
+00:03:52,742 --> 00:03:55,505
+is at most x can only gain values,
+
+103
+00:03:55,725 --> 00:03:56,346
+never lose them.
+
+104
+00:03:56,846 --> 00:03:58,656
+So F never decreases.
+
+105
+00:03:59,259 --> 00:04:00,816
+We say it's non-decreasing.
+
+106
+00:04:01,399 --> 00:04:03,521
+It starts at zero, and for this bounded
+
+107
+00:04:03,581 --> 00:04:05,823
+example, it reaches one beyond the range.
+
+108
+00:04:06,744 --> 00:04:09,049
+For a continuous variable it has no jumps
+
+109
+00:04:09,150 --> 00:04:11,515
+either, because a jump would mean one value
+
+110
+00:04:11,597 --> 00:04:12,498
+carried probability.
+
+111
+00:04:13,261 --> 00:04:15,070
+Now a C D F from a formula.
+
+112
+00:04:15,752 --> 00:04:17,856
+F of x is x squared over nine
+
+113
+00:04:18,056 --> 00:04:19,519
+for x from zero to three,
+
+114
+00:04:20,080 --> 00:04:22,385
+zero below that, and one above.
+
+115
+00:04:23,153 --> 00:04:23,682
+Is it valid?
+
+116
+00:04:24,387 --> 00:04:26,713
+At zero it's zero, and at three it's
+
+117
+00:04:26,913 --> 00:04:28,858
+one, so the pieces join without a jump.
+
+118
+00:04:29,559 --> 00:04:32,050
+Its derivative, two x over nine, is never
+
+119
+00:04:32,130 --> 00:04:34,299
+negative there, so F never decreases.
+
+120
+00:04:35,164 --> 00:04:36,738
+Graph it by hand or with a graphing
+
+121
+00:04:36,840 --> 00:04:36,960
+app.
+
+122
+00:04:37,505 --> 00:04:38,387
+It's flat at zero,
+
+123
+00:04:38,909 --> 00:04:41,896
+leaves the origin flat, then curves up more
+
+124
+00:04:41,998 --> 00:04:44,363
+and more steeply to the point three, one,
+
+125
+00:04:44,786 --> 00:04:46,088
+and stays flat at one.
+
+126
+00:04:46,852 --> 00:04:47,978
+It's not a straight line.
+
+127
+00:04:48,608 --> 00:04:50,813
+Find the probability that X is more than
+
+128
+00:04:51,015 --> 00:04:52,639
+one and at most two.
+
+129
+00:04:53,602 --> 00:04:55,406
+That's F of two minus F of one,
+
+130
+00:04:55,949 --> 00:04:58,054
+four ninths minus one ninth, which is one
+
+131
+00:04:58,115 --> 00:04:58,375
+third.
+
+132
+00:04:59,238 --> 00:05:01,202
+The probability that X is more than two
+
+133
+00:05:01,484 --> 00:05:03,689
+is one minus four ninths, which is five
+
+134
+00:05:03,750 --> 00:05:04,009
+ninths.
+
+135
+00:05:04,652 --> 00:05:06,618
+And the probability that X equals two is
+
+136
+00:05:06,900 --> 00:05:08,845
+zero, because X is continuous.
+
+137
+00:05:09,570 --> 00:05:10,657
+Two short lines to remember.
+
+138
+00:05:11,362 --> 00:05:14,499
+First, points carry nothing, and intervals carry the
+
+139
+00:05:14,540 --> 00:05:15,062
+probability.
+
+140
+00:05:15,826 --> 00:05:18,593
+Second, between a and b, take F of
+
+141
+00:05:18,634 --> 00:05:20,900
+the bigger end, minus F of the smaller
+
+142
+00:05:20,981 --> 00:05:21,100
+end.
+
+143
+00:05:21,803 --> 00:05:23,664
+If you ever get a negative answer, you've
+
+144
+00:05:23,685 --> 00:05:24,885
+subtracted the wrong way round.
+
+145
+00:05:27,680 --> 00:05:28,085
+Your turn.
+
+146
+00:05:28,716 --> 00:05:31,331
+The masses of four hundred tomatoes are grouped
+
+147
+00:05:31,413 --> 00:05:32,136
+into classes.
+
+148
+00:05:32,781 --> 00:05:35,228
+Estimate the probability that a tomato's mass is
+
+149
+00:05:35,410 --> 00:05:37,576
+at least two hundred and twenty five grams.
+
+150
+00:05:38,319 --> 00:05:39,161
+Pause here to answer.
+
+151
+00:05:52,788 --> 00:05:54,952
+Two hundred and twenty five cuts the two
+
+152
+00:05:55,033 --> 00:05:57,077
+hundred to two hundred and fifty class in
+
+153
+00:05:57,179 --> 00:05:57,478
+half.
+
+154
+00:05:58,381 --> 00:06:00,602
+Assume its one hundred and sixty masses are
+
+155
+00:06:00,643 --> 00:06:03,705
+spread evenly, so about eighty are above two
+
+156
+00:06:03,746 --> 00:06:04,546
+hundred and twenty five.
+
+157
+00:06:05,372 --> 00:06:06,925
+Add the forty in the top class.
+
+158
+00:06:07,309 --> 00:06:09,194
+That's one hundred and twenty out of four
+
+159
+00:06:09,255 --> 00:06:09,535
+hundred,
+
+160
+00:06:10,058 --> 00:06:10,759
+zero point three.
+
+161
+00:06:11,727 --> 00:06:13,182
+Zero point five is wrong.
+
+162
+00:06:13,464 --> 00:06:16,098
+It counts the whole class, including masses below
+
+163
+00:06:16,219 --> 00:06:17,224
+two hundred and twenty five.
+
+164
+00:06:18,943 --> 00:06:19,347
+Last one.
+
+165
+00:06:19,971 --> 00:06:22,634
+A continuous random variable has F of x
+
+166
+00:06:22,794 --> 00:06:25,497
+equals x squared plus two x, all over
+
+167
+00:06:25,578 --> 00:06:27,860
+eight, for x from zero to two.
+
+168
+00:06:28,901 --> 00:06:30,984
+Find the probability that X is at least
+
+169
+00:06:31,104 --> 00:06:33,527
+zero point five, and less than one point
+
+170
+00:06:33,567 --> 00:06:33,808
+five.
+
+171
+00:06:34,371 --> 00:06:35,217
+Pause here to answer.
+
+172
+00:06:45,988 --> 00:06:46,127
+It's
+
+173
+00:06:46,690 --> 00:06:49,596
+F of one point five, minus F of
+
+174
+00:06:49,797 --> 00:06:50,698
+zero point five.
+
+175
+00:06:51,401 --> 00:06:54,308
+The endpoints carry no probability, so the mixed
+
+176
+00:06:54,410 --> 00:06:55,231
+signs don't matter.
+
+177
+00:06:56,235 --> 00:06:58,318
+F of one point five is twenty one
+
+178
+00:06:58,439 --> 00:06:59,240
+over thirty two,
+
+179
+00:06:59,882 --> 00:07:02,245
+and F of zero point five is five
+
+180
+00:07:02,387 --> 00:07:03,047
+over thirty two.
+
+181
+00:07:03,709 --> 00:07:06,015
+So the answer is sixteen over thirty two,
+
+182
+00:07:06,397 --> 00:07:07,078
+which is one half.
+
+183
+00:07:08,607 --> 00:07:10,079
+Minus one half is wrong.
+
+184
+00:07:10,665 --> 00:07:12,314
+It subtracts the wrong way round, and a
+
+185
+00:07:12,476 --> 00:07:13,844
+probability can't be negative.
+
+186
+00:07:15,410 --> 00:07:16,703
+Next, a new question.
+
+187
+00:07:17,370 --> 00:07:20,261
+Here's F of x equals x squared over
+
+188
+00:07:20,322 --> 00:07:20,924
+nine again.
+
+189
+00:07:21,566 --> 00:07:24,628
+It climbs slowly near zero, and steeply near
+
+190
+00:07:24,749 --> 00:07:25,048
+three.
+
+191
+00:07:25,790 --> 00:07:28,159
+What does that steepness tell us about where
+
+192
+00:07:28,180 --> 00:07:29,464
+the values of X are?
+
+193
+00:07:32,150 --> 00:07:33,018
+Here are the key notes.
+
+194
+00:07:33,585 --> 00:07:35,018
+Pause the video if you need more time
+
+195
+00:07:35,059 --> 00:07:35,523
+to copy them.

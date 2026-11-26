@@ -1,0 +1,203 @@
+{
+  "design": "phys-y12-m6-v17",
+  "sourceSHA256": "2887dcb10409df927a4bf30a5ade093cd087b22fdb66e54e21ff7daa5f1ebf04",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "phys-y11-knife-switch-blade-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-blade-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "phys-y11-slotted-masses-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-slotted-masses-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "public/assets/physics/phys-y11-bench-pulley-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bench-pulley-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "public/assets/physics/phys-y11-digital-multimeter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-digital-multimeter-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "public/assets/physics/phys-y11-knife-switch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "public/assets/physics/phys-y11-oscilloscope-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-oscilloscope-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "public/assets/physics/phys-y11-rheostat-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rheostat-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "y12p-hobby-motor-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-hobby-motor-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v17",
+      "reference": "y12p-motor-flywheel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-motor-flywheel-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "hobby-motor-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-04c9d90d-78db-4193-9e3b-9fe377164808.png",
+      "size": [
+        1585,
+        992
+      ],
+      "bbox": [
+        384,
+        249,
+        1210,
+        746
+      ],
+      "marginFraction": [
+        0.24227129337539433,
+        0.25100806451612906,
+        0.23659305993690852,
+        0.24798387096774194
+      ],
+      "alphaZeroFraction": 0.8409687595400427,
+      "file": "public/assets/physics/y12p-hobby-motor-v1.png",
+      "sha256": "66772c67bf8bc8a981bcf1abc21a367bf38b53625664b78dc96bd1f6999fdb13",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "shaftRoot": [
+          955,
+          492
+        ],
+        "shaftTip": [
+          1188,
+          539
+        ],
+        "flywheelMount": [
+          1100,
+          525
+        ],
+        "terminalCentres": [
+          [
+            429,
+            347
+          ],
+          [
+            408,
+            489
+          ]
+        ],
+        "canHotRegion": [
+          508,
+          350,
+          865,
+          623
+        ],
+        "visibleCanDiameterApprox": 300,
+        "note": "Separate family from school demonstration model is approved in root12. Shaft points right and slightly towards viewer."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "motor-flywheel-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-8e6c9534-35b5-4e09-958d-6a09b80d2016.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "bbox": [
+        202,
+        194,
+        1042,
+        1052
+      ],
+      "marginFraction": [
+        0.16108452950558214,
+        0.1547049441786284,
+        0.16905901116427433,
+        0.16108452950558214
+      ],
+      "alphaZeroFraction": 0.6581694558274764,
+      "file": "public/assets/physics/y12p-motor-flywheel-v1.png",
+      "sha256": "96ceb0c4669954cf0cdb39c8c77fed27c875f891991b5686cd05a917a5916852",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "pivot": [
+          627,
+          627
+        ],
+        "outerRadiusApprox": 423,
+        "uniformScaleRelativeToMotorNative": 0.5325443786982249,
+        "note": "Four holes and one continuous diagonal index stripe. Face-on layer as requested; painted outer circle and hub are approximate, not CAD-perfect. Eight45degree QA views inspected. Confirm wobble at actual playback."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

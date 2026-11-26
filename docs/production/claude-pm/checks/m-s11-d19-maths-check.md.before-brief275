@@ -1,0 +1,17 @@
+# math-s11-d19: maths-check preflight hold
+
+25 November 2026. Source SHA-256: `83b83e8593dcb27e98400f71836436e303b09dffe4380e7f28b5811e4b509af7`.
+
+Result: 0 blockers, 1 should fix. No recording approval.
+
+- {"code": "count-mismatch", "declared": "5,508", "actual": 5496}
+
+The narration count must be the sum of the 13 scene strings, which is 5496. The declared count appears to include spaces between scenes. No source or narration was edited. Full arithmetic, syllabus-description, playlist-join and anchor checks remain pending. Evidence: work/brief272/source-inventory.json.
+
+The revised bus and drag-stop arithmetic passes independently in work/brief272/core-data-results.json. This includes all 151 drag stops; population sigma and halves-method quartiles are used. That partial arithmetic check does not clear this source count or the remaining lesson checks.
+
+Official facts and root-application holds: checks/maths-standard-y11-official-facts.md. Human listening pending.
+
+## Additional source-contract review
+
+Every quoted syllabus content statement in this description matches the captured official crosswalk. The description's Builds on/Next title links were checked in playlist order. This is a metadata join check, not full visual frame continuity or anchor approval. Evidence: work/brief272/source-contract-results.json.

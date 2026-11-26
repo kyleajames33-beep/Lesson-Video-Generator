@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "710b4976eb7eae1500f7b550187699af0cc1405ac2ce28cc874949b03194c97c",
+  "sourceDesignSha256": "013dd5714ea775679012b0e952ac205e64a34077edb8105860555a08b0c272c3",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Make your prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "rain",
@@ -42,7 +52,7 @@
       "id": "normal",
       "title": "the normal and the part that goes through",
       "voiceover": {
-        "text": "To describe a tilted loop, we use its normal. That's an arrow sticking straight out of the loop's face, at right angles to its surface. Theta is the angle between the field and this normal. Now split the field into two parts. The part along the normal goes through the loop. The part along the surface just skims across it, and never goes through. The part that goes through is B cos theta, so the flux is B A cos theta. You'll also see it written as B parallel times A, where B parallel is the part of the field parallel to the normal."
+        "text": "To describe a tilted loop, we use its normal. That's an arrow sticking straight out of the loop's face, at right angles to its surface. Theta is the angle between the field and this normal. Now split the field into two parts. The part along the normal goes through the loop. The part along the surface just skims across it, and never goes through. Cos is close. The part that goes through sits next to theta, along the normal, so it's B cos theta, and the flux is B A cos theta. You'll also see it written as B parallel times A, where B parallel is the part of the field parallel to the normal."
       },
       "durationInFrames": 1,
       "holdSeconds": 0,

@@ -1,0 +1,803 @@
+1
+00:00:00,360 --> 00:00:02,202
+Here are two readings from the tide board
+
+2
+00:00:02,302 --> 00:00:03,282
+at a harbour boat ramp:
+
+3
+00:00:04,103 --> 00:00:05,984
+high tide, seven and a half metres, at
+
+4
+00:00:06,044 --> 00:00:06,965
+time zero,
+
+5
+00:00:07,546 --> 00:00:09,387
+and low tide, one and a half metres,
+
+6
+00:00:09,607 --> 00:00:10,388
+six hours later.
+
+7
+00:00:11,309 --> 00:00:13,234
+The water keeps rising and falling in the
+
+8
+00:00:13,295 --> 00:00:14,939
+same pattern, about twice a day.
+
+9
+00:00:16,083 --> 00:00:18,007
+A quantity that repeats like that is called
+
+10
+00:00:18,188 --> 00:00:18,789
+periodic,
+
+11
+00:00:19,311 --> 00:00:21,455
+and a transformed cos curve can describe it.
+
+12
+00:00:22,281 --> 00:00:24,051
+Let's build that curve one feature at a
+
+13
+00:00:24,092 --> 00:00:24,292
+time.
+
+14
+00:00:25,796 --> 00:00:26,540
+Start with the middle.
+
+15
+00:00:27,125 --> 00:00:29,367
+The water swings as far above its middle
+
+16
+00:00:29,409 --> 00:00:31,851
+level as below it, so the midline is
+
+17
+00:00:31,952 --> 00:00:33,754
+halfway between high and low:
+
+18
+00:00:34,376 --> 00:00:36,378
+seven point five plus one point five,
+
+19
+00:00:36,920 --> 00:00:39,042
+over two, is four point five.
+
+20
+00:00:39,884 --> 00:00:42,248
+The amplitude is the distance from the midline
+
+21
+00:00:42,469 --> 00:00:43,410
+up to high tide:
+
+22
+00:00:43,972 --> 00:00:46,576
+seven point five minus one point five, over
+
+23
+00:00:46,637 --> 00:00:47,998
+two, is three.
+
+24
+00:00:48,741 --> 00:00:50,584
+So the curve runs from four point five
+
+25
+00:00:50,666 --> 00:00:53,271
+minus three, up to four point five plus
+
+26
+00:00:53,312 --> 00:00:53,532
+three.
+
+27
+00:00:54,282 --> 00:00:54,947
+Now the period.
+
+28
+00:00:55,651 --> 00:00:58,335
+We assume the tide follows a smooth cos-shaped
+
+29
+00:00:58,395 --> 00:00:58,695
+wave,
+
+30
+00:00:59,296 --> 00:01:02,020
+and that these are consecutive tides, so high
+
+31
+00:01:02,040 --> 00:01:03,802
+to low is only half a cycle,
+
+32
+00:01:04,363 --> 00:01:06,386
+and a full cycle, high back to high,
+
+33
+00:01:06,726 --> 00:01:07,748
+takes twelve hours.
+
+34
+00:01:08,710 --> 00:01:11,441
+For one cycle, the inside, a times t,
+
+35
+00:01:11,784 --> 00:01:12,747
+has to grow by two pi.
+
+36
+00:01:13,895 --> 00:01:16,567
+So a is two pi divided by twelve,
+
+37
+00:01:16,769 --> 00:01:17,793
+which is pi over six.
+
+38
+00:01:18,558 --> 00:01:20,305
+That's the period rule, read backwards:
+
+39
+00:01:21,049 --> 00:01:23,038
+a equals two pi over the period.
+
+40
+00:01:23,949 --> 00:01:25,155
+Which curve should we use?
+
+41
+00:01:25,859 --> 00:01:27,362
+At time zero the water is at its
+
+42
+00:01:27,423 --> 00:01:29,808
+highest, and the cos curve starts at its
+
+43
+00:01:29,870 --> 00:01:30,049
+peak.
+
+44
+00:01:30,672 --> 00:01:32,055
+So no slide is needed:
+
+45
+00:01:33,079 --> 00:01:35,786
+h equals three cos of pi t over
+
+46
+00:01:35,868 --> 00:01:37,672
+six, plus four point five.
+
+47
+00:01:38,700 --> 00:01:39,550
+Check the other measurement.
+
+48
+00:01:40,296 --> 00:01:43,037
+At t equals six, the inside is pi,
+
+49
+00:01:43,718 --> 00:01:46,339
+cos pi is minus one, and h is
+
+50
+00:01:46,440 --> 00:01:48,300
+minus three plus four point five:
+
+51
+00:01:48,941 --> 00:01:50,301
+one point five, low tide.
+
+52
+00:01:51,342 --> 00:01:53,963
+A sine model works too, with plus pi
+
+53
+00:01:54,004 --> 00:01:56,524
+over two inside, which slides it left by
+
+54
+00:01:56,585 --> 00:01:59,126
+three hours, but cos is simpler here.
+
+55
+00:01:59,843 --> 00:02:00,689
+Now use the model.
+
+56
+00:02:01,152 --> 00:02:03,682
+What's the water level four hours after high
+
+57
+00:02:03,722 --> 00:02:03,963
+tide?
+
+58
+00:02:04,565 --> 00:02:06,992
+The inside is four pi over six, which
+
+59
+00:02:07,052 --> 00:02:08,215
+is two pi over three.
+
+60
+00:02:08,837 --> 00:02:10,720
+Cos of two pi over three is exactly
+
+61
+00:02:10,901 --> 00:02:11,843
+minus a half,
+
+62
+00:02:12,364 --> 00:02:15,189
+so h is minus one point five plus
+
+63
+00:02:15,310 --> 00:02:16,171
+four point five:
+
+64
+00:02:16,672 --> 00:02:17,273
+three metres.
+
+65
+00:02:18,055 --> 00:02:19,816
+On the graph, the water is below the
+
+66
+00:02:19,857 --> 00:02:21,337
+midline and still falling,
+
+67
+00:02:21,859 --> 00:02:23,719
+as it should be, two hours before low
+
+68
+00:02:23,760 --> 00:02:24,000
+tide.
+
+69
+00:02:24,547 --> 00:02:25,208
+Harder question:
+
+70
+00:02:25,870 --> 00:02:28,033
+when is the water level five point two
+
+71
+00:02:28,115 --> 00:02:30,138
+five metres, in the first twelve hours?
+
+72
+00:02:31,001 --> 00:02:33,509
+There's one cycle, and the level is between
+
+73
+00:02:33,610 --> 00:02:36,097
+low and high, so expect two times.
+
+74
+00:02:36,981 --> 00:02:39,446
+Three cos of pi t over six, plus
+
+75
+00:02:39,488 --> 00:02:42,354
+four point five, equals five point two five,
+
+76
+00:02:43,016 --> 00:02:45,462
+so cos of pi t over six is
+
+77
+00:02:45,563 --> 00:02:45,963
+a quarter.
+
+78
+00:02:47,025 --> 00:02:49,667
+A quarter isn't an exact value, so use
+
+79
+00:02:49,828 --> 00:02:52,169
+inverse cos on a calculator, in radians:
+
+80
+00:02:52,711 --> 00:02:55,293
+pi t over six is about one point
+
+81
+00:02:55,374 --> 00:02:56,174
+three one eight,
+
+82
+00:02:56,755 --> 00:02:59,197
+and t is about two point five two
+
+83
+00:02:59,258 --> 00:02:59,597
+hours.
+
+84
+00:03:00,459 --> 00:03:02,963
+By symmetry, the other angle is two pi
+
+85
+00:03:03,125 --> 00:03:03,745
+minus that,
+
+86
+00:03:04,287 --> 00:03:06,691
+so t is about nine point four eight.
+
+87
+00:03:07,714 --> 00:03:09,576
+So a boat that needs the level at
+
+88
+00:03:09,657 --> 00:03:12,061
+least five and a quarter metres can come
+
+89
+00:03:12,082 --> 00:03:13,464
+in for about the first two and a
+
+90
+00:03:13,505 --> 00:03:14,085
+half hours,
+
+91
+00:03:14,607 --> 00:03:16,349
+and again from about nine and a half
+
+92
+00:03:16,410 --> 00:03:19,235
+hours until twelve, in this first cycle.
+
+93
+00:03:19,958 --> 00:03:21,765
+The model repeats that every twelve hours.
+
+94
+00:03:22,362 --> 00:03:23,429
+Remember the Ferris wheel seat?
+
+95
+00:03:24,012 --> 00:03:25,154
+Here's one with numbers:
+
+96
+00:03:25,694 --> 00:03:28,719
+radius ten metres, its centre twelve metres above
+
+97
+00:03:28,740 --> 00:03:31,404
+the ground, turning once every sixty seconds.
+
+98
+00:03:32,266 --> 00:03:34,233
+Follow one cabin, starting at the bottom.
+
+99
+00:03:35,037 --> 00:03:37,252
+As the wheel turns, its height traces a
+
+100
+00:03:37,474 --> 00:03:37,756
+wave.
+
+101
+00:03:38,478 --> 00:03:39,319
+Midline twelve,
+
+102
+00:03:39,859 --> 00:03:42,320
+amplitude ten, and period sixty,
+
+103
+00:03:42,821 --> 00:03:45,922
+so a is two pi over sixty, pi
+
+104
+00:03:45,982 --> 00:03:46,443
+over thirty.
+
+105
+00:03:47,244 --> 00:03:49,106
+It starts at the lowest point, so we
+
+106
+00:03:49,127 --> 00:03:51,309
+need the cos curve turned upside down:
+
+107
+00:03:52,212 --> 00:03:55,236
+h equals twelve minus ten cos of pi
+
+108
+00:03:55,257 --> 00:03:56,197
+t over thirty.
+
+109
+00:03:56,899 --> 00:03:57,139
+Check:
+
+110
+00:03:57,723 --> 00:03:58,385
+at thirty seconds,
+
+111
+00:03:58,929 --> 00:03:59,833
+h is twenty two,
+
+112
+00:04:00,377 --> 00:04:00,617
+the top.
+
+113
+00:04:01,315 --> 00:04:03,741
+When is the cabin seventeen metres up, in
+
+114
+00:04:03,762 --> 00:04:04,524
+the first turn?
+
+115
+00:04:05,467 --> 00:04:08,132
+Twelve minus ten cos equals seventeen,
+
+116
+00:04:08,634 --> 00:04:11,278
+so cos of pi t over thirty is
+
+117
+00:04:11,419 --> 00:04:12,360
+minus a half.
+
+118
+00:04:13,144 --> 00:04:13,988
+That's an exact value.
+
+119
+00:04:14,713 --> 00:04:17,014
+Cos is minus a half at two pi
+
+120
+00:04:17,055 --> 00:04:19,436
+over three and four pi over three, so
+
+121
+00:04:19,517 --> 00:04:20,717
+t is twenty seconds,
+
+122
+00:04:21,238 --> 00:04:22,178
+or forty seconds.
+
+123
+00:04:22,919 --> 00:04:24,783
+On the wheel, those are the two moments
+
+124
+00:04:24,824 --> 00:04:26,787
+the cabin passes seventeen metres,
+
+125
+00:04:27,410 --> 00:04:28,691
+once on the way up, and once on
+
+126
+00:04:28,712 --> 00:04:29,112
+the way down.
+
+127
+00:04:29,721 --> 00:04:32,832
+Here's a checklist for a sinusoidal model, a
+
+128
+00:04:32,872 --> 00:04:36,104
+periodic quantity shaped like a smooth sine wave.
+
+129
+00:04:37,047 --> 00:04:37,288
+Middle,
+
+130
+00:04:37,910 --> 00:04:38,211
+half,
+
+131
+00:04:38,753 --> 00:04:39,134
+period,
+
+132
+00:04:39,635 --> 00:04:39,976
+start.
+
+133
+00:04:40,840 --> 00:04:42,727
+The midline is the middle of the max
+
+134
+00:04:42,847 --> 00:04:43,249
+and the min.
+
+135
+00:04:43,873 --> 00:04:45,871
+The amplitude is half the gap between them.
+
+136
+00:04:46,757 --> 00:04:48,510
+a is two pi over the period.
+
+137
+00:04:49,175 --> 00:04:50,675
+And the start picks the curve:
+
+138
+00:04:51,237 --> 00:04:52,516
+cos if it starts at a max,
+
+139
+00:04:53,058 --> 00:04:54,578
+minus cos if it starts at a min,
+
+140
+00:04:54,959 --> 00:04:56,599
+and sine if it starts in the middle,
+
+141
+00:04:56,900 --> 00:04:57,280
+going up.
+
+142
+00:05:00,071 --> 00:05:00,554
+Your turn.
+
+143
+00:05:01,019 --> 00:05:03,245
+In a coastal town, the longest day has
+
+144
+00:05:03,366 --> 00:05:05,633
+fourteen and a half hours of daylight, and
+
+145
+00:05:05,654 --> 00:05:08,000
+the shortest day, six months later, has nine
+
+146
+00:05:08,041 --> 00:05:08,442
+and a half.
+
+147
+00:05:09,005 --> 00:05:12,380
+Assume a sinusoidal pattern, with these as consecutive
+
+148
+00:05:12,441 --> 00:05:12,922
+extremes.
+
+149
+00:05:13,566 --> 00:05:15,509
+Let t be the number of months after
+
+150
+00:05:15,550 --> 00:05:18,114
+the longest day, and model the daylight hours
+
+151
+00:05:18,235 --> 00:05:21,200
+as D equals k cos a t, plus
+
+152
+00:05:21,241 --> 00:05:21,441
+c.
+
+153
+00:05:22,165 --> 00:05:25,218
+Find k, a and c, then find D
+
+154
+00:05:25,480 --> 00:05:26,604
+when t equals two.
+
+155
+00:05:27,313 --> 00:05:28,041
+Pause here to answer.
+
+156
+00:05:38,681 --> 00:05:41,108
+The midline c is the middle of fourteen
+
+157
+00:05:41,148 --> 00:05:42,532
+and a half and nine and a half:
+
+158
+00:05:42,933 --> 00:05:43,214
+twelve.
+
+159
+00:05:43,856 --> 00:05:46,384
+The amplitude k is half the gap: two
+
+160
+00:05:46,404 --> 00:05:46,866
+point five.
+
+161
+00:05:47,788 --> 00:05:49,812
+Six months is half a cycle, so the
+
+162
+00:05:49,832 --> 00:05:52,579
+period is twelve months and a is pi
+
+163
+00:05:52,599 --> 00:05:53,040
+over six.
+
+164
+00:05:53,841 --> 00:05:55,845
+At t equals two, cos of pi over
+
+165
+00:05:55,905 --> 00:05:58,530
+three is a half, so D is twelve
+
+166
+00:05:58,611 --> 00:06:00,875
+plus one point two five: thirteen point two
+
+167
+00:06:00,935 --> 00:06:01,436
+five hours.
+
+168
+00:06:02,301 --> 00:06:04,493
+An amplitude of five uses the whole gap,
+
+169
+00:06:04,856 --> 00:06:05,278
+not half.
+
+170
+00:06:06,828 --> 00:06:07,272
+Last one.
+
+171
+00:06:08,198 --> 00:06:11,101
+A buoy's height, in metres, is h equals
+
+172
+00:06:11,382 --> 00:06:13,964
+one point five sine of pi t over
+
+173
+00:06:14,105 --> 00:06:16,627
+eight, plus three, where t is in seconds.
+
+174
+00:06:17,550 --> 00:06:19,815
+Find the first two times after t equals
+
+175
+00:06:19,856 --> 00:06:22,563
+zero when h is three point seven five.
+
+176
+00:06:23,228 --> 00:06:24,120
+Pause here to answer.
+
+177
+00:06:34,867 --> 00:06:37,688
+One point five sine of pi t over
+
+178
+00:06:37,850 --> 00:06:39,610
+eight is point seven five,
+
+179
+00:06:40,151 --> 00:06:42,272
+so sine of pi t over eight is
+
+180
+00:06:42,313 --> 00:06:42,752
+a half.
+
+181
+00:06:43,595 --> 00:06:45,860
+Sine is a half at pi over six
+
+182
+00:06:46,182 --> 00:06:47,605
+and five pi over six.
+
+183
+00:06:48,428 --> 00:06:50,269
+Multiply by eight over pi:
+
+184
+00:06:50,910 --> 00:06:53,051
+t is four thirds of a second,
+
+185
+00:06:53,592 --> 00:06:55,113
+and twenty thirds of a second.
+
+186
+00:06:55,795 --> 00:06:58,363
+Pi over six is the angle inside, not
+
+187
+00:06:58,384 --> 00:06:58,764
+the time.
+
+188
+00:07:00,628 --> 00:07:03,573
+So a sinusoidal model needs a midline, an
+
+189
+00:07:03,694 --> 00:07:06,039
+amplitude, a period and a starting point.
+
+190
+00:07:06,801 --> 00:07:08,424
+The water level only ranges from one and
+
+191
+00:07:08,445 --> 00:07:09,968
+a half to seven and a half metres,
+
+192
+00:07:10,009 --> 00:07:12,213
+so an ordinary axis shows it well.
+
+193
+00:07:13,197 --> 00:07:13,437
+Next,
+
+194
+00:07:13,959 --> 00:07:16,465
+quantities that range over many powers of ten.
+
+195
+00:07:17,509 --> 00:07:20,294
+Here's a phone's storage: a text message, a
+
+196
+00:07:20,375 --> 00:07:23,080
+photo, a film and the whole phone, on
+
+197
+00:07:23,242 --> 00:07:24,443
+one ordinary ruler.
+
+198
+00:07:24,967 --> 00:07:26,017
+Can you even see the text?
+
+199
+00:07:29,188 --> 00:07:30,071
+Here are the key notes.
+
+200
+00:07:30,594 --> 00:07:32,362
+Pause the video if you need more time
+
+201
+00:07:32,383 --> 00:07:32,864
+to copy them.

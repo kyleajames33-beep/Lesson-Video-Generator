@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i08.md",
+  "sourceSha256": "813b297c3ff4cd501236743bc4b8defafdd9e675928e2a8ae620d5be3c92e82a",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's the graph of three minus t, shaded from zero up to x equals two. Let's give it a meaning. A shopping centre car park opens at nine. For t hours after that, cars arrive faster than they leave, at a net rate of three minus t hundred cars an hour. After noon that rate is negative, so more cars leave than arrive. The shaded signed area is A of x, the integral from zero to x of three minus t, d t. It counts the extra cars, in hundreds, since nine. We use t inside the integral, so that x is free to be the moving end. Think for a moment. When does A grow fastest, and when is the car park fullest?",
+      "audioFile": "public/audio/math-a12-i08/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Let's track A with shapes, like last video. Up to one, the region is a trapezium with heights three and two, so A of one is two and a half. Up to two, it's a trapezium with heights three and one, so A of two is four. Up to three, it's a triangle, so A of three is four and a half. Past three, the graph is below the axis, so new strips subtract. A of four is four, and A of six is back to zero. Plot these points, and A of x makes a smooth curve, like a hill.",
+      "audioFile": "public/audio/math-a12-i08/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now compare the hill with the height of the graph below it. At the start, the height is three, the biggest it gets, and A climbs fastest. At three, the height is zero, and A is flat, at the top of the hill. That's noon, and the car park is at its fullest, because cars have stopped piling up. After that, the height is negative, and A falls. At x equals one, A has gradient two, and the height there is two. It looks like the gradient of A equals the height of the graph, at every x.",
+      "audioFile": "public/audio/math-a12-i08/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Here's why. Call the graph f, so f of t is three minus t. Move the end from x to a little further, x plus h. A gains one thin strip, with width h. Its height is about f of x, so A grows by about f of x times h. Divide by h, and the gradient of the chord on A is about f of x. That's the gradient from first principles. At x equals one, with h equal to a half, the chord's gradient is one point seven five. With h equal to a tenth, it's one point nine five. As h shrinks, the strip's top gets flatter, because the curve is continuous. So the gradient becomes exactly f of x.",
+      "audioFile": "public/audio/math-a12-i08/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "So differentiating the accumulated area gives back the height. In words, the area grows at a rate equal to the height at its moving edge. If f is a rate, the amount built up so far grows at that rate. For the car park, the count of extra cars grows at the net rate cars come in. Check it here. The trapezium from zero to x has heights three and three minus x, and width x. So A of x is three x, minus a half x squared. Its derivative is three minus x, the graph we started with. So A is a primitive of f.",
+      "audioFile": "public/audio/math-a12-i08/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Is this only a trick for straight lines? Try a curve. Shade under t squared, from zero up to x. This time we can't use simple shapes, so a graphing application adds up very thin strips for us, and plots A of x as x moves. Watch the gradient of A as a point moves along. It traces x squared, as closely as the strips allow. Try it in a graphing app: move x and watch. And a primitive of x squared is x cubed over three, which matches the plotted curve. The edge-strip reason didn't need a straight line. It only needed a continuous curve.",
+      "audioFile": "public/audio/math-a12-i08/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "What if we start counting at ten o'clock, t equals one, instead of nine? Every value of A loses the same piece, the trapezium from zero to one, which is two and a half, the two hundred and fifty cars that came in before ten. So the whole curve slides down by two and a half, and none of its gradients change. At x equals two, the gradient is still one, the height there. A different start gives a different primitive, one that differs by a constant. That's the plus C from primitives.",
+      "audioFile": "public/audio/math-a12-i08/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Now the big result. Take any primitive F of f. Any two primitives differ by a constant, so F of x equals A of x, plus C. At the start, A of a is zero, because no strips have been added yet. So F of b, minus F of a, is A of b plus C, minus C. The constants cancel, and that leaves A of b, the integral from a to b. That's the Fundamental Theorem of Calculus. For a continuous f, the integral from a to b of f of x, d x, equals F of b minus F of a, for any primitive F. We write it with square brackets: F of x, from a to b.",
+      "audioFile": "public/audio/math-a12-i08/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Now check the earlier results. The trolley's strips settled near two point six six seven. A primitive of x squared is x cubed over three, so the integral from zero to two is eight thirds, minus zero. That's about two point six six seven. The rain gauge's strips settled on one. A primitive of cos x is sine x, and sine of pi over two, minus sine of zero, is exactly one. And the bath's thirty-two litres come from twelve t minus t squared. Ninety-six minus sixty-four is thirty-two. So instead of adding thousands of strips, we need two values of one primitive.",
+      "audioFile": "public/audio/math-a12-i08/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's the pair to remember. Differentiate the area, and you get the height. Integrate the rate, and you get the change. The first is why the second works.",
+      "audioFile": "public/audio/math-a12-i08/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. A of x is the integral from two to x, of the square root of one plus t cubed, d t. Find A of two, and A prime of two. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i08/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "A of two is zero, because from two to two there's no strip at all. For the gradient, the area grows at the height of its edge, so A prime of x is the square root of one plus x cubed. At two, that's the square root of nine, which is three. A prime of two equals two is wrong. It differentiates the square root, instead of reading the height.",
+      "audioFile": "public/audio/math-a12-i08/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. Use the Fundamental Theorem of Calculus to evaluate the integral from one to three, of three x squared, d x. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i08/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "A primitive of three x squared is x cubed. So the integral is three cubed, minus one cubed, which is twenty-seven minus one, or twenty-six. Any primitive works. Add five to it, and the fives cancel. Twenty-seven is wrong. It forgets to subtract F of one.",
+      "audioFile": "public/audio/math-a12-i08/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So the area grows at the height of its edge, and that turns a definite integral into a primitive, evaluated at two ends. Next, we'll use it on all kinds of integrals, and some of them have negative ends. Here's one. One third, minus negative two cubed over three. Where do the minus signs go?",
+      "audioFile": "public/audio/math-a12-i08/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i08/scene-16.wav"
+    }
+  ]
+}

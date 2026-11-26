@@ -5,3 +5,10 @@
 Scene 7 states the fund reaches zero after 120 withdrawals of $1,050.91, but that is not exact and is inconsistent with the equal-payment emphasis: show the unrounded mathematical withdrawal, or explicitly make the last withdrawal $1,050.33 and describe the equality as approximate. Scene 8's instructions to divide annual rates by four or 26 need the stated assumption that the rate is nominal and compounded at the payment frequency; otherwise the conversion is not generally valid. Matching compounding to payments is this model's scope, not a necessary condition for every annuity in general. In particular, an annuity can have a different interest conversion frequency using an equivalent effective period rate.
 
 Live source https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson07.sa.html Problem 3 confirms the same $100,000, 4.8%, 10 years and $1,050.91; its assertion of exact exhaustion is inaccurate by 58 cents. https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson06.sa.html confirms the equal regular payment definition; its 11.5% super example is a historical source figure, not a current rate to repeat.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `7190c884bf3ba787ad253f6528f555b96c526f0749d0457d3a734710d70155c0`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Rounded-up withdrawal nowrunsoutat120th withsmallerfinalwithdrawal. Rateconversionexplicitly coursemodel,compoundingonceperpaymentperiod;periodcountsandendpayments retained. Exactfinaldue independentlyrecomputed below.
+
+Independent recount:5760characters/15scene strings,noem dashes. Changed narration andsource repair notescheckedagainst priorfullreview;unchanged numericalexamples/live-sourcechecksretained. Newboundary/roundingchecks inwork/brief240/root68-f10-f15-edge-calculations.json. Nativeartmeasurementsretained forbuilderfittingunderrootdecision30;root68readytovoice. No speechgeneratedbythisreview. Measuredtiming,builtmotionandhumanlisteningremainpending.

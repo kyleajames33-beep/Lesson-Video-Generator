@@ -1,0 +1,141 @@
+{
+  "brief": 249,
+  "lesson": "t04",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-645cfd11-68af-478f-bbae-14e763cc9322.png",
+      "sha256": "f2686d07a34372320aa91589fa96e1b265e1a3d245d32acefc747b7523efa42d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        58,
+        62,
+        1183,
+        1191
+      ],
+      "marginFractions": [
+        0.046251993620414676,
+        0.049441786283891544,
+        0.05661881977671451,
+        0.050239234449760764
+      ],
+      "evidence": [
+        "work/brief249/t04-clock-native-paper.jpg",
+        "work/brief249/t04-clock-native-dark.jpg",
+        "work/brief249/t04-clock-native-white.jpg",
+        "work/brief249/t04-clock-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-wall-clock-v1.png",
+      "path": "public/assets/maths/ma11-wall-clock-v1.png",
+      "brief": 249,
+      "lesson": "t04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        1500
+      ],
+      "qa": {
+        "result": "qualified: twelve ticks and nearly circular face; exact30degree tick registration not cleared",
+        "observations": "Subject and native paper/dark alpha inspected. Exact source geometry remains for root; PNG pixels preserved.",
+        "evidence": [
+          "work/brief249/t04-clock-native-black.jpg",
+          "work/brief249/t04-clock-native-dark.jpg",
+          "work/brief249/t04-clock-native-paper.jpg",
+          "work/brief249/t04-clock-native-white.jpg",
+          "work/brief249/t04-clock-qa-paper-dark-dark.jpg",
+          "work/brief249/t04-clock-qa-paper-dark-paper.jpg",
+          "work/brief249/t04-clock-registration-dark.jpg",
+          "work/brief249/t04-clock-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-wall-clock-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-612c46f6-b0c2-4d2f-bc14-62480a9608fa.png",
+      "sha256": "8c91750e0a87ffafbbb8ec0d75824123e54d02872f74283dccf529c99147275a",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        253
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        9,
+        1774,
+        887
+      ],
+      "marginFractions": [
+        0.0,
+        0.010146561443066516,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief249/t04-fire-towers-native-paper.jpg",
+        "work/brief249/t04-fire-towers-native-dark.jpg",
+        "work/brief249/t04-fire-towers-native-white.jpg",
+        "work/brief249/t04-fire-towers-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-fire-towers-v1.png",
+      "path": "public/assets/maths/ma11-fire-towers-v1.png",
+      "brief": 249,
+      "lesson": "t04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1200
+      ],
+      "qa": {
+        "result": "static pass under root ruling 46",
+        "observations": "Two natural lookout towers and a single smoke plume. Native transparency and paper/dark checks passed. Draw the exact triangle in a dedicated schematic beside or over the painting, independently of the landmarks.",
+        "evidence": [
+          "work/brief249/t04-fire-towers-native-paper.jpg",
+          "work/brief249/t04-fire-towers-native-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-fire-towers-v1.json",
+      "previousQA": {
+        "result": "held:32.11and29.44degree painted angles fail65/70within5degrees; source layout constraints conflict",
+        "observations": "Subject and native paper/dark alpha inspected. Exact source geometry remains for root; PNG pixels preserved.",
+        "evidence": [
+          "work/brief249/t04-fire-towers-native-black.jpg",
+          "work/brief249/t04-fire-towers-native-dark.jpg",
+          "work/brief249/t04-fire-towers-native-paper.jpg",
+          "work/brief249/t04-fire-towers-native-white.jpg",
+          "work/brief249/t04-fire-towers-registration-dark.jpg",
+          "work/brief249/t04-fire-towers-registration-paper.jpg"
+        ]
+      }
+    }
+  ],
+  "result": "Clock delivered as a qualified subject plate, native1254square. Twelve ticks, no numerals or hands; face radii501/502px, centre619,630. Tick gaps29.42to30.89degrees, so exact30degree registration remains for root.900/full-size paper/dark checks recorded. Fire-tower landscape held: actual45.7percent cabin spacing and30.1percent plume-base height match the layout, but angles32.11/29.44fail65/70within5degrees. The requested2:1/45percent/30percent layout cannot fit those angles; proof in t04-fire-towers-geometry.json. No further blind retry or source/design change. Root resolves this before the t04/t05 join.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/t04-calculations.json",
+    "work/brief249/t04-clock-candidate-measurements.json",
+    "work/brief249/t04-clock-generation.json",
+    "work/brief249/t04-clock-geometry.json",
+    "work/brief249/t04-clock-qa.json",
+    "work/brief249/t04-fire-towers-candidate-measurements.json",
+    "work/brief249/t04-fire-towers-generation.json",
+    "work/brief249/t04-fire-towers-geometry.json",
+    "work/brief249/t04-source-audit.json",
+    "docs/production/claude-pm/checks/m-a11-t04-maths-check.md",
+    "work/brief249/source-findings.json"
+  ]
+}

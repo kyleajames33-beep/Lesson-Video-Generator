@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v13.md",
+  "sourceSha256": "fcb2e86db9976ca61868ca375a008b8860c34d88dae53f7d5cf0a37bc37da2a2",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time we wound two coils on one closed iron core. Let's put numbers on it. The primary has one hundred turns, and it's connected to ten volts AC. The secondary has two hundred turns, twice as many. Will the secondary's voltage be bigger, smaller, or the same? Make your prediction. It's twenty volts, twice as big. So does the transformer give us something for free? Connect a lamp, and it draws half an amp. Now look at the primary. It draws one whole amp. Twice the voltage, half the current. So how does a transformer exchange voltage for current?",
+      "audioFile": "public/audio/phys-y12-m6-v13/hook.wav"
+    },
+    {
+      "id": "volts-per-turn",
+      "text": "Start with the voltages. In an ideal transformer, all the flux goes round the core, so it passes through every turn of both coils. Every turn sees the same changing flux, so by Faraday's law, every turn gets the same emf, delta phi over delta t. Think of it as the volts per turn. The secondary's voltage is its number of turns, times the volts per turn. The primary works the same way. The changing flux passes through its turns too, and in an ideal coil with no resistance, the emf in those turns matches the supply voltage. So both voltages are turns times the same volts per turn. Divide one by the other, and the flux change cancels. V p over V s equals N p over N s. With our numbers, ten volts over one hundred turns is a tenth of a volt per turn, so two hundred turns give twenty volts.",
+      "audioFile": "public/audio/phys-y12-m6-v13/volts-per-turn.wav"
+    },
+    {
+      "id": "step-up-down",
+      "text": "So the voltage follows the turns. More turns on the secondary, and the voltage goes up. That's a step-up transformer. Fewer turns on the secondary, and the voltage goes down. That's a step-down transformer. The lab power pack has one inside, turning two hundred and thirty volts from the power point into a few volts for your experiment. And at power stations, step-up transformers raise the voltage for the transmission lines. One thing never changes. The output alternates at the same frequency as the supply, fifty hertz in Australia.",
+      "audioFile": "public/audio/phys-y12-m6-v13/step-up-down.wav"
+    },
+    {
+      "id": "no-free-energy",
+      "text": "If more turns give more volts, why not more current as well? Then we'd get more power out than we put in. And a transformer has no fuel and no battery. All its energy comes from the supply, carried by the changing field.",
+      "audioFile": "public/audio/phys-y12-m6-v13/no-free-energy.wav"
+    },
+    {
+      "id": "power-equal",
+      "text": "Power is energy per second, and from Year 11, power is voltage times current. Our ideal transformer loses no energy, so every second, the energy into the primary all comes out of the secondary. Power in equals power out. V p times I p equals V s times I s. Check it with the hook. Ten volts times one amp is ten watts in. Twenty volts times half an amp is ten watts out.",
+      "audioFile": "public/audio/phys-y12-m6-v13/power-equal.wav"
+    },
+    {
+      "id": "current-ratio",
+      "text": "Now put the two rules together. The voltage goes up by the turns ratio, and the power stays the same. So the current has to go down by the same ratio. In symbols, I p over I s equals N s over N p. The turns are flipped. Try it live, with a load that takes ten watts. Give the secondary fifty, one hundred, two hundred, then four hundred turns. The voltage climbs, the current falls, and their product stays at ten watts. A step-up transformer steps the current down, and a step-down transformer steps the current up. It can't raise both. That's the exchange, voltage for current.",
+      "audioFile": "public/audio/phys-y12-m6-v13/current-ratio.wav"
+    },
+    {
+      "id": "load-sets-current",
+      "text": "So who decides how big the currents are? The load does, the thing the secondary is supplying. With nothing connected, no current flows in the secondary, and an ideal primary draws almost no current, because the emf in its own turns balances the supply. Now connect the lamp. Current flows in the secondary, and by Lenz's law, its field opposes the changing flux. To keep the flux changing as the supply demands, the primary draws extra current. A bigger load draws more current from the secondary, so the primary draws more.",
+      "audioFile": "public/audio/phys-y12-m6-v13/load-sets-current.wav"
+    },
+    {
+      "id": "worked-voltage",
+      "text": "Let's do a full example. A step-down transformer has twelve hundred primary turns and sixty secondary turns. The primary is connected to two hundred and thirty volts AC and draws zero point five zero amps. Find the secondary voltage, the secondary current and the power delivered. Start with the voltage. Use V p over V s equals N p over N s, and rearrange for V s. Two hundred and thirty, times sixty over twelve hundred, is eleven point five volts. That's a twenty to one step-down.",
+      "audioFile": "public/audio/phys-y12-m6-v13/worked-voltage.wav"
+    },
+    {
+      "id": "worked-current-power",
+      "text": "Now the current. The power is the same on both sides, so I s equals V p I p over V s. That's two hundred and thirty, times zero point five zero, over eleven point five, which is ten amps. Check it with the turns ratio. The voltage went down twenty times, so the current goes up twenty times, zero point five zero times twenty is ten amps again. And the power is eleven point five times ten, which is one hundred and fifteen watts, the same as two hundred and thirty times zero point five zero.",
+      "audioFile": "public/audio/phys-y12-m6-v13/worked-current-power.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember it. Volts follow the turns. Current goes the other way. And if you're ever unsure, check that the power in matches the power out.",
+      "audioFile": "public/audio/phys-y12-m6-v13/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. An ideal transformer has two hundred turns on its primary and three thousand turns on its secondary. The primary is connected to a twenty four volt AC supply, and the secondary supplies zero point four zero amps to a load. Calculate the secondary voltage and the current in the primary. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The turns ratio is fifteen, so the voltage steps up to twenty four times fifteen, three hundred and sixty volts. Power in equals power out, so the primary current is three hundred and sixty times zero point four zero, over twenty four, which is six point zero amps. The classic slip is dividing the current by fifteen. A step-up transformer steps the current down, so the primary carries the bigger current.",
+      "audioFile": "public/audio/phys-y12-m6-v13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student says, a step-up transformer that raises the voltage by a factor of ten also raises the power by a factor of ten. Evaluate this claim for an ideal transformer. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The claim is incorrect. An ideal transformer loses no energy and has no other energy source, so power in equals power out. The voltage goes up ten times, so the current goes down ten times, and the power stays the same. The slip is thinking more volts means more power. A transformer trades voltage for current, it can't make energy.",
+      "audioFile": "public/audio/phys-y12-m6-v13/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So in an ideal transformer, every turn shares the same changing flux, and no energy is lost. Volts follow the turns, and the current goes the other way. But real transformers do get warm, and warmth means energy that never reaches the lamp. So why are real transformers less efficient than the ideal model?",
+      "audioFile": "public/audio/phys-y12-m6-v13/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v13/key-notes.wav"
+    }
+  ]
+}

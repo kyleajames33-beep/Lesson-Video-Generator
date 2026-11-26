@@ -1,0 +1,125 @@
+{
+  "brief": 248,
+  "lesson": "e02",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-a1ef6a89-67a3-4043-8e1b-7134bbcb0533.png",
+      "sha256": "328bf868bb9c17e2df8d8fe476ea4d0d0ce5098d7fd061ae5b88201ec3da1a1c",
+      "nativeSize": [
+        1519,
+        1035
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        19,
+        31,
+        1497,
+        1007
+      ],
+      "marginFractions": [
+        0.012508229098090849,
+        0.02995169082125604,
+        0.014483212639894667,
+        0.02705314009661836
+      ],
+      "evidence": [
+        "work/brief248/e02-tournament-board-native-paper.jpg",
+        "work/brief248/e02-tournament-board-native-dark.jpg",
+        "work/brief248/e02-tournament-board-native-white.jpg",
+        "work/brief248/e02-tournament-board-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-tournament-board-v1.png",
+      "path": "public/assets/maths/ma11-tournament-board-v1.png",
+      "brief": 248,
+      "lesson": "e02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2200,
+        1500
+      ],
+      "qa": {
+        "result": "passed: subject, blank coded regions, alpha and900/full-width checks",
+        "observations": [
+          "No marks painted on paper or trophy plate.",
+          "64-team fan stays inside board safe rectangle at minimum6px slot spacing."
+        ],
+        "evidence": [
+          "work/brief248/e02-board-registration-paper.jpg",
+          "work/brief248/e02-board-registration-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-tournament-board-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-a26438cd-e01f-4ced-9b6d-6f9f1941f098.png",
+      "sha256": "b51ef906a632fb93a8220c9fe2d0862e27aff4312ce1d28a2fd972c1a5f9b57b",
+      "nativeSize": [
+        1049,
+        1499
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        81,
+        166,
+        967,
+        1370
+      ],
+      "marginFractions": [
+        0.07721639656816015,
+        0.11074049366244162,
+        0.07816968541468065,
+        0.08605737158105403
+      ],
+      "evidence": [
+        "work/brief248/e02-trophy-native-paper.jpg",
+        "work/brief248/e02-trophy-native-dark.jpg",
+        "work/brief248/e02-trophy-native-white.jpg",
+        "work/brief248/e02-trophy-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-trophy-v1.png",
+      "path": "public/assets/maths/ma11-trophy-v1.png",
+      "brief": 248,
+      "lesson": "e02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        700,
+        1000
+      ],
+      "qa": {
+        "result": "passed: subject, blank coded regions, alpha and900/full-width checks",
+        "observations": [
+          "No marks painted on paper or trophy plate.",
+          "64-team fan stays inside board safe rectangle at minimum6px slot spacing."
+        ],
+        "evidence": [
+          "work/brief248/e02-trophy-qa-paper-dark-paper.jpg",
+          "work/brief248/e02-trophy-qa-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Tournament board and trophy delivered at native1519x1035 and1049x1499. Blank flat sheet safe rectangle300,180,1210,840 excludes pins. At900px board width its391.05px safe height fits a64-team fan with6px slot gaps (378px span), demonstrated in QA. Trophy has two handles and blank base plate.900/full-width paper/dark and alpha checks pass.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/e02-generation.json",
+    "work/brief248/e02-board-geometry.json",
+    "work/brief248/qa-tournament-board.py",
+    "work/brief248/e02-trophy-qa.json",
+    "work/brief248/e02-board-registration-paper.jpg",
+    "work/brief248/e02-board-registration-dark.jpg",
+    "work/brief248/e02-trophy-qa-paper-dark-paper.jpg",
+    "work/brief248/e02-trophy-qa-paper-dark-dark.jpg"
+  ]
+}

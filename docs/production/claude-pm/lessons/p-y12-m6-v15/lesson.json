@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "41dc765ebbdbd653e2995ce79aeda39f6cce0bc627220f5d8584f89a643c9307",
+  "sourceDesignSha256": "4b7605728f6eb3fcd146438cebd67241cac1b56f4a4a1c8db1587cc42fed9915",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Hold on to your answer.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Hold on to your answer.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "two-powers",
@@ -45,7 +55,7 @@
         "text": "And here's the key. The loss is I squared R, so it goes with the square of the current. Put I equals P over V into it, and the loss is P squared R over V squared. Half the current gives a quarter of the loss. A tenth of the current gives one hundredth of the loss. That square is why high voltage is worth it."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 2,
       "holdKind": "visual"
     },
     {
@@ -65,7 +75,7 @@
         "text": "Now double the voltage to five hundred kilovolts. The current halves, to one thousand amps. The loss is one thousand squared, times two point zero, which is two point zero megawatts. Just zero point four per cent. Doubling the voltage cut the loss to a quarter. So if you guessed a quarter in the hook, you were right."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 3,
       "holdKind": "visual"
     },
     {

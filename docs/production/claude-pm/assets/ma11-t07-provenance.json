@@ -1,0 +1,70 @@
+{
+  "brief": 249,
+  "lesson": "t07",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-bef8ed1e-c5e3-4c10-9e2c-c8d5c1ca311f.png",
+      "sha256": "1071c9ed6fd32a2be5f0fbda21ba4ea88225ca7af5e14755ed16facf04be3a0d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        34,
+        42,
+        1204,
+        1226
+      ],
+      "marginFractions": [
+        0.02711323763955343,
+        0.03349282296650718,
+        0.03987240829346093,
+        0.022328548644338118
+      ],
+      "evidence": [
+        "work/brief249/t07-cake-tin-native-paper.jpg",
+        "work/brief249/t07-cake-tin-native-dark.jpg",
+        "work/brief249/t07-cake-tin-native-white.jpg",
+        "work/brief249/t07-cake-tin-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-cake-tin-v1.png",
+      "path": "public/assets/maths/ma11-cake-tin-v1.png",
+      "brief": 249,
+      "lesson": "t07",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        1500
+      ],
+      "qa": {
+        "result": "qualified: bare circular tin, subject and alpha pass; small circle-fit and concentricity deviations recorded",
+        "evidence": [
+          "work/brief249/t07-cake-tin-native-black.jpg",
+          "work/brief249/t07-cake-tin-native-dark.jpg",
+          "work/brief249/t07-cake-tin-native-paper.jpg",
+          "work/brief249/t07-cake-tin-native-white.jpg",
+          "work/brief249/t07-cake-tin-qa-paper-dark-dark.jpg",
+          "work/brief249/t07-cake-tin-qa-paper-dark-paper.jpg",
+          "work/brief249/t07-cake-tin-registration-dark.jpg",
+          "work/brief249/t07-cake-tin-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-cake-tin-v1.json"
+    }
+  ],
+  "result": "Empty cake tin delivered at native1254square. Bare base centre618.07,640.71 and inner radius505.69px; outer fitted centre619.63,632.93 and radius583.07px. Inner/outer circle residuals4.64/6.59px maximum. Qualified painted boundary and centre offsets recorded; use the base centre for coded radii/arcs and do not stretch the PNG.760/full-width paper/dark subject, alpha and circle-overlay proofs inspected.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/t07-cake-tin-candidate-measurements.json",
+    "work/brief249/t07-cake-tin-generation.json",
+    "work/brief249/t07-cake-tin-geometry.json",
+    "work/brief249/t07-cake-tin-qa.json"
+  ]
+}

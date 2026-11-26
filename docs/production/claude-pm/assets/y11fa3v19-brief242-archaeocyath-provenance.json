@@ -1,0 +1,69 @@
+{
+  "id": "y11-fossil-archaeocyath-v1",
+  "brief": 242,
+  "lesson": "bio-y11-fa3-v19",
+  "file": "public/assets/biology/y11-fossil-archaeocyath-v1.png",
+  "sha256": "c0241689619381c14920c37f613856bd26087eb98da102d255e6f6db57020b56",
+  "nativeSize": [
+    1254,
+    1254
+  ],
+  "requestedSize": [
+    1200,
+    1200
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    54,
+    56,
+    1202,
+    1208
+  ],
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-386fdd58-8763-4c9b-9d27-5c886195737e.png",
+  "reference": "public/assets/biology/y11-trilobite-phacops-v1.png",
+  "anchors": {
+    "clearestRingCentre": [
+      502,
+      416
+    ],
+    "slabBoundingBox": [
+      54,
+      56,
+      1202,
+      1208
+    ],
+    "otherRingCentres": [
+      [
+        884,
+        642
+      ],
+      [
+        625,
+        874
+      ]
+    ],
+    "coordinateUnits": "native pixels"
+  },
+  "method": "Built-in image generation with stone-style reference. Generated PNG copied unchanged; Python only for QA composites and 170-pixel preview.",
+  "prompt": "Create a NEW fossil teaching illustration, NOT a trilobite. Reference is ONLY for pale grey-buff stone palette, fine dark ink linework, softly painted weathering and gentle upper-left lighting. A single irregular slab of cut, weathered pale grey-buff CAMBRIAN LIMESTONE, viewed straight down from above. Within the slab are several ARCHAEOCYATH fossils as found in the Flinders Ranges: small extinct double-walled cup/cone-shaped sponge skeletons fossilised in rock. Show three clear transverse sections as DOUBLE-WALLED circular/oval rings, each a central empty rock-filled cavity enclosed by two concentric porous walls, with fine radial partitions ONLY in the annular space BETWEEN the inner and outer walls. Central cavity is NOT filled with radiating coral septa. Also show two narrow elongated longitudinal cone sections elsewhere in slab: paired diverging walls and a central cavity. These are subtle stone fossils, slightly darker than the matrix, no living tissue. One clearest large ring near upper left/centre readable when entire plate is only170px tall. Natural irregular broken stone perimeter, no enclosing rectangular background. Square canvas approximately1200x1200, full slab centred with at least8percent transparent margin every side. True alpha PNG, clean dark-outlined rock edges, no halo, white fringe, glow, cast shadow, ground, people, hands, faces, text, numbers, scale bars, arrows or labels. Never depict living organisms or a museum photograph; this is a painted geological specimen teaching plate.",
+  "qa": {
+    "result": "static pass with margin limit",
+    "observations": [
+      "Three double-walled ring sections and two narrow cone sections; radial partitions are between walls and do not fill the central cavities.",
+      "Native paper and dark composites inspected: irregular rock edge clean, no external wash or halo, no people, text, scales or question data.",
+      "170-pixel paper and dark preview inspected: clearest ring and cone forms remain legible.",
+      "Returned 1254-square rather than approximate 1200-square. Clear margins are about four percent, below requested eight; leave extra scene padding and scale uniformly.",
+      "Illustration only, not an authenticated photographed locality specimen. Actual rock-band fit and overlays remain a build check."
+    ],
+    "evidence": [
+      "work/brief242/archaeocyath-native-paper.jpg",
+      "work/brief242/archaeocyath-native-dark.jpg",
+      "work/brief242/archaeocyath-native-white.jpg",
+      "work/brief242/archaeocyath-170px.png"
+    ]
+  },
+  "wholeLessonClearance": false
+}

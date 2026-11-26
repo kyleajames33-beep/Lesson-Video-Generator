@@ -1,0 +1,1756 @@
+{
+  "lesson": "chem-y11-m2-v02",
+  "wave": 2,
+  "sourceSha256": "b7fa73bc7966d2e2de04c49bc05e44dee1ee550528091b113a4e3134c9f0a574",
+  "measuredPath": "work/brief236/wave2/chem-y11-m2-v02/voiced/lesson.json",
+  "measuredSha256": "05d3fc9a8debda8c789723284fe789e65938b64768b694919abf3fdfcb53103b",
+  "characters": 5578,
+  "totalSeconds": 447.6666666666667,
+  "under570": true,
+  "newRequests": 9,
+  "cachedTakes": 1,
+  "inputTokens": 1267,
+  "outputTokens": 9334,
+  "costUsd": 0.08463949999999999,
+  "worstWordGap": {
+    "scene": "count-not-mass",
+    "seconds": 1.0630000000000095,
+    "after": "watermelons.",
+    "before": "Oxygen"
+  },
+  "machineFlags": [
+    {
+      "id": "counting-unit",
+      "runOn": {
+        "pass": true,
+        "seconds": 22.176,
+        "characters": 339,
+        "charactersPerSecond": 15.286796536796539,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/counting-unit.wav",
+        "audioSha256": "2f2e25f002be93bd057efae6fe068cf6ab04941788d89dda3cc653c523799d86",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/counting-unit.wav",
+      "seconds": 22.176,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "dozen",
+          "start": 4.684999999999995,
+          "end": 5.026999999999996
+        },
+        {
+          "text": "one",
+          "start": 17.079999999999988,
+          "end": 17.155749999999987
+        },
+        {
+          "text": "mole",
+          "start": 21.25300000000006,
+          "end": 21.49380000000006
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0230000000000743,
+        "after": "one.",
+        "before": "Chemists"
+      },
+      "peakFraction": 0.840789794921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.157,
+          "end": 3.198,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "They count the way we count anything in bulk, with a counting unit. A dozen always means twelve, and a ream of paper is always five hundred sheets. Twelve eggs or twelve watermelons, it's still a dozen. If you buy five dozen, you know you've got sixty, without counting each one. Chemists use a counting unit too, and it's called the mole.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "mole-and-avogadro",
+      "runOn": {
+        "pass": true,
+        "seconds": 26.468,
+        "characters": 397,
+        "charactersPerSecond": 14.999244370560676,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/mole-and-avogadro.wav",
+        "audioSha256": "6e505e1cf83a5a1f083b1c7eebef55b355e7d6f23fc3f563db76f991495752d3",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/mole-and-avogadro.wav",
+      "seconds": 26.468,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "Avogadro",
+          "start": 6.305999999999988,
+          "end": 6.8879999999999875
+        },
+        {
+          "text": "mole",
+          "start": 13.767999999999986,
+          "end": 13.976799999999987
+        },
+        {
+          "text": "l",
+          "start": 14.982999999999986,
+          "end": 15.018999999999986
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9420000000000748,
+        "after": "mole.",
+        "before": "When"
+      },
+      "peakFraction": 0.85565185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 11.283999999999986,
+          "end": 11.303999999999986,
+          "score": 0.001
+        },
+        {
+          "word": "a",
+          "start": 18.39800000000006,
+          "end": 18.43800000000006,
+          "score": 0.488
+        },
+        {
+          "word": "m",
+          "start": 25.46400000000007,
+          "end": 25.48400000000007,
+          "score": 0
+        },
+        {
+          "word": "o",
+          "start": 25.50400000000007,
+          "end": 25.52400000000007,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "One mole is six point zero two two times ten to the twenty-three particles. That number is called the Avogadro constant, after the Italian scientist Amedeo Avogadro. It's written N A, and its unit is per mole, because it tells you how many particles are in each mole. When we count a substance in moles, that's its chemical amount. Its symbol is a small n, and its unit is the mole, written m o l.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "scale",
+      "runOn": {
+        "pass": true,
+        "seconds": 19.944,
+        "characters": 289,
+        "charactersPerSecond": 14.490573606097072,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/scale.wav",
+        "audioSha256": "85ecb2c3abc8ec3791c6d81bcfc58dbd548575573b28c775bbe183ce7fb16c7f",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/scale.wav",
+      "seconds": 19.944,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "years",
+          "start": 9.9,
+          "end": 10.184166666666666
+        },
+        {
+          "text": "universe",
+          "start": 13.060999999999988,
+          "end": 13.4201111111111
+        },
+        {
+          "text": "tablespoon",
+          "start": 16.877,
+          "end": 17.424272727272726
+        },
+        {
+          "text": "are",
+          "start": 19.438000000000077,
+          "end": 19.498750000000076
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8030000000000097,
+        "after": "universe.",
+        "before": "Yet"
+      },
+      "peakFraction": 0.821075439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 16.776999999999997,
+          "end": 16.816999999999997,
+          "score": 0.494
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "How big is that number? If you counted one particle every second, without stopping, one mole would take about nineteen million billion years. That's more than a million times the age of the universe. Yet a mole of water molecules is only about a tablespoon. That's how small particles are.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "why-this-number",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.867,
+        "characters": 298,
+        "charactersPerSecond": 14.28092202999952,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/why-this-number.wav",
+        "audioSha256": "2f411fb117427a63efb28506dabb819d32fc40cb82f1d11a78b9452b85268381",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/why-this-number.wav",
+      "seconds": 20.867,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "know",
+          "start": 15.563999999999995,
+          "end": 15.707999999999995
+        },
+        {
+          "text": "count",
+          "start": 20.20300000000001,
+          "end": 20.454666666666675
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8049999999999944,
+        "after": "know.",
+        "before": "We'll"
+      },
+      "peakFraction": 0.818939208984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 8.956999999999994,
+          "end": 9.096999999999994,
+          "score": 0.453
+        },
+        {
+          "word": "a",
+          "start": 18.61200000000001,
+          "end": 18.63200000000001,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 19.98100000000001,
+          "end": 20.00100000000001,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Why such an odd number? It was chosen to link counting with weighing. Twelve grams of carbon twelve contains almost exactly one mole of atoms, so a mole of particles has a mass in grams close to the relative masses you already know. We'll use that link next time. For now, a mole is simply a count.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "n-and-N",
+      "runOn": {
+        "pass": true,
+        "seconds": 22.629,
+        "characters": 311,
+        "charactersPerSecond": 13.743426576516859,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/n-and-N.wav",
+        "audioSha256": "1b0bace43b8411561dfe16b7064d0c01f742880ce51b9a2c362fb099039e133f",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/n-and-N.wav",
+      "seconds": 22.629,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "moles",
+          "start": 10.909999999999995,
+          "end": 11.177499999999995
+        },
+        {
+          "text": "A",
+          "start": 12.898999999999988,
+          "end": 12.974374999999988
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.006000000000089,
+        "after": "A.",
+        "before": "And"
+      },
+      "peakFraction": 0.859588623046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 16.800999999999988,
+          "end": 16.82099999999999,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So there are two numbers to keep apart. Capital N is the number of particles, a huge count with no unit. Small n is the chemical amount, in moles. They're linked by the Avogadro constant. The number of particles equals the moles times N A. And going back, the moles equal the number of particles divided by N A.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "moles-to-atoms",
+      "runOn": {
+        "pass": true,
+        "seconds": 24.14,
+        "characters": 330,
+        "charactersPerSecond": 13.670256835128416,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/moles-to-atoms.wav",
+        "audioSha256": "3d6320cffdfe9e77fe07b192527580d6a41f26d3042d50e1a51d68a1ab2ee3ab",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/moles-to-atoms.wav",
+      "seconds": 24.14,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 2.127,
+          "end": 2.428
+        },
+        {
+          "text": "count",
+          "start": 23.558000000000103,
+          "end": 23.792166666666773
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9680000000000053,
+        "after": "atoms.",
+        "before": "N"
+      },
+      "peakFraction": 0.846588134765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 22.996000000000105,
+          "end": 23.016000000000105,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Let's use it. How many atoms are in two point five moles of carbon? The particles are carbon atoms. N equals n times N A, so two point five times six point zero two two times ten to the twenty-three. That's about one point five times ten to the twenty-four carbon atoms. The mole unit cancels with per mole, leaving a plain count.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "atoms-to-moles",
+      "runOn": {
+        "pass": true,
+        "seconds": 29.065,
+        "characters": 464,
+        "charactersPerSecond": 15.96421813177361,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/atoms-to-moles.wav",
+        "audioSha256": "e229ba5321f8918247739f3be71bfb4b4be74b0efdbf618e5c802bfc32e57259",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/atoms-to-moles.wav",
+      "seconds": 29.065,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 5.529000000000001,
+          "end": 5.9979000000000005
+        },
+        {
+          "text": "sense",
+          "start": 28.383000000000056,
+          "end": 28.583833333333388
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8849999999999998,
+        "after": "that?",
+        "before": "n"
+      },
+      "peakFraction": 0.87481689453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 9.84999999999999,
+          "end": 9.86999999999999,
+          "score": 0
+        },
+        {
+          "word": "check.",
+          "start": 21.399000000000072,
+          "end": 21.60000000000007,
+          "score": 0.476
+        },
+        {
+          "word": "is",
+          "start": 22.907000000000053,
+          "end": 22.987000000000055,
+          "score": 0.352
+        },
+        {
+          "word": "a",
+          "start": 23.007000000000055,
+          "end": 23.067000000000053,
+          "score": 0.332
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Now the other way. A sample contains three point zero one times ten to the twenty-four water molecules. How many moles is that? n equals N divided by N A. That's three point zero one times ten to the twenty-four, divided by six point zero two two times ten to the twenty-three, which is five point zero zero moles of water molecules. Sense check. Three over six is a half, and ten to the twenty-four is ten times ten to the twenty-three, so about five makes sense.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "equation-in-moles",
+      "runOn": {
+        "pass": true,
+        "seconds": 21.416,
+        "characters": 337,
+        "charactersPerSecond": 15.735898393724318,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/equation-in-moles.wav",
+        "audioSha256": "f5ed47ef2a03ab59439c2da9cfd5909c42be564d51488d60701c7ff42eb4e305",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/equation-in-moles.wav",
+      "seconds": 21.416,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 14.90799999999999,
+          "end": 15.30579999999999
+        },
+        {
+          "text": "work",
+          "start": 20.893000000000068,
+          "end": 21.06980000000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7829999999999893,
+        "after": "lab.",
+        "before": "Two"
+      },
+      "peakFraction": 0.8194580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 8.809999999999988,
+          "end": 8.829999999999988,
+          "score": 0
+        },
+        {
+          "word": "later",
+          "start": 19.686000000000067,
+          "end": 19.92700000000007,
+          "score": 0.38
+        },
+        {
+          "word": "that",
+          "start": 20.59100000000007,
+          "end": 20.75200000000007,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "This also tells us what a balanced equation means in the lab. Two magnesium atoms react with one oxygen molecule. Multiply both counts by N A, and the ratio doesn't change. So two moles of magnesium atoms react with one mole of oxygen molecules. The coefficients count particles, so they count moles too. A later video puts that to work.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "runOn": {
+        "pass": true,
+        "seconds": 6.16,
+        "characters": 77,
+        "charactersPerSecond": 12.5,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/memory-line.wav",
+        "audioSha256": "5723b648f53a3cb31475a6ddfd310b1d09aaa30c988706831238e74789f9d937",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/memory-line.wav",
+      "seconds": 6.16,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "what",
+          "start": 5.478000000000001,
+          "end": 5.686800000000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.5820000000000003,
+        "after": "remember.",
+        "before": "A"
+      },
+      "peakFraction": 0.8267822265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.555000000000001,
+          "end": 4.575,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the line to remember. A mole is a count, so always say a mole of what.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "runOn": {
+        "pass": true,
+        "seconds": 11.32,
+        "characters": 171,
+        "charactersPerSecond": 15.106007067137808,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/attempt-1.wav",
+        "audioSha256": "3d844fb4e32ea63c7096fcf4d2af33870a7ac338a92fa97d8cebe20c14a719a9",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/attempt-1.wav",
+      "seconds": 11.32,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.68700000000001,
+        "after": "balloon.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.85955810546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "turn.",
+          "start": 0.486,
+          "end": 0.689,
+          "score": 0.464
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. A balloon contains nine point zero three times ten to the twenty-two helium atoms. Calculate the chemical amount of helium in the balloon. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.72,
+        "characters": 312,
+        "charactersPerSecond": 15.057915057915059,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/feedback-1.wav",
+        "audioSha256": "40535d38f8f378120d25d5d37f35987a98bcda31fb35d7eda68650f2d93b7636",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/feedback-1.wav",
+      "seconds": 20.72,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 12.480999999999991,
+          "end": 12.681833333333326
+        },
+        {
+          "text": "avoid",
+          "start": 19.995000000000037,
+          "end": 20.230000000000036
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7399999999999967,
+        "after": "atoms.",
+        "before": "Multiplying"
+      },
+      "peakFraction": 0.8636474609375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 16.18499999999999,
+          "end": 16.26499999999999,
+          "score": 0.47
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "n equals N divided by N A. Nine point zero three times ten to the twenty-two, divided by six point zero two two times ten to the twenty-three, is zero point one five zero moles of helium atoms. Multiplying by N A instead gives more than ten to the forty-six moles, an impossible answer. That's the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "runOn": {
+        "pass": true,
+        "seconds": 24.358,
+        "characters": 360,
+        "charactersPerSecond": 14.779538549963052,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/feedback-2.wav",
+        "audioSha256": "ac9079de8f58ad734af5db592e0c9400bd531fe66876955dc5645d6746b18948",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/feedback-2.wav",
+      "seconds": 24.358,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "ions",
+          "start": 4.307,
+          "end": 4.515000000000001
+        },
+        {
+          "text": "ions",
+          "start": 10.557,
+          "end": 10.749
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8610000000001001,
+        "after": "ions.",
+        "before": "Forgetting"
+      },
+      "peakFraction": 0.829559326171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 12.039999999999988,
+          "end": 12.099999999999989,
+          "score": 0.432
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Each formula unit of calcium chloride has two chloride ions, so zero point two zero zero moles of it holds zero point four zero zero moles of chloride ions. Times N A, that's two point four one times ten to the twenty-three chloride ions. Forgetting the two gives one point two zero times ten to the twenty-three, which counts formula units, not chloride ions.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "runOn": {
+        "pass": true,
+        "seconds": 19.162,
+        "characters": 283,
+        "charactersPerSecond": 14.768813276275964,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/handoff.wav",
+        "audioSha256": "64d6f0d5f6682703e57baa1e34fb54cd78af2f85732655ad0b7e6adb6693d79a",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/handoff.wav",
+      "seconds": 19.162,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "moles",
+          "start": 12.075999999999992,
+          "end": 12.397999999999993
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8830000000000062,
+        "after": "that?",
+        "before": "Next"
+      },
+      "peakFraction": 0.87384033203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weigh",
+          "start": 7.565999999999999,
+          "end": 7.806999999999999,
+          "score": 0.393
+        },
+        {
+          "word": "a",
+          "start": 16.996,
+          "end": 17.016,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So the mole lets chemists count particles in amounts they can handle. But in the lab, we don't count particles, we weigh them. This ribbon weighs zero point two four of a gram. How many moles of magnesium is that? Next time, we'll see how molar mass turns a measured mass into moles.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "runOn": {
+        "pass": true,
+        "seconds": 4.24,
+        "characters": 75,
+        "charactersPerSecond": 17.68867924528302,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "evidence": "work/google-runon-checks/d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "runOn": {
+        "pass": true,
+        "seconds": 28.836,
+        "characters": 433,
+        "charactersPerSecond": 15.015952281869886,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/hook.wav",
+        "audioSha256": "9238ec685e4c4f64816f9d346ef70c47e203f0497b6ca8810d4f8ecb83efd594",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/hook.wav",
+      "seconds": 28.836,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 6.168999999999988,
+          "end": 6.430999999999988
+        },
+        {
+          "text": "balance",
+          "start": 24.183000000000117,
+          "end": 24.480500000000117
+        },
+        {
+          "text": "see",
+          "start": 28.05400000000005,
+          "end": 28.219000000000047
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9029999999999312,
+        "after": "balance.",
+        "before": "So"
+      },
+      "peakFraction": 0.8428955078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, we balanced two M g plus O two makes two M g O. So two magnesium atoms react with one oxygen molecule. But this zero point two four of a gram of ribbon holds thousands of billions of billions of magnesium atoms. Nobody can count that one at a time. And one carbon atom has a mass of about two times ten to the minus twenty-three grams, far too small for any balance. So how do chemists count particles they can't even see?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "counting-unit",
+      "runOn": {
+        "pass": true,
+        "seconds": 22.176,
+        "characters": 339,
+        "charactersPerSecond": 15.286796536796539,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/counting-unit.wav",
+        "audioSha256": "2f2e25f002be93bd057efae6fe068cf6ab04941788d89dda3cc653c523799d86",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/counting-unit.wav",
+      "seconds": 22.176,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "dozen",
+          "start": 4.684999999999995,
+          "end": 5.026999999999996
+        },
+        {
+          "text": "one",
+          "start": 17.079999999999988,
+          "end": 17.155749999999987
+        },
+        {
+          "text": "mole",
+          "start": 21.25300000000006,
+          "end": 21.49380000000006
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0230000000000743,
+        "after": "one.",
+        "before": "Chemists"
+      },
+      "peakFraction": 0.840789794921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.157,
+          "end": 3.198,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "They count the way we count anything in bulk, with a counting unit. A dozen always means twelve, and a ream of paper is always five hundred sheets. Twelve eggs or twelve watermelons, it's still a dozen. If you buy five dozen, you know you've got sixty, without counting each one. Chemists use a counting unit too, and it's called the mole.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "mole-and-avogadro",
+      "runOn": {
+        "pass": true,
+        "seconds": 26.468,
+        "characters": 397,
+        "charactersPerSecond": 14.999244370560676,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/mole-and-avogadro.wav",
+        "audioSha256": "6e505e1cf83a5a1f083b1c7eebef55b355e7d6f23fc3f563db76f991495752d3",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/mole-and-avogadro.wav",
+      "seconds": 26.468,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "Avogadro",
+          "start": 6.305999999999988,
+          "end": 6.8879999999999875
+        },
+        {
+          "text": "mole",
+          "start": 13.767999999999986,
+          "end": 13.976799999999987
+        },
+        {
+          "text": "l",
+          "start": 14.982999999999986,
+          "end": 15.018999999999986
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9420000000000748,
+        "after": "mole.",
+        "before": "When"
+      },
+      "peakFraction": 0.85565185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 11.283999999999986,
+          "end": 11.303999999999986,
+          "score": 0.001
+        },
+        {
+          "word": "a",
+          "start": 18.39800000000006,
+          "end": 18.43800000000006,
+          "score": 0.488
+        },
+        {
+          "word": "m",
+          "start": 25.46400000000007,
+          "end": 25.48400000000007,
+          "score": 0
+        },
+        {
+          "word": "o",
+          "start": 25.50400000000007,
+          "end": 25.52400000000007,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "One mole is six point zero two two times ten to the twenty-three particles. That number is called the Avogadro constant, after the Italian scientist Amedeo Avogadro. It's written N A, and its unit is per mole, because it tells you how many particles are in each mole. When we count a substance in moles, that's its chemical amount. Its symbol is a small n, and its unit is the mole, written m o l.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "scale",
+      "runOn": {
+        "pass": true,
+        "seconds": 19.944,
+        "characters": 289,
+        "charactersPerSecond": 14.490573606097072,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/scale.wav",
+        "audioSha256": "85ecb2c3abc8ec3791c6d81bcfc58dbd548575573b28c775bbe183ce7fb16c7f",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/scale.wav",
+      "seconds": 19.944,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "years",
+          "start": 9.9,
+          "end": 10.184166666666666
+        },
+        {
+          "text": "universe",
+          "start": 13.060999999999988,
+          "end": 13.4201111111111
+        },
+        {
+          "text": "tablespoon",
+          "start": 16.877,
+          "end": 17.424272727272726
+        },
+        {
+          "text": "are",
+          "start": 19.438000000000077,
+          "end": 19.498750000000076
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8030000000000097,
+        "after": "universe.",
+        "before": "Yet"
+      },
+      "peakFraction": 0.821075439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 16.776999999999997,
+          "end": 16.816999999999997,
+          "score": 0.494
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "How big is that number? If you counted one particle every second, without stopping, one mole would take about nineteen million billion years. That's more than a million times the age of the universe. Yet a mole of water molecules is only about a tablespoon. That's how small particles are.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "why-this-number",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.867,
+        "characters": 298,
+        "charactersPerSecond": 14.28092202999952,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/why-this-number.wav",
+        "audioSha256": "2f411fb117427a63efb28506dabb819d32fc40cb82f1d11a78b9452b85268381",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/why-this-number.wav",
+      "seconds": 20.867,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "know",
+          "start": 15.563999999999995,
+          "end": 15.707999999999995
+        },
+        {
+          "text": "count",
+          "start": 20.20300000000001,
+          "end": 20.454666666666675
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8049999999999944,
+        "after": "know.",
+        "before": "We'll"
+      },
+      "peakFraction": 0.818939208984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 8.956999999999994,
+          "end": 9.096999999999994,
+          "score": 0.453
+        },
+        {
+          "word": "a",
+          "start": 18.61200000000001,
+          "end": 18.63200000000001,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 19.98100000000001,
+          "end": 20.00100000000001,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Why such an odd number? It was chosen to link counting with weighing. Twelve grams of carbon twelve contains almost exactly one mole of atoms, so a mole of particles has a mass in grams close to the relative masses you already know. We'll use that link next time. For now, a mole is simply a count.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "n-and-N",
+      "runOn": {
+        "pass": true,
+        "seconds": 22.629,
+        "characters": 311,
+        "charactersPerSecond": 13.743426576516859,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/n-and-N.wav",
+        "audioSha256": "1b0bace43b8411561dfe16b7064d0c01f742880ce51b9a2c362fb099039e133f",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/n-and-N.wav",
+      "seconds": 22.629,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "moles",
+          "start": 10.909999999999995,
+          "end": 11.177499999999995
+        },
+        {
+          "text": "A",
+          "start": 12.898999999999988,
+          "end": 12.974374999999988
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.006000000000089,
+        "after": "A.",
+        "before": "And"
+      },
+      "peakFraction": 0.859588623046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 16.800999999999988,
+          "end": 16.82099999999999,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So there are two numbers to keep apart. Capital N is the number of particles, a huge count with no unit. Small n is the chemical amount, in moles. They're linked by the Avogadro constant. The number of particles equals the moles times N A. And going back, the moles equal the number of particles divided by N A.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "runOn": {
+        "pass": true,
+        "seconds": 9.148,
+        "characters": 114,
+        "charactersPerSecond": 12.461740271097508,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/prediction.wav",
+        "audioSha256": "ec8a57850c85101eba8a7992a28105e4ecc255bd1e56252f17fb5b33f8c1c619",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/prediction.wav",
+      "seconds": 9.148,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 3.085000000000001,
+          "end": 3.5548
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9300000000000005,
+        "after": "prediction.",
+        "before": "One"
+      },
+      "peakFraction": 0.877655029296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Quick prediction. One mole of hydrogen molecules, and one mole of oxygen molecules. Which contains more molecules?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "count-not-mass",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.072,
+        "characters": 286,
+        "charactersPerSecond": 14.248704663212436,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/count-not-mass.wav",
+        "audioSha256": "91988b64eb698db802ca250c9a2dcf949fff6d18f0a2fe85e852d07158c5e427",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/count-not-mass.wav",
+      "seconds": 20.072,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "count",
+          "start": 7.372999999999999,
+          "end": 7.6738333333333335
+        },
+        {
+          "text": "number",
+          "start": 16.608999999999998,
+          "end": 16.848999999999997
+        },
+        {
+          "text": "mass",
+          "start": 19.407000000000075,
+          "end": 19.600600000000075
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0630000000000095,
+        "after": "watermelons.",
+        "before": "Oxygen"
+      },
+      "peakFraction": 0.86572265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Neither. Each contains six point zero two two times ten to the twenty-three molecules, because a mole is a count. Remember the dozen watermelons. Oxygen molecules are heavier than hydrogen molecules, so a mole of oxygen has more mass, but the same number. A mole is a count, not a mass.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "moles-to-atoms",
+      "runOn": {
+        "pass": true,
+        "seconds": 24.14,
+        "characters": 330,
+        "charactersPerSecond": 13.670256835128416,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/moles-to-atoms.wav",
+        "audioSha256": "3d6320cffdfe9e77fe07b192527580d6a41f26d3042d50e1a51d68a1ab2ee3ab",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/moles-to-atoms.wav",
+      "seconds": 24.14,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 2.127,
+          "end": 2.428
+        },
+        {
+          "text": "count",
+          "start": 23.558000000000103,
+          "end": 23.792166666666773
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9680000000000053,
+        "after": "atoms.",
+        "before": "N"
+      },
+      "peakFraction": 0.846588134765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 22.996000000000105,
+          "end": 23.016000000000105,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Let's use it. How many atoms are in two point five moles of carbon? The particles are carbon atoms. N equals n times N A, so two point five times six point zero two two times ten to the twenty-three. That's about one point five times ten to the twenty-four carbon atoms. The mole unit cancels with per mole, leaving a plain count.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "atoms-to-moles",
+      "runOn": {
+        "pass": true,
+        "seconds": 29.065,
+        "characters": 464,
+        "charactersPerSecond": 15.96421813177361,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/atoms-to-moles.wav",
+        "audioSha256": "e229ba5321f8918247739f3be71bfb4b4be74b0efdbf618e5c802bfc32e57259",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/atoms-to-moles.wav",
+      "seconds": 29.065,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 5.529000000000001,
+          "end": 5.9979000000000005
+        },
+        {
+          "text": "sense",
+          "start": 28.383000000000056,
+          "end": 28.583833333333388
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8849999999999998,
+        "after": "that?",
+        "before": "n"
+      },
+      "peakFraction": 0.87481689453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 9.84999999999999,
+          "end": 9.86999999999999,
+          "score": 0
+        },
+        {
+          "word": "check.",
+          "start": 21.399000000000072,
+          "end": 21.60000000000007,
+          "score": 0.476
+        },
+        {
+          "word": "is",
+          "start": 22.907000000000053,
+          "end": 22.987000000000055,
+          "score": 0.352
+        },
+        {
+          "word": "a",
+          "start": 23.007000000000055,
+          "end": 23.067000000000053,
+          "score": 0.332
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Now the other way. A sample contains three point zero one times ten to the twenty-four water molecules. How many moles is that? n equals N divided by N A. That's three point zero one times ten to the twenty-four, divided by six point zero two two times ten to the twenty-three, which is five point zero zero moles of water molecules. Sense check. Three over six is a half, and ten to the twenty-four is ten times ten to the twenty-three, so about five makes sense.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "name-the-particle",
+      "runOn": {
+        "pass": true,
+        "seconds": 35.199,
+        "characters": 565,
+        "charactersPerSecond": 16.051592374783375,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/name-the-particle.wav",
+        "audioSha256": "7176f5e1c1cef06d5dc6141cd49c2a3c29fac016430efbbde42a61270d92ea88",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/name-the-particle.wav",
+      "seconds": 35.199,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 9.202999999999989,
+          "end": 9.63589999999999
+        },
+        {
+          "text": "atoms",
+          "start": 12.334999999999988,
+          "end": 12.535833333333322
+        },
+        {
+          "text": "formula",
+          "start": 23.917000000000105,
+          "end": 24.398000000000103
+        },
+        {
+          "text": "total",
+          "start": 34.4580000000001,
+          "end": 34.7080000000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9840000000001119,
+        "after": "atoms.",
+        "before": "Ionic"
+      },
+      "peakFraction": 0.8538818359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Always say what you're counting, because one particle can contain others. Half a mole of carbon dioxide is three point zero one times ten to the twenty-three molecules. But each molecule has two oxygen atoms, so there are twice as many oxygen atoms. That's six point zero two two times ten to the twenty-three, a whole mole of oxygen atoms. Ionic compounds don't form molecules, so we count formula units, the simplest ratio of ions in the formula. One mole of sodium chloride holds one mole of sodium ions and one mole of chloride ions, two moles of ions in total.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "equation-in-moles",
+      "runOn": {
+        "pass": true,
+        "seconds": 21.416,
+        "characters": 337,
+        "charactersPerSecond": 15.735898393724318,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/equation-in-moles.wav",
+        "audioSha256": "f5ed47ef2a03ab59439c2da9cfd5909c42be564d51488d60701c7ff42eb4e305",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/equation-in-moles.wav",
+      "seconds": 21.416,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 14.90799999999999,
+          "end": 15.30579999999999
+        },
+        {
+          "text": "work",
+          "start": 20.893000000000068,
+          "end": 21.06980000000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7829999999999893,
+        "after": "lab.",
+        "before": "Two"
+      },
+      "peakFraction": 0.8194580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 8.809999999999988,
+          "end": 8.829999999999988,
+          "score": 0
+        },
+        {
+          "word": "later",
+          "start": 19.686000000000067,
+          "end": 19.92700000000007,
+          "score": 0.38
+        },
+        {
+          "word": "that",
+          "start": 20.59100000000007,
+          "end": 20.75200000000007,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "This also tells us what a balanced equation means in the lab. Two magnesium atoms react with one oxygen molecule. Multiply both counts by N A, and the ratio doesn't change. So two moles of magnesium atoms react with one mole of oxygen molecules. The coefficients count particles, so they count moles too. A later video puts that to work.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "runOn": {
+        "pass": true,
+        "seconds": 6.16,
+        "characters": 77,
+        "charactersPerSecond": 12.5,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/memory-line.wav",
+        "audioSha256": "5723b648f53a3cb31475a6ddfd310b1d09aaa30c988706831238e74789f9d937",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/memory-line.wav",
+      "seconds": 6.16,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "what",
+          "start": 5.478000000000001,
+          "end": 5.686800000000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.5820000000000003,
+        "after": "remember.",
+        "before": "A"
+      },
+      "peakFraction": 0.8267822265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.555000000000001,
+          "end": 4.575,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the line to remember. A mole is a count, so always say a mole of what.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "runOn": {
+        "pass": true,
+        "seconds": 11.32,
+        "characters": 171,
+        "charactersPerSecond": 15.106007067137808,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/attempt-1.wav",
+        "audioSha256": "3d844fb4e32ea63c7096fcf4d2af33870a7ac338a92fa97d8cebe20c14a719a9",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/attempt-1.wav",
+      "seconds": 11.32,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.68700000000001,
+        "after": "balloon.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.85955810546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "turn.",
+          "start": 0.486,
+          "end": 0.689,
+          "score": 0.464
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. A balloon contains nine point zero three times ten to the twenty-two helium atoms. Calculate the chemical amount of helium in the balloon. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.72,
+        "characters": 312,
+        "charactersPerSecond": 15.057915057915059,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/feedback-1.wav",
+        "audioSha256": "40535d38f8f378120d25d5d37f35987a98bcda31fb35d7eda68650f2d93b7636",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/feedback-1.wav",
+      "seconds": 20.72,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 12.480999999999991,
+          "end": 12.681833333333326
+        },
+        {
+          "text": "avoid",
+          "start": 19.995000000000037,
+          "end": 20.230000000000036
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7399999999999967,
+        "after": "atoms.",
+        "before": "Multiplying"
+      },
+      "peakFraction": 0.8636474609375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 16.18499999999999,
+          "end": 16.26499999999999,
+          "score": 0.47
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "n equals N divided by N A. Nine point zero three times ten to the twenty-two, divided by six point zero two two times ten to the twenty-three, is zero point one five zero moles of helium atoms. Multiplying by N A instead gives more than ten to the forty-six moles, an impossible answer. That's the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "runOn": {
+        "pass": true,
+        "seconds": 11.68,
+        "characters": 137,
+        "charactersPerSecond": 11.729452054794521,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/attempt-2.wav",
+        "audioSha256": "faf65a689147bebb80b7d3f1a345d38fc55437ffeb045bb3865af6ae604e9f3d",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/attempt-2.wav",
+      "seconds": 11.68,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.7839999999999865,
+        "after": "two.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.8978271484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. Calculate the number of chloride ions in zero point two zero zero moles of calcium chloride, C a C l two. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "runOn": {
+        "pass": true,
+        "seconds": 24.358,
+        "characters": 360,
+        "charactersPerSecond": 14.779538549963052,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/feedback-2.wav",
+        "audioSha256": "ac9079de8f58ad734af5db592e0c9400bd531fe66876955dc5645d6746b18948",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/feedback-2.wav",
+      "seconds": 24.358,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "ions",
+          "start": 4.307,
+          "end": 4.515000000000001
+        },
+        {
+          "text": "ions",
+          "start": 10.557,
+          "end": 10.749
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8610000000001001,
+        "after": "ions.",
+        "before": "Forgetting"
+      },
+      "peakFraction": 0.829559326171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "N",
+          "start": 12.039999999999988,
+          "end": 12.099999999999989,
+          "score": 0.432
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Each formula unit of calcium chloride has two chloride ions, so zero point two zero zero moles of it holds zero point four zero zero moles of chloride ions. Times N A, that's two point four one times ten to the twenty-three chloride ions. Forgetting the two gives one point two zero times ten to the twenty-three, which counts formula units, not chloride ions.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "runOn": {
+        "pass": true,
+        "seconds": 19.162,
+        "characters": 283,
+        "charactersPerSecond": 14.768813276275964,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/handoff.wav",
+        "audioSha256": "64d6f0d5f6682703e57baa1e34fb54cd78af2f85732655ad0b7e6adb6693d79a",
+        "evidence": "work/google-batch-voice/chem-y11-m2-v02/2026-11-21T09-56-12-515Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/handoff.wav",
+      "seconds": 19.162,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "moles",
+          "start": 12.075999999999992,
+          "end": 12.397999999999993
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8830000000000062,
+        "after": "that?",
+        "before": "Next"
+      },
+      "peakFraction": 0.87384033203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weigh",
+          "start": 7.565999999999999,
+          "end": 7.806999999999999,
+          "score": 0.393
+        },
+        {
+          "word": "a",
+          "start": 16.996,
+          "end": 17.016,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So the mole lets chemists count particles in amounts they can handle. But in the lab, we don't count particles, we weigh them. This ribbon weighs zero point two four of a gram. How many moles of magnesium is that? Next time, we'll see how molar mass turns a measured mass into moles.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "runOn": {
+        "pass": true,
+        "seconds": 4.24,
+        "characters": 75,
+        "charactersPerSecond": 17.68867924528302,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m2-v02/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "evidence": "work/google-runon-checks/d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5.json"
+      },
+      "audio": "public/audio/chem-y11-m2-v02/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

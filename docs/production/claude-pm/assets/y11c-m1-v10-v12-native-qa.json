@@ -1,0 +1,312 @@
+[
+  {
+    "id": "y11c-filament-lamp-lit-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-filament-lamp-lit-v1.png",
+    "sha256": "51ae8fa02ceb30c3d4cc6c948f33c559572b8af22e2031618940ea62cd54eb5a",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaAbove1": [
+      460,
+      36,
+      1283,
+      991
+    ],
+    "qa": {
+      "result": "static alpha/content pass; exact pair registration pending",
+      "observations": [
+        "Warm glowing filament and light inside bulb only. Actual paper/dark composites show no broad exterior haze, correcting that part of brief 177 warning. Same canvas as unlit partner but alpha overlap 0.9864; shared base RGB mean difference 9.63/255 and exact base pixels differ. Do not claim identical pair.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-filament-lamp-lit-v1-native-paper.jpg",
+        "work/brief242/y11c-filament-lamp-lit-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "phys-y11-filament-lamp-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/physics/phys-y11-filament-lamp-v1.png",
+    "sha256": "a99091ca814037239e8340f4668e6b3d91e01a709032f810570244043dde665b",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaAbove1": [
+      461,
+      35,
+      1282,
+      991
+    ],
+    "qa": {
+      "result": "comparison reference only; static alpha passes",
+      "observations": [
+        "Unlit lamp inspected only to compare the lit edit. Latest Revision 4 uses the lit plate, so this does not reinstate the older unlit fallback.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/phys-y11-filament-lamp-v1-native-paper.jpg",
+        "work/brief242/phys-y11-filament-lamp-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "m8-flame-na-yellow-v2-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/m8-flame-na-yellow-v2.png",
+    "sha256": "cf5d4e4dcc1ff225dc93d8fe71a98df892c72b73fded278d0f1732fff62d8ef6",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      661,
+      176,
+      1343,
+      1832
+    ],
+    "qa": {
+      "result": "static pass for sodium-emission context",
+      "observations": [
+        "Yellow sodium flame, no printed values or exterior haze. Context for emission colour only, not the new closed-collar yellow safety-flame plate or an approved practical method.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m8-flame-na-yellow-v2-native-paper.jpg",
+        "work/brief242/m8-flame-na-yellow-v2-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-hand-spectroscope-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-hand-spectroscope-v1.png",
+    "sha256": "2287e4e813b172b10e2460d87717eab059542796b74c2d439aed41bf056090fb",
+    "nativeSize": [
+      1774,
+      887
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      212,
+      218,
+      1595,
+      665
+    ],
+    "qa": {
+      "result": "static pass",
+      "observations": [
+        "Plain dark handheld spectroscope with entrance slit and eyepiece, no hand, face, printed spectrum or answer-bearing numbers.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-hand-spectroscope-v1-native-paper.jpg",
+        "work/brief242/y11c-hand-spectroscope-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-sample-red-phosphorus-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-sample-red-phosphorus-v1.png",
+    "sha256": "e58e47b772a9cbbf6c080a1eae78b4ab2916750ed1c482e6c7781f61daadaf91",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      373,
+      160,
+      872,
+      1093
+    ],
+    "qa": {
+      "result": "static pass",
+      "observations": [
+        "Dark red powder in a stoppered clear bottle. No labels, people or exterior haze. Sample appearance only; no measured property encoded.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-sample-red-phosphorus-v1-native-paper.jpg",
+        "work/brief242/y11c-sample-red-phosphorus-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-sample-aluminium-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-sample-aluminium-v1.png",
+    "sha256": "c9f2bebce6f236c8b2eb8d5dcd5633c42199c6444a74ff7a324cbc6988ed9e0c",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      130,
+      389,
+      1123,
+      949
+    ],
+    "qa": {
+      "result": "static pass",
+      "observations": [
+        "Silvery rough-edged block and crumpled foil on watch glass, matching requested forms. No external halo or data.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-sample-aluminium-v1-native-paper.jpg",
+        "work/brief242/y11c-sample-aluminium-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-sample-sodium-oil-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-sample-sodium-oil-v1.png",
+    "sha256": "5c50949e0a3d2fee20d345aecf64f7a2fe98e628a2d75dfcae51381373de72e9",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      242,
+      128,
+      1011,
+      1093
+    ],
+    "qa": {
+      "result": "static pass for sample context",
+      "observations": [
+        "Three dull crusted metal lumps with a shiny face in a capped jar of pale oil. No procedure or identity inference from colour alone. No exterior halo.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-sample-sodium-oil-v1-native-paper.jpg",
+        "work/brief242/y11c-sample-sodium-oil-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-trough-li-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-trough-li-v1.png",
+    "sha256": "d9b3a54c389cbe48a4fb43d4f084c28a2478cad957ce0cc1a539ac69a9dc7884",
+    "nativeSize": [
+      1500,
+      1049
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      83,
+      206,
+      1418,
+      871
+    ],
+    "qa": {
+      "result": "static pass for reaction contrast",
+      "observations": [
+        "Small grey irregular metal piece at water surface with a few bubbles. No hand, quantities, labels or exterior haze. Static reaction state only.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-trough-li-v1-native-paper.jpg",
+        "work/brief242/y11c-trough-li-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-trough-na-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-trough-na-v1.png",
+    "sha256": "dabaebb2b1288508c30ba8933433cda217a9636f837460d31777dc8d70a92147",
+    "nativeSize": [
+      1500,
+      1049
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      84,
+      207,
+      1418,
+      872
+    ],
+    "qa": {
+      "result": "static pass for reaction contrast",
+      "observations": [
+        "Rounded silvery piece at water surface, bubbles and wake. No method or numerical reaction-rate claim. Exterior alpha clean.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-trough-na-v1-native-paper.jpg",
+        "work/brief242/y11c-trough-na-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11c-trough-k-v1-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/chemistry/y11c-trough-k-v1.png",
+    "sha256": "354a9fb330682d9659310232eca0b6041f1035ffb92c3c5f859272117d732342",
+    "nativeSize": [
+      1500,
+      1049
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      83,
+      206,
+      1418,
+      871
+    ],
+    "qa": {
+      "result": "static pass for reaction contrast",
+      "observations": [
+        "Water-surface reaction with bubbles, splash and small lilac flame. Emission and droplets are attached reaction content. No exterior haze, people or method text.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-trough-k-v1-native-paper.jpg",
+        "work/brief242/y11c-trough-k-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

@@ -1,0 +1,208 @@
+{
+  "brief": 235,
+  "design": "math-a12-d03",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-phone-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-e0873137-62e5-4250-8cc2-a49602b5fcff.png",
+      "nativeSize": [
+        971,
+        1657
+      ],
+      "sha256": "31da63dd09b2f2fac0b7d067082cd66cf5656ad187d95f246fd5dcdc649bd977",
+      "alphaBox": [
+        138,
+        148,
+        830,
+        1524
+      ],
+      "visibleAlphaBoxThreshold8": [
+        138,
+        148,
+        830,
+        1523
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "screenSafeRectangle": [
+          175,
+          239,
+          795,
+          1429
+        ]
+      },
+      "resampled": false,
+      "generatorNativeSize": [
+        971,
+        1619
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-phone-v1.png",
+        "translation": [
+          0,
+          19
+        ],
+        "operations": [
+          "Added clear padding without moving screen relative to phone",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    },
+    {
+      "path": "public/assets/maths/ma12-stopwatch-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-a1fe8b53-6dcb-4c83-8a7c-3e9d286e5f22.png",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "sha256": "b841b3721cd0f7332a606b6f524d5a9c91d9ab1ed1134eabe85bad579569eee9",
+      "alphaBox": [
+        155,
+        160,
+        930,
+        1236
+      ],
+      "visibleAlphaBoxThreshold8": [
+        155,
+        160,
+        930,
+        1236
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "dialCentreEstimate": [
+          543,
+          848
+        ],
+        "dialRadius": 328.084412,
+        "tickCountExpected": 60
+      },
+      "resampled": true,
+      "generatorNativeSize": [
+        1086,
+        1448
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-stopwatch-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Local dial geometry repair from fitted ellipse to circle; crown and outer case kept beyond transition",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false,
+      "resamplingScope": "Local geometry retouch only, no whole-image scaling",
+      "measuredCircleAfterFinishing": {
+        "fittedCentre": [
+          543.1510620117188,
+          848.1240234375
+        ],
+        "fittedDiameters": [
+          655.102294921875,
+          655.5161743164062
+        ],
+        "axisDifferenceRelative": 0.0006313793781867503
+      }
+    }
+  ],
+  "state": "finished-plates-delivered",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "tickCheck": {
+    "count": 60,
+    "anglesDegrees": [
+      5.7,
+      11.3,
+      17.0,
+      22.7,
+      28.5,
+      34.9,
+      40.7,
+      46.6,
+      52.6,
+      58.5,
+      65.3,
+      71.3,
+      77.3,
+      83.3,
+      89.2,
+      95.7,
+      101.6,
+      107.5,
+      113.4,
+      119.2,
+      126.0,
+      132.1,
+      138.2,
+      144.1,
+      150.0,
+      156.4,
+      162.2,
+      168.1,
+      173.9,
+      179.8,
+      186.4,
+      192.4,
+      198.4,
+      204.3,
+      210.4,
+      217.3,
+      223.4,
+      229.3,
+      235.1,
+      240.6,
+      246.9,
+      252.6,
+      258.2,
+      263.9,
+      269.6,
+      275.9,
+      281.6,
+      287.2,
+      293.0,
+      298.6,
+      304.9,
+      310.8,
+      316.8,
+      322.8,
+      328.9,
+      335.6,
+      341.5,
+      347.3,
+      353.3,
+      359.2
+    ],
+    "centre": [
+      543,
+      848
+    ],
+    "radius": 328.084412
+  },
+  "openChecks": []
+}

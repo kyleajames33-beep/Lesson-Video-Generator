@@ -1,0 +1,126 @@
+{
+  "brief": 249,
+  "lesson": "g03",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-f4f4228c-06fe-40e2-a6c7-49c90eb93b58.png",
+      "sha256": "a2fd9e789698a2229a6ae95424a4e9bcf6421aeb54812331cbec05c0aa9d6ef0",
+      "nativeSize": [
+        1354,
+        1161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        7,
+        38,
+        1353,
+        1148
+      ],
+      "marginFractions": [
+        0.0051698670605613,
+        0.03273040482342808,
+        0.0007385524372230429,
+        0.01119724375538329
+      ],
+      "evidence": [
+        "work/brief249/g03-copier-native-paper.jpg",
+        "work/brief249/g03-copier-native-dark.jpg",
+        "work/brief249/g03-copier-native-white.jpg",
+        "work/brief249/g03-copier-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-photocopier-v1.png",
+      "path": "public/assets/maths/ma11-photocopier-v1.png",
+      "brief": 249,
+      "lesson": "g03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1200
+      ],
+      "qa": {
+        "result": "Closed scanner lid, blank screen/buttons, one output sheet; native and300/600paper/dark subject and alpha inspected.",
+        "evidence": [
+          "work/brief249/g03-copier-native-black.jpg",
+          "work/brief249/g03-copier-native-dark.jpg",
+          "work/brief249/g03-copier-native-paper.jpg",
+          "work/brief249/g03-copier-native-white.jpg",
+          "work/brief249/g03-copier-qa-paper-dark-dark.jpg",
+          "work/brief249/g03-copier-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-photocopier-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e44abdf6-ebd7-4a3d-91eb-527d0f9a2b76.png",
+      "sha256": "7476c4843b569a6a71dbc88a2376cabbb50950981e91922fe4da3510a177905d",
+      "nativeSize": [
+        1466,
+        1073
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        232,
+        1466,
+        1073
+      ],
+      "marginFractions": [
+        0.0,
+        0.21621621621621623,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief249/g03-oven-native-paper.jpg",
+        "work/brief249/g03-oven-native-dark.jpg",
+        "work/brief249/g03-oven-native-white.jpg",
+        "work/brief249/g03-oven-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-oven-dial-v1.png",
+      "path": "public/assets/maths/ma11-oven-dial-v1.png",
+      "brief": 249,
+      "lesson": "g03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1000
+      ],
+      "qa": {
+        "result": "One blank dial and pointer;300/600/native paper/dark checks. Face near-circular with about3px radius uncertainty; exact scale is coded.",
+        "evidence": [
+          "work/brief249/g03-oven-native-black.jpg",
+          "work/brief249/g03-oven-native-dark.jpg",
+          "work/brief249/g03-oven-native-paper.jpg",
+          "work/brief249/g03-oven-native-white.jpg",
+          "work/brief249/g03-oven-qa-paper-dark-dark.jpg",
+          "work/brief249/g03-oven-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-oven-dial-v1.json"
+    }
+  ],
+  "result": "Photocopier and blank oven dial delivered at native1354x1161 and1466x1073. Copier screen corners and side tray exit recorded; large front-right screen accepts separate coded copy settings. Oven face centre733,446, radius163px, pointer up90degrees; hand-measured painted radius varies about3px. Root masks the knob while fascia stays fixed.300/600/native paper/dark checks pass. Oven plate intentionally ends at the upper-door crop; copier right edge has1px low-alpha margin but full cabinet contour.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/g03-copier-candidate-measurements.json",
+    "work/brief249/g03-copier-generation.json",
+    "work/brief249/g03-copier-geometry.json",
+    "work/brief249/g03-copier-qa.json",
+    "work/brief249/g03-oven-candidate-measurements.json",
+    "work/brief249/g03-oven-generation.json",
+    "work/brief249/g03-oven-geometry.json",
+    "work/brief249/g03-oven-qa.json"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "y11-counting-tray-v2",
+  "brief": 242,
+  "file": "public/assets/biology/y11-counting-tray-v2.png",
+  "sha256": "fc903cdc5350e8ddb8035653da7cc93bb5a52aca21feaaa683e7efd9691b9950",
+  "nativeSize": [
+    1536,
+    1024
+  ],
+  "originalPreserved": "public/assets/biology/y11-counting-tray-v1.png",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-eeef9965-8a45-4ab2-8561-1abbaf6cd0b1.png",
+  "method": "Built-in image edit; generated PNG copied unchanged. Python only made QA composites and measurements.",
+  "prompt": "Repair exact scientific teaching plate as y11-counting-tray-v2. Single empty shallow rectangular white laboratory counting tray in three-quarter top view, fine dark ink outline, muted watercolour. Preserve empty flat white floor, four raised walls and rounded corners. Remove external glow, halo, wash, drop shadow and ground. Genuine alpha outside silhouette, at least eight percent clear margin all sides. Landscape native aspect, no stretching, no beads, compartments, text, numbers, graduations, question data, logos, people, faces or hands. Original v1 retained.",
+  "alphaRange": [
+    0,
+    254
+  ],
+  "alphaAbove1": [
+    49,
+    142,
+    1476,
+    881
+  ],
+  "anchors": {
+    "floorCentre": [
+      766,
+      480
+    ],
+    "floorLeft": [
+      191,
+      513
+    ],
+    "floorRight": [
+      1338,
+      513
+    ],
+    "nearRimCentre": [
+      768,
+      760
+    ],
+    "baseline": [
+      768,
+      872
+    ]
+  },
+  "qa": {
+    "result": "static alpha pass with margin limitation",
+    "evidence": [
+      "work\\brief242\\counting-tray-v2-native-paper.jpg",
+      "work\\brief242\\counting-tray-v2-native-dark.jpg"
+    ],
+    "observations": [
+      "Actual native paper and dark composites are clean, with no external backing or halo. Interior paint belongs to the empty tray.",
+      "No people, text, numbers or question data. Full tray present, native 1536 by 1024 unchanged from v1.",
+      "Requested eight percent side margin not achieved: visible left about 3.2 percent and right about 3.9 percent. Allow extra scene padding; do not stretch."
+    ]
+  },
+  "limitation": "Static only. Scoop alignment, counted beads and native playback need build review."
+}

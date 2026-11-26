@@ -1,0 +1,151 @@
+{
+  "design": "phys-y12-m6-v16",
+  "sourceSHA256": "38b8ba08911728154526d51fdc81b470d62061db154955b77b2789ba0ef29abf",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v16",
+      "reference": "phys-y11-axle-wheels-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-axle-wheels-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v16",
+      "reference": "phys-y11-desk-fan-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-desk-fan-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v16",
+      "reference": "phys-y11-fan-unit-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-fan-unit-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v16",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v16",
+      "reference": "y12p-dc-motor-model-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-dc-motor-model-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v16",
+      "reference": "y12p-horseshoe-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-horseshoe-magnet-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "dc-motor-model-twohalves",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-e4bd12a4-a221-4510-a56c-3d619cfe1b83.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bbox": [
+        236,
+        159,
+        1297,
+        898
+      ],
+      "marginFraction": [
+        0.15364583333333334,
+        0.1552734375,
+        0.15559895833333334,
+        0.123046875
+      ],
+      "alphaZeroFraction": 0.6438891092936198,
+      "file": "public/assets/physics/y12p-dc-motor-model-v1.png",
+      "sha256": "bfc8d0d396ec57b8520d136586f1565540092cc7a5a789472cfc707a0c30614f",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "shaftAxisApprox": [
+          [
+            768,
+            240
+          ],
+          [
+            768,
+            739
+          ]
+        ],
+        "commutatorCentreApprox": [
+          768,
+          701
+        ],
+        "brushContactApprox": [
+          [
+            694,
+            701
+          ],
+          [
+            841,
+            701
+          ]
+        ],
+        "terminalCentresApprox": [
+          [
+            493,
+            771
+          ],
+          [
+            1043,
+            771
+          ]
+        ],
+        "coilOuterApprox": [
+          [
+            640,
+            327
+          ],
+          [
+            893,
+            327
+          ],
+          [
+            959,
+            576
+          ],
+          [
+            574,
+            576
+          ]
+        ],
+        "note": "Corrected coil plane contains common shaft. Two copper half-cylinder segments with opposing insulating gaps. This static apparatus plate is not the coded rotating motor. Coil depth foreshortened; contacts and geometry need inspection at actual scene size."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

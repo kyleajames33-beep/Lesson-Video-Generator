@@ -1,0 +1,81 @@
+{
+  "scope": "ID resolution plus specific official-wording shortfalls. This is not a new independent learning/science review of all 81 designs.",
+  "missingOrRenumberedAuditIds": [],
+  "findings": [
+    {
+      "type": "audit convention warning does not hold against current official source",
+      "videoId": "phys-y12-m6-v16",
+      "provisionalIds": [
+        "P25Y12-FA2-ME-07"
+      ],
+      "officialCodenames": [
+        "cia12f54ef"
+      ],
+      "finding": "The audit says the 2025 torque point uses cosine. Current NESA MathML and its aria-label specify sine, consistent with the design's area-normal angle. A change to cosine is not required by this official point.",
+      "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae740c732",
+      "officialPoints": [
+        {
+          "ledgerId": "P25Y12-FA2-G2-07",
+          "officialCodename": "cia12f54ef",
+          "text": "Analyse the factors that affect the magnitude of torque on a current-carrying loop using τ=nIA_(⊥)B=nIABsinθ",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae740c732"
+        }
+      ]
+    },
+    {
+      "type": "mapped point is only partly taught",
+      "videoId": "phys-y12-m6-v05",
+      "provisionalIds": [
+        "P25Y12-FA2-CP-11"
+      ],
+      "finding": "The official point requires four paths: masses in uniform gravity, satellites, charges in electric fields and moving charges in magnetic fields. The design compares satellites and electric/magnetic cases; the uniform-gravity mass case is not a full four-way comparison. Retain a partial match, not full-point coverage.",
+      "officialPoints": [
+        {
+          "ledgerId": "P25Y12-FA2-G1-11",
+          "officialCodename": "ci61856ed2",
+          "text": "Account for the similarities and differences between the paths of masses in uniform gravitational fields, satellites in orbit, charged particles in electric fields, and moving charged particles in magnetic fields",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae740c732"
+        }
+      ]
+    },
+    {
+      "type": "mapped point is only partly taught",
+      "videoId": "phys-y12-m6-v16",
+      "provisionalIds": [
+        "P25Y12-FA2-ME-09"
+      ],
+      "finding": "The official point includes both DC and AC motors, split rings and slip rings. This design teaches the split-ring DC motor and smoothing, not the complete AC/slip-ring part. Retain a partial match.",
+      "officialPoints": [
+        {
+          "ledgerId": "P25Y12-FA2-G2-09",
+          "officialCodename": "cif45a12e6",
+          "text": "Analyse the structure and function of the components of simple direct current (DC) motors and simple alternating current (AC) motors, including rotor coils, field magnets, brushes, and split-ring commutators and slip rings",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae740c732"
+        }
+      ]
+    },
+    {
+      "type": "mapped points are only partly taught",
+      "videoId": "phys-y12-m7-v11",
+      "provisionalIds": [
+        "P25Y12-FA3-QM-14",
+        "P25Y12-FA3-QM-15"
+      ],
+      "finding": "Both official points include thermionic emission. This design teaches photoelectric graphs and calculations without thermionic-emission experiments or problems. Retain the photoelectric part; the full-point match does not hold.",
+      "officialPoints": [
+        {
+          "ledgerId": "P25Y12-FA3-G3-14",
+          "officialCodename": "cia99c6c96",
+          "text": "Analyse data from photoelectric effect and thermionic emission experiments to explain relationships using K_(max)=hf-ϕ and K_(max)=qV_(0)",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae0634d66"
+        },
+        {
+          "ledgerId": "P25Y12-FA3-G3-15",
+          "officialCodename": "cifcb618f1",
+          "text": "Solve problems involving the photoelectric effect and thermionic emission using K_(max)=hf-ϕ and K_(max)=qV_(0)",
+          "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae0634d66"
+        }
+      ]
+    }
+  ]
+}

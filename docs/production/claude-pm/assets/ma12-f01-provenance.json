@@ -1,0 +1,242 @@
+{
+  "brief": 240,
+  "assets": [
+    {
+      "name": "ma12-cricket-scoreboard-v1.png",
+      "path": "public/assets/maths/ma12-cricket-scoreboard-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-dd286324-2a4a-4c94-9284-ebbd2f84faae.png",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "requestedSize": [
+        1600,
+        1200
+      ],
+      "sha256": "8f1372fd6296a4b1ac268a447358dbed17439b1d2be6ba384adc02ee2b7b7365",
+      "panelsDetected": [
+        [
+          361,
+          337,
+          1085,
+          611
+        ],
+        [
+          363,
+          642,
+          1084,
+          767
+        ]
+      ],
+      "recommendedCodeRects": [
+        [
+          366,
+          342,
+          1080,
+          606
+        ],
+        [
+          368,
+          647,
+          1079,
+          762
+        ]
+      ],
+      "visualQAInspected": true,
+      "dimensionDeviation": true,
+      "nonuniformStretch": false,
+      "operations": [
+        "Byte-for-byte copy, no pixel editing"
+      ],
+      "designs": [
+        "f01"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee."
+      ],
+      "alpha32Box": [
+        250,
+        131,
+        1193,
+        978
+      ],
+      "meaningfulMarginFractions": [
+        0.17265193370165746,
+        0.12062615101289134,
+        0.17610497237569062,
+        0.09944751381215469
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-cricket-ball-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-e289d837-3cca-4406-b296-2a139aa59c50.png",
+      "path": "public/assets/maths/ma12-cricket-ball-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        600,
+        600
+      ],
+      "sha256": "3f58931559d697b7475b4baf07caf2e200229d1229e2a07e664ca1db5b91615b",
+      "alphaBox": [
+        0,
+        33,
+        1234,
+        1254
+      ],
+      "alpha32Box": [
+        213,
+        203,
+        1023,
+        1055
+      ],
+      "visualQAInspected": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling/stretching"
+      ],
+      "dimensionDeviation": true,
+      "centreApprox": [
+        618.0,
+        629.0
+      ],
+      "radiusXYApprox": [
+        405.0,
+        426.0
+      ],
+      "designs": [
+        "f01"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee.",
+        "Silhouette is slightly oval; centre and separate x/y radii reported rather than claiming one exact radius."
+      ],
+      "meaningfulMarginFractions": [
+        0.16985645933014354,
+        0.16188197767145135,
+        0.18421052631578946,
+        0.15869218500797447
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-stacking-chair-side-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-947e76ce-fa46-4fb6-8156-03b67988daca.png",
+      "path": "public/assets/maths/ma12-stacking-chair-side-v1.png",
+      "nativeSize": [
+        1073,
+        1466
+      ],
+      "requestedSize": [
+        1000,
+        1400
+      ],
+      "sha256": "2cf39967109d99a16712a4c38a9d88dfe5650d5b3c6143cef84616a3036d26f3",
+      "alphaBox": [
+        0,
+        22,
+        1041,
+        1426
+      ],
+      "alpha32Box": [
+        160,
+        194,
+        902,
+        1276
+      ],
+      "visualQAInspected": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling/stretching"
+      ],
+      "dimensionDeviation": true,
+      "topY": 194,
+      "floorY": 1275,
+      "pixelsPerCm": 13.5125,
+      "nestingOffsetPx": 81.07499999999999,
+      "designs": [
+        "f01",
+        "f02"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee.",
+        "Two-copy and five-copy stacks inspected at the 6cm vertical offset; no deformation used."
+      ],
+      "meaningfulMarginFractions": [
+        0.14911463187325255,
+        0.13233287858117326,
+        0.15936626281453867,
+        0.1296043656207367
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-cricket-grass-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-26e85482-7f10-4ae2-86aa-7f0711395d05.png",
+      "path": "public/assets/maths/ma12-cricket-grass-strip-v1.png",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        2400,
+        300
+      ],
+      "sha256": "1cb57c92ffb64b7f52d5a9adbc633c72028fb53f39cab3a897a3c56b4bfff250",
+      "alphaBox": [
+        0,
+        25,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        0,
+        494,
+        2172,
+        621
+      ],
+      "visualQAInspected": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling/stretching"
+      ],
+      "dimensionDeviation": true,
+      "seamRgbaMaxDifference": 255,
+      "designs": [
+        "f01"
+      ],
+      "state": "delivered-native-with-reported-deviations",
+      "findings": [
+        "Native canvas differs from requested; build fits actual native anchors, never stretches.",
+        "Tiny low-alpha generation specks prevent a strict all-alpha clear-margin guarantee.",
+        "Two-copy paper composite has no obvious join at inspected scale, but edges are not pixel-identical; exact periodicity is not certified. Native canvas includes tall transparent padding; use measured grass bounds.",
+        "Side margins explicitly exempt in source brief; tile seam deviation remains recorded."
+      ],
+      "meaningfulMarginFractions": [
+        0.0,
+        0.6823204419889503,
+        0.0,
+        0.14226519337016574
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f01.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied.",
+      "sideMarginExempt": true
+    }
+  ],
+  "qa": [
+    "work/brief240/f01-scoreboard-qa.jpg",
+    "work/brief240/f01-ball-90px-qa.jpg",
+    "work/brief240/f01-chair-nesting-qa.jpg",
+    "work/brief240/f01-grass-tile-qa.jpg"
+  ],
+  "sourceReviewFindings": "f01 scoreboard sampling and index findings remain for root; artwork has no coded labels or claims"
+}

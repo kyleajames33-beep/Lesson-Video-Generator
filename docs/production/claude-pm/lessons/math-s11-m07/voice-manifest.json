@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-m07.md",
+  "sourceSha256": "70f9046af37aa806e3408776d8bd05697dc0e7b1ec7b243cf044bc7a106ec07a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-house-bills",
+      "text": "A car costs money every week, and so does the place you live. Every three months or so, a house gets bills for electricity, water and gas. Say you share a house, and the electricity bill arrives. Three hundred and sixty-eight dollars and six cents. Is that right? Is it more than last time, or less? You can check it yourself, because every bill is built the same way. How do we read and check electricity, water and gas bills?",
+      "audioFile": "public/audio/math-s11-m07/hook-house-bills.wav"
+    },
+    {
+      "id": "meter-and-kwh",
+      "text": "Start at the meter. It counts up forever, like a car's odometer. At the last bill it read eighteen thousand four hundred and fifty-two. Now it reads nineteen thousand two hundred and sixty-four. So the house used the difference, eight hundred and twelve kilowatt-hours. Watts measure how fast an appliance uses energy. A kilowatt-hour is the energy a thousand-watt appliance uses in one hour. Kilo means a thousand. So a two-kilowatt heater running for an hour uses two kilowatt-hours, and at thirty-three cents each, that's sixty-six cents. An air conditioner using two and a half kilowatts, for six hours on a hot afternoon, uses fifteen kilowatt-hours, four ninety-five. The bigger the appliance, and the longer it runs, the more it costs.",
+      "audioFile": "public/audio/math-s11-m07/meter-and-kwh.wav"
+    },
+    {
+      "id": "electricity-bill",
+      "text": "Every electricity bill has two parts. The supply charge is a daily charge for being connected, even if you use nothing. Here it's an example one dollar ten a day, for ninety-one days, a hundred dollars ten. Then the usage charge, a price for each kilowatt-hour you use. Eight hundred and twelve, at thirty-three cents, is two hundred and sixty-seven dollars ninety-six. Add them, and the bill is three hundred and sixty-eight dollars and six cents. These prices already include GST, so there's nothing more to add. Rates differ between suppliers and change each year. Forgetting the supply charge is the classic slip. It's there on every bill, whether you use a little or a lot.",
+      "audioFile": "public/audio/math-s11-m07/electricity-bill.wav"
+    },
+    {
+      "id": "cost-per-day-check",
+      "text": "Is three sixty-eight high? Comparing it with the last bill can mislead you, because bills cover different numbers of days, and winter and summer use different amounts. So divide by the days, and compare with the same season last year. This bill is three sixty-eight oh six over ninety-one days, about four dollars and four cents a day. The same quarter last year was four hundred and twelve dollars sixteen, over ninety-two days, four dollars forty-eight a day. So this bill costs a bit less per day than last year. But rates change, so to check the house is really using less, compare kilowatt-hours per day, which most bills print. If the cost per day had jumped, you'd look for a reason, like a new heater, or a wrong reading.",
+      "audioFile": "public/audio/math-s11-m07/cost-per-day-check.wav"
+    },
+    {
+      "id": "water",
+      "text": "Water works the same way, in kilolitres. A kilolitre is a thousand litres. The water meter went from twelve hundred and eighty-four kilolitres to thirteen hundred and forty-two, so the house used fifty-eight kilolitres. That's showers, washing and the garden for three months. At an example two dollars seventy a kilolitre, the usage is a hundred and fifty-six dollars sixty. Water bills also have a service charge, here a hundred and ninety dollars a quarter, so the whole bill is three hundred and forty-six sixty. If you rent in New South Wales, the landlord usually pays the service charge, and you pay the usage.",
+      "audioFile": "public/audio/math-s11-m07/water.wav"
+    },
+    {
+      "id": "gas-blocks",
+      "text": "Gas is measured in megajoules. This quarter the house used thirty-nine hundred. Gas is often priced in blocks, a band of usage with its own price, like the sliding scale in commission. Here, the first eighteen hundred megajoules cost four point eight cents each, and the rest cost three point nine cents. Careful with cents. Four point eight cents is nought point nought four eight dollars. So the first block is eighteen hundred times nought point nought four eight, eighty-six forty. The other twenty-one hundred megajoules cost eighty-one ninety. Add the supply charge, seventy-five cents a day for ninety-one days, sixty-eight twenty-five, and the gas bill is two hundred and thirty-six dollars fifty-five. Charging all of it at the first price gives two fifty-five forty-five, which overcharges the house nearly nineteen dollars.",
+      "audioFile": "public/audio/math-s11-m07/gas-blocks.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the summary. Every bill is days times the supply charge, plus units times the rate. The units are the new reading minus the old one. And to check a bill, divide by the days, and compare with the same season last year.",
+      "audioFile": "public/audio/math-s11-m07/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. An electricity bill covers ninety-two days. The meter read twenty-four thousand six hundred and fifteen kilowatt-hours at the start, and twenty-five thousand two hundred and three at the end. The supply charge is one dollar five a day, and usage costs thirty-four cents per kilowatt-hour. Prices include GST. Find the electricity used, and the total bill. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-m07/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The house used twenty-five two oh three minus twenty-four six fifteen, five hundred and eighty-eight kilowatt-hours. Supply is ninety-two times one oh five, ninety-six sixty, and usage is five eighty-eight times thirty-four cents, one ninety-nine ninety-two. So the bill is two hundred and ninety-six fifty-two. Leaving out the supply charge is the slip.",
+      "audioFile": "public/audio/math-s11-m07/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A gas bill covers ninety-one days, and the household used fifty-two hundred megajoules. The first eighteen hundred megajoules cost four point eight cents each, and the rest cost three point nine cents each. There's also a supply charge of seventy-five cents a day. Find the total bill. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-m07/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The first block is eighty-six forty. The other thirty-four hundred megajoules cost a hundred and thirty-two sixty. Supply is sixty-eight twenty-five. So the bill is two hundred and eighty-seven dollars twenty-five. Charging all fifty-two hundred at four point eight cents is the slip.",
+      "audioFile": "public/audio/math-s11-m07/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the share house's three bills this quarter, for the part tenants pay, come to seven hundred and sixty-one dollars twenty-one. That's a lot to find every three months. So where does it fit, next to rent, food, a phone and a car, on one week's pay? That's a budget, and it's next.",
+      "audioFile": "public/audio/math-s11-m07/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-m07/key-notes.wav"
+    }
+  ]
+}

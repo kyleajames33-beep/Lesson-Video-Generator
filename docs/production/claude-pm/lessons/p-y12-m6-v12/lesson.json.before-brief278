@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m6-v12",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "7a730c17acaa6da5108858c88515fc8fab56bc9d4022d450601ac2f2e508b185",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (switch on, hold, switch off)",
+      "voiceover": {
+        "text": "Here are two coils, side by side, not touching. The left one is connected to a low-voltage supply and a switch. The right one is connected only to the galvanometer. There's no magnet anywhere. Close the switch, and the needle flicks. Now keep the switch closed. What does the needle read? Make your prediction. Zero. It dropped straight back, and it stays there. Now open the switch. It flicks the other way. So how can one coil make an emf in another, without touching it?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "primary-field",
+      "title": "the primary's field reaches the secondary",
+      "voiceover": {
+        "text": "Start with the left coil, called the primary. A current in a coil makes a magnetic field, a lot like a bar magnet's. That's an electromagnet, from Year 11. Its field spreads out of the end, and some of it passes through the right-hand coil, called the secondary. So the secondary has a flux linkage, and it's made by the primary's current. Nothing touches. The field reaches across the gap."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "switching",
+      "title": "why switching matters",
+      "voiceover": {
+        "text": "When you close the switch, the primary current doesn't reach its full value instantly. It rises over a short time. As it rises, its field grows, so the flux through the secondary grows. A changing flux linkage induces an emf, so the needle flicks. Once the current is steady, the field is steady, the flux stops changing, and the emf falls to zero. Open the switch, and the current falls to zero, so the flux falls, and an emf appears again, in the opposite direction. It's often bigger, because the current falls so quickly. This is called mutual induction. An emf is induced in one coil, by a changing current in another."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "lenz-secondary",
+      "title": "Lenz's law in the secondary",
+      "voiceover": {
+        "text": "Lenz's law from last video tells us which way. At switch on, the secondary's current makes a field that opposes the growing flux from the primary. At switch off, it props up the flux that's falling. That's why the two flicks point opposite ways. And the energy for the secondary's current comes from the primary's power supply, carried across by the changing field."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-graphs",
+      "title": "two graphs tell the story",
+      "voiceover": {
+        "text": "Here's the whole story on two graphs. On top, the primary current. It rises, stays steady, then falls. Below it, the emf in the secondary. It only appears where the top graph is changing. Where the current is steady, even if it's a large current, the secondary gets nothing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "size",
+      "title": "putting a size on it",
+      "voiceover": {
+        "text": "Faraday's law gives the size. Say the secondary has five hundred turns. At switch on, the flux through each of its turns rises from zero to four point zero times ten to the minus five webers, in zero point zero two zero seconds. The emf is five hundred, times four point zero times ten to the minus five, over zero point zero two zero. That's one point zero volt, but only for that brief moment."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "moving-primary",
+      "title": "moving the primary",
+      "voiceover": {
+        "text": "You don't even need the switch. Keep a steady current in the primary, and slide it towards the secondary. Now the primary acts just like a moving bar magnet. The flux through the secondary changes, so the needle moves. Stop sliding, and it's back to zero. That's relative movement, the same idea as last time's magnet."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "alternating-current",
+      "title": "alternating current",
+      "voiceover": {
+        "text": "So for an emf all the time, the primary current must keep changing. That's exactly what alternating current does. It rises, falls, reverses and rises again, many times a second. So the secondary gets an emf that alternates too. And here's a surprise, for ideal coils with no load on the secondary. The secondary's emf is biggest when the primary current is passing through zero, because that's when the current is changing fastest. When the primary current is at its peak, it's not changing for an instant, so the secondary emf is zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "iron-core",
+      "title": "an iron core",
+      "voiceover": {
+        "text": "Most of the primary's field spreads into the air and misses the secondary. Now slide a soft iron rod through both coils. The iron becomes strongly magnetised, so the field is much stronger, and the iron guides it through the secondary. Far more flux links the secondary, so the emf is much bigger. The coils still never touch. The iron only carries the field. Wind both coils on one closed loop of iron, and almost all of the flux links both of them. That's a transformer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Steady current, no emf. Changing current, induced emf. A transformer only works while the current keeps changing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A primary coil is connected through a switch to a twelve volt battery. A secondary coil nearby is connected to a galvanometer. Describe the galvanometer reading when the switch is closed, while it stays closed for several seconds, and when it's opened. Explain each one. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Closing the switch, the current and its field grow, so the flux through the secondary changes, and the needle flicks briefly. With the switch closed, the current is steady, so the flux is steady, and the reading is zero. Opening it, the flux falls, and the needle flicks the opposite way. The classic slip is a steady reading while the switch is closed. Steady current, no emf."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A primary coil of one hundred turns sits beside a secondary coil of two hundred and fifty turns. When the primary is switched off, the flux through each turn of the secondary falls from six point zero times ten to the minus four webers to zero, in zero point zero three zero seconds. Calculate the average emf induced in the secondary. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Use the secondary's turns, because that's where the emf is induced. Two hundred and fifty, times six point zero times ten to the minus four, over zero point zero three zero, gives five point zero volts. The slip is using the primary's one hundred turns, which gives two point zero volts. N is always the coil the emf is in."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a changing current in one coil induces an emf in another, through a changing flux they share. On a closed iron core, nearly all of that flux links both coils. So what if the two coils have different numbers of turns? How does a transformer exchange voltage for current?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,815 @@
+1
+00:00:00,341 --> 00:00:02,667
+Last video, we found areas by turning the
+
+2
+00:00:02,708 --> 00:00:03,690
+strips sideways.
+
+3
+00:00:04,393 --> 00:00:06,930
+Now picture a garden path being levelled.
+
+4
+00:00:07,474 --> 00:00:09,897
+Along two metres, the ground's height above the
+
+5
+00:00:09,938 --> 00:00:10,879
+planned level is x
+
+6
+00:00:11,401 --> 00:00:13,043
+cubed cos x metres,
+
+7
+00:00:13,685 --> 00:00:15,307
+a mound at one end and a hollow
+
+8
+00:00:15,408 --> 00:00:15,827
+at the other.
+
+9
+00:00:16,430 --> 00:00:18,598
+The net soil is the integral from minus
+
+10
+00:00:18,739 --> 00:00:21,108
+one to one of x cubed cos x.
+
+11
+00:00:22,054 --> 00:00:24,111
+No rule in this course gives its primitive.
+
+12
+00:00:24,615 --> 00:00:26,682
+Yet its value is exactly zero.
+
+13
+00:00:27,686 --> 00:00:30,081
+The soil cut from the mound exactly fills
+
+14
+00:00:30,123 --> 00:00:30,524
+the hollow.
+
+15
+00:00:31,391 --> 00:00:32,015
+Look at the graph.
+
+16
+00:00:32,619 --> 00:00:34,736
+What do you notice about its two halves?
+
+17
+00:00:38,301 --> 00:00:40,190
+Turn the graph half a turn about the
+
+18
+00:00:40,271 --> 00:00:40,552
+origin,
+
+19
+00:00:41,095 --> 00:00:42,281
+and it lands on itself.
+
+20
+00:00:42,944 --> 00:00:44,449
+That's what an odd function does.
+
+21
+00:00:45,294 --> 00:00:48,201
+In algebra, f of minus x equals minus
+
+22
+00:00:48,383 --> 00:00:48,743
+f of x.
+
+23
+00:00:49,485 --> 00:00:52,689
+Here, minus x, all cubed, is minus x
+
+24
+00:00:52,790 --> 00:00:53,150
+cubed,
+
+25
+00:00:53,712 --> 00:00:56,495
+and cos of minus x is cos x,
+
+26
+00:00:56,516 --> 00:00:57,236
+so the sign flips.
+
+27
+00:00:58,160 --> 00:01:00,886
+Now pair each thin strip at x with
+
+28
+00:01:00,947 --> 00:01:02,690
+its partner at minus x.
+
+29
+00:01:03,212 --> 00:01:04,918
+They have the same width and the same
+
+30
+00:01:05,039 --> 00:01:07,829
+size, but one is above the axis and
+
+31
+00:01:07,970 --> 00:01:08,752
+one is below.
+
+32
+00:01:09,375 --> 00:01:12,143
+So every pair cancels, and the integral is
+
+33
+00:01:12,184 --> 00:01:12,545
+zero.
+
+34
+00:01:13,308 --> 00:01:15,154
+Check it on a simpler odd function,
+
+35
+00:01:15,657 --> 00:01:17,604
+x cubed, from minus two to two.
+
+36
+00:01:18,308 --> 00:01:18,808
+The primitive,
+
+37
+00:01:19,310 --> 00:01:21,634
+x to the fourth over four, gives four
+
+38
+00:01:21,756 --> 00:01:23,258
+minus four, which is zero.
+
+39
+00:01:23,922 --> 00:01:25,329
+Even functions do the opposite.
+
+40
+00:01:25,691 --> 00:01:27,699
+Their graph is a mirror image across the
+
+41
+00:01:27,859 --> 00:01:30,911
+y-axis, so f of minus x equals f
+
+42
+00:01:30,931 --> 00:01:31,232
+of x.
+
+43
+00:01:32,036 --> 00:01:33,123
+Cos x is even.
+
+44
+00:01:34,190 --> 00:01:36,944
+A stone footbridge's arch has this shape, in
+
+45
+00:01:37,004 --> 00:01:37,346
+metres.
+
+46
+00:01:38,308 --> 00:01:40,652
+Now each strip at minus x matches its
+
+47
+00:01:40,692 --> 00:01:43,277
+partner at x, with the same sign, so
+
+48
+00:01:43,337 --> 00:01:45,160
+the left half equals the right half.
+
+49
+00:01:45,943 --> 00:01:48,432
+That means the integral from minus a to
+
+50
+00:01:48,653 --> 00:01:51,122
+a is twice the integral from zero to
+
+51
+00:01:51,324 --> 00:01:51,443
+a.
+
+52
+00:01:52,186 --> 00:01:54,548
+For cos x, from minus pi over two
+
+53
+00:01:54,629 --> 00:01:57,012
+to pi over two, it's twice the integral
+
+54
+00:01:57,113 --> 00:01:58,634
+from zero to pi over two,
+
+55
+00:01:59,136 --> 00:02:01,057
+which is two times one, or two.
+
+56
+00:02:01,841 --> 00:02:04,317
+So the arch's opening is two square metres.
+
+57
+00:02:05,110 --> 00:02:07,683
+Most functions are neither, but you can often
+
+58
+00:02:07,724 --> 00:02:08,086
+split them.
+
+59
+00:02:08,710 --> 00:02:11,198
+Find the integral from minus two to two,
+
+60
+00:02:11,661 --> 00:02:13,748
+of x cubed plus three x squared.
+
+61
+00:02:14,372 --> 00:02:16,385
+The x cubed part is odd, so it
+
+62
+00:02:16,426 --> 00:02:16,949
+gives zero.
+
+63
+00:02:17,593 --> 00:02:20,337
+Three x squared is even, so it's twice
+
+64
+00:02:20,358 --> 00:02:22,241
+the integral from zero to two, which is
+
+65
+00:02:22,302 --> 00:02:23,704
+two times eight, or sixteen.
+
+66
+00:02:24,547 --> 00:02:28,124
+Primitives agree: twelve, minus minus four, is sixteen.
+
+67
+00:02:29,192 --> 00:02:30,147
+Two conditions matter.
+
+68
+00:02:30,711 --> 00:02:33,337
+The interval must be symmetric, from minus a
+
+69
+00:02:33,378 --> 00:02:33,798
+to a.
+
+70
+00:02:34,481 --> 00:02:36,988
+And a zero answer is a signed integral,
+
+71
+00:02:37,290 --> 00:02:37,910
+not an area.
+
+72
+00:02:38,694 --> 00:02:40,136
+The soil still has to be moved:
+
+73
+00:02:40,778 --> 00:02:43,382
+the area between x cubed cos x and
+
+74
+00:02:43,423 --> 00:02:44,805
+the axis isn't zero.
+
+75
+00:02:45,501 --> 00:02:47,845
+If there's no primitive and no symmetry, we
+
+76
+00:02:47,986 --> 00:02:50,791
+estimate, and trapezia gave the best estimates in
+
+77
+00:02:50,831 --> 00:02:51,453
+the strips video.
+
+78
+00:02:52,254 --> 00:02:54,720
+Each trapezium's area is half the strip width,
+
+79
+00:02:55,081 --> 00:02:56,845
+times its two heights added together.
+
+80
+00:02:57,549 --> 00:02:59,684
+Now add four trapezia, side by side.
+
+81
+00:03:00,469 --> 00:03:02,699
+Each inside height is an edge of two
+
+82
+00:03:02,759 --> 00:03:04,467
+trapezia, so it's counted twice.
+
+83
+00:03:05,091 --> 00:03:07,401
+The two end heights belong to one trapezium
+
+84
+00:03:07,543 --> 00:03:09,089
+each, so they're counted once.
+
+85
+00:03:09,793 --> 00:03:11,355
+That gives the trapezoidal rule:
+
+86
+00:03:12,038 --> 00:03:14,181
+h over two, times the first height, plus
+
+87
+00:03:14,282 --> 00:03:16,826
+two times every inside height, plus the last
+
+88
+00:03:16,887 --> 00:03:17,086
+height.
+
+89
+00:03:17,749 --> 00:03:19,852
+Here h is the strip width, b minus
+
+90
+00:03:20,033 --> 00:03:22,357
+a, over n, and n strips need n
+
+91
+00:03:22,398 --> 00:03:23,259
+plus one heights.
+
+92
+00:03:24,188 --> 00:03:27,192
+Use the trapezoidal rule with five function values
+
+93
+00:03:27,394 --> 00:03:29,677
+to estimate the integral from one to three
+
+94
+00:03:29,958 --> 00:03:30,939
+of one over x.
+
+95
+00:03:31,803 --> 00:03:34,371
+Five values means four strips, not five.
+
+96
+00:03:34,853 --> 00:03:37,320
+So h is three minus one, over four,
+
+97
+00:03:37,642 --> 00:03:38,444
+which is a half.
+
+98
+00:03:39,166 --> 00:03:41,089
+The heights at one, one and a half,
+
+99
+00:03:41,330 --> 00:03:43,032
+two, two and a half, and three
+
+100
+00:03:43,534 --> 00:03:46,418
+are one, two thirds, a half, two fifths
+
+101
+00:03:46,679 --> 00:03:47,219
+and a third.
+
+102
+00:03:47,962 --> 00:03:50,471
+Put them in: a quarter, times one, plus
+
+103
+00:03:50,632 --> 00:03:53,081
+two times the three inside heights, plus a
+
+104
+00:03:53,122 --> 00:03:53,362
+third.
+
+105
+00:03:53,906 --> 00:03:57,103
+That's sixty-seven sixtieths, about one point one one
+
+106
+00:03:57,144 --> 00:03:57,384
+seven.
+
+107
+00:03:58,137 --> 00:04:00,108
+This one does have a primitive, so we
+
+108
+00:04:00,129 --> 00:04:00,672
+can check.
+
+109
+00:04:01,457 --> 00:04:03,643
+The integral of one over x from one
+
+110
+00:04:03,684 --> 00:04:05,951
+to three is the natural log of three,
+
+111
+00:04:06,393 --> 00:04:07,857
+about one point oh nine nine.
+
+112
+00:04:08,561 --> 00:04:10,670
+So the estimate is a little too big.
+
+113
+00:04:11,318 --> 00:04:11,745
+Here's why.
+
+114
+00:04:12,673 --> 00:04:15,517
+One over x bends upwards along the whole
+
+115
+00:04:15,599 --> 00:04:18,523
+interval, so each straight top sits above the
+
+116
+00:04:18,564 --> 00:04:18,924
+curve.
+
+117
+00:04:19,646 --> 00:04:21,635
+When a curve is concave up along the
+
+118
+00:04:21,696 --> 00:04:23,945
+whole interval, the rule overestimates.
+
+119
+00:04:24,629 --> 00:04:27,418
+Concave down along the whole interval, it underestimates.
+
+120
+00:04:28,181 --> 00:04:30,247
+If the bending changes inside the interval,
+
+121
+00:04:30,769 --> 00:04:31,912
+that alone can't tell you.
+
+122
+00:04:32,535 --> 00:04:34,762
+The third check is an online tool, a
+
+123
+00:04:34,803 --> 00:04:37,873
+computer algebra system that does exact algebra and
+
+124
+00:04:37,934 --> 00:04:38,435
+calculus.
+
+125
+00:04:39,058 --> 00:04:41,262
+Type in the integral from one to three
+
+126
+00:04:41,524 --> 00:04:43,989
+of one over x, and it returns log
+
+127
+00:04:44,110 --> 00:04:44,390
+three.
+
+128
+00:04:45,133 --> 00:04:47,540
+Many tools write log for the natural log.
+
+129
+00:04:48,304 --> 00:04:50,527
+Ask for the indefinite integral, and you might
+
+130
+00:04:50,568 --> 00:04:53,253
+get log x, with no mod signs and
+
+131
+00:04:53,314 --> 00:04:54,095
+no plus C.
+
+132
+00:04:54,677 --> 00:04:56,885
+So read the answer, then write it the
+
+133
+00:04:56,967 --> 00:04:59,697
+course way: the natural log of mod x,
+
+134
+00:04:59,858 --> 00:05:00,379
+plus C.
+
+135
+00:05:01,183 --> 00:05:03,127
+A tool is a check on your working,
+
+136
+00:05:03,589 --> 00:05:05,052
+not a replacement for showing it.
+
+137
+00:05:05,801 --> 00:05:07,770
+Tools also reach past this course.
+
+138
+00:05:08,513 --> 00:05:10,719
+Ask for the primitive of x cubed cos
+
+139
+00:05:10,799 --> 00:05:12,785
+x, and you get this long answer.
+
+140
+00:05:13,426 --> 00:05:15,088
+We can't build it with our rules, but
+
+141
+00:05:15,388 --> 00:05:16,308
+we can still check it:
+
+142
+00:05:16,929 --> 00:05:19,050
+differentiate it with the product rule, and every
+
+143
+00:05:19,090 --> 00:05:22,113
+term cancels except x cubed cos x.
+
+144
+00:05:22,834 --> 00:05:24,459
+And its value from minus one to one
+
+145
+00:05:24,620 --> 00:05:26,385
+is zero, just as symmetry said.
+
+146
+00:05:27,189 --> 00:05:29,537
+When different methods agree, you can trust the
+
+147
+00:05:29,578 --> 00:05:29,878
+result.
+
+148
+00:05:30,743 --> 00:05:32,922
+Here's a way to hold the two shortcuts.
+
+149
+00:05:33,806 --> 00:05:36,978
+Odd cancels, even doubles, but only from minus
+
+150
+00:05:37,118 --> 00:05:37,881
+a to a.
+
+151
+00:05:38,664 --> 00:05:39,849
+And for the trapezoidal rule:
+
+152
+00:05:40,411 --> 00:05:40,953
+ends once,
+
+153
+00:05:41,455 --> 00:05:42,279
+insides twice.
+
+154
+00:05:44,866 --> 00:05:45,255
+Your turn.
+
+155
+00:05:45,902 --> 00:05:49,028
+Use symmetry to evaluate the integral from minus
+
+156
+00:05:49,068 --> 00:05:51,954
+pi to pi, of x squared sine x,
+
+157
+00:05:52,234 --> 00:05:52,755
+plus three.
+
+158
+00:05:53,541 --> 00:05:54,594
+Pause here to answer.
+
+159
+00:06:05,421 --> 00:06:07,531
+Test x squared sine x.
+
+160
+00:06:08,373 --> 00:06:11,178
+Swap in minus x, and you get minus
+
+161
+00:06:11,498 --> 00:06:12,841
+x squared sine x,
+
+162
+00:06:13,582 --> 00:06:15,906
+so it's odd, and it gives zero from
+
+163
+00:06:15,986 --> 00:06:17,108
+minus pi to pi.
+
+164
+00:06:18,189 --> 00:06:20,711
+Three is even, so it gives twice the
+
+165
+00:06:20,771 --> 00:06:23,374
+integral from zero to pi of three, which
+
+166
+00:06:23,434 --> 00:06:24,634
+is two times three pi.
+
+167
+00:06:25,416 --> 00:06:26,805
+The answer is six pi.
+
+168
+00:06:27,453 --> 00:06:28,205
+Zero is wrong.
+
+169
+00:06:28,668 --> 00:06:30,817
+Only the odd part cancels, and the three
+
+170
+00:06:30,857 --> 00:06:31,158
+stays.
+
+171
+00:06:32,932 --> 00:06:33,315
+Last one.
+
+172
+00:06:34,348 --> 00:06:36,818
+A brick arch is symmetric about its centre
+
+173
+00:06:36,859 --> 00:06:37,099
+line.
+
+174
+00:06:37,582 --> 00:06:40,027
+Its height is measured every half metre, from
+
+175
+00:06:40,068 --> 00:06:42,213
+the centre out to one edge, as in
+
+176
+00:06:42,274 --> 00:06:42,935
+this table.
+
+177
+00:06:43,777 --> 00:06:46,560
+Use the trapezoidal rule with all five readings,
+
+178
+00:06:46,901 --> 00:06:49,403
+and symmetry, to estimate the area of the
+
+179
+00:06:49,524 --> 00:06:50,344
+whole opening.
+
+180
+00:06:50,948 --> 00:06:52,181
+Pause here to answer.
+
+181
+00:07:03,082 --> 00:07:06,138
+Five readings make four strips, so h is
+
+182
+00:07:06,178 --> 00:07:06,600
+a half.
+
+183
+00:07:07,183 --> 00:07:09,613
+The end readings, four and zero, count once.
+
+184
+00:07:10,095 --> 00:07:12,604
+The inside readings, three and a half, three
+
+185
+00:07:12,765 --> 00:07:14,752
+and two, add to eight and a half,
+
+186
+00:07:15,013 --> 00:07:16,017
+and they count twice.
+
+187
+00:07:16,599 --> 00:07:18,744
+So half the opening is about a quarter,
+
+188
+00:07:19,124 --> 00:07:21,990
+times four plus seventeen plus zero, which is
+
+189
+00:07:22,071 --> 00:07:23,233
+five point two five.
+
+190
+00:07:23,835 --> 00:07:26,081
+The arch is even, so double it: about
+
+191
+00:07:26,142 --> 00:07:27,605
+ten point five square metres.
+
+192
+00:07:28,349 --> 00:07:29,677
+Six point two five is wrong.
+
+193
+00:07:29,959 --> 00:07:31,717
+It forgets to double the inside readings.
+
+194
+00:07:33,314 --> 00:07:36,737
+So symmetry, the trapezoidal rule and an online
+
+195
+00:07:36,778 --> 00:07:38,759
+tool each give us a way to find
+
+196
+00:07:38,840 --> 00:07:39,820
+or check an integral.
+
+197
+00:07:40,783 --> 00:07:42,811
+Next, we put integrals to work on real
+
+198
+00:07:42,892 --> 00:07:43,334
+problems.
+
+199
+00:07:44,077 --> 00:07:46,244
+Here's the power used by a home's air
+
+200
+00:07:46,285 --> 00:07:47,909
+conditioner across a hot day.
+
+201
+00:07:48,455 --> 00:07:49,869
+How much energy does it use?
+
+202
+00:07:52,495 --> 00:07:53,358
+Here are the key notes.
+
+203
+00:07:53,761 --> 00:07:55,308
+Pause the video if you need more time
+
+204
+00:07:55,350 --> 00:07:55,811
+to copy them.

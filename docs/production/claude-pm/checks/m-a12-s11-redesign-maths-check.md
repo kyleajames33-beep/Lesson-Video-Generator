@@ -7,3 +7,10 @@ Scene 6 says 'Tables have no negative zeds'; some normal tables do. Say *this ta
 Direct browser inspection confirms random-variables lesson 02 Q2's Alex and Blake values, lesson 03's 500 mL bottle hook and card 05's bolt distribution and 0.905 table-rounded answer. The exact HSC reference-table convention has not been independently confirmed.
 
 Reference-sheet follow-up: all four pages of the [NESA Advanced/Extension reference sheet linked from its 2025 resource page](https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/mathematics-advanced-extension-reference-sheet) were visually inspected. Page 2 contains the z-score formula and 68/95/99.7 diagram, but the sheet contains no numerical z table. The design's left-cumulative table must therefore be described as its illustrated table, not assumed to be supplied on this reference sheet. This check does not rule out a table being provided with a particular exam question.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `e71aa4cd6ab98a3bc306bff5e56951253ef15f282913d36ac17df04f4c64d740`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Allleft-CDF/positive-z-onlystatements nowreferonlytothe displayedtable,not everytable. Fishinterpretation usesatleastthreshold undernormalmodels. Boltvaluesfromroundedz1.67versusexact5/3 explicitlyapproximate. NoNESA-suppliedtableimplied. Independentrecheckupper tails1.25/1.6 gives0.1056/0.0548.
+
+Independent recount:5688characters/15scene strings,noem dashes. Changed narration andauthor repairnotes comparedwith priorfullreview;unchanged calculations/live-sourcechecksretained. Current stringsinwork/brief240/root68-source-audit/s11.json. Nativeartmeasurements/guide deviationsretainedforbuilderfitting underdecision30;root68readytovoice. No paid speechorfinishedtake repeatedbythisreview. Measuredtiming,actualmotionandhumanlisteningremainseparategates.

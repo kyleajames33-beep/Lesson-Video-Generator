@@ -1,0 +1,67 @@
+{
+  "brief": 178,
+  "design": "chem-y11-ws-v01",
+  "sourceSha256": "d18c64f4358b2991553a979fd46353d14659c96ff4b51c8c8214875a64c17cc1",
+  "manifest": "brief178-manifest.json",
+  "entries": [
+    {
+      "key": "178-patchy",
+      "file": "y11c-cuso4-crucible-patchy-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-525a6798-5983-4cc9-9b60-4fece6c7d974.png",
+      "prompt": "EDIT referenced transparent PNG production plate, preserve transparent alpha. Exact same canvas 1280x1920 and common outlines. Burner UNLIT, no flame. Powder mostly white with several irregular PALE BLUE patches of unchanged crystals through it. No black, smoke, haze. Keep crucible, triangle, tripod and burner geometry pixel registered. Clean edges, no stray coloured fringe, no text, people, hands, faces, symbols, background or ground shadow. File y11c-cuso4-crucible-patchy-v1.png",
+      "path": "public/assets/chemistry/y11c-cuso4-crucible-patchy-v1.png",
+      "sha256": "7451cd81c8c6429562cf9219764b302387f295a730210f57d4919be70c6d9f6e",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "clearMarginFraction": [
+        0.0,
+        0.046223958333333336,
+        0.03125,
+        0.0
+      ],
+      "status": "candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected on paper and dark phone contact; no people, hands, faces or text. Native composites saved. No clean-edge clearance.",
+      "additionalFinding": "Diffuse outside haze. 1024x1536 canvas differs from 1280x1920 reference. Apparatus lines shift between states; not an exact replacement.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "178-blackretry",
+      "file": "y11c-cuso4-crucible-black-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-1c947e66-33be-4675-b8d6-5776b02d1274.png",
+      "prompt": "EDIT original referenced school crucible PNG. Preserve white porcelain EXTERIOR absolutely white and clean. NO soot or black paint outside crucible. Only contents INSIDE bowl change: off-white copper sulfate powder with visible BLACK copper oxide crust patches among the powder and a dark band on the INSIDE wall. Black material is a CHEMICAL PRODUCT INSIDE, not scorch on outside. Burner unlit with no flame. Same canvas and geometry of crucible, triangle, tripod, burner, every line unchanged. True alpha outside apparatus, no haze, text, people or hands. File y11c-cuso4-crucible-black-v2.png.",
+      "path": "public/assets/chemistry/y11c-cuso4-crucible-black-v1.png",
+      "sha256": "82a5b2970dd697cdd7b168967cfd452a424b9af304c092b9e112c9634c15d427",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "clearMarginFraction": [
+        0.0,
+        0.020182291666666668,
+        0.068359375,
+        0.015625
+      ],
+      "status": "candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected on paper and dark phone contact; no people, hands, faces or text. Native composites saved. No clean-edge clearance.",
+      "additionalFinding": "Diffuse outside haze. 1024x1536 canvas differs from 1280x1920 reference. Apparatus lines shift between states; not an exact replacement. Retake correctly places black patches inside the white crucible. First attempt blackened the outside and was rejected.",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "approval": "Source-only reviews and art candidates. QA, safety, playback and listening holds remain.",
+  "brief242Recheck": {
+    "date": "2026-11-17",
+    "record": "docs/production/claude-pm/assets/brief242-chem-ws-v01-native-qa-17-nov.json",
+    "reviewedSourceSha256": "d439696b80528ef9e21345b46b722e846e4a225bb77f460b41ae0bd7265120b7",
+    "result": "Three native records; narration unchanged at6,314characters. Static colour states readable; exact overlays and time/readout/colour coupling remain pending. B loss27.6percent checked. Question has no answer data. No new plate or whole-lesson clearance."
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "brief": 238,
+  "design": "i01",
+  "assets": [
+    {
+      "name": "ma12-bookcase-pots-v1.png",
+      "path": "public\\assets\\maths\\ma12-bookcase-pots-v1.png",
+      "source": "C:/Users/kygs/.codex/generated_images/01a1b24b-b35d-73a2-91c3-6120d9aa4344/exec-346f64e0-53e9-40a9-b585-c27ad261c2ba.png",
+      "generatorNativeSize": [
+        1049,
+        1499
+      ],
+      "nativeSize": [
+        1400,
+        2000
+      ],
+      "sha256": "aa465d65335f0346c5240c9c47deec117995a9fb3ccbafe185309b1247e9c559",
+      "alphaBox": [
+        120,
+        307,
+        1282,
+        1923
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Removedalpha<8noise",
+        "Uniformscale1.38withnearestintegerdimensions1448x2069;preservedaspect",
+        "Centredcroptransparentcanvas to1400x2000at(-24,-8)",
+        "Movedintactshelfinteriorpatches-12/+22/+49px tosoil800/1220/1640",
+        "Raisedtopboard110pxandextendedsidepostsusingunoccupiedwoodpixelstrip;nopeople/design/narration edits",
+        "Removedduplicateupperapron/straysfrompatchjoins",
+        "Filledtwoinnerpostgapswithnativewoodpixels",
+        "Translatedwholebookcase4pxright tocentre soil~699.5",
+        "Cleanedlasttwoinnerpostjoinstripsandprotrudingcaplinewithnativewoodpixels"
+      ],
+      "visualQAInspected": true,
+      "uniformResampling": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "anchors": {
+        "soilLines": [
+          {
+            "soilCentreY": 800,
+            "darkSoilVisibleBoundsAtCentreLine": [
+              578,
+              821
+            ],
+            "potCentreX": 699.5,
+            "attachmentLine": [
+              580,
+              800,
+              820,
+              800
+            ]
+          },
+          {
+            "soilCentreY": 1220,
+            "darkSoilVisibleBoundsAtCentreLine": [
+              578,
+              821
+            ],
+            "potCentreX": 699.5,
+            "attachmentLine": [
+              580,
+              1220,
+              820,
+              1220
+            ]
+          },
+          {
+            "soilCentreY": 1640,
+            "darkSoilVisibleBoundsAtCentreLine": [
+              578,
+              821
+            ],
+            "potCentreX": 699.5,
+            "attachmentLine": [
+              580,
+              1640,
+              820,
+              1640
+            ]
+          }
+        ],
+        "floorLineYApprox": 1920,
+        "floorMeasurementUncertaintyPx": 2,
+        "topBoardUndersideApprox": 399,
+        "clearanceAboveTopSoil": 401
+      },
+      "marginFinding": "Exactfloor1920leaves80pxbottom,less than160px8%margin;sourcecontradiction238-I01-ASSET-MARGINS. Exactguideprioritised.",
+      "state": "delivered-build-clearance-blocker",
+      "findings": [
+        {
+          "id": "238-I01-ASSET-MARGINS",
+          "severity": "should fix/source constraint conflict",
+          "detail": "Exactfloor1920leaves80pxbottom,less than160px8%margin;sourcecontradiction238-I01-ASSET-MARGINS. Exactguideprioritised."
+        },
+        {
+          "id": "238-I01-GROWTH-CLEARANCE",
+          "severity": "learning/build blocker",
+          "detail": "Observed native350pxgrowth composite at t5:middle/bottom shoots cross the shelf boards and project into the pot above.420px soil spacing minus the pot/shelf height leaves insufficient350pxclearance. Exact guide soilpositions are preserved. Root needs a physical staging/geometry decision before a full visual or recording pass;do not silently change C offsets or14px/cm."
+        }
+      ]
+    },
+    {
+      "name": "ma12-bean-shoot-v1.png",
+      "path": "public\\assets\\maths\\ma12-bean-shoot-v1.png",
+      "source": "C:/Users/kygs/.codex/generated_images/01a1b24b-b35d-73a2-91c3-6120d9aa4344/exec-89b765a5-395e-468d-b209-4ad6866ef99c.png",
+      "generatorNativeSize": [
+        1086,
+        1448
+      ],
+      "nativeSize": [
+        600,
+        800
+      ],
+      "sha256": "c417fdf2582e6617c9329b5917a6f991a2578af46a993f7b44852ec5dcab2552",
+      "alphaBox": [
+        123,
+        60,
+        477,
+        762
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Removedalpha<8noise",
+        "Uniformscaleabout.54475to592x789,preservedaspect",
+        "Padded/translatedto600x800at(14,3),base~(300,760),tip~y60"
+      ],
+      "visualQAInspected": true,
+      "uniformResampling": true,
+      "aspectPreserved": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "anchors": {
+        "stemBase": [
+          300,
+          760
+        ],
+        "topmostTipY": 60,
+        "heightBaseToTip": 700,
+        "expectedHeight": 700,
+        "measurementUncertaintyPx": 1
+      },
+      "marginFinding": "Base760leaves40pxbottom,less than64px8%margin;tip60also4pxshortof64. Sourcecontradictionalreadyreported.",
+      "state": "delivered-build-clearance-blocker",
+      "findings": [
+        {
+          "id": "238-I01-ASSET-MARGINS",
+          "severity": "should fix/source constraint conflict",
+          "detail": "Base760leaves40pxbottom,less than64px8%margin;tip60also4pxshortof64. Sourcecontradictionalreadyreported."
+        },
+        {
+          "id": "238-I01-GROWTH-CLEARANCE",
+          "severity": "learning/build blocker",
+          "detail": "Observed native350pxgrowth composite at t5:middle/bottom shoots cross the shelf boards and project into the pot above.420px soil spacing minus the pot/shelf height leaves insufficient350pxclearance. Exact guide soilpositions are preserved. Root needs a physical staging/geometry decision before a full visual or recording pass;do not silently change C offsets or14px/cm."
+        }
+      ]
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "bookcasePrompt": "Use case: scientific-educational. Asset ma12-bookcase-pots-v1.png, intended1400x2000px portrait composition. One plain natural timber bookcase seen STRAIGHT ON,centred,on genuine transparent alpha. Fine dark ink and restrained natural watercolour matching referencewoodfinish only;do not include any pen/wall/grass. Three open shelves. On each shelf one identical small terracotta pot CENTRED,filled with flat dark soil,NO PLANTS. A few plain unlabelled books at far ends only,middle clear. GEOMETRY:relative to1400x2000canvas,bookcase axisx700. Flat soil strips240pxwide fromx580to820,three levels y800(top),y1220(middle),y1640(bottom),420pxapart. Potsbelowsoil,shelvesbelowpots. Bookcase topboard at or above y400,leaving at least300pxclear above top soil. Floor/base line y1920. Bookcase sides aroundx240and1160;complete structurevisible. Keep the exact relative soil positions,do not space pots at arbitrary heights. No back scene,groundshadow,people,hands,wateringcan,plant,roots,text,letters,titles,numbers,logos,labels,scale marks. Clear alpha around bookcase. Guides priority:bottom floor y1920leaves80pxbottommargin deliberately;do not shift floor up to160pxmargin. Whole image isolated,cleanedges,nopaperrectangle.",
+    "beanPrompt": "Use case: scientific-educational. Asset ma12-bean-shoot-v1.png. A single young climbing bean shoot,seen straight on,upright and centred on genuine transparent alpha,ink and natural watercolour. Green stem with4to6clear leaves and a delicate curling tip. No roots,soil,pot,support stake or other objects. Final600x800px portrait3:4composition. Exact guide proportions:stem base cut straight across at(x300,y760),curling top tip at about(x300,y60),700pxtall (50cm at14px/cm). Leaves stay within x120..480anddo not extend above y60orbelowbase. It mustread as one connected healthy plant when only its upper part shows above a pot. Base point and tip guide take priority over generic8%margin,which conflicts atbottom40px. Keep transparent margin elsewhere. Fine dark ink outlines,restrained green watercolour,readable leaf silhouettes. No text,labels,numbers,flowers,fruit,faces,people,hands,background,paper rectangle,ground shadow or glow.",
+    "transparent_background": true,
+    "localPixelFinishing": "User explicitly authorised local pixel edits. Uniform resampling preserves aspect; no nonuniform stretching. Shelf pieces translated intact and wood joins repaired; no profile plates altered."
+  },
+  "qaInspected": [
+    "work/brief238/i01-final-growth-qa.jpg",
+    "work/brief238/i01-bookcase-white-final-qa.png",
+    "work/brief238/i01-bookcase-black-final-qa.png",
+    "work/brief238/i01-composite-final-qa.jpg"
+  ],
+  "visualObservation": "Potsalignedwithin4pxguideatthethree soilcentre lines;beanbase/tip700pxtall. Raisedtopboardleaves401pxabove topsoil. Finalpaper/black/white inspected;3individualheightprobesandallshelvesat350pxgrowth inspected. Maxgrowthcausesshelfoverlap,thefindingisnotafuturehypothetical. Earlierintermediategaps/protrudingcaplinecleaned,finalfileshashed.",
+  "revision4PlantStand": {
+    "brief": 238,
+    "design": "i01",
+    "sourceRevision": "Current repaired source,11November",
+    "assets": [
+      {
+        "lesson": "i01",
+        "name": "ma12-plant-stand-v1.png",
+        "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-c0c85d38-1ae9-4218-bf21-390283acf842.png",
+        "sha256": "34c7f5c3d3d213fd223134c542a15248f509ac86f671fc8eadba000d00fff7fb",
+        "nativeSize": [
+          1107,
+          1421
+        ],
+        "alpha128Box": [
+          124,
+          352,
+          1011,
+          1272
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "qa": "work\\brief238\\revised-plates\\ma12-plant-stand-v1-four-backgrounds.jpg",
+        "state": "held-native-guide-mismatch",
+        "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+        "anchors": {
+          "soil": [
+            {
+              "soilCentre": [
+                286.0,
+                902
+              ],
+              "soilStrip": [
+                183,
+                902,
+                389,
+                902
+              ]
+            },
+            {
+              "soilCentre": [
+                561.0,
+                639
+              ],
+              "soilStrip": [
+                450,
+                639,
+                672,
+                639
+              ]
+            },
+            {
+              "soilCentre": [
+                864.0,
+                379
+              ],
+              "soilStrip": [
+                758,
+                379,
+                970,
+                379
+              ]
+            }
+          ],
+          "postsBaseFloorYApprox": 1221
+        },
+        "geometryFinding": "Native canvas1107x1421 differs from1640x1800 guide. Soil spacing about260px rather than420px;floor-to-bottom-soil about320px rather than280px. No single uniform scale preserves both30cm shelf gaps and20cm floor offset. Strict4px guide not passed. Max350px growth composite inspected separately.",
+        "path": "public\\assets\\maths\\ma12-plant-stand-v1.png",
+        "visualQAInspected": true,
+        "designs": [
+          "i01"
+        ],
+        "qaInspected": [
+          "work\\brief238\\revised-plates\\ma12-plant-stand-v1-four-backgrounds.jpg",
+          "work\\brief238\\revised-plates\\i01-growth-guide-qa.jpg"
+        ]
+      }
+    ],
+    "decision": "Source review fixes passed;strict geometric artwork guide remains held. Keep supplied candidate for root inspection. Do not certify required4px tolerance."
+  },
+  "currentArtworkDecision": "New native stand delivered;bookcase unused. Geometrydifferencesreported;owner/root68 permits voicing,builderfitunderdecision30 required.",
+  "nov12PlantStand": {
+    "lesson": "i01",
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-d5c4bcec-175b-473e-b7aa-4889013919cf.png",
+    "nativeSize": [
+      1197,
+      1315
+    ],
+    "soil": [
+      {
+        "soilCentre": [
+          276.0,
+          865
+        ],
+        "soilStrip": [
+          190,
+          865,
+          362,
+          865
+        ]
+      },
+      {
+        "soilCentre": [
+          596.0,
+          612
+        ],
+        "soilStrip": [
+          505,
+          612,
+          687,
+          612
+        ]
+      },
+      {
+        "soilCentre": [
+          910.0,
+          346
+        ],
+        "soilStrip": [
+          817,
+          346,
+          1003,
+          346
+        ]
+      }
+    ],
+    "floorPostsBaseYApprox": 1180,
+    "uncertaintyPixels": 4,
+    "requestedCanvas": [
+      1640,
+      1800
+    ],
+    "strictGuidePassed": false,
+    "geometryFinding": "Native1197x1315 painting differs from requested1640x1800. Soil spacing about258px;floor-to-bottom-soil about315px. Does not certify a global14px/cm map or4px guide. Builder must fit measured native plate under rootdecision30 and verify actual heights;no plate warp.",
+    "operations": "Built-in image generator,new plate then edge-cleanup edit. Final PNG copied byte-for-byte;only QA composites resized/overlaid. No final pixel edits.",
+    "qa": [
+      "plant-stand-nov12-alpha-qa.jpg",
+      "plant-stand-nov12-growth-qa.jpg"
+    ],
+    "promptFile": "work\\brief238\\revised-plates\\plant-stand-nov12-prompts.json",
+    "inspection": "Four-background alpha QA and112/224/350pixel growth at300/770pixel heights inspected. Isolated empty pots,clean composite edges,clear shoot air,no timber contact. Generator preview displayed colored hidden-alpha RGB;actual composites show no colored fringe. Geometry differences retained for builder fitting.",
+    "sha256": "a636aa2d017630494988d4fdbb61206b06f3739978c63c51c0a0558cc4176e03",
+    "path": "public\\assets\\maths\\ma12-plant-stand-v1.png",
+    "alpha128Box": [
+      91,
+      330,
+      1092,
+      1225
+    ],
+    "alphaExtrema": [
+      0,
+      255
+    ],
+    "state": "delivered-native-guide-differences-reported",
+    "visualQAInspected": true,
+    "clearAirColumns": "Observed clearaboveallthreepots;400pixel requestedwidth cannot be certified ondifferentnativecanvas.",
+    "marginFinding": "Native canvas and margins differ fromrequestedguide;no claim of8percent compliance."
+  }
+}

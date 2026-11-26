@@ -1,0 +1,167 @@
+{
+  "design": "phys-y12-m6-v14",
+  "sourceSHA256": "c2ce4e203fd2e33f212ecbcee7b2a4c4f9f6dfabb614f7a8300bd78c3666ffea",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "phys-y11-electric-kettle-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-electric-kettle-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "phys-y11-rod-soft-iron-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rod-soft-iron-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "public/assets/physics/phys-y11-house-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-house-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "public/assets/physics/phys-y11-power-station-v2.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-station-v2.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "public/assets/physics/phys-y11-transmission-tower-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-transmission-tower-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "y12p-lamination-sheets-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-lamination-sheets-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v14",
+      "reference": "y12p-transformer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-transformer-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "transformer-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c12d902e-9e43-44dd-97c9-4e7ac5a85fdf.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "bbox": [
+        348,
+        232,
+        1098,
+        868
+      ],
+      "marginFraction": [
+        0.24033149171270718,
+        0.2136279926335175,
+        0.24171270718232044,
+        0.2007366482504604
+      ],
+      "alphaZeroFraction": 0.7751315079922265,
+      "file": "public/assets/physics/y12p-transformer-v1.png",
+      "sha256": "fd0425501d97af4c9cc6455fd86681f501cb1c8f1946a4ef27127dde7ef4e933",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "leftTerminalCentres": [
+          [
+            374,
+            462
+          ],
+          [
+            374,
+            635
+          ]
+        ],
+        "rightTerminalCentres": [
+          [
+            1056,
+            479
+          ],
+          [
+            1055,
+            642
+          ]
+        ],
+        "coreOpeningApprox": [
+          592,
+          400,
+          824,
+          638
+        ],
+        "note": "Few thick turns left, many thin turns right. Closed core; coded wiring and highlights required."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "lamination-sheets",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b5f23b4b-3785-4959-bc81-c94d8174e81b.png",
+      "size": [
+        1586,
+        992
+      ],
+      "bbox": [
+        230,
+        196,
+        1367,
+        821
+      ],
+      "marginFraction": [
+        0.1450189155107188,
+        0.1975806451612903,
+        0.13808322824716268,
+        0.17237903225806453
+      ],
+      "alphaZeroFraction": 0.695303919375178,
+      "file": "public/assets/physics/y12p-lamination-sheets-v1.png",
+      "sha256": "e594a5c8ede91139fb0382cfc5027f38f58cb6b0f56fa60adeddd25bd215bd78",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "note": "E sheets and separate I strips, visible insulated edges. No baked mechanism overlays."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

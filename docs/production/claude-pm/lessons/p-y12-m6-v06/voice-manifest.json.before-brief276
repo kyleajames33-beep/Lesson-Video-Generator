@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v06.md",
+  "sourceSha256": "b17793248908a26a20b4946a78fb83cf6072108a55dece36674f42eab06f12e5",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here are our crossed fields. The electric field points down, between the plates, and the magnetic field points into the page, filling the same space. Now fire in a beam of electrons with lots of different speeds. Most of them are pushed off line, and hit the barrier. Only one speed makes it straight through the slit. Which speed is it? And would protons at that speed get through too?",
+      "audioFile": "public/audio/phys-y12-m6-v06/hook.wav"
+    },
+    {
+      "id": "compare-forces",
+      "text": "To see why, compare the two forces. The electric force, q E, acts on a charge whether it's moving or not, and it points along the field, or against it for a negative charge. The magnetic force, q v B, needs the charge to be moving across the field, and it points at right angles to both the velocity and the field. The electric force can push along the motion, do work and change the speed. The magnetic force can't, so it only steers. And here's the difference that matters today. The electric force is the same at any speed, but the magnetic force grows with speed.",
+      "audioFile": "public/audio/phys-y12-m6-v06/compare-forces.wav"
+    },
+    {
+      "id": "crossed-setup",
+      "text": "Now set it up. The top plate is positive, so the electric field points down. The magnetic field points into the page. An electron moves to the right. The electric force on it points against the field, so it's up. For the magnetic force, a positive charge moving right, in a field into the page, would be pushed up. So the electron is pushed down. The two forces point in opposite directions.",
+      "audioFile": "public/audio/phys-y12-m6-v06/crossed-setup.wav"
+    },
+    {
+      "id": "balance",
+      "text": "If the two forces are equal in size, they cancel. The net force is zero, and the electron goes straight through. So q E equals q v B. The charge cancels, and v equals E over B. Only that one speed is balanced. At any other speed, the bigger force wins, and the particle is pushed off line. The mass doesn't appear at all, and neither does the charge. But this only works because the fields are arranged so that the forces oppose.",
+      "audioFile": "public/audio/phys-y12-m6-v06/balance.wav"
+    },
+    {
+      "id": "worked-selector",
+      "text": "Put in some numbers. The electric field is four thousand volts per metre, and the magnetic field is zero point zero two oh tesla. An electron enters at two point zero times ten to the five metres per second. The electric force is q E, six point four one times ten to the minus sixteen newtons, up. The magnetic force is q v B, also six point four one times ten to the minus sixteen, but down. They cancel, so the electron goes straight. And E over B, four thousand over zero point zero two, is two times ten to the five, exactly its speed.",
+      "audioFile": "public/audio/phys-y12-m6-v06/worked-selector.wav"
+    },
+    {
+      "id": "rejected-speeds",
+      "text": "Now the electrons that miss. Double the speed, to four times ten to the five. The electric force doesn't change, but the magnetic force doubles. The magnetic force wins, so the fast electron is pushed down, and misses the slit. Halve the speed instead, and the magnetic force halves. Now the electric force wins, and the slow electron is pushed up. Too fast, magnetic wins. Too slow, electric wins. So the slit lets through only the one balanced speed.",
+      "audioFile": "public/audio/phys-y12-m6-v06/rejected-speeds.wav"
+    },
+    {
+      "id": "charge-mass",
+      "text": "So would protons at that speed get through? For a proton, both forces reverse. The electric force points down, and the magnetic force points up. They still oppose, and they're still equal at E over B, so the proton goes straight too. A heavier ion at the same speed passes as well. That's why this is called a velocity selector. It picks out speed, not mass or charge.",
+      "audioFile": "public/audio/phys-y12-m6-v06/charge-mass.wav"
+    },
+    {
+      "id": "application",
+      "text": "Why would you want one speed? Send that beam into a magnetic field on its own. With the speed fixed, the radius, m v over q B, depends only on the mass and the charge, so heavier ions with the same charge swing wider. That's one way a mass spectrometer sorts atoms. And in a later video, you'll see Thomson use crossed fields to measure the electron's charge to mass ratio.",
+      "audioFile": "public/audio/phys-y12-m6-v06/application.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "To remember it: v equals E over B. The electric push is the same at every speed, and the magnetic push grows with speed. So fast particles follow the magnetic force, and slow ones follow the electric force.",
+      "audioFile": "public/audio/phys-y12-m6-v06/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. In a velocity selector, the plates are two point zero centimetres apart, with six hundred volts across them. The magnetic field is zero point zero five zero tesla. Calculate the speed of the particles that pass straight through. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v06/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "First the electric field. Six hundred volts over zero point zero two metres is three point zero times ten to the four volts per metre. Then v equals E over B, three times ten to the four, over zero point zero five, which is six point zero times ten to the five metres per second. The classic slip is dividing the voltage, not the field, by B, which gives one point two times ten to the four.",
+      "audioFile": "public/audio/phys-y12-m6-v06/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Positive ions move to the right into a velocity selector. The electric field points down the page, and the magnetic field points into the page. One ion enters at twice the selected speed. Which way is it deflected? Justify your answer. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v06/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "On a positive ion, the electric force points down, along the field, and the magnetic force points up. At twice the selected speed, the magnetic force is twice the electric force, because it grows with speed. So there's a net force upwards, and the ion is deflected up. The classic slip is saying it goes straight because the charge cancels. That only works at E over B.",
+      "audioFile": "public/audio/phys-y12-m6-v06/feedback-2.wav"
+    },
+    {
+      "id": "hook-answer",
+      "text": "So the selector works because the two forces depend on speed differently. The electric force doesn't care how fast a charge moves, but the magnetic force does. Balance them, and only one speed, E over B, goes straight, whatever the charge or the mass.",
+      "audioFile": "public/audio/phys-y12-m6-v06/hook-answer.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Moving charges in a magnetic field feel a sideways force, wherever they are. Now put the moving charges inside a wire. A current is just charges drifting along a conductor, and every one of them feels that sideways push. So why does a current-carrying wire feel a magnetic force?",
+      "audioFile": "public/audio/phys-y12-m6-v06/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v06/key-notes.wav"
+    }
+  ]
+}

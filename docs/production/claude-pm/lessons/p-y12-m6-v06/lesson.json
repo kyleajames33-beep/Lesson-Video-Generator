@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "b17793248908a26a20b4946a78fb83cf6072108a55dece36674f42eab06f12e5",
+  "sourceDesignSha256": "4f018310ccfd694454baf070f90140e19896c3c02fd425eb4300dea542dddfb0",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Here are our crossed fields. The electric field points down, between the plates, and the magnetic field points into the page, filling the same space. Now fire in a beam of electrons with lots of different speeds. Most of them are pushed off line, and hit the barrier. Only one speed makes it straight through the slit. Which speed is it? And would protons at that speed get through too?"
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "And would protons at that speed get through too?",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "And would protons at that speed get through too?",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "compare-forces",

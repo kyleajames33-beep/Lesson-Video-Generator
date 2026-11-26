@@ -1,0 +1,13 @@
+# Brief 242: Biology FA1 v02 organelles and transport sprite
+
+17 November 2026.
+
+Narration is unchanged at 5,954 characters, with no em dash. Five new native QA records cover the organelle set, membrane glimpse, lysosome pair and vesicle. All have true alpha, complete subjects and no person, hand, face, printed labels, scales or question answers. The animal-organelles set is1754 by897, membrane1254 square, pair2000 by1400 and vesicle600 square. Native aspects are retained. No artwork was repaired or resampled.
+
+The set presents the nucleus, rough ER with ribosomes, smooth ER without ribosomes, Golgi with buds and mitochondrion as separate teaching crops. The earlier red-fringe repair is confirmed by y11b02-provenance.json: current SHA256 equals its repaired afterSha256,23d7527e38099c04c370fbc573e02a70611c88bf9089cdd8ce6ee065d4ce9354. That record reports15,358 edge-alpha changes with RGB, interior RGBA and geometry unchanged. Current paper/dark views are inspected. No repeat repair is required. The membrane's heads, inward tails and protein crossings read at300px whole width; the detail glimpse must retain its later-video scope.
+
+The lysosome starts approximately one third of mitochondrial length; the after state surrounds fragmented mitochondrial material with a rose sac. Before and after are readable at460px whole width. The before image has a narrow stray reddish stroke in the gap between organelles, around native x550,y710 to790, and7percent left margin versus the approximate8percent target. Both qualifications remain for root. Pair alpha differs, support IoU0.823416586 partly reflects the intended loss of the separate lysosome; no pixel-exact transition or intermediate fusion animation is cleared. The empty vesicle reads as a small lilac membrane bubble, but80px whole canvas produces only about39px painted diameter. Size the painted bubble, not just its600px canvas, when adding coded cargo.
+
+The production-line built/folded/packaged/shipped counters must come from one configured route, with shipped<=packaged<=folded<=built and blocked export shipped0. No actual configured route was supplied or executed here. The membrane model is qualitative; no organelle/lumen process is validated by a generic box. Root owns final question crop/labels, source joins and these coupled counters. The unused animal-cell, endocytosis and leaf-tree alternatives are excluded. No new commission, source edit, playback, listening or whole-lesson clearance.
+
+Evidence: `assets/brief242-bio-fa1-v02-native-qa-17-nov.json`. Reviewed design SHA256: `cc57e5190bef1a2e138f82e35d718af474791b5f00a906fc2090c857118fddb5`. No source edits or whole-lesson clearance.

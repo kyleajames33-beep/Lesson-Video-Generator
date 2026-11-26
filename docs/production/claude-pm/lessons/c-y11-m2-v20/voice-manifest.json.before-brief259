@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m2-v20.md",
+  "sourceSha256": "5a2f78acf8864d47b257e475a0421020bc8b59dfb841d64148b84d55b845823d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Here's the flask of marble chips in acid, joined to a gas syringe. In the mass-balance practical, we let the carbon dioxide escape and weighed what was lost. This time, we catch it. The flask holds zero point three zero zero grams of marble chips, taken as calcium carbonate, in twenty millilitres of one mole per litre hydrochloric acid, which is plenty of acid. So, quick prediction. With twice the mass of chips, would the final gas volume be the same, double, or half?",
+      "audioFile": "public/audio/chem-y11-m2-v20/hook-prediction.wav"
+    },
+    {
+      "id": "volume-counts-gas",
+      "text": "Double. The chips run out first, so they decide how much carbon dioxide forms. Twice the chips gives twice the moles of gas, and at the same temperature and pressure, twice the moles fills twice the volume. That's why a gas volume can measure a reaction. It counts the moles of gas the reaction made.",
+      "audioFile": "public/audio/chem-y11-m2-v20/volume-counts-gas.wav"
+    },
+    {
+      "id": "set-up",
+      "text": "Here's the set-up. Pour the acid into the flask, add the chips, and push the bung in straight away, then start the timer. A gas syringe is better than collecting over water, because carbon dioxide dissolves in water. And even though the first gas pushed into the syringe is air from the flask, every millilitre of carbon dioxide made pushes one millilitre along, so the reading still equals the volume of gas made.",
+      "audioFile": "public/audio/chem-y11-m2-v20/set-up.wav"
+    },
+    {
+      "id": "progress-curve",
+      "text": "Now read the volume every thirty seconds. At first the plunger moves fast, then more slowly, and after about four and a half minutes it stops, at seventy-one millilitres. That flat line, with no chips left in plenty of acid, means the reaction has finished. The curve also shows progress, meaning how much has reacted so far. One carbonate gives one carbon dioxide, so at sixty seconds, with forty-five of the seventy-one millilitres collected, about sixty-three percent of the carbonate has reacted.",
+      "audioFile": "public/audio/chem-y11-m2-v20/progress-curve.wav"
+    },
+    {
+      "id": "final-reading",
+      "text": "Why does it slow down? The chips get smaller and the acid becomes less concentrated, so there are fewer reacting collisions each second. You'll study reaction rates later in the course. Before the final reading, there's one more thing. The reaction warms the gas a little, and warm gas takes up more room, so wait until the flask is back at room temperature. Then record the room's temperature and pressure, twenty-one point zero degrees and a hundred and one point three kilopascals.",
+      "audioFile": "public/audio/chem-y11-m2-v20/final-reading.wav"
+    },
+    {
+      "id": "measured-conditions",
+      "text": "So which conditions do you use? This gas was measured at twenty-one degrees and a hundred and one point three kilopascals. That's neither of the data-sheet conditions, so neither molar volume is exact. Twenty-four point seven nine would be about three percent out. And twenty-two point seven one would say more carbonate reacted than we put in, which is impossible. So use P V equals n R T, with the conditions you actually measured. If the room had been exactly twenty-five degrees and a hundred kilopascals, twenty-four point seven nine would be right, and there'd be nothing to correct.",
+      "audioFile": "public/audio/chem-y11-m2-v20/measured-conditions.wav"
+    },
+    {
+      "id": "volume-to-mass",
+      "text": "Here's the calculation. First, the moles of carbon dioxide. n equals P V over R T, so a hundred and one point three, times zero point zero seven one zero litres, over eight point three one four times two ninety-four point one five. That's two point nine four times ten to the minus three moles. Next, the ratio. In the balanced equation, one calcium carbonate gives one carbon dioxide, so the moles of carbonate are the same. Finally, the mass. Times a hundred point zero nine gives zero point two nine four grams.",
+      "audioFile": "public/audio/chem-y11-m2-v20/volume-to-mass.wav"
+    },
+    {
+      "id": "how-close",
+      "text": "So the gas accounts for zero point two nine four grams of the zero point three zero zero grams of chips, about ninety-eight percent. The small shortfall makes sense. A little carbon dioxide dissolves in the acid, just as in the mass-balance practical, and a little escapes before the bung goes in. Both make the volume too low. To improve it, hold the chips in a small tube inside the sealed flask and tip them in, and check that the plunger slides freely.",
+      "audioFile": "public/audio/chem-y11-m2-v20/how-close.wav"
+    },
+    {
+      "id": "gas-route",
+      "text": "So here's the route for any gas question. Conditions first, then known to moles, ratio, unknown. Read the temperature and pressure, turn the known amount into moles, use the balanced equation's ratio, then turn those moles into whatever's asked for, a mass or a volume.",
+      "audioFile": "public/audio/chem-y11-m2-v20/gas-route.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Aluminium reacts with excess hydrochloric acid. Two A l plus six H C l makes two A l C l three plus three H two. Zero point zero five four zero grams of aluminium reacts completely. Calculate the volume of hydrogen gas produced, measured at twenty-five degrees and a hundred kilopascals. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v20/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Aluminium is zero point zero five four zero over twenty-six point nine eight, two point zero zero times ten to the minus three moles. The ratio is two to three, so hydrogen is three point zero zero times ten to the minus three moles. At the data-sheet conditions, that's seventy-four point four millilitres. Forty-nine point six means the ratio was skipped.",
+      "audioFile": "public/audio/chem-y11-m2-v20/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. With a catalyst, hydrogen peroxide decomposes. Two H two O two makes two H two O plus O two. Forty-eight point zero millilitres of oxygen is collected at twenty point zero degrees and a hundred and one point zero kilopascals. Calculate the moles of hydrogen peroxide that decomposed. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m2-v20/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Use n equals P V over R T, with two ninety-three point one five kelvin and zero point zero four eight zero litres. That gives one point nine nine times ten to the minus three moles of oxygen. Two peroxide give one oxygen, so double it, three point nine eight times ten to the minus three. Using twenty-four point seven nine at twenty degrees gives three point eight seven, the classic slip.",
+      "audioFile": "public/audio/chem-y11-m2-v20/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So a gas volume measures a reaction because it counts the moles of gas made. Its growth over time shows how far the reaction has gone, and its final value, with the measured temperature and pressure and the balanced ratio, tells you how much reacted. That's the end of Module 2. But how did we know the carbon dioxide was a new substance at all? Open a bottle of sparkling water, and it fizzes too. Which observations are evidence that new substances formed?",
+      "audioFile": "public/audio/chem-y11-m2-v20/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m2-v20/key-notes.wav"
+    }
+  ]
+}

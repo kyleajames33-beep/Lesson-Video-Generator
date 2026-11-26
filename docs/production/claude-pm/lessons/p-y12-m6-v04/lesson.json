@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "abe92071914b2954ddf7fea3a6be332d0cfba3b7ca147a92c55171db94f6dd36",
+  "sourceDesignSha256": "f8a43bd57b4cc71d3103d2ab78b7c7c1531ede301904e1130264e68319cae13e",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Here's our electron beam, curving inside a magnetic field, without speeding up or slowing down. But a magnetic field doesn't always push. Put a proton in the same field, sitting still. Then fire it along the field lines. Then fire it across them. Which of these feel a force? Make your prediction."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Make your prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "when-force",
@@ -39,7 +52,7 @@
       "id": "size",
       "title": "how big is the force?",
       "voiceover": {
-        "text": "How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular, which is v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all."
+        "text": "How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular. Cos is close, so the part across the field, opposite theta, takes sine. It's v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all."
       },
       "durationInFrames": 1,
       "holdSeconds": 0,

@@ -1,0 +1,171 @@
+{
+  "brief": 242,
+  "lesson": "bio-y11-fa2-v29",
+  "sourceSha256": "1b05f41ac243a225d32fe3ad3807c1c0290a2a0a8d17b21a536b60d08fa5a999",
+  "narrationCharacters": 5645,
+  "contacts": [
+    "work/brief242/fa2-v29-18-nov/contacts-paper.jpg",
+    "work/brief242/fa2-v29-18-nov/contacts-black.jpg",
+    "work/brief242/fa2-v29-18-nov/contacts-white.jpg"
+  ],
+  "assets": {
+    "m7-chicken-pasta-tray": {
+      "source": "public/assets/biology/m7-chicken-pasta-tray-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "77040026c366f4428b2738454229d3df7f120f89ffc06279739b8f80765a889d"
+    },
+    "m8-pancreas": {
+      "source": "public/assets/biology/m8-pancreas-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "200132237b9b0d3f819f5f018e499114c51eaa5057c9585e60b8af413cb2708e"
+    },
+    "m8-pancreatic-islet": {
+      "source": "public/assets/biology/m8-pancreatic-islet-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "d518c2a2f9c78cacaea50d38bd295ee7df6b0495c3747f3a48d92813c1904289"
+    },
+    "m8-muscle-cell-transporters-inside": {
+      "source": "public/assets/biology/m8-muscle-cell-transporters-inside-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "3d4f709dafbfdce40a11142fec62353ae3914cc172f1439acdc99a4c30c6dd46"
+    },
+    "m8-muscle-cell-transporters-membrane": {
+      "source": "public/assets/biology/m8-muscle-cell-transporters-membrane-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "33bbe8fdbb54fce6e6e7d8e59f67792a893f4d7f315e24101bd116532aaa13ec"
+    },
+    "m8-liver": {
+      "source": "public/assets/biology/m8-liver-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "2621591db0251e363e21cf69af930c5ff2a271715476931000248e368aba94fd"
+    },
+    "m8-liver-cell-glycogen-full": {
+      "source": "public/assets/biology/m8-liver-cell-glycogen-full-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "03d4ad8a52d93c0311d99b35d4d72c7db7745cacabd5dbcd2b7e9f04a7dabca1"
+    },
+    "m8-liver-cell-glycogen-low": {
+      "source": "public/assets/biology/m8-liver-cell-glycogen-low-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "dccde2f9e9c69b90c291b35d12fbb9d6998856875fe78d8d2915e07b00950515"
+    },
+    "m8-skeletal-muscle": {
+      "source": "public/assets/biology/m8-skeletal-muscle-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "980019312e7969ab7513294ff662a7e349c4d4c33899c145339f747616cce462"
+    },
+    "m8-skin-cold": {
+      "source": "public/assets/biology/m8-skin-cold-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "965abb619624e19d084743372d0beac5f78fab0edaed5e422e13e4c2bb0d7b73"
+    },
+    "m8-skin-warm": {
+      "source": "public/assets/biology/m8-skin-warm-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "4718ae974963efc554043b09b7b84ac429cb5f0d00212fc5863a42f48bd98e59"
+    },
+    "m8-kidney-adrenal": {
+      "source": "public/assets/biology/m8-kidney-adrenal-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "0986e70b306c724964b1c3f06f38b018a1febb445e81642e8f7be211bb099030"
+    }
+  },
+  "pairs": {
+    "m8-muscle-cell-transporters-inside": {
+      "compareTo": "m8-muscle-cell-transporters-membrane",
+      "sameCanvas": true,
+      "alphaIoU": 0.9902395647132711,
+      "evidence": "work/brief242/fa2-v29-18-nov/m8-muscle-cell-transporters-inside-midpoint.jpg"
+    },
+    "m8-liver-cell-glycogen-full": {
+      "compareTo": "m8-liver-cell-glycogen-low",
+      "sameCanvas": true,
+      "alphaIoU": 0.9935518466979251,
+      "evidence": "work/brief242/fa2-v29-18-nov/m8-liver-cell-glycogen-full-midpoint.jpg"
+    }
+  }
+}

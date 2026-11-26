@@ -1,0 +1,69 @@
+{
+  "brief": 248,
+  "lesson": "e03",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-385a5e8a-e84f-47d1-8e56-21516b3a3a2b.png",
+      "sha256": "bb4f7107d302cdbe560d260d5c3e5743bdf41ceb6ca6dd0d2fd04c85f438da27",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        17,
+        518,
+        1430,
+        568
+      ],
+      "marginFractions": [
+        0.011740331491712707,
+        0.47697974217311234,
+        0.012430939226519336,
+        0.47697974217311234
+      ],
+      "evidence": [
+        "work/brief248/e03-ribbon-length-native-paper.jpg",
+        "work/brief248/e03-ribbon-length-native-dark.jpg",
+        "work/brief248/e03-ribbon-length-native-white.jpg",
+        "work/brief248/e03-ribbon-length-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-ribbon-length-v1.png",
+      "path": "public/assets/maths/ma11-ribbon-length-v1.png",
+      "brief": 248,
+      "lesson": "e03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        4000,
+        300
+      ],
+      "qa": {
+        "result": "qualified: illustrative30mm width; square ends, even width and right-crop behaviour pass",
+        "observations": [
+          "No single-axis stretching; shorten by crop from right.",
+          "QA trims transparent vertical padding for visibility, preserving complete native width. Asset unchanged."
+        ],
+        "evidence": [
+          "work/brief248/e03-ribbon-crop-paper.jpg",
+          "work/brief248/e03-ribbon-crop-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-ribbon-length-v1.json"
+    }
+  ],
+  "result": "Red ribbon delivered at native1448x1086 with large transparent vertical padding. Square end positionsx19and1428 give1409px/m. Width varies41..42px over30samples; flat, straight and even red. Right crops at half, quarter and1cm preserve width. Qualified width: about30mm at1m length versus brief about25mm.1500px QA is3.6%above native; public PNG is unchanged. Paper/dark alpha checks pass.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/e03-generation.json",
+    "work/brief248/e03-ribbon-geometry.json",
+    "work/brief248/qa-ribbon.py",
+    "work/brief248/e03-ribbon-crop-paper.jpg",
+    "work/brief248/e03-ribbon-crop-dark.jpg"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v10.md",
+  "sourceSha256": "597a0077bb407d264beedc593f98d8aaaa10f1236e5813a1fd61296cb119c4a6",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's a coil connected to a galvanometer, a sensitive meter whose needle can swing either way from zero. A bar magnet sits still beside the coil, and the needle reads zero. Now think about pushing the magnet into the coil. Which swings the needle further, a slow push or a fast one? Make your prediction. A slow push gives a small swing. When the magnet stops inside the coil, the needle drops back to zero. A fast push gives a much bigger swing. And pulling it out swings the needle the other way. So the needle only moves while something is changing.",
+      "audioFile": "public/audio/phys-y12-m6-v10/hook.wav"
+    },
+    {
+      "id": "changing-flux",
+      "text": "Here's what's going on. As the magnet comes closer, more of its field passes through the coil, so the flux through the coil changes. A changing flux pushes charges around the coil. That push is called an induced emf, short for electromotive force. Despite the name, it isn't a force. It's the energy given to each coulomb of charge that goes around, measured in volts, just like a voltage. Because the circuit is closed, the emf drives a current, and the needle swings. When the magnet stops, the flux stops changing, so the emf drops to zero, even though plenty of flux still passes through the coil.",
+      "audioFile": "public/audio/phys-y12-m6-v10/changing-flux.wav"
+    },
+    {
+      "id": "flux-linkage",
+      "text": "Now give the coil twice as many turns. The same magnet, pushed at the same speed, gives twice the emf. Each turn has the same flux through it, and each turn adds its own emf, like cells joined in series. So what really matters is the flux through one turn, times the number of turns. That's called the flux linkage, N times phi. Flux is what passes through one turn. Flux linkage counts it for every turn.",
+      "audioFile": "public/audio/phys-y12-m6-v10/flux-linkage.wav"
+    },
+    {
+      "id": "faraday-law",
+      "text": "Put those ideas together, and you get Faraday's law. The induced emf is minus N, times the change in flux, divided by the time the change takes. Epsilon equals minus N delta phi over delta t. A bigger change, more turns, or a shorter time, all give a bigger emf. The minus sign tells us which way the emf pushes, and that's next video's job. And one weber per second is one volt.",
+      "audioFile": "public/audio/phys-y12-m6-v10/faraday-law.wav"
+    },
+    {
+      "id": "graph",
+      "text": "A graph shows this clearly. Here's the flux linkage in a coil over time. It rises steadily to zero point zero six zero webers in zero point zero two zero seconds. That's a gradient of three point zero webers per second, so the emf is three point zero volts. Then it stays flat for a while. A flat line has zero gradient, so the emf is zero, even though the linkage is large. Finally it falls by zero point zero eight zero webers in just zero point zero one zero seconds. That's steeper, so the emf is bigger, eight point zero volts, and in the opposite direction. The emf is set by how steep the graph is, not by how high it is.",
+      "audioFile": "public/audio/phys-y12-m6-v10/graph.wav"
+    },
+    {
+      "id": "worked-example",
+      "text": "Here's a calculation. A coil of two hundred turns, with an area of five point zero times ten to the minus three square metres, sits at right angles to a field of zero point four zero tesla. First, the flux through each turn is B A, two point zero times ten to the minus three webers. Now the field is reduced to zero in zero point two zero seconds, so the change in flux is minus two point zero times ten to the minus three webers. The emf is minus two hundred, times that change, over zero point two zero. That's two point zero volts. Make the same change ten times faster, in zero point zero two zero seconds, and the emf is ten times bigger, twenty volts.",
+      "audioFile": "public/audio/phys-y12-m6-v10/worked-example.wav"
+    },
+    {
+      "id": "sliding-rod",
+      "text": "A magnet isn't the only way. Here's a metal rod sliding along two rails, in a field going into the screen. The rod and the rails make a closed loop. As the rod slides, the loop gets bigger, so the flux through it grows. Say the field is zero point five zero tesla, the rod is twenty centimetres long, and it slides at two point zero metres per second. Every second, it sweeps out zero point two zero times two point zero, which is zero point four zero square metres. So the flux grows by zero point five zero times zero point four zero, zero point two zero webers every second. That's an emf of zero point two zero volts. Stop the rod, and the emf vanishes.",
+      "audioFile": "public/audio/phys-y12-m6-v10/sliding-rod.wav"
+    },
+    {
+      "id": "what-changes",
+      "text": "So here's the answer. An emf is induced whenever the flux linkage of a circuit changes. Move a magnet or a coil, so the field through it changes. Change the current in a nearby electromagnet. Change the area, like the sliding rod. Or turn the coil, which changes the angle. No change, no emf, however strong the field. And remember, the emf is there even if the circuit is broken. A current only flows when the circuit is closed. Here's a way to remember it. No change, no emf. Faster change, bigger emf.",
+      "audioFile": "public/audio/phys-y12-m6-v10/what-changes.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A coil of fifty turns sits in a magnetic field. The flux through each turn rises from two point zero times ten to the minus three webers to six point zero times ten to the minus three webers in zero point one zero seconds, and then stays at that value. Calculate the average emf while the flux is rising, and state the emf after it stops changing. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v10/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The change in flux is four point zero times ten to the minus three webers. Times fifty turns, over zero point one zero seconds, gives two point zero volts. Once the flux is constant, there's no change, so the emf is zero, even though the flux is large. The classic slip is using the final flux instead of the change, which gives three point zero volts. Faraday's law needs the change.",
+      "audioFile": "public/audio/phys-y12-m6-v10/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A metal rod twenty-five centimetres long slides at four point zero metres per second along two parallel rails, in a uniform magnetic field of zero point three zero tesla at right angles to the rails. Calculate the emf induced in the circuit, and state the emf after the rod stops. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v10/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Each second, the rod sweeps out zero point two five times four point zero, one point zero square metre. So the flux changes by zero point three zero webers every second, and the emf is zero point three zero volts. Once the rod stops, the area stops changing, so the emf is zero. The slip is thinking the emf stays because the field is still there. A field alone does nothing.",
+      "audioFile": "public/audio/phys-y12-m6-v10/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So a changing flux makes an emf, and in a closed circuit, a current. But which way does that current flow? Push the north pole in, and the current could go round the coil one way, or the other way. One of those choices would break the law of conservation of energy. Which one?",
+      "audioFile": "public/audio/phys-y12-m6-v10/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v10/key-notes.wav"
+    }
+  ]
+}

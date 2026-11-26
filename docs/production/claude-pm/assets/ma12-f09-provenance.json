@@ -1,0 +1,179 @@
+{
+  "brief": 240,
+  "assets": [
+    {
+      "name": "ma12-used-hatchback-v1.png",
+      "path": "public/assets/maths/ma12-used-hatchback-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f232f243-992c-4a14-aee8-0dc97637ae6c.png",
+      "designs": [
+        "f09"
+      ],
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "requestedSize": [
+        2400,
+        1200
+      ],
+      "sha256": "d1f978f4b66f9e035f1e9bafcf45eba5aa61c6bc56b9548621cc0926e3143af2",
+      "alphaBox": [
+        0,
+        25,
+        1663,
+        871
+      ],
+      "alpha32Box": [
+        264,
+        184,
+        1491,
+        750
+      ],
+      "approxBasePoint": [
+        877.5,
+        749
+      ],
+      "topY": 184,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundLine": [
+        [
+          427,
+          743
+        ],
+        [
+          1196,
+          749
+        ]
+      ],
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.1488162344983089,
+        0.20744081172491544,
+        0.15952649379932357,
+        0.1544532130777903
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f09.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    },
+    {
+      "name": "ma12-loan-statement-v1.png",
+      "path": "public/assets/maths/ma12-loan-statement-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-62b74d31-9572-4e56-a293-c4bcadc58144.png",
+      "designs": [
+        "f09"
+      ],
+      "nativeSize": [
+        1070,
+        1470
+      ],
+      "requestedSize": [
+        1600,
+        2200
+      ],
+      "sha256": "c82d0ff0a8b908a246067178d7fd990354bd47db46faa84f8438aec7f409e91c",
+      "alphaBox": [
+        0,
+        2,
+        985,
+        1460
+      ],
+      "alpha32Box": [
+        144,
+        223,
+        924,
+        1258
+      ],
+      "approxBasePoint": [
+        534.0,
+        1257
+      ],
+      "topY": 223,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "headerRect": [
+        176,
+        270,
+        892,
+        365
+      ],
+      "fieldRows": [
+        [
+          177,
+          416,
+          560,
+          449
+        ],
+        [
+          177,
+          466,
+          560,
+          498
+        ],
+        [
+          177,
+          517,
+          560,
+          550
+        ],
+        [
+          177,
+          569,
+          560,
+          600
+        ]
+      ],
+      "fieldDividerX": 305,
+      "tableRect": [
+        171,
+        667,
+        899,
+        1178
+      ],
+      "columnLines": [
+        171,
+        304,
+        422,
+        540,
+        657,
+        775,
+        899
+      ],
+      "rowLines": [
+        667,
+        730,
+        794,
+        858,
+        923,
+        987,
+        1050,
+        1114,
+        1178
+      ],
+      "profileFinding": "Table count is6columns8rows. First column about133px versus118px other columns, so exact equal spacing does not pass. Code must use measured lines.",
+      "anchorUncertaintyPx": 4,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Table count is6columns8rows. First column about133px versus118px other columns, so exact equal spacing does not pass. Code must use measured lines."
+      ],
+      "meaningfulMarginFractions": [
+        0.13457943925233645,
+        0.15170068027210884,
+        0.13644859813084112,
+        0.14421768707482993
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-f09.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    }
+  ],
+  "note": "Native aspect preserved; source review findings retained; no speech or render"
+}

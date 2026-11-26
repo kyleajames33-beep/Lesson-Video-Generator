@@ -1,0 +1,158 @@
+{
+  "id": "phys-y12-m6-v11",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "6a080974492432fd41c9dd8ee9d5ef6e2b60e47de184372a9c4c7ed282dfcc40",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (pull it in, or push it back?)",
+      "voiceover": {
+        "text": "Here's that question. The north pole is pushed towards the coil, and a current is induced. It can only flow one of two ways round the coil. Either way, the coil becomes a small electromagnet, with a north end and a south end. One way, the end nearest the magnet becomes a south pole, and pulls the magnet in. The other way, it becomes a north pole, and pushes the magnet back. Which does nature choose? Make your prediction. It pushes back, every time. But why?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "what-if",
+      "title": "what if it pulled the magnet in?",
+      "voiceover": {
+        "text": "Try the other choice first. Suppose the coil pulled the magnet in. Give the magnet a tiny nudge, and the coil pulls it a little faster. A faster magnet changes the flux faster, so the current grows, and the pull gets stronger. The magnet would speed itself up, while the current heats the coil. Kinetic energy and heat would both keep growing, from nothing. That breaks the law of conservation of energy, so it can't happen."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "pay-with-work",
+      "title": "so it pushes back, and you pay",
+      "voiceover": {
+        "text": "So the coil must push back. To keep the magnet moving in, something has to keep pushing it, doing work against that repulsion. That work is where the electrical energy comes from. It flows round the circuit as a current, and ends up as heat in the coil's resistance. Mechanical work in, electrical energy, then heat out. The books balance."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "lenz-law",
+      "title": "Lenz's law",
+      "voiceover": {
+        "text": "This is Lenz's law. The induced current flows in the direction that makes its own magnetic field oppose the change in flux that caused it. Here, the flux to the right is increasing, so the coil's own field points to the left, against the increase. Notice that it opposes the change in flux, not the magnet's field itself. That's what the minus sign in Faraday's law means. The induced emf always opposes the change."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "four-steps",
+      "title": "four steps to the current direction",
+      "voiceover": {
+        "text": "Now let's find the current direction, in four steps. One, which way does the magnet's field go through the coil? To the right, away from the north pole. Two, is the flux increasing or decreasing? Increasing, as the magnet gets closer. Three, the induced field must oppose that increase, so it points left. Four, use the right-hand grip rule for a coil. Curl the fingers the way the current flows, and the thumb points along the field inside. For a field pointing left, towards the magnet, the current flows anticlockwise, seen from the magnet's side. And the coil's left end becomes a north pole, facing the magnet's north pole. Like poles repel, just as we found."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "stop-and-pull",
+      "title": "stop, then pull it out",
+      "voiceover": {
+        "text": "Stop the magnet, and the flux stops changing. No emf, no current, no force. Now pull the magnet back out. The field still points right, but now the flux is decreasing. So the induced field points right as well, propping up the flux that's falling. The current flips to clockwise, seen from the magnet, and the coil's near end becomes a south pole. It attracts the magnet, pulling against its escape. Pushing in, the coil repels. Pulling out, it attracts. Either way, it fights the change."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "evidence",
+      "title": "the evidence: who pays?",
+      "voiceover": {
+        "text": "Here's a neat test. Break the circuit, so no current can flow. There's still an emf, but with no current, the coil makes no field, so there's no push back. The magnet moves in freely. Close the circuit again, and you have to push harder, because now you're supplying the electrical energy. Now drop a magnet, north pole first, right through a coil standing on its end. As it falls in, the coil's top end becomes a north pole, pushing up on the falling north pole. As it leaves, the flux is falling, so the current reverses, and the coil's bottom end becomes a north pole, pulling up on the magnet's south end. Either way, the coil pushes up, so we'd expect the magnet to fall a little more slowly than through an open coil. Some of the energy that would have become kinetic energy becomes heat in the coil instead. Later on, the same idea brakes moving metal without touching it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the direction. Coming in, it pushes back. Going away, it pulls back. It works for either pole, and whether the magnet or the coil does the moving. The coil always resists the change, so you always pay for the electrical energy with work."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The south pole of a bar magnet is pulled away from a conducting loop, along the loop's axis. State the direction of the induced current, as seen from the magnet's side. Then state whether the loop attracts or repels the magnet, and explain why. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Near a south pole, the field points into the pole, so through the loop it points towards the magnet. Pulling away makes that flux decrease, so the induced field points towards the magnet as well. Seen from the magnet, that's anticlockwise. The loop's near face becomes a north pole, so it attracts the south pole, opposing its escape. The classic slip is saying the loop always repels."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student claims that the induced current in a coil could just as well flow the other way, so that the coil attracts an approaching magnet. Explain, using the law of conservation of energy, why this cannot happen. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "If the coil attracted the magnet, the magnet would speed up by itself, inducing more and more current and heat. Kinetic energy and heat would both grow with no energy input, which breaks conservation of energy. So the coil must repel, and the work done pushing against it supplies the electrical energy. The slip is answering, because a coil always repels a magnet. It doesn't. A receding magnet is attracted."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the induced current always opposes the change in flux, and the energy it carries comes from the work you do. In this video, the change came from a moving magnet. But a magnet isn't the only way to make a changing field. A second coil, with a changing current in it, can do the same job, without moving, and without touching. How can one coil induce an emf in another?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

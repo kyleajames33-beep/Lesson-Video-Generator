@@ -1,0 +1,138 @@
+{
+  "design": "phys-y12-m7-v04",
+  "sourceSha256": "a0cbb31ce0b04a4f67288f529920eb0cce7092764bbdb41de4619b64f94951bd",
+  "new": [
+    {
+      "key": "star-cool-red",
+      "name": "y12p-star-cool-red-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-65c49f4f-3810-4ef2-827b-06b92717e252.png",
+      "sha256": "59eabe8096edd1f981c0f93c65647e3151c1d74841b439872b0b8e134430c491",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        25,
+        0,
+        1253,
+        1224
+      ],
+      "visibleBoundsAt16": [
+        74,
+        88,
+        1153,
+        1166
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.059,
+        0.0702,
+        0.0805,
+        0.0702
+      ],
+      "anchors": {
+        "discCentreApprox": [
+          614,
+          627
+        ],
+        "discRadiusApprox": 539,
+        "tolerancePixels": 3
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/star-cool-red.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-star-cool-red-v1.png",
+      "qualification": "Same1254x1254 canvas and essentially same disc diameter/position as the existing Sun reference. Reference itself has about6% visible left margin; preserving its size/position conflicts with8% on every side. Differences are approximately1px at native scale. No claim of literal8% margin or identical texture pixels."
+    },
+    {
+      "key": "star-hot-blue",
+      "name": "y12p-star-hot-blue-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-06b00283-9a39-4a38-b94a-f4b6a73aa2be.png",
+      "sha256": "f35ff4a4b4fec69780c9a097a4888942ecdac736cf5fab22dc0ca0aaf339e3c0",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        0,
+        39,
+        1234,
+        1222
+      ],
+      "visibleBoundsAt16": [
+        73,
+        88,
+        1154,
+        1167
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.0582,
+        0.0702,
+        0.0797,
+        0.0694
+      ],
+      "anchors": {
+        "discCentreApprox": [
+          613,
+          627
+        ],
+        "discRadiusApprox": 540,
+        "tolerancePixels": 3
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/star-hot-blue.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-star-hot-blue-v1.png",
+      "qualification": "Same1254x1254 canvas and essentially same disc diameter/position as the existing Sun reference. Reference itself has about6% visible left margin; preserving its size/position conflicts with8% on every side. Differences are approximately1px at native scale. No claim of literal8% margin or identical texture pixels."
+    }
+  ],
+  "reuse": [
+    {
+      "reference": "phys-y11-galaxy-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-galaxy-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-sun-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sun-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-star-cool-red-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-star-cool-red-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-star-hot-blue-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-star-hot-blue-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "nativeAspectRatioPreserved": true,
+  "newImagesTool": "image_gen.imagegen",
+  "humanListening": "not applicable to static art; pending for lesson",
+  "builtMotion": "pending",
+  "conditionalFilament": "Existing phys-y11-filament-lamp-v1.png has true varying alpha0..254 and a clean visible composite; no replacement requested.",
+  "optionalPolariser": "Root permitted coded discs as fallback; optional painted mount not generated."
+}

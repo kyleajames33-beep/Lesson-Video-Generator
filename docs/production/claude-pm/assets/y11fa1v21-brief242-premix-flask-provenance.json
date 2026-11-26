@@ -1,0 +1,72 @@
+{
+  "id": "y11-flask-disc-tube-v1",
+  "brief": 242,
+  "lesson": "bio-y11-fa1-v21",
+  "file": "public/assets/biology/y11-flask-disc-tube-v1.png",
+  "sha256": "cb0c6634756197e469c37130a9184aba2b7999e659fd0f24823aefb05b6f9fd3",
+  "nativeSize": [
+    1254,
+    1254
+  ],
+  "requestedSize": [
+    1400,
+    1400
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    288,
+    127,
+    964,
+    1093
+  ],
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-b148adeb-5250-4fb0-98cf-6a81acf49f06.png",
+  "reference": "public/assets/biology/y11-gas-syringe-rig-v1.png",
+  "method": "Built-in image generation with rig appearance reference. PNG copied unchanged. Python used only for QA composites and measurements.",
+  "anchors": {
+    "smallTubeBase": [
+      728,
+      1019
+    ],
+    "smallTubeMouth": [
+      724,
+      435
+    ],
+    "liquidSurface": [
+      [
+        340,
+        876
+      ],
+      [
+        910,
+        876
+      ]
+    ],
+    "flaskMouthCentre": [
+      625,
+      157
+    ],
+    "flaskBaseCentre": [
+      627,
+      1055
+    ]
+  },
+  "prompt": "Create one new matching production biology plate, y11-flask-disc-tube-v1, on a square 1400 by 1400 canvas if available. Use ONLY the conical flask from the reference as the appearance reference: same clear borosilicate glass, fine dark blue-grey ink edges, softly painted realism, gentle upper-left light, straight-on side view and same flask shape/proportions. Flask ALONE, complete and centred with at least eight percent transparent margin on every side. No outer beaker, water bath, syringe, tubing, stand, bung or cork. Neck OPEN. Flask about one-fifth full of clear colourless liquid. Absolutely NO potato discs in the liquid. INSIDE the flask a separate slender glass test tube rests upright against the right inner wall, with its open mouth well ABOVE the liquid surface and its base at the flask bottom. Exactly FIVE small cream potato discs are stacked INSIDE that small tube, kept completely isolated from the surrounding liquid. They must be visible through the clear tube and flask. This is a before-mixing apparatus illustration. No bubbles, reaction, foam, flames, labels, markings, graduations, letters, numerals, arrows, people, hands, faces or background. True transparent PNG alpha, no external glow, white matte, halo, ground or cast shadow. Keep natural translucent glass highlights INSIDE the apparatus only. All parts fit intact on the canvas, never stretch.",
+  "qa": {
+    "result": "static pass with native-size and registration limits",
+    "observations": [
+      "Exactly five discs inside the small tube; none loose in the surrounding liquid. Tube mouth above liquid and flask neck open. No bung or running reaction.",
+      "Actual native paper and dark composites inspected. Clear edges, no external fringe, halo, people, labels or printed question data. Internal pale glass highlights are part of the apparatus.",
+      "All margins exceed eight percent at alpha above one. Returned 1254-square canvas differs from requested 1400-square; use native aspect and uniform scaling.",
+      "Same visual treatment and flask form as rig, but exact scale and silhouette are not pixel-registered. Check the swap to the running rig in the assembled scene."
+    ],
+    "evidence": [
+      "work/brief242/flask-disc-tube-native-paper.jpg",
+      "work/brief242/flask-disc-tube-native-dark.jpg",
+      "work/brief242/flask-disc-tube-native-white.jpg"
+    ]
+  },
+  "wholeLessonClearance": false
+}

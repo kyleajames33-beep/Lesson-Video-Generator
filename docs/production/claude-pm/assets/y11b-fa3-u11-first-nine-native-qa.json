@@ -1,0 +1,236 @@
+[
+  {
+    "id": "y11-green-turtle-swimming-v1",
+    "file": "public/assets/biology/y11-green-turtle-swimming-v1.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "6617760dec22a5f14f9007fa79461810b5b855ef48041310775d70aacb8e7895",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaAbove1": [
+      154,
+      177,
+      1384,
+      846
+    ],
+    "result": "alpha QA pass; root hold remains",
+    "observation": "Actual paper and dark composites show fine pale shell/scute outlines, not a broad external yellow glow. No backing, people, labels or question data. Root currently uses the shearwater fallback; this static evidence does not silently override that decision.",
+    "evidence": [
+      "work\\brief242\\u11-y11-green-turtle-swimming-v1-paper.jpg",
+      "work\\brief242\\u11-y11-green-turtle-swimming-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "y11-counting-tray-v1",
+    "file": "public/assets/biology/y11-counting-tray-v1.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "sha256": "894c34902d6c447d1934b4d9316845706ecb35a7bcf12e00f46b4c196552a484",
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaAbove1": [
+      47,
+      144,
+      1474,
+      880
+    ],
+    "result": "alpha QA pass; specified v2 still outstanding",
+    "observation": "Actual paper and dark composites show a crisp empty tray with fine dark outer contour, not a broad pale halo. Interior white paint belongs to the tray. The design explicitly holds v1 out and requests v2; root can accept this evidence or retain the repair request. Do not substitute it into the scene without that decision.",
+    "evidence": [
+      "work\\brief242\\u11-y11-counting-tray-v1-paper.jpg",
+      "work\\brief242\\u11-y11-counting-tray-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "m5x-bead-bag-v1",
+    "file": "public/assets/biology/m5x-bead-bag-v1.png",
+    "size": [
+      2000,
+      2000
+    ],
+    "sha256": "855498b3200021c571478bcb4ffd1466b93b7c86c600d6ff68b9d0a09ffdcef5",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      455,
+      283,
+      1747,
+      1716
+    ],
+    "result": "content repair required; v2 delivered below",
+    "observation": "Actual composites have no visible broad yellow fringe, but the nine loose beads include five red marked beads before marking happens. The source crop fallback remains valid until the bag-alone v2 is integrated.",
+    "evidence": [
+      "work\\brief242\\u11-m5x-bead-bag-v1-paper.jpg",
+      "work\\brief242\\u11-m5x-bead-bag-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "m5x-bead-red-v1",
+    "file": "public/assets/biology/m5x-bead-red-v1.png",
+    "size": [
+      2000,
+      2000
+    ],
+    "sha256": "bdad413a580db3e617191263c99d5ad645fb3a3950a9244c5d419bdd0d00494c",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      357,
+      357,
+      1643,
+      1643
+    ],
+    "result": "static pass",
+    "observation": "One red painted bead, dark outline, transparent surroundings; no external red glow visible on actual composites. No data or labels. Keep native aspect and repeat uniformly.",
+    "evidence": [
+      "work\\brief242\\u11-m5x-bead-red-v1-paper.jpg",
+      "work\\brief242\\u11-m5x-bead-red-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "y11-saltmarsh-snail-v1",
+    "file": "public/assets/biology/y11-saltmarsh-snail-v1.png",
+    "size": [
+      1341,
+      1173
+    ],
+    "sha256": "ddc0e1074a96b443b7d288c72ab9649249dfcc3ac7ce15a317e911df68135b2a",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      138,
+      265,
+      1266,
+      866
+    ],
+    "result": "fail intended organism; remain held",
+    "observation": "A large globe-shaped banded shell, broad foot and long eye stalks read as the garden-snail type already rejected by root, not the requested saltmarsh snail. Transparency itself is clean. Keep the estuary fallback in v32; no unsupported species identification was approved.",
+    "evidence": [
+      "work\\brief242\\u11-y11-saltmarsh-snail-v1-paper.jpg",
+      "work\\brief242\\u11-y11-saltmarsh-snail-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "y11-rocky-shore-v1",
+    "file": "public/assets/biology/y11-rocky-shore-v1.png",
+    "size": [
+      1049,
+      1499
+    ],
+    "sha256": "36dc720bfc28b231cd5429c1e5de82a9d13924937e32680d98149c4a8ba9136a",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      53,
+      225,
+      993,
+      1377
+    ],
+    "result": "fail requested composition",
+    "observation": "Actual paper and dark composites confirm a split above/below-water view with conspicuous underwater light shafts and caustic patterns. These are painted inside the water, not merely an alpha-display artefact. The requested bare sloping intertidal rock face with sea only at the bottom is not delivered. No source fallback exists; root repair/acceptance remains required. Outer edge is irregular but no broad external glow is visible.",
+    "evidence": [
+      "work\\brief242\\u11-y11-rocky-shore-v1-paper.jpg",
+      "work\\brief242\\u11-y11-rocky-shore-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "y11-turf-patchy-topdown-v1",
+    "file": "public/assets/biology/y11-turf-patchy-topdown-v1.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "e2a9c632f4d8472836db44d30ffd6f4d74a19d8af6668636b38cb214bc107661",
+    "alphaRange": [
+      255,
+      255
+    ],
+    "alphaAbove1": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "result": "fail white border",
+    "observation": "Opaque white frame about 42 pixels wide is visible on the dark composite. Central top-down patchy grass and soil are useful, but the frame fails the clean transparent-edge plate standard.",
+    "evidence": [
+      "work\\brief242\\u11-y11-turf-patchy-topdown-v1-paper.jpg",
+      "work\\brief242\\u11-y11-turf-patchy-topdown-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "y11-turf-dense-topdown-v1",
+    "file": "public/assets/biology/y11-turf-dense-topdown-v1.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "sha256": "4b33ea714da4d3261324c9f4b9c11927103c532ee4f74268e6d89a9f57d33f5c",
+    "alphaRange": [
+      255,
+      255
+    ],
+    "alphaAbove1": [
+      0,
+      0,
+      1254,
+      1254
+    ],
+    "result": "fail white border",
+    "observation": "Opaque white frame about 42 pixels wide is visible on the dark composite. Central top-down dense grass is useful, but the frame fails the clean transparent-edge plate standard.",
+    "evidence": [
+      "work\\brief242\\u11-y11-turf-dense-topdown-v1-paper.jpg",
+      "work\\brief242\\u11-y11-turf-dense-topdown-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  },
+  {
+    "id": "y11-creek-bank-zones-v1",
+    "file": "public/assets/biology/y11-creek-bank-zones-v1.png",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "0c29bbec4b8db97695032cbb2603242ffcd42474d8005b6e002f3d0c35eaed7c",
+    "alphaRange": [
+      255,
+      255
+    ],
+    "alphaAbove1": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "result": "opaque full-scene treatment confirmed; not a failed object cutout",
+    "observation": "The file is fully opaque, but FA3 v23 explicitly specifies an opaque scene and expands it to fill the frame. Keep as that native-aspect full-scene landscape. It does not qualify as an isolated transparent vignette; any use as a floating cutout needs a separate repair. This corrects the overly broad transparency failure recorded earlier.",
+    "evidence": [
+      "work\\brief242\\u11-y11-creek-bank-zones-v1-paper.jpg",
+      "work\\brief242\\u11-y11-creek-bank-zones-v1-dark.jpg"
+    ],
+    "scope": "Static plate only; no scene motion or whole-lesson approval"
+  }
+]

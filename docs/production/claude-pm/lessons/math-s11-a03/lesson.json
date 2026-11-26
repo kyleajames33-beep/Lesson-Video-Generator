@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-a03",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "51117e1b393e82d2fb12bd12083111182a4ed599f282173be632d959636f75c5",
+  "scenes": [
+    {
+      "id": "hook-cube-and-jug",
+      "title": "hook: how much does a little cube hold?",
+      "voiceover": {
+        "text": "Water comes in two kinds of unit. A box's volume is in cubic centimetres or cubic metres. But the water you drink, or pay for, is in millilitres, litres and kilolitres. Volume is how much space something takes up. Capacity is how much a container holds. They measure the same space, in different units. You pay for water by the kilolitre, but a pool builder measures the pool in metres, so you need a bridge between the two. So how many little one centimetre cubes of water would fill this jug? And how do cubic centimetres and cubic metres become millilitres, litres and kilolitres?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "litre-cube",
+      "title": "a cube of a litre",
+      "voiceover": {
+        "text": "Here's the key fact. A millilitre is defined as the space inside a one centimetre cube. So one cubic centimetre is exactly one millilitre. Now build a bigger cube, ten centimetres on each side. A row along the bottom holds ten of the little cubes, a layer holds a hundred, and ten layers hold a thousand. That's a thousand cubic centimetres, which is a thousand millilitres, and that's one litre. So a box ten centimetres on each side holds exactly a litre of water, about what's in a carton of milk. You've seen this bridge before, maybe without noticing. A scooter can have a hundred and twenty-five cc engine. The cc means cubic centimetres, so that's a hundred and twenty-five millilitres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fish-tank",
+      "title": "the fish tank",
+      "voiceover": {
+        "text": "Let's use it. A fish tank is sixty centimetres long, thirty wide and forty high. All three are in centimetres, so they match. If the height had been given as nought point four metres, you'd change it to forty centimetres first. Its volume is sixty times thirty times forty, seventy-two thousand cubic centimetres. Every cubic centimetre is a millilitre, so it holds seventy-two thousand millilitres. A litre is a thousand millilitres, so divide by a thousand. The tank holds seventy-two litres. Dividing by a hundred instead, and saying seven hundred and twenty litres, is the slip. That would need ten tanks' worth of water."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "kilolitre-cube",
+      "title": "a cubic metre is a kilolitre",
+      "voiceover": {
+        "text": "Now go up one size. A cube one metre on each side. Each edge is ten of our litre cubes long. So it's ten by ten by ten litre cubes, a thousand litres. One cubic metre holds a thousand litres, and a thousand litres is called a kilolitre. That's a box you could sit in, and it holds as much as a thousand cartons of milk. So every cubic metre is a kilolitre. That makes big containers easy. A cubic metre count is a kilolitre count, with the same number. Remember the five kilolitre rainwater tank? It holds five cubic metres, the same as a box two and a half metres long, two metres wide and one metre high."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "backyard-pool",
+      "title": "filling a backyard pool",
+      "voiceover": {
+        "text": "A backyard pool is eight metres long, four metres wide, and one point five metres deep everywhere. All three are in metres, so multiply. Eight times four times one point five is forty-eight cubic metres. Every cubic metre is a kilolitre, so it holds forty-eight kilolitres. That's forty-eight thousand litres. Remember the water bill, about two dollars seventy a kilolitre? Prices change, so this is an example. Filling the pool costs forty-eight times two dollars seventy, a hundred and twenty-nine dollars sixty. And with a garden hose running at twenty litres a minute, forty-eight thousand litres would take twenty-four hundred minutes. That's forty hours, nearly two days of running the hose."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "megalitres",
+      "title": "megalitres",
+      "voiceover": {
+        "text": "For really big amounts, a thousand kilolitres is a megalitre, a million litres. Our backyard pool is forty-eight kilolitres, so it's nought point nought four eight of a megalitre. An Olympic-sized pool is fifty metres by twenty-five metres. Say it's two metres deep all over. That's twenty-five hundred cubic metres, twenty-five hundred kilolitres, or two and a half megalitres, more than fifty of our backyard pools. And the twelve megalitre farm dam from earlier holds twelve thousand cubic metres. So the whole bridge reads like this. Cubic centimetres are millilitres, a thousand of them make a litre, and cubic metres are kilolitres, with a thousand kilolitres in a megalitre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the picture to remember. A one centimetre cube holds a millilitre. In between, a ten centimetre cube holds a litre. And a one metre cube holds a thousand litres, a kilolitre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A box is fifty centimetres long, twenty centimetres wide and fifteen centimetres high. How many litres does it hold? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Fifty times twenty times fifteen is fifteen thousand cubic centimetres. That's fifteen thousand millilitres, and divided by a thousand, fifteen litres. Calling fifteen thousand cubic centimetres fifteen thousand litres is the slip. A cubic centimetre is a millilitre, not a litre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A rectangular water tank is two metres long, one point five metres wide and one point two metres high. Find its capacity in kilolitres and in litres. Then, a hose fills it at twenty litres per minute. How many hours does it take to fill? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Two times one point five times one point two is three point six cubic metres, so it holds three point six kilolitres, or thirty-six hundred litres. At twenty litres a minute, that's a hundred and eighty minutes, which is three hours. Writing three point six cubic metres as three point six litres is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So kilo means a thousand, and mega means a million. But they're just the start. Your phone uses the same prefixes, and some much bigger ones. This one says two hundred and fifty-six gigabytes. What does giga mean, and how do we write numbers that big, or that small? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

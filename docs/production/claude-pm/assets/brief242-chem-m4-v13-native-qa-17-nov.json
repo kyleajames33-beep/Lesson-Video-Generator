@@ -1,0 +1,43 @@
+[
+  {
+    "file": "public/assets/chemistry/p01-bunsen-unlit-v2.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      643,
+      421,
+      1358,
+      1729
+    ],
+    "clearMarginFractionAbove1": [
+      0.3215,
+      0.2105,
+      0.321,
+      0.1355
+    ],
+    "evidence": [
+      "work/brief242/p01-bunsen-unlit-v2-native-paper.jpg",
+      "work/brief242/p01-bunsen-unlit-v2-native-dark.jpg"
+    ],
+    "id": "p01-bunsen-unlit-v2-brief242-native-qa",
+    "brief": 242,
+    "sha256": "ec6fdd2b1832788b5c896cbef70dc437efb761b35e1dbb2ed8616e0532d4c932",
+    "qa": {
+      "result": "static matched-hardware pair pass; playback pending",
+      "observations": [
+        "All RGBA changes relative to p01 lit-v2 lie inside flame box [880,140,1120,455]. No hardware change outside it.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/p01-bunsen-unlit-v2-native-paper.jpg",
+        "work/brief242/p01-bunsen-unlit-v2-native-dark.jpg"
+      ]
+    }
+  }
+]

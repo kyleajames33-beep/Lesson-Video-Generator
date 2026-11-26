@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "13b0c0d5207b7930e79e4a8251d59d3ce281e7b712e1115c5436678beb294406",
+  "sourceDesignSha256": "2acdf71583cfe8e2e8b95f5fb4646bcdf41f6addd3dc4ef1716860702d537013",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Here are the two plates we ended on last time. The top plate is positive, the bottom one negative, and there's a voltage across them. A proton between them accelerates steadily, like a dropped ball. So here's the puzzle. Double the voltage, and what happens to its acceleration? Keep the voltage, but pull the plates twice as far apart. Or swap the proton for an electron. Make your predictions now."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Make your predictions now.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your predictions now.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "uniform-field",

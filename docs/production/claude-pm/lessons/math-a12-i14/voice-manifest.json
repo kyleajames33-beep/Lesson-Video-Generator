@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i14.md",
+  "sourceSha256": "a96c245217259579764a63ec567b9eccf190787a212d7872ef6efeb2b086ea28",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here, with a robot vacuum at one end of a hallway. Its displacement, x centimetres from where it starts, is t cubed minus nine t squared plus twenty-four t, after t seconds. Watch it move. It heads along the hallway, stops, backs up a little, stops again, then speeds off. At two and a half seconds, its acceleration turns out to be negative. So is it slowing down?",
+      "audioFile": "public/audio/math-a12-i14/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Let's find out. Displacement is position measured from the starting point, and it's negative on the left. Velocity is how fast displacement changes, so it's the gradient of the displacement graph: v equals d x by d t. Differentiate, and v is three t squared minus eighteen t plus twenty-four, which factors to three, t minus two, t minus four. So the robot is at rest at two seconds and at four seconds, where the graph is flat. In between, v is negative, and the robot moves left. Speed is the size of the velocity, without its sign.",
+      "audioFile": "public/audio/math-a12-i14/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Acceleration is how fast the velocity changes. So it's the derivative of velocity, which is the second derivative of displacement. We write it as d two x by d t squared, or as x with two dots on top, said x double dot. Here, x double dot is six t minus eighteen, in centimetres per second, per second. It's negative before three seconds, and positive after. At two seconds the robot is at rest, but its acceleration is minus six, so it's about to start moving left.",
+      "audioFile": "public/audio/math-a12-i14/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now the hook. At two and a half seconds, v is minus nine quarters, and the acceleration is minus three. The velocity is already negative, and a negative acceleration pushes it further below zero, so the speed grows, from two and a quarter centimetres per second towards three. The robot is speeding up, even though its acceleration is negative. Compare one second. There, v is nine, a is minus twelve, and the robot is slowing down as it heads for rest. So when velocity and acceleration have the same sign, it speeds up. Opposite signs, it slows down.",
+      "audioFile": "public/audio/math-a12-i14/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Velocity is a rate, so last video's idea works here too. Integrating velocity over an interval gives the change in displacement. From zero to six seconds, that's x of six minus x of zero, which is thirty-six centimetres. But the robot didn't just travel thirty-six centimetres. It went right twenty, back four, then right another twenty, so it covered forty-four centimetres in total. The integral gives the displacement. For the distance, add the size of each leg, between the rest times.",
+      "audioFile": "public/audio/math-a12-i14/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "We can also go the other way. Here's a different particle. Its acceleration is six t minus four, and it starts at rest at the origin. Find where it is at two seconds. Integrate the acceleration to get velocity: three t squared minus four t, plus a constant. Integration only knows the shape, not where it starts, so we need the starting value. At rest at t equals zero means v is zero there, so the constant is zero. Integrate again: x is t cubed minus two t squared, plus another constant. Starting at the origin makes that zero too. Two steps up need two constants, so we need two starting values.",
+      "audioFile": "public/audio/math-a12-i14/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "At two seconds, x is eight minus eight, which is zero. The particle is back where it started. But it didn't sit still. Its velocity, three t squared minus four t, is negative until four thirds of a second. So first it moves left, to minus thirty-two over twenty-seven of a metre, then it turns and comes back. Its displacement is zero, but it travelled sixty-four over twenty-seven metres.",
+      "audioFile": "public/audio/math-a12-i14/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "The same calculus works for any quantity that changes with time. At a ski field, the snow is one hundred centimetres deep, and it's building up at twenty minus two t centimetres per day. So d D by d t is twenty minus two t. Integrate, and use the start. D is one hundred, plus twenty t, minus t squared. The second derivative is minus two, so the build-up rate drops by two centimetres per day, every day. At day five, for example, d D by d t is ten, so the snow is deepening at ten centimetres per day, but that rise is slowing down. The snow is deepest when the rate is zero, at day ten, with two hundred centimetres. After that, the rate is negative, and the snow melts.",
+      "audioFile": "public/audio/math-a12-i14/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's the chain to remember. Displacement, velocity, acceleration. Differentiate to go down the chain. Integrate to go back up, and pay one starting value for each step up.",
+      "audioFile": "public/audio/math-a12-i14/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. A particle's displacement is x equals t cubed minus six t squared plus nine t metres, for t at least zero, in seconds. Find its acceleration when it's first at rest. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i14/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Velocity is three t squared minus twelve t plus nine, which is three, t minus one, t minus three. It's first at rest at one second. Acceleration is six t minus twelve, so at one second it's minus six metres per second squared. Zero is wrong. Being at rest doesn't mean the acceleration is zero.",
+      "audioFile": "public/audio/math-a12-i14/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. A particle has acceleration x double dot equals four minus six t. It starts at x equals one metre, with velocity two metres per second. Find its displacement when t equals two. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i14/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Integrate once: velocity is four t minus three t squared, plus C, and the start gives C equals two. Integrate again: x is two t squared minus t cubed, plus two t, plus another constant, and starting at one metre makes it one. At t equals two, that's eight minus eight, plus four, plus one, which is five metres. Four metres is wrong. It forgets the starting position.",
+      "audioFile": "public/audio/math-a12-i14/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So displacement, velocity and acceleration are linked by calculus in both directions. That's the end of calculus for now. Next, a new topic. Here are the second particle's positions at one, two, three and four seconds: minus one, zero, nine, thirty-two. A list of numbers in order, like this, is called a sequence. What patterns can a list like this have?",
+      "audioFile": "public/audio/math-a12-i14/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i14/scene-15.wav"
+    }
+  ]
+}

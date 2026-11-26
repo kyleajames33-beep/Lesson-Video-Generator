@@ -1,0 +1,29 @@
+{
+  "design": "phys-y12-m6-v01",
+  "sourceSHA256": "433922b3d4450f8fe4e47049cf1d5fdc3b3b1f49c75bdcc9cc66ca8d541c5469",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v01",
+      "reference": "public/assets/physics/phys-y11-eht-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-eht-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v01",
+      "reference": "public/assets/physics/phys-y11-oil-drop-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-oil-drop-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    }
+  ],
+  "newAssets": [],
+  "heldCRT": null,
+  "reuseCheckEvidence": "work/brief189/reuse-checks.json",
+  "qa": "docs/production/claude-pm/assets/brief189-qa",
+  "status": "source findings, scene integration, exact voiced preview and listening remain open"
+}

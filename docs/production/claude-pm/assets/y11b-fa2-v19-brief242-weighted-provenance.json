@@ -1,0 +1,92 @@
+{
+  "plates": [
+    {
+      "id": "y11-model-artery-tube-weighted-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-model-artery-tube-weighted-v1.png",
+      "sha256": "e1e7853a83243eb0b131408013a297dc0fa6e27d5b8af9b80d576426f7c136cc",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alphaAny": [
+        0,
+        9,
+        1644,
+        855
+      ],
+      "alphaAbove1": [
+        126,
+        188,
+        1642,
+        655
+      ],
+      "original": "y11-model-artery-tube-v1.png",
+      "method": "Built-in image edit, copied unchanged; no pixel cleanup",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-b4275686-96fc-47a9-9b3d-fbb1b4b8f487.png",
+      "prompts": [
+        "Precise registered state edit. Same1774x887canvas, camera, tube endpoints and scale. Add one plain brass200gslotted laboratory mass at middle, no text, no numbers. Artery stays round with slight dent; vein flattens under the same mass. Preserve dark-ink watercolour style, true alpha, no background, surface, shadow, labels, people or hands."
+      ],
+      "qa": {
+        "result": "CONDITIONAL: exact-registration requirement not passed",
+        "observations": [
+          "Same1774x887canvas. Artery retains round bore, vein visibly compresses. No printed mass, labels or questiondata. Native paper and300/600paper/dark previews inspected.",
+          "50percent overlays show regenerated endpoint outlines and brush detail; approximate registration, not exact. Same mass style and apparent dimensions, not proof of pixel-identical mass.",
+          "Alpha1strays extend rawbounds; visiblepaper/dark edges clean."
+        ],
+        "evidence": [
+          "work/brief242/artery-weighted-50pct-registration-paper.png",
+          "work/brief242/artery-weighted-native-paper.png",
+          "work/brief242/weighted-tubes-size-qa.png"
+        ]
+      },
+      "release": "Do not clear weighted-tube voicing condition from these candidates. Root must accept registration or use stated fallback speech cut before voicing. No narration edited."
+    },
+    {
+      "id": "y11-model-vein-tube-weighted-v1",
+      "brief": 242,
+      "file": "public/assets/biology/y11-model-vein-tube-weighted-v1.png",
+      "sha256": "5fb98e457428f2832b8fd8e7ce80b290bf1a4653e66dacd27d2889e11a99bd66",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alphaAny": [
+        23,
+        9,
+        1750,
+        887
+      ],
+      "alphaAbove1": [
+        73,
+        197,
+        1696,
+        819
+      ],
+      "original": "y11-model-vein-tube-flap-v1.png",
+      "method": "Built-in image edit, copied unchanged; no pixel cleanup",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-98ffeb24-2a53-4121-adb1-912fa87abb33.png",
+      "prompts": [
+        "Precise registered state edit. Same1774x887canvas, camera, tube endpoints and scale. Add one plain brass200gslotted laboratory mass at middle, no text, no numbers. Artery stays round with slight dent; vein flattens under the same mass. Preserve dark-ink watercolour style, true alpha, no background, surface, shadow, labels, people or hands.",
+        "Correct central compression only: reduce central clear soft tube height strongly under brass mass, bottom unchanged, original round tube ends fixed. Move same-size brass mass down to rest on compressed top. Paper flap and window deform with tube. Keep1774x887canvas. No new objects or text, truealpha."
+      ],
+      "qa": {
+        "result": "CONDITIONAL: exact-registration requirement not passed",
+        "observations": [
+          "Same1774x887canvas. Artery retains round bore, vein visibly compresses. No printed mass, labels or questiondata. Native paper and300/600paper/dark previews inspected.",
+          "50percent overlays show regenerated endpoint outlines and brush detail; approximate registration, not exact. Same mass style and apparent dimensions, not proof of pixel-identical mass.",
+          "Alpha1strays extend rawbounds; visiblepaper/dark edges clean."
+        ],
+        "evidence": [
+          "work/brief242/vein-weighted-50pct-registration-paper.png",
+          "work/brief242/vein-weighted-native-paper.png",
+          "work/brief242/weighted-tubes-size-qa.png"
+        ]
+      },
+      "release": "Do not clear weighted-tube voicing condition from these candidates. Root must accept registration or use stated fallback speech cut before voicing. No narration edited."
+    }
+  ],
+  "result": "Exact registration remains unresolved; not voice clearance"
+}

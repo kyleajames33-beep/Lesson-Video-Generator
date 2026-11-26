@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-g01.md",
+  "sourceSha256": "a1082575df4176ef891f2154b90bb9fa0de8184d800f28b1a2199e9d130eb6b6",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "This is a practice video. The questions mix the differentiation rules, and none of them tells you which rule to use. Here's the first. A skate bowl's side follows the curve y equals x squared, minus six times the natural log of x. A skateboard rests flat against it where the slope is four. Find the equation of the line along the board. If you differentiate and set the gradient equal to four, you get two x-values, three and minus one. But there's no bowl at all at x equals minus one. So how do you pick the rule for an unseen question, and how do you know which answers to keep?",
+      "audioFile": "public/audio/math-a12-g01/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Start with the rule. Imagine working out the function for one number. The last thing you'd do is the function's outer structure, and that's your best first choice of rule. Here are three functions built from the same two pieces. Which rule does each one need? Think for three seconds. For x cubed times sine x, the last step is a multiplication, so it's the product rule. For sine of x cubed, the last step is taking the sine, so it's the chain rule. For sine x over x cubed, the last step is a division, so it's the quotient rule. Same pieces, three different rules.",
+      "audioFile": "public/audio/math-a12-g01/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Next, the domain. Before you differentiate, write down which x-values the function allows. A log needs its inside to be positive. A fraction needs its bottom to be nonzero. And tan has to stay away from its asymptotes. Why does this matter? An x-value outside the domain has no point on the curve, so there's no tangent there either, even if the algebra produces it. So the domain picks which answers you keep.",
+      "audioFile": "public/audio/math-a12-g01/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Back to the first question. The function is x squared minus six natural log x, so the last step is a subtraction. That means you differentiate each term on its own. The derivative is two x, minus six over x. The domain is x greater than zero, because the natural log needs a positive input. Write that beside the working now, before you solve anything.",
+      "audioFile": "public/audio/math-a12-g01/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "The tangent has gradient four, so set two x minus six over x equal to four. Multiply through by x, and you get x squared minus two x minus three equals zero. That factorises to x minus three, times x plus one, so x is three or minus one. Now check the domain. Minus one isn't greater than zero, so reject it. At x equals three, the height of the curve is nine minus six natural log three. So the tangent is y minus that height equals four, times x minus three. Tidy it up, and the tangent is y equals four x, minus three, minus six natural log three.",
+      "audioFile": "public/audio/math-a12-g01/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Here's a different kind of tangent question. A torch at the origin shines a straight beam that just grazes the curve y equals e to the x. Find the beam's equation. The torch isn't on the curve, so we don't know where the beam touches. A common slip is to use the gradient at x equals zero, which gives the line y equals x. But that line misses the curve completely. Instead, call the touching point x equals a. The point is a, e to the a, and the gradient there is e to the a. So the tangent is y minus e to the a equals e to the a, times x minus a. Now make it pass through the origin. Put x and y equal to zero, divide both sides by minus e to the a, which is never zero, and you get a equals one. So the beam touches at one, e, and its equation is y equals e x.",
+      "audioFile": "public/audio/math-a12-g01/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The last kind works backwards. A coaster track follows y equals x cubed, plus a x squared, plus b x, and its dip is a stationary point at one, minus two. Find a and b. A stationary point tells you two things, so it gives you two equations. The point is on the curve, so f of one equals minus two, which gives a plus b equals minus three. And the curve is flat there, so f prime of one equals zero, which gives two a plus b equals minus three. Subtract the equations, and a is zero, so b is minus three. The curve is x cubed minus three x, the coaster track from the global maximum video. Its derivative is also zero at x equals minus one. The gradient goes from positive to negative there, so minus one, two is a local maximum. Using only one of the two facts is the classic slip, because that one equation leaves a whole family of possible a and b.",
+      "audioFile": "public/audio/math-a12-g01/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's the whole habit in one line. Last step suggests the rule. The domain picks the answers. And if the point you need isn't given, give it a name, like a, and let the condition find it. Try the first part on x times e to the two x. The last step is a multiplication, so it's the product rule, and every x is allowed.",
+      "audioFile": "public/audio/math-a12-g01/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. The curve y equals the natural log of the quantity x squared minus four. Find all the x-values where its tangent has gradient one. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-g01/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "By the chain rule, the derivative is two x over x squared minus four. The domain needs x squared minus four positive, so x is below minus two or above two. Setting the derivative to one gives x squared minus two x minus four equals zero, so x is one plus or minus root five. One minus root five is about minus one point two four, outside the domain. So x equals one plus root five. Keeping both is the mistake.",
+      "audioFile": "public/audio/math-a12-g01/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Find the equation of the tangent to y equals the natural log of x that passes through the point zero, one. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-g01/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Zero, one isn't on the curve, so name the touching point x equals a, with a positive. The tangent is y minus natural log a equals one over a, times x minus a. Put in zero, one: one minus natural log a equals minus one, so natural log a is two, and a is e squared. The tangent is y equals x over e squared, plus one. The gradient at x equals zero can't work, because zero isn't in the domain.",
+      "audioFile": "public/audio/math-a12-g01/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So for any differentiation question, find the last step, write the domain, and then answer what's asked. Next, the same habit for integrals. Here's a rate graph, two t times e to the t squared, from zero to one. A question about it could ask for an amount, a function, an area or an estimate. Which integral fits which?",
+      "audioFile": "public/audio/math-a12-g01/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-g01/scene-14.wav"
+    }
+  ]
+}

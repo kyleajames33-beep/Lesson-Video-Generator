@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "68b428766f2a27e1884058dc05c8ffb848678c874e1fa7dc2ea9cfeee2ee61f7",
+  "scope": "Existing plates checked; no artwork edits.",
+  "nativeQa": "brief242-bio-fa1-v26-native-qa-17-nov.json",
+  "anchors": "y11-chr-anchors.json",
+  "chromosomeRegistration": [
+    {
+      "single": "public/assets/biology/y11-chr-long-pink-single-v1.png",
+      "double": "public/assets/biology/y11-chr-long-pink-double-v1.png",
+      "singleOpaquePixels": 209573,
+      "changedRGBAInsideSingleOpaque": 0,
+      "singleBbox": [
+        512,
+        379,
+        690,
+        1761
+      ],
+      "centromereApprox": [
+        600,
+        1000
+      ],
+      "bandYApprox": [
+        630,
+        1270,
+        1560
+      ],
+      "scope": "Centromere and band positions manually estimated from native view. Exact retained-chromatid result uses current RGBA, including overlap pixels."
+    },
+    {
+      "single": "public/assets/biology/y11-chr-long-teal-single-v1.png",
+      "double": "public/assets/biology/y11-chr-long-teal-double-v1.png",
+      "singleOpaquePixels": 209573,
+      "changedRGBAInsideSingleOpaque": 0,
+      "singleBbox": [
+        512,
+        379,
+        690,
+        1761
+      ],
+      "centromereApprox": [
+        600,
+        1000
+      ],
+      "bandYApprox": [
+        630,
+        1270,
+        1560
+      ],
+      "scope": "Centromere and band positions manually estimated from native view. Exact retained-chromatid result uses current RGBA, including overlap pixels."
+    },
+    {
+      "single": "public/assets/biology/y11-chr-short-pink-single-v1.png",
+      "double": "public/assets/biology/y11-chr-short-pink-double-v1.png",
+      "singleOpaquePixels": 126734,
+      "changedRGBAInsideSingleOpaque": 0,
+      "singleBbox": [
+        518,
+        604,
+        681,
+        1513
+      ],
+      "centromereApprox": [
+        600,
+        1000
+      ],
+      "bandYApprox": [
+        810,
+        1180,
+        1370
+      ],
+      "scope": "Centromere and band positions manually estimated from native view. Exact retained-chromatid result uses current RGBA, including overlap pixels."
+    },
+    {
+      "single": "public/assets/biology/y11-chr-short-teal-single-v1.png",
+      "double": "public/assets/biology/y11-chr-short-teal-double-v1.png",
+      "singleOpaquePixels": 126734,
+      "changedRGBAInsideSingleOpaque": 0,
+      "singleBbox": [
+        518,
+        604,
+        681,
+        1513
+      ],
+      "centromereApprox": [
+        600,
+        1000
+      ],
+      "bandYApprox": [
+        810,
+        1180,
+        1370
+      ],
+      "scope": "Centromere and band positions manually estimated from native view. Exact retained-chromatid result uses current RGBA, including overlap pixels."
+    }
+  ],
+  "skinRegistration": {
+    "totalChangedVisibleRGBA": 84087,
+    "outsideRepairRect": [
+      700,
+      300,
+      1230,
+      570
+    ],
+    "changedVisibleRGBAOutside": 0,
+    "scope": "Static native check outside deliberately generous injury rectangle. Intended repair interior needs visual judgement."
+  },
+  "held": [
+    "m5x-fly-red-eye-v1.png"
+  ],
+  "playback": "pending"
+}

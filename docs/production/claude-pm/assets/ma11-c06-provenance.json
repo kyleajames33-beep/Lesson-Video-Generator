@@ -1,0 +1,65 @@
+{
+  "brief": 248,
+  "lesson": "c06",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-18b8bfa3-8019-4e56-8516-c59c4f2a5a24.png",
+      "sha256": "be3214be505fce99b2dc04d07ae6bb2558a4b9a650b61cdfefee15efca03a2f6",
+      "nativeSize": [
+        1642,
+        958
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        27,
+        1642,
+        958
+      ],
+      "marginFractions": [
+        0.0,
+        0.028183716075156576,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief248/c06-coastal-lookout-native-paper.jpg",
+        "work/brief248/c06-coastal-lookout-native-dark.jpg",
+        "work/brief248/c06-coastal-lookout-native-white.jpg",
+        "work/brief248/c06-coastal-lookout-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-coastal-lookout-v1.png",
+      "path": "public/assets/maths/ma11-coastal-lookout-v1.png",
+      "brief": 248,
+      "lesson": "c06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1400
+      ],
+      "qa": {
+        "result": "passed: platform, clear horizon, alpha and900/full-width checks; measured horizon position recorded",
+        "observations": [
+          "Sky fades to transparency; sea/cliff remain a landscape patch. Horizon varies by2nativepixels."
+        ],
+        "evidence": [
+          "work/brief248/c06-lookout-registration-paper.jpg",
+          "work/brief248/c06-lookout-registration-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-coastal-lookout-v1.json"
+    }
+  ],
+  "result": "Coastal lookout delivered at native1642x958. Timber platform floor attachment428,499 (about3px measurement precision); horizonY561 with samples560..562 across open sea. Horizon sits41.44%up from bottom versus brief about45%. It is unobstructed and straight at900/full width; code can attach the sight line. Paper/dark alpha proofs show faded sky and a solid sea/cliff landscape patch at bottom/sides. No people, text, boats or islands.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c06-generation.json",
+    "work/brief248/c06-lookout-geometry.json"
+  ]
+}

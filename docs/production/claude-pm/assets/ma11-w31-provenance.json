@@ -1,0 +1,65 @@
+{
+  "brief": 247,
+  "lesson": "w31",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-0275b5c0-2457-43c1-b46d-a6f10199e82a.png",
+      "sha256": "673a894f520d526cf34eaf0a367aeab6f22ff5af4ee57874ffbed755af41aa88",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        13,
+        54,
+        1074,
+        1432
+      ],
+      "marginFractions": [
+        0.011970534069981584,
+        0.03729281767955801,
+        0.011049723756906077,
+        0.011049723756906077
+      ],
+      "evidence": [
+        "work/brief247/w31-jellybean-jar-native-paper.jpg",
+        "work/brief247/w31-jellybean-jar-native-dark.jpg",
+        "work/brief247/w31-jellybean-jar-native-white.jpg",
+        "work/brief247/w31-jellybean-jar-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-jellybean-jar-v1.png",
+      "path": "public/assets/maths/ma11-jellybean-jar-v1.png",
+      "brief": 247,
+      "lesson": "w31",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: subject and alpha pass;36px tag text fits narrowly at560tall, fails300tall",
+        "observations": [
+          "300tall is a subject thumbnail check only. When350beans carries reasoning, use readable coded label and sufficient jar size."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w31-jar-paper-dark-paper.jpg",
+          "work/brief247/w15-w31/w31-jar-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-jellybean-jar-v1.json"
+    }
+  ],
+  "result": "Jelly bean jar delivered at native1086x1448. Clear glass, plain metal lid, mixed bean colours filled just below lid, tied blank tag and fading checked tablecloth. Paper/dark and300/560px-tall subject checks pass. Safe tag rectangle315,475 to760,610; at560tall it is172.10x52.21display pixels and fits Arial36 '350 beans' (168px width) with a narrow margin. At300tall the tag is92.20px wide and cannot carry the same36px label; root must retain a larger jar or separate readable coded label when350 is needed. No price or answer painted into PNG.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/w15-w31/w31-generation.json",
+    "work/brief247/w15-w31/w31-jar-qa.json"
+  ]
+}

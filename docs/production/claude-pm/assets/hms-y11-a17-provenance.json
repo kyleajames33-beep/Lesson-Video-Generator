@@ -1,0 +1,40 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m1-v17.md",
+  "assets": [
+    {
+      "name": "hms-water-tap-v1.png",
+      "path": "public/assets/hms/hms-water-tap-v1.png",
+      "requestedDestination": "public/assets/hms/hms-water-tap-v1.png",
+      "status": "accepted",
+      "sha256": "fa5b911894d267d47b294e75cf816f3600bdf136318efeb9f37ce4c211272cbf",
+      "size": [
+        1161,
+        1354
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        47,
+        104,
+        1114,
+        1281
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m1-v17.md",
+      "sourceBriefSha256": "aca85b5bd1a2e2ea307cc67544f8504b43f7452ff59b3d2d77f8a03d075a81b1",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-water-tap-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-1d326ae5-8bcc-4547-ba91-5e6aa2293aeb.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 1. `hms-water-tap-v1.png` (1200 x 1400): a simple outdoor metal tap on a concrete post, clean water running into a plain basin below, a dry landscape softly behind. No people, hands or faces anywhere in the image, no buckets with markings, no text, no flags.\n\nHand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-a17-provenance.json`.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "scope": "HMS Module 1 or Module 2 v01-v08 only"
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

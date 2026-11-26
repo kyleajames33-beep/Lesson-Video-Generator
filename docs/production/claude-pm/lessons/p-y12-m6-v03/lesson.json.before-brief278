@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m6-v03",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "b55524c4e6b30a23f6191dd5c038836a0e6ce5646afe879663dad63be3e9e8bf",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (does double the voltage mean double the speed?)",
+      "voiceover": {
+        "text": "Last time, the electron left the plates a little faster than it went in, so the field gave it energy. An electron gun uses exactly that. Electrons start almost at rest, and a voltage speeds them up into a beam. Here's the puzzle. Double the voltage of the gun. Does the electron come out twice as fast? Make a prediction."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "work-qv",
+      "title": "the work done by the field",
+      "voiceover": {
+        "text": "Start with work. The field pushes the charge with a force, q E. If the charge moves a distance d along the field, the work done on it is q E d. But E is V over d, so the d's cancel, and the work is just q V. That's a big idea. A wider gap makes the field weaker, but the push acts for longer, and the two effects cancel exactly. Only the voltage matters, not the gap."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-ledger",
+      "title": "the energy ledger, with signs",
+      "voiceover": {
+        "text": "Where does that energy come from? From electric potential energy, the energy a charge has because of where it sits in the field. As the field does work, the potential energy falls, and the kinetic energy rises by the same amount. Take a proton moving from the positive plate, at five thousand volts, to the negative plate, at zero. Its charge is positive, and the potential drops by five thousand volts, so its potential energy falls. Now an electron, moving the other way, from zero volts up to five thousand. Its charge is negative, and the potential rises, so again its potential energy falls. Positive charges fall to lower potential, negative charges fall to higher potential, and both speed up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "electronvolt",
+      "title": "the electronvolt",
+      "voiceover": {
+        "text": "There's a handy unit for this. One electronvolt is the energy one elementary charge gains through one volt, one point six oh two times ten to the minus nineteen joules. So an electron accelerated through five thousand volts gains five thousand electronvolts. In joules, that's eight point oh one times ten to the minus sixteen. If a question asks for electronvolts, there's nothing to convert."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "speed-from-rest",
+      "title": "speed from rest",
+      "voiceover": {
+        "text": "Now the speed. Starting from rest, all that work becomes kinetic energy, so a half m v squared equals q V, using the sizes of the charge and the voltage, and v equals the square root of two q V over m. For our electron through five thousand volts, that's the square root of two, times eight point oh one times ten to the minus sixteen joules, over nine point one oh nine times ten to the minus thirty-one kilograms. About four point one nine times ten to the seven metres per second. That's around fourteen percent of the speed of light. Much faster than that, and this simple formula starts to fail, which is a story for a later video."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "doubling",
+      "title": "so, does double the voltage double the speed?",
+      "voiceover": {
+        "text": "So, does doubling the voltage double the speed? Doubling the voltage doubles the kinetic energy. But kinetic energy goes with v squared, so the speed only rises by the square root of two, about one point four one times. Ten thousand volts gives five point nine times ten to the seven, not eight point four. Energy goes with V, and speed goes with the square root of V."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "particle-compare",
+      "title": "same voltage, different particles",
+      "voiceover": {
+        "text": "Now send a proton through the same five thousand volts. It has the same size of charge, so it gains the same energy, five thousand electronvolts. But it's about eighteen hundred times more massive, so it ends up much slower, nine point seven nine times ten to the five metres per second, about forty-three times slower than the electron. Forty-three is the square root of the mass ratio. Same energy, different speeds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "qed-limits",
+      "title": "when you can use q E d",
+      "voiceover": {
+        "text": "So when can you use q E d? Only for the distance moved parallel to the field, in a uniform field. Go back to last video's electron. It travelled five centimetres along the plates, but only four point nine millimetres across them, the way the force pushed it. Sideways motion is at right angles to the force, so it does no work. Lines parallel to the plates are equipotentials, the same potential all along, so moving along them takes no work. The work is q E times four point nine millimetres, about ninety-eight electronvolts, not q E times five centimetres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "initial-energy",
+      "title": "when the starting energy matters",
+      "voiceover": {
+        "text": "And that electron didn't start from rest. It went in with about two thousand five hundred and sixty electronvolts of kinetic energy. So it came out with that, plus the work done, about two thousand six hundred and fifty-six electronvolts, which is three point oh six times ten to the seven metres per second. That's exactly what the components gave us last time. If the field pushes against a charge instead, the charge loses q V. A hundred electronvolt electron, sent against sixty volts, comes out with forty, and if it has less than sixty, it stops and turns back."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "To remember it: energy goes with V, and speed goes with root V. And only the potential difference matters, not the gap, and not the path."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Electrons are accelerated from rest through a potential difference of two point zero kilovolts. Find the kinetic energy of each electron, in electronvolts and in joules, then calculate its final speed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The kinetic energy is two thousand electronvolts, which is three point two oh times ten to the minus sixteen joules. Then v is the square root of two times that energy over the electron's mass, about two point six five times ten to the seven metres per second. The classic slip is forgetting the square root, which leaves you with a speed squared."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A proton and an alpha particle are each accelerated from rest through the same potential difference. The alpha particle has twice the proton's charge, and about four times its mass. Which gains more kinetic energy, and which ends up faster? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The kinetic energy is q V, so the alpha particle, with double the charge, gains twice as much. But it's about four times as massive, so its speed is the square root of two over four, about zero point seven one times the proton's. The proton is faster. The classic slip is saying they gain the same energy, because the voltage is the same."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "next: a field that only steers",
+      "voiceover": {
+        "text": "So an electric field speeds a charge up, because its force can push along the motion, and the energy it gives is q V. Now aim our electron beam into a magnetic field instead. The beam bends, but its speed doesn't change at all. So when does a magnetic field push on a moving charge?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

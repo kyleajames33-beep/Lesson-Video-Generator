@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d06b",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "201c501b4173425000f7fdb446b85ce20a9b9471e3e5265435a9ca47c6dd15ab",
+  "scenes": [
+    {
+      "id": "hook-less-than-four-hours",
+      "title": "hook: less than four hours?",
+      "voiceover": {
+        "text": "How many of the class used their phone for less than four hours, two hundred and forty minutes? The bars to the left of the line hold three, nine and seven students, so the answer is nineteen. That works once. But less than five hours means adding four bars, and less than six means five. There's a way to keep the answers ready, a running total. So how do a cumulative frequency table, histogram and polygon answer how many are below?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cumulative-table",
+      "title": "the cumulative frequency table",
+      "voiceover": {
+        "text": "Take the frequency table from last time, and add a column. Cumulative frequency is a running total of the frequencies. It adds up as you go down. The first class has three. Add the nine, and it's twelve. Add seven, nineteen. Then twenty-four, twenty-seven, twenty-nine, and thirty. You never add more than two numbers at a time. Each number tells you how many students are below the end of that class. Twelve students used less than a hundred and eighty minutes. Nineteen used less than two hundred and forty. And the last running total is thirty, the whole class, which is a handy check that you've added correctly."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cumulative-histogram",
+      "title": "the cumulative frequency histogram",
+      "voiceover": {
+        "text": "We can graph the running totals too. In a cumulative frequency histogram, each bar's height is the running total, not the class's own frequency. It's the same data, just counted differently. So the first bar is three, the next twelve, then nineteen, and so on, up to thirty. Each bar stands on everything before it, so the graph climbs like a staircase. It can stay level, if a class is empty, but it can never go down. The height of the top step is always the total number of values."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cumulative-polygon",
+      "title": "the cumulative frequency polygon",
+      "voiceover": {
+        "text": "The cumulative frequency polygon joins the staircase with a line. Here's the important part. Each running total counts every value below the end of its class, so its point goes at the end of the class, the top right corner of each bar. Not the middle, like last time. Twelve goes at a hundred and eighty. Nineteen goes at two hundred and forty. And the polygon starts at zero, at sixty minutes, because nobody used less than sixty. From there it rises to thirty at four hundred and eighty. Read it like the table. Each point says how many students are below that time. Plot them at the class centres instead, and the line runs half a class too far left, so every reading comes out too high."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "reading-the-polygon",
+      "title": "reading the polygon",
+      "voiceover": {
+        "text": "Now the payoff. To find how many are below a value, go up from that value to the line, then across. Less than three hundred minutes? Up and across gives twenty-four. But exam questions also ask for at least, or more than. The polygon only reads less than, so subtract from the total. At least three hundred minutes is thirty minus twenty-four, six students. And between a hundred and eighty and three hundred? Twenty-four are below three hundred, and twelve are below a hundred and eighty, so twenty-four minus twelve, twelve students. Reading twenty-four as the at least answer is the classic slip. Read first, then decide whether to subtract."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "digital-tools",
+      "title": "with digital tools",
+      "voiceover": {
+        "text": "Everything so far works by hand. Digital tools do the same jobs faster. In a spreadsheet, type the classes and frequencies into two columns. In the first cumulative cell, type equals B two. In the next, equals C two plus B three, the running total so far plus the next frequency. Fill it down, and the whole column appears, ending at thirty. Select the frequencies, insert a column chart, and set the gap between the bars to zero. That's the histogram. A line chart of the cumulative column gives the polygon. A statistics app can start even earlier. Paste in all thirty raw values, set the class width to sixty, and it draws the histogram for you. Menus differ between programs, but the ideas don't, so always check the classes it chose."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Cumulative means keep a running total, and plot it at the end of each class. The polygon reads less than. For at least, subtract from the total."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The battery life of forty phones, in hours, is grouped like this. Ten to under twelve, four phones. Twelve to under fourteen, ten. Fourteen to under sixteen, fourteen. Sixteen to under eighteen, eight. Eighteen to under twenty, four. Write the cumulative frequency column. How many phones lasted less than sixteen hours? And how many lasted at least eighteen hours? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The running totals are four, fourteen, twenty-eight, thirty-six and forty, ending at the total. Less than sixteen hours is the running total at sixteen, twenty-eight. At least eighteen is forty minus thirty-six, four phones. Answering fourteen for less than sixteen is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A cumulative frequency polygon for the five kilometre times of fifty fun-run entrants passes through these points. Twenty minutes, nought. Twenty-five, six. Thirty, twenty-one. Thirty-five, thirty-eight. Forty, forty-seven. And forty-five, fifty. How many took thirty minutes or more? And how many took from thirty to under forty minutes? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Twenty-one took less than thirty minutes, so thirty or more is fifty minus twenty-one, twenty-nine. Forty-seven took less than forty, so from thirty to under forty is forty-seven minus twenty-one, twenty-six. Answering twenty-one for thirty or more is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-choosing-graph",
+      "title": "handoff: choosing a graph",
+      "voiceover": {
+        "text": "Histograms and polygons suit numerical data, like screen time. But some of our survey answers aren't numbers. Here's where our twenty students charge their phones overnight. Bedroom twelve, kitchen five, lounge room two, and other, one. Should that be a histogram, with touching bars? There's no number line under bedroom and kitchen. So which graph suits which kind of data? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

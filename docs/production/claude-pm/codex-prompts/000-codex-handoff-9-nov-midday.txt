@@ -1,0 +1,115 @@
+LESSON VIDEO GENERATOR: NEW CHAT HANDOFF
+Saved 9 November 2026, about 12:38 pm Australia/Sydney.
+
+START HERE
+The repository is C:\lesson-video-generator. The Documents/Codex chat folder is not the repository.
+Read this handoff, then AGENTS.md, REPO-GUIDE.md, the original docs/production/claude-pm/codex-prompts/000-codex-new-session-6-nov-night.md (including Done since this file was first written), and the LAST 500 LINES of docs/production/claude-pm/status.md. Read the current brief and standing rules. Later completion entries supersede earlier progress entries. Do not restart brief196 or redo finished work.
+
+The user wants the unfinished queue continued, with status.md hand-ins after each video/brief and Chemistry wave. They requested this handoff to reduce chat size. They explicitly approved local pixel edits for plate outlines, exact ratios, transparent padding and tile seams when needed. That does not require another attempt on completed or held art.
+
+IMMEDIATE NEXT STEP: AN EXISTING G03 RENDER IS RUNNING
+Brief201, bio-m5-g03, is the sole heavy job. Do not launch another render, fresh still guard, scan or speech job while it runs.
+Command already started ONCE, with RENDER_CONCURRENCY=2:
+  node scripts/render-explainer.mjs Explainer-bio-m5-g03 --confirm --revision=v2
+Log: C:\lesson-video-generator\work\brief201\bio-m5-g03-render-v2.log
+Target: out/explainer/Explainer-bio-m5-g03/Explainer-bio-m5-g03-v2.mp4
+Previous chat's exec session65882 might not be accessible in a new chat. Inspect the existing Windows process and log instead. Actual Node PID4948 and Volta launcher22552 were running at the last check; use current process state rather than assuming stale PIDs.
+At the final handoff check, chunks through frame9299 were complete, about64.8% of14349frames. Re-read the log for current progress. Chunk progress is not a completed or checked master.
+Asset guard passed10paths/15scenes. One Page.bringToFront Target closed warning appeared after early chunks, followed by many successful later chunks. Do not interrupt a progressing render or weaken guards. If it fails, preserve chunks/logs and inspect the cause before retrying. Do not delete existing chunks simply to restart.
+Expected final14349frames at30fps,478.3s. Fresh16-state pre-render comparison was ACTUALLY inspected and matches Claude's approved B+reference.400source/audio files (304audio) and10public assets are frozen. The named6November owner B+exception applies; no A-grade claim.
+Work: work/brief201/bio-m5-g03/nov09-pre-render/
+Contains frozen-before-pre-render.json, frozen-before-render.json, lesson.playback.json, asset report, pre-render-summary.json, pre-render-comparison.jpg, old upload record and live preflight. Do NOT rerun its pre-render or start-g03-render.py.
+
+AFTER G03 RENDER EXITS SUCCESSFULLY
+Prepared helpers exist but HAVE NOT RUN:
+  node work/brief201/check-g03-package.mjs
+  python -X utf8 work/brief201/scan-g03.py
+  python -X utf8 work/brief201/check-g03-fonts.py
+  python -X utf8 work/brief201/compare-g03-captions.py
+  python -X utf8 work/brief201/backup-g03.py
+Run dependent stages in order, one heavy process at a time. Package check verifies source/asset hashes/media and exports exact-playback captions. Scan produces120samples, four boards,16-frame sheet and endpoints. Font check uses those samples. Caption comparison checks unchanged texts. Backup also makes the brief-required work/brief200/bio-m5-g03-v2-sheet.jpg.
+Actually view scan boards/endpoints and rendered/reference comparison. Make a comparison image if needed; no final-MP4 comparison exists yet. Resolve flags by inspection, not source edits. Keep sampling limits explicit.
+Play changed scenes at normal speed through computer use. playback-plan.json is SOURCE-ONLY, not a completed review. Critical events: repair-protein docking/closure75.227s; lost working-copy cell tint/ring84.307s; carrier square160-171s (mother163.567,father164.367); pedigree slide243.287s; question2's10000-dot texture from370.92s; feedback394.733-427.867s; final notes453-478.3s. Judge actual motion, late appearance and overlaps. No every-frame or human-listening claim.
+Create playback record/local build report/package and status checkpoint from actual results. These final G03 records do not exist yet. Then complete its approved YouTube replacement and hand-in. Brief201 is complete only after BOTH videos.
+
+G03 LIVE PREFLIGHT DONE, NO UPLOAD YET
+Old OtPe_zLuGGk,Public/HD. Full title/description/dotpoints match old-upload-record.json. Not kids,not adult-only,AI Yes,English(Australia),Education,auto thumbnail2. Paid-promotion radios both unset. Full advanced settings saved in live-v1-studio-ax.txt/live-v1-preflight.json.
+Public manual Module5playlist PLSRtz9v2ybMg has27entries. G03 is LAST at27 after n_2i_qz3tMs. New upload in same playlist appends; removing old27 should leave new27. Move-to-top/drag should be unnecessary. Verify current order and only substitute G03.
+Publish and verify new master/captions before unlisting old. Remove old playlist entry, unlist old, do not delete. Update current fix-plan link and upload record with replacement annotation; preserve historical evidence.
+
+SECOND VIDEO IN201
+bio-m7-b11 (antibiotics/antivirals), not bio-m6-b11.
+Frozen476source/audio files (340audio); historical metadata/captions and LIVE preflight DONE. Fresh pre-render has NOT run. No v2/new upload exists.
+After G03 heavy checks, use:
+  node work/brief198/pre-render-nov09.mjs bio-m7-b11 work/brief201
+  python -X utf8 work/brief201/finish-pre-render.py bio-m7-b11
+Actually compare fresh sheet to Claude's B+reference before passing/starting v2. Do not overwrite existing frozen-before-pre-render.json. Read quality-fixes/bio-m7-b11-notes.md and201. Watch virus entry/cell strip blocks,HIV stand-in tag,retained sparse first feedback at normal speed.
+Old Qg_caOin2x0,Public/HD/not kids/not adult-only/AI Yes/EnglishAustralia/Education/thumbnail2. IMPORTANT paid promotionNo is explicitly selected. Module7 Public manual playlist PLF46LOS0IuCo has18entries; B11at14 between KX0HhqCsikY and ipZfLvpuNBM. Full settings/order in its nov09-pre-render folder. Re-read current order at replacement.
+
+COMPLETED: DO NOT REDO
+Initial Module8 local renders/builds are finished as recorded in status.md.
+235:Maths d02-d14 review/art and changed-scenes-only re-voicing complete.21named plates delivered (brief headline said22).
+200 FULLY COMPLETE: all three replacements Public/HD with captions/settings and playlist readbacks; old versions Unlisted and removed from playlists:
+  B05 https://youtu.be/XxWrxQQkQWU (old fyvYjlBBRmk),position9.
+  B07 https://youtu.be/PwZNyPBQ3TU (old Z1jPRaPLHYk),position11.
+  B10 https://youtu.be/p16QynMURQE (old71MkKTjXPOU),position14 between Vyr0KetDMwo and wYqgEi0J71g.
+B10master14422frames,480.733333s,48386462bytes,SHA256 3252eb6a32a43db196e149c2a97a662b82c96c366e52c90166eca1772e9fc4f0.409source hashes/16assets match.120picture samples0broken/0blank;120font samples0flags. Boards/sheet/endpoints and sampled native normal-speed review complete,matching B+reference.165unchanged caption texts,154timings corrected from playback; manual captions explicitly published.185files plus reports/publication evidence hash-backed up. Complete record youtube/brief200-b10-replacement-2026-11-09.json; package work/brief200/b10-replacement-package.json. Hand-in already in status.md. B05/B07 records/backups/status also complete.
+
+Physics232-234 COMPLETE:
+232:20Module6designs,0blockers/4shouldfix/0optional. CRT image retry failed400; root25coded fallback accepted. Do not retry CRT.
+233:16Module7designs,0blockers/7shouldfix/2optional. Light sensor delivered/QA recorded. One approved local heater-glow edit was held; DO NOT retry again. Root17coded overlay accepted.
+234:22Module8Revision2designs,0blockers/21shouldfix/1optional. v20decay-as-proof blocker repaired. All individual reports/final-handin.json done.18apparatus entries in192/193manifests now delivered under root17; original PNG hashes/native dimensions unchanged, prior holds historical. Four usage-size cream fringe checks showed no separate fringe, no repaint. Site correction234.1 logged, HTML unchanged.153files backed up. Do not repeat reviews/plates. Integrated motion/human listening/whole-course practical coverage were not certified.
+
+REMAINING REPLACEMENTS AFTER201, IN ORDER
+202:chem-m6-c06,chem-m6-c07
+203:chem-m6-c10,bio-m6-b11
+204:bio-m6-b12,bio-m6-b16
+205:bio-m6-b19,bio-m7-b04
+All eight source graphs frozen; old wave5metadata/caption hashes verified; quality notes read; LIVE settings/languages/playlist preflight saved. Fresh guards/renders/scans/uploads NOT run. Do not recreate freezes.
+Summary work/replacement-later-preparation-nov09.json. Each work/briefNNN/<full-id>/nov09-pre-render contains frozen-before-pre-render.json,old-upload-record.json,live-v1-preflight.json,live-v1-studio-ax.txt,live-v1-languages-ax.txt,live-playlist-before.json.76preflight/reference files backed up, record work/replacement-later-preflight-backup-nov09.json.
+Preserve CURRENT order and preceding NEW replacement IDs, not obsolete IDs:
+  Chemistry Module6 PLWBoqjMWeZi0,32entries:C06at11,C07at12,C10at17.
+  Biology Module6 PLOXPcalkg-iI,23available+1hidden:B11at16,B12at17,B16at20,B19at22.
+  Biology Module7 PLF46LOS0IuCo,18entries:B04at6.
+IMPORTANT bio-m6-b11 LIVE auto thumbnail1; other later videos2. All eight paid-promotion radios unset. AI Yes/EnglishAustralia/Education/not kids/not adult-only. Match saved live settings. No optional new plates needed. No source/narration/scene edits.
+
+SPEECH QUEUE / QUOTA
+238 reviews/art finished:22delivered plates,5held,0pending art. d15-d19 voiced/handed in.71new+4cached=75takes,30678chars,2542.933s,USD.496668,295backed-up files. Do not redo.
+Remaining eligible Maths:i02,i03,i04,i05,i06,i08,i09,i10,i12,i14. Designer-held:i01,i07,i11,i13. Do not voice held designs or regenerate art.
+Runner: node work/brief238/continue-voice-queue.mjs. Skips hand-ins and checks whole-lesson quota. Keep238FIRST after reset,before236. No overlap with render/guard/scan/other voice.
+Last quota:96of99used in owner quota day2026-11-08. Reset7pm Sydney9November. Three remaining requests cannot cover next whole lesson. Do not make quota retries before reset. Check ledger/day helper on resumption,never exceed99.
+
+236:NO NEW SPEECH. All72designs now have source recording inputs/manifests/production briefs/gates,429808chars. Pilot m2-v06 excluded; nine held repair designs excluded until237. Root readiness decision34 accepts older review hashes after repairs. No design/narration edits.
+  wave1:13designs79443chars209scenes
+  wave2:12/70326/217
+  wave3:12/71567/190
+  wave4:12/69390/195
+  wave5:12/73849/220
+  wave6:11/65233/185
+Source hashes/scene sums/no-em-dash/bold-cue order checked. work/brief236/all-wave-preparation-nov09.json,waveN-preparation.json,and per-design source-audit/recording-source-check/recording-gate. All prior pack/audio folders were empty;144backup-state records preserved.531source/preparation files backed up.
+Prepared helpers, SYNTAX CHECKED ONLY, paid workflow NOT RUN:
+  node work/brief236/voice-wave.mjs 1
+  prevoice-file-gate.mjs,validate-voice.mjs,hand-in-voice.mjs,hand-in-wave.mjs
+They enforce238first,prior-wave hand-in,237between2and3,no overlapping heavy jobs,whole-lesson99cap,source/backup hashes,no third scene request,baseline accounting on partial retry,45snotes,caption/measured/cue/audio checks,canonical hand-in/backups. Inspect runtime results; syntax checks are not paid runtime validation. Latest retry-guard addition has its own prevoice-retry-guard-backup.json, preserving old backup.
+Sequence:238eligible,236waves1and2,237,236waves3to6. One wave at a time; status per wave with per-design characters/seconds/measured path/worst gap/cues/captions/listening needs and totals/cost.
+237 NOT STARTED. Run after236wave2. Review nine repaired Module1designs,paint five specified plates/check coin halo,voice eligible repairs as wave7. Read actual brief/root37/38. Pixel-edit approval persists.
+
+HOLDS / EXCLUSIONS
+bio-m6-b04 v2 rendered/checked but HELD for198-B04-CARRIER-COPY-LABEL: s2.tsx193 says 'every gene once' while carrier alleles all twice. No edit/publish/rerender without root/designer resolution. Different from bio-m7-b04 in205.
+199four layouts held,no B+override. Shelved206-212/215 off limits. Queue work/replacement-A-gate-queue.json plus later status authoritative. Do not retry held/rejected art merely because local edits approved.
+
+WORKING RULES
+No agents,current briefs forbid them. No commits/pushes. No design/narration/scene edits. No em dashes in new copy. Preserve old releases/history. One heavy job,concurrency/guards unchanged. Specific briefs/owner approvals override old blanket no-render/no-speech wording for named jobs.
+Python -X utf8. Windows operations stay in PowerShell; verify targets before recursive move/delete. Never print credentials. Do not alter frozen inputs or blindly rerun assert-not-exists helpers.
+Append status hand-ins after each video/brief/wave,with honest limits. G:/My Drive/HSCScience video masters hashes verify local mirror,not individual cloud sync.
+
+COMPUTER USE / YOUTUBE
+Computer use works. Read skill C:/Users/kygs/.codex/plugins/cache/openai-bundled/computer-use/26.1029.61003/skills/computer-use/SKILL.md and current tool docs. New chat discovers fresh bindings; old JS variables do not transfer.
+At handoff only B10new Studio tab remained,https://studio.youtube.com/video/p16QynMURQE/edit,Chrome extension3,Kyleprofile,native window3344958,maximized1280x673. Other agent preflight tabs and VLC closed to free memory. Never automate Codex app. Keep user tabs; close only finished agent-created tabs.
+CUA only for UI. DOM-grounded read-only evaluation allowed,no hidden APIs/fetch publishing. Read file-uploads docs before chooser uploads. Fresh element indexes/screenshots; multiple native screenshot regions require current screenshotId. After final CUA outcome,next call must be completion_summary.
+Approved fix-and-replace process is explicit in201-205/owner6Nov; no repeated permission needed for named videos. Reuse details copies title/full description/playlist/language/remix/category. Explicit not-kids/AIYes; match advanced settings,notably201M7B11paid promotionNo and203M6B11thumbnail1. Wait for checks/HD,then publish new before unlisting old. End screens skipped because final notes fill frame,as original.
+IMPORTANT captions: SRT import/Done during upload can leave a draft. After main publish,Languages > Edit subtitles > Publish; verify explicit English(Australia) subtitles published toast. B10verified this way. Edit button alone is insufficient.
+Keep playlists100%zoom for native drags; fresh screenshot/state after each move. G03last-position replacement should not need move-to-top. Read full order from DOM-grounded a#video-title; assert only old/new substitution and retain unavailable entries.
+Save clear website proof in new chat outputs and embed after publication. Distinguish sampled native observations,human listening and source evidence.
+
+NEXT ACTION IS MONITORING THE EXISTING G03 RENDER, then finish its local checks/native playback/replacement/hand-in,continue201M7B11and202-205,while respecting speech reset and holds.

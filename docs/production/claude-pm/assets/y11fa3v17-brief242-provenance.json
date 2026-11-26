@@ -1,0 +1,63 @@
+{
+  "id": "y11-horse-forefeet-series-v1-brief242-repair",
+  "file": "public/assets/biology/y11-horse-forefeet-series-v1.png",
+  "sha256": "064bd802b1c9386280f8f94008f74d37b3aadaf967cd99d2912a5b3b523a0b45",
+  "brief": 242,
+  "nativeSize": [
+    2172,
+    724
+  ],
+  "originalBackup": "work/brief242/original-y11-horse-forefeet-series-v1-five-toes.png",
+  "originalSha256": "7e97b5d0dce01e1a8185efaa6a208ef94dde3f75d62b83b8ab8cfab92d629067",
+  "alphaAny": [
+    55,
+    17,
+    2037,
+    724
+  ],
+  "alphaAbove1": [
+    291,
+    45,
+    1874,
+    668
+  ],
+  "footCentres": [
+    [
+      574,
+      360
+    ],
+    [
+      920,
+      360
+    ],
+    [
+      1276,
+      360
+    ],
+    [
+      1610,
+      360
+    ]
+  ],
+  "toeCounts": [
+    4,
+    3,
+    3,
+    1
+  ],
+  "thirdFoot": "Two reduced side digits plus main digit",
+  "qa": {
+    "result": "Toe-count repair passes native inspection",
+    "evidence": "work/brief242/horse-fourtoes-native-paper.png",
+    "observations": [
+      "Exactly4distinct terminal toes on leftmost forefoot,3onsecond,3includingreducedsidetoes onthird,1onlast.",
+      "Same2172x724canvas retained as specifically requested in FA3v17 brief. Other three anatomical stages retained; regenerated brush detail not claimed pixel-identical.",
+      "No text,people,arrows or labels. Stone slab accepted by brief. Nativepaper and dark views inspected; no visible fringe onpaper.",
+      "Near-transparent stray pixels extend rawalpha bounds, disclosed; native ratio must be retained."
+    ]
+  },
+  "method": "Built-in targeted image edit of original; original hash-verified backup before replacing requested samefilename",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-5ed1c88f-e175-45bb-903e-118824242217.png",
+  "prompt": "Repair this exact educational fossil illustration on the SAME WIDE2172x724canvas, preserving stone slab, watercolour style and all THREE feet on the RIGHT unchanged. Change ONLY the oldest LEFTMOST forefoot: it currently has FIVE toes, scientifically wrong. It must have EXACTLY FOUR distinct toes with FOUR separate terminal hoof/phalanx tips. Repaint its metacarpal/digit bones as an Eohippus/Hyracotherium FOREFOOT with four functional toes (digits II, III, IV, V), no fifth digit, no thumb, no extra small side tip. Keep a natural four-toed anatomical arrangement, not five toes with one tip hidden; all four toes must visibly run from separate metacarpals to distinct ends. Count exact four on left, exact three on second, three including two reduced side digits on third, one on right. Do not alter the three right-hand skeletons, positions or scale. No labels, numbers, arrows, text, people, faces, shadows or glow. Genuine transparent alpha around slab; clean edges on both pale paper and black. Do not crop slab or toe tips.",
+  "limitation": "Actual scene fit,registration and native playback remain build checks."
+}

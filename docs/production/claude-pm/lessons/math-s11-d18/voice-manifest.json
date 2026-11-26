@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d18.md",
+  "sourceSha256": "faf2478ebbf3b19d7330393324dbaf99c17d7d6051cf968bb18a383b87491369",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-unusual-or-different",
+      "text": "Two puzzles. Our sleep data has one night of just three hours, well below the rest. Is that an outlier, or just a short night? And these travel times to school split into two bunches, with nothing in the middle, and one trip of ninety-five minutes way out on its own. Data often has bunches, empty stretches and lone values, and each one has a story. Our job is to spot them, test them fairly, and explain them. So how do we spot clusters, gaps and outliers, and test an outlier formally?",
+      "audioFile": "public/audio/math-s11-d18/hook-unusual-or-different.wav"
+    },
+    {
+      "id": "clusters-and-gaps",
+      "text": "Start with the travel times. A cluster is a group of values bunched close together. There are two here. One from six to eighteen minutes, and one from forty-two to fifty-five. A gap is a stretch of the number line with no values at all, here from eighteen to forty-two minutes. The syllabus asks you to explain them, in context. The short times are students who walk, ride or get dropped off. The long ones are bus students, because the bus winds through other suburbs first. Nobody takes about half an hour, because students either make a short trip on foot, by bike or by car, or ride the long bus route. There's nothing in between. Two clusters usually mean two groups mixed together, like the bimodal shapes from before.",
+      "audioFile": "public/audio/math-s11-d18/clusters-and-gaps.wav"
+    },
+    {
+      "id": "outliers-informally",
+      "text": "Then the lone value, ninety-five minutes. An outlier is a value well away from the rest of the data. It needs an explanation too. Maybe the bus broke down that day, or the student missed it and waited for the next one. Our sleep data's three hour night looks like an outlier as well, two and a half hours below the next shortest night. Maybe that student flew home late from a trip, or was sick. But looks can fool you. How far away is far enough? We need a fair test, the same for every dataset, so different people reach the same answer.",
+      "audioFile": "public/audio/math-s11-d18/outliers-informally.wav"
+    },
+    {
+      "id": "fences",
+      "text": "Here's the test, built from the box. Take the IQR, the width of the middle half, and multiply it by one and a half. Then step that far out from each quartile. Those cut-offs are called fences. For our sleep, Q one is six and a half, Q three is eight, and the IQR is one and a half. One and a half times one and a half is two point two five. The lower fence is six and a half minus two point two five, four point two five. The upper fence is eight plus two point two five, ten point two five. Any value below the lower fence, or above the upper fence, is an outlier. The three hour night is below four point two five, so it's an outlier. Five and a half isn't, and nothing reaches ten point two five. A common slip is subtracting just one and a half. It's one and a half times the IQR.",
+      "audioFile": "public/audio/math-s11-d18/fences.wav"
+    },
+    {
+      "id": "outlier-box-plot",
+      "text": "Now redraw the box plot, the way most exam box plots show outliers. The box and the median don't change. But the left whisker now stops at five and a half, the furthest value that isn't an outlier. And the three is drawn on its own, as a separate point. A value sitting exactly on a fence doesn't count, by the way. It has to be beyond it. Box plots drawn by apps often do this automatically, which is why the setting matters.",
+      "audioFile": "public/audio/math-s11-d18/outlier-box-plot.wav"
+    },
+    {
+      "id": "deciding-and-limits",
+      "text": "Finding an outlier is the start, not the end. First, check the record. Did someone type three when they meant eight? If it's an error, correct it. If it's genuine, a real short night, keep it, and report it. You can describe the data with it and without it, and we'll see next time how much it changes. What you never do is delete a value just to make the data look tidy. And use your eyes as well as the rule. Run the fences on the travel times, and the upper fence is a hundred and six minutes, so the ninety-five passes. The big gap between the clusters makes the IQR wide. The rule is fair, but it works best when there's one cluster.",
+      "audioFile": "public/audio/math-s11-d18/deciding-and-limits.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. Fences sit one and a half boxes out. The lower fence is Q one minus one and a half IQRs, and the upper fence is Q three plus one and a half IQRs. Outside a fence is an outlier, and you explain it before you decide what to do.",
+      "audioFile": "public/audio/math-s11-d18/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A coffee stall's daily sales over nine days were forty-two, forty-five, forty-seven, forty-eight, fifty, fifty-two, fifty-five, fifty-eight and ninety-six, on the day of a local festival. Use the fences to decide whether ninety-six is an outlier. Then, should it be removed? Explain. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d18/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The median is fifty, Q one is forty-six and Q three is fifty-six point five, so the IQR is ten point five. One and a half times that is fifteen point seven five, so the upper fence is seventy-two point two five. Ninety-six is above it, so it's an outlier. But it's a real festival day, so keep it and report it. Removing it because outliers are always removed is the slip.",
+      "audioFile": "public/audio/math-s11-d18/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A shop sells fourteen phones, priced at a hundred and eighty, two hundred, two twenty, two forty, two fifty, two sixty, then nine fifty, a thousand, ten fifty, eleven hundred, twelve hundred, twelve fifty, thirteen hundred and fourteen hundred dollars. Describe any clusters and gaps, and suggest a reason in context. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d18/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "There are two clusters, a hundred and eighty to two sixty, and nine fifty to fourteen hundred, with a gap from two sixty to nine fifty. The shop sells budget phones and premium phones, and nothing in between. Calling the expensive phones outliers is the slip. Eight phones make a cluster, not an outlier.",
+      "audioFile": "public/audio/math-s11-d18/feedback-2.wav"
+    },
+    {
+      "id": "handoff-effect",
+      "text": "So the three hour night is an outlier, and it's genuine, so we keep it. But how much does it change our results? Here's the sleep data with it, and without it. The boxes look almost the same. Yet the mean, the range and the standard deviation might tell a different story. What changes, and what stays put? That's next.",
+      "audioFile": "public/audio/math-s11-d18/handoff-effect.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d18/key-notes.wav"
+    }
+  ]
+}

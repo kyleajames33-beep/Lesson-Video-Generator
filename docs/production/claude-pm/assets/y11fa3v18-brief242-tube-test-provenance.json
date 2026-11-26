@@ -1,0 +1,66 @@
+{
+  "file": "public/assets/biology/y11-tube-test-kit-v1.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-402a2317-2ad1-446e-ad99-0d02f85c047c.png",
+  "lesson": "bio-y11-fa3-v18",
+  "title": "Biology FA3 v18 tube-test kit",
+  "requestedSize": [
+    2000,
+    1400
+  ],
+  "reportName": "y11b-fa3-v18-upgrade-plate-check.md",
+  "provenanceName": "y11fa3v18-brief242-tube-test-provenance.json",
+  "anchors": {
+    "exposureTubeLinedWallCentre": [
+      954,
+      451
+    ],
+    "holdingTubeTop": [
+      536,
+      91
+    ],
+    "exposureTubeTop": [
+      958,
+      91
+    ],
+    "slideUnitApertureCentre": [
+      600,
+      922
+    ]
+  },
+  "prompt": "New production Year11 biology apparatus plate y11-tube-test-kit-v1. A WHO-style insecticide susceptibility TUBE TEST KIT shown as separate parts, softly painted realism with fine dark ink outlines and transparent clear plastic, gentle upper-left light. Landscape approximately2000x1400. EXACTLY TWO separate clear cylindrical plastic tubes standing upright SIDE BY SIDE, NOT joined. Each about12cm long in implied real proportions, slender, equal size and height. LEFT holding tube has plain CLEAN WHITE filter paper lining its inner cylindrical wall. RIGHT exposure tube has plain PALE CREAM treated filter paper lining its inner cylindrical wall. Each tube has a simple plain off-white base ring and a fine grey MESH SCREEN stretched across its top opening, clear rim. No solid screw cap obscuring mesh. Paper follows side wall; interiors empty of animals and liquids. A single small plain slide-gate transfer unit lies FLAT in front of the tubes as a separate part, a simple off-white rectangular frame with a circular aperture and a thin sliding shutter partly extended. It is not connected between the tubes. Slightly above eye-level three-quarter view lets mesh top and transfer part be visible, while upright parallel tube forms remain clear. Entire kit centred with8percent clear transparent margin on every side. Neutral pale plastic tones with dark ink edges readable on cream paper. No mosquitoes, insects, dots, hands, people, faces, tubes joining each other, liquid, foam, labels, text, letters, scale marks, numbers, colour-coded labels or brands. True transparent PNG alpha, clean edges, no glow, surrounding haze, white matte, floor, cast shadow, backdrop or rectangular background.",
+  "qa": {
+    "result": "static pass with canvas and margin limits",
+    "observations": [
+      "Two separate equal-size upright plastic tubes, white holding lining left and pale-cream exposure lining right, mesh tops, separate flat transfer slide in front. No invented tube connection.",
+      "Native paper and dark composites inspected. Clean outer edges, transparent gap and aperture, no external matte or halo. No animals, labels, people, numbers or question data.",
+      "Returned 1499 by 1049, close to requested 10:7 aspect but smaller than 2000 by 1400. Top margin about three percent and bottom about two percent fall below eight; allow extra scene padding.",
+      "Plain teaching apparatus illustration, not a procedural demonstration or certified kit specification. Code-added mosquitoes, tube labels and actual 420-pixel scene fit remain pending."
+    ],
+    "evidence": [
+      "work/brief242/tube-test-kit-native-paper.jpg",
+      "work/brief242/tube-test-kit-native-dark.jpg",
+      "work/brief242/tube-test-kit-native-white.jpg"
+    ]
+  },
+  "reportText": "Delivered `public/assets/biology/y11-tube-test-kit-v1.png` and sidecar. Two separate upright mesh-topped tubes have plain paper linings: clean white holding tube left, pale-cream exposure tube right. The transfer slide is a separate part in front. No mosquitoes, printed labels, people or invented tube connection.\n\nActual native paper and dark composites pass static alpha QA. Returned 1499 by 1049 is smaller than requested 2000 by 1400. Top and bottom margins need extra scene padding. This illustration does not clear a laboratory procedure or certify dimensions. Code-added mosquitoes, labels and actual scene placement remain pending. Earlier source findings for v18 remain in force.",
+  "statusText": "Delivered y11-tube-test-kit-v1.png, sidecar, provenance and manifest. Two separate mesh-topped lined tubes and separate transfer slide, no mosquitoes or labels. Actual native paper/dark static QA passes; small vertical margins need scene padding. Source findings and final scene checks remain pending.",
+  "id": "y11-tube-test-kit-v1",
+  "brief": 242,
+  "sha256": "1f3c0083676607e46927645c3cd706e59bbb3804754ad0ae5e4b0d86684005ca",
+  "nativeSize": [
+    1499,
+    1049
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    382,
+    30,
+    1110,
+    1032
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false
+}

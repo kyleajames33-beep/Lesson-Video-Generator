@@ -10,3 +10,10 @@ Mechanical inventory reports 5,693 narration characters in 14 scenes, no em dash
 
 
 Source follow-up,11November: Current random-variable lesson05 hook and data table directly verified in Chrome;200rolls38fours confirmed. Previous inaccessible-source reservation is superseded. See work/brief240/source-followups-nov11.md. Existing findings retained.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `32570d72e7bbf13a58fb3670ad9fe9ccb7a79058ebbaf8feabb1753aebcf1f6e`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Zeroopeningbalance/positiverateexplicitbeforeannuitywork. Balanceupdatesonlyatmonthend identifiedasmodel. Roundingupconditionrpositive/goalnotmet retained;live diehandoffsource alreadyconfirmed in source-followups-nov11.md.
+
+Independent recount:5808characters/14scene strings,noem dashes. Changed narration andsource repair notescheckedagainst priorfullreview;unchanged numericalexamples/live-sourcechecksretained. Newboundary/roundingchecks inwork/brief240/root68-f10-f15-edge-calculations.json. Nativeartmeasurementsretained forbuilderfittingunderrootdecision30;root68readytovoice. No speechgeneratedbythisreview. Measuredtiming,builtmotionandhumanlisteningremainpending.

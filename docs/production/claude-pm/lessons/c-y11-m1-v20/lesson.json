@@ -1,0 +1,198 @@
+{
+  "id": "chem-y11-m1-v20",
+  "fps": 30,
+  "subject": "Chemistry",
+  "yearLevel": 11,
+  "sourceDesignSha256": "5ebf85b5ccb10c7b2f416cb6a6ba94016e3fcfbcf8842b258071d629606acd4e",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook: two copper oxides",
+      "voiceover": {
+        "text": "Last time, we built formulas from ion charges. Now let's go the other way, from a formula to a name. Here's why it matters. These two powders are both made of nothing but copper and oxygen. One is red, and one is black. If you asked for copper oxide, which one would you get? A good name has to point to exactly one compound. That's what the naming rules do."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ionic-or-covalent",
+      "title": "first decision: ionic or covalent?",
+      "voiceover": {
+        "text": "These rules come from IUPAC, the International Union of Pure and Applied Chemistry, so chemists everywhere use the same names. The first step is always the same. Look at the elements. A metal with a non-metal, or the ammonium ion, means an ionic compound, made of ions. Only non-metals means a covalent compound, where the atoms share electrons instead. The two kinds are named in different ways."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "binary-ionic",
+      "title": "two-element ionic names",
+      "voiceover": {
+        "text": "Start with the simplest ionic compounds, made of two elements. Name the metal first, unchanged. Then change the ending of the non-metal's name, so chlorine becomes chloride, oxygen becomes oxide, and sulfur becomes sulfide. So N a C l is sodium chloride, and M g O is magnesium oxide. Notice there are no numbers in these names. Sodium and magnesium each form only one ion, so the charges already fix the ratio."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "prediction",
+      "title": "prediction (countdown, 3 seconds)",
+      "voiceover": {
+        "text": "Quick prediction. What's the name of K two O, made from potassium and oxygen? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "stock-numeral",
+      "title": "a numeral for the charge",
+      "voiceover": {
+        "text": "It's potassium oxide. In the naming route we'll use, ionic names don't count ions, because the charges already do that job. But copper can form two different ions, so copper oxide could mean either powder. The fix is a Roman numeral, in brackets after the metal's name, giving the charge on the metal ion. This is called a Stock numeral. It's the metal's charge, also called its oxidation state, and not the number of atoms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "copper-oxides",
+      "title": "which copper oxide is which?",
+      "voiceover": {
+        "text": "To find the numeral, work backwards from the anion, as we did last time. In C u O, one oxide ion is minus two, so the copper is plus two. That's copper two oxide, the black powder. In C u two O, the same minus two is shared between two coppers, so each one is plus one. That's copper one oxide, the red powder. The two in the formula counts the coppers. The one in the name is their charge."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "which-metals",
+      "title": "which metals need a numeral?",
+      "voiceover": {
+        "text": "Which metals need a numeral? Mostly the transition metals, like iron and copper, plus a few others, like lead and tin, that can form more than one ion. So F e C l three is iron three chloride, and F e two O three, the iron oxide in rust, is iron three oxide. A metal with only one charge needs no numeral, so sodium, magnesium and aluminium don't get one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "polyatomic",
+      "title": "polyatomic ions keep their names",
+      "voiceover": {
+        "text": "Next, polyatomic ions. Each one keeps its own name, so you name it as a whole, and never split it into elements. N a two S O four is sodium sulfate. Calcium nitrate is the compound from last time. And when ammonium is the positive ion, it goes first, like a metal, as in ammonium carbonate. Names like sulfate, nitrate and carbonate tell you the ion contains oxygen. So calling sodium sulfate sodium sulfide is a classic slip, because sulfide means sulfur on its own."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "covalent-prefixes",
+      "title": "covalent compounds: count the atoms",
+      "voiceover": {
+        "text": "Now the covalent compounds, made of non-metals only. Here there are no ions, so there are no charges to fix the ratio. Carbon and oxygen, for example, can join as C O, or as C O two. So the name itself must count the atoms, using prefixes. Mono means one, di means two, tri three, tetra four, penta five, and hexa six. C O two is carbon dioxide. C O is carbon monoxide. We drop mono from the first element, so it's not monocarbon monoxide."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "more-covalent",
+      "title": "two more covalent names",
+      "voiceover": {
+        "text": "Two more. S O three is sulfur trioxide. N two O four has two nitrogens and four oxygens, so it's dinitrogen tetroxide. You'll often hear monoxide and tetroxide with a vowel dropped, just to make them easier to say."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "contrast",
+      "title": "the big contrast",
+      "voiceover": {
+        "text": "So here's the big contrast. In an ionic name, a Roman numeral gives the metal's charge. In a covalent name, a prefix gives the number of atoms. You'll also see names like copper dichloride in other books. They count the ions instead, and they're valid IUPAC names too. Here, we use the numeral route. Ionic: name the charge if it can change. Covalent: count the atoms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "run-through",
+      "title": "putting it together",
+      "voiceover": {
+        "text": "Let's run three formulas through the whole method. F e S O four. Iron is a metal, so it's ionic. Sulfate is minus two, so the iron is plus two, which makes it iron two sulfate. P C l five. Phosphorus and chlorine are both non-metals, so it's covalent, and we count the atoms. It's phosphorus pentachloride. Last, A l, bracket O H, close bracket, three. Aluminium is a metal with only one charge, so there's no numeral and no prefix. It's simply aluminium hydroxide."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Give the IUPAC names of P b O two, S F six, and F e two, bracket S O four, close bracket, three. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Lead can form more than one ion. Two oxide ions make minus four, so the lead is plus four, lead four oxide. S F six is two non-metals, so we count the atoms, sulfur hexafluoride. In the last one, three sulfates make minus six, shared by two irons, so each iron is plus three, iron three sulfate. Writing iron two sulfate, because of the two in the formula, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student names C u C l two as copper chloride, and S O three as sulfur oxide. Explain why neither name is good enough, and give a correct name for each. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Copper can form two ions, so copper chloride could mean C u C l or C u C l two. Here, two chlorides make minus two, so the copper is plus two, copper two chloride. Sulfur oxide has the same problem. It could mean S O two or S O three, so the name must count the oxygens. It's sulfur trioxide. Leaving out a charge that can change is the trap."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: why two systems?",
+      "voiceover": {
+        "text": "Notice why we needed two systems at all. Sodium chloride is made of ions, but carbon dioxide is made of atoms that share electrons. So why do some atoms hand electrons over completely, while others share them? It comes down to how strongly each atom pulls on electrons. That's next time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

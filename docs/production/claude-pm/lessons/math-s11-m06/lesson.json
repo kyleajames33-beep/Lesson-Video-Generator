@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-m06",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "dc6711243a5d3af1e5fae5023b1c2644a16b4ae51f56e74222b5e31dfe2d0ce8",
+  "scenes": [
+    {
+      "id": "hook-every-year",
+      "title": "hook: every year after",
+      "voiceover": {
+        "text": "Sixteen thousand six hundred and forty-seven dollars, and the hatchback is yours. But a car keeps costing money every year you own it. Fuel every week. Registration and the green slip every year. Insurance. Servicing, and new tyres now and then. These are its running costs. So is this car cheap to own, or not? You can't tell from the price. Prices change, but the method doesn't. What does a car cost to run each year, and how can a spreadsheet keep track of it?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fuel",
+      "title": "fuel from litres per hundred kilometres",
+      "voiceover": {
+        "text": "Start with fuel, the one that depends on how far you drive. Car makers give fuel use in litres per hundred kilometres. This hatchback uses six point five litres to drive a hundred kilometres. Say you drive twelve thousand kilometres a year. That's a hundred and twenty lots of a hundred kilometres, so twelve thousand times six point five, divided by a hundred, is seven hundred and eighty litres. At about two dollars twenty-five a litre, that's seventeen hundred and fifty-five dollars of fuel a year. The common slip is forgetting to divide by a hundred, which gives seventy-eight thousand litres, enough to fill a swimming pool. The car also loses value each year, which is a real cost too, but this video counts only the money you pay out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "yearly-costs",
+      "title": "the year's costs, per kilometre and per week",
+      "voiceover": {
+        "text": "Now add the costs that come every year, whatever the distance. Registration, three eighty-five, and the green slip, seven eighty, from last time. Comprehensive insurance, sixteen forty. Then maintenance, keeping the car working. Servicing, five forty-eight, and tyres, about three hundred a year, averaged over a set. With the fuel, that's five thousand four hundred and eight dollars a year. That's hard to picture, so share it out. Divided by twelve thousand kilometres, it's about forty-five cents a kilometre. Divided by fifty-two, it's a hundred and four dollars a week. Cost per kilometre is cost divided by distance. Twelve thousand divided by fifty-four oh eight is kilometres per dollar, which isn't what was asked."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "spreadsheet-model",
+      "title": "the model in a spreadsheet",
+      "voiceover": {
+        "text": "Now build it as a model, a sheet where you change an input and every answer updates. Put each input in its own cell: distance in B one, fuel use in B two, the petrol price in B three. The fuel cost in B four is a formula. Equals B one times B two, divided by a hundred, times B three. The yearly costs go in B five to B nine. Then B ten is equals sum of B four to B nine, five thousand four hundred and eight. B eleven is equals B ten divided by B one, the cost per kilometre, and B twelve is equals B ten divided by fifty-two, the cost per week. Don't type five four oh eight into B ten. A typed number never updates, so the moment the petrol price changes, it's quietly wrong. And watch the range. A grand total that's equals sum of B four to B ten counts B ten's total again, so it doubles to ten thousand eight hundred and sixteen. Use B four to B nine, or just equals B ten."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "what-if-distance",
+      "title": "what if you drive more?",
+      "voiceover": {
+        "text": "Here's what a model is for. What if you drive more? Slide the distance up to eighteen thousand kilometres. The fuel goes up, so the yearly cost goes up, to sixty-two hundred and eighty-five dollars fifty. But the cost per kilometre goes down, to about thirty-five cents. Only the fuel grows with distance. Registration, insurance and the rest stay the same, so they're spread over more kilometres. Drive less, and each kilometre costs more. So a cost per kilometre only means something next to the distance it assumes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "buying-plus-running",
+      "title": "buying plus running",
+      "voiceover": {
+        "text": "To see the whole cost of owning the car, buying, running and maintaining it, add the purchase too. Put the drive-away cost, sixteen thousand six hundred and forty-seven, in B fourteen. Then the cost of owning the car for five years is B fourteen plus five times B ten. That's forty-three thousand six hundred and eighty-seven dollars. Over sixty thousand kilometres, about seventy-three cents a kilometre, far more than the windscreen price suggests."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-cars",
+      "title": "two cars over five years",
+      "voiceover": {
+        "text": "That's how to compare two cars fairly. A cheaper car that uses more fuel can end up costing more. Say car A costs eighteen thousand and uses nine litres per hundred kilometres, and car B costs twenty-two thousand but uses only six. Both are driven fifteen thousand kilometres a year. Watch the bars. Car A starts four thousand dollars ahead. But car B saves fuel every single year, and by year five it has caught up. So never compare cars on price alone."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the summary. Put every input in its own cell, and make every total a formula. Fuel is kilometres times litres per hundred, divided by a hundred, times the price. And cost per kilometre is the yearly cost divided by the kilometres driven."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Mia drives twenty thousand kilometres a year, in a car that uses seven point five litres per hundred kilometres. Petrol is two dollars twenty-five a litre. Her other yearly costs are servicing eight twenty, tyres five hundred, registration three eighty, and insurance nine fifty. Find her yearly fuel cost. Then find her total yearly running cost, and the cost per kilometre, in cents, to one decimal place. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Twenty thousand times seven point five, divided by a hundred, is fifteen hundred litres, so the fuel costs thirty-three seventy-five. Her other costs add to twenty-six fifty, so the total is six thousand and twenty-five dollars. Divided by twenty thousand, that's thirty point one cents a kilometre. Dividing twenty thousand by the cost is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Car A costs eighteen thousand dollars and uses nine litres per hundred kilometres. Car B costs twenty-two thousand and uses six. Each is driven ten thousand kilometres a year, with petrol at two dollars twenty-five a litre. Find the cost of buying and fuelling each car for five years. Which is cheaper over five years, and by how much? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Car A's fuel is two thousand and twenty-five a year, so with the purchase, five years cost twenty-eight thousand one hundred and twenty-five. Car B's fuel is thirteen fifty a year, so twenty-eight thousand seven hundred and fifty. Car A is cheaper by six hundred and twenty-five dollars. At this distance, B saves only six seventy-five a year. Picking car B from the video is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-key-notes",
+      "title": "handoff and key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "So the hatchback costs about a hundred and four dollars a week to run. But it's not the only thing that sends you bills. The house does too, for electricity, water and gas. How do you read those bills, and check them? That's next. Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

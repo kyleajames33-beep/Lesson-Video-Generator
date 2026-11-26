@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "e0893f822e61f7a7419f7c3b2ad448ea4a4147999cdf3d15ff51a6e31e93561a",
+  "generatedPlates": [
+    {
+      "file": "public/assets/biology/y11-gonium-colony-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-4b30a396-ae3c-4b70-ac48-cda81cbedff2.png",
+      "sha256": "86c0fcaedcbc02986cf6c88f4444cdbe1e25abd78e34f853555a899be84f0540",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        172,
+        148,
+        1079,
+        1075
+      ],
+      "paintedMargins": [
+        0.1371610845295056,
+        0.11802232854864433,
+        0.13955342902711323,
+        0.14274322169059012
+      ],
+      "method": "Built-in imagegen. Generated native PNG copied unchanged. No production raster edits.",
+      "scope": "Static plate delivery. Actual separation motion remains pending.",
+      "brief": 242,
+      "qa": "Native paper/dark and520px colony checks. No visible halo. Single cell is approximate same scale, not a pixel-exact cutout.",
+      "promptSet": "work/brief242/gonium-prompts-17-nov.json"
+    },
+    {
+      "file": "public/assets/biology/y11-gonium-cell-v1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e233edf5-3052-44af-a7e7-424c95ecaad8.png",
+      "sha256": "f61fef358cb19805daaf29fc92d8cec55f94d026e8d752308403d93b3b9c8019",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        464,
+        590,
+        625,
+        777
+      ],
+      "paintedMargins": [
+        0.3700159489633174,
+        0.4704944178628389,
+        0.5015948963317385,
+        0.3803827751196172
+      ],
+      "method": "Built-in imagegen. Generated native PNG copied unchanged. No production raster edits.",
+      "scope": "Static plate delivery. Actual separation motion remains pending.",
+      "brief": 242,
+      "qa": "Native paper/dark and520px colony checks. No visible halo. Single cell is approximate same scale, not a pixel-exact cutout.",
+      "promptSet": "work/brief242/gonium-prompts-17-nov.json"
+    }
+  ],
+  "diagnostic": {
+    "gonium": {
+      "canvas": [
+        1254,
+        1254
+      ],
+      "cellCentres": [
+        [
+          390,
+          380
+        ],
+        [
+          550,
+          370
+        ],
+        [
+          710,
+          370
+        ],
+        [
+          870,
+          380
+        ],
+        [
+          380,
+          540
+        ],
+        [
+          550,
+          540
+        ],
+        [
+          705,
+          540
+        ],
+        [
+          870,
+          540
+        ],
+        [
+          380,
+          700
+        ],
+        [
+          550,
+          700
+        ],
+        [
+          710,
+          700
+        ],
+        [
+          870,
+          700
+        ],
+        [
+          390,
+          850
+        ],
+        [
+          550,
+          850
+        ],
+        [
+          710,
+          850
+        ],
+        [
+          870,
+          850
+        ]
+      ],
+      "manualGuidePrecisionPixels": 20,
+      "centralCellIndicesZeroBased": [
+        5,
+        6,
+        9,
+        10
+      ],
+      "cellCount": 16,
+      "peripheralCount": 12,
+      "flagellaManuallyTraced": 32,
+      "singleCellCentre": [
+        552,
+        713
+      ],
+      "singleCellFlagella": 2,
+      "singleCellMatchesColonyOpaqueRGBAChanges": 14402,
+      "singleOpaquePixelCount": 14403,
+      "registrationNote": "Isolated cell is a fresh imagegen edit, not a pixel-exact cutout. Approximate same scale/position. Retarget and check actual separation playback."
+    },
+    "muscle": [
+      {
+        "file": "b3a2-smooth-muscle-cell-relaxed-v1.png",
+        "bbox": [
+          207,
+          202,
+          2274,
+          515
+        ],
+        "paintedWidthAt300PaintedHeight": 1981.150159744409,
+        "sameCanvas": true
+      },
+      {
+        "file": "b3a2-smooth-muscle-cell-contracted-v1.png",
+        "bbox": [
+          598,
+          182,
+          1902,
+          547
+        ],
+        "paintedWidthAt300PaintedHeight": 1071.7808219178082,
+        "sameCanvas": true
+      }
+    ],
+    "amoeba": "Current fission-1 SHA inherited from earlier FA1 QA; confirm one undivided nucleus, no cleavage at first stage.",
+    "waterModel": "Use change in inside water = inflow minus pumped outflow. In isotonic plasma, net change0 does not mean molecules stop crossing. Keep the pump absent in the red-cell case. No invented rate values.",
+    "separationCounts": "4/4 and0/4 are illustrative model counters for the four shown examples, not measurements or a universal survival-time claim.",
+    "reusedShaChecks": [
+      {
+        "file": "public\\assets\\biology\\b2c-amoeba-fission-1-v1.png",
+        "sha256": "06f90925ae8fbb3347b735332c4fd723a37104b4918d38ac69ea036eb3868187",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public\\assets\\biology\\y11-red-cell-lysed-v1.png",
+        "sha256": "9d5e5f46691fef3ccd1c94661fea3682790e582e0ee504a2f5f2ca05b84d3c33",
+        "matchingNativeQa": true
+      },
+      {
+        "file": "public\\assets\\biology\\y11-volvox-colony-v1.png",
+        "sha256": "49b11122719deb08c06985296fcf2e1bc4385ae5616caa8f8fd51cd17c58b381",
+        "matchingNativeQa": true
+      }
+    ]
+  },
+  "promptSet": "work/brief242/gonium-prompts-17-nov.json",
+  "sources": [
+    {
+      "url": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.101.022416",
+      "supports": "Planar16-cell colony,4 central and12 peripheral biflagellate cells; differing flagellar beat roles."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2720962/",
+      "supports": "Each of16 cells forms a16-cell plakea in four longitudinal cleavages. Search excerpt verified; full page returned recaptcha."
+    }
+  ],
+  "scope": "New PNGs copied unchanged from built-in imagegen; QA composites only. No narration or scene edits."
+}

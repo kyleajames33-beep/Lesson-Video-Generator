@@ -5,9 +5,14 @@ import {createHash} from 'node:crypto';
 import {decodePcm, pcmWav} from './lib/media-tools.mjs';
 import {pronunciationText, mapWordTimings} from './lib/google-pronunciation.mjs';
 import {applyGoogleSceneTiming} from './lib/google-scene-timing.mjs';
+import {prepareGoogleBatches} from './lib/google-batch-voice.mjs';
 import {requestsInGoogleQuotaDay} from './lib/google-request-budget.mjs';
+import {assertGoogleTake} from './lib/google-runon-gate.mjs';
+import {compareGoogleWords,checkGoogleRunOn,googleSceneHasLongPause} from './lib/google-batch-checks.mjs';
+import {writeGoogleProviderReceipt} from './lib/google-provider-response.mjs';
 
-// One Google request per scene; cached sentence takes remain reusable.
+// The production batch mode prepares verified scene caches before normal timing assembly.
+// Other callers retain one request per scene.
 // The scene cache prevents unchanged takes being regenerated.
 const model='gemini-3.8-flash-tts', voice='voice_shdbjsxcrr0a';
 const sha = x => createHash('sha256').update(x).digest('hex');
@@ -29,9 +34,21 @@ const captureOnly=process.env.GOOGLE_TTS_CAPTURE_ONLY==='1';
 if (!Number.isInteger(requestLimit)||requestLimit<0||requestLimit>99) throw Error('Request budget must be an integer from 0 to 99');
 let requestsUsed=0;
 const requestLedger=path.join('work','google-tts-requests.jsonl');
+// A reviewed repair may require a fresh take without touching an earlier cache.
+const cacheRoot=process.env.GOOGLE_TTS_CACHE_ROOT??'work/google-tts-cache';
+if(!path.resolve(cacheRoot).startsWith(path.resolve('work')+path.sep))throw Error('Speech cache must stay inside workspace work directory');
 const recentRequests=fs.existsSync(requestLedger)?requestsInGoogleQuotaDay(fs.readFileSync(requestLedger,'utf8').trim().split('\n').filter(Boolean).map(line=>JSON.parse(line))).length:0;
 // Reserve the entire lesson before making its first request. Budget 0 permits cache-only validation.
-const needed=lesson.scenes.filter(scene=>{const source=manifest.scenes.find(s=>s.id===scene.id);if(!source?.text?.trim())return false;const hash=sha(source.text);let audio=source.audioFile;const meta=audio.replace(/\.wav$/,'.generation.json');if(fs.existsSync(meta)&&JSON.parse(fs.readFileSync(meta)).textSha256!==hash)audio=audio.replace(/\.wav$/,`-${hash.slice(0,12)}.wav`);return !fs.existsSync(audio)&&!fs.existsSync(path.join('work/google-tts-cache',`${scene.id}-${hash}`,'whole-scene.wav'));}).length;
+const needsRequest=()=>lesson.scenes.filter(scene=>{const source=manifest.scenes.find(s=>s.id===scene.id);if(!source?.text?.trim())return false;const hash=sha(source.text);let audio=source.audioFile;const meta=audio.replace(/\.wav$/,'.generation.json');if(fs.existsSync(meta)&&JSON.parse(fs.readFileSync(meta)).textSha256!==hash)audio=audio.replace(/\.wav$/,`-${hash.slice(0,12)}.wav`);return !fs.existsSync(audio)&&!fs.existsSync(path.join(cacheRoot,`${scene.id}-${hash}`,'whole-scene.wav'));});
+const batchMode=process.env.GOOGLE_TTS_BATCH_MODE==='1'&&!captureOnly;
+const batchDryRun=process.env.GOOGLE_TTS_BATCH_DRY_RUN==='1';
+if(batchDryRun&&!batchMode)throw Error('Batch dry-run requires batch mode');
+if(batchMode){
+  await prepareGoogleBatches({manifest,lesson,key,needed:needsRequest().map(s=>s.id),dryRun:batchDryRun});
+  if(batchDryRun)process.exit(0);
+}
+const needed=needsRequest().length;
+if(batchMode&&needed)throw Error('Batch checks left missing takes; single-scene generation disabled');
 console.log(`Lesson preflight: ${needed} scene requests needed; budget ${requestLimit}.`);
 if(needed+recentRequests>99)throw Error('Daily local request cap would be exceeded; no speech requested');
 if(needed>requestLimit)throw Error('Insufficient whole-lesson request budget; no speech requested');
@@ -56,13 +73,14 @@ for (const scene of lesson.scenes) {
     if (!fs.existsSync(meta)||!fs.existsSync(alignmentPath)) throw Error(`Preserving unverified existing take: ${scene.id}`);
     const previous=JSON.parse(fs.readFileSync(meta,'utf8'));
     if (previous.textSha256!==textHash || previous.modelId!==model || previous.voiceId!==voice) throw Error(`Existing scene provenance mismatch: ${scene.id}`);
+    assertGoogleTake({...scene,voiceover:{...scene.voiceover,text:source.text,audioFile:audio}});
     applyTiming(scene,source,audio,JSON.parse(fs.readFileSync(alignmentPath,'utf8')),decodePcm(audio).length/96000);
     console.log(`Reused ${scene.id}`); continue;
   }
   const displays=source.text.match(/[^.!?]+(?:[.!?]+|$)/gu)?.map(s=>s.trim()).filter(Boolean)??[];
   const spokenSentences=spokenText.match(/[^.!?]+(?:[.!?]+|$)/gu)?.map(s=>s.trim()).filter(Boolean)??[];
   if (!displays.length || displays.length!==spokenSentences.length) throw Error(`Sentence split mismatch ${scene.id}`);
-  const staging=path.join('work','google-tts-cache',`${scene.id}-${textHash}`);fs.mkdirSync(staging,{recursive:true});
+  const staging=path.join(cacheRoot,`${scene.id}-${textHash}`);fs.mkdirSync(staging,{recursive:true});
   const pcm=[], allWords=[]; let offset=0, inputTokens=0, outputTokens=0;
   const wav=path.join(staging,'whole-scene.wav'),sentMeta=path.join(staging,'whole-scene.generation.json'),textPath=path.join(staging,'whole-scene.txt'),resultPath=path.join(staging,'whole-scene.alignment.json');
   if(fs.existsSync(path.join(staging,'0.wav'))&&!fs.existsSync(wav)) throw Error(`Partial sentence cache must be assembled before new speech: ${scene.id}`);
@@ -82,10 +100,13 @@ for (const scene of lesson.scenes) {
         await new Promise(resolve=>setTimeout(resolve,delay));
       }
       if(!response.ok) {
+        const raw=await response.text();
+        writeGoogleProviderReceipt(process.env.GOOGLE_TTS_PROVIDER_RECEIPT,{status:response.status,statusText:response.statusText,responseText:raw},key);
         let detail='';
-        try { const body=await response.json(); detail=String(body?.error?.message??'').split(key).join('[REDACTED]').slice(0,1200); } catch {}
+        try { const body=JSON.parse(raw); detail=String(body?.error?.message??'').split(key).join('[REDACTED]').slice(0,1200); } catch {}
         throw Error(`Google speech request failed for ${scene.id} whole scene: HTTP ${response.status}${detail?`: ${detail}`:''}`);
       }
+      writeGoogleProviderReceipt(process.env.GOOGLE_TTS_PROVIDER_RECEIPT,{status:response.status,statusText:response.statusText},key);
       const payload=await response.json(), result=(payload.steps??[]).flatMap(x=>x.content??[]).filter(x=>x.type==='audio').at(-1);
       if(!result?.data) throw Error(`No audio returned for ${scene.id} whole scene`);
       totalCost+=(payload.usage?.total_input_tokens??0)*.5/1e6+(payload.usage?.total_output_tokens??0)*9/1e6;
@@ -98,6 +119,23 @@ for (const scene of lesson.scenes) {
   if(!Number.isFinite(sent.usage?.total_input_tokens)||!Number.isFinite(sent.usage?.total_output_tokens))throw Error(`Missing billed usage ${scene.id}`);
   inputTokens=sent.usage.total_input_tokens;outputTokens=sent.usage.total_output_tokens;
   if(captureOnly){console.log(`Saved whole-scene take ${scene.id}; alignment deferred.`);continue;}
+  // Check every cached or single-request take before retaining it. Batch receipts
+  // already contain recognition, but are rechecked against the current thresholds.
+  const quality=sent.batch?.quality;
+  let comparison=quality?.comparison;
+  if(!Array.isArray(comparison?.mismatches) || quality.audioSha256!==sha(fs.readFileSync(wav)) || quality.textSha256!==textHash){
+    const recognition=path.join(staging,'whole-scene.recognition.json');
+    if(!fs.existsSync(recognition)){
+      const proc=spawnSync(python,['scripts/recognise-google-scenes.py',recognition,wav],{windowsHide:true,encoding:'utf8'});
+      if(proc.error||proc.status!==0)throw Error('Independent recognition failed: '+scene.id);
+    }
+    const words=JSON.parse(fs.readFileSync(recognition,'utf8'))[wav];
+    if(!words?.length)throw Error('Missing independent recognition: '+scene.id);
+    comparison=compareGoogleWords(spokenText,words.map(w=>w.word).join(''));
+  }
+  const runOn=checkGoogleRunOn({text:source.text,expectedText:spokenText,seconds:decodePcm(wav).length/96000,comparison,
+    deliberateLongPauses:googleSceneHasLongPause(scene)});
+  if(!runOn.pass)throw Error('Google run-on gate failed; take not retained; inspect before the one permitted retry: '+scene.id+' '+JSON.stringify(runOn));
   if(!fs.existsSync(resultPath)){
     fs.writeFileSync(textPath,spokenText);
     const proc=spawnSync(python,[sceneAligner,wav,textPath,resultPath],{windowsHide:true,encoding:'utf8'});
@@ -108,7 +146,7 @@ for (const scene of lesson.scenes) {
   const raw=decodePcm(wav);pcm.push(raw);offset=raw.length/96000;
   const mapped=mapWordTimings(source.text,spokenText,allWords);
   const cost=inputTokens*.5/1e6+outputTokens*9/1e6;
-  const generation={modelId:model,voiceId:voice,textSha256:textHash,displayText:source.text,pronunciationText:spokenText,inputTokens,outputTokens,estimatedCostUsd:cost,pricing:'USD 0.50 per million input and USD 9 per million audio output tokens through 2026-12-31',generatedAt:new Date().toISOString(),sentenceCount:displays.length,requestCount:1,alignmentQuality:result.quality??null};
+  const generation={modelId:model,voiceId:voice,textSha256:textHash,displayText:source.text,pronunciationText:spokenText,inputTokens,outputTokens,estimatedCostUsd:cost,pricing:'USD 0.50 per million input and USD 9 per million audio output tokens through 2026-12-31',generatedAt:new Date().toISOString(),sentenceCount:displays.length,requestCount:sent.batch?(inputTokens||outputTokens?1:0):1,batch:sent.batch??null,alignmentQuality:result.quality??null};
   fs.mkdirSync(path.dirname(audio),{recursive:true});
   fs.writeFileSync(audio,pcmWav(Buffer.concat(pcm)),{flag:'wx'});fs.writeFileSync(alignmentPath,JSON.stringify(mapped,null,2),{flag:'wx'});fs.writeFileSync(meta,JSON.stringify(generation,null,2),{flag:'wx'});
   applyTiming(scene,source,audio,mapped,offset);

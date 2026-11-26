@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-n05",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "8159ad577a617017c59e3f082df3f662cb8a37b3433cd2bd9c6dbaaa182ab1c9",
+  "scenes": [
+    {
+      "id": "hook-fibre-towers",
+      "title": "hook: fibre to five towers",
+      "voiceover": {
+        "text": "Here are the five phone towers, and the seven links the company could lay fibre along, in kilometres. Every tower needs to be connected to the network, through other towers if need be. The company wants every tower joined, but no wasted cable. Laying all seven links would use thirty-five kilometres of cable, which is far more than needed. At an example cost of twenty-five thousand dollars a kilometre, every kilometre saved matters. So how does a minimum spanning tree connect everything for the least cost?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cheapest-first",
+      "title": "the method: cheapest first, skip loops",
+      "voiceover": {
+        "text": "The method is simple. Be greedy, but careful. List the links from cheapest to dearest. Then take them one at a time. If a link joins something new, keep it. If it would close a loop, a cycle, skip it, because everything it joins is already connected. Stop when every tower is connected, which for five towers is after four links. Why does this work? Every link we keep is the cheapest way left to bring in something new. And skipping a link that closes a cycle never disconnects anything, because those towers are already joined. This is called Kruskal's method, but you don't need the name. You need the steps. Cheapest first, skip any cycle, and stop when it spans."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "run-towers",
+      "title": "running it on the towers",
+      "voiceover": {
+        "text": "Let's run it. In order, the links are two, three, four, five, six, seven and eight. C to D, two. Nothing's connected yet, so keep it. A to C, three. A is new, so keep it. D to E, four. E is new, keep it. B to C, five. B is new, keep it. That's four links, and all five towers are connected, so we could stop. But watch what the rest would do. C to E, six, would close the loop C, D, E, so skip it. B to D, seven, closes B, C, D. Skip. And A to B, eight, closes A, B, C. Skip. The minimum spanning tree is C D, A C, D E and B C, for a total of fourteen kilometres. Check with the count. Five towers, four links, no loops, and every tower joined. That's a spanning tree, and nothing cheaper can do the job."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "minimal-connector",
+      "title": "a minimal connector problem",
+      "voiceover": {
+        "text": "That's the answer to a minimal connector problem. Connect everything, with the least total length. Fourteen kilometres instead of thirty-five. At twenty-five thousand dollars a kilometre, that's three hundred and fifty thousand dollars, instead of eight hundred and seventy-five thousand. And every tower can still reach every other, through the tree. Councils use the same idea for water mains, farms for irrigation pipes, and power companies for lines to new houses. Whenever a question says connect them all as cheaply as possible, it's a minimal connector problem, and a minimum spanning tree answers it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "second-method",
+      "title": "another method, the same total",
+      "voiceover": {
+        "text": "There's another way to the same answer. Start at any tower, say A. Keep adding the cheapest link from the towers you already have to a tower you don't have yet. From A, the cheapest is A to C, three. Then C to D, two. Then D to E, four. Then C to B, five. Same four links, same fourteen kilometres. This one's called Prim's method. Kruskal's is handy when you're given a list of edges. Prim's is handy when you're looking at a diagram, because you just look outwards from what you've already built. Either method is fine, because the syllabus lets you use any method, as long as you show your steps."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "camp-confirmed",
+      "title": "back to the camp",
+      "voiceover": {
+        "text": "Now back to the camp. Last time, we found a spanning tree of a hundred and fifty metres, but we couldn't be sure it was the smallest. Run the method. Thirty, keep. Thirty-five, keep. Forty, keep. Forty-five joins the two groups, so keep it. Four links for five cabins, done. A hundred and fifty metres, and the method guarantees that no spanning tree is shorter. Notice that it skipped the fifty, sixty and seventy, the three longest paths. So the camp lights a hundred and fifty metres, not the three hundred and thirty metres of every path. The lights go on B C, D E, A B and C D."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's the minimum spanning tree in one card. Cheapest first. Skip any link that closes a loop. Stop when everything is joined, which takes one link fewer than the number of vertices. And check your count at the end."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A water pipeline must connect four towns, P, Q, R and S. The possible pipes, in kilometres, are P Q twelve, P R eight, Q R five, Q S ten, and R S seven. Find the minimum total length of pipe. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Cheapest first. Q R five, keep. R S seven, keep. P R eight, keep. That's three pipes for four towns, so stop. Q S, ten, would close Q, R, S, and P Q, twelve, would close P, Q, R. The minimum is five plus seven plus eight, twenty kilometres. Adding Q S as well, for thirty, closes the loop Q, R, S, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Six towns, A to F, are to be linked by a gas pipeline. The possible links, in kilometres, are shown on the network. Use any method to find the minimum spanning tree and its total length. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "In order. D E two, keep. B C three, keep. A C four, keep. C E five, keep. B D six closes B, C, E, D, so skip it. Two links tie at seven. A B closes A, B, C, so skip it. E F brings in F, so keep it. That's five links for six towns, and two plus three plus four plus five plus seven is twenty-one kilometres. Keeping B D, for twenty, makes a loop and leaves F out. That's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: shortest paths",
+      "voiceover": {
+        "text": "So that's the minimum spanning tree, the cheapest way to connect everything. But a delivery driver has a different question. Not how to connect every stop, but how to get from the depot to one customer as quickly as possible. That's a shortest path, and it needs its own method. How do we find the shortest path through a network? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

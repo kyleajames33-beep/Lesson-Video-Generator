@@ -1,0 +1,110 @@
+{
+  "brief": 238,
+  "design": "i02",
+  "assets": [
+    {
+      "name": "ma12-starter-jar-v1.png",
+      "path": "public\\assets\\maths\\ma12-starter-jar-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f7a41670-4b2f-4f12-9e56-b07e12358c66.png",
+      "generatorNativeSize": [
+        1024,
+        1536
+      ],
+      "nativeSize": [
+        1200,
+        1800
+      ],
+      "sha256": "c09463bcf703a76d2bf047139fecfb9d9883073716d6e287a2070243643d0a0f",
+      "alphaBox": [
+        186,
+        244,
+        1013,
+        1656
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Removedalpha<8noise",
+        "Uniformaspect-preservingscale1.13to1157x1736,translated(20,127)",
+        "Removed21nativecompositeemptybodyrowsand83flatglassbaserows;intactrim/basecurvesretained,nopixelstretching",
+        "Clearedinteriorrectangle260/940/300/1560toexactguide,includingunwantedgeneratedmeniscus;transparentwater-freeinterior",
+        "Replacedresidualside-meniscushooksat420..465withsame-widthstraightglasspixelsfrom500..545"
+      ],
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "anchors": {
+        "innerLeft": 260,
+        "innerRight": 940,
+        "innerRim": 300,
+        "insideFloor": 1560,
+        "innerHeight": 1260,
+        "pixelsPerCm": 90,
+        "definition": "Exactclearedinteriorboundary;glassreflectionedgeistranslucent,notanopaqueinkline."
+      },
+      "aperturePixelChecks": {
+        "leftWall259y900": 224,
+        "inside260y900": 0,
+        "inside939y900": 0,
+        "rightWall940y900": 249,
+        "floorCentre1560": 249
+      },
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    },
+    {
+      "name": "ma12-starter-fill-v1.png",
+      "path": "public\\assets\\maths\\ma12-starter-fill-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-ee1283ec-4114-4c4b-92c5-e2fef06874a6.png",
+      "generatorNativeSize": [
+        1024,
+        1536
+      ],
+      "nativeSize": [
+        1200,
+        1800
+      ],
+      "sha256": "3379481aeb0fa1b8d5ddc22d0467ff5f27f638cc454ad34e41f47801b9324992",
+      "alphaBox": [
+        260,
+        300,
+        940,
+        1560
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Croppednativegeneratedbubbledstartertexture680x1260withoutresizing",
+        "Placedonlycontentsat(260,300)on1200x1800RGBAcanvas;outsidealpha0"
+      ],
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "anchors": {
+        "contentsBox": [
+          260,
+          300,
+          940,
+          1560
+        ],
+        "reveal5cmTop": 1110,
+        "reveal11cmTop": 570
+      },
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "jarPrompt": "Use case: scientific-educational. Asset ma12-starter-jar-v1.png. One EMPTY straight-sided clear glass sourdough jar,exactly orthographic side elevation,upright/centred,open top,NO lid. Delicate ink and watercolour,very thin pale edge highlights and true transparent empty interior so a separate painted beige starter fill can show. Intended1200x1800px2:3portrait. Internal rectangle exact target:innerwallsx260and940,innerrimy300,innerfloory1560;680pxwide1260pxtall. Straight VERTICAL innerwalls,no taper,no shoulders. Thin plain rim with minimal ellipse,thick glass base sits just below y1560. Preserve these relative interior proportions. Whole jar inside8%clear canvas margin. Reference is GLASS FINISH ONLY,notitswateroritsnarrowshape. No contents,water,bubbles inside empty jar,spoons,lid,labels,numbers,scale marks,text,logos,people,hands,background,paperrectangle,groundshadow or glow. Clear alpha outside and mostly alpha throughout interior;no opaque whitepanel.",
+    "contentsPrompt": "Use case: scientific-educational. Material for ma12-starter-fill-v1.png. Paint a flat face-on field of creamy pale beige sourdough starter,small irregular fermentation bubbles throughout and a few slightly larger clear bubbles visible as if through glass. Ink and soft watercolour house style,subtle oatmeal cream colour,neither dark brown dough nor yellow foam. Fill the WHOLE portrait1200x1800canvas with this starter texture,fully opaque,uniform soft lighting. This is ONLY the contents texture that will be clipped to exact jar guides locally. NO jar,glass outline,rim,container,spoon,top meniscus,border,labels,text,numbers,scale marks,people,hands,backgroundscene,shadow or glow. Texture should remain readable inside a280pxtall displayedjar. No repeated rows or regular dot grid.",
+    "finishingAuthorisation": "User explicitly approved local pixel edits,including matching outlines and exact ratios;uniform scale preserves aspect. No profile-constrained plate altered."
+  },
+  "qaInspected": "work/brief238/i02-final-overlay-qa.jpg",
+  "qaObservation": "Paper300/560px tall,black/whiteedges,emptyjarand5/11cmoverlaysinspected. Generatedfixedmeniscusandlowalphaoutsideglowremoved. Emptyinteriortransparent;contentsopaqueonlyinsideguide. Straightcuttesttops1110and570agreewith90px/cm. Nopeople/text/labels/shadow."
+}

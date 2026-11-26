@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d09.md",
+  "sourceSha256": "7c5c6bb5097f4597ef8cd84b287a798433df3090ce2537d42485caf6f5d31c70",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-which-tail",
+      "text": "Three datasets, three different shapes. The screen times pile up on the left and trail away to the right. Our sleep data bunch up on the right, with one lonely value far to the left. And the masses of sixty apples rise and fall evenly, both sides the same. Every dataset has a distribution, how its values spread along the number line, where they bunch up and where they thin out. Describing that shape is a skill in itself. So what does the shape of a distribution tell us?",
+      "audioFile": "public/audio/math-s11-d09/hook-which-tail.wav"
+    },
+    {
+      "id": "symmetric",
+      "text": "Start with the apples. Most weigh close to a hundred and seventy-five grams, and there are about as many a bit lighter as a bit heavier. Fold the histogram down the middle, at a hundred and seventy-five, and the two halves land on each other. That's a symmetric distribution. The left side is a mirror image of the right. Each side thins out into a tail, the thin end on each side, and here the two tails match. That makes sense for apples. They grow towards a typical size, and small differences either way are equally likely. Lots of things made or grown to one size look like this, like the amount of drink a machine pours into each bottle.",
+      "audioFile": "public/audio/math-s11-d09/symmetric.wav"
+    },
+    {
+      "id": "skewed",
+      "text": "Now screen time. Here the two sides don't match. Most students sit between two and four hours, and then the bars thin out slowly to the right, all the way to seven and a half hours. One tail is longer than the other, so the distribution is skewed. The long tail points towards the bigger numbers, the positive end, so it's positively skewed. Screen time can't go below nought, but a few students use their phone for hours, and they stretch the tail out. Sleep is the other way round. Most students slept six and a half to eight and a half hours. Below that the values thin out, six, then five and a half, then one night of just three. That tail points left, towards the smaller numbers, so sleep is negatively skewed. Both shapes have just one peak. It's only the tails that differ. Notice the sleep peak is on the right. People often name the skew by the peak, and get it backwards. Name it by the tail.",
+      "audioFile": "public/audio/math-s11-d09/skewed.wav"
+    },
+    {
+      "id": "shape-slider",
+      "text": "Here's why the peak and the tail sit on opposite sides. This histogram starts symmetric. Drag its tail out to the right. A few values stretch far out on that side, but the many ordinary values stay bunched where they were. Now it's positively skewed, with the peak on the left of the long tail. Drag the tail out to the left instead, and the peak sits on its right. Negatively skewed. The tail is only where the few far values sit. The peak is where most of the data sit, so it ends up on the other side from the tail. So always look for the long, thin side first, and name the shape after it.",
+      "audioFile": "public/audio/math-s11-d09/shape-slider.wav"
+    },
+    {
+      "id": "peaks-and-uniform",
+      "text": "Shape is also about peaks. A peak is a value, or a class, that's more common than its neighbours. Screen time, sleep and apples each have one peak, so they're unimodal. Now a food truck's customers through the day. There's a rush at lunch, a dip in the afternoon, and another rush at dinner. Two peaks with a dip between, so it's bimodal. Two peaks often mean two groups mixed together, here lunch customers and dinner customers. If you see two peaks, ask what the two groups might be. A café that's busy at breakfast, lunch and after school has three peaks. More than two is multimodal. And sometimes there's no peak at all. Roll a fair die six hundred times, and each face comes up about a hundred times. A flat shape like that, where every value is about equally common, is uniform.",
+      "audioFile": "public/audio/math-s11-d09/peaks-and-uniform.wav"
+    },
+    {
+      "id": "describing",
+      "text": "In an exam, describe a distribution in one or two sentences. Give the number of peaks, the shape, where most values are, and anything unusual, then a reason in context if you're asked. Use the units from the axis, minutes or hours. Screen time is unimodal and positively skewed. Most students used between a hundred and twenty and two hundred and forty minutes, and a few went up to four hundred and fifty-five. Sleep is unimodal and negatively skewed. Most slept six and a half to eight and a half hours, and one slept only three. Symmetric and uniform are shapes too, so use them when they fit. A shape on its own isn't a description. A shape with a reason is.",
+      "audioFile": "public/audio/math-s11-d09/describing.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. The tail tells the skew. Tail to the right is positively skewed. Tail to the left is negatively skewed. Then count the peaks, and if it's flat, it's uniform.",
+      "audioFile": "public/audio/math-s11-d09/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. This histogram shows the marks of forty students on an easy ten mark quiz. Describe the shape of the distribution, and give a reason for it in context. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d09/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "There's one peak, at nine, so it's unimodal. The tail stretches left, towards the low marks, so it's negatively skewed. The quiz was easy, so most marks are high, and only a few students scored low. Calling it positively skewed, because the peak is on the right, is the slip.",
+      "audioFile": "public/audio/math-s11-d09/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. This histogram shows how long twenty-five students take to travel to school. Describe the distribution by its peaks. Then suggest a reason for the shape, in context. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d09/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "There are two peaks, at ten to twenty minutes and at forty to fifty, with a dip between, so it's bimodal. Two peaks suggest two groups, students who live nearby, and students who catch the bus. Calling it unimodal because one bar is tallest is the slip.",
+      "audioFile": "public/audio/math-s11-d09/feedback-2.wav"
+    },
+    {
+      "id": "handoff-infographic",
+      "text": "Shapes, peaks and tails are what a good graph should show honestly. Now our survey's results go public, on an infographic poster. Thirty-five per cent get eight or more hours. A sector graph of where phones charge. A row of phones, twelve of twenty lit. And a column graph comparing sleep with and without a phone in the bedroom. It looks convincing. But look at where that column graph's axis starts. Is this poster fair? That's next.",
+      "audioFile": "public/audio/math-s11-d09/handoff-infographic.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d09/key-notes.wav"
+    }
+  ]
+}

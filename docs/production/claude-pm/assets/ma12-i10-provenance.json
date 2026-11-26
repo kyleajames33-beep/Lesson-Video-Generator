@@ -1,0 +1,104 @@
+{
+  "brief": 238,
+  "design": "i10",
+  "assets": [
+    {
+      "name": "ma12-lift-shaft-v1.png",
+      "path": "public\\assets\\maths\\ma12-lift-shaft-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-bc577a8b-55ad-4696-91fe-711cbd065198.png",
+      "generatorNativeSize": [
+        821,
+        1915
+      ],
+      "nativeSize": [
+        1200,
+        2800
+      ],
+      "sha256": "c49c66e7a2db852d6ce44dd6fda42a3b0d2bf0d8666962e1c4f1539d69464397",
+      "alphaBox": [
+        321,
+        593,
+        880,
+        2197
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "landingFloorYsTopToBottom": [
+          1056,
+          1399,
+          1737,
+          2092
+        ],
+        "measurementUncertaintyPx": 2,
+        "landingPitchPx": [
+          343,
+          338,
+          355
+        ],
+        "targetPitchPx": 560,
+        "spacingTolerancePx": 3,
+        "profileTolerancePass": false,
+        "shaftInnerWallXs": [
+          374,
+          827
+        ],
+        "carFit": {
+          "sourceNativeSize": [
+            1400,
+            2000
+          ],
+          "scale": 0.19,
+          "canvasSize": [
+            266,
+            380
+          ],
+          "visibleBodyHeightPx": 311.6,
+          "placementX": 470,
+          "canvasTopYFormula": "landingFloorY-345.8",
+          "at380pxCanvasWidth": "visible car body exceeds shortest landing pitch;use0.19scale or builder fit"
+        }
+      },
+      "operations": [
+        "Removed alpha<8 noise",
+        "Padded native821x1915 at(190,440) to1200x2800;no scaling,warping or moving landings"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "nonuniformStretch": false,
+      "visualQAInspected": true,
+      "marginPass": true,
+      "state": "delivered",
+      "findings": [
+        {
+          "id": "238-I10-PLATE-LANDINGS",
+          "severity": "profile-tolerance-miss",
+          "detail": "Measured landing floor Ys1056,1399,1737,2092;pitch343,338,355px,not560px and not equal within3px. No warp applied. Builder fit required."
+        }
+      ]
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Scientific educational asset ma12-lift-shaft-v1.png,1200x2800portrait3:7. Fine ink and restrained watercolour grey concrete/steel, isolated on real transparent alpha. Exactly front-on cutaway of empty lift shaft as if front wall removed. Two plain concrete side walls, steel guide rails full height and counterweight rail on one side. FOUR identical floor landing modules evenly spaced vertically, each a thin horizontal concrete slab ledge with closed steel double landing doors and frame at back. No lift car. Inside width about600px so a380pxcar fits. Four floor lines desired y=620,1180,1740,2300 in final2800canvas. Exactly560px vertical pitch, no perspective. Shaft top at300,bottom2450,side walls x250 and950; ample8%transparentclearance all edges. Short base slab with soft irregular edge. Flat face-on section, no exterior building, roof, sky, people, symbols, numbers, writing, signs, buttons, arrows, logos or ground shadow. Clearly four countable landings including ground and three above. No bottomless extension;wholeobjectvisible.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Inspected paper360/700px tall with reused car at ground and top, plus black/white edges. Four clear landing doors and empty shaft, no writing. Native profile left unwarped. Measured pitch343/338/355px misses3px tolerance and requested560px pitch; builder must fit to measured geometry. At0.19 source car scale its visible312px height fits shortest338px pitch;380px canvas-width car would be too tall.8% margins pass.",
+    "qaFiles": [
+      "work/brief238/i10-lift-car-qa.jpg"
+    ],
+    "reviewSummary": "0 design blockers,0 design should fix;new plate profile tolerance miss reported",
+    "findings": [
+      {
+        "id": "238-I10-PLATE-LANDINGS",
+        "severity": "profile-tolerance-miss",
+        "detail": "Measured landing floor Ys1056,1399,1737,2092;pitch343,338,355px,not560px and not equal within3px. No warp applied. Builder fit required."
+      }
+    ]
+  },
+  "sourceDesignSha256": "522a8a6a00c1f889b8da7d58d2d07e3a532bdc20bcac5725274c6bcac4f3d455"
+}

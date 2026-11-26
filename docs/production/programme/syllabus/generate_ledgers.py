@@ -8,10 +8,14 @@ last rendered page breaks and should be checked in Word before publication.
 from __future__ import annotations
 
 import concurrent.futures
+import argparse
+import hashlib
 import io
 import json
 import re
+import threading
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 from bs4 import BeautifulSoup
@@ -21,14 +25,57 @@ from docx import Document
 OUT = Path(__file__).parent
 BASE = "https://curriculum.nsw.edu.au"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; HSCScience syllabus ledger)"}
+CAPTURE_DIR = None
+CAPTURES = {}
+CAPTURE_LOCK = threading.Lock()
 
 
 def fetch(url: str) -> bytes:
-    return urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=45).read()
+    body = urllib.request.urlopen(urllib.request.Request(url, headers=HEADERS), timeout=45).read()
+    if CAPTURE_DIR is not None:
+        target = CAPTURE_DIR / (hashlib.sha256(url.encode()).hexdigest() + ".html")
+        with CAPTURE_LOCK:
+            target.write_bytes(body)
+            CAPTURES[url] = {"path": str(target), "sha256": hashlib.sha256(body).hexdigest()}
+    return body
 
 
-def clean_html(value: str) -> str:
+def mathml_text(node) -> str:
+    """Keep operators, fractions, indices and powers when producing plain text."""
+    if isinstance(node, str):
+        return node.strip()
+    name = node.name
+    children = [c for c in node.children if getattr(c, 'name', None) not in ('annotation', 'annotation-xml')
+                and not (isinstance(c, str) and not c.strip())]
+    parts = [mathml_text(c) for c in children]
+    if name == 'mfrac' and len(parts) == 2:
+        if node.get('linethickness') == '0':
+            return f'stack({parts[0]};{parts[1]})'
+        return f'({parts[0]})/({parts[1]})'
+    if name == 'msup' and len(parts) == 2:
+        return f'{parts[0]}^({parts[1]})'
+    if name == 'msub' and len(parts) == 2:
+        return f'{parts[0]}_({parts[1]})'
+    if name == 'msubsup' and len(parts) == 3:
+        return f'{parts[0]}_({parts[1]})^({parts[2]})'
+    if name == 'msqrt':
+        return 'sqrt(' + ''.join(parts) + ')'
+    if name == 'mroot' and len(parts) == 2:
+        return f'root({parts[1]};{parts[0]})'
+    if name in ('mover', 'munder', 'munderover'):
+        return name + '(' + ';'.join(parts) + ')'
+    if name in ('mtr', 'mtable'):
+        return (';' if name == 'mtable' else ',').join(parts)
+    if name == 'mfenced':
+        return node.get('open', '(') + node.get('separators', ',').join(parts) + node.get('close', ')')
+    return ''.join(parts)
+
+
+def clean_html(value: str, preserve_math: bool = False) -> str:
     soup = BeautifulSoup(value or "", "html.parser")
+    if preserve_math:
+        for math in list(soup.find_all('math')):
+            math.replace_with(mathml_text(math))
     return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
 
 
@@ -136,14 +183,17 @@ def focus_ledger(item: tuple[str, str], prefix: str, fa_num: int) -> dict:
             elem = linked[item_id]["elements"]
             title_html = expand_components(elem["title"]["value"], linked)
             including_html = expand_components(elem.get("including_statements", {}).get("value", ""), linked)
-            statement = clean_html(title_html)
-            including = clean_html(including_html)
+            preserve_math = prefix.startswith('P25')
+            statement = clean_html(title_html, preserve_math=preserve_math)
+            including = clean_html(including_html, preserve_math=preserve_math)
             point = {"id": f"{prefix}-FA{fa_num}-G{gi}-{pi:02d}", "text": statement,
                      "group": group_title, "includingStatements": including or None,
                      "sourceHtml": title_html,
                      "includingStatementsHtml": including_html or None,
                      "depthStudyOrPractical": bool(re.search(r"\b(investigat|experiment|practical|fieldwork)", statement, re.I)),
                      "sourceItemId": item_id, "sourceUrl": BASE + path, "page": None}
+            if preserve_math:
+                point['sourceMathML'] = [str(m) for m in BeautifulSoup(title_html + including_html, 'html.parser').find_all('math')]
             points.append(point)
     outcomes = []
     for outcome_id in data["item"]["elements"]["outcomes"]["value"]:
@@ -155,7 +205,11 @@ def focus_ledger(item: tuple[str, str], prefix: str, fa_num: int) -> dict:
             "contentGroups": groups, "contentPoints": points, "sourceUrl": BASE + path}
 
 
-def new_ledger(subject: str, syllabus_path: str, year: int, prefix: str) -> None:
+def new_ledger(subject: str, syllabus_path: str, year: int, prefix: str, retrieval_date: str | None = None) -> None:
+    retrieval_date = retrieval_date or date.today().isoformat()
+    # Local aliases must identify the year as well as the subject.
+    if year == 12 and not prefix.endswith("Y12"):
+        prefix += "Y12"
     root = BASE + "/learning-areas/science/" + syllabus_path + "/content"
     year_slug = f"year-{year}"
     start = next_data(root)["defaultFocusAreaUrls"]["n11" if year == 11 else "n12"]
@@ -165,16 +219,41 @@ def new_ledger(subject: str, syllabus_path: str, year: int, prefix: str) -> None
     areas = [(title, href) for href, title in links if title]
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         modules = list(pool.map(lambda x: focus_ledger(x[1], prefix, x[0]), enumerate(areas)))
+    for module in modules:
+        module["retrievalDate"] = retrieval_date
+        for point in module["contentPoints"]:
+            point["officialCodename"] = point["sourceItemId"]
+            point["retrievalDate"] = retrieval_date
     save(f"{subject}-new-y{year}.json", {"subject": subject.title(), "syllabusYear": 2025,
                                         "year": year, "modules": modules,
-                                        "sourceUrl": root, "note": "NESA HTML has no page numbers. Practical flag is a text search, not a formal NESA classification. Working scientifically is FA0 and is integrated across the other focus areas."})
+                                        "sourceUrl": root, "retrievalDate": retrieval_date,
+                                        "note": f"Local {prefix} identifiers are convenience aliases. officialCodename/sourceItemId is the exact NESA CMS codename. Working scientifically is integrated FA0. HTML has no page numbers."})
     print(subject, "new", year, [(m["moduleTitle"], len(m["contentPoints"])) for m in modules], flush=True)
 
 
 if __name__ == "__main__":
-    old_ledger("chem", "chemistry-stage6-syllabus-word.docx", "C")
-    old_ledger("bio", "biology-stage-6-syllabus-2017.docx", "B")
-    for subject, path, prefix in [("bio", "biology-11-12-2025", "B25"),
-                                  ("chem", "chemistry-11-12-2025", "C25")]:
-        for year in (11, 12):
-            new_ledger(subject, path, year, prefix)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--new", choices=["bio", "chem", "phys"], help="Rebuild only this new-syllabus subject")
+    parser.add_argument("--year", type=int, choices=[11, 12])
+    parser.add_argument("--retrieval-date", default=None)
+    parser.add_argument("--capture-dir", type=Path, help="Keep the exact public HTML and its SHA-256")
+    args = parser.parse_args()
+    CAPTURE_DIR = args.capture_dir
+    if CAPTURE_DIR is not None:
+        CAPTURE_DIR.mkdir(parents=True, exist_ok=True)
+    subjects = [("bio", "biology-11-12-2025", "B25"),
+                ("chem", "chemistry-11-12-2025", "C25"),
+                ("phys", "physics-11-12-2025", "P25")]
+    if args.new:
+        if args.year is None:
+            parser.error("--new requires --year")
+        subject, syllabus, prefix = next(row for row in subjects if row[0] == args.new)
+        new_ledger(subject, syllabus, args.year, prefix, args.retrieval_date)
+    else:
+        old_ledger("chem", "chemistry-stage6-syllabus-word.docx", "C")
+        old_ledger("bio", "biology-stage-6-syllabus-2017.docx", "B")
+        for subject, syllabus, prefix in subjects:
+            for year in (11, 12):
+                new_ledger(subject, syllabus, year, prefix, args.retrieval_date)
+    if CAPTURE_DIR is not None:
+        (CAPTURE_DIR / "sources.json").write_text(json.dumps(CAPTURES, indent=2) + "\n", encoding="utf-8")

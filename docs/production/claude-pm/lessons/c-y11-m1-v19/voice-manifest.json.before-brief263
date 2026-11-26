@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v19.md",
+  "sourceSha256": "92d0c58db530cab23c02d1c6fef4a26bbef66fc420fbcc1785a38912279a5089",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, sodium lost an electron to become a plus one ion, and chlorine gained one to become minus one. Put them together and you get salt, sodium chloride, with one sodium ion for every chloride ion. Rust is different. It contains an iron oxide with two irons for every three oxygens. Why those numbers? The answer is in the charges on the ions.",
+      "audioFile": "public/audio/chem-y11-m1-v19/hook.wav"
+    },
+    {
+      "id": "why-ions",
+      "text": "First, why does each atom form the ion it does? Atoms of the main groups tend to lose or gain electrons until they have the same arrangement as the nearest noble gas, with a full outer shell. Sodium is two, eight, one. Losing that one outer electron leaves two, eight, like neon, so sodium forms a plus one ion. Oxygen is two, six. Gaining two electrons makes two, eight, so oxygen forms an oxide ion, with a charge of minus two. The charge is just protons minus electrons.",
+      "audioFile": "public/audio/chem-y11-m1-v19/why-ions.wav"
+    },
+    {
+      "id": "group-charges",
+      "text": "Because atoms in a group have the same number of outer electrons, they form ions with the same charge. Groups one, two and thirteen lose one, two or three electrons, so their ions are plus one, plus two and plus three. Groups fifteen, sixteen and seventeen gain three, two or one, so they form minus three, minus two and minus one. Metals form positive ions, called cations. Non-metals form negative ions, called anions. Group fourteen usually shares electrons instead, and noble gases usually stay neutral.",
+      "audioFile": "public/audio/chem-y11-m1-v19/group-charges.wav"
+    },
+    {
+      "id": "neutrality",
+      "text": "Now the key rule. An ionic compound is made of positive and negative ions, but as a whole, it has no overall charge. A grain of salt isn't charged. So the ions must combine in a ratio where the positive charges exactly cancel the negative ones. Sodium is plus one, chloride is minus one, so one of each. Magnesium is plus two, so it needs two chloride ions to cancel it. That's M g C l two. The small number written after a symbol, called a subscript, tells you how many of that ion are in the formula.",
+      "audioFile": "public/audio/chem-y11-m1-v19/neutrality.wav"
+    },
+    {
+      "id": "aluminium-oxide",
+      "text": "Let's try a harder pair, aluminium and oxygen. Aluminium is in group thirteen, so it forms plus three ions. Oxide is minus two. We need the total positive charge to equal the total negative charge. The smallest number that both three and two go into is six. So two aluminium ions give plus six, and three oxide ions give minus six. The formula is A l two O three. Check: plus six and minus six make zero.",
+      "audioFile": "public/audio/chem-y11-m1-v19/aluminium-oxide.wav"
+    },
+    {
+      "id": "shortcut",
+      "text": "There's a quicker way to the same answer. Write the two charges, then cross them over, so each ion's charge number becomes the other ion's subscript. Aluminium three and oxygen two give A l two O three. But always simplify. Magnesium plus two and oxide minus two cross over to M g two O two, which cancels down to M g O. A formula shows the simplest ratio of ions. Then check that the charges add to zero. Cross over, cancel down, check for zero.",
+      "audioFile": "public/audio/chem-y11-m1-v19/shortcut.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Calcium forms a plus two ion, and chlorine forms a minus one ion. What's the formula of calcium chloride? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v19/prediction.wav"
+    },
+    {
+      "id": "variable-charge",
+      "text": "It's C a C l two, one calcium ion for every two chloride ions. Now, back to rust. Iron is a transition metal, and transition metals can often form more than one ion. Iron can lose two electrons or three, so it forms both iron two plus, and iron three plus ions. That's because its outer subshells are close in energy, so it can give up different numbers of electrons. So you can't read iron's charge from its group. The name tells you, or you work it out from the formula.",
+      "audioFile": "public/audio/chem-y11-m1-v19/variable-charge.wav"
+    },
+    {
+      "id": "rust",
+      "text": "In rust's iron oxide, the iron ions are three plus, and oxide is minus two. That's the same pattern as aluminium oxide, so six is the target again. Two iron ions give plus six, three oxide ions give minus six, and the formula is F e two O three. With iron two plus, the charges cancel one to one, giving F e O. Same elements, different charge, different formula.",
+      "audioFile": "public/audio/chem-y11-m1-v19/rust.wav"
+    },
+    {
+      "id": "backwards",
+      "text": "You can also run this backwards. In F e C l three, each chloride is minus one, so three chlorides add up to minus three. The compound is neutral, so the one iron ion must be plus three. In F e C l two, the same reasoning makes iron plus two. Working backwards like this is exactly how we'll name these compounds next time.",
+      "audioFile": "public/audio/chem-y11-m1-v19/backwards.wav"
+    },
+    {
+      "id": "polyatomic",
+      "text": "Some ions are made of several atoms bonded together, with an overall charge. These are called polyatomic ions. Hydroxide and nitrate each have a charge of minus one. Carbonate and sulfate are minus two. Phosphate is minus three. And ammonium is the positive one, plus one. Each stays together as a single unit, so you treat it just like one ion. You'll need to learn these six by heart.",
+      "audioFile": "public/audio/chem-y11-m1-v19/polyatomic.wav"
+    },
+    {
+      "id": "brackets",
+      "text": "Calcium nitrate shows how to use them. Calcium is plus two, and nitrate is minus one, so we need two nitrate ions. To show two of the whole group, put the nitrate in brackets, with the two outside. That's C a, bracket N O three, close bracket, two. Without brackets, the two would belong to the oxygen alone, changing the ion itself.",
+      "audioFile": "public/audio/chem-y11-m1-v19/brackets.wav"
+    },
+    {
+      "id": "method",
+      "text": "So the method is always the same. Find each ion's charge. Choose how many of each ion, so the total charge is zero. Then write the simplest ratio. Never change an ion's charge, or the atoms inside a polyatomic ion, to make the numbers fit. Change only how many ions you use.",
+      "audioFile": "public/audio/chem-y11-m1-v19/method.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Write the chemical formulas of magnesium nitride, the compound of magnesium and nitrogen, and aluminium sulfate. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v19/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Magnesium is plus two, and nitride is minus three. Six is the target, so three magnesium ions and two nitride ions, M g three N two. Aluminium is plus three, and sulfate is minus two, so six again. That's two aluminium ions and three sulfate ions, written A l two, bracket S O four, close bracket, three. Leaving out the brackets is the slip.",
+      "audioFile": "public/audio/chem-y11-m1-v19/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Copper forms two oxides, C u O and C u two O. Work out the charge on the copper ion in each, and explain why copper can form two compounds with the oxide ion, when sodium forms only one. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v19/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "In C u O, one oxide ion is minus two, so the copper is plus two. In C u two O, one oxide ion is shared by two coppers, so each copper is plus one. Copper is a transition metal, so it can lose one electron or two. Sodium always loses just its one outer electron, so it only forms plus one. Reading the two in C u two O as copper's charge is the trap.",
+      "audioFile": "public/audio/chem-y11-m1-v19/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So charges decide formulas. Now flip it around. If you're handed a formula, like F e C l three, or C u two O, or C O two, how do you say its name, so that everyone knows exactly which compound you mean? And what does a Roman numeral in a name really tell you? That's next time.",
+      "audioFile": "public/audio/chem-y11-m1-v19/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v19/key-notes.wav"
+    }
+  ]
+}

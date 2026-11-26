@@ -1,0 +1,68 @@
+{
+  "brief": 240,
+  "assets": [
+    {
+      "name": "ma12-city-skyline-strip-v1.png",
+      "path": "public/assets/maths/ma12-city-skyline-strip-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a6e34be1-a700-46e9-9963-14f80e5f3fe6.png",
+      "designs": [
+        "t02"
+      ],
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "requestedSize": [
+        3200,
+        900
+      ],
+      "sha256": "30d2ce48c2aebba6b6c10902fa40ebf00a393aab618ccc850ebdb22332155abf",
+      "alphaBox": [
+        0,
+        9,
+        2172,
+        724
+      ],
+      "alpha32Box": [
+        2,
+        390,
+        2172,
+        713
+      ],
+      "approxBasePoint": [
+        1087.0,
+        712
+      ],
+      "topY": 390,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "groundLineY": 711,
+      "groundLineXRange": [
+        2,
+        2171
+      ],
+      "highestPointY": 390,
+      "heightAboveCanvasBottomFraction": 0.4613259668508287,
+      "profileFinding": "Highest meaningful point390 in724px canvas,46.1percent above bottom vs45percent maximum. Ground row711. Side clear margins conflict with full-width ground; reported as a profile exception requiring root review.",
+      "anchorUncertaintyPx": 6,
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Meaningful alpha32 margin below8percent on at least one side; margin requirement not passed.",
+        "Tallest meaningful point is46.1percent above canvas bottom, slightly above45percent limit. Native profile and row reported; no stretching.",
+        "Highest meaningful point390 in724px canvas,46.1percent above bottom vs45percent maximum. Ground row711. Side clear margins conflict with full-width ground; reported as a profile exception requiring root review."
+      ],
+      "meaningfulMarginFractions": [
+        0.0009208103130755065,
+        0.5386740331491713,
+        0.0,
+        0.015193370165745856
+      ],
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-t02.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    }
+  ],
+  "note": "Native aspect preserved; source review findings retained; no speech or render"
+}

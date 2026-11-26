@@ -1,0 +1,17 @@
+# Brief 242: Biology FA1 v21 method props and DNA handoff
+
+17 November 2026.
+
+Narration unchanged at 5,983 characters, no em dash. Three new native QA records: potato-disc preparation, blank buffer bottle and DNA handoff. Native paper/dark and display-size context inspected. True outer alpha, complete contours, native aspect, no people or printed numerical question answers. Five discs are clearly visible at 900px whole-canvas width, with borer and short cylinder. Current file is 2000 by 1200, not the 2400 by 1440 described in the older delivery note. No objectionable detached specks seen in these native composites; no repeat cleanup made.
+
+Root finding: disc/cylinder diameter is roughly twice the visible cutting-mouth width of the borer. The three objects on the same tile should not be animated as an exact scale-matched cutting sequence. The static image supports five equal discs, not a physically calibrated 10mm cutting demonstration. No size number is painted. Root can keep the equal-disc illustration with its separately explained method, or resolve the tool geometry before showing an actual cut.
+
+Buffer bottle is 2000 square with a genuinely blank label band and no printed pH. It reads at 300px canvas width; five copies need enough space for the separate coded pH labels. Keep each label within the front band, with the curved edges clear. The bottle is capped, so pouring or dispensing requires an open-state action or a cut. No new production sidecar coordinates are claimed from this contact sheet.
+
+DNA helix is 1400 by 2000, not the 2000-square/purple-and-teal description in Assets. Actual backbones are cream with small cream beads, while rungs use red/yellow and blue/green pairs. It reads at 420px painted height. This is a recognisable handoff context, but root must match the actual palette and scale into v22 instead of relying on stale colours. No bases or backbone chemistry are labelled by this lesson's handoff.
+
+Existing gas rig and catalase apparatus SHA256 match their earlier y11b-v21-provenance.json records, which already inspected native and 300/600px paper edges. No alpha repaint is needed solely from the old glow description. Pre-mix flask and separate plunger are also delivered under y11fa1v21-brief242-premix-flask-provenance.json and y11fa1v21-brief242-plunger-provenance.json, despite stale source lists. Their exact moving-assembly and foreground-mask qualifications remain. Plunger actual canvas 1919 by 820 differs from the 2400 by 1400 rig; use its gas-face anchor, approximate 0.85 uniform fit and proper barrel/clamp foreground layers. No same-canvas drop-in claim.
+
+Show the pre-mix flask before tipping. Running rig already contains discs in peroxide and cannot be the earlier separate-warming state. Timer, volume bar, plunger and live reading must share one lesson clock; table volumes are not universal catalytic rates. Baked stopwatch hand and thermometer column qualifications carry forward. Dropped boiled-disc/denatured-enzyme illustrations and unused alternative bath, dialysis and materials plates are excluded. Missing rig-v2 appears only in the historical error-check correction context, not as the current scene asset; current scenes use delivered rig-v1. No new commission, source edit, configured-run approval, playback, listening or whole-lesson voice clearance.
+
+Evidence: `assets/brief242-bio-fa1-v21-native-qa-17-nov.json`. Reviewed design SHA256: `9bcc1e23630ccdbd15c9f63e14843010594d853e6d7494135f1e4e25d73ed737`. No source edits or whole-lesson clearance.

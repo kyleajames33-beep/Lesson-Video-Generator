@@ -1,0 +1,57 @@
+{
+  "brief": 238,
+  "design": "i07",
+  "sourceRevision": "Current repaired source,11November",
+  "assets": [
+    {
+      "lesson": "i07",
+      "name": "ma12-bathtub-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-8b4d8271-917e-4ceb-bf23-1866f0b35df4.png",
+      "sha256": "09bc8a8d335c9225875aeb787b89bf5efd1c13ebafffe4f58812e7604fe939ec",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alpha128Box": [
+        157,
+        115,
+        1589,
+        800
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-bathtub-v1-four-backgrounds.jpg",
+      "state": "held-native-guide-mismatch",
+      "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+      "anchors": {
+        "innerWallsXApprox": [
+          331,
+          1445
+        ],
+        "innerRimYApprox": 325,
+        "innerFloorYApprox": 605,
+        "spoutMouthApprox": [
+          463,
+          281
+        ],
+        "plugHoleCentreApprox": [
+          1305,
+          590
+        ]
+      },
+      "geometryFinding": "At equivalent2400px-wide guide,inner walls~448/1955,rim440,floor819 differ from420/2000/420/900 by more than4px. Inner cavity remains rectangular;quarter-depth test uses actual measured bounds. Strict guide not passed.",
+      "path": "public\\assets\\maths\\ma12-bathtub-v1.png",
+      "visualQAInspected": true,
+      "designs": [
+        "i07"
+      ],
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-bathtub-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i07-quarter-fill-guide-qa.jpg"
+      ]
+    }
+  ],
+  "decision": "Source review fixes passed;strict geometric artwork guide remains held. Keep supplied candidate for root inspection. Do not certify required4px tolerance."
+}

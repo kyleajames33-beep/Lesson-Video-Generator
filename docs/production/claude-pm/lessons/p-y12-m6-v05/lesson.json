@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "6df775701c2781bc40849b8c6c26b830c5187bd54eff7114ea1ca76477928223",
+  "sourceDesignSha256": "900ca6aac40cdf908a87108dd00474776b509a54abf887f0c512c53e52a945f9",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Here's our proton, moving to the right through a field into the page, and pushed upwards. As it turns, the force turns with it, always at right angles to the motion. So, does it speed up, spiral inwards, or go round in a circle? And would an electron at the same speed curve more tightly, or less? Make your predictions."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Make your predictions.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your predictions.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "zero-work",

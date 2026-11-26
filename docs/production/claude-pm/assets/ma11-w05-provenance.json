@@ -1,0 +1,70 @@
+{
+  "brief": 247,
+  "lesson": "w05",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-d300b80b-667a-4e11-a397-3d1f7c8d8e7b.png",
+      "sha256": "50fd607645ad50768044984a1aa93691ac95b6ead7a6f5cc919100375ffaf272",
+      "nativeSize": [
+        1642,
+        958
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        257,
+        177,
+        1376,
+        796
+      ],
+      "marginFractions": [
+        0.15651644336175397,
+        0.1847599164926931,
+        0.16199756394640683,
+        0.16910229645093947
+      ],
+      "evidence": [
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-kayak-jetty-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-kayak-jetty-v1.png",
+      "path": "public/assets/maths/ma11-kayak-jetty-v1.png",
+      "brief": 247,
+      "lesson": "w05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1400
+      ],
+      "qa": {
+        "result": "static artwork pass; coded price-sign text fit held",
+        "observations": [
+          "Three kayaks on rack, paddle, short timber jetty and blank A-frame sign. No people, prices or logos. Native paper/dark and 300/600 px views inspected.",
+          "Clear outer margins exceed 15 percent after reframing. Native 1642 by 958 retained.",
+          "The small sign cannot carry the requested full price text at the lesson type size. Artwork does not clear that built label."
+        ],
+        "evidence": [
+          "work/brief247/kayak-sign-face-overlay.jpg",
+          "work/brief247/kayak-size-paper.jpg",
+          "work/brief247/kayak-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-kayak-jetty-v1.json"
+    }
+  ],
+  "result": "Kayak jetty delivered for w04 handoff, with blank-sign face coordinates. Static native and 300/600 px checks pass. Build finding: the sign is only about 40 px wide when the whole plate is 640 px wide, so $p per hire cannot fit at the required type size. Root must resolve the price-label composition; no small-font workaround or whole-lesson clearance.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/kayak-sign-face-overlay.jpg",
+    "work/brief247/kayak-size-paper.jpg",
+    "work/brief247/kayak-size-dark.jpg",
+    "work/brief247/kayak-size-transforms.json"
+  ]
+}

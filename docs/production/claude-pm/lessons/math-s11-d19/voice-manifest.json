@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d19.md",
+  "sourceSha256": "bdbc2de7258961a9bdc530d1ef0c9093fe036d9b3ac1edb17fbce4737258e7bd",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-what-changes",
+      "text": "The three hour night is a genuine outlier, so we keep it. But it's fair to ask how much it shapes our results. Here are the six measures we've learned, with the outlier. Removing it isn't the plan. Comparing is. Now take it away. The two box plots look almost identical, but some of these numbers are about to move a lot, and some won't move at all. Knowing which is which tells you what to report. So how does one outlier change the measures of centre and spread?",
+      "audioFile": "public/audio/math-s11-d19/hook-what-changes.wav"
+    },
+    {
+      "id": "centre-with-without",
+      "text": "Start with the centre. Without the three hour night, nineteen values add to a hundred and forty-one hours, so the mean is seven point four two. It went up by about a fifth of an hour, around thirteen minutes. That's because the mean uses every value. One low value was pulling it down, and now it isn't. The median stays at seven and a half, and so does the mode. They depend on the order and the counts, not on how far away the extreme value is. In other data, removing one value can shift the median a little, by a single step along the ordered list. Here the ties at seven and a half hold it exactly where it was. Saying the median can never change at all is a slip.",
+      "audioFile": "public/audio/math-s11-d19/centre-with-without.wav"
+    },
+    {
+      "id": "spread-with-without",
+      "text": "Now the spread. The range drops from six and a half hours to four, because the three hour night was one of the two extremes the range is built from. The IQR stays at one and a half. It only looks at the middle half, and the outlier was outside it. The standard deviation falls from one point three nine to one point nought three, about a quarter less. Sigma combines every value's distance from the mean, and the three hour night was four point two hours away, much further than any other value. One big distance counts heavily, so removing it shrinks sigma a lot. So the outlier stretched the range and sigma, and left the IQR alone. Notice the box plots hide most of this. They show the range changing, but not the mean or sigma.",
+      "audioFile": "public/audio/math-s11-d19/spread-with-without.wav"
+    },
+    {
+      "id": "drag-and-watch",
+      "text": "Here's the whole pattern at once. Drag the outlier along the number line and watch all six measures. Slide it up into the middle of the data, and the mean, the range and sigma all settle down. Keep going, and push it far out to the right, as a very high value instead. Now the mean climbs, the range stretches, and sigma grows. Through all of that, the median and the IQR barely flicker. An outlier on either side pulls the sensitive measures towards it, and leaves the resistant ones alone. Try it with any dataset, and the same pattern appears.",
+      "audioFile": "public/audio/math-s11-d19/drag-and-watch.wav"
+    },
+    {
+      "id": "sensitive-resistant",
+      "text": "So sort the measures. The mean, the range and the standard deviation are sensitive. They change a lot when one extreme value changes. The median and the IQR are resistant. They barely change. The mode usually holds too. That's why they come in pairs. When data have outliers, or are skewed, report the median and the IQR. That's why house prices in the news are reported as a median. When data are symmetric with no outliers, the mean and the standard deviation make good use of every value. And when an outlier is genuine, it's often best to report the results with it and without it, so nobody is misled.",
+      "audioFile": "public/audio/math-s11-d19/sensitive-resistant.wav"
+    },
+    {
+      "id": "investigation-conclusion",
+      "text": "That brings our investigation to its last step. We started with an issue, students tired in first period, and a question, how much do Year 11 students at our school sleep on a school night? Our sample's median was seven and a half hours, with an IQR of one and a half hours, below the eight to ten hour guideline, and the outlier doesn't change that. Students whose phones charged outside the bedroom tended to sleep more, a median of eight hours against six point seven five. It's an observational study, so it doesn't prove the phone caused it. But it's a fair, honest answer to the question we asked. Every step mattered, from the clear question to the fair sample.",
+      "audioFile": "public/audio/math-s11-d19/investigation-conclusion.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. An outlier pulls the mean, the range and sigma. The median and the IQR hold steady. So with outliers or skew, report the median and the IQR. With symmetric data, the mean and sigma.",
+      "audioFile": "public/audio/math-s11-d19/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. The goals scored in a season by eight players were four, five, five, six, seven, eight, eight, and thirty-one, by the star striker. Find the mean and median with and without thirty-one. Then, which measure of centre changed more? Explain why. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d19/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "With thirty-one, the mean is nine point two five and the median is six point five. Without it, the mean is six point one four and the median is six. The mean fell by over three goals, the median by half a goal. The mean changed more, because it uses every value, so the thirty-one pulled it up. Saying the median changed more, because it went down, is the slip.",
+      "audioFile": "public/audio/math-s11-d19/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A dataset has one very large outlier. If it were removed, which of these would change a lot? The mean, the median, the range, the IQR, or the standard deviation? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d19/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The mean, the range and the standard deviation would change a lot. The mean and sigma use every value, and the range uses the extremes, so they're sensitive. The median and the IQR would barely move, because they depend on the middle of the data. Saying all five would change is the slip.",
+      "audioFile": "public/audio/math-s11-d19/feedback-2.wav"
+    },
+    {
+      "id": "handoff-year-11-done",
+      "text": "And that's Data analysis done, from a survey question to a fair conclusion. It's also the end of Year 11 Maths Standard. You've worked with formulas and lines, earned and managed money, measured, timed, mapped networks, and analysed data. Year 12 starts with a decision. Two driving schools, two different prices. Which is cheaper depends on how many lessons you need, and two lines on one graph can tell you. That's next.",
+      "audioFile": "public/audio/math-s11-d19/handoff-year-11-done.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d19/key-notes.wav"
+    }
+  ]
+}

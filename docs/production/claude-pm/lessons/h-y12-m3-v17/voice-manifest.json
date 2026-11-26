@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/hms-y12-m3-v17.md",
+  "sourceSha256": "d3bbdea46bd82443bbd9954ae1a29044b6860a620bff8ebbd434c840ea7f952b",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "So, has digital health connected our health information? Imagine you're unconscious in an emergency department, in a city you were only visiting. Nobody knows your name. List the five things you'd most want the staff to know. Then, for each one, where does that information live right now? And could they actually get it?",
+      "audioFile": "public/audio/hms-y12-m3-v17/hook.wav"
+    },
+    {
+      "id": "what-for",
+      "text": "Digital health means using information and communication technology to deliver, coordinate and record health care. It isn't really a technology. It's a response to a problem you've met before. Health in Australia is split across governments and sectors, so your information ends up in pieces: at the GP, the specialist, the pathology lab, the pharmacy, two hospitals and an aged care service. None of them can see the others' pieces. So tests get repeated because nobody can see the last result. Medicines get prescribed without the full list. Care gets dropped at the seams. And you become the one carrying the information, which fails exactly when you're unconscious, confused or unwell. Digital health tries to make a split system behave, from your side, like one system.",
+      "audioFile": "public/audio/hms-y12-m3-v17/what-for.wav"
+    },
+    {
+      "id": "services",
+      "text": "So what exists? The national shared record, My Health Record, is a summary of key documents: discharge summaries, medicines, test reports and immunisations. It's opt-out, so most Australians have one, and you control access and can see who looked. But it's a summary. Uploading has mostly been the provider's choice, and new rules are starting to make some test results upload by default. Telehealth brings consultations across distance. Electronic prescriptions replace the paper script. Secure messaging sends referrals and results straight to the next provider. And national registers record immunisations and cancer screening. Notice which work best. The services with one narrow job and a single owner, like registers, e-prescriptions and messaging. The one with the broadest ambition, the shared record, is the most debated.",
+      "audioFile": "public/audio/hms-y12-m3-v17/services.wav"
+    },
+    {
+      "id": "extent",
+      "text": "So, to what extent has it worked? Judge it three ways. Does information follow the patient? Do clinicians actually use it? And has care improved? Registers work, telehealth stuck after the pandemic, and e-prescribing and messaging cut errors quietly. And the shared record exists for most people. But coverage is not use. A record nobody opens adds nothing. Uploading is uneven, so the summary has gaps, and an incomplete record can be worse than none, because it may be trusted as complete. Systems built separately still can't share information well, which is called poor interoperability. Slow searching puts busy clinicians off, and early privacy worries dented trust. So here's the graded judgement. It's succeeded where the job was narrow and had one owner, and only partly where it had to connect organisations never designed to share. The infrastructure is built. Real connection is partial.",
+      "audioFile": "public/audio/hms-y12-m3-v17/extent.wav"
+    },
+    {
+      "id": "individuals-organisations",
+      "text": "The syllabus asks about individuals and organisations, so answer for both. For individuals, the opportunities are seeing your own information, fewer repeated tests, safer care in an emergency, and telehealth for people limited by distance, mobility, work or caring. The challenges are privacy, especially for sensitive information, digital exclusion by age, income, remoteness, disability or language, and records read without context that worry rather than inform. For organisations, the opportunities are safer prescribing, better coordination at the seams, data for planning, and a workforce that reaches further. The challenges are the cost and disruption of setting it up, time in short consultations, keeping data secure, and making systems talk. And here's the catch. The costs fall on providers, but the benefits fall on the system and the patient. When that happens, adoption is slow, however good the idea.",
+      "audioFile": "public/audio/hms-y12-m3-v17/individuals-organisations.wav"
+    },
+    {
+      "id": "conditions",
+      "text": "So what would make it work? Five conditions, and none is a new technology. Sharing has to be the default for every key document, not just some test results, because voluntary uploading guarantees gaps. Using it has to be faster than not using it. Common standards have to be built and enforced, so systems share meaning, not just documents. Trust has to be kept, with clear access rules, visible logs and real consequences. And people who can't go digital need another way in, or every gain goes to those who already had the most. Digital health has connected exactly as much as a deliberately split system lets it.",
+      "audioFile": "public/audio/hms-y12-m3-v17/conditions.wav"
+    },
+    {
+      "id": "memory",
+      "text": "Two things to remember. Coverage is not use. And digital health connects only as much as the system lets it.",
+      "audioFile": "public/audio/hms-y12-m3-v17/memory.wav"
+    },
+    {
+      "id": "attempt",
+      "text": "Two exam questions. First. Case one: a patient's severe penicillin allergy is recorded at one hospital. Months later, a hospital in another city prescribes penicillin. Case two: an older person leaves hospital, and their GP never learns what changed. For each, name the digital health service that would help, what has to be true for it to help, and what happens if that fails. Pause here to answer.",
+      "audioFile": "public/audio/hms-y12-m3-v17/attempt.wav"
+    },
+    {
+      "id": "feedback-one",
+      "text": "Case one: a shared record holding the allergy, but only if the first hospital uploads it and the second one looks. If not, the reaction happens. Case two: secure messaging of a discharge summary to the GP, which needs the hospital to send it and the GP's system to receive it. If that fails, medicine changes are missed. The classic mistake is naming the service without the condition.",
+      "audioFile": "public/audio/hms-y12-m3-v17/feedback-one.wav"
+    },
+    {
+      "id": "attempt-two",
+      "text": "Second. A remote community gets specialist reviews by telehealth for stable chronic conditions. Explain one opportunity and one challenge for the individual, and one of each for the organisations involved. Pause here to answer.",
+      "audioFile": "public/audio/hms-y12-m3-v17/attempt-two.wav"
+    },
+    {
+      "id": "feedback-two",
+      "text": "For individuals, the opportunity is specialist care without days of travel. The challenge is connection, a device and confidence, which the most disadvantaged may lack. For organisations, it stretches scarce specialists further, but needs funding, local staff to support the call, and systems that share results. The classic mistake is listing only individuals.",
+      "audioFile": "public/audio/hms-y12-m3-v17/feedback-two.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So judge digital health on use, not coverage, answer for individuals and organisations, and ask what the system allows. Now zoom out. Put millions of these records together, without names, and they become something else. A dataset. How is big data shaping our health?",
+      "audioFile": "public/audio/hms-y12-m3-v17/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/hms-y12-m3-v17/key-notes.wav"
+    }
+  ]
+}

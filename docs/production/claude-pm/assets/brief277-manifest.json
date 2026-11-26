@@ -1,0 +1,184 @@
+{
+  "brief": 277,
+  "date": "2026-11-26",
+  "source": "public/assets/physics/y12p-dc-motor-model-v1.png",
+  "sourceSha256": "bfc8d0d396ec57b8520d136586f1565540092cc7a5a789472cfc707a0c30614f",
+  "canvas": [
+    1536,
+    1024
+  ],
+  "method": "Native-scale binary polygon cuts with 4-pixel margin to retain edges. No rescale or mirror. Built-in image edit supplied repaired wood only inside former magnet footprints on the original board. Every pixel outside the cut masks remains byte-identical to the original, including coil, axle, ring, brushes and terminals. Existing background halo is inherited. Final cut edges follow contiguous original magnet-colour contours, with interior screw pixels retained. Removal mask extends four pixels around the silhouettes for board repair only. Final cut edges follow contiguous original magnet-colour contours, with interior screw pixels retained. Removal mask extends four pixels around the silhouettes for board repair only. Final cut edges follow contiguous original magnet-colour contours, with interior screw pixels retained. Removal mask extends four pixels around the silhouettes for board repair only.",
+  "polygons": {
+    "red": [
+      [
+        394,
+        356
+      ],
+      [
+        498,
+        211
+      ],
+      [
+        531,
+        211
+      ],
+      [
+        534,
+        448
+      ],
+      [
+        457,
+        654
+      ],
+      [
+        450,
+        674
+      ],
+      [
+        346,
+        674
+      ],
+      [
+        342,
+        658
+      ],
+      [
+        363,
+        602
+      ],
+      [
+        393,
+        596
+      ]
+    ],
+    "blue": [
+      [
+        1002,
+        212
+      ],
+      [
+        1047,
+        212
+      ],
+      [
+        1141,
+        355
+      ],
+      [
+        1143,
+        598
+      ],
+      [
+        1170,
+        603
+      ],
+      [
+        1193,
+        657
+      ],
+      [
+        1187,
+        674
+      ],
+      [
+        1079,
+        674
+      ],
+      [
+        1072,
+        658
+      ],
+      [
+        1000,
+        449
+      ]
+    ]
+  },
+  "centres": {
+    "red": [
+      438.5,
+      443.0
+    ],
+    "blue": [
+      1094.0,
+      440.5
+    ]
+  },
+  "proof": {
+    "binaryReassemblyBeforeWoodRestore": "Initial binary partition was byte-identical. Final clean silhouettes omit surrounding board fringe; protected non-magnet pixels remain byte-identical.",
+    "allPixelsOutsideMagnetMasks": "byte-identical RGBA",
+    "coilRingBrushesAxleTerminals": "untouched",
+    "finalMagnetLayers": "Original RGBA pixels within contiguous magnet-colour outer contour; screw holes filled to preserve hardware. No repaint or rescale."
+  },
+  "layers": [
+    {
+      "name": "red",
+      "path": "public/assets/physics/y12p-dc-motor-model-magnet-red-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "0fc83aa83730a382ead0fdff90076923aefdac2a7d6779325be4251f2ffa3f05",
+      "qa": "work/brief277/y12p-dc-motor-model-magnet-red-v1-inspection.jpg",
+      "status": "accepted",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "visualReview": "Viewed final paper and dark-board inspection sheet at 400 pixels wide. Original canvas registration retained."
+    },
+    {
+      "name": "blue",
+      "path": "public/assets/physics/y12p-dc-motor-model-magnet-blue-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "283fcfa10e8528c33fe17faddc29e52c15f6f0b1509e43ca87c50cff5a5158f5",
+      "qa": "work/brief277/y12p-dc-motor-model-magnet-blue-v1-inspection.jpg",
+      "status": "accepted",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "visualReview": "Viewed final paper and dark-board inspection sheet at 400 pixels wide. Original canvas registration retained."
+    },
+    {
+      "name": "nomagnets",
+      "path": "public/assets/physics/y12p-dc-motor-model-nomagnets-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "c68f9c4c20948777e2a694ef526c065db5041ed8fe3a9ff801298d15cd0a0d2e",
+      "qa": "work/brief277/y12p-dc-motor-model-nomagnets-v1-inspection.jpg",
+      "status": "accepted",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "visualReview": "Viewed final paper and dark-board inspection sheet at 400 pixels wide. Original canvas registration retained."
+    }
+  ],
+  "cradle": {
+    "path": "public/assets/physics/y12p-magnet-cradle-v1.png",
+    "status": "not painted: source error-check gate has one should-fix",
+    "finding": "Scene 11 requires its illustrative-values label",
+    "authority": "Codex asset brief requires physics and error checks to pass before new cradle painting",
+    "anchorsAndPanFit": "pending plate and inspection"
+  },
+  "woodRepair": {
+    "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a211d9-8448-77f0-8bf4-ffbeb0c92050\\exec-4aee5dd0-1eaf-428d-b784-5269b42897ea.png",
+    "prompt": "Edit the existing DC motor model: REMOVE ONLY the left red magnet and right blue magnet including their coloured mounting feet. Restore the plain wooden board surface beneath their footprints, matching the board grain and perspective. Above the board leave transparency where magnets were. Keep the coil, axle, bearing, split ring, brushes, screws, terminals and board outline exactly in place, original canvas1536x1024. Do not redesign, rotate, mirror, stretch or replace the apparatus. No labels or text. Transparent background. Only repaired wood from the former magnet footprints will be used, all other apparatus pixels will come from the untouched original.",
+    "method": "Use generated wood only inside magnet cut footprints. All other pixels must remain original.",
+    "sha256": "6a8448aeb45676e4c5e8966cc4c704fcae26113eb9c2a427c73e6e80a8c190ca",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "usedOnlyInsideMask": true
+  },
+  "maskExpansionPixels": 4,
+  "sourceDesignSha256": "a48ca9d30877c8a92590bc164ef2e8ce93d6bce9ce8c88b241fa110c1bcdd270",
+  "humanListening": "pending"
+}

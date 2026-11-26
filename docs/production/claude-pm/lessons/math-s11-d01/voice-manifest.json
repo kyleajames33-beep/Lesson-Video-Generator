@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d01.md",
+  "sourceSha256": "c3b1915dc538ba271524c2f872d94e01e7455146678894644166bde2171fa847",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-which-button",
+      "text": "Here's the survey from the end of last time. It asks how many hours you slept last night, with four buttons to choose from. Try it as someone who slept exactly eight hours. Is that seven to eight, or eight to nine? Both buttons fit. And what if last night was a Saturday? A survey can look fine and still collect answers you can't trust. So how does a statistical investigation start, with a clear question and a fair survey?",
+      "audioFile": "public/audio/math-s11-d01/hook-which-button.wav"
+    },
+    {
+      "id": "investigation-steps",
+      "text": "Every statistical investigation follows the same steps. It starts with an issue, something worth finding out about. Then you pose a question that data can answer. Then you collect the data, organise and display it, analyse it, and finally draw a conclusion. Here's the issue we'll follow through this whole topic. Teachers notice that Year 11 students seem tired in first period. Australian guidelines advise people aged fourteen to seventeen to get eight to ten hours of sleep a night. So are our Year 11 students getting enough? The survey comes at the collect step, but it can only be as good as the question before it. In every video from here on, the strip shows which step we're on.",
+      "audioFile": "public/audio/math-s11-d01/investigation-steps.wav"
+    },
+    {
+      "id": "issue-to-question",
+      "text": "An issue is too vague to measure. Do students sleep enough? Enough for what, and which students? A statistical question is one you answer by collecting data that varies. How long did I sleep last night has just one answer, so it isn't statistical. How many hours do Year 11 students at our school sleep on a school night expects lots of different answers, and that's what makes it statistical. A good statistical question tells you what to measure, and who to measure it for. Notice this one names who we're asking about. That group is the target population, the whole group you want to know about. Here it's the two hundred Year 11 students at our school, not every teenager in Australia. We'll usually only ask some of them. That part is called the sample, and choosing it fairly is coming soon.",
+      "audioFile": "public/audio/math-s11-d01/issue-to-question.wav"
+    },
+    {
+      "id": "clear-language",
+      "text": "Now the survey itself. The first principle is clear language. Use the plain words your target population actually uses. How would you rate your sleep hygiene sounds official, but many students won't know what sleep hygiene means, so their answers will mean different things. People rarely skip a question they don't understand. They guess, and a guess looks just like a real answer. Vague words cause the same problem. Do you often sleep badly? One person's often is twice a week, and another's is every night. Ask for something people can answer exactly. How many hours did you sleep? Every person reads that the same way.",
+      "audioFile": "public/audio/math-s11-d01/clear-language.wav"
+    },
+    {
+      "id": "unambiguous",
+      "text": "The second principle is that each question has only one possible meaning. Watch for three traps. First, two ideas in one question. How many hours do you sleep and use your phone in bed? Someone who sleeps eight hours and scrolls for one can't answer that, so split it into two questions. Second, a missing time frame. Last night might be a Saturday, when people sleep in, so say on your last school night, Sunday to Thursday, and every answer is about the same kind of night. Third, answer boxes that overlap. Seven to eight and eight to nine both contain eight, so an eight hour sleeper can pick either. Make it seven to under eight, and eight to under nine. Now every eight lands in one place. Each fix removes a second way to read the question.",
+      "audioFile": "public/audio/math-s11-d01/unambiguous.wav"
+    },
+    {
+      "id": "number-of-choices",
+      "text": "The third principle is the number of choices. Too few, and you lose information. Do you get enough sleep, yes or no, can't tell us how much. Too many, and people stop reading. A list of every half hour from nothing to twelve is twenty-five buttons. Somewhere in between works. The choices must also cover every possible answer, so nobody is left out. Over nine leaves out exactly nine, so make the last box nine or more. Now the four boxes fit every answer, each in exactly one place. Another option is a box where people type the number, to the nearest half hour. And if you ask people to rate something, an odd number of choices, like five, gives a fair middle option.",
+      "audioFile": "public/audio/math-s11-d01/number-of-choices.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's the card for writing any survey question. Plain words. One idea. A clear time. And a box for every answer, so every possible answer fits exactly one box, with no overlaps and no gaps.",
+      "audioFile": "public/audio/math-s11-d01/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A survey asks, how much do you spend on your phone plan each month? The choices are nought to twenty dollars, twenty to forty dollars, and forty to sixty dollars. Describe two problems with these choices, and rewrite them. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d01/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Twenty dollars fits two boxes, and so does forty, so the boxes overlap. And a plan over sixty dollars has no box at all, so there's a gap. Rewrite them as under twenty, twenty to under forty, forty to under sixty, and sixty or more. Saying the boxes are fine is the slip.",
+      "audioFile": "public/audio/math-s11-d01/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A café owner wonders whether customers would use a loyalty app. Name the target population. Then choose the better question, and say why. Question one. Would you utilise a digital rewards solution? Question two. Would you use a free phone app that gives you every tenth coffee free? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d01/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The target population is the café's customers, because they're the ones who'd use the app. Question two is better. It uses plain words, and it says exactly what the app does, so everyone reads it the same way. Naming everyone in the town as the population is the slip.",
+      "audioFile": "public/audio/math-s11-d01/feedback-2.wav"
+    },
+    {
+      "id": "handoff-privacy",
+      "text": "Our sleep question is ready. On your last school night, how many hours did you sleep, with four boxes that fit everyone. But a real survey asks more than one question. This one also asks your name, and where your phone charges overnight. That's personal. Who gets to see those answers, and could the way we ask change what people say? That's next.",
+      "audioFile": "public/audio/math-s11-d01/handoff-privacy.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d01/key-notes.wav"
+    }
+  ]
+}

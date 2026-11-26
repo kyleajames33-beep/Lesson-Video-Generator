@@ -1,0 +1,195 @@
+{
+  "design": "chem-y11-m2-v14",
+  "sourceSHA256": "82c1a9d81bc3b456dc0436a1b24bda0b29bebeb5146354e76dd9a04867ab7ebb",
+  "newRequests": [
+    {
+      "file": "y11c-sample-bottle-clear-v1.png",
+      "designs": [
+        "chem-y11-m2-v14",
+        "chem-y11-m2-v15"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reference": "public/assets/chemistry/m8-river-sampling-bottle-v1.png",
+      "instruction": "Crop original pixels only, remove every dipper/pole pixel, preserve the bottle and alpha, never repaint or stretch.",
+      "artifact": {
+        "source": "public\\assets\\chemistry\\m8-river-sampling-bottle-v1.png",
+        "sourceSHA256": "3457e613084a0f35a061203c7ea29c9a415f60939155b4c51b4fe50d2e82ac63",
+        "file": "public\\assets\\chemistry\\y11c-sample-bottle-clear-v1.png",
+        "sha256": "1761db4aaef66e5d4654061f14f21bf611a0d2fed012c52003c2294fa340068f",
+        "operation": "Exact rectangular crop of original RGBA pixels; no repaint, resampling, masking or colour/alpha edits",
+        "cropBoxExclusiveRightBottom": [
+          988,
+          956,
+          1460,
+          1790
+        ],
+        "size": [
+          472,
+          834
+        ],
+        "dipperOrPoleConnectedPixelsInCrop": 0,
+        "allBottlePixelsAboveAlpha16Retained": true,
+        "qualification": "Very faint original alpha fringe outside the visible bottle is trimmed by the rectangle. The original cap, clear liquid and small painted bubbles remain. No new artwork was invented.",
+        "visualQA": "Pass at native size and on paper/dark composites. Bottle alone, no visible dipper/pole. Exact RGBA crop verified."
+      }
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "-orange-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "-red-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m6-beaker-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-beaker-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m6-funnel-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-funnel-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m6-indicator-methyl-orange-set-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-indicator-methyl-orange-set-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m6-volumetric-flask-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-volumetric-flask-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m8-mohr-flask-yellow-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-mohr-flask-yellow-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m8-river-sampling-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-river-sampling-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "m8-river-sampling-bottle-v2.png",
+      "paths": [
+        "public/assets/chemistry/m8-river-sampling-bottle-v2.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m6-burette-clamp-stand-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-burette-clamp-stand-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m6-burette-meniscus-closeup-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-burette-meniscus-closeup-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m6-clip-methyl-orange-yellow-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-clip-methyl-orange-yellow-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m6-conical-flask-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-conical-flask-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m6-volumetric-pipette-filler-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-volumetric-pipette-filler-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m6-white-tile-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-white-tile-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m8-balance-watch-glass-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-balance-watch-glass-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/m8-river-sampling-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-river-sampling-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "public/assets/chemistry/p03-dropper-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/p03-dropper-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v14",
+      "reference": "y11c-sample-bottle-clear-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "generationTool": null,
+  "status": "source reviews handed in; painting not yet done",
+  "assetHandInSourceSHA256": "82c1a9d81bc3b456dc0436a1b24bda0b29bebeb5146354e76dd9a04867ab7ebb",
+  "sourceStillMatchesReviewAtAssetHandIn": true,
+  "brief242Recheck": {
+    "date": "2026-11-16",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m2-v14-native-qa-16-nov.json",
+    "reviewedSourceSha256": "0aa1349ecf8d0f379baf38bb2467d3053adb20fff31d6248533b168167f6cb80",
+    "result": "Seven native paper/dark plate checks recorded. Methyl orange trio has identical alpha and upper-glass pixels, so same-origin uniform swaps preserve its outline. Both new question pictures give no answer data away. All 15 narration strings remain unchanged (5,659 characters), and pour-clock endpoints recalculate correctly. Built rig contact, meniscus numerals, flow and clock synchronisation remain pending. No whole-lesson clearance."
+  }
+}

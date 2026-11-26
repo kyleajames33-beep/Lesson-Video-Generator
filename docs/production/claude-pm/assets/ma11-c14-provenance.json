@@ -1,0 +1,122 @@
+{
+  "brief": 248,
+  "lesson": "c14",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-91f21b24-f130-4583-97de-0d65a541f452.png",
+      "sha256": "a9522c9fbe9cd0104756c2bfd5bc3fa354e7f36a9558e0c442c00d48a533a82d",
+      "nativeSize": [
+        1402,
+        1122
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        91,
+        24,
+        1311,
+        1106
+      ],
+      "marginFractions": [
+        0.06490727532097004,
+        0.0213903743315508,
+        0.06490727532097004,
+        0.0142602495543672
+      ],
+      "evidence": [
+        "work/brief248/c14-garage-front-native-paper.jpg",
+        "work/brief248/c14-garage-front-native-dark.jpg",
+        "work/brief248/c14-garage-front-native-white.jpg",
+        "work/brief248/c14-garage-front-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-garage-front-v1.png",
+      "path": "public/assets/maths/ma11-garage-front-v1.png",
+      "brief": 248,
+      "lesson": "c14",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: uniform scaling with doorway mask demonstrated; subject and alpha checks passed",
+        "observations": [
+          "Curtain aspect differs from doorway; no single-axis stretching allowed.",
+          "Doorway is transparent, not a painted dark interior. No text or people."
+        ],
+        "evidence": [
+          "work/brief248/c14-door-composite-paper.jpg",
+          "work/brief248/c14-door-composite-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-garage-front-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-b3e8e0a7-aa95-4ab0-8f2e-08a7815e6a86.png",
+      "sha256": "de4cc4fac9136695a13fb075f3041e52aab15d56398d7bb061274f892fd32778",
+      "nativeSize": [
+        1347,
+        1167
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        81,
+        177,
+        1267,
+        991
+      ],
+      "marginFractions": [
+        0.060133630289532294,
+        0.15167095115681234,
+        0.05939123979213066,
+        0.15081405312767782
+      ],
+      "evidence": [
+        "work/brief248/c14-roller-door-curtain-native-paper.jpg",
+        "work/brief248/c14-roller-door-curtain-native-dark.jpg",
+        "work/brief248/c14-roller-door-curtain-native-white.jpg",
+        "work/brief248/c14-roller-door-curtain-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-roller-door-curtain-v1.png",
+      "path": "public/assets/maths/ma11-roller-door-curtain-v1.png",
+      "brief": 248,
+      "lesson": "c14",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        1300
+      ],
+      "qa": {
+        "result": "qualified: uniform scaling with doorway mask demonstrated; subject and alpha checks passed",
+        "observations": [
+          "Curtain aspect differs from doorway; no single-axis stretching allowed.",
+          "Doorway is transparent, not a painted dark interior. No text or people."
+        ],
+        "evidence": [
+          "work/brief248/c14-door-composite-paper.jpg",
+          "work/brief248/c14-door-composite-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Garage front and roller curtain delivered at native1402x1122 and1347x1167. Doorway rectangle308,411,1092,1017;252.5px/m for2.4m opening. Interior alpha0..1. Qualified curtain placement: scale uniformly0.7676768 and centre behind jambs, with58.63px side overlap clipped to doorway.900/full-width composites at closed/half/full opening pass on paper and dark. Root owns scene mask and playback.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c14-generation.json",
+    "work/brief248/c14-door-geometry.json",
+    "work/brief248/qa-garage.py",
+    "work/brief248/c14-door-composite-paper.jpg",
+    "work/brief248/c14-door-composite-dark.jpg"
+  ]
+}

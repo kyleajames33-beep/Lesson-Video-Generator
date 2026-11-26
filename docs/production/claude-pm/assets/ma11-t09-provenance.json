@@ -1,0 +1,129 @@
+{
+  "brief": 249,
+  "lesson": "t09",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-726d9e3b-2035-4a65-ab59-45fa2705870f.png",
+      "sha256": "49f28d7f238d568e8312395d6cae61584f76a0b54ecc17fff620ab67d5961509",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        61,
+        71,
+        1173,
+        1194
+      ],
+      "marginFractions": [
+        0.04864433811802233,
+        0.05661881977671451,
+        0.0645933014354067,
+        0.04784688995215311
+      ],
+      "evidence": [
+        "work/brief249/t09-table-native-paper.jpg",
+        "work/brief249/t09-table-native-dark.jpg",
+        "work/brief249/t09-table-native-white.jpg",
+        "work/brief249/t09-table-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-drop-leaf-table-top-v1.png",
+      "path": "public/assets/maths/ma11-drop-leaf-table-top-v1.png",
+      "brief": 249,
+      "lesson": "t09",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: circular subject and seam present; measured121.824degree chord differs from120degree model",
+        "evidence": [
+          "work/brief249/t09-table-native-black.jpg",
+          "work/brief249/t09-table-native-dark.jpg",
+          "work/brief249/t09-table-native-paper.jpg",
+          "work/brief249/t09-table-native-white.jpg",
+          "work/brief249/t09-table-qa-paper-dark-dark.jpg",
+          "work/brief249/t09-table-qa-paper-dark-paper.jpg",
+          "work/brief249/t09-table-registration-dark.jpg",
+          "work/brief249/t09-table-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-drop-leaf-table-top-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-a754a971-6058-484b-b795-ae058f1f66bd.png",
+      "sha256": "796dd28ebff995bccd866273b4f3f6bc2b386eaa16813b878827dd31d1bd14e5",
+      "nativeSize": [
+        821,
+        1915
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        195,
+        64,
+        626,
+        1841
+      ],
+      "marginFractions": [
+        0.23751522533495736,
+        0.03342036553524804,
+        0.23751522533495736,
+        0.038642297650130546
+      ],
+      "evidence": [
+        "work/brief249/t09-tuning-fork-native-paper.jpg",
+        "work/brief249/t09-tuning-fork-native-dark.jpg",
+        "work/brief249/t09-tuning-fork-native-white.jpg",
+        "work/brief249/t09-tuning-fork-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-tuning-fork-v1.png",
+      "path": "public/assets/maths/ma11-tuning-fork-v1.png",
+      "brief": 249,
+      "lesson": "t09",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        1400
+      ],
+      "qa": {
+        "result": "passed: two prongs, blank upright steel fork and wooden block; subject/native alpha checks",
+        "evidence": [
+          "work/brief249/t09-tuning-fork-native-black.jpg",
+          "work/brief249/t09-tuning-fork-native-dark.jpg",
+          "work/brief249/t09-tuning-fork-native-paper.jpg",
+          "work/brief249/t09-tuning-fork-native-white.jpg",
+          "work/brief249/t09-tuning-fork-qa-paper-dark-dark.jpg",
+          "work/brief249/t09-tuning-fork-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Table and tuning fork delivered at native1254square and821x1915. Table centre617.03,632.22, radius552.48px; hinge endpoints886,146 and886,1113 give121.824degrees rather than120. Qualified painting only: root resolves exact segment overlay registration; circle max residual6.57px. Fork is plain, unmarked, two-pronged steel on a round timber block.900/full-width paper/dark checks recorded; fork900px QA is9.6percent above native width, with no production upsampling.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/t09-calculations.json",
+    "work/brief249/t09-source-audit.json",
+    "work/brief249/t09-table-candidate-measurements.json",
+    "work/brief249/t09-table-generation.json",
+    "work/brief249/t09-table-geometry.json",
+    "work/brief249/t09-table-layout-guide.json",
+    "work/brief249/t09-table-qa.json",
+    "work/brief249/t09-tuning-fork-candidate-measurements.json",
+    "work/brief249/t09-tuning-fork-generation.json",
+    "work/brief249/t09-tuning-fork-qa.json"
+  ]
+}

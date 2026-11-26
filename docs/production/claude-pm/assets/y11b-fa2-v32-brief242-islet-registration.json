@@ -1,0 +1,57 @@
+{
+  "id": "biology-fa2-v32-islet-registration",
+  "brief": 242,
+  "files": [
+    "public/assets/biology/m8-pancreatic-islet-v1.png",
+    "public/assets/biology/y11-pancreatic-islet-type1-v1.png"
+  ],
+  "sha256": [
+    "d518c2a2f9c78cacaea50d38bd295ee7df6b0495c3747f3a48d92813c1904289",
+    "3bd91cfad6a157b69ec3ece085a09513c94bb276b00a6e226815b540aef062f2"
+  ],
+  "nativeSizes": [
+    [
+      2000,
+      2000
+    ],
+    [
+      1254,
+      1254
+    ]
+  ],
+  "uniformScaleForType1QaOnly": 1.594896331738437,
+  "translation": [
+    0,
+    0
+  ],
+  "alphaAbove8Bounds": [
+    [
+      221,
+      380,
+      1779,
+      1619
+    ],
+    [
+      221,
+      378,
+      1780,
+      1620
+    ]
+  ],
+  "silhouetteMaskIoU": 0.997709074027618,
+  "qa": {
+    "result": "pass static uniform registration",
+    "evidence": [
+      "work/brief242/islet-pair-uniform-registration-paper.png",
+      "work/brief242/islet-healthy-native-dark.jpg",
+      "work/brief242/islet-type1-native-dark.jpg"
+    ],
+    "observations": [
+      "Outer tissue, red capillary and amber cells align under uniform scale. Teal beta cells are mostly absent in the type 1 plate, with two survivors.",
+      "No people, faces, labels, numbers or question data. No visible external halo on actual dark composites.",
+      "These are different native resolutions. They are not pixel-identical. No production pixels were resized or overwritten."
+    ]
+  },
+  "buildInstruction": "Fit both square images into the same square box, preserve aspect and centre. Check the actual scene 4 swap at 520 px tall.",
+  "limitation": "Static registration only. Timing and playback still require build review."
+}

@@ -1,0 +1,136 @@
+{
+  "design": "phys-y12-m5-v20",
+  "sourceSHA256": "cbbb13492fb7793f91f6d39a57306b168bd0684ee7d24de65834d846e30cd3f6",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v20",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v20",
+      "reference": "public/assets/physics/phys-y11-sun-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sun-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v20",
+      "reference": "public/assets/sun.png",
+      "paths": [
+        "public/assets/sun.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v20",
+      "reference": "y12p-comet-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-comet-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v20",
+      "reference": "y12p-mars-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-mars-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "comet",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-862f8480-4af0-4db4-b8b0-20b7ce6bd501.png",
+      "size": [
+        1983,
+        793
+      ],
+      "alpha16Bounds": [
+        263,
+        270,
+        1695,
+        629
+      ],
+      "marginFraction": [
+        0.13262733232476046,
+        0.34047919293820933,
+        0.14523449319213314,
+        0.2068095838587642
+      ],
+      "file": "public/assets/physics/y12p-comet-v1.png",
+      "sha256": "79ee8ebb5e1966485727fbf50ddec4de8fa8f50607800fd5930cf0217771f88b",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "nucleusCentre": [
+          1624,
+          382
+        ],
+        "note": "Dust and ion tails extend left. Rotate about nucleus so ion tail points away from coded Sun; do not align tail with orbital velocity. At30px whole-canvas width the coma reads but the tiny nucleus does not resolve separately. Use a coded nucleus dot in very small orbital views."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    },
+    {
+      "key": "mars",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-6ab6c44b-7815-4014-aaf9-dd1b5ca36d42.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha16Bounds": [
+        160,
+        149,
+        1088,
+        1103
+      ],
+      "marginFraction": [
+        0.12759170653907495,
+        0.11881977671451356,
+        0.13237639553429026,
+        0.12041467304625199
+      ],
+      "file": "public/assets/physics/y12p-mars-v1.png",
+      "sha256": "86c78f7757593ee463fab07ab050f49e6c2f0a8605b011192fb0cf76f4ce38ac",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "centre": [
+          624,
+          626
+        ],
+        "radius": 471,
+        "note": "Rust-red full disc, dark markings and small polar cap. Hand-painted limb width928,height954pixels; uniform scale only."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    }
+  ],
+  "qa": "docs/production/claude-pm/assets/brief188-qa",
+  "holds": "Source findings unresolved. v16 method blocked. Old paper clip backdrop confirmed in v15/v16; clean replacement request requires Claude/root decision, no replacement painted.",
+  "motionListeningRelease": "pending"
+}

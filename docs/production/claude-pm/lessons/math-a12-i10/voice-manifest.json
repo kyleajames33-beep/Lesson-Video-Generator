@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i10.md",
+  "sourceSha256": "522a8a6a00c1f889b8da7d58d2d07e3a532bdc20bcac5725274c6bcac4f3d455",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here. The integral of sine x, from zero to two pi, is zero, because the arch below the axis cancels the arch above. Picture sine t as the velocity of a lift, in floors per second, over two pi seconds. For the first half, it rises two floors. For the second half, it comes back down two. It ends where it started, so its net change is zero. But it still travelled four floors, and the shaded region has area four, two for each arch. The integral keeps signs, and the area doesn't. So how do signed integrals differ from total area, and how do we find the area when part of the region is below the axis?",
+      "audioFile": "public/audio/math-a12-i10/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Start with the easy case. When the curve stays on or above the axis, every strip has a positive height, so every strip adds area. Then the area and the integral are the same number. Take y equals two x plus one, from one to three. Earlier, we found this trapezium's area, ten, by geometry. Now with a primitive, x squared plus x, it's twelve minus two, which is ten. Same number, because nothing is below the axis.",
+      "audioFile": "public/audio/math-a12-i10/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now a region below the axis. Take y equals x squared minus four, from zero to two. On this stretch the curve is under the axis, so every height is negative, and every strip adds a negative amount. A primitive is x cubed over three, minus four x. At two that's eight thirds minus eight, which is minus sixteen thirds, and at zero it's zero. So the integral is minus sixteen thirds. But an area can't be negative. A strip's area uses its length, and here the length is minus the height. So the area is the integral with its sign removed, sixteen thirds. We write it as the absolute value of the integral, or as minus the integral.",
+      "audioFile": "public/audio/math-a12-i10/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "What happens when the curve crosses the axis? Stretch the same curve out to three. It crosses at two, and from two to three it's above the axis. That piece has integral seven thirds. Now the whole integral, from zero to three, is minus three. And minus three is seven thirds, minus sixteen thirds. So the integral is the area above the axis, minus the area below it. That's the lift's net change, floors up minus floors down. But it's not the area. For the area, like the floors travelled, take each piece on its own and make it positive. Sixteen thirds plus seven thirds is twenty-three thirds.",
+      "audioFile": "public/audio/math-a12-i10/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Often there's no graph. Find the area bounded by y equals x squared minus four x plus three, the x-axis, and the lines x equals zero and x equals four. First, find where the curve meets the axis. It factorises as x minus one, times x minus three, so the zeros are one and three. They split the interval into three pieces. Test a value in each piece. At zero, y is three, positive. At two, y is minus one, negative. At four, y is three, positive. Now integrate each piece. The answers are four thirds, minus four thirds, and four thirds. Make each one positive and add, so the area is four. The single integral from zero to four is only four thirds, because the middle piece cancels one of the others.",
+      "audioFile": "public/audio/math-a12-i10/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "The same method works for every function in the course. Take y equals e to the x, minus two, from zero to one. It meets the axis where e to the x is two, so x is the natural log of two, about zero point six nine. At zero, y is minus one, so the first piece is below the axis. At one, y is e minus two, which is positive. With the primitive e to the x minus two x, the first piece is one, minus two times the natural log of two, which is negative. The second is e minus four, plus two times the natural log of two. Make the first one positive and add. The area is e minus five, plus four times the natural log of two, about zero point four nine. Keep the log exact all the way through, and round only at the end.",
+      "audioFile": "public/audio/math-a12-i10/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "This difference has a meaning when the graph is a velocity. Take the car with velocity twelve minus two t metres per second, from zero to eight seconds. Its integral is thirty-two metres. That's the displacement, where the car ends up compared with where it started. But the car stops at six seconds and then reverses. Forward from zero to six, it travels thirty-six metres. From six to eight, the integral is minus four, so it travels four metres back. The total distance is thirty-six plus four, which is forty metres. Displacement is the signed integral. Distance is the area.",
+      "audioFile": "public/audio/math-a12-i10/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a way to remember the method. Find the zeros, split, flip the negatives, then add. The integral keeps the signs. The area makes every piece positive.",
+      "audioFile": "public/audio/math-a12-i10/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Find the area of the region bounded by y equals x times x minus two, the x-axis, and the lines x equals zero and x equals four. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i10/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "The zeros are zero and two. From zero to two, the curve is below the axis, and the integral is minus four thirds. From two to four, it's above, and the integral is twenty thirds. Make both positive and add. Four thirds plus twenty thirds is twenty-four thirds, which is eight. Sixteen thirds is wrong. That's the signed integral, where the piece below the axis subtracts.",
+      "audioFile": "public/audio/math-a12-i10/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. The graph shows y equals f of x, from zero to six. The region from zero to two is above the axis, with area five. The region from two to six is below the axis, with area three. Find the integral from zero to six of f, and the total area. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i10/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "The integral counts the region below the axis as negative, so it's five minus three, which is two. The total area counts both as positive, so it's five plus three, which is eight. Eight for the integral is wrong. It treats the region below the axis as if it were above.",
+      "audioFile": "public/audio/math-a12-i10/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So the integral is above minus below, and the area adds every piece as positive. Every region so far has sat against the x-axis. Here's a different one: the region between y equals the natural log of x, the y-axis, and the lines y equals zero and y equals one. Our strips stood up from the x-axis. Here, they'd have to lie sideways. So how do we find this area?",
+      "audioFile": "public/audio/math-a12-i10/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i10/scene-14.wav"
+    }
+  ]
+}

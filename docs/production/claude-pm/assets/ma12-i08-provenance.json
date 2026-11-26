@@ -1,0 +1,90 @@
+{
+  "brief": 238,
+  "design": "i08",
+  "assets": [
+    {
+      "name": "ma12-car-park-entry-v1.png",
+      "path": "public\\assets\\maths\\ma12-car-park-entry-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-c1f3f97f-a114-4732-a501-ce7988760adf.png",
+      "generatorNativeSize": [
+        1586,
+        992
+      ],
+      "nativeSize": [
+        2400,
+        1500
+      ],
+      "sha256": "b7c03126f1a8e8144e73b108675a04ee5476cd6a34967ab89c898a1cf7a3bb4c",
+      "alphaBox": [
+        224,
+        142,
+        2169,
+        1377
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "signFaceCornersClockwise": [
+          [
+            881,
+            834
+          ],
+          [
+            1401,
+            834
+          ],
+          [
+            1401,
+            1014
+          ],
+          [
+            881,
+            1014
+          ]
+        ],
+        "signFaceSize": [
+          520,
+          180
+        ],
+        "entryLaneGroundCentre": [
+          1182,
+          1260
+        ],
+        "driveInScreenAngleDegrees": -90,
+        "screenAngleConvention": "degreesfromrightwardhorizontal,+y down,soforwardintobuildingisupward",
+        "groundAndAngleUncertainty": "about10px/5degrees",
+        "levels": 4
+      },
+      "operations": [
+        "Removedalpha<8noise",
+        "Uniformaspect-preservingscale1.33to2109x1319,paddedat(145,90)to2400x1500",
+        "Matchedblankface-onsign520x180withsimpledarkpaintedpanelandthinframe,coveringonlypriorblankpanel/parapet;gate remainsclear"
+      ],
+      "uniformResampling": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "qa": "work\\brief238\\i08-carpark-qa.jpg",
+      "marginPass": true,
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Asset ma12-car-park-entry-v1.png,final2400x1500pxlandscape8:5. Entrance of a suburban shopping-centre FOUR-LEVEL concrete multi-storey car park,low three-quarter front view. Exactly4open concrete parking decks total,including groundand3above,low parapets,several small parked cars visible on decks from side/rear,no drivers. ONE entry lane at ground level,raised red-and-white boomgate andsmallticketpillar withblankface. Above entrylane a BLANK DARK RECTANGULAR SIGN PANEL about520x180pxinfinalcanvas,face-on enough to fit a coded counter later. Absolutely NO letterP,no words,no numbers,no arrows,no icons,no writing on any signs,vehiclesorwalls. No people. Narrowfootpathandkerbatbase,groundpatchsoftirregulartransparentedge. Fineink and natural grey/cream watercolour house style,subtle colouredcars. Wholebuilding isolated on genuine transparent alpha,8%clearcanvasmarginall4sides. No sky,trees,otherbuildings,shops,logos,brands,background,paperrectangle,glow or groundshadow beyond ownbasepatch. Fourdecksclearlycountable;blankdarkpanelunobscured.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Paper420/640pxwide,temporary450counterandblack/whiteedgesinspected. Exactlyfourlevels,parkedcarswithoutdrivers,raisedgate,ticketpillar,blankdark520x180panel;no words/Picons/logos/people in deliveredasset.8%margins pass. Manual lane/angle points are approximate;signcorners exact.",
+    "qaFiles": [
+      "work/brief238/i08-carpark-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,0 should fix,0 optional",
+    "findings": []
+  },
+  "sourceDesignSha256": "813b297c3ff4cd501236743bc4b8defafdd9e675928e2a8ae620d5be3c92e82a"
+}

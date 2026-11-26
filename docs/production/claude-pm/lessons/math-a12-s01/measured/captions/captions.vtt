@@ -1,0 +1,562 @@
+WEBVTT
+
+00:00:00.261 --> 00:00:02.005
+This video starts something new:
+
+00:00:02.508 --> 00:00:03.431
+random variables.
+
+00:00:04.113 --> 00:00:06.319
+Here's a die from a board game, rolled
+
+00:00:06.461 --> 00:00:07.303
+two hundred times.
+
+00:00:07.906 --> 00:00:09.693
+A four came up thirty-eight times.
+
+00:00:10.497 --> 00:00:13.064
+Let's watch all two hundred rolls land, and
+
+00:00:13.165 --> 00:00:14.247
+fill in the other faces.
+
+00:00:15.092 --> 00:00:17.126
+Four came up more than any other face.
+
+00:00:17.773 --> 00:00:19.126
+So is the die fair?
+
+00:00:20.054 --> 00:00:21.717
+Before we can answer, we need to know
+
+00:00:21.799 --> 00:00:23.743
+what the counts from a fair die should
+
+00:00:23.764 --> 00:00:24.124
+look like.
+
+00:00:24.848 --> 00:00:26.935
+That's what a probability distribution tells us.
+
+00:00:27.638 --> 00:00:30.273
+So how do data, and a model, each
+
+00:00:30.314 --> 00:00:31.198
+give us a distribution?
+
+00:00:31.815 --> 00:00:33.924
+First, a name for the number we're recording.
+
+00:00:34.568 --> 00:00:36.717
+A random variable is a number decided by
+
+00:00:36.758 --> 00:00:38.585
+the outcome of a chance experiment.
+
+00:00:39.250 --> 00:00:39.511
+Here,
+
+00:00:40.076 --> 00:00:41.767
+X is the number on the top face.
+
+00:00:42.492 --> 00:00:44.619
+It's discrete, which means its values are separate,
+
+00:00:44.881 --> 00:00:47.048
+and we can list them: one, two, three,
+
+00:00:47.210 --> 00:00:48.554
+four, five and six.
+
+00:00:49.337 --> 00:00:51.320
+We write P of X equals four for
+
+00:00:51.341 --> 00:00:53.646
+the probability that X takes the value four.
+
+00:00:54.469 --> 00:00:56.939
+Capital X is the variable, and small x
+
+00:00:57.081 --> 00:00:58.627
+stands for any one of its values.
+
+00:00:59.453 --> 00:01:01.184
+When it's clear which variable we mean, we
+
+00:01:01.205 --> 00:01:02.110
+just write P of x.
+
+00:01:02.916 --> 00:01:05.250
+Now turn the counts into probabilities.
+
+00:01:05.915 --> 00:01:08.187
+Divide each count by the number of rolls,
+
+00:01:08.751 --> 00:01:09.213
+two hundred.
+
+00:01:10.018 --> 00:01:12.204
+Thirty-eight out of two hundred is zero point
+
+00:01:12.365 --> 00:01:12.846
+one nine.
+
+00:01:13.449 --> 00:01:15.094
+That fraction of the rolls is called a
+
+00:01:15.316 --> 00:01:16.318
+relative frequency.
+
+00:01:16.964 --> 00:01:17.084
+Now
+
+00:01:17.590 --> 00:01:18.215
+watch the bars.
+
+00:01:19.002 --> 00:01:20.849
+Every bar is divided by the same number,
+
+00:01:21.172 --> 00:01:23.441
+so the shape doesn't change, only the scale.
+
+00:01:24.105 --> 00:01:27.216
+These numbers are estimates, so we write approximately
+
+00:01:27.397 --> 00:01:28.922
+equals, not equals.
+
+00:01:29.647 --> 00:01:32.183
+A relative frequency describes these two hundred rolls.
+
+00:01:32.707 --> 00:01:34.935
+The probability belongs to the die itself.
+
+00:01:35.920 --> 00:01:38.006
+Replay the rolls and watch the estimate for
+
+00:01:38.027 --> 00:01:38.468
+a four.
+
+00:01:38.991 --> 00:01:40.978
+After ten rolls it read zero point four.
+
+00:01:41.501 --> 00:01:43.689
+After fifty, it was already near zero point
+
+00:01:43.731 --> 00:01:43.930
+two.
+
+00:01:44.595 --> 00:01:46.670
+More rolls usually give a better estimate.
+
+00:01:47.396 --> 00:01:49.988
+Add the six unrounded estimates and you get
+
+00:01:50.150 --> 00:01:50.812
+exactly one.
+
+00:01:51.878 --> 00:01:54.006
+But adding them only shows that it happens.
+
+00:01:54.489 --> 00:01:55.897
+Here's why it has to happen.
+
+00:01:56.783 --> 00:01:59.258
+Every roll lands on exactly one face.
+
+00:01:59.923 --> 00:02:02.090
+No roll is counted twice, and none is
+
+00:02:02.151 --> 00:02:02.391
+missed.
+
+00:02:02.995 --> 00:02:05.000
+So the six counts add to two hundred,
+
+00:02:05.342 --> 00:02:06.404
+the total number of rolls.
+
+00:02:07.088 --> 00:02:09.174
+Divide that total by two hundred, and you
+
+00:02:09.215 --> 00:02:09.656
+get one.
+
+00:02:10.438 --> 00:02:14.060
+That works for a complete, one-value-per-trial count, so
+
+00:02:14.281 --> 00:02:16.962
+unrounded estimates from data always add to one.
+
+00:02:17.704 --> 00:02:18.910
+Rounded ones can be a little off.
+
+00:02:19.668 --> 00:02:21.977
+What we've built is a probability distribution.
+
+00:02:22.520 --> 00:02:24.304
+It's the set of values X can take,
+
+00:02:24.665 --> 00:02:26.750
+together with the probability of each value.
+
+00:02:27.335 --> 00:02:28.185
+We show it two ways.
+
+00:02:28.814 --> 00:02:30.888
+A table gives the exact numbers we calculate
+
+00:02:30.930 --> 00:02:31.070
+with.
+
+00:02:31.615 --> 00:02:33.110
+A bar graph shows the shape.
+
+00:02:33.717 --> 00:02:35.908
+The bars stand apart, because X takes no
+
+00:02:35.949 --> 00:02:36.733
+values in between.
+
+00:02:37.618 --> 00:02:40.204
+Every probability must be between zero and one,
+
+00:02:40.646 --> 00:02:42.370
+and together they must add to one.
+
+00:02:42.936 --> 00:02:43.728
+Both checks matter.
+
+00:02:44.233 --> 00:02:46.537
+These three numbers add to one, but minus
+
+00:02:46.618 --> 00:02:48.942
+zero point four can't be a probability, so
+
+00:02:49.123 --> 00:02:50.505
+this list isn't a distribution.
+
+00:02:51.276 --> 00:02:53.552
+Data is one way to get a distribution.
+
+00:02:54.117 --> 00:02:55.200
+A model is the other:
+
+00:02:55.824 --> 00:02:57.852
+reasoning about how the experiment works.
+
+00:02:58.576 --> 00:03:00.821
+If the die is fair, its six faces
+
+00:03:01.003 --> 00:03:04.331
+are equally likely, so each value has probability
+
+00:03:04.492 --> 00:03:06.476
+one sixth, before a single roll.
+
+00:03:07.340 --> 00:03:09.450
+So in a question, if you're given counts,
+
+00:03:09.753 --> 00:03:10.918
+you're estimating from data.
+
+00:03:11.422 --> 00:03:13.728
+If you're told how the experiment works, you're
+
+00:03:13.789 --> 00:03:14.430
+using a model.
+
+00:03:15.175 --> 00:03:15.857
+Now compare.
+
+00:03:16.643 --> 00:03:19.119
+The data gave zero point one nine for
+
+00:03:19.140 --> 00:03:19.461
+a four.
+
+00:03:20.086 --> 00:03:22.577
+The model says one sixth, about zero point
+
+00:03:22.658 --> 00:03:23.281
+one six seven.
+
+00:03:24.065 --> 00:03:26.398
+That's almost five more fours than a fair
+
+00:03:26.419 --> 00:03:27.142
+die would average.
+
+00:03:27.789 --> 00:03:28.521
+Is that a big gap?
+
+00:03:29.429 --> 00:03:31.758
+Here are three runs of two hundred rolls
+
+00:03:31.819 --> 00:03:33.344
+from a simulated fair die.
+
+00:03:33.988 --> 00:03:35.276
+Look how much their bars wobble.
+
+00:03:36.101 --> 00:03:38.289
+In each of these fair runs, some face
+
+00:03:38.430 --> 00:03:40.618
+is further from thirty-three than our four is.
+
+00:03:41.261 --> 00:03:43.488
+So a gap this size happens easily with
+
+00:03:43.529 --> 00:03:44.090
+a fair die.
+
+00:03:44.874 --> 00:03:46.800
+That's an illustration, not a formal test,
+
+00:03:47.323 --> 00:03:49.269
+but these data aren't strong evidence that the
+
+00:03:49.310 --> 00:03:50.072
+die is unfair.
+
+00:03:50.648 --> 00:03:53.959
+Often there's no data, just a description, and
+
+00:03:54.001 --> 00:03:55.867
+we generate the distribution ourselves.
+
+00:03:56.711 --> 00:03:59.202
+Toss a fair coin three times, and let
+
+00:03:59.364 --> 00:04:00.489
+X be the number of heads.
+
+00:04:01.253 --> 00:04:03.860
+Each sequence of tosses gives exactly one value
+
+00:04:03.941 --> 00:04:04.361
+of X.
+
+00:04:05.125 --> 00:04:06.912
+Step one, list the values.
+
+00:04:07.555 --> 00:04:10.082
+X can be zero, one, two or three.
+
+00:04:10.927 --> 00:04:12.903
+Step two, find each probability.
+
+00:04:13.427 --> 00:04:16.291
+There are eight equally likely sequences, and three
+
+00:04:16.312 --> 00:04:18.796
+of them have exactly one head, so P
+
+00:04:18.837 --> 00:04:20.278
+of one is three eighths.
+
+00:04:21.163 --> 00:04:21.584
+Step three,
+
+00:04:22.088 --> 00:04:22.309
+check.
+
+00:04:23.093 --> 00:04:25.660
+One eighth, three eighths, three eighths and one
+
+00:04:25.741 --> 00:04:28.608
+eighth are each between zero and one, and
+
+00:04:28.650 --> 00:04:29.391
+they add to one.
+
+00:04:30.194 --> 00:04:32.222
+The graph shows something the table hides.
+
+00:04:32.765 --> 00:04:35.276
+It's symmetric, and the middle values are three
+
+00:04:35.338 --> 00:04:36.864
+times as likely as the ends.
+
+00:04:37.601 --> 00:04:39.028
+Here's a way to remember why it all
+
+00:04:39.169 --> 00:04:39.792
+adds to one.
+
+00:04:40.659 --> 00:04:41.224
+One trial,
+
+00:04:41.749 --> 00:04:42.193
+one value.
+
+00:04:43.216 --> 00:04:46.159
+Every trial gives exactly one value of X,
+
+00:04:46.800 --> 00:04:48.181
+so the counts add to the number of
+
+00:04:48.261 --> 00:04:50.844
+trials, and the probabilities add to one.
+
+00:04:51.706 --> 00:04:53.591
+If your probabilities don't add to one,
+
+00:04:54.153 --> 00:04:56.179
+check your list of values, and your counting.
+
+00:04:58.863 --> 00:04:59.306
+Your turn.
+
+00:04:59.991 --> 00:05:02.360
+A spinner numbered one to four is spun
+
+00:05:02.681 --> 00:05:03.826
+two hundred and fifty times.
+
+00:05:04.628 --> 00:05:06.911
+Estimate P of X equals two,
+
+00:05:07.532 --> 00:05:09.916
+then explain why the four estimates add to
+
+00:05:10.156 --> 00:05:10.256
+one.
+
+00:05:10.939 --> 00:05:11.814
+Pause here to answer.
+
+00:05:22.327 --> 00:05:24.588
+Two came up seventy times out of two
+
+00:05:24.649 --> 00:05:27.630
+hundred and fifty, so P of X equals
+
+00:05:27.751 --> 00:05:28.030
+two
+
+00:05:28.572 --> 00:05:30.772
+is approximately zero point two eight.
+
+00:05:31.735 --> 00:05:33.702
+For the reason, don't just add the four
+
+00:05:33.823 --> 00:05:34.204
+estimates.
+
+00:05:34.886 --> 00:05:37.828
+Each spin lands on exactly one number, so
+
+00:05:37.869 --> 00:05:39.689
+the counts add to two hundred and fifty,
+
+00:05:40.231 --> 00:05:42.291
+and dividing by two hundred and fifty gives
+
+00:05:42.593 --> 00:05:42.712
+one.
+
+00:05:43.554 --> 00:05:45.439
+Adding the estimates to get one shows it,
+
+00:05:45.801 --> 00:05:47.285
+but it doesn't explain it.
+
+00:05:48.981 --> 00:05:49.368
+Last one.
+
+00:05:49.895 --> 00:05:52.098
+A bag holds two red and two yellow
+
+00:05:52.159 --> 00:05:54.141
+counters, and two are drawn together.
+
+00:05:54.823 --> 00:05:57.747
+Find the probability distribution of X, the number
+
+00:05:57.768 --> 00:05:58.769
+of red counters drawn.
+
+00:05:59.576 --> 00:06:00.368
+Pause here to answer.
+
+00:06:11.156 --> 00:06:13.002
+X can be zero, one or two.
+
+00:06:13.826 --> 00:06:16.733
+Call the counters red one, red two, yellow
+
+00:06:16.915 --> 00:06:17.957
+one and yellow two.
+
+00:06:18.620 --> 00:06:19.964
+There are six possible pairs,
+
+00:06:20.507 --> 00:06:21.590
+all equally likely.
+
+00:06:22.434 --> 00:06:24.718
+One pair has no reds, four pairs have
+
+00:06:24.899 --> 00:06:27.324
+one red, and one pair has two reds.
+
+00:06:28.067 --> 00:06:30.799
+So the probabilities are one sixth, four sixths
+
+00:06:31.021 --> 00:06:32.948
+and one sixth, and they add to one.
+
+00:06:33.897 --> 00:06:35.107
+One third each is wrong.
+
+00:06:35.633 --> 00:06:37.830
+Three values don't have to be equally likely.
+
+00:06:39.440 --> 00:06:42.706
+So data give a distribution through relative frequencies,
+
+00:06:43.187 --> 00:06:45.551
+and a model gives it by reasoning about
+
+00:06:45.631 --> 00:06:46.913
+how the experiment works,
+
+00:06:47.414 --> 00:06:49.197
+here with equally likely outcomes.
+
+00:06:50.139 --> 00:06:51.207
+Next, a question.
+
+00:06:51.891 --> 00:06:54.339
+For one fair die, all six bars are
+
+00:06:54.359 --> 00:06:55.081
+the same height.
+
+00:06:55.723 --> 00:06:57.471
+Now tear a page at random off a
+
+00:06:57.551 --> 00:06:58.254
+desk calendar.
+
+00:06:58.878 --> 00:07:00.668
+The date could be anything from the first
+
+00:07:00.829 --> 00:07:01.735
+to the thirty-first.
+
+00:07:02.461 --> 00:07:04.095
+Are those dates equally likely too?
+
+00:07:06.868 --> 00:07:07.670
+Here are the key notes.
+
+00:07:08.314 --> 00:07:10.041
+Pause the video if you need more time
+
+00:07:10.103 --> 00:07:10.584
+to copy them.

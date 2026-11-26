@@ -1,0 +1,174 @@
+{
+  "id": "math-a12-s05",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "ace0f6a8b498ddb79d483c7c0d057d8f4e8bb89ad08f5fa879e1c8cca3093df8",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: equal strips, unequal probability",
+      "voiceover": {
+        "text": "Last video ended here, with F of x equals x squared over nine. Let's give it a meaning. A parcel tracker says your delivery will come between nine and twelve. X is the arrival time in hours after nine, and F of x is the chance the parcel has arrived by then. F climbs slowly near zero, and steeply near three. Compare two strips of the same width, a tenth of an hour. From zero point five to zero point six, F only rises by about zero point zero one two. From two point five to two point six, it rises by about zero point zero five seven. So the same width holds almost five times as much probability near two point five. Steep means the arrival times are packed closely. So how do we measure that packing?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "the density is the gradient of F",
+      "voiceover": {
+        "text": "Divide the rise in F by the width of the strip, and you get probability per unit of x, here per hour. Make the strip thinner and thinner, and that becomes the gradient of F. So we define the probability density function, f of x, as F prime of x, wherever F has a gradient. Here, f of x is two x over nine, between zero and three, and zero everywhere else. At one point five, F has gradient one third, so the density there is one third per hour. A density isn't a probability. It's probability per unit of x, like a rope's density in grams per metre. A high density means probability is packed in near that value, not that the exact value is likely."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "a density can be bigger than one",
+      "voiceover": {
+        "text": "Here's why that matters. Go back to the reaction-time histogram from last video. Divide each relative frequency by the class width, one tenth of a second. The heights become one, two point five, three point five, two and one, per second. Now each bar's area, height times width, is its probability, and the areas add to one. Three point five is bigger than one, and that's fine. A density can be bigger than one, because the probability is the area, not the height."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "probability is area under the density",
+      "voiceover": {
+        "text": "So for a density, probability is area. For the density models we use, F is a primitive of f, so the area under f from c to d is F of d minus F of c. That's exactly the probability that X is between c and d. For the parcel, the area under two x over nine from one to two is four ninths minus one ninth, which is one third. That's the chance it arrives between ten and eleven, the same one third last video found from F. And since single values carry no probability, the ends of the interval still don't matter."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "the two properties of a density",
+      "voiceover": {
+        "text": "Every density has two properties. First, f of x is never negative, because F never decreases, so its gradient can't be below zero. Second, the total area under f is one, because that's all of the probability. If X lives on an interval from a to b, the integral from a to b is one. If X can be any real number, the integral from minus infinity to infinity is one. Check two x over nine. It's never negative from zero to three, and its area is a triangle, half of three times two thirds, which is one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "finding an unknown constant",
+      "voiceover": {
+        "text": "These two properties solve problems. A second courier's arrival time, X hours after eight, has density k times four minus x, for x from zero to four, and zero elsewhere. Their stop is early on the route, so early arrivals are most likely. Find k. The total area must be one. The graph is a triangle with base four and height four k, so its area is eight k. Integrating gives the same answer. So eight k equals one, and k is one eighth. It has to be positive, because a density can't be negative."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a probability as an area",
+      "voiceover": {
+        "text": "Now find the probability that X is less than one, so this courier comes before nine. Integrate four minus x, over eight, from zero to one. That's one eighth of four minus a half, which is seven sixteenths. Just under half of the probability sits in the first hour of the four. That fits, because this density is highest at zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "building F from f",
+      "voiceover": {
+        "text": "We can also build F from f. F of x is the area under f from the start of the domain up to x. So F of x is the integral from zero to x of f of t, d t. The letter t is a dummy variable, because x is already the upper limit. Here, that gives eight x minus x squared, over sixteen, for x from zero to four. Check the ends. F of zero is zero, and F of four is thirty two minus sixteen, over sixteen, which is one. And F of one is seven sixteenths, the area we just found."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "finding f from F",
+      "voiceover": {
+        "text": "Going the other way takes one step. Differentiate. A variable has F of x equals x squared times three minus x, over four, for x from zero to two. First check the ends. F of zero is zero, and F of two is four times one, over four, which is one. Expand it, and differentiate. The density is three x times two minus x, over four. Both factors are positive between zero and two, so f is never negative. And f is zero elsewhere, because the flat pieces of F have gradient zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a picture to hold on to. Think of the parcel tracker. F is the chance it has arrived so far, and f is how fast that chance is building at x. Differentiate F to get f. Integrate f to get F. And by the end of the window, F reaches exactly one."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A density is k times x plus one, for x from zero to two, and zero elsewhere. Find k, then find the probability that X is greater than one. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The total area is k times x squared over two plus x, from zero to two, which is four k. So k is one quarter. Then the probability that X is more than one is the integral from one to two of x plus one, over four. That's one quarter of four minus one and a half, which is five eighths. Three quarters is wrong. That's the height of f at two, not an area."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A continuous random variable has F of x equals four x minus x squared, over four, for x from zero to two, with F equal to zero below zero, and one above two. Find its probability density function. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Differentiate the middle piece. Four minus two x, over four, is two minus x, over two, for x from zero to two. It's never negative there. Outside that interval, f is zero, because the flat pieces of F have gradient zero. Saying f is one for x above two is wrong. The derivative of a constant is zero, not one."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the density is the gradient of F, probabilities are areas under it, and the total area is one. Next, a new question. Here's the density we found a moment ago, three x times two minus x, over four. Where is X most likely to be? And where's the middle, with half the probability on each side?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

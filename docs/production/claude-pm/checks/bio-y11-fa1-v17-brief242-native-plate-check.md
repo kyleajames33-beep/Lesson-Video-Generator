@@ -1,0 +1,15 @@
+# Brief 242: Biology FA1 v17 willow pair and sealed-jar question
+
+17 November 2026.
+
+Narration unchanged at 5,807 characters, no em dash. Three native records: willow before/after and sealed pondweed/snail jar. All native paper/dark composites inspected, true outer alpha, complete subjects and native proportions. No people, hands, printed labels or numerical question data. Both willow files are 1800 by 2600; jar is 1400 by 1800. No new commission.
+
+Willow tub contours are closely placed at the same origin. The 300px whole-canvas-width paper/dark midpoint diagnostics show a useful stationary tub silhouette, with a changing tree. They do not establish an exact registered dissolve. There are 735,917 changed visible RGBA pixels in the lower region [0,1620,1800,2600], below the soil and changing trunk. Wood grain, metal and handles vary. Root must resolve the requested exact-tub overlay before a moving blend is cleared. Reusing one tub with a masked changing tree is a possible implementation decision, not an edit made here. Sapling scale must stay tied to the same whole-canvas transform as the after tree, rather than fitting each painted height separately. Native paper edges inspected without an objectionable detached halo.
+
+Jar inspected at 420px painted height on dark and natively on paper. Pondweed, gravel, sealed screw lid and one small snail are distinct. Painted bubbles are present as requested by the asset brief. They are not labelled as a gas, but root should consider whether this process hint fits the question's instruction to show nothing answer-bearing. No loop, gas label, equation or direction arrow appears in the plate. Add the light rays only on the question side and retain the full demand during the countdown. The jar's pale interior is a painted glass/water surface; outer background is transparent.
+
+Existing plant anchor has two orange mitochondria and green chloroplasts. Prior organelle, sapling alpha and illustration-scale findings remain. The v16 final frame and v17 opening must share the unchanged transform and equation-strip placement; native assets alone cannot establish the exact scene join.
+
+Arithmetic checked independently: 77-2=75kg and 90.00-89.94=0.06kg. Four squares out of 10,000 is 0.04 percent, an approximate air illustration, not a fresh concentration measurement. Bright-state model net O2 out is 5-1=4; dark-state net is 0-1=-1. Use these relative model units only, not a measured universal leaf ratio. Both rate bars, crossing events and signed net must come from one run; light changes the configured photosynthesis state, while respiration continues. No configured run or atom-tracking implementation is checked by this plate review. Earlier changed-narration check remains separate. No playback, listening or whole-lesson voice clearance; no source edits.
+
+Evidence: `assets/brief242-bio-fa1-v17-native-qa-17-nov.json`. Reviewed design SHA256: `6d12a87a338205de7e0596b33956fb88603181397f7304e4761368b71b6e3786`. No source edits or whole-lesson clearance.

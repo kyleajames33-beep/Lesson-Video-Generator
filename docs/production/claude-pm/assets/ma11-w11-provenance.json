@@ -1,0 +1,124 @@
+{
+  "brief": 247,
+  "lesson": "w11",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-5ce8e505-f873-4e9f-aa0c-01329fa1028e.png",
+      "sha256": "a856d74e7c28c5db153e12dda2a27b07379fbbf6c2051ba896958a31ad65956b",
+      "nativeSize": [
+        1517,
+        1037
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        235,
+        177,
+        1285,
+        851
+      ],
+      "marginFractions": [
+        0.15491100856954515,
+        0.17068466730954676,
+        0.15293342122610415,
+        0.17936354869816779
+      ],
+      "evidence": [
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-town-rooftops-texture-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-town-rooftops-texture-v1.png",
+      "path": "public/assets/maths/ma11-town-rooftops-texture-v1.png",
+      "brief": 247,
+      "lesson": "w11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "fallback static pass",
+        "observations": [
+          "Roadless texture with quiet rooftops, gardens and grass, no people, labels or axes. Clear margins exceed 15 percent.",
+          "Native paper/dark alpha, 820/1300 px and exact equal-scale coded-street overlay inspected. Streets are code, so rooftop texture carries no false geometric constraint."
+        ],
+        "evidence": [
+          "work/brief247/town-size-paper.jpg",
+          "work/brief247/town-size-dark.jpg",
+          "work/brief247/town-fallback-overlay-paper.jpg",
+          "work/brief247/town-fallback-overlay-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-town-rooftops-texture-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-cee8da73-9373-4681-afe5-7f85a849dc50.png",
+      "sha256": "84917d264ca127540c37ba456f0120d30e345f135fa102842dfd76a0bcaeb255",
+      "nativeSize": [
+        1499,
+        1049
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        130,
+        111,
+        1370,
+        940
+      ],
+      "marginFractions": [
+        0.0867244829886591,
+        0.10581506196377502,
+        0.08605737158105403,
+        0.10390848427073403
+      ],
+      "evidence": [
+        "work/brief247/ma11-town-blocks-top-v1-native-paper.jpg",
+        "work/brief247/ma11-town-blocks-top-v1-native-dark.jpg",
+        "work/brief247/ma11-town-blocks-top-v1-native-white.jpg",
+        "work/brief247/ma11-town-blocks-top-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-town-blocks-top-v1.png",
+      "path": "work/brief247/ma11-town-blocks-top-v1.png",
+      "brief": 247,
+      "lesson": "w11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "held; fallback applies",
+        "observations": [
+          "Original painted roads fail shared equal-scale registration: 95th percentile16.17px and max18.67px exceed1 percent width14.99px. Do not use as exact streets."
+        ],
+        "evidence": [
+          "work/brief247/town-map-equal-scale-overlay.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/ma11-town-blocks-top-v1-sidecar.json"
+    }
+  ],
+  "result": "Root ruling 14 fallback delivered: roadless rooftop texture for an exact coded map, with equal-scale origin and street coordinates. Native alpha, 820/1300 px and overlay checks pass. Original painted-road map fails 1 percent registration and stays in work. Root applies fallback in build; no design edit made. Membership-card handoff is reported with w12.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/town-size-paper.jpg",
+    "work/brief247/town-size-dark.jpg",
+    "work/brief247/town-fallback-overlay-paper.jpg",
+    "work/brief247/town-fallback-overlay-dark.jpg",
+    "work/brief247/town-size-transforms.json",
+    "work/brief247/town-map-geometry.json"
+  ]
+}

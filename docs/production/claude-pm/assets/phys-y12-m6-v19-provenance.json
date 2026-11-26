@@ -1,0 +1,172 @@
+{
+  "design": "phys-y12-m6-v19",
+  "sourceSHA256": "9866e195d5acd3fd3bd8a3ac5b0805d5e3dc76cb50463e341b8d19d3e426dc20",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v19",
+      "reference": "phys-y11-desk-fan-blades-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-desk-fan-blades-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v19",
+      "reference": "public/assets/physics/phys-y11-desk-fan-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-desk-fan-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v19",
+      "reference": "y12p-copper-pendulum-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-copper-pendulum-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v19",
+      "reference": "y12p-squirrel-cage-rotor-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-squirrel-cage-rotor-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "squirrel-cage-rotor-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-af77deec-684b-4540-8451-7ca9331a612e.png",
+      "size": [
+        1568,
+        1003
+      ],
+      "bbox": [
+        175,
+        180,
+        1393,
+        841
+      ],
+      "marginFraction": [
+        0.11160714285714286,
+        0.1794616151545364,
+        0.11160714285714286,
+        0.16151545363908276
+      ],
+      "alphaZeroFraction": 0.6576940098073127,
+      "file": "public/assets/physics/y12p-squirrel-cage-rotor-v1.png",
+      "sha256": "8d6123fc2b0183d9a6ed25eb2f5c54bbface04b28d38666a86f902bf4e8aa1e9",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "axisApprox": [
+          [
+            175,
+            515
+          ],
+          [
+            1393,
+            515
+          ]
+        ],
+        "endRingCentresApprox": [
+          [
+            451,
+            510
+          ],
+          [
+            1110,
+            510
+          ]
+        ],
+        "nearBarLoopApprox": [
+          [
+            410,
+            469
+          ],
+          [
+            1070,
+            469
+          ],
+          [
+            1078,
+            521
+          ],
+          [
+            413,
+            521
+          ]
+        ],
+        "note": "Bare conducting cage, straight bars and end rings, broad hub webs, no iron core. Highlight a pair of bars and joining end-ring arcs, not shaft. End-on rotation remains coded."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "copper-pendulum-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-e624de8e-a4db-45ee-afd7-95c308a2dd2b.png",
+      "size": [
+        1003,
+        1568
+      ],
+      "bbox": [
+        350,
+        221,
+        654,
+        1307
+      ],
+      "marginFraction": [
+        0.3489531405782652,
+        0.14094387755102042,
+        0.34795613160518446,
+        0.16645408163265307
+      ],
+      "alphaZeroFraction": 0.925429069933058,
+      "file": "public/assets/physics/y12p-copper-pendulum-v1.png",
+      "sha256": "b8f7ffb3a0eb5545352b4d8133daf84b374bf895d53d17025368992f2dad1fb4",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "pivot": [
+          501,
+          247
+        ],
+        "plateRectangle": [
+          351,
+          1020,
+          653,
+          1305
+        ],
+        "rodLine": [
+          [
+            501,
+            272
+          ],
+          [
+            501,
+            1020
+          ]
+        ],
+        "note": "Pair shares canvas but has small contour/texture differences. See pair diagnostics; exact seamless swap is not certified."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

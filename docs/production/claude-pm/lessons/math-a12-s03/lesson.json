@@ -1,0 +1,154 @@
+{
+  "id": "math-a12-s03",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "5f95209090686d1ca1f1df464a073f652f61a53d7fb764579f60f8a6b4ee76a5",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: a balance point no cat can have",
+      "voiceover": {
+        "text": "Last video ended with this question. Six equal weights on a beam balance right in the middle, at three point five. That's the expected value of one roll, but a die can never show three point five. Now a lopsided case. A vet clinic finds that a cat makes zero, one, two or three visits a year, with probabilities zero point one, zero point three, zero point four and zero point two. Where does this beam balance? What does that number mean? And how spread out are the visits?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "the long-run average",
+      "voiceover": {
+        "text": "Here's what the balance point means. Picture many cats, one after another, and keep a running average of their visits. This run starts two, two, three, so the average is high at first. After ten cats it's two point one. After a thousand cats, this run has settled at about one point seven. Another run would wobble differently, but long runs settle near the same centre. So the expected value is the long-run average of X. No cat makes one point seven visits. It isn't a prediction for one cat. It's the centre the results settle around. We write it as E of X, or the Greek letter mu, and it's a measure of centre for the distribution."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "where Σ x P(x) comes from",
+      "voiceover": {
+        "text": "Where does one point seven come from? For a fair die, every value has the same weight, so E of X is just the ordinary average, twenty-one over six. The cat visits aren't uniform. Imagine a thousand cats. About a hundred make no visits, three hundred make one, four hundred make two and two hundred make three. That's seventeen hundred visits, so the average is one point seven. Dividing each count by a thousand gives its probability. So the expected value is the sum of each value times its probability. And the beam balances at one point seven, pulled towards the heavier bars."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "measuring spread: why we square",
+      "voiceover": {
+        "text": "Now, spread. A natural idea is to average how far each value is from mu, keeping the sign. These signed deviations are minus one point seven, minus zero point seven, zero point three and one point three. Weight each one by its probability, and add. You get exactly zero. That's not bad luck. Mu is the balance point, so the weighted deviations on the left always cancel the ones on the right. So we square each deviation first, which makes none of them negative, and then take the weighted average. That's the variance. It's an expected value too: the expected value of the squared deviation from mu."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "working out the variance and σ",
+      "voiceover": {
+        "text": "Here it is for the cats. The squared deviations are two point eight nine, zero point four nine, zero point zero nine and one point six nine. Weight them and add, and the variance is zero point eight one. But squaring changed the units. X counts visits, so the variance is in visits squared. So take the square root. The standard deviation, sigma, is the square root of zero point eight one, which is zero point nine. It measures the spread, in visits. Here, the values within one sigma of one point seven, from zero point eight to two point six, carry most of the probability."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "a quicker formula",
+      "voiceover": {
+        "text": "There's a faster way to get the same number. Expand the square: x minus mu, squared, is x squared, minus two mu x, plus mu squared. Weight each part and add. The middle part has the sum of x times P of x, which is mu. The last has the sum of the probabilities, which is one. What's left is E of X squared, the average of the squared values, minus mu squared. For our distribution, E of X squared is three point seven, and three point seven minus one point seven squared is zero point eight one, the same answer. Be careful. E of X squared squares the values, not the probabilities, and it isn't the same as mu squared."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a problem: the pet insurer",
+      "voiceover": {
+        "text": "Here's how these numbers get used. A pet insurer charges three hundred dollars a year to cover a cat. In a year, there's a zero point zero two chance of paying an eight thousand dollar claim, a zero point zero five chance of paying a one thousand dollar claim, and otherwise nothing. The expected payout is eight thousand times zero point zero two, plus one thousand times zero point zero five, which is two hundred and ten dollars. On the beam, that small weight far out at eight thousand does most of the pulling. So in the long run, the premium beats the expected claims by ninety dollars a policy, before the insurer's other costs. But the standard deviation of the payout is about one thousand one hundred and thirty-four dollars. One policy swings far more than ninety dollars either way. That's why insurers need many independent policies, so the long-run average takes over."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember the quicker formula. Mean of the squares, minus the square of the mean. Square the values, average them with the probabilities, and then subtract mu squared. The answer can never be negative."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find E of X and the variance of X for this distribution. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "E of X is zero, plus zero point three, plus one, plus zero point three, which is one point six. E of X squared is zero point three, plus two, plus zero point nine, which is three point two. So the variance is three point two minus one point six squared, which is zero point six four. Three point two minus one point six is wrong. You subtract mu squared, not mu."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. X takes the values one, two and three. Find a and b. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Use both facts. The probabilities add to one, so a plus b is zero point eight. And the expected value gives zero point two, plus two a, plus three b, equals two point three, so two a plus three b is two point one. Take away twice the first equation, and b is zero point five, so a is zero point three. A and b both zero point four is wrong. It uses only one fact, and its expected value is two point two."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the expected value is the balance point, and the long-run average. The variance is the expected squared distance from it, and sigma brings it back to the units of X. Every sum here ran over a list of separate values. Next, a new question. What if X can be any value in an interval, like a sprinter's reaction time? Then the bars get thinner and thinner, and there's no list to add up."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

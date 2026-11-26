@@ -1,0 +1,967 @@
+{
+  "brief": 189,
+  "date": "2026-11-06",
+  "reports": 24,
+  "newRequests": 4,
+  "newDelivered": 3,
+  "newHeld": 0,
+  "allRequestedDelivered": false,
+  "entries": [
+    {
+      "key": "horseshoe-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-573e6ad5-ff28-435c-b87e-320b144abdd4.png",
+      "size": [
+        1341,
+        1173
+      ],
+      "alpha16Bounds": [
+        178,
+        302,
+        1152,
+        899
+      ],
+      "marginFraction": [
+        0.13273676360924683,
+        0.257459505541347,
+        0.14093959731543623,
+        0.23358908780903667
+      ],
+      "file": "public/assets/physics/y12p-horseshoe-magnet-v1.png",
+      "sha256": "45940ff4d4aa51c05180f3e968218682071389412668ebe9c495f958387cc34e",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "anchors": {
+        "gapRectangle": [
+          440,
+          519,
+          1144,
+          714
+        ],
+        "upperPoleFaceCentre": [
+          792,
+          497
+        ],
+        "lowerPoleFaceCentre": [
+          792,
+          745
+        ],
+        "rodCentreLineY": 614,
+        "rodNativeScaleFor15PercentEachEnd": 0.5678793256433009,
+        "rodLayerOrigin": [
+          241,
+          408
+        ],
+        "note": "Coordinates estimated from native view. Rod visible endpoints native x200and1971. Target face width704occupies70percent of rod length; remaining15percent extends beyond each face edge. Coded leads needed. Curved return lies behind front rod in the assembly."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief189-qa",
+      "status": "delivered for designer inspection; coded scene and motion pending",
+      "qualification": "Native imagegen dimensions retained. No stretching, upsampling or scripted creative modification. Nominal requested canvas sizes differ; meter layers have identical actual canvas."
+    },
+    {
+      "key": "galvanometer-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-113292e3-973c-49d3-9c54-2a5f12b66326.png",
+      "size": [
+        1354,
+        1161
+      ],
+      "alpha16Bounds": [
+        149,
+        112,
+        1206,
+        1065
+      ],
+      "marginFraction": [
+        0.11004431314623338,
+        0.09646856158484066,
+        0.10930576070901034,
+        0.082687338501292
+      ],
+      "file": "public/assets/physics/y12p-galvanometer-v1.png",
+      "sha256": "5e0265d1e9c93394e5f25e446dc2f62d287dfdb6870cb4f3af30de166d8e9802",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "anchors": {
+        "needlePivot": [
+          677,
+          658
+        ],
+        "centreZeroDirection": [
+          0,
+          -1
+        ],
+        "endTickDirectionsDegreesFromUp": [
+          -58,
+          58
+        ],
+        "redTerminalCentre": [
+          457,
+          865
+        ],
+        "blackTerminalCentre": [
+          896,
+          865
+        ],
+        "note": "Corrected concentric scale. Needle and face share1354x1161canvas. End angles approximate inspected radial directions; confirm in coded scene."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief189-qa",
+      "status": "delivered for designer inspection; coded scene and motion pending",
+      "qualification": "Native imagegen dimensions retained. No stretching, upsampling or scripted creative modification. Nominal requested canvas sizes differ; meter layers have identical actual canvas."
+    },
+    {
+      "key": "needle",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-3998327f-99f0-45f5-9f49-f6f1b93d594e.png",
+      "size": [
+        1354,
+        1161
+      ],
+      "alpha16Bounds": [
+        662,
+        314,
+        692,
+        690
+      ],
+      "marginFraction": [
+        0.48892171344165436,
+        0.2704565030146425,
+        0.48892171344165436,
+        0.40568475452196384
+      ],
+      "file": "public/assets/physics/y12p-galvanometer-needle-v1.png",
+      "sha256": "6de4e878993239e7e294b602229b16078e6b46d3e34b2e57e7de898530cdea32",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "anchors": {
+        "needlePivot": [
+          677,
+          658
+        ],
+        "tip": [
+          677,
+          314
+        ],
+        "tailEnd": [
+          677,
+          689
+        ],
+        "centreZeroDirection": [
+          0,
+          -1
+        ],
+        "note": "Identical canvas and origin to meter body; no translation or scale difference. QA rotation0andplus/minus58degrees stays inside window."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief189-qa",
+      "status": "delivered for designer inspection; coded scene and motion pending",
+      "qualification": "Native imagegen dimensions retained. No stretching, upsampling or scripted creative modification. Nominal requested canvas sizes differ; meter layers have identical actual canvas."
+    }
+  ],
+  "held": [],
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v01",
+      "reference": "public/assets/physics/phys-y11-eht-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-eht-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v01",
+      "reference": "public/assets/physics/phys-y11-oil-drop-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-oil-drop-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v02",
+      "reference": "y12p-crt-tube-v1.png",
+      "paths": [],
+      "exists": false,
+      "held": false,
+      "rasterExists": false,
+      "acceptedCodedFallback": true,
+      "resolutionEvidence": "work/brief232/crt-retry-and-fallback.json"
+    },
+    {
+      "design": "phys-y12-m6-v03",
+      "reference": "y12p-crt-tube-v1.png",
+      "paths": [],
+      "exists": false,
+      "held": false,
+      "rasterExists": false,
+      "acceptedCodedFallback": true,
+      "resolutionEvidence": "work/brief232/crt-retry-and-fallback.json"
+    },
+    {
+      "design": "phys-y12-m6-v04",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v04",
+      "reference": "public/assets/physics/phys-y11-sun-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sun-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v05",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v05",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v05",
+      "reference": "y12p-satellite-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-satellite-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v06",
+      "reference": "public/assets/chemistry/m8-mass-spectrometer-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-mass-spectrometer-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-knife-switch-blade-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-blade-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-loudspeaker-cone-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-loudspeaker-cone-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-retort-stand-electromagnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-electromagnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "phys-y11-top-pan-balance-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-top-pan-balance-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-knife-switch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-loudspeaker-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-loudspeaker-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "public/assets/physics/phys-y11-rod-copper-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rod-copper-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v07",
+      "reference": "y12p-horseshoe-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-horseshoe-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "phys-y11-digital-multimeter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-digital-multimeter-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "phys-y11-wire-card-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-wire-card-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "public/assets/physics/phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "public/assets/physics/phys-y11-rod-copper-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rod-copper-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v08",
+      "reference": "public/assets/physics/phys-y11-top-pan-balance-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-top-pan-balance-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v09",
+      "reference": "phys-y11-coil-former-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-coil-former-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v09",
+      "reference": "phys-y11-plotting-compass-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-plotting-compass-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v09",
+      "reference": "public/assets/physics/phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v09",
+      "reference": "public/assets/physics/phys-y11-solenoid-coil-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v09",
+      "reference": "y12p-galvanometer-needle-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-needle-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v09",
+      "reference": "y12p-galvanometer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "phys-y11-coil-former-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-coil-former-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "phys-y11-digital-multimeter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-digital-multimeter-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "phys-y11-solenoid-coil-spread-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-spread-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "phys-y11-solenoid-coil-wide-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-wide-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "public/assets/physics/phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "public/assets/physics/phys-y11-rod-copper-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rod-copper-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "public/assets/physics/phys-y11-solenoid-coil-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "y12p-galvanometer-needle-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-needle-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v10",
+      "reference": "y12p-galvanometer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "phys-y11-knife-switch-blade-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-blade-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "public/assets/physics/phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "public/assets/physics/phys-y11-knife-switch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "public/assets/physics/phys-y11-solenoid-coil-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "y12p-galvanometer-needle-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-needle-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "y12p-galvanometer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "phys-y11-coil-former-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-coil-former-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "phys-y11-iron-nail-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-iron-nail-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "phys-y11-knife-switch-blade-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-blade-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "phys-y11-retort-stand-electromagnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-electromagnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "phys-y11-solenoid-coil-wide-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-wide-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "public/assets/physics/phys-y11-knife-switch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "public/assets/physics/phys-y11-rod-soft-iron-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rod-soft-iron-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "public/assets/physics/phys-y11-solenoid-coil-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "y12p-galvanometer-needle-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-needle-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v12",
+      "reference": "y12p-galvanometer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    }
+  ],
+  "missingOtherReferences": [],
+  "reviewTotals": {
+    "blocker": 0,
+    "should fix": 15,
+    "optional": 4
+  },
+  "siteLogEntries": 15,
+  "qualification": "No design/narration/code scene/speech/render/HTML/release edit. Art is for designer inspection; source findings remain open. Practical completion not certified.",
+  "brief232Revision2ErrorCheck": {
+    "date": "2026-11-09",
+    "reports": [
+      {
+        "design": "phys-y12-m6-v01",
+        "sourceSha256": "93bd5ffd2f0aeb777e4dbe2c9a591b5d539930e457a43f2ac977e16a27d9faac",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v01-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 6162,
+        "estimatedSeconds": 552.0
+      },
+      {
+        "design": "phys-y12-m6-v02",
+        "sourceSha256": "0fb116ce9d9a6dbfded5029c9ddecc67c9d078c6a1ee0c6a723786e687d1955e",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v02-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 6119,
+        "estimatedSeconds": 551.0
+      },
+      {
+        "design": "phys-y12-m6-v03",
+        "sourceSha256": "0fafbaecb2318e12e9bbfe7d6d741c114040275f0173e054aeb46bed986e3138",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v03-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 6013,
+        "estimatedSeconds": 541.0
+      },
+      {
+        "design": "phys-y12-m6-v04",
+        "sourceSha256": "fdfc05a1b16726aa60ed0e8e5fa82c5f7d42de306bc0f69fe576a57cc6ca3f9d",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v04-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 5641,
+        "estimatedSeconds": 516.0
+      },
+      {
+        "design": "phys-y12-m6-v05",
+        "sourceSha256": "da3ed88a7ee33647baa45298f890613d30fd917daccf743d0fec30a1cff8e4de",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v05-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 2,
+        "optional": 0,
+        "characters": 5624,
+        "estimatedSeconds": 514.0
+      },
+      {
+        "design": "phys-y12-m6-v06",
+        "sourceSha256": "2be14da73a0f894a72a974168fc0d771feb0c327ae2c50cbc4150b98e7cf304b",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v06-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 5603,
+        "estimatedSeconds": 510.0
+      },
+      {
+        "design": "phys-y12-m6-v07",
+        "sourceSha256": "21bb13e9e9b1b15aaa3a4e86c2a12f607af75f45016840d136a3a8eb31c607fa",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v07-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 5992,
+        "estimatedSeconds": 541.0
+      },
+      {
+        "design": "phys-y12-m6-v08",
+        "sourceSha256": "887b35ec9cd02f73f4bf88e115358e56b4158eef78e9fca24a776c002f8c3daf",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v08-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 6308,
+        "estimatedSeconds": 564.0
+      },
+      {
+        "design": "phys-y12-m6-v09",
+        "sourceSha256": "f20464d8eaa5e205651b722881491a0ae8d1837717619d71547b09ecfc0441b2",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v09-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 5595,
+        "estimatedSeconds": 511.0
+      },
+      {
+        "design": "phys-y12-m6-v10",
+        "sourceSha256": "633050cf04dabc6ad9ed48049bf60214557727f67f7946e673011ecaa8303069",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v10-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 1,
+        "optional": 0,
+        "characters": 6187,
+        "estimatedSeconds": 556.0
+      },
+      {
+        "design": "phys-y12-m6-v11",
+        "sourceSha256": "9850a287a7b06ddff6d41dc14cd326b9c4014a2b8e3214aaab07955c8333f7ec",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v11-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 0,
+        "optional": 0,
+        "characters": 5705,
+        "estimatedSeconds": 519.0
+      },
+      {
+        "design": "phys-y12-m6-v12",
+        "sourceSha256": "845d5a0a3da7761eedbb25f910231df537b39278f23b12b8c704f9a6ce7361e8",
+        "report": "docs\\production\\claude-pm\\checks\\p-y12-m6-v12-rev2-error-check.md",
+        "blockers": 0,
+        "shouldFix": 1,
+        "optional": 0,
+        "characters": 5705,
+        "estimatedSeconds": 519.0
+      }
+    ],
+    "totals": {
+      "blockers": 0,
+      "shouldFix": 4,
+      "optional": 0
+    },
+    "evidence": "work/brief232/summary.json",
+    "CRTdecision": "accepted coded-outline fallback after one failed tool attempt;no raster delivered",
+    "priorReviewFields": "historical original review totals retained below;use this dated follow-up for Revision2 state"
+  },
+  "previouslyHeld": [
+    {
+      "requestedPath": "public/assets/physics/y12p-crt-tube-v1.png",
+      "status": "held for geometry and native-resolution requirements",
+      "reason": "Three generated candidates remain below the explicit2400pixel minimum and do not register with the5cm plate length,2cm gap and20cm screen-after-exit geometry at one scale. Latest also draws an axial metal link between gun cylinders in the beam corridor. No candidate is published as the requested plate.",
+      "candidates": [
+        {
+          "key": "crt",
+          "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-51825cd0-0f4c-4088-bd8c-c2a5a57d6aa7.png",
+          "size": [
+            2172,
+            724
+          ],
+          "alpha16Bounds": [
+            116,
+            86,
+            2059,
+            652
+          ],
+          "marginFraction": [
+            0.053406998158379376,
+            0.11878453038674033,
+            0.05202578268876611,
+            0.09944751381215469
+          ]
+        },
+        {
+          "key": "crt-fixed",
+          "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-a9014342-8106-4292-9120-b8b93c678495.png",
+          "size": [
+            1920,
+            819
+          ],
+          "alpha16Bounds": [
+            153,
+            147,
+            1728,
+            657
+          ],
+          "marginFraction": [
+            0.0796875,
+            0.1794871794871795,
+            0.1,
+            0.1978021978021978
+          ]
+        },
+        {
+          "key": "crt-wide",
+          "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-fa0c74b6-aa7f-4bc0-a883-0ce468df1635.png",
+          "size": [
+            2172,
+            724
+          ],
+          "alpha16Bounds": [
+            161,
+            139,
+            1961,
+            583
+          ],
+          "marginFraction": [
+            0.07412523020257827,
+            0.1919889502762431,
+            0.09714548802946593,
+            0.19475138121546962
+          ]
+        }
+      ],
+      "fallback": "Brief/root permits a coded tube outline. Designer decides whether to use that fallback or request another artwork approach. No fallback scene implemented in this review-only brief."
+    }
+  ],
+  "newCodedAccepted": 1,
+  "allRasterOrAcceptedCodedRequirementsAccountedFor": true,
+  "rasterDeliveryQualification": "Three of four historical raster requests delivered;CRT resolved by root-accepted coded design,not by a new raster.",
+  "acceptedCodedFallbacks": [
+    {
+      "brief": 232,
+      "date": "2026-11-09",
+      "requestedAsset": "y12p-crt-tube-v1.png",
+      "attemptsThisBrief": 1,
+      "tool": "built-in image_gen",
+      "prompt": "work/brief232/crt-retry-prompt.txt",
+      "promptSha256": "47e06e130c135371a1f051d2f7124ec152e0984e181222a5d26a090a09854103",
+      "result": "tool rejected output;no image returned",
+      "error": {
+        "http": 400,
+        "code": "moderation_blocked",
+        "stage": "output",
+        "category": "violence"
+      },
+      "geometryQA": "not possible;no returned image",
+      "nativeResolutionQA": "not possible;no returned image",
+      "furtherGenerationAttempted": false,
+      "decision": "accepted coded-outline fallback",
+      "authority": "docs/production/claude-pm/checks/root-decisions-phys-y12-m6.md,After brief189/190 repairs,CRT plate;brief232 Then plates",
+      "scope": [
+        "phys-y12-m6-v02",
+        "phys-y12-m6-v03"
+      ],
+      "rasterDelivered": false,
+      "codedSceneImplemented": false,
+      "designEdits": false,
+      "fallbackSpec": {
+        "style": "ink glass-envelope outline,soft grey fill,gun cylinders,one horizontal parallel plate pair,edge-on phosphor screen",
+        "geometry": "one uniform scale:plate length50mm,gap20mm,exit-to-screen200mm,unobstructed beam axis",
+        "anchors": "gun exit,plate ends,screen inner centre,axis line",
+        "sceneIntegration": "future build;use accepted coded outline instead of requiring missing CRT raster"
+      }
+    }
+  ]
+}

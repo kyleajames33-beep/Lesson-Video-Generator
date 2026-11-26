@@ -1,0 +1,831 @@
+{
+  "brief": 184,
+  "date": "2026-11-06",
+  "status": "24 source reports, course coverage and two new plates delivered for inspection",
+  "newRequests": 4,
+  "newDelivered": 4,
+  "entries": [
+    {
+      "key": "limestone",
+      "file": "public/assets/chemistry/y11c-limestone-lumps-v1.png",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c9cefa94-b134-40b5-a12f-a968802f015f.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        247,
+        361,
+        1010,
+        894
+      ],
+      "minMarginAbove16": 0.19457735247208932,
+      "sha256": "e687f8d681ddc6047a0f3f0fb00702e2d0d4757be5ed2bbb61a0ac350342d4b8",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "300px paper/dark/white before-after rows and50% midpoint overlays inspected. Pale grey limestone becomes white/off-white chalky porous quicklime. Pile silhouette and individual lump positions align visibly. Alpha-aware boards show clean cutouts without the earlier cloudy backing.",
+      "qualification": "Native1254x1254 outputs retained, not upsampled to requested2000x2000. Heap fills about61% of canvas width rather than the requested about70%. Painted bounds differ by up to3native pixels; this is visible registration, not pixel identity. Designer acceptance and actual cross-fade playback remain pending.",
+      "promptEvidence": [
+        "work/brief184/limestone-prompt.json",
+        "work/brief184/limestone-alpha-correction-prompt.json",
+        "work/brief184/limestone-framing-prompt.json",
+        "work/brief184/quicklime-prompt.json"
+      ]
+    },
+    {
+      "key": "quicklime",
+      "file": "public/assets/chemistry/y11c-quicklime-lumps-v1.png",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-7d6ae779-fa00-4968-952f-86eb3a078bf4.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        244,
+        360,
+        1011,
+        893
+      ],
+      "minMarginAbove16": 0.1937799043062201,
+      "sha256": "5e9ec285d737506d84d1f737403d73d344cf6b6ed3694731b2041f81a4c3ca60",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "300px paper/dark/white before-after rows and50% midpoint overlays inspected. Pale grey limestone becomes white/off-white chalky porous quicklime. Pile silhouette and individual lump positions align visibly. Alpha-aware boards show clean cutouts without the earlier cloudy backing.",
+      "qualification": "Native1254x1254 outputs retained, not upsampled to requested2000x2000. Heap fills about61% of canvas width rather than the requested about70%. Painted bounds differ by up to3native pixels; this is visible registration, not pixel identity. Designer acceptance and actual cross-fade playback remain pending.",
+      "promptEvidence": [
+        "work/brief184/limestone-prompt.json",
+        "work/brief184/limestone-alpha-correction-prompt.json",
+        "work/brief184/limestone-framing-prompt.json",
+        "work/brief184/quicklime-prompt.json"
+      ]
+    },
+    {
+      "key": "y11c-gas-jar-open-v1",
+      "file": "public/assets/chemistry/y11c-gas-jar-open-v1.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-a7395e15-c804-4a50-95d6-67fc32f7fddb.png",
+      "sha256": "fc2956842346337a7a5321a15ae1e0182528db0c59985926f7238685e547b234",
+      "dimensions": [
+        935,
+        1683
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alpha128Box": [
+        216,
+        211,
+        691,
+        1524
+      ],
+      "brief": 221,
+      "status": "delivered native PNG; static QA passed",
+      "qa": "docs/production/claude-pm/assets/brief221-qa/gas-jar-registration.jpg",
+      "registration": "Two copies of the open jar meet at the same mouth-plane anchor. Relative to the old jar, body edges move up to5 native pixels; canvas is935x1683 versus935x1682. This is not a pixel-identical crossfade. Use the open jar for both copies, not old and new during a dissolve.",
+      "placement": {
+        "openMouthAnchorPixels": [
+          457,
+          273
+        ],
+        "coverPaintedWidthAtJarNativeScale": 640,
+        "scale": "uniform only; use the alpha box width of the cover, not its full canvas width"
+      }
+    },
+    {
+      "key": "y11c-gas-jar-cover-slip-v1",
+      "file": "public/assets/chemistry/y11c-gas-jar-cover-slip-v1.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-2db8d45a-397f-4f10-aa9e-dab15db44251.png",
+      "sha256": "0eda038f4c4f5f5e58fa78bd6039443dc284816797110c2b17b2d322bba667ee",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alpha128Box": [
+        193,
+        233,
+        1581,
+        650
+      ],
+      "brief": 221,
+      "status": "delivered native PNG; static QA passed",
+      "qa": "docs/production/claude-pm/assets/brief221-qa/gas-jar-registration.jpg",
+      "registration": "Two copies of the open jar meet at the same mouth-plane anchor. Relative to the old jar, body edges move up to5 native pixels; canvas is935x1683 versus935x1682. This is not a pixel-identical crossfade. Use the open jar for both copies, not old and new during a dissolve.",
+      "placement": {
+        "openMouthAnchorPixels": [
+          457,
+          273
+        ],
+        "coverPaintedWidthAtJarNativeScale": 640,
+        "scale": "uniform only; use the alpha box width of the cover, not its full canvas width"
+      }
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "c8-thermometer-hot-v1.png",
+      "resolvedName": "c8-thermometer-hot-v1.png",
+      "paths": [
+        "public/assets/chemistry/c8-thermometer-hot-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "m5x-hot-pack-v1.png",
+      "resolvedName": "m5x-hot-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-hot-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "m7-camping-gas-burner-v1.png",
+      "resolvedName": "m7-camping-gas-burner-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-camping-gas-burner-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "resolvedName": "m5x-cold-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-cold-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png",
+      "resolvedName": "m6-foam-cup-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-shield-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-sooty-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-sooty-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-sooty-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v03",
+      "reference": "public/assets/chemistry/m7-spirit-burner-on-balance-v1.png",
+      "resolvedName": "m7-spirit-burner-on-balance-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-on-balance-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "m5x-hot-pack-v1.png",
+      "resolvedName": "m5x-hot-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-hot-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "m5x-thermometer-cold-v1.png",
+      "resolvedName": "m5x-thermometer-cold-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-thermometer-cold-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "m8-balance-watch-glass-v1.png",
+      "resolvedName": "m8-balance-watch-glass-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-balance-watch-glass-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "resolvedName": "m5x-cold-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-cold-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png",
+      "resolvedName": "m6-foam-cup-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-shield-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "public/assets/chemistry/y11c-flask-peroxide-mno2-plug-fizz-v1.png",
+      "resolvedName": "y11c-flask-peroxide-mno2-plug-fizz-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-flask-peroxide-mno2-plug-fizz-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "public/assets/chemistry/y11c-watch-glass-salt-v1.png",
+      "resolvedName": "y11c-watch-glass-salt-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-watch-glass-salt-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v04",
+      "reference": "y11c-flask-acid-plug-spent-v1.png",
+      "resolvedName": "y11c-flask-acid-plug-spent-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-flask-acid-plug-spent-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v05",
+      "reference": "c7-haber-converter-v1.png",
+      "resolvedName": "c7-haber-converter-v1.png",
+      "paths": [
+        "public/assets/chemistry/c7-haber-converter-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v05",
+      "reference": "m7-temp-probe-sleeve-stand-v1.png",
+      "resolvedName": "m7-temp-probe-sleeve-stand-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-temp-probe-sleeve-stand-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v05",
+      "reference": "public/assets/chemistry/c7-iron-catalyst-pellets-v1.png",
+      "resolvedName": "c7-iron-catalyst-pellets-v1.png",
+      "paths": [
+        "public/assets/chemistry/c7-iron-catalyst-pellets-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v05",
+      "reference": "y11c-flask-acid-plug-spent-v1.png",
+      "resolvedName": "y11c-flask-acid-plug-spent-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-flask-acid-plug-spent-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v05",
+      "reference": "y11c-flask-peroxide-mno2-plug-fizz-v1.png",
+      "resolvedName": "y11c-flask-peroxide-mno2-plug-fizz-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-flask-peroxide-mno2-plug-fizz-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v06",
+      "reference": "public/assets/chemistry/c7-iron-catalyst-pellets-v1.png",
+      "resolvedName": "c7-iron-catalyst-pellets-v1.png",
+      "paths": [
+        "public/assets/chemistry/c7-iron-catalyst-pellets-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v07",
+      "reference": "c6-furnace-tube-v1.png",
+      "resolvedName": "c6-furnace-tube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c6-furnace-tube-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v07",
+      "reference": "m8-graphite-furnace-v1.png",
+      "resolvedName": "m8-graphite-furnace-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-graphite-furnace-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v07",
+      "reference": "public/assets/chemistry/c4-icon-carbon-lump-v1.png",
+      "resolvedName": "c4-icon-carbon-lump-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4-icon-carbon-lump-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v08",
+      "reference": "public/assets/chemistry/c4-icon-carbon-lump-v1.png",
+      "resolvedName": "c4-icon-carbon-lump-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4-icon-carbon-lump-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v08",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-shield-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-shield-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v08",
+      "reference": "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png",
+      "resolvedName": "m7-spirit-burner-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-spirit-burner-calorimeter-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "g1-sugar-bowl-v1.png",
+      "resolvedName": "g1-sugar-bowl-v1.png",
+      "paths": [
+        "public/assets/chemistry/g1-sugar-bowl-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "m7-ethanol-fuel-bottle-v1.png",
+      "resolvedName": "m7-ethanol-fuel-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-ethanol-fuel-bottle-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "public/assets/biology/b6a-mitochondrion-v1.png",
+      "resolvedName": "b6a-mitochondrion-v1.png",
+      "paths": [
+        "public/assets/biology/b6a-mitochondrion-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "public/assets/chemistry/g1-leaf-v1.png",
+      "resolvedName": "g1-leaf-v1.png",
+      "paths": [
+        "public/assets/chemistry/g1-leaf-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "public/assets/chemistry/m7-camping-gas-burner-v1.png",
+      "resolvedName": "m7-camping-gas-burner-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-camping-gas-burner-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "public/assets/chemistry/p01-bunsen-lit-v2.png",
+      "resolvedName": "p01-bunsen-lit-v2.png",
+      "paths": [
+        "public/assets/chemistry/p01-bunsen-lit-v2.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v09",
+      "reference": "sun.png",
+      "resolvedName": "sun.png",
+      "paths": [
+        "public/assets/sun.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "g1-sugar-bowl-v1.png",
+      "resolvedName": "g1-sugar-bowl-v1.png",
+      "paths": [
+        "public/assets/chemistry/g1-sugar-bowl-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "g1-tree-v1.png",
+      "resolvedName": "g1-tree-v1.png",
+      "paths": [
+        "public/assets/chemistry/g1-tree-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "public/assets/biology/b6a-chloroplast-v1.png",
+      "resolvedName": "b6a-chloroplast-v1.png",
+      "paths": [
+        "public/assets/biology/b6a-chloroplast-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "public/assets/biology/b6a-mitochondrion-v1.png",
+      "resolvedName": "b6a-mitochondrion-v1.png",
+      "paths": [
+        "public/assets/biology/b6a-mitochondrion-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "public/assets/chemistry/c9-ice-cube-v1.png",
+      "resolvedName": "c9-ice-cube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-ice-cube-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "public/assets/chemistry/g1-leaf-v1.png",
+      "resolvedName": "g1-leaf-v1.png",
+      "paths": [
+        "public/assets/chemistry/g1-leaf-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "resolvedName": "m5x-cold-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-cold-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v10",
+      "reference": "sun.png",
+      "resolvedName": "sun.png",
+      "paths": [
+        "public/assets/sun.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "-clear-v1.png",
+      "resolvedName": "m8-permanganate-clear-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-permanganate-clear-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "m8-permanganate-purple-v1.png",
+      "resolvedName": "m8-permanganate-purple-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-permanganate-purple-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/c9-ice-cube-v1.png",
+      "resolvedName": "c9-ice-cube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-ice-cube-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "resolvedName": "m5x-cold-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-cold-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/m7-perfume-bottle-v1.png",
+      "resolvedName": "m7-perfume-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-perfume-bottle-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/y11c-dry-ice-v1.png",
+      "resolvedName": "y11c-dry-ice-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-dry-ice-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/y11c-gas-jar-v1.png",
+      "resolvedName": "y11c-gas-jar-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-gas-jar-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v12",
+      "reference": "c7-ammonia-storage-tank-v1.png",
+      "resolvedName": "c7-ammonia-storage-tank-v1.png",
+      "paths": [
+        "public/assets/chemistry/c7-ammonia-storage-tank-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v12",
+      "reference": "c9-no2-tube-brown-v1.png",
+      "resolvedName": "c9-no2-tube-brown-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-no2-tube-brown-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v12",
+      "reference": "public/assets/chemistry/y11c-dry-ice-v1.png",
+      "resolvedName": "y11c-dry-ice-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-dry-ice-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "c7-ammonia-storage-tank-v1.png",
+      "resolvedName": "c7-ammonia-storage-tank-v1.png",
+      "paths": [
+        "public/assets/chemistry/c7-ammonia-storage-tank-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "m5x-limestone-cave-v1.png",
+      "resolvedName": "m5x-limestone-cave-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-limestone-cave-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "p01-bunsen-lit-v2.png",
+      "resolvedName": "p01-bunsen-lit-v2.png",
+      "paths": [
+        "public/assets/chemistry/p01-bunsen-lit-v2.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "public/assets/chemistry/c9-ice-cube-v1.png",
+      "resolvedName": "c9-ice-cube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-ice-cube-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "public/assets/chemistry/p01-bunsen-unlit-v2.png",
+      "resolvedName": "p01-bunsen-unlit-v2.png",
+      "paths": [
+        "public/assets/chemistry/p01-bunsen-unlit-v2.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "public/assets/chemistry/y11c-limestone-lumps-v1.png",
+      "resolvedName": "y11c-limestone-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-limestone-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v13",
+      "reference": "y11c-quicklime-lumps-v1.png",
+      "resolvedName": "y11c-quicklime-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-quicklime-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "c9-no2-tube-brown-v1.png",
+      "resolvedName": "c9-no2-tube-brown-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-no2-tube-brown-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "m5x-limestone-cave-v1.png",
+      "resolvedName": "m5x-limestone-cave-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-limestone-cave-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "public/assets/chemistry/c9-ice-cube-v1.png",
+      "resolvedName": "c9-ice-cube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-ice-cube-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "public/assets/chemistry/y11c-limestone-lumps-v1.png",
+      "resolvedName": "y11c-limestone-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-limestone-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "public/assets/chemistry/y11c-quicklime-lumps-v1.png",
+      "resolvedName": "y11c-quicklime-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-quicklime-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v14",
+      "reference": "y11c-limestone-lumps-v1.png",
+      "resolvedName": "y11c-limestone-lumps-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-limestone-lumps-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    }
+  ],
+  "missingReferences": [],
+  "qualification": "Native dimensions and small generated-state differences are qualified in sidecars. Gas-jar covers require a source repair before build. No motion, listening or release approval.",
+  "brief221": {
+    "state": "12 Revision2 source checks complete; two gas-jar layers delivered",
+    "assets": [
+      "public/assets/chemistry/y11c-gas-jar-open-v1.png",
+      "public/assets/chemistry/y11c-gas-jar-cover-slip-v1.png"
+    ],
+    "heldCandidate": "work/brief221/y11c-gas-jar-cover-slip-candidate.png",
+    "heldReason": "First exact crop/mask retained painted jar-neck material, so it was replaced by the separately generated sheet. Original plates and candidate preserved.",
+    "limits": "Static QA on cream,dark,white. Actual cover withdrawal and rim alignment at playback speed remain for the build."
+  }
+}

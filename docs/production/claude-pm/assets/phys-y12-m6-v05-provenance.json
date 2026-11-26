@@ -1,0 +1,38 @@
+{
+  "design": "phys-y12-m6-v05",
+  "sourceSHA256": "35062cfa4a2569124d8c2dc537ea9488dbc0c2853ab0acbd89067cb01c0342c1",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v05",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v05",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v05",
+      "reference": "y12p-satellite-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-satellite-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    }
+  ],
+  "newAssets": [],
+  "heldCRT": null,
+  "reuseCheckEvidence": "work/brief189/reuse-checks.json",
+  "qa": "docs/production/claude-pm/assets/brief189-qa",
+  "status": "source findings, scene integration, exact voiced preview and listening remain open"
+}

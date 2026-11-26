@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "51c943e0345ce22e1d508a3408ed1d155c29e803e9d6fb5167d8aa9879b09479",
+  "sourceDesignSha256": "41f03b5af19377606a604f4e348ccfccaffce0756c514657da837eb83b40407a",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "A five hundred kilogram satellite is in a circular orbit, seven thousand kilometres from Earth's centre, moving at about seven point five six kilometres per second. To lift it higher, its engine pushes it forwards, and it speeds up. But once it settles into a circular orbit twice as far out, it's moving at only five point three five kilometres per second, slower than when it started. The engine added energy. So where did it go? Have a think."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Have a think.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Have a think.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "kinetic",

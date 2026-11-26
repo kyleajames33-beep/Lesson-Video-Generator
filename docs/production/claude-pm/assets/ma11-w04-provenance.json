@@ -1,0 +1,68 @@
+{
+  "brief": 247,
+  "lesson": "w04",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-18150ee1-caa2-4c14-b4ef-cf939cdc74a3.png",
+      "sha256": "69cabf668b09bd6181129bb40c281d99c478b3d4d23381c9110786924c29798c",
+      "nativeSize": [
+        1630,
+        965
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        286,
+        241,
+        1344,
+        743
+      ],
+      "marginFractions": [
+        0.1754601226993865,
+        0.24974093264248703,
+        0.1754601226993865,
+        0.23005181347150258
+      ],
+      "evidence": [
+        "work/brief247/ma11-rug-top-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-rug-top-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-rug-top-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-rug-top-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-rug-top-v1.png",
+      "path": "public/assets/maths/ma11-rug-top-v1.png",
+      "brief": 247,
+      "lesson": "w04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2200,
+        1300
+      ],
+      "qa": {
+        "result": "static pass; source trial-wording finding remains",
+        "observations": [
+          "Native paper/dark and 300/600 px checks inspected. Quiet woven rug, short fringes only at short ends, no text or people.",
+          "Second framing has more than 17 percent clear margin. Body aspect about 1.98, compared with approximately 1.8 requested; fixed artwork is a context image, coded outline carries exact changing dimensions.",
+          "Native 1630 by 965 preserved, not upsampled to requested 2200 by 1300."
+        ],
+        "evidence": [
+          "work/brief247/rug-size-paper.jpg",
+          "work/brief247/rug-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-rug-top-v1.json"
+    }
+  ],
+  "result": "Rug delivered at public/assets/maths/ma11-rug-top-v1.png, ready for w03 handoff. Native paper/dark and 300/600 px checks pass; body and 200 by 200 texture swatch recorded. Body aspect is about 1.98 against the approximate 1.8 request; exact changing dimensions belong to the coded outline, with no plate stretch. Source trial-wording finding remains with root.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/rug-size-paper.jpg",
+    "work/brief247/rug-size-dark.jpg",
+    "work/brief247/rug-size-transforms.json"
+  ]
+}

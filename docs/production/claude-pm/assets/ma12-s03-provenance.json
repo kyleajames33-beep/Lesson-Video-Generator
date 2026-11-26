@@ -1,0 +1,60 @@
+{
+  "brief": 240,
+  "assets": [
+    {
+      "name": "ma12-pet-carrier-v1.png",
+      "path": "public/assets/maths/ma12-pet-carrier-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-89c16193-bb3b-43d8-af0b-1f32820a3221.png",
+      "designs": [
+        "s03"
+      ],
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "requestedSize": [
+        1600,
+        1200
+      ],
+      "sha256": "64b16270224d3306da47bf6c22b1a034845d6616a7b686951e14c72166fffc72",
+      "alphaBox": [
+        33,
+        39,
+        1364,
+        962
+      ],
+      "alpha32Box": [
+        269,
+        171,
+        1172,
+        949
+      ],
+      "approxBasePoint": [
+        720.5,
+        948
+      ],
+      "topY": 171,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visibleBodyWidthToCatCanvas": 0.4515,
+      "visibleBodyWidthToCatAlphaWidth": 0.5707964601769911,
+      "scaleNote": "QA uses the same file-pixel scale for both plates; visible carrier903px versus cat1582px including tail. Native canvas ratio differs from visible-object ratio.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching."
+      ],
+      "meaningfulMarginFractions": [
+        0.18577348066298344,
+        0.1574585635359116,
+        0.19060773480662985,
+        0.1261510128913444
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s03.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    }
+  ],
+  "note": "Native aspect preserved; source review findings retained; no speech or render"
+}

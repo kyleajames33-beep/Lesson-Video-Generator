@@ -1,0 +1,197 @@
+{
+  "design": "chem-y11-m2-v15",
+  "sourceSHA256": "ee20750d750a2bd0f16d58bb131c2924b61411861a386a62cab2f5da4fe43e75",
+  "newRequests": [
+    {
+      "file": "y11c-sample-bottle-clear-v1.png",
+      "designs": [
+        "chem-y11-m2-v14",
+        "chem-y11-m2-v15"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reference": "public/assets/chemistry/m8-river-sampling-bottle-v1.png",
+      "instruction": "Crop original pixels only, remove every dipper/pole pixel, preserve the bottle and alpha, never repaint or stretch.",
+      "artifact": {
+        "source": "public\\assets\\chemistry\\m8-river-sampling-bottle-v1.png",
+        "sourceSHA256": "3457e613084a0f35a061203c7ea29c9a415f60939155b4c51b4fe50d2e82ac63",
+        "file": "public\\assets\\chemistry\\y11c-sample-bottle-clear-v1.png",
+        "sha256": "1761db4aaef66e5d4654061f14f21bf611a0d2fed012c52003c2294fa340068f",
+        "operation": "Exact rectangular crop of original RGBA pixels; no repaint, resampling, masking or colour/alpha edits",
+        "cropBoxExclusiveRightBottom": [
+          988,
+          956,
+          1460,
+          1790
+        ],
+        "size": [
+          472,
+          834
+        ],
+        "dipperOrPoleConnectedPixelsInCrop": 0,
+        "allBottlePixelsAboveAlpha16Retained": true,
+        "qualification": "Very faint original alpha fringe outside the visible bottle is trimmed by the rectangle. The original cap, clear liquid and small painted bubbles remain. No new artwork was invented.",
+        "visualQA": "Pass at native size and on paper/dark composites. Bottle alone, no visible dipper/pole. Exact RGBA crop verified."
+      }
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "c13-pbi2-tube-precipitate-v1.png",
+      "paths": [
+        "public/assets/chemistry/c13-pbi2-tube-precipitate-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m5x-waste-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-waste-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m6-beaker-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-beaker-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m8-balance-watch-glass-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-balance-watch-glass-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m8-baso4-beaker-hotplate-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-baso4-beaker-hotplate-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m8-desiccator-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-desiccator-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m8-filter-funnel-cloudy-filtrate-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-filter-funnel-cloudy-filtrate-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "m8-river-sampling-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-river-sampling-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "p01-filter-funnel-flask-v1.png",
+      "paths": [
+        "public/assets/chemistry/p01-filter-funnel-flask-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-safety-glasses-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/m6-beaker-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-beaker-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/m6-wash-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-wash-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/m8-baso4-beaker-settled-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-baso4-beaker-settled-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/m8-drying-oven-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-drying-oven-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/m8-filter-funnel-white-ppt-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-filter-funnel-white-ppt-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/p03-dropper-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/p03-dropper-bottle-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/y11c-gas-jar-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-gas-jar-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "public/assets/chemistry/y11c-sample-bottle-clear-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v15",
+      "reference": "y11c-sample-bottle-clear-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "generationTool": null,
+  "status": "source reviews handed in; painting not yet done",
+  "assetHandInSourceSHA256": "ee20750d750a2bd0f16d58bb131c2924b61411861a386a62cab2f5da4fe43e75",
+  "sourceStillMatchesReviewAtAssetHandIn": true,
+  "brief242Recheck": {
+    "date": "2026-11-16",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m2-v15-native-qa-16-nov.json",
+    "reviewedSourceSha256": "f1028e88c88dc8c95e5848433f48affe0bd8a7ea5017e329a12b686a23acf28e",
+    "result": "Five new native plate records; both new question pictures pass static answer-data QA. Filter pair has identical upper apparatus and object bounds, with intended lower-flask alpha differences (mask IoU 0.999590). Three gas jars sit at one uniform scale. All 15 narration strings remain unchanged (5,567 characters). Built filter/drop motion and glass-overlay visibility remain pending; no whole-lesson clearance."
+  }
+}

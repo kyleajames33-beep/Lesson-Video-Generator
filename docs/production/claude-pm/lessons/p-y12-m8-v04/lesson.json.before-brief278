@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m8-v04",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "a04bb7927c51c8aa092478e0eb3c2ad24137ffdb993278dac474d5a966a792c1",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (same temperature, a million times the power)",
+      "voiceover": {
+        "text": "Last time, these two stars had the same temperature, so the same class and the same peak. Yet one gives out about a million times more power. How can two stars at the same temperature differ that much? Make your prediction. The bright one is bigger, with far more glowing surface. To see that, put every star on one graph. So how does the HR diagram distinguish brightness, temperature and stellar stage?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "luminosity-brightness",
+      "title": "power, not looks",
+      "voiceover": {
+        "text": "First, two kinds of brightness. Luminosity is the total power a star gives out, in watts. The Sun's is about three point eight times ten to the twenty-six watts, one solar luminosity. Apparent brightness is how bright a star looks from here, and it falls with the square of the distance. The Sun is the brightest thing in our sky only because it's close. The next nearest star, Proxima Centauri, is too dim to see without a telescope. Yet Rigel, about eight hundred and sixty light years away, is one of the brightest stars we see. The HR diagram plots luminosity, not apparent brightness."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "axes",
+      "title": "the axes",
+      "voiceover": {
+        "text": "The HR diagram is named after the two astronomers who first drew it, Ejnar Hertzsprung and Henry Norris Russell. It plots luminosity up the side, against surface temperature along the bottom. Two things are unusual. Luminosity goes up in powers of ten, because stars range from a ten thousandth of the Sun to a million times it. And temperature increases to the left. That's because it follows the spectral classes, O on the left to M on the right. So moving left means hotter and bluer, and moving right means cooler and redder."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "main-sequence",
+      "title": "the main sequence",
+      "voiceover": {
+        "text": "Now plot the stars around us. They don't scatter at random. About ninety per cent fall in one diagonal band, from hot and luminous at the top left to cool and dim at the bottom right. That's the main sequence. These stars are all doing the same thing, fusing hydrogen into helium in their cores. Where a star sits along the band is set by its mass. The most massive are hot, blue and luminous. The least massive are cool, red and dim. The Sun sits in the middle, at about five thousand eight hundred kelvin and one solar luminosity."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "area-rule",
+      "title": "size from area",
+      "voiceover": {
+        "text": "Here's how the diagram shows size. A star's luminosity depends on its temperature and on its surface area. At the same temperature, every square metre of surface gives out the same power. So at the same temperature, more luminosity means more surface. Area goes as radius squared, so a star at the Sun's temperature with a hundred times the Sun's luminosity has a hundred times the area, and ten times the radius. Not a hundred times. That's a classic trap."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "giants",
+      "title": "huge and cool: the giants",
+      "voiceover": {
+        "text": "Now look at the top right. These stars are cool and red, yet hugely luminous. A cool surface gives out much less power per square metre, so to be that luminous, they must be enormous. These are red giants and supergiants. Betelgeuse is so big that, in place of the Sun, it would reach beyond the orbit of Mars. And our two red stars? Same temperature, a million times the luminosity, so a million times the area, and a thousand times the radius."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "white-dwarfs",
+      "title": "hot and dim: the white dwarfs",
+      "voiceover": {
+        "text": "Now the bottom left. These stars are hot and white, yet very dim. Each square metre gives out a lot of power, so to be that dim, they must be tiny. These are white dwarfs, about the size of Earth, the leftover cores of stars like the Sun. Sirius B is a white dwarf. It's far hotter than the Sun, yet fainter, and it's smaller than Earth."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "radius-lines",
+      "title": "lines of equal size",
+      "voiceover": {
+        "text": "You can draw lines of equal radius across the diagram. They run diagonally, down from the top left. Up and to the right means bigger. Down and to the left means smaller. That's how one position tells you size."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "stages",
+      "title": "regions are stages",
+      "voiceover": {
+        "text": "Position also tells you a star's stage of life. On the main sequence, a star is fusing hydrogen in its core. It stays there for most of its life, which is why most stars we see are there. When the core's hydrogen runs out, the star swells and cools, and moves up and to the right, into the giants. Later, a star like the Sun sheds its outer layers, and its hot core is left behind, down at the bottom left. So the regions are stages: main sequence, giant, then remnant."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-reading",
+      "title": "reading a star",
+      "voiceover": {
+        "text": "Let's read one. A star has a surface temperature of four thousand kelvin, and a luminosity of a hundred solar luminosities. Four thousand kelvin puts it in class K, so it looks orange. At that temperature, a main-sequence star has only about a tenth of a solar luminosity, so this star sits far above the band. It's a giant. How much bigger? A thousand times the luminosity at the same temperature means a thousand times the area, so about thirty-two times the radius."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the diagram. Up is power, left is hot. Top right is huge, bottom left is tiny."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Star A and star B both have a surface temperature of five thousand kelvin. Star A's luminosity is zero point five solar luminosities, and star B's is four hundred and fifty. Calculate the ratio of their radii, and identify the type of star B. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Same temperature, so the ratio of the areas is the ratio of the luminosities, four fifty over zero point five, nine hundred. The radius ratio is the square root, thirty. Star B is cool and very luminous, far above the main sequence, so it's a giant. The slip is giving nine hundred as the radius ratio."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Star P appears much brighter in the night sky than star Q. A student says star P must be higher on the HR diagram. Evaluate the student's claim. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The HR diagram plots luminosity, the star's true power. Apparent brightness also depends on distance, falling with distance squared. So star P might just be much closer. The Sun is the brightest star in our sky, yet it sits in the middle of the main sequence. The claim only works if both stars are the same distance away. The slip is treating brighter in the sky as more luminous."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-v05",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the HR diagram turns two measurements into a star's temperature, colour, luminosity, size and stage. And it shows that most stars are on the main sequence, fusing hydrogen into helium. But why does joining light nuclei release energy at all? So why do main-sequence stars release energy by combining light nuclei?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "design": "chem-y11-m2-v19",
+  "sourceSHA256": "6262356691ca53e9221eeadec27087c61fb19b6f84d7feef1a54f33026b94fcb",
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "biology/y11-balloon-large-v1.png",
+      "resolvedReference": "biology/y11-balloon-large-v1.png",
+      "paths": [
+        "public/assets/biology/y11-balloon-large-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "c4a-cylinder-body-v1.png",
+      "resolvedReference": "c4a-cylinder-body-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-cylinder-body-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "c4a-cylinder-piston-v1.png",
+      "resolvedReference": "c4a-cylinder-piston-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-cylinder-piston-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "c4a-syringe-plunger-v1.png",
+      "resolvedReference": "c4a-syringe-plunger-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-plunger-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "c7-gas-compressor-pump-v1.png",
+      "resolvedReference": "c7-gas-compressor-pump-v1.png",
+      "paths": [
+        "public/assets/chemistry/c7-gas-compressor-pump-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "public/assets/chemistry/c4a-syringe-barrel-v1.png",
+      "resolvedReference": "public/assets/chemistry/c4a-syringe-barrel-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-barrel-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "public/assets/physics/phys-y11-balloon-v1.png",
+      "resolvedReference": "public/assets/physics/phys-y11-balloon-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-balloon-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v19",
+      "reference": "y11c-flask-chips-acid-bung-fizz-v1.png",
+      "resolvedReference": "y11c-flask-chips-acid-bung-fizz-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "newRequests": [
+    {
+      "design": "chem-y11-m2-v19",
+      "file": "y11c-flask-chips-acid-bung-fizz-v1.png",
+      "status": "delivered for designer inspection",
+      "sha256": "eadd19de67a228ec8b5c6a307d41f93ab757fa02d12cbe8c6fc5354efd8d1fbc",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "qa": "docs/production/claude-pm/assets/brief182-qa"
+    }
+  ],
+  "reuseQA": "docs/production/claude-pm/assets/brief182-qa/README.md",
+  "reviewReports": [
+    "checks/c-y11-m2-v19-learning-review.md",
+    "checks/c-y11-m2-v19-science-check.md"
+  ],
+  "qualification": "Source corrections remain open. Existence/placement checks do not establish voiced playback or method approval.",
+  "assets": [
+    {
+      "key": "bung-fizz",
+      "source": "exec-13391ca7-0d70-4e21-b12a-7961a4a5677d.png",
+      "file": "public/assets/chemistry/y11c-flask-chips-acid-bung-fizz-v1.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-13391ca7-0d70-4e21-b12a-7961a4a5677d.png",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "sha256": "eadd19de67a228ec8b5c6a307d41f93ab757fa02d12cbe8c6fc5354efd8d1fbc",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        266,
+        116,
+        967,
+        1199
+      ],
+      "minMarginAbove16": 0.08157524613220815,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native output dimensions preserved, without upsampling or stretching. Faint low-alpha noise can extend beyond painted bounds. Source findings and voiced-preview checks remain open. Visible alignment does not establish pixel identity.",
+      "pixelCoordinates": {
+        "deliveryTubeOpenEnd": [
+          960,
+          131
+        ]
+      },
+      "coordinateStatus": "Approximate centre of open glass tube. Check coded tube continuity in exact scene.",
+      "visualQA": "Four-state paper/dark 300px row and midpoint overlays inspected. Acid-only and spent files are byte-identical as requested. Apparatus bounds vary by up to 7 native pixels across generated states; not an exact pixel overlay."
+    }
+  ],
+  "brief242Recheck": {
+    "date": "2026-11-16",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m2-v19-native-qa-16-nov.json",
+    "reviewedSourceSha256": "45597c54793565c1bf5706d919f3a50acf07c41061d711adfdc4c42fc925c430",
+    "result": "Three native records. Balloon passes the 300/600 px uniform-scale check; existing fizzing delivery-tube flask is present and its opening matches the sidecar. Attempt 2 syringe gives no answer data away. Attempt 1 picture held: the round flask contains painted liquid, contradicting the 2.00 L nitrogen-only volume. All 16 narration strings remain unchanged (5,841 characters). No speech fix or new plate commissioned; root resolves the picture."
+  }
+}

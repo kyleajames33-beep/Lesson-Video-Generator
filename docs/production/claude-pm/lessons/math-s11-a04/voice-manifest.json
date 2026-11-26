@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a04.md",
+  "sourceSha256": "d8d70465c7d7216657753f41edf202a09bc25bcb56a93a79a0b62c8850ea4795",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-phone-numbers",
+      "text": "Your phone carries the biggest and smallest numbers you'll ever own. This one stores two hundred and fifty-six gigabytes. That's about two hundred and fifty-six billion bytes of photos, songs and apps. Each photo from its camera has around twelve million pixels. And inside, the processor's tiniest parts are only a few nanometres across, so small that thousands of them would fit across the width of one pixel on the screen. Writing all those zeros out would be a nightmare. So how do prefixes such as nano, mega and giga become powers of ten, and how do we write numbers this big, or this small?",
+      "audioFile": "public/audio/math-s11-a04/hook-phone-numbers.wav"
+    },
+    {
+      "id": "big-prefixes",
+      "text": "Start with one you know. Kilo means a thousand, so kilo equals a thousand. A thousand is ten times ten times ten, three tens multiplied. We write that as ten to the power three. A power of ten just counts how many tens are multiplied together. Each big prefix is a thousand times the one before. Mega means a million, which is ten to the six. Giga means a billion, ten to the nine. And tera means a trillion, ten to the twelve. So the powers go up in threes, because every step multiplies by a thousand, and a thousand is three more tens. A two terabyte hard drive holds two times ten to the twelve bytes, that's two thousand gigabytes.",
+      "audioFile": "public/audio/math-s11-a04/big-prefixes.wav"
+    },
+    {
+      "id": "small-prefixes",
+      "text": "Small prefixes go the other way. Milli means a thousandth, so you divide by ten, three times. That's written as ten to the power minus three. A negative power doesn't make a negative number. It's a small positive number, nought point nought nought one. Centi, a hundredth, is ten to the minus two. Micro, a millionth, is ten to the minus six, and its symbol is the Greek letter mu, which looks like a u with a tail. Nano, a billionth, is ten to the minus nine. A sheet of paper is about a tenth of a millimetre thick. That's a hundred micrometres. The processor's parts are thousands of times smaller again, just a few nanometres.",
+      "audioFile": "public/audio/math-s11-a04/small-prefixes.wav"
+    },
+    {
+      "id": "scientific-notation",
+      "text": "Now we can write big and small numbers neatly. Scientific notation means a number from one up to, but not including, ten, times a power of ten. Take two hundred and fifty-six gigabytes. Giga is ten to the nine, so it's two hundred and fifty-six times ten to the nine bytes. But two hundred and fifty-six isn't between one and ten. Move the decimal point two places left, to two point five six. Moving it left divides by a hundred, so the power goes up by two to make up for it. That's two point five six times ten to the eleven bytes. Small numbers work the same way. A chip feature of about three nanometres is three times ten to the minus nine metres. A common slip is to treat giga like kilo, and write only three zeros. That's two hundred and fifty-six thousand bytes, about one blurry photo.",
+      "audioFile": "public/audio/math-s11-a04/scientific-notation.wav"
+    },
+    {
+      "id": "changing-prefixes",
+      "text": "To change from one prefix to another, count the steps on the ladder. Terabytes to gigabytes is one step down, to a smaller unit, so multiply by a thousand. Two terabytes is two thousand gigabytes. Millimetres to micrometres is one step down as well, so nought point five millimetres is five hundred micrometres. Prefixes also make sizes easy to compare. A movie download of four gigabytes on a two hundred and fifty-six gigabyte phone means two hundred and fifty-six divided by four, sixty-four movies, if nothing else was on it. And that two terabyte drive holds about seven point eight phones' worth.",
+      "audioFile": "public/audio/math-s11-a04/changing-prefixes.wav"
+    },
+    {
+      "id": "significant-figures",
+      "text": "Questions often ask for an answer to a number of significant figures. These are the digits that carry the measurement, counted from the first digit that isn't zero. Zeros before the first digit just hold the place, so they don't count. A zero between digits does. So nought point nought nought nought three nought four six has four significant figures, not seven. A photo from this phone is forty-thirty-two pixels wide and thirty twenty-four tall. That's twelve million, one hundred and ninety-two thousand, seven hundred and sixty-eight pixels. To three significant figures, keep the first three digits, one, two, one. The next digit is a nine, so the last one rounds up to two. That's one point two two times ten to the seven, twelve point two megapixels. To two significant figures, it's one point two times ten to the seven. Small numbers too. The processor ticks three point two billion times a second, so each tick takes one divided by three point two times ten to the nine seconds. A calculator shows three point one two five E minus ten. The E means times ten to the power. To two significant figures, that's three point one times ten to the minus ten seconds.",
+      "audioFile": "public/audio/math-s11-a04/significant-figures.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to keep the symbols straight. Capital letters are huge, M, G and T. Lower case letters are small, m, mu and n, and c. The one exception is little k, which is a thousand.",
+      "audioFile": "public/audio/math-s11-a04/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Write four terabytes in bytes, using scientific notation. Then, a single pixel on a phone screen is about fifty-five micrometres wide. Write this width in metres, using scientific notation. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a04/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Tera is ten to the twelve, so four terabytes is four times ten to the twelve bytes. Micro is ten to the minus six, so fifty-five micrometres is fifty-five times ten to the minus six, which is five point five times ten to the minus five metres. A positive power here is the slip. A pixel isn't half a million metres wide.",
+      "audioFile": "public/audio/math-s11-a04/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A phone has sixty-four gigabytes of free space. Each song file is four point eight megabytes. Write sixty-four gigabytes in bytes, using scientific notation. How many whole songs fit? Then write that answer in scientific notation, correct to two significant figures. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a04/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Sixty-four gigabytes is six point four times ten to the ten bytes. Dividing by four point eight times ten to the six gives thirteen thousand three hundred and thirty-three whole songs, with a bit left over. To two significant figures, that's one point three times ten to the four. Ignoring the prefixes, and saying thirteen songs, is the slip.",
+      "audioFile": "public/audio/math-s11-a04/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So prefixes are powers of ten, and scientific notation keeps the zeros under control. Now let's measure something you can walk on. A backyard lawn needs edging around it, and the garden bed needs mulch on top. One is a length, and one is an area. How do we find each? That's next.",
+      "audioFile": "public/audio/math-s11-a04/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a04/key-notes.wav"
+    }
+  ]
+}

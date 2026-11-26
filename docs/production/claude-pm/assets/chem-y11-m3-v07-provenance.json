@@ -1,0 +1,599 @@
+{
+  "design": "chem-y11-m3-v07",
+  "sourceSHA256": "1050394528b58ed0f9ff4a508b7ed9f0e5a56fcc8dfc6a17b9f0d95a16dd19a4",
+  "reuse": [
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "c11-cuso4-beaker-dissolved-v1.png",
+      "resolvedReference": "c11-cuso4-beaker-dissolved-v1.png",
+      "paths": [
+        "public/assets/chemistry/c11-cuso4-beaker-dissolved-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "c5-copper-tube-deep-v1.png",
+      "resolvedReference": "c5-copper-tube-deep-v1.png",
+      "paths": [
+        "public/assets/chemistry/c5-copper-tube-deep-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "m6-copper-acid-v1.png",
+      "resolvedReference": "m6-copper-acid-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-copper-acid-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "m6-zinc-acid-v1.png",
+      "resolvedReference": "m6-zinc-acid-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-zinc-acid-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "m8-flame-blue-v2.png",
+      "resolvedReference": "m8-flame-blue-v2.png",
+      "paths": [
+        "public/assets/chemistry/m8-flame-blue-v2.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/c1-burned-magnesium-v1.png",
+      "resolvedReference": "public/assets/chemistry/c1-burned-magnesium-v1.png",
+      "paths": [
+        "public/assets/chemistry/c1-burned-magnesium-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+      "resolvedReference": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-safety-glasses-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/m5x-strong-acid-mg-v1.png",
+      "resolvedReference": "public/assets/chemistry/m5x-strong-acid-mg-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-strong-acid-mg-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/m5x-unsaturated-beaker-v1.png",
+      "resolvedReference": "public/assets/chemistry/m5x-unsaturated-beaker-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-unsaturated-beaker-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/m6-splint-pop-v1.png",
+      "resolvedReference": "public/assets/chemistry/m6-splint-pop-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-splint-pop-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/p03-well-plate-white-tile-v1.png",
+      "resolvedReference": "public/assets/chemistry/p03-well-plate-white-tile-v1.png",
+      "paths": [
+        "public/assets/chemistry/p03-well-plate-white-tile-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "public/assets/chemistry/y11c-trough-k-v1.png",
+      "resolvedReference": "public/assets/chemistry/y11c-trough-k-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-trough-k-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-aluminium-acid-v1.png",
+      "resolvedReference": "y11c-aluminium-acid-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-copper-foil-black-v1.png",
+      "resolvedReference": "y11c-copper-foil-black-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-cuso4-beaker-zinc-after-v1.png",
+      "resolvedReference": "y11c-cuso4-beaker-zinc-after-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-cuso4-beaker-zinc-v1.png",
+      "resolvedReference": "y11c-cuso4-beaker-zinc-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-flame-iron-sparks-v1.png",
+      "resolvedReference": "y11c-flame-iron-sparks-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-iron-acid-v1.png",
+      "resolvedReference": "y11c-iron-acid-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-safety-screen-v1.png",
+      "resolvedReference": "y11c-safety-screen-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-safety-screen-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-sample-aluminium-v1.png",
+      "resolvedReference": "y11c-sample-aluminium-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-sample-aluminium-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-trough-ca-v1.png",
+      "resolvedReference": "y11c-trough-ca-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-trough-li-v1.png",
+      "resolvedReference": "y11c-trough-li-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-trough-li-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-trough-mg-v1.png",
+      "resolvedReference": "y11c-trough-mg-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-trough-na-v1.png",
+      "resolvedReference": "y11c-trough-na-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-trough-na-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-trough-water-v1.png",
+      "resolvedReference": "y11c-trough-water-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-trough-water-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "reference": "y11c-znso4-beaker-copper-v1.png",
+      "resolvedReference": "y11c-znso4-beaker-copper-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "newRequests": [
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-aluminium-acid-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "065b0b826f384475563a31588bcead08bbeaf4d737c2066f602fb659051fc02d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-copper-foil-black-v1.png",
+      "status": "delivered for designer inspection",
+      "sha256": "d8b0c4d53e7c2cecb6a893b6d34c145128be6672270bc05e6aba89c0479ffc90",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "qa": "docs/production/claude-pm/assets/brief182-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-cuso4-beaker-zinc-after-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "f826e12fb934b397324fd16c744d74466ebc26e75a5addd441984712d1ab5237",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-cuso4-beaker-zinc-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "a7d20f64f64d7b9dd29b66f4a50191c8da1abd816ae76fa77e17939c97690c96",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-flame-iron-sparks-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "92b425c021ecb0fc1ea27be323eac464d3054b16f6880868c6cbe3024a74ef58",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-iron-acid-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "a100af970594790cb626ea0310c364448c3c82f0116f3e73a64a52f10c7b9599",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-trough-ca-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "a0f74e49c8efd3ea6b5d907f6f6639590b22aa50080428a9e2b6d3b089483fde",
+      "nativeSize": [
+        1500,
+        1049
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-trough-mg-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "f7a5e0c993cf34638a1c660221a12ac2342cd0c1124e4218e2401de06a729748",
+      "nativeSize": [
+        1500,
+        1049
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    },
+    {
+      "design": "chem-y11-m3-v07",
+      "file": "y11c-znso4-beaker-copper-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "sha256": "5f61fb25fe4e6c51547f37c91d8090f669103b5ffaae666841c009e9197761a7",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "qa": "docs/production/claude-pm/assets/brief183-qa"
+    }
+  ],
+  "reuseQA": "docs/production/claude-pm/assets/brief182-qa/README.md",
+  "reviewReports": [
+    "checks/c-y11-m3-v07-learning-review.md",
+    "checks/c-y11-m3-v07-science-check.md"
+  ],
+  "qualification": "Source corrections remain open. Existence/placement checks do not establish voiced playback or method approval.",
+  "assets": [
+    {
+      "key": "foil-black",
+      "source": "exec-f70679aa-6a26-4b22-83b3-8f3cc1d9d18a.png",
+      "file": "public/assets/chemistry/y11c-copper-foil-black-v1.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-f70679aa-6a26-4b22-83b3-8f3cc1d9d18a.png",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "sha256": "d8b0c4d53e7c2cecb6a893b6d34c145128be6672270bc05e6aba89c0479ffc90",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        173,
+        189,
+        1276,
+        929
+      ],
+      "minMarginAbove16": 0.11878453038674033,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native output dimensions preserved, without upsampling or stretching. Faint low-alpha noise can extend beyond painted bounds. Source findings and voiced-preview checks remain open. Visible alignment does not establish pixel identity.",
+      "visualQA": "Copper foil, separately resting tongs and mat inspected on paper, dark and white 300px composites. Clean/black midpoint overlay inspected on paper and dark backgrounds. Bounds vary by up to 1 native pixel; not pixel-identical."
+    },
+    {
+      "key": "zincBlue",
+      "file": "public/assets/chemistry/y11c-cuso4-beaker-zinc-v1.png",
+      "reference": "c11-cuso4-beaker-dissolved-v1.png",
+      "brief": 182,
+      "source": "exec-2974e235-2c81-4a7f-ad0a-c694f86d6d45.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-2974e235-2c81-4a7f-ad0a-c694f86d6d45.png",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "sha256": "a7d20f64f64d7b9dd29b66f4a50191c8da1abd816ae76fa77e17939c97690c96",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        177,
+        215,
+        907,
+        1270
+      ],
+      "minMarginAbove16": 0.10689170182841069,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Paper/dark/white 300px composites and midpoint overlay with original inspected. Grey zinc strip sits in blue liquid against inner right wall, with top above liquid.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open."
+    },
+    {
+      "key": "ironAcid",
+      "file": "public/assets/chemistry/y11c-iron-acid-v1.png",
+      "reference": "m6-zinc-acid-v1.png",
+      "brief": 182,
+      "source": "exec-5d2cf730-59b1-4522-ad3f-51d4b213ca1e.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-5d2cf730-59b1-4522-ad3f-51d4b213ca1e.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "a100af970594790cb626ea0310c364448c3c82f0116f3e73a64a52f10c7b9599",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        211,
+        126,
+        1043,
+        1129
+      ],
+      "minMarginAbove16": 0.09968102073365231,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Shared acid-row paper/dark overlay inspected. Iron has few small bubbles, original vessel shape and level visually consistent.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open."
+    },
+    {
+      "key": "alAcid",
+      "file": "public/assets/chemistry/y11c-aluminium-acid-v1.png",
+      "reference": "m6-zinc-acid-v1.png",
+      "brief": 182,
+      "source": "exec-a418de7c-2253-4264-af08-7802b6b6dc7f.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-a418de7c-2253-4264-af08-7802b6b6dc7f.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "065b0b826f384475563a31588bcead08bbeaf4d737c2066f602fb659051fc02d",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        211,
+        124,
+        1045,
+        1129
+      ],
+      "minMarginAbove16": 0.09888357256778309,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Shared acid-row paper/dark overlay inspected. Small foil pieces and very few bubbles, original vessel shape and level visually consistent.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open."
+    },
+    {
+      "key": "troughCa",
+      "file": "public/assets/chemistry/y11c-trough-ca-v1.png",
+      "reference": "y11c-trough-water-v1.png",
+      "brief": 182,
+      "source": "exec-979ee38b-f2cc-4780-9013-bac9721f91fb.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-979ee38b-f2cc-4780-9013-bac9721f91fb.png",
+      "nativeSize": [
+        1500,
+        1049
+      ],
+      "sha256": "a0f74e49c8efd3ea6b5d907f6f6639590b22aa50080428a9e2b6d3b089483fde",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        86,
+        209,
+        1415,
+        867
+      ],
+      "minMarginAbove16": 0.056666666666666664,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Original/Ca/Mg paper/dark row and midpoint overlay inspected. One calcium granule with local milky patch and bubbles. Original trough registration preserved. See explicit side-margin qualification.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open.",
+      "marginQualification": "Preserves original trough alignment. Source side margins are about 5.7%, so fixed source geometry and the new 8% requirement conflict. This output retains about 5.6% side margin and needs designer acceptance or a revised master. It does not pass an 8% margin check."
+    },
+    {
+      "key": "troughMg",
+      "file": "public/assets/chemistry/y11c-trough-mg-v1.png",
+      "reference": "y11c-trough-water-v1.png",
+      "brief": 182,
+      "source": "exec-4f376d2d-a48b-4979-b818-f7b2a1cc2a1d.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-4f376d2d-a48b-4979-b818-f7b2a1cc2a1d.png",
+      "nativeSize": [
+        1500,
+        1049
+      ],
+      "sha256": "f7a5e0c993cf34638a1c660221a12ac2342cd0c1124e4218e2401de06a729748",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        84,
+        209,
+        1416,
+        866
+      ],
+      "minMarginAbove16": 0.056,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Original/Ca/Mg paper/dark row and midpoint overlay inspected. Magnesium coil in clear water with few bubbles. Original trough registration preserved. See explicit side-margin qualification.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open.",
+      "marginQualification": "Preserves original trough alignment. Source side margins are about 5.7%, so fixed source geometry and the new 8% requirement conflict. This output retains about 5.6% side margin and needs designer acceptance or a revised master. It does not pass an 8% margin check."
+    },
+    {
+      "key": "ironSparks",
+      "file": "public/assets/chemistry/y11c-flame-iron-sparks-v1.png",
+      "reference": "m8-flame-blue-v2.png",
+      "brief": 182,
+      "source": "exec-5fbce323-8f0b-4271-81b7-8aa77d649433.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-5fbce323-8f0b-4271-81b7-8aa77d649433.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "92b425c021ecb0fc1ea27be323eac464d3054b16f6880868c6cbe3024a74ef58",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        416,
+        116,
+        843,
+        1149
+      ],
+      "minMarginAbove16": 0.08373205741626795,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Original/sparks paper/dark midpoint overlay inspected after upper sparks moved inside margin. Burner and blue flame align visually; sparse fine orange sparks appear around upper flame.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open."
+    },
+    {
+      "key": "zincAfter",
+      "file": "public/assets/chemistry/y11c-cuso4-beaker-zinc-after-v1.png",
+      "reference": "y11c-cuso4-beaker-zinc-v1.png",
+      "brief": 182,
+      "source": "exec-038f6dd7-248c-458b-a610-70e9d24c248d.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-038f6dd7-248c-458b-a610-70e9d24c248d.png",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "sha256": "f826e12fb934b397324fd16c744d74466ebc26e75a5addd441984712d1ab5237",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        177,
+        213,
+        907,
+        1272
+      ],
+      "minMarginAbove16": 0.10548523206751055,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Paper/dark state row inspected. Submerged strip has brown spongy copper and floor flakes; exposed top stays grey; liquid paler blue. Visually registered with fresh plate.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open."
+    },
+    {
+      "key": "copperColourless",
+      "file": "public/assets/chemistry/y11c-znso4-beaker-copper-v1.png",
+      "reference": "y11c-cuso4-beaker-zinc-v1.png",
+      "brief": 182,
+      "source": "exec-d4d70fd6-707e-4ab1-b3c9-e1519898feb5.png",
+      "previousCandidate": "exec-149e717f-3b43-4912-ac1c-35dfe0c43c0c.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-d4d70fd6-707e-4ab1-b3c9-e1519898feb5.png",
+      "nativeSize": [
+        1106,
+        1422
+      ],
+      "sha256": "5f61fb25fe4e6c51547f37c91d8090f669103b5ffaae666841c009e9197761a7",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        176,
+        212,
+        909,
+        1272
+      ],
+      "minMarginAbove16": 0.10548523206751055,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with qualifications",
+      "visualQA": "Corrected paper/dark/white300px composites inspected. Colourless liquid transmits board; prior rectangular white reflection removed. Clean copper strip, no bubbles or deposit; glass visually aligns with shared zinc vessel.",
+      "qualification": "Native generated dimensions retained, without upsampling or stretching. Clear margins measured at alpha above 16; faint lower-alpha noise may extend farther. Visual registration does not establish pixel identity. Source findings, coded placement, motion and exact voiced-preview gates remain open."
+    }
+  ],
+  "brief242Recheck": {
+    "date": "2026-11-17",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m3-v07-native-qa-17-nov.json",
+    "reviewedSourceSha256": "013b077e17d68d7130682b9a600992cd9a48a9348ca3ede6fd13363ee7add4fd",
+    "result": "Nine native records and a separate 4 by 4 well-coordinate sidecar handed in. Narration unchanged at 5,760 characters. Comparison rows and 300px diagnostics recorded. Root findings: exact overlays remain unapproved, iron sparks faint at 300px, safety-screen pale fringe on dark board. Question pictures show no answer data. No design edits or whole-lesson clearance."
+  }
+}

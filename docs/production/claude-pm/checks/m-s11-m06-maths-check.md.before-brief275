@@ -1,0 +1,19 @@
+# math-s11-m06: maths-check preflight hold
+
+25 November 2026. Source SHA-256: `82ef72ff1b8928733d863a60431a2ee4987f4aa58f32cb96fc77c04eb968b1d5`.
+
+Result: 1 blockers, 1 should fix. No recording approval.
+
+- {"code": "count-mismatch", "declared": "6,228", "actual": 6216}
+
+The narration count must be the sum of the 13 scene strings, which is 6216. The declared count appears to include spaces between scenes. No source or narration was edited. Full arithmetic, syllabus-description, playlist-join and anchor checks remain pending. Evidence: work/brief271/source-inventory.json.
+
+Official facts and root-application holds: checks/maths-standard-y11-official-facts.md. Human listening pending.
+
+## Additional maths finding: circular-reference blocker
+
+Scene 4 puts `=SUM(B4:B10)` in cell B10. The formula includes its own cell. This creates a circular reference; it does not reliably double $5,408 to $10,816 as the narrated mistake claims. With ordinary calculation settings Excel reports the circular reference. A valid correction needs root to change the example and matching narration/visual together. No source edit or speech was made. Microsoft confirms that a formula including its own cell is a circular reference: https://support.microsoft.com/en-us/excel/remove-or-allow-a-circular-reference-in-excel (read25November2026).
+
+## Additional source-contract review
+
+Every quoted syllabus content statement in this description matches the captured official crosswalk. The description's Builds on/Next title links were checked in playlist order. This is a metadata join check, not full visual frame continuity or anchor approval. Evidence: work/brief271/source-contract-results.json.

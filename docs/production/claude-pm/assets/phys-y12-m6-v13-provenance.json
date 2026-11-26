@@ -1,0 +1,134 @@
+{
+  "design": "phys-y12-m6-v13",
+  "sourceSHA256": "7011c4056fa76a039df3b9ea64305abe0ca48033b7ca180f927a617e834b87c4",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "phys-y11-filament-lamp-v2.png",
+      "paths": [
+        "public/assets/physics/phys-y11-filament-lamp-v2.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "phys-y11-power-station-v2.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-station-v2.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "phys-y11-solenoid-coil-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "public/assets/physics/phys-y11-power-point-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-point-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "public/assets/physics/phys-y11-transmission-tower-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-transmission-tower-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v13",
+      "reference": "y12p-transformer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-transformer-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "transformer-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-c12d902e-9e43-44dd-97c9-4e7ac5a85fdf.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "bbox": [
+        348,
+        232,
+        1098,
+        868
+      ],
+      "marginFraction": [
+        0.24033149171270718,
+        0.2136279926335175,
+        0.24171270718232044,
+        0.2007366482504604
+      ],
+      "alphaZeroFraction": 0.7751315079922265,
+      "file": "public/assets/physics/y12p-transformer-v1.png",
+      "sha256": "fd0425501d97af4c9cc6455fd86681f501cb1c8f1946a4ef27127dde7ef4e933",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "leftTerminalCentres": [
+          [
+            374,
+            462
+          ],
+          [
+            374,
+            635
+          ]
+        ],
+        "rightTerminalCentres": [
+          [
+            1056,
+            479
+          ],
+          [
+            1055,
+            642
+          ]
+        ],
+        "coreOpeningApprox": [
+          592,
+          400,
+          824,
+          638
+        ],
+        "note": "Few thick turns left, many thin turns right. Closed core; coded wiring and highlights required."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

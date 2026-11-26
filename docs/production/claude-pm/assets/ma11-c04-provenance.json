@@ -1,0 +1,65 @@
+{
+  "brief": 248,
+  "lesson": "c04",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e5a549f0-dae6-4ce6-bc87-c6526b10c6d0.png",
+      "sha256": "94838f548718cb2521116b71a25ed85b94a4caaaf2bcaeb5de2262b60b034228",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        15,
+        147,
+        1761,
+        741
+      ],
+      "marginFractions": [
+        0.008455467869222097,
+        0.1657271702367531,
+        0.007328072153325817,
+        0.16459977452085683
+      ],
+      "evidence": [
+        "work/brief248/c04-water-slide-native-paper.jpg",
+        "work/brief248/c04-water-slide-native-dark.jpg",
+        "work/brief248/c04-water-slide-native-white.jpg",
+        "work/brief248/c04-water-slide-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-water-slide-v1.png",
+      "path": "public/assets/maths/ma11-water-slide-v1.png",
+      "brief": 248,
+      "lesson": "c04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1200
+      ],
+      "qa": {
+        "result": "passed: smooth visible chute, measured36point trace, alpha and600/full-width checks",
+        "observations": [
+          "Trace excludes pool splash and terminal pool rim. No visible sharp join or vertical section."
+        ],
+        "evidence": [
+          "work/brief248/c04-slide-profile-paper.jpg",
+          "work/brief248/c04-slide-profile-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-water-slide-v1.json"
+    }
+  ],
+  "result": "Water slide delivered at native1774x887. Flat start, rounded sloping drop, gentle middle and pool dip read on paper/dark at600px and full width. No visible kink or vertical chute. Sidecar has36measured upper-chute points fromx50to1400, stopping before pool splashes. Trace overlays inspected at both sizes; alpha clean. PCHIP QA trace has finite maximum absolute slope about1.60. Root must keep rider/profile interpolation smooth and use actual measured edge; no prescribed equation or image warp.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c04-generation.json",
+    "work/brief248/c04-slide-profile.json"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-t06",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "99d02400e7185cf9da106c599c90ed5710925cb207bea64a9355925c1bf9a60c",
+  "scenes": [
+    {
+      "id": "hook-london-call",
+      "title": "hook: a call to London",
+      "voiceover": {
+        "text": "Here's the world clock on your phone. You've booked a video call with a friend in London, for nine am their time, on a Tuesday in January. When should your alarm go off in Sydney? Sydney's on daylight saving, London's in winter, and the two cities are about as far apart as places get. Guessing is risky. Instead, every country sets its clocks against one shared clock. So how does UTC make international time problems simpler?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "utc-offsets",
+      "title": "UTC and offsets",
+      "voiceover": {
+        "text": "UTC stands for Coordinated Universal Time. It's the time at the prime meridian, nought degrees, through Greenwich, and it never changes for daylight saving. Every time zone is described by its offset, how many hours it's ahead of UTC, with a plus, or behind it, with a minus. Eastern Australia is UTC plus ten, which matches the hundred and fifty degrees east meridian from longitude, ten hours ahead. Perth is UTC plus eight, and Adelaide and Darwin are UTC plus nine and a half. Tokyo is UTC plus nine. New York is west of Greenwich, so behind, at UTC minus five in its winter. London sits right on Greenwich, UTC plus nought, in its winter. Daylight saving adds one hour to the offset, so in our summer, Sydney is UTC plus eleven. And in the northern summer, New York moves to minus four, and London is UTC plus one. Everything is measured from the same zero, so any two places can be compared through it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "utc-to-local",
+      "title": "from UTC to local time",
+      "voiceover": {
+        "text": "The rule is short. Local time equals UTC plus the offset. Say it's fourteen hundred UTC on a Wednesday in January. Sydney, on daylight saving, is plus eleven. Fourteen hundred plus eleven hours would be twenty-five hundred. That's past midnight, so take off twenty-four hours, and it's nought one hundred on Thursday. Tokyo, plus nine all year, is twenty-three hundred on Wednesday. New York, in its winter, is minus five, so take five hours off, and it's nought nine hundred on Wednesday morning. At one moment, three places, two different days. Whenever an answer passes midnight, the day changes, forward or back. And to go the other way, from local time to UTC, just subtract the offset."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "city-to-city",
+      "title": "city to city: go through UTC",
+      "voiceover": {
+        "text": "Now the call. To go from one city to another, go through UTC. First, take the starting city back to UTC. London in January is UTC plus nought, so nine am London is nought nine hundred UTC. Then bring UTC forward to the other city. Sydney in January is on daylight saving, UTC plus eleven. Nought nine hundred plus eleven hours is twenty hundred, eight pm Tuesday. Your alarm is for that evening, not the next morning. Now move the call to July. London is on its summer time, UTC plus one, so nine am London is nought eight hundred UTC. Sydney is back on plus ten, so it's eighteen hundred, six pm. The gap between the cities went from eleven hours to nine, because the two hemispheres have their summers at opposite times of the year."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "back-a-day",
+      "title": "back a day: a negative offset",
+      "voiceover": {
+        "text": "Going west can take you back into yesterday. It's three thirty pm on a Thursday in January in Sydney, so UTC plus eleven. What time is it in Los Angeles, at UTC minus eight? Back to UTC first. Fifteen thirty minus eleven hours is nought four thirty UTC, still Thursday. Now add minus eight, which means take eight hours off. Nought four thirty minus eight hours goes back past midnight, into Wednesday, and lands on twenty thirty, eight thirty pm, Wednesday night. So when school finishes on Thursday afternoon, it's still Wednesday evening in Los Angeles. A negative offset can take you back into yesterday."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flights",
+      "title": "flights in three steps",
+      "voiceover": {
+        "text": "Flights are where UTC really earns its keep. A plane leaves Sydney at eleven thirty pm on a Sunday, on daylight saving, UTC plus eleven. The flight to Dubai takes fourteen hours twenty minutes, an example time, and Dubai is UTC plus four. Step one, change the departure to UTC. Twenty-three thirty minus eleven hours is twelve thirty UTC, still Sunday. Step two, add the flight time in UTC. Twelve thirty plus fourteen hours twenty is two fifty the next morning, Monday, UTC. Step three, change to the arrival city's time. Plus four hours, and the plane lands at six fifty am, Monday, in Dubai. The flight time never changes. Only the clocks do."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's UTC in one card. Go through UTC. Take the first city back to UTC by subtracting its offset, then add the second city's offset. And check each city's daylight saving, and the day."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A live match is broadcast from Tokyo at eight pm on Saturday, Tokyo time, which is UTC plus nine. What time is that in UTC, and what time is it in New York, at UTC minus five? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Take Tokyo back to UTC. Twenty hundred minus nine hours is eleven hundred UTC, Saturday. New York is minus five, so take five hours off, and it's six am, Saturday morning. Adding the five, to get sixteen hundred, is the slip. Minus five means behind."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A flight leaves Singapore, UTC plus eight, at twenty-two fifteen on a Tuesday. It takes seven hours forty-five minutes to reach Sydney, in December, when Sydney is UTC plus eleven. What's the local time and day when it lands? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "In UTC, the departure is twenty-two fifteen minus eight, fourteen fifteen on Tuesday. Add the flight, and it lands at twenty-two hundred UTC, still Tuesday. Sydney is plus eleven, so that's nine am on Wednesday. Adding the flight straight onto twenty-two fifteen, and getting six am, forgets the time zones, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-strand-close",
+      "title": "handoff: Time and location, done",
+      "voiceover": {
+        "text": "That's Time and location done, from seconds and minutes to clocks right around the world. Look at Australia's flight map again. Forget the clocks for a moment, and keep just the cities and the routes. Cities become dots, and routes become lines joining them. Dots joined by lines are called a network, and networks are everywhere, from flight routes and bike paths to phone towers and delivery runs. What is a network, and what can it tell us? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

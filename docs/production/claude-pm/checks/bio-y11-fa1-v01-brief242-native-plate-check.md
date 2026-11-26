@@ -1,0 +1,13 @@
+# Brief 242: Biology FA1 v01 cell plates and relative scale
+
+17 November 2026.
+
+Narration is unchanged at 5,927 characters, with no em dash. Eight active native records cover bacterium, animal and plant cells, yeast, ribosome, microscopy pair and both cheek fields. True outer alpha and complete contours inspected on native paper/dark composites. No person, hand, face, labels, scale bars or printed question answers. Circular microscope fields intentionally retain their pale opaque interiors; they are not failed cutouts.
+
+Current microscopy-pair SHA256 matches y11b01-provenance.json repaired-after hash a3b8cec74d7f21d259e5d8ea491755569181048760bd8a22a63bd47d46437d56. That earlier authorised edge-only repair records786 alpha changes, unchanged RGB/interior/geometry. No repeat repair is required. The cheek-bacteria provenance records exactly ten specks, rod13.4px versus approximately550px cheek width (1:41) and cocci10px, consistent with the requested illustrative relative scale. They remain tiny in the600px whole-field diagnostic, so root must zoom or point while named; do not enlarge bacteria independently and then imply the view is at one scale. Use a prepared-slide context as the approved design requires.
+
+The bacterium shows an unbounded DNA tangle and separate blue plasmid; flagellum and pili remain unlabelled in this lesson. The animal cell contains a nucleus with painted DNA and organelles. Its stale Assets description says four mitochondria; the current picture visibly has three. No learner count of four is approved or required. The plant and yeast thumbnails read as distinct cells at160px whole width. Their side-by-side illustration sizes are not physical relative scales. The membrane-bound-compartment model needs its own key and correct masking; no generic-engine run proves the exact drawn cell process.
+
+The equal-size question drawing is explicitly schematic, not a real common-scale micrograph. Crop one cheek cell from the supplied field and retain all stated diagram conditions; no new nucleus/identity answer label is added here. Width-times10 and volume-times1000 require the same shape and one resize clock. Resolution readout must remain tied to the intended200nm threshold, with distinct separation-versus-object-size meaning. No built counters, crop, motion or listening clearance. Three unused alternative bacteria/animal files are excluded. The animal-cell final frame remains the v02 opening, solid under R2. No new commission, source edits or whole-lesson clearance.
+
+Evidence: `assets/brief242-bio-fa1-v01-native-qa-17-nov.json`. Reviewed design SHA256: `c745cbd4f1816bef113582ad1e2c7cdfc927989ba320c48fd40d19af035f9b3b`. No source edits or whole-lesson clearance.

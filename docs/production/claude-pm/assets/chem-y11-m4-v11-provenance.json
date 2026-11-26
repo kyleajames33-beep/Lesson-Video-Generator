@@ -1,0 +1,330 @@
+{
+  "design": "chem-y11-m4-v11",
+  "sourceSHA256": "f5968ab3be9103cd913c86d6edeac207ea456c1a52f25bd3696e8c70be3a3099",
+  "reuse": [
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "-clear-v1.png",
+      "resolvedName": "m8-permanganate-clear-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-permanganate-clear-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "m8-permanganate-purple-v1.png",
+      "resolvedName": "m8-permanganate-purple-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-permanganate-purple-v1.png"
+      ],
+      "exists": true,
+      "role": "inspected but not used"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/c9-ice-cube-v1.png",
+      "resolvedName": "c9-ice-cube-v1.png",
+      "paths": [
+        "public/assets/chemistry/c9-ice-cube-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/m5x-cold-pack-v1.png",
+      "resolvedName": "m5x-cold-pack-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-cold-pack-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/m7-perfume-bottle-v1.png",
+      "resolvedName": "m7-perfume-bottle-v1.png",
+      "paths": [
+        "public/assets/chemistry/m7-perfume-bottle-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/y11c-dry-ice-v1.png",
+      "resolvedName": "y11c-dry-ice-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-dry-ice-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    },
+    {
+      "design": "chem-y11-m4-v11",
+      "reference": "public/assets/chemistry/y11c-gas-jar-v1.png",
+      "resolvedName": "y11c-gas-jar-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-gas-jar-v1.png"
+      ],
+      "exists": true,
+      "role": "specified reuse or dependency"
+    }
+  ],
+  "assets": [],
+  "qa": "docs/production/claude-pm/assets/brief184-qa",
+  "status": "source findings and actual scene/voiced-preview checks remain open",
+  "brief221": {
+    "assets": [
+      {
+        "key": "y11c-gas-jar-open-v1",
+        "file": "public/assets/chemistry/y11c-gas-jar-open-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-a7395e15-c804-4a50-95d6-67fc32f7fddb.png",
+        "sha256": "fc2956842346337a7a5321a15ae1e0182528db0c59985926f7238685e547b234",
+        "dimensions": [
+          935,
+          1683
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alpha128Box": [
+          216,
+          211,
+          691,
+          1524
+        ],
+        "brief": 221,
+        "status": "delivered native PNG; static QA passed",
+        "qa": "docs/production/claude-pm/assets/brief221-qa/gas-jar-registration.jpg",
+        "registration": "Two copies of the open jar meet at the same mouth-plane anchor. Relative to the old jar, body edges move up to5 native pixels; canvas is935x1683 versus935x1682. This is not a pixel-identical crossfade. Use the open jar for both copies, not old and new during a dissolve.",
+        "placement": {
+          "openMouthAnchorPixels": [
+            457,
+            273
+          ],
+          "coverPaintedWidthAtJarNativeScale": 640,
+          "scale": "uniform only; use the alpha box width of the cover, not its full canvas width"
+        }
+      },
+      {
+        "key": "y11c-gas-jar-cover-slip-v1",
+        "file": "public/assets/chemistry/y11c-gas-jar-cover-slip-v1.png",
+        "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-2db8d45a-397f-4f10-aa9e-dab15db44251.png",
+        "sha256": "0eda038f4c4f5f5e58fa78bd6039443dc284816797110c2b17b2d322bba667ee",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alpha128Box": [
+          193,
+          233,
+          1581,
+          650
+        ],
+        "brief": 221,
+        "status": "delivered native PNG; static QA passed",
+        "qa": "docs/production/claude-pm/assets/brief221-qa/gas-jar-registration.jpg",
+        "registration": "Two copies of the open jar meet at the same mouth-plane anchor. Relative to the old jar, body edges move up to5 native pixels; canvas is935x1683 versus935x1682. This is not a pixel-identical crossfade. Use the open jar for both copies, not old and new during a dissolve.",
+        "placement": {
+          "openMouthAnchorPixels": [
+            457,
+            273
+          ],
+          "coverPaintedWidthAtJarNativeScale": 640,
+          "scale": "uniform only; use the alpha box width of the cover, not its full canvas width"
+        }
+      }
+    ],
+    "qa": {
+      "assets": [
+        {
+          "name": "old",
+          "source": "public\\assets\\chemistry\\y11c-gas-jar-v1.png",
+          "dimensions": [
+            935,
+            1682
+          ],
+          "sha256": "ef1062879acd2d8a1400a35bd9263e0dd25cabdbe54bd3bc5ea6da8a9b906bf1",
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "alpha128Box": [
+            138,
+            128,
+            778,
+            1524
+          ]
+        },
+        {
+          "name": "open",
+          "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-a7395e15-c804-4a50-95d6-67fc32f7fddb.png",
+          "dimensions": [
+            935,
+            1683
+          ],
+          "sha256": "fc2956842346337a7a5321a15ae1e0182528db0c59985926f7238685e547b234",
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "alpha128Box": [
+            216,
+            211,
+            691,
+            1524
+          ]
+        },
+        {
+          "name": "cover",
+          "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-2db8d45a-397f-4f10-aa9e-dab15db44251.png",
+          "dimensions": [
+            1774,
+            887
+          ],
+          "sha256": "0eda038f4c4f5f5e58fa78bd6039443dc284816797110c2b17b2d322bba667ee",
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "alpha128Box": [
+            193,
+            233,
+            1581,
+            650
+          ]
+        }
+      ],
+      "registration": [
+        {
+          "y": 450,
+          "old": [
+            239,
+            676
+          ],
+          "open": [
+            236,
+            671
+          ],
+          "edgeShiftPixels": [
+            -3,
+            -5
+          ]
+        },
+        {
+          "y": 700,
+          "old": [
+            242,
+            675
+          ],
+          "open": [
+            238,
+            671
+          ],
+          "edgeShiftPixels": [
+            -4,
+            -4
+          ]
+        },
+        {
+          "y": 1000,
+          "old": [
+            244,
+            674
+          ],
+          "open": [
+            241,
+            671
+          ],
+          "edgeShiftPixels": [
+            -3,
+            -3
+          ]
+        },
+        {
+          "y": 1300,
+          "old": [
+            247,
+            672
+          ],
+          "open": [
+            243,
+            671
+          ],
+          "edgeShiftPixels": [
+            -4,
+            -1
+          ]
+        },
+        {
+          "y": 1450,
+          "old": [
+            248,
+            670
+          ],
+          "open": [
+            243,
+            670
+          ],
+          "edgeShiftPixels": [
+            -5,
+            0
+          ]
+        }
+      ],
+      "openMouthAnchorPixels": [
+        457,
+        273
+      ],
+      "coverCrop": [
+        70,
+        100,
+        845,
+        345
+      ],
+      "coverMaskVertices": [
+        [
+          136,
+          251
+        ],
+        [
+          378,
+          125
+        ],
+        [
+          779,
+          176
+        ],
+        [
+          779,
+          199
+        ],
+        [
+          579,
+          317
+        ],
+        [
+          139,
+          275
+        ]
+      ],
+      "coverOperation": "ImageGen standalone sheet from original jar reference. The first crop/mask candidate retained a painted neck remnant and is held at work\\brief221\\y11c-gas-jar-cover-slip-candidate.png",
+      "qa": "Inspected three backgrounds, independent cover, open mouth and mouth-to-mouth pair. No cover remains painted onto the open jars. No people,text,faces or hands. No native resize,stretch or upsample. Reported body-edge drift remains; no motion or old/new crossfade pass.",
+      "coverPlacement": "Scale uniformly using the painted alpha box width to match the original slip width, approximately640 native jar pixels. No stretch. Open jar is native935x1683, original935x1682; body edge shifts up to5px reported."
+    }
+  },
+  "brief242Recheck": {
+    "date": "2026-11-17",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m4-v11-native-qa-17-nov.json",
+    "reviewedSourceSha256": "e6d6f5579ef470194ad159ada2e6cfa2ecee750874161f8cd959ad9bec65acae",
+    "result": "Three native records; narration unchanged at 5,923 characters. Open-jar mouth registration checked on paper/dark/white; slide and particle clipping pending. U11: 7,201 assertions preserve live counts and exact 1,4,6,4,1 enumeration, with no built-run synchronisation clearance. Root also resolves scent-cloud use around stoppered perfume bottle. No new plate or whole-lesson clearance."
+  }
+}

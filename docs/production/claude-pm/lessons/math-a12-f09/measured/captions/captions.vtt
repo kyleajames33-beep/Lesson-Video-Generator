@@ -1,0 +1,550 @@
+WEBVTT
+
+00:00:00.261 --> 00:00:01.548
+Here's a first car loan.
+
+00:00:02.232 --> 00:00:04.353
+You borrow thirty thousand dollars for a used
+
+00:00:04.394 --> 00:00:07.175
+car, and each month interest of zero point
+
+00:00:07.275 --> 00:00:09.357
+six per cent is added, so the balance
+
+00:00:09.417 --> 00:00:11.838
+is multiplied by one point zero zero six.
+
+00:00:12.641 --> 00:00:15.029
+Then your six hundred dollar repayment comes off.
+
+00:00:15.675 --> 00:00:16.586
+So what do you owe now?
+
+00:00:17.295 --> 00:00:19.320
+And next month, will more of your six
+
+00:00:19.341 --> 00:00:20.743
+hundred dollars go towards the debt,
+
+00:00:21.306 --> 00:00:21.565
+less,
+
+00:00:22.068 --> 00:00:22.568
+or the same?
+
+00:00:23.353 --> 00:00:23.816
+Make a guess.
+
+00:00:24.541 --> 00:00:26.946
+The principal is the amount you borrow, and
+
+00:00:26.987 --> 00:00:28.991
+the balance is the amount you still owe.
+
+00:00:29.813 --> 00:00:32.739
+In a reducing-balance loan, interest is charged on
+
+00:00:32.760 --> 00:00:34.863
+the balance you still owe, not on the
+
+00:00:34.924 --> 00:00:35.905
+amount you first borrowed.
+
+00:00:36.627 --> 00:00:38.369
+The rate is seven point two per cent
+
+00:00:38.390 --> 00:00:41.594
+a year, compounded monthly, so each month's rate
+
+00:00:42.316 --> 00:00:45.279
+r is seven point two over twelve, which
+
+00:00:45.340 --> 00:00:46.841
+is zero point six per cent.
+
+00:00:47.645 --> 00:00:50.275
+Each month, first the interest is added, so
+
+00:00:50.296 --> 00:00:52.705
+the balance is multiplied by one plus r.
+
+00:00:53.352 --> 00:00:54.826
+Then the repayment comes off.
+
+00:00:55.389 --> 00:00:57.996
+So you now owe twenty-nine thousand five hundred
+
+00:00:58.057 --> 00:00:58.899
+and eighty dollars.
+
+00:00:59.562 --> 00:01:01.519
+That one month is the whole rule.
+
+00:01:02.162 --> 00:01:04.731
+Call the balance after n months A sub
+
+00:01:04.812 --> 00:01:07.240
+n, so A zero is the thirty thousand
+
+00:01:07.281 --> 00:01:07.742
+you borrowed.
+
+00:01:08.625 --> 00:01:10.389
+A rule that gives the next value from
+
+00:01:10.430 --> 00:01:12.675
+the one before is called a recurrence.
+
+00:01:13.418 --> 00:01:16.262
+Here, A sub n plus one equals one
+
+00:01:16.363 --> 00:01:19.568
+plus r, times A sub n, minus M,
+
+00:01:19.750 --> 00:01:20.310
+the repayment.
+
+00:01:21.193 --> 00:01:23.482
+Without the repayment, this would just be compound
+
+00:01:23.523 --> 00:01:23.863
+interest.
+
+00:01:24.286 --> 00:01:27.336
+So a reducing-balance loan is a compound interest
+
+00:01:27.377 --> 00:01:29.785
+loan with a repayment taken off every period.
+
+00:01:30.548 --> 00:01:32.995
+And interest comes first, because the repayment is
+
+00:01:33.056 --> 00:01:34.239
+made at the end of the month.
+
+00:01:34.936 --> 00:01:36.423
+Here are three months in a table.
+
+00:01:36.906 --> 00:01:39.076
+Each row's interest is zero point six per
+
+00:01:39.117 --> 00:01:40.564
+cent of what's owed at the start.
+
+00:01:41.208 --> 00:01:43.274
+In month one, that's one hundred and eighty
+
+00:01:43.295 --> 00:01:46.024
+dollars, so the repayment pays off four hundred
+
+00:01:46.046 --> 00:01:47.389
+and twenty dollars of the debt.
+
+00:01:48.192 --> 00:01:50.375
+In month two, the balance is lower, so
+
+00:01:50.396 --> 00:01:52.839
+the interest is one hundred and seventy-seven dollars
+
+00:01:53.040 --> 00:01:56.725
+forty-eight, leaving four hundred and twenty-two dollars fifty-two
+
+00:01:56.846 --> 00:01:57.246
+for the debt.
+
+00:01:57.967 --> 00:02:00.308
+In month three, the interest is one hundred
+
+00:02:00.329 --> 00:02:03.390
+and seventy-four dollars ninety-four, rounded to the cent,
+
+00:02:03.951 --> 00:02:06.331
+and the balance falls to twenty-eight thousand, seven
+
+00:02:06.372 --> 00:02:07.952
+hundred and thirty-two dollars forty-two.
+
+00:02:09.335 --> 00:02:11.385
+So, each month, a little more of the
+
+00:02:11.426 --> 00:02:12.993
+repayment goes towards the debt.
+
+00:02:13.476 --> 00:02:16.081
+The repayment stays the same, but the interest
+
+00:02:16.183 --> 00:02:18.527
+is charged on a smaller balance each time.
+
+00:02:19.109 --> 00:02:21.132
+Less interest means more of the six hundred
+
+00:02:21.174 --> 00:02:23.878
+dollars is left to reduce the balance, and
+
+00:02:23.899 --> 00:02:25.982
+that makes the next balance smaller again.
+
+00:02:26.726 --> 00:02:29.060
+This works because six hundred dollars is more
+
+00:02:29.142 --> 00:02:29.765
+than the interest.
+
+00:02:30.248 --> 00:02:32.074
+If it weren't, the balance wouldn't fall.
+
+00:02:32.878 --> 00:02:34.445
+Now run all five years.
+
+00:02:34.988 --> 00:02:36.899
+By the end, the interest is only a
+
+00:02:37.001 --> 00:02:37.906
+few dollars a month.
+
+00:02:38.510 --> 00:02:40.758
+The sixtieth repayment is just three hundred and
+
+00:02:40.840 --> 00:02:43.670
+seventy-four dollars eighty-one, and the car is paid
+
+00:02:43.731 --> 00:02:43.831
+off.
+
+00:02:44.817 --> 00:02:46.893
+Now find the pattern behind the table.
+
+00:02:47.617 --> 00:02:50.247
+A one is thirty thousand times one point
+
+00:02:50.268 --> 00:02:52.316
+zero zero six, minus six hundred.
+
+00:02:52.839 --> 00:02:55.183
+For A two, multiply all of that by
+
+00:02:55.285 --> 00:02:57.348
+one point zero zero six, then take off
+
+00:02:57.409 --> 00:02:58.330
+another six hundred.
+
+00:02:58.873 --> 00:03:01.236
+That's thirty thousand times one point zero zero
+
+00:03:01.257 --> 00:03:04.241
+six squared, minus six hundred times one point
+
+00:03:04.263 --> 00:03:06.446
+zero zero six, minus six hundred.
+
+00:03:07.409 --> 00:03:09.495
+In A three, the loan has grown for
+
+00:03:09.556 --> 00:03:10.077
+three months.
+
+00:03:10.700 --> 00:03:12.483
+The first repayment has been off the balance
+
+00:03:12.505 --> 00:03:14.629
+for two months, so it has stopped two
+
+00:03:14.690 --> 00:03:15.371
+months of interest.
+
+00:03:15.833 --> 00:03:17.470
+The last has stopped none at all.
+
+00:03:18.140 --> 00:03:21.064
+So after n months, you owe thirty thousand
+
+00:03:21.244 --> 00:03:23.647
+times one point zero zero six to the
+
+00:03:23.907 --> 00:03:23.987
+n,
+
+00:03:24.528 --> 00:03:26.490
+minus six hundred times a sum:
+
+00:03:27.171 --> 00:03:29.874
+one, plus one point zero zero six, plus
+
+00:03:30.094 --> 00:03:32.016
+one point zero zero six squared,
+
+00:03:32.557 --> 00:03:34.299
+up to the power n minus one.
+
+00:03:35.000 --> 00:03:37.424
+It's a geometric series with first term one,
+
+00:03:37.926 --> 00:03:40.850
+ratio one point zero zero six, and n
+
+00:03:40.932 --> 00:03:41.271
+terms.
+
+00:03:42.033 --> 00:03:44.373
+Its sum is one point zero zero six
+
+00:03:44.535 --> 00:03:46.114
+to the n, minus one,
+
+00:03:46.676 --> 00:03:49.136
+all over one point zero zero six minus
+
+00:03:49.297 --> 00:03:51.858
+one, which is zero point zero zero six.
+
+00:03:52.579 --> 00:03:55.233
+Notice the ratio is one plus r, not
+
+00:03:55.436 --> 00:03:55.877
+r itself.
+
+00:03:56.400 --> 00:03:59.325
+In general, A sub n equals P times
+
+00:03:59.526 --> 00:04:02.050
+one plus r to the n, minus M
+
+00:04:02.190 --> 00:04:04.174
+times one plus r to the n, minus
+
+00:04:04.374 --> 00:04:05.436
+one, all over r.
+
+00:04:06.219 --> 00:04:07.344
+Read it as two pieces.
+
+00:04:07.947 --> 00:04:09.596
+The first is what the loan would grow
+
+00:04:09.656 --> 00:04:11.867
+to with compound interest and no repayments.
+
+00:04:12.410 --> 00:04:15.115
+The second is the repayments, each grown by
+
+00:04:15.215 --> 00:04:17.339
+interest from the month it was paid, because
+
+00:04:17.379 --> 00:04:19.543
+paying it stopped that much debt from growing.
+
+00:04:20.227 --> 00:04:21.894
+What you owe is the difference.
+
+00:04:22.619 --> 00:04:25.047
+For three months it gives twenty-eight thousand, seven
+
+00:04:25.088 --> 00:04:27.777
+hundred and thirty-two dollars forty-two, the same as
+
+00:04:27.798 --> 00:04:28.179
+the table.
+
+00:04:28.647 --> 00:04:31.010
+Now zoom out to a home loan: four
+
+00:04:31.051 --> 00:04:33.254
+hundred thousand dollars at five per cent a
+
+00:04:33.335 --> 00:04:37.400
+year, compounded monthly, repaid over thirty years at
+
+00:04:37.481 --> 00:04:40.485
+two thousand one hundred and forty-seven dollars twenty-nine
+
+00:04:40.506 --> 00:04:40.806
+a month.
+
+00:04:41.368 --> 00:04:43.874
+In the first month, more than three quarters
+
+00:04:43.955 --> 00:04:45.639
+of the repayment is interest.
+
+00:04:46.101 --> 00:04:48.369
+So the balance falls slowly at first, then
+
+00:04:48.450 --> 00:04:49.412
+faster and faster.
+
+00:04:50.015 --> 00:04:52.322
+You don't owe less than half until about
+
+00:04:52.423 --> 00:04:53.104
+twenty years.
+
+00:04:54.070 --> 00:04:55.785
+Here's a way to remember each month of
+
+00:04:55.826 --> 00:04:56.148
+a loan.
+
+00:04:56.654 --> 00:04:57.701
+Grow, then pay.
+
+00:04:58.466 --> 00:05:00.893
+The balance grows by the interest, times one
+
+00:05:00.914 --> 00:05:03.201
+plus r, and then the repayment comes off,
+
+00:05:03.804 --> 00:05:04.325
+minus M.
+
+00:05:06.996 --> 00:05:07.559
+Your turn.
+
+00:05:08.406 --> 00:05:10.893
+A loan of twelve thousand dollars has interest
+
+00:05:11.014 --> 00:05:13.602
+at six per cent a year, compounded monthly.
+
+00:05:14.145 --> 00:05:16.212
+It's repaid at two hundred and fifty dollars
+
+00:05:16.233 --> 00:05:16.713
+a month.
+
+00:05:17.598 --> 00:05:19.448
+How much is owed after two months?
+
+00:05:20.296 --> 00:05:21.369
+Pause here to answer.
+
+00:05:31.996 --> 00:05:33.872
+The monthly rate is half a per cent.
+
+00:05:34.376 --> 00:05:36.741
+After one month, the balance is twelve thousand
+
+00:05:36.862 --> 00:05:39.547
+and sixty, minus two hundred and fifty, which
+
+00:05:39.608 --> 00:05:41.290
+is eleven thousand eight hundred and ten.
+
+00:05:42.173 --> 00:05:44.755
+After two months, it's eleven thousand six hundred
+
+00:05:44.776 --> 00:05:46.596
+and nineteen dollars and five cents.
+
+00:05:47.520 --> 00:05:49.088
+Eleven thousand five hundred is wrong.
+
+00:05:49.491 --> 00:05:51.484
+It takes off two repayments, but forgets the
+
+00:05:51.565 --> 00:05:52.571
+interest added each month.
+
+00:05:54.162 --> 00:05:54.546
+Last one.
+
+00:05:55.391 --> 00:05:58.217
+A loan of fifty thousand dollars has interest
+
+00:05:58.357 --> 00:06:00.201
+at four point eight per cent a year,
+
+00:06:00.521 --> 00:06:03.527
+compounded monthly, with repayments of nine hundred dollars
+
+00:06:03.547 --> 00:06:03.968
+a month.
+
+00:06:04.629 --> 00:06:06.552
+Show that the amount owing after n months
+
+00:06:06.832 --> 00:06:09.497
+is fifty thousand times one point zero zero
+
+00:06:09.557 --> 00:06:11.600
+four to the n, minus two hundred and
+
+00:06:11.640 --> 00:06:14.505
+twenty-five thousand, times one point zero zero four
+
+00:06:14.785 --> 00:06:16.007
+to the n, minus one.
+
+00:06:16.731 --> 00:06:17.457
+Pause here to answer.
+
+00:06:28.034 --> 00:06:30.919
+The repayments give nine hundred times a geometric
+
+00:06:30.980 --> 00:06:33.865
+series with ratio one point zero zero four
+
+00:06:34.047 --> 00:06:35.008
+and n terms.
+
+00:06:35.670 --> 00:06:37.811
+Its sum is one point zero zero four
+
+00:06:37.852 --> 00:06:40.533
+to the n, minus one, over zero point
+
+00:06:40.554 --> 00:06:41.434
+zero zero four,
+
+00:06:42.035 --> 00:06:44.356
+and nine hundred over zero point zero zero
+
+00:06:44.397 --> 00:06:46.758
+four is two hundred and twenty-five thousand.
+
+00:06:47.561 --> 00:06:49.553
+Using zero point zero zero four as the
+
+00:06:49.594 --> 00:06:50.539
+ratio is wrong.
+
+00:06:50.902 --> 00:06:52.771
+The ratio is one plus r.
+
+00:06:54.401 --> 00:06:57.847
+So a reducing-balance loan is compound interest with
+
+00:06:57.988 --> 00:06:59.831
+a repayment taken off every period,
+
+00:07:00.392 --> 00:07:02.917
+and its balance falls slowly at first, then
+
+00:07:02.998 --> 00:07:03.398
+faster.
+
+00:07:04.301 --> 00:07:06.650
+Here's the home loan again, cleared in thirty
+
+00:07:06.690 --> 00:07:06.951
+years.
+
+00:07:07.774 --> 00:07:09.861
+What if you paid two thousand five hundred
+
+00:07:09.881 --> 00:07:10.965
+dollars a month instead?
+
+00:07:11.790 --> 00:07:13.137
+How much sooner would it be gone?
+
+00:07:15.928 --> 00:07:16.791
+Here are the key notes.
+
+00:07:17.194 --> 00:07:18.741
+Pause the video if you need more time
+
+00:07:18.783 --> 00:07:19.244
+to copy them.

@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v09.md",
+  "sourceSha256": "f45e5694dca14f0e8c0c007533b365b703daf6efd1965c2cf4c9d2720186175c",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's that spanner on a stuck nut. Its handle is twenty-five centimetres long, and each push on the end is eighty newtons. One push is at right angles to the handle, one is at thirty degrees to it, and one points straight along the handle, towards the nut. Same force, same spot. Rank them. Which turns the nut best, and does any of them do nothing at all?",
+      "audioFile": "public/audio/phys-y12-m5-v09/hook.wav"
+    },
+    {
+      "id": "reveal-torque",
+      "text": "Here's how strongly each push tries to turn the nut, shown by a curved arrow. The right-angle push has the biggest turning effect. The thirty degree push has one only half as big. And the push along the handle just shoves on the nut, with no turning effect at all. The turning effect of a force about a pivot is called torque. Torque isn't a force. It's what a force does to rotation. So why does the same force give more torque at some angles than others?",
+      "audioFile": "public/audio/phys-y12-m5-v09/reveal-torque.wav"
+    },
+    {
+      "id": "right-angles",
+      "text": "Start with the simplest case, the push at right angles. A longer spanner makes a stuck nut easier, and a door pushed near its hinge barely moves. Distance from the pivot matters. Push halfway along the handle, and you get only half the turning effect. For a force at right angles to the line from the pivot, the torque is the distance times the force. Tau equals r F. Here that's zero point two five metres times eighty newtons, twenty newton metres. Torque is measured in newton metres. It isn't energy, so we never write it in joules.",
+      "audioFile": "public/audio/phys-y12-m5-v09/right-angles.wav"
+    },
+    {
+      "id": "components",
+      "text": "Now the push at thirty degrees. Split it into two components. One runs along the handle. It just pulls on the nut through its centre, so it can't turn it. The other is at right angles to the handle, and only that part does the turning. It's F sin theta, where theta is the angle between the handle and the force. Eighty times sin thirty is forty newtons, so the torque is zero point two five times forty, ten newton metres. Half the force at right angles, so half the torque.",
+      "audioFile": "public/audio/phys-y12-m5-v09/components.wav"
+    },
+    {
+      "id": "moment-arm",
+      "text": "There's a second way to see it. Extend the force arrow into a long line, called its line of action. Now find the shortest distance from the pivot to that line. It meets the line at right angles, and it's called the perpendicular distance, or the moment arm. Here it's zero point two five times sin thirty, twelve and a half centimetres. Eighty newtons times zero point one two five metres is ten newton metres again. Either way, tau equals r F sin theta, which you'll also see written as r perpendicular times F.",
+      "audioFile": "public/audio/phys-y12-m5-v09/moment-arm.wav"
+    },
+    {
+      "id": "along-handle",
+      "text": "So what about the push straight along the handle? Its line of action passes right through the pivot, so the moment arm is zero, and so is the torque. In the formula, theta is the angle between two arrows: one from the pivot out to where the force acts, and the force itself. Pushing towards the nut, those arrows point opposite ways, so theta is one hundred and eighty degrees. Pulling outwards, theta is zero. The sine of either is zero. No turning, however hard you push. That's why a door won't open if you push its edge straight towards the hinges.",
+      "audioFile": "public/audio/phys-y12-m5-v09/along-handle.wav"
+    },
+    {
+      "id": "sin-graph",
+      "text": "Put it together on a graph. Torque follows sin theta. It's zero along the handle, grows as the force swings round, peaks at ninety degrees, and falls back to zero at one eighty. That's the answer to our question. Only the part of the force at right angles to the handle turns it, and that part is biggest when the whole force is at right angles. Torque also has a direction. This push turns the nut anticlockwise. Push the opposite way, and it turns it clockwise.",
+      "audioFile": "public/audio/phys-y12-m5-v09/sin-graph.wav"
+    },
+    {
+      "id": "two-slips",
+      "text": "Two slips to avoid. First, using the full handle length with an angled force, as if tau were always r F. For the thirty degree push, that gives twenty instead of ten. Second, using the wrong angle. If a question gives the angle between the force and a line at right angles to the handle, the sine of that angle is the wrong factor. Always use the angle between the force and the line from the pivot to where it acts.",
+      "audioFile": "public/audio/phys-y12-m5-v09/two-slips.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the short version. Push square, push far. Square means at right angles to the line from the pivot, and far means a long moment arm. Both make the turning effect bigger. And if the force's line of action passes through the pivot, no amount of pushing helps.",
+      "audioFile": "public/audio/phys-y12-m5-v09/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A force of forty newtons acts on the end of a lever, zero point three zero metres from its pivot. Calculate the torque about the pivot when the force is at right angles to the lever, and when it's at thirty degrees to the lever. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v09/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "At right angles, tau equals r F, zero point three zero times forty, twelve newton metres. At thirty degrees, multiply by sin thirty, a half, giving six point zero newton metres. The classic slip is using cos thirty, which gives about ten point four. The angle is between the force and the lever, so it's sine.",
+      "audioFile": "public/audio/phys-y12-m5-v09/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A force of forty newtons acts on the end of a zero point three zero metre handle, directed along the handle towards the pivot. State the moment arm and the torque about the pivot, and the angle between the force and the line from the pivot to the point where it acts. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v09/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The line of action passes through the pivot, so the moment arm is zero, and the torque is zero newton metres. The line from the pivot points out along the handle, and the force points back in, so the angle is one hundred and eighty degrees. Sin one eighty is zero, which agrees. The slip is writing r F, twelve newton metres, because the force is far from the pivot. Distance alone doesn't turn anything.",
+      "audioFile": "public/audio/phys-y12-m5-v09/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So one force's torque depends on its size, its distance from the pivot, and its angle. But real objects usually have several forces turning them at once, some clockwise and some anticlockwise. A tower crane holds a heavy load far out on one side, and a counterweight close in on the other. How do those turning effects balance?",
+      "audioFile": "public/audio/phys-y12-m5-v09/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v09/key-notes.wav"
+    }
+  ]
+}

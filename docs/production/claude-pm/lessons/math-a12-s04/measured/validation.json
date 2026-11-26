@@ -1,0 +1,2175 @@
+{
+  "lesson": "math-a12-s04",
+  "sourceSha256": "d669499c8a28d7f3dc4e6b1a907fd521ee92ec831d486127ba5718120beb4f0f",
+  "measuredPath": "docs/production/claude-pm/lessons/math-a12-s04/measured/lesson.json",
+  "measuredSha256": "9a4b641d3ce1dab7ea25f115ccfbf56ee8602071e48c92628b96e470c0622b73",
+  "changedTakes": 1,
+  "reusedTakes": 17,
+  "newRequests": 1,
+  "cachedTakes": 1,
+  "voicedCharacters": 6288,
+  "inputTokens": 93,
+  "outputTokens": 715,
+  "costUsd": 0.006481499999999999,
+  "totalSeconds": 496.8666666666667,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-16",
+    "seconds": 1.5280000000000022,
+    "after": "half.",
+    "before": "Minus"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-01.wav",
+      "durationInFrames": 915,
+      "worstWordGap": {
+        "seconds": 0.8620000000000054,
+        "after": "it.",
+        "before": "At"
+      },
+      "cues": [],
+      "seconds": 30.48,
+      "peakFraction": 0.883941650390625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 25.073000000000064,
+          "end": 25.113000000000063,
+          "score": 0.498
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 94,
+      "outputTokens": 762,
+      "costUsd": 0.0069050000000000005,
+      "pronunciationText": "So far, every random variable counted something. Now X can be any value in an interval, because we measure it. At an athletics carnival, sensors in the starting blocks time each sprinter's reaction to the start signal. One reads zero point three five seconds. But a finer timer shows zero point three five one seven, with more digits after that. So what's the probability that a reaction time is exactly zero point three five seconds? Make a guess."
+    },
+    {
+      "id": "scene-03",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-03.wav",
+      "durationInFrames": 704,
+      "worstWordGap": {
+        "seconds": 0.8419999999999987,
+        "after": "six.",
+        "before": "Each"
+      },
+      "cues": [
+        {
+          "text": "six",
+          "start": 14.541999999999991,
+          "end": 14.67699999999999
+        }
+      ],
+      "seconds": 23.44,
+      "peakFraction": 0.84466552734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "six.",
+          "start": 14.541999999999991,
+          "end": 14.72199999999999,
+          "score": 0.436
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 83,
+      "outputTokens": 586,
+      "costUsd": 0.0053155,
+      "pronunciationText": "What's the probability that a time is at least zero point two, but less than zero point four seconds? Two classes cover that range, with fifty and seventy times. So the estimate is one hundred and twenty out of two hundred, which is zero point six. Each class's relative frequency is its count over two hundred, and they add to one, because every time lands in exactly one class."
+    },
+    {
+      "id": "scene-04",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-04.wav",
+      "durationInFrames": 738,
+      "worstWordGap": {
+        "seconds": 0.8809999999999896,
+        "after": "sit.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.557,
+          "end": 2.738
+        }
+      ],
+      "seconds": 24.6,
+      "peakFraction": 0.868255615234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 13.989999999999993,
+          "end": 14.069999999999993,
+          "score": 0.382
+        },
+        {
+          "word": "zero",
+          "start": 20.139999999999986,
+          "end": 20.401999999999987,
+          "score": 0.439
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 89,
+      "outputTokens": 615,
+      "costUsd": 0.0055795,
+      "pronunciationText": "What about a time under zero point two five seconds? That cuts the second class in half, and the histogram doesn't say where its fifty times sit. The usual assumption is that they're spread evenly. Then about twenty five are below zero point two five. Add the twenty from the first class, and that's forty five out of two hundred, zero point two two five. In an exam, write that assumption down."
+    },
+    {
+      "id": "scene-05",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-05.wav",
+      "durationInFrames": 1031,
+      "worstWordGap": {
+        "seconds": 0.8840000000000288,
+        "after": "width.",
+        "before": "A"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 0.883,
+          "end": 1.124
+        }
+      ],
+      "seconds": 34.36,
+      "peakFraction": 0.8458251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 30.693000000000115,
+          "end": 30.733000000000114,
+          "score": 0.496
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 112,
+      "outputTokens": 859,
+      "costUsd": 0.007787,
+      "pronunciationText": "The class from zero point three to zero point four has probability about zero point three five. Shrink it to one hundredth of a second, centred on zero point three five. With the times spread evenly, it holds a tenth as many, so about zero point zero three five. Shrink it to one thousandth, and it's about zero point zero zero three five. Under that even spread, the probability shrinks in step with the width. A single exact value has width zero, so for a continuous random variable, its probability is zero."
+    },
+    {
+      "id": "scene-07",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-07.wav",
+      "durationInFrames": 617,
+      "worstWordGap": {
+        "seconds": 0.621999999999991,
+        "after": "difference.",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "difference",
+          "start": 7.173999999999995,
+          "end": 7.4839999999999955
+        },
+        {
+          "text": "each",
+          "start": 19.795000000000066,
+          "end": 20.085400000000064
+        }
+      ],
+      "seconds": 20.56,
+      "peakFraction": 0.833709716796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.393000000000065,
+          "end": 19.453000000000063,
+          "score": 0.434
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 71,
+      "outputTokens": 514,
+      "costUsd": 0.0046615,
+      "pronunciationText": "The ends of an interval are single values, so they carry no probability. So including or excluding the ends makes no difference. That's not true for a discrete variable. For a fair die, two to five including both ends has probability four sixths, but strictly between them it's two sixths. The ends carry a sixth each."
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-09.wav",
+      "durationInFrames": 693,
+      "worstWordGap": {
+        "seconds": 0.9209999999999852,
+        "after": "range.",
+        "before": "For"
+      },
+      "cues": [
+        {
+          "text": "range",
+          "start": 15.642999999999994,
+          "end": 15.876333333333328
+        }
+      ],
+      "seconds": 23.08,
+      "peakFraction": 0.8436279296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 14.781999999999995,
+          "end": 14.941999999999993,
+          "score": 0.072
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 75,
+      "outputTokens": 577,
+      "costUsd": 0.0052305,
+      "pronunciationText": "As x moves right, the event that X is at most x can only gain values, never lose them. So F never decreases. We say it's non-decreasing. It starts at zero, and for this bounded example, it reaches one beyond the range. For a continuous variable it has no jumps either, because a jump would mean one value carried probability."
+    },
+    {
+      "id": "scene-10",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-10.wav",
+      "durationInFrames": 1058,
+      "worstWordGap": {
+        "seconds": 0.864000000000118,
+        "after": "decreases.",
+        "before": "Graph"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 8.762999999999996,
+          "end": 8.903999999999996
+        },
+        {
+          "text": "line",
+          "start": 34.75699999999995,
+          "end": 34.934599999999946
+        }
+      ],
+      "seconds": 35.24,
+      "peakFraction": 0.825714111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 1.528,
+          "end": 1.568,
+          "score": 0.456
+        },
+        {
+          "word": "it's",
+          "start": 11.987999999999994,
+          "end": 12.068999999999996,
+          "score": 0.338
+        },
+        {
+          "word": "a",
+          "start": 15.556999999999995,
+          "end": 15.596999999999994,
+          "score": 0.497
+        },
+        {
+          "word": "a",
+          "start": 34.39499999999995,
+          "end": 34.43499999999995,
+          "score": 0.186
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 128,
+      "outputTokens": 881,
+      "costUsd": 0.007993,
+      "pronunciationText": "Now a C D F from a formula. F of x is x squared over nine for x from zero to three, zero below that, and one above. Is it valid? At zero it's zero, and at three it's one, so the pieces join without a jump. Its derivative, two x over nine, is never negative there, so F never decreases. Graph it by hand or with a graphing app. It's flat at zero, leaves the origin flat, then curves up more and more steeply to the point three, one, and stays flat at one. It's not a straight line."
+    },
+    {
+      "id": "scene-11",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-11.wav",
+      "durationInFrames": 627,
+      "worstWordGap": {
+        "seconds": 0.96199999999999,
+        "after": "two.",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "third",
+          "start": 9.84799999999999,
+          "end": 10.065499999999991
+        },
+        {
+          "text": "continuous",
+          "start": 20.076999999999988,
+          "end": 20.533363636363624
+        }
+      ],
+      "seconds": 20.88,
+      "peakFraction": 0.833984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "two",
+          "start": 12.69599999999999,
+          "end": 12.935999999999993,
+          "score": 0.177
+        },
+        {
+          "word": "is",
+          "start": 18.311999999999987,
+          "end": 18.35199999999999,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 74,
+      "outputTokens": 522,
+      "costUsd": 0.004735,
+      "pronunciationText": "Find the probability that X is more than one and at most two. That's F of two minus F of one, four ninths minus one ninth, which is one third. The probability that X is more than two is one minus four ninths, which is five ninths. And the probability that X equals two is zero, because X is continuous."
+    },
+    {
+      "id": "scene-13",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-13.wav",
+      "durationInFrames": 754,
+      "worstWordGap": {
+        "seconds": 0.7420000000000009,
+        "after": "grams.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 15.12,
+      "peakFraction": 0.835296630859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [
+        {
+          "start": 11.85,
+          "end": 15.12
+        }
+      ],
+      "lowScoreWords": [
+        {
+          "word": "Pause",
+          "start": 10.984999999999992,
+          "end": 11.245999999999993,
+          "score": 0.425
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 39,
+      "outputTokens": 378,
+      "costUsd": 0.0034215,
+      "pronunciationText": "Your turn. The masses of four hundred tomatoes are grouped into classes. Estimate the probability that a tomato's mass is at least two hundred and twenty five grams. Pause here to answer."
+    },
+    {
+      "id": "scene-14",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-14.wav",
+      "durationInFrames": 784,
+      "worstWordGap": {
+        "seconds": 0.9670000000000947,
+        "after": "three.",
+        "before": "Zero"
+      },
+      "cues": [
+        {
+          "text": "half",
+          "start": 4.712,
+          "end": 4.952
+        },
+        {
+          "text": "three",
+          "start": 18.052999999999994,
+          "end": 18.252999999999993
+        },
+        {
+          "text": "five",
+          "start": 19.785000000000085,
+          "end": 20.149000000000086
+        }
+      ],
+      "seconds": 25.12,
+      "peakFraction": 1,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 3.509,
+          "end": 3.569,
+          "score": 0.236
+        },
+        {
+          "word": "and",
+          "start": 7.054999999999987,
+          "end": 7.134999999999987,
+          "score": 0.218
+        },
+        {
+          "word": "and",
+          "start": 11.478999999999987,
+          "end": 11.538999999999987,
+          "score": 0.001
+        },
+        {
+          "word": "and",
+          "start": 24.13500000000001,
+          "end": 24.195000000000007,
+          "score": 0.023
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 86,
+      "outputTokens": 628,
+      "costUsd": 0.0056949999999999995,
+      "pronunciationText": "Two hundred and twenty five cuts the two hundred to two hundred and fifty class in half. Assume its one hundred and sixty masses are spread evenly, so about eighty are above two hundred and twenty five. Add the forty in the top class. That's one hundred and twenty out of four hundred, zero point three. Zero point five is wrong. It counts the whole class, including masses below two hundred and twenty five."
+    },
+    {
+      "id": "scene-15",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-15.wav",
+      "durationInFrames": 809,
+      "worstWordGap": {
+        "seconds": 1.040999999999988,
+        "after": "two.",
+        "before": "Find"
+      },
+      "cues": [],
+      "seconds": 16.96,
+      "peakFraction": 0.84649658203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 8.9,
+          "end": 8.94,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 54,
+      "outputTokens": 424,
+      "costUsd": 0.003843,
+      "pronunciationText": "Last one. A continuous random variable has F of x equals x squared plus two x, all over eight, for x from zero to two. Find the probability that X is at least zero point five, and less than one point five. Pause here to answer."
+    },
+    {
+      "id": "scene-16",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-16.wav",
+      "durationInFrames": 888,
+      "worstWordGap": {
+        "seconds": 1.5280000000000022,
+        "after": "half.",
+        "before": "Minus"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.326,
+          "end": 2.598
+        },
+        {
+          "text": "half",
+          "start": 21.311000000000085,
+          "end": 21.471800000000087
+        },
+        {
+          "text": "negative",
+          "start": 27.936000000000064,
+          "end": 28.240000000000062
+        }
+      ],
+      "seconds": 28.6,
+      "peakFraction": 0.85174560546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 21.131000000000085,
+          "end": 21.191000000000088,
+          "score": 0
+        },
+        {
+          "word": "half.",
+          "start": 21.311000000000085,
+          "end": 21.512000000000086,
+          "score": 0.366
+        },
+        {
+          "word": "a",
+          "start": 26.728000000000062,
+          "end": 26.74800000000006,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 93,
+      "outputTokens": 628,
+      "costUsd": 0.0056985,
+      "pronunciationText": "It's F of one point five, minus F of zero point five. The endpoints carry no probability, so the mixed signs don't matter. F of one point five is twenty one over thirty two, and F of zero point five is five over thirty two. So the answer is sixteen over thirty two, which is one half. Minus one half is wrong. It subtracts the wrong way round, and a probability can't be negative.",
+      "runOn": {
+        "pass": true,
+        "seconds": 28.6,
+        "characters": 380,
+        "charactersPerSecond": 13.286713286713287,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief261/math-a12-s04/scene-16/attempt1/candidate.wav",
+        "audioSha256": "f636ff8b3ab8aba77f1510c9501f944a4a246e1a474f40a049bf9fffdad65670",
+        "evidence": "work/google-runon-checks/f636ff8b3ab8aba77f1510c9501f944a4a246e1a474f40a049bf9fffdad65670.json"
+      },
+      "humanListening": "pending"
+    },
+    {
+      "id": "scene-17",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-17.wav",
+      "durationInFrames": 501,
+      "worstWordGap": {
+        "seconds": 0.740999999999989,
+        "after": "three.",
+        "before": "What"
+      },
+      "cues": [
+        {
+          "text": "are",
+          "start": 4.552857142857143,
+          "end": 4.733714285714286
+        }
+      ],
+      "seconds": 14.68,
+      "peakFraction": 0.854888916015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "of",
+          "start": 2.9060000000000006,
+          "end": 2.9860000000000007,
+          "score": 0.267
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 46,
+      "outputTokens": 367,
+      "costUsd": 0.003326,
+      "pronunciationText": "Next, a new question. Here's F of x equals x squared over nine again. It climbs slowly near zero, and steeply near three. What does that steepness tell us about where the values of X are?"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-01.wav",
+      "durationInFrames": 915,
+      "worstWordGap": {
+        "seconds": 0.8620000000000054,
+        "after": "it.",
+        "before": "At"
+      },
+      "cues": [],
+      "seconds": 30.48,
+      "peakFraction": 0.883941650390625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 25.073000000000064,
+          "end": 25.113000000000063,
+          "score": 0.498
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 94,
+      "outputTokens": 762,
+      "costUsd": 0.0069050000000000005,
+      "pronunciationText": "So far, every random variable counted something. Now X can be any value in an interval, because we measure it. At an athletics carnival, sensors in the starting blocks time each sprinter's reaction to the start signal. One reads zero point three five seconds. But a finer timer shows zero point three five one seven, with more digits after that. So what's the probability that a reaction time is exactly zero point three five seconds? Make a guess."
+    },
+    {
+      "id": "scene-02",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-02.wav",
+      "durationInFrames": 1074,
+      "worstWordGap": {
+        "seconds": 0.9220000000001356,
+        "after": "ones.",
+        "before": "Instead,"
+      },
+      "cues": [
+        {
+          "text": "twenty",
+          "start": 30.205000000000105,
+          "end": 30.480142857142962
+        }
+      ],
+      "seconds": 35.8,
+      "peakFraction": 0.838592529296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 114,
+      "outputTokens": 895,
+      "costUsd": 0.008112,
+      "pronunciationText": "Here's an example set of two hundred reaction times, from the carnival's heats. Time is a continuous random variable, which here means it can take any value in an interval. For an ideal continuous measurement, exact repeats have probability zero, so counting each value gives just ones. Instead, we group the times into classes, each a tenth of a second wide. Twenty land between zero point one and zero point two seconds, then fifty, seventy, forty and twenty. That's a histogram. Its bars touch, because the classes leave no gaps."
+    },
+    {
+      "id": "scene-03",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-03.wav",
+      "durationInFrames": 704,
+      "worstWordGap": {
+        "seconds": 0.8419999999999987,
+        "after": "six.",
+        "before": "Each"
+      },
+      "cues": [
+        {
+          "text": "six",
+          "start": 14.541999999999991,
+          "end": 14.67699999999999
+        }
+      ],
+      "seconds": 23.44,
+      "peakFraction": 0.84466552734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "six.",
+          "start": 14.541999999999991,
+          "end": 14.72199999999999,
+          "score": 0.436
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 83,
+      "outputTokens": 586,
+      "costUsd": 0.0053155,
+      "pronunciationText": "What's the probability that a time is at least zero point two, but less than zero point four seconds? Two classes cover that range, with fifty and seventy times. So the estimate is one hundred and twenty out of two hundred, which is zero point six. Each class's relative frequency is its count over two hundred, and they add to one, because every time lands in exactly one class."
+    },
+    {
+      "id": "scene-04",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-04.wav",
+      "durationInFrames": 738,
+      "worstWordGap": {
+        "seconds": 0.8809999999999896,
+        "after": "sit.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.557,
+          "end": 2.738
+        }
+      ],
+      "seconds": 24.6,
+      "peakFraction": 0.868255615234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 13.989999999999993,
+          "end": 14.069999999999993,
+          "score": 0.382
+        },
+        {
+          "word": "zero",
+          "start": 20.139999999999986,
+          "end": 20.401999999999987,
+          "score": 0.439
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 89,
+      "outputTokens": 615,
+      "costUsd": 0.0055795,
+      "pronunciationText": "What about a time under zero point two five seconds? That cuts the second class in half, and the histogram doesn't say where its fifty times sit. The usual assumption is that they're spread evenly. Then about twenty five are below zero point two five. Add the twenty from the first class, and that's forty five out of two hundred, zero point two two five. In an exam, write that assumption down."
+    },
+    {
+      "id": "scene-05",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-05.wav",
+      "durationInFrames": 1031,
+      "worstWordGap": {
+        "seconds": 0.8840000000000288,
+        "after": "width.",
+        "before": "A"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 0.883,
+          "end": 1.124
+        }
+      ],
+      "seconds": 34.36,
+      "peakFraction": 0.8458251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 30.693000000000115,
+          "end": 30.733000000000114,
+          "score": 0.496
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 112,
+      "outputTokens": 859,
+      "costUsd": 0.007787,
+      "pronunciationText": "The class from zero point three to zero point four has probability about zero point three five. Shrink it to one hundredth of a second, centred on zero point three five. With the times spread evenly, it holds a tenth as many, so about zero point zero three five. Shrink it to one thousandth, and it's about zero point zero zero three five. Under that even spread, the probability shrinks in step with the width. A single exact value has width zero, so for a continuous random variable, its probability is zero."
+    },
+    {
+      "id": "scene-06",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-06.wav",
+      "durationInFrames": 612,
+      "worstWordGap": {
+        "seconds": 0.7819999999999947,
+        "after": "own.",
+        "before": "Intervals"
+      },
+      "cues": [
+        {
+          "text": "seconds",
+          "start": 17.832999999999988,
+          "end": 18.131374999999988
+        }
+      ],
+      "seconds": 20.4,
+      "peakFraction": 0.9202880859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 66,
+      "outputTokens": 510,
+      "costUsd": 0.004623,
+      "pronunciationText": "But someone's time really is zero point three five something. Probability zero isn't the same as impossible. Some exact time always happens, but no single value carries any probability on its own. Intervals do, like zero point three four to zero point three six seconds, and those are the events we'll use."
+    },
+    {
+      "id": "scene-07",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-07.wav",
+      "durationInFrames": 617,
+      "worstWordGap": {
+        "seconds": 0.621999999999991,
+        "after": "difference.",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "difference",
+          "start": 7.173999999999995,
+          "end": 7.4839999999999955
+        },
+        {
+          "text": "each",
+          "start": 19.795000000000066,
+          "end": 20.085400000000064
+        }
+      ],
+      "seconds": 20.56,
+      "peakFraction": 0.833709716796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.393000000000065,
+          "end": 19.453000000000063,
+          "score": 0.434
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 71,
+      "outputTokens": 514,
+      "costUsd": 0.0046615,
+      "pronunciationText": "The ends of an interval are single values, so they carry no probability. So including or excluding the ends makes no difference. That's not true for a discrete variable. For a fair die, two to five including both ends has probability four sixths, but strictly between them it's two sixths. The ends carry a sixth each."
+    },
+    {
+      "id": "scene-08",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-08.wav",
+      "durationInFrames": 1206,
+      "worstWordGap": {
+        "seconds": 0.9020000000000188,
+        "after": "one.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 2.814,
+          "end": 2.955
+        },
+        {
+          "text": "before",
+          "start": 39.53799999999992,
+          "end": 39.79599999999992
+        }
+      ],
+      "seconds": 40.2,
+      "peakFraction": 0.841644287109375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 128,
+      "outputTokens": 1006,
+      "costUsd": 0.009118,
+      "pronunciationText": "There are infinitely many intervals, but one function holds them all. The cumulative distribution function, or C D F, is F of x equals the probability that X is less than or equal to x. Cumulative means running total. For the reaction times, the data only estimate F. Add the classes from the left: zero point one, zero point three five, zero point seven, zero point nine and one. Now the probability between zero point two and zero point four is about F of zero point four minus F of zero point two. That's zero point seven minus zero point one, zero point six, the same as before."
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-09.wav",
+      "durationInFrames": 693,
+      "worstWordGap": {
+        "seconds": 0.9209999999999852,
+        "after": "range.",
+        "before": "For"
+      },
+      "cues": [
+        {
+          "text": "range",
+          "start": 15.642999999999994,
+          "end": 15.876333333333328
+        }
+      ],
+      "seconds": 23.08,
+      "peakFraction": 0.8436279296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 14.781999999999995,
+          "end": 14.941999999999993,
+          "score": 0.072
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 75,
+      "outputTokens": 577,
+      "costUsd": 0.0052305,
+      "pronunciationText": "As x moves right, the event that X is at most x can only gain values, never lose them. So F never decreases. We say it's non-decreasing. It starts at zero, and for this bounded example, it reaches one beyond the range. For a continuous variable it has no jumps either, because a jump would mean one value carried probability."
+    },
+    {
+      "id": "scene-10",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-10.wav",
+      "durationInFrames": 1058,
+      "worstWordGap": {
+        "seconds": 0.864000000000118,
+        "after": "decreases.",
+        "before": "Graph"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 8.762999999999996,
+          "end": 8.903999999999996
+        },
+        {
+          "text": "line",
+          "start": 34.75699999999995,
+          "end": 34.934599999999946
+        }
+      ],
+      "seconds": 35.24,
+      "peakFraction": 0.825714111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 1.528,
+          "end": 1.568,
+          "score": 0.456
+        },
+        {
+          "word": "it's",
+          "start": 11.987999999999994,
+          "end": 12.068999999999996,
+          "score": 0.338
+        },
+        {
+          "word": "a",
+          "start": 15.556999999999995,
+          "end": 15.596999999999994,
+          "score": 0.497
+        },
+        {
+          "word": "a",
+          "start": 34.39499999999995,
+          "end": 34.43499999999995,
+          "score": 0.186
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 128,
+      "outputTokens": 881,
+      "costUsd": 0.007993,
+      "pronunciationText": "Now a C D F from a formula. F of x is x squared over nine for x from zero to three, zero below that, and one above. Is it valid? At zero it's zero, and at three it's one, so the pieces join without a jump. Its derivative, two x over nine, is never negative there, so F never decreases. Graph it by hand or with a graphing app. It's flat at zero, leaves the origin flat, then curves up more and more steeply to the point three, one, and stays flat at one. It's not a straight line."
+    },
+    {
+      "id": "scene-11",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-11.wav",
+      "durationInFrames": 627,
+      "worstWordGap": {
+        "seconds": 0.96199999999999,
+        "after": "two.",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "third",
+          "start": 9.84799999999999,
+          "end": 10.065499999999991
+        },
+        {
+          "text": "continuous",
+          "start": 20.076999999999988,
+          "end": 20.533363636363624
+        }
+      ],
+      "seconds": 20.88,
+      "peakFraction": 0.833984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "two",
+          "start": 12.69599999999999,
+          "end": 12.935999999999993,
+          "score": 0.177
+        },
+        {
+          "word": "is",
+          "start": 18.311999999999987,
+          "end": 18.35199999999999,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 74,
+      "outputTokens": 522,
+      "costUsd": 0.004735,
+      "pronunciationText": "Find the probability that X is more than one and at most two. That's F of two minus F of one, four ninths minus one ninth, which is one third. The probability that X is more than two is one minus four ninths, which is five ninths. And the probability that X equals two is zero, because X is continuous."
+    },
+    {
+      "id": "scene-12",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-12.wav",
+      "durationInFrames": 545,
+      "worstWordGap": {
+        "seconds": 0.7629999999999937,
+        "after": "probability.",
+        "before": "Second,"
+      },
+      "cues": [
+        {
+          "text": "end",
+          "start": 9.887999999999995,
+          "end": 9.993749999999995
+        }
+      ],
+      "seconds": 16.16,
+      "peakFraction": 0.8731689453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 57,
+      "outputTokens": 404,
+      "costUsd": 0.0036645,
+      "pronunciationText": "Two short lines to remember. First, points carry nothing, and intervals carry the probability. Second, between a and b, take F of the bigger end, minus F of the smaller end. If you ever get a negative answer, you've subtracted the wrong way round."
+    },
+    {
+      "id": "scene-13",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-13.wav",
+      "durationInFrames": 754,
+      "worstWordGap": {
+        "seconds": 0.7420000000000009,
+        "after": "grams.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 15.12,
+      "peakFraction": 0.835296630859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [
+        {
+          "start": 11.85,
+          "end": 15.12
+        }
+      ],
+      "lowScoreWords": [
+        {
+          "word": "Pause",
+          "start": 10.984999999999992,
+          "end": 11.245999999999993,
+          "score": 0.425
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 39,
+      "outputTokens": 378,
+      "costUsd": 0.0034215,
+      "pronunciationText": "Your turn. The masses of four hundred tomatoes are grouped into classes. Estimate the probability that a tomato's mass is at least two hundred and twenty five grams. Pause here to answer."
+    },
+    {
+      "id": "scene-14",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-14.wav",
+      "durationInFrames": 784,
+      "worstWordGap": {
+        "seconds": 0.9670000000000947,
+        "after": "three.",
+        "before": "Zero"
+      },
+      "cues": [
+        {
+          "text": "half",
+          "start": 4.712,
+          "end": 4.952
+        },
+        {
+          "text": "three",
+          "start": 18.052999999999994,
+          "end": 18.252999999999993
+        },
+        {
+          "text": "five",
+          "start": 19.785000000000085,
+          "end": 20.149000000000086
+        }
+      ],
+      "seconds": 25.12,
+      "peakFraction": 1,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 3.509,
+          "end": 3.569,
+          "score": 0.236
+        },
+        {
+          "word": "and",
+          "start": 7.054999999999987,
+          "end": 7.134999999999987,
+          "score": 0.218
+        },
+        {
+          "word": "and",
+          "start": 11.478999999999987,
+          "end": 11.538999999999987,
+          "score": 0.001
+        },
+        {
+          "word": "and",
+          "start": 24.13500000000001,
+          "end": 24.195000000000007,
+          "score": 0.023
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 86,
+      "outputTokens": 628,
+      "costUsd": 0.0056949999999999995,
+      "pronunciationText": "Two hundred and twenty five cuts the two hundred to two hundred and fifty class in half. Assume its one hundred and sixty masses are spread evenly, so about eighty are above two hundred and twenty five. Add the forty in the top class. That's one hundred and twenty out of four hundred, zero point three. Zero point five is wrong. It counts the whole class, including masses below two hundred and twenty five."
+    },
+    {
+      "id": "scene-15",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-15.wav",
+      "durationInFrames": 809,
+      "worstWordGap": {
+        "seconds": 1.040999999999988,
+        "after": "two.",
+        "before": "Find"
+      },
+      "cues": [],
+      "seconds": 16.96,
+      "peakFraction": 0.84649658203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 8.9,
+          "end": 8.94,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 54,
+      "outputTokens": 424,
+      "costUsd": 0.003843,
+      "pronunciationText": "Last one. A continuous random variable has F of x equals x squared plus two x, all over eight, for x from zero to two. Find the probability that X is at least zero point five, and less than one point five. Pause here to answer."
+    },
+    {
+      "id": "scene-16",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-16.wav",
+      "durationInFrames": 888,
+      "worstWordGap": {
+        "seconds": 1.5280000000000022,
+        "after": "half.",
+        "before": "Minus"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.326,
+          "end": 2.598
+        },
+        {
+          "text": "half",
+          "start": 21.311000000000085,
+          "end": 21.471800000000087
+        },
+        {
+          "text": "negative",
+          "start": 27.936000000000064,
+          "end": 28.240000000000062
+        }
+      ],
+      "seconds": 28.6,
+      "peakFraction": 0.85174560546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 21.131000000000085,
+          "end": 21.191000000000088,
+          "score": 0
+        },
+        {
+          "word": "half.",
+          "start": 21.311000000000085,
+          "end": 21.512000000000086,
+          "score": 0.366
+        },
+        {
+          "word": "a",
+          "start": 26.728000000000062,
+          "end": 26.74800000000006,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 93,
+      "outputTokens": 628,
+      "costUsd": 0.0056985,
+      "pronunciationText": "It's F of one point five, minus F of zero point five. The endpoints carry no probability, so the mixed signs don't matter. F of one point five is twenty one over thirty two, and F of zero point five is five over thirty two. So the answer is sixteen over thirty two, which is one half. Minus one half is wrong. It subtracts the wrong way round, and a probability can't be negative.",
+      "runOn": {
+        "pass": true,
+        "seconds": 28.6,
+        "characters": 380,
+        "charactersPerSecond": 13.286713286713287,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief261/math-a12-s04/scene-16/attempt1/candidate.wav",
+        "audioSha256": "f636ff8b3ab8aba77f1510c9501f944a4a246e1a474f40a049bf9fffdad65670",
+        "evidence": "work/google-runon-checks/f636ff8b3ab8aba77f1510c9501f944a4a246e1a474f40a049bf9fffdad65670.json"
+      },
+      "humanListening": "pending"
+    },
+    {
+      "id": "scene-17",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-17.wav",
+      "durationInFrames": 501,
+      "worstWordGap": {
+        "seconds": 0.740999999999989,
+        "after": "three.",
+        "before": "What"
+      },
+      "cues": [
+        {
+          "text": "are",
+          "start": 4.552857142857143,
+          "end": 4.733714285714286
+        }
+      ],
+      "seconds": 14.68,
+      "peakFraction": 0.854888916015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "of",
+          "start": 2.9060000000000006,
+          "end": 2.9860000000000007,
+          "score": 0.267
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 46,
+      "outputTokens": 367,
+      "costUsd": 0.003326,
+      "pronunciationText": "Next, a new question. Here's F of x equals x squared over nine again. It climbs slowly near zero, and steeply near three. What does that steepness tell us about where the values of X are?"
+    },
+    {
+      "id": "scene-18",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-18.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.5660000000000003,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 4,
+      "peakFraction": 0.815826416015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 0,
+      "possibleRetry": false,
+      "inputTokens": 19,
+      "outputTokens": 100,
+      "costUsd": 0.0009094999999999999,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them."
+    }
+  ],
+  "machineChecks": "Exact source/provenance, run-on recognition, aligned character bounds, unchanged other scenes, cue times, holds and local captions. Human listening pending.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-s04/measured/lesson.json",
+  "canonicalMeasuredSha256": "9a4b641d3ce1dab7ea25f115ccfbf56ee8602071e48c92628b96e470c0622b73",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-s04/measured/lesson.json",
+    "lessonSha256": "9a4b641d3ce1dab7ea25f115ccfbf56ee8602071e48c92628b96e470c0622b73",
+    "srtSha256": "0bb18a25546379eb86635d7f3360d3104648ae2a328c9403aa6f533487528b9c",
+    "vttSha256": "e0774d149c368edc06f9b099093b09a2e9f973062daab0ffb1381513cb4a262e",
+    "cueCount": 195,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 14906,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 915
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 915,
+          "endFrame": 1989
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 1989,
+          "endFrame": 2693
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 2693,
+          "endFrame": 3431
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 3431,
+          "endFrame": 4462
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 4462,
+          "endFrame": 5074
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 5074,
+          "endFrame": 5691
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 5691,
+          "endFrame": 6897
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 6897,
+          "endFrame": 7590
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 7590,
+          "endFrame": 8648
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 8648,
+          "endFrame": 9275
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 9275,
+          "endFrame": 9820
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 9820,
+          "endFrame": 10574
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 10574,
+          "endFrame": 11358
+        },
+        {
+          "id": "scene-15",
+          "startFrame": 11358,
+          "endFrame": 12167
+        },
+        {
+          "id": "scene-16",
+          "startFrame": 12167,
+          "endFrame": 13055
+        },
+        {
+          "id": "scene-17",
+          "startFrame": 13055,
+          "endFrame": 13556
+        },
+        {
+          "id": "scene-18",
+          "startFrame": 13556,
+          "endFrame": 14906
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [
+    "public/assets/maths/ma12-starting-blocks-v1.png",
+    "public/assets/maths/ma12-timing-display-v1.png"
+  ],
+  "provenance": "docs/production/claude-pm/assets/brief240-manifest.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-s04-redesign-learning-review.md",
+      "result": "0 source blockers for current reviewed source; historical findings retained"
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-s04-redesign-maths-check.md",
+      "result": "0 source blockers for current reviewed source; historical findings retained"
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false,
+  "brief": 261,
+  "under570": true,
+  "wordTimeDiff": {
+    "pass": true,
+    "changedScenes": [
+      "scene-16"
+    ],
+    "allOtherSceneObjectsIdentical": true,
+    "allOtherAlignmentFilesIdentical": true,
+    "allOtherBoldCueTimesIdentical": true,
+    "allOtherLocalCaptionsIdentical": true,
+    "allHoldsAndNotesDurationsIdentical": true,
+    "notesFrames": 1350,
+    "oldMeasuredSha256": "8118a51f463f88f3ea0297fd052269791c9ae498ea8a79954ab3ed9d0202530a",
+    "newMeasuredSha256": "9a4b641d3ce1dab7ea25f115ccfbf56ee8602071e48c92628b96e470c0622b73",
+    "unalteredTakes": [
+      {
+        "id": "scene-01",
+        "audio": "public/audio/math-a12-s04/scene-01.wav",
+        "audioSha256": "a2dc9f8433da57236652c1e497bd46566940788a283c9fc1098540bf496ef2b9",
+        "alignmentSha256": "d5af24c7c3667718b00c0ca2adadec821c2b2ecef6980021c6adfda1bb5bf07c",
+        "generationSha256": "16421912e9244c66c1780e601a7c6c4b57831a56dc3b841bd9622ea70bffba89"
+      },
+      {
+        "id": "scene-02",
+        "audio": "public/audio/math-a12-s04/scene-02.wav",
+        "audioSha256": "d0f274485b92cc9907aaef9f19c413437abd92ee2fb593a932bda19106a0cf4d",
+        "alignmentSha256": "978cb457db65012990132d6368e4cd000e502ab3aae6b0f74bc84e7cf25bf460",
+        "generationSha256": "7aeb3a46535e30b3cc5160ce10681ef4503d0c2d1cdaaa2aad87bc8cb6299686"
+      },
+      {
+        "id": "scene-03",
+        "audio": "public/audio/math-a12-s04/scene-03.wav",
+        "audioSha256": "c20a90389babf24fb420f60af9dd6f959588e9cbee2b9d7eb555b2c488c3ad8b",
+        "alignmentSha256": "5b52a5acc8e19e5a309827be2b061b5ac74299d0d766ffc49ced61ef79249e3f",
+        "generationSha256": "07de966d5b359a445814d715621f475d5d34aa62e7cac030c44a3a91123cb039"
+      },
+      {
+        "id": "scene-04",
+        "audio": "public/audio/math-a12-s04/scene-04.wav",
+        "audioSha256": "4ba6ce1c5af7506ee81339490cf9582023159b0ef4f0122a3ac9795724471b73",
+        "alignmentSha256": "c5e9b501c034d841357e8acf49cb1aad6accef37f99acd7952ce9672f5d91bee",
+        "generationSha256": "cba0dbe188844429f51230631044e6d6dbab445d56a1809fb68a21870c202053"
+      },
+      {
+        "id": "scene-05",
+        "audio": "public/audio/math-a12-s04/scene-05.wav",
+        "audioSha256": "b57073ff4266c5fd7811c14a251e45d7138ba0c4b5e1918a7ce6c8be14faf861",
+        "alignmentSha256": "88da81262edf77f74ae47a70e7bf60eabb60b9d2010d47ec1327ce865a943640",
+        "generationSha256": "f066f2de5242228f72522d69af9b9f046df71ffd186495937924fe208b484fc6"
+      },
+      {
+        "id": "scene-06",
+        "audio": "public/audio/math-a12-s04/scene-06.wav",
+        "audioSha256": "5faefaf2ec29bc9ce966c213d573fe6d3a3163723fba70fb56bdc65722c55f38",
+        "alignmentSha256": "8837b82c874f3bec9744ea6d3ce7599c0654a748809034c607bb4f090f11af1c",
+        "generationSha256": "9dbe86ab92debd6ec1374d41c9081e443d770d93b5ac9af35458222421ff456a"
+      },
+      {
+        "id": "scene-07",
+        "audio": "public/audio/math-a12-s04/scene-07.wav",
+        "audioSha256": "ea8f91622fb8db0fc36b9043d85b7942751db438d409a6bedfa2bebcac9053a2",
+        "alignmentSha256": "0b66936834d2b91ce28cb72b8948abd0402afebb8834d70aaff7f4c95caa5385",
+        "generationSha256": "43cdebb84d6df45d509253252faaf4272b4a5112fbab393d5f4a1abb52b41f60"
+      },
+      {
+        "id": "scene-08",
+        "audio": "public/audio/math-a12-s04/scene-08.wav",
+        "audioSha256": "a9e1aaa02baafa393fe82953948819476dac7430b48f3d39029f68efc475635a",
+        "alignmentSha256": "0f68729ff36b905ea87ced41e35d1668b94f485e73708505c141a83273eec844",
+        "generationSha256": "30da0d94140972c8e4e4d67a954eb97267f09076637b1b401c862f6e7e92bcf0"
+      },
+      {
+        "id": "scene-09",
+        "audio": "public/audio/math-a12-s04/scene-09.wav",
+        "audioSha256": "94e6628fe36442a15d60f3ac071cb5c6ef77c3a26770b8f2b7a19f0cca991250",
+        "alignmentSha256": "62ba2d5fef80a68e40f8c993650857d44ce10e00a91cffbf2f0e5eaddeea6e26",
+        "generationSha256": "e86c80d7f28607ac8c1e51c3d5e22b7910923176342aefe5cb256edc6460b024"
+      },
+      {
+        "id": "scene-10",
+        "audio": "public/audio/math-a12-s04/scene-10.wav",
+        "audioSha256": "7c686a2e9b5aa10c0aa8b2a7437dbc3be2a5ccde3c4bf70d1c2fbc1f77ef6bed",
+        "alignmentSha256": "4f6d7014e9784fceda052594d759caf91f1dbb083aadf9f6d93341b2150282c0",
+        "generationSha256": "4ddbdb626ae6027b2dcb94a3ea3e790c719acce80b18adf8a83e6bfad2e627af"
+      },
+      {
+        "id": "scene-11",
+        "audio": "public/audio/math-a12-s04/scene-11.wav",
+        "audioSha256": "bd083b8480f106bfd7ccb0c7ceacf5cab6860bdb3b76fa7009d90b0bb1bd2b1d",
+        "alignmentSha256": "d6d2b5d89f95c5676ae0e0470a58528dcd705e95ed25b7b91b9d2fef28f30a41",
+        "generationSha256": "10e7313edbd1ac43b78706df00b8ddf46c66f71c5aaf06069c94abf4cccffff9"
+      },
+      {
+        "id": "scene-12",
+        "audio": "public/audio/math-a12-s04/scene-12.wav",
+        "audioSha256": "e7b40396e9dd27f668e6036ec2241564220777d8ad4e37a9af7cbe5d9a6f18b3",
+        "alignmentSha256": "a97ac66bc97b0808e34fb60abd545ca65f619961acc87f5f5146e866401320e4",
+        "generationSha256": "4d811f3e91f3944131a7f03837a00a6759af0923c1b9d38020f9b26a6fcb2122"
+      },
+      {
+        "id": "scene-13",
+        "audio": "public/audio/math-a12-s04/scene-13.wav",
+        "audioSha256": "25986b149eff9a56b5d72e0220ac24ccffdbe26f3943970dfd2c153299032c70",
+        "alignmentSha256": "1eafd2758316c8a2fcf2015291ed8e9d1fe123c991690c7eb4fdb744de7867c8",
+        "generationSha256": "9c7d223add60a7ad1265d5916b5d8b4dcfcd4c55323681dafb34baa7351f1436"
+      },
+      {
+        "id": "scene-14",
+        "audio": "public/audio/math-a12-s04/scene-14.wav",
+        "audioSha256": "3ea4f783182befc9ff1786c27b63e08f5e4e56bf60aa98696d566a22d86e9597",
+        "alignmentSha256": "9a1e4270ad3b044cb26ddf82d457a19b3e3936d924263a16310da1f1600ac32f",
+        "generationSha256": "19a29978e14274d748696ee99e9de6443bea46c5b0d4f921fe74451765a96d98"
+      },
+      {
+        "id": "scene-15",
+        "audio": "public/audio/math-a12-s04/scene-15.wav",
+        "audioSha256": "6dd7da7f30c39d877e03d5f0fc4f670fd3aa61cfcd0c7354066ec3756f27b5c9",
+        "alignmentSha256": "8cd3ee1659a6dfa34288b07eba3a89acea1c48cf57aa8d98670061b68740bcd0",
+        "generationSha256": "83651a1f039f35ae1ebfa9e3b88c339eb0f9f0bc92573e566ecdbcb3ae19c22a"
+      },
+      {
+        "id": "scene-17",
+        "audio": "public/audio/math-a12-s04/scene-17.wav",
+        "audioSha256": "d215bd5fd7c2d597111787d0a8021be4261c38b05083b0e07dd8e0eb48829b9b",
+        "alignmentSha256": "6b8ec4f920a8c969d6c83bb4be82bf55d6f8361c51c6bc22432cb152b72ac992",
+        "generationSha256": "9cf718d5e697e3e34ea8dc55184d8f3bf55a94665709ebec039b031cd694c13e"
+      },
+      {
+        "id": "scene-18",
+        "audio": "public/audio/math-a12-s04/scene-18.wav",
+        "audioSha256": "f950748533e3c3763d23c7abe3ca4104a375621761c6dbda59e87fbfb03a080a",
+        "alignmentSha256": "31eb77c12f0174e85feb099555e5e03bf1e688823e395c6f55de2c12cb97841d",
+        "generationSha256": "44874e112a7a804f2745bbe322f454870a104a50c42bdb1e0e999bc73658cc03"
+      }
+    ],
+    "cumulativeCaptionShift": "Derived from changed scene durations; unaffected local captions and cue times are identical"
+  },
+  "originalVoicingValidation": "docs/production/claude-pm/lessons/math-a12-s04/measured.before-brief261/validation.json",
+  "machineFlags": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-01.wav",
+      "durationInFrames": 915,
+      "worstWordGap": {
+        "seconds": 0.8620000000000054,
+        "after": "it.",
+        "before": "At"
+      },
+      "cues": [],
+      "seconds": 30.48,
+      "peakFraction": 0.883941650390625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 25.073000000000064,
+          "end": 25.113000000000063,
+          "score": 0.498
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 94,
+      "outputTokens": 762,
+      "costUsd": 0.0069050000000000005,
+      "pronunciationText": "So far, every random variable counted something. Now X can be any value in an interval, because we measure it. At an athletics carnival, sensors in the starting blocks time each sprinter's reaction to the start signal. One reads zero point three five seconds. But a finer timer shows zero point three five one seven, with more digits after that. So what's the probability that a reaction time is exactly zero point three five seconds? Make a guess."
+    },
+    {
+      "id": "scene-03",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-03.wav",
+      "durationInFrames": 704,
+      "worstWordGap": {
+        "seconds": 0.8419999999999987,
+        "after": "six.",
+        "before": "Each"
+      },
+      "cues": [
+        {
+          "text": "six",
+          "start": 14.541999999999991,
+          "end": 14.67699999999999
+        }
+      ],
+      "seconds": 23.44,
+      "peakFraction": 0.84466552734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "six.",
+          "start": 14.541999999999991,
+          "end": 14.72199999999999,
+          "score": 0.436
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 83,
+      "outputTokens": 586,
+      "costUsd": 0.0053155,
+      "pronunciationText": "What's the probability that a time is at least zero point two, but less than zero point four seconds? Two classes cover that range, with fifty and seventy times. So the estimate is one hundred and twenty out of two hundred, which is zero point six. Each class's relative frequency is its count over two hundred, and they add to one, because every time lands in exactly one class."
+    },
+    {
+      "id": "scene-04",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-04.wav",
+      "durationInFrames": 738,
+      "worstWordGap": {
+        "seconds": 0.8809999999999896,
+        "after": "sit.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.557,
+          "end": 2.738
+        }
+      ],
+      "seconds": 24.6,
+      "peakFraction": 0.868255615234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 13.989999999999993,
+          "end": 14.069999999999993,
+          "score": 0.382
+        },
+        {
+          "word": "zero",
+          "start": 20.139999999999986,
+          "end": 20.401999999999987,
+          "score": 0.439
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 89,
+      "outputTokens": 615,
+      "costUsd": 0.0055795,
+      "pronunciationText": "What about a time under zero point two five seconds? That cuts the second class in half, and the histogram doesn't say where its fifty times sit. The usual assumption is that they're spread evenly. Then about twenty five are below zero point two five. Add the twenty from the first class, and that's forty five out of two hundred, zero point two two five. In an exam, write that assumption down."
+    },
+    {
+      "id": "scene-05",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-05.wav",
+      "durationInFrames": 1031,
+      "worstWordGap": {
+        "seconds": 0.8840000000000288,
+        "after": "width.",
+        "before": "A"
+      },
+      "cues": [
+        {
+          "text": "zero",
+          "start": 0.883,
+          "end": 1.124
+        }
+      ],
+      "seconds": 34.36,
+      "peakFraction": 0.8458251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 30.693000000000115,
+          "end": 30.733000000000114,
+          "score": 0.496
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 112,
+      "outputTokens": 859,
+      "costUsd": 0.007787,
+      "pronunciationText": "The class from zero point three to zero point four has probability about zero point three five. Shrink it to one hundredth of a second, centred on zero point three five. With the times spread evenly, it holds a tenth as many, so about zero point zero three five. Shrink it to one thousandth, and it's about zero point zero zero three five. Under that even spread, the probability shrinks in step with the width. A single exact value has width zero, so for a continuous random variable, its probability is zero."
+    },
+    {
+      "id": "scene-07",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-07.wav",
+      "durationInFrames": 617,
+      "worstWordGap": {
+        "seconds": 0.621999999999991,
+        "after": "difference.",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "difference",
+          "start": 7.173999999999995,
+          "end": 7.4839999999999955
+        },
+        {
+          "text": "each",
+          "start": 19.795000000000066,
+          "end": 20.085400000000064
+        }
+      ],
+      "seconds": 20.56,
+      "peakFraction": 0.833709716796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 19.393000000000065,
+          "end": 19.453000000000063,
+          "score": 0.434
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 71,
+      "outputTokens": 514,
+      "costUsd": 0.0046615,
+      "pronunciationText": "The ends of an interval are single values, so they carry no probability. So including or excluding the ends makes no difference. That's not true for a discrete variable. For a fair die, two to five including both ends has probability four sixths, but strictly between them it's two sixths. The ends carry a sixth each."
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-09.wav",
+      "durationInFrames": 693,
+      "worstWordGap": {
+        "seconds": 0.9209999999999852,
+        "after": "range.",
+        "before": "For"
+      },
+      "cues": [
+        {
+          "text": "range",
+          "start": 15.642999999999994,
+          "end": 15.876333333333328
+        }
+      ],
+      "seconds": 23.08,
+      "peakFraction": 0.8436279296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 14.781999999999995,
+          "end": 14.941999999999993,
+          "score": 0.072
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 75,
+      "outputTokens": 577,
+      "costUsd": 0.0052305,
+      "pronunciationText": "As x moves right, the event that X is at most x can only gain values, never lose them. So F never decreases. We say it's non-decreasing. It starts at zero, and for this bounded example, it reaches one beyond the range. For a continuous variable it has no jumps either, because a jump would mean one value carried probability."
+    },
+    {
+      "id": "scene-10",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-10.wav",
+      "durationInFrames": 1058,
+      "worstWordGap": {
+        "seconds": 0.864000000000118,
+        "after": "decreases.",
+        "before": "Graph"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 8.762999999999996,
+          "end": 8.903999999999996
+        },
+        {
+          "text": "line",
+          "start": 34.75699999999995,
+          "end": 34.934599999999946
+        }
+      ],
+      "seconds": 35.24,
+      "peakFraction": 0.825714111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 1.528,
+          "end": 1.568,
+          "score": 0.456
+        },
+        {
+          "word": "it's",
+          "start": 11.987999999999994,
+          "end": 12.068999999999996,
+          "score": 0.338
+        },
+        {
+          "word": "a",
+          "start": 15.556999999999995,
+          "end": 15.596999999999994,
+          "score": 0.497
+        },
+        {
+          "word": "a",
+          "start": 34.39499999999995,
+          "end": 34.43499999999995,
+          "score": 0.186
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 128,
+      "outputTokens": 881,
+      "costUsd": 0.007993,
+      "pronunciationText": "Now a C D F from a formula. F of x is x squared over nine for x from zero to three, zero below that, and one above. Is it valid? At zero it's zero, and at three it's one, so the pieces join without a jump. Its derivative, two x over nine, is never negative there, so F never decreases. Graph it by hand or with a graphing app. It's flat at zero, leaves the origin flat, then curves up more and more steeply to the point three, one, and stays flat at one. It's not a straight line."
+    },
+    {
+      "id": "scene-11",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-11.wav",
+      "durationInFrames": 627,
+      "worstWordGap": {
+        "seconds": 0.96199999999999,
+        "after": "two.",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "third",
+          "start": 9.84799999999999,
+          "end": 10.065499999999991
+        },
+        {
+          "text": "continuous",
+          "start": 20.076999999999988,
+          "end": 20.533363636363624
+        }
+      ],
+      "seconds": 20.88,
+      "peakFraction": 0.833984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "two",
+          "start": 12.69599999999999,
+          "end": 12.935999999999993,
+          "score": 0.177
+        },
+        {
+          "word": "is",
+          "start": 18.311999999999987,
+          "end": 18.35199999999999,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 74,
+      "outputTokens": 522,
+      "costUsd": 0.004735,
+      "pronunciationText": "Find the probability that X is more than one and at most two. That's F of two minus F of one, four ninths minus one ninth, which is one third. The probability that X is more than two is one minus four ninths, which is five ninths. And the probability that X equals two is zero, because X is continuous."
+    },
+    {
+      "id": "scene-13",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-13.wav",
+      "durationInFrames": 754,
+      "worstWordGap": {
+        "seconds": 0.7420000000000009,
+        "after": "grams.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 15.12,
+      "peakFraction": 0.835296630859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [
+        {
+          "start": 11.85,
+          "end": 15.12
+        }
+      ],
+      "lowScoreWords": [
+        {
+          "word": "Pause",
+          "start": 10.984999999999992,
+          "end": 11.245999999999993,
+          "score": 0.425
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 39,
+      "outputTokens": 378,
+      "costUsd": 0.0034215,
+      "pronunciationText": "Your turn. The masses of four hundred tomatoes are grouped into classes. Estimate the probability that a tomato's mass is at least two hundred and twenty five grams. Pause here to answer."
+    },
+    {
+      "id": "scene-14",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-14.wav",
+      "durationInFrames": 784,
+      "worstWordGap": {
+        "seconds": 0.9670000000000947,
+        "after": "three.",
+        "before": "Zero"
+      },
+      "cues": [
+        {
+          "text": "half",
+          "start": 4.712,
+          "end": 4.952
+        },
+        {
+          "text": "three",
+          "start": 18.052999999999994,
+          "end": 18.252999999999993
+        },
+        {
+          "text": "five",
+          "start": 19.785000000000085,
+          "end": 20.149000000000086
+        }
+      ],
+      "seconds": 25.12,
+      "peakFraction": 1,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 3.509,
+          "end": 3.569,
+          "score": 0.236
+        },
+        {
+          "word": "and",
+          "start": 7.054999999999987,
+          "end": 7.134999999999987,
+          "score": 0.218
+        },
+        {
+          "word": "and",
+          "start": 11.478999999999987,
+          "end": 11.538999999999987,
+          "score": 0.001
+        },
+        {
+          "word": "and",
+          "start": 24.13500000000001,
+          "end": 24.195000000000007,
+          "score": 0.023
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 86,
+      "outputTokens": 628,
+      "costUsd": 0.0056949999999999995,
+      "pronunciationText": "Two hundred and twenty five cuts the two hundred to two hundred and fifty class in half. Assume its one hundred and sixty masses are spread evenly, so about eighty are above two hundred and twenty five. Add the forty in the top class. That's one hundred and twenty out of four hundred, zero point three. Zero point five is wrong. It counts the whole class, including masses below two hundred and twenty five."
+    },
+    {
+      "id": "scene-15",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-15.wav",
+      "durationInFrames": 809,
+      "worstWordGap": {
+        "seconds": 1.040999999999988,
+        "after": "two.",
+        "before": "Find"
+      },
+      "cues": [],
+      "seconds": 16.96,
+      "peakFraction": 0.84649658203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "to",
+          "start": 8.9,
+          "end": 8.94,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 54,
+      "outputTokens": 424,
+      "costUsd": 0.003843,
+      "pronunciationText": "Last one. A continuous random variable has F of x equals x squared plus two x, all over eight, for x from zero to two. Find the probability that X is at least zero point five, and less than one point five. Pause here to answer."
+    },
+    {
+      "id": "scene-16",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-16.wav",
+      "durationInFrames": 888,
+      "worstWordGap": {
+        "seconds": 1.5280000000000022,
+        "after": "half.",
+        "before": "Minus"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 2.326,
+          "end": 2.598
+        },
+        {
+          "text": "half",
+          "start": 21.311000000000085,
+          "end": 21.471800000000087
+        },
+        {
+          "text": "negative",
+          "start": 27.936000000000064,
+          "end": 28.240000000000062
+        }
+      ],
+      "seconds": 28.6,
+      "peakFraction": 0.85174560546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 21.131000000000085,
+          "end": 21.191000000000088,
+          "score": 0
+        },
+        {
+          "word": "half.",
+          "start": 21.311000000000085,
+          "end": 21.512000000000086,
+          "score": 0.366
+        },
+        {
+          "word": "a",
+          "start": 26.728000000000062,
+          "end": 26.74800000000006,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 93,
+      "outputTokens": 628,
+      "costUsd": 0.0056985,
+      "pronunciationText": "It's F of one point five, minus F of zero point five. The endpoints carry no probability, so the mixed signs don't matter. F of one point five is twenty one over thirty two, and F of zero point five is five over thirty two. So the answer is sixteen over thirty two, which is one half. Minus one half is wrong. It subtracts the wrong way round, and a probability can't be negative.",
+      "runOn": {
+        "pass": true,
+        "seconds": 28.6,
+        "characters": 380,
+        "charactersPerSecond": 13.286713286713287,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief261/math-a12-s04/scene-16/attempt1/candidate.wav",
+        "audioSha256": "f636ff8b3ab8aba77f1510c9501f944a4a246e1a474f40a049bf9fffdad65670",
+        "evidence": "work/google-runon-checks/f636ff8b3ab8aba77f1510c9501f944a4a246e1a474f40a049bf9fffdad65670.json"
+      },
+      "humanListening": "pending"
+    },
+    {
+      "id": "scene-17",
+      "changed": true,
+      "audio": "public/audio/math-a12-s04/scene-17.wav",
+      "durationInFrames": 501,
+      "worstWordGap": {
+        "seconds": 0.740999999999989,
+        "after": "three.",
+        "before": "What"
+      },
+      "cues": [
+        {
+          "text": "are",
+          "start": 4.552857142857143,
+          "end": 4.733714285714286
+        }
+      ],
+      "seconds": 14.68,
+      "peakFraction": 0.854888916015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "of",
+          "start": 2.9060000000000006,
+          "end": 2.9860000000000007,
+          "score": 0.267
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 46,
+      "outputTokens": 367,
+      "costUsd": 0.003326,
+      "pronunciationText": "Next, a new question. Here's F of x equals x squared over nine again. It climbs slowly near zero, and steeply near three. What does that steepness tell us about where the values of X are?"
+    }
+  ]
+}

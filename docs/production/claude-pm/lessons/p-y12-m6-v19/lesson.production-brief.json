@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v19/lesson.json",
-    "lessonSha256": "07327ca8d092bbab2dd29c15f4b5648328cbee19e3f2d89fbe568f19c0a8d822"
+    "lessonSha256": "061f62b2518f4263b712c649f390cbf9b414f04dacb589fcd66542b1edf0c1d2"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -44,7 +44,7 @@
         "Countdown",
         "QuestionCard"
       ],
-      "holdPurpose": "Retain the design's 3 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "rotating-field",
@@ -150,9 +150,9 @@
       "visualReference": "docs/production/claude-pm/lessons/phys-y12-m6-v19.md#scene-9",
       "teachingReason": "Here's a way to picture slip. Think of a sailing boat going straight downwind. The wind pushes the sail only while the boat is slower than the wind. If the boat ever matched the wind's speed, the air around the sail would be still, and the push would vanish. So the boat always sails a little slower than the wind. The rotor is the boat, and the turning field is the wind.",
       "narrationCue": "wind",
-      "motionPurpose": "board clears to the sailing panel (a new set-up): a coded boat silhouette with a square sail (no figures, about 400 px), fixed-length grey wind arrows behind it, and a short arrow at the sail \"relative wind\". On \"slower than the wind\" the boat moves right more slowly than the wind arrows; the relative-wind arrow is long and the sail bulges; grey hand tag \"push from relative wind\". On \"matched the wind's speed\" a ghost boat (dashed outline, full ink) at the wind's speed: the relative-wind arrow shrinks to zero and the ghost sail hangs slack (tag \"no relative wind, no push\"). On \"a little slower\" the solid boat settles just behind the wind arrows with a small relative-wind arrow. On \"wind\" labels \"boat = rotor\", \"wind = rotating field\", \"relative wind = slip\", framed together. Hold about 2 seconds.\r\n\r\nUpgrade (Revision 3): The boat is the painted dinghy (`y12p-sailing-dinghy-v1.png`, new, side view, about 400 px tall, no people). It keeps one painted sail; the \"bulging\" and \"slack\" states are shown by the relative-wind arrow and its hand tags, not by redrawing the sail. The boat \"at the wind's speed\" is a second copy of the plate inside a dashed inset card, not a ghost. Fallback if the plate is not delivered: the existing top-view boat (`phys-y11-boat-top-white-v1.png`) moving along the wind arrows, with the same tags.",
+      "motionPurpose": "board clears to the sailing panel (a new set-up): a coded boat silhouette with a square sail (no figures, about 400 px), fixed-length grey wind arrows behind it, and a short arrow at the sail \"relative wind\". On \"slower than the wind\" the boat moves right more slowly than the wind arrows; the relative-wind arrow is long and the sail bulges; grey hand tag \"push from relative wind\". On \"matched the wind's speed\" a ghost boat (dashed outline, full ink) at the wind's speed: the relative-wind arrow shrinks to zero and the ghost sail hangs slack (tag \"no relative wind, no push\"). On \"a little slower\" the solid boat settles just behind the wind arrows with a small relative-wind arrow. On \"wind\" labels \"boat = rotor\", \"wind = rotating field\", \"relative wind = slip\", framed together. Hold about 2 seconds.\n\nUpgrade (Revision 3): The boat is the painted dinghy (`y12p-sailing-dinghy-v1.png`, new, side view, about 400 px tall, no people). It keeps one painted sail; the \"bulging\" and \"slack\" states are shown by the relative-wind arrow and its hand tags, not by redrawing the sail. The boat \"at the wind's speed\" is a second copy of the plate inside a dashed inset card, not a ghost. Fallback if the plate is not delivered: the existing top-view boat (`phys-y11-boat-top-white-v1.png`) moving along the wind arrows, with the same tags.",
       "motionRole": "explain",
-      "onScreenChange": "board clears to the sailing panel (a new set-up): a coded boat silhouette with a square sail (no figures, about 400 px), fixed-length grey wind arrows behind it, and a short arrow at the sail \"relative wind\". On \"slower than the wind\" the boat moves right more slowly than the wind arrows; the relative-wind arrow is long and the sail bulges; grey hand tag \"push from relative wind\". On \"matched the wind's speed\" a ghost boat (dashed outline, full ink) at the wind's speed: the relative-wind arrow shrinks to zero and the ghost sail hangs slack (tag \"no relative wind, no push\"). On \"a little slower\" the solid boat settles just behind the wind arrows with a small relative-wind arrow. On \"wind\" labels \"boat = rotor\", \"wind = rotating field\", \"relative wind = slip\", framed together. Hold about 2 seconds.\r\n\r\nUpgrade (Revision 3): The boat is the painted dinghy (`y12p-sailing-dinghy-v1.png`, new, side view, about 400 px tall, no people). It keeps one painted sail; the \"bulging\" and \"slack\" states are shown by the relative-wind arrow and its hand tags, not by redrawing the sail. The boat \"at the wind's speed\" is a second copy of the plate inside a dashed inset card, not a ghost. Fallback if the plate is not delivered: the existing top-view boat (`phys-y11-boat-top-white-v1.png`) moving along the wind arrows, with the same tags.",
+      "onScreenChange": "board clears to the sailing panel (a new set-up): a coded boat silhouette with a square sail (no figures, about 400 px), fixed-length grey wind arrows behind it, and a short arrow at the sail \"relative wind\". On \"slower than the wind\" the boat moves right more slowly than the wind arrows; the relative-wind arrow is long and the sail bulges; grey hand tag \"push from relative wind\". On \"matched the wind's speed\" a ghost boat (dashed outline, full ink) at the wind's speed: the relative-wind arrow shrinks to zero and the ghost sail hangs slack (tag \"no relative wind, no push\"). On \"a little slower\" the solid boat settles just behind the wind arrows with a small relative-wind arrow. On \"wind\" labels \"boat = rotor\", \"wind = rotating field\", \"relative wind = slip\", framed together. Hold about 2 seconds.\n\nUpgrade (Revision 3): The boat is the painted dinghy (`y12p-sailing-dinghy-v1.png`, new, side view, about 400 px tall, no people). It keeps one painted sail; the \"bulging\" and \"slack\" states are shown by the relative-wind arrow and its hand tags, not by redrawing the sail. The boat \"at the wind's speed\" is a second copy of the plate inside a dashed inset card, not a ghost. Fallback if the plate is not delivered: the existing top-view boat (`phys-y11-boat-top-white-v1.png`) moving along the wind arrows, with the same tags.",
       "motionTools": [
         "Source diagrams, painted plates and cue-directed changes"
       ],
@@ -261,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v19/recording-source-check.json",
-      "sha256": "8a1fe24c19cf19175017a791a0a874cc411b77dea8b4a3d6813fc11b86bf5a06"
+      "sha256": "9fbea2a589387866e7672670482079829199074e5d05086dc78a268c93a5ed11"
     }
   },
   "studentLearningReview": {
@@ -272,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v19/recording-source-check.json",
-      "sha256": "8a1fe24c19cf19175017a791a0a874cc411b77dea8b4a3d6813fc11b86bf5a06"
+      "sha256": "9fbea2a589387866e7672670482079829199074e5d05086dc78a268c93a5ed11"
     }
   },
   "voicedPreview": {

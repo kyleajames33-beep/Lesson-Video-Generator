@@ -1,0 +1,84 @@
+[
+  {
+    "file": "public/assets/chemistry/m6-analytical-balance-v1.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      545,
+      370,
+      1570,
+      1684
+    ],
+    "clearMarginFractionAbove1": [
+      0.2725,
+      0.185,
+      0.215,
+      0.158
+    ],
+    "evidence": [
+      "work/brief242/m6-analytical-balance-v1-native-paper.jpg",
+      "work/brief242/m6-analytical-balance-v1-native-dark.jpg"
+    ],
+    "id": "m6-analytical-balance-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "76a217bfca27821d63d0d292ea11a0a01c8d0543b2f8d4fc3a8c8a96d40eac7b",
+    "qa": {
+      "result": "HOLD for scene 7 vessel mismatch",
+      "observations": [
+        "Analytical balance has a clear draught shield and blank display, but the pan already carries a glass beaker containing white powder. Scene 7 requires an empty evaporating basin at 45.318 g, then the basin with dry salt at 45.543 g. This plate cannot directly depict that sequence. No approved mask or replacement is evidenced here. No people, numbers or exterior halo. Native 2000 square; full composites and native-pixel detail inspected. Root must resolve use before build clearance.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m6-analytical-balance-v1-native-paper.jpg",
+        "work/brief242/m6-analytical-balance-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/chemistry/y11c-evaporating-basin-dry-salt-v1.png",
+    "nativeSize": [
+      1402,
+      1122
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      291,
+      366,
+      1066,
+      772
+    ],
+    "clearMarginFractionAbove1": [
+      0.20756062767475036,
+      0.32620320855614976,
+      0.2396576319543509,
+      0.31194295900178254
+    ],
+    "evidence": [
+      "work/brief242/y11c-evaporating-basin-dry-salt-v1-native-paper.jpg",
+      "work/brief242/y11c-evaporating-basin-dry-salt-v1-native-dark.jpg"
+    ],
+    "id": "y11c-evaporating-basin-dry-salt-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "cb301c410139d59bf5322321044a51a417693b95fda3e93161559d165d4a12a5",
+    "qa": {
+      "result": "static pass; exact transition and balance placement pending",
+      "observations": [
+        "White evaporating basin on grey mat contains dry white crystals with no visible liquid or steam. No people, text, numbers or exterior haze. Native 1402 by 1122 retained. Same canvas as earlier nearly-dry crystals plate; exact pixel registration is not approved. Mat is attached painted content, so actual weighing placement also needs review.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11c-evaporating-basin-dry-salt-v1-native-paper.jpg",
+        "work/brief242/y11c-evaporating-basin-dry-salt-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

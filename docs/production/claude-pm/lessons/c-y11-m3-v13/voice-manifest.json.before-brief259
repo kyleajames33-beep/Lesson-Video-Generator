@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/chem-y11-m3-v13.md",
+  "sourceSha256": "7be31a49c8a08956d9a6a0674ab9b26c4a6a7b34a1ff140deb6f3d8fe5916d2f",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-prediction",
+      "text": "Last time, cell potentials told us that zinc and aluminium will both react with acid. But aluminium's bigger cell potential didn't make it react faster. A cell potential says nothing about how fast. Here's something surprising. In the air around you, each molecule collides with other molecules several billion times every second. So, quick prediction. If every collision made a reaction happen, would a reaction take hours, minutes, or less than a second?",
+      "audioFile": "public/audio/chem-y11-m3-v13/hook-prediction.wav"
+    },
+    {
+      "id": "collisions-fail",
+      "text": "Less than a second. With billions of collisions every second, every reaction would be over almost instantly. But the marble chips in acid from Module 2 fizzed for minutes, and some mixtures sit for years without reacting. So most collisions must fail. That's today's question. Why do they fail, and how does that decide the speed of a reaction?",
+      "audioFile": "public/audio/chem-y11-m3-v13/collisions-fail.wav"
+    },
+    {
+      "id": "rate-meaning",
+      "text": "First, what do we mean by speed? Reaction rate is how quickly a reactant is used up or a product forms. It's the change in an amount divided by the time it took. Here are the marble chips again, with the carbon dioxide caught in a gas syringe. In the first sixty seconds, thirty-two millilitres of gas formed. So the average rate is thirty-two over sixty, about zero point five three millilitres per second. And a steeper graph means a faster rate.",
+      "audioFile": "public/audio/chem-y11-m3-v13/rate-meaning.wav"
+    },
+    {
+      "id": "rate-falls",
+      "text": "Now look later on. Between a hundred and twenty and a hundred and eighty seconds, only four more millilitres formed. That's four over sixty, about zero point zero six seven millilitres per second, eight times slower. So the rate isn't constant. In this run, it's fastest at the start, and it falls as the reactants get used up. To explain why, we need to zoom in on the particles.",
+      "audioFile": "public/audio/chem-y11-m3-v13/rate-falls.wav"
+    },
+    {
+      "id": "must-collide",
+      "text": "Collision theory says particles must collide to react. Here's a simple case, carbon monoxide and nitrogen dioxide. When they react, an oxygen atom moves from the nitrogen dioxide to the carbon monoxide, making carbon dioxide and nitrogen monoxide. That can only happen during a collision. But watch this pair. They collide, and they just bounce apart.",
+      "audioFile": "public/audio/chem-y11-m3-v13/must-collide.wav"
+    },
+    {
+      "id": "activation-energy",
+      "text": "That collision was too gentle. To react, the colliding particles need enough energy to start breaking the old bonds, so that new ones can form. The smallest collision energy that can do this is called the activation energy. Think of it as a bar the collision has to clear. A slow collision falls short, and the particles bounce apart. A fast, hard collision clears the bar, and it can react.",
+      "audioFile": "public/audio/chem-y11-m3-v13/activation-energy.wav"
+    },
+    {
+      "id": "energy-spread",
+      "text": "So how many collisions clear the bar? At any temperature, the particles don't all move at the same speed. A few are slow, most are somewhere in the middle, and a few are very fast. This graph shows that spread of energies. It's called a Maxwell-Boltzmann distribution. The activation energy is a line on the energy axis, and only the particles to the right of it, in this small shaded tail, have enough energy to react. Most fall short.",
+      "audioFile": "public/audio/chem-y11-m3-v13/energy-spread.wav"
+    },
+    {
+      "id": "orientation",
+      "text": "But enough energy still isn't the whole story. The particles must also meet the right way round. Here, the carbon end of the carbon monoxide has to hit an oxygen atom on the nitrogen dioxide. If the oxygen end hits instead, or it hits the nitrogen, no oxygen can move across, so even a very hard collision just bounces off. That's called orientation.",
+      "audioFile": "public/audio/chem-y11-m3-v13/orientation.wav"
+    },
+    {
+      "id": "effective-collisions",
+      "text": "So a collision that makes products, called an effective collision, needs two things at once. It needs enough energy, at least the activation energy, and it needs the right orientation. The rate of a reaction depends on how many effective collisions happen each second. That's set by how often the particles collide, and by what fraction of those collisions have both enough energy and the right orientation.",
+      "audioFile": "public/audio/chem-y11-m3-v13/effective-collisions.wav"
+    },
+    {
+      "id": "frequency-vs-success",
+      "text": "Keep those two ideas apart. Collision frequency is how often the particles collide. The fraction that are effective is how many of those collisions succeed. Now back to the marble chips. As the reaction goes on, the acid becomes less concentrated, so there are fewer hydrogen ions in each millilitre, and the chips shrink, leaving less surface to hit. Both mean fewer collisions each second. The temperature hasn't changed, so the same fraction still succeeds. Fewer collisions each second means fewer effective collisions, and a slower rate.",
+      "audioFile": "public/audio/chem-y11-m3-v13/frequency-vs-success.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "Here's a way to remember it. Hit often, hit hard, hit right. A reaction goes faster when its particles collide more often, when more of the collisions clear the activation energy, or when more of them meet the right way round. The next videos test what changes each one.",
+      "audioFile": "public/audio/chem-y11-m3-v13/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. When two hydrogen iodide molecules react, they form hydrogen and iodine. Only a small fraction of collisions between hydrogen iodide molecules produce these products. Using collision theory, explain why. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m3-v13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "A collision only works if it has at least the activation energy, and most collisions don't, so the molecules bounce apart. It also needs the right orientation, here the two hydrogen atoms meeting, so they can bond. Only collisions with both are effective. Saying they don't collide often enough misses the point, because it's the fraction that fails.",
+      "audioFile": "public/audio/chem-y11-m3-v13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Magnesium reacts with excess dilute hydrochloric acid at a constant twenty-five degrees, and the hydrogen is collected in a gas syringe. Use the table to calculate the average rate between zero and twenty seconds, and between sixty and eighty seconds. Then explain the change using collision theory. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m3-v13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "From zero to twenty seconds, twenty-four over twenty is one point two millilitres per second. From sixty to eighty, six over twenty is zero point three zero. As the ribbon reacts away, there's less magnesium surface for the acid to hit, so fewer collisions happen each second. At the same temperature, the same fraction succeed, so the rate falls. The particles didn't lose energy.",
+      "audioFile": "public/audio/chem-y11-m3-v13/feedback-2.wav"
+    },
+    {
+      "id": "conclusion-handoff",
+      "text": "So collision energy and orientation control the rate because only collisions with both can react, and the rate counts how many of those happen each second. In a laboratory, we can't turn particles the right way round, but we can change how often they collide and how hard they hit. Two easy controls are the concentration and the temperature. Which lever does each one push, and how would the data show it?",
+      "audioFile": "public/audio/chem-y11-m3-v13/conclusion-handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m3-v13/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,609 @@
+{
+  "lesson": "math-a12-d04",
+  "sourceSha256": "93cf7bff0bd97167798ed44a90f72f9dabd8b375488bced2d3d64534fb8331aa",
+  "measuredPath": "work\\brief235\\voice-results\\d04\\lesson.json",
+  "measuredSha256": "e3e6b851b34310f23574c8a2671a9b6d40e270ca0be07eacd0974d7d24e0d2ef",
+  "changedTakes": 2,
+  "reusedTakes": 14,
+  "voicedCharacters": 1230,
+  "inputTokens": 310,
+  "outputTokens": 2288,
+  "costUsd": 0.020746999999999998,
+  "totalSeconds": 536.2666666666667,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-03",
+    "seconds": 1.0840000000000884,
+    "after": "11.",
+    "before": "Log"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
+    {
+      "scene": "scene-09",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Keep",
+          "start": 19.73200000000004,
+          "end": 19.89200000000004,
+          "score": 0.43
+        },
+        {
+          "word": "ay",
+          "start": 35.529000000000096,
+          "end": 35.590000000000096,
+          "score": 0.256
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-d04/scene-01-7b2941005eeb.wav",
+      "durationInFrames": 1596,
+      "worstWordGap": {
+        "seconds": 1.0050000000000097,
+        "after": "ratio.",
+        "before": "Let's"
+      },
+      "cues": [
+        {
+          "text": "octave",
+          "start": 10.591999999999988,
+          "end": 10.83285714285713
+        },
+        {
+          "text": "decibels",
+          "start": 21.574999999999985,
+          "end": 21.98477777777776
+        },
+        {
+          "text": "one",
+          "start": 32.315000000000104,
+          "end": 32.435750000000105
+        },
+        {
+          "text": "steepest",
+          "start": 40.1979999999999,
+          "end": 40.589999999999904
+        },
+        {
+          "text": "flattest",
+          "start": 42.262999999999906,
+          "end": 42.67366666666657
+        },
+        {
+          "text": "much",
+          "start": 47.2119999999999,
+          "end": 47.4039999999999
+        }
+      ],
+      "seconds": 53.2,
+      "peakFraction": 0.8397216796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 172,
+      "outputTokens": 1330,
+      "costUsd": 0.012055999999999999,
+      "pronunciationText": "Last video ended on this picture: the natural log curve, and log base two of x. Logs like these are how we hear. Double the frequency of a guitar note, and it climbs one octave. So the octaves you've climbed are log base two of the frequency ratio. Make a sound ten times as powerful, and its sound level rises by one bel, which is ten decibels. So the rise in bels is log base ten of the power ratio. Let's add log base ten of x as well. All three pass through the same point, one, zero, because any base to the power zero is one. But look at how they leave that point. Log base two climbs the steepest, and log base ten is the flattest. So how does the base set the slope, and by exactly how much?"
+    },
+    {
+      "id": "scene-02",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-02.wav",
+      "durationInFrames": 1006,
+      "worstWordGap": {
+        "seconds": 0.8660000000000068,
+        "after": "four.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "four",
+          "start": 10.900999999999986,
+          "end": 11.102999999999987
+        },
+        {
+          "text": "two",
+          "start": 13.939999999999992,
+          "end": 14.194999999999993
+        },
+        {
+          "text": "six",
+          "start": 23.310000000000045,
+          "end": 23.50575000000005
+        },
+        {
+          "text": "every time",
+          "start": 28.06500000000008,
+          "end": 28.44580000000008
+        }
+      ]
+    },
+    {
+      "id": "scene-03",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-03.wav",
+      "durationInFrames": 1271,
+      "worstWordGap": {
+        "seconds": 1.0840000000000884,
+        "after": "11.",
+        "before": "Log"
+      },
+      "cues": [
+        {
+          "text": "two",
+          "start": 5.651999999999995,
+          "end": 5.832999999999995
+        },
+        {
+          "text": "four",
+          "start": 7.941999999999995,
+          "end": 8.215599999999995
+        },
+        {
+          "text": "upward",
+          "start": 41.67799999999994,
+          "end": 41.918857142857085
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-04.wav",
+      "durationInFrames": 894,
+      "worstWordGap": {
+        "seconds": 1.0620000000000083,
+        "after": "half.",
+        "before": "Stretch"
+      },
+      "cues": [
+        {
+          "text": "four",
+          "start": 13.255999999999997,
+          "end": 13.475999999999996
+        },
+        {
+          "text": "is too",
+          "start": 29.038000000000093,
+          "end": 29.293750000000095
+        }
+      ]
+    },
+    {
+      "id": "scene-05",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-05.wav",
+      "durationInFrames": 1229,
+      "worstWordGap": {
+        "seconds": 0.7649999999997945,
+        "after": "a.",
+        "before": "Check"
+      },
+      "cues": [
+        {
+          "text": "a",
+          "start": 1.746,
+          "end": 1.793
+        },
+        {
+          "text": "x",
+          "start": 10.058999999999987,
+          "end": 10.179999999999987
+        },
+        {
+          "text": "x",
+          "start": 11.642999999999986,
+          "end": 11.702999999999987
+        },
+        {
+          "text": "a",
+          "start": 12.590714285714274,
+          "end": 12.636428571428558
+        },
+        {
+          "text": "x",
+          "start": 14.216999999999995,
+          "end": 14.260999999999994
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-06.wav",
+      "durationInFrames": 1040,
+      "worstWordGap": {
+        "seconds": 1.0010000000001007,
+        "after": "showed.",
+        "before": "If"
+      },
+      "cues": [
+        {
+          "text": "three",
+          "start": 4.235,
+          "end": 4.435833333333334
+        },
+        {
+          "text": "underneath",
+          "start": 33.71800000000007,
+          "end": 34.046181818181886
+        }
+      ]
+    },
+    {
+      "id": "scene-07",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-07.wav",
+      "durationInFrames": 1203,
+      "worstWordGap": {
+        "seconds": 0.9840000000000018,
+        "after": "a.",
+        "before": "At"
+      },
+      "cues": [
+        {
+          "text": "one",
+          "start": 4.039,
+          "end": 4.12975
+        },
+        {
+          "text": "four",
+          "start": 9.501999999999992,
+          "end": 9.702999999999992
+        },
+        {
+          "text": "half",
+          "start": 26.54000000000005,
+          "end": 26.732800000000047
+        },
+        {
+          "text": "zero",
+          "start": 39.474999999999895,
+          "end": 39.71739999999989
+        }
+      ]
+    },
+    {
+      "id": "scene-08",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-08.wav",
+      "durationInFrames": 1130,
+      "worstWordGap": {
+        "seconds": 0.8230000000000075,
+        "after": "four.",
+        "before": "A"
+      },
+      "cues": [
+        {
+          "text": "axis",
+          "start": 21.178999999999995,
+          "end": 21.403799999999993
+        },
+        {
+          "text": "four",
+          "start": 31.874000000000034,
+          "end": 32.074000000000034
+        }
+      ]
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-d04/scene-09-4dd6995b2788.wav",
+      "durationInFrames": 1150,
+      "worstWordGap": {
+        "seconds": 0.8830000000000169,
+        "after": "A.",
+        "before": "Up"
+      },
+      "cues": [
+        {
+          "text": "four",
+          "start": 7.373,
+          "end": 7.565
+        },
+        {
+          "text": "two",
+          "start": 8.977999999999994,
+          "end": 9.203749999999994
+        },
+        {
+          "text": "one",
+          "start": 11.706999999999995,
+          "end": 11.807999999999995
+        },
+        {
+          "text": "string",
+          "start": 30.252000000000077,
+          "end": 30.47571428571436
+        }
+      ],
+      "seconds": 38.32,
+      "peakFraction": 0.831268310546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Keep",
+          "start": 19.73200000000004,
+          "end": 19.89200000000004,
+          "score": 0.43
+        },
+        {
+          "word": "ay",
+          "start": 35.529000000000096,
+          "end": 35.590000000000096,
+          "score": 0.256
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 138,
+      "outputTokens": 958,
+      "costUsd": 0.008690999999999999,
+      "pronunciationText": "Let's use it. Differentiate y equals log base two of x, then find the gradient at x equals four. The base is two, so d y by d x is one over, x times the natural log of two. At x equals four, that's one over, four times the natural log of two. Keep it exact like that, or round it to about point three six one. That's the slope we measured at the start. On the guitar, x equals four is two octaves above the open string, at concert A. Up there, each extra hertz raises the pitch only ay quarter as much as it does at the open string."
+    },
+    {
+      "id": "scene-10",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-10.wav",
+      "durationInFrames": 753,
+      "worstWordGap": {
+        "seconds": 0.8619999999999934,
+        "after": "slope.",
+        "before": "Log"
+      },
+      "cues": [
+        {
+          "text": "negative",
+          "start": 18.51600000000004,
+          "end": 18.907111111111153
+        }
+      ]
+    },
+    {
+      "id": "scene-11",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-11.wav",
+      "durationInFrames": 610,
+      "worstWordGap": {
+        "seconds": 0.7040000000000002,
+        "after": "turn.",
+        "before": "Differentiate"
+      },
+      "cues": []
+    },
+    {
+      "id": "scene-12",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-12.wav",
+      "durationInFrames": 772,
+      "worstWordGap": {
+        "seconds": 0.7609999999999975,
+        "after": "one.",
+        "before": "Five"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 1.204,
+          "end": 1.5256
+        },
+        {
+          "text": "one",
+          "start": 3.673,
+          "end": 3.834
+        },
+        {
+          "text": "steep",
+          "start": 24.254000000000016,
+          "end": 24.456500000000013
+        }
+      ]
+    },
+    {
+      "id": "scene-13",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-13.wav",
+      "durationInFrames": 790,
+      "worstWordGap": {
+        "seconds": 0.783,
+        "after": "one.",
+        "before": "For"
+      },
+      "cues": []
+    },
+    {
+      "id": "scene-14",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-14.wav",
+      "durationInFrames": 768,
+      "worstWordGap": {
+        "seconds": 0.8010000000000446,
+        "after": "decreasing.",
+        "before": "If"
+      },
+      "cues": [
+        {
+          "text": "third",
+          "start": 1.221,
+          "end": 1.5043333333333333
+        },
+        {
+          "text": "negative",
+          "start": 11.418,
+          "end": 11.702444444444442
+        },
+        {
+          "text": "decreasing",
+          "start": 18.003999999999987,
+          "end": 18.459454545454534
+        },
+        {
+          "text": "rise",
+          "start": 23.89800000000003,
+          "end": 24.154800000000034
+        }
+      ]
+    },
+    {
+      "id": "scene-15",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-15.wav",
+      "durationInFrames": 526,
+      "worstWordGap": {
+        "seconds": 0.9229999999999858,
+        "after": "it.",
+        "before": "Next,"
+      },
+      "cues": [
+        {
+          "text": "Next",
+          "start": 9.552999999999987,
+          "end": 9.730599999999988
+        }
+      ]
+    },
+    {
+      "id": "scene-16",
+      "changed": false,
+      "audio": "public/audio/math-a12-d04/scene-16.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.40200000000000036,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": []
+    }
+  ],
+  "machineChecks": "Text hashes, alignment, request attempts, audio peaks and quiet blocks. Forced alignment and signal checks do not establish complete word recognition or human listening.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-d04/measured/lesson.json",
+  "canonicalMeasuredSha256": "9bac7a4f3ca2eb649de914c9d2a57fad7bb26d2e4d6da432de38c05c790e0c89",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-d04/measured/lesson.json",
+    "lessonSha256": "9bac7a4f3ca2eb649de914c9d2a57fad7bb26d2e4d6da432de38c05c790e0c89",
+    "srtSha256": "3294c61f52283720d074309a949f710c19b72ce4ef5102bb3ebb6dc8cd8543fc",
+    "vttSha256": "b5e24c40b83235ff9d0528f5f5e9e8b1f031995559f63e702db5e0f2ad0a40e8",
+    "cueCount": 222,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 16088,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 1596
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 1596,
+          "endFrame": 2602
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 2602,
+          "endFrame": 3873
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 3873,
+          "endFrame": 4767
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 4767,
+          "endFrame": 5996
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 5996,
+          "endFrame": 7036
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 7036,
+          "endFrame": 8239
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 8239,
+          "endFrame": 9369
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 9369,
+          "endFrame": 10519
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 10519,
+          "endFrame": 11272
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 11272,
+          "endFrame": 11882
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 11882,
+          "endFrame": 12654
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 12654,
+          "endFrame": 13444
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 13444,
+          "endFrame": 14212
+        },
+        {
+          "id": "scene-15",
+          "startFrame": 14212,
+          "endFrame": 14738
+        },
+        {
+          "id": "scene-16",
+          "startFrame": 14738,
+          "endFrame": 16088
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [
+    "public/assets/physics/phys-y11-guitar-v1.png",
+    "public/assets/physics/phys-y11-sound-level-meter-v1.png"
+  ],
+  "provenance": "docs/production/claude-pm/assets/ma12-d04-provenance.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d04-redesign-learning-review.md",
+      "result": "0 blockers, 0 should fix, 0 optional in the reviewed changes."
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-d04-redesign-maths-check.md",
+      "result": "0 blockers, 0 should fix, 0 optional in the reviewed changes."
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false
+}

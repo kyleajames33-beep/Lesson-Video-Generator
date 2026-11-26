@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-n07",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "e880bd3601bf8fec034ddebff3f043974331ad839ef096ef53fb7e81def7f2f8",
+  "scenes": [
+    {
+      "id": "hook-toll-road",
+      "title": "hook: the toll road",
+      "voiceover": {
+        "text": "Here's the toll road from last time. From town A to town D, the shortest path runs along the toll road from A to B, then on to D, eighteen kilometres. The labelling method would pick it every time, because it only looks at the numbers on the edges. But a driver who doesn't want to pay the toll might choose a different way. So when is the shortest path not the best path, and how does it compare with a minimum spanning tree?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "toll-avoided",
+      "title": "a toll: shortest isn't cheapest",
+      "voiceover": {
+        "text": "Remember what a shortest path is. It's the path with the least total weight, and here the weights are kilometres. Every edge's weight said kilometres, so kilometres are all the method could see. But kilometres aren't the only thing that matters on a real trip. Say the toll road from A to B costs money, and the driver wants to avoid it. Take that edge away, and look again. Now the shortest path is A, C, D, twelve plus nine, twenty-one kilometres. That's only three kilometres longer, with no toll. For this driver, the longer path is the best path. The shortest path was right about distance, and wrong about what the driver cared about."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "time-against-distance",
+      "title": "time against distance",
+      "voiceover": {
+        "text": "Here's another. Two routes run between the same two towns. Route X is twelve kilometres through town, at fifty kilometres an hour. Route Y is fifteen kilometres on a motorway, at a hundred kilometres an hour. Route X is shorter. But time is distance divided by speed. Twelve divided by fifty is nought point two four of an hour, fourteen point four minutes. Fifteen divided by a hundred is nought point one five of an hour, nine minutes. The longer route is quicker by more than five minutes. So the weights you choose decide the answer. Weight the edges by distance, and route X wins. Weight them by time, and route Y wins."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "other-circumstances",
+      "title": "other reasons a shorter path loses",
+      "voiceover": {
+        "text": "Lots of real things can make the shortest path a poor choice. A road might flood after heavy rain, or be closed for roadworks, so it isn't there at all. A bike route might be the shortest, but climb a steep hill, when a slightly longer path runs along the flat. A path might be quickest, but unsafe at night, or have no footpath. Traffic can turn a short road into a slow one at peak hour. In every case, the network's weights only measure one thing. When something else matters, the best path can be longer. That's why you should always ask what the weights measure, before you trust a shortest path."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "not-in-any-mst",
+      "title": "not in any minimum spanning tree",
+      "voiceover": {
+        "text": "Now the second part of the idea. A shortest path isn't always inside a minimum spanning tree either. Here's a tiny network. A to B is three, B to C is three, and A to C is five. The minimum spanning tree takes the two threes, for six, and leaves out A to C, because it would close a loop. It's the only minimum spanning tree this network has. But the shortest path from A to C is the direct edge, five, and that edge isn't in the tree at all. If you could only use the tree, the trip from A to C would be six, through B. A minimum spanning tree keeps the total cost of linking everyone as low as possible. It doesn't promise the shortest trip between any two particular places. Real cables do the same thing. A town's fibre laid as a minimum spanning tree can send data from one tower to its neighbour the long way round."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "camp-at-night",
+      "title": "the camp at night",
+      "voiceover": {
+        "text": "The camp shows the same thing. Its minimum spanning tree lights B C, D E, A B and C D, a hundred and fifty metres. Walking from cabin A to cabin C under the lights, you go A to B to C, forty plus thirty, seventy metres. But there's a dark path straight from A to C, sixty metres. The shortest path from A to C isn't in the camp's lit tree. Anyone walking from A to C at night now walks ten metres further than they would by day. The camp saved on lighting, and some walks got longer. That's a fair trade, but it is a trade."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's the idea in one card. Shortest is about one number. Best is about everything that matters, like cost, time, safety, and whether the road is open. And a minimum spanning tree links everyone cheaply, but it may not hold the shortest trip between two places."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Here's a new network, with distances in kilometres. P Q six, Q S five, P R eight, R S six, and Q R three. After a storm, the road from Q to S is flooded. Find the shortest open path from P to S, and its length. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Take the flooded road out first. Then only two routes are open. P, Q, R, S is six plus three plus six, fifteen. P, R, S is eight plus six, fourteen kilometres, the shortest open path. Giving P, Q, S, eleven kilometres, drives through the flood, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A network has edges P Q four, Q R four, P R six, R S three, and Q S eight. Find the minimum spanning tree and its total. Then find the shortest path from P to R. Is that path in the minimum spanning tree? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Cheapest first. R S three, keep. P Q four, keep. Q R four, keep. Three edges for four vertices, so the tree is P Q, Q R and R S, eleven in total. The shortest path from P to R is the direct edge, six, beating P, Q, R at eight. P R isn't in the tree, so no. Answering P, Q, R, eight, because it's the tree's route, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-strand-close",
+      "title": "handoff: Networks, paths and trees, done",
+      "voiceover": {
+        "text": "That's Networks, paths and trees done, from dots and lines to cheapest connections and quickest routes, and knowing when to look past them. Next, a different kind of question. Not how places connect, but what people think and do. How many hours of sleep do Year 11 students get? You can't ask everyone, so you ask some of them, carefully. A good statistical investigation starts with a clear question and a fair survey. That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

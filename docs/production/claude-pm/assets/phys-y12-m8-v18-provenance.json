@@ -1,0 +1,80 @@
+{
+  "design": "phys-y12-m8-v18",
+  "brief193": {
+    "assets": [
+      {
+        "key": "y12p-opal-reactor-pool-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-c1c57ace-0f8b-41f6-b9b6-59c3994d6226.png",
+        "sha256": "f23d2b2e94ab26765ee206822b29fcd2a302585ee9feac0fe64b9d5075940b1d",
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": {
+          "1": [
+            0,
+            20,
+            1434,
+            1072
+          ],
+          "8": [
+            278,
+            60,
+            1142,
+            1068
+          ],
+          "64": [
+            279,
+            61,
+            1142,
+            1068
+          ],
+          "128": [
+            279,
+            61,
+            1141,
+            1068
+          ],
+          "192": [
+            280,
+            61,
+            1141,
+            1067
+          ],
+          "250": [
+            280,
+            62,
+            1140,
+            1066
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-opal-reactor-pool-v1-composites.jpg",
+        "state": "delivered native PNG;static composite QA passed",
+        "design": "phys-y12-m8-v18",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "url": "https://indico.jlab.org/event/722/contributions/13770/attachments/10789/16693/AccelApp24%20Drury%20FINAL.pdf",
+          "local": "work/brief193/references/opal-ansto-page4.png",
+          "detail": "ANSTO Drury2024,pool photo and core/reflector diagram inspected. Compact core inside reflector at bottom of deep pool. Control-rod motion remains coded."
+        },
+        "publicAssetDelivered": true,
+        "path": "public/assets/physics/y12p-opal-reactor-pool-v1.png",
+        "anchors": {
+          "coreCentreApprox": [
+            720,
+            850
+          ]
+        },
+        "anchorCoordinates": "Native pixels,approximate feature positions. Confirm against coded overlay in scene;not calibrated measurements.",
+        "nativeSizeQualification": "Brief specifies approximate dimensions;actual native dimensions retained without upsampling."
+      }
+    ],
+    "reuse": "work/brief193/asset-reuse-notes.json"
+  }
+}

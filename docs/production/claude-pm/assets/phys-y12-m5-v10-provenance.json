@@ -1,0 +1,314 @@
+{
+  "design": "phys-y12-m5-v10",
+  "sourceSHA256": "b2d6e1841cc5dca6465fdf7167e46a6b89dfa847f4615e15a2fc9e4492a44900",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-box-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-box-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-mass-hanger-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-mass-hanger-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-metre-rule-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-metre-rule-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-scrapyard-crane-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-scrapyard-crane-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-slotted-masses-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-slotted-masses-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "phys-y11-wooden-crate-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-wooden-crate-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "public/assets/physics/phys-y11-crane-load-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-crane-load-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "y12p-seesaw-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-seesaw-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v10",
+      "reference": "y12p-tower-crane-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-tower-crane-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    }
+  ],
+  "assets": [
+    {
+      "key": "seesaw-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-46dafb39-a2ce-446d-a0c1-1a0933b59e45.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        217,
+        194,
+        1955,
+        559
+      ],
+      "minMarginAbove16": 0.09990791896869244,
+      "sha256": "e6b113473b3e53b8f3315fbe84f465780a213cb19c6493af4d7f5d87e6af3cc1",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-46dafb39-a2ce-446d-a0c1-1a0933b59e45.png",
+      "file": "public/assets/physics/y12p-seesaw-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          2172,
+          724
+        ],
+        "hingeCentre": [
+          1086,
+          319
+        ],
+        "plankTopReference": [
+          1086,
+          293
+        ],
+        "plankLeftEnd": [
+          219,
+          293
+        ],
+        "plankRightEnd": [
+          1955,
+          293
+        ],
+        "plankLength_px": 1736,
+        "representedLength_m": 3,
+        "pixelsPerMetre": 578.6666666666666,
+        "qualification": "The painted hinge lies26px below the plank top. Both points are reported rather than calling them identical. Single PNG includes fixed stand: isolate or mask the plank before tilting; rotating the entire PNG would tilt the stand. No code or extra plate was added."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "crane-proportion-final",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-56b9d2b5-9be6-42aa-9d8d-0b8fb050655b.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        127,
+        100,
+        1322,
+        990
+      ],
+      "minMarginAbove16": 0.08701657458563536,
+      "sha256": "2d05ace407f157cbb4c6067b28df7c84a9b66c1d6d9e29d12cfe543980b54bac",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-56b9d2b5-9be6-42aa-9d8d-0b8fb050655b.png",
+      "file": "public/assets/physics/y12p-tower-crane-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "mastAtJib": [
+          395,
+          336
+        ],
+        "hookAttachment": [
+          1200,
+          550
+        ],
+        "counterweightCentre": [
+          234,
+          336
+        ],
+        "groundLine_y": 985,
+        "rightArm_px": 805,
+        "leftArm_px": 161,
+        "ratioFromRoundedAnchors": 5,
+        "requiredArmRatio": 5,
+        "anchorInspectionTolerance_px": 3,
+        "qualification": "Final correction selected after initial ratios about5.23 and4.7 were rejected. Rounded visually inspected anchors give5:1, within about3native pixels per painted centre. This is painting registration, not pixel-exact metrology. Use the same anchors for coded distance brackets and inspect their actual scene positions.",
+        "loadSourceAttachment": [
+          500,
+          211
+        ],
+        "qaLoadUniformScale": 0.24
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    }
+  ],
+  "heldRequests": [],
+  "qa": "docs/production/claude-pm/assets/brief187-qa",
+  "status": "source findings, documented art differences and exact voiced-preview checks remain open",
+  "brief222": {
+    "seesaw": {
+      "assets": [
+        {
+          "key": "plank",
+          "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-ae1a932c-fc13-4cc8-abd2-c3bdb1f4f674.png",
+          "dimensions": [
+            2172,
+            724
+          ],
+          "sha256": "a1730ac3520c5150acf6d6b04aa8e3816525c3de32633b20ca4df1abd4ed00be",
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "alpha128Box": [
+            215,
+            194,
+            1957,
+            367
+          ],
+          "hingeCentre": [
+            1086,
+            319
+          ],
+          "file": "public/assets/physics/y12p-seesaw-plank-v1.png",
+          "status": "delivered native layer; three-background static tilt checks passed",
+          "brief": 222,
+          "qa": "docs/production/claude-pm/assets/brief222-qa/seesaw-tilt-check.jpg",
+          "limitation": "Generated split is not pixel-identical to old combined plate; alpha128 silhouette IoU0.9549. Both native canvases2172x724 and hinge(1086,319) retained. No gap or floating stand observed at -8,0,+8 degrees in static QA. Motion still requires playback."
+        },
+        {
+          "key": "stand",
+          "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-171ee5ca-8278-4d05-99ac-5a752b9bb4cf.png",
+          "dimensions": [
+            2172,
+            724
+          ],
+          "sha256": "8696a24271df30a55d843a6d0e713398aa61ca23146c1c657d1704436ae53eb2",
+          "alphaExtrema": [
+            0,
+            255
+          ],
+          "alpha128Box": [
+            935,
+            285,
+            1239,
+            557
+          ],
+          "hingeCentre": [
+            1086,
+            319
+          ],
+          "file": "public/assets/physics/y12p-seesaw-stand-v1.png",
+          "status": "delivered native layer; three-background static tilt checks passed",
+          "brief": 222,
+          "qa": "docs/production/claude-pm/assets/brief222-qa/seesaw-tilt-check.jpg",
+          "limitation": "Generated split is not pixel-identical to old combined plate; alpha128 silhouette IoU0.9549. Both native canvases2172x724 and hinge(1086,319) retained. No gap or floating stand observed at -8,0,+8 degrees in static QA. Motion still requires playback."
+        }
+      ],
+      "combinedVsOriginalAlpha128IoU": 0.9548644847864997,
+      "qa": "Inspected cream,navy,white at -8,0,+8 degrees. Hub covers stand top; no floating stand or gap observed. Static check only; exact pixel overlay onto old combined artwork is not claimed.",
+      "note": "Generated split layers are not pixel-identical to original; originals preserved. Native canvases and stated pivot retained. Rotations exist only in QA composites."
+    }
+  }
+}

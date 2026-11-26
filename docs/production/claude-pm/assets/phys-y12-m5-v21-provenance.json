@@ -1,0 +1,73 @@
+{
+  "design": "phys-y12-m5-v21",
+  "sourceSHA256": "e8d1322b5cb048e7403991691147323c9ec697d2291e2979c3a5434d7742e665",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v21",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v21",
+      "reference": "y12p-satellite-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-satellite-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "satellite",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-c98ed96f-5f63-436f-9c73-9006e229086e.png",
+      "size": [
+        1585,
+        992
+      ],
+      "alpha16Bounds": [
+        188,
+        399,
+        1395,
+        671
+      ],
+      "marginFraction": [
+        0.11861198738170348,
+        0.4022177419354839,
+        0.11987381703470032,
+        0.3235887096774194
+      ],
+      "file": "public/assets/physics/y12p-satellite-v1.png",
+      "sha256": "c1c2cbddce3908878065f4034199bc1bf8ea8a13cc3862d7708446ab162c0e1e",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "bodyCentre": [
+          791,
+          487
+        ],
+        "overallWidth": 1207,
+        "dishTip": [
+          791,
+          669
+        ],
+        "note": "Solar wings horizontal; dish faces down in native plate."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    }
+  ],
+  "qa": "docs/production/claude-pm/assets/brief188-qa",
+  "holds": "Source findings unresolved. v16 method blocked. Old paper clip backdrop confirmed in v15/v16; clean replacement request requires Claude/root decision, no replacement painted.",
+  "motionListeningRelease": "pending"
+}

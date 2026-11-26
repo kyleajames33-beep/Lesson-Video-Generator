@@ -5,3 +5,10 @@
 The cereal task strip already specifies one decimal place, as does the source question: 1.9 is the largest permitted setting on that grid. With unrestricted real-valued σ there is no largest permitted value, only the strict upper boundary 1.941122...; scope the on-screen 'σ ≤ 1.9' to one-decimal settings, since e.g. σ=1.92 also passes. Similarly μ=508.64 gives slightly less than 1%, not exactly 1%; distinguish a maximum-1% requirement from an equality target. Explicitly label table-derived attempt-2 σ≈4, since Φ(1.75)=0.9599 rather than exactly 0.96. Simulated 19 or 2 short bottles are sample outcomes, not guaranteed counts.
 
 Direct browser inspection confirms random-variables lesson 02 Q3's bolt target and approximately 0.3% rejection, and lesson 03 Q3's 375 g threshold, mean 380 g, strictly fewer than 0.5%, and maximum σ to one decimal place. The s12/g01 handoff is a labelled later-practice link; its exact final frame remains a build-time verification.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `20141e1e1507ed33f21b673a27b1c65fda6d88eafd7ef400596aaabe22912246`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Seeded19/200bottlecountidentifiedasonesimulatedrun. Table-derivedmu508.64 honestlyleavestail0.0099,justunder1percent,not exact;targetprobabilityworkedusingroundedtablez. Cerealmax1.9expresslyone-decimalgrid;continuousstrictboundaryabout1.941hasnomaximum. Attempt2sigmaabout4hours ratherthanexact;SciPy gives3.998. Safe-roundingdirectionandgridpass/fail independentlyrecomputed.
+
+Independent recount:5636characters/15scene strings,noem dashes. Changed narration andauthor repairnotes comparedwith priorfullreview;unchanged calculations/live-sourcechecksretained. Current stringsinwork/brief240/root68-source-audit/s12.json. Nativeartmeasurements/guide deviationsretainedforbuilderfitting underdecision30;root68readytovoice. No paid speechorfinishedtake repeatedbythisreview. Measuredtiming,actualmotionandhumanlisteningremainseparategates.

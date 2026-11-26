@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-n02",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "ca7cf93045a04e606cbc94a35559c041424a1d1f28402e34e3ee6cba1d42c986",
+  "scenes": [
+    {
+      "id": "hook-more-than-lines",
+      "title": "hook: more than dots and lines",
+      "voiceover": {
+        "text": "Here's the delivery van's town. Five stops, and the streets between them. But this network has more on it than dots and lines. Some streets have arrows, because they're one-way, and every street has a number, the minutes it takes to drive. To plan a delivery run, you need all of that. So how do we describe how connected a stop is, and show directions and weights on a network?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "degree",
+      "title": "degree: how connected is a place?",
+      "voiceover": {
+        "text": "Start with connections. The degree of a vertex is the number of edges that meet at it. It tells you how connected that place is. Back on the flight network, count the lines at each city. Perth has three. Darwin has two. Adelaide, Melbourne and Sydney have four each. Brisbane has two, and Hobart has just one. So the best-connected cities, the hubs, are the ones with the highest degree. Hobart, with degree one, hangs off the end of the network. If its one route closes, Hobart is cut off completely. That's why degree matters. A low degree means a place has few ways in or out. In the van's town, the Café has degree three, with streets to the Bakery, the Depot and the Pharmacy. Notice that degree only counts connections. It says nothing about how far apart the places are."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "degree-sum",
+      "title": "the degree sum: a built-in check",
+      "voiceover": {
+        "text": "Here's a handy check. Add up all the degrees. Three, two, four, four, one, four and two make twenty. And there are ten edges. Twenty is exactly twice ten, and that's no accident. Every edge has two ends, and each end adds one to the degree of the vertex it touches. So the sum of all the degrees is always twice the number of edges. So if you know the degrees, you know the number of edges. Just halve the total. And if your degrees add to an odd number, you've miscounted somewhere. One special case. An edge that loops from a vertex back to itself has both its ends at that vertex, so a loop adds two to its degree."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "directed",
+      "title": "directed: arrows for one way",
+      "voiceover": {
+        "text": "Now direction. On a one-way street, the van can only go one way, so we draw the edge as an arrow. A network with arrows is called a directed network, and in a directed network every edge shows its direction. In the van's town, the van can drive from the Bakery to the Café, but not from the Café back to the Bakery, because the arrow only points one way. Between the Bakery and the Pharmacy, the street is two-way, so that edge gets an arrowhead at each end. When you travel through a directed network, you can only follow the arrows. Social apps work like this too. You can follow an account that doesn't follow you back. And when you count connections, it helps to count the arrows coming in and the arrows going out separately."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "weighted",
+      "title": "weighted: numbers on the edges",
+      "voiceover": {
+        "text": "Now the numbers. A number written on an edge is called a weight. It can be a distance, a time, a cost, or how much can flow through it, whatever matters in the problem. Here, the weights are minutes of driving. An edge with a weight is a weighted edge, and a network with arrows and weights is a directed, weighted network. Arrows with directions, and numbers for weights. The weight isn't part of the picture's shape. It's information we add because the problem needs it. Here's the van's full run, from the Depot to the Bakery, the Café, the Pharmacy and the Gym, and back to the Depot. Follow the arrows and add the weights. Four, three, two, six and seven make twenty-two minutes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "reading-routes",
+      "title": "reading a directed, weighted network",
+      "voiceover": {
+        "text": "Weights also let you compare routes. The van is at the Gym and needs to get to the Café. The Gym's only arrow points to the Depot, seven minutes. From the Depot, the arrow goes to the Bakery, four more. And from the Bakery to the Café, three more. That's fourteen minutes, and it's the only legal way. In a directed network, a trip and the trip back can be completely different. From the Bakery to the Café is three minutes. But from the Café back to the Bakery, the van has to go round by the Pharmacy, two plus four, six minutes. Notice one thing. The weight is just a number on the edge. A line drawn long on the page can carry a small weight, and a short line a big one. Always read the number, not the length of the line."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's the network words in one card. Degree, count the lines at a dot. Arrows give the direction, and numbers give the weight. And all the degrees add up to twice the number of edges."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A network has vertices A, B, C, D and E, with edges A B, A C, A D, B C and D E. Find the degree of each vertex, and check your answers using the number of edges. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "A touches three edges, so its degree is three. B, C and D each have degree two, and E has degree one. The degrees add to ten. There are five edges, and twice five is ten, so the count checks. Saying the degrees should add to five, the number of edges, is the slip. Every edge has two ends."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Use the van's directed, weighted network. What's the quickest legal trip from the Pharmacy to the Café? And can the van get from the Gym to the Café without passing the Depot? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "From the Pharmacy, the two-way street to the Bakery takes four minutes, and the Bakery to the Café takes three, so seven minutes. That's the quickest. From the Gym, the only arrow leads to the Depot, so the van can't reach the Café without passing the Depot, no. Going straight from the Pharmacy to the Café, in two minutes, drives against the arrow, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: networks from tables and maps",
+      "voiceover": {
+        "text": "So that's degree, direction and weight. But where do these networks come from? Usually from a table of distances, or a map with paths and lengths marked on it, like this rail trail and its table. Every number in the table is waiting to become a weighted edge. How do we draw a network from a table or a map, and use it to solve a problem? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

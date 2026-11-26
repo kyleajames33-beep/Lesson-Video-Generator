@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "4d1d462b5ca1e3a004749d5ea6035a2ac07d596c214cb62520ac5b126b7e67ff",
+  "sourceDesignSha256": "b55524c4e6b30a23f6191dd5c038836a0e6ce5646afe879663dad63be3e9e8bf",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Last time, the electron left the plates a little faster than it went in, so the field gave it energy. An electron gun uses exactly that. Electrons start almost at rest, and a voltage speeds them up into a beam. Here's the puzzle. Double the voltage of the gun. Does the electron come out twice as fast? Make a prediction."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Make a prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make a prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "work-qv",

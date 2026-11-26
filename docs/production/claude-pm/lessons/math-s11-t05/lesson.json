@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-t05",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "bd6e6d3969072b3083ffc77391a137e154c7db01568936a9a90ea17e887c4d9a",
+  "scenes": [
+    {
+      "id": "hook-two-seasons",
+      "title": "hook: one match, two seasons",
+      "voiceover": {
+        "text": "Here are Australia's three time zones. A football final kicks off at seven thirty pm in Melbourne in July. When should fans in Perth, Adelaide and Brisbane tune in? Now move the same kind of match to December, and the answers change, because some states put their clocks forward in summer and others don't. In summer, the mainland capitals show five different times at once. So how do Australian time zones and daylight saving work?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "three-zones",
+      "title": "three zones, and the half-hour centre",
+      "voiceover": {
+        "text": "Australia has three time zones. Start with standard time, which runs for about half the year, from April to October. Western Australia uses Western Standard Time. The Northern Territory and South Australia use Central Standard Time. Queensland, New South Wales, the ACT, Victoria and Tasmania use Eastern Standard Time. You'll see them written A W S T, A C S T and A E S T, with the S for standard. Each zone keeps one time on all its clocks, rounded from the Sun's time, like we saw with longitude. Western time is two hours behind Eastern time. Central time is only half an hour behind Eastern, so it's an hour and a half ahead of Western. Half-hour zones are unusual, and that's what makes Adelaide and Darwin tricky. And the rule from longitude still holds. Moving west, the clocks are behind, so you take time off. Moving east, you add."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "winter-match",
+      "title": "a winter match",
+      "voiceover": {
+        "text": "Back to the July final, seven thirty pm in Melbourne, on Eastern time. Perth is two hours behind, so fans there tune in at five thirty pm. Adelaide is half an hour behind, so seven pm. Darwin shares Central time with Adelaide, so it's seven pm there as well. Brisbane is in the same zone as Melbourne, so it's seven thirty there too. On a twenty-four-hour clock, that's seventeen thirty, nineteen hundred and nineteen thirty. Find the gap between the zones, decide ahead or behind, then add it or take it off."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "daylight-saving",
+      "title": "daylight saving: the south-east moves",
+      "voiceover": {
+        "text": "Now summer. Daylight saving means moving the clocks forward one hour for the warmer months, so there's an extra hour of daylight in the evening. In Australia it starts on the first Sunday in October and ends on the first Sunday in April. But not every state does it. New South Wales, the ACT, Victoria, Tasmania and South Australia go forward. Queensland, the Northern Territory and Western Australia don't. Watch the map as the months roll from July to January. The south-east jumps an hour ahead, and three zones split into five different times. When daylight saving ends in April, those clocks go back an hour, and the five times become three again. Sydney is now three hours ahead of Perth, an hour ahead of Brisbane, and an hour and a half ahead of Darwin. And here's the strangest part. In winter, Brisbane is half an hour ahead of Adelaide. In summer, Adelaide is half an hour ahead of Brisbane, even though it's further west."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "summer-match",
+      "title": "a summer match",
+      "voiceover": {
+        "text": "So a summer match needs the summer gaps. A cricket match starts at seven fifteen pm in Sydney in December. Brisbane hasn't moved its clocks, so it's an hour behind, six fifteen. Adelaide is still half an hour behind Sydney, because both moved, so six forty-five. Darwin is an hour and a half behind, five forty-five. And Perth is three hours behind, four fifteen in the afternoon. Notice that Adelaide and Darwin, which shared a time all winter, are now an hour apart, because only Adelaide moved its clocks. Always ask two questions. Which zones are they in, and is it daylight saving time?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flight",
+      "title": "a flight across zones",
+      "voiceover": {
+        "text": "Time zones matter most when you travel. A plane leaves Perth at one pm in January, and the flight takes four and a half hours, an example time. Do the flight on Perth's clock first. One pm plus four and a half hours is five thirty pm, Perth time. Now convert. It's January, so Sydney is on daylight saving, three hours ahead of Perth. So the plane lands at eight thirty pm, Sydney time. Forget daylight saving, use two hours, and you'd say seven thirty, an hour early. The flight is still four and a half hours. Only the clocks have changed. Going the other way, the clocks work against you. A five hour flight leaving Sydney at nine am lands at two pm Sydney time, which is eleven am in Perth, just two hours after take-off by the clocks."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's Australia's clocks in one card. West is behind. Perth is two hours behind the east, and Adelaide and Darwin half an hour. From October to April, the south-east goes forward an hour, but Queensland, the Territory and WA stay put."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A live stream starts at eight pm in Sydney in August. What time does it start in Perth, and in Adelaide? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "August is before October, so it's still standard time. Perth is two hours behind, so six pm. Adelaide is half an hour behind, so seven thirty pm. Saying eight thirty for Adelaide, adding the half hour instead of taking it off, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. In January, a video call starts at nine am in Brisbane. What time is it in Sydney, and in Darwin? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "January is summer. Sydney is on daylight saving and Brisbane isn't, so Sydney is an hour ahead, ten am. Darwin doesn't use daylight saving either, and it's half an hour behind Brisbane all year, so eight thirty am. Saying nine am in Sydney, forgetting daylight saving, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: UTC",
+      "voiceover": {
+        "text": "So that's Australia's clocks, three zones, with three times in winter and five in summer. But what about the rest of the world? A friend in London, a match in Tokyo, a flight to Dubai. Each place has its own zone, and some have their own daylight saving, on different dates to ours. Every country sets its clocks from one shared reference, the time at Greenwich, called UTC. How does UTC make international time problems simpler? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

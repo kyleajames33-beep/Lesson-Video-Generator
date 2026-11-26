@@ -1,0 +1,44 @@
+{
+  "brief": 235,
+  "design": "math-a12-d13",
+  "state": "existing-native-plates-inspected",
+  "assets": [
+    {
+      "path": "public/assets/physics/phys-y11-drone-side-v1.png",
+      "nativeSize": [
+        2000,
+        1000
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        180,
+        272,
+        1820,
+        728
+      ],
+      "sha256": "a1a800eeb81caffcfea9679e4254ce603868798ee75fef3b10170d525389c46f",
+      "changed": false
+    },
+    {
+      "path": "public/assets/physics/phys-y11-ground-strip-v1.png",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alphaBox": [
+        13,
+        39,
+        2172,
+        724
+      ],
+      "sha256": "d7ed6f98e6eab5599d6528f332e7ab9b51f966cf7cf92eebbdb176731eb41c2b",
+      "changed": false
+    }
+  ],
+  "visualResult": "Side drone camera visible under front end; ground strip has clear level foreground. Empty drone, no pilot. Camera point is measured by builder, not inferred from scene coordinates here.",
+  "sourceReview": "See existing redesign learning and maths reports",
+  "newArtwork": false,
+  "speechGenerated": false,
+  "fullBuiltPreview": "pending"
+}

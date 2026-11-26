@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d15",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "686dfeef8d56da48d36692f5fe01912ab870426e3e1319a0b67f10486b2149f1",
+  "scenes": [
+    {
+      "id": "hook-middle-half",
+      "title": "hook: where's the middle half?",
+      "voiceover": {
+        "text": "The median splits our twenty sleeps in half. Ten nights are at seven and a half hours or less, and ten at seven and a half or more. But where does the middle half of the students sit, ignoring the shortest and longest sleepers? And how wide is that middle half? Answering that needs two more dividing lines, called quartiles. So how do quartiles, the five-number summary and the IQR describe spread?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "halve-again",
+      "title": "halve, then halve again",
+      "voiceover": {
+        "text": "Quartiles are the values that split ordered data into four quarters. To find them, halve, then halve again. The median has already split the twenty values into a lower half of ten and an upper half of ten. Now find the middle of each half. The lower half's middle is between its fifth and sixth values, six and a half and six and a half, so the lower quartile, Q one, is six point five. A quarter of the values are at or below it. The upper half's middle is between the fifteenth and sixteenth values, eight and eight, so the upper quartile, Q three, is eight. Three quarters of the values are at or below it. And the median is sometimes called Q two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "odd-n-stem-leaf",
+      "title": "odd numbers, from a stem-and-leaf plot",
+      "voiceover": {
+        "text": "With an odd number of values, there's one extra step. Here's the batter's fifteen scores from the stem-and-leaf plot. The median is the eighth score, twenty-four. That score is the middle, so it belongs to neither half. Leave it out. That leaves seven scores below it and seven above. The middle of the lower seven is the fourth, twelve, so Q one is twelve. The middle of the upper seven is forty-one, so Q three is forty-one. The five-number summary is nought, twelve, twenty-four, forty-one and eighty-seven. Including the median in both halves is a common slip, and it shifts both quartiles."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "five-numbers-and-iqr",
+      "title": "the five-number summary and the IQR",
+      "voiceover": {
+        "text": "Those five values are the five-number summary. The minimum, Q one, the median, Q three, and the maximum. For our sleep data, three, six and a half, seven and a half, eight, and nine and a half. Together they show the centre, the spread, and even the shape. Always write them in that order, smallest to largest. Now the middle half. It runs from Q one to Q three, six and a half to eight hours. Its width is the interquartile range, the IQR, which is Q three minus Q one. Eight minus six and a half, one and a half hours. So the middle half of our students' sleep spans just an hour and a half. The IQR is a width, a single number. Writing it as six and a half to eight is a slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "range-against-iqr",
+      "title": "range against IQR",
+      "voiceover": {
+        "text": "So we have two measures of spread from the five numbers. The range is nine and a half minus three, six and a half hours. The IQR is one and a half. Why so different? The range uses only the two most extreme values, and one of them is that three hour night. The IQR ignores the top quarter and the bottom quarter, so extreme values barely touch it. Watch. Slide the shortest night down to one hour, and the range grows to eight and a half. Slide it up to five and a half, and the range shrinks to four. The IQR stays at one and a half the whole time. So the range is quick, and shows the full span. The IQR shows how spread out the typical values are, which is why it suits skewed data, just like the median."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "quartiles-on-calculator",
+      "title": "quartiles on a calculator",
+      "voiceover": {
+        "text": "Your calculator's statistics mode works these out too. After you type in the data, scroll down the results screen past the mean and sigma, and you'll find the minimum, Q one, the median, Q three, and the maximum. For our twenty sleeps it shows three, six point five, seven point five, eight, and nine point five, matching our halves. One caution. Some spreadsheets and apps use a slightly different rule for quartiles, so their answers can differ a little. In an exam, use the halves method, and check that your tool agrees."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Halve, then halve again. Five numbers, the minimum, Q one, the median, Q three and the maximum. And the IQR is Q three minus Q one, the spread of the middle half."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The times, in minutes, for eleven food deliveries were eighteen, twenty-two, twenty-five, twenty-seven, twenty-nine, thirty-one, thirty-three, thirty-five, thirty-eight, forty-four and fifty-two. Find the five-number summary, and the IQR. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Eleven values, so the median is the sixth, thirty-one. Leave it out. The lower five have middle twenty-five, and the upper five have middle thirty-eight. The summary is eighteen, twenty-five, thirty-one, thirty-eight, fifty-two, and the IQR is thirteen minutes. Getting twenty-six for Q one, by keeping the median in, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student's weekly earnings from a part-time job over eight weeks were a hundred and twenty dollars, a hundred and thirty-five, a hundred and forty, a hundred and fifty, a hundred and fifty, a hundred and sixty, a hundred and seventy, and four hundred and eighty, in a holiday week. Find the range and the IQR. Which better describes the spread of a usual week's earnings? Explain. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The range is four eighty minus one twenty, three hundred and sixty dollars. Q one is a hundred and thirty-seven fifty, Q three a hundred and sixty-five, so the IQR is twenty-seven dollars fifty. The IQR is better, because it ignores the top and bottom quarters, so the holiday week doesn't inflate it. Choosing the range because it uses the biggest and smallest is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-box-plots",
+      "title": "handoff: box plots",
+      "voiceover": {
+        "text": "Five numbers sum up twenty sleeps. Three, six and a half, seven and a half, eight, and nine and a half. Put them on a number line, and they start to suggest a shape. A short middle, and a long stretch out to the left. Could five numbers become one picture you can read at a glance? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

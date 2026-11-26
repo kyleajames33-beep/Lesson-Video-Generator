@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v05/lesson.json",
-    "lessonSha256": "5bc3fd025523a9624f9b6a5792570f6e1c4a57a67d2191b094ba6f2d9e39a4fc"
+    "lessonSha256": "135c01b1b66c9f344d69270e22a0eebc336a55d78622c0c17f0b8a09ae8a7147"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -38,12 +38,13 @@
       "teachingReason": "Here's our proton, moving to the right through a field into the page, and pushed upwards. As it turns, the force turns with it, always at right angles to the motion. So, does it speed up, spiral inwards, or go round in a circle? And would an electron at the same speed curve more tightly, or less? Make your predictions.",
       "narrationCue": "circle / predictions",
       "motionPurpose": "opens on v04's final frame (see \"Opening frame\"). The proton moves a short way along the dashed path; v and F turn together with the right-angle mark. On \"circle\" three ghost chips appear on the dashed \"?\": \"speeds up\", \"spirals in\", \"circle\". On \"predictions\" an electron ghost appears at the start point with \"tighter or wider?\", and the 3 s `Countdown` runs. Anchor (Revision 2): from the first sentence an inset at the top left (about 300 px wide) shows the painted horseshoe magnet from v04 (`y12p-horseshoe-magnet-v1.png`, uniform scale) with a pen arrow down through its gap and a slate hand tag \"looking down through the gap: B into the page\". Hand tags: amber \"always 90°\" with a pen ring round the right-angle mark; teal \"v = ?\" ringed.",
-      "motionRole": "explain",
+      "motionRole": "hold",
       "onScreenChange": "opens on v04's final frame (see \"Opening frame\"). The proton moves a short way along the dashed path; v and F turn together with the right-angle mark. On \"circle\" three ghost chips appear on the dashed \"?\": \"speeds up\", \"spirals in\", \"circle\". On \"predictions\" an electron ghost appears at the start point with \"tighter or wider?\", and the 3 s `Countdown` runs. Anchor (Revision 2): from the first sentence an inset at the top left (about 300 px wide) shows the painted horseshoe magnet from v04 (`y12p-horseshoe-magnet-v1.png`, uniform scale) with a pen arrow down through its gap and a slate hand tag \"looking down through the gap: B into the page\". Hand tags: amber \"always 90°\" with a pen ring round the right-angle mark; teal \"v = ?\" ringed.",
       "motionTools": [
-        "Source diagrams, painted plates and cue-directed changes"
+        "Source diagrams, painted plates and cue-directed changes",
+        "Countdown"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your predictions.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "zero-work",
@@ -274,10 +275,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v05/recording-source-check.json",
-      "sha256": "4f334f50d38ad6015d554118512869d59bab7b32cf8f9d14e9a21df28c373bbf"
+      "sha256": "d7cb7ac112ad96ec7ade70ff28a5c10aac5a906a73c3ff10e47458474053e1dd"
     }
   },
   "studentLearningReview": {
@@ -285,7 +286,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v05/recording-source-check.json",
-      "sha256": "4f334f50d38ad6015d554118512869d59bab7b32cf8f9d14e9a21df28c373bbf"
+      "sha256": "d7cb7ac112ad96ec7ade70ff28a5c10aac5a906a73c3ff10e47458474053e1dd"
     }
   },
   "voicedPreview": {

@@ -1,0 +1,1603 @@
+{
+  "lesson": "chem-y11-m1-v17",
+  "wave": 2,
+  "sourceSha256": "0b1661768d2457de4fc5e4c0cae1265d1cf09e9c4dd7a4e45f83a7815166b5ff",
+  "measuredPath": "work/brief236/wave2/chem-y11-m1-v17/voiced/lesson.json",
+  "measuredSha256": "70cd3950bdf14e554d957e8f61bea698ffb9ab026e101039c3a560857001e77e",
+  "characters": 6256,
+  "totalSeconds": 478.3,
+  "under570": true,
+  "newRequests": 8,
+  "cachedTakes": 1,
+  "inputTokens": 1410,
+  "outputTokens": 10100,
+  "costUsd": 0.091605,
+  "worstWordGap": {
+    "scene": "human-made",
+    "seconds": 1.0630000000000948,
+    "after": "equipment.",
+    "before": "And"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "runOn": {
+        "pass": true,
+        "seconds": 32.007,
+        "characters": 478,
+        "charactersPerSecond": 14.93423313650139,
+        "rateExempt": false,
+        "insertedWords": 3,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/hook.wav",
+        "audioSha256": "e69c9ebdf15cb2cb67730c88257eb641f8c8f2b90aaeb0ac890aa80a58c81fbc",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/hook.wav",
+      "seconds": 32.007,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "reactors",
+          "start": 14.571999999999996,
+          "end": 14.963999999999997
+        },
+        {
+          "text": "natural",
+          "start": 21.272,
+          "end": 21.552874999999997
+        },
+        {
+          "text": "from",
+          "start": 31.506000000000085,
+          "end": 31.618000000000087
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8439999999999799,
+        "after": "kind?",
+        "before": "Let's"
+      },
+      "peakFraction": 0.86004638671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Now",
+          "start": 4.34199999999999,
+          "end": 4.5829999999999895,
+          "score": 0.445
+        },
+        {
+          "word": "a",
+          "start": 8.516999999999996,
+          "end": 8.536999999999995,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 24.145000000000106,
+          "end": 24.165000000000106,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, flame colours came from electrons outside the nucleus. Now we go inside it. An ionisation smoke alarm contains a tiny amount of americium-two-forty-one, a radioactive isotope made by people in nuclear reactors. The wood of a gum tree contains carbon-fourteen, which is radioactive too, and completely natural. So is human-made radiation a different, stronger kind? Let's find out what radiation unstable isotopes give off, and whether it matters where they come from.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "unstable-ionising",
+      "runOn": {
+        "pass": true,
+        "seconds": 27.096,
+        "characters": 417,
+        "charactersPerSecond": 15.389725420726306,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/unstable-ionising.wav",
+        "audioSha256": "595e2b24f73706bc91133f80a7677abc541da67896f7b5dd7d0151dda6dda406",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/unstable-ionising.wav",
+      "seconds": 27.096,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "radiation",
+          "start": 18.036999999999992,
+          "end": 18.524799999999992
+        },
+        {
+          "text": "ions",
+          "start": 26.375000000000114,
+          "end": 26.583000000000112
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7820000000001208,
+        "after": "radiation.",
+        "before": "The"
+      },
+      "peakFraction": 0.872161865234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.227,
+          "end": 2.287,
+          "score": 0.45
+        },
+        {
+          "word": "a",
+          "start": 11.172999999999998,
+          "end": 11.192999999999998,
+          "score": 0
+        },
+        {
+          "word": "it",
+          "start": 24.731000000000112,
+          "end": 24.81200000000011,
+          "score": 0.412
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Remember from our nuclide video, a nucleus is unstable when it has the wrong balance of neutrons and protons, or is simply too big. An isotope with an unstable nucleus is called a radioisotope. Sooner or later its nucleus decays. It changes to become more stable, and gives out radiation. The radiation from decaying nuclei is called ionising, because it can knock electrons off atoms it hits, turning them into ions.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "beta",
+      "runOn": {
+        "pass": true,
+        "seconds": 25.956,
+        "characters": 413,
+        "charactersPerSecond": 15.911542610571738,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/beta.wav",
+        "audioSha256": "94f427dc1ca49236389c19cf2451efdcb67528f3c3681fceff830445e6f8722e",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/beta.wav",
+      "seconds": 25.956,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "out",
+          "start": 13.147999999999993,
+          "end": 13.222999999999992
+        },
+        {
+          "text": "way",
+          "start": 25.433000000000085,
+          "end": 25.538750000000086
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7620000000000076,
+        "after": "out.",
+        "before": "A"
+      },
+      "peakFraction": 0.862945556640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.197,
+          "end": 3.237,
+          "score": 0.497
+        },
+        {
+          "word": "a",
+          "start": 20.528000000000088,
+          "end": 20.568000000000087,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The second is beta. A beta particle is a fast electron, but it doesn't come from the electron shells. It's made in the nucleus, when a neutron changes into a proton and an electron, and the electron shoots out. A beta particle has a charge of minus one and almost no mass. The nucleus now has one more proton, so it's a different element again. Nuclei with too many neutrons, like carbon-fourteen, decay this way.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "gamma",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.929,
+        "characters": 335,
+        "charactersPerSecond": 16.006498160447226,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/gamma.wav",
+        "audioSha256": "06e7d83a6f1a1d43cb7fee8b2e58b24b4be52a1f4d723f5c917a7bf1d914ea59",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/gamma.wav",
+      "seconds": 20.929,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "mass",
+          "start": 12.027999999999995,
+          "end": 12.237599999999995
+        },
+        {
+          "text": "decay",
+          "start": 20.226000000000056,
+          "end": 20.51016666666672
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8659999999999926,
+        "after": "mass.",
+        "before": "Giving"
+      },
+      "peakFraction": 0.83099365234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.3710000000000004,
+          "end": 3.391,
+          "score": 0
+        },
+        {
+          "word": "with",
+          "start": 8.970999999999993,
+          "end": 9.090999999999994,
+          "score": 0.376
+        },
+        {
+          "word": "right",
+          "start": 18.980000000000054,
+          "end": 19.160000000000053,
+          "score": 0.42
+        },
+        {
+          "word": "alpha",
+          "start": 19.562000000000054,
+          "end": 19.763000000000055,
+          "score": 0.451
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "The third is gamma. A gamma ray isn't a particle of matter at all. It's a photon, like the photons of light from our spectra video, but with far more energy. It has no charge and no mass. Giving out a gamma ray doesn't change the protons or neutrons. The nucleus just gets rid of extra energy, often right after an alpha or beta decay.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "penetration",
+      "runOn": {
+        "pass": true,
+        "seconds": 34.562,
+        "characters": 527,
+        "charactersPerSecond": 15.24796018748915,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/penetration.wav",
+        "audioSha256": "1ceecaaef6923d6a436415451a4a9ab07a764c9cfd2aae2cd70a145e2d5c7cb5",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/penetration.wav",
+      "seconds": 34.562,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "aluminium",
+          "start": 9.56099999999999,
+          "end": 9.922799999999988
+        },
+        {
+          "text": "quickly",
+          "start": 25.51500000000011,
+          "end": 25.74337500000011
+        },
+        {
+          "text": "stops",
+          "start": 33.69900000000003,
+          "end": 33.94983333333336
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9100000000000215,
+        "after": "lot.",
+        "before": "Why?"
+      },
+      "peakFraction": 0.81475830078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.5890000000000004,
+          "end": 3.6290000000000004,
+          "score": 0.491
+        },
+        {
+          "word": "a",
+          "start": 8.635999999999989,
+          "end": 8.676999999999989,
+          "score": 0.48
+        },
+        {
+          "word": "it",
+          "start": 32.193000000000026,
+          "end": 32.233000000000025,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Gamma travels much further. Alpha is stopped by a sheet of paper, or a few centimetres of air. Beta gets through paper, but is stopped by a few millimetres of aluminium. Gamma passes through both, and needs several centimetres of lead, or thick concrete, to cut it down a lot. Why? Alpha is big, slow and strongly charged, so it collides with atoms constantly, ionising them, and loses its energy very quickly. Gamma has no charge, so it rarely hits anything, and travels much further. The more it ionises, the sooner it stops.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "natural",
+      "runOn": {
+        "pass": true,
+        "seconds": 27.17,
+        "characters": 418,
+        "charactersPerSecond": 15.384615384615383,
+        "rateExempt": false,
+        "insertedWords": 4,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/natural.wav",
+        "audioSha256": "5f60b2463c9a17e70aaca3d49cacf09a9acb1b9cd6c651bfb6a766b48ae808ec",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/natural.wav",
+      "seconds": 27.17,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "alpha",
+          "start": 9.101999999999993,
+          "end": 9.301999999999992
+        },
+        {
+          "text": "beta",
+          "start": 18.20500000000003,
+          "end": 18.46700000000003
+        },
+        {
+          "text": "rays",
+          "start": 26.44500000000006,
+          "end": 26.58980000000006
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.907000000000064,
+        "after": "particles.",
+        "before": "And"
+      },
+      "peakFraction": 0.8343505859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "hit",
+          "start": 14.45099999999999,
+          "end": 14.550999999999988,
+          "score": 0.456
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now let's sort some real radioisotopes. Natural ones first. Uranium-two-thirty-eight has been in rocks since the Earth formed, and gives out alpha particles. Carbon-fourteen is made in the upper atmosphere, when cosmic rays hit nitrogen, and every living thing takes some in. It gives out beta particles. And potassium-forty is in rocks, soil, food and even your body. It gives out beta particles, and some gamma rays.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "human-made",
+      "runOn": {
+        "pass": true,
+        "seconds": 32.788,
+        "characters": 503,
+        "charactersPerSecond": 15.340978406734173,
+        "rateExempt": false,
+        "insertedWords": 5,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/human-made.wav",
+        "audioSha256": "491f209b9dfb33667f6da924a3f362a396bdfa3b50f538f8d167cbdea1bac1ad",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/human-made.wav",
+      "seconds": 32.788,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "alpha",
+          "start": 4.629,
+          "end": 4.829
+        },
+        {
+          "text": "equipment",
+          "start": 15.750999999999989,
+          "end": 16.05789999999999
+        },
+        {
+          "text": "energy",
+          "start": 24.531000000000073,
+          "end": 24.80614285714293
+        },
+        {
+          "text": "Sydney",
+          "start": 32.16700000000009,
+          "end": 32.38985714285723
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0630000000000948,
+        "after": "equipment.",
+        "before": "And"
+      },
+      "peakFraction": 0.8138427734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 7.880999999999991,
+          "end": 7.940999999999992,
+          "score": 0.343
+        },
+        {
+          "word": "from",
+          "start": 29.221000000000085,
+          "end": 29.421000000000085,
+          "score": 0.487
+        },
+        {
+          "word": "a",
+          "start": 30.103000000000087,
+          "end": 30.143000000000086,
+          "score": 0.483
+        },
+        {
+          "word": "Heights",
+          "start": 31.726000000000084,
+          "end": 32.006000000000085,
+          "score": 0.388
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Americium-two-forty-one, in ionisation smoke alarms, gives out alpha particles. Cobalt-sixty is made by adding a neutron to cobalt-fifty-nine. It gives out beta particles, then gamma rays, and it's used to treat cancers and to sterilise medical equipment. And technetium-ninety-nine M gives out gamma rays, for medical scans. The M means its nucleus holds extra energy, which it gives out as a gamma ray. In Australia, the material it comes from is made in a research reactor at Lucas Heights in Sydney.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "does-it-matter",
+      "runOn": {
+        "pass": true,
+        "seconds": 28.686,
+        "characters": 445,
+        "charactersPerSecond": 15.512793697273931,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/does-it-matter.wav",
+        "audioSha256": "9b8c94919f73b813322286900df0cdb9b4f982d7be7f57dd01713c96a21ddf11",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/does-it-matter.wav",
+      "seconds": 28.686,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "particles",
+          "start": 27.884000000000107,
+          "end": 28.226900000000107
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7020000000001154,
+        "after": "from.",
+        "before": "In"
+      },
+      "peakFraction": 0.87445068359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 20.92900000000011,
+          "end": 20.969000000000108,
+          "score": 0.474
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Look at the two columns. Both have alpha, beta and gamma emitters. Human-made radioisotopes don't give out a special, stronger kind of radiation. The type of radiation is decided by the nucleus, by its balance of protons and neutrons and any extra energy it holds, and not by where it came from. In fact, carbon-fourteen made in a reactor is exactly the same as carbon-fourteen made by cosmic rays, and gives out exactly the same beta particles.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "origin-changes",
+      "runOn": {
+        "pass": true,
+        "seconds": 37.438,
+        "characters": 587,
+        "charactersPerSecond": 15.679256370532613,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/origin-changes.wav",
+        "audioSha256": "11db2d7ec406403c49ab4e482eda640111887f3b253488cb116dc8616a87e234",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/origin-changes.wav",
+      "seconds": 37.438,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "centimetres",
+          "start": 36.51500000000009,
+          "end": 36.9742500000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8830000000001093,
+        "after": "decay.",
+        "before": "Technetium-ninety-nine"
+      },
+      "peakFraction": 0.871826171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "travel",
+          "start": 35.551000000000094,
+          "end": 35.792000000000094,
+          "score": 0.467
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "What does differ is where they come from. Natural radioisotopes are either very long-lived, left over since the Earth formed, or constantly made in nature. Human-made ones can be made to order, so scientists can choose the radiation and the half-life a job needs. Half-life is the time it takes for half of the unstable nuclei in a sample to decay. Technetium-ninety-nine M's gamma rays pass out of the body to a camera, and its half-life of about six hours means its activity falls quickly. Americium's alpha particles ionise the air inside the alarm, and travel only a few centimetres.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "runOn": {
+        "pass": true,
+        "seconds": 17.851,
+        "characters": 278,
+        "charactersPerSecond": 15.573357234888803,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/handoff.wav",
+        "audioSha256": "9b1ee9d9e7533bf82f46576c719aff98b6c4a679a446c5bd4d1010559ca6e683",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/handoff.wav",
+      "seconds": 17.851,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "up",
+          "start": 13.813999999999995,
+          "end": 13.867333333333328
+        },
+        {
+          "text": "reaction",
+          "start": 16.98799999999999,
+          "end": 17.326666666666657
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7440000000000007,
+        "after": "thing.",
+        "before": "Alpha"
+      },
+      "peakFraction": 0.83319091796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 6.088000000000001,
+          "end": 6.1080000000000005,
+          "score": 0
+        },
+        {
+          "word": "add",
+          "start": 13.590999999999994,
+          "end": 13.712999999999994,
+          "score": 0.468
+        },
+        {
+          "word": "to",
+          "start": 15.80399999999999,
+          "end": 15.88399999999999,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 16.36599999999999,
+          "end": 16.38599999999999,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "One last thing. Alpha and beta decay change the number of protons, so the nucleus becomes a different element. When uranium-two-thirty-eight gives out an alpha particle, what's left behind? And how do the numbers add up? Next time, we'll learn how to balance a nuclear reaction.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "runOn": {
+        "pass": true,
+        "seconds": 4.24,
+        "characters": 75,
+        "charactersPerSecond": 17.68867924528302,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "evidence": "work/google-runon-checks/d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "runOn": {
+        "pass": true,
+        "seconds": 32.007,
+        "characters": 478,
+        "charactersPerSecond": 14.93423313650139,
+        "rateExempt": false,
+        "insertedWords": 3,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/hook.wav",
+        "audioSha256": "e69c9ebdf15cb2cb67730c88257eb641f8c8f2b90aaeb0ac890aa80a58c81fbc",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/hook.wav",
+      "seconds": 32.007,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "reactors",
+          "start": 14.571999999999996,
+          "end": 14.963999999999997
+        },
+        {
+          "text": "natural",
+          "start": 21.272,
+          "end": 21.552874999999997
+        },
+        {
+          "text": "from",
+          "start": 31.506000000000085,
+          "end": 31.618000000000087
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8439999999999799,
+        "after": "kind?",
+        "before": "Let's"
+      },
+      "peakFraction": 0.86004638671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Now",
+          "start": 4.34199999999999,
+          "end": 4.5829999999999895,
+          "score": 0.445
+        },
+        {
+          "word": "a",
+          "start": 8.516999999999996,
+          "end": 8.536999999999995,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 24.145000000000106,
+          "end": 24.165000000000106,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, flame colours came from electrons outside the nucleus. Now we go inside it. An ionisation smoke alarm contains a tiny amount of americium-two-forty-one, a radioactive isotope made by people in nuclear reactors. The wood of a gum tree contains carbon-fourteen, which is radioactive too, and completely natural. So is human-made radiation a different, stronger kind? Let's find out what radiation unstable isotopes give off, and whether it matters where they come from.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "unstable-ionising",
+      "runOn": {
+        "pass": true,
+        "seconds": 27.096,
+        "characters": 417,
+        "charactersPerSecond": 15.389725420726306,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/unstable-ionising.wav",
+        "audioSha256": "595e2b24f73706bc91133f80a7677abc541da67896f7b5dd7d0151dda6dda406",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/unstable-ionising.wav",
+      "seconds": 27.096,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "radiation",
+          "start": 18.036999999999992,
+          "end": 18.524799999999992
+        },
+        {
+          "text": "ions",
+          "start": 26.375000000000114,
+          "end": 26.583000000000112
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7820000000001208,
+        "after": "radiation.",
+        "before": "The"
+      },
+      "peakFraction": 0.872161865234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.227,
+          "end": 2.287,
+          "score": 0.45
+        },
+        {
+          "word": "a",
+          "start": 11.172999999999998,
+          "end": 11.192999999999998,
+          "score": 0
+        },
+        {
+          "word": "it",
+          "start": 24.731000000000112,
+          "end": 24.81200000000011,
+          "score": 0.412
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Remember from our nuclide video, a nucleus is unstable when it has the wrong balance of neutrons and protons, or is simply too big. An isotope with an unstable nucleus is called a radioisotope. Sooner or later its nucleus decays. It changes to become more stable, and gives out radiation. The radiation from decaying nuclei is called ionising, because it can knock electrons off atoms it hits, turning them into ions.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "alpha",
+      "runOn": {
+        "pass": true,
+        "seconds": 24.537,
+        "characters": 374,
+        "charactersPerSecond": 15.242287158169296,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/alpha.wav",
+        "audioSha256": "bbb94b24e985e9be336ef9ef906e8b8dca2bf7597bdc0c500f39a8e9e8991ebb",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/alpha.wav",
+      "seconds": 24.537,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nucleus",
+          "start": 8.974999999999987,
+          "end": 9.360874999999986
+        },
+        {
+          "text": "element",
+          "start": 19.090999999999987,
+          "end": 19.319374999999987
+        },
+        {
+          "text": "way",
+          "start": 23.894000000000062,
+          "end": 24.029750000000064
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8879999999999861,
+        "after": "alpha.",
+        "before": "An"
+      },
+      "peakFraction": 0.825958251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "There are three main types. The first is alpha. An alpha particle is two protons and two neutrons stuck together, the same as a helium nucleus. It has a charge of plus two, and a relative mass of four. When a nucleus gives out an alpha particle, it loses two protons, so it becomes a different element. Very heavy nuclei, like uranium-two-thirty-eight, often decay this way.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "beta",
+      "runOn": {
+        "pass": true,
+        "seconds": 25.956,
+        "characters": 413,
+        "charactersPerSecond": 15.911542610571738,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/beta.wav",
+        "audioSha256": "94f427dc1ca49236389c19cf2451efdcb67528f3c3681fceff830445e6f8722e",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/beta.wav",
+      "seconds": 25.956,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "out",
+          "start": 13.147999999999993,
+          "end": 13.222999999999992
+        },
+        {
+          "text": "way",
+          "start": 25.433000000000085,
+          "end": 25.538750000000086
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7620000000000076,
+        "after": "out.",
+        "before": "A"
+      },
+      "peakFraction": 0.862945556640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.197,
+          "end": 3.237,
+          "score": 0.497
+        },
+        {
+          "word": "a",
+          "start": 20.528000000000088,
+          "end": 20.568000000000087,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The second is beta. A beta particle is a fast electron, but it doesn't come from the electron shells. It's made in the nucleus, when a neutron changes into a proton and an electron, and the electron shoots out. A beta particle has a charge of minus one and almost no mass. The nucleus now has one more proton, so it's a different element again. Nuclei with too many neutrons, like carbon-fourteen, decay this way.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "gamma",
+      "runOn": {
+        "pass": true,
+        "seconds": 20.929,
+        "characters": 335,
+        "charactersPerSecond": 16.006498160447226,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/gamma.wav",
+        "audioSha256": "06e7d83a6f1a1d43cb7fee8b2e58b24b4be52a1f4d723f5c917a7bf1d914ea59",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/gamma.wav",
+      "seconds": 20.929,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "mass",
+          "start": 12.027999999999995,
+          "end": 12.237599999999995
+        },
+        {
+          "text": "decay",
+          "start": 20.226000000000056,
+          "end": 20.51016666666672
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8659999999999926,
+        "after": "mass.",
+        "before": "Giving"
+      },
+      "peakFraction": 0.83099365234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.3710000000000004,
+          "end": 3.391,
+          "score": 0
+        },
+        {
+          "word": "with",
+          "start": 8.970999999999993,
+          "end": 9.090999999999994,
+          "score": 0.376
+        },
+        {
+          "word": "right",
+          "start": 18.980000000000054,
+          "end": 19.160000000000053,
+          "score": 0.42
+        },
+        {
+          "word": "alpha",
+          "start": 19.562000000000054,
+          "end": 19.763000000000055,
+          "score": 0.451
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "The third is gamma. A gamma ray isn't a particle of matter at all. It's a photon, like the photons of light from our spectra video, but with far more energy. It has no charge and no mass. Giving out a gamma ray doesn't change the protons or neutrons. The nucleus just gets rid of extra energy, often right after an alpha or beta decay.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "runOn": {
+        "pass": true,
+        "seconds": 11.075,
+        "characters": 165,
+        "charactersPerSecond": 14.89841986455982,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/prediction.wav",
+        "audioSha256": "fc81ee3f3c8c7b6a043388c22354e40fc85078f3711d1f225b2980d981a771e7",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/prediction.wav",
+      "seconds": 11.075,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 7.715999999999994,
+          "end": 7.9379999999999935
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7460000000000006,
+        "after": "prediction.",
+        "before": "Alpha"
+      },
+      "peakFraction": 0.8280029296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Quick prediction. Alpha particles are big and highly charged. Gamma rays have no charge at all. Which do you think gets further through solid material? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "penetration",
+      "runOn": {
+        "pass": true,
+        "seconds": 34.562,
+        "characters": 527,
+        "charactersPerSecond": 15.24796018748915,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/penetration.wav",
+        "audioSha256": "1ceecaaef6923d6a436415451a4a9ab07a764c9cfd2aae2cd70a145e2d5c7cb5",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/penetration.wav",
+      "seconds": 34.562,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "aluminium",
+          "start": 9.56099999999999,
+          "end": 9.922799999999988
+        },
+        {
+          "text": "quickly",
+          "start": 25.51500000000011,
+          "end": 25.74337500000011
+        },
+        {
+          "text": "stops",
+          "start": 33.69900000000003,
+          "end": 33.94983333333336
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9100000000000215,
+        "after": "lot.",
+        "before": "Why?"
+      },
+      "peakFraction": 0.81475830078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.5890000000000004,
+          "end": 3.6290000000000004,
+          "score": 0.491
+        },
+        {
+          "word": "a",
+          "start": 8.635999999999989,
+          "end": 8.676999999999989,
+          "score": 0.48
+        },
+        {
+          "word": "it",
+          "start": 32.193000000000026,
+          "end": 32.233000000000025,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Gamma travels much further. Alpha is stopped by a sheet of paper, or a few centimetres of air. Beta gets through paper, but is stopped by a few millimetres of aluminium. Gamma passes through both, and needs several centimetres of lead, or thick concrete, to cut it down a lot. Why? Alpha is big, slow and strongly charged, so it collides with atoms constantly, ionising them, and loses its energy very quickly. Gamma has no charge, so it rarely hits anything, and travels much further. The more it ionises, the sooner it stops.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "natural",
+      "runOn": {
+        "pass": true,
+        "seconds": 27.17,
+        "characters": 418,
+        "charactersPerSecond": 15.384615384615383,
+        "rateExempt": false,
+        "insertedWords": 4,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/natural.wav",
+        "audioSha256": "5f60b2463c9a17e70aaca3d49cacf09a9acb1b9cd6c651bfb6a766b48ae808ec",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/natural.wav",
+      "seconds": 27.17,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "alpha",
+          "start": 9.101999999999993,
+          "end": 9.301999999999992
+        },
+        {
+          "text": "beta",
+          "start": 18.20500000000003,
+          "end": 18.46700000000003
+        },
+        {
+          "text": "rays",
+          "start": 26.44500000000006,
+          "end": 26.58980000000006
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.907000000000064,
+        "after": "particles.",
+        "before": "And"
+      },
+      "peakFraction": 0.8343505859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "hit",
+          "start": 14.45099999999999,
+          "end": 14.550999999999988,
+          "score": 0.456
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now let's sort some real radioisotopes. Natural ones first. Uranium-two-thirty-eight has been in rocks since the Earth formed, and gives out alpha particles. Carbon-fourteen is made in the upper atmosphere, when cosmic rays hit nitrogen, and every living thing takes some in. It gives out beta particles. And potassium-forty is in rocks, soil, food and even your body. It gives out beta particles, and some gamma rays.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "human-made",
+      "runOn": {
+        "pass": true,
+        "seconds": 32.788,
+        "characters": 503,
+        "charactersPerSecond": 15.340978406734173,
+        "rateExempt": false,
+        "insertedWords": 5,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/human-made.wav",
+        "audioSha256": "491f209b9dfb33667f6da924a3f362a396bdfa3b50f538f8d167cbdea1bac1ad",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/human-made.wav",
+      "seconds": 32.788,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "alpha",
+          "start": 4.629,
+          "end": 4.829
+        },
+        {
+          "text": "equipment",
+          "start": 15.750999999999989,
+          "end": 16.05789999999999
+        },
+        {
+          "text": "energy",
+          "start": 24.531000000000073,
+          "end": 24.80614285714293
+        },
+        {
+          "text": "Sydney",
+          "start": 32.16700000000009,
+          "end": 32.38985714285723
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0630000000000948,
+        "after": "equipment.",
+        "before": "And"
+      },
+      "peakFraction": 0.8138427734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 7.880999999999991,
+          "end": 7.940999999999992,
+          "score": 0.343
+        },
+        {
+          "word": "from",
+          "start": 29.221000000000085,
+          "end": 29.421000000000085,
+          "score": 0.487
+        },
+        {
+          "word": "a",
+          "start": 30.103000000000087,
+          "end": 30.143000000000086,
+          "score": 0.483
+        },
+        {
+          "word": "Heights",
+          "start": 31.726000000000084,
+          "end": 32.006000000000085,
+          "score": 0.388
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Americium-two-forty-one, in ionisation smoke alarms, gives out alpha particles. Cobalt-sixty is made by adding a neutron to cobalt-fifty-nine. It gives out beta particles, then gamma rays, and it's used to treat cancers and to sterilise medical equipment. And technetium-ninety-nine M gives out gamma rays, for medical scans. The M means its nucleus holds extra energy, which it gives out as a gamma ray. In Australia, the material it comes from is made in a research reactor at Lucas Heights in Sydney.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "does-it-matter",
+      "runOn": {
+        "pass": true,
+        "seconds": 28.686,
+        "characters": 445,
+        "charactersPerSecond": 15.512793697273931,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/does-it-matter.wav",
+        "audioSha256": "9b8c94919f73b813322286900df0cdb9b4f982d7be7f57dd01713c96a21ddf11",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/does-it-matter.wav",
+      "seconds": 28.686,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "particles",
+          "start": 27.884000000000107,
+          "end": 28.226900000000107
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7020000000001154,
+        "after": "from.",
+        "before": "In"
+      },
+      "peakFraction": 0.87445068359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 20.92900000000011,
+          "end": 20.969000000000108,
+          "score": 0.474
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Look at the two columns. Both have alpha, beta and gamma emitters. Human-made radioisotopes don't give out a special, stronger kind of radiation. The type of radiation is decided by the nucleus, by its balance of protons and neutrons and any extra energy it holds, and not by where it came from. In fact, carbon-fourteen made in a reactor is exactly the same as carbon-fourteen made by cosmic rays, and gives out exactly the same beta particles.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "origin-changes",
+      "runOn": {
+        "pass": true,
+        "seconds": 37.438,
+        "characters": 587,
+        "charactersPerSecond": 15.679256370532613,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/origin-changes.wav",
+        "audioSha256": "11db2d7ec406403c49ab4e482eda640111887f3b253488cb116dc8616a87e234",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/origin-changes.wav",
+      "seconds": 37.438,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "centimetres",
+          "start": 36.51500000000009,
+          "end": 36.9742500000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8830000000001093,
+        "after": "decay.",
+        "before": "Technetium-ninety-nine"
+      },
+      "peakFraction": 0.871826171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "travel",
+          "start": 35.551000000000094,
+          "end": 35.792000000000094,
+          "score": 0.467
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "What does differ is where they come from. Natural radioisotopes are either very long-lived, left over since the Earth formed, or constantly made in nature. Human-made ones can be made to order, so scientists can choose the radiation and the half-life a job needs. Half-life is the time it takes for half of the unstable nuclei in a sample to decay. Technetium-ninety-nine M's gamma rays pass out of the body to a camera, and its half-life of about six hours means its activity falls quickly. Americium's alpha particles ionise the air inside the alarm, and travel only a few centimetres.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "runOn": {
+        "pass": true,
+        "seconds": 10.036,
+        "characters": 139,
+        "charactersPerSecond": 13.850139497807891,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/memory-line.wav",
+        "audioSha256": "2cc8da05893b20bf18a227b1b2469a1a86c681f83f4bffaa0b874b4825a0194b",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/memory-line.wav",
+      "seconds": 10.036,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "stops",
+          "start": 2.7740000000000005,
+          "end": 3.0140000000000002
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.5030000000000006,
+        "after": "keep.",
+        "before": "Paper"
+      },
+      "peakFraction": 0.825897216796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "So here's the pattern to keep. Paper stops alpha, aluminium stops beta, and lead cuts down gamma. The more it ionises, the sooner it stops.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "runOn": {
+        "pass": true,
+        "seconds": 16.96,
+        "characters": 226,
+        "charactersPerSecond": 13.325471698113207,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/attempt-1.wav",
+        "audioSha256": "27d657448cbedf048a43a375913cca8261631f107e919fb266e588a65f8861a7",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/attempt-1.wav",
+      "seconds": 16.96,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8930000000000007,
+        "after": "turn.",
+        "before": "Cobalt-sixty"
+      },
+      "peakFraction": 0.849945068359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. Cobalt-sixty is a human-made radioisotope that gives out beta particles and gamma rays. Compare beta particles and gamma rays in terms of their charge, penetrating ability and ionising ability. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "runOn": {
+        "pass": true,
+        "seconds": 19.28,
+        "characters": 320,
+        "charactersPerSecond": 16.59751037344398,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 1,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/feedback-1.wav",
+        "audioSha256": "17f2141e401bf21c8c967d9f6b5316a00deee4c62029143e61727527e977ea53",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/feedback-1.wav",
+      "seconds": 19.28,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "charge",
+          "start": 1.427,
+          "end": 1.729
+        },
+        {
+          "text": "round",
+          "start": 18.690000000000033,
+          "end": 18.842500000000033
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8219999999999938,
+        "after": "down.",
+        "before": "Beta"
+      },
+      "peakFraction": 0.878875732421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Beta particles have a charge of minus one, and gamma rays have no charge. Beta is stopped by a few millimetres of aluminium, while gamma needs several centimetres of lead to cut it down. Beta is more ionising than gamma. Saying gamma is the most ionising, because it gets furthest, is the slip. It's the other way round.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "runOn": {
+        "pass": true,
+        "seconds": 14.84,
+        "characters": 224,
+        "charactersPerSecond": 15.09433962264151,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/attempt-2.wav",
+        "audioSha256": "2775ea86e1bdc83905ccc9bd99c286ddec2a4da7f3ed68875a448e1033eb20db",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/attempt-2.wav",
+      "seconds": 14.84,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.6230000000000029,
+        "after": "examples.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.8468017578125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A student claims that human-made radioisotopes give off more dangerous kinds of radiation than natural ones. Evaluate this claim, using one natural and one human-made radioisotope as examples. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "runOn": {
+        "pass": true,
+        "seconds": 22.789,
+        "characters": 332,
+        "charactersPerSecond": 14.568432138312343,
+        "rateExempt": false,
+        "insertedWords": 4,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/feedback-2.wav",
+        "audioSha256": "c2e491f59810c0ee5c9c30cd9fcdc34c3cf1290f3f24b6b2a13677086ce4d4fd",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/feedback-2.wav",
+      "seconds": 22.789,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "particles",
+          "start": 8.161000000000001,
+          "end": 8.539900000000001
+        },
+        {
+          "text": "trap",
+          "start": 22.127000000000113,
+          "end": 22.31980000000011
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8020000000001204,
+        "after": "exposed.",
+        "before": "Saying"
+      },
+      "peakFraction": 0.83819580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "The claim isn't supported. Natural uranium-two-thirty-eight and human-made americium-two-forty-one both give out alpha particles. The type of radiation depends on the nucleus, not its origin. How dangerous a source is depends on its type, amount, half-life and how you're exposed. Saying human-made means more dangerous is the trap.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "runOn": {
+        "pass": true,
+        "seconds": 17.851,
+        "characters": 278,
+        "charactersPerSecond": 15.573357234888803,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/handoff.wav",
+        "audioSha256": "9b1ee9d9e7533bf82f46576c719aff98b6c4a679a446c5bd4d1010559ca6e683",
+        "evidence": "work/google-batch-voice/chem-y11-m1-v17/2026-11-21T08-58-26-558Z/report.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/handoff.wav",
+      "seconds": 17.851,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "up",
+          "start": 13.813999999999995,
+          "end": 13.867333333333328
+        },
+        {
+          "text": "reaction",
+          "start": 16.98799999999999,
+          "end": 17.326666666666657
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7440000000000007,
+        "after": "thing.",
+        "before": "Alpha"
+      },
+      "peakFraction": 0.83319091796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 6.088000000000001,
+          "end": 6.1080000000000005,
+          "score": 0
+        },
+        {
+          "word": "add",
+          "start": 13.590999999999994,
+          "end": 13.712999999999994,
+          "score": 0.468
+        },
+        {
+          "word": "to",
+          "start": 15.80399999999999,
+          "end": 15.88399999999999,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 16.36599999999999,
+          "end": 16.38599999999999,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "One last thing. Alpha and beta decay change the number of protons, so the nucleus becomes a different element. When uranium-two-thirty-eight gives out an alpha particle, what's left behind? And how do the numbers add up? Next time, we'll learn how to balance a nuclear reaction.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "runOn": {
+        "pass": true,
+        "seconds": 4.24,
+        "characters": 75,
+        "charactersPerSecond": 17.68867924528302,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/chem-y11-m1-v17/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "evidence": "work/google-runon-checks/d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5.json"
+      },
+      "audio": "public/audio/chem-y11-m1-v17/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

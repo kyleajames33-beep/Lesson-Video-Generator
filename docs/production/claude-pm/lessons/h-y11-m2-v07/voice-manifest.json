@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/hms-y11-m2-v07.md",
+  "sourceSha256": "39e2cbfdb842e5e4aef35202debd43ee65d09cf1b248d5ccab541ce1af128ff0",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the slow hormone timeline, with a much faster line beneath it: nerves. Now try this. Stand on one leg, then close your eyes. Almost everyone wobbles more. Your muscles, bones and joints didn't change, so what did you take away? And when you wobble, you correct before you've decided to. So where is that decision made?",
+      "audioFile": "public/audio/hms-y11-m2-v07/hook.wav"
+    },
+    {
+      "id": "tree",
+      "text": "The nervous system splits once, then splits again. The central nervous system is the brain and spinal cord. In the brain, the cerebrum's motor cortex starts voluntary movement, the cerebellum coordinates it, keeps balance and stores learned patterns, and the brain stem runs breathing and heart rate. The spinal cord isn't just a cable. It makes decisions too. The peripheral nervous system is every nerve outside them. Sensory neurons carry information in, and motor neurons carry commands out. The motor side splits again. The somatic system drives skeletal muscle, the movements you choose. The autonomic system runs the heart, airways, vessels and gut without you, with two branches: sympathetic and parasympathetic.",
+      "audioFile": "public/audio/hms-y11-m2-v07/tree.wav"
+    },
+    {
+      "id": "neuron",
+      "text": "All of it is built from neurons. Dendrites receive signals, the cell body combines them, and the axon carries the impulse away. Many axons are wrapped in myelin, a fatty sheath that lets the signal jump between bare points along the axon, many times faster. Where a neuron meets another cell, they don't touch. The signal crosses a synapse as a chemical, and each chemical crossing adds a small delay.",
+      "audioFile": "public/audio/hms-y11-m2-v07/neuron.wav"
+    },
+    {
+      "id": "pathway",
+      "text": "Now a voluntary movement, say a kick. The motor cortex sends the command. It runs down the spinal cord to a motor neuron, along its axon to the neuromuscular junction, where a chemical crosses to the muscle fibres, and they contract. One motor neuron and all the fibres it controls is a motor unit, and it's all or nothing. When it fires, every fibre in it contracts fully. Units vary hugely. One moving your eye has about ten fibres or fewer. One in your quadriceps can have more than a thousand.",
+      "audioFile": "public/audio/hms-y11-m2-v07/pathway.wav"
+    },
+    {
+      "id": "grading",
+      "text": "So how can the same muscle lift a pencil or a barbell? Fibres can't contract a little, so the nervous system grades force two ways. Recruitment switches on more units, the small slow ones first and the large fast ones last. Rate coding fires the same units faster, so the fibres can't relax between impulses, and the pull becomes stronger and smoother. Few units, slowly, for the pencil. Many, fast, for the barbell.",
+      "audioFile": "public/audio/hms-y11-m2-v07/grading.wav"
+    },
+    {
+      "id": "feedback",
+      "text": "A command is only half the loop. The body also needs to know what happened, and that's proprioception: sensing where your limbs are, and how fast they're moving, without looking. Muscle spindles sense a muscle's length and how fast it changes. Golgi tendon organs sense tension in the tendon. Joint receptors and the inner ear report joint angle and head position. So, eyes closed, you lost one input, but kept the others. They have to do all the work, so corrections come later and bigger. That's the wobble.",
+      "audioFile": "public/audio/hms-y11-m2-v07/feedback.wav"
+    },
+    {
+      "id": "reflex",
+      "text": "Some corrections can't wait for the brain. In a reflex arc, a receptor detects the change, a sensory neuron carries it to the spinal cord, where it usually passes through at least one connecting neuron, and a motor neuron fires the muscle. The knee jerk skips even that step. The brain is told afterwards. A reflex is faster because the route is shorter and crosses fewer synapses, not because its neurons are faster. That's where your wobble starts to be corrected: fast reflexes in the spinal cord, then automatic responses in the brain stem and cerebellum, all before you decide anything. It also explains rehab. A sprained ankle damages the receptors as well as the ligament, so balance training retrains the loop, not just the muscle.",
+      "audioFile": "public/audio/hms-y11-m2-v07/reflex.wav"
+    },
+    {
+      "id": "autonomic",
+      "text": "The autonomic system is where nerves join the systems from earlier. In exercise, the sympathetic branch takes over. It raises heart rate and the force of each beat, widens the airways, opens arterioles to working muscle and closes those to the gut. It also tells the adrenal glands to release adrenaline. Nerves act in milliseconds but can't hold the response, and adrenaline is slower but lasts, so together you get speed and staying power. Afterwards, the parasympathetic branch brings heart rate back down.",
+      "audioFile": "public/audio/hms-y11-m2-v07/autonomic.wav"
+    },
+    {
+      "id": "better-worse",
+      "text": "Neural control isn't fixed. In the first weeks of strength training, you get stronger before your muscles grow, because you recruit more units, fire them faster and time them better. It gets worse with fatigue, which cuts the brain's drive, so technique slips late in a session. Sleep loss slows reactions and skill learning. Alcohol slows signals and balance. Heat and dehydration raise errors. And concussion disrupts the brain directly, so it needs medical clearance and a gradual return, because a second knock before recovery is far more dangerous.",
+      "audioFile": "public/audio/hms-y11-m2-v07/better-worse.wav"
+    },
+    {
+      "id": "memory",
+      "text": "Two things to remember. Every movement is a loop: command out, information back. And reflexes win on route, not speed: a shorter path, with fewer synapses.",
+      "audioFile": "public/audio/hms-y11-m2-v07/memory.wav"
+    },
+    {
+      "id": "attempt",
+      "text": "Two exam questions. First. Explain why a sprinter's reaction to the starting gun is much slower than a knee-jerk reflex, even though both use the same kind of neurons. Pause here to answer.",
+      "audioFile": "public/audio/hms-y11-m2-v07/attempt.wav"
+    },
+    {
+      "id": "feedback-one",
+      "text": "The gun must be heard, and the brain must interpret it and decide, before the motor cortex sends the command down the spinal cord to the muscles. That's a longer route, through many more synapses, each adding a delay. The knee-jerk stays in the spinal cord. The classic mistake is saying the sprinter's nerves are slower.",
+      "audioFile": "public/audio/hms-y11-m2-v07/feedback-one.wav"
+    },
+    {
+      "id": "attempt-two",
+      "text": "Second. Explain how the nervous system detects and corrects a loss of balance while an athlete is running on uneven ground. Pause here to answer.",
+      "audioFile": "public/audio/hms-y11-m2-v07/attempt-two.wav"
+    },
+    {
+      "id": "feedback-two",
+      "text": "Detection: the ankle tips, so muscle spindles, joint receptors and the inner ear send signals in along sensory neurons. Correction: a reflex through the spinal cord fires the ankle muscles first, then the cerebellum fine-tunes the next steps. Name the receptors, the route and the response. The classic mistake is saying the athlete decides to correct it.",
+      "audioFile": "public/audio/hms-y11-m2-v07/feedback-two.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So, to explain any movement, follow the command out and the information back. Now widen the loop. Around one netball shot, the skeleton, muscles, heart and lungs, digestion and hormones are all working at once. How do they work together?",
+      "audioFile": "public/audio/hms-y11-m2-v07/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/hms-y11-m2-v07/key-notes.wav"
+    }
+  ]
+}

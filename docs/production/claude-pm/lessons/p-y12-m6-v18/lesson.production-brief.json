@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v18/lesson.json",
-    "lessonSha256": "539bd7819f8730c92826697a35874494096af79f34f5261a2f33426ea19f4844"
+    "lessonSha256": "1c7c15e9238391d5145a9dc65d3580f07df23c25ac66fddc2ee50c8f2828b233"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -37,14 +37,14 @@
       "visualReference": "docs/production/claude-pm/lessons/phys-y12-m6-v18.md#scene-1",
       "teachingReason": "Here's our motor, turned by an outside drive, so it works as a generator. Here's the simplest version, one coil between two magnets, with a split ring and brushes. On the oscilloscope, the output rises and falls in a row of humps, but it never goes below zero. It always pushes current the same way, so it's a DC generator. Now swap just one part, the split ring, for two separate rings, and turn it at the same speed. The trace goes up, then down, then up again. It alternates, so this is an AC generator. So what's different, the emf the coil makes, or how it connects to the outside circuit? Make your prediction. It's the connection.",
       "narrationCue": "zero / down / prediction / connection",
-      "motionPurpose": "opens on v17's final frame (see \"Opening frame\"; painted hobby motor, flywheel and oscilloscope); the chip becomes the heading: \"How do simple AC and DC generators produce different outputs?\". On \"simplest version\" camera change: the hobby motor shrinks to a corner inset (about 300 px) and the generator stage builds (coil, pole blocks \"N\" and \"S\", slate field arrows, split ring and brushes, coded leads to the lamp holder plate `phys-y11-lamp-holder-v1.png`); the oscilloscope plate (`phys-y11-oscilloscope-v1.png`, its screen at least 400 px wide) moves to the right with its leads. The coil turns (amber outline arrow \"outside drive\"). On \"zero\" the trace draws a row of half-sine humps above a dashed zero line, red hand tag \"never below zero\". On \"DC generator\" a chip \"DC: one direction\". On \"swap just one part\" the split ring slides out and two slip rings slide in (only that part moves; navy hand tag \"same coil, same field, same speed\" and a navy pen ring round the rings). On \"down\" the trace redraws as a full sine wave crossing the zero line. On \"AC generator\" a chip \"AC: alternates\". On \"prediction\" a 3 s `Countdown` beside two chips: \"the emf the coil makes\" and \"how the coil connects to the outside circuit\". On \"connection\" the second chip ticks; the first fades with a small tag \"same in both\".",
+      "motionPurpose": "opens on v17a's final frame (see \"Opening frame\"; painted hobby motor, flywheel and oscilloscope); the chip becomes the heading: \"How do simple AC and DC generators produce different outputs?\". On \"simplest version\" camera change: the hobby motor shrinks to a corner inset (about 300 px) and the generator stage builds (coil, pole blocks \"N\" and \"S\", slate field arrows, split ring and brushes, coded leads to the lamp holder plate `phys-y11-lamp-holder-v1.png`); the oscilloscope plate (`phys-y11-oscilloscope-v1.png`, its screen at least 400 px wide) moves to the right with its leads. The coil turns (amber outline arrow \"outside drive\"). On \"zero\" the trace draws a row of half-sine humps above a dashed zero line, red hand tag \"never below zero\". On \"DC generator\" a chip \"DC: one direction\". On \"swap just one part\" the split ring slides out and two slip rings slide in (only that part moves; navy hand tag \"same coil, same field, same speed\" and a navy pen ring round the rings). On \"down\" the trace redraws as a full sine wave crossing the zero line. On \"AC generator\" a chip \"AC: alternates\". On \"prediction\" a 3 s `Countdown` beside two chips: \"the emf the coil makes\" and \"how the coil connects to the outside circuit\". On \"connection\" the second chip ticks; the first fades with a small tag \"same in both\".",
       "motionRole": "hold",
-      "onScreenChange": "opens on v17's final frame (see \"Opening frame\"; painted hobby motor, flywheel and oscilloscope); the chip becomes the heading: \"How do simple AC and DC generators produce different outputs?\". On \"simplest version\" camera change: the hobby motor shrinks to a corner inset (about 300 px) and the generator stage builds (coil, pole blocks \"N\" and \"S\", slate field arrows, split ring and brushes, coded leads to the lamp holder plate `phys-y11-lamp-holder-v1.png`); the oscilloscope plate (`phys-y11-oscilloscope-v1.png`, its screen at least 400 px wide) moves to the right with its leads. The coil turns (amber outline arrow \"outside drive\"). On \"zero\" the trace draws a row of half-sine humps above a dashed zero line, red hand tag \"never below zero\". On \"DC generator\" a chip \"DC: one direction\". On \"swap just one part\" the split ring slides out and two slip rings slide in (only that part moves; navy hand tag \"same coil, same field, same speed\" and a navy pen ring round the rings). On \"down\" the trace redraws as a full sine wave crossing the zero line. On \"AC generator\" a chip \"AC: alternates\". On \"prediction\" a 3 s `Countdown` beside two chips: \"the emf the coil makes\" and \"how the coil connects to the outside circuit\". On \"connection\" the second chip ticks; the first fades with a small tag \"same in both\".",
+      "onScreenChange": "opens on v17a's final frame (see \"Opening frame\"; painted hobby motor, flywheel and oscilloscope); the chip becomes the heading: \"How do simple AC and DC generators produce different outputs?\". On \"simplest version\" camera change: the hobby motor shrinks to a corner inset (about 300 px) and the generator stage builds (coil, pole blocks \"N\" and \"S\", slate field arrows, split ring and brushes, coded leads to the lamp holder plate `phys-y11-lamp-holder-v1.png`); the oscilloscope plate (`phys-y11-oscilloscope-v1.png`, its screen at least 400 px wide) moves to the right with its leads. The coil turns (amber outline arrow \"outside drive\"). On \"zero\" the trace draws a row of half-sine humps above a dashed zero line, red hand tag \"never below zero\". On \"DC generator\" a chip \"DC: one direction\". On \"swap just one part\" the split ring slides out and two slip rings slide in (only that part moves; navy hand tag \"same coil, same field, same speed\" and a navy pen ring round the rings). On \"down\" the trace redraws as a full sine wave crossing the zero line. On \"AC generator\" a chip \"AC: alternates\". On \"prediction\" a 3 s `Countdown` beside two chips: \"the emf the coil makes\" and \"how the coil connects to the outside circuit\". On \"connection\" the second chip ticks; the first fades with a small tag \"same in both\".",
       "motionTools": [
         "Countdown",
         "QuestionCard"
       ],
-      "holdPurpose": "Retain the design's 3 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "flux-turning-coil",
@@ -261,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v18/recording-source-check.json",
-      "sha256": "c6512a0f0bb5dec4bb936b7a607f2c22c1b582e09612c5a41f33ccd0c095abff"
+      "sha256": "830860ee7954b2986c479519eb5e66149e5dc1919f671f20894c1ecb64e36d79"
     }
   },
   "studentLearningReview": {
@@ -272,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v18/recording-source-check.json",
-      "sha256": "c6512a0f0bb5dec4bb936b7a607f2c22c1b582e09612c5a41f33ccd0c095abff"
+      "sha256": "830860ee7954b2986c479519eb5e66149e5dc1919f671f20894c1ecb64e36d79"
     }
   },
   "voicedPreview": {

@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "7e8292cc5ce921b2569b454cf27a39ddd32fe70a114656f089ffbd1085017616",
+  "newGreenhouse": {
+    "file": "public/assets/biology/y11-greenhouse-v1.png",
+    "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-0852cb4a-af6b-4f95-b654-c009c0a82939.png",
+    "sha256": "d30fc5219d06a416ede16ee39805fe282d1aed941158f739e6d8fb73d9f719a9",
+    "method": "Built-in imagegen, native PNG copied unchanged.",
+    "scope": "Static native paper/dark and 560 px painted-height check. No physical glass simulation, code integration or motion clearance.",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "paintedBoundsAbove1": [
+      225,
+      149,
+      1319,
+      888
+    ],
+    "paintedMargins": [
+      0.146484375,
+      0.1455078125,
+      0.14127604166666666,
+      0.1328125
+    ],
+    "promptSet": "work/brief242/greenhouse-prompts-17-nov.json",
+    "anchors": {
+      "coordinateSystem": "Native 1536 x 1024 pixels, manual guides within 15 px.",
+      "roofPeak": [
+        1000,
+        160
+      ],
+      "doorBox": [
+        945,
+        400,
+        1110,
+        835
+      ],
+      "gasPipeEntryGuide": [
+        280,
+        790
+      ]
+    }
+  },
+  "numbers": {
+    "lightRun": [
+      {
+        "light": 1,
+        "carbonDioxide": 3,
+        "temperatureCapacity": 4.5,
+        "rate": 1
+      },
+      {
+        "light": 2,
+        "carbonDioxide": 3,
+        "temperatureCapacity": 4.5,
+        "rate": 2
+      },
+      {
+        "light": 3,
+        "carbonDioxide": 3,
+        "temperatureCapacity": 4.5,
+        "rate": 3
+      },
+      {
+        "light": 4,
+        "carbonDioxide": 3,
+        "temperatureCapacity": 4.5,
+        "rate": 3
+      },
+      {
+        "light": 5,
+        "carbonDioxide": 3,
+        "temperatureCapacity": 4.5,
+        "rate": 3
+      }
+    ],
+    "enrichedRun": {
+      "light": 5,
+      "carbonDioxide": 5,
+      "temperatureCapacity": 4.5,
+      "rate": 4.5
+    },
+    "temperatureStage": {
+      "points": [
+        [
+          5,
+          0.5
+        ],
+        [
+          30,
+          3
+        ],
+        [
+          45,
+          0.6
+        ]
+      ],
+      "peak": 3,
+      "peakInsideBand": true
+    },
+    "feedbackPoints": [
+      [
+        28,
+        3
+      ],
+      [
+        42,
+        1
+      ]
+    ],
+    "temperatureCeilingConflict": {
+      "earlierTemperatureLimitedRate": 4.5,
+      "laterTemperatureMaximum": 3,
+      "sameScalePossible": false,
+      "reason": "A minimum of three capacities cannot exceed the maximum of its temperature capacity. A changed normalisation or different run must be defined if these values are retained."
+    },
+    "enrichmentRatios": [
+      1.9047619047619047,
+      2.857142857142857
+    ],
+    "emDashCount": 0,
+    "u2061Count": 0,
+    "scope": "Arithmetic and internal model definition only. No scientific rate calibration or engine execution."
+  },
+  "anchors": "docs/production/claude-pm/assets/y11fa2v06-anchors.json",
+  "priorChangedNarrationCheck": "docs/production/claude-pm/checks/y11b-fa2-v06-upgrade-changed-narration-check.md",
+  "scope": "Static three-plate check and numerical model consistency. No source edits or recording clearance."
+}

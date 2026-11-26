@@ -1,0 +1,40 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v06.md",
+  "assets": [
+    {
+      "name": "hms-pre-training-meal-v1.png",
+      "path": "public/assets/hms/hms-pre-training-meal-v1.png",
+      "requestedDestination": "public/assets/hms/hms-pre-training-meal-v1.png",
+      "status": "accepted",
+      "sha256": "0566e4a3f6efe23c5b5f4f7b8e9139c8b525aa7cb5d08439a9a645ec13413394",
+      "size": [
+        1572,
+        1001
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        34,
+        35,
+        1531,
+        958
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v06.md",
+      "sourceBriefSha256": "03bd39632031942c559a1f5b114deb44553be63a7a9ac598a2a61dee2ce794ae",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-pre-training-meal-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-a512492e-fd6e-4f3a-955d-6ec26691350e.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 1. `hms-pre-training-meal-v1.png` (2200 x 1400): on a wooden change-room bench, an open takeaway-style container with a half-eaten greasy meal (chips and a burger, no logo), a crumpled plain napkin, beside a pair of football boots and a plain drink bottle; a plain wall clock behind showing about 3.45. No people, hands or faces anywhere in the image; no brand marks, no readable text.\n\nHand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b06-provenance.json`.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "scope": "HMS Module 1 or Module 2 v01-v08 only"
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

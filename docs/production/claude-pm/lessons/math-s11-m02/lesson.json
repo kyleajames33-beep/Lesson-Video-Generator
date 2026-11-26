@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-m02",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "c600610c5454bd229e4b515189a05ff91af41e4b4fc2fed81e54602b9ebce100",
+  "scenes": [
+    {
+      "id": "hook-how-much-tax",
+      "title": "hook: how much of this is tax?",
+      "voiceover": {
+        "text": "Twenty dollars thirty at the supermarket, and the receipt says it includes GST. GST is the goods and services tax, a ten per cent tax on most things sold in Australia. The shop adds it to the price and passes it on to the government. But look closely. Bread, milk and bananas have a little mark beside them. They're GST-free, because most basic food has no GST at all. So how much of this twenty dollars thirty is really tax? And when you travel overseas, the tax has another name and another rate. How do we add or remove GST, and how does VAT work?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "adding-gst",
+      "title": "adding GST",
+      "voiceover": {
+        "text": "Start with a plumber's quote. Three hundred and forty dollars plus GST. Plus GST means the GST hasn't been added yet. GST is a ten per cent increase, and last time a ten per cent increase was one multiplication. Times one point one. Three hundred and forty times one point one is three hundred and seventy-four dollars. That's the price including GST, what you actually pay. If you only want the tax itself, take ten per cent of the price before GST. Three hundred and forty times nought point one is thirty-four dollars. And three forty plus thirty-four is three seventy-four."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "removing-gst",
+      "title": "removing GST: back the same way",
+      "voiceover": {
+        "text": "Now the other direction. A laptop costs one thousand six hundred and twenty-eight dollars, including GST. What was it before the GST went on? Going forwards, you multiplied by one point one. So going backwards, you divide by one point one. Sixteen twenty-eight divided by one point one is fourteen hundred and eighty dollars. Check it forwards. Fourteen eighty times one point one is sixteen twenty-eight. A tempting slip is to take ten per cent off sixteen twenty-eight, times nought point nine. That gives fourteen sixty-five twenty, and it's wrong. The ten per cent was ten per cent of fourteen eighty, not of sixteen twenty-eight."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "one-part-in-eleven",
+      "title": "the GST inside a price: one part in eleven",
+      "voiceover": {
+        "text": "So how much of the sixteen twenty-eight was GST? Here's a picture that makes it quick. The price before GST is ten equal parts. The GST is ten per cent, so it's one more part, the same size. That makes eleven parts altogether. So the GST is one part in eleven of the price including GST. Sixteen twenty-eight divided by eleven is a hundred and forty-eight dollars. And fourteen eighty plus a hundred and forty-eight is sixteen twenty-eight. Notice that ten per cent of sixteen twenty-eight would be a hundred and sixty-two eighty, too much, because sixteen twenty-eight is eleven parts, not ten. Try a quick one. A fifty-five dollar haircut, including GST, is eleven parts of five dollars. So five dollars is GST, and fifty dollars is the price before GST."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "receipt",
+      "title": "the receipt: only the taxed lines",
+      "voiceover": {
+        "text": "Back to the supermarket. Twenty dollars thirty altogether, but the bread, milk and bananas are GST-free. Only the chips and the soft drink carry GST. They add to eight dollars eighty. That's eleven parts, so the GST is eight eighty divided by eleven, eighty cents. So of the twenty dollars thirty, just eighty cents is tax. Dividing the whole twenty thirty by eleven gives a dollar eighty-five, which taxes the bread and milk as well. And notice that the GST was never added at the register. In Australia, shops show prices with the GST already in, so the price you see is the price you pay."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "vat-overseas",
+      "title": "VAT overseas: same idea, new rate",
+      "voiceover": {
+        "text": "Overseas, it's the same kind of tax with a different name and rate. Many countries call it VAT, value-added tax. In the United Kingdom, VAT is twenty per cent. Say a hoodie in London costs thirty-six pounds, including VAT. The price before VAT is a hundred per cent, and VAT adds twenty, so a hundred and twenty altogether. That's five parts plus one part. So the VAT is one part in six. Thirty-six divided by six is six pounds of VAT, and the price before VAT is thirty pounds. New Zealand calls its tax GST, but it's fifteen per cent. A jacket at sixty-nine New Zealand dollars, including GST, was sixty-nine divided by one point one five, sixty dollars before tax, so the tax is nine. Each country sets its own rate, and rates can change, so count the parts for the rate you're given."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the summary. In Australia, GST is one part in eleven of a price that includes it. To add GST, multiply by one point one. To remove it, divide by one point one. And for any other rate, count the parts."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A mechanic's bill is four hundred and sixty-two dollars, including GST. Find the GST included in the bill, and the price before GST. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The GST is one part in eleven. Four sixty-two divided by eleven is forty-two dollars. The price before GST is four sixty-two divided by one point one, four hundred and twenty dollars. Taking ten per cent of four sixty-two, forty-six twenty, is the slip. The ten per cent was of four twenty."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. In the United Kingdom, VAT is twenty per cent. A hotel room in London costs fifty-four pounds a night, including VAT. Find the price before VAT, and the VAT included. A friend says the VAT is twenty per cent of fifty-four pounds, ten pounds eighty. Explain the error. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Fifty-four divided by one point two is forty-five pounds before VAT. So the VAT is nine pounds, one part in six. The friend took twenty per cent of the wrong amount. The twenty per cent was added to forty-five pounds, not to fifty-four."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So GST and VAT are percentage increases, and you can always run them backwards. Next, a different kind of price. These headphones are four hundred and eighty dollars. But at the checkout, there's another button. Four payments of a hundred and twenty, and take them home today. Is that really the same price? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

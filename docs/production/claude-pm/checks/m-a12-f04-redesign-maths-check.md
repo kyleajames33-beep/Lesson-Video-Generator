@@ -10,3 +10,10 @@ Source follow-up, 11 Nov: direct browser inspection confirms lesson 03 SA3 and i
 
 
 Source follow-up,11November: Current lesson03 Problem3 and SA3 worked steps independently confirmed: term3500n+58500, sum777500, first threshold year12 and100500. All source examples this design uses are now confirmed. See work/brief240/source-followups-nov11.md. Existing findings retained.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `0ce652602f73af3429922a2714e96e3413624aabcc55f3243f6ac2800a775214`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. Year1 versus time0 starting conventions are explicit. Six years after planting gives120+6*45=390cm, the seventh listed term. Zero-stop note is now limited to this machine. Both findings resolved. Root revised the hillside to level-overall rolling terrain; replacement QA underway.
+
+Recount:5810characters in15spoken strings; all declared counts agree, no em dash. New narration scenes:8. Exact strings and cues in work/brief240/f04-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

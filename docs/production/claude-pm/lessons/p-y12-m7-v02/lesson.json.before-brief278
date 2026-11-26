@@ -1,0 +1,158 @@
+{
+  "id": "phys-y12-m7-v02",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "6c0e20b5bad7b7539688ed2330cf0c06f9e6454f590e3f48a0fe1e7c5c1aebbb",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (a speed too fast to time)",
+      "voiceover": {
+        "text": "Maxwell predicted a speed for light. To check a speed, you need a distance and a time, because speed equals distance over time. The trouble is the time. Light crosses a room in about ten nanoseconds, far too fast for any stopwatch. So you either make the distance enormous, or you find a clever way to time something tiny. Make your prediction. Which came first, a measurement using planets, or a measurement on the ground? It was the planets, by about a hundred and seventy years."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "romer",
+      "title": "a moon that runs late",
+      "voiceover": {
+        "text": "In 1676, the Danish astronomer Ole Rømer was timing Jupiter's moon Io. Io slips into Jupiter's shadow every forty-two and a half hours, as regular as a clock. But the eclipses came later and later as Earth moved away from Jupiter, and earlier as it came closer. Io wasn't misbehaving. The light simply had further to travel. With Earth on the far side of its orbit, the light crosses an extra distance, the orbit's diameter, about three times ten to the eleven metres. Today, that delay is measured at about a thousand seconds. Distance over time gives three times ten to the eight metres per second. Rømer's own delay was too long, about twenty-two minutes, which gives about two point three times ten to the eight. But his timing showed that light's speed is finite."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fizeau",
+      "title": "a spinning wheel",
+      "voiceover": {
+        "text": "In 1849, Hippolyte Fizeau brought the measurement down to Earth. Light passes through a gap between the teeth of a spinning wheel, travels to a mirror eight point six kilometres away, and comes back through the wheel. Spin slowly, and the light returns through the same gap. Spin faster, and by the time the light gets back, the gap has moved on and a tooth blocks it. Moving from a gap to the next tooth takes half of one tooth spacing. His wheel had seven hundred and twenty teeth, and the light was first blocked at twelve point six turns per second. That makes the round-trip time five point five one times ten to the minus five seconds. Twice the distance, over that time, gives three point one three times ten to the eight metres per second."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "foucault",
+      "title": "a spinning mirror",
+      "voiceover": {
+        "text": "A few years later, Léon Foucault replaced the wheel with a spinning mirror. The light bounces off the spinning mirror to a fixed mirror, and back. In that tiny round-trip time, the spinning mirror turns through a small angle, so the returning beam comes back slightly off its original path. From that angle, the spin rate and the distance, he found a speed close to three times ten to the eight metres per second. His apparatus was compact enough to put a tube of water in the beam, which matters in a later video."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "time-of-flight",
+      "title": "timing a pulse today",
+      "voiceover": {
+        "text": "Today, you can time light directly. A school version uses a laser that sends short pulses, and two fast light sensors on an oscilloscope. One sensor sees the pulse leave. The other sees it after an extra trip to a mirror fifteen metres away and back. That's thirty metres of extra path. The oscilloscope shows the two pulses, about a hundred nanoseconds apart. Say you measure a hundred and one nanoseconds. Thirty metres over a hundred and one nanoseconds is two point nine seven times ten to the eight metres per second. Change the extra path, measure each delay, and the gradient of the graph of path against delay is the speed of light."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "defined-c",
+      "title": "the twist: c is now exact",
+      "voiceover": {
+        "text": "Here's the twist. These measurements became so precise that, in 1983, scientists turned the relationship around. The metre is now defined as the distance light travels in a vacuum in one, two hundred and ninety-nine million, seven hundred and ninety-two thousand, four hundred and fifty-eighth of a second. So the speed of light in a vacuum is exactly two hundred and ninety-nine million, seven hundred and ninety-two thousand, four hundred and fifty-eight metres per second, by definition. Rømer's, Fizeau's and Foucault's numbers were measured estimates, with uncertainty. Today's c has no uncertainty at all."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ranging",
+      "title": "now time tells you distance",
+      "voiceover": {
+        "text": "So the same time-and-distance measurement now runs backwards. Fix c, measure a time, and you get a distance. Reflectors placed on the Moon send back laser pulses from Earth. A pulse returns about two point five six seconds after it leaves. The light went there and back, so the distance is c times the time, divided by two, about three point eight four times ten to the eight metres. Your phone's GPS does the same with satellite signals. A timing error of just one microsecond makes a distance error of about three hundred metres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the switch. Then, measure distance and time, and find c. Now, fix c, time it, and find the distance."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A toothed wheel with five hundred teeth sends light to a mirror seven point five kilometres away. The returning light is first blocked when the wheel turns at twenty turns per second. Calculate the speed of light. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Gap to tooth is half a tooth spacing, so the time is one over two times five hundred times twenty, which is five times ten to the minus five seconds. The light travels fifteen kilometres there and back. Fifteen thousand metres over that time gives three times ten to the eight metres per second. The classic slip is using only the one-way distance, which gives half the right answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A laser pulse sent to a reflector on the Moon returns two point five one seconds later. Calculate the distance to the reflector, and explain why this is a measurement of distance, not of the speed of light. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The pulse goes there and back, so the distance is c times two point five one, divided by two, about three point seven six times ten to the eight metres. Since 1983, the speed of light is fixed exactly, by definition, so timing the trip can only tell you the distance. The slip is forgetting to halve the time, which doubles the distance."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a time-and-distance measurement revealed the speed of light: first with planets, then with spinning wheels and mirrors, now with electronics, until c became exact. But light isn't only a signal with a speed. Spread it out into its colours, and it carries a message about whatever made it. A hot filament, a glowing gas and sunlight each give a different pattern. How do different sources produce different spectral patterns?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

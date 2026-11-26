@@ -1,0 +1,553 @@
+WEBVTT
+
+00:00:00.301 --> 00:00:02.289
+Last video ended with this question.
+
+00:00:02.952 --> 00:00:05.342
+Six equal weights on a beam balance right
+
+00:00:05.363 --> 00:00:07.010
+in the middle, at three point five.
+
+00:00:07.694 --> 00:00:10.526
+That's the expected value of one roll, but
+
+00:00:10.547 --> 00:00:12.435
+a die can never show three point five.
+
+00:00:13.584 --> 00:00:14.915
+Now a lopsided case.
+
+00:00:15.820 --> 00:00:17.722
+A vet clinic finds that a cat makes
+
+00:00:17.883 --> 00:00:20.726
+zero, one, two or three visits a year,
+
+00:00:21.068 --> 00:00:23.991
+with probabilities zero point one, zero point three,
+
+00:00:24.373 --> 00:00:26.435
+zero point four and zero point two.
+
+00:00:27.222 --> 00:00:28.675
+Where does this beam balance?
+
+00:00:29.120 --> 00:00:30.146
+What does that number mean?
+
+00:00:30.630 --> 00:00:32.198
+And how spread out are the visits?
+
+00:00:32.735 --> 00:00:34.202
+Here's what the balance point means.
+
+00:00:34.806 --> 00:00:37.431
+Picture many cats, one after another, and keep
+
+00:00:37.472 --> 00:00:39.014
+a running average of their visits.
+
+00:00:39.737 --> 00:00:42.564
+This run starts two, two, three, so the
+
+00:00:42.626 --> 00:00:43.728
+average is high at first.
+
+00:00:44.312 --> 00:00:45.865
+After ten cats it's two point one.
+
+00:00:46.531 --> 00:00:48.482
+After a thousand cats, this run has settled
+
+00:00:48.523 --> 00:00:49.649
+at about one point seven.
+
+00:00:50.334 --> 00:00:53.065
+Another run would wobble differently, but long runs
+
+00:00:53.207 --> 00:00:54.512
+settle near the same centre.
+
+00:00:55.277 --> 00:00:57.873
+So the expected value is the long-run average
+
+00:00:58.055 --> 00:00:58.155
+of X.
+
+00:00:59.445 --> 00:01:01.135
+No cat makes one point seven visits.
+
+00:01:01.519 --> 00:01:03.194
+It isn't a prediction for one cat.
+
+00:01:03.780 --> 00:01:05.847
+It's the centre the results settle around.
+
+00:01:06.491 --> 00:01:08.378
+We write it as E of X, or
+
+00:01:08.399 --> 00:01:10.406
+the Greek letter mu, and it's a measure
+
+00:01:10.467 --> 00:01:11.832
+of centre for the distribution.
+
+00:01:12.436 --> 00:01:14.270
+Where does one point seven come from?
+
+00:01:14.996 --> 00:01:17.121
+For a fair die, every value has the
+
+00:01:17.163 --> 00:01:19.589
+same weight, so E of X is just
+
+00:01:19.630 --> 00:01:21.936
+the ordinary average, twenty-one over six.
+
+00:01:22.579 --> 00:01:24.348
+The cat visits aren't uniform.
+
+00:01:24.972 --> 00:01:26.238
+Imagine a thousand cats.
+
+00:01:26.781 --> 00:01:29.225
+About a hundred make no visits, three hundred
+
+00:01:29.266 --> 00:01:31.871
+make one, four hundred make two and two
+
+00:01:31.932 --> 00:01:32.813
+hundred make three.
+
+00:01:33.335 --> 00:01:36.383
+That's seventeen hundred visits, so the average is
+
+00:01:36.484 --> 00:01:37.165
+one point seven.
+
+00:01:37.989 --> 00:01:40.675
+Dividing each count by a thousand gives its
+
+00:01:40.756 --> 00:01:41.397
+probability.
+
+00:01:41.939 --> 00:01:43.988
+So the expected value is the sum of
+
+00:01:44.190 --> 00:01:46.098
+each value times its probability.
+
+00:01:46.802 --> 00:01:49.047
+And the beam balances at one point seven,
+
+00:01:49.429 --> 00:01:51.052
+pulled towards the heavier bars.
+
+00:01:51.743 --> 00:01:52.528
+Now, spread.
+
+00:01:53.152 --> 00:01:55.336
+A natural idea is to average how far
+
+00:01:55.436 --> 00:01:57.881
+each value is from mu, keeping the sign.
+
+00:01:58.603 --> 00:02:01.812
+These signed deviations are minus one point seven,
+
+00:02:02.234 --> 00:02:03.517
+minus zero point seven,
+
+00:02:04.040 --> 00:02:06.105
+zero point three and one point three.
+
+00:02:06.869 --> 00:02:09.446
+Weight each one by its probability, and add.
+
+00:02:10.071 --> 00:02:11.159
+You get exactly zero.
+
+00:02:12.652 --> 00:02:13.418
+That's not bad luck.
+
+00:02:14.122 --> 00:02:16.389
+Mu is the balance point, so the weighted
+
+00:02:16.430 --> 00:02:19.018
+deviations on the left always cancel the ones
+
+00:02:19.180 --> 00:02:19.641
+on the right.
+
+00:02:20.705 --> 00:02:23.695
+So we square each deviation first, which makes
+
+00:02:23.756 --> 00:02:25.561
+none of them negative, and then take the
+
+00:02:25.602 --> 00:02:26.304
+weighted average.
+
+00:02:26.947 --> 00:02:27.721
+That's the variance.
+
+00:02:28.608 --> 00:02:31.313
+It's an expected value too: the expected value
+
+00:02:31.415 --> 00:02:33.358
+of the squared deviation from mu.
+
+00:02:34.163 --> 00:02:35.196
+Here it is for the cats.
+
+00:02:35.781 --> 00:02:38.126
+The squared deviations are two point eight nine,
+
+00:02:38.567 --> 00:02:41.091
+zero point four nine, zero point zero nine
+
+00:02:41.532 --> 00:02:42.835
+and one point six nine.
+
+00:02:43.417 --> 00:02:45.668
+Weight them and add, and the variance is
+
+00:02:45.729 --> 00:02:46.875
+zero point eight one.
+
+00:02:47.498 --> 00:02:49.033
+But squaring changed the units.
+
+00:02:49.859 --> 00:02:52.226
+X counts visits, so the variance is in
+
+00:02:52.446 --> 00:02:53.289
+visits squared.
+
+00:02:53.912 --> 00:02:54.898
+So take the square root.
+
+00:02:55.523 --> 00:02:58.233
+The standard deviation, sigma, is the square root
+
+00:02:58.294 --> 00:03:00.421
+of zero point eight one, which is zero
+
+00:03:00.462 --> 00:03:00.903
+point nine.
+
+00:03:01.687 --> 00:03:03.555
+It measures the spread, in visits.
+
+00:03:04.359 --> 00:03:06.725
+Here, the values within one sigma of one
+
+00:03:06.786 --> 00:03:09.052
+point seven, from zero point eight to two
+
+00:03:09.093 --> 00:03:11.199
+point six, carry most of the probability.
+
+00:03:11.862 --> 00:03:13.615
+There's a faster way to get the same
+
+00:03:13.655 --> 00:03:13.897
+number.
+
+00:03:14.581 --> 00:03:15.364
+Expand the square:
+
+00:03:16.046 --> 00:03:19.236
+x minus mu, squared, is x squared, minus
+
+00:03:19.296 --> 00:03:21.262
+two mu x, plus mu squared.
+
+00:03:22.065 --> 00:03:23.513
+Weight each part and add.
+
+00:03:24.216 --> 00:03:25.821
+The middle part has the sum of x
+
+00:03:25.881 --> 00:03:27.647
+times P of x, which is mu.
+
+00:03:28.451 --> 00:03:30.423
+The last has the sum of the probabilities,
+
+00:03:30.604 --> 00:03:31.108
+which is one.
+
+00:03:31.872 --> 00:03:34.621
+What's left is E of X squared, the
+
+00:03:34.762 --> 00:03:37.632
+average of the squared values, minus mu squared.
+
+00:03:38.475 --> 00:03:40.939
+For our distribution, E of X squared is
+
+00:03:40.980 --> 00:03:41.861
+three point seven,
+
+00:03:42.443 --> 00:03:44.847
+and three point seven minus one point seven
+
+00:03:44.907 --> 00:03:47.212
+squared is zero point eight one,
+
+00:03:47.773 --> 00:03:48.334
+the same answer.
+
+00:03:49.360 --> 00:03:49.787
+Be careful.
+
+00:03:50.498 --> 00:03:53.187
+E of X squared squares the values, not
+
+00:03:53.208 --> 00:03:55.495
+the probabilities, and it isn't the same as
+
+00:03:55.577 --> 00:03:56.218
+mu squared.
+
+00:03:56.681 --> 00:03:58.090
+Here's how these numbers get used.
+
+00:03:58.752 --> 00:04:00.958
+A pet insurer charges three hundred dollars a
+
+00:04:01.018 --> 00:04:02.060
+year to cover a cat.
+
+00:04:02.742 --> 00:04:04.585
+In a year, there's a zero point zero
+
+00:04:04.645 --> 00:04:07.028
+two chance of paying an eight thousand dollar
+
+00:04:07.048 --> 00:04:09.812
+claim, a zero point zero five chance of
+
+00:04:09.852 --> 00:04:12.475
+paying a one thousand dollar claim, and otherwise
+
+00:04:12.795 --> 00:04:13.116
+nothing.
+
+00:04:13.819 --> 00:04:16.685
+The expected payout is eight thousand times zero
+
+00:04:16.726 --> 00:04:19.312
+point zero two, plus one thousand times zero
+
+00:04:19.353 --> 00:04:21.438
+point zero five, which is two hundred and
+
+00:04:21.539 --> 00:04:22.080
+ten dollars.
+
+00:04:22.803 --> 00:04:25.192
+On the beam, that small weight far out
+
+00:04:25.233 --> 00:04:27.160
+at eight thousand does most of the pulling.
+
+00:04:27.843 --> 00:04:30.089
+So in the long run, the premium beats
+
+00:04:30.130 --> 00:04:32.577
+the expected claims by ninety dollars a policy,
+
+00:04:33.019 --> 00:04:34.442
+before the insurer's other costs.
+
+00:04:35.164 --> 00:04:37.553
+But the standard deviation of the payout is
+
+00:04:37.594 --> 00:04:40.123
+about one thousand one hundred and thirty-four dollars.
+
+00:04:40.968 --> 00:04:43.341
+One policy swings far more than ninety dollars
+
+00:04:43.423 --> 00:04:43.844
+either way.
+
+00:04:44.549 --> 00:04:47.715
+That's why insurers need many independent policies, so
+
+00:04:47.916 --> 00:04:49.478
+the long-run average takes over.
+
+00:04:50.121 --> 00:04:52.170
+Here's a way to remember the quicker formula.
+
+00:04:52.913 --> 00:04:55.618
+Mean of the squares, minus the square of
+
+00:04:55.658 --> 00:04:55.978
+the mean.
+
+00:04:56.780 --> 00:04:57.522
+Square the values,
+
+00:04:58.064 --> 00:05:00.512
+average them with the probabilities, and then subtract
+
+00:05:00.693 --> 00:05:01.415
+mu squared.
+
+00:05:02.100 --> 00:05:03.736
+The answer can never be negative.
+
+00:05:06.493 --> 00:05:06.899
+Your turn.
+
+00:05:07.509 --> 00:05:10.116
+Find E of X and the variance of
+
+00:05:10.318 --> 00:05:11.601
+X for this distribution.
+
+00:05:12.163 --> 00:05:13.145
+Pause here to answer.
+
+00:05:23.774 --> 00:05:26.339
+E of X is zero, plus zero point
+
+00:05:26.400 --> 00:05:29.385
+three, plus one, plus zero point three, which
+
+00:05:29.466 --> 00:05:30.447
+is one point six.
+
+00:05:31.209 --> 00:05:33.430
+E of X squared is zero point three,
+
+00:05:33.551 --> 00:05:36.113
+plus two, plus zero point nine, which is
+
+00:05:36.174 --> 00:05:36.994
+three point two.
+
+00:05:37.575 --> 00:05:39.904
+So the variance is three point two minus
+
+00:05:40.005 --> 00:05:42.454
+one point six squared, which is zero point
+
+00:05:42.495 --> 00:05:43.036
+six four.
+
+00:05:43.760 --> 00:05:45.609
+Three point two minus one point six is
+
+00:05:45.710 --> 00:05:45.991
+wrong.
+
+00:05:46.415 --> 00:05:48.389
+You subtract mu squared, not mu.
+
+00:05:50.130 --> 00:05:50.554
+Last one.
+
+00:05:51.380 --> 00:05:54.005
+X takes the values one, two and three.
+
+00:05:54.988 --> 00:05:56.171
+Find a and b.
+
+00:05:57.038 --> 00:05:57.844
+Pause here to answer.
+
+00:06:08.572 --> 00:06:09.602
+Use both facts.
+
+00:06:10.209 --> 00:06:12.795
+The probabilities add to one, so a plus
+
+00:06:12.836 --> 00:06:14.159
+b is zero point eight.
+
+00:06:14.701 --> 00:06:17.021
+And the expected value gives zero point two,
+
+00:06:17.203 --> 00:06:19.843
+plus two a, plus three b, equals two
+
+00:06:19.884 --> 00:06:22.365
+point three, so two a plus three b
+
+00:06:22.546 --> 00:06:23.425
+is two point one.
+
+00:06:24.367 --> 00:06:26.732
+Take away twice the first equation, and b
+
+00:06:26.873 --> 00:06:29.478
+is zero point five, so a is zero
+
+00:06:29.519 --> 00:06:29.999
+point three.
+
+00:06:31.145 --> 00:06:33.018
+A and b both zero point four is
+
+00:06:33.140 --> 00:06:33.421
+wrong.
+
+00:06:34.026 --> 00:06:36.337
+It uses only one fact, and its expected
+
+00:06:36.378 --> 00:06:37.624
+value is two point two.
+
+00:06:39.409 --> 00:06:41.859
+So the expected value is the balance point,
+
+00:06:42.302 --> 00:06:43.366
+and the long-run average.
+
+00:06:43.950 --> 00:06:47.075
+The variance is the expected squared distance from
+
+00:06:47.157 --> 00:06:47.216
+it,
+
+00:06:47.858 --> 00:06:49.981
+and sigma brings it back to the units
+
+00:06:50.103 --> 00:06:50.542
+of X.
+
+00:06:51.566 --> 00:06:53.673
+Every sum here ran over a list of
+
+00:06:53.854 --> 00:06:54.636
+separate values.
+
+00:06:55.480 --> 00:06:56.685
+Next, a new question.
+
+00:06:57.589 --> 00:06:59.774
+What if X can be any value in
+
+00:06:59.816 --> 00:07:02.322
+an interval, like a sprinter's reaction time?
+
+00:07:03.227 --> 00:07:05.818
+Then the bars get thinner and thinner, and
+
+00:07:05.839 --> 00:07:07.104
+there's no list to add up.
+
+00:07:09.768 --> 00:07:10.570
+Here are the key notes.
+
+00:07:11.214 --> 00:07:12.941
+Pause the video if you need more time
+
+00:07:13.003 --> 00:07:13.484
+to copy them.

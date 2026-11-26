@@ -11,6 +11,12 @@ const read=p=>JSON.parse(fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''));
 const sha=p=>createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const save=(p,v)=>{fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');};
 const readinessPath=process.argv[2]??B+'/checks/phys-y12-recording-readiness.json';
+const selectedWave=process.argv.find(a=>a.startsWith('--wave='))?.split('=')[1];
+assert(!selectedWave||/^P[5-8]$/.test(selectedWave),'Expected --wave=P5, P6, P7 or P8');
+const pendingOnly=process.argv.includes('--pending-only');
+const includeBanked=process.argv.includes('--include-banked');
+const onlyLesson=process.argv.find(a=>a.startsWith('--lesson='))?.slice(9);
+const previousReport=selectedWave&&fs.existsSync('work/brief259/physics-wave-report.json')?read('work/brief259/physics-wave-report.json'):null;
 const signed=fs.existsSync(readinessPath)?read(readinessPath):null;
 const signatures=Array.isArray(signed)?signed:signed?.rows??[];
 const audit=read('docs/production/programme/syllabus-reuse-audit-2026-11-21.json');
@@ -20,7 +26,7 @@ const deferred=[],unreviewed=[],waves=[];
 function parse(id){
   const source=B+'/lessons/'+id+'.md',raw=fs.readFileSync(source,'utf8');
   const heads=[...raw.matchAll(/^### (\d+[a-z]?)\. ([^\r\n]+)/gm)];
-  const order=raw.match(/^In order[^\r\n]*:\s*([^\r\n]+)/m)?.[1].replaceAll('`','').trim().replace(/\.$/,'').split(',').map(x=>x.trim());
+  const order=raw.match(/^In order[^\r\n]*:\s*([\s\S]*?)(?=\r?\n\s*\r?\n|\r?\nHolds:)/m)?.[1].replaceAll('`','').replace(/\s+/g,' ').trim().replace(/\.$/,'').split(',').map(x=>x.trim());
   assert(order&&order.length===heads.length,id+': scene count');
   const holdsLine=raw.split(/\r?\n/).find(l=>l.startsWith('Holds:'))??'';
   const beforeAttempts=holdsLine.split('attempt-1')[0];
@@ -41,7 +47,7 @@ function parse(id){
   const reviewPrefix=key+'-',checks=fs.readdirSync(B+'/checks').filter(n=>n.startsWith(reviewPrefix)&&n.endsWith('.md'));
   const matching=checks.filter(n=>{const text=fs.readFileSync(B+'/checks/'+n,'utf8');return text.includes(sourceSha256)&&/Result:\s*0 blockers,\s*0 should fix/i.test(text);});
   const sign=signatures.find(r=>(r.lesson??r.videoId)===id&&r.ready===true&&r.sourceSha256===sourceSha256);
-  const learning=B+'/checks/'+key+'-learning-review.md',science=B+'/checks/'+key+'-science-check.md';
+  const learning=B+'/checks/'+key+'-learning-review.md',science=B+'/checks/'+key+(fs.existsSync(B+'/checks/'+key+'-science-check.md')?'-science-check.md':'-physics-check.md');
   const reviewEvidence=[learning,science,...matching.map(n=>B+'/checks/'+n)].filter(p=>fs.existsSync(p));
   const currentPassed=(!!sign||matching.length>0)&&fs.existsSync(learning)&&fs.existsSync(science);
   const emDash=raw.includes('\u2014'),ready=currentPassed&&!emDash;
@@ -52,12 +58,20 @@ function parse(id){
 }
 
 for(const module of [5,6,7,8]){
-  const wave='P'+module,rows=[],candidates=[];
+  if(selectedWave&&selectedWave!=='P'+module)continue;
+  const wave='P'+module,rows=onlyLesson?read(W+'/'+wave+'-preparation.json').filter(r=>r.lesson!==onlyLesson):[],candidates=onlyLesson?read(W+'/'+wave+'-candidates.json').filter(r=>r.lesson!==onlyLesson):[];
+  const priorRows=pendingOnly?read(W+'/'+wave+'-preparation.json'):[];
+  const priorCandidates=pendingOnly?read(W+'/'+wave+'-candidates.json'):[];
   const all=audit.rows.filter(r=>r.section==='Q1'&&r.videoId.startsWith('phys-y12-m'+module+'-'));
   all.sort((a,b)=>{const rank=r=>low.has(r.videoId)?2:r.class==='partial-2025'?1:0;return rank(a)-rank(b)||a.videoId.localeCompare(b.videoId);});
   for(const a of all){
+    if(onlyLesson&&a.videoId!==onlyLesson)continue;
     if(a.videoId==='phys-y12-m5-v04'){deferred.push({lesson:a.videoId,reason:'Already voiced pilot, excluded from paid waves.'});continue;}
-    if(a.videoId==='phys-y12-m5-v14'){deferred.push({lesson:a.videoId,reason:'Root brief259 defers banked tracks; absent from 2025.'});continue;}
+    if(a.videoId==='phys-y12-m5-v14'&&!includeBanked){deferred.push({lesson:a.videoId,reason:'Root brief259 defers banked tracks; absent from 2025.'});continue;}
+    if(pendingOnly&&fs.existsSync(W+'/'+wave+'/'+a.videoId+'/hand-in.json')){
+      const row=priorRows.find(r=>r.lesson===a.videoId),candidate=priorCandidates.find(r=>r.lesson===a.videoId);
+      assert(row&&candidate,'Delivered lesson needs its original preparation evidence');rows.push(row);candidates.push(candidate);continue;
+    }
     const current=parse(a.videoId),{raw,...inventory}=current;
     const folder=W+'/'+wave+'/'+a.videoId;
     const sourceAudit={...inventory,wave,module,syllabusReuse:a.class,readinessPath:current.readiness.readinessPath,
@@ -108,5 +122,5 @@ for(const module of [5,6,7,8]){
     pendingReadiness:candidates.filter(r=>!r.ready).map(r=>r.lesson),state:rows.length===candidates.length?'recording inputs prepared':'held for current source readiness; unreviewed designs excluded',speechRequests:0};
   save(W+'/'+wave+'-status.json',status);waves.push(status);console.log(JSON.stringify(status));
 }
-save('work/brief259/physics-wave-report.json',{waves,deferred,unreviewed,readinessFileLookedFor:readinessPath,
+save('work/brief259/physics-wave-report.json',{waves:[...(previousReport?.waves??[]).filter(r=>r.wave!==selectedWave),...waves].sort((a,b)=>a.module-b.module),deferred:[...(previousReport?.deferred??[]).filter(r=>!r.lesson.startsWith('phys-y12-m'+selectedWave?.slice(1)+'-')),...deferred],unreviewed:[...(previousReport?.unreviewed??[]).filter(r=>r.wave!==selectedWave),...unreviewed],readinessFileLookedFor:readinessPath,...(selectedWave?{latestRefreshScope:{wave:selectedWave,pendingOnly}}:{}),
   criterion:'Exact current source hash in a passed recording review, or explicit current-hash readiness sign-off, plus existing independent learning/science reviews. No new reviews are invented.',speechRequests:0});

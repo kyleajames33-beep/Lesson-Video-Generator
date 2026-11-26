@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v27.md",
+  "sourceSha256": "16a2147081f14144f2980e52117f045947fcc255270badae93868c1e28daebb6",
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Stir salt into water, and it disappears. Pour oil into water, and however hard you shake it, the oil ends up in its own layer. Stir salt into hexane, a liquid made of non-polar molecules, and it just sits on the bottom. So why does a substance dissolve in one liquid, but not in another? The answer comes from the attractions we met last time.",
+      "audioFile": "public/audio/chem-y11-m1-v27/hook.wav"
+    },
+    {
+      "id": "trade",
+      "text": "Dissolving is a trade of attractions. The solute is the substance that dissolves, and the solvent is the liquid it dissolves in. First, solute particles are pulled away from each other. Second, solvent particles move apart to make room. Both steps take energy. Third, new attractions form between solute and solvent particles, and that releases energy. As a first prediction, a substance dissolves well when the new attractions are about as strong as the ones it gives up. If they're much weaker, it barely dissolves.",
+      "audioFile": "public/audio/chem-y11-m1-v27/trade.wav"
+    },
+    {
+      "id": "salt-water",
+      "text": "Take salt in water. In the crystal, sodium ions and chloride ions attract each other strongly. But water is polar, with a slightly negative oxygen end, and slightly positive hydrogen ends. Water molecules turn their oxygen ends toward the sodium ions, and their hydrogen ends toward the chloride ions. These ion dipole attractions are strong enough to pull ions off the crystal, one by one. Each ion ends up wrapped in water molecules, called a hydration shell.",
+      "audioFile": "public/audio/chem-y11-m1-v27/salt-water.wav"
+    },
+    {
+      "id": "salt-hexane",
+      "text": "Now try hexane. Hexane molecules are non-polar, so they have no charged ends to offer. An ion can distort the electron cloud of a nearby hexane molecule, but those attractions are far too weak to pull the ions apart. So salt doesn't dissolve in hexane.",
+      "audioFile": "public/audio/chem-y11-m1-v27/salt-hexane.wav"
+    },
+    {
+      "id": "oil-water",
+      "text": "Oil is made of large, mostly non-polar molecules. Here's the surprise. Oil and water molecules do attract each other, through dispersion forces. They don't repel. The problem is that water molecules attract each other much more strongly, through hydrogen bonds. For oil to spread through water, the water would have to give up hydrogen bonds, and get only weak dispersion attractions back. That's a bad trade, so the water molecules stay together, and the oil is pushed into its own layer. It floats on top because it's less dense, but it stays separate because of the attractions.",
+      "audioFile": "public/audio/chem-y11-m1-v27/oil-water.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Iodine, I two, is a non-polar molecule. Will it dissolve better in water, or in hexane? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v27/prediction.wav"
+    },
+    {
+      "id": "iodine",
+      "text": "Hexane. Iodine molecules attract each other by dispersion forces, and so do hexane molecules. When iodine dissolves in hexane, dispersion is traded for dispersion, a fair trade, so it dissolves easily, and the hexane turns violet. In water, iodine dissolves only slightly, because it can't replace the hydrogen bonds the water would give up. That's the idea behind the phrase, like dissolves like. Polar solutes and ionic solids tend to dissolve in polar solvents, and non-polar solutes in non-polar solvents.",
+      "audioFile": "public/audio/chem-y11-m1-v27/iodine.wav"
+    },
+    {
+      "id": "two-part-molecules",
+      "text": "What about a molecule with both kinds of part? Methanol has an O H group that hydrogen bonds with water, and only a small non-polar end, so it's miscible with water, meaning they mix in any amount. Hexan-one-ol has the same O H group, but a chain of six carbons that can't hydrogen bond. Only about six grams dissolve in a litre of water. Watch the chain grow, one carbon at a time. As the non-polar part grows, it takes over, and the substance becomes less soluble.",
+      "audioFile": "public/audio/chem-y11-m1-v27/two-part-molecules.wav"
+    },
+    {
+      "id": "guide-not-law",
+      "text": "So like dissolves like is a useful guide, but it isn't a law. Silver chloride is ionic, like sodium chloride. Yet only about two thousandths of a gram dissolves in a litre of water, compared with about three hundred and sixty grams of sodium chloride. Its ions hold each other so tightly that water's attractions can't pay for pulling them apart. So for any prediction, compare the actual attractions that are broken and formed.",
+      "audioFile": "public/audio/chem-y11-m1-v27/guide-not-law.wav"
+    },
+    {
+      "id": "memory-line",
+      "text": "So here's a line to keep. Dissolving is a trade, and like dissolves like because the trade is fair. That's a first prediction. Mixing helps too, because particles naturally spread out when they mix.",
+      "audioFile": "public/audio/chem-y11-m1-v27/memory-line.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Paraffin wax is made of long molecules containing only carbon and hydrogen. It dissolves in hexane, but not in water. Explain this, using intermolecular forces. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v27/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Wax molecules are non-polar, with only dispersion forces between them. In hexane, dispersion is traded for similar dispersion, so the wax dissolves. To dissolve in water, the water would have to give up its hydrogen bonds for only weak dispersion attractions, so it doesn't. Saying water repels the wax is the classic slip. They attract, just too weakly.",
+      "audioFile": "public/audio/chem-y11-m1-v27/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A glucose molecule has five O H groups. Glucose is very soluble in water, but hardly dissolves in hexane. Explain this difference. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v27/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Each O H group can hydrogen bond with water, so glucose replaces the hydrogen bonds the water gives up with new ones of similar strength, and it dissolves. Hexane can offer only dispersion forces, far weaker than the hydrogen bonds holding glucose molecules together, so it doesn't. Saying glucose dissolves because it's ionic is the trap. It's a polar molecule, and it stays whole in solution.",
+      "audioFile": "public/audio/chem-y11-m1-v27/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Here's one more thing about dissolving. Weigh a hundred grams of water, and ten grams of salt, then dissolve the salt. The solution weighs a hundred and ten grams. Nothing is lost, because every ion is still there. Dissolving is a physical change. In a chemical reaction, atoms rearrange into new substances, and the mass still doesn't change. Next time, we'll find out why mass must be conserved when a chemical equation is balanced.",
+      "audioFile": "public/audio/chem-y11-m1-v27/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v27/key-notes.wav"
+    }
+  ]
+}

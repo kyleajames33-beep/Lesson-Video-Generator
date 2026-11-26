@@ -1,0 +1,174 @@
+{
+  "id": "math-a12-t04",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "1ba726107897c3b2e6140b4fd09bf80b4cd4fc0f971459b2ac38f1c46abdef63",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (one ruler for every file?)",
+      "voiceover": {
+        "text": "Here's a phone's storage on an ordinary ruler, from zero to two hundred and fifty six gigabytes. A text message is about a kilobyte, a photo about three megabytes, and a film about four gigabytes. But on this ruler, the text and the photo are squashed almost onto zero, and the film sits near the left. Only the whole phone has room. When does an ordinary axis fail like this, and what kind of scale gives every file its own place?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "orders of magnitude: the largest value sets the scale",
+      "voiceover": {
+        "text": "The trouble is the range. A kilobyte is a thousand bytes, a megabyte is a million, a gigabyte a billion, and a terabyte a million million. Each name is a thousand times the one before. One factor of ten is called an order of magnitude, so a text message and a full phone are more than eight orders of magnitude apart. On an ordinary axis, the biggest value sets the scale, so everything a thousand times smaller is crushed against zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the log axis: equal steps are equal factors",
+      "voiceover": {
+        "text": "So space the values by their powers of ten instead. Ten to the three bytes goes at three, ten to the six at six, and so on. That's taking log base ten of each value. Now every step along the axis means multiplying by ten, because log of ten times a number is one more than the log of the number. Equal steps mean equal factors, not equal differences. That's a logarithmic scale. Kilobyte, megabyte, gigabyte and terabyte sit three steps apart, and every file has its own place."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "when is a log scale suitable?",
+      "voiceover": {
+        "text": "So when should you use one? Compare two sets of data. The brightness of some stars runs from about three times ten to the minus thirteen, to one point four times ten to the minus eight: a factor of about forty seven thousand. On a log scale, they spread out nicely. But the heights of a class run from one fifty two to one eighty seven centimetres: a factor of only one point two three. A log scale adds nothing for such a narrow range, and heights are compared by differences anyway. So use a log scale when the values span several powers of ten, and when comparing by factors makes sense."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "decibels: ten times the intensity is ten more decibels",
+      "voiceover": {
+        "text": "Decibels are a log scale too. The sound level L is ten times log base ten of I over I nought. I is the intensity, the power of the sound arriving on each square metre, and I nought is ten to the minus twelve, a conventional reference near the threshold of hearing. Multiply the intensity by ten, and the log goes up by one, so the level goes up by ten decibels. So a factory measuring ninety five decibels, against a limit of eighty five, has a reading about twelve percent higher, but the sound isn't twelve percent stronger. Ten decibels more means ten times the intensity. And a three decibel rise is a factor of ten to the point three, about two."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "worked example: library and café",
+      "voiceover": {
+        "text": "Let's compare two places. A library is thirty decibels, and a café is seventy. How many times more intense is the café? Divide each level by ten and use it as a power: the library's intensity is ten to the three times I nought, and the café's is ten to the seven times I nought. Divide them, and I nought cancels: ten to the four, ten thousand times as intense. A quicker way: the difference is forty decibels, and forty over ten is four."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "earthquakes: one step is ten times the shaking",
+      "voiceover": {
+        "text": "Earthquake magnitude can work the same way, with no ten in front. In a simplified local magnitude, M is log base ten of A over A nought, where A is the size of the wiggle on a seismograph, measured at the same distance with the same instrument, so each step of one means ten times the amplitude. Earthquake A is magnitude five. Earthquake B has a seismograph trace fifty times as tall. Its magnitude is five plus log of fifty, about six point seven. Fifty times the wiggle shows up as only one point seven more on the scale."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "pH: a minus sign reverses the direction",
+      "voiceover": {
+        "text": "For dilute solutions, pH is minus log base ten of the hydrogen ion concentration, so more hydrogen ions mean a lower pH. Each step of one is a factor of ten. A solution at pH four has ten to the minus four moles per litre, and pH seven has ten to the minus seven. So pH four has a thousand times the hydrogen ion concentration, even though the numbers differ by only three."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "star magnitudes: smaller is brighter",
+      "voiceover": {
+        "text": "Star magnitudes have a minus sign and a two point five. The difference in magnitudes is minus two point five times log of the brightness ratio. So brighter stars get smaller magnitudes, and five magnitudes is a factor of ten to the two, a hundred. A magnitude one star is a hundred times as bright as a magnitude six star."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid: one rule for all four scales",
+      "voiceover": {
+        "text": "Here's one rule for all four scales. Each one is a number times log base ten of a ratio. To turn a step on the scale back into a factor, divide the step by that number, and raise ten to the power. Decibels: divide by ten. Earthquakes: divide by one. pH: divide by minus one, so the direction flips. Stars: divide by minus two point five."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A lawnmower measures ninety decibels, and a conversation measures sixty. Using L equals ten log base ten of I over I nought, how many times more intense is the lawnmower's sound? Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The difference is thirty decibels. Divide by ten: three. So the ratio is ten to the three, a thousand times as intense. One and a half times compares the decibel numbers, as if the scale were ordinary."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Set A lists the populations of ten towns and cities, from twelve hundred to five point three million people. Set B lists daily top temperatures over a month, from twenty one to thirty one degrees. Which set suits a logarithmic scale? Justify using the ranges. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Set A. Five point three million divided by twelve hundred is about four thousand, more than three powers of ten. Set B only spans ten degrees, and temperatures are compared by differences. It's the ratio that matters, not the size of the numbers: a million to one and a half million spans less than a factor of two."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a log scale turns equal factors into equal steps, and it suits data that spans many powers of ten. That's the end of the trig graphs and modelling videos. Next, a new question. Here's cos x, from zero to pi over two, with thin rectangles standing against it. What happens when we add them up, and make them thinner and thinner?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

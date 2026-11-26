@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m8-v01",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "d8c9d5ab2994a9308dc045c45bee438007dc7dc20a67896c5f00825ffd099230",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (more pairs or fewer?)",
+      "voiceover": {
+        "text": "Last time, we ran annihilation backwards: two energetic photons meeting head-on made an electron and a positron. The early Universe was full of photons like that, and then it cooled. You're made of matter, but the young Universe was mostly light. As it cooled, would photons make more of these pairs, or fewer? Make your prediction. Fewer, and that's the key. So how did cooling radiation allow matter to form in the early Universe?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "expansion-cooling",
+      "title": "hot, dense and stretching",
+      "voiceover": {
+        "text": "About thirteen point eight billion years ago, the Universe was extremely hot and dense, and it's been expanding ever since. That's the Big Bang model. It isn't an explosion into empty space. Space itself is stretching, everywhere at once, so there's no centre. As space stretches, so does every light wave travelling through it. A longer wavelength means less energy per photon, because E equals h c over lambda. And by Wien's law, the peak wavelength is b over T. So double the size of the Universe, and the temperature halves."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "threshold-rule",
+      "title": "the threshold rule",
+      "voiceover": {
+        "text": "Here's the rule that turns light into matter. Two photons meeting head-on with equal energies can make a particle and its antiparticle, but only if each photon brings at least the particle's rest energy, m c squared. When the Universe was very hot, most photons had far more than that, so pairs formed and annihilated all the time, in balance. As it cooled, typical photons fell below the threshold. Only the rare, extra energetic photons could still make pairs, while annihilation carried on. Cooling starves the making."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-electron-scale",
+      "title": "how hot for electron pairs?",
+      "voiceover": {
+        "text": "So how hot for electrons? The electron's rest energy, m c squared, is eight point two times ten to the minus fourteen joules. A photon with that energy has a wavelength of h c over E, two point four times ten to the minus twelve metres. Now use Wien's law backwards. T equals b over lambda, which gives about one point two times ten to the nine kelvin. It's an estimate, but it gives the scale, about a billion kelvin, which the Universe cooled through in its first few minutes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "heavier-particles",
+      "title": "heavier particles first",
+      "voiceover": {
+        "text": "Heavier particles need hotter photons. A proton's rest energy is about eighteen hundred times an electron's, so the same estimate gives about two times ten to the twelve kelvin. Before that, the Universe was a soup of quarks, the smaller particles inside protons and neutrons. By about a millionth of a second, quarks could stay bound in threes, as protons and neutrons."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "matter-excess",
+      "title": "matter wins by a whisker",
+      "voiceover": {
+        "text": "If matter and antimatter came in equal pairs, why didn't they annihilate completely? They almost did. For reasons physicists are still investigating, there was a tiny excess of matter, about one extra particle per billion pairs. That excess survived, outnumbered by photons more than a billion to one. Electrons and positrons did the same a few seconds later, leaving the electrons we're made of."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "neutron-scarcity",
+      "title": "why so few neutrons",
+      "voiceover": {
+        "text": "So now there were protons, neutrons, electrons and a sea of photons, but not equal numbers of protons and neutrons. A neutron has slightly more mass, so as things cooled, conversions between the two favoured protons. And a free neutron decays into a proton, with a half-life of about ten minutes. By the time anything could fuse, there was roughly one neutron for every seven protons."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "deuterium-wait",
+      "title": "the wait for nuclei",
+      "voiceover": {
+        "text": "Fusion starts with deuterium, one proton stuck to one neutron. But deuterium is fragile, and there were more than a billion photons for every proton or neutron. The rare, extra energetic ones smashed each deuterium nucleus as soon as it formed. Only at about a billion kelvin, about three minutes in, could deuterium survive. Then it fused quickly into helium."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "helium-count",
+      "title": "a quarter helium",
+      "voiceover": {
+        "text": "Take sixteen particles, two neutrons and fourteen protons. The two neutrons pair up with two protons to make one helium four nucleus, leaving twelve protons as hydrogen nuclei. So helium has four of the sixteen units of mass. That's twenty-five per cent helium by mass, seventy-five per cent hydrogen, and tiny traces of a few others. After about twenty minutes, it was too cool and too spread out for more fusion, and that mix was locked in."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "plasma",
+      "title": "nuclei, not atoms",
+      "voiceover": {
+        "text": "Nuclei, but not atoms. Any electron that settled onto a nucleus was knocked straight off by a photon. Hydrogen holds its electron with only thirteen point six electron volts, about a hundred thousand times less than what holds even deuterium together. And free electrons scatter light, so photons bounced from electron to electron. The Universe was a glowing fog, for hundreds of thousands of years."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "recombination",
+      "title": "atoms, and the fog clears",
+      "voiceover": {
+        "text": "By about three hundred and eighty thousand years, the temperature had dropped to about three thousand kelvin, and photons were too weak to keep breaking atoms apart. Electrons joined nuclei and stayed, forming neutral hydrogen and helium atoms. This is called recombination. With the free electrons gone, light stopped scattering and travelled straight across space. The Universe became transparent."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "timeline-memory-aid",
+      "title": "the sequence, and a way to remember",
+      "voiceover": {
+        "text": "So here's the sequence. Quarks become protons and neutrons, pairs annihilate, then come nuclei at a few minutes, and atoms at three hundred and eighty thousand years. Here's a way to remember it. As the light cools, first it's too cool to make pairs, then too cool to break nuclei, then too cool to break atoms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A muon has a mass of one point eight eight times ten to the minus twenty-eight kilograms. Using Wien's law, estimate the temperature of the early Universe when photons at the peak wavelength each had one muon's rest energy. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The rest energy is m c squared, one point six nine times ten to the minus eleven joules. The wavelength is h c over E, one point one eight times ten to the minus fourteen metres. Then T is b over lambda, about two point five times ten to the eleven kelvin. The slip is multiplying b by lambda instead of dividing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Helium nuclei formed a few minutes after the Big Bang, but neutral atoms didn't form until about three hundred and eighty thousand years later. Explain why. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Each forms once photons are too weak to break it apart. Nuclei are held together by millions of electron volts, so they survived from about a billion kelvin. Atoms hold electrons by only a few electron volts, so they waited until about three thousand kelvin. The slip is thinking nuclei and atoms formed at the same time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-v02",
+      "title": "handoff",
+      "voiceover": {
+        "text": "Light made matter, then stopped breaking it apart. And the light released at recombination never stopped travelling, stretched by expanding space ever since. If this story is right, that light should still fill the sky today, and the galaxies should still be moving apart. So what evidence supports an expanding hot early Universe?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

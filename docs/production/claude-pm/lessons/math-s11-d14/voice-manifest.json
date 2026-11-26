@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d14.md",
+  "sourceSha256": "5553934f28f876b5ca1d1f11633f3c3d4655f03e3553cf8d4c37f00eda066abb",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-which-group",
+      "text": "This is the question our whole investigation was for. Students whose phones charge in the bedroom, and students whose phones charge elsewhere. Which group sleeps more, and which sleeps more steadily? We have the centres and the spreads. Now we need to put them side by side, in numbers, and say what they mean. A spreadsheet can do the calculating. The comparing is up to us. So how do we compare two datasets using centre and spread, by hand and in a spreadsheet?",
+      "audioFile": "public/audio/math-s11-d14/hook-which-group.wav"
+    },
+    {
+      "id": "spreadsheet-summary",
+      "text": "Start by organising the data. Each group gets its own column, with one value per cell, and a heading at the top so nobody mixes them up. The twelve bedroom values go in column B, and the eight elsewhere values in column C. Underneath, a summary block. Equals COUNT checks how many. Equals AVERAGE gives the mean. Equals MEDIAN, the median. Equals MAX minus MIN, the range. And equals STDEV dot P, the standard deviation. Write the five formulas for column B, then use the same formulas, pointed at column C. The bedroom group's mean is six point five eight hours, its median six point seven five, its range five point five, and its sigma one point three seven. The elsewhere group's are eight point one three, eight, two point five, and nought point seven eight. And if a value is wrong and gets fixed, every result updates by itself.",
+      "audioFile": "public/audio/math-s11-d14/spreadsheet-summary.wav"
+    },
+    {
+      "id": "compare-centre",
+      "text": "Now compare. Start with the centre. Use the same measure for both groups. The elsewhere group's mean is eight point one three hours, against six point five eight. That's about one and a half hours more, on average. The medians agree, eight against six point seven five, so the extra sleep isn't just one or two big values. Quoting both, when they agree, makes the comparison stronger. Notice the pattern of the sentence. Which group, which way, and by how much. Comparing one group's mean with the other group's median would be a slip. They measure different things.",
+      "audioFile": "public/audio/math-s11-d14/compare-centre.wav"
+    },
+    {
+      "id": "compare-spread",
+      "text": "Then compare the spread. The elsewhere group's sigma is nought point seven eight hours, against one point three seven for the bedroom group. Smaller spread means steadier sleep, so the elsewhere group's sleep is more consistent, typically within about three quarters of an hour of its mean. The bedroom group's sleep varies more, and its range, five and a half hours against two and a half, says the same. Part of that is the three hour night. One very short night widens the bedroom group's spread, and it pulls its mean down too. We'll measure exactly how much in a later video.",
+      "audioFile": "public/audio/math-s11-d14/compare-spread.wav"
+    },
+    {
+      "id": "full-comparison",
+      "text": "Put it together in a sentence or two, with numbers. Students whose phones charged elsewhere slept more on average, a mean of eight point one three hours against six point five eight, and more consistently, a standard deviation of nought point seven eight hours against one point three seven. Then the caution, because this was an observational study. It doesn't show that the phone caused the difference. A full comparison covers the centre, the spread, the numbers, the context, and what the data can't show.",
+      "audioFile": "public/audio/math-s11-d14/full-comparison.wav"
+    },
+    {
+      "id": "spread-used-well-and-badly",
+      "text": "Measures of spread get used well and badly too. Fits. A café compares two coffee machines by their standard deviations, to find the consistent one. Misleads. A phone shop says its plans range from fifteen dollars to two hundred and fifty. One premium plan sets that range, and ten of the eleven plans cost between fifteen and forty. Misleads. A delivery app promises an average of thirty minutes. With a standard deviation of eighteen minutes, some orders take close to an hour, and many take over forty-five minutes. An average without a spread hides the risk. Fits. Our sleep comparison, which gives both the centre and the spread, side by side.",
+      "audioFile": "public/audio/math-s11-d14/spread-used-well-and-badly.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. Compare centre, then spread, with numbers, in context. Use the same measure for both groups, and say which is higher or more consistent, and by how much.",
+      "audioFile": "public/audio/math-s11-d14/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Two bakeries sell loaves labelled five hundred grams. Bakery one's loaves have a mean of five hundred and three grams, with a standard deviation of fourteen. Bakery two's have a mean of five hundred and one, with a standard deviation of three. Compare the bakeries using centre and spread, and say which sells the more reliable loaf. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d14/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Bakery two's mean is just one gram over the label, against three for bakery one. And its standard deviation is much smaller, three against fourteen, so its loaves are more consistent. Choose bakery two. Choosing bakery one because its loaves are heavier on average is the slip.",
+      "audioFile": "public/audio/math-s11-d14/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Swimmer A's eight fifty metre times are in cells B two to B nine, and Swimmer B's in C two to C nine. Write spreadsheet formulas for Swimmer A's mean and population standard deviation. Then, the results are, A, mean thirty-one point two seconds, sigma nought point four. B, mean thirty point eight seconds, sigma one point five. Compare the swimmers. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d14/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The formulas are equals AVERAGE, B two to B nine, and equals STDEV dot P, B two to B nine. In a race, lower times are faster, so Swimmer B is faster on average, by nought point four seconds. Swimmer A is more consistent, sigma nought point four against one point five. Saying A is faster because thirty-one point two is higher is the slip.",
+      "audioFile": "public/audio/math-s11-d14/feedback-2.wav"
+    },
+    {
+      "id": "handoff-quartiles",
+      "text": "The standard deviation uses every value, including that three hour night. Sometimes we want a spread that ignores the extremes, and looks only at the middle of the data. Here are our twenty sleeps in order again. The median splits them in half. Where does the middle half of the students sit, and how wide is it? That's next.",
+      "audioFile": "public/audio/math-s11-d14/handoff-quartiles.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d14/key-notes.wav"
+    }
+  ]
+}

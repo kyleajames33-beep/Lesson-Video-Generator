@@ -1,0 +1,160 @@
+{
+  "assets": {
+    "y11-pale-bark": {
+      "path": "public/assets/biology/y11-pale-bark-v1.png",
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": [
+        255,
+        255
+      ],
+      "sha256": "1b7054fe0a729205ca70fbd018820071fb490f55a8947e5368971c8b2a1c1926"
+    },
+    "y11-sooty-bark": {
+      "path": "public/assets/biology/y11-sooty-bark-v1.png",
+      "nativeSize": [
+        1671,
+        941
+      ],
+      "mode": "RGB",
+      "alpha": [
+        255,
+        255
+      ],
+      "sha256": "39113f4db419353e40364067d258b716bf8dc959093a057e5b2cc051bca355da"
+    },
+    "y11-beetle-pale": {
+      "path": "public/assets/biology/y11-beetle-pale-v1.png",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "7a996cac1eea76163c441857361eaec5c6b8329cab2a6b795501e829be88df1c"
+    },
+    "y11-beetle-dark": {
+      "path": "public/assets/biology/y11-beetle-dark-v1.png",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "c44d4976543e7ad924077780302d9e63fe4d709b6294d1c052d0050dcf80759a"
+    },
+    "y11-beetle-dark-ash": {
+      "path": "public/assets/biology/y11-beetle-dark-ash-v1.png",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "f63fd417dea26dcbd2be9a870d4f3ab465d84c002638c680c5fb77ca964cf879"
+    },
+    "y11-shrike-thrush": {
+      "path": "public/assets/biology/y11-shrike-thrush-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "56af6becbff6642ab29f880e54c6778349989cab78b69c29a207d60d4c9fa2bd"
+    },
+    "y11-wild-rabbit": {
+      "path": "public/assets/biology/y11-wild-rabbit-v1.png",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "31272ce9090982bc24af4329ddf0e4697483bc1c08f688552f1942f78c3eb2e2"
+    },
+    "y11-snail-shells": {
+      "path": "public/assets/biology/y11-snail-shells-v1.png",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "048382715d751c02633a1a83344eed9bfc34bfc98280d813e14dead9201d31f9"
+    },
+    "y11-sieve-bowl-filtered": {
+      "path": "public/assets/biology/y11-sieve-bowl-filtered-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "7b6e86ce34c460709eb25f847c755bfc3c23bcb2b0f1ea837a16213b105e13d5"
+    },
+    "m8-thermometer": {
+      "path": "public/assets/biology/m8-thermometer-v1.png",
+      "nativeSize": [
+        2000,
+        2000
+      ],
+      "mode": "RGBA",
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "d96b86c6dbc79921bd251083a8a4b7fa8d62adb7fd3a36260975415bf7dcbe9f"
+    }
+  },
+  "registration": {
+    "paleDark": {
+      "sameNativeCanvas": true,
+      "silhouetteIoU": 0.9822512844465203
+    },
+    "darkAsh": {
+      "sameNativeCanvas": true,
+      "silhouetteIoU": 0.9762497273632678
+    }
+  },
+  "sourceSha256": "4a38093ea3037b1c78e4a8fc300e19ba0cc32665886dd492558a2236aaf2ad19",
+  "characters": 5890,
+  "emDashes": 0,
+  "brief": 242,
+  "evidence": [
+    "work/brief242/fa3-v01-20-nov/contact-paper.jpg",
+    "work/brief242/fa3-v01-20-nov/contact-black.jpg",
+    "work/brief242/fa3-v01-20-nov/beetles-on-pale-bark.jpg"
+  ],
+  "model": {
+    "startingDarkBeetles": 20,
+    "removedAtModelShare": 12,
+    "remaining": 8,
+    "observations": "One labelled model run for a field with no pale variant."
+  },
+  "fallback": "For in-place ash change, use the named pale dust overlay clipped to the dark beetle alpha."
+}

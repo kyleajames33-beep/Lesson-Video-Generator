@@ -1,0 +1,17 @@
+# Brief 242: Chemistry M3 v11 galvanic layers and circuit coupling
+
+17 November 2026.
+
+Narration is unchanged at 6,258 characters, with no em dash. Six new native records cover the blank Physics multimeter, four additional half-cell states and the paper salt bridge. Actual native files and paper/dark composites were inspected. No people, hands, faces, labels, numbers or wires are painted into the chemistry layers. The meter has blank digits and unlabelled tick marks/sockets.
+
+All eight combinations of four left states (Zn, Mg, Fe, used Zn), two right states (Cu, used Cu) and the paper bridge were composed at a common native origin, then uniformly displayed at 400px whole-canvas width on each board. Bridge ends sit within both liquid-filled vessels. Fe is pale green, Mg and Zn colourless; copper starts blue and becomes paler blue. Used zinc is thinner/pitted below the liquid; used copper is thicker and rough below the liquid. Static changes are recognisable. The half-cell native widths differ between 1670 and 1671, bridge 1672, all heights 941. Preserve the common native origin and one common scale; do not independently centre the beakers. Exact state-transition registration remains unapproved.
+
+Existing strip-top measurements are retained and included with SHA bindings in the context record: Zn (544.3,255), Cu (1127,255), Mg (542.8,257), Fe (544,254), used Zn (543.5,254), used Cu (1126.2,254). Exposed metal above each rim is about 70 native pixels, shorter than the original scaled request; root must fit coded clips to these points. Approximate bridge ends are (394,573) and (1216,573).
+
+The meter is 1086 by 1448, with approximate display window [288,265,790,486] and safe digits inset [310,285,770,465]. Its native outer alpha is clean on the inspected boards. A QA-only 1.05 V overlay fits the safe window in a 300px-wide full-canvas view. No digits were added to the production PNG. Painted unlit/lit lamps are recognisable at 240px width; exact lamp cross-fade registration remains a built-preview check.
+
+New engine instruction: nine assertions against the actual circuits.ts API pass for an explicitly illustrative 1.05V source and 105-ohm lamp. Closed-loop lamp current is 0.01A and power 0.0105W; opening a switch stops both. Positive engine current is conventional current, so external electron dots must run oppositely, zinc to copper. Crucially, the open-switch model still reports 1.05V terminal/meter voltage, not the lesson's no-bridge 0.00V. The solver contains no electrochemical charge-build-up or ion-bridge model. Root needs a documented chemistry-dependent source state and illustrative current/lamp mapping. Modelling the salt bridge as an electron-conducting wire would teach the wrong path. No exact configured lesson simulation is cleared; no engine or scene edits made.
+
+Attempt 1 uses its unarrowed given cell diagram. Attempt 2's fresh copper plate adds no metal ranking, voltage answer or arrow to the supplied data. The unused plain-beaker alternatives and battery-holder prop are inactive. No new plate commission is required. Root resolves the chemistry/engine coupling, clip geometry and state transitions. No playback, listening or whole-lesson clearance.
+
+Evidence: `assets/brief242-chem-m3-v11-native-qa-17-nov.json`. Reviewed design SHA256: `b19565d11b25a982618fdbe6386f267809450181b31cc76b4a2ac9c0fef04fe1`. No source edits or whole-lesson clearance.

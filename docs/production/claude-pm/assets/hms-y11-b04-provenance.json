@@ -1,0 +1,41 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v04.md",
+  "assets": [
+    {
+      "name": "hms-heart-cutaway-v1.png",
+      "path": "public/assets/hms/hms-heart-cutaway-v1.png",
+      "requestedDestination": "public/assets/hms/hms-heart-cutaway-v1.png",
+      "status": "accepted",
+      "sha256": "fbf11328df97cd94e52d175596455f4ed5d03ef0747e772e12d3dd7561c3b084",
+      "size": [
+        1122,
+        1402
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        54,
+        66,
+        1069,
+        1355
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v04.md",
+      "sourceBriefSha256": "4e8095aa9dd69785d9e6f7cb9da056ed843708a965ae8d6fe1e34fb4a68e6361",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-heart-cutaway-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-fe0583f9-a98c-4fab-ab2e-652c62684779.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 1. `hms-heart-cutaway-v1.png` (1600 x 2000): a human heart in front view, cut open in the frontal plane to show all four chambers: the right atrium and right ventricle on the viewer's left, the left atrium and left ventricle on the viewer's right, the septum between, the left ventricle wall clearly thicker than the right; the tricuspid and bicuspid valves with their cords, the pulmonary and aortic semilunar valves at the vessel exits; the vena cavae, pulmonary artery, pulmonary veins and aorta as cut stubs. Oxygen-poor side tinted blue-violet, oxygen-rich side red, in the same tones as `m8-heart-v1.png`. No people, hands or faces anywhere in the image.\n\nHand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b04-provenance.json`.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "anatomyUse": "Educational anatomical plate, not a person portrait. Final label placement and narrated animation still need lesson review.",
+      "scope": "HMS Module 1 or Module 2 v01-v08 only"
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

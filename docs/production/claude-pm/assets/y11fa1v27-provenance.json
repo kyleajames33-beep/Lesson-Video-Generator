@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "8084f5712294f04176afecca96282edbb35339b13c6eeb04a68d46d3f3da8926",
+  "scope": "Existing native artwork checked without editing pixels.",
+  "priorShaCheck": [
+    {
+      "file": "public/assets/biology/cd-interphase-v1.png",
+      "shaMatches": true,
+      "nuclei": [
+        {
+          "center": [
+            1000,
+            990
+          ],
+          "radius": 385
+        }
+      ],
+      "chromosomeCount": 0
+    },
+    {
+      "file": "public/assets/biology/cd-prophase-v1.png",
+      "shaMatches": true,
+      "nuclei": [],
+      "chromosomeCount": 4
+    },
+    {
+      "file": "public/assets/biology/cd-metaphase-v1.png",
+      "shaMatches": true,
+      "nuclei": [],
+      "chromosomeCount": 4
+    },
+    {
+      "file": "public/assets/biology/cd-anaphase-v1.png",
+      "shaMatches": true,
+      "nuclei": [],
+      "chromosomeCount": 8
+    },
+    {
+      "file": "public/assets/biology/cd-telophase-v1.png",
+      "shaMatches": true,
+      "nuclei": [
+        {
+          "center": [
+            475,
+            980
+          ],
+          "radius": 220
+        },
+        {
+          "center": [
+            1520,
+            980
+          ],
+          "radius": 220
+        }
+      ],
+      "chromosomeCount": 8
+    },
+    {
+      "file": "public/assets/biology/cd-cytokinesis-v1.png",
+      "shaMatches": true,
+      "nuclei": [
+        {
+          "center": [
+            515,
+            990
+          ],
+          "radius": 230
+        },
+        {
+          "center": [
+            1485,
+            990
+          ],
+          "radius": 230
+        }
+      ],
+      "chromosomeCount": 0
+    },
+    {
+      "file": "public/assets/biology/cd-daughters-v1.png",
+      "shaMatches": true,
+      "nuclei": [
+        {
+          "center": [
+            510,
+            990
+          ],
+          "radius": 220
+        },
+        {
+          "center": [
+            1490,
+            990
+          ],
+          "radius": 220
+        }
+      ],
+      "chromosomeCount": 0
+    }
+  ],
+  "sequence": {
+    "pairs": [
+      {
+        "files": [
+          "cd-prophase-v1.png",
+          "cd-metaphase-v1.png"
+        ],
+        "alphaIoU": 0.966672418942094,
+        "changedVisibleRGBA": 2235293
+      },
+      {
+        "files": [
+          "cd-metaphase-v1.png",
+          "cd-anaphase-v1.png"
+        ],
+        "alphaIoU": 0.6635426551290945,
+        "changedVisibleRGBA": 2303138
+      },
+      {
+        "files": [
+          "cd-anaphase-v1.png",
+          "cd-telophase-v1.png"
+        ],
+        "alphaIoU": 0.8164389797608341,
+        "changedVisibleRGBA": 1796372
+      },
+      {
+        "files": [
+          "cd-telophase-v1.png",
+          "cd-cytokinesis-v1.png"
+        ],
+        "alphaIoU": 0.8807495955797391,
+        "changedVisibleRGBA": 1664767
+      },
+      {
+        "files": [
+          "cd-cytokinesis-v1.png",
+          "cd-daughters-v1.png"
+        ],
+        "alphaIoU": 0.9031494681625386,
+        "changedVisibleRGBA": 1606377
+      }
+    ],
+    "scope": "Static native differences, no one-second playback approval."
+  },
+  "blockingReadout": "Scene10 constant4 needs correct whole-cell count or explicit per-new-nucleus scope at anaphase.",
+  "playback": "pending"
+}

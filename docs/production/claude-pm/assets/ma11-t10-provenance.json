@@ -1,0 +1,70 @@
+{
+  "brief": 249,
+  "lesson": "t10",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-117514e5-a936-45f4-b268-36cef30d5724.png",
+      "sha256": "1af26195707bd367809bd1a141a164a72a584ea44e134383a23170b576d1695e",
+      "nativeSize": [
+        802,
+        1960
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        207,
+        3,
+        377,
+        1960
+      ],
+      "marginFractions": [
+        0.2581047381546135,
+        0.001530612244897959,
+        0.529925187032419,
+        0.0
+      ],
+      "evidence": [
+        "work/brief249/t10-fence-native-paper.jpg",
+        "work/brief249/t10-fence-native-dark.jpg",
+        "work/brief249/t10-fence-native-white.jpg",
+        "work/brief249/t10-fence-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-fence-long-top-v1.png",
+      "path": "public/assets/maths/ma11-fence-long-top-v1.png",
+      "brief": 249,
+      "lesson": "t10",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        2200
+      ],
+      "qa": {
+        "result": "qualified: straight main face, slight post projection; subject and alpha checks pass",
+        "evidence": [
+          "work/brief249/t10-fence-native-black.jpg",
+          "work/brief249/t10-fence-native-dark.jpg",
+          "work/brief249/t10-fence-native-paper.jpg",
+          "work/brief249/t10-fence-native-white.jpg",
+          "work/brief249/t10-fence-qa-paper-dark-dark.jpg",
+          "work/brief249/t10-fence-qa-paper-dark-paper.jpg",
+          "work/brief249/t10-fence-registration-dark.jpg",
+          "work/brief249/t10-fence-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-fence-long-top-v1.json"
+    }
+  ],
+  "result": "Top-view fence delivered at native802x1960. Main grass-side paling face stays atx351to352; square posts project tox347to349, so qualified use of one straight coded line x351is recorded. Nominal scene mapping200nativepx/m gives equal horizontal and vertical units; it is not an inferred physical post spacing. Grass left only, no beam or labels painted.900/full-width paper/dark alpha and1m triangle proof inspected.900QA is12.2percent above native width; public PNG unchanged.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/t10-fence-candidate-measurements.json",
+    "work/brief249/t10-fence-generation.json",
+    "work/brief249/t10-fence-geometry.json",
+    "work/brief249/t10-fence-qa.json"
+  ]
+}

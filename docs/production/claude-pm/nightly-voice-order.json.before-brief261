@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "authority": "docs/production/claude-pm/codex-prompts/259-voicing-order-physics-waves-and-ledgers.md",
+  "dailyRequestCap": 99,
+  "timezone": "Australia/Sydney",
+  "resetHour": 19,
+  "voiceId": "voice_shdbjsxcrr0a",
+  "modelId": "gemini-3.8-flash-tts",
+  "batchMode": true,
+  "newOrderNotBeforeQuotaDay": "2026-11-22",
+  "preservedTonight": {
+    "quotaDay": "2026-11-21",
+    "worker": "work/brief236/voice-wave-status.mjs",
+    "wave": 2,
+    "startLesson": "chem-y11-m1-v17",
+    "note": "The existing wave 2 remainder runs unchanged. No new stream starts in this quota window."
+  },
+  "moduleNightPolicy": "After the preserved run, process one module per night. Skills in Chemistry wave 3 belong to its Module 2 block. Resume unfinished modules before starting the next stage.",
+  "stages": [
+    {
+      "id": "P5",
+      "type": "physics",
+      "wave": "P5",
+      "preparation": "work/brief259/physics/P5-preparation.json",
+      "status": "work/brief259/physics/P5-status.json",
+      "workRoot": "work/brief259/physics/P5",
+      "aggregate": "work/brief259/physics/P5-hand-in.json",
+      "moduleId": "P-M5"
+    },
+    {
+      "id": "C7",
+      "type": "chemistry",
+      "wave": 7,
+      "preparation": "work/brief236/wave7-preparation.json",
+      "status": "work/brief236/wave7-status.json",
+      "workRoot": "work/brief236/wave7",
+      "aggregate": "work/brief236/wave7-hand-in.json",
+      "moduleId": "C-M1",
+      "physicsPrerequisite": "P5"
+    },
+    {
+      "id": "C3",
+      "type": "chemistry",
+      "wave": 3,
+      "preparation": "work/brief236/wave3-preparation.json",
+      "workRoot": "work/brief236/wave3",
+      "aggregate": "work/brief236/wave3-hand-in.json",
+      "skillsModule": 2,
+      "physicsPrerequisite": "P5"
+    },
+    {
+      "id": "P6",
+      "type": "physics",
+      "wave": "P6",
+      "preparation": "work/brief259/physics/P6-preparation.json",
+      "status": "work/brief259/physics/P6-status.json",
+      "workRoot": "work/brief259/physics/P6",
+      "aggregate": "work/brief259/physics/P6-hand-in.json",
+      "moduleId": "P-M6"
+    },
+    {
+      "id": "C4",
+      "type": "chemistry",
+      "wave": 4,
+      "preparation": "work/brief236/wave4-preparation.json",
+      "workRoot": "work/brief236/wave4",
+      "aggregate": "work/brief236/wave4-hand-in.json",
+      "physicsPrerequisite": "P6"
+    },
+    {
+      "id": "P7",
+      "type": "physics",
+      "wave": "P7",
+      "preparation": "work/brief259/physics/P7-preparation.json",
+      "status": "work/brief259/physics/P7-status.json",
+      "workRoot": "work/brief259/physics/P7",
+      "aggregate": "work/brief259/physics/P7-hand-in.json",
+      "moduleId": "P-M7"
+    },
+    {
+      "id": "C5",
+      "type": "chemistry",
+      "wave": 5,
+      "preparation": "work/brief236/wave5-preparation.json",
+      "workRoot": "work/brief236/wave5",
+      "aggregate": "work/brief236/wave5-hand-in.json",
+      "physicsPrerequisite": "P7"
+    },
+    {
+      "id": "P8",
+      "type": "physics",
+      "wave": "P8",
+      "preparation": "work/brief259/physics/P8-preparation.json",
+      "status": "work/brief259/physics/P8-status.json",
+      "workRoot": "work/brief259/physics/P8",
+      "aggregate": "work/brief259/physics/P8-hand-in.json",
+      "moduleId": "P-M8"
+    },
+    {
+      "id": "C6",
+      "type": "chemistry",
+      "wave": 6,
+      "preparation": "work/brief236/wave6-preparation.json",
+      "workRoot": "work/brief236/wave6",
+      "aggregate": "work/brief236/wave6-hand-in.json",
+      "physicsPrerequisite": "P8",
+      "priorityWithinModule": [
+        "chem-y11-m4-v04",
+        "chem-y11-m4-v05",
+        "chem-y11-m4-v06",
+        "chem-y11-m4-v07",
+        "chem-y11-m4-v08",
+        "chem-y11-m4-v09",
+        "chem-y11-m4-v10",
+        "chem-y11-m4-v11",
+        "chem-y11-m4-v12",
+        "chem-y11-m4-v13",
+        "chem-y11-m4-v14"
+      ]
+    }
+  ],
+  "futureStreams": [
+    {
+      "subjects": [
+        "Year 11 Biology 2025",
+        "Year 11 Physics 2025"
+      ],
+      "afterStage": "P6",
+      "state": "Await separate root brief and stand-in decisions. No unprepared stream is automatically voiced."
+    }
+  ],
+  "endOfConfiguredQueue": "After this science order, retain the existing later-Maths worker and its readiness gates. The separate Year11 science brief will add its streams after P6.",
+  "existingLaterMathsWorker": "work/brief240/voice-later-maths.mjs",
+  "amendedBy": "docs/production/claude-pm/codex-prompts/260-chem-y11-wave7-module1-gap.md"
+}

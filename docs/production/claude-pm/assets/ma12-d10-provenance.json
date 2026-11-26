@@ -1,0 +1,283 @@
+{
+  "brief": 235,
+  "design": "math-a12-d10",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-coaster-track-v1.png",
+      "generatorSource": "work\\brief235\\candidates\\coaster-track-second.png",
+      "nativeSize": [
+        1745,
+        901
+      ],
+      "sha256": "58c3ac667019eced5645b3112c724bd76464ffbf50cd91eb267bf9eae87f4edb",
+      "anchors": {
+        "designCanvas": [
+          3000,
+          1550
+        ],
+        "nativeScaleX": 0.5816666666666667,
+        "nativeScaleY": 0.5812903225806452,
+        "groundRow": 843
+      },
+      "generatorNativeSize": [
+        1745,
+        901
+      ],
+      "alphaBox": [
+        145,
+        89,
+        1601,
+        844
+      ],
+      "visibleAlphaBoxThreshold8": [
+        145,
+        89,
+        1601,
+        844
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-coaster-track-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Column-local rail/ground geometry correction from second generated candidate; no whole-plate stretching",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false,
+      "resampled": true,
+      "resamplingScope": "Local geometry retouch only, no whole-image scaling"
+    },
+    {
+      "path": "public/assets/maths/ma12-coaster-car-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f3480d3f-76a2-46d6-8101-f7166c821974.png",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "sha256": "ebb4e1419453d766855b55f80c3dc6895f6e7b357f030375b79f8e2414b72588",
+      "alphaBox": [
+        444,
+        298,
+        1119,
+        706
+      ],
+      "visibleAlphaBoxThreshold8": [
+        444,
+        298,
+        1119,
+        706
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "state": "finished-plates-delivered",
+      "resampled": false,
+      "anchors": {
+        "wheelContactsThreshold128": [
+          [
+            541.5,
+            705
+          ],
+          [
+            1001.5,
+            705
+          ]
+        ],
+        "pivotEstimate": [
+          771.5,
+          705.0
+        ],
+        "contactHeightDifferencePixels": 0,
+        "source": "Native alpha outline contacts, final cream composite inspected",
+        "compositeSizes": [
+          1354,
+          700
+        ],
+        "trackRailTolerance": "Final rail passes all11points within6design-pixels"
+      },
+      "generatorNativeSize": [
+        1536,
+        1024
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-coaster-car-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Retained level wheel contacts",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    }
+  ],
+  "state": "finished-rail-and-car-delivered",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "railCheck": {
+    "checks": [
+      {
+        "designPoint": [
+          300,
+          1332
+        ],
+        "nativePoint": [
+          174,
+          775
+        ],
+        "measuredDesignY": 1333.240843507214,
+        "deltaDesignPixels": 1.2408435072140946
+      },
+      {
+        "designPoint": [
+          540,
+          1147
+        ],
+        "nativePoint": [
+          314,
+          667
+        ],
+        "measuredDesignY": 1147.4472807991121,
+        "deltaDesignPixels": 0.4472807991121499
+      },
+      {
+        "designPoint": [
+          780,
+          1095
+        ],
+        "nativePoint": [
+          454,
+          637
+        ],
+        "measuredDesignY": 1095.8379578246393,
+        "deltaDesignPixels": 0.8379578246392612
+      },
+      {
+        "designPoint": [
+          1020,
+          1132
+        ],
+        "nativePoint": [
+          593,
+          659
+        ],
+        "measuredDesignY": 1133.6847946725861,
+        "deltaDesignPixels": 1.684794672586122
+      },
+      {
+        "designPoint": [
+          1260,
+          1213
+        ],
+        "nativePoint": [
+          733,
+          706
+        ],
+        "measuredDesignY": 1214.5394006659267,
+        "deltaDesignPixels": 1.539400665926678
+      },
+      {
+        "designPoint": [
+          1500,
+          1295
+        ],
+        "nativePoint": [
+          872,
+          753
+        ],
+        "measuredDesignY": 1295.3940066592675,
+        "deltaDesignPixels": 0.39400665926746115
+      },
+      {
+        "designPoint": [
+          1740,
+          1332
+        ],
+        "nativePoint": [
+          1012,
+          775
+        ],
+        "measuredDesignY": 1333.240843507214,
+        "deltaDesignPixels": 1.2408435072140946
+      },
+      {
+        "designPoint": [
+          1980,
+          1280
+        ],
+        "nativePoint": [
+          1152,
+          744
+        ],
+        "measuredDesignY": 1279.9112097669256,
+        "deltaDesignPixels": -0.08879023307440548
+      },
+      {
+        "designPoint": [
+          2220,
+          1095
+        ],
+        "nativePoint": [
+          1291,
+          638
+        ],
+        "measuredDesignY": 1097.558268590455,
+        "deltaDesignPixels": 2.5582685904551
+      },
+      {
+        "designPoint": [
+          2460,
+          733
+        ],
+        "nativePoint": [
+          1431,
+          427
+        ],
+        "measuredDesignY": 734.5726970033296,
+        "deltaDesignPixels": 1.5726970033296084
+      },
+      {
+        "designPoint": [
+          2700,
+          150
+        ],
+        "nativePoint": [
+          1570,
+          89
+        ],
+        "measuredDesignY": 153.10765815760266,
+        "deltaDesignPixels": 3.107658157602657
+      }
+    ],
+    "allWithinSixPixels": true
+  },
+  "qaBoards": [
+    "work/brief235/final-qa/d10-700.jpg",
+    "work/brief235/final-qa/d10-1354.jpg"
+  ]
+}

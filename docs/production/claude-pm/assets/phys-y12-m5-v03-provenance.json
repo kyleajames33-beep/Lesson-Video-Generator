@@ -1,0 +1,171 @@
+{
+  "design": "phys-y12-m5-v03",
+  "sourceSHA256": "79192fc2d49dbd0ccd27086aaddfd927907e9747d10475370c90a7fdbbfd421e",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v03",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v03",
+      "reference": "public/assets/physics/y12p-launcher-base-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-base-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v03",
+      "reference": "y12p-launcher-barrel-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-launcher-barrel-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    }
+  ],
+  "assets": [
+    {
+      "key": "launcher-base",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-4a25935f-89d1-4772-ac82-994db4ec25d8.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        132,
+        591,
+        1306,
+        907
+      ],
+      "minMarginAbove16": 0.09116022099447514,
+      "sha256": "43afad9960b15a61759d92aa65b610487659859ddbf4f3a27ff3779e2d02fdd3",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-4a25935f-89d1-4772-ac82-994db4ec25d8.png",
+      "file": "public/assets/physics/y12p-launcher-base-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "pivot": [
+          410,
+          644
+        ],
+        "muzzleAt0": [
+          1245,
+          644
+        ],
+        "pivotToMuzzle_px": 835,
+        "groundLine_y": 905,
+        "zeroAngle_deg": 0,
+        "qaAngles_deg": [
+          0,
+          30,
+          50,
+          90
+        ],
+        "registration": "Same native1448x1086 canvas. Base hole and rotating bolt overlay visibly at common origin. Small repaint differences are retained.",
+        "layoutRequirement": "At90degrees muzzle y=-191 relative to unrotated source origin. Use unclipped transform bounds and fit the whole assembly to the scene. QA uses expanded stage, not a clipped source rectangle."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "launcher-barrel",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b0992712-ebab-4f81-850e-17a13019dca7.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        215,
+        600,
+        1261,
+        687
+      ],
+      "minMarginAbove16": 0.12914364640883977,
+      "sha256": "b0f148dbb4948c352956bd72c78cede08e01fc01c51f162f55ca50b34ea15579",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b0992712-ebab-4f81-850e-17a13019dca7.png",
+      "file": "public/assets/physics/y12p-launcher-barrel-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "origin": [
+          0,
+          0
+        ],
+        "pivot": [
+          410,
+          644
+        ],
+        "muzzleAt0": [
+          1245,
+          644
+        ],
+        "pivotToMuzzle_px": 835,
+        "groundLine_y": 905,
+        "zeroAngle_deg": 0,
+        "qaAngles_deg": [
+          0,
+          30,
+          50,
+          90
+        ],
+        "registration": "Same native1448x1086 canvas. Base hole and rotating bolt overlay visibly at common origin. Small repaint differences are retained.",
+        "layoutRequirement": "At90degrees muzzle y=-191 relative to unrotated source origin. Use unclipped transform bounds and fit the whole assembly to the scene. QA uses expanded stage, not a clipped source rectangle."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    }
+  ],
+  "heldRequests": [],
+  "qa": "docs/production/claude-pm/assets/brief187-qa",
+  "status": "source findings, documented art differences and exact voiced-preview checks remain open"
+}

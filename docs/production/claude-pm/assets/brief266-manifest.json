@@ -1,0 +1,711 @@
+{
+  "brief": 266,
+  "date": "2026-11-25",
+  "status": "held at required brief264 registered arm anchor",
+  "delivered": [],
+  "rejections": [
+    {
+      "path": "work/brief266/image-attempts/arm-overlay-attempt1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-64a19860-f2c3-489f-9537-00e7381943b9.png",
+      "sha256": "88997e7676a8024a3979ecaba3edd51f4a0872c8aa0fee6bde3b2e4b6ce8d190",
+      "size": [
+        1012,
+        1554
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "status": "rejected",
+      "reason": "Biceps tendon extends too far along the forearm; attachment is anatomically wrong.",
+      "tool": "image_gen.imagegen",
+      "prompt": null,
+      "visualReview": "actual generated image inspected"
+    },
+    {
+      "path": "work/brief266/image-attempts/arm-overlay-attempt2.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-0752f70e-8769-439b-8488-baab545b1b7f.png",
+      "sha256": "34f93ad7d04a650927243ddbba9bddedb743969425047c1aa768785fdbc2b9e5",
+      "size": [
+        1012,
+        1554
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "status": "rejected",
+      "reason": "Canvas differs from the base (1012x1554 versus1001x1572); biceps and triceps tendon attachments do not register with the radius and ulna.",
+      "tool": "image_gen.imagegen",
+      "prompt": null,
+      "visualReview": "actual generated image inspected"
+    }
+  ],
+  "leftoverCount": 52,
+  "leftovers": [
+    {
+      "name": "hms-arm-muscles-overlay-v1.png",
+      "uses": "m2-v02 (anchor overlay); v03",
+      "brief": "registered to `hms-arm-bones-v1.png`",
+      "path": "public/assets/hms/hms-arm-muscles-overlay-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v03.md"
+      ]
+    },
+    {
+      "name": "hms-free-throw-line-v1.png",
+      "uses": "m2-v16 (anchor); later v17",
+      "brief": "1600 x 2000; ball on the free-throw line, hoop above",
+      "path": "public/assets/hms/hms-free-throw-line-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v16.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v17.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v03.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v13.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v17.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v21.md"
+      ]
+    },
+    {
+      "name": "hms-tennis-racquet-ball-v1.png",
+      "uses": "m2-v16; later v17, v18",
+      "brief": "1800 x 1200; racquet and ball on a hard court",
+      "path": "public/assets/hms/hms-tennis-racquet-ball-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v16.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v17.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v18.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v09.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v10.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v13.md"
+      ]
+    },
+    {
+      "name": "hms-beep-test-cones-v1.png",
+      "uses": "m2-v15",
+      "brief": "2400 x 1200; gym floor, two cone lines, plain speaker",
+      "path": "public/assets/hms/hms-beep-test-cones-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v15.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v02.md"
+      ]
+    },
+    {
+      "name": "hms-pool-start-block-v1.png",
+      "uses": "m2-v14",
+      "brief": "2000 x 1300; empty pool start block, lane rope, calm water",
+      "path": "public/assets/hms/hms-pool-start-block-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v03.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v14.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v17.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v18.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v19.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v05.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v06.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v07.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v14.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v17.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v18.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v19.md"
+      ]
+    },
+    {
+      "name": "hms-heart-rate-watch-v1.png",
+      "uses": "m2-v13 handoff; v14",
+      "brief": "1400 x 1400; sports watch on a bench, blank flat face, no wrist",
+      "path": "public/assets/hms/hms-heart-rate-watch-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v13.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v14.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v15.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v05.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v12.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v15.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v01.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v02.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v04.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v06.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v07.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v08.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v09.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v18.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v19.md"
+      ]
+    },
+    {
+      "name": "hms-shot-and-spikes-v1.png",
+      "uses": "m2-v11",
+      "brief": "2400 x 1300; shot in a throwing circle; spikes on a track lane",
+      "path": "public/assets/hms/hms-shot-and-spikes-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v17.md"
+      ]
+    },
+    {
+      "name": "hms-fuel-foods-v1.png",
+      "uses": "m2-v11; later Y12 m4 v14",
+      "brief": "2400 x 1000; pasta and bread, nuts and oil, eggs, spinach; no labels",
+      "path": "public/assets/hms/hms-fuel-foods-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v14.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v16.md"
+      ]
+    },
+    {
+      "name": "hms-400m-start-stagger-v1.png",
+      "uses": "m2-v09",
+      "brief": "2400 x 1300; staggered start lines on the bend, same track, no blocks or numbers",
+      "path": "public/assets/hms/hms-400m-start-stagger-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v09.md"
+      ]
+    },
+    {
+      "name": "hms-golf-green-hole-v1.png",
+      "uses": "m2-v17",
+      "brief": "2000 x 1300; ball near the hole, plain flag",
+      "path": "public/assets/hms/hms-golf-green-hole-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v17.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v18.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v12.md"
+      ]
+    },
+    {
+      "name": "hms-triple-jump-pit-v1.png",
+      "uses": "m2-v17",
+      "brief": "2400 x 1200; runway, take-off board, raked pit, no footprints",
+      "path": "public/assets/hms/hms-triple-jump-pit-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v17.md",
+        "docs/production/claude-pm/lessons/hms-y11-m2-v18.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v17.md"
+      ]
+    },
+    {
+      "name": "hms-empty-playground-v1.png",
+      "uses": "m2-v20 (anchor)",
+      "brief": "2400 x 1300; empty swings, slide, bench, afternoon light",
+      "path": "public/assets/hms/hms-empty-playground-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v20.md"
+      ]
+    },
+    {
+      "name": "hms-knee-brace-kit-bag-v1.png",
+      "uses": "m2-v20",
+      "brief": "2000 x 1400; knee brace and crutches against a kit bag, plain jersey",
+      "path": "public/assets/hms/hms-knee-brace-kit-bag-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v20.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v05.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v21.md"
+      ]
+    },
+    {
+      "name": "hms-dawn-park-mats-v1.png",
+      "uses": "m2-v22 (anchor)",
+      "brief": "2400 x 1300; mats and kettlebells on dewy grass at dawn",
+      "path": "public/assets/hms/hms-dawn-park-mats-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v22.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v12.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v04.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v05.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v18.md"
+      ]
+    },
+    {
+      "name": "hms-home-treadmill-v1.png",
+      "uses": "m2-v22",
+      "brief": "1800 x 1400; treadmill in a living-room corner, blank console",
+      "path": "public/assets/hms/hms-home-treadmill-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v22.md"
+      ]
+    },
+    {
+      "name": "hms-remote-airstrip-v1.png",
+      "uses": "y12-m3-v03",
+      "brief": "2400 x 1300; red-dirt airstrip, small health post, windsock, plain unbranded light aircraft (approved by root 24 Nov)",
+      "path": "public/assets/hms/hms-remote-airstrip-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v03.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v08.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v14.md"
+      ]
+    },
+    {
+      "name": "hms-dental-chair-v1.png",
+      "uses": "y12-m3-v04",
+      "brief": "2000 x 1400; empty dental surgery, reclined chair, lamp off, instrument tray; no posters or text (approved by root 24 Nov)",
+      "path": "public/assets/hms/hms-dental-chair-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v04.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v08.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v10.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v11.md"
+      ]
+    },
+    {
+      "name": "hms-walking-frame-bench-v1.png",
+      "uses": "y12-m3-v07",
+      "brief": "1800 x 1400; walking frame beside a park bench on a wide footpath, shade tree, kerb ramp (approved by root 24 Nov)",
+      "path": "public/assets/hms/hms-walking-frame-bench-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v07.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v10.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v16.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v20.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v21.md"
+      ]
+    },
+    {
+      "name": "hms-community-bus-ramp-v1.png",
+      "uses": "y12-m3-v07",
+      "brief": "2400 x 1300; small plain community bus, ramp lowered at a kerb stop; no livery or lettering (approved by root 24 Nov)",
+      "path": "public/assets/hms/hms-community-bus-ramp-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v07.md"
+      ]
+    },
+    {
+      "name": "hms-hospital-entrance-v1.png",
+      "uses": "y12-m3-v08 (anchor); v09 opening",
+      "brief": "2400 x 1400; public hospital entrance, covered drop-off, sliding doors, empty ambulance bay; no signs or crosses (approved by root 24 Nov)",
+      "path": "public/assets/hms/hms-hospital-entrance-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v08.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v09.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v13.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v14.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v15.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v17.md"
+      ]
+    },
+    {
+      "name": "hms-discharge-bag-v1.png",
+      "uses": "y12-m3-v09 (anchor)",
+      "brief": "1600 x 1800; clear discharge bag on a visitor's chair, three blank medicine boxes, dressing pack, folded letter (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-discharge-bag-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v09.md"
+      ]
+    },
+    {
+      "name": "hms-pharmacy-counter-v1.png",
+      "uses": "y12-m3-v11",
+      "brief": "2000 x 1300; pharmacy counter, paper prescription bag, plain box, bell; no text or cross (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-pharmacy-counter-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v12.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v17.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v18.md"
+      ]
+    },
+    {
+      "name": "hms-home-entry-ramp-v1.png",
+      "uses": "y12-m3-v11",
+      "brief": "2200 x 1300; timber access ramp with handrail to a wide front door; no numbers or signs (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-home-entry-ramp-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v11.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v16.md"
+      ]
+    },
+    {
+      "name": "hms-supplement-shelf-v1.png",
+      "uses": "y12-m3-v12 (anchor)",
+      "brief": "2400 x 1300; shop shelving of plain bottles, tubs and a tea tin, all labels blank (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-supplement-shelf-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v12.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v13.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v15.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v16.md"
+      ]
+    },
+    {
+      "name": "hms-treatment-table-v1.png",
+      "uses": "y12-m3-v12",
+      "brief": "2200 x 1400; empty treatment room, padded table, folded towel, side trolley; no certificates or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-treatment-table-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v12.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v13.md"
+      ]
+    },
+    {
+      "name": "hms-green-tea-cups-v1.png",
+      "uses": "y12-m3-v13 (hook)",
+      "brief": "2000 x 1200; two cups of green tea and a plain teapot on a table; no text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-green-tea-cups-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v13.md"
+      ]
+    },
+    {
+      "name": "hms-smoke-haze-street-v1.png",
+      "uses": "y12-m3-v14",
+      "brief": "2400 x 1300; empty suburban street under orange smoke haze, dim red sun; no flames, plates or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-smoke-haze-street-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v14.md",
+        "docs/production/claude-pm/lessons/hms-y12-m3-v20.md"
+      ]
+    },
+    {
+      "name": "hms-home-bp-monitor-v1.png",
+      "uses": "y12-m3-v15",
+      "brief": "1800 x 1300; home blood pressure monitor and folded cuff on a kitchen table; blank screen, no arm (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-home-bp-monitor-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v15.md"
+      ]
+    },
+    {
+      "name": "hms-keyhole-instrument-tray-v1.png",
+      "uses": "y12-m3-v15",
+      "brief": "2200 x 1200; sterile tray of laparoscopic instruments and ports on blue drape; no blood or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-keyhole-instrument-tray-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v15.md"
+      ]
+    },
+    {
+      "name": "hms-chest-xray-lightbox-v1.png",
+      "uses": "y12-m3-v16",
+      "brief": "1500 x 1800; chest X-ray film on a lit viewing box; regional chest only, no face, markers or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-chest-xray-lightbox-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v16.md"
+      ]
+    },
+    {
+      "name": "hms-server-rack-v1.png",
+      "uses": "y12-m3-v18",
+      "brief": "1300 x 2000; closed data-centre server rack with status lights; no logos or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-server-rack-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v18.md"
+      ]
+    },
+    {
+      "name": "hms-housing-near-transit-v1.png",
+      "uses": "y12-m3-v20",
+      "brief": "2400 x 1300; low-rise apartments by a covered bus stop and a primary school fence; no bus, signs or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-housing-near-transit-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v20.md"
+      ]
+    },
+    {
+      "name": "hms-edge-estate-v1.png",
+      "uses": "y12-m3-v20",
+      "brief": "2400 x 1300; new houses on bare earth at a town edge, no trees or footpaths, long empty road; no vehicles or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-edge-estate-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v20.md"
+      ]
+    },
+    {
+      "name": "hms-community-garden-v1.png",
+      "uses": "y12-m3-v21",
+      "brief": "2400 x 1300; community garden on a corner block, raised beds, shed, rainwater tank, picnic table; no signs or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-community-garden-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v21.md"
+      ]
+    },
+    {
+      "name": "hms-gym-reception-desk-v1.png",
+      "uses": "y12-m4-v01",
+      "brief": "2200 x 1300; empty community gym reception desk, blank forms, gym floor behind; no logos or text (approved by root 24 Nov, sixth set)",
+      "path": "public/assets/hms/hms-gym-reception-desk-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v01.md"
+      ]
+    },
+    {
+      "name": "hms-cycle-ergometer-v1.png",
+      "uses": "y12-m4-v02 (Wingate; reused in v03)",
+      "brief": "1800 x 1400; plain cycle ergometer with flywheel, friction belt and weight basket on a lab floor; blank display, no text or brands (pending root approval)",
+      "path": "public/assets/hms/hms-cycle-ergometer-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v02.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v03.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v04.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v07.md"
+      ]
+    },
+    {
+      "name": "hms-plyo-box-v1.png",
+      "uses": "y12-m4-v03",
+      "brief": "2000 x 1300; wooden plyometric box on a rubber gym floor, low foam hurdle, landing mat; no text (pending root approval)",
+      "path": "public/assets/hms/hms-plyo-box-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v03.md"
+      ]
+    },
+    {
+      "name": "hms-weight-machine-v1.png",
+      "uses": "y12-m4-v05",
+      "brief": "1600 x 1600; plain selectorised gym machine with a pin-loaded weight stack, seat and guided frame; no numbers, logos or text (pending root approval)",
+      "path": "public/assets/hms/hms-weight-machine-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v05.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v06.md"
+      ]
+    },
+    {
+      "name": "hms-rowing-shell-rack-v1.png",
+      "uses": "y12-m4-v07",
+      "brief": "2400 x 1100; racing rowing boat upside down on a timber boatshed rack, two oars, water through the door; no lettering, numbers or club colours (pending root approval)",
+      "path": "public/assets/hms/hms-rowing-shell-rack-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v07.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v17.md"
+      ]
+    },
+    {
+      "name": "hms-archery-target-v1.png",
+      "uses": "y12-m4-v12",
+      "brief": "2000 x 1300; archery target on a straw boss and easel at the end of a grass range, two arrows in the gold; no numbers, lettering or logos (pending root approval)",
+      "path": "public/assets/hms/hms-archery-target-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v12.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v22.md"
+      ]
+    },
+    {
+      "name": "hms-windsock-ground-v1.png",
+      "uses": "y12-m4-v13",
+      "brief": "2200 x 1300; striped windsock blowing stiffly on a pole at the edge of an empty grass oval, wind-bent trees; no lettering, signs or logos (pending root approval)",
+      "path": "public/assets/hms/hms-windsock-ground-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v13.md"
+      ]
+    },
+    {
+      "name": "hms-scale-bottle-v1.png",
+      "uses": "y12-m4-v14 (reused in v15)",
+      "brief": "1800 x 1300; plain bathroom scale with a blank dial on a change-room floor, unlabelled squeeze bottle and towel on a bench; no numbers, labels or logos (pending root approval)",
+      "path": "public/assets/hms/hms-scale-bottle-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v14.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v15.md"
+      ]
+    },
+    {
+      "name": "hms-meal-prep-container-v1.png",
+      "uses": "y12-m4-v15 (v16 opening)",
+      "brief": "1800 x 1200; sealed glass meal-prep container of rice, vegetables and chicken, plain water bottle, sports bag on a chair; no labels, logos or text (pending root approval)",
+      "path": "public/assets/hms/hms-meal-prep-container-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v15.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v16.md"
+      ]
+    },
+    {
+      "name": "hms-coffee-cup-scoop-v1.png",
+      "uses": "y12-m4-v16",
+      "brief": "1800 x 1200; plain coffee cup on a saucer beside an unlabelled open tub with a scoop of white powder on a bench; no labels, logos or text (pending root approval)",
+      "path": "public/assets/hms/hms-coffee-cup-scoop-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v16.md"
+      ]
+    },
+    {
+      "name": "hms-ice-bath-tub-v1.png",
+      "uses": "y12-m4-v18",
+      "brief": "2000 x 1300; round recovery tub of water with floating ice on a tiled pool deck, towel on a bench; no thermometers with numbers, labels or logos (pending root approval)",
+      "path": "public/assets/hms/hms-ice-bath-tub-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v18.md"
+      ]
+    },
+    {
+      "name": "hms-gps-vest-shoe-v1.png",
+      "uses": "y12-m4-v19",
+      "brief": "1600 x 1600; sleeveless training vest with a small sensor unit in a back pocket on a change-room hook, a thick rocker-soled racing shoe on the bench; no brand marks, numbers or text (pending root approval)",
+      "path": "public/assets/hms/hms-gps-vest-shoe-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v19.md"
+      ]
+    },
+    {
+      "name": "hms-ankle-ligaments-v1.png",
+      "uses": "y12-m4-v20 (reused in v21)",
+      "brief": "1600 x 1800; lateral ankle: tibia and fibula cut above the ankle, talus, calcaneus, three lateral ligaments; bones and ligaments only, no skin, toes or foot outline (pending root approval)",
+      "path": "public/assets/hms/hms-ankle-ligaments-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v20.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v21.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v22.md"
+      ]
+    },
+    {
+      "name": "hms-ice-pack-bandage-v1.png",
+      "uses": "y12-m4-v21",
+      "brief": "1800 x 1200; cloth-wrapped gel ice pack, rolled elastic compression bandage, folded towel on a bench; no labels, logos or text (pending root approval)",
+      "path": "public/assets/hms/hms-ice-pack-bandage-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v21.md"
+      ]
+    },
+    {
+      "name": "hms-blister-pack-sharps-v1.png",
+      "uses": "y12-m4-v22 (also v21's handoff)",
+      "brief": "1800 x 1200; plain foil blister pack with blank backing, capped syringe in a small sharps tray on a clinic bench; no labels, marks or text (pending root approval)",
+      "path": "public/assets/hms/hms-blister-pack-sharps-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v21.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v22.md"
+      ]
+    },
+    {
+      "name": "hms-sample-kit-v1.png",
+      "uses": "y12-m4-v22",
+      "brief": "1800 x 1200; opened tamper-evident sample kit, two blank specimen bottles, sealed box, security bag; no letters, numbers or logos (A and B added in code) (pending root approval)",
+      "path": "public/assets/hms/hms-sample-kit-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m4-v22.md"
+      ]
+    },
+    {
+      "name": "hms-crowded-room-v1.png",
+      "uses": "y12-m3-v02 (Revision 2)",
+      "brief": "2000 x 1300; several mattresses and single beds filling one small bedroom wall to wall, folded blankets, a doorway to a second small room also holding a mattress, evening light; no people or text; must read as crowding (requested by root ruling 10, 24 Nov)",
+      "path": "public/assets/hms/hms-crowded-room-v1.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y12-m3-v02.md"
+      ]
+    },
+    {
+      "name": "hms-fibre-cross-section-v2.png",
+      "uses": "m2-v02, m4-v08",
+      "brief": " repaint `hms-fibre-cross-section-v1.png` as `hms-fibre-cross-section-v2.png`.** Codex: the v1 file paints the darker (slow twitch) fibres grouped on the left and the paler (fast twitch) fibres on the right, so students may think the two types sit in different parts of a muscle. Repaint it at the same size (1600 x 1600) and style: a circular microscope field of a stained cross-section, polygonal fibres packed together, roughly half darker red and half paler rose, interspersed fibre by fibre in a mosaic across the whole field with no zone of either type, thin pale connective tissue between fibres, a few small capillary dots around the darker fibres. No text, people, hands or faces. Keep v1 on disk. m2-v02 (Revision 2) now names v2; hms-y12-m4-v08 still names v1 and should switch to v2 at its next revision (not edited here). The outstanding Module 2 plates remain as listed; `hms-arm-muscles-overlay-v1.png` (m2-v02 and v03 anchor) is the most urgent.",
+      "path": "public/assets/hms/hms-fibre-cross-section-v2.png",
+      "exists": false,
+      "sha256": null,
+      "designs": [
+        "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+        "docs/production/claude-pm/lessons/hms-y12-m4-v08.md"
+      ]
+    }
+  ],
+  "nextAction": "Root must resolve the registered arm-muscle overlay. Brief266 requires completion of brief264 anchors before the remaining course-order plates. No later HMS plate was accepted or installed."
+}

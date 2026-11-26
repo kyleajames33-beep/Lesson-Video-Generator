@@ -1,0 +1,99 @@
+{
+  "design": "chem-y11-m1-v19",
+  "sourceSHA256": "5e97f226b733cbcd0eff2c85b8000f3104ff0bf70b4e8e97f37e3c1c33fb3c34",
+  "newPlates": [
+    {
+      "design": "chem-y11-m1-v19",
+      "filename": "y11c-rusty-nail-v1.png",
+      "status": "pending source repairs and reference checks; not painted",
+      "reason": "The design asset brief requires learning/science/error checks to pass before painting. This source revision has unresolved findings or reference checks. No substitute artwork or approval claimed."
+    }
+  ],
+  "existingAssets": [
+    {
+      "design": "chem-y11-m1-v19",
+      "reference": "m5x-ppt-feoh3-brown-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-ppt-feoh3-brown-v1.png"
+      ],
+      "exists": true,
+      "status": "existing file, visual fitness still to inspect"
+    },
+    {
+      "design": "chem-y11-m1-v19",
+      "reference": "m6-marble-chips-acid-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-marble-chips-acid-v1.png"
+      ],
+      "exists": true,
+      "status": "existing file, visual fitness still to inspect"
+    },
+    {
+      "design": "chem-y11-m1-v19",
+      "reference": "public/assets/chemistry/c1-salt-jar-crystals-v1.png",
+      "paths": [
+        "public/assets/chemistry/c1-salt-jar-crystals-v1.png"
+      ],
+      "exists": true,
+      "status": "existing file, visual fitness still to inspect"
+    },
+    {
+      "design": "chem-y11-m1-v19",
+      "reference": "y11c-rusty-nail-v1.png",
+      "paths": [],
+      "exists": false,
+      "status": "missing/requested dependency"
+    }
+  ],
+  "generationTool": null,
+  "status": "review hand-in; new painting pending stated review-pass condition",
+  "assets": [
+    {
+      "key": "rusty-nail-margin",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-55301e81-8938-4245-9d67-9c0efb27fc7d.png",
+      "size": [
+        1663,
+        946
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        249,
+        316,
+        1420,
+        662
+      ],
+      "minMarginAbove16": 0.14612146722790137,
+      "file": "public/assets/chemistry/y11c-rusty-nail-v1.png",
+      "design": "chem-y11-m1-v19",
+      "sha256": "e2d5af2075de86082e9ad846492aaaae4f25ddc831dc38fca0fde632a7acc89b",
+      "generatedBy": "built-in image_gen",
+      "status": "delivered for designer inspection",
+      "date": "2026-11-06",
+      "QA": "Paper, dark and white alpha-aware composites inspected at400px. Oxide pair native canvas matches and midpoint overlay inspected; outline bounds differ by2px.",
+      "qualification": "Native dimensions retained, no resampling. Requested dimensions differ. Alpha may contain faint noise beyond the painted bounds. Source findings remain open."
+    }
+  ],
+  "newRequests": [
+    {
+      "design": "chem-y11-m1-v19",
+      "filename": "y11c-rusty-nail-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See provenance for native-size, alpha and pair-alignment limits. Source corrections remain open.",
+      "sha256": "e2d5af2075de86082e9ad846492aaaae4f25ddc831dc38fca0fde632a7acc89b",
+      "nativeSize": [
+        1663,
+        946
+      ],
+      "qa": "docs/production/claude-pm/assets/brief179-qa/"
+    }
+  ],
+  "sourceReviewStatus": "Findings remain open. Asset delivery is not recording or practical-method approval.",
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m1-v19-v20-native-qa.json",
+    "result": "Nail and copper oxide pair pass static content/alpha checks. Pair overlay remains unpassed; two unused alternatives excluded. No whole-lesson clearance."
+  }
+}

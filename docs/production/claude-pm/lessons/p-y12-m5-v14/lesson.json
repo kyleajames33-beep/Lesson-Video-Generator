@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m5-v14",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "5d43eb6b04a8c72e91057c83e5dae020a75161c865485e18473bc9735c9a6dff",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (round the bend on ice?)",
+      "voiceover": {
+        "text": "Here's a road banked at twelve degrees, sloping down towards the centre of the bend. Now imagine it's covered in ice, so there's almost no friction at all. On a flat road, we saw that would be hopeless. Could a car still get round this bend without sliding off? Make a prediction."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Make a prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make a prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
+    },
+    {
+      "id": "tilted-normal",
+      "title": "the tilted normal force",
+      "voiceover": {
+        "text": "On a flat road, the normal force points straight up, so it can't help with the turn. But the normal force is always at right angles to the road. Tilt the road by an angle theta, and the normal force tilts by the same angle from the vertical. Now it has two parts. Its vertical part, N cosine theta, holds the car up. Its horizontal part, N sine theta, points towards the centre of the bend. That inward part is something a flat road just can't give."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "resolve-horizontally",
+      "title": "which way to resolve",
+      "voiceover": {
+        "text": "Here's an important choice. The car goes round a horizontal circle, so its acceleration is horizontal, towards the centre. So it's simplest to split the forces horizontally and vertically, rather than along the slope. On ice, only two forces act, the weight and the normal force. Vertically there's no acceleration, so N cosine theta equals m g. Horizontally, N sine theta is the whole net force, so N sine theta equals m v squared over r. It's the same pattern as the conical pendulum, with the road's push in place of the string's pull."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "design-speed",
+      "title": "the design speed",
+      "voiceover": {
+        "text": "Divide one equation by the other, and N and m both cancel. Tan theta equals v squared over r g, exactly as for the pendulum. So there's one speed where the bank does the whole job by itself. It's called the design speed, and v equals the square root of r g tan theta. At that speed, no friction is needed at all. The mass cancelled too, so it's the same design speed for a truck or a small car."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-design-speed",
+      "title": "worked example: the design speed",
+      "voiceover": {
+        "text": "Let's find it for a highway curve of radius eighty metres, banked at twelve degrees. v equals the square root of eighty times nine point eight times tan twelve. That's the square root of about one hundred and sixty-six point six, so about twelve point nine metres per second, or forty-six kilometres per hour. So yes, even on ice, a car can get round this bend, but only at about that speed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "friction-saved",
+      "title": "how much friction it saves",
+      "voiceover": {
+        "text": "Now compare a flat road. Take the same twelve hundred kilogram car from earlier, at twelve point nine metres per second, on an eighty metre bend. On the flat, friction would have to supply all of m v squared over r, about two thousand five hundred newtons. On the bank, at the design speed, friction supplies nothing. That's how banking cuts the reliance on friction."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "slower",
+      "title": "slower than the design speed",
+      "voiceover": {
+        "text": "But real cars don't all drive at the design speed. Suppose a car goes slower. It needs less inward force for the turn. Without friction, the bank would push it inwards more than it needs, so it would slide down the slope, towards the inside of the bend. Static friction opposes that slip, so it acts up the slope."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "faster",
+      "title": "faster than the design speed",
+      "voiceover": {
+        "text": "Now a car going faster than the design speed. It needs more inward force than the bank alone gives, so without friction it would slide up the slope, towards the outside. This time friction acts down the slope. Its horizontal part points inwards, adding to the normal force's inward part, and together they get the car round."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "steady-trips",
+      "title": "separate steady trips",
+      "voiceover": {
+        "text": "These are three separate trips round the bend, each at its own steady speed. They're not one car speeding up. And close to the design speed, the friction needed is small, which is the whole point of banking. The angle is chosen so that most traffic needs only a little grip. Too steep, and slow traffic would tend to slide down. Too gentle, and fast traffic would lean on friction again."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ramp-mistake",
+      "title": "the ramp mistake",
+      "voiceover": {
+        "text": "A common slip comes from Year 11 ramp questions. For a block resting on a ramp, N equals m g cosine theta, which is less than its weight. On a banked bend at the design speed, it's the other way round. From N cosine theta equals m g, N equals m g over cosine theta, which is more than the weight. The difference is the car's horizontal acceleration. The road has to hold the car up and push it inwards at the same time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So which way does friction act? Here's a rule that always works. Friction fights the slip. Ask which way the car would slide without friction, and friction points the other way. Too slow, it would slip down, so friction acts up. Too fast, it would slip up, so friction acts down."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A highway curve of radius one hundred and fifty metres is banked at five degrees. Calculate its design speed, in kilometres per hour. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "At the design speed, tan theta equals v squared over r g, so v is the square root of one hundred and fifty times nine point eight times tan five. That's about eleven point three four metres per second. Times three point six, that's about forty point eight kilometres per hour. A classic slip is having the calculator in radians. Tan of five radians is negative, and you can't take its square root."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A banked curve is designed for ninety kilometres per hour. A car takes the curve at a steady sixty kilometres per hour. State which way friction acts on the car, and explain why. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Sixty is slower than the design speed, so the car needs less inward force than the bank gives. Without friction it would slide down the bank, towards the inside. Friction opposes that slip, so it acts up the slope. The slip is saying no friction is needed because the road is banked. That's only true at exactly ninety kilometres per hour."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So at the design speed, the normal force does the inward job all the way round. For that car, it's about two and a half thousand newtons, pushing inwards lap after lap. Yet the car's speed never changes. So does that inward force do any work on the car? And if it doesn't, why not?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

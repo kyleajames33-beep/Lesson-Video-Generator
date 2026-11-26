@@ -1,0 +1,159 @@
+{
+  "brief": 238,
+  "design": "i11",
+  "sourceRevision": "Current repaired source,11November",
+  "assets": [
+    {
+      "lesson": "i11",
+      "name": "ma12-beach-entry-pool-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a3aae5ca-2cdc-4a16-903e-44ff82918569.png",
+      "sha256": "8cc77f3f7fa7ede1b006396e0b9e8636ce082878a838ca108e5e3f1147233d7c",
+      "nativeSize": [
+        1585,
+        992
+      ],
+      "alpha128Box": [
+        107,
+        111,
+        1474,
+        876
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-beach-entry-pool-v1-four-backgrounds.jpg",
+      "state": "delivered",
+      "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+      "path": "public\\assets\\maths\\ma12-beach-entry-pool-v1.png",
+      "visualQAInspected": true,
+      "designs": [
+        "i11"
+      ],
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-beach-entry-pool-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i11-profile-guide-qa.jpg"
+      ]
+    },
+    {
+      "lesson": "i11",
+      "name": "ma12-pool-cutaway-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-06971e7c-c83c-4afb-8ff5-e1e7d4c4336e.png",
+      "sha256": "f550c5d59f03ff8939aa9ff21be510fb750e47786f205730e6ffce8f3822e063",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alpha128Box": [
+        77,
+        170,
+        1697,
+        761
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-pool-cutaway-v1-four-backgrounds.jpg",
+      "state": "held-native-guide-mismatch",
+      "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+      "anchors": {
+        "originApprox": [
+          210,
+          632
+        ],
+        "floorEndApprox": [
+          620,
+          632
+        ],
+        "copingYApprox": 190,
+        "deckYApprox": 190,
+        "profilePoints": [
+          {
+            "metres": [
+              1,
+              0
+            ],
+            "expectedFilePoint": [
+              610,
+              632
+            ],
+            "measuredSurfaceY": 636.0,
+            "verticalErrorPixels": 4.0
+          },
+          {
+            "metres": [
+              1.25,
+              0.223
+            ],
+            "expectedFilePoint": [
+              710,
+              542.8
+            ],
+            "measuredSurfaceY": 584.0,
+            "verticalErrorPixels": 41.200000000000045
+          },
+          {
+            "metres": [
+              1.5,
+              0.405
+            ],
+            "expectedFilePoint": [
+              810,
+              470.0
+            ],
+            "measuredSurfaceY": 508.0,
+            "verticalErrorPixels": 38.0
+          },
+          {
+            "metres": [
+              2,
+              0.693
+            ],
+            "expectedFilePoint": [
+              1010,
+              354.8
+            ],
+            "measuredSurfaceY": 392.0,
+            "verticalErrorPixels": 37.19999999999999
+          },
+          {
+            "metres": [
+              2.5,
+              0.916
+            ],
+            "expectedFilePoint": [
+              1210,
+              265.59999999999997
+            ],
+            "measuredSurfaceY": 308.0,
+            "verticalErrorPixels": 42.400000000000034
+          },
+          {
+            "metres": [
+              2.718281828459045,
+              1
+            ],
+            "expectedFilePoint": [
+              1297,
+              232
+            ],
+            "measuredSurfaceY": 282.0,
+            "verticalErrorPixels": 50.0
+          }
+        ]
+      },
+      "geometryFinding": "400px/metre equal-unit log profile has measured surface errors greater than4px. Rounded ramp start and low ramp surface miss exact ln(x) guide. Candidate stays held;no profile warp.",
+      "path": "public\\assets\\maths\\ma12-pool-cutaway-v1.png",
+      "visualQAInspected": true,
+      "designs": [
+        "i11"
+      ],
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-pool-cutaway-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i11-profile-guide-qa.jpg"
+      ]
+    }
+  ],
+  "decision": "Source review fixes passed;strict geometric artwork guide remains held. Keep supplied candidate for root inspection. Do not certify required4px tolerance."
+}

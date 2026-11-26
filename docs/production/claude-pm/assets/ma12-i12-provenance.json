@@ -1,0 +1,303 @@
+{
+  "brief": 238,
+  "design": "i12",
+  "assets": [
+    {
+      "name": "ma12-garden-cut-fill-v1.png",
+      "path": "public\\assets\\maths\\ma12-garden-cut-fill-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f0442bbf-b45f-437a-8b25-4bd73ff6c4c5.png",
+      "generatorNativeSize": [
+        1568,
+        1003
+      ],
+      "nativeSize": [
+        1600,
+        1000
+      ],
+      "sha256": "4e5440126169b9151f061dee2571294ad1420515d6e1f155db893dabf5dc74c7",
+      "alphaBox": [
+        162,
+        189,
+        1438,
+        867
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Removed alpha<8 noise",
+        "Uniform aspect-preserving reduction (1568, 1003) to(1411, 903),padding(94, 48);no profile deformation"
+      ],
+      "uniformResampling": true,
+      "profileWarped": false,
+      "nonuniformStretch": false,
+      "visualQAInspected": true,
+      "anchors": {
+        "stringEnds": [
+          [
+            250,
+            467
+          ],
+          [
+            1346,
+            467
+          ]
+        ],
+        "stringUncertaintyPx": 3,
+        "surfaceSamples": [
+          {
+            "mathX": -1.0,
+            "samplePixel": [
+              280,
+              661
+            ],
+            "endpointOccluded": true,
+            "targetPixel": [
+              200,
+              824
+            ]
+          },
+          {
+            "mathX": -0.75,
+            "samplePixel": [
+              387,
+              623
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              350,
+              685.4
+            ]
+          },
+          {
+            "mathX": -0.5,
+            "samplePixel": [
+              524,
+              532
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              500,
+              566
+            ]
+          },
+          {
+            "mathX": -0.25,
+            "samplePixel": [
+              661,
+              479
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              650,
+              509
+            ]
+          },
+          {
+            "mathX": 0.0,
+            "samplePixel": [
+              798,
+              465
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              800,
+              500
+            ]
+          },
+          {
+            "mathX": 0.25,
+            "samplePixel": [
+              935,
+              457
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              950,
+              491
+            ]
+          },
+          {
+            "mathX": 0.5,
+            "samplePixel": [
+              1072,
+              417
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              1100,
+              434
+            ]
+          },
+          {
+            "mathX": 0.75,
+            "samplePixel": [
+              1209,
+              324
+            ],
+            "endpointOccluded": false,
+            "targetPixel": [
+              1250,
+              314.6
+            ]
+          },
+          {
+            "mathX": 1.0,
+            "samplePixel": [
+              1316,
+              243
+            ],
+            "endpointOccluded": true,
+            "targetPixel": [
+              1400,
+              176
+            ]
+          }
+        ],
+        "surfaceMeasurementUncertaintyPx": 6,
+        "endpointNote": "Timber pegs obscure endpoints;surface samples are30px inside either peg,not exact endpoint claims. Centre surface overlaps string and is approximate.",
+        "originApprox": [
+          798,
+          467
+        ],
+        "actualHorizontalPxPerMetre": 548,
+        "targetPxPerMetre": 600,
+        "profileTolerancePass": false,
+        "builderFitRequired": true
+      },
+      "marginPass": true,
+      "state": "delivered",
+      "findings": [
+        {
+          "id": "238-I12-PLATE-PROFILES",
+          "severity": "profile-tolerance-miss",
+          "detail": "Garden does not meet600px/m table;bridge opening750px versus942 and rise270px versus300. Actual samples in manifest. Builder fit required;no warp."
+        }
+      ]
+    },
+    {
+      "name": "ma12-stone-footbridge-v1.png",
+      "path": "public\\assets\\maths\\ma12-stone-footbridge-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-66b0169c-1d14-42ce-a81f-4c6238358c3f.png",
+      "generatorNativeSize": [
+        1466,
+        1073
+      ],
+      "nativeSize": [
+        1400,
+        900
+      ],
+      "sha256": "2cd0e6fe4012b10aebedd422b3950e0b5f6a4b96b7b23a82ff07368a33d8f777",
+      "alphaBox": [
+        138,
+        197,
+        1261,
+        756
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Removed alpha<8 noise",
+        "Uniform aspect-preserving reduction (1466, 1073) to(1173, 858),padding(113, 21);no profile deformation"
+      ],
+      "uniformResampling": true,
+      "profileWarped": false,
+      "nonuniformStretch": false,
+      "visualQAInspected": true,
+      "anchors": {
+        "springingPointsApprox": [
+          [
+            326,
+            658
+          ],
+          [
+            1076,
+            658
+          ]
+        ],
+        "crownPoint": [
+          700,
+          388
+        ],
+        "quarterSamples": [
+          [
+            477,
+            444
+          ],
+          [
+            923,
+            448
+          ]
+        ],
+        "measurementUncertaintyPx": 4,
+        "targetSpringingPoints": [
+          [
+            229,
+            700
+          ],
+          [
+            1171,
+            700
+          ]
+        ],
+        "targetCrown": [
+          700,
+          400
+        ],
+        "targetQuarterPoints": [
+          [
+            464.4,
+            487.9
+          ],
+          [
+            935.6,
+            487.9
+          ]
+        ],
+        "actualOpeningWidthApprox": 750,
+        "actualCrownRiseApprox": 270,
+        "targetOpeningWidth": 942,
+        "targetCrownRise": 300,
+        "profileTolerancePx": 4,
+        "profileTolerancePass": false,
+        "builderFitRequired": true,
+        "openingAlphaInteriorSample": 0
+      },
+      "marginPass": true,
+      "state": "delivered",
+      "findings": [
+        {
+          "id": "238-I12-PLATE-PROFILES",
+          "severity": "profile-tolerance-miss",
+          "detail": "Garden does not meet600px/m table;bridge opening750px versus942 and rise270px versus300. Actual samples in manifest. Builder fit required;no warp."
+        }
+      ]
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "garden": "Scientific educational ink-and-watercolour plate ma12-garden-cut-fill-v1.png,landscape1600x1000. EXACTLY SIDE-ON flat garden soil cross-section,not perspective. One smoothly rising odd-symmetric ground surface from low hollow LEFT to high mound RIGHT. Dark brown soil below,small stones,fine roots;very short grass along surface. Straight horizontal taut thin string between two timber pegs marking planned level. At finalcanvas pixels: leftpegx200,rightpegx1400,stringy500. Groundsurface follows table: (200,824),(350,685.4),(500,566),(650,509),(800,500),(950,491),(1100,434),(1250,314.6),(1400,176). Smooth S-shaped curve nearlyhorizontal at middle,no peak falling again. These represent y=x^3 cos(x),x=-1to1,600pixels/metre on BOTHaxes. Soil extends below surface to irregularbottomedge aroundy900;clean isolated true transparent alpha outside soil/pegs/grass/string. Leave8%margins,wholepegsandsoilvisible. No chart axes,letters,numbers,labels,arrows,writing,tools,wheelbarrow,people,hands,sky,backgroundpaper or shadows. Restrained natural palette,fineink hatching. String must stay horizontal and crossground exactly atcentre.",
+    "footbridge": "Scientific educational asset ma12-stone-footbridge-v1.png,1400x900landscape14:9. Small sandstone garden footbridge EXACTLYSIDEON front elevation,no perspective. ONE arch with real transparent opening,flat horizontaldeck and lowstoneparapet. Fitted warmgrey-beige sandstonevoussoirblocks and fineink+watercolour texture. NOwater,plants,people,writing,groundshadoworbackground. Short dry creekbed patch below withsoftirregulartransparentedge. Target arch INNEREDGE opening shape is y=cos x,NOT semicircle,NOT gothic pointedarch,at300px/metre: onfinalcanvas leftspring(229,700),rightspring(1171,700),crown(700,400),quarterpoints(464.4,487.9),(935.6,487.9). Curve is smooth shallowcosine rise,horizontal tangent atcrown,steepsidesnearends. Clear opening must be truealpha so codedfillcan go behind it. Flatdeck aroundy290,parapettopy200. Wholebridgeandbasevisiblewith8%transparentoutermargins. Veryimportant single arch: noinnercrossbar,nostonesblockingopening,no depth perspective,nostaircase,nostairs. Allstoneblocksauthenticpaintedfinish.",
+    "transparent_background": true
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Inspected garden paper600/1200px wide,bridge470/940px wide,black/white edges and red requested-profile overlays. Both native geometries retain visible mismatches,reported with measured points;no deformation. Garden endpoints are hidden by pegs;inward surface samples and6px uncertainty explicitly reported. Bridge opening genuinely transparent.8% margins pass. Shared AC handoff remains held with i13.",
+    "qaFiles": [
+      "work/brief238/i12-profiles-qa.jpg",
+      "work/brief238/i12-edge-qa.jpg"
+    ],
+    "reviewSummary": "0 design blockers,1 should fix (NOTES-FIT);two plate profile misses for builder fit",
+    "findings": [
+      {
+        "id": "238-I12-PLATE-PROFILES",
+        "severity": "profile-tolerance-miss",
+        "detail": "Garden does not meet600px/m table;bridge opening750px versus942 and rise270px versus300. Actual samples in manifest. Builder fit required;no warp."
+      }
+    ]
+  },
+  "sourceDesignSha256": "8be91b8aa74e30f3c14bdf1e1ba0fcd1db52c8e372ac457835dd606deda2da76"
+}

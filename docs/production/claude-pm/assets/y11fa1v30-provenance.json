@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "febd2d0458efd716cbf9949e7bd4327b56913f3966ef922b28d9613221388151",
+  "anchors": "docs/production/claude-pm/assets/y11fa1v30-anchors.json",
+  "diagnostic": {
+    "pairs": [
+      {
+        "files": [
+          "cd-m1-metaphase-v1.png",
+          "cd-m1-metaphase-alt-v1.png"
+        ],
+        "alphaIoU": 1.0,
+        "changedVisibleRGBA": 31776,
+        "allowedRectangles": [
+          [
+            800,
+            1110,
+            1230,
+            1390
+          ]
+        ],
+        "changedVisibleRGBAOutsideRectangles": 0,
+        "sha256": [
+          "2d6f754d743e0bc642d0b53cde1c760382aa848a7d16ed1faa95d0144d260b02",
+          "db0fdedca4adcf69aebb36b6ee84fdb6135498a7d80fbde8c9d30c19555eaba1"
+        ]
+      },
+      {
+        "files": [
+          "cd-four-cells-v1.png",
+          "cd-four-cells-crossover-v1.png"
+        ],
+        "alphaIoU": 1.0,
+        "changedVisibleRGBA": 8788,
+        "allowedRectangles": [
+          [
+            450,
+            1570,
+            550,
+            1710
+          ],
+          [
+            1430,
+            1570,
+            1530,
+            1710
+          ]
+        ],
+        "changedVisibleRGBAOutsideRectangles": 0,
+        "sha256": [
+          "3896151ffddf1a7a38244632609e4cba4cf31f17e0428e17956924178a00397a",
+          "58a0c0b3b3803867e6853d3f58a9674e124362822b7176f6d3eee88d58eee447"
+        ]
+      },
+      {
+        "files": [
+          "cd-pair-anaphase-v1.png",
+          "cd-four-cells-crossover-v1.png"
+        ],
+        "alphaIoU": 0.1555387032342426,
+        "changedVisibleRGBA": 2945726,
+        "allowedRectangles": [],
+        "changedVisibleRGBAOutsideRectangles": null,
+        "sha256": [
+          "e097a2c4f456778d6af24ea93d2f37e0111cc5f3f6197540244a1b991ead8ec6",
+          "58a0c0b3b3803867e6853d3f58a9674e124362822b7176f6d3eee88d58eee447"
+        ]
+      },
+      {
+        "files": [
+          "cd-homologous-pair-loci-v1.png",
+          "cd-crossing-over-a-v1.png"
+        ],
+        "alphaIoU": 0.9914041955066911,
+        "changedVisibleRGBA": 2389894,
+        "allowedRectangles": [],
+        "changedVisibleRGBAOutsideRectangles": null,
+        "sha256": [
+          "e965ed6d537ce6a6d40eefaa4db3ef21e296e6ba075e9d1a63a023b73d659408",
+          "c24a6095685afa42bba7a9437c2df903c94c1a22495875a2431573f15475bdcc"
+        ]
+      }
+    ],
+    "arithmetic": {
+      "twoPairOutcomes": [
+        "A B D",
+        "A B d",
+        "a b D",
+        "a b d"
+      ],
+      "threePairOutcomes": [
+        "A B D E",
+        "A B D e",
+        "A B d E",
+        "A B d e",
+        "a b D E",
+        "a b D e",
+        "a b d E",
+        "a b d e"
+      ],
+      "wholeChromosomeHuman": 8388608,
+      "randomFertilisation": 70368744177664,
+      "assumptions": "Independent fair orientation for each pair, crossing over off, one randomly sampled gamete per trial. Two coin animations must agree with sampled letters."
+    },
+    "scope": "Native RGBA comparisons and static midpoint strips only. No production artwork edits or animation approval."
+  },
+  "held": [
+    "cd-m1-metaphase-alt-v1.png",
+    "cd-four-cells-crossover-v1.png"
+  ],
+  "reason": "Recoloured regions visibly mismatch intended painted rose and teal. Exact protected-pixel preservation is insufficient.",
+  "productionPixelsEdited": false
+}

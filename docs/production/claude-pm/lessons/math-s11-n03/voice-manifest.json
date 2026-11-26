@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-n03.md",
+  "sourceSha256": "09f19a2cc99c2a2f3960cd985e3b0e8cefcc6bf83a58b55ab5ec3427685ca0eb",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-grid-of-numbers",
+      "text": "Here's the rail trail, and a table of distances between its stops, in kilometres. Five stops, Trailhead, Lake, Mill, Ridge and Village, and a grid of numbers. A table like this is how network information usually arrives, in a brochure, a timetable or an exam question. Every timetable and road atlas is hiding a network. But a grid of numbers is hard to think with. A network is much easier. So how do we draw a network from a table or a map, and use it to solve a problem?",
+      "audioFile": "public/audio/math-s11-n03/hook-grid-of-numbers.wav"
+    },
+    {
+      "id": "distance-table",
+      "text": "Start with the table. The stops label the rows and the columns. Each cell says how far it is between the row's stop and the column's stop, along one direct path. A dash means there's no direct path. Read along the Trailhead row. Six kilometres to the Lake, nine to the Mill, and dashes for the Ridge and the Village. Notice that the same six appears again, in the Lake row, under Trailhead. A path is the same length both ways, so the table is symmetric, a mirror image across its diagonal. That means you only need half of it. Now draw. Vertices first, five dots. Then each filled cell in the top half becomes an edge, with its number as the weight. Trailhead to Lake six, Trailhead to Mill nine, Lake to Mill four, Lake to Ridge seven, Mill to Village nine, and Ridge to Village three. Six cells, six weighted edges.",
+      "audioFile": "public/audio/math-s11-n03/distance-table.wav"
+    },
+    {
+      "id": "map-to-network",
+      "text": "Maps work the same way. Here's the trail map itself. The paths curve around hills and creeks, with their lengths printed beside them. To make a network, each stop becomes a vertex, and each path between two stops becomes an edge, with its length as the weight. The curves disappear, because a network only keeps what's joined to what, and the numbers we write on it. The map's scale and compass directions don't come across either. Only the stops, the paths and their lengths. And look. It's exactly the same network we drew from the table. A table and a map are just two ways of storing the same information.",
+      "audioFile": "public/audio/math-s11-n03/map-to-network.wav"
+    },
+    {
+      "id": "compare-routes",
+      "text": "Now use it. What's the shortest ride from the Trailhead to the Village? With a network this small, list the possible routes and add the weights. Trailhead, Lake, Ridge, Village is six plus seven plus three, sixteen kilometres. Trailhead, Mill, Village is nine plus nine, eighteen. And Trailhead, Lake, Mill, Village is six plus four plus nine, nineteen. So the shortest ride is Trailhead, Lake, Ridge, Village, sixteen kilometres, even though the route through the Mill has fewer stops. And if you ride at twelve kilometres an hour, sixteen divided by twelve is one and a third hours, which is one hour twenty minutes. With bigger networks, listing every route gets out of hand, and there's a systematic method for that later in the strand.",
+      "audioFile": "public/audio/math-s11-n03/compare-routes.wav"
+    },
+    {
+      "id": "from-to-table",
+      "text": "Some tables have a direction built in. Here's a town with one-way streets, and a table of driving times in minutes. This time the rows mean from, and the columns mean to. From the Car park to the School is three minutes. But look in the School row, under the Car park. There's a dash, because you can't drive that street the other way. The table isn't symmetric any more, so every filled cell becomes an arrow, pointing from the row's place to the column's place. Car park to School three, School to the Hall four, the Hall to the Car park six, the Hall to the Pool two, and Pool to School five. That's a directed, weighted network, drawn straight from the table.",
+      "audioFile": "public/audio/math-s11-n03/from-to-table.wav"
+    },
+    {
+      "id": "arrows-change-answers",
+      "text": "Now the arrows change the answers. Drive from the Car park to the Pool, following the arrows. Car park to School, three, School to the Hall, four, the Hall to the Pool, two. That's nine minutes. Now come home. There's no arrow from the Pool to the Car park, so you go Pool to School, five, School to the Hall, four, and the Hall to the Car park, six. That's fifteen minutes, for the same two places. That's the network telling you something useful. A driver who only looked at the street map might plan the trip home completely wrong. In a directed network, always check which way the arrows point before you add a single weight.",
+      "audioFile": "public/audio/math-s11-n03/arrows-change-answers.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's tables to networks in one card. Name the vertices, then turn every filled cell into an edge, with its number as the weight. If the table is the same both ways, draw lines. If it only works from row to column, draw arrows.",
+      "audioFile": "public/audio/math-s11-n03/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. This table gives the distances, in kilometres, along direct paths between four lookouts, A, B, C and D. Draw the network. Then find the shortest route from A to D, and its length. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-n03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Four vertices, and five edges. A B five, A C eight, B C two, B D six, and C D three. Now the routes. A, B, D is eleven. A, C, D is eleven. And A, B, C, D is five plus two plus three, ten. So the shortest is A, B, C, D, ten kilometres. Choosing A, C, D because it has the fewest stops is the slip.",
+      "audioFile": "public/audio/math-s11-n03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. This from-to table gives one-way travel times, in minutes, between four stops, J, K, L and M. What's the quickest trip from J to L? And can you travel straight from L to K? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-n03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "From J, the only arrow goes to K, four minutes. Then K to L is three, so seven minutes. The other way, through M, takes twelve. From L, the only arrow goes to J, so there's no direct trip from L to K, no. Reading the K to L cell backwards, as three minutes from L to K, is the slip.",
+      "audioFile": "public/audio/math-s11-n03/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So that's networks from tables and maps. Vertices first, then every number becomes a weighted edge. Here's a new kind of question. A school camp has five cabins, and seven possible paths between them. The camp wants to light some of the paths at night, so every cabin can be reached, without lighting more path than it needs. Which paths should it pick? First we need the words. Paths, trees and spanning trees are next.",
+      "audioFile": "public/audio/math-s11-n03/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-n03/key-notes.wav"
+    }
+  ]
+}

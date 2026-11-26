@@ -1,0 +1,209 @@
+{
+  "brief": 235,
+  "design": "math-a12-d11",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-lighthouse-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-a7b4d328-06f3-484b-ac9e-7cba539604df.png",
+      "nativeSize": [
+        1226,
+        1562
+      ],
+      "sha256": "43defa1f1263f93495ba74dceaf94c18d1c60998b76b633bb4c3f164f3379fe8",
+      "alphaBox": [
+        75,
+        101,
+        1152,
+        1468
+      ],
+      "visibleAlphaBoxThreshold8": [
+        75,
+        102,
+        1152,
+        1468
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "resampled": false,
+      "anchors": {},
+      "generatorNativeSize": [
+        1122,
+        1402
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-lighthouse-v1.png",
+        "translation": [
+          52,
+          80
+        ],
+        "operations": [
+          "Added six-percent clear margin",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    },
+    {
+      "path": "public/assets/maths/ma12-lighthouse-islet-top-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-70ec8dcd-658b-485e-9a2f-780463f0b256.png",
+      "nativeSize": [
+        1500,
+        1500
+      ],
+      "sha256": "c0fddf5a8e3fa2c2e073f20ed0a765f9aa32807ae3f0ed123bdc3f8feb517e9c",
+      "alphaBox": [
+        204,
+        203,
+        1294,
+        1290
+      ],
+      "visibleAlphaBoxThreshold8": [
+        205,
+        204,
+        1293,
+        1289
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "state": "finished-plates-delivered",
+      "resampled": true,
+      "anchors": {
+        "canvasCentre": [
+          750,
+          750
+        ],
+        "lanternCapCentre": [
+          750,
+          750
+        ],
+        "lanternCapRadius": 101.380836
+      },
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-lighthouse-islet-top-v1.png",
+        "translation": [
+          123,
+          123
+        ],
+        "operations": [
+          "Local cap ellipse-to-circle repair and recenter; outer islet texture retained",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false,
+      "resamplingScope": "Local geometry retouch only, no whole-image scaling",
+      "measuredCircleAfterFinishing": {
+        "fittedCentre": [
+          750.030517578125,
+          750.0137939453125
+        ],
+        "fittedDiameters": [
+          202.808349609375,
+          203.29844665527344
+        ],
+        "axisDifferenceRelative": 0.0024107269581330306
+      }
+    },
+    {
+      "path": "public/assets/maths/ma12-beach-strip-top-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-141aa9e0-678e-42d2-a654-d3e89abc5027.png",
+      "nativeSize": [
+        2326,
+        724
+      ],
+      "sha256": "578a5ef06d9c3010f3b059ff9ddc7f98eab1befd2aa3d19535a340bb1be174af",
+      "alphaBox": [
+        140,
+        243,
+        2185,
+        499
+      ],
+      "visibleAlphaBoxThreshold8": [
+        146,
+        251,
+        2181,
+        496
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "resampled": false,
+      "anchors": {
+        "waterlineBrightestCentralRow": 369,
+        "waterlineBandRows": [
+          369,
+          371
+        ]
+      },
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-beach-strip-top-v1.png",
+        "translation": [
+          77,
+          0
+        ],
+        "operations": [
+          "Retouched thin foam band to straight rows369to371; kept sand/water textures elsewhere",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    }
+  ],
+  "state": "finished-plates-delivered",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "findings": [],
+  "mapQA": {
+    "canvas": [
+      800,
+      1000
+    ],
+    "pixelsPerKilometre": 240,
+    "lantern": [
+      260,
+      500
+    ],
+    "waterlineX": 500,
+    "distancePixels": 240,
+    "isletUniformScale": 0.14,
+    "beachUniformScale": 0.5,
+    "beachRotationDegreesClockwise": 90
+  },
+  "qaBoards": [
+    "work/brief235/final-qa/d11-side-400.jpg",
+    "work/brief235/final-qa/d11-side-800.jpg",
+    "work/brief235/final-qa/d11-map-400.jpg",
+    "work/brief235/final-qa/d11-map-800.jpg"
+  ]
+}

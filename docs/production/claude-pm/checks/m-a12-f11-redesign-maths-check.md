@@ -7,3 +7,10 @@ The exact 48-payment amount is $480.7828768..., rounding to $480.78. Paying that
 Scene 3's 'otherwise the right side would be negative' fails at equality M=Pr: the denominator is zero and the rearrangement is undefined, while the balance stays constant. Distinguish equality and lower payment. The formula divides by r, so cover or clearly exclude r=0. Scene 13 says all four calculations follow after setting balance zero; the amount still owing is found by evaluating a nonzero balance, as scene 7 correctly does. The memory aid needs that exception in learner copy.
 
 Live https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson13.sa.html card 05 confirms $20,000, 7.2%, $400 and 60 payments, although the intermediate logarithm is inaccurate; Problem 3 confirms $250,000, 6%, 20 years and $1,791.08. The source uses a rounded-dollar total and does not distinguish final-payment conventions.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `6e4ef0954528fea7205b87d52159d80b9cbf9e1f8a515b671ff36a5038da72be`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Equality M=Pr nowseparately leadsdivisionbyzero/constantbalance;M<Pr negativepower target. Amountstillowing usesAn directly;three payoffunknownssetAn0. Total240equalroundedpayments explicitlystated ratherthanclaiming smallerfinalpayment model. Repairedhandoffmatches.
+
+Independent recount:5892characters/14scene strings,noem dashes. Changed narration andsource repair notescheckedagainst priorfullreview;unchanged numericalexamples/live-sourcechecksretained. Newboundary/roundingchecks inwork/brief240/root68-f10-f15-edge-calculations.json. Nativeartmeasurementsretained forbuilderfittingunderrootdecision30;root68readytovoice. No speechgeneratedbythisreview. Measuredtiming,builtmotionandhumanlisteningremainpending.

@@ -1,0 +1,64 @@
+{
+  "id": "m5x-bead-bag-v2",
+  "brief": 242,
+  "file": "public/assets/biology/m5x-bead-bag-v2.png",
+  "sha256": "466fad1c2e65c3eae719d813e1af1c0ba9c3c29e77e81f8702908e3c383f5043",
+  "nativeSize": [
+    1254,
+    1254
+  ],
+  "originalPreserved": "public/assets/biology/m5x-bead-bag-v1.png",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-521f4c64-c2ab-463f-b427-c1e8505dc35d.png",
+  "prompt": "Educational scientific plate repair. Edit target: supplied linen drawstring bead bag. Deliver the BAG ALONE, with NO beads anywhere, neither outside nor inside the empty opening. Preserve its open oval mouth, folded beige linen fabric, stitched seam, two hanging cord ends, three-quarter view and fine dark ink and watercolour treatment. Remove all nine loose red and white beads completely. Repair all external yellow, red and white fringe pixels: all surrounding area including spaces between cord and bag must be truly transparent alpha. No external wash, glow, shadow, ground, backdrop, border, text, numbers, labels, people, hands or human faces. Keep the bag and cords completely inside a square canvas with at least eight percent clear margins on every side. Preserve native aspect; never stretch. This is a new sibling m5x-bead-bag-v2, original v1 is preserved.",
+  "method": "Built-in image edit; PNG copied unchanged. Python only measured alpha and created QA composites.",
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    200,
+    177,
+    1093,
+    1002
+  ],
+  "anchors": {
+    "openingCentre": [
+      645,
+      360
+    ],
+    "openingLeft": [
+      385,
+      326
+    ],
+    "openingRight": [
+      904,
+      375
+    ],
+    "baseline": [
+      640,
+      999
+    ],
+    "leftCordEnd": [
+      242,
+      747
+    ],
+    "rightCordEnd": [
+      1054,
+      791
+    ]
+  },
+  "qa": {
+    "result": "static pass",
+    "observations": [
+      "Empty bag alone, no loose beads, markings, text or question data.",
+      "Paper and dark native composites show no external fringe or halo; clear spaces between cords and bag.",
+      "Whole bag and cord ends fit, with more than eight percent clear margin.",
+      "Square native canvas is 1254 by 1254, different from v1 2000 by 2000. Fit by native aspect and the new visible bounds, not old pixel coordinates."
+    ],
+    "evidence": [
+      "work\\brief242\\bead-bag-v2-native-paper.jpg",
+      "work\\brief242\\bead-bag-v2-native-dark.jpg"
+    ]
+  },
+  "limitation": "Static only; actual scoop, tip, wobble and insertion alignment need build review. No design edits."
+}

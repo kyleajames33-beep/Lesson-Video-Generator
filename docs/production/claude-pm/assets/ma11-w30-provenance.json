@@ -1,0 +1,67 @@
+{
+  "brief": 247,
+  "lesson": "w30",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-5ff374e4-db2a-4118-84d4-efc220fa4cab.png",
+      "sha256": "dd7397dbe967603e06294965bdb1b7306f5d5af8ee2ff5f3bed32da331d227b3",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        126,
+        2172,
+        551
+      ],
+      "marginFractions": [
+        0.0,
+        0.17403314917127072,
+        0.0,
+        0.23895027624309392
+      ],
+      "evidence": [
+        "work/brief247/w30-rail-trail-native-paper.jpg",
+        "work/brief247/w30-rail-trail-native-dark.jpg",
+        "work/brief247/w30-rail-trail-native-white.jpg",
+        "work/brief247/w30-rail-trail-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-rail-trail-v1.png",
+      "path": "public/assets/maths/ma11-rail-trail-v1.png",
+      "brief": 247,
+      "lesson": "w30",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        3800,
+        700
+      ],
+      "qa": {
+        "result": "qualified:19posts and text fit pass; exact native spacing fails, uniform coded map prepared for root",
+        "observations": [
+          "Rail trail delivered with geometry qualification. Exactly19 blank post faces and central station confirmed. Native2172x724, fitted spacing114.346px, adjacent112..118px, max5.204px residual; requested200px spacing/3800x700 is not a pass. Sidecar records measured centres and a uniform coded map x=1088+114k. All coded labels from-9 to9 at36px fit within the faces at1600/1900wide on paper/dark, with maximum7px native offset from painted face centre. Root must use one exact linear map for labels and distance bars, rather than varying the mathematical scale with painted spacing. No warp or upsampling. Alpha at ends reaches the canvas; no post is cut."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w30-rail-coded-paper.jpg",
+          "work/brief247/w15-w31/w30-rail-coded-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-rail-trail-v1.json"
+    }
+  ],
+  "result": "Rail trail delivered with geometry qualification. Exactly19 blank post faces and central station confirmed. Native2172x724, fitted spacing114.346px, adjacent112..118px, max5.204px residual; requested200px spacing/3800x700 is not a pass. Sidecar records measured centres and a uniform coded map x=1088+114k. All coded labels from-9 to9 at36px fit within the faces at1600/1900wide on paper/dark, with maximum7px native offset from painted face centre. Root must use one exact linear map for labels and distance bars, rather than varying the mathematical scale with painted spacing. No warp or upsampling. Alpha at ends reaches the canvas; no post is cut.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/w15-w31/w30-generation.json",
+    "work/brief247/w15-w31/w30-guide-metadata.json",
+    "work/brief247/w15-w31/w30-rail-layout-guide.png",
+    "work/brief247/w15-w31/w30-rail-geometry.json"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "design": "phys-y12-m6-v11",
+  "sourceSHA256": "21f02fb3bcda18c4f9ed7bc6e5ae4657e9846a4c88f3689a923648485b596080",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "phys-y11-knife-switch-blade-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-blade-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "public/assets/physics/phys-y11-bar-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-bar-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "public/assets/physics/phys-y11-knife-switch-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-knife-switch-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "public/assets/physics/phys-y11-solenoid-coil-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-solenoid-coil-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "y12p-galvanometer-needle-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-needle-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v11",
+      "reference": "y12p-galvanometer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-galvanometer-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "galvanometer-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-113292e3-973c-49d3-9c54-2a5f12b66326.png",
+      "size": [
+        1354,
+        1161
+      ],
+      "alpha16Bounds": [
+        149,
+        112,
+        1206,
+        1065
+      ],
+      "marginFraction": [
+        0.11004431314623338,
+        0.09646856158484066,
+        0.10930576070901034,
+        0.082687338501292
+      ],
+      "file": "public/assets/physics/y12p-galvanometer-v1.png",
+      "sha256": "5e0265d1e9c93394e5f25e446dc2f62d287dfdb6870cb4f3af30de166d8e9802",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "anchors": {
+        "needlePivot": [
+          677,
+          658
+        ],
+        "centreZeroDirection": [
+          0,
+          -1
+        ],
+        "endTickDirectionsDegreesFromUp": [
+          -58,
+          58
+        ],
+        "redTerminalCentre": [
+          457,
+          865
+        ],
+        "blackTerminalCentre": [
+          896,
+          865
+        ],
+        "note": "Corrected concentric scale. Needle and face share1354x1161canvas. End angles approximate inspected radial directions; confirm in coded scene."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief189-qa",
+      "status": "delivered for designer inspection; coded scene and motion pending",
+      "qualification": "Native imagegen dimensions retained. No stretching, upsampling or scripted creative modification. Nominal requested canvas sizes differ; meter layers have identical actual canvas."
+    },
+    {
+      "key": "needle",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-3998327f-99f0-45f5-9f49-f6f1b93d594e.png",
+      "size": [
+        1354,
+        1161
+      ],
+      "alpha16Bounds": [
+        662,
+        314,
+        692,
+        690
+      ],
+      "marginFraction": [
+        0.48892171344165436,
+        0.2704565030146425,
+        0.48892171344165436,
+        0.40568475452196384
+      ],
+      "file": "public/assets/physics/y12p-galvanometer-needle-v1.png",
+      "sha256": "6de4e878993239e7e294b602229b16078e6b46d3e34b2e57e7de898530cdea32",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "anchors": {
+        "needlePivot": [
+          677,
+          658
+        ],
+        "tip": [
+          677,
+          314
+        ],
+        "tailEnd": [
+          677,
+          689
+        ],
+        "centreZeroDirection": [
+          0,
+          -1
+        ],
+        "note": "Identical canvas and origin to meter body; no translation or scale difference. QA rotation0andplus/minus58degrees stays inside window."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief189-qa",
+      "status": "delivered for designer inspection; coded scene and motion pending",
+      "qualification": "Native imagegen dimensions retained. No stretching, upsampling or scripted creative modification. Nominal requested canvas sizes differ; meter layers have identical actual canvas."
+    }
+  ],
+  "heldCRT": null,
+  "reuseCheckEvidence": "work/brief189/reuse-checks.json",
+  "qa": "docs/production/claude-pm/assets/brief189-qa",
+  "status": "source findings, scene integration, exact voiced preview and listening remain open"
+}

@@ -1,0 +1,165 @@
+{
+  "id": "phys-y12-m5-v23",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "4e280897c1d7ef28b8911278f65dc7478e051ef5ff33f1b5f374e6ba5d01c700",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (does it ever not come back?)",
+      "voiceover": {
+        "text": "Launch a probe straight up from Earth's surface, with no air, and no engine after launch. At five kilometres per second, it climbs about one thousand six hundred kilometres before falling back. At ten kilometres per second, it gets about twenty-five thousand kilometres up, and still falls back. Is there a launch speed where it never comes back at all, and does that speed have to be infinite? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-trade",
+      "title": "trading kinetic for potential energy",
+      "voiceover": {
+        "text": "Think about its energy. With gravity the only force, its total energy, kinetic plus potential, stays the same. As it climbs, kinetic energy turns into potential energy, so it slows down. Each extra kilometre costs less than the one before, because the pull keeps weakening. If its kinetic energy runs out before it gets far enough, it stops and falls back. But remember, potential energy only rises to zero, even at infinity. So the probe needs only enough kinetic energy to cover that finite climb, not an infinite amount."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "threshold",
+      "title": "the threshold: zero total energy",
+      "voiceover": {
+        "text": "The slowest escape is when the probe just reaches infinity, with zero speed left. Out there, its kinetic energy is zero, and its potential energy is zero, so its total energy is zero. Total energy doesn't change, so it must be zero at launch too. At launch, that's a half m v squared, minus big G M m over r, equals zero. It's like having exactly enough to pay for the whole climb, with nothing left over. The mass m cancels. So v squared equals two big G M over r, and the escape velocity is the square root of two big G M over r."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "earth-value",
+      "title": "Earth's escape velocity",
+      "voiceover": {
+        "text": "From Earth's surface, with the data sheet values, that's the square root of two times four point zero zero two times ten to the fourteen, over six point three seven one times ten to the six. That gives about one point one two times ten to the four metres per second, or eleven point two kilometres per second. NASA quotes the same value, eleven point two. That's about forty thousand kilometres an hour. From the Moon, with far less mass, it's only about two point four."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "escape-vs-orbit",
+      "title": "escape versus orbit",
+      "voiceover": {
+        "text": "Compare that with the speed of a circular orbit at the same radius, the square root of big G M over r. The only difference is the two inside the root, so escape velocity is root two, about one point four one times the orbital speed. A satellite four hundred kilometres up moves at seven point six nine kilometres per second. To escape from there, it needs ten point nine, an extra three point two kilometres per second. A common slip is putting the two outside the root."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "classify",
+      "title": "sorting launches by total energy",
+      "voiceover": {
+        "text": "So the launch speed sorts every case by total energy. Below escape velocity, the total is negative. The probe is bound, so it falls back, or ends up in an orbit if it's launched sideways. Exactly at escape velocity, the total is zero, and the probe just escapes, slowing towards zero speed forever. Above it, the total is positive, and the probe escapes with speed to spare. Launch at fourteen kilometres per second, and far away it's still doing about eight point four kilometres per second."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "independence",
+      "title": "what it doesn't depend on",
+      "voiceover": {
+        "text": "Two things escape velocity doesn't depend on. The probe's mass, because it cancelled. And the direction of launch, because energy has no direction. Aim it sideways or straight up, and the threshold is the same, as long as its path doesn't hit the planet. It depends only on the planet's mass, and the distance from its centre that you launch from."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "assumptions",
+      "title": "the model's assumptions, and real rockets",
+      "voiceover": {
+        "text": "This model makes real assumptions. No air, which would slow the probe and heat it. No propulsion after launch. And only Earth's gravity, ignoring the Sun and the Moon. Real rockets never leave the pad at eleven point two kilometres per second. They keep their engines burning as they climb, so the energy is supplied gradually, much of it high up, where the pull is weaker. Escape velocity is the speed for a single kick at the start."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "To remember it: orbit speed is root G M over r, and escape speed is root two G M over r. Escape is root two times orbit, and the two goes inside the root. And escaping doesn't mean leaving gravity behind. The probe is pulled back the whole way out, it just never stops."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Mars has a mass of six point four two times ten to the twenty-three kilograms, and a radius of three point three nine times ten to the six metres. Calculate the escape velocity from its surface, and state one assumption you made. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "v equals the square root of two big G M over r: two times six point six seven times ten to the minus eleven, times six point four two times ten to the twenty-three, over three point three nine times ten to the six. That's about five point zero three times ten to the three metres per second. Assumptions include no atmosphere, and no propulsion after launch. The classic slip is leaving out the two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A satellite is in a circular orbit around a planet. Its engine fires briefly to increase its speed. By what factor must its speed increase, so that it can escape with no further propulsion? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "At the same radius, the orbital speed is root G M over r, and the escape speed is root two G M over r. So the speed must increase by a factor of root two, about one point four one, whatever the radius or the planet. The slip is answering two, by doubling the speed instead of multiplying it by root two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "module-bridge",
+      "title": "end of gravity, and the next field",
+      "voiceover": {
+        "text": "That wraps up gravity and orbits. A gravitational field around every mass sets every orbit, and every escape. Next, we meet a different kind of field. Between two charged plates, the electric field is uniform, just like gravity close to the ground, so a charged particle accelerates steadily. So how does the voltage across the plates set that acceleration?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "design": "chem-y11-m1-v25",
+  "sourceSHA256": "26a5deeef53837e1337e0ab8dcfd5e14d1e4665aa88c57927caad8bd72e2d196",
+  "newPlates": [
+    {
+      "design": "chem-y11-m1-v25",
+      "filename": "y11c-diamond-v1.png",
+      "status": "pending source repairs and reference checks; not painted",
+      "reason": "The design asset brief requires learning/science/error checks to pass before painting. This source revision has unresolved findings or reference checks. No substitute artwork or approval claimed."
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "filename": "y11c-pencil-graphite-v1.png",
+      "status": "pending source repairs and reference checks; not painted",
+      "reason": "The design asset brief requires learning/science/error checks to pass before painting. This source revision has unresolved findings or reference checks. No substitute artwork or approval claimed."
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "filename": "y11c-quartz-crystal-v1.png",
+      "status": "pending source repairs and reference checks; not painted",
+      "reason": "The design asset brief requires learning/science/error checks to pass before painting. This source revision has unresolved findings or reference checks. No substitute artwork or approval claimed."
+    }
+  ],
+  "existingAssets": [
+    {
+      "design": "chem-y11-m1-v25",
+      "reference": "public/assets/chemistry/c4-icon-carbon-lump-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4-icon-carbon-lump-v1.png"
+      ],
+      "exists": true,
+      "status": "existing file, visual fitness still to inspect"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "reference": "public/assets/element-c.png",
+      "paths": [
+        "public/assets/element-c.png"
+      ],
+      "exists": true,
+      "status": "existing file, visual fitness still to inspect"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "reference": "y11c-diamond-v1.png",
+      "paths": [],
+      "exists": false,
+      "status": "missing/requested dependency"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "reference": "y11c-dry-ice-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-dry-ice-v1.png"
+      ],
+      "exists": true,
+      "status": "existing file, visual fitness still to inspect"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "reference": "y11c-pencil-graphite-v1.png",
+      "paths": [],
+      "exists": false,
+      "status": "missing/requested dependency"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "reference": "y11c-quartz-crystal-v1.png",
+      "paths": [],
+      "exists": false,
+      "status": "missing/requested dependency"
+    }
+  ],
+  "generationTool": null,
+  "status": "review hand-in; new painting pending stated review-pass condition",
+  "assets": [
+    {
+      "key": "diamond",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-c0787a80-fed0-4042-89cf-d0041bc718eb.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        150,
+        247,
+        1095,
+        1055
+      ],
+      "minMarginAbove16": 0.11961722488038277,
+      "file": "public/assets/chemistry/y11c-diamond-v1.png",
+      "design": "chem-y11-m1-v25",
+      "sha256": "72312dff4f3db5b0e5d67f407b8932d7e3fe6af20d3c14117b807aef7f01e7ca",
+      "generatedBy": "built-in image_gen",
+      "status": "delivered for designer inspection",
+      "date": "2026-11-06",
+      "QA": "Paper/dark/white alpha-aware400px composites inspected. Halite pieces show cubic cleavage; diamond reads as a faceted gem; quartz has a prism and pointed termination. Three solvent tubes inspected side by side at shared canvas scale.",
+      "qualification": "Native output dimensions differ from request, no resampling. Low-alpha noise may occur outside painted bounds. Viewpoint/style compatibility inspected; no exact real-world size calibration is claimed for the mineral/pencil set. Source findings remain open."
+    },
+    {
+      "key": "quartz",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-9c5b045a-37d0-4648-b66e-647c52eb62e5.png",
+      "size": [
+        1173,
+        1341
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        329,
+        109,
+        822,
+        1213
+      ],
+      "minMarginAbove16": 0.08128262490678598,
+      "file": "public/assets/chemistry/y11c-quartz-crystal-v1.png",
+      "design": "chem-y11-m1-v25",
+      "sha256": "d110a41212d3d0d2c114a5598218e0f3f5e3c06171b63d62961f860f865d8183",
+      "generatedBy": "built-in image_gen",
+      "status": "delivered for designer inspection",
+      "date": "2026-11-06",
+      "QA": "Paper/dark/white alpha-aware400px composites inspected. Halite pieces show cubic cleavage; diamond reads as a faceted gem; quartz has a prism and pointed termination. Three solvent tubes inspected side by side at shared canvas scale.",
+      "qualification": "Native output dimensions differ from request, no resampling. Low-alpha noise may occur outside painted bounds. Viewpoint/style compatibility inspected; no exact real-world size calibration is claimed for the mineral/pencil set. Source findings remain open."
+    },
+    {
+      "key": "pencil-margin",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-5baac8a7-fedb-4525-8890-b400ab6163f7.png",
+      "size": [
+        1983,
+        793
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        235,
+        327,
+        1747,
+        485
+      ],
+      "minMarginAbove16": 0.11850731215330308,
+      "file": "public/assets/chemistry/y11c-pencil-graphite-v1.png",
+      "design": "chem-y11-m1-v25",
+      "sha256": "ff752d51f63a02d11647217ba2d16a24c6722f027cfd74c4de2feca056ea8332",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "QA": "Paper, dark and white composites inspected at400px; conductivity pair midpoint overlay inspected on paper/dark.",
+      "qualification": "Native dimensions differ from request; no resampling. Low-alpha noise may occur outside painted bounds. Conductivity upper tips differ by up to6 native pixels (about2 display pixels at400px canvas width), with about2px lower outline variation; visually close but not pixel-identical. Exact swap acceptance remains with designer. School-method/source findings remain open."
+    }
+  ],
+  "newRequests": [
+    {
+      "design": "chem-y11-m1-v25",
+      "filename": "y11c-diamond-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See provenance for native-size, alpha and pair-alignment limits. Source corrections remain open.",
+      "sha256": "72312dff4f3db5b0e5d67f407b8932d7e3fe6af20d3c14117b807aef7f01e7ca",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "qa": "docs/production/claude-pm/assets/brief179-qa/"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "filename": "y11c-pencil-graphite-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See provenance for native-size, alpha and pair-alignment limits. Source corrections remain open.",
+      "sha256": "ff752d51f63a02d11647217ba2d16a24c6722f027cfd74c4de2feca056ea8332",
+      "nativeSize": [
+        1983,
+        793
+      ],
+      "qa": "docs/production/claude-pm/assets/brief179-qa/"
+    },
+    {
+      "design": "chem-y11-m1-v25",
+      "filename": "y11c-quartz-crystal-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See provenance for native-size, alpha and pair-alignment limits. Source corrections remain open.",
+      "sha256": "d110a41212d3d0d2c114a5598218e0f3f5e3c06171b63d62961f860f865d8183",
+      "nativeSize": [
+        1173,
+        1341
+      ],
+      "qa": "docs/production/claude-pm/assets/brief179-qa/"
+    }
+  ],
+  "sourceReviewStatus": "Findings remain open. Asset delivery is not recording or practical-method approval.",
+  "brief237NewPlates": [
+    {
+      "name": "y11c-sic-cutting-disc-v1.png",
+      "lesson": "chem-y11-m1-v25",
+      "path": "public/assets/chemistry/y11c-sic-cutting-disc-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-e24c0d87-2609-423a-aaa7-e8efed796bfe.png",
+      "sha256": "273d51be3bf925931f73ecc9798e1f7aa1a5d6b62a091caae00e8fc12fe354d3",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        1400,
+        1400
+      ],
+      "dimensionsMatch": false,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        0,
+        51,
+        1200,
+        1165
+      ],
+      "alpha16Box": [
+        192,
+        341,
+        1057,
+        935
+      ],
+      "meaningfulMarginPass": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling, stretching or pixel editing"
+      ],
+      "state": "delivered-native-with-dimension-and-low-alpha-margin-deviations",
+      "visualQAInspected": true,
+      "qa": "work\\brief237\\y11c-sic-cutting-disc-v1-qa.jpg",
+      "findings": [
+        "Generator native dimensions differ from requested; keep aspect, no stretching.",
+        "Meaningful object margins now exceed 8 percent after image-tool reframing; strict all-alpha margins include tiny low-alpha specks.",
+        "Paper,dark,black,white400px QA inspected: no detached halo visible."
+      ]
+    }
+  ],
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m1-v25-native-qa.json",
+    "result": "Remaining abrasive disc passes static checks; earlier sample artwork reused. Three unused/style references excluded. No fallback or repaint. No whole-lesson clearance."
+  }
+}

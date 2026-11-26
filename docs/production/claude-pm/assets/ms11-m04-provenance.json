@@ -1,0 +1,51 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/lessons/math-s11-m04.md",
+  "assets": [
+    {
+      "name": "ms11-fridge-v1.png",
+      "path": "public/assets/maths/ms11-fridge-v1.png",
+      "requestedDestination": "public/assets/maths/ms11-fridge-v1.png",
+      "status": "accepted",
+      "sha256": "d1800e1aad67b989c375725f18531439fc0906e0cf20d9a9cbe834df03a79fa6",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "opaqueBoundingBox": [
+        154,
+        120,
+        867,
+        1434
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/math-s11-m04.md",
+      "sourceBriefSha256": "3322e0bd765e1b88ce625a383cb89671e769b12971bfc27800ed8491e16c1e69",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/ms11-fridge-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-a82ddaea-a915-4e1f-865f-dfc2639e2f70.png",
+      "prompt": "Create one isolated educational object plate, not a scene with people. Exact asset specification: 1. `ms11-fridge-v1.png` (about 900 \u00d7 1500 px, portrait): a plain white two-door household fridge (freezer on top), three-quarter front view, doors closed, simple handles, no magnets, notes, brand badge or display. It must read clearly at 260 px tall. Used by m04's attempts. Fine dark ink outlines and realistic layered watercolour washes in restrained natural colours. True transparent PNG outside the listed objects. Preserve the requested native portrait/landscape proportions; do not stretch. At least12percent transparent margin. All meter dial faces and number windows must be completely blank for coded readings. No text, digits, labels, logos, brands, arrows, people, human hands or human faces. Clean alpha, no coloured fringe, white outline or glow; no background room. Render only this one requested plate.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "notes": "Original fridge accepted. Valid alpha maximum is 254. Earlier opaque diagnosis was incorrect; alternate cutout is unused.",
+      "scaleReview": {
+        "paper": "#f6f1e7",
+        "sizes": [
+          800,
+          600,
+          300
+        ],
+        "axis": "height",
+        "sheet": "work/brief264/qa/ms11-fridge-v1-sizes.jpg",
+        "result": "Object and blank display/door features remain legible"
+      }
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

@@ -1,0 +1,107 @@
+{
+  "brief": 242,
+  "method": "Built-in imagegen; three native PNGs copied without pixel edits",
+  "qa": {
+    "plates": [
+      {
+        "file": "work/brief242/bio-fa1-v20-candidates/y11-enzyme-denatured-v1.png",
+        "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-4900163a-3b4e-405a-983e-7e286196c66a.png",
+        "sha256": "a129cb88d5aef305780648488155432426a32bdbfaa6c0e310856cac2133f54b",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bbox": [
+          179,
+          240,
+          861,
+          1019
+        ],
+        "margins": [
+          0.14274322169059012,
+          0.19138755980861244,
+          0.3133971291866029,
+          0.18740031897926634
+        ],
+        "publicFile": "public/assets/biology/y11-enzyme-denatured-v1.png",
+        "promptSummary": "Precise-object edit of y11-induced-fit-open-v1.png, with y11-induced-fit-substrate-v1.png as supporting reference only. Preserve square canvas, enzyme centre, overall size and teal ink/watercolour style. Same enzyme after denaturation: loosen one or two folded loops, slightly greyer/paler teal; pinch and twist right-facing pocket with inward-folded lip so original gold substrate cannot fit. Single connected enzyme, complete margins, genuine transparent alpha. No gold, fragments, flames, steam, text, arrows, people or background.",
+        "sidecar": "public/assets/biology/y11-enzyme-denatured-v1.json"
+      },
+      {
+        "file": "work/brief242/bio-fa1-v20-candidates/y11-egg-white-raw-v1.png",
+        "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-8fda3090-debd-4afb-af47-3fd86e593b98.png",
+        "sha256": "5bdf20ae461883e140b19cd9f0a0ecc0fdf3726b71dfa8e97d6a670da36510f1",
+        "nativeSize": [
+          1466,
+          1073
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "bbox": [
+          74,
+          176,
+          1378,
+          918
+        ],
+        "margins": [
+          0.0504774897680764,
+          0.16402609506057783,
+          0.06002728512960437,
+          0.14445479962721341
+        ],
+        "publicFile": "public/assets/biology/y11-egg-white-raw-v1.png",
+        "promptSummary": "One shallow clear glass dish in low three-quarter view containing raw egg white only, clear glossy colourless albumen and specular reflection, no yolk or yellow. Fine dark ink and restrained watercolour apparatus style, complete contours, landscape about1400x1000 with about8percent margin and genuine transparent alpha. No pan, flame, steam, hand, people, text, numbers, scale, arrows or shadow wash. Keep dish geometry clear for matched cooked sibling.",
+        "sidecar": "public/assets/biology/y11-egg-white-raw-v1.json"
+      },
+      {
+        "file": "work/brief242/bio-fa1-v20-candidates/y11-egg-white-cooked-v1.png",
+        "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-6bea951e-f438-4a17-b26e-a429ff8aecdf.png",
+        "sha256": "555c25cb5a4572086699ab553ff5d0acfc3647786991a8cd5b71ff4528a3ecdb",
+        "nativeSize": [
+          1466,
+          1073
+        ],
+        "alphaRange": [
+          0,
+          254
+        ],
+        "bbox": [
+          74,
+          172,
+          1377,
+          919
+        ],
+        "margins": [
+          0.0504774897680764,
+          0.1602982292637465,
+          0.06070941336971351,
+          0.1435228331780056
+        ],
+        "publicFile": "public/assets/biology/y11-egg-white-cooked-v1.png",
+        "promptSummary": "Precise-object edit of raw egg-white dish. Preserve exact canvas, dish position, outer glass contour, rim ellipses, glass walls/reflections and transparent background. Change only albumen to cooked uniformly opaque matt white softly set at same level. No clear glossy albumen, yolk, yellow, brown crust, foam, pan, flame, steam, people, labels, arrows, new shadow or background. Same educational ink/watercolour style and genuine transparent alpha.",
+        "sidecar": "public/assets/biology/y11-egg-white-cooked-v1.json"
+      }
+    ],
+    "metrics": {
+      "substrateDenaturedOpaqueOverlap": 15904,
+      "substrateOpaquePixels": 55398,
+      "farBodyVisibleRGBAChange": 98954
+    },
+    "eggPair": {
+      "alphaMaskIoU": 0.9935905889800333,
+      "changedVisibleRGBA": 795161,
+      "nativeSize": [
+        1466,
+        1073
+      ],
+      "exactPair": false
+    }
+  },
+  "scope": "Static delivery; actual1254square enzyme and1466x1073egg pair. Exact transition registration held."
+}

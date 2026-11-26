@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-s11",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "e71aa4cd6ab98a3bc306bff5e56951253ef15f282913d36ac17df04f4c64d740",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (which catch is more unusual?)",
+      "voiceover": {
+        "text": "Last video ended here. This snapper is forty-five centimetres, five above the average snapper off this jetty. This golden perch is forty centimetres, four above the average perch in its river. Five looks bigger than four. But snapper here vary by about four centimetres, and these perch by only about two and a half, so the raw gaps can't be compared. We need a common ruler. Then we'll find the area beyond each catch."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "counting standard deviations: the z-score",
+      "voiceover": {
+        "text": "The ruler is the standard deviation. For the snapper, sigma is four, so five centimetres is five over four, one point two five sigmas. For the perch, sigma is two point five, so four centimetres is four over two point five, one point six sigmas. That count is the zed score, or standardised score. Subtract the mean from the value, then divide by the standard deviation. It tells you how many standard deviations the value lies above or below the mean. A negative zed means below, positive means above. Both catches are above, and the perch is further out, because one point six sigmas is more than one point two five."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the standard normal",
+      "voiceover": {
+        "text": "Here's what a zed score does to the whole curve. Subtracting the mean slides the bell so its centre sits at zero. Dividing by sigma squeezes it until its standard deviation is one. Do that to both bells, and they land on the same curve. It's the standard normal distribution, with mean zero and standard deviation one, written capital Z is N of zero, one. Any other normal, with mean mu and standard deviation sigma, is a non-standard normal. The value marks move with the curve, so the areas don't change. The area beyond forty-five centimetres is the area beyond one point two five."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "comparing results from different groups",
+      "voiceover": {
+        "text": "Zed scores also compare results from different groups. Alex scored seventy-two in Maths, where the mean was sixty and the standard deviation twelve. Blake scored sixty-eight in English, with mean fifty-five and standard deviation ten. Alex has the higher mark. But Alex's zed score is twelve over twelve, which is one. Blake's is thirteen over ten, one point three. So Blake did better relative to the cohort, because Blake's mark is further above its mean, measured in standard deviations. To justify a comparison, quote both zed scores."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "a table for the areas beyond",
+      "voiceover": {
+        "text": "Now the areas. Every normal curve becomes the same standard normal, so one table works for all of them. This table gives the probability that Z is less than zed, the area to the left, for positive zeds. For one point two five, go down to the row for one point two, then across to the column for zero point zero five. The entry is zero point eight nine four four. That's the area to the left, so the area beyond the snapper is one minus that, zero point one zero five six. At one point six, the table gives zero point nine four five two, so beyond the perch is zero point zero five four eight. Under these normal models, about one snapper in ten is at least that long, but only about one perch in eighteen. Further out means a smaller tail, so the perch is the more unusual catch."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "negative z by symmetry",
+      "voiceover": {
+        "text": "This table has no negative zeds, and symmetry fixes that. A drink-bottle filling machine aims for five hundred millilitres, with sigma eight. A bottle with four ninety is ten below, so zed is minus one point two five. The area below minus one point two five matches the area above plus one point two five, the snapper's tail. So it's zero point one zero five six, and about ten point six percent of bottles fall below four ninety. Any negative zed works the same way: flip to the other side, then take one minus the table."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "middles by symmetry",
+      "voiceover": {
+        "text": "For a middle, use symmetry again. Bolts are normal, with mean fifty millimetres and standard deviation zero point three, and pass between forty-nine point five and fifty point five. Zed is plus or minus one point six seven, so each tail is one minus zero point nine five two five, which is zero point zero four seven five. The middle is one minus both tails, about zero point nine zero five. So about ninety point five percent of bolts pass."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "a judgement under the model",
+      "voiceover": {
+        "text": "Zed scores also support judgements. A quality check finds a bottle holding four seventy-four millilitres. Its zed score is minus twenty-six over eight, which is minus three point two five. The table gives zero point nine nine nine four at three point two five, so the tail below is about zero point zero zero zero six. If the machine is still working as modelled, only about six bottles in ten thousand would be that low. So finding one is a good reason to check the machine."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember the table. This table looks left. For a right tail, take one minus. For a negative zed, use the mirror tail on the other side."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Compare the two results. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "In English, zed is seventy-four minus sixty-two, over eight, which is one point five. In Maths, zed is eighty-one minus seventy, over ten, which is one point one. One point five is bigger, so Priya did better in English, relative to the cohort. Choosing Maths because eighty-one is the higher mark is wrong. The two marks come from groups with different means and spreads."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Use the table values on the card. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The variance is nine, so sigma is three. Zed is forty-six point five minus forty-two, over three, which is one point five. The table gives zero point nine three three two to the left, so the right tail is one minus that, zero point zero six six eight. A zed of zero point five is wrong. That divides by the variance, not by sigma."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a zed score counts standard deviations, compares results, and turns any normal area into a table look-up. Next, the question runs backwards. The company wants only one percent of bottles below four ninety, and sigma stays at eight. Where must it set the mean?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

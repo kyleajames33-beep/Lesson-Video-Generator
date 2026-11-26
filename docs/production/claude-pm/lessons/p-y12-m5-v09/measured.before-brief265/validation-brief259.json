@@ -1,0 +1,917 @@
+{
+  "lesson": "phys-y12-m5-v09",
+  "wave": "P5",
+  "sourceSha256": "f45e5694dca14f0e8c0c007533b365b703daf6efd1965c2cf4c9d2720186175c",
+  "measuredPath": "work/brief259/physics/P5/phys-y12-m5-v09/voiced/lesson.json",
+  "measuredSha256": "cbf81ae2f23f7db3ba494568787fb62b3ecd4f4e039f7640b39a5be0452d3f94",
+  "characters": 5705,
+  "totalSeconds": 452.1666666666667,
+  "under570": true,
+  "inputTokens": 1316,
+  "outputTokens": 9558,
+  "costUsd": 0.08668000000000002,
+  "cuesTimingPass": true,
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/phys-y12-m5-v09/hook.wav",
+      "seconds": 23.923,
+      "durationInFrames": 808,
+      "cues": [
+        {
+          "text": "nut",
+          "start": 1.976,
+          "end": 2.09675
+        },
+        {
+          "text": "all",
+          "start": 23.30200000000005,
+          "end": 23.40700000000005
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.860999999999998,
+        "after": "newtons.",
+        "before": "One"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 23.923,
+        "characters": 357,
+        "charactersPerSecond": 14.92287756552272,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/hook.wav",
+        "audioSha256": "337ef1ea3b023b81a81ec6629c034da6072fd9c43a18e421eeee90e669ceb25e",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.9083251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "does",
+          "start": 21.941000000000052,
+          "end": 22.04100000000005,
+          "score": 0.153
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "reveal-torque",
+      "audio": "public/audio/phys-y12-m5-v09/reveal-torque.wav",
+      "seconds": 30.727,
+      "durationInFrames": 922,
+      "cues": [
+        {
+          "text": "all",
+          "start": 16.621999999999986,
+          "end": 16.711999999999986
+        },
+        {
+          "text": "others",
+          "start": 30.004000000000094,
+          "end": 30.193428571428665
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0220000000001441,
+        "after": "all.",
+        "before": "The"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 30.727,
+        "characters": 456,
+        "charactersPerSecond": 14.840368405636736,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/reveal-torque.wav",
+        "audioSha256": "a8f8c8e6e2ba89f557b5ee95006383ae09eeba7680336dae3b61a2e67d148581",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.82965087890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.521,
+          "end": 0.802,
+          "score": 0.425
+        },
+        {
+          "word": "torque.",
+          "start": 20.85300000000013,
+          "end": 21.21400000000013,
+          "score": 0.402
+        },
+        {
+          "word": "Torque",
+          "start": 21.938000000000077,
+          "end": 22.20100000000008,
+          "score": 0.327
+        },
+        {
+          "word": "a",
+          "start": 22.444000000000077,
+          "end": 22.485000000000078,
+          "score": 0.497
+        },
+        {
+          "word": "to",
+          "start": 24.560000000000066,
+          "end": 24.600000000000065,
+          "score": 0
+        },
+        {
+          "word": "torque",
+          "start": 28.617000000000097,
+          "end": 28.939000000000096,
+          "score": 0.442
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "right-angles",
+      "audio": "public/audio/phys-y12-m5-v09/right-angles.wav",
+      "seconds": 36.23,
+      "durationInFrames": 1087,
+      "cues": [
+        {
+          "text": "effect",
+          "start": 15.171999999999986,
+          "end": 15.377714285714273
+        },
+        {
+          "text": "force",
+          "start": 16.534999999999986,
+          "end": 16.814999999999987
+        },
+        {
+          "text": "metres",
+          "start": 26.57100000000009,
+          "end": 26.89100000000009
+        },
+        {
+          "text": "joules",
+          "start": 35.42699999999989,
+          "end": 35.73642857142846
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9019999999999992,
+        "after": "effect.",
+        "before": "For"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 36.23,
+        "characters": 536,
+        "charactersPerSecond": 14.794369307203976,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/right-angles.wav",
+        "audioSha256": "6634a400a98053eb2cb23c0787a8af44829ab460f386f408683e47cec83cda0c",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.830352783203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 6.8269999999999875,
+          "end": 6.866999999999987,
+          "score": 0.498
+        },
+        {
+          "word": "torque",
+          "start": 19.480999999999987,
+          "end": 19.800999999999988,
+          "score": 0.36
+        },
+        {
+          "word": "Torque",
+          "start": 30.940000000000083,
+          "end": 31.202000000000083,
+          "score": 0.308
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "components",
+      "audio": "public/audio/phys-y12-m5-v09/components.wav",
+      "seconds": 32.4,
+      "durationInFrames": 972,
+      "cues": [
+        {
+          "text": "force",
+          "start": 20.170999999999992,
+          "end": 20.42099999999999
+        },
+        {
+          "text": "metres",
+          "start": 28.526000000000117,
+          "end": 28.801142857142974
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9820000000001272,
+        "after": "force.",
+        "before": "Eighty"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 32.4,
+        "characters": 475,
+        "charactersPerSecond": 14.660493827160494,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/components.wav",
+        "audioSha256": "cf4bfeb117d66198b93acc2a4cc8b7d0d2157c36bfff14dd2f5fa31429e9b86c",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.837158203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "sin",
+          "start": 22.095000000000116,
+          "end": 22.15500000000012,
+          "score": 0.18
+        },
+        {
+          "word": "torque",
+          "start": 24.599000000000117,
+          "end": 24.94000000000012,
+          "score": 0.377
+        },
+        {
+          "word": "torque.",
+          "start": 31.798000000000073,
+          "end": 32.03900000000007,
+          "score": 0.357
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "moment-arm",
+      "audio": "public/audio/phys-y12-m5-v09/moment-arm.wav",
+      "seconds": 33.04,
+      "durationInFrames": 992,
+      "cues": [
+        {
+          "text": "arm",
+          "start": 14.66699999999999,
+          "end": 14.771999999999988
+        },
+        {
+          "text": "again",
+          "start": 24.70200000000004,
+          "end": 24.86866666666671
+        },
+        {
+          "text": "F",
+          "start": 28.030000000000094,
+          "end": 28.090000000000096
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.783000000000051,
+        "after": "again.",
+        "before": "Either"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 33.04,
+        "characters": 512,
+        "charactersPerSecond": 15.49636803874092,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/moment-arm.wav",
+        "audioSha256": "7352b056cc7600d4dbd7a6b0a5cb65c366398089240a981e76332491636aaaaf",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.841888427734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.606,
+          "end": 0.647,
+          "score": 0.489
+        },
+        {
+          "word": "see",
+          "start": 1.334,
+          "end": 1.475,
+          "score": 0.441
+        },
+        {
+          "word": "it's",
+          "start": 15.669999999999991,
+          "end": 16.17199999999999,
+          "score": 0.352
+        },
+        {
+          "word": "you'll",
+          "start": 29.493000000000094,
+          "end": 29.673000000000094,
+          "score": 0.25
+        },
+        {
+          "word": "r",
+          "start": 30.655000000000094,
+          "end": 30.675000000000097,
+          "score": 0
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "along-handle",
+      "audio": "public/audio/phys-y12-m5-v09/along-handle.wav",
+      "seconds": 35.48,
+      "durationInFrames": 1065,
+      "cues": [
+        {
+          "text": "pivot",
+          "start": 5.9669999999999925,
+          "end": 6.200333333333326
+        },
+        {
+          "text": "degrees",
+          "start": 23.690000000000083,
+          "end": 24.041750000000086
+        },
+        {
+          "text": "push",
+          "start": 30.845000000000063,
+          "end": 31.005800000000065
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7420000000000968,
+        "after": "itself.",
+        "before": "Pushing"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 35.48,
+        "characters": 552,
+        "charactersPerSecond": 15.558060879368659,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/along-handle.wav",
+        "audioSha256": "0eab02031c555d18c4df95a9ea04bd51528031cb93ac6807096ee793fd582e20",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.86029052734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "So",
+          "start": 0.322,
+          "end": 0.563,
+          "score": 0.328
+        },
+        {
+          "word": "Its",
+          "start": 3.9029999999999925,
+          "end": 4.042999999999992,
+          "score": 0.295
+        },
+        {
+          "word": "torque.",
+          "start": 9.072999999999993,
+          "end": 9.413999999999993,
+          "score": 0.428
+        },
+        {
+          "word": "and",
+          "start": 23.369000000000085,
+          "end": 23.429000000000084,
+          "score": 0.047
+        },
+        {
+          "word": "eighty",
+          "start": 23.449000000000083,
+          "end": 23.650000000000084,
+          "score": 0.414
+        },
+        {
+          "word": "is",
+          "start": 26.268000000000093,
+          "end": 26.32800000000009,
+          "score": 0.287
+        },
+        {
+          "word": "is",
+          "start": 28.307000000000055,
+          "end": 28.348000000000056,
+          "score": 0.004
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "sin-graph",
+      "audio": "public/audio/phys-y12-m5-v09/sin-graph.wav",
+      "seconds": 29.32,
+      "durationInFrames": 880,
+      "cues": [
+        {
+          "text": "eighty",
+          "start": 11.907999999999994,
+          "end": 12.130857142857138
+        },
+        {
+          "text": "angles",
+          "start": 16.493999999999993,
+          "end": 16.71399999999999
+        },
+        {
+          "text": "clockwise",
+          "start": 25.71985714285722,
+          "end": 26.18528571428579
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7440000000000779,
+        "after": "angles.",
+        "before": "Torque"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 29.32,
+        "characters": 463,
+        "charactersPerSecond": 15.791268758526602,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/sin-graph.wav",
+        "audioSha256": "19167e1204c3a827c282486033a314509f9605c9c18b06fb85a68f0b8eb0061b",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v09/2026-11-22T10-04-20-687Z/report.json"
+      },
+      "peakFraction": 0.850341796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Torque",
+          "start": 2.0510000000000006,
+          "end": 2.3930000000000007,
+          "score": 0.423
+        },
+        {
+          "word": "at",
+          "start": 15.992999999999991,
+          "end": 16.07299999999999,
+          "score": 0.168
+        },
+        {
+          "word": "Torque",
+          "start": 22.36800000000007,
+          "end": 22.631000000000068,
+          "score": 0.333
+        },
+        {
+          "word": "a",
+          "start": 23.19600000000007,
+          "end": 23.23700000000007,
+          "score": 0.494
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "two-slips",
+      "audio": "public/audio/phys-y12-m5-v09/two-slips.wav",
+      "seconds": 28.6,
+      "durationInFrames": 858,
+      "cues": [
+        {
+          "text": "ten",
+          "start": 11.964999999999993,
+          "end": 12.115749999999993
+        },
+        {
+          "text": "factor",
+          "start": 22.674999999999997,
+          "end": 22.98442857142857
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.7269999999999932,
+        "after": "F.",
+        "before": "For"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 28.6,
+        "characters": 416,
+        "charactersPerSecond": 14.545454545454545,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/two-slips.wav",
+        "audioSha256": "45551bec9740657483daa8b7e973cf4c35b5710df3c7a7f001d576ecefe2f736",
+        "evidence": "work/google-runon-checks/45551bec9740657483daa8b7e973cf4c35b5710df3c7a7f001d576ecefe2f736.json"
+      },
+      "peakFraction": 0.855255126953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "r",
+          "start": 7.041,
+          "end": 7.061000000000001,
+          "score": 0
+        },
+        {
+          "word": "F.",
+          "start": 7.081,
+          "end": 7.121,
+          "score": 0.455
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-aid",
+      "audio": "public/audio/phys-y12-m5-v09/memory-aid.wav",
+      "seconds": 17.6,
+      "durationInFrames": 588,
+      "cues": [
+        {
+          "text": "bigger",
+          "start": 11.991999999999992,
+          "end": 12.198571428571421
+        },
+        {
+          "text": "helps",
+          "start": 17.019,
+          "end": 17.1865
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.762000000000004,
+        "after": "bigger.",
+        "before": "And"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 17.6,
+        "characters": 263,
+        "charactersPerSecond": 14.943181818181817,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/memory-aid.wav",
+        "audioSha256": "4a945e6a77c6a0091a5938ca8e47c4c004cd588e29c069ec66d376b4ea62d56c",
+        "evidence": "work/google-runon-checks/4a945e6a77c6a0091a5938ca8e47c4c004cd588e29c069ec66d376b4ea62d56c.json"
+      },
+      "peakFraction": 0.817413330078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 8.758999999999993,
+          "end": 8.778999999999993,
+          "score": 0
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/phys-y12-m5-v09/attempt-1.wav",
+      "seconds": 18,
+      "durationInFrames": 840,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 1.0280000000000005,
+        "after": "turn.",
+        "before": "A"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 18,
+        "characters": 261,
+        "charactersPerSecond": 14.5,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/attempt-1.wav",
+        "audioSha256": "87c6f6f25e382fbcac5eb257a2d1675c595111a93aeb5af3ae49c7988b7bfc80",
+        "evidence": "work/google-runon-checks/87c6f6f25e382fbcac5eb257a2d1675c595111a93aeb5af3ae49c7988b7bfc80.json"
+      },
+      "peakFraction": 0.8819580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.665000000000001,
+          "end": 4.705,
+          "score": 0.495
+        },
+        {
+          "word": "torque",
+          "start": 9.911999999999997,
+          "end": 10.152999999999997,
+          "score": 0.276
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/phys-y12-m5-v09/feedback-1.wav",
+      "seconds": 21.76,
+      "durationInFrames": 683,
+      "cues": [
+        {
+          "text": "metres",
+          "start": 6.205,
+          "end": 6.463
+        },
+        {
+          "text": "metres",
+          "start": 12.470999999999993,
+          "end": 12.72814285714285
+        },
+        {
+          "text": "sine",
+          "start": 21.136000000000077,
+          "end": 21.361600000000077
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7609999999999939,
+        "after": "metres.",
+        "before": "The"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 21.76,
+        "characters": 309,
+        "charactersPerSecond": 14.200367647058822,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/feedback-1.wav",
+        "audioSha256": "b9dcb58a60cf8039b9ccac17446a549fa275444a8800a99f90b30065b6e35f36",
+        "evidence": "work/google-runon-checks/b9dcb58a60cf8039b9ccac17446a549fa275444a8800a99f90b30065b6e35f36.json"
+      },
+      "peakFraction": 0.8665771484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "zero",
+          "start": 11.769999999999992,
+          "end": 12.110999999999992,
+          "score": 0.378
+        },
+        {
+          "word": "it's",
+          "start": 21.01500000000008,
+          "end": 21.09600000000008,
+          "score": 0.494
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/phys-y12-m5-v09/attempt-2.wav",
+      "seconds": 21.04,
+      "durationInFrames": 932,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 1.2100000000000006,
+        "after": "one.",
+        "before": "A"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 21.04,
+        "characters": 299,
+        "charactersPerSecond": 14.211026615969581,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/attempt-2.wav",
+        "audioSha256": "c6ea8a3fafa28afb01b0c1a20579a7e8ad8d87674303e99a1306c471be6174cd",
+        "evidence": "work/google-runon-checks/c6ea8a3fafa28afb01b0c1a20579a7e8ad8d87674303e99a1306c471be6174cd.json"
+      },
+      "peakFraction": 0.889739990234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.065,
+          "end": 5.085000000000001,
+          "score": 0
+        },
+        {
+          "word": "torque",
+          "start": 12.791999999999986,
+          "end": 13.191999999999986,
+          "score": 0.429
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/phys-y12-m5-v09/feedback-2.wav",
+      "seconds": 28.36,
+      "durationInFrames": 881,
+      "cues": [
+        {
+          "text": "metres",
+          "start": 7.014,
+          "end": 7.305428571428571
+        },
+        {
+          "text": "degrees",
+          "start": 15.079999999999991,
+          "end": 15.465874999999992
+        },
+        {
+          "text": "anything",
+          "start": 27.67500000000004,
+          "end": 27.97900000000004
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.1030000000001117,
+        "after": "agrees.",
+        "before": "The"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 28.36,
+        "characters": 404,
+        "charactersPerSecond": 14.245416078984485,
+        "rateExempt": false,
+        "insertedWords": 2,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/feedback-2.wav",
+        "audioSha256": "9c99012a13ba95d04ce7fae70534bdad5cbe403e4a85c59b5c3f809d8db14c8d",
+        "evidence": "work/google-runon-checks/9c99012a13ba95d04ce7fae70534bdad5cbe403e4a85c59b5c3f809d8db14c8d.json"
+      },
+      "peakFraction": 0.873321533203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "torque",
+          "start": 5.31,
+          "end": 5.911,
+          "score": 0.489
+        },
+        {
+          "word": "is",
+          "start": 5.931,
+          "end": 5.972,
+          "score": 0
+        },
+        {
+          "word": "and",
+          "start": 14.639999999999993,
+          "end": 14.699999999999992,
+          "score": 0.062
+        },
+        {
+          "word": "is",
+          "start": 17.245999999999988,
+          "end": 17.30599999999999,
+          "score": 0.415
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/phys-y12-m5-v09/handoff.wav",
+      "seconds": 21.56,
+      "durationInFrames": 707,
+      "cues": [
+        {
+          "text": "balance",
+          "start": 20.85600000000004,
+          "end": 21.20775000000004
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8809999999999985,
+        "after": "anticlockwise.",
+        "before": "A"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 21.56,
+        "characters": 327,
+        "charactersPerSecond": 15.166975881261596,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/handoff.wav",
+        "audioSha256": "a1813df003c3e60a4b96f1492b00e6163d8d0145b8291d5359d151aefa8f2e52",
+        "evidence": "work/google-runon-checks/a1813df003c3e60a4b96f1492b00e6163d8d0145b8291d5359d151aefa8f2e52.json"
+      },
+      "peakFraction": 0.807952880859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "torque",
+          "start": 1.564,
+          "end": 1.985,
+          "score": 0.397
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/phys-y12-m5-v09/key-notes.wav",
+      "seconds": 4.24,
+      "durationInFrames": 1350,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 4.24,
+        "characters": 75,
+        "charactersPerSecond": 17.68867924528302,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v09/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "evidence": "work/google-runon-checks/d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5.json"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "humanListening": "pending"
+    }
+  ],
+  "worstWordGap": {
+    "scene": "two-slips",
+    "seconds": 1.7269999999999932,
+    "after": "F.",
+    "before": "For"
+  },
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "notesFrames": 1350,
+  "machineChecks": "Source hashes, character alignment and cue bounds, hold durations and independent run-on checks. Human listening and exact built playback pending."
+}

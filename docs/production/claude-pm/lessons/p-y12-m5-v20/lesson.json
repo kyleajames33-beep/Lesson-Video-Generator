@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "802608548aee141d689e0807e586bfd6b05d00aab39f002a2123b708dbbf62e3",
+  "sourceDesignSha256": "ccf8d9c18081887e0d1842862268ae619144a6cce44e8eeef715c4e2f6572484",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Let's zoom out to the Sun and follow Halley's comet. In nineteen eighty-six it swung past the Sun at less than six tenths of Earth's distance from it. Then it headed out beyond Neptune, more than thirty-five times Earth's distance, and it won't be back until twenty sixty-one. It spends decades crawling far out, and only months racing near the Sun. Why does it move so much faster up close? Have a think."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Have a think.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Have a think.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "kepler-laws",

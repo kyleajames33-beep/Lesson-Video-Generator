@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d13.md",
+  "sourceSha256": "faac8eddf68a06fec55fe690c96658ddd0e0d1ffafdace4ae281500b23f060eb",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-same-mean",
+      "text": "Both buses average four minutes late. But Bus A is three, four or five minutes late every day, while Bus B is sometimes on time, and sometimes eight minutes late. If you had an exam at nine, you'd want Bus A. The mean can't tell them apart, because it only measures the centre. We need a second kind of number, a measure of spread, one number that says how spread out the values are. So how do the range and standard deviation measure spread?",
+      "audioFile": "public/audio/math-s11-d13/hook-same-mean.wav"
+    },
+    {
+      "id": "range",
+      "text": "The simplest measure of spread is the range. It's the highest value minus the lowest value. Bus A's latest day was five minutes, and its earliest was three, so its range is five minus three, two minutes. Bus B's range is eight minus nought, eight minutes. A bigger range means more spread, so Bus B is less consistent. The range is quick, but notice what it uses. Only two values, the highest and the lowest. Everything in between is ignored. Its units are the data's units, here minutes.",
+      "audioFile": "public/audio/math-s11-d13/range.wav"
+    },
+    {
+      "id": "range-weakness",
+      "text": "That's the range's weakness. Say Bus A breaks down one day and arrives fifteen minutes late. The other five days are the same, three to five minutes late. But the range jumps from two to twelve, making Bus A look less consistent than Bus B. The range also ignores everything between the two ends. We need a measure of spread that uses every value.",
+      "audioFile": "public/audio/math-s11-d13/range-weakness.wav"
+    },
+    {
+      "id": "standard-deviation",
+      "text": "The standard deviation does that. Measure each value's distance from the mean. That's called its deviation. Bus A's deviations are tiny, one, nought, nought, nought, one, nought. Bus B's are big, four, three, two, two, three, four. The standard deviation combines all those distances into one number, roughly the typical distance of the values from the mean. It's written with the Greek letter sigma. For Bus A, sigma is about nought point five eight minutes. For Bus B, about three point one one minutes. Meet Bus C. Nought, four, four, four, four, eight. Its range is eight, the same as Bus B's, but most of its days sit right on the mean, so its sigma is two point three one. Sigma sees a difference the range missed. A bigger sigma means the values usually sit further from the mean, so they're less consistent. Every value counts, odd ones too. Put Bus A's breakdown day back, and its sigma jumps to four point one four, because that one big distance counts heavily. The measure that ignores the extremes is the interquartile range, the IQR, coming soon. Sigma has the same units as the data, minutes here.",
+      "audioFile": "public/audio/math-s11-d13/standard-deviation.wav"
+    },
+    {
+      "id": "sigma-on-calculator",
+      "text": "You won't calculate sigma by hand. You'll use the calculator's statistics mode, the same one-variable mode we used for the mean. Type in Bus B's six values. The results screen shows x bar, four, and below it, lower-case sigma x, three point one nought nine, which is three point one one to two decimal places. Watch out. Most calculators show a second standard deviation just below it, s x, three point four one. That's a sample version, and this course doesn't use it. Read sigma x. Try our sleep data, all twenty values. Sigma x is one point three nine one, so the standard deviation is one point three nine hours. Writing three point four one for Bus B, the s x line, is the classic slip.",
+      "audioFile": "public/audio/math-s11-d13/sigma-on-calculator.wav"
+    },
+    {
+      "id": "what-sigma-tells",
+      "text": "Always say what sigma means, in context, with its units. Bus A's sigma, nought point five eight minutes, says it's usually within about half a minute of its mean. Bus B's, three point one one minutes, says it's often three minutes or more away from its mean. Our sleep data's sigma, one point three nine hours, says students' sleep typically differs from the mean of seven point two hours by about one point four hours. A spreadsheet gives the same numbers. Equals STDEV dot P of the column, not dot S, gives sigma, and equals MAX minus MIN gives the range.",
+      "audioFile": "public/audio/math-s11-d13/what-sigma-tells.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. Sigma is how far values usually sit from the mean, and it counts every value, extreme ones too. A bigger sigma means more spread and less consistency. And on the calculator, read sigma x, or STDEV dot P, not s x.",
+      "audioFile": "public/audio/math-s11-d13/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Two phones were charged six times, and their battery life recorded in hours. Phone P, twenty, twenty-two, twenty-one, twenty-three, twenty-two, twenty-four. Phone Q, fourteen, thirty, eighteen, twenty-six, twenty-two, twenty-two. Both have a mean of twenty-two hours. Use a calculator to find the range and the population standard deviation of each, to two decimal places. Which phone's battery is more consistent? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Phone P's range is twenty-four minus twenty, four, and sigma x is one point two nine. Phone Q's range is thirty minus fourteen, sixteen, and sigma x is five point one six. Phone P has the smaller range and sigma, so it's more consistent. Writing one point four one for P, the s x line, is the slip.",
+      "audioFile": "public/audio/math-s11-d13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Two classes sat the same test. Class X had a mean of sixty-eight, and a standard deviation of four point two. Class Y had a mean of sixty-eight, and a standard deviation of eleven point five. What do the standard deviations tell you about the two classes? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The means are the same, so the classes have the same centre. Class Y's marks are much more spread out, typically about eleven and a half marks from the mean, against about four for Class X. So Class X's results are more consistent. Saying Class Y did better, because its standard deviation is bigger, is the slip.",
+      "audioFile": "public/audio/math-s11-d13/feedback-2.wav"
+    },
+    {
+      "id": "handoff-comparing",
+      "text": "Now we have a centre and a spread, so we can compare properly. Split our sleep sample by where the phone charges. Students with the phone in the bedroom averaged six point five eight hours, with a sigma of one point three seven. Students whose phone charged elsewhere averaged eight point one three hours, with a sigma of nought point seven eight. Which group sleeps more, and more steadily? And how would you write that, with numbers and a spreadsheet? That's next.",
+      "audioFile": "public/audio/math-s11-d13/handoff-comparing.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d13/key-notes.wav"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v13/lesson.json",
-    "lessonSha256": "22e530704f274e3bbb5e795a69124847cdacc75c75d3cc613a3a830f1c578dfc"
+    "lessonSha256": "901d883700fa028187837db2933b99155fc8c95bc1a2781134ae284a14f0fac6"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -44,7 +44,7 @@
         "Countdown",
         "QuestionCard"
       ],
-      "holdPurpose": "Retain the design's 3 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "volts-per-turn",
@@ -72,7 +72,7 @@
       "motionTools": [
         "Source diagrams, painted plates and cue-directed changes"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "Retain the design's 3 second hold."
     },
     {
       "sceneId": "no-free-energy",
@@ -114,7 +114,7 @@
       "motionTools": [
         "Source diagrams, painted plates and cue-directed changes"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "Retain the design's 3 second hold."
     },
     {
       "sceneId": "load-sets-current",
@@ -261,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v13/recording-source-check.json",
-      "sha256": "9b2cbf7a58effc05ec5c08fc84c362ae6ef21d1be0b292b583603f2eed7d9221"
+      "sha256": "8f3894de9b893d38f8c016c00e610b498128ef050a43212ea7d28bf6f22a52ae"
     }
   },
   "studentLearningReview": {
@@ -272,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v13/recording-source-check.json",
-      "sha256": "9b2cbf7a58effc05ec5c08fc84c362ae6ef21d1be0b292b583603f2eed7d9221"
+      "sha256": "8f3894de9b893d38f8c016c00e610b498128ef050a43212ea7d28bf6f22a52ae"
     }
   },
   "voicedPreview": {

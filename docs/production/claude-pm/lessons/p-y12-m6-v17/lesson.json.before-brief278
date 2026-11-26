@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m6-v17",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "2822d543247d5e8e736df9ac90d46ab586303516fa0bbd763d759ba066edc297",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (six amps, then one)",
+      "voiceover": {
+        "text": "Here's the motor, turning steadily. Let's stop it, and start it again from rest, with an ammeter in the circuit. Just after the switch closes, before the coil has turned much, the ammeter reads six amps. As the coil speeds up, the reading falls, and settles at just one amp. Same twelve volt supply, same coil, same resistance. So why does a spinning motor draw less current? Make your prediction. Does the coil's resistance go up, or does something in the coil push back? Something pushes back."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "also-a-generator",
+      "title": "the motor is also a generator",
+      "voiceover": {
+        "text": "The spinning coil is a loop of wire turning in a magnetic field. As it turns, the flux through it keeps changing, and from Faraday's law, a changing flux induces an emf. So the motor's coil is also a generator. Which way does this emf point? Lenz's law says it opposes the change that causes it. The rotation is driven by the supply's current, so the induced emf pushes against the supply. We call it the back emf. Back emf is the emf induced in a motor's spinning coil, opposing the supply voltage. It isn't an extra part. It comes from the motion itself."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-oppose",
+      "title": "why it must push back",
+      "voiceover": {
+        "text": "Why against, and not with? Use the same energy argument as Lenz's law, with the supply still connected. Suppose the induced emf helped the supply, adding, say, ten volts to the twelve. Then twenty two volts would drive eleven amps through the two ohm coil. The supply would put in twelve volts times eleven amps, one hundred and thirty two watts. But the coil's resistance alone would turn two hundred and forty two watts into heat, while the motor kept speeding up. More energy out than in. That's impossible, so the back emf must oppose the supply. Then the supply has to do work, pushing each coulomb of charge through the coil against the back emf. And that work is exactly the energy that becomes the motor's mechanical work."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "circuit",
+      "title": "what the circuit sees",
+      "voiceover": {
+        "text": "Let's put that into the circuit. Picture the coil as two things in series. Its resistance, R, and the back emf, pointing against the supply. Going round the loop, the supply voltage V is shared between them. Part of it balances the back emf, and the rest drives the current through the resistance, I R. So V equals the back emf plus I R. Rearrange, and the current is the supply voltage minus the back emf, all over R. Only the voltage that's left over drives the current."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "spinning-up",
+      "title": "spinning up",
+      "voiceover": {
+        "text": "Now follow the motor as it spins up. Just as it starts, before the coil is turning, there's no back emf. The full twelve volts drives current through two point zero ohms, giving six point zero amps. As the coil speeds up, the back emf grows. For a fixed field, it's proportional to the speed. At full speed, the back emf here is ten volts. That leaves only two volts to drive the current, so the current is two volts over two point zero ohms, one point zero amp. The faster it spins, the bigger the back emf, and the smaller the current."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "heavier-load",
+      "title": "a heavier load",
+      "voiceover": {
+        "text": "Now put a heavier load on the shaft. The load needs more turning force than the motor is giving, so the motor slows down. Slower means less back emf. Suppose it drops to half speed. The back emf is now only five volts, so seven volts drives the current, and the current rises to three point five amps. More current means more turning force. So the motor settles at a new, slower speed, where its turning force matches the load. The back emf makes the motor draw more current exactly when it needs more torque."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "power-ledger",
+      "title": "where the energy goes",
+      "voiceover": {
+        "text": "Where does the energy go? Take V equals the back emf plus I R, and multiply every term by the current. The supply's power, V I, splits into two parts. I squared R is heat in the coil. The back emf times I is the power converted into mechanical work. Here at full speed, the supply gives twelve times one, twelve watts. Heat in the coil is one squared times two, two watts. And ten volts times one amp, ten watts, is converted. That's about eighty three percent of the input. The shaft delivers a little less than ten watts, because friction in the bearings takes some too."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "jammed",
+      "title": "jam the shaft",
+      "voiceover": {
+        "text": "Now jam the shaft, so it can't turn at all. No spin, no back emf. So the current jumps straight back to six point zero amps. The heating in the coil is I squared R, six squared times two, seventy two watts. That's thirty six times the two watts at full speed. And because the shaft does no work, every joule from the supply becomes heat. A stalled motor can burn out its windings within seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "starting-resistor",
+      "title": "starting big motors safely",
+      "voiceover": {
+        "text": "Big motors have the same problem at every start, because their winding resistance is tiny. So a starting resistor is added in series, a resistor that limits the current while the motor starts. Here, adding four ohms makes the starting current twelve volts over six ohms, two point zero amps. As the motor speeds up and the back emf grows, the resistor is switched out, step by step, until the motor runs on the full supply."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. No spin, no push back. Starting or stalled, only the coil's small resistance holds the current back."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A small DC motor runs on a nine point zero volt supply. Its coil has a resistance of one point five ohms, and at full speed it draws zero point eight zero amps. Calculate the back emf at full speed. Then calculate the current if the shaft is jammed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "At full speed, the back emf is V minus I R. That's nine point zero minus zero point eight zero times one point five, so seven point eight volts. Jammed, there's no back emf, so the current is nine point zero over one point five, six point zero amps. The classic slip is giving I R, one point two volts, as the back emf. That's the voltage across the resistance, not the back emf."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A DC motor is lifting a load at a steady speed. The load is suddenly made heavier. Explain what happens to the motor's speed, back emf and current, and explain how energy is conserved at the new steady speed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The heavier load slows the motor, so the back emf falls. With less back emf, more of the supply voltage drives current, so the current rises. More current gives more torque, so the motor settles at a lower speed. The supply now delivers more power, V I. It still splits into converted mechanical power and heat, and the heat, I squared R, has grown. The slip is saying the current falls because the motor is slower."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a spinning motor draws less current because its coil is also a generator, and the back emf it makes pushes against the supply. Now remove the supply. Turn the shaft with something else, and connect the motor to an oscilloscope. The back emf is still there, but now it's the output. The motor has become a generator. So what shape is its output?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

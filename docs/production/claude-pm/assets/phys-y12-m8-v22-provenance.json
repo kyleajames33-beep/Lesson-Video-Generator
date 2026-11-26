@@ -1,0 +1,156 @@
+{
+  "design": "phys-y12-m8-v22",
+  "brief193": {
+    "assets": [
+      {
+        "key": "y12p-dipole-magnet-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-c8322634-f774-4b2d-8885-204c6b1a8ed6.png",
+        "sha256": "93f72f293b4b39b6e811e824af227b28ea46c3d553f84fd9ac9b74ff7ec1b7d3",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": {
+          "1": [
+            0,
+            0,
+            1760,
+            873
+          ],
+          "8": [
+            160,
+            59,
+            1618,
+            839
+          ],
+          "64": [
+            161,
+            59,
+            1617,
+            838
+          ],
+          "128": [
+            161,
+            60,
+            1616,
+            838
+          ],
+          "192": [
+            161,
+            60,
+            1616,
+            837
+          ],
+          "250": [
+            162,
+            61,
+            1615,
+            837
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-dipole-magnet-v1-composites.jpg",
+        "state": "delivered native PNG;static composite QA passed",
+        "design": "phys-y12-m8-v22",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "url": "https://indico.cern.ch/event/1502286/attachments/3024073/5336631/08_Cryostat%20design%20down%20to%204.2%20K.pdf",
+          "local": "work/brief193/references/lhc-dipole-page34.png",
+          "detail": "CERN cryostat teaching diagram,p34. Paired apertures,individual coils,common iron yoke and blue outer cryostat."
+        },
+        "publicAssetDelivered": true,
+        "path": "public/assets/physics/y12p-dipole-magnet-v1.png",
+        "anchors": {
+          "leftBeamPipeCentreApprox": [
+            356,
+            446
+          ],
+          "rightBeamPipeCentreApprox": [
+            550,
+            454
+          ]
+        },
+        "anchorCoordinates": "Native pixels,approximate feature positions. Confirm against coded overlay in scene;not calibrated measurements.",
+        "nativeSizeQualification": "Brief specifies approximate dimensions;actual native dimensions retained without upsampling."
+      },
+      {
+        "key": "y12p-cms-detector-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-e23d10c7-fba8-4555-8862-567d08bd9b14.png",
+        "sha256": "8a47ed7e615ad23056a034855b7455b7602c89e282d070689b0e35919a7fbdab",
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "alphaBounds": {
+          "1": [
+            39,
+            23,
+            1500,
+            935
+          ],
+          "8": [
+            280,
+            239,
+            1259,
+            795
+          ],
+          "64": [
+            280,
+            240,
+            1258,
+            794
+          ],
+          "128": [
+            281,
+            240,
+            1258,
+            794
+          ],
+          "192": [
+            281,
+            240,
+            1257,
+            794
+          ],
+          "250": [
+            282,
+            241,
+            1257,
+            792
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-cms-detector-v1-composites.jpg",
+        "state": "delivered native PNG;static composite QA passed",
+        "design": "phys-y12-m8-v22",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "url": "https://twiki.cern.ch/twiki/bin/view/CMSPublic/SketchUpCMSGallery",
+          "local": "work/brief193/references/cms-twiki-full-cutaway.png",
+          "detail": "Official CMS geometry from CMSSW DDL,Tai Sakuma/Thomas McCauley. Tracker,ECAL,HCAL,solenoid,iron yoke interleaved muon chambers. No ATLAS magnet arrangement,event tracks or people."
+        },
+        "publicAssetDelivered": true,
+        "path": "public/assets/physics/y12p-cms-detector-v1.png",
+        "anchors": {
+          "trackerCentreApprox": [
+            733,
+            516
+          ]
+        },
+        "anchorCoordinates": "Native pixels,approximate feature positions. Confirm against coded overlay in scene;not calibrated measurements.",
+        "nativeSizeQualification": "Brief specifies approximate dimensions;actual native dimensions retained without upsampling."
+      }
+    ],
+    "reuse": "work/brief193/asset-reuse-notes.json"
+  }
+}

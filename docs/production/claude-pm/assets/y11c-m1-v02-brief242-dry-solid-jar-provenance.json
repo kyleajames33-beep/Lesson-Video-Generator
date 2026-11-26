@@ -1,0 +1,62 @@
+{
+  "file": "public/assets/chemistry/c1-salt-jar-crystals-v2.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-69f59aed-a7df-4233-aaa5-d8c8e273b5ab.png",
+  "lesson": "chem-y11-m1-v02",
+  "title": "Chemistry M1 v02 dry-solid jar repair",
+  "requestedSize": [
+    1600,
+    1718
+  ],
+  "reference": "public/assets/chemistry/c1-salt-jar-crystals-v1.png",
+  "reportName": "y11c-m1-v02-upgrade-dry-solid-jar-check.md",
+  "provenanceName": "y11c-m1-v02-brief242-dry-solid-jar-provenance.json",
+  "anchors": {
+    "crystalPileCentre": [
+      487,
+      1127
+    ],
+    "lidCentre": [
+      483,
+      356
+    ],
+    "jarBaseCentre": [
+      484,
+      1220
+    ]
+  },
+  "prompt": "Repair this chemistry teaching plate non-destructively as c1-salt-jar-crystals-v2. Preserve1600x1718 portrait canvas if possible, same jar silhouette, screw lid, view, glass paint style, small pile of WHITE DRY CRYSTALS at bottom, lighting and generous transparent margins. The jar must contain ONLY DRY WHITE SOLID CRYSTALS and EMPTY AIR above them. REMOVE the horizontal elliptical LIQUID SURFACE halfway up the jar, remove all meniscus lines, remove any blue water fill, no liquid at all. Above crystals clear empty glass with only vertical glass highlights, no horizontal interior ring or meniscus. No condensation, bubbles, mist or damp crystals. Keep unknown unlabelled white solid, do not print its name or chemical formula. True transparent exterior, clean fine dark outlined glass edges, no halo, glow, white matte, background, floor, cast shadow, labels, letters, numbers, people, hands or faces. Do not enlarge crystal pile or alter the jar into another vessel. Keep complete closed lid and full base inside frame.",
+  "qa": {
+    "result": "static repair pass; root scene choice pending",
+    "observations": [
+      "Apparent liquid surface and water fill removed. Dry white crystals at bottom, clear empty air above, no horizontal meniscus. Plain closed jar and full base retained.",
+      "Actual native paper/dark inspected: exterior clean, no surrounding halo, people, text or question data. Internal glass highlights belong to the jar.",
+      "Returned 968 by 1624 differs from old 1600 by 1718 canvas. Useful jar silhouette remains similar, but fit from anchors and preserve native aspect with uniform scaling; not a pixel-registered replacement.",
+      "All margins exceed eight percent. Old v1 preserved. Root chooses scene replacement; no source edits."
+    ],
+    "evidence": [
+      "work/brief242/dry-solid-jar-v2-native-paper.jpg",
+      "work/brief242/dry-solid-jar-v2-native-dark.jpg"
+    ]
+  },
+  "reportText": "Delivered `public/assets/chemistry/c1-salt-jar-crystals-v2.png` and sidecar. The apparent water surface is removed, leaving dry white crystals and clear empty glass above. Actual native paper/dark edge and content QA passes. Original v1 preserved.\n\nReturned 968 by 1624 differs from the old 1600 by 1718 canvas. Use anchors and uniform scaling; do not stretch or claim pixel registration. Root chooses the replacement in scene 7. This addresses the observed plate-content issue but does not clear the assembled scene or other source findings.",
+  "statusText": "Delivered c1-salt-jar-crystals-v2.png, sidecar, provenance and manifest. Removed apparent liquid so the unlabelled jar now contains dry white crystals only. Actual native paper/dark static QA passes; original v1 preserved. Changed canvas requires anchor fit and uniform scaling. Root scene choice remains pending.",
+  "id": "c1-salt-jar-crystals-v2",
+  "brief": 242,
+  "sha256": "7fb80284d8163cb36c2b1e22a70047c06cd5bc1416b2640ba6fee42d54e782e0",
+  "nativeSize": [
+    968,
+    1624
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    178,
+    303,
+    787,
+    1260
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false
+}

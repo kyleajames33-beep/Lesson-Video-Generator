@@ -13,3 +13,10 @@ The shelf model h=t²+C has rate2t for all three tips. At t0,2,4,5 the heights a
 Live site verified 9 November 2026: https://hscscience.com.au/subjects/maths-advanced/year12/integral-calculus/lesson04.sa . Revealed all four steps of we-1 and all three of we-2. Integrands, given point and answers match the design exactly. No answer fields submitted; reveal controls automatically award progress. Extra L01/drill items listed only in author notes are not used by this video and were not inspected as live-source requirements.
 
 6128characters/16scenes including8a, bold-cue order and no em dashes checked. Estimated542s is unmeasured. The45s notes, all recorded cue timestamps, alignment and captions require later checks. Human listening and exact voiced student review pending. No narration, scene code or measured file edits.
+
+
+### Current source repair recheck,11November2026
+
+Current source SHA256 `bcdb670222ffee7d6d7d12e7b4242fe2b6d7c75747007ab15fbe5744c61bef8a`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Stepped plant stand removes the old bookcase overhead obstruction in the design: each400px column is open above its pot. Numerical family t^2+C and shelf offsets unchanged; at4weeks height66 givesC50. The new stand still needs measured geometric QA before building; no current stand geometry is certified. Bookcase will be unused. Notes layout follows root58; bean-shoot margins explicitly authorised in revised source.
+
+Independent current recount:6137characters,16scene strings,declared total matches. Strings/cues in work/brief238/i01-repaired-source.json. Earlier blocker disposition is superseded for this source revision only; actual plate geometry,voiced timing and built playback are separate gates. No speech or source edit.

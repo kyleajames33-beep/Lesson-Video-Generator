@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d11.md",
+  "sourceSha256": "a50fa964343e62426dde58d0d2fa6155f49b426c3bf540c949c48d5016d5f4e5",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-typical-night",
+      "text": "Here are our twenty students' hours of sleep. If someone asked how much Year 11 students sleep, you wouldn't read out all twenty numbers. You'd give one number that sums up the middle of the data. That's a measure of centre, and there are three. One finds where the dots balance. One finds the middle dot. And one finds the most common value. Each has its own rule, and its own job. So how do the mean, median and mode measure the centre of a dataset?",
+      "audioFile": "public/audio/math-s11-d11/hook-typical-night.wav"
+    },
+    {
+      "id": "mean",
+      "text": "The mean is the one you probably know as the average. The mean equals the total, divided by how many. Add up all twenty sleeps, and the total is a hundred and forty-four hours. Divide by twenty, and the mean is seven point two hours. It's what each student would get if all the sleep were shared out equally. The mean uses every value, which is its strength, and sometimes its weakness. There's a picture for it too. Put the dots on a beam. The mean is the balance point, where the beam sits level. Notice that lonely three hour night. It's far out on the left, so it pulls the balance point left, below most of the dots.",
+      "audioFile": "public/audio/math-s11-d11/mean.wav"
+    },
+    {
+      "id": "median",
+      "text": "The median is the middle value, once the data are in order. Order first, every time. Our dot plot is already in order, from three up to nine and a half. With twenty values, there's no single middle one. The middle position is twenty plus one, divided by two, ten point five, which means halfway between the tenth and eleventh values. Count in from both ends, and you'll meet in the middle. The tenth is seven point five, and so is the eleventh, so the median is seven point five hours. Half the students slept seven and a half hours or less, and half slept seven and a half or more. With an odd number, like the batter's fifteen scores, the median is just the middle one, the eighth. Writing ten point five as the median is a classic slip. That's the position, not the value.",
+      "audioFile": "public/audio/math-s11-d11/median.wav"
+    },
+    {
+      "id": "mode",
+      "text": "The mode is the most common value. On a dot plot, it's the tallest stack. Seven point five hours appears four times, more than any other, so the mode is seven point five hours. Careful, the mode is the value, seven point five, not how often it appears, four. A dataset can have two modes, like the bimodal food truck, or no mode at all, if every value appears just once. And the mode is the measure that works for every kind of category. Where do phones charge? The bedroom, twelve times, so the mode is bedroom. You can't find a mean of bedroom and kitchen.",
+      "audioFile": "public/audio/math-s11-d11/mode.wav"
+    },
+    {
+      "id": "frequency-table",
+      "text": "Data often come in a table, like screens in the bedroom, from earlier. Each value appears once, with its frequency. For the mean, you need the total, so multiply each value by its frequency and add. Nought times three, one times seven, two times six, three times four. That's thirty-one screens in total, across twenty students, so the mean is one point five five screens. Don't just average the values nought to three. That ignores how many students gave each one. For the median, add a running total. The tenth student is still in the ones, and the eleventh is in the twos, so the median is one point five. And the mode is the value with the biggest frequency, one.",
+      "audioFile": "public/audio/math-s11-d11/frequency-table.wav"
+    },
+    {
+      "id": "calculator-and-spreadsheet",
+      "text": "For bigger datasets, let the calculator do the adding. Scientific calculators have a statistics mode, a setting for lists of data. Menus differ, but you're always looking for the same three things. A one variable statistics mode. A list, where you type each value, or each value with its frequency. And a results screen. Type in our twenty sleeps, and the results screen shows x bar, the mean, seven point two. It also shows n, how many, twenty, and the sum of x, the total, a hundred and forty-four, so you can check your typing. If n isn't twenty, you've missed a value, or typed one twice. A spreadsheet can do it too. Equals AVERAGE, equals MEDIAN and equals MODE of the column give seven point two, seven point five and seven point five. Whichever tool you use, know what each number means.",
+      "audioFile": "public/audio/math-s11-d11/calculator-and-spreadsheet.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. Mean shares, median middles, mode is most. The mean is the total divided by how many. For the median, order, then find the middle. And the mode is the most common value.",
+      "audioFile": "public/audio/math-s11-d11/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. This stem-and-leaf plot shows a café's coffee sales on eleven days. Find the mean, to one decimal place, the median, and the mode. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The eleven values add to four hundred and eighty-two, and four eight two divided by eleven is forty-three point eight. The middle of eleven is the sixth value, forty-four. And forty-seven appears three times, so it's the mode. Dividing by ten, and getting forty-eight point two, is the slip.",
+      "audioFile": "public/audio/math-s11-d11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A soccer team's goals in twenty matches are in this table. No goals in four matches, one goal in six, two goals in five, three goals in three, and four goals in two. Find the mean, the median and the mode. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Frequency times value gives nought, six, ten, nine and eight, thirty-three goals, so the mean is thirty-three over twenty, one point six five. Running totals are four, ten, fifteen, so the tenth is one and the eleventh is two, and the median is one point five. The mode is one. Averaging nought to four, and getting two, is the slip.",
+      "audioFile": "public/audio/math-s11-d11/feedback-2.wav"
+    },
+    {
+      "id": "handoff-choosing-centre",
+      "text": "Back to our sleep data, with all three measures marked. The median and the mode both say seven and a half hours. The mean says seven point two, lower than most of the dots, pulled down by that one three hour night. So if someone asks for a typical night's sleep, which number should you give? And when is the mean the right choice after all? That's next.",
+      "audioFile": "public/audio/math-s11-d11/handoff-choosing-centre.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d11/key-notes.wav"
+    }
+  ]
+}

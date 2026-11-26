@@ -1,0 +1,2348 @@
+{
+  "brief": 249,
+  "state": "Fire towers landscape delivered under ruling 46; sandwich geometry held",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-1486853a-f5d7-44cd-b7ba-bc63ac016e1a.png",
+      "sha256": "46e3dd2f3082d276e139d1afc6c3964bcbfb54eab341239fbdce10b116f15de9",
+      "nativeSize": [
+        1400,
+        1400
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        142,
+        146,
+        1110,
+        1111
+      ],
+      "marginFractions": [
+        0.11323763955342903,
+        0.11642743221690591,
+        0.11483253588516747,
+        0.11403508771929824
+      ],
+      "evidence": [
+        "work/brief249/t01-sandwich-v2-native-paper.jpg",
+        "work/brief249/t01-sandwich-v2-native-dark.jpg",
+        "work/brief249/t01-sandwich-v2-native-white.jpg",
+        "work/brief249/t01-sandwich-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-sandwich-square-v1.png",
+      "path": "public/assets/maths/ma11-sandwich-square-v1.png",
+      "brief": 249,
+      "lesson": "t01",
+      "method": "Built-in ImageGen paint at native pixel spacing. Square crop and diagonal transparency mask register the gap to the square guide without stretching.",
+      "requestedSize": [
+        1400,
+        1400
+      ],
+      "qa": {
+        "result": "installed, geometry and alpha verified",
+        "evidence": [
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-paper.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-white.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-black.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-overlay.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-native.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-900.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-sandwich-square-v1.json",
+      "candidateReview18Nov": {
+        "status": "held",
+        "evidence": "work/brief247/18-nov-missing-plate-qa.json",
+        "file": "work/brief249/18-nov-sandwich-square-candidate.png",
+        "sha256": "428e667c57ab4f31b4785f5aa53901820cf30928c94994f9057669c906253a15",
+        "nativeSize": [
+          1254,
+          1254
+        ],
+        "alphaRange": [
+          0,
+          255
+        ],
+        "boundsAbove20": [
+          78,
+          97,
+          1162,
+          1169
+        ],
+        "reason": "Four fitted triangle legs differ by 7.46 percent; exceeds the 1 percent square tolerance.",
+        "opaqueConnectedComponentAreas": [
+          584462,
+          515518
+        ],
+        "corners": [
+          [
+            [
+              79.78577769406206,
+              1162.4895341597808
+            ],
+            [
+              1088.2530330315708,
+              1165.6411292468845
+            ],
+            [
+              80.78936095048323,
+              147.7794127545449
+            ]
+          ],
+          [
+            [
+              1153.615869771484,
+              105.7886141435044
+            ],
+            [
+              67.06739005237998,
+              101.05949752849139
+            ],
+            [
+              1150.494618716133,
+              1183.3092034481924
+            ]
+          ]
+        ],
+        "legLengthsPx": [
+          [
+            1008.4721799036209,
+            1014.7106176943164
+          ],
+          [
+            1086.558771224021,
+            1077.5251099550637
+          ]
+        ],
+        "relativeLegSpread": 0.07459433306808815
+      },
+      "geometryRepaint18Nov": {
+        "status": "held after follow-up QA",
+        "file": "work/maths-plate-geometry-pilot/sandwich-square-candidate.png",
+        "sha256": "548603d88e7ed10026c57f0e0756bb342c509ada248010f0d291a7ed7ba23cbb",
+        "reason": "The fitted legs range from 896 to 943 native px, a 5.12 percent spread. Limit 1 percent."
+      },
+      "review20Nov": {
+        "status": "installed",
+        "path": "public/assets/maths/ma11-sandwich-square-v1.png",
+        "sidecar": "public/assets/maths/ma11-sandwich-square-v1.json",
+        "sha256": "46e3dd2f3082d276e139d1afc6c3964bcbfb54eab341239fbdce10b116f15de9",
+        "nativeSize": [
+          1400,
+          1400
+        ],
+        "method": "Built-in ImageGen paint at native pixel spacing. Square crop and diagonal transparency mask register the gap to the square guide without stretching.",
+        "evidence": [
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-paper.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-white.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-black.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-overlay.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-native.jpg",
+          "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-900.jpg"
+        ],
+        "rawRepaints": [
+          {
+            "candidate": "work/maths-plate-geometry-pilot/20-nov-sandwich-square-candidate.png",
+            "imagegenOutput": "exec-d540b97a-d71a-4e5d-8e62-e2ad93bfc546.png",
+            "sha256": "c6a359fd2de4467035621f48f2e3993064797da9091e0133274e66d10754f185",
+            "nativeSize": [
+              1254,
+              1254
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "alphaBounds": [
+              148,
+              148,
+              1105,
+              1105
+            ],
+            "outerBoundsSize": [
+              957,
+              957
+            ],
+            "componentAreaRatio": 0.934521220440343,
+            "gapNormalWidthPxRange": [
+              18.384776310850235,
+              32.526911934581186
+            ],
+            "expectedGapPx": 28.709999999999997,
+            "passQA": false
+          },
+          {
+            "candidate": "work/maths-plate-geometry-pilot/20-nov-repaint-sandwich-square-candidate.png",
+            "imagegenOutput": "exec-70a28db2-2a0d-428c-8b71-2c04b63fd3f5.png",
+            "sha256": "8bf78367b7f478ea71ec5e0f4eb4e3f4e5e48b3120d4abb1db15cccabc0fa1d3",
+            "nativeSize": [
+              1254,
+              1254
+            ],
+            "alphaRange": [
+              0,
+              255
+            ],
+            "alphaBounds": [
+              138,
+              144,
+              1114,
+              1111
+            ],
+            "outerBoundsSize": [
+              976,
+              967
+            ],
+            "componentAreaRatio": 0.9381584877422428,
+            "gapNormalWidthPxRange": [
+              19.09188309203678,
+              20.506096654409877
+            ],
+            "expectedGapPx": 29.279999999999998,
+            "passQA": false
+          }
+        ]
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-53d86546-4678-46d8-951a-d75f3c0e488e.png",
+      "sha256": "536a4c81058e889177e2b0e695649529e057200cead3461c9045c2df1165e874",
+      "nativeSize": [
+        1318,
+        1193
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        32,
+        38,
+        1286,
+        1161
+      ],
+      "marginFractions": [
+        0.024279210925644917,
+        0.03185247275775356,
+        0.024279210925644917,
+        0.026823134953897737
+      ],
+      "evidence": [
+        "work/brief249/t01-rack-native-paper.jpg",
+        "work/brief249/t01-rack-native-dark.jpg",
+        "work/brief249/t01-rack-native-white.jpg",
+        "work/brief249/t01-rack-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-pool-rack-v1.png",
+      "path": "public/assets/maths/ma11-pool-rack-v1.png",
+      "brief": 249,
+      "lesson": "t01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1450
+      ],
+      "qa": {
+        "result": "passed: equilateral inner-edge spread0.561percent; native and900px subject/alpha inspected",
+        "observations": "Production pixels preserved. Paper/dark composites inspected. Measured coordinates, not requested dimensions, control placement.",
+        "evidence": [
+          "work/brief249/t01-rack-geometry-dark.jpg",
+          "work/brief249/t01-rack-geometry-paper.jpg",
+          "work/brief249/t01-sandwich-geometry-dark.jpg",
+          "work/brief249/t01-sandwich-geometry-paper.jpg",
+          "work/brief249/t01-sandwich-v2-geometry-dark.jpg",
+          "work/brief249/t01-sandwich-v2-geometry-paper.jpg",
+          "work/brief249/t01-cliff-yacht-1572-dark.jpg",
+          "work/brief249/t01-cliff-yacht-1572-paper.jpg",
+          "work/brief249/t01-cliff-yacht-900-dark.jpg",
+          "work/brief249/t01-cliff-yacht-900-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-pool-rack-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-467efc8b-41b1-42ce-b4f4-ad698478ecaa.png",
+      "sha256": "0b128377b4e94825024889b9d06abe7e684d94e279bf71b8d54a5b2f41e0285f",
+      "nativeSize": [
+        1572,
+        1001
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        53,
+        1572,
+        1001
+      ],
+      "marginFractions": [
+        0,
+        0.052947052947052944,
+        0,
+        0
+      ],
+      "evidence": [
+        "work/brief249/t01-cliff-native-paper.jpg",
+        "work/brief249/t01-cliff-native-dark.jpg",
+        "work/brief249/t01-cliff-native-white.jpg",
+        "work/brief249/t01-cliff-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-sea-cliff-v1.png",
+      "path": "public/assets/maths/ma11-sea-cliff-v1.png",
+      "brief": 249,
+      "lesson": "t01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2200,
+        1400
+      ],
+      "qa": {
+        "result": "passed: measured top/foot, flat waterline, open sea,900/native and combined geometry inspected",
+        "observations": "Production pixels preserved. Paper/dark composites inspected. Measured coordinates, not requested dimensions, control placement.",
+        "evidence": [
+          "work/brief249/t01-rack-geometry-dark.jpg",
+          "work/brief249/t01-rack-geometry-paper.jpg",
+          "work/brief249/t01-sandwich-geometry-dark.jpg",
+          "work/brief249/t01-sandwich-geometry-paper.jpg",
+          "work/brief249/t01-sandwich-v2-geometry-dark.jpg",
+          "work/brief249/t01-sandwich-v2-geometry-paper.jpg",
+          "work/brief249/t01-cliff-yacht-1572-dark.jpg",
+          "work/brief249/t01-cliff-yacht-1572-paper.jpg",
+          "work/brief249/t01-cliff-yacht-900-dark.jpg",
+          "work/brief249/t01-cliff-yacht-900-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-sea-cliff-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-f3fda003-baad-4992-ac31-f0f4e0aa5901.png",
+      "sha256": "583da6f962ab5b219ccf95ea5c8a2c8463c322731c9dad06ffc9656302627190",
+      "nativeSize": [
+        1190,
+        1322
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        75,
+        75,
+        1148,
+        1241
+      ],
+      "marginFractions": [
+        0.06302521008403361,
+        0.056732223903177004,
+        0.03529411764705882,
+        0.06127080181543117
+      ],
+      "evidence": [
+        "work/brief249/t01-yacht-side-native-paper.jpg",
+        "work/brief249/t01-yacht-side-native-dark.jpg",
+        "work/brief249/t01-yacht-side-native-white.jpg",
+        "work/brief249/t01-yacht-side-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-yacht-side-v1.png",
+      "path": "public/assets/maths/ma11-yacht-side-v1.png",
+      "brief": 249,
+      "lesson": "t01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        1000
+      ],
+      "qa": {
+        "result": "passed: bow right, empty deck, level waterline; native/300px placement and alpha inspected",
+        "observations": "Production pixels preserved. Paper/dark composites inspected. Measured coordinates, not requested dimensions, control placement.",
+        "evidence": [
+          "work/brief249/t01-rack-geometry-dark.jpg",
+          "work/brief249/t01-rack-geometry-paper.jpg",
+          "work/brief249/t01-sandwich-geometry-dark.jpg",
+          "work/brief249/t01-sandwich-geometry-paper.jpg",
+          "work/brief249/t01-sandwich-v2-geometry-dark.jpg",
+          "work/brief249/t01-sandwich-v2-geometry-paper.jpg",
+          "work/brief249/t01-cliff-yacht-1572-dark.jpg",
+          "work/brief249/t01-cliff-yacht-1572-paper.jpg",
+          "work/brief249/t01-cliff-yacht-900-dark.jpg",
+          "work/brief249/t01-cliff-yacht-900-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-yacht-side-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-fb6a0b9b-a99b-4889-8cdb-814a305a56cc.png",
+      "sha256": "f57cb9574830c084aca6f12426c196f51761dc4f414f4c308599e1b5600d2f07",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        309,
+        32,
+        707,
+        1516
+      ],
+      "marginFractions": [
+        0.3017578125,
+        0.020833333333333332,
+        0.3095703125,
+        0.013020833333333334
+      ],
+      "evidence": [
+        "work/brief249/t02a-yacht-top-native-paper.jpg",
+        "work/brief249/t02a-yacht-top-native-dark.jpg",
+        "work/brief249/t02a-yacht-top-native-white.jpg",
+        "work/brief249/t02a-yacht-top-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-yacht-top-v1.png",
+      "path": "public/assets/maths/ma11-yacht-top-v1.png",
+      "brief": 249,
+      "lesson": "t02a",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        900
+      ],
+      "qa": {
+        "result": "passed: top view, map-size readability, subject and alpha",
+        "evidence": [
+          "work/brief249/t02a-yacht-top-native-black.jpg",
+          "work/brief249/t02a-yacht-top-native-dark.jpg",
+          "work/brief249/t02a-yacht-top-native-paper.jpg",
+          "work/brief249/t02a-yacht-top-native-white.jpg",
+          "work/brief249/t02a-yacht-top-qa-paper-dark-dark.jpg",
+          "work/brief249/t02a-yacht-top-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-yacht-top-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-ee854bb0-0d9a-4476-b259-d85579ccf24b.png",
+      "sha256": "fefc9a6d84e00d2a4b8423362e23964f3e2fbfcb2260da6633803fd5ef870247",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        20,
+        90,
+        2148,
+        641
+      ],
+      "marginFractions": [
+        0.009208103130755065,
+        0.12430939226519337,
+        0.011049723756906077,
+        0.11464088397790055
+      ],
+      "evidence": [
+        "work/brief249/t03-skateboard-native-paper.jpg",
+        "work/brief249/t03-skateboard-native-dark.jpg",
+        "work/brief249/t03-skateboard-native-white.jpg",
+        "work/brief249/t03-skateboard-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-skateboard-top-v1.png",
+      "path": "public/assets/maths/ma11-skateboard-top-v1.png",
+      "brief": 249,
+      "lesson": "t03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        560
+      ],
+      "qa": {
+        "result": "passed: subject,420px rotation, native and alpha checks; narrow margins recorded",
+        "evidence": [
+          "work/brief249/t03-skateboard-native-black.jpg",
+          "work/brief249/t03-skateboard-native-dark.jpg",
+          "work/brief249/t03-skateboard-native-paper.jpg",
+          "work/brief249/t03-skateboard-native-white.jpg",
+          "work/brief249/t03-skateboard-rotation-dark.jpg",
+          "work/brief249/t03-skateboard-rotation-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-skateboard-top-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-645cfd11-68af-478f-bbae-14e763cc9322.png",
+      "sha256": "f2686d07a34372320aa91589fa96e1b265e1a3d245d32acefc747b7523efa42d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        58,
+        62,
+        1183,
+        1191
+      ],
+      "marginFractions": [
+        0.046251993620414676,
+        0.049441786283891544,
+        0.05661881977671451,
+        0.050239234449760764
+      ],
+      "evidence": [
+        "work/brief249/t04-clock-native-paper.jpg",
+        "work/brief249/t04-clock-native-dark.jpg",
+        "work/brief249/t04-clock-native-white.jpg",
+        "work/brief249/t04-clock-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-wall-clock-v1.png",
+      "path": "public/assets/maths/ma11-wall-clock-v1.png",
+      "brief": 249,
+      "lesson": "t04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        1500
+      ],
+      "qa": {
+        "result": "qualified: twelve ticks and nearly circular face; exact30degree tick registration not cleared",
+        "observations": "Subject and native paper/dark alpha inspected. Exact source geometry remains for root; PNG pixels preserved.",
+        "evidence": [
+          "work/brief249/t04-clock-native-black.jpg",
+          "work/brief249/t04-clock-native-dark.jpg",
+          "work/brief249/t04-clock-native-paper.jpg",
+          "work/brief249/t04-clock-native-white.jpg",
+          "work/brief249/t04-clock-qa-paper-dark-dark.jpg",
+          "work/brief249/t04-clock-qa-paper-dark-paper.jpg",
+          "work/brief249/t04-clock-registration-dark.jpg",
+          "work/brief249/t04-clock-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-wall-clock-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-612c46f6-b0c2-4d2f-bc14-62480a9608fa.png",
+      "sha256": "8c91750e0a87ffafbbb8ec0d75824123e54d02872f74283dccf529c99147275a",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        253
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        9,
+        1774,
+        887
+      ],
+      "marginFractions": [
+        0,
+        0.010146561443066516,
+        0,
+        0
+      ],
+      "evidence": [
+        "work/brief249/t04-fire-towers-native-paper.jpg",
+        "work/brief249/t04-fire-towers-native-dark.jpg",
+        "work/brief249/t04-fire-towers-native-white.jpg",
+        "work/brief249/t04-fire-towers-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-fire-towers-v1.png",
+      "path": "public/assets/maths/ma11-fire-towers-v1.png",
+      "brief": 249,
+      "lesson": "t04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1200
+      ],
+      "qa": {
+        "result": "static pass under root ruling 46",
+        "observations": "Two natural lookout towers and a single smoke plume. Native transparency and paper/dark checks passed. Draw the exact triangle in a dedicated schematic beside or over the painting, independently of the landmarks.",
+        "evidence": [
+          "work/brief249/t04-fire-towers-native-paper.jpg",
+          "work/brief249/t04-fire-towers-native-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-fire-towers-v1.json",
+      "previousQA": {
+        "result": "held:32.11and29.44degree painted angles fail65/70within5degrees; source layout constraints conflict",
+        "observations": "Subject and native paper/dark alpha inspected. Exact source geometry remains for root; PNG pixels preserved.",
+        "evidence": [
+          "work/brief249/t04-fire-towers-native-black.jpg",
+          "work/brief249/t04-fire-towers-native-dark.jpg",
+          "work/brief249/t04-fire-towers-native-paper.jpg",
+          "work/brief249/t04-fire-towers-native-white.jpg",
+          "work/brief249/t04-fire-towers-registration-dark.jpg",
+          "work/brief249/t04-fire-towers-registration-paper.jpg"
+        ]
+      }
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2e5d6ee5-772e-4cca-a0ba-268d343b3654.png",
+      "sha256": "b60aa2aca3f6225d28421364404c3077491700722ba9756c72cdc5484a2e99e1",
+      "nativeSize": [
+        1422,
+        1106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        166,
+        184,
+        856,
+        930
+      ],
+      "marginFractions": [
+        0.11673699015471167,
+        0.16636528028933092,
+        0.3980309423347398,
+        0.15913200723327306
+      ],
+      "evidence": [
+        "work/brief249/t05-garden-v2-native-paper.jpg",
+        "work/brief249/t05-garden-v2-native-dark.jpg",
+        "work/brief249/t05-garden-v2-native-white.jpg",
+        "work/brief249/t05-garden-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-garden-bed-v1.png",
+      "path": "public/assets/maths/ma11-garden-bed-v1.png",
+      "brief": 249,
+      "lesson": "t05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        1400
+      ],
+      "qa": {
+        "result": "passed: requested approximate ratio, angle tolerance, subject and alpha",
+        "evidence": [
+          "work/brief249/t05-garden-native-black.jpg",
+          "work/brief249/t05-garden-native-dark.jpg",
+          "work/brief249/t05-garden-native-paper.jpg",
+          "work/brief249/t05-garden-native-white.jpg",
+          "work/brief249/t05-garden-registration-dark.jpg",
+          "work/brief249/t05-garden-registration-paper.jpg",
+          "work/brief249/t05-garden-v2-native-black.jpg",
+          "work/brief249/t05-garden-v2-native-dark.jpg",
+          "work/brief249/t05-garden-v2-native-paper.jpg",
+          "work/brief249/t05-garden-v2-native-white.jpg",
+          "work/brief249/t05-garden-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/t05-garden-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-garden-bed-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-7c212907-52bc-4e87-a8d2-2e1a10cc7d61.png",
+      "sha256": "72044349a7e0dffdc0672dd66e92f3d97fe10ea485d9cc6d243356e72490149b",
+      "nativeSize": [
+        941,
+        1672
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        117,
+        7,
+        814,
+        1656
+      ],
+      "marginFractions": [
+        0.12433581296493093,
+        0.004186602870813397,
+        0.13496280552603612,
+        0.009569377990430622
+      ],
+      "evidence": [
+        "work/brief249/t06-phone-tower-native-paper.jpg",
+        "work/brief249/t06-phone-tower-native-dark.jpg",
+        "work/brief249/t06-phone-tower-native-white.jpg",
+        "work/brief249/t06-phone-tower-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-phone-tower-v1.png",
+      "path": "public/assets/maths/ma11-phone-tower-v1.png",
+      "brief": 249,
+      "lesson": "t06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        1600
+      ],
+      "qa": {
+        "result": "passed: subject,320px/native and alpha checks; narrow top margin recorded",
+        "evidence": [
+          "work/brief249/t06-phone-tower-native-black.jpg",
+          "work/brief249/t06-phone-tower-native-dark.jpg",
+          "work/brief249/t06-phone-tower-native-paper.jpg",
+          "work/brief249/t06-phone-tower-native-white.jpg",
+          "work/brief249/t06-phone-tower-qa-paper-dark-dark.jpg",
+          "work/brief249/t06-phone-tower-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-phone-tower-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-bef8ed1e-c5e3-4c10-9e2c-c8d5c1ca311f.png",
+      "sha256": "1071c9ed6fd32a2be5f0fbda21ba4ea88225ca7af5e14755ed16facf04be3a0d",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        34,
+        42,
+        1204,
+        1226
+      ],
+      "marginFractions": [
+        0.02711323763955343,
+        0.03349282296650718,
+        0.03987240829346093,
+        0.022328548644338118
+      ],
+      "evidence": [
+        "work/brief249/t07-cake-tin-native-paper.jpg",
+        "work/brief249/t07-cake-tin-native-dark.jpg",
+        "work/brief249/t07-cake-tin-native-white.jpg",
+        "work/brief249/t07-cake-tin-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-cake-tin-v1.png",
+      "path": "public/assets/maths/ma11-cake-tin-v1.png",
+      "brief": 249,
+      "lesson": "t07",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        1500
+      ],
+      "qa": {
+        "result": "qualified: bare circular tin, subject and alpha pass; small circle-fit and concentricity deviations recorded",
+        "evidence": [
+          "work/brief249/t07-cake-tin-native-black.jpg",
+          "work/brief249/t07-cake-tin-native-dark.jpg",
+          "work/brief249/t07-cake-tin-native-paper.jpg",
+          "work/brief249/t07-cake-tin-native-white.jpg",
+          "work/brief249/t07-cake-tin-qa-paper-dark-dark.jpg",
+          "work/brief249/t07-cake-tin-qa-paper-dark-paper.jpg",
+          "work/brief249/t07-cake-tin-registration-dark.jpg",
+          "work/brief249/t07-cake-tin-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-cake-tin-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-726d9e3b-2035-4a65-ab59-45fa2705870f.png",
+      "sha256": "49f28d7f238d568e8312395d6cae61584f76a0b54ecc17fff620ab67d5961509",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        61,
+        71,
+        1173,
+        1194
+      ],
+      "marginFractions": [
+        0.04864433811802233,
+        0.05661881977671451,
+        0.0645933014354067,
+        0.04784688995215311
+      ],
+      "evidence": [
+        "work/brief249/t09-table-native-paper.jpg",
+        "work/brief249/t09-table-native-dark.jpg",
+        "work/brief249/t09-table-native-white.jpg",
+        "work/brief249/t09-table-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-drop-leaf-table-top-v1.png",
+      "path": "public/assets/maths/ma11-drop-leaf-table-top-v1.png",
+      "brief": 249,
+      "lesson": "t09",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: circular subject and seam present; measured121.824degree chord differs from120degree model",
+        "evidence": [
+          "work/brief249/t09-table-native-black.jpg",
+          "work/brief249/t09-table-native-dark.jpg",
+          "work/brief249/t09-table-native-paper.jpg",
+          "work/brief249/t09-table-native-white.jpg",
+          "work/brief249/t09-table-qa-paper-dark-dark.jpg",
+          "work/brief249/t09-table-qa-paper-dark-paper.jpg",
+          "work/brief249/t09-table-registration-dark.jpg",
+          "work/brief249/t09-table-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-drop-leaf-table-top-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-a754a971-6058-484b-b795-ae058f1f66bd.png",
+      "sha256": "796dd28ebff995bccd866273b4f3f6bc2b386eaa16813b878827dd31d1bd14e5",
+      "nativeSize": [
+        821,
+        1915
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        195,
+        64,
+        626,
+        1841
+      ],
+      "marginFractions": [
+        0.23751522533495736,
+        0.03342036553524804,
+        0.23751522533495736,
+        0.038642297650130546
+      ],
+      "evidence": [
+        "work/brief249/t09-tuning-fork-native-paper.jpg",
+        "work/brief249/t09-tuning-fork-native-dark.jpg",
+        "work/brief249/t09-tuning-fork-native-white.jpg",
+        "work/brief249/t09-tuning-fork-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-tuning-fork-v1.png",
+      "path": "public/assets/maths/ma11-tuning-fork-v1.png",
+      "brief": 249,
+      "lesson": "t09",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        1400
+      ],
+      "qa": {
+        "result": "passed: two prongs, blank upright steel fork and wooden block; subject/native alpha checks",
+        "evidence": [
+          "work/brief249/t09-tuning-fork-native-black.jpg",
+          "work/brief249/t09-tuning-fork-native-dark.jpg",
+          "work/brief249/t09-tuning-fork-native-paper.jpg",
+          "work/brief249/t09-tuning-fork-native-white.jpg",
+          "work/brief249/t09-tuning-fork-qa-paper-dark-dark.jpg",
+          "work/brief249/t09-tuning-fork-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-117514e5-a936-45f4-b268-36cef30d5724.png",
+      "sha256": "1af26195707bd367809bd1a141a164a72a584ea44e134383a23170b576d1695e",
+      "nativeSize": [
+        802,
+        1960
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        207,
+        3,
+        377,
+        1960
+      ],
+      "marginFractions": [
+        0.2581047381546135,
+        0.001530612244897959,
+        0.529925187032419,
+        0
+      ],
+      "evidence": [
+        "work/brief249/t10-fence-native-paper.jpg",
+        "work/brief249/t10-fence-native-dark.jpg",
+        "work/brief249/t10-fence-native-white.jpg",
+        "work/brief249/t10-fence-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-fence-long-top-v1.png",
+      "path": "public/assets/maths/ma11-fence-long-top-v1.png",
+      "brief": 249,
+      "lesson": "t10",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        2200
+      ],
+      "qa": {
+        "result": "qualified: straight main face, slight post projection; subject and alpha checks pass",
+        "evidence": [
+          "work/brief249/t10-fence-native-black.jpg",
+          "work/brief249/t10-fence-native-dark.jpg",
+          "work/brief249/t10-fence-native-paper.jpg",
+          "work/brief249/t10-fence-native-white.jpg",
+          "work/brief249/t10-fence-qa-paper-dark-dark.jpg",
+          "work/brief249/t10-fence-qa-paper-dark-paper.jpg",
+          "work/brief249/t10-fence-registration-dark.jpg",
+          "work/brief249/t10-fence-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-fence-long-top-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2d3f1362-6862-4c27-90f7-62b2dec5d02b.png",
+      "sha256": "5b6216354ae5958490ad39a90aa429ed2134ea1e44a5c28d61b9531a58078268",
+      "nativeSize": [
+        1086,
+        1448
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        108,
+        1086,
+        1399
+      ],
+      "marginFractions": [
+        0,
+        0.07458563535911603,
+        0,
+        0.03383977900552486
+      ],
+      "evidence": [
+        "work/brief249/t11-platform-native-paper.jpg",
+        "work/brief249/t11-platform-native-dark.jpg",
+        "work/brief249/t11-platform-native-white.jpg",
+        "work/brief249/t11-platform-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-flying-fox-platform-v1.png",
+      "path": "public/assets/maths/ma11-flying-fox-platform-v1.png",
+      "brief": 249,
+      "lesson": "t11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: deck-edge model attachment mapped; upper painted eye is not the3m attachment",
+        "evidence": [
+          "work/brief249/t11-platform-model-dark.jpg",
+          "work/brief249/t11-platform-model-paper.jpg",
+          "work/brief249/t11-platform-native-black.jpg",
+          "work/brief249/t11-platform-native-dark.jpg",
+          "work/brief249/t11-platform-native-paper.jpg",
+          "work/brief249/t11-platform-native-white.jpg",
+          "work/brief249/t11-platform-qa-paper-dark-dark.jpg",
+          "work/brief249/t11-platform-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-flying-fox-platform-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-dbd21837-b33e-412a-942a-4123b3902555.png",
+      "sha256": "e3421b7f88bb7aa4380aed23e803ac38549ea75f7fe331f78047de56c1a8226d",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        149,
+        91,
+        872,
+        1490
+      ],
+      "marginFractions": [
+        0.1455078125,
+        0.059244791666666664,
+        0.1484375,
+        0.029947916666666668
+      ],
+      "evidence": [
+        "work/brief249/t11-trolley-native-paper.jpg",
+        "work/brief249/t11-trolley-native-dark.jpg",
+        "work/brief249/t11-trolley-native-white.jpg",
+        "work/brief249/t11-trolley-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-flying-fox-trolley-v1.png",
+      "path": "public/assets/maths/ma11-flying-fox-trolley-v1.png",
+      "brief": 249,
+      "lesson": "t11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        400,
+        600
+      ],
+      "qa": {
+        "result": "passed subject and alpha; groove contact and root articulation notes recorded",
+        "evidence": [
+          "work/brief249/t11-trolley-native-black.jpg",
+          "work/brief249/t11-trolley-native-dark.jpg",
+          "work/brief249/t11-trolley-native-paper.jpg",
+          "work/brief249/t11-trolley-native-white.jpg",
+          "work/brief249/t11-trolley-qa-paper-dark-dark.jpg",
+          "work/brief249/t11-trolley-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-flying-fox-trolley-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-ef3591e2-919b-464f-b875-cd65cfff8b88.png",
+      "sha256": "478c6e06ac7a8c216e652f34c434428227eaa5bf92ce38ce0587cf300a4bc8f6",
+      "nativeSize": [
+        1354,
+        1161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        43,
+        178,
+        1275,
+        951
+      ],
+      "marginFractions": [
+        0.03175775480059084,
+        0.1533161068044789,
+        0.058345642540620385,
+        0.18087855297157623
+      ],
+      "evidence": [
+        "work/brief249/t11-floodlight-native-paper.jpg",
+        "work/brief249/t11-floodlight-native-dark.jpg",
+        "work/brief249/t11-floodlight-native-white.jpg",
+        "work/brief249/t11-floodlight-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-floodlight-bracket-v1.png",
+      "path": "public/assets/maths/ma11-floodlight-bracket-v1.png",
+      "brief": 249,
+      "lesson": "t11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        700,
+        600
+      ],
+      "qa": {
+        "result": "passed: downward lamp, clear pivot, no painted beam; root motion masks pending",
+        "evidence": [
+          "work/brief249/t11-floodlight-native-black.jpg",
+          "work/brief249/t11-floodlight-native-dark.jpg",
+          "work/brief249/t11-floodlight-native-paper.jpg",
+          "work/brief249/t11-floodlight-native-white.jpg",
+          "work/brief249/t11-floodlight-qa-paper-dark-dark.jpg",
+          "work/brief249/t11-floodlight-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-floodlight-bracket-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2df4017d-76a3-4fe7-a599-a95dec7f150e.png",
+      "sha256": "80fdaef47445a4a72b56d2d3bb70254014e23b37529913092954ba627c2d57d8",
+      "nativeSize": [
+        992,
+        1586
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        150,
+        97,
+        838,
+        1558
+      ],
+      "marginFractions": [
+        0.15120967741935484,
+        0.06116015132408575,
+        0.15524193548387097,
+        0.017654476670870115
+      ],
+      "evidence": [
+        "work/brief249/t12-road-sign-native-paper.jpg",
+        "work/brief249/t12-road-sign-native-dark.jpg",
+        "work/brief249/t12-road-sign-native-white.jpg",
+        "work/brief249/t12-road-sign-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-road-sign-post-v1.png",
+      "path": "public/assets/maths/ma11-road-sign-post-v1.png",
+      "brief": 249,
+      "lesson": "t12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1000,
+        1600
+      ],
+      "qa": {
+        "result": "passed: blank sign, clear post, subject and alpha",
+        "evidence": [
+          "work/brief249/t12-road-sign-native-black.jpg",
+          "work/brief249/t12-road-sign-native-dark.jpg",
+          "work/brief249/t12-road-sign-native-paper.jpg",
+          "work/brief249/t12-road-sign-native-white.jpg",
+          "work/brief249/t12-road-sign-qa-paper-dark-dark.jpg",
+          "work/brief249/t12-road-sign-qa-paper-dark-paper.jpg",
+          "work/brief249/t12-road-sign-registration-dark.jpg",
+          "work/brief249/t12-road-sign-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-road-sign-post-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-44a32cc6-0632-4e6e-9e45-f253229372dc.png",
+      "sha256": "ccb3555bfab6748852a578974450c459b99b2a5cf17b1448a1408fd2b41f6ae4",
+      "nativeSize": [
+        1073,
+        1466
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        320,
+        19,
+        754,
+        1443
+      ],
+      "marginFractions": [
+        0.2982292637465051,
+        0.01296043656207367,
+        0.2972972972972973,
+        0.015688949522510234
+      ],
+      "evidence": [
+        "work/brief249/t14a-mixing-desk-native-paper.jpg",
+        "work/brief249/t14a-mixing-desk-native-dark.jpg",
+        "work/brief249/t14a-mixing-desk-native-white.jpg",
+        "work/brief249/t14a-mixing-desk-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-mixing-desk-channel-v1.png",
+      "path": "public/assets/maths/ma11-mixing-desk-channel-v1.png",
+      "brief": 249,
+      "lesson": "t14a",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1400
+      ],
+      "qa": {
+        "result": "passed: specified control/driver counts, native/900px subject and alpha checks; measured circles recorded",
+        "evidence": [
+          "work/brief249/t14a-mixing-desk-native-black.jpg",
+          "work/brief249/t14a-mixing-desk-native-dark.jpg",
+          "work/brief249/t14a-mixing-desk-native-paper.jpg",
+          "work/brief249/t14a-mixing-desk-native-white.jpg",
+          "work/brief249/t14a-mixing-desk-qa-paper-dark-dark.jpg",
+          "work/brief249/t14a-mixing-desk-qa-paper-dark-paper.jpg",
+          "work/brief249/t14a-mixing-desk-registration-dark.jpg",
+          "work/brief249/t14a-mixing-desk-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-mixing-desk-channel-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-dea5f289-247d-4675-a868-95b662bdb8a2.png",
+      "sha256": "447064e84d751b81f08e12ab7e12e2cf7e147f78cbeee7c7c49e826299a05f1b",
+      "nativeSize": [
+        2012,
+        782
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        388,
+        22,
+        1626,
+        762
+      ],
+      "marginFractions": [
+        0.19284294234592445,
+        0.028132992327365727,
+        0.1918489065606362,
+        0.02557544757033248
+      ],
+      "evidence": [
+        "work/brief249/t14a-speakers-native-paper.jpg",
+        "work/brief249/t14a-speakers-native-dark.jpg",
+        "work/brief249/t14a-speakers-native-white.jpg",
+        "work/brief249/t14a-speakers-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-studio-speakers-v1.png",
+      "path": "public/assets/maths/ma11-studio-speakers-v1.png",
+      "brief": 249,
+      "lesson": "t14a",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        700
+      ],
+      "qa": {
+        "result": "passed: specified control/driver counts, native/900px subject and alpha checks; measured circles recorded",
+        "evidence": [
+          "work/brief249/t14a-speakers-native-black.jpg",
+          "work/brief249/t14a-speakers-native-dark.jpg",
+          "work/brief249/t14a-speakers-native-paper.jpg",
+          "work/brief249/t14a-speakers-native-white.jpg",
+          "work/brief249/t14a-speakers-qa-paper-dark-dark.jpg",
+          "work/brief249/t14a-speakers-qa-paper-dark-paper.jpg",
+          "work/brief249/t14a-speakers-registration-dark.jpg",
+          "work/brief249/t14a-speakers-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-studio-speakers-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-6ecb0329-8cd4-4af6-87b7-8671b955bb24.png",
+      "sha256": "7abc00b54bc0da483e93a4d4c7f978eb540a824f4afc40fcc76446473abbe011",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        181,
+        2172,
+        540
+      ],
+      "marginFractions": [
+        0,
+        0.25,
+        0,
+        0.2541436464088398
+      ],
+      "evidence": [
+        "work/brief249/g01-track-native-paper.jpg",
+        "work/brief249/g01-track-native-dark.jpg",
+        "work/brief249/g01-track-native-white.jpg",
+        "work/brief249/g01-track-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-track-lanes-strip-v1.png",
+      "path": "public/assets/maths/ma11-track-lanes-strip-v1.png",
+      "brief": 249,
+      "lesson": "g01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        600
+      ],
+      "qa": {
+        "result": "Three lanes and one start line confirmed; paper1700/900/native and native dark alpha inspected. Narrow edge fade recorded.",
+        "evidence": [
+          "work/brief249/g01-track-native-black.jpg",
+          "work/brief249/g01-track-native-dark.jpg",
+          "work/brief249/g01-track-native-paper.jpg",
+          "work/brief249/g01-track-native-white.jpg",
+          "work/brief249/g01-track-qa-paper-dark-dark.jpg",
+          "work/brief249/g01-track-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-track-lanes-strip-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-f4f4228c-06fe-40e2-a6c7-49c90eb93b58.png",
+      "sha256": "a2fd9e789698a2229a6ae95424a4e9bcf6421aeb54812331cbec05c0aa9d6ef0",
+      "nativeSize": [
+        1354,
+        1161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        7,
+        38,
+        1353,
+        1148
+      ],
+      "marginFractions": [
+        0.0051698670605613,
+        0.03273040482342808,
+        0.0007385524372230429,
+        0.01119724375538329
+      ],
+      "evidence": [
+        "work/brief249/g03-copier-native-paper.jpg",
+        "work/brief249/g03-copier-native-dark.jpg",
+        "work/brief249/g03-copier-native-white.jpg",
+        "work/brief249/g03-copier-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-photocopier-v1.png",
+      "path": "public/assets/maths/ma11-photocopier-v1.png",
+      "brief": 249,
+      "lesson": "g03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1200
+      ],
+      "qa": {
+        "result": "Closed scanner lid, blank screen/buttons, one output sheet; native and300/600paper/dark subject and alpha inspected.",
+        "evidence": [
+          "work/brief249/g03-copier-native-black.jpg",
+          "work/brief249/g03-copier-native-dark.jpg",
+          "work/brief249/g03-copier-native-paper.jpg",
+          "work/brief249/g03-copier-native-white.jpg",
+          "work/brief249/g03-copier-qa-paper-dark-dark.jpg",
+          "work/brief249/g03-copier-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-photocopier-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e44abdf6-ebd7-4a3d-91eb-527d0f9a2b76.png",
+      "sha256": "7476c4843b569a6a71dbc88a2376cabbb50950981e91922fe4da3510a177905d",
+      "nativeSize": [
+        1466,
+        1073
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        232,
+        1466,
+        1073
+      ],
+      "marginFractions": [
+        0,
+        0.21621621621621623,
+        0,
+        0
+      ],
+      "evidence": [
+        "work/brief249/g03-oven-native-paper.jpg",
+        "work/brief249/g03-oven-native-dark.jpg",
+        "work/brief249/g03-oven-native-white.jpg",
+        "work/brief249/g03-oven-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-oven-dial-v1.png",
+      "path": "public/assets/maths/ma11-oven-dial-v1.png",
+      "brief": 249,
+      "lesson": "g03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1000
+      ],
+      "qa": {
+        "result": "One blank dial and pointer;300/600/native paper/dark checks. Face near-circular with about3px radius uncertainty; exact scale is coded.",
+        "evidence": [
+          "work/brief249/g03-oven-native-black.jpg",
+          "work/brief249/g03-oven-native-dark.jpg",
+          "work/brief249/g03-oven-native-paper.jpg",
+          "work/brief249/g03-oven-native-white.jpg",
+          "work/brief249/g03-oven-qa-paper-dark-dark.jpg",
+          "work/brief249/g03-oven-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-oven-dial-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-d2a0dcc8-a72a-4708-8f3c-5e07f81ee3d4.png",
+      "sha256": "e69ba89f8f83630ffcdd4768fcb0a03b66a80a6d611651e4bdf175e332c2c321",
+      "nativeSize": [
+        1484,
+        1060
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        129,
+        41,
+        1347,
+        1028
+      ],
+      "marginFractions": [
+        0.08692722371967655,
+        0.038679245283018866,
+        0.09231805929919137,
+        0.03018867924528302
+      ],
+      "evidence": [
+        "work/brief249/g04-caps-v2-native-paper.jpg",
+        "work/brief249/g04-caps-v2-native-dark.jpg",
+        "work/brief249/g04-caps-v2-native-white.jpg",
+        "work/brief249/g04-caps-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-team-caps-v1.png",
+      "path": "public/assets/maths/ma11-team-caps-v1.png",
+      "brief": 249,
+      "lesson": "g04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1000
+      ],
+      "qa": {
+        "result": "Five separate peaks counted; top button and box fully visible. Native/300/480/600 paper/dark alpha checks pass.",
+        "evidence": [
+          "work/brief249/g04-caps-v2-native-black.jpg",
+          "work/brief249/g04-caps-v2-native-dark.jpg",
+          "work/brief249/g04-caps-v2-native-paper.jpg",
+          "work/brief249/g04-caps-v2-native-white.jpg",
+          "work/brief249/g04-caps-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/g04-caps-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-team-caps-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-76838ea2-6b40-4f16-bdb5-fa70145b4504.png",
+      "sha256": "85132337d71af5e7e9b66190786491a9e28b80dd1e3385f7e40af8ffd8da17cd",
+      "nativeSize": [
+        1484,
+        1060
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        35,
+        33,
+        1438,
+        1036
+      ],
+      "marginFractions": [
+        0.02358490566037736,
+        0.031132075471698113,
+        0.03099730458221024,
+        0.022641509433962263
+      ],
+      "evidence": [
+        "work/brief249/g06-barrow-v2-native-paper.jpg",
+        "work/brief249/g06-barrow-v2-native-dark.jpg",
+        "work/brief249/g06-barrow-v2-native-white.jpg",
+        "work/brief249/g06-barrow-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-garden-barrow-v1.png",
+      "path": "public/assets/maths/ma11-garden-barrow-v1.png",
+      "brief": 249,
+      "lesson": "g06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1000
+      ],
+      "qa": {
+        "result": "Two sacks and specified load confirmed, complete handles/wheel.300/600/native paper/dark alpha inspected, soft pale path fade recorded.",
+        "evidence": [
+          "work/brief249/g06-barrow-v2-native-black.jpg",
+          "work/brief249/g06-barrow-v2-native-dark.jpg",
+          "work/brief249/g06-barrow-v2-native-paper.jpg",
+          "work/brief249/g06-barrow-v2-native-white.jpg",
+          "work/brief249/g06-barrow-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/g06-barrow-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-ac96667b-e0fd-4129-b6ca-832a0c682a32.png",
+      "sha256": "08d5e358183dbf0445ec0fff5e6dde9c58bf4f4cf697b75405966f195763e187",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        9,
+        14,
+        1528,
+        1012
+      ],
+      "marginFractions": [
+        0.005859375,
+        0.013671875,
+        0.005208333333333333,
+        0.01171875
+      ],
+      "evidence": [
+        "work/brief249/s02-cabinet-native-paper.jpg",
+        "work/brief249/s02-cabinet-native-dark.jpg",
+        "work/brief249/s02-cabinet-native-white.jpg",
+        "work/brief249/s02-cabinet-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-icecream-cabinet-v1.png",
+      "path": "public/assets/maths/ma11-icecream-cabinet-v1.png",
+      "brief": 249,
+      "lesson": "s02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1300
+      ],
+      "qa": {
+        "result": "Eight separate tubs and eight scoops counted.900/native paper/dark alpha clean; raw grey surround is transparent.",
+        "evidence": [
+          "work/brief249/s02-cabinet-native-black.jpg",
+          "work/brief249/s02-cabinet-native-dark.jpg",
+          "work/brief249/s02-cabinet-native-paper.jpg",
+          "work/brief249/s02-cabinet-native-white.jpg",
+          "work/brief249/s02-cabinet-qa-paper-dark-dark.jpg",
+          "work/brief249/s02-cabinet-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-icecream-cabinet-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-914aaea7-a554-47ed-ad82-2519da8d64a8.png",
+      "sha256": "d6d6f395bfa15360c4535d0e6e46449415d37398d35525874bb493f8f1a1950b",
+      "nativeSize": [
+        1006,
+        1564
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        226,
+        22,
+        771,
+        1533
+      ],
+      "marginFractions": [
+        0.22465208747514911,
+        0.014066496163682864,
+        0.23359840954274355,
+        0.019820971867007674
+      ],
+      "evidence": [
+        "work/brief249/s02-cone-native-paper.jpg",
+        "work/brief249/s02-cone-native-dark.jpg",
+        "work/brief249/s02-cone-native-white.jpg",
+        "work/brief249/s02-cone-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-cone-choc-vanilla-v1.png",
+      "path": "public/assets/maths/ma11-cone-choc-vanilla-v1.png",
+      "brief": 249,
+      "lesson": "s02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        1400
+      ],
+      "qa": {
+        "result": "Exactly two scoops in specified order; complete cone tip.900/native paper/dark alpha inspected.",
+        "evidence": [
+          "work/brief249/s02-cone-native-black.jpg",
+          "work/brief249/s02-cone-native-dark.jpg",
+          "work/brief249/s02-cone-native-paper.jpg",
+          "work/brief249/s02-cone-native-white.jpg",
+          "work/brief249/s02-cone-qa-paper-dark-dark.jpg",
+          "work/brief249/s02-cone-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-59f469ff-492d-4600-9a13-837c702893db.png",
+      "sha256": "907f4e26f0bf78a283338403b8ff5183e38626d37413c6389313edb0cfb2b692",
+      "nativeSize": [
+        1330,
+        1182
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        105,
+        0,
+        1183,
+        1182
+      ],
+      "marginFractions": [
+        0.07894736842105263,
+        0,
+        0.11052631578947368,
+        0
+      ],
+      "evidence": [
+        "work/brief249/s02-trolley-native-paper.jpg",
+        "work/brief249/s02-trolley-native-dark.jpg",
+        "work/brief249/s02-trolley-native-white.jpg",
+        "work/brief249/s02-trolley-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-library-trolley-v1.png",
+      "path": "public/assets/maths/ma11-library-trolley-v1.png",
+      "brief": 249,
+      "lesson": "s02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        1600
+      ],
+      "qa": {
+        "result": "Two shelves, blank coloured spines and e-reader screen confirmed.900/native paper/dark checks; low-alpha edge fringe touches top/bottom, complete main handle and wheel contours.",
+        "evidence": [
+          "work/brief249/s02-trolley-native-black.jpg",
+          "work/brief249/s02-trolley-native-dark.jpg",
+          "work/brief249/s02-trolley-native-paper.jpg",
+          "work/brief249/s02-trolley-native-white.jpg",
+          "work/brief249/s02-trolley-qa-paper-dark-dark.jpg",
+          "work/brief249/s02-trolley-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-2fabcddd-291b-4e35-8ce6-13becf9b864b.png",
+      "sha256": "630e9f9bc2ed050ac2b19849cfa1fcbecdc2dd28b86674084a0070c76e3bad05",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        196,
+        2172,
+        546
+      ],
+      "marginFractions": [
+        0,
+        0.27071823204419887,
+        0,
+        0.24585635359116023
+      ],
+      "evidence": [
+        "work/brief249/s01-polo-v2-native-paper.jpg",
+        "work/brief249/s01-polo-v2-native-dark.jpg",
+        "work/brief249/s01-polo-v2-native-white.jpg",
+        "work/brief249/s01-polo-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-polo-caps-v1.png",
+      "path": "public/assets/maths/ma11-polo-caps-v1.png",
+      "brief": 249,
+      "lesson": "s01",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        3000,
+        900
+      ],
+      "qa": {
+        "result": "Exactly13caps counted, eleven navy/two red ends. Hanging by chin straps corrected; all13coded number positions fit at900px. Native/900paper/dark alpha inspected.",
+        "evidence": [
+          "work/brief249/s01-polo-v2-native-black.jpg",
+          "work/brief249/s01-polo-v2-native-dark.jpg",
+          "work/brief249/s01-polo-v2-native-paper.jpg",
+          "work/brief249/s01-polo-v2-native-white.jpg",
+          "work/brief249/s01-polo-v2-number-proof-dark.jpg",
+          "work/brief249/s01-polo-v2-number-proof-paper.jpg",
+          "work/brief249/s01-polo-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/s01-polo-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-polo-caps-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-759fdd5f-f525-4dc4-a84a-f6e22f9b0ef8.png",
+      "sha256": "1a7ab4c6b6e4a6eaf1978509cf1d7cad37eeab2f2629a08a50fce759cc0b01f9",
+      "nativeSize": [
+        1049,
+        1499
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        85,
+        12,
+        955,
+        1483
+      ],
+      "marginFractions": [
+        0.08102955195424213,
+        0.008005336891260841,
+        0.08960915157292659,
+        0.01067378252168112
+      ],
+      "evidence": [
+        "work/brief249/s03-gumball-native-paper.jpg",
+        "work/brief249/s03-gumball-native-dark.jpg",
+        "work/brief249/s03-gumball-native-white.jpg",
+        "work/brief249/s03-gumball-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-gumball-machine-v1.png",
+      "path": "public/assets/maths/ma11-gumball-machine-v1.png",
+      "brief": 249,
+      "lesson": "s03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        2000
+      ],
+      "qa": {
+        "result": "Exact25count and12/8/5colour count verified visually and against25listed centres.900/native paper/dark alpha inspected; same approximate54px ball radius, no hidden balls.",
+        "evidence": [
+          "work/brief249/s03-gumball-count-proof-dark.jpg",
+          "work/brief249/s03-gumball-count-proof-paper.jpg",
+          "work/brief249/s03-gumball-native-black.jpg",
+          "work/brief249/s03-gumball-native-dark.jpg",
+          "work/brief249/s03-gumball-native-paper.jpg",
+          "work/brief249/s03-gumball-native-white.jpg",
+          "work/brief249/s03-gumball-qa-paper-dark-dark.jpg",
+          "work/brief249/s03-gumball-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-gumball-machine-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-98b14e3c-0c2a-492e-9743-e273bd35a527.png",
+      "sha256": "62cb982c4f1b07076bb79a155fc44fd28c3981b9bfc065aed54fc5e58176a7c4",
+      "nativeSize": [
+        1448,
+        1086
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        44,
+        1448,
+        1086
+      ],
+      "marginFractions": [
+        0,
+        0.040515653775322284,
+        0,
+        0
+      ],
+      "evidence": [
+        "work/brief249/s04-hotel-v2-native-paper.jpg",
+        "work/brief249/s04-hotel-v2-native-dark.jpg",
+        "work/brief249/s04-hotel-v2-native-white.jpg",
+        "work/brief249/s04-hotel-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-hotel-facade-v1.png",
+      "path": "public/assets/maths/ma11-hotel-facade-v1.png",
+      "brief": 249,
+      "lesson": "s04",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1800
+      ],
+      "qa": {
+        "result": "Exactly40windows confirmed:5floors times8positions. Native/900paper/dark alpha and all40rectangle registrations inspected. Low-alpha sand fringe at canvas edges recorded.",
+        "evidence": [
+          "work/brief249/s04-hotel-v2-count-proof-dark.jpg",
+          "work/brief249/s04-hotel-v2-count-proof-paper.jpg",
+          "work/brief249/s04-hotel-v2-native-black.jpg",
+          "work/brief249/s04-hotel-v2-native-dark.jpg",
+          "work/brief249/s04-hotel-v2-native-paper.jpg",
+          "work/brief249/s04-hotel-v2-native-white.jpg",
+          "work/brief249/s04-hotel-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/s04-hotel-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-hotel-facade-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-206a1c59-ef63-44da-a838-b6b962bd88a2.png",
+      "sha256": "b7118c950f93f17e81ea0186290287be499a01b7598cf1b3b0207583e42531d8",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        275,
+        44,
+        612,
+        1752
+      ],
+      "marginFractions": [
+        0.3100338218714769,
+        0.02480270574971815,
+        0.3100338218714769,
+        0.012401352874859075
+      ],
+      "evidence": [
+        "work/brief249/s06-light-native-paper.jpg",
+        "work/brief249/s06-light-native-dark.jpg",
+        "work/brief249/s06-light-native-white.jpg",
+        "work/brief249/s06-light-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-traffic-light-v1.png",
+      "path": "public/assets/maths/ma11-traffic-light-v1.png",
+      "brief": 249,
+      "lesson": "s06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        2000
+      ],
+      "qa": {
+        "result": "Three unlit dull-glass lamps, correct red/amber/green order, complete housing/pole.900/native paper/dark alpha inspected. Painted circle approximation recorded, code must clip beneath visors.",
+        "evidence": [
+          "work/brief249/s06-light-native-black.jpg",
+          "work/brief249/s06-light-native-dark.jpg",
+          "work/brief249/s06-light-native-paper.jpg",
+          "work/brief249/s06-light-native-white.jpg",
+          "work/brief249/s06-light-qa-paper-dark-dark.jpg",
+          "work/brief249/s06-light-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-traffic-light-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-b4a8bf2f-3f77-49cf-bd1f-f6cf8ad5f906.png",
+      "sha256": "7c5885e42e1006f07e49112b0ceee1ae9cb60adb2e2482b61ec99d193f1146a9",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        32,
+        34,
+        1226,
+        1224
+      ],
+      "marginFractions": [
+        0.025518341307814992,
+        0.02711323763955343,
+        0.022328548644338118,
+        0.023923444976076555
+      ],
+      "evidence": [
+        "work/brief249/s06-bag-native-paper.jpg",
+        "work/brief249/s06-bag-native-dark.jpg",
+        "work/brief249/s06-bag-native-white.jpg",
+        "work/brief249/s06-bag-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-counter-bag-v1.png",
+      "path": "public/assets/maths/ma11-counter-bag-v1.png",
+      "brief": 249,
+      "lesson": "s06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "qa": {
+        "result": "Open drawstring cloth bag, three grey counter tops with no visible colour distinction.900/native paper/dark alpha clean, complete strings and bag.",
+        "evidence": [
+          "work/brief249/s06-bag-native-black.jpg",
+          "work/brief249/s06-bag-native-dark.jpg",
+          "work/brief249/s06-bag-native-paper.jpg",
+          "work/brief249/s06-bag-native-white.jpg",
+          "work/brief249/s06-bag-qa-paper-dark-dark.jpg",
+          "work/brief249/s06-bag-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-0df5c870-5713-4390-8288-20b5f4b27daa.png",
+      "sha256": "4d3536418123b7bf5880d9223ad601f9dbd1a0bf2a6e4da33fb8730ac582d961",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        75,
+        11,
+        1175,
+        1237
+      ],
+      "marginFractions": [
+        0.05980861244019139,
+        0.008771929824561403,
+        0.06299840510366826,
+        0.013556618819776715
+      ],
+      "evidence": [
+        "work/brief249/s07-delivery-native-paper.jpg",
+        "work/brief249/s07-delivery-native-dark.jpg",
+        "work/brief249/s07-delivery-native-white.jpg",
+        "work/brief249/s07-delivery-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-delivery-bag-v1.png",
+      "path": "public/assets/maths/ma11-delivery-bag-v1.png",
+      "brief": 249,
+      "lesson": "s07",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1400
+      ],
+      "qa": {
+        "result": "Zipped shut, blank teal bag with two rear strap loops. Native/900paper/dark alpha clean; strap folding differs from requested flat fold and is recorded.",
+        "evidence": [
+          "work/brief249/s07-delivery-native-black.jpg",
+          "work/brief249/s07-delivery-native-dark.jpg",
+          "work/brief249/s07-delivery-native-paper.jpg",
+          "work/brief249/s07-delivery-native-white.jpg",
+          "work/brief249/s07-delivery-qa-paper-dark-dark.jpg",
+          "work/brief249/s07-delivery-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-373cb256-c76c-4771-b64d-9290f50070ad.png",
+      "sha256": "4ca43f3cafc47e36f4cb5aceca6de902d483bc18358ded4c05e7a4e2729ac5cd",
+      "nativeSize": [
+        1205,
+        1305
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        118,
+        0,
+        1076,
+        1294
+      ],
+      "marginFractions": [
+        0.0979253112033195,
+        0,
+        0.10705394190871369,
+        0.00842911877394636
+      ],
+      "evidence": [
+        "work/brief249/s08-clock-native-paper.jpg",
+        "work/brief249/s08-clock-native-dark.jpg",
+        "work/brief249/s08-clock-native-white.jpg",
+        "work/brief249/s08-clock-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-alarm-clock-v1.png",
+      "path": "public/assets/maths/ma11-alarm-clock-v1.png",
+      "brief": 249,
+      "lesson": "s08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1300
+      ],
+      "qa": {
+        "result": "Twin bells, two hands, hour ticks only/no numerals.900/native paper/dark alpha inspected. Hands cover two expected tick positions; decorative object, not an exact time-reading diagram. Main top handle complete with low-alpha fringe at canvas top.",
+        "evidence": [
+          "work/brief249/s08-clock-native-black.jpg",
+          "work/brief249/s08-clock-native-dark.jpg",
+          "work/brief249/s08-clock-native-paper.jpg",
+          "work/brief249/s08-clock-native-white.jpg",
+          "work/brief249/s08-clock-qa-paper-dark-dark.jpg",
+          "work/brief249/s08-clock-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-038ff1b6-fa5b-4a20-b274-5450abaab1a5.png",
+      "sha256": "d2340174d7933124ea76bdbce7ea47de9f03f5696fbfff1e1fdf6a8f73bf38a2",
+      "nativeSize": [
+        1354,
+        1161
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        95,
+        17,
+        1259,
+        1131
+      ],
+      "marginFractions": [
+        0.07016248153618906,
+        0.014642549526270457,
+        0.07016248153618906,
+        0.025839793281653745
+      ],
+      "evidence": [
+        "work/brief249/s08-mandarins-v2-native-paper.jpg",
+        "work/brief249/s08-mandarins-v2-native-dark.jpg",
+        "work/brief249/s08-mandarins-v2-native-white.jpg",
+        "work/brief249/s08-mandarins-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-mandarin-bag-v1.png",
+      "path": "public/assets/maths/ma11-mandarin-bag-v1.png",
+      "brief": 249,
+      "lesson": "s08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1200
+      ],
+      "qa": {
+        "result": "Exactly nine individually visible fruit in orange mesh bag. Targeted framing correction retains full mesh/tie, minimum1.46percent margin.900/native paper/dark alpha pass.",
+        "evidence": [
+          "work/brief249/s08-mandarins-v2-native-black.jpg",
+          "work/brief249/s08-mandarins-v2-native-dark.jpg",
+          "work/brief249/s08-mandarins-v2-native-paper.jpg",
+          "work/brief249/s08-mandarins-v2-native-white.jpg",
+          "work/brief249/s08-mandarins-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/s08-mandarins-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-1fe24933-b66d-476a-9af3-987565982881.png",
+      "sha256": "cd74449d3868b52d9a407d841aa929d4d698944f21718571101f2e7941f57234",
+      "nativeSize": [
+        1476,
+        1066
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        45,
+        87,
+        1430,
+        1008
+      ],
+      "marginFractions": [
+        0.03048780487804878,
+        0.08161350844277673,
+        0.03116531165311653,
+        0.054409005628517824
+      ],
+      "evidence": [
+        "work/brief249/s08-scale-native-paper.jpg",
+        "work/brief249/s08-scale-native-dark.jpg",
+        "work/brief249/s08-scale-native-white.jpg",
+        "work/brief249/s08-scale-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-produce-scale-v1.png",
+      "path": "public/assets/maths/ma11-produce-scale-v1.png",
+      "brief": 249,
+      "lesson": "s08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        1300
+      ],
+      "qa": {
+        "result": "Blank display and empty stainless tray.900/native alpha pass.620px scale/460px bag plus44px1.13kg proof fits.",
+        "evidence": [
+          "work/brief249/s08-scale-handoff-proof-dark.jpg",
+          "work/brief249/s08-scale-handoff-proof-paper.jpg",
+          "work/brief249/s08-scale-native-black.jpg",
+          "work/brief249/s08-scale-native-dark.jpg",
+          "work/brief249/s08-scale-native-paper.jpg",
+          "work/brief249/s08-scale-native-white.jpg",
+          "work/brief249/s08-scale-qa-paper-dark-dark.jpg",
+          "work/brief249/s08-scale-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-produce-scale-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-d484dc2a-6f80-4d29-b015-3e8acb816a6a.png",
+      "sha256": "ed34b7525b9677c8f467fb4adaa6c08eb45bf5212202d1e9b46db51e632d9c15",
+      "nativeSize": [
+        1584,
+        993
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        9,
+        1584,
+        962
+      ],
+      "marginFractions": [
+        0,
+        0.00906344410876133,
+        0,
+        0.03121852970795569
+      ],
+      "evidence": [
+        "work/brief249/s11-queue-v2-native-paper.jpg",
+        "work/brief249/s11-queue-v2-native-dark.jpg",
+        "work/brief249/s11-queue-v2-native-white.jpg",
+        "work/brief249/s11-queue-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-ride-queue-v1.png",
+      "path": "public/assets/maths/ma11-ride-queue-v1.png",
+      "brief": 249,
+      "lesson": "s11",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2200,
+        1500
+      ],
+      "qa": {
+        "result": "Empty zigzag rails, striped shade sail, colourful arch and enlarged blank board confirmed. Native/900paper/dark alpha pass.520px two-line28px reading proof fits; one-line large text needs a larger plate or callout.",
+        "evidence": [
+          "work/brief249/s11-queue-v2-board-proof-520.jpg",
+          "work/brief249/s11-queue-v2-native-black.jpg",
+          "work/brief249/s11-queue-v2-native-dark.jpg",
+          "work/brief249/s11-queue-v2-native-paper.jpg",
+          "work/brief249/s11-queue-v2-native-white.jpg",
+          "work/brief249/s11-queue-v2-qa-paper-dark-dark.jpg",
+          "work/brief249/s11-queue-v2-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-ride-queue-v1.json"
+    }
+  ],
+  "relatedPlateReview18Nov": {
+    "ma11-softball-diamond-top-v1.png": {
+      "owningLesson": "math-a11-w03",
+      "manifest": "docs/production/claude-pm/assets/brief247-manifest.json"
+    }
+  },
+  "plateReview20Nov": {
+    "ma11-sandwich-square-v1.png": {
+      "status": "installed",
+      "path": "public/assets/maths/ma11-sandwich-square-v1.png",
+      "sidecar": "public/assets/maths/ma11-sandwich-square-v1.json",
+      "sha256": "46e3dd2f3082d276e139d1afc6c3964bcbfb54eab341239fbdce10b116f15de9",
+      "nativeSize": [
+        1400,
+        1400
+      ],
+      "method": "Built-in ImageGen paint at native pixel spacing. Square crop and diagonal transparency mask register the gap to the square guide without stretching.",
+      "evidence": [
+        "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-paper.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-white.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-black.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-overlay.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-native.jpg",
+        "work/maths-plate-geometry-pilot/20-nov-sandwich-exact-900.jpg"
+      ],
+      "rawRepaints": [
+        {
+          "candidate": "work/maths-plate-geometry-pilot/20-nov-sandwich-square-candidate.png",
+          "imagegenOutput": "exec-d540b97a-d71a-4e5d-8e62-e2ad93bfc546.png",
+          "sha256": "c6a359fd2de4467035621f48f2e3993064797da9091e0133274e66d10754f185",
+          "nativeSize": [
+            1254,
+            1254
+          ],
+          "alphaRange": [
+            0,
+            255
+          ],
+          "alphaBounds": [
+            148,
+            148,
+            1105,
+            1105
+          ],
+          "outerBoundsSize": [
+            957,
+            957
+          ],
+          "componentAreaRatio": 0.934521220440343,
+          "gapNormalWidthPxRange": [
+            18.384776310850235,
+            32.526911934581186
+          ],
+          "expectedGapPx": 28.709999999999997,
+          "passQA": false
+        },
+        {
+          "candidate": "work/maths-plate-geometry-pilot/20-nov-repaint-sandwich-square-candidate.png",
+          "imagegenOutput": "exec-70a28db2-2a0d-428c-8b71-2c04b63fd3f5.png",
+          "sha256": "8bf78367b7f478ea71ec5e0f4eb4e3f4e5e48b3120d4abb1db15cccabc0fa1d3",
+          "nativeSize": [
+            1254,
+            1254
+          ],
+          "alphaRange": [
+            0,
+            255
+          ],
+          "alphaBounds": [
+            138,
+            144,
+            1114,
+            1111
+          ],
+          "outerBoundsSize": [
+            976,
+            967
+          ],
+          "componentAreaRatio": 0.9381584877422428,
+          "gapNormalWidthPxRange": [
+            19.09188309203678,
+            20.506096654409877
+          ],
+          "expectedGapPx": 29.279999999999998,
+          "passQA": false
+        }
+      ]
+    }
+  }
+}

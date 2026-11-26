@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i12.md",
+  "sourceSha256": "8be91b8aa74e30f3c14bdf1e1ba0fcd1db52c8e372ac457835dd606deda2da76",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video, we found areas by turning the strips sideways. Now picture a garden path being levelled. Along two metres, the ground's height above the planned level is x cubed cos x metres, a mound at one end and a hollow at the other. The net soil is the integral from minus one to one of x cubed cos x. No rule in this course gives its primitive. Yet its value is exactly zero. The soil cut from the mound exactly fills the hollow. Look at the graph. What do you notice about its two halves?",
+      "audioFile": "public/audio/math-a12-i12/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Turn the graph half a turn about the origin, and it lands on itself. That's what an odd function does. In algebra, f of minus x equals minus f of x. Here, minus x, all cubed, is minus x cubed, and cos of minus x is cos x, so the sign flips. Now pair each thin strip at x with its partner at minus x. They have the same width and the same size, but one is above the axis and one is below. So every pair cancels, and the integral is zero. Check it on a simpler odd function, x cubed, from minus two to two. The primitive, x to the fourth over four, gives four minus four, which is zero.",
+      "audioFile": "public/audio/math-a12-i12/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Even functions do the opposite. Their graph is a mirror image across the y-axis, so f of minus x equals f of x. Cos x is even. A stone footbridge's arch has this shape, in metres. Now each strip at minus x matches its partner at x, with the same sign, so the left half equals the right half. That means the integral from minus a to a is twice the integral from zero to a. For cos x, from minus pi over two to pi over two, it's twice the integral from zero to pi over two, which is two times one, or two. So the arch's opening is two square metres.",
+      "audioFile": "public/audio/math-a12-i12/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Most functions are neither, but you can often split them. Find the integral from minus two to two, of x cubed plus three x squared. The x cubed part is odd, so it gives zero. Three x squared is even, so it's twice the integral from zero to two, which is two times eight, or sixteen. Primitives agree: twelve, minus minus four, is sixteen. Two conditions matter. The interval must be symmetric, from minus a to a. And a zero answer is a signed integral, not an area. The soil still has to be moved: the area between x cubed cos x and the axis isn't zero.",
+      "audioFile": "public/audio/math-a12-i12/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "If there's no primitive and no symmetry, we estimate, and trapezia gave the best estimates in the strips video. Each trapezium's area is half the strip width, times its two heights added together. Now add four trapezia, side by side. Each inside height is an edge of two trapezia, so it's counted twice. The two end heights belong to one trapezium each, so they're counted once. That gives the trapezoidal rule: h over two, times the first height, plus two times every inside height, plus the last height. Here h is the strip width, b minus a, over n, and n strips need n plus one heights.",
+      "audioFile": "public/audio/math-a12-i12/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Use the trapezoidal rule with five function values to estimate the integral from one to three of one over x. Five values means four strips, not five. So h is three minus one, over four, which is a half. The heights at one, one and a half, two, two and a half, and three are one, two thirds, a half, two fifths and a third. Put them in: a quarter, times one, plus two times the three inside heights, plus a third. That's sixty-seven sixtieths, about one point one one seven.",
+      "audioFile": "public/audio/math-a12-i12/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "This one does have a primitive, so we can check. The integral of one over x from one to three is the natural log of three, about one point oh nine nine. So the estimate is a little too big. Here's why. One over x bends upwards along the whole interval, so each straight top sits above the curve. When a curve is concave up along the whole interval, the rule overestimates. Concave down along the whole interval, it underestimates. If the bending changes inside the interval, that alone can't tell you.",
+      "audioFile": "public/audio/math-a12-i12/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "The third check is an online tool, a computer algebra system that does exact algebra and calculus. Type in the integral from one to three of one over x, and it returns log three. Many tools write log for the natural log. Ask for the indefinite integral, and you might get log x, with no mod signs and no plus C. So read the answer, then write it the course way: the natural log of mod x, plus C. A tool is a check on your working, not a replacement for showing it.",
+      "audioFile": "public/audio/math-a12-i12/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Tools also reach past this course. Ask for the primitive of x cubed cos x, and you get this long answer. We can't build it with our rules, but we can still check it: differentiate it with the product rule, and every term cancels except x cubed cos x. And its value from minus one to one is zero, just as symmetry said. When different methods agree, you can trust the result.",
+      "audioFile": "public/audio/math-a12-i12/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's a way to hold the two shortcuts. Odd cancels, even doubles, but only from minus a to a. And for the trapezoidal rule: ends once, insides twice.",
+      "audioFile": "public/audio/math-a12-i12/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Use symmetry to evaluate the integral from minus pi to pi, of x squared sine x, plus three. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i12/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Test x squared sine x. Swap in minus x, and you get minus x squared sine x, so it's odd, and it gives zero from minus pi to pi. Three is even, so it gives twice the integral from zero to pi of three, which is two times three pi. The answer is six pi. Zero is wrong. Only the odd part cancels, and the three stays.",
+      "audioFile": "public/audio/math-a12-i12/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. A brick arch is symmetric about its centre line. Its height is measured every half metre, from the centre out to one edge, as in this table. Use the trapezoidal rule with all five readings, and symmetry, to estimate the area of the whole opening. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i12/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Five readings make four strips, so h is a half. The end readings, four and zero, count once. The inside readings, three and a half, three and two, add to eight and a half, and they count twice. So half the opening is about a quarter, times four plus seventeen plus zero, which is five point two five. The arch is even, so double it: about ten point five square metres. Six point two five is wrong. It forgets to double the inside readings.",
+      "audioFile": "public/audio/math-a12-i12/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So symmetry, the trapezoidal rule and an online tool each give us a way to find or check an integral. Next, we put integrals to work on real problems. Here's the power used by a home's air conditioner across a hot day. How much energy does it use?",
+      "audioFile": "public/audio/math-a12-i12/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i12/scene-16.wav"
+    }
+  ]
+}

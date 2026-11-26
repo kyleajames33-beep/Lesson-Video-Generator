@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v19.md",
+  "sourceSha256": "cc483a39338211fbfd8bab2237608e26ff844306479cb2e9b11e20b617c322ae",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Look at the dish on this roof. It's pointed at one fixed spot in the sky, and it never has to move. Here in Australia, dishes like this point north, towards the equator. Yet the space station races across the same sky in a few minutes. Every satellite has to keep moving to stay in orbit, so how can one seem to hang over the same spot all day? Have a think.",
+      "audioFile": "public/audio/phys-y12-m5-v19/hook.wav"
+    },
+    {
+      "id": "keep-pace",
+      "text": "The satellite does move. The trick is that the ground under it moves too. Earth turns once a day, so if the satellite goes round once a day, in the same direction, it keeps pace with the spot below it. So the first requirement is a period equal to Earth's rotation period. That's actually twenty-three hours fifty-six minutes, because Earth turns once relative to the stars in that time, but most questions use twenty-four hours.",
+      "audioFile": "public/audio/phys-y12-m5-v19/keep-pace.wav"
+    },
+    {
+      "id": "period-radius",
+      "text": "Last time, we saw that choosing the period chooses the radius. Rearrange r cubed over T squared equals big G M over four pi squared, and r cubed equals big G M T squared over four pi squared. With T as twenty-four hours, which is eight point six four times ten to the four seconds, r cubed is about seven point five seven times ten to the twenty-two. Take the cube root, and r is about four point two three times ten to the seven metres from Earth's centre.",
+      "audioFile": "public/audio/phys-y12-m5-v19/period-radius.wav"
+    },
+    {
+      "id": "height-speed",
+      "text": "Subtract Earth's radius, and the altitude is about three point five nine times ten to the seven metres, roughly thirty-six thousand kilometres up, more than five and a half Earth radii. Its speed is two pi r over T, about three point zero eight kilometres per second. That's much slower than the station's seven point seven, just as a higher orbit should be.",
+      "audioFile": "public/audio/phys-y12-m5-v19/height-speed.wav"
+    },
+    {
+      "id": "equatorial-plane",
+      "text": "But the right height and period still aren't enough. Gravity pulls towards Earth's centre, so the plane of every orbit passes through Earth's centre. Tilt the orbit, and for half of each day the satellite is north of the equator, and for the other half it's south. From the ground, it would drift up and down the sky. That's called geosynchronous, but not geostationary. The only orbit that stays above one latitude all day is the one in the equator's plane.",
+      "audioFile": "public/audio/phys-y12-m5-v19/equatorial-plane.wav"
+    },
+    {
+      "id": "direction-circle",
+      "text": "Two more conditions. It must travel west to east, the same way Earth turns, or it would pass overhead twice a day instead of staying put. And the orbit must be circular, so its speed stays constant and it doesn't drift ahead of the spot below, or fall behind it. The right period, the equator's plane, Earth's direction, and a circle. Only then is it geostationary.",
+      "audioFile": "public/audio/phys-y12-m5-v19/direction-circle.wav"
+    },
+    {
+      "id": "uses-costs",
+      "text": "That's exactly what fixed dishes need. Television and communications satellites sit there, so a dish can be bolted in place. Weather satellites use it too. Japan's Himawari satellite sits above the equator, north of Australia, and photographs the same half of the planet every ten minutes. There are costs, though. It's so far away that a signal up and back down takes about a quarter of a second. And near the poles, the satellite sits very low on the horizon, or can't be seen at all.",
+      "audioFile": "public/audio/phys-y12-m5-v19/uses-costs.wav"
+    },
+    {
+      "id": "near-earth",
+      "text": "Low orbits are the opposite. A satellite a few hundred kilometres up goes round in about an hour and a half, so it crosses your sky in minutes. Being close is great for detailed images of the ground, for a crewed station, and for internet with a short delay. But you need many satellites to cover the planet, and dishes that track them. In between, the navigation satellites behind GPS orbit about twenty thousand kilometres up, twice a day.",
+      "audioFile": "public/audio/phys-y12-m5-v19/near-earth.wav"
+    },
+    {
+      "id": "worked-low-orbit",
+      "text": "Let's predict a low orbit. An Earth-imaging satellite flies seven hundred kilometres up, so r is seven point zero seven one times ten to the six metres. Using T equals two pi times the square root of r cubed over big G M, the period is about five thousand nine hundred seconds, roughly ninety-eight minutes. That's nearly fifteen laps a day. If its orbit passes over the poles, Earth turns beneath it, and each lap crosses a different strip of ground, so within days it can photograph almost the whole planet. It sees everywhere, but nowhere all the time.",
+      "audioFile": "public/audio/phys-y12-m5-v19/worked-low-orbit.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the geostationary conditions: one day, one plane, one way. One day for the period, the equator's plane, and Earth's direction of spin. Get those, plus a circle, and the height follows from Kepler's third law.",
+      "audioFile": "public/audio/phys-y12-m5-v19/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A navigation satellite moves in a circular orbit with a period of twelve point zero hours. Calculate its altitude above Earth's surface, using the data sheet values. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v19/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Convert the period to seconds: four point three two times ten to the four. Then r cubed equals big G M T squared over four pi squared, and the cube root gives r of about two point six six times ten to the seven metres. Subtract Earth's radius, and the altitude is about two point zero three times ten to the seven metres. The classic slip is stopping at r, which is measured from the centre, not the surface.",
+      "audioFile": "public/audio/phys-y12-m5-v19/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A satellite has a circular orbit with a period of twenty-four hours, but its orbit is tilted at thirty degrees to the equator. Explain why it is not geostationary. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v19/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Its period matches Earth's spin, so it comes back to the same place in the sky each day. But its orbit's plane passes through Earth's centre and is tilted, so every day it swings north of the equator, then south. A fixed dish would lose it. The slip to avoid is thinking a twenty-four hour period is enough. The equatorial plane is the missing condition.",
+      "audioFile": "public/audio/phys-y12-m5-v19/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So far, every orbit we've drawn has been a perfect circle. Real orbits aren't quite. Planets, moons and comets travel on ellipses, swinging closer and then further away as they go. Next, we'll see how Kepler's laws describe both circular and elliptical orbits.",
+      "audioFile": "public/audio/phys-y12-m5-v19/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v19/key-notes.wav"
+    }
+  ]
+}

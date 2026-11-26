@@ -1,0 +1,260 @@
+{
+  "design": "chem-y11-m2-v06",
+  "sourceSHA256": "463776338d5f409b798490e6bc45297455eedc00785f7e8c197394ebe0505d2a",
+  "newRequests": [
+    {
+      "design": "chem-y11-m2-v06",
+      "file": "y11c-bike-frame-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See per-design provenance and QA for native dimensions, alpha and alignment limits.",
+      "sha256": "7761c43e93ad90e4644b2aafa695896ce34b47cf871b63071811b0d269c29940",
+      "nativeSize": [
+        1484,
+        1060
+      ]
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "file": "y11c-bike-wheel-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See per-design provenance and QA for native dimensions, alpha and alignment limits.",
+      "sha256": "790665dafcf549d96ad53f7c25f9c6b414a27c357ae260b3efe7c6a8b53ed9b9",
+      "nativeSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "file": "y11c-cuso4-old-crystals-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See per-design provenance and QA for native dimensions, alpha and alignment limits.",
+      "sha256": "22b6080b3f4b2607a5b9e4d7b06d9188c672eba05bca3df73f123fa7e920999a",
+      "nativeSize": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "file": "y11c-beaker-water-36ml-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See per-design provenance and QA for native dimensions, alpha and alignment limits.",
+      "currentSourceSHA256": "1eee1d87f805488ba52c2f64439126e88892f44952314c855b4c9143cee6174e",
+      "sha256": "c530a46cd58923b17d089f14985992d8c057ad54c7eddb98e2b7020905604d33",
+      "nativeSize": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "public/assets/chemistry/m5x-safety-glasses-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-safety-glasses-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-foam-cup-calorimeter-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "public/assets/chemistry/p02-foam-cup-in-beaker-v1.png",
+      "paths": [
+        "public/assets/chemistry/p02-foam-cup-in-beaker-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "y11c-bike-frame-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "y11c-bike-wheel-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "y11c-cuso4-crucible-blue-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-cuso4-crucible-blue-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "y11c-cuso4-crucible-lid-white-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-cuso4-crucible-lid-white-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v06",
+      "reference": "y11c-cuso4-old-crystals-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "generationTool": null,
+  "status": "review hand-in, new painting pending stated pass condition",
+  "assets": [
+    {
+      "key": "bike-frame",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-fe480c33-8d1b-4e4d-9675-22a5a0c4533b.png",
+      "size": [
+        1484,
+        1060
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        132,
+        164,
+        1338,
+        907
+      ],
+      "minMarginAbove16": 0.0889487870619946,
+      "file": "public/assets/chemistry/y11c-bike-frame-v1.png",
+      "nativeSize": [
+        1484,
+        1060
+      ],
+      "sha256": "7761c43e93ad90e4644b2aafa695896ce34b47cf871b63071811b0d269c29940",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native dimensions differ from request, no resampling or stretching. Faint low-alpha noise may extend outside the painted bounds. Actual scene integration and source corrections remain pending.",
+      "QA": "Two equal wheel copies fitted to the frame in the inspected QA assembly. Uniform wheel scale and approximate axle coordinates are in brief180-qa/bike-assembly-geometry.json. Wheel painted bounding diameters differ slightly; native pixels were not stretched."
+    },
+    {
+      "key": "bike-wheel",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-de5e8cd5-1164-4435-9ce9-e670e09f31d5.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        164,
+        170,
+        1077,
+        1102
+      ],
+      "minMarginAbove16": 0.12121212121212122,
+      "file": "public/assets/chemistry/y11c-bike-wheel-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "790665dafcf549d96ad53f7c25f9c6b414a27c357ae260b3efe7c6a8b53ed9b9",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native dimensions differ from request, no resampling or stretching. Faint low-alpha noise may extend outside the painted bounds. Actual scene integration and source corrections remain pending.",
+      "QA": "Two equal wheel copies fitted to the frame in the inspected QA assembly. Uniform wheel scale and approximate axle coordinates are in brief180-qa/bike-assembly-geometry.json. Wheel painted bounding diameters differ slightly; native pixels were not stretched."
+    },
+    {
+      "key": "old-crystals",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-7c0e3b37-00c0-4082-acd0-8223c93295ee.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        177,
+        193,
+        1112,
+        1037
+      ],
+      "minMarginAbove16": 0.11323763955342903,
+      "file": "public/assets/chemistry/y11c-cuso4-old-crystals-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "22b6080b3f4b2607a5b9e4d7b06d9188c672eba05bca3df73f123fa7e920999a",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native dimensions differ from request, no resampling or stretching. Faint low-alpha noise may extend outside the painted bounds. Actual scene integration and source corrections remain pending.",
+      "QA": "Whitish-blue powdery crust and blue crystal interiors are visible in inspected paper/dark/white composites. Open jar and lid shown without liquid."
+    },
+    {
+      "key": "beaker36",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-ee917d4b-f179-4be9-a226-fbc096eee7df.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        237,
+        226,
+        967,
+        1027
+      ],
+      "minMarginAbove16": 0.18022328548644337,
+      "placementQA": {
+        "balanceOrigin": [
+          0,
+          300
+        ],
+        "panWidth": 890,
+        "paintedBeakerWidth": 296.6666666666667,
+        "uniformScale": 0.406392694063927,
+        "origin": [
+          390,
+          175
+        ],
+        "baseContactApprox": [
+          635,
+          590
+        ]
+      },
+      "file": "public/assets/chemistry/y11c-beaker-water-36ml-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "c530a46cd58923b17d089f14985992d8c057ad54c7eddb98e2b7020905604d33",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native dimensions differ from request, no resampling or stretching. Faint low-alpha noise may extend outside the painted bounds. Actual scene integration and source corrections remain pending.",
+      "QA": "Paper/dark/white 300 px composites and one-third-pan-width placement inspected. Approximate placement geometry is saved in beaker36-metrics.json. This new Revision 2 request does not establish a learning review of that revision.",
+      "assetRequestSourceSHA256": "1eee1d87f805488ba52c2f64439126e88892f44952314c855b4c9143cee6174e",
+      "reviewedRevision1SHA256": "463776338d5f409b798490e6bc45297455eedc00785f7e8c197394ebe0505d2a"
+    }
+  ],
+  "sourceReviewQualification": "Findings remain open. M2-v06 current Revision 2 is distinct from its reviewed Revision 1. Painting is not source, recording or practical approval.",
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m2-v05-v06-native-qa.json",
+    "result": "Five batch plates pass static QA. Crust visible at300px; equal-wheel bike and one-third-pan beaker QA placements look coherent. Cup liquid compositing and actual scene contact/readouts remain pending. Pilot untouched; no whole-lesson clearance."
+  }
+}

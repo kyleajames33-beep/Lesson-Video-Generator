@@ -1,0 +1,148 @@
+[
+  {
+    "id": "y11-grass-tuft-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-grass-tuft-v2.png",
+    "sha256": "1157f0e6b1693079d3d229970a318d4508d3271a7b12e5513e04451d9b24114e",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "originalPreserved": "public\\assets\\biology\\y11-grass-tuft-v1.png",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-8a0dd9c0-2a94-4227-abbb-2925536964a0.png",
+    "prompt": "Same top-down grass tuft and seed heads. Remove entire broad cream/grey halo and all wash between outer leaves; preserve fine tips, dark ink and watercolour. True alpha, square native aspect, eight percent margin, no ground, shadow, labels, people or data.",
+    "method": "Built-in image edit, PNG copied unchanged; Python for QA measurements/composites only.",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      171,
+      182,
+      1055,
+      1089
+    ],
+    "anchors": {
+      "tuftCentre": [
+        625,
+        641
+      ]
+    },
+    "qa": {
+      "result": "static pass with disclosed margin limits",
+      "observations": [
+        "Clean paper/dark composites, no broad halo or wash between outer tips. Same 1254 square native canvas, all margins above eight percent. Brush detail regenerated, not pixel identity.",
+        "No people, human faces, labels, scales, numbers or question data."
+      ],
+      "evidence": [
+        "work\\brief242\\grass-tuft-v2-native-paper.jpg",
+        "work\\brief242\\grass-tuft-v2-native-dark.jpg"
+      ]
+    },
+    "limitation": "Check exact insertion size, anchors and motion in build. No lesson-source edits or whole-lesson clearance."
+  },
+  {
+    "id": "y11-soil-moisture-meter-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-soil-moisture-meter-v2.png",
+    "sha256": "9f2bb341daaa327c48cc934b9979be6b0d38c7d470a4b7cb0f08b8746f42a2a1",
+    "nativeSize": [
+      887,
+      1774
+    ],
+    "originalPreserved": "public\\assets\\biology\\y11-soil-moisture-meter-v1.png",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f13ab175-c382-4a74-838b-a2454fb2739c.png",
+    "prompt": "Preserve single upright green meter, blank cream dial and up-right black needle, black grip inserts, two long silver pointed probes. Remove entire exterior cream/grey halo; true alpha including probe gap. Native portrait aspect, eight percent margin, no scales, ticks, readings, text, people, shadow or ground.",
+    "method": "Built-in image edit, PNG copied unchanged; Python for QA measurements/composites only.",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      245,
+      170,
+      641,
+      1642
+    ],
+    "anchors": {
+      "dialCentre": [
+        442,
+        408
+      ],
+      "needleTip": [
+        539,
+        319
+      ],
+      "leftProbeTip": [
+        391,
+        1634
+      ],
+      "rightProbeTip": [
+        499,
+        1635
+      ]
+    },
+    "qa": {
+      "result": "static pass with disclosed margin limits",
+      "observations": [
+        "Clean paper/dark composites and probe gap; full pointed probes, blank dial. Same 887 by 1774 native canvas. Bottom clear margin about 7.4 percent is slightly below eight: leave scene padding.",
+        "No people, human faces, labels, scales, numbers or question data."
+      ],
+      "evidence": [
+        "work\\brief242\\soil-moisture-meter-v2-native-paper.jpg",
+        "work\\brief242\\soil-moisture-meter-v2-native-dark.jpg"
+      ]
+    },
+    "limitation": "Check exact insertion size, anchors and motion in build. No lesson-source edits or whole-lesson clearance."
+  },
+  {
+    "id": "y11-salt-lake-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-salt-lake-v2.png",
+    "sha256": "0d1c2769a51d4862644ead2d4a09df8eeba7b17715659d7b3791febdce50b3d5",
+    "nativeSize": [
+      1619,
+      972
+    ],
+    "originalPreserved": "public\\assets\\biology\\y11-salt-lake-v1.png",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-f44eca04-0d98-4594-9a02-b4deac75e98a.png",
+    "prompt": "Preserve flat inland salt lake, pink water, white salt crust, red cracked ground, sparse grey saltbush, low horizon and blue cloudy sky. Remove ENTIRE exterior cream/grey halo including around sky/bottom; keep internal white salt and clouds opaque. True alpha, native landscape, eight percent margin, no text, people, buildings, animals or litter.",
+    "method": "Built-in image edit, PNG copied unchanged; Python for QA measurements/composites only.",
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      89,
+      114,
+      1544,
+      889
+    ],
+    "anchors": {
+      "horizonLeft": [
+        160,
+        332
+      ],
+      "horizonRight": [
+        1492,
+        332
+      ],
+      "lakeCentre": [
+        940,
+        477
+      ]
+    },
+    "qa": {
+      "result": "static pass with disclosed margin limits",
+      "observations": [
+        "Clean paper/dark silhouette, external halo removed while salt and clouds retained. Same 1619 by 972 native canvas. Visible side margins about 5.5 and 4.6 percent are below eight: leave scene padding.",
+        "No people, human faces, labels, scales, numbers or question data."
+      ],
+      "evidence": [
+        "work\\brief242\\salt-lake-v2-native-paper.jpg",
+        "work\\brief242\\salt-lake-v2-native-dark.jpg"
+      ]
+    },
+    "limitation": "Check exact insertion size, anchors and motion in build. No lesson-source edits or whole-lesson clearance."
+  }
+]

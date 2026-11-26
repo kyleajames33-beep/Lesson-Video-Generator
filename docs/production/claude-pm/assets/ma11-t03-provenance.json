@@ -1,0 +1,65 @@
+{
+  "brief": 249,
+  "lesson": "t03",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-ee854bb0-0d9a-4476-b259-d85579ccf24b.png",
+      "sha256": "fefc9a6d84e00d2a4b8423362e23964f3e2fbfcb2260da6633803fd5ef870247",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        20,
+        90,
+        2148,
+        641
+      ],
+      "marginFractions": [
+        0.009208103130755065,
+        0.12430939226519337,
+        0.011049723756906077,
+        0.11464088397790055
+      ],
+      "evidence": [
+        "work/brief249/t03-skateboard-native-paper.jpg",
+        "work/brief249/t03-skateboard-native-dark.jpg",
+        "work/brief249/t03-skateboard-native-white.jpg",
+        "work/brief249/t03-skateboard-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-skateboard-top-v1.png",
+      "path": "public/assets/maths/ma11-skateboard-top-v1.png",
+      "brief": 249,
+      "lesson": "t03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        560
+      ],
+      "qa": {
+        "result": "passed: subject,420px rotation, native and alpha checks; narrow margins recorded",
+        "evidence": [
+          "work/brief249/t03-skateboard-native-black.jpg",
+          "work/brief249/t03-skateboard-native-dark.jpg",
+          "work/brief249/t03-skateboard-native-paper.jpg",
+          "work/brief249/t03-skateboard-native-white.jpg",
+          "work/brief249/t03-skateboard-rotation-dark.jpg",
+          "work/brief249/t03-skateboard-rotation-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-skateboard-top-v1.json"
+    }
+  ],
+  "result": "Top-view skateboard delivered at native2172x724. Plain black grip, four teal wheel edges and a slightly wider right nose remain clear at420px and after120degree rotation. Centre1084,365 and nose2146,365 recorded. Native paper/dark alpha checks pass. End margins are about1percent but both deck tips are complete. Native3:1 canvas differs from requested3.57:1; preserve proportions.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/t03-skateboard-generation.json"
+  ]
+}

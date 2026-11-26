@@ -1,0 +1,1190 @@
+{
+  "lesson": "chem-y11-m1-v03",
+  "wave": 1,
+  "sourceSha256": "4593f448c649305a9fbcd237137aebf3808fcf01823a7e2e72c02b10d882ed97",
+  "measuredPath": "work/brief236/wave1/chem-y11-m1-v03/voiced/lesson.json",
+  "measuredSha256": "94e5e8f3e74a459de422ca17a9995ddb128706443ecf4edac02b1f6d92162612",
+  "characters": 5870,
+  "totalSeconds": 457.56666666666666,
+  "under570": true,
+  "newRequests": 12,
+  "cachedTakes": 1,
+  "inputTokens": 1284,
+  "outputTokens": 9634,
+  "costUsd": 0.08734800000000001,
+  "worstWordGap": {
+    "scene": "filtration-why",
+    "seconds": 0.9840000000000053,
+    "after": "through.",
+    "before": "The"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v03/hook.wav",
+      "seconds": 26.166,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "insoluble",
+          "start": 11.94699999999999,
+          "end": 12.50769999999999
+        },
+        {
+          "text": "soluble",
+          "start": 15.768999999999988,
+          "end": 16.157499999999988
+        },
+        {
+          "text": "mixture",
+          "start": 25.44300000000011,
+          "end": 25.707250000000112
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9839999999999964,
+        "after": "salt.",
+        "before": "The"
+      },
+      "peakFraction": 0.8575439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 23.778000000000112,
+          "end": 23.838000000000115,
+          "score": 0.196
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the muddy, salty water from last time. We want two things back out of it, dry sand and dry salt. The trick is to use the property that's different. Sand is insoluble, which means it doesn't dissolve in water. Salt is soluble. It dissolves, and its particles spread out through the water. So how can we recover an insoluble solid and a dissolved solid from one mixture?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "filtration-why",
+      "audio": "public/audio/chem-y11-m1-v03/filtration-why.wav",
+      "seconds": 32.467,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "through",
+          "start": 2.7090000000000005,
+          "end": 2.9510000000000005
+        },
+        {
+          "text": "water",
+          "start": 18.500999999999987,
+          "end": 18.70183333333332
+        },
+        {
+          "text": "trapped",
+          "start": 25.174000000000106,
+          "end": 25.436500000000105
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9840000000000053,
+        "after": "through.",
+        "before": "The"
+      },
+      "peakFraction": 0.85626220703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "We'll",
+          "start": 1.8000000000000005,
+          "end": 1.9420000000000004,
+          "score": 0.495
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Start with the sand. We'll pour the mixture through filter paper. Filter paper is full of tiny holes, called pores. Water molecules are far smaller than the pores, so they pass straight through. The dissolved salt is split into separate ions, which are tiny too, so they go through with the water. But a sand grain is a huge clump of particles, much too big for the pores, so it gets trapped. That's filtration. It separates an insoluble solid from a liquid, by particle size.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "filtration-setup",
+      "audio": "public/audio/chem-y11-m1-v03/filtration-setup.wav",
+      "seconds": 22.327,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "rod",
+          "start": 10.756999999999984,
+          "end": 10.936999999999983
+        },
+        {
+          "text": "residue",
+          "start": 17.079999999999984,
+          "end": 17.501749999999983
+        },
+        {
+          "text": "filtrate",
+          "start": 21.3420000000001,
+          "end": 21.78911111111121
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9009999999999838,
+        "after": "flask.",
+        "before": "Pour"
+      },
+      "peakFraction": 0.901641845703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.585000000000001,
+          "end": 4.625,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's the setup. Fold the filter paper into a cone, sit it in a funnel, and stand the funnel in a conical flask. Pour the mixture slowly down a glass rod, so it runs onto the paper without splashing. The solid left on the paper is called the residue. The liquid that drips through into the flask is called the filtrate.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v03/prediction.wav",
+      "seconds": 7.337,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 6.585999999999999,
+          "end": 6.7385
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7920000000000069,
+        "after": "water?",
+        "before": "Have"
+      },
+      "peakFraction": 0.8272705078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 6.5249999999999995,
+          "end": 6.566,
+          "score": 0.417
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Quick prediction. The filtrate in the flask is perfectly clear. So is it pure water? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "wash-dry",
+      "audio": "public/audio/chem-y11-m1-v03/wash-dry.wav",
+      "seconds": 25.921,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "grains",
+          "start": 7.953999999999995,
+          "end": 8.280571428571424
+        },
+        {
+          "text": "filtrate",
+          "start": 17.64299999999999,
+          "end": 18.03499999999999
+        },
+        {
+          "text": "dry",
+          "start": 19.227000000000057,
+          "end": 19.488000000000056
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7420000000000684,
+        "after": "filtrate.",
+        "before": "Then"
+      },
+      "peakFraction": 0.8353271484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "rinse",
+          "start": 9.478999999999989,
+          "end": 9.718999999999989,
+          "score": 0.457
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now finish the sand. It's still wet, and that water is salt water. If you dried it now, salt crystals would be left stuck to the grains. So rinse the residue with a little distilled water, which has nothing dissolved in it. The fresh water carries the dissolved salt through the paper into the filtrate. Then dry the sand in a warm oven, or in the air, until it's completely dry. That's the insoluble solid recovered.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "solubility-saturation",
+      "audio": "public/audio/chem-y11-m1-v03/solubility-saturation.wav",
+      "seconds": 24.244,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "temperature",
+          "start": 18.16599999999999,
+          "end": 18.550999999999988
+        },
+        {
+          "text": "saturated",
+          "start": 23.201000000000104,
+          "end": 23.760800000000103
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7819999999999983,
+        "after": "in.",
+        "before": "Solubility"
+      },
+      "peakFraction": 0.863555908203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 15.619999999999987,
+          "end": 15.679999999999987,
+          "score": 0.312
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Now the salt, dissolved in the filtrate. To get it back, we need a few words. The salt is the solute, the substance that dissolves. The water is the solvent, the liquid it dissolves in. Solubility is the most solute that can dissolve in a hundred grams of water, at a stated temperature. And a solution that's holding as much solute as it can is called saturated.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "crystallisation",
+      "audio": "public/audio/chem-y11-m1-v03/crystallisation.wav",
+      "seconds": 31.376,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "concentrated",
+          "start": 11.481999999999992,
+          "end": 12.093076923076918
+        },
+        {
+          "text": "crystals",
+          "start": 20.46999999999999,
+          "end": 20.826444444444434
+        },
+        {
+          "text": "them",
+          "start": 27.988000000000095,
+          "end": 28.108000000000093
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9210000000001166,
+        "after": "crystals.",
+        "before": "Stop"
+      },
+      "peakFraction": 0.828826904296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "here's",
+          "start": 0.824,
+          "end": 1.106,
+          "score": 0.29
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So here's crystallisation. Pour the filtrate into an evaporating basin, and heat it gently. The water evaporates, but the salt can't, so the solution gets more and more concentrated. Once it's saturated, the water that's left can't hold all the salt, and the extra salt comes out of the solution as solid crystals. Stop heating while there's still some liquid left, and let it cool. Then filter off the crystals, rinse them with a tiny amount of cold water, and dry them.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "surprise-solubility",
+      "audio": "public/audio/chem-y11-m1-v03/surprise-solubility.wav",
+      "seconds": 33.5,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "degrees",
+          "start": 12.746999999999993,
+          "end": 13.09699999999999
+        },
+        {
+          "text": "crystallise",
+          "start": 20.70099999999999,
+          "end": 21.196916666666656
+        },
+        {
+          "text": "cooling",
+          "start": 32.79800000000007,
+          "end": 33.07887500000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7609999999999957,
+        "after": "degrees.",
+        "before": "Cool"
+      },
+      "peakFraction": 0.827392578125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 9.464999999999993,
+          "end": 9.545999999999992,
+          "score": 0.046
+        },
+        {
+          "word": "a",
+          "start": 19.03699999999999,
+          "end": 19.076999999999988,
+          "score": 0.46
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a surprise. You might expect cooling to be what makes the crystals form. For many solids, it is. Potassium nitrate's solubility drops from about one hundred and sixty nine grams per hundred grams of water at eighty degrees, to about thirty one at twenty degrees. Cool a saturated solution over that range, and about a hundred and thirty eight grams crystallise. But salt barely changes. It's about thirty eight grams at eighty degrees, and about thirty six at twenty. So for salt, removing water is what forms most of the crystals, not cooling.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "purer-crystals",
+      "audio": "public/audio/chem-y11-m1-v03/purer-crystals.wav",
+      "seconds": 27.688,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "liquor",
+          "start": 16.072999999999986,
+          "end": 16.262428571428558
+        },
+        {
+          "text": "solid",
+          "start": 26.844000000000072,
+          "end": 27.129000000000072
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9210000000001415,
+        "after": "liquor.",
+        "before": "Slow"
+      },
+      "peakFraction": 0.83306884765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 7.132999999999999,
+          "end": 7.172999999999999,
+          "score": 0.488
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Crystallisation does more than recover the salt. It also makes it purer. As a crystal grows, its ions fit into a neat, repeating lattice. Particles of other dissolved substances don't fit that pattern, so most of them stay in the leftover liquid, which is called the mother liquor. Slow cooling helps, because the crystals grow larger and more ordered, and trap less liquid. Boil it right down to dryness instead, and every dissolved impurity ends up in your solid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "order-and-rule",
+      "audio": "public/audio/chem-y11-m1-v03/order-and-rule.wav",
+      "seconds": 26.192,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "crystals",
+          "start": 8.140999999999988,
+          "end": 8.480555555555544
+        },
+        {
+          "text": "through",
+          "start": 18.586,
+          "end": 18.796875
+        },
+        {
+          "text": "catch",
+          "start": 25.488000000000042,
+          "end": 25.729000000000042
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000004,
+        "after": "crystals.",
+        "before": "Undissolved,"
+      },
+      "peakFraction": 0.840484619140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 14.571999999999997,
+          "end": 14.631999999999998,
+          "score": 0.314
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Notice the order. Filter first, then crystallise the filtrate. Crystallise first, and the sand ends up buried in your salt crystals. Undissolved, filter it out. Dissolved, crystallise it out. Filter paper works a bit like a kitchen sieve, where big pieces stay and small ones pass through. But dissolved salt isn't tiny grains of salt. It's separate ions, so filter paper cannot catch it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v03/attempt-1.wav",
+      "seconds": 19.44,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.9270000000000005,
+        "after": "turn.",
+        "before": "A"
+      },
+      "peakFraction": 0.859588623046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [
+        {
+          "start": 15.19,
+          "end": 19.44
+        }
+      ],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 12.902999999999997,
+          "end": 12.922999999999998,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Your turn. A mixture contains sand, water and dissolved potassium nitrate. Describe how you'd obtain dry sand and dry potassium nitrate crystals, and justify each step using a physical property. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v03/feedback-1.wav",
+      "seconds": 25.36,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "avoid",
+          "start": 24.67700000000008,
+          "end": 24.911166666666748
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9439999999999946,
+        "after": "residue.",
+        "before": "Rinse"
+      },
+      "peakFraction": 0.8909912109375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "it.",
+          "start": 9.596999999999994,
+          "end": 9.656999999999995,
+          "score": 0.333
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Filter first. The sand is insoluble and too big for the pores, so it stays as the residue. Rinse it with a little distilled water, then dry it. Next, heat the filtrate to concentrate it, and let it cool slowly. Potassium nitrate is much less soluble when it's cold, so crystals form. Filter them off and dry them. Crystallising before filtering is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v03/attempt-2.wav",
+      "seconds": 21.32,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8629999999999995,
+        "after": "blue.",
+        "before": "The"
+      },
+      "peakFraction": 0.83465576171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 10.132999999999997,
+          "end": 10.192999999999998,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A student pours a blue copper sulfate solution through filter paper. The filtrate that comes through is just as blue. The student says the filter paper must be faulty. Explain why the student is wrong, and describe how to get solid copper sulfate crystals from the solution. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v03/handoff.wav",
+      "seconds": 15.85,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "better",
+          "start": 15.288999999999993,
+          "end": 15.477571428571421
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8249999999999842,
+        "after": "lost.",
+        "before": "Sometimes"
+      },
+      "peakFraction": 0.861907958984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "vapour,",
+          "start": 11.559999999999992,
+          "end": 11.880999999999993,
+          "score": 0.474
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Notice what happened to the water, though. It left as steam, and it was lost. Sometimes the liquid is the part we want, or the mixture is two liquids. Next time, we'll catch that vapour, and see why a fractionating column separates liquids so much better.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v03/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v03/hook.wav",
+      "seconds": 26.166,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "insoluble",
+          "start": 11.94699999999999,
+          "end": 12.50769999999999
+        },
+        {
+          "text": "soluble",
+          "start": 15.768999999999988,
+          "end": 16.157499999999988
+        },
+        {
+          "text": "mixture",
+          "start": 25.44300000000011,
+          "end": 25.707250000000112
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9839999999999964,
+        "after": "salt.",
+        "before": "The"
+      },
+      "peakFraction": 0.8575439453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 23.778000000000112,
+          "end": 23.838000000000115,
+          "score": 0.196
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the muddy, salty water from last time. We want two things back out of it, dry sand and dry salt. The trick is to use the property that's different. Sand is insoluble, which means it doesn't dissolve in water. Salt is soluble. It dissolves, and its particles spread out through the water. So how can we recover an insoluble solid and a dissolved solid from one mixture?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "filtration-why",
+      "audio": "public/audio/chem-y11-m1-v03/filtration-why.wav",
+      "seconds": 32.467,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "through",
+          "start": 2.7090000000000005,
+          "end": 2.9510000000000005
+        },
+        {
+          "text": "water",
+          "start": 18.500999999999987,
+          "end": 18.70183333333332
+        },
+        {
+          "text": "trapped",
+          "start": 25.174000000000106,
+          "end": 25.436500000000105
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9840000000000053,
+        "after": "through.",
+        "before": "The"
+      },
+      "peakFraction": 0.85626220703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "We'll",
+          "start": 1.8000000000000005,
+          "end": 1.9420000000000004,
+          "score": 0.495
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Start with the sand. We'll pour the mixture through filter paper. Filter paper is full of tiny holes, called pores. Water molecules are far smaller than the pores, so they pass straight through. The dissolved salt is split into separate ions, which are tiny too, so they go through with the water. But a sand grain is a huge clump of particles, much too big for the pores, so it gets trapped. That's filtration. It separates an insoluble solid from a liquid, by particle size.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "filtration-setup",
+      "audio": "public/audio/chem-y11-m1-v03/filtration-setup.wav",
+      "seconds": 22.327,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "rod",
+          "start": 10.756999999999984,
+          "end": 10.936999999999983
+        },
+        {
+          "text": "residue",
+          "start": 17.079999999999984,
+          "end": 17.501749999999983
+        },
+        {
+          "text": "filtrate",
+          "start": 21.3420000000001,
+          "end": 21.78911111111121
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9009999999999838,
+        "after": "flask.",
+        "before": "Pour"
+      },
+      "peakFraction": 0.901641845703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.585000000000001,
+          "end": 4.625,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's the setup. Fold the filter paper into a cone, sit it in a funnel, and stand the funnel in a conical flask. Pour the mixture slowly down a glass rod, so it runs onto the paper without splashing. The solid left on the paper is called the residue. The liquid that drips through into the flask is called the filtrate.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v03/prediction.wav",
+      "seconds": 7.337,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 6.585999999999999,
+          "end": 6.7385
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7920000000000069,
+        "after": "water?",
+        "before": "Have"
+      },
+      "peakFraction": 0.8272705078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 6.5249999999999995,
+          "end": 6.566,
+          "score": 0.417
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Quick prediction. The filtrate in the flask is perfectly clear. So is it pure water? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction-answer",
+      "audio": "public/audio/chem-y11-m1-v03/prediction-answer.wav",
+      "seconds": 25.302,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "solution",
+          "start": 7.281999999999996,
+          "end": 7.780666666666662
+        },
+        {
+          "text": "behind",
+          "start": 19.344999999999988,
+          "end": 19.620142857142845
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.822000000000088,
+        "after": "behind.",
+        "before": "Filtration"
+      },
+      "peakFraction": 0.866485595703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "No, it's still salt water. The salt's ions went straight through the paper with the water, so the filtrate is a solution, a liquid with something dissolved in it. Clear only tells you nothing undissolved is floating in it. Put a drop on a warm watch glass, and when the water evaporates, tiny white crystals are left behind. Filtration can't remove a dissolved solid, and clear doesn't mean pure.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "wash-dry",
+      "audio": "public/audio/chem-y11-m1-v03/wash-dry.wav",
+      "seconds": 25.921,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "grains",
+          "start": 7.953999999999995,
+          "end": 8.280571428571424
+        },
+        {
+          "text": "filtrate",
+          "start": 17.64299999999999,
+          "end": 18.03499999999999
+        },
+        {
+          "text": "dry",
+          "start": 19.227000000000057,
+          "end": 19.488000000000056
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7420000000000684,
+        "after": "filtrate.",
+        "before": "Then"
+      },
+      "peakFraction": 0.8353271484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "rinse",
+          "start": 9.478999999999989,
+          "end": 9.718999999999989,
+          "score": 0.457
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now finish the sand. It's still wet, and that water is salt water. If you dried it now, salt crystals would be left stuck to the grains. So rinse the residue with a little distilled water, which has nothing dissolved in it. The fresh water carries the dissolved salt through the paper into the filtrate. Then dry the sand in a warm oven, or in the air, until it's completely dry. That's the insoluble solid recovered.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "solubility-saturation",
+      "audio": "public/audio/chem-y11-m1-v03/solubility-saturation.wav",
+      "seconds": 24.244,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "temperature",
+          "start": 18.16599999999999,
+          "end": 18.550999999999988
+        },
+        {
+          "text": "saturated",
+          "start": 23.201000000000104,
+          "end": 23.760800000000103
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7819999999999983,
+        "after": "in.",
+        "before": "Solubility"
+      },
+      "peakFraction": 0.863555908203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 15.619999999999987,
+          "end": 15.679999999999987,
+          "score": 0.312
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Now the salt, dissolved in the filtrate. To get it back, we need a few words. The salt is the solute, the substance that dissolves. The water is the solvent, the liquid it dissolves in. Solubility is the most solute that can dissolve in a hundred grams of water, at a stated temperature. And a solution that's holding as much solute as it can is called saturated.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "crystallisation",
+      "audio": "public/audio/chem-y11-m1-v03/crystallisation.wav",
+      "seconds": 31.376,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "concentrated",
+          "start": 11.481999999999992,
+          "end": 12.093076923076918
+        },
+        {
+          "text": "crystals",
+          "start": 20.46999999999999,
+          "end": 20.826444444444434
+        },
+        {
+          "text": "them",
+          "start": 27.988000000000095,
+          "end": 28.108000000000093
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9210000000001166,
+        "after": "crystals.",
+        "before": "Stop"
+      },
+      "peakFraction": 0.828826904296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "here's",
+          "start": 0.824,
+          "end": 1.106,
+          "score": 0.29
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So here's crystallisation. Pour the filtrate into an evaporating basin, and heat it gently. The water evaporates, but the salt can't, so the solution gets more and more concentrated. Once it's saturated, the water that's left can't hold all the salt, and the extra salt comes out of the solution as solid crystals. Stop heating while there's still some liquid left, and let it cool. Then filter off the crystals, rinse them with a tiny amount of cold water, and dry them.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "surprise-solubility",
+      "audio": "public/audio/chem-y11-m1-v03/surprise-solubility.wav",
+      "seconds": 33.5,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "degrees",
+          "start": 12.746999999999993,
+          "end": 13.09699999999999
+        },
+        {
+          "text": "crystallise",
+          "start": 20.70099999999999,
+          "end": 21.196916666666656
+        },
+        {
+          "text": "cooling",
+          "start": 32.79800000000007,
+          "end": 33.07887500000007
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7609999999999957,
+        "after": "degrees.",
+        "before": "Cool"
+      },
+      "peakFraction": 0.827392578125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 9.464999999999993,
+          "end": 9.545999999999992,
+          "score": 0.046
+        },
+        {
+          "word": "a",
+          "start": 19.03699999999999,
+          "end": 19.076999999999988,
+          "score": 0.46
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a surprise. You might expect cooling to be what makes the crystals form. For many solids, it is. Potassium nitrate's solubility drops from about one hundred and sixty nine grams per hundred grams of water at eighty degrees, to about thirty one at twenty degrees. Cool a saturated solution over that range, and about a hundred and thirty eight grams crystallise. But salt barely changes. It's about thirty eight grams at eighty degrees, and about thirty six at twenty. So for salt, removing water is what forms most of the crystals, not cooling.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "purer-crystals",
+      "audio": "public/audio/chem-y11-m1-v03/purer-crystals.wav",
+      "seconds": 27.688,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "liquor",
+          "start": 16.072999999999986,
+          "end": 16.262428571428558
+        },
+        {
+          "text": "solid",
+          "start": 26.844000000000072,
+          "end": 27.129000000000072
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9210000000001415,
+        "after": "liquor.",
+        "before": "Slow"
+      },
+      "peakFraction": 0.83306884765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 7.132999999999999,
+          "end": 7.172999999999999,
+          "score": 0.488
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Crystallisation does more than recover the salt. It also makes it purer. As a crystal grows, its ions fit into a neat, repeating lattice. Particles of other dissolved substances don't fit that pattern, so most of them stay in the leftover liquid, which is called the mother liquor. Slow cooling helps, because the crystals grow larger and more ordered, and trap less liquid. Boil it right down to dryness instead, and every dissolved impurity ends up in your solid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "order-and-rule",
+      "audio": "public/audio/chem-y11-m1-v03/order-and-rule.wav",
+      "seconds": 26.192,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "crystals",
+          "start": 8.140999999999988,
+          "end": 8.480555555555544
+        },
+        {
+          "text": "through",
+          "start": 18.586,
+          "end": 18.796875
+        },
+        {
+          "text": "catch",
+          "start": 25.488000000000042,
+          "end": 25.729000000000042
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000004,
+        "after": "crystals.",
+        "before": "Undissolved,"
+      },
+      "peakFraction": 0.840484619140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 14.571999999999997,
+          "end": 14.631999999999998,
+          "score": 0.314
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Notice the order. Filter first, then crystallise the filtrate. Crystallise first, and the sand ends up buried in your salt crystals. Undissolved, filter it out. Dissolved, crystallise it out. Filter paper works a bit like a kitchen sieve, where big pieces stay and small ones pass through. But dissolved salt isn't tiny grains of salt. It's separate ions, so filter paper cannot catch it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v03/attempt-1.wav",
+      "seconds": 19.44,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.9270000000000005,
+        "after": "turn.",
+        "before": "A"
+      },
+      "peakFraction": 0.859588623046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [
+        {
+          "start": 15.19,
+          "end": 19.44
+        }
+      ],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 12.902999999999997,
+          "end": 12.922999999999998,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Your turn. A mixture contains sand, water and dissolved potassium nitrate. Describe how you'd obtain dry sand and dry potassium nitrate crystals, and justify each step using a physical property. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v03/feedback-1.wav",
+      "seconds": 25.36,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "avoid",
+          "start": 24.67700000000008,
+          "end": 24.911166666666748
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9439999999999946,
+        "after": "residue.",
+        "before": "Rinse"
+      },
+      "peakFraction": 0.8909912109375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "it.",
+          "start": 9.596999999999994,
+          "end": 9.656999999999995,
+          "score": 0.333
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Filter first. The sand is insoluble and too big for the pores, so it stays as the residue. Rinse it with a little distilled water, then dry it. Next, heat the filtrate to concentrate it, and let it cool slowly. Potassium nitrate is much less soluble when it's cold, so crystals form. Filter them off and dry them. Crystallising before filtering is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v03/attempt-2.wav",
+      "seconds": 21.32,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8629999999999995,
+        "after": "blue.",
+        "before": "The"
+      },
+      "peakFraction": 0.83465576171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 10.132999999999997,
+          "end": 10.192999999999998,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A student pours a blue copper sulfate solution through filter paper. The filtrate that comes through is just as blue. The student says the filter paper must be faulty. Explain why the student is wrong, and describe how to get solid copper sulfate crystals from the solution. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v03/feedback-2.wav",
+      "seconds": 20.83,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "avoid",
+          "start": 20.12800000000005,
+          "end": 20.378833333333382
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6810000000000542,
+        "after": "them.",
+        "before": "Swapping"
+      },
+      "peakFraction": 0.8480224609375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "The paper isn't faulty. The copper sulfate is dissolved, as separate ions far smaller than the pores, so they pass straight through with the water. To get crystals, heat the solution gently to concentrate it, then let it cool slowly, filter off the blue crystals, and dry them. Swapping to a finer filter paper is the slip to avoid.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v03/handoff.wav",
+      "seconds": 15.85,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "better",
+          "start": 15.288999999999993,
+          "end": 15.477571428571421
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8249999999999842,
+        "after": "lost.",
+        "before": "Sometimes"
+      },
+      "peakFraction": 0.861907958984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "vapour,",
+          "start": 11.559999999999992,
+          "end": 11.880999999999993,
+          "score": 0.474
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Notice what happened to the water, though. It left as steam, and it was lost. Sometimes the liquid is the part we want, or the mixture is two liquids. Next time, we'll catch that vapour, and see why a fractionating column separates liquids so much better.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v03/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v17/lesson.json",
-    "lessonSha256": "af9b8159ebdc81aee8eefcee5fe34a2398503f12b5f99fae41271f9c14cee0f2"
+    "lessonSha256": "cef63ceeb57ef0cab04898279dfed9584ecdc06838bd4e24930c1d3499a27f13"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -44,7 +44,7 @@
         "Countdown",
         "QuestionCard"
       ],
-      "holdPurpose": "Retain the design's 3 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your prediction.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "also-a-generator",
@@ -100,7 +100,7 @@
       "motionTools": [
         "Source diagrams, painted plates and cue-directed changes"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "Retain the design's 2 second hold."
     },
     {
       "sceneId": "heavier-load",
@@ -236,9 +236,9 @@
       "visualReference": "docs/production/claude-pm/lessons/phys-y12-m6-v17.md#scene-15",
       "teachingReason": "So a spinning motor draws less current because its coil is also a generator, and the back emf it makes pushes against the supply. Now remove the supply. Turn the shaft with something else, and connect the motor to an oscilloscope. The back emf is still there, but now it's the output. The motor has become a generator. So what shape is its output?",
       "narrationCue": "oscilloscope / generator / its output",
-      "motionPurpose": "board clears (camera change) to the motor bench. On \"remove the supply\" the supply plate, switch and ammeter slide out of frame. On \"Turn the shaft with something else\" a curved amber outline arrow \"turned by an outside drive\" appears round the flywheel and it turns steadily (no hand). On \"oscilloscope\" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a \"?\". On \"generator\" the rose \"ε_back\" tag beside the motor changes to \"ε (output)\", chip \"motor → generator\". On \"its output\" a \"?\" pulses on the oscilloscope screen and a chip \"Next: how do simple AC and DC generators produce different outputs?\". Hold about 2 seconds. This is the final frame (see \"Final frame\").",
+      "motionPurpose": "board clears (camera change) to the motor bench. On \"remove the supply\" the supply plate, switch and ammeter slide out of frame. On \"Turn the shaft with something else\" a curved amber outline arrow \"turned by an outside drive\" appears round the flywheel and it turns steadily (no hand). On \"oscilloscope\" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a \"?\". On \"generator\" the rose \"ε_back\" tag beside the motor changes to \"ε (output)\", chip \"motor → generator\". On \"its output\" a \"?\" pulses on the oscilloscope screen and a chip \"Next: how can we test the motor effect and a DC motor at the bench?\". Hold about 2 seconds. This is the final frame (see \"Final frame\").",
       "motionRole": "explain",
-      "onScreenChange": "board clears (camera change) to the motor bench. On \"remove the supply\" the supply plate, switch and ammeter slide out of frame. On \"Turn the shaft with something else\" a curved amber outline arrow \"turned by an outside drive\" appears round the flywheel and it turns steadily (no hand). On \"oscilloscope\" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a \"?\". On \"generator\" the rose \"ε_back\" tag beside the motor changes to \"ε (output)\", chip \"motor → generator\". On \"its output\" a \"?\" pulses on the oscilloscope screen and a chip \"Next: how do simple AC and DC generators produce different outputs?\". Hold about 2 seconds. This is the final frame (see \"Final frame\").",
+      "onScreenChange": "board clears (camera change) to the motor bench. On \"remove the supply\" the supply plate, switch and ammeter slide out of frame. On \"Turn the shaft with something else\" a curved amber outline arrow \"turned by an outside drive\" appears round the flywheel and it turns steadily (no hand). On \"oscilloscope\" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a \"?\". On \"generator\" the rose \"ε_back\" tag beside the motor changes to \"ε (output)\", chip \"motor → generator\". On \"its output\" a \"?\" pulses on the oscilloscope screen and a chip \"Next: how can we test the motor effect and a DC motor at the bench?\". Hold about 2 seconds. This is the final frame (see \"Final frame\").",
       "motionTools": [
         "Source diagrams, painted plates and cue-directed changes"
       ],
@@ -261,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v17/recording-source-check.json",
-      "sha256": "155e9a8861cbc42bdee6897b27ae465a04a25f8f5b6cb6a4030080bcdd109f5d"
+      "sha256": "a7fe1fdcf05553c2956a1f64dd176f041a5548cd504126ee58e53b87169b677b"
     }
   },
   "studentLearningReview": {
@@ -272,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v17/recording-source-check.json",
-      "sha256": "155e9a8861cbc42bdee6897b27ae465a04a25f8f5b6cb6a4030080bcdd109f5d"
+      "sha256": "a7fe1fdcf05553c2956a1f64dd176f041a5548cd504126ee58e53b87169b677b"
     }
   },
   "voicedPreview": {

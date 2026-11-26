@@ -1,0 +1,162 @@
+{
+  "brief": 238,
+  "design": "d18",
+  "sharedWith": "d17scene17",
+  "assets": [
+    {
+      "name": "ma12-pen-wall-v1.png",
+      "path": "public\\assets\\maths\\ma12-pen-wall-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-702921c0-62a3-4b29-9956-0fa9621f2bae.png",
+      "nativeSize": [
+        2400,
+        1400
+      ],
+      "generatorNativeSize": [
+        1642,
+        958
+      ],
+      "sha256": "f860642e054cd94a4dd9b45b9881648d599e58b0248475bc960b4f5c6e4f7e55",
+      "alphaBox": [
+        416,
+        377,
+        1985,
+        1069
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Removedalpha<8noise",
+        "Transparentpadding379pxleft/right,221pxtop/bottom;noresize/stretch"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "anchors": {
+        "leftFenceMidpoint": [
+          702,
+          736
+        ],
+        "frontFenceMidpoint": [
+          1394,
+          773
+        ],
+        "rightFenceMidpoint": [
+          1747,
+          577
+        ],
+        "wallInsideLengthMidpoint": [
+          1065.5,
+          650
+        ],
+        "sheepGroundPoint": [
+          1200,
+          700
+        ],
+        "manualAnchorUncertaintyPx": 8
+      },
+      "state": "delivered",
+      "findings": []
+    },
+    {
+      "name": "ma12-stone-wall-top-v1.png",
+      "path": "public\\assets\\maths\\ma12-stone-wall-top-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-6564f044-f47a-4405-bcc1-fd82d8762962.png",
+      "nativeSize": [
+        2400,
+        360
+      ],
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "sha256": "1597297ae2d83e65dbc47117b91b9d667e18d9165b8384ba23bf863e703c8167",
+      "alphaBox": [
+        0,
+        89,
+        2400,
+        268
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "operations": [
+        "Croppedtransparentverticalmarginsy182..542",
+        "Repeated228nativecolumns toextend2172to2400withoutstretching",
+        "Featheredinternalrepeat48pxandoppositeedges48px;exactedgeRGBAequality"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "horizontalEdgeMaxDifference": 0,
+      "state": "delivered",
+      "findings": []
+    },
+    {
+      "name": "ma12-card-texture-v1.png",
+      "path": "public\\assets\\maths\\ma12-card-texture-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-aaf8e69c-394e-4ccc-b95e-5ea5d12c061e.png",
+      "nativeSize": [
+        1200,
+        1200
+      ],
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "3290b53c7e3cfe5e296d67de291624995294cd487ddf1356f83fe15acb50c9ff",
+      "alphaBox": [
+        0,
+        0,
+        1200,
+        1200
+      ],
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "operations": [
+        "Selectednative600x600centrepatchfromgeneratedcardtexture",
+        "Mirrorednativepixelpatchin2x2arrangementto1200tile;noresampling/stretching",
+        "RGBAalpha255throughout;oppositeedgesexactlyequal",
+        "Replacedpreviousedgefeathercandidateafter2x2QAshowedafaintband"
+      ],
+      "wholePlateResized": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "edgeMaxDifferences": {
+        "horizontal": 0,
+        "vertical": 0
+      },
+      "state": "delivered",
+      "findings": []
+    }
+  ],
+  "promptHistory": {
+    "tool": "built-in image_gen",
+    "pen": {
+      "prompt": "Use case: scientific-educational. Asset ma12-pen-wall-v1.png, intended final2400x1400px landscape. Paint an EMPTY rectangular sheep pen against a long old dry-stone wall,isolated on genuine transparent alpha. Fine ink and natural restrained watercolour,grey-brown irregular fieldstones,weathered timber,short green grass. STYLE reference image only:match sheep illustration palette/detail/outline; DO NOT include an animal. Low three-quarter front-left view so all3wood fence sides are clearly visible. Stone wall straight left-to-right across back,roughly chest high. Pen approximately twice as long along wall as deep. Exactly3plain timber post-and-rail fence sides,two horizontal rails per side,evenly spaced posts:two sides come out from wall towards viewer,third crosses front parallel to wall. There is NO fence along back because stone wall is fourth side. NO GATE. All fence joins readable. Small grass patch inside and narrow margin outside,with soft irregular transparent boundary. Centre on canvas,entirewall and pen visible with at least8%clear alpha margins all4sides. No animals,people,hands,text,numbers,labels,signs,logos,sky,horizon,buildings,trees,glow or separate ground shadow.",
+      "editPrompt": "Edit the empty sheep-pen target. Change ONLY the camera angle and proportion: show a clear low THREE-QUARTER view FROM FRONT LEFT rather than this almost symmetrical frontal view. The long dry-stone rear wall and front rail run diagonally receding to the right, with the left end nearer and the right end farther. Rectangular ground footprint length along wall about2times depth; keep3timber fenced sides and rearwall as fourthside. No gate,no back woodfence. Retain exactly2rails per side,grey-brown dryfieldstones,shortgreen grass,ink/watercolour finish and clean genuine alpha transparency. Entire scene visible with8%clear margins. Retain empty pen,NO sheep,people,labels,text,sky,trees,buildings,shadow or added objects. Intended final2400x1400.",
+      "firstCandidate": "C:/Users/kygs/.codex/generated_images/01a1b24b-b35d-73a2-91c3-6120d9aa4344/exec-0970d8b2-88bc-40f7-a90d-f1aad86a2e68.png",
+      "firstCandidateRejected": "Nearly frontal camera;corrected to front-left"
+    },
+    "wallTop": {
+      "prompt": "Use case: scientific-educational. Project texture plate ma12-stone-wall-top-v1.png. One very long narrow straight strip of old grey-brown dry-stone fieldstone wall seen DIRECTLY FROM ABOVE,orthographic top-down,not its front face. Intended final2400x360px very wide banner. Strip about200px deep,centred vertically,fully transparent at least8%height above and below. Wall runs horizontally all the way to BOTH side edges with NO side margins,so copies tile horizontally. Random irregular grey-brown fieldstones with dark gaps and natural hand-ink/watercolour texture matching the wall in reference image. Reference only stone materials/palette,NOT perspective or wood fence. Keep upper and lower boundaries essentially straight with slight irregular stone contour. Left and right edge textures compatible for a seamless horizontal tile;no end-cap stones. NO grass,soil patch,wood,fence,animals,people,text,labels,scales,shadow,glow or background. Genuine transparent alpha above/below the wall."
+    },
+    "card": {
+      "prompt": "Use case: scientific-educational. Project material texture ma12-card-texture-v1.png. A completely flat plain brown kraft cardboard surface,face-on orthographic macro material texture,uniform diffuse lighting,subtle paper fibres and slight organic tone variation. Intended final1200x1200px square,edge-to-edge fully OPAQUE brown texture,no transparency or margins. Seamless tiling on all4edges: no darker edge,no vignette,no borders,no side lighting. Keep detail delicate and low contrast so coded geometry placed over it stays clear. Natural light medium-brown card with restrained watercolour-like grain. NO folds,creases,corrugation edges,objects,print,text,marks,tape,labels,hands,shadows,logos or graphics. Fill entire image with the material.",
+      "transparent_background": false
+    },
+    "pixelFinishingAuthorisation": "User explicitly approved local pixel edits,including tile seams."
+  },
+  "qaInspected": [
+    "work/brief238/d18-pen-qa.jpg",
+    "work/brief238/d18-anchors-qa.jpg",
+    "work/brief238/d18-tile-qa.jpg",
+    "work/brief238/d18-card-2x2-final-qa.jpg"
+  ],
+  "qaObservation": "Pen paper300/1300px plusblack/white:3fencesides,two rails,no gate/backwoodfence/animals. Front-left perspective corrected. Anchor dots checked aftermoving sheep groundpointclearoffrontfence. Wall2copyseam checked. Cardinitialedgefeathercandidate showedband;replacedwithnativepixelmirror tile,final2x2view has nohardseam. ExactedgeRGBAmaxdifference0forwallandcard;cardalpha255everywhere.",
+  "geometry": "No whole-plate resizing/stretching;onlyalpha cleanup,padding,cropping,repeating/mirroringtexturepixelsandlocal seam blending."
+}

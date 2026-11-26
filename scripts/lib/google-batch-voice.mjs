@@ -5,8 +5,9 @@ import {createHash} from 'node:crypto';
 import {spawnSync} from 'node:child_process';
 import {decodePcm,pcmWav} from './media-tools.mjs';
 import {pronunciationText,mapWordTimings} from './google-pronunciation.mjs';
-import {compareGoogleWords,planGoogleBatches} from './google-batch-checks.mjs';
+import {compareGoogleWords,planGoogleBatches,checkGoogleRunOn,googleSceneHasLongPause} from './google-batch-checks.mjs';
 import {googleQuotaDay,requestsInGoogleQuotaDay} from './google-request-budget.mjs';
+import {googleTimeoutAction,googleTimeoutRequestKey,googleTimeoutCount} from './google-timeout-policy.mjs';
 
 const ledgerPath='work/google-tts-requests.jsonl';
 const statusPath='docs/production/claude-pm/status.md';
@@ -126,13 +127,15 @@ export async function prepareGoogleBatches({manifest,lesson,key,needed,dryRun=fa
       cursor=start+cue.length;
     }
     const comparison=compareGoogleWords(spoken(scene),recognised.map(w=>w.word).join(''));
+    const runOn=checkGoogleRunOn({text:scene.text,expectedText:spoken(scene),seconds:pcm.length/96000,comparison,
+      deliberateLongPauses:googleSceneHasLongPause(lesson.scenes.find(s=>s.id===scene.id))});
     const recognitionEdges=recognised.length?[recognised[0].start,pcm.length/96000-recognised.at(-1).end]:[];
     const result={scene:scene.id,textSha256:sha(scene.text),audioSha256:sha(fs.readFileSync(file)),edge,recognitionEdges,comparison,cueCount:cues.get(scene.id).length,
       // Root, 19 Nov: forced alignment against the exact scene text (above), the edges and the pause block a take.
-      // Recognition word and number differences are logged for review instead: the recogniser's number formatting
+      // Brief 257 also blocks run-on speech. Other word and number differences are logged for review: number formatting
       // ("152" for "one fifty two", "two" for "too", split decimals) stopped three nights of voicing on good audio.
-      pass:edge.pass&&comparison.pausePresent,
-      review:edge.pass&&comparison.pausePresent&&!comparison.pass};
+      runOn,pass:edge.pass&&comparison.pausePresent&&runOn.pass,
+      review:edge.pass&&comparison.pausePresent&&runOn.pass&&!comparison.pass};
     return {pcm,aligned,result};
   }
 
@@ -145,12 +148,27 @@ export async function prepareGoogleBatches({manifest,lesson,key,needed,dryRun=fa
   // Root, 19 Nov: a dropped connection (socket closed, ECONNABORTED) is retried up to twice after a pause.
   // Each attempt is written to the ledger first, so the local quota count stays conservative. HTTP errors are never retried.
   async function request(group,tag){
+    const recoveryFile='work/brief262/timeout-resume-2026-11-24.json';
+    const recovery=fs.existsSync(recoveryFile)?read(recoveryFile):null;
+    const signature=googleTimeoutRequestKey(lesson.id,group.map(s=>s.id),group.map(s=>sha(s.text)));
+    const timeoutRecords=fs.existsSync('work/google-tts-timeouts.jsonl')?fs.readFileSync('work/google-tts-timeouts.jsonl','utf8').trim().split('\n').filter(Boolean).map(JSON.parse):[];
+    const prior=Math.max(recovery?.timeoutRequestKey===signature?recovery.priorTimeouts:0,googleTimeoutCount(timeoutRecords,lesson.id,group.map(s=>s.id),group.map(s=>sha(s.text))));
+    if(prior>=2)throw Error('GOOGLE_TTS_REPEATED_TIMEOUT: '+lesson.id+' '+group.map(s=>s.id).join(',')+' already timed out twice; stop this lesson and keep its caches');
+    let timeoutCount=prior;
     for(let attempt=1;;attempt++){
       try { return await requestOnce(group,tag); }
       catch(error){
+        const timeoutAction=googleTimeoutAction(error,1,timeoutCount);
+        if(timeoutAction!=='other error'){
+          timeoutCount++;
+          fs.appendFileSync('work/google-tts-timeouts.jsonl',JSON.stringify({at:new Date().toISOString(),lesson:lesson.id,scenes:group.map(s=>s.id),textHashes:group.map(s=>sha(s.text)),attempt:timeoutCount,action:timeoutAction})+'\n');
+          if(timeoutAction==='stop lesson')throw Error('GOOGLE_TTS_REPEATED_TIMEOUT: '+lesson.id+' '+group.map(s=>s.id).join(',')+' timed out twice; stop this lesson and keep its caches');
+          console.error('Client timeout; retrying this request once in30seconds.');
+          await new Promise(r=>setTimeout(r,30000));continue;
+        }
         const network=error instanceof TypeError&&/fetch failed|terminated/i.test(error.message)
           ||/UND_ERR_SOCKET|ECONNABORTED|ECONNRESET|ETIMEDOUT/.test(String(error.cause?.code??error.code??''));
-        if(!network||attempt>=3)throw error;
+        if(!network||attempt>=3||process.env.GOOGLE_TTS_FINAL_RETRY==='1')throw error;
         console.error('Network drop on attempt '+attempt+' ('+String(error.cause?.code??error.message)+'); retrying in 30 s');
         await new Promise(r=>setTimeout(r,30000));
       }
@@ -223,7 +241,16 @@ export async function prepareGoogleBatches({manifest,lesson,key,needed,dryRun=fa
         const stem=send.file.slice(0,-4);
         if(group.length===1){
           if(group[0].forceSingle)note('Google pilot fallback '+lesson.id+' '+group[0].id+'. Pilot checks failed. Re-voiced alone.');
-          continueSingle(group[0],send,stem,group[0].forceSingle?'pilot fallback':'planned single');
+          try {
+            continueSingle(group[0],send,stem,group[0].forceSingle?'pilot fallback':'planned single');
+          } catch(error) {
+            // Only a failed quality check permits the one replacement take.
+            if(process.env.GOOGLE_TTS_FINAL_RETRY==='1'||group[0].forceSingle||
+              !String(error.message).startsWith('Single-scene planned single failed audio checks'))throw error;
+            summary.fallbacks.push({scene:group[0].id,reason:error.message});
+            const retry=await request([group[0]],'quality retry');
+            continueSingle(group[0],retry,retry.file.slice(0,-4),'quality retry');
+          }
           continue;
         }
         let failures=[];

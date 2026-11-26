@@ -1,0 +1,1110 @@
+{
+  "lesson": "math-a12-s10",
+  "sourceSha256": "1ce5ad46e57ffa10f3dd415bbb49d524796d8ecb8b6c78bbf5f6dd77990dff64",
+  "measuredPath": "work\\brief240\\voice-results\\s10\\lesson.json",
+  "measuredSha256": "cb9de4e95039883f2427ea626ad8571b854844256d8fa4015a6243028949eaee",
+  "changedTakes": 17,
+  "reusedTakes": 0,
+  "newRequests": 15,
+  "cachedTakes": 2,
+  "voicedCharacters": 6301,
+  "inputTokens": 1316,
+  "outputTokens": 9925,
+  "costUsd": 0.08998300000000001,
+  "totalSeconds": 498.93333333333334,
+  "durationOver570": false,
+  "worstWordGap": {
+    "scene": "scene-13",
+    "seconds": 1.1240000000001196,
+    "after": "percent.",
+    "before": "Thirty-two"
+  },
+  "d07Scene1aOver62": false,
+  "machineListenFindings": [
+    {
+      "scene": "scene-01",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 13.199999999999992,
+          "end": 13.219999999999992,
+          "score": 0
+        },
+        {
+          "word": "and",
+          "start": 21.43999999999999,
+          "end": 21.49999999999999,
+          "score": 0.017
+        },
+        {
+          "word": "Then",
+          "start": 25.10700000000003,
+          "end": 25.308000000000032,
+          "score": 0.487
+        },
+        {
+          "word": "rule",
+          "start": 26.951000000000032,
+          "end": 27.29200000000003,
+          "score": 0.494
+        }
+      ]
+    },
+    {
+      "scene": "scene-03",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "ay",
+          "start": 28.707000000000093,
+          "end": 28.747000000000092,
+          "score": 0.489
+        }
+      ]
+    },
+    {
+      "scene": "scene-04",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "f",
+          "start": 6.224999999999987,
+          "end": 6.244999999999988,
+          "score": 0
+        }
+      ]
+    },
+    {
+      "scene": "scene-05",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 1.7140000000000002,
+          "end": 1.7950000000000002,
+          "score": 0.14
+        }
+      ]
+    },
+    {
+      "scene": "scene-08",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight.",
+          "start": 6.033,
+          "end": 6.173,
+          "score": 0.38
+        }
+      ]
+    },
+    {
+      "scene": "scene-10",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "an",
+          "start": 11.78999999999999,
+          "end": 11.82999999999999,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 16.368999999999993,
+          "end": 16.388999999999992,
+          "score": 0
+        }
+      ]
+    },
+    {
+      "scene": "scene-11",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.261,
+          "end": 0.442,
+          "score": 0.494
+        }
+      ]
+    },
+    {
+      "scene": "scene-13",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 5.937999999999989,
+          "end": 5.997999999999989,
+          "score": 0
+        }
+      ]
+    },
+    {
+      "scene": "scene-15",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "or",
+          "start": 21.72100000000009,
+          "end": 21.78200000000009,
+          "score": 0.312
+        }
+      ]
+    },
+    {
+      "scene": "scene-17",
+      "possibleRetry": false,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 0.381,
+          "end": 0.502,
+          "score": 0.317
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-01.wav",
+      "durationInFrames": 924,
+      "worstWordGap": {
+        "seconds": 1.1049999999999969,
+        "after": "marks?",
+        "before": "This"
+      },
+      "cues": [
+        {
+          "text": "marks",
+          "start": 8.601999999999995,
+          "end": 8.87033333333333
+        },
+        {
+          "text": "apples",
+          "start": 17.47299999999999,
+          "end": 17.75299999999999
+        },
+        {
+          "text": "all",
+          "start": 29.477000000000032,
+          "end": 29.582000000000033
+        }
+      ],
+      "seconds": 30.8,
+      "peakFraction": 0.837646484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 13.199999999999992,
+          "end": 13.219999999999992,
+          "score": 0
+        },
+        {
+          "word": "and",
+          "start": 21.43999999999999,
+          "end": 21.49999999999999,
+          "score": 0.017
+        },
+        {
+          "word": "Then",
+          "start": 25.10700000000003,
+          "end": 25.308000000000032,
+          "score": 0.487
+        },
+        {
+          "word": "rule",
+          "start": 26.951000000000032,
+          "end": 27.29200000000003,
+          "score": 0.494
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 0,
+      "possibleRetry": false,
+      "inputTokens": 90,
+      "outputTokens": 770,
+      "costUsd": 0.006975,
+      "pronunciationText": "Last video ended with this question. Mark one sigma either side of the mean. How much of the area lies between those marks? This curve has no simple area formula, so today a graphing calculator does the measuring. An orchard grades its apples by mass, and the masses are normal, with mean one hundred and fifty grams and standard deviation fifteen. Then we'll turn what we find into a rule you can use with no technology at all."
+    },
+    {
+      "id": "scene-02",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-02.wav",
+      "durationInFrames": 984,
+      "worstWordGap": {
+        "seconds": 0.9440000000000452,
+        "after": "axis.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "function",
+          "start": 2.411,
+          "end": 2.7327777777777778
+        },
+        {
+          "text": "symmetric",
+          "start": 14.525999999999991,
+          "end": 14.922899999999991
+        },
+        {
+          "text": "zero",
+          "start": 19.628999999999984,
+          "end": 19.885799999999985
+        },
+        {
+          "text": "axis",
+          "start": 24.23100000000005,
+          "end": 24.45580000000005
+        },
+        {
+          "text": "one",
+          "start": 28.085000000000097,
+          "end": 28.295750000000098
+        },
+        {
+          "text": "fifty",
+          "start": 32.118000000000045,
+          "end": 32.38550000000004
+        }
+      ],
+      "seconds": 32.8,
+      "peakFraction": 0.8382568359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 106,
+      "outputTokens": 820,
+      "costUsd": 0.007433,
+      "pronunciationText": "This is the normal probability density function, and each part has a job. The power of e is minus the squared distance from the mean, over two sigma squared. The same distance either side squares to the same value, so the curve is symmetric. Further out, the power gets more negative, so the curve drops towards zero. But e to any power is positive, so it never reaches the axis. The number in front makes the total area exactly one. For the apples, two sigma squared is four hundred and fifty."
+    },
+    {
+      "id": "scene-03",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-03.wav",
+      "durationInFrames": 990,
+      "worstWordGap": {
+        "seconds": 0.9030000000000005,
+        "after": "mu.",
+        "before": "Left"
+      },
+      "cues": [
+        {
+          "text": "itself",
+          "start": 7.303000000000001,
+          "end": 7.595285714285715
+        },
+        {
+          "text": "rises",
+          "start": 17.45599999999999,
+          "end": 17.74099999999999
+        },
+        {
+          "text": "falls",
+          "start": 20.33600000000007,
+          "end": 20.621833333333402
+        },
+        {
+          "text": "pi",
+          "start": 32.33800000000005,
+          "end": 32.498666666666715
+        }
+      ],
+      "seconds": 33,
+      "peakFraction": 0.83514404296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "ay",
+          "start": 28.707000000000093,
+          "end": 28.747000000000092,
+          "score": 0.489
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 117,
+      "outputTokens": 825,
+      "costUsd": 0.007483500000000001,
+      "pronunciationText": "Where's the highest point? By the chain rule, f prime of x is the derivative of the power, times f of x itself. Since f of x is always positive, the sign of the gradient comes from minus x minus mu. Left of the mean the gradient is positive, so the curve rises. Right of the mean it's negative, so the curve falls. It rises all the way to mu and falls all the way after, so x equals mu is the global maximum, not just ay local one. Its height is one over sigma root two pi."
+    },
+    {
+      "id": "scene-04",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-04.wav",
+      "durationInFrames": 1131,
+      "worstWordGap": {
+        "seconds": 0.8820000000001151,
+        "after": "sigma.",
+        "before": "Between"
+      },
+      "cues": [
+        {
+          "text": "factorise",
+          "start": 4.640000000000001,
+          "end": 5.1089
+        },
+        {
+          "text": "bracket",
+          "start": 10.202999999999989,
+          "end": 10.466374999999987
+        },
+        {
+          "text": "sigma",
+          "start": 14.998999999999992,
+          "end": 15.29999999999999
+        },
+        {
+          "text": "peak",
+          "start": 24.041000000000107,
+          "end": 24.20180000000011
+        },
+        {
+          "text": "out",
+          "start": 27.941000000000095,
+          "end": 28.031750000000095
+        },
+        {
+          "text": "five",
+          "start": 32.84372727272736,
+          "end": 33.055000000000085
+        },
+        {
+          "text": "bend",
+          "start": 37.19699999999999,
+          "end": 37.37379999999999
+        }
+      ],
+      "seconds": 37.68,
+      "peakFraction": 0.825347900390625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "f",
+          "start": 6.224999999999987,
+          "end": 6.244999999999988,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 133,
+      "outputTokens": 942,
+      "costUsd": 0.0085445,
+      "pronunciationText": "Now the points of inflection. Differentiate again with the product rule, and factorise. Again f of x is positive, so the sign of the second derivative comes from this bracket. It's zero when the quantity x minus mu, squared, equals sigma squared, so at mu plus or minus sigma. Between those points the bracket is negative, so the curve is concave down, like a cap over the peak. Outside them it's concave up, and the tails flatten out. The concavity changes, so these are points of inflection, at one thirty-five and one sixty-five. So one sigma is where the bell changes its bend."
+    },
+    {
+      "id": "scene-05",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-05.wav",
+      "durationInFrames": 852,
+      "worstWordGap": {
+        "seconds": 0.9020000000000934,
+        "after": "three.",
+        "before": "If"
+      },
+      "cues": [
+        {
+          "text": "seven",
+          "start": 9.853999999999989,
+          "end": 10.054833333333322
+        },
+        {
+          "text": "five",
+          "start": 19.257999999999996,
+          "end": 19.537999999999997
+        },
+        {
+          "text": "three",
+          "start": 21.020999999999997,
+          "end": 21.281
+        },
+        {
+          "text": "did",
+          "start": 27.758000000000088,
+          "end": 27.848000000000088
+        }
+      ],
+      "seconds": 28.4,
+      "peakFraction": 0.86358642578125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 1.7140000000000002,
+          "end": 1.7950000000000002,
+          "score": 0.14
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 98,
+      "outputTokens": 710,
+      "costUsd": 0.006439,
+      "pronunciationText": "Back to the question. Ask the calculator for the area from one thirty-five to one sixty-five. It works out the area numerically: zero point six eight two seven. So in the model, about sixty-eight percent of apples land within one sigma. Widen the band to two sigma and it gives zero point nine five four five, and three sigma gives zero point nine nine seven three. If you use a calculator or app in an answer, say that you did."
+    },
+    {
+      "id": "scene-06",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-06.wav",
+      "durationInFrames": 932,
+      "worstWordGap": {
+        "seconds": 1.002000000000109,
+        "after": "change.",
+        "before": "Measured"
+      },
+      "cues": [
+        {
+          "text": "again",
+          "start": 13.285999999999984,
+          "end": 13.537666666666652
+        },
+        {
+          "text": "change",
+          "start": 25.144000000000027,
+          "end": 25.41828571428574
+        },
+        {
+          "text": "curve",
+          "start": 29.355000000000135,
+          "end": 29.656000000000134
+        }
+      ],
+      "seconds": 31.04,
+      "peakFraction": 0.818817138671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 103,
+      "outputTokens": 776,
+      "costUsd": 0.0070355,
+      "pronunciationText": "Is that just these apples? Try last video's chip bags, with mean one seventy-five grams and standard deviation four. From one seventy-one to one seventy-nine, the calculator gives zero point six eight two seven again. Here's why. Changing mu slides the bell along. Changing sigma stretches it sideways and squashes it down by the same factor, so the area between matching marks doesn't change. Measured in sigmas from the mean, every normal curve is the same curve."
+    },
+    {
+      "id": "scene-07",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-07.wav",
+      "durationInFrames": 1055,
+      "worstWordGap": {
+        "seconds": 0.8050000000000708,
+        "after": "on.",
+        "before": "Symmetry"
+      },
+      "cues": [
+        {
+          "text": "three",
+          "start": 14.648000000000001,
+          "end": 14.881333333333334
+        },
+        {
+          "text": "tail",
+          "start": 21.77400000000006,
+          "end": 22.003333333333394
+        },
+        {
+          "text": "side",
+          "start": 23.027285714285792,
+          "end": 23.24500000000008
+        },
+        {
+          "text": "side",
+          "start": 28.054571428571503,
+          "end": 28.238000000000074
+        }
+      ],
+      "seconds": 35.16,
+      "peakFraction": 0.849609375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 114,
+      "outputTokens": 879,
+      "costUsd": 0.007968,
+      "pronunciationText": "That's the empirical rule. For any normal distribution, approximately sixty-eight percent of the data lie within one standard deviation of the mean, approximately ninety-five percent within two, and approximately ninety-nine point seven percent within three. They're approximate, because the calculator gave sixty-eight point two seven, and so on. Symmetry gives the tails. Outside one sigma is thirty-two percent, so sixteen percent in each tail. Outside two sigma, two and a half percent each side. Outside three sigma, zero point one five percent each side."
+    },
+    {
+      "id": "scene-08",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-08.wav",
+      "durationInFrames": 813,
+      "worstWordGap": {
+        "seconds": 0.8250000000000632,
+        "after": "eighty-six?",
+        "before": "That's"
+      },
+      "cues": [
+        {
+          "text": "eight",
+          "start": 0.361,
+          "end": 0.5609999999999999
+        },
+        {
+          "text": "percent",
+          "start": 7.095999999999986,
+          "end": 7.406099999999986
+        },
+        {
+          "text": "six",
+          "start": 8.403999999999986,
+          "end": 8.584999999999987
+        },
+        {
+          "text": "percent",
+          "start": 14.338999999999988,
+          "end": 14.620749999999989
+        }
+      ],
+      "seconds": 27.08,
+      "peakFraction": 0.834228515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "eight.",
+          "start": 6.033,
+          "end": 6.173,
+          "score": 0.38
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 95,
+      "outputTokens": 677,
+      "costUsd": 0.0061405,
+      "pronunciationText": "Heights of Year 12 students are normal, with mean one seventy centimetres and standard deviation eight. What percentage are between one sixty-two and one seventy-eight? That's eight either side, one sigma, so about sixty-eight percent. What percentage are taller than one eighty-six? That's two eights above, so two sigma. Outside two sigma is five percent, and half of that is above, so about two point five percent."
+    },
+    {
+      "id": "scene-09",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-09.wav",
+      "durationInFrames": 1071,
+      "worstWordGap": {
+        "seconds": 0.9690000000000403,
+        "after": "unusual.",
+        "before": "Now"
+      },
+      "cues": [
+        {
+          "text": "unusual",
+          "start": 5.220000000000001,
+          "end": 5.623375000000001
+        },
+        {
+          "text": "below",
+          "start": 25.219000000000083,
+          "end": 25.580000000000084
+        },
+        {
+          "text": "percent",
+          "start": 30.702000000000073,
+          "end": 31.00037500000007
+        },
+        {
+          "text": "thirty",
+          "start": 34.978000000000115,
+          "end": 35.25314285714297
+        }
+      ],
+      "seconds": 35.68,
+      "peakFraction": 0.8397216796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 108,
+      "outputTokens": 892,
+      "costUsd": 0.008082,
+      "pronunciationText": "The rule also helps you judge. Is a student of one ninety-six centimetres unusual? Three sigma above is one ninety-four. Only about zero point one five percent are above that, so even fewer are above one ninety-six. Very unusual. Now the small apples. Apples under one hundred and thirty grams go to juice. One thirty sits between one sigma below and two sigma below. So that tail is between two point five and sixteen percent. For an actual value, we need the area to the left of one thirty."
+    },
+    {
+      "id": "scene-10",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-10.wav",
+      "durationInFrames": 1046,
+      "worstWordGap": {
+        "seconds": 0.9070000000000249,
+        "after": "one.",
+        "before": "At"
+      },
+      "cues": [
+        {
+          "text": "x",
+          "start": 3.834999999999991,
+          "end": 3.9949999999999912
+        },
+        {
+          "text": "shape",
+          "start": 12.43399999999999,
+          "end": 12.668166666666655
+        },
+        {
+          "text": "side",
+          "start": 18.556999999999995,
+          "end": 18.781799999999993
+        },
+        {
+          "text": "highest",
+          "start": 24.07200000000011,
+          "end": 24.40537500000011
+        },
+        {
+          "text": "one",
+          "start": 26.427000000000085,
+          "end": 26.502750000000084
+        },
+        {
+          "text": "two",
+          "start": 31.39800000000011,
+          "end": 31.59300000000011
+        }
+      ],
+      "seconds": 34.84,
+      "peakFraction": 0.854217529296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "an",
+          "start": 11.78999999999999,
+          "end": 11.82999999999999,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 16.368999999999993,
+          "end": 16.388999999999992,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 120,
+      "outputTokens": 872,
+      "costUsd": 0.007908,
+      "pronunciationText": "That's the cumulative distribution function. Capital F of x is the probability that X is at most x, the area to the left of x. Graph it on the calculator, and it draws an S shape. It starts near zero, and at the mean it's exactly a half, because half the area is on each side. Its slope is the density, so it climbs fastest at mu, where the bell is highest. Then it levels off towards one. At one thirty, the calculator reads zero point zero nine one two, so the model says about nine percent go to juice."
+    },
+    {
+      "id": "scene-11",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-11.wav",
+      "durationInFrames": 465,
+      "worstWordGap": {
+        "seconds": 0.8640000000000008,
+        "after": "rule.",
+        "before": "Sixty-eight,"
+      },
+      "cues": [
+        {
+          "text": "halve",
+          "start": 12.658999999999986,
+          "end": 12.938999999999986
+        }
+      ],
+      "seconds": 13.48,
+      "peakFraction": 0.8798828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.261,
+          "end": 0.442,
+          "score": 0.494
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 48,
+      "outputTokens": 337,
+      "costUsd": 0.0030570000000000003,
+      "pronunciationText": "Here's a way to remember the rule. Sixty-eight, ninety-five, ninety-nine point seven, for one, two and three sigma. And for a tail, find what's outside, then halve it."
+    },
+    {
+      "id": "scene-12",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-12.wav",
+      "durationInFrames": 425,
+      "worstWordGap": {
+        "seconds": 0.5890000000000002,
+        "after": "turn.",
+        "before": "Use"
+      },
+      "cues": [],
+      "seconds": 4.16,
+      "peakFraction": 0.80242919921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 14,
+      "outputTokens": 104,
+      "costUsd": 0.0009429999999999999,
+      "pronunciationText": "Your turn. Use the empirical rule. Pause here to answer."
+    },
+    {
+      "id": "scene-13",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-13.wav",
+      "durationInFrames": 816,
+      "worstWordGap": {
+        "seconds": 1.1240000000001196,
+        "after": "percent.",
+        "before": "Thirty-two"
+      },
+      "cues": [
+        {
+          "text": "sigma",
+          "start": 2.728,
+          "end": 3.11
+        },
+        {
+          "text": "percent",
+          "start": 11.803999999999991,
+          "end": 12.08662499999999
+        },
+        {
+          "text": "percent",
+          "start": 18.202999999999985,
+          "end": 18.518874999999987
+        },
+        {
+          "text": "tails",
+          "start": 25.390000000000033,
+          "end": 25.6091666666667
+        }
+      ],
+      "seconds": 26.2,
+      "peakFraction": 0.84234619140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 5.937999999999989,
+          "end": 5.997999999999989,
+          "score": 0
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 83,
+      "outputTokens": 655,
+      "costUsd": 0.0059365,
+      "pronunciationText": "The second number is the variance, so sigma is six. Sixty-eight and ninety-two are twelve either side of eighty, which is two sigma. So that probability is about ninety-five percent. Eighty-six is one sigma above. Outside one sigma is thirty-two percent, and half of that is above, so about sixteen percent. Thirty-two percent is wrong. That counts both tails."
+    },
+    {
+      "id": "scene-14",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-14.wav",
+      "durationInFrames": 459,
+      "worstWordGap": {
+        "seconds": 0.5650000000000002,
+        "after": "one.",
+        "before": "Read"
+      },
+      "cues": [],
+      "seconds": 5.28,
+      "peakFraction": 0.822601318359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 16,
+      "outputTokens": 132,
+      "costUsd": 0.001196,
+      "pronunciationText": "Last one. Read the features from the formula. Pause here to answer."
+    },
+    {
+      "id": "scene-15",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-15.wav",
+      "durationInFrames": 846,
+      "worstWordGap": {
+        "seconds": 0.9020000000000099,
+        "after": "pi.",
+        "before": "The"
+      },
+      "cues": [
+        {
+          "text": "five",
+          "start": 5.619,
+          "end": 5.9190000000000005
+        },
+        {
+          "text": "pi",
+          "start": 14.290999999999984,
+          "end": 14.464333333333318
+        },
+        {
+          "text": "five",
+          "start": 19.217363636363633,
+          "end": 19.428999999999995
+        },
+        {
+          "text": "squared",
+          "start": 25.247000000000067,
+          "end": 25.546250000000065
+        }
+      ],
+      "seconds": 27.2,
+      "peakFraction": 0.839752197265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "or",
+          "start": 21.72100000000009,
+          "end": 21.78200000000009,
+          "score": 0.312
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 85,
+      "outputTokens": 680,
+      "costUsd": 0.0061625,
+      "pronunciationText": "Match it to the general formula. The mean is forty, and the number in front has five where sigma goes, so sigma is five. The global maximum is at x equals forty, with height one over five root two pi. The points of inflection are one sigma either side, at thirty-five and forty-five. Forty plus or minus root fifty is wrong. Fifty is two sigma squared, not sigma squared."
+    },
+    {
+      "id": "scene-16",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-16.wav",
+      "durationInFrames": 809,
+      "worstWordGap": {
+        "seconds": 0.723999999999994,
+        "after": "CDF.",
+        "before": "Next,"
+      },
+      "cues": [
+        {
+          "text": "jetty",
+          "start": 14.559999999999995,
+          "end": 14.810833333333328
+        },
+        {
+          "text": "each",
+          "start": 24.39700000000007,
+          "end": 24.54180000000007
+        }
+      ],
+      "seconds": 24.96,
+      "peakFraction": 0.854888916015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 1,
+      "possibleRetry": false,
+      "inputTokens": 76,
+      "outputTokens": 624,
+      "costUsd": 0.005654,
+      "pronunciationText": "So the calculator shows where the curve peaks and bends, verifies the empirical rule, and graphs the CDF. Next, a new question. A forty-five centimetre snapper is five centimetres above the average snapper off one jetty. A forty centimetre golden perch is four above the average perch in one river. Which catch is more unusual, and how much area lies beyond each?"
+    },
+    {
+      "id": "scene-17",
+      "changed": true,
+      "audio": "public/audio/math-a12-s10/scene-17.wav",
+      "durationInFrames": 1350,
+      "worstWordGap": {
+        "seconds": 0.5830000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "cues": [],
+      "seconds": 3.92,
+      "peakFraction": 0.843017578125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 0.381,
+          "end": 0.502,
+          "score": 0.317
+        }
+      ],
+      "successfulRequestCount": 1,
+      "loggedRequestAttempts": 0,
+      "possibleRetry": false,
+      "inputTokens": 19,
+      "outputTokens": 98,
+      "costUsd": 0.0008914999999999999,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them."
+    }
+  ],
+  "machineChecks": "Text hashes, alignment, request attempts, audio peaks and quiet blocks. Forced alignment and signal checks do not establish complete word recognition or human listening.",
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "canonicalMeasuredPath": "docs/production/claude-pm/lessons/math-a12-s10/measured/lesson.json",
+  "canonicalMeasuredSha256": "092840b6019064acccb194fc259da3524ea1f1060535826964673295974a807d",
+  "captions": {
+    "lessonPath": "docs/production/claude-pm/lessons/math-a12-s10/measured/lesson.json",
+    "lessonSha256": "092840b6019064acccb194fc259da3524ea1f1060535826964673295974a807d",
+    "srtSha256": "0671a39a5856f351e5e583a3115af40a39da1004089c42469e0f1a255dee51b1",
+    "vttSha256": "036fbc1b2983e34fb32c8fd842eac26c7d09eba86853c60f6ad8ea116cd5b2a1",
+    "cueCount": 189,
+    "timeline": {
+      "fps": 30,
+      "durationInFrames": 14968,
+      "scenes": [
+        {
+          "id": "scene-01",
+          "startFrame": 0,
+          "endFrame": 924
+        },
+        {
+          "id": "scene-02",
+          "startFrame": 924,
+          "endFrame": 1908
+        },
+        {
+          "id": "scene-03",
+          "startFrame": 1908,
+          "endFrame": 2898
+        },
+        {
+          "id": "scene-04",
+          "startFrame": 2898,
+          "endFrame": 4029
+        },
+        {
+          "id": "scene-05",
+          "startFrame": 4029,
+          "endFrame": 4881
+        },
+        {
+          "id": "scene-06",
+          "startFrame": 4881,
+          "endFrame": 5813
+        },
+        {
+          "id": "scene-07",
+          "startFrame": 5813,
+          "endFrame": 6868
+        },
+        {
+          "id": "scene-08",
+          "startFrame": 6868,
+          "endFrame": 7681
+        },
+        {
+          "id": "scene-09",
+          "startFrame": 7681,
+          "endFrame": 8752
+        },
+        {
+          "id": "scene-10",
+          "startFrame": 8752,
+          "endFrame": 9798
+        },
+        {
+          "id": "scene-11",
+          "startFrame": 9798,
+          "endFrame": 10263
+        },
+        {
+          "id": "scene-12",
+          "startFrame": 10263,
+          "endFrame": 10688
+        },
+        {
+          "id": "scene-13",
+          "startFrame": 10688,
+          "endFrame": 11504
+        },
+        {
+          "id": "scene-14",
+          "startFrame": 11504,
+          "endFrame": 11963
+        },
+        {
+          "id": "scene-15",
+          "startFrame": 11963,
+          "endFrame": 12809
+        },
+        {
+          "id": "scene-16",
+          "startFrame": 12809,
+          "endFrame": 13618
+        },
+        {
+          "id": "scene-17",
+          "startFrame": 13618,
+          "endFrame": 14968
+        }
+      ]
+    },
+    "status": "exported-locally-playback-review-pending"
+  },
+  "plates": [
+    "public/assets/maths/ma12-apple-v1.png",
+    "public/assets/maths/ma12-apple-crate-v1.png",
+    "public/assets/maths/ma12-graphing-calculator-v1.png"
+  ],
+  "provenance": "docs/production/claude-pm/assets/brief240-manifest.json",
+  "reviews": [
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-s10-redesign-learning-review.md",
+      "result": "0 source blockers for current reviewed source; historical findings retained"
+    },
+    {
+      "path": "docs/production/claude-pm/checks/m-a12-s10-redesign-maths-check.md",
+      "result": "0 source blockers for current reviewed source; historical findings retained"
+    }
+  ],
+  "rootQuestions": [],
+  "canonicalWrites": "Existing complete measured/audio backups verified before updating measured lesson, validation and caption package. Old audio retained.",
+  "speechRequestedByThisHelper": false
+}

@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-s02.md",
+  "sourceSha256": "c39c176ed6720a645aa183e30e833905e34c35833fbd0bc57cf3ddab1dcd9acf",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with this question. Tear one page at random off this desk calendar, and every page has the same chance. But is every date, from the first to the thirty-first, equally likely? Make a guess. Let's flip through a whole year and count the pages for each date. January has every date from one to thirty-one. February stops at twenty-eight. By the end of the year, the dates one to twenty-eight have twelve pages each, the twenty-ninth and thirtieth have eleven, and the thirty-first has only seven. Every page is equally likely, but the date isn't. So when is a distribution uniform, and how do we check?",
+      "audioFile": "public/audio/math-a12-s02/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "A discrete random variable is uniformly distributed if it has finitely many values, all with the same probability. Uniform just means even, like a flat row of bars. And the shared probability isn't a free choice. Say there are n values, each with probability c. They must add to one, so n times c is one, and c is one over n. The page itself is uniform: three hundred and sixty-five pages, each with probability one over three hundred and sixty-five. A fair die has six values, so each is one sixth. A random digit from zero to nine has ten values, so each is one tenth. So when something is chosen with equal chances from a finite list, a uniform model fits.",
+      "audioFile": "public/audio/math-a12-s02/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So why isn't the date uniform? Look behind each bar. The first of the month sits on twelve equally likely pages, one in every month. The thirty-first sits on just seven, because February, April, June, September and November are too short. So P of the first is twelve over three hundred and sixty-five, and P of the thirty-first is only seven over three hundred and sixty-five. Here's the test. Uniform is a property of the random variable, not of the equipment. Ask: does every value come from the same number of equally likely outcomes? For the date, the answer is no.",
+      "audioFile": "public/audio/math-a12-s02/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "The classic case is two fair dice, added. Make one die white and one red, so three then four is a different outcome from four then three. That gives thirty-six outcomes, and with independent fair dice they're all equally likely. If you only list the twenty-one unordered pairs, they aren't equally likely, because a double happens one way and a mixed pair two ways. A sum of twelve needs six and six, just one outcome. A sum of seven runs along this whole diagonal, six outcomes. So seven is six times as likely as twelve. The outcomes are uniform, but the sum is not.",
+      "audioFile": "public/audio/math-a12-s02/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Once a variable really is uniform, every value carries one over n, so any probability is just a count. Count the values you want, and divide by n. For a random digit, P of X at least seven counts seven, eight and nine, so it's three tenths. Be careful counting n. Suppose X is uniform on the whole numbers from five to twenty. Twenty minus five is fifteen, but that misses one. Both ends count, so there are sixteen values. Then P of X greater than sixteen counts seventeen, eighteen, nineteen and twenty, which is four sixteenths, or one quarter.",
+      "audioFile": "public/audio/math-a12-s02/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Two more checks. Say X is uniform on five, ten, fifteen, twenty and twenty-five. P of fifteen is one fifth, because there are five values. It has nothing to do with fifteen being in the middle, or adding up the values. That kind of reasoning would make twenty-five more likely than five, and in a uniform model every value is equally likely. And you can work backwards. If every value has probability zero point zero four, then n is one over zero point zero four, which is twenty-five values. But zero point three can't be the probability of each value, because one over zero point three isn't a whole number. A group of values could still have probability zero point three.",
+      "audioFile": "public/audio/math-a12-s02/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "One last condition: finitely many values. Watch what happens as the number of equal values grows. Six values, twelve, twenty-four, forty-eight. Each bar is one over n, so the bars get shorter and shorter. Now try infinitely many values, all with the same probability. If that probability is zero, the total is zero. If it's anything bigger than zero, the total passes one once there are enough values. Either way it can't be one. That's why a discrete uniform distribution needs finitely many values. Continuous ones come later, and they work differently.",
+      "audioFile": "public/audio/math-a12-s02/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a way to remember the test. Same count behind every bar. Look behind each value of X, and count the equally likely outcomes there. This only works if those outcomes really are equally likely. If every count is the same, X is uniform. The calendar's dates fail this test, and so do the sums of two dice.",
+      "audioFile": "public/audio/math-a12-s02/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. X is uniformly distributed on the even numbers from two to twenty. Find P of X greater than fifteen. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s02/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "The values are two, four, six, up to twenty, which is ten values, so each has probability one tenth. Greater than fifteen means sixteen, eighteen or twenty, three values. So P of X greater than fifteen is three tenths. Three twentieths is wrong. Twenty is the largest value, not the number of values.",
+      "audioFile": "public/audio/math-a12-s02/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. A fair spinner with eight equal sectors, numbered one to eight, is spun once. X is the remainder when the number is divided by three. Is X uniformly distributed? Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s02/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "X can be zero, one or two. Count the sectors behind each value. Remainder zero has two sectors, and remainders one and two have three sectors each. So the probabilities are two eighths, three eighths and three eighths, and X isn't uniform. Saying it's uniform because the spinner is fair is wrong. Fair sectors don't make a fair variable.",
+      "audioFile": "public/audio/math-a12-s02/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So a distribution is uniform when every value has the same count of equally likely outcomes behind it, and then each value has probability one over n. Next, a new question. Here's the fair die again. If these bars were weights on a beam, where would it balance?",
+      "audioFile": "public/audio/math-a12-s02/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-s02/scene-14.wav"
+    }
+  ]
+}

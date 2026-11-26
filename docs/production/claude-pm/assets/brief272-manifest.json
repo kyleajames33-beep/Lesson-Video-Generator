@@ -1,0 +1,112 @@
+{
+  "brief": 272,
+  "date": "2026-11-25",
+  "delivered": [],
+  "rejections": [
+    {
+      "path": "work/brief272/image-attempts/loaf-attempt1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-1034ffee-cdd8-44d5-b7e5-47f191fed8de.png",
+      "sha256": "474a2c21025a50cf61bddc16a8507c75f9d1bf7867519288af403da1d720fb36",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "rejected",
+      "reason": "Photographic appearance and large surrounding orange glow fail the house style and clean alpha silhouette.",
+      "tool": "image_gen.imagegen",
+      "prompt": "Scientific educational painted object asset: one plain bakery sandwich tin loaf, domed golden-brown crust, three-quarter side view, unsliced, no packaging. Long horizontal loaf on flat base to sit on a scale tray, about 1100 x 700 pixels. Fine warm ink and delicate watercolour, natural matte wheat-golden crust with subtle texture, house palette on cream paper but background completely transparent true alpha PNG. A soft very small shadow only directly under flat base. No plate, board, table, bag, price tag, writing, labels, logos, brands, people, hands or faces. Natural proportions, entire loaf visible within transparent margin.",
+      "visualReview": "actual generated image inspected"
+    },
+    {
+      "path": "work/brief272/image-attempts/loaf-attempt2.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-99849c1c-0a98-42fd-be92-31d236cbaa92.png",
+      "sha256": "212a45b5d4ab2b0e157f8ac1488b6473b3da29e6b6e03ac94e9ecd3b5eadc2e8",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "rejected",
+      "reason": "Large orange glow remains outside the bread silhouette.",
+      "tool": "image_gen.imagegen",
+      "prompt": "Create a NEW standalone bread loaf, using the supplied scale only as a STYLE reference. Do not include any scale pixels or objects in the output. One plain unsliced sandwich tin loaf with a domed golden-brown crust, three-quarter side view, flat base to sit on the scale's tray. Fine visible warm ink contour lines and muted watercolour washes on the loaf, matching the illustration style and line weight of the reference scale. This is an illustration, not a photograph. Horizontal approximately1100x700pixels, entire loaf visible with transparent margin. No surrounding glow, ambient brown haze, large soft shadow, packaging, labels, cuts, writing, people, hands or logos. Completely clean transparent alpha silhouette following the bread; at most a tiny dark contact shadow directly under its flat base. No paper rectangle or background.",
+      "visualReview": "actual generated image inspected"
+    },
+    {
+      "path": "work/brief272/image-attempts/loaf-attempt3.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-c75009fc-cf41-48ea-a785-2452e46b870d.png",
+      "sha256": "132c6f0f7d308f6d8f649b2efc5d098aaa8d6ba117d33b3d33df93d987910c33",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "status": "rejected",
+      "reason": "Background-removal edit still retains a large coloured glow outside the bread silhouette.",
+      "tool": "image_gen.imagegen",
+      "prompt": "Precise background-removal edit. Preserve ONLY the solid painted bread loaf in this image. Erase every pixel of the brown/orange glow, haze and shadow surrounding it. There must be NO shadow at all, including below the base, and no new content. Clean alpha silhouette follows the actual bread's ink outline exactly. Outside that contour is fully transparent, not brown or black and not blurred. Keep all interior bread painting, its flat base, pose, shape, proportions and ink contour unchanged. Output genuine transparent PNG. No text or other objects.",
+      "visualReview": "actual generated image inspected"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a211d9-8448-77f0-8bf4-ffbeb0c92050\\exec-68193c33-ed57-4ba9-ade6-b10407cd6265.png",
+      "prompt": "One unsliced plain sandwich tin loaf, three-quarter side view, long horizontal flat base, domed golden wheat crust. Hand drawn educational watercolour illustration with fine warm ink outline and restrained matte washes, generous empty margins. Entire object visible. Exact crisp silhouette with genuine transparent alpha outside bread. NO shadow, NO glow, NO haze, NO tabletop, NO board, NO plate, NO packaging, NO text or numbers, NO people or hands. Subtle scoring on crust allowed. At least 1100x700 canvas, natural proportions. Restrained illustration, not photorealistic.",
+      "path": "public/assets/maths/ms12-bread-loaf-v1.png",
+      "design": "math-s11-d14",
+      "status": "rejected",
+      "reason": "Coloured halo remains outside bread silhouette after actual image inspection.",
+      "sha256": "005c2a8cb49dbb3f64799bf515e79f67572a616fdd4f1739af895b2a9eb4b1a7",
+      "size": [
+        1536,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "qa": "work/brief275/loaf-paper.jpg",
+      "tool": "image_gen.imagegen",
+      "date": "2026-11-26"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a211d9-8448-77f0-8bf4-ffbeb0c92050\\exec-6b788567-cd48-4297-9498-b5d968f096af.png",
+      "prompt": "Precise cutout edit. Retain the bread loaf only, including its ink contour and interior painting. REMOVE the orange brown halo around every side. Outside the loaf silhouette set alpha to ZERO. No shadows or haze anywhere. This is a transparent cutout with a clean hard antialiased edge. Do not repaint the loaf or add anything. The background must be completely transparent immediately beyond the contour, including directly below the flat base.",
+      "path": "public/assets/maths/ms12-bread-loaf-v1.png",
+      "design": "math-s11-d14",
+      "status": "rejected",
+      "reason": "Coloured halo remains outside bread silhouette after actual image inspection.",
+      "sha256": "296b61c7dfb0fb4c853e257712768360a7b27d58444bea06979b30b6f44f592d",
+      "size": [
+        1536,
+        1024
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "qa": "work/brief275/loaf-edit-paper.jpg",
+      "tool": "image_gen.imagegen",
+      "date": "2026-11-26"
+    }
+  ],
+  "leftovers": [
+    {
+      "name": "ms12-bread-loaf-v1.png",
+      "design": "math-s11-d14",
+      "fallback": "Keep the existing question card, as the design authorises, until a suitable plate passes review."
+    }
+  ],
+  "brief275Result": "Two further built-in image attempts inspected and rejected. d14 keeps its authorised question-card fallback."
+}

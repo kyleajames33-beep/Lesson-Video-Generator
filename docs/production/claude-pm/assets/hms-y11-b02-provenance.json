@@ -1,0 +1,138 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+  "assets": [
+    {
+      "name": "hms-arm-muscles-overlay-v1.png",
+      "path": "work/brief264/candidates/hms-arm-muscles-overlay-v1.png",
+      "requestedDestination": "public/assets/hms/hms-arm-muscles-overlay-v1.png",
+      "status": "rejected",
+      "sha256": "b6de3aab1f0f678174821ecb78fe1df705b6c6e84359752297e052b2bb1ed310",
+      "size": [
+        1001,
+        1571
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        277,
+        64,
+        688,
+        992
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+      "sourceBriefSha256": "ab3a5e7202aa097dcb648130ad0e4bdb60b525bdaaa6f2c102ea1928b091186c",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-arm-muscles-overlay-v1-alpha.json",
+      "visualReview": "Rejected: overlay canvas 1001x1571 differs from bone canvas 1001x1572; exact attachment registration is not established. Do not stretch or integrate.",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-fa3b6a31-928a-49b2-b375-bedf20e13e2d.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 1. `hms-arm-muscles-overlay-v1.png` (1400 x 2200, registered pixel for pixel to `hms-arm-bones-v1.png`): the deltoid over the shoulder, the biceps brachii on the front of the upper arm with its tendon to the radius just below the elbow, the triceps brachii on the back with its tendon to the point of the elbow; muscles only (the bones come from the base plate), cut cleanly just above the wrist like the base. No people, hands or faces anywhere in the image. Use the reference strictly as an invisible registration template. Output native 1001 by 1572 pixels, same canvas and same bone landmarks, no recentering, cropping or scaling. Shoulder humeral head around (420,200), elbow around (385,865). Render only deltoid, biceps, triceps and their tendons at their exact attachment sites. Make all bone pixels fully transparent, not repainted. No forearm muscle bellies. Bone base will be composited beneath this overlay.",
+      "generationRecords": "work/brief264/generation-records.jsonl"
+    },
+    {
+      "name": "hms-thigh-quadriceps-v1.png",
+      "path": "public/assets/hms/hms-thigh-quadriceps-v1.png",
+      "requestedDestination": "public/assets/hms/hms-thigh-quadriceps-v1.png",
+      "status": "accepted",
+      "sha256": "f34776b3adca41b2aae411fcca9ea2ff49b2f80cb4aadb7312964dbbf8d65925",
+      "size": [
+        1049,
+        1499
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        265,
+        52,
+        727,
+        1453
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+      "sourceBriefSha256": "ab3a5e7202aa097dcb648130ad0e4bdb60b525bdaaa6f2c102ea1928b091186c",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-thigh-quadriceps-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-896dac72-1c6e-4ca0-91a0-6dccfe664228.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 2. `hms-thigh-quadriceps-v1.png` (1400 x 2000): the front of one thigh, cut cleanly below the hip and just below the knee: the femur faintly behind, the four quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius partly visible) converging on the patella and patellar tendon. Same scale and style as the hamstrings plate. No skin, no people, hands, feet or faces anywhere in the image.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "anatomyUse": "Educational anatomical plate, not a person portrait. Final label placement and narrated animation still need lesson review.",
+      "scope": "HMS Module 1 or Module 2 v01-v08 only"
+    },
+    {
+      "name": "hms-lower-leg-muscles-v1.png",
+      "path": "public/assets/hms/hms-lower-leg-muscles-v1.png",
+      "requestedDestination": "public/assets/hms/hms-lower-leg-muscles-v1.png",
+      "status": "accepted",
+      "sha256": "b78c2828cc5f4a7aad38ea19a9ae5611a7dd42adbe272990427224e30fc33915",
+      "size": [
+        1122,
+        1402
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        289,
+        41,
+        769,
+        1362
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+      "sourceBriefSha256": "ab3a5e7202aa097dcb648130ad0e4bdb60b525bdaaa6f2c102ea1928b091186c",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-lower-leg-muscles-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-17d49879-0539-48ab-8a90-337a4a579daa.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 3. `hms-lower-leg-muscles-v1.png` (1600 x 2000): one lower leg in a three-quarter view, cut cleanly below the knee and just above the ankle joint: the gastrocnemius and the soleus beneath it on the back, joining the Achilles tendon (which ends at the cut), and tibialis anterior on the front beside the tibia. No foot, no skin, no people, hands or faces anywhere in the image.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "anatomyUse": "Educational anatomical plate, not a person portrait. Final label placement and narrated animation still need lesson review.",
+      "scope": "HMS Module 1 or Module 2 v01-v08 only"
+    },
+    {
+      "name": "hms-fibre-cross-section-v1.png",
+      "path": "public/assets/hms/hms-fibre-cross-section-v1.png",
+      "requestedDestination": "public/assets/hms/hms-fibre-cross-section-v1.png",
+      "status": "accepted",
+      "sha256": "87db6ab753701b7906cab9d9cb9d3908995fa217b33931540e7a6ee2fc059557",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        51,
+        57,
+        1196,
+        1210
+      ],
+      "sourceBrief": "docs/production/claude-pm/lessons/hms-y11-m2-v02.md",
+      "sourceBriefSha256": "ab3a5e7202aa097dcb648130ad0e4bdb60b525bdaaa6f2c102ea1928b091186c",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/hms-fibre-cross-section-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-2062460e-1168-4050-a5ee-7fd3260c1712.png",
+      "prompt": "Create ONE educational illustration, a separate cutout asset. Fine charcoal ink contours with restrained layered watercolour and realistic object/anatomy proportions. Match an editorial natural-history teaching collection. TRUE transparent alpha outside the object, no painted paper rectangle, no checkerboard. Keep roughly 12% clear transparent margins on every side. No people, human hands, human faces, brands or labels. Include text, numbers or arrows only if the individual asset brief explicitly requires them. Animal heads are essential where appropriate. Preserve the requested view and approximate aspect ratio. No cast shadow or floor unless explicitly requested. ASSET BRIEF: 4. `hms-fibre-cross-section-v1.png` (1600 x 1600): a circular field of a stained muscle cross-section as seen down a microscope, polygonal fibres packed together, roughly half darker red (slow twitch) and half paler rose (fast twitch) in a mosaic, thin pale connective tissue between them, a few small capillary dots around the darker fibres. No text, no people, hands or faces anywhere in the image.\n\nHand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b02-provenance.json`.",
+      "generationRecords": "work/brief264/generation-records.jsonl",
+      "anatomyUse": "Educational anatomical plate, not a person portrait. Final label placement and narrated animation still need lesson review.",
+      "scope": "HMS Module 1 or Module 2 v01-v08 only"
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

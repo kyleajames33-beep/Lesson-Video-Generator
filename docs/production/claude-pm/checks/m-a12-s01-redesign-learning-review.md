@@ -10,3 +10,10 @@ Mechanical inventory reports 5,792 narration characters in 14 scenes, no em dash
 
 
 Source follow-up,11November: Current lesson05 Problem3 all four steps revealed and checked:0.19versus1/6, about0.023difference, insufficient evidence conclusion. Previous unconfirmed-Problem3 reservation is superseded. See work/brief240/source-followups-nov11.md. Existing findings retained.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `0cc46cf0672dc50810e72d47af7e7da939fd849a5102c693b39d154ca0fd4e75`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Unrounded frequencies sum exactly1 by exhaustive mutuallyexclusive counts;roundedsums may differ. Maximum-face discrepancy comparison nowexplicit illustration,not formal preselected-face test. General models no longer require equallylikely outcomes. Original200rolls/38fours sourcechecks retained;predesigned seededruns remain illustrative.
+
+Independent recount:5964characters/14scene strings,noem dashes. Changed narration andauthor repairnotes comparedwith priorfullreview;unchanged calculations/live-sourcechecksretained. Current stringsinwork/brief240/root68-source-audit/s01.json. Nativeartmeasurements/guide deviationsretainedforbuilderfitting underdecision30;root68readytovoice. No paid speechorfinishedtake repeatedbythisreview. Measuredtiming,actualmotionandhumanlisteningremainseparategates.

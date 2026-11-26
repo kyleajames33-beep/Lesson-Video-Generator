@@ -1,0 +1,158 @@
+{
+  "id": "phys-y12-m6-v10",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "7ded033e6c394608f0e0511c93f35b1e0dbcfc69bd1ea2542e2fa38db6975d01",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (move the magnet)",
+      "voiceover": {
+        "text": "Here's a coil connected to a galvanometer, a sensitive meter whose needle can swing either way from zero. A bar magnet sits still beside the coil, and the needle reads zero. Now think about pushing the magnet into the coil. Which swings the needle further, a slow push or a fast one? Make your prediction. A slow push gives a small swing. When the magnet stops inside the coil, the needle drops back to zero. A fast push gives a much bigger swing. And pulling it out swings the needle the other way. So the needle only moves while something is changing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "changing-flux",
+      "title": "changing flux, induced emf",
+      "voiceover": {
+        "text": "Here's what's going on. As the magnet comes closer, more of its field passes through the coil, so the flux through the coil changes. A changing flux pushes charges around the coil. That push is called an induced emf, short for electromotive force. Despite the name, it isn't a force. It's the energy given to each coulomb of charge that goes around, measured in volts, just like a voltage. Because the circuit is closed, the emf drives a current, and the needle swings. When the magnet stops, the flux stops changing, so the emf drops to zero, even though plenty of flux still passes through the coil."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flux-linkage",
+      "title": "more turns: flux linkage",
+      "voiceover": {
+        "text": "Now give the coil twice as many turns. The same magnet, pushed at the same speed, gives twice the emf. Each turn has the same flux through it, and each turn adds its own emf, like cells joined in series. So what really matters is the flux through one turn, times the number of turns. That's called the flux linkage, N times phi. Flux is what passes through one turn. Flux linkage counts it for every turn."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "faraday-law",
+      "title": "Faraday's law",
+      "voiceover": {
+        "text": "Put those ideas together, and you get Faraday's law. The induced emf is minus N, times the change in flux, divided by the time the change takes. Epsilon equals minus N delta phi over delta t. A bigger change, more turns, or a shorter time, all give a bigger emf. The minus sign tells us which way the emf pushes, and that's next video's job. And one weber per second is one volt."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "graph",
+      "title": "a graph: steepness, not height",
+      "voiceover": {
+        "text": "A graph shows this clearly. Here's the flux linkage in a coil over time. It rises steadily to zero point zero six zero webers in zero point zero two zero seconds. That's a gradient of three point zero webers per second, so the emf is three point zero volts. Then it stays flat for a while. A flat line has zero gradient, so the emf is zero, even though the linkage is large. Finally it falls by zero point zero eight zero webers in just zero point zero one zero seconds. That's steeper, so the emf is bigger, eight point zero volts, and in the opposite direction. The emf is set by how steep the graph is, not by how high it is."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-example",
+      "title": "a worked example",
+      "voiceover": {
+        "text": "Here's a calculation. A coil of two hundred turns, with an area of five point zero times ten to the minus three square metres, sits at right angles to a field of zero point four zero tesla. First, the flux through each turn is B A, two point zero times ten to the minus three webers. Now the field is reduced to zero in zero point two zero seconds, so the change in flux is minus two point zero times ten to the minus three webers. The emf is minus two hundred, times that change, over zero point two zero. That's two point zero volts. Make the same change ten times faster, in zero point zero two zero seconds, and the emf is ten times bigger, twenty volts."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "sliding-rod",
+      "title": "a sliding rod",
+      "voiceover": {
+        "text": "A magnet isn't the only way. Here's a metal rod sliding along two rails, in a field going into the screen. The rod and the rails make a closed loop. As the rod slides, the loop gets bigger, so the flux through it grows. Say the field is zero point five zero tesla, the rod is twenty centimetres long, and it slides at two point zero metres per second. Every second, it sweeps out zero point two zero times two point zero, which is zero point four zero square metres. So the flux grows by zero point five zero times zero point four zero, zero point two zero webers every second. That's an emf of zero point two zero volts. Stop the rod, and the emf vanishes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "what-changes",
+      "title": "so what creates an emf?",
+      "voiceover": {
+        "text": "So here's the answer. An emf is induced whenever the flux linkage of a circuit changes. Move a magnet or a coil, so the field through it changes. Change the current in a nearby electromagnet. Change the area, like the sliding rod. Or turn the coil, which changes the angle. No change, no emf, however strong the field. And remember, the emf is there even if the circuit is broken. A current only flows when the circuit is closed. Here's a way to remember it. No change, no emf. Faster change, bigger emf."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A coil of fifty turns sits in a magnetic field. The flux through each turn rises from two point zero times ten to the minus three webers to six point zero times ten to the minus three webers in zero point one zero seconds, and then stays at that value. Calculate the average emf while the flux is rising, and state the emf after it stops changing. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The change in flux is four point zero times ten to the minus three webers. Times fifty turns, over zero point one zero seconds, gives two point zero volts. Once the flux is constant, there's no change, so the emf is zero, even though the flux is large. The classic slip is using the final flux instead of the change, which gives three point zero volts. Faraday's law needs the change."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A metal rod twenty-five centimetres long slides at four point zero metres per second along two parallel rails, in a uniform magnetic field of zero point three zero tesla at right angles to the rails. Calculate the emf induced in the circuit, and state the emf after the rod stops. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Each second, the rod sweeps out zero point two five times four point zero, one point zero square metre. So the flux changes by zero point three zero webers every second, and the emf is zero point three zero volts. Once the rod stops, the area stops changing, so the emf is zero. The slip is thinking the emf stays because the field is still there. A field alone does nothing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a changing flux makes an emf, and in a closed circuit, a current. But which way does that current flow? Push the north pole in, and the current could go round the coil one way, or the other way. One of those choices would break the law of conservation of energy. Which one?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

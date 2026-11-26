@@ -1,0 +1,53 @@
+{
+  "brief": 271,
+  "date": "2026-11-25",
+  "delivered": [
+    {
+      "path": "public/assets/maths/ms11-desk-globe-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-4ace6b0f-4a28-41b3-bfe7-437a22c0c71a.png",
+      "sha256": "5330f878aefa48c120d9a0d977de7ea4ea4d2e92e456401e00bea9a0afd09123",
+      "size": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "status": "accepted",
+      "reason": "Whole object visible, recognisable Australia and western Pacific, clean display silhouette on paper and black.",
+      "tool": "image_gen.imagegen",
+      "prompt": "Edit this globe plate only to correct framing and silhouette. Keep the recognisable Australia/western Pacific geographic view, timber stand and fine ink watercolour style. Uniformly reduce the ENTIRE object to fit within a portrait canvas, at least 1600 pixels tall, with a generous 12 percent completely transparent empty margin on EVERY side, including above the top axis finial and below the wooden base. The whole axis finial, full circular globe silhouette, meridian arc and pedestal must be intact and uncut. Do not stretch or crop. Clean alpha edge, no loose paper flecks, fringes, outside glow or drop shadow. No people, text, grid, logos, countries' internal borders or labels. Genuine transparent PNG.",
+      "visualReview": "actual generated image inspected",
+      "uses": [
+        "math-s11-t03",
+        "math-s11-t04"
+      ],
+      "qa": "work/brief271/qa/globe-paper-black.jpg"
+    }
+  ],
+  "rejections": [
+    {
+      "path": "work/brief271/image-attempts/globe-attempt1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a20f26-9336-7500-9a5e-dc2abaaab590\\exec-f5e97199-04c0-4d19-976c-560a86c5f005.png",
+      "sha256": "0288046fdab3a59173ff270c40ca69fa68726a0f369b78d2cb28f2038b06f194",
+      "size": [
+        1086,
+        1448
+      ],
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "status": "rejected",
+      "reason": "Top axis finial is clipped.",
+      "tool": "image_gen.imagegen",
+      "prompt": "Scientific educational painted asset. New classroom desk globe, three-quarter portrait composition about 3:4, on a simple timber stand with tilted half-meridian arc. Australia and western Pacific centred, geographically recognisable Australia, Tasmania, New Guinea, New Zealand, Asian coastline at top left. Globe fills 70 percent of overall height. Soft blue oceans, muted green and tan land, fine warm ink with delicate house watercolour. Even soft lighting, no strong shading, no printed grid lines, names, country borders, labels, text, logos, brands, people, hands or faces. Globe geographically accurate, no invented continents. Fully transparent PNG with true alpha, clean silhouette, no paper rectangle. At least 1400 pixels tall. Object isolated with transparent safety margin on all sides, never stretched.",
+      "visualReview": "actual generated image inspected"
+    }
+  ],
+  "leftovers": [],
+  "existingAssets": "All other named plates were already present at source inventory. This manifest does not claim a fresh visual review of every inherited asset."
+}

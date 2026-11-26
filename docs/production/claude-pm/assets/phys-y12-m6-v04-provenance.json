@@ -1,0 +1,29 @@
+{
+  "design": "phys-y12-m6-v04",
+  "sourceSHA256": "4cdeceb5b80bd225cd6878708bf71751db72c39c506aaaecd563954334035eca",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v04",
+      "reference": "public/assets/physics/phys-y11-earth-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-earth-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    },
+    {
+      "design": "phys-y12-m6-v04",
+      "reference": "public/assets/physics/phys-y11-sun-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sun-v1.png"
+      ],
+      "exists": true,
+      "held": false
+    }
+  ],
+  "newAssets": [],
+  "heldCRT": null,
+  "reuseCheckEvidence": "work/brief189/reuse-checks.json",
+  "qa": "docs/production/claude-pm/assets/brief189-qa",
+  "status": "source findings, scene integration, exact voiced preview and listening remain open"
+}

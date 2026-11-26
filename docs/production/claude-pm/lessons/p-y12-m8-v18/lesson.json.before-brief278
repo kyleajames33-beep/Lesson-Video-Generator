@@ -1,0 +1,208 @@
+{
+  "id": "phys-y12-m8-v18",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "f38b2b28188268593f802acdd7a9dd4a34934e9a33b9d0954051add302a22b9e",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (what do the spare neutrons do?)",
+      "voiceover": {
+        "text": "When a slow neutron hits a uranium two thirty-five nucleus, the products have less mass, so energy is released. Here's what's strange about it. One neutron goes in, and two or three neutrons come out. So what happens to those spare neutrons? Make your prediction. They can split more uranium nuclei, if they're slow enough and they hit one. So why can one fission event trigger a controlled or uncontrolled chain?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "fission-event",
+      "title": "one fission event",
+      "voiceover": {
+        "text": "First, one event. A uranium two thirty-five nucleus absorbs a slow neutron and becomes uranium two thirty-six, with so much extra energy that it wobbles and splits in two. This is fission, a heavy nucleus splitting into two mid-sized nuclei, called fission fragments. A typical split gives barium one forty-one, krypton ninety-two, and three neutrons. Check the balance. Nucleons, two hundred and thirty-six on each side. Charge, ninety-two on each side."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-source",
+      "title": "why energy comes out",
+      "voiceover": {
+        "text": "Why does it release energy? Look at the binding energy curve. Uranium two thirty-five sits on the heavy side, at about seven point six MeV per nucleon. The fragments sit nearer the peak, at about eight point three and eight point five. So the fragments are more tightly bound than the uranium was, and that means they have less mass. The missing mass leaves as energy."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-energy",
+      "title": "how much energy?",
+      "voiceover": {
+        "text": "Now the number. Use atomic masses, as last time. The electrons balance, ninety-two on each side. Before the split, the neutron and the uranium have a mass of two hundred and thirty-six point zero five two six u. After, the fragments and three neutrons have two hundred and thirty-five point eight six six six. The difference is zero point one eight six zero u. Times nine hundred and thirty-one point five gives about one hundred and seventy-three MeV, from one nucleus."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-destination",
+      "title": "where the energy goes",
+      "voiceover": {
+        "text": "Most of that energy is kinetic energy of the two fragments, flying apart. They crash into the surrounding atoms, and the material heats up. The fragments are radioactive too, and their later decays add more, so one fission releases about two hundred MeV in total. Burning one molecule of methane releases about nine electron volts. So one fission gives about twenty million times more."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "chain",
+      "title": "one becomes many",
+      "voiceover": {
+        "text": "Now the chain. Each fission frees two or three neutrons, and each of those can trigger another fission. A chain reaction is neutrons from one fission causing more fissions. Say each fission triggers two more. One fission, then two, then four, then eight. Each round is called a generation. After ten generations, that's over a thousand fissions at once."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "multiplication-factor",
+      "title": "the number that decides",
+      "voiceover": {
+        "text": "But not every neutron causes a fission. What decides everything is one number, k, the average number of neutrons from each fission that go on to cause another fission. If k is less than one, each generation is smaller, and the chain dies away. If k is exactly one, each fission leads to one more on average, and the rate stays steady. That's called critical. If k is more than one, the chain grows every generation. That's called supercritical."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "neutron-losses",
+      "title": "where neutrons go",
+      "voiceover": {
+        "text": "So where do the other neutrons go? Some escape through the surface. Some are absorbed by nuclei that don't split, like uranium two thirty-eight. Only the rest cause fission. In a small lump, a lot of the neutrons are near the surface, so too many escape, and k stays below one. The least mass that can keep a chain going is called the critical mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "moderator",
+      "title": "slowing them down",
+      "voiceover": {
+        "text": "There's another problem. Fission neutrons are fast, and uranium two thirty-five rarely captures a fast neutron. It captures slow ones far more easily. So a reactor uses a moderator, a material that slows neutrons down. Water works well, because its hydrogen nuclei are protons, about the same mass as a neutron. Remember Year eleven collisions. When equal masses meet head on, the moving one can stop dead, handing over its energy. After about eighteen collisions, a neutron is slow."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "control-rods",
+      "title": "holding k at one",
+      "voiceover": {
+        "text": "Then, how do you keep it steady? With control rods, made of materials like boron or cadmium that absorb neutrons. Push the rods further in, and they absorb more neutrons, so k falls. Pull them out, and k rises. Operators move the rods to hold k at exactly one, so the reactor runs at a steady rate, and its heat is removed continuously."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "uncontrolled",
+      "title": "uncontrolled",
+      "voiceover": {
+        "text": "Now take the control away. If k is well above one and nothing absorbs the spare neutrons, the number of fissions multiplies every generation. In a fast lump with no moderator, each generation takes far less than a millionth of a second, so the energy of a huge number of nuclei comes out in a fraction of a second. That unchecked growth is how a nuclear weapon makes its explosion."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "opal",
+      "title": "a reactor near Sydney",
+      "voiceover": {
+        "text": "Australia has one controlled reactor running right now, OPAL, at Lucas Heights in Sydney. Its core sits at the bottom of a pool of water about thirteen metres deep, and that water is its moderator. Five hafnium control rods hold its chain steady at twenty megawatts. OPAL doesn't make electricity. Its neutrons make medical isotopes for hospital scans."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the controlled chain. Slow them, catch the spares, keep k at one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A uranium two thirty-five nucleus absorbs a neutron and splits into xenon one forty, strontium ninety-four and some neutrons. Find the number of neutrons released, then calculate the energy released, in MeV. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Nucleons, two hundred and thirty-six on the left, and one forty plus ninety-four is two thirty-four, so two neutrons. Reactants, two hundred and thirty-six point zero five two six u. Products, two hundred and thirty-five point eight five four three u. The difference is zero point one nine eight three u, about one hundred and eighty-five MeV. The slip is leaving out the product neutrons, which gives an impossible answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Explain how a nuclear reactor keeps its fission chain reaction steady. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Each fission frees two or three neutrons, and the chain is steady when, on average, exactly one of them causes another fission, so k equals one. The moderator slows the fast neutrons, so uranium two thirty-five can capture them. The control rods absorb spare neutrons, and moving them in or out holds k at one. The slip is saying control rods slow the neutrons. That's the moderator's job."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-v19",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So fission releases energy by climbing the binding energy curve from the heavy side. The other side of the curve climbs too. Joining light nuclei, like hydrogen into helium, climbs even more steeply. But light nuclei are positive, and they push each other away. So why can fusion release energy despite repulsion between nuclei?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

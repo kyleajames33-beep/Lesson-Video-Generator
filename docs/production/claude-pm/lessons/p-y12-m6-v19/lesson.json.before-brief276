@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m6-v19",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "c7d60814c9c90dfc62a5378dd182fc8dbbe910e02ee5f4e9e6f7dfa3423a8105",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (it never catches up)",
+      "voiceover": {
+        "text": "Here's that arrangement. The field turns, and the rotor follows it round, even though nothing is connected to the rotor. Many desk fans run on a motor like this. Now watch the speeds. On a fifty hertz supply, this motor's field turns at fifteen hundred revolutions per minute. The rotor turns at about fourteen twenty five. It never catches up. Is that just friction slowing it, or does the rotor need to lag to be pushed at all? Make your prediction. It needs the lag. The rotor only gets a push while it lags, and it always needs some push, to overcome friction and turn its load."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "rotating-field",
+      "title": "a field that turns",
+      "voiceover": {
+        "text": "First, how can a field turn when nothing moves? The fixed outer part of the motor is called the stator. It has coils spaced round the rotor. Each coil carries an alternating current, but the currents are out of step, so they peak one after another. One coil alone would just make a field that grows, shrinks and reverses in place. But with the coils peaking in turn, the strongest field moves round the ring. It's like lights on a sign that chase round a circle. Each bulb only blinks on and off, but the bright spot travels. So the field's direction turns steadily, at a speed set by the supply frequency."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cage-rotor",
+      "title": "a rotor connected to nothing",
+      "voiceover": {
+        "text": "The turning part, the rotor, is often a squirrel cage. It's a ring of metal bars, joined at both ends by metal rings. No wires, no brushes, no connection to the supply. But every pair of bars, with the end rings, makes a closed loop. And a closed loop is exactly what induction needs."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "induced-currents",
+      "title": "the field sweeps past the bars",
+      "voiceover": {
+        "text": "Now let the field turn while the rotor is still at rest. The field sweeps past the bars, so the flux through each loop of the cage keeps changing. By Faraday's law, that induces an emf in each loop. The bars are thick metal with very little resistance, so large currents flow. These are induced currents. Nothing supplies them directly. They're made by the field moving past the rotor."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "drag-along",
+      "title": "the force drags the rotor along",
+      "voiceover": {
+        "text": "Each current carrying bar sits in the stator's field, so it feels a force, the motor effect. Which way? Lenz's law tells you. The induced currents oppose the change that caused them, and the change here is the field sliding past the rotor. To reduce that sliding, the forces drag the rotor along with the field. So the rotor turns in the same direction as the field, chasing it. Remember, going away, it pulls back. The field's poles move away, and the bars are pulled after them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-lag",
+      "title": "why it can't catch up",
+      "voiceover": {
+        "text": "So why can't a working motor catch up? Imagine it did, turning at exactly the field's speed. Then, seen from the rotor, the field would be standing still. The flux through each loop would stop changing. No changing flux, no emf, no current, and no force. With no turning force, friction and the load slow the rotor down. As soon as it falls behind, the field is sliding past again, currents flow again, and the force returns. So the rotor settles a little slower than the field, just slow enough for the force to match the load. This lag is called slip. It isn't a fault. It's what makes the motor work."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "heavier-load",
+      "title": "a heavier load",
+      "voiceover": {
+        "text": "What happens with a heavier load? The rotor slows a little more, so the slip grows. The field now sweeps past the bars faster, so the flux changes faster, the induced emf is bigger, and the rotor current is bigger. So the force grows, until the torque matches the new load at a slightly lower speed. It doesn't go back to its old speed. It needs the extra slip to keep the extra torque."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "typical-numbers",
+      "title": "typical numbers (beyond the syllabus)",
+      "voiceover": {
+        "text": "Here are typical numbers, a little beyond what exams usually ask. Our motor has four poles, so on a fifty hertz supply its field turns at fifteen hundred revolutions per minute. That's called the synchronous speed. If the rotor turns at fourteen twenty five, the slip is seventy five revolutions per minute. As a fraction of the field's speed, that's seventy five over fifteen hundred, five percent. A few percent is typical for a loaded motor."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "sailing-picture",
+      "title": "a way to picture slip",
+      "voiceover": {
+        "text": "Here's a way to picture slip. Think of a sailing boat going straight downwind. The wind pushes the sail only while the boat is slower than the wind. If the boat ever matched the wind's speed, the air around the sail would be still, and the push would vanish. So the boat always sails a little slower than the wind. The rotor is the boat, and the turning field is the wind."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "versus-dc",
+      "title": "versus the DC motor",
+      "voiceover": {
+        "text": "Compare this with the DC motor. Both turn because currents in a field feel forces. But in the DC motor, the current is fed into the coil through brushes, and a split ring reverses it every half turn. In the induction motor, the current is induced, and the field itself turns. So there are no brushes, no split ring and no sparks to wear things out. That's why induction motors run fans, pumps and washing machines for years with little maintenance. The price is slip. A DC motor's rotor doesn't need to lag behind anything."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Explain why the rotor of an AC induction motor that's driving a load can never rotate at the same speed as the stator's rotating magnetic field. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "If the rotor matched the field's speed, there'd be no relative motion between them. The flux through the rotor's loops wouldn't change, so no emf would be induced, no current would flow, and there'd be no torque. The load and friction would slow the rotor until the slip, and the torque, returned. The classic slip is saying friction causes the lag. Friction only explains why the rotor needs a push. The lag is what makes the push, and at the field's speed there'd be no push at all."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. An induction motor runs at a steady speed. The load on it is increased. Explain what happens to the rotor's speed, the slip, and the current induced in the rotor. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The heavier load slows the rotor, so the slip increases. The field sweeps past the bars faster, so the flux changes faster, inducing a bigger emf and a bigger rotor current. That gives a bigger torque, and the rotor settles at a lower speed, with more slip. The slip here is saying the rotor speeds back up to its old speed. It can't. It needs the extra slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the rotor must lag, because only a field sliding past it induces the currents that push it. In the motor, the field moves and drags the metal along. Now flip it round. Hold the magnet still, and move the metal through the field instead. Here's a copper plate swinging between the poles of a magnet. It's the same relative motion, so the same kind of currents are induced. And they still oppose the relative motion, so now they drag the moving metal back. A brake, with no contact at all. How does it work?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

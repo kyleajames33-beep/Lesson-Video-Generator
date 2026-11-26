@@ -1,0 +1,202 @@
+{
+  "brief": 235,
+  "design": "math-a12-d08",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-country-road-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-d7b7a5a8-a4ec-4252-ac0f-a741212e48eb.png",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "sha256": "5a9e938c127f65d2f3e81b056bfd167cf4ed1ab584f0c083fd57e63058ecb579",
+      "alphaBox": [
+        0,
+        179,
+        2172,
+        514
+      ],
+      "visibleAlphaBoxThreshold8": [
+        0,
+        180,
+        2172,
+        514
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "roadBandSamples": [
+          {
+            "x": 0,
+            "greyBandStart": 425,
+            "greyBandEnd": 466
+          },
+          {
+            "x": 10,
+            "greyBandStart": 425,
+            "greyBandEnd": 467
+          },
+          {
+            "x": 100,
+            "greyBandStart": 384,
+            "greyBandEnd": 466
+          },
+          {
+            "x": 1086,
+            "greyBandStart": 425,
+            "greyBandEnd": 466
+          },
+          {
+            "x": 2071,
+            "greyBandStart": 425,
+            "greyBandEnd": 466
+          },
+          {
+            "x": 2161,
+            "greyBandStart": 384,
+            "greyBandEnd": 466
+          },
+          {
+            "x": 2171,
+            "greyBandStart": 384,
+            "greyBandEnd": 466
+          }
+        ],
+        "roadTopCommonSolidRow": 384,
+        "tileEdgesPixelIdentical": true,
+        "dashPeriodPixels": 108.6,
+        "dashCountPerTile": 20,
+        "dashPhasePixels": 27.15,
+        "dashRunsAtRow422": [
+          [
+            0,
+            26
+          ],
+          [
+            81,
+            135
+          ],
+          [
+            190,
+            243
+          ],
+          [
+            299,
+            352
+          ],
+          [
+            407,
+            461
+          ],
+          [
+            516,
+            569
+          ],
+          [
+            624,
+            678
+          ],
+          [
+            733,
+            786
+          ],
+          [
+            842,
+            895
+          ],
+          [
+            950,
+            1004
+          ],
+          [
+            1059,
+            1112
+          ],
+          [
+            1167,
+            1221
+          ],
+          [
+            1276,
+            1329
+          ],
+          [
+            1385,
+            1438
+          ],
+          [
+            1493,
+            1547
+          ],
+          [
+            1602,
+            1655
+          ],
+          [
+            1710,
+            1764
+          ],
+          [
+            1819,
+            1872
+          ],
+          [
+            1928,
+            1981
+          ],
+          [
+            2036,
+            2090
+          ],
+          [
+            2145,
+            2171
+          ]
+        ]
+      },
+      "resampled": false,
+      "generationGuide": "work/brief235/road-tile-guide.png",
+      "generatorNativeSize": [
+        2172,
+        724
+      ],
+      "localFinishing": {
+        "original": "work\\brief235\\native-before-finishing\\ma12-country-road-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "96-column cosine edge-colour correction to identical endpoint RGBA",
+          "Vertical padding; no side padding because road must continue across tile boundary",
+          "Restored20 equal periodic centre-line dashes after edge blend; seam is inside a dash, with equal endpoint RGBA"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    }
+  ],
+  "state": "delivered-full-width-tile-margin-exception-reported",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "tileCheck": {
+    "leftRightRgbaPixelIdentical": true,
+    "dashCountPerTile": 20,
+    "seamDetail": "work/brief235/road-finished-seam-detail.jpg",
+    "twoCopyBoards": "final-qa/d08-two-tiles-1200.jpg and -2400.jpg"
+  },
+  "openChecks": [
+    "Full-width tiling leaves no clear side margin; vertical margins pass. Literal8percent side margin conflicts with a continuous full-width road."
+  ]
+}

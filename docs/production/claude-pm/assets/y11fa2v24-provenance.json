@@ -1,0 +1,132 @@
+[
+  {
+    "file": "public/assets/biology/m8-dialyser-cutaway-v1.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      200,
+      625,
+      1800,
+      1375
+    ],
+    "clearMarginFractionAbove1": [
+      0.1,
+      0.3125,
+      0.1,
+      0.3125
+    ],
+    "evidence": [
+      "work/brief242/m8-dialyser-cutaway-v1-native-paper.jpg",
+      "work/brief242/m8-dialyser-cutaway-v1-native-dark.jpg"
+    ],
+    "id": "m8-dialyser-cutaway-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "a64b9eaa4d275d7b66fb7eb689a946588f63a3355f1bfe791e7d64985ac1932a",
+    "qa": {
+      "result": "Native QA with qualifications",
+      "observations": [
+        "Clean native cream/dark,10%margin,red blood fibres/axial ports and teal outer fluid/lower ports. Handoff only.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m8-dialyser-cutaway-v1-native-paper.jpg",
+        "work/brief242/m8-dialyser-cutaway-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "file": "public/assets/biology/m8-urine-sample-pale-v1.png",
+    "nativeSize": [
+      2000,
+      2000
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAbove1": [
+      221,
+      353,
+      1780,
+      1646
+    ],
+    "clearMarginFractionAbove1": [
+      0.1105,
+      0.1765,
+      0.11,
+      0.177
+    ],
+    "evidence": [
+      "work/brief242/m8-urine-sample-pale-v1-native-paper.jpg",
+      "work/brief242/m8-urine-sample-pale-v1-native-dark.jpg"
+    ],
+    "id": "m8-urine-sample-pale-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "7164c7f75a9d7486c25d0f86456cfe662beaf1dbb06390e35d76adba77bbc030",
+    "qa": {
+      "result": "Native QA with qualifications",
+      "observations": [
+        "Clean native cream/dark,11%margin. Broad scale/angle matches amber cup, exact rim/lid texture not registered. No measured amount from fill.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/m8-urine-sample-pale-v1-native-paper.jpg",
+        "work/brief242/m8-urine-sample-pale-v1-native-dark.jpg"
+      ]
+    }
+  },
+  {
+    "id": "y11-magnet-string-v2-brief242-native-qa",
+    "brief": 242,
+    "file": "public/assets/biology/y11-magnet-string-v2.png",
+    "sha256": "b4068e64b8776c18379966e57ac603857682de313f1cabc3e7d1b45507c6dd7d",
+    "nativeSize": [
+      887,
+      1774
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "alphaAny": [
+      95,
+      226,
+      793,
+      1540
+    ],
+    "alphaAbove1": [
+      95,
+      227,
+      792,
+      1223
+    ],
+    "lessons": "v24",
+    "qa": {
+      "result": "pass",
+      "observations": [
+        "Clean alpha on cream. String and red/slate bar have clear dark edges. Use v2, preserving v1.",
+        "No people, faces, printed labels, numbers or scales. Native aspect preserved."
+      ],
+      "method": "Native-resolution paper and dark composites inspected in memory. No artwork pixels changed.",
+      "backgrounds": {
+        "paper": [
+          247,
+          242,
+          230
+        ],
+        "dark": [
+          20,
+          27,
+          38
+        ]
+      }
+    },
+    "limitation": "Static plate check only. Scene placement, added labels, motion and question use still need build review."
+  }
+]

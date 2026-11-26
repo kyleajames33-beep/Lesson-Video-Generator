@@ -1,0 +1,226 @@
+{
+  "brief": 251,
+  "state": "All nine native plates installed after static QA. Verify overlays and joins in built preview.",
+  "assets": [
+    {
+      "lesson": "a01",
+      "name": "ms12-driving-school-car-v1.png",
+      "path": "public/assets/maths/ms12-driving-school-car-v1.png",
+      "source": "work/brief251/driving-school-car-candidate.png",
+      "sha256": "ae06376f96eda07ad8404cf506484578ca535b50d917bd0c3bd531f76b44a565",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Right-facing green car, blank roof panel and yellow rear window label. About 19 percent clear above the sign.",
+      "evidence": [
+        "work/brief251/driving-school-car-native-paper.jpg",
+        "work/brief251/driving-school-car-native-dark.jpg",
+        "work/brief251/driving-school-car-native-white.jpg",
+        "work/brief251/driving-school-car-native-black.jpg"
+      ]
+    },
+    {
+      "lesson": "a02a",
+      "name": "ms12-coffee-sandwich-v1.png",
+      "path": "public/assets/maths/ms12-coffee-sandwich-v1.png",
+      "source": "work/brief251/coffee-sandwich-candidate.png",
+      "sha256": "2b920d93872403e1eb0fe1572414a7ee1d7e2de3cd9924a8bba3d0f00d24925b",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "One cup and one sandwich, with clear price-tag space and a fading counter edge.",
+      "evidence": [
+        "work/brief251/coffee-sandwich-native-paper.jpg",
+        "work/brief251/coffee-sandwich-native-dark.jpg",
+        "work/brief251/coffee-sandwich-native-white.jpg",
+        "work/brief251/coffee-sandwich-native-black.jpg"
+      ]
+    },
+    {
+      "lesson": "a03",
+      "name": "ms12-theatre-tickets-v1.png",
+      "path": "public/assets/maths/ms12-theatre-tickets-v1.png",
+      "source": "work/brief251/theatre-tickets-candidate.png",
+      "sha256": "5c9a73dea9bdfb797440e0916d15c5309556d835408aea8d37eb5e77e3579945",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Two overlapping blank perforated tickets in red and teal with clear top margin. Also a02b final frame.",
+      "evidence": [
+        "work/brief251/theatre-tickets-native-paper.jpg",
+        "work/brief251/theatre-tickets-native-dark.jpg",
+        "work/brief251/theatre-tickets-native-white.jpg",
+        "work/brief251/theatre-tickets-native-black.jpg"
+      ]
+    },
+    {
+      "lesson": "a04a",
+      "name": "ms12-mower-trailer-v1.png",
+      "path": "public/assets/maths/ms12-mower-trailer-v1.png",
+      "source": "work/brief251/mower-trailer-candidate.png",
+      "sha256": "ee5aaa22ef634e9206675fa1878f96458dea745cbf47e6cc70c97682316e1a95",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Complete hitch and tailgate contours. Single axle with mower, trimmer, can and rake. Also a03 final frame.",
+      "evidence": [
+        "work/brief251/mower-trailer-native-paper.jpg",
+        "work/brief251/mower-trailer-native-dark.jpg",
+        "work/brief251/mower-trailer-native-white.jpg",
+        "work/brief251/mower-trailer-native-black.jpg"
+      ]
+    },
+    {
+      "lesson": "a04b",
+      "name": "ms12-formal-table-v1.png",
+      "path": "public/assets/maths/ms12-formal-table-v1.png",
+      "source": "work/brief251/formal-table-v2-candidate.png",
+      "sha256": "5d49b23a73e4603b30c943cedde247f6d1bbd3896f07d3478fe3229dd5f4ac8b",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "qa": "static pass after count correction",
+      "notes": "Eight blank place settings and four visible covered chairs. The first candidate only shows six settings. Also used in the a04a join.",
+      "evidence": [
+        "work/brief251/formal-table-v2-native-paper.jpg",
+        "work/brief251/formal-table-v2-native-dark.jpg",
+        "work/brief251/formal-table-v2-native-white.jpg",
+        "work/brief251/formal-table-v2-native-black.jpg"
+      ]
+    },
+    {
+      "lesson": "a08",
+      "name": "ms12-suspension-footbridge-v1.png",
+      "path": "public/assets/maths/ms12-suspension-footbridge-v1.png",
+      "source": "work/brief251/suspension-footbridge-candidate.png",
+      "sha256": "98b1eb854b5ec11f234e22f4672ce21aba44604eb835fa7529f2a6b3ae1e2f74",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Two towers and three evenly spaced hangers. Cable checks pass at the measured deck scale. Slim horizontal deck with no separately prominent rail.",
+      "evidence": [
+        "work/brief251/footbridge-profile-proof.jpg",
+        "work/brief251/suspension-footbridge-native-paper.jpg",
+        "work/brief251/suspension-footbridge-native-dark.jpg",
+        "work/brief251/suspension-footbridge-native-white.jpg",
+        "work/brief251/suspension-footbridge-native-black.jpg"
+      ],
+      "sidecar": "public/assets/maths/ms12-suspension-footbridge-v1.json"
+    },
+    {
+      "lesson": "a09",
+      "name": "ms12-rocket-launcher-v1.png",
+      "path": "public/assets/maths/ms12-rocket-launcher-v1.png",
+      "source": "work/brief251/rocket-launcher-candidate.png",
+      "sha256": "1f65241c0aed78ff74aee453d3f5fbe6e78f3e9a89c350178a38117822485dae",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Empty teal launch tube, orange air pump and floor hose. Includes native placement anchors.",
+      "evidence": [
+        "work/brief251/foam-rocket-mounted-1700-paper.jpg",
+        "work/brief251/rocket-launcher-native-paper.jpg",
+        "work/brief251/rocket-launcher-native-dark.jpg",
+        "work/brief251/rocket-launcher-native-white.jpg",
+        "work/brief251/rocket-launcher-native-black.jpg",
+        "work/brief251/foam-rocket-native-paper.jpg",
+        "work/brief251/foam-rocket-native-dark.jpg",
+        "work/brief251/foam-rocket-native-white.jpg",
+        "work/brief251/foam-rocket-native-black.jpg"
+      ],
+      "sidecar": "public/assets/maths/ms12-rocket-launcher-v1.json"
+    },
+    {
+      "lesson": "a09",
+      "name": "ms12-foam-rocket-v1.png",
+      "path": "public/assets/maths/ms12-foam-rocket-v1.png",
+      "source": "work/brief251/foam-rocket-candidate.png",
+      "sha256": "117ac0e81ff4dc9d809a6d08929447f939b9ea309e2decce7c1ba048553f9b8b",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Teal and orange foam toy with capped nose and three small fins. Native tube-seat registration in the launcher sidecar.",
+      "evidence": [
+        "work/brief251/foam-rocket-mounted-1700-paper.jpg",
+        "work/brief251/rocket-launcher-native-paper.jpg",
+        "work/brief251/rocket-launcher-native-dark.jpg",
+        "work/brief251/rocket-launcher-native-white.jpg",
+        "work/brief251/rocket-launcher-native-black.jpg",
+        "work/brief251/foam-rocket-native-paper.jpg",
+        "work/brief251/foam-rocket-native-dark.jpg",
+        "work/brief251/foam-rocket-native-white.jpg",
+        "work/brief251/foam-rocket-native-black.jpg"
+      ]
+    },
+    {
+      "lesson": "a11b",
+      "name": "ms12-holiday-house-v1.png",
+      "path": "public/assets/maths/ms12-holiday-house-v1.png",
+      "source": "work/brief251/holiday-house-candidate.png",
+      "sha256": "1294505cd2ee5e4affbe31c3c9c57d572a5dc47a46bb549e7cdc9b328a40ff66",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "qa": "static context and alpha pass",
+      "notes": "Pale weatherboard house, two curtained windows and two empty chairs. About 26 percent clear above the roof.",
+      "evidence": [
+        "work/brief251/holiday-house-native-paper.jpg",
+        "work/brief251/holiday-house-native-dark.jpg",
+        "work/brief251/holiday-house-native-white.jpg",
+        "work/brief251/holiday-house-native-black.jpg"
+      ]
+    }
+  ]
+}

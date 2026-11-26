@@ -1,0 +1,1266 @@
+{
+  "lesson": "chem-y11-ws-v02",
+  "wave": 1,
+  "sourceSha256": "ef4a653e4276e6949f88c6029c24f4311d6f0afe2f013e946a8aeb12023416e6",
+  "measuredPath": "work/brief236/wave1/chem-y11-ws-v02/voiced/lesson.json",
+  "measuredSha256": "9683a32a6bb90262c704fa81b786fdc22043c850c7b816cf1b9d1877d3952c19",
+  "characters": 6345,
+  "totalSeconds": 479.03333333333336,
+  "under570": true,
+  "newRequests": 10,
+  "cachedTakes": 1,
+  "inputTokens": 1364,
+  "outputTokens": 10120,
+  "costUsd": 0.09176200000000001,
+  "worstWordGap": {
+    "scene": "attempt-1",
+    "seconds": 1.1019999999999968,
+    "after": "salt.",
+    "before": "Identify"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-ws-v02/hook.wav",
+      "seconds": 34.243,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 19.415400000000098,
+          "end": 19.590000000000096
+        },
+        {
+          "text": "test",
+          "start": 26.045000000000076,
+          "end": 26.318600000000078
+        },
+        {
+          "text": "all",
+          "start": 33.53900000000003,
+          "end": 33.62975000000003
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9639999999999826,
+        "after": "crystals?",
+        "before": "Now"
+      },
+      "peakFraction": 0.847869873046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Is",
+          "start": 24.218000000000078,
+          "end": 24.318000000000076,
+          "score": 0.499
+        },
+        {
+          "word": "or",
+          "start": 25.784000000000077,
+          "end": 25.905000000000076,
+          "score": 0.264
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Our question: how does the time of gentle heating affect the percentage of mass lost by the crystals? Now imagine a rushed test. Three people heat some crystals on three different burners, for two, four and six minutes, and weigh them while they're still hot. They lose nineteen, fifteen and thirty-one percent. The four minute sample lost less than the two minute one. Is the hypothesis wrong, or the test? With so many differences at once, we can't tell. The plan decides whether data can answer the question at all.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "variables-validity",
+      "audio": "public/audio/chem-y11-ws-v02/variables-validity.wav",
+      "seconds": 44.301,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "measure",
+          "start": 1.91,
+          "end": 2.20925
+        },
+        {
+          "text": "weighing",
+          "start": 31.61400000000001,
+          "end": 31.88066666666668
+        },
+        {
+          "text": "result",
+          "start": 36.54500000000007,
+          "end": 36.820142857142926
+        },
+        {
+          "text": "water",
+          "start": 43.619999999999955,
+          "end": 43.85333333333328
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8640000000001073,
+        "after": "measure.",
+        "before": "Everything"
+      },
+      "peakFraction": 0.85614013671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "zero",
+          "start": 24.584000000000014,
+          "end": 24.864000000000015,
+          "score": 0.479
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "A valid investigation measures what it claims to measure. Here, that means the mass lost must be water, and only the heating time can change it. Heating time is the independent variable, the one we change. The percentage of mass lost is the dependent variable, the one we measure. Everything else that could change the result is a controlled variable, kept the same. The same two point five zero grams of crystals, the same crucible, the same small blue flame at the same height, and the same cooling before each weighing. If any of these changed too, we couldn't tell which change caused the result. And the flame stays gentle, because strong heat would break down the copper sulfate, so the mass lost wouldn't be just water.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "experimental-control",
+      "audio": "public/audio/chem-y11-ws-v02/experimental-control.wav",
+      "seconds": 24.216,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "crystals",
+          "start": 8.326999999999988,
+          "end": 8.682555555555544
+        },
+        {
+          "text": "it",
+          "start": 10.350999999999988,
+          "end": 10.404333333333321
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8020000000001133,
+        "after": "crystals.",
+        "before": "A"
+      },
+      "peakFraction": 0.849029541015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weigh",
+          "start": 11.172999999999988,
+          "end": 11.393999999999988,
+          "score": 0.401
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "There's one more check, an experimental control. That's a run without the thing being tested, for comparison. Before adding any crystals, we heat the empty crucible and its lid, and weigh them, until their mass stops changing. If the empty crucible lost or gained mass when heated, we'd wrongly blame that on the crystals. A steady empty crucible shows that every later change comes from what's inside it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "reliable-data",
+      "audio": "public/audio/chem-y11-ws-v02/reliable-data.wav",
+      "seconds": 25.264,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "minutes",
+          "start": 15.092999999999993,
+          "end": 15.320499999999992
+        },
+        {
+          "text": "off",
+          "start": 22.48900000000006,
+          "end": 22.579000000000057
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7229999999999954,
+        "after": "minutes.",
+        "before": "If"
+      },
+      "peakFraction": 0.806182861328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weighed",
+          "start": 12.405999999999992,
+          "end": 12.685999999999993,
+          "score": 0.365
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Next, reliable data. Reliable means that if you repeat the whole experiment, you get consistent results. So the plan uses three separate samples. Each one is heated in two minute steps, and weighed after every step, from zero to twelve minutes. If all three runs show the same pattern, we can trust it. And seven time points can show where the curve levels off. With only two points, we'd never see it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "which-balance",
+      "audio": "public/audio/chem-y11-ws-v02/which-balance.wav",
+      "seconds": 12.302,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "use",
+          "start": 11.691999999999988,
+          "end": 11.798499999999988
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7020000000000004,
+        "after": "equipment.",
+        "before": "In"
+      },
+      "peakFraction": 0.75408935546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "nought",
+          "start": 3.896,
+          "end": 4.117,
+          "score": 0.337
+        },
+        {
+          "word": "nought",
+          "start": 7.2419999999999884,
+          "end": 7.3829999999999885,
+          "score": 0.464
+        },
+        {
+          "word": "nought",
+          "start": 9.289999999999994,
+          "end": 9.449999999999994,
+          "score": 0.397
+        },
+        {
+          "word": "we",
+          "start": 11.508999999999988,
+          "end": 11.569999999999988,
+          "score": 0.272
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now the equipment. In total, the crystals will lose about nought point nine grams of water. One balance reads to nought point one of a gram. The other reads to nought point zero one. Which one should we use?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "equipment",
+      "audio": "public/audio/chem-y11-ws-v02/equipment.wav",
+      "seconds": 28.634,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 14.032999999999989,
+          "end": 14.366374999999989
+        },
+        {
+          "text": "flame",
+          "start": 19.85700000000006,
+          "end": 20.091166666666727
+        },
+        {
+          "text": "escapes",
+          "start": 24.45800000000007,
+          "end": 24.73975000000007
+        },
+        {
+          "text": "touch",
+          "start": 28.032000000000078,
+          "end": 28.19950000000008
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9449999999999985,
+        "after": "percent.",
+        "before": "We"
+      },
+      "peakFraction": 0.840179443359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "nought",
+          "start": 0.583,
+          "end": 0.743,
+          "score": 0.354
+        },
+        {
+          "word": "one",
+          "start": 7.669999999999987,
+          "end": 7.789999999999987,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 19.47600000000006,
+          "end": 19.51600000000006,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "The nought point zero one gram balance. Count the steps. On the coarse balance, the whole loss is only nine steps, so one step is more than a tenth of the answer. On the finer balance, it's ninety steps, and one step is only about one percent. We choose the other materials the same way. A porcelain crucible, because it survives a direct flame. A lid, set slightly ajar, to stop crystals spitting out while steam still escapes. And tongs, because the crucible gets far too hot to touch.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "risks",
+      "audio": "public/audio/chem-y11-ws-v02/risks.wav",
+      "seconds": 37.044,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "risk",
+          "start": 1.146,
+          "end": 1.3739999999999999
+        },
+        {
+          "text": "low",
+          "start": 11.024999999999988,
+          "end": 11.205499999999988
+        },
+        {
+          "text": "hazard",
+          "start": 30.62900000000001,
+          "end": 30.904142857142865
+        },
+        {
+          "text": "lit",
+          "start": 36.26200000000001,
+          "end": 36.41275000000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9429999999999694,
+        "after": "low.",
+        "before": "Overheating"
+      },
+      "peakFraction": 0.865478515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 9.301999999999989,
+          "end": 9.341999999999988,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Then, the risks. A hazard is something that could cause harm. Risk combines how likely the harm is with how bad it would be, and a control is a step that lowers the risk. A hot crucible could burn someone. That's likely, and moderate, so the risk is high. Tongs, a heatproof mat and a cooling time make a burn unlikely, so the risk falls to low. Overheating could release irritating gases, but the plan's gentle flame removes most of that hazard. And copper sulfate irritates the eyes, so safety glasses go on before the burner is lit.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "ethics",
+      "audio": "public/audio/chem-y11-ws-v02/ethics.wav",
+      "seconds": 24.858,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "sink",
+          "start": 11.61899999999999,
+          "end": 11.794999999999987
+        },
+        {
+          "text": "small",
+          "start": 15.87,
+          "end": 16.154166666666665
+        },
+        {
+          "text": "is",
+          "start": 24.136000000000095,
+          "end": 24.22933333333343
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8420000000000112,
+        "after": "sink.",
+        "before": "Using"
+      },
+      "peakFraction": 0.82794189453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "goes",
+          "start": 8.735999999999988,
+          "end": 8.955999999999989,
+          "score": 0.422
+        },
+        {
+          "word": "a",
+          "start": 9.256999999999987,
+          "end": 9.296999999999988,
+          "score": 0.497
+        },
+        {
+          "word": "it",
+          "start": 23.955000000000094,
+          "end": 24.015000000000093,
+          "score": 0.415
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Planning also means thinking about ethical issues. Copper sulfate is very toxic to life in rivers and the sea, so the white powder goes into a labelled waste container, never down the sink. Using just two point five zero grams per sample keeps the waste small. And every reading goes into the record, including the odd ones. Leaving out results that don't fit would make the data look better than it is.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "plan-line",
+      "audio": "public/audio/chem-y11-ws-v02/plan-line.wav",
+      "seconds": 17.36,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "use",
+          "start": 16.73899999999999,
+          "end": 16.82899999999999
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7810000000000006,
+        "after": "honestly.",
+        "before": "That's"
+      },
+      "peakFraction": 0.81793212890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "here's",
+          "start": 0.502,
+          "end": 0.703,
+          "score": 0.446
+        },
+        {
+          "word": "the",
+          "start": 0.723,
+          "end": 0.804,
+          "score": 0.465
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "So here's the plan in one line. Change one, measure one, control the rest, and repeat the whole thing. Then choose equipment fine enough for the change, lower every risk, and record honestly. That's what turns a question into data you can use.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-ws-v02/attempt-1.wav",
+      "seconds": 24.6,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 1.1019999999999968,
+        "after": "salt.",
+        "before": "Identify"
+      },
+      "peakFraction": 0.81231689453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 1.9730000000000005,
+          "end": 2.0550000000000006,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. Back to sand and salt. A student will dissolve twenty gram samples of the mixture in twenty, forty, sixty and eighty millilitres of water, then filter, and evaporate the filtrate to recover the salt. Identify the independent and dependent variables, and two controlled variables, and justify one of them. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-ws-v02/feedback-1.wav",
+      "seconds": 27.96,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "too",
+          "start": 20.564999999999994,
+          "end": 20.684999999999995
+        },
+        {
+          "text": "same",
+          "start": 27.356000000000076,
+          "end": 27.565600000000078
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0840000000000387,
+        "after": "too.",
+        "before": "Writing"
+      },
+      "peakFraction": 0.895416259765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "water.",
+          "start": 2.329,
+          "end": 2.45,
+          "score": 0.167
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The independent variable is the volume of water. The dependent variable is the percentage of the mixture recovered as salt. Controlled variables include the mass of mixture, the water temperature, the stirring time and the drying. Temperature must stay the same, because warmer water dissolves a little more salt, so it would change the result too. Writing \"the salt\" as a controlled variable is the classic slip. It doesn't say what's kept the same.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-ws-v02/feedback-2.wav",
+      "seconds": 27.929,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "control",
+          "start": 26.904000000000032,
+          "end": 27.238250000000033
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9650000000000674,
+        "after": "sink.",
+        "before": "Adding"
+      },
+      "peakFraction": 0.829376220703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 10.59399999999999,
+          "end": 10.633999999999991,
+          "score": 0.499
+        },
+        {
+          "word": "a",
+          "start": 18.098999999999986,
+          "end": 18.138999999999985,
+          "score": 0.482
+        },
+        {
+          "word": "or",
+          "start": 24.995000000000033,
+          "end": 25.11600000000003,
+          "score": 0.35
+        },
+        {
+          "word": "a",
+          "start": 26.824000000000034,
+          "end": 26.864000000000033,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Strong heat breaks down the copper sulfate itself, so the mass lost isn't just water, and the result isn't valid. It can also release irritating gases. So use a small, gentle flame and heat to constant mass. And copper sulfate is toxic to aquatic life, so the powder goes into a waste container, not the sink. Adding \"be careful\" is the classic slip. It doesn't change the likelihood or the harm, so it isn't a control.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "conclusion-handoff",
+      "audio": "public/audio/chem-y11-ws-v02/conclusion-handoff.wav",
+      "seconds": 23.151,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "accurately",
+          "start": 22.346000000000075,
+          "end": 22.730545454545528
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8830000000000311,
+        "after": "lit.",
+        "before": "Next,"
+      },
+      "peakFraction": 0.8367919921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.802,
+          "end": 0.822,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 7.462,
+          "end": 7.482,
+          "score": 0.097
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So a valid plan changes one variable, measures one, controls the rest, and checks the apparatus with a control. Repeating the whole experiment makes the data reliable. Equipment, risks and ethics are all planned before anything is lit. Next, we carry out the plan. How do we collect and source chemistry data safely and accurately?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-ws-v02/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-ws-v02/hook.wav",
+      "seconds": 34.243,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "one",
+          "start": 19.415400000000098,
+          "end": 19.590000000000096
+        },
+        {
+          "text": "test",
+          "start": 26.045000000000076,
+          "end": 26.318600000000078
+        },
+        {
+          "text": "all",
+          "start": 33.53900000000003,
+          "end": 33.62975000000003
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9639999999999826,
+        "after": "crystals?",
+        "before": "Now"
+      },
+      "peakFraction": 0.847869873046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Is",
+          "start": 24.218000000000078,
+          "end": 24.318000000000076,
+          "score": 0.499
+        },
+        {
+          "word": "or",
+          "start": 25.784000000000077,
+          "end": 25.905000000000076,
+          "score": 0.264
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Our question: how does the time of gentle heating affect the percentage of mass lost by the crystals? Now imagine a rushed test. Three people heat some crystals on three different burners, for two, four and six minutes, and weigh them while they're still hot. They lose nineteen, fifteen and thirty-one percent. The four minute sample lost less than the two minute one. Is the hypothesis wrong, or the test? With so many differences at once, we can't tell. The plan decides whether data can answer the question at all.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "variables-validity",
+      "audio": "public/audio/chem-y11-ws-v02/variables-validity.wav",
+      "seconds": 44.301,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "measure",
+          "start": 1.91,
+          "end": 2.20925
+        },
+        {
+          "text": "weighing",
+          "start": 31.61400000000001,
+          "end": 31.88066666666668
+        },
+        {
+          "text": "result",
+          "start": 36.54500000000007,
+          "end": 36.820142857142926
+        },
+        {
+          "text": "water",
+          "start": 43.619999999999955,
+          "end": 43.85333333333328
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8640000000001073,
+        "after": "measure.",
+        "before": "Everything"
+      },
+      "peakFraction": 0.85614013671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "zero",
+          "start": 24.584000000000014,
+          "end": 24.864000000000015,
+          "score": 0.479
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "A valid investigation measures what it claims to measure. Here, that means the mass lost must be water, and only the heating time can change it. Heating time is the independent variable, the one we change. The percentage of mass lost is the dependent variable, the one we measure. Everything else that could change the result is a controlled variable, kept the same. The same two point five zero grams of crystals, the same crucible, the same small blue flame at the same height, and the same cooling before each weighing. If any of these changed too, we couldn't tell which change caused the result. And the flame stays gentle, because strong heat would break down the copper sulfate, so the mass lost wouldn't be just water.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "experimental-control",
+      "audio": "public/audio/chem-y11-ws-v02/experimental-control.wav",
+      "seconds": 24.216,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "crystals",
+          "start": 8.326999999999988,
+          "end": 8.682555555555544
+        },
+        {
+          "text": "it",
+          "start": 10.350999999999988,
+          "end": 10.404333333333321
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8020000000001133,
+        "after": "crystals.",
+        "before": "A"
+      },
+      "peakFraction": 0.849029541015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weigh",
+          "start": 11.172999999999988,
+          "end": 11.393999999999988,
+          "score": 0.401
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "There's one more check, an experimental control. That's a run without the thing being tested, for comparison. Before adding any crystals, we heat the empty crucible and its lid, and weigh them, until their mass stops changing. If the empty crucible lost or gained mass when heated, we'd wrongly blame that on the crystals. A steady empty crucible shows that every later change comes from what's inside it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "reliable-data",
+      "audio": "public/audio/chem-y11-ws-v02/reliable-data.wav",
+      "seconds": 25.264,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "minutes",
+          "start": 15.092999999999993,
+          "end": 15.320499999999992
+        },
+        {
+          "text": "off",
+          "start": 22.48900000000006,
+          "end": 22.579000000000057
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7229999999999954,
+        "after": "minutes.",
+        "before": "If"
+      },
+      "peakFraction": 0.806182861328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weighed",
+          "start": 12.405999999999992,
+          "end": 12.685999999999993,
+          "score": 0.365
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Next, reliable data. Reliable means that if you repeat the whole experiment, you get consistent results. So the plan uses three separate samples. Each one is heated in two minute steps, and weighed after every step, from zero to twelve minutes. If all three runs show the same pattern, we can trust it. And seven time points can show where the curve levels off. With only two points, we'd never see it.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "which-balance",
+      "audio": "public/audio/chem-y11-ws-v02/which-balance.wav",
+      "seconds": 12.302,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "use",
+          "start": 11.691999999999988,
+          "end": 11.798499999999988
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7020000000000004,
+        "after": "equipment.",
+        "before": "In"
+      },
+      "peakFraction": 0.75408935546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "nought",
+          "start": 3.896,
+          "end": 4.117,
+          "score": 0.337
+        },
+        {
+          "word": "nought",
+          "start": 7.2419999999999884,
+          "end": 7.3829999999999885,
+          "score": 0.464
+        },
+        {
+          "word": "nought",
+          "start": 9.289999999999994,
+          "end": 9.449999999999994,
+          "score": 0.397
+        },
+        {
+          "word": "we",
+          "start": 11.508999999999988,
+          "end": 11.569999999999988,
+          "score": 0.272
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Now the equipment. In total, the crystals will lose about nought point nine grams of water. One balance reads to nought point one of a gram. The other reads to nought point zero one. Which one should we use?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "equipment",
+      "audio": "public/audio/chem-y11-ws-v02/equipment.wav",
+      "seconds": 28.634,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 14.032999999999989,
+          "end": 14.366374999999989
+        },
+        {
+          "text": "flame",
+          "start": 19.85700000000006,
+          "end": 20.091166666666727
+        },
+        {
+          "text": "escapes",
+          "start": 24.45800000000007,
+          "end": 24.73975000000007
+        },
+        {
+          "text": "touch",
+          "start": 28.032000000000078,
+          "end": 28.19950000000008
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9449999999999985,
+        "after": "percent.",
+        "before": "We"
+      },
+      "peakFraction": 0.840179443359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "nought",
+          "start": 0.583,
+          "end": 0.743,
+          "score": 0.354
+        },
+        {
+          "word": "one",
+          "start": 7.669999999999987,
+          "end": 7.789999999999987,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 19.47600000000006,
+          "end": 19.51600000000006,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "The nought point zero one gram balance. Count the steps. On the coarse balance, the whole loss is only nine steps, so one step is more than a tenth of the answer. On the finer balance, it's ninety steps, and one step is only about one percent. We choose the other materials the same way. A porcelain crucible, because it survives a direct flame. A lid, set slightly ajar, to stop crystals spitting out while steam still escapes. And tongs, because the crucible gets far too hot to touch.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "risks",
+      "audio": "public/audio/chem-y11-ws-v02/risks.wav",
+      "seconds": 37.044,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "risk",
+          "start": 1.146,
+          "end": 1.3739999999999999
+        },
+        {
+          "text": "low",
+          "start": 11.024999999999988,
+          "end": 11.205499999999988
+        },
+        {
+          "text": "hazard",
+          "start": 30.62900000000001,
+          "end": 30.904142857142865
+        },
+        {
+          "text": "lit",
+          "start": 36.26200000000001,
+          "end": 36.41275000000001
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9429999999999694,
+        "after": "low.",
+        "before": "Overheating"
+      },
+      "peakFraction": 0.865478515625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 9.301999999999989,
+          "end": 9.341999999999988,
+          "score": 0.492
+        }
+      ],
+      "requestAttempts": 2,
+      "pronunciationText": "Then, the risks. A hazard is something that could cause harm. Risk combines how likely the harm is with how bad it would be, and a control is a step that lowers the risk. A hot crucible could burn someone. That's likely, and moderate, so the risk is high. Tongs, a heatproof mat and a cooling time make a burn unlikely, so the risk falls to low. Overheating could release irritating gases, but the plan's gentle flame removes most of that hazard. And copper sulfate irritates the eyes, so safety glasses go on before the burner is lit.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "ethics",
+      "audio": "public/audio/chem-y11-ws-v02/ethics.wav",
+      "seconds": 24.858,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "sink",
+          "start": 11.61899999999999,
+          "end": 11.794999999999987
+        },
+        {
+          "text": "small",
+          "start": 15.87,
+          "end": 16.154166666666665
+        },
+        {
+          "text": "is",
+          "start": 24.136000000000095,
+          "end": 24.22933333333343
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8420000000000112,
+        "after": "sink.",
+        "before": "Using"
+      },
+      "peakFraction": 0.82794189453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "goes",
+          "start": 8.735999999999988,
+          "end": 8.955999999999989,
+          "score": 0.422
+        },
+        {
+          "word": "a",
+          "start": 9.256999999999987,
+          "end": 9.296999999999988,
+          "score": 0.497
+        },
+        {
+          "word": "it",
+          "start": 23.955000000000094,
+          "end": 24.015000000000093,
+          "score": 0.415
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Planning also means thinking about ethical issues. Copper sulfate is very toxic to life in rivers and the sea, so the white powder goes into a labelled waste container, never down the sink. Using just two point five zero grams per sample keeps the waste small. And every reading goes into the record, including the odd ones. Leaving out results that don't fit would make the data look better than it is.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "trial-evidence",
+      "audio": "public/audio/chem-y11-ws-v02/trial-evidence.wav",
+      "seconds": 32.858,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "appeared",
+          "start": 15.476999999999986,
+          "end": 15.780111111111099
+        },
+        {
+          "text": "cool",
+          "start": 24.665000000000045,
+          "end": 24.921000000000046
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8030000000000008,
+        "after": "bench.",
+        "before": "On"
+      },
+      "peakFraction": 0.855133056640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "A good plan also changes when new evidence arrives. In a trial run, the white powder was left to cool on the open bench. On the balance, its mass crept up, from one point six zero to one point six four grams, and a faint blue tinge appeared. The powder was taking water back from the air. That would make every percentage too small. So we modify the plan. The crucible cools with its lid on, inside a desiccator, a sealed jar that keeps the air dry, and it's weighed as soon as it's cool.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "plan-line",
+      "audio": "public/audio/chem-y11-ws-v02/plan-line.wav",
+      "seconds": 17.36,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "use",
+          "start": 16.73899999999999,
+          "end": 16.82899999999999
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7810000000000006,
+        "after": "honestly.",
+        "before": "That's"
+      },
+      "peakFraction": 0.81793212890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "here's",
+          "start": 0.502,
+          "end": 0.703,
+          "score": 0.446
+        },
+        {
+          "word": "the",
+          "start": 0.723,
+          "end": 0.804,
+          "score": 0.465
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "So here's the plan in one line. Change one, measure one, control the rest, and repeat the whole thing. Then choose equipment fine enough for the change, lower every risk, and record honestly. That's what turns a question into data you can use.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-ws-v02/attempt-1.wav",
+      "seconds": 24.6,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 1.1019999999999968,
+        "after": "salt.",
+        "before": "Identify"
+      },
+      "peakFraction": 0.81231689453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 1.9730000000000005,
+          "end": 2.0550000000000006,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. Back to sand and salt. A student will dissolve twenty gram samples of the mixture in twenty, forty, sixty and eighty millilitres of water, then filter, and evaporate the filtrate to recover the salt. Identify the independent and dependent variables, and two controlled variables, and justify one of them. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-ws-v02/feedback-1.wav",
+      "seconds": 27.96,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "too",
+          "start": 20.564999999999994,
+          "end": 20.684999999999995
+        },
+        {
+          "text": "same",
+          "start": 27.356000000000076,
+          "end": 27.565600000000078
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0840000000000387,
+        "after": "too.",
+        "before": "Writing"
+      },
+      "peakFraction": 0.895416259765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "water.",
+          "start": 2.329,
+          "end": 2.45,
+          "score": 0.167
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The independent variable is the volume of water. The dependent variable is the percentage of the mixture recovered as salt. Controlled variables include the mass of mixture, the water temperature, the stirring time and the drying. Temperature must stay the same, because warmer water dissolves a little more salt, so it would change the result too. Writing \"the salt\" as a controlled variable is the classic slip. It doesn't say what's kept the same.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-ws-v02/attempt-2.wav",
+      "seconds": 20.08,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.9229999999999858,
+        "after": "sink.",
+        "before": "Identify"
+      },
+      "peakFraction": 0.84454345703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. Another student's plan says: heat the copper sulfate crystals strongly, with a roaring flame, so the water leaves quickly. Then tip the leftover powder into the sink. Identify one problem with the validity of this plan, and one safety or ethical problem, and modify the plan to fix both. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-ws-v02/feedback-2.wav",
+      "seconds": 27.929,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "control",
+          "start": 26.904000000000032,
+          "end": 27.238250000000033
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9650000000000674,
+        "after": "sink.",
+        "before": "Adding"
+      },
+      "peakFraction": 0.829376220703125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 10.59399999999999,
+          "end": 10.633999999999991,
+          "score": 0.499
+        },
+        {
+          "word": "a",
+          "start": 18.098999999999986,
+          "end": 18.138999999999985,
+          "score": 0.482
+        },
+        {
+          "word": "or",
+          "start": 24.995000000000033,
+          "end": 25.11600000000003,
+          "score": 0.35
+        },
+        {
+          "word": "a",
+          "start": 26.824000000000034,
+          "end": 26.864000000000033,
+          "score": 0.499
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Strong heat breaks down the copper sulfate itself, so the mass lost isn't just water, and the result isn't valid. It can also release irritating gases. So use a small, gentle flame and heat to constant mass. And copper sulfate is toxic to aquatic life, so the powder goes into a waste container, not the sink. Adding \"be careful\" is the classic slip. It doesn't change the likelihood or the harm, so it isn't a control.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "conclusion-handoff",
+      "audio": "public/audio/chem-y11-ws-v02/conclusion-handoff.wav",
+      "seconds": 23.151,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "accurately",
+          "start": 22.346000000000075,
+          "end": 22.730545454545528
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8830000000000311,
+        "after": "lit.",
+        "before": "Next,"
+      },
+      "peakFraction": 0.8367919921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.802,
+          "end": 0.822,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 7.462,
+          "end": 7.482,
+          "score": 0.097
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So a valid plan changes one variable, measures one, controls the rest, and checks the apparatus with a control. Repeating the whole experiment makes the data reliable. Equipment, risks and ethics are all planned before anything is lit. Next, we carry out the plan. How do we collect and source chemistry data safely and accurately?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-ws-v02/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

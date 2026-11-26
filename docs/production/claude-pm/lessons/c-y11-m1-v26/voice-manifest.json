@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v26.md",
+  "sourceSha256": "9ba6487f49f66e0872ff9c3c75544a9a62cb9278316df733793c8a5cf9c9b73d",
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Water and methane are both small molecules, with ten electrons each. Water boils at a hundred degrees Celsius. Methane boils at about minus one hundred and sixty-two. That's more than two hundred and sixty degrees apart. And hydrogen sulfide, a bigger molecule than water, boils at about minus sixty. To explain this, we need to see what actually happens when a molecular substance boils.",
+      "audioFile": "public/audio/chem-y11-m1-v26/hook.wav"
+    },
+    {
+      "id": "what-boils",
+      "text": "When water boils, the molecules move apart into the gas, but each molecule stays whole. H two O is still H two O in the steam. So boiling doesn't break the covalent bonds inside the molecules. It overcomes the attractions between molecules, called intermolecular forces. Inter means between. Stronger intermolecular forces need more energy to overcome, so the boiling point is higher. The O H bonds stay intact.",
+      "audioFile": "public/audio/chem-y11-m1-v26/what-boils.wav"
+    },
+    {
+      "id": "dispersion",
+      "text": "There are three kinds of intermolecular force. The first acts between all molecules, and it's called dispersion. Electrons are always moving, so at any instant one side of a molecule can have slightly more electrons than the other. That's a temporary dipole. It pushes on the electrons of the next molecule, making a matching dipole there, and the two attract for a moment. More electrons make a bigger, more easily distorted cloud, so dispersion gets stronger. Fluorine boils at minus one hundred and eighty-eight, chlorine at minus thirty-four, bromine at fifty-nine, and iodine at a hundred and eighty-four.",
+      "audioFile": "public/audio/chem-y11-m1-v26/dispersion.wav"
+    },
+    {
+      "id": "fair-test",
+      "text": "To see the other two forces, let's compare three molecules with the same number of electrons, eighteen each. Fluorine, F two, boils at minus one hundred and eighty-eight. Fluoromethane, C H three F, boils at minus seventy-eight. And methanol, C H three O H, boils at sixty-five. Same electron count, yet very different boiling points. What else is adding attraction?",
+      "audioFile": "public/audio/chem-y11-m1-v26/fair-test.wav"
+    },
+    {
+      "id": "dipole-dipole",
+      "text": "Fluoromethane is a polar molecule. As we saw in the molecular shapes video, one polar bond on a tetrahedral carbon isn't balanced, so the molecule has a permanent dipole, with a slightly negative fluorine end. The negative end of one molecule attracts the positive end of the next. That's a dipole dipole force. It adds to dispersion, which helps explain why fluoromethane boils about a hundred and ten degrees higher than fluorine.",
+      "audioFile": "public/audio/chem-y11-m1-v26/dipole-dipole.wav"
+    },
+    {
+      "id": "hydrogen-bonds",
+      "text": "Methanol goes further. Its hydrogen is bonded directly to oxygen, which pulls the shared electrons so strongly that the hydrogen is left very positive. That hydrogen is attracted to a lone pair on an oxygen in the next molecule. That's a hydrogen bond. It forms only when hydrogen is bonded to nitrogen, oxygen or fluorine, and the next molecule has a lone pair on one of those atoms. Despite its name, it's an attraction between molecules, not a covalent bond. It's the strongest of the three, so methanol boils about a hundred and forty degrees higher than fluoromethane.",
+      "audioFile": "public/audio/chem-y11-m1-v26/hydrogen-bonds.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. Water and hydrogen sulfide are both bent molecules. Oxygen is much more electronegative than sulfur. Which one can form hydrogen bonds? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v26/prediction.wav"
+    },
+    {
+      "id": "water-h2s",
+      "text": "Water. Its hydrogens are bonded to oxygen, and each oxygen has two lone pairs, so water molecules hydrogen bond to each other. Sulfur isn't electronegative enough, so hydrogen sulfide has only dispersion and weak dipole dipole forces. That's why water boils about a hundred and sixty degrees higher, even though hydrogen sulfide has more electrons. And methane is non-polar, so it has only weak dispersion, and boils lowest of the three.",
+      "audioFile": "public/audio/chem-y11-m1-v26/water-h2s.wav"
+    },
+    {
+      "id": "total-attraction",
+      "text": "But don't rank by the strongest label alone. Iodine has only dispersion forces, yet it boils at a hundred and eighty-four degrees, higher than water. Each iodine molecule has a hundred and six electrons, so its dispersion forces add up to more than water's hydrogen bonds. Boiling point depends on the total attraction, not just the type of force.",
+      "audioFile": "public/audio/chem-y11-m1-v26/total-attraction.wav"
+    },
+    {
+      "id": "method",
+      "text": "So here's the method for any comparison. List every force, starting with dispersion, which is always there. Polar molecule? Add dipole dipole. Hydrogen on nitrogen, oxygen or fluorine? Add hydrogen bonding. Then compare electron counts, and conclude that the stronger total attraction needs more energy to overcome. To remember the hydrogen bond rule, think H-FON: H on F, O or N.",
+      "audioFile": "public/audio/chem-y11-m1-v26/method.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Hydrogen fluoride, H F, boils at nineteen point five degrees Celsius, and hydrogen chloride, H Cl, boils at minus eighty-five, even though H Cl has more electrons. Explain this difference in boiling points. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v26/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Both have dispersion and dipole dipole forces. But in H F, hydrogen is bonded to fluorine, so H F molecules also form hydrogen bonds, which are much stronger. Even with fewer electrons, H F needs more energy to separate its molecules. Saying the H F bond is stronger, so it boils higher, is the classic slip. Boiling doesn't break that bond.",
+      "audioFile": "public/audio/chem-y11-m1-v26/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Propane, methoxymethane and ethanol all have twenty-six electrons per molecule. Their boiling points are minus forty-two, minus twenty-four, and seventy-eight degrees Celsius. Match each boiling point to its substance, and justify your answer. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v26/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Propane, minus forty-two: it's non-polar, so dispersion only. Methoxymethane, minus twenty-four: polar, so dispersion plus dipole dipole. Ethanol, seventy-eight: its O H group adds hydrogen bonding. Giving methoxymethane hydrogen bonds is the trap. Its hydrogens are bonded to carbon, not oxygen.",
+      "audioFile": "public/audio/chem-y11-m1-v26/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "These same attractions decide something else: whether one substance dissolves in another. Salt dissolves in water, but oil floats on top in a separate layer. And iodine barely dissolves in water, yet it dissolves easily in hexane. Next time, we'll find out how attractions explain whether a substance dissolves.",
+      "audioFile": "public/audio/chem-y11-m1-v26/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v26/key-notes.wav"
+    }
+  ]
+}

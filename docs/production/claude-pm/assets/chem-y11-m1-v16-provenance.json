@@ -1,0 +1,197 @@
+{
+  "brief": 178,
+  "design": "chem-y11-m1-v16",
+  "sourceSha256": "d87e5f29d02f7918f24f541639eff2196c1975569591e05fa8ee2c5047e66db3",
+  "manifest": "brief178-manifest.json",
+  "entries": [
+    {
+      "key": "178-li",
+      "file": "y11c-flame-li-crimson-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-bb223fae-fc6e-4aae-8027-14857d6a01e0.png",
+      "prompt": "EDIT referenced transparent PNG production plate, preserve transparent alpha. Exact same 2000x2000 canvas. Keep Bunsen burner below flame PIXEL IDENTICAL, no movement, no rescale, do not redraw burner. Change ONLY blue flame to crimson-red, deep slightly pink-red CARMINE, similar to strontium red and clearly unlike calcium orange-red. Same flame size and shape. No added glow outside flame. Clean edges, no stray coloured fringe, no text, people, hands, faces, symbols, background or ground shadow. File y11c-flame-li-crimson-v1.png",
+      "path": "public/assets/chemistry/y11c-flame-li-crimson-v1.png",
+      "sha256": "68505ae0257420cb8920172bb73c28ad0f0366b0cec3f455f45ca969882189ef",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "clearMarginFraction": [
+        0.11961722488038277,
+        0.02631578947368421,
+        0.15231259968102073,
+        0.05741626794258373
+      ],
+      "status": "candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected on paper and dark phone contact; no people, hands, faces or text. Native composites saved. No clean-edge clearance.",
+      "additionalFinding": "Crimson is visually distinct from orange/brick calcium. Native 1254-square canvas differs from 2000-square shared burner, so exact registration fails.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "178-scope",
+      "file": "y11c-hand-spectroscope-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-1c3bd734-2a47-4bd9-b046-a0ebde862b3b.png",
+      "prompt": "Paint ONE school science production asset. Landscape 2:1. Small direct-vision hand-held spectroscope INSTRUMENT ONLY, dark grey metal tube, narrow slit end and eyepiece end, lying horizontally in three-quarter view. No hand, no light beam, no mount. Fine ink outlines, realistic layered watercolour, matching painted chemistry apparatus. Object within middle 65 percent canvas, at least 15 percent empty alpha margin all edges. Real transparent PNG with clean edges, no coloured fringe. No text, digits, logos, labels, symbols, people, hands, faces, background, glow or ground shadow. File y11c-hand-spectroscope-v1.png",
+      "path": "public/assets/chemistry/y11c-hand-spectroscope-v1.png",
+      "sha256": "2287e4e813b172b10e2460d87717eab059542796b74c2d439aed41bf056090fb",
+      "size": [
+        1774,
+        887
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "clearMarginFraction": [
+        0.0,
+        0.033821871476888386,
+        0.011273957158962795,
+        0.02705749718151071
+      ],
+      "status": "candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected on paper and dark phone contact; no people, hands, faces or text. Native composites saved. No clean-edge clearance.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "key": "178-troughk",
+      "file": "y11c-trough-k-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-75e73201-0ed0-4891-8326-b4cf389f2a37.png",
+      "prompt": "Keep exactly this water trough canvas, scale, angle and outlines. Add a tiny molten potassium ball on water at centre, vigorous bubbles, a small lilac flame no more than 10 percent trough width, few fine sparks and droplets, pale pink water trace. No huge fire or smoke. Transparent background unchanged.",
+      "path": "public/assets/chemistry/y11c-trough-k-v1.png",
+      "sha256": "354a9fb330682d9659310232eca0b6041f1035ffb92c3c5f859272117d732342",
+      "size": [
+        1500,
+        1049
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "clearMarginFraction": [
+        0.0,
+        0.0,
+        0.054,
+        0.0
+      ],
+      "status": "candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected on paper and dark phone contact; no people, hands, faces or text. Native composites saved. No clean-edge clearance.",
+      "additionalFinding": "Matched perspective candidate only. Check overlays; outlines are not pixel identical. Base glass contains pale blue painted wash and stray edge alpha.",
+      "tool": "built-in image_gen"
+    },
+    {
+      "file": "m8-flame-k-lilac-v2.png",
+      "source": "C:/lesson-video-generator/public/assets/chemistry/m8-flame-k-lilac-v2.png",
+      "prompt": "Requested integer translation only to align shared burner with m8-flame-blue-v2.png. No repaint, recolouring or resampling.",
+      "tool": "Python Pillow integer translation, explicitly requested by root decision 18",
+      "path": "public/assets/chemistry/m8-flame-k-lilac-v2.png",
+      "sha256": "1af8c7fafe8494bfe2a61d345779717b0ee49f38448dc278c2acd1a30c621c4a",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "clearMarginFraction": [
+        0.049,
+        0.0575,
+        0.051,
+        0.0215
+      ],
+      "status": "integer translation verified; existing painted outline differences remain",
+      "inspection": "Translation overlay visually inspected. Source colours retained, no resampling. Burner position aligns approximately, not pixel-identical art.",
+      "translationEvidence": {
+        "file": "m8-flame-k-lilac-v2.png",
+        "path": "public/assets/chemistry/m8-flame-k-lilac-v2.png",
+        "source": "public/assets/chemistry/m8-flame-k-lilac-v1.png",
+        "sourceSha256": "c2274891b5c18cd113bb79cde8b5c35a734e719dd50a34df215c34feb2d259ca",
+        "sha256": "1af8c7fafe8494bfe2a61d345779717b0ee49f38448dc278c2acd1a30c621c4a",
+        "translationPx": [
+          2,
+          6
+        ],
+        "burnerBoxBefore": [
+          664,
+          971,
+          1338,
+          1824
+        ],
+        "burnerBoxAfter": [
+          666,
+          971,
+          1340,
+          1830
+        ],
+        "size": [
+          2000,
+          2000
+        ],
+        "retainedPixelsEqual": true,
+        "processing": "Integer translation only; no resampling, repainting or recolouring. Alpha>128 in y>=971 follows brief 114 measurement."
+      }
+    },
+    {
+      "file": "m8-flame-sr-crimson-v2.png",
+      "source": "C:/lesson-video-generator/public/assets/chemistry/m8-flame-sr-crimson-v2.png",
+      "prompt": "Requested integer translation only to align shared burner with m8-flame-blue-v2.png. No repaint, recolouring or resampling.",
+      "tool": "Python Pillow integer translation, explicitly requested by root decision 18",
+      "path": "public/assets/chemistry/m8-flame-sr-crimson-v2.png",
+      "sha256": "5d4ad4a10b70a3f81357f559169036b92ffe90a4d6565ea0f35084f81a4856f8",
+      "size": [
+        2000,
+        2000
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "clearMarginFraction": [
+        0.011,
+        0.0475,
+        0.026,
+        0.0255
+      ],
+      "status": "integer translation verified; existing painted outline differences remain",
+      "inspection": "Translation overlay visually inspected. Source colours retained, no resampling. Burner position aligns approximately, not pixel-identical art.",
+      "translationEvidence": {
+        "file": "m8-flame-sr-crimson-v2.png",
+        "path": "public/assets/chemistry/m8-flame-sr-crimson-v2.png",
+        "source": "public/assets/chemistry/m8-flame-sr-crimson-v1.png",
+        "sourceSha256": "c88e582af92fcb28acea335ff0771982e17333a5eeb91e8a657f47c2f7fae389",
+        "sha256": "5d4ad4a10b70a3f81357f559169036b92ffe90a4d6565ea0f35084f81a4856f8",
+        "translationPx": [
+          2,
+          6
+        ],
+        "burnerBoxBefore": [
+          664,
+          971,
+          1338,
+          1824
+        ],
+        "burnerBoxAfter": [
+          666,
+          971,
+          1340,
+          1830
+        ],
+        "size": [
+          2000,
+          2000
+        ],
+        "retainedPixelsEqual": true,
+        "processing": "Integer translation only; no resampling, repainting or recolouring. Alpha>128 in y>=971 follows brief 114 measurement."
+      }
+    }
+  ],
+  "approval": "Source-only reviews and art candidates. QA, safety, playback and listening holds remain.",
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m1-v16-native-qa.json",
+    "result": "Nine further used plates pass actual native paper/dark static content and alpha checks. Exact flame-set registration remains unpassed: lithium canvas differs, v2 burner hardware pixels differ. Seven unused/style/superseded references excluded. Capped-bottle loop contact and masking cross-fade remain scene checks. No whole-lesson clearance."
+  }
+}

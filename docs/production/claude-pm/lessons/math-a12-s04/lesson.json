@@ -1,0 +1,194 @@
+{
+  "id": "math-a12-s04",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "d669499c8a28d7f3dc4e6b1a907fd521ee92ec831d486127ba5718120beb4f0f",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook: exactly 0.35 seconds?",
+      "voiceover": {
+        "text": "So far, every random variable counted something. Now X can be any value in an interval, because we measure it. At an athletics carnival, sensors in the starting blocks time each sprinter's reaction to the start signal. One reads zero point three five seconds. But a finer timer shows zero point three five one seven, with more digits after that. So what's the probability that a reaction time is exactly zero point three five seconds? Make a guess."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "measured values don't repeat",
+      "voiceover": {
+        "text": "Here's an example set of two hundred reaction times, from the carnival's heats. Time is a continuous random variable, which here means it can take any value in an interval. For an ideal continuous measurement, exact repeats have probability zero, so counting each value gives just ones. Instead, we group the times into classes, each a tenth of a second wide. Twenty land between zero point one and zero point two seconds, then fifty, seventy, forty and twenty. That's a histogram. Its bars touch, because the classes leave no gaps."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "interval probability from the histogram",
+      "voiceover": {
+        "text": "What's the probability that a time is at least zero point two, but less than zero point four seconds? Two classes cover that range, with fifty and seventy times. So the estimate is one hundred and twenty out of two hundred, which is zero point six. Each class's relative frequency is its count over two hundred, and they add to one, because every time lands in exactly one class."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "a range that cuts a class",
+      "voiceover": {
+        "text": "What about a time under zero point two five seconds? That cuts the second class in half, and the histogram doesn't say where its fifty times sit. The usual assumption is that they're spread evenly. Then about twenty five are below zero point two five. Add the twenty from the first class, and that's forty five out of two hundred, zero point two two five. In an exam, write that assumption down."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "shrink the window: a single value gets 0",
+      "voiceover": {
+        "text": "The class from zero point three to zero point four has probability about zero point three five. Shrink it to one hundredth of a second, centred on zero point three five. With the times spread evenly, it holds a tenth as many, so about zero point zero three five. Shrink it to one thousandth, and it's about zero point zero zero three five. Under that even spread, the probability shrinks in step with the width. A single exact value has width zero, so for a continuous random variable, its probability is zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "zero isn't impossible",
+      "voiceover": {
+        "text": "But someone's time really is zero point three five something. Probability zero isn't the same as impossible. Some exact time always happens, but no single value carries any probability on its own. Intervals do, like zero point three four to zero point three six seconds, and those are the events we'll use."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "endpoints don't matter",
+      "voiceover": {
+        "text": "The ends of an interval are single values, so they carry no probability. So including or excluding the ends makes no difference. That's not true for a discrete variable. For a fair die, two to five including both ends has probability four sixths, but strictly between them it's two sixths. The ends carry a sixth each."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "the cumulative distribution function",
+      "voiceover": {
+        "text": "There are infinitely many intervals, but one function holds them all. The cumulative distribution function, or C D F, is F of x equals the probability that X is less than or equal to x. Cumulative means running total. For the reaction times, the data only estimate F. Add the classes from the left: zero point one, zero point three five, zero point seven, zero point nine and one. Now the probability between zero point two and zero point four is about F of zero point four minus F of zero point two. That's zero point seven minus zero point one, zero point six, the same as before."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "why F never goes down",
+      "voiceover": {
+        "text": "As x moves right, the event that X is at most x can only gain values, never lose them. So F never decreases. We say it's non-decreasing. It starts at zero, and for this bounded example, it reaches one beyond the range. For a continuous variable it has no jumps either, because a jump would mean one value carried probability."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "a CDF from a formula: x squared over nine",
+      "voiceover": {
+        "text": "Now a C D F from a formula. F of x is x squared over nine for x from zero to three, zero below that, and one above. Is it valid? At zero it's zero, and at three it's one, so the pieces join without a jump. Its derivative, two x over nine, is never negative there, so F never decreases. Graph it by hand or with a graphing app. It's flat at zero, leaves the origin flat, then curves up more and more steeply to the point three, one, and stays flat at one. It's not a straight line."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "probabilities from that CDF",
+      "voiceover": {
+        "text": "Find the probability that X is more than one and at most two. That's F of two minus F of one, four ninths minus one ninth, which is one third. The probability that X is more than two is one minus four ninths, which is five ninths. And the probability that X equals two is zero, because X is continuous."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Two short lines to remember. First, points carry nothing, and intervals carry the probability. Second, between a and b, take F of the bigger end, minus F of the smaller end. If you ever get a negative answer, you've subtracted the wrong way round."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The masses of four hundred tomatoes are grouped into classes. Estimate the probability that a tomato's mass is at least two hundred and twenty five grams. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Two hundred and twenty five cuts the two hundred to two hundred and fifty class in half. Assume its one hundred and sixty masses are spread evenly, so about eighty are above two hundred and twenty five. Add the forty in the top class. That's one hundred and twenty out of four hundred, zero point three. Zero point five is wrong. It counts the whole class, including masses below two hundred and twenty five."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A continuous random variable has F of x equals x squared plus two x, all over eight, for x from zero to two. Find the probability that X is at least zero point five, and less than one point five. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-16",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "It's F of one point five, minus F of zero point five. The endpoints carry no probability, so the mixed signs don't matter. F of one point five is twenty one over thirty two, and F of zero point five is five over thirty two. So the answer is sixteen over thirty two, which is one half. Minus one half is wrong. It subtracts the wrong way round, and a probability can't be negative."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-17",
+      "title": "handoff",
+      "voiceover": {
+        "text": "Next, a new question. Here's F of x equals x squared over nine again. It climbs slowly near zero, and steeply near three. What does that steepness tell us about where the values of X are?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-18",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

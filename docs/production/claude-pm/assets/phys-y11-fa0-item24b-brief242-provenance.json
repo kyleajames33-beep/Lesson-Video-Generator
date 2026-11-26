@@ -1,0 +1,351 @@
+{
+  "brief": 242,
+  "plates": [
+    {
+      "key": "cricket-ball",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-002406b0-6ceb-437d-bb7e-9af6b6f635f9.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAny": [
+        0,
+        20,
+        1230,
+        1224
+      ],
+      "alphaAbove1": [
+        148,
+        148,
+        1097,
+        1113
+      ],
+      "id": "phys-y11-cricket-ball-v1",
+      "brief": 242,
+      "file": "public/assets/physics/phys-y11-cricket-ball-v1.png",
+      "sha256": "63ab9e889d1b399811993dbbee2029e2fea483cb17503e8b49e4a2d11489a77b",
+      "requestedApproxSize": [
+        800,
+        800
+      ],
+      "anchors": {
+        "centre": [
+          623,
+          630
+        ],
+        "radius": 478,
+        "radiusTolerance": 8
+      },
+      "anchorTolerancePixels": 8,
+      "method": "Built-in image generation and targeted edits where needed; final PNG copied unchanged",
+      "promptSet": "One red leather cricket ball, visible raised stitched seam, soft top-left highlight. Fine ink and natural watercolour, approximately800x800square,fullcircle centred70percentcanvas,15percent transparent margins. No logos,text,numbers,people,hands,face,bat,surface,shadow,glow,halo or backdrop. Truealpha. Read150pxwide.",
+      "qa": {
+        "result": "pass native visual inspection; scene assembly pending",
+        "evidence": [
+          "work/brief242/cricket-ball-native-paper.png",
+          "work/brief242/fa0-apparatus-dark-white-qa.png"
+        ],
+        "observations": [
+          "Native paper inspected; white and dark composites inspected at600px. No visible halo,people,letters,numbers,scale or questiondata.",
+          "Original native output differs from requested dimensions; preserve nativeaspect and use uniformscale. Airtrack canvas is2172x724 rather than3600x400; apparatus itself remains long and slim.",
+          "Alpha1strays extend rawbounds. Visible margins meet8percent. Anchors estimated to8px and require actualassembly verification."
+        ]
+      },
+      "limitation": "No full lesson QA, motion, lightgate timing or release approval."
+    },
+    {
+      "key": "air-track",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-c683a62c-a349-4123-9bf0-12c9319a2f1d.png",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAny": [
+        73,
+        71,
+        2029,
+        692
+      ],
+      "alphaAbove1": [
+        240,
+        288,
+        1886,
+        479
+      ],
+      "id": "phys-y11-air-track-v1",
+      "brief": 242,
+      "file": "public/assets/physics/phys-y11-air-track-v1.png",
+      "sha256": "826e6844d7a5312b28a78737b55eed6825ba85f5e778949f6dfad7a9db58788c",
+      "requestedApproxSize": [
+        3600,
+        400
+      ],
+      "anchors": {
+        "runningLine": [
+          [
+            342,
+            310
+          ],
+          [
+            1784,
+            310
+          ]
+        ],
+        "hoseInlet": [
+          242,
+          352
+        ],
+        "bufferContactPoints": [
+          [
+            393,
+            329
+          ],
+          [
+            1785,
+            329
+          ]
+        ],
+        "footBasePoints": [
+          [
+            416,
+            474
+          ],
+          [
+            1751,
+            474
+          ]
+        ]
+      },
+      "anchorTolerancePixels": 8,
+      "method": "Built-in image generation and targeted edits where needed; final PNG copied unchanged",
+      "promptSet": "Exactly side-on horizontal school linear airtrack, long triangular aluminiumbeam,two short adjustablefeet,levellingscrew,sparseairholes,leftinletstub,endblocks with inward elasticbuffers. No gliders or other apparatus. Ink-watercolour. Approximately3600x400wide canvas,truealpha,no text,numbers,scale,people,bench,floor,background,shadow,glow orhalo. Finaledit: preserve apparatus, shrink uniformly to78percent2172x724canvaswidth,centre,11percenttransparentleft/rightmargins;no stretching.",
+      "qa": {
+        "result": "pass native visual inspection; scene assembly pending",
+        "evidence": [
+          "work/brief242/air-track-native-paper.png",
+          "work/brief242/fa0-apparatus-dark-white-qa.png"
+        ],
+        "observations": [
+          "Native paper inspected; white and dark composites inspected at600px. No visible halo,people,letters,numbers,scale or questiondata.",
+          "Original native output differs from requested dimensions; preserve nativeaspect and use uniformscale. Airtrack canvas is2172x724 rather than3600x400; apparatus itself remains long and slim.",
+          "Alpha1strays extend rawbounds. Visible margins meet8percent. Anchors estimated to8px and require actualassembly verification."
+        ]
+      },
+      "limitation": "No full lesson QA, motion, lightgate timing or release approval."
+    },
+    {
+      "key": "air-glider",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-290d1185-1da8-4a25-bd20-c5df74cf620a.png",
+      "nativeSize": [
+        1869,
+        842
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAny": [
+        0,
+        78,
+        1849,
+        802
+      ],
+      "alphaAbove1": [
+        151,
+        309,
+        1718,
+        558
+      ],
+      "id": "phys-y11-air-glider-v1",
+      "brief": 242,
+      "file": "public/assets/physics/phys-y11-air-glider-v1.png",
+      "sha256": "c3f9fce542b8c4f6d51bd3ecb0c7df2c9617447818636876ba17a5f0fc835416",
+      "requestedApproxSize": [
+        1000,
+        450
+      ],
+      "anchors": {
+        "undersideLine": [
+          [
+            191,
+            542
+          ],
+          [
+            1679,
+            542
+          ]
+        ],
+        "topSlotCentre": [
+          935,
+          322
+        ],
+        "endFixingPoints": [
+          [
+            191,
+            518
+          ],
+          [
+            1679,
+            518
+          ]
+        ],
+        "centreOfMass": [
+          935,
+          450
+        ]
+      },
+      "anchorTolerancePixels": 8,
+      "method": "Built-in image generation and targeted edits where needed; final PNG copied unchanged",
+      "promptSet": "Exactly side-on plain aluminium inverted-V airtrack rider, no track/wheels, horizontalunderside,topsmallfixingslot,endfixingeyes. Fine ink-watercolour,approximately1000x450landscape,truealpha,clear margins,no text,numbers,people,surface,shadow,halo,glow orbackground. Finaledit: remove incorrect ovalhandlehole in broadside,fillplainaluminium; add tiny darkpegfixingnotch on topedgecentre; otheroutlinepositionandcanvasunchanged.",
+      "qa": {
+        "result": "pass native visual inspection; scene assembly pending",
+        "evidence": [
+          "work/brief242/air-glider-native-paper.png",
+          "work/brief242/fa0-apparatus-dark-white-qa.png"
+        ],
+        "observations": [
+          "Native paper inspected; white and dark composites inspected at600px. No visible halo,people,letters,numbers,scale or questiondata.",
+          "Original native output differs from requested dimensions; preserve nativeaspect and use uniformscale. Airtrack canvas is2172x724 rather than3600x400; apparatus itself remains long and slim.",
+          "Alpha1strays extend rawbounds. Visible margins meet8percent. Anchors estimated to8px and require actualassembly verification."
+        ]
+      },
+      "limitation": "No full lesson QA, motion, lightgate timing or release approval."
+    },
+    {
+      "key": "glider-flag",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-01bbe5dc-fa99-40fc-9e62-3aaf9b24fa01.png",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaAny": [
+        41,
+        39,
+        972,
+        1296
+      ],
+      "alphaAbove1": [
+        227,
+        320,
+        795,
+        1278
+      ],
+      "id": "phys-y11-glider-flag-v1",
+      "brief": 242,
+      "file": "public/assets/physics/phys-y11-glider-flag-v1.png",
+      "sha256": "1cfcb6dde2c174c8390ee387bcbe1b7d520f0922bc5c14a67cd65b75dd4975d5",
+      "requestedApproxSize": [
+        400,
+        600
+      ],
+      "anchors": {
+        "pegBase": [
+          512,
+          1273
+        ],
+        "leadingEdge": [
+          [
+            234,
+            328
+          ],
+          [
+            234,
+            1098
+          ]
+        ],
+        "trailingEdge": [
+          [
+            789,
+            328
+          ],
+          [
+            789,
+            1098
+          ]
+        ]
+      },
+      "anchorTolerancePixels": 8,
+      "method": "Built-in image generation and targeted edits where needed; final PNG copied unchanged",
+      "promptSet": "Plain upright darknavy rectangular card timingflag on shortcentralmetalpeg extendingdown. Exact side-on rectangularface,sharpverticalparallelleading/trailingedges,horizontaltopbottom. Ink-watercolour,approximately400x600portrait,65percentheight60percentwidth,truealpha,generoustransparentmargin. No stand,glider,track,text,labels,numbers,scale,logo,people,hands,faces,background,surface,shadow,glow,halo. Pegbasevisible.",
+      "qa": {
+        "result": "pass native visual inspection; scene assembly pending",
+        "evidence": [
+          "work/brief242/glider-flag-native-paper.png",
+          "work/brief242/fa0-apparatus-dark-white-qa.png"
+        ],
+        "observations": [
+          "Native paper inspected; white and dark composites inspected at600px. No visible halo,people,letters,numbers,scale or questiondata.",
+          "Original native output differs from requested dimensions; preserve nativeaspect and use uniformscale. Airtrack canvas is2172x724 rather than3600x400; apparatus itself remains long and slim.",
+          "Alpha1strays extend rawbounds. Visible margins meet8percent. Anchors estimated to8px and require actualassembly verification."
+        ]
+      },
+      "limitation": "No full lesson QA, motion, lightgate timing or release approval."
+    },
+    {
+      "key": "glider-mass",
+      "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-adf3a6a6-be0d-41c8-8d97-c1b03eb81ddb.png",
+      "nativeSize": [
+        1402,
+        1122
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaAny": [
+        0,
+        30,
+        1384,
+        1118
+      ],
+      "alphaAbove1": [
+        252,
+        232,
+        1154,
+        908
+      ],
+      "id": "phys-y11-glider-mass-v1",
+      "brief": 242,
+      "file": "public/assets/physics/phys-y11-glider-mass-v1.png",
+      "sha256": "a315b42ad7cdbbf3384c7091fdf533816c39030ee58435cd7f545382837c109e",
+      "requestedApproxSize": [
+        500,
+        400
+      ],
+      "anchors": {
+        "pegBase": [
+          702,
+          901
+        ]
+      },
+      "anchorTolerancePixels": 8,
+      "method": "Built-in image generation and targeted edits where needed; final PNG copied unchanged",
+      "promptSet": "Two distinctsmallslottedbrassdiscs stackedon shortcentralverticalmountingpeg,sideview,radialslotsfront,shortpegaboveandbelow,basepointvisible. Same diameter,visible seam,naturalbrasshighlights,ink-watercolour. Approximately500x400landscape,60percentwidth65percentheight,truealpha,12percentclear margins. No printedmass,text,numbers,labels,symbols,logo,track,glider,stand,people,hands,face,table,shadow,halo,glow orbackground.",
+      "qa": {
+        "result": "pass native visual inspection; scene assembly pending",
+        "evidence": [
+          "work/brief242/glider-mass-native-paper.png",
+          "work/brief242/fa0-apparatus-dark-white-qa.png"
+        ],
+        "observations": [
+          "Native paper inspected; white and dark composites inspected at600px. No visible halo,people,letters,numbers,scale or questiondata.",
+          "Original native output differs from requested dimensions; preserve nativeaspect and use uniformscale. Airtrack canvas is2172x724 rather than3600x400; apparatus itself remains long and slim.",
+          "Alpha1strays extend rawbounds. Visible margins meet8percent. Anchors estimated to8px and require actualassembly verification."
+        ]
+      },
+      "limitation": "No full lesson QA, motion, lightgate timing or release approval."
+    }
+  ]
+}

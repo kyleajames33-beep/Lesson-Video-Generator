@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-d17.md",
+  "sourceSha256": "5431ee461242195c134e32440974dc4de7803d734a4596df51478130585ba0fd",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-two-boxes",
+      "text": "Here are our two groups as box plots, one above the other. Phone in the bedroom, and phone elsewhere. We compared them before with the mean and standard deviation. Box plots show the same comparison as a picture, and they add something the numbers alone don't. How much the groups overlap, and what shape each one has. Box plots drawn like this are called parallel box plots. So how do parallel box plots compare two groups?",
+      "audioFile": "public/audio/math-s11-d17/hook-two-boxes.wav"
+    },
+    {
+      "id": "one-scale",
+      "text": "The first rule is the scale. Parallel box plots must share one number line. Watch what happens without it. Draw the bedroom group on a scale from two to ten, and the elsewhere group on a scale from six to ten. The boxes look about the same size, and sit in about the same place. Now put them on one scale. The elsewhere box jumps to the right, and the bedroom group's whisker stretches far out to the left. Same data, very different picture. If two box plots don't share a scale, you can't compare them. Exam questions draw them on one scale for you, so check the axis first, as always.",
+      "audioFile": "public/audio/math-s11-d17/one-scale.wav"
+    },
+    {
+      "id": "compare-centre",
+      "text": "Start with the centre, using the medians. The elsewhere group's median is eight hours, and the bedroom group's is six point seven five. So the elsewhere group typically slept one and a quarter hours more. That's a similar gap to the one the means showed, which makes it more convincing. Now look at the overlap, where the boxes cover the same values. The bedroom box ends at seven and a half, exactly where the elsewhere box begins. So about three quarters of the bedroom group slept seven and a half hours or less, while about three quarters of the elsewhere group slept seven and a half or more. The boxes barely overlap. When boxes overlap a lot, the groups are hard to tell apart. When they hardly overlap, the difference is clear. That's a big difference, and the picture makes it obvious at a glance.",
+      "audioFile": "public/audio/math-s11-d17/compare-centre.wav"
+    },
+    {
+      "id": "compare-spread",
+      "text": "Next, the spread. Here the two measures disagree, and that's worth noticing. The IQRs are close, one and a half hours for the bedroom group, and one and a quarter for elsewhere. So the middle halves are similarly spread. But the ranges are not close, five and a half hours against two and a half. The difference comes from the bedroom group's long left whisker, stretched out by that three hour night. So say which measure you mean. By range, the bedroom group is much more spread out. By IQR, only slightly. Careful, too. A box further to the right isn't more spread out. Position shows centre. Width shows spread.",
+      "audioFile": "public/audio/math-s11-d17/compare-spread.wav"
+    },
+    {
+      "id": "compare-shape",
+      "text": "Then the shape. Look at the whiskers and where the median sits in the box. The bedroom group's left whisker is three hours long, and its right whisker just one. A long left whisker is a tail to the left, so the bedroom group is negatively skewed. The elsewhere group's whiskers are short and similar, half an hour and three quarters, and its median sits only a little off-centre. So it's roughly symmetric. One group has a tail of short nights. The other doesn't.",
+      "audioFile": "public/audio/math-s11-d17/compare-shape.wav"
+    },
+    {
+      "id": "writing-comparison",
+      "text": "Now write it down, centre, spread and shape, each with numbers. The elsewhere group had a higher median, eight hours against six point seven five, and about three quarters of each group sat on opposite sides of seven and a half hours. The groups' IQRs were similar, one and a quarter against one and a half hours, but the bedroom group's range was much larger, five and a half against two and a half, because of its short nights, especially the three hour night. The bedroom group was negatively skewed, and the elsewhere group roughly symmetric. And as always with this survey, it's an observational study, so it doesn't show that the phone caused the difference.",
+      "audioFile": "public/audio/math-s11-d17/writing-comparison.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the card. Same scale, then medians, boxes and whiskers. Medians for the centre, IQRs and ranges for the spread, and whiskers for the shape, each with numbers and a direction.",
+      "audioFile": "public/audio/math-s11-d17/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Parallel box plots show journey times, in minutes, on two bus routes. Route one has a minimum of twenty-two, Q one twenty-five, median twenty-seven, Q three twenty-nine, and maximum forty. Route two has eighteen, twenty-four, thirty, thirty-three and thirty-six. Which route has the higher median, and by how much? Which route is more consistent for the middle half of journeys? Justify. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d17/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Route two's median is thirty, against twenty-seven, so route two is higher, by three minutes. For the middle half, compare the IQRs. Route one's is four minutes, route two's is nine, so route one is more consistent. The ranges are both eighteen, so saying they're equally consistent is the slip.",
+      "audioFile": "public/audio/math-s11-d17/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Parallel box plots show two classes' test results. Class A has thirty-five, sixty, seventy-two, seventy-eight and eighty-five. Class B has fifty, fifty-eight, sixty-four, seventy-five and ninety-eight. That's the minimum, Q one, median, Q three and maximum for each. Describe and compare the shapes of the two distributions. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-d17/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Class A's left whisker is twenty-five marks, against seven on the right, and its median sits near Q three, so it's negatively skewed. Class B's right whisker is twenty-three, against eight, and its median sits near Q one, so it's positively skewed. Calling Class A positively skewed because its box is further right is the slip.",
+      "audioFile": "public/audio/math-s11-d17/feedback-2.wav"
+    },
+    {
+      "id": "handoff-outliers",
+      "text": "One value keeps turning up. That three hour night stretched the bedroom group's range, and pulled its mean down. Is it an outlier, or just a short night? And sometimes data split into groups with a gap between them, like these travel times to school, walkers and bus students, with one trip of ninety-five minutes far out on its own. Unusual, or just different? That's next.",
+      "audioFile": "public/audio/math-s11-d17/handoff-outliers.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-d17/key-notes.wav"
+    }
+  ]
+}

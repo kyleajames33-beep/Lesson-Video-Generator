@@ -1,0 +1,74 @@
+{
+  "brief": 248,
+  "lesson": "c12",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-d29aaf3d-c3df-4aad-8132-5293eb417ace.png",
+      "sha256": "07784712396c152cbef58d8d688d4d99ff5930f345a29d6834c7ae2d1688c1bf",
+      "nativeSize": [
+        1422,
+        1106
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        82,
+        96,
+        1347,
+        1010
+      ],
+      "marginFractions": [
+        0.057665260196905765,
+        0.0867992766726944,
+        0.052742616033755275,
+        0.0867992766726944
+      ],
+      "evidence": [
+        "work/brief248/c12-pass-the-parcel-native-paper.jpg",
+        "work/brief248/c12-pass-the-parcel-native-dark.jpg",
+        "work/brief248/c12-pass-the-parcel-native-white.jpg",
+        "work/brief248/c12-pass-the-parcel-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-pass-the-parcel-v1.png",
+      "path": "public/assets/maths/ma11-pass-the-parcel-v1.png",
+      "brief": 248,
+      "lesson": "c12",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1800,
+        1400
+      ],
+      "qa": {
+        "result": "passed: three readable layers at600px, alpha and900/full-width checks; approximate outline registration recorded",
+        "observations": [
+          "Polygons track main visible coloured edges, not individual torn fibres.",
+          "Floor patch retained as requested; no lettering or people."
+        ],
+        "evidence": [
+          "work/brief248/c12-parcel-qa-paper-dark-paper.jpg",
+          "work/brief248/c12-layer-registration-paper.jpg",
+          "work/brief248/c12-parcel-qa-paper-dark-dark.jpg",
+          "work/brief248/c12-layer-registration-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-pass-the-parcel-v1.json"
+    }
+  ],
+  "result": "Pass-the-parcel delivered at native1422x1106. Three nested amber/blue/teal wrapping layers remain distinct at600px;900/full-width and paper/dark alpha checks pass. Sidecar contains manually measured visible-edge polygons for each layer, excluding scraps and fine torn fibres.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c12-generation.json",
+    "work/brief248/c12-parcel-qa.json",
+    "work/brief248/c12-parcel-layers.json",
+    "work/brief248/qa-parcel.py",
+    "work/brief248/c12-parcel-qa-paper-dark-paper.jpg",
+    "work/brief248/c12-layer-registration-paper.jpg",
+    "work/brief248/c12-parcel-qa-paper-dark-dark.jpg",
+    "work/brief248/c12-layer-registration-dark.jpg"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "brief": 248,
+  "lesson": "e05",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-c7c640df-ed2c-4870-bbcf-ffef69a75323.png",
+      "sha256": "3bb14f3e791b3fdc0920f71bfff8cec4898a14acdb1af0830c4d795c0b4896f3",
+      "nativeSize": [
+        1036,
+        1518
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        211,
+        72,
+        824,
+        1450
+      ],
+      "marginFractions": [
+        0.20366795366795368,
+        0.04743083003952569,
+        0.20463320463320464,
+        0.04479578392621871
+      ],
+      "evidence": [
+        "work/brief248/e05-phone-budget-native-paper.jpg",
+        "work/brief248/e05-phone-budget-native-dark.jpg",
+        "work/brief248/e05-phone-budget-native-white.jpg",
+        "work/brief248/e05-phone-budget-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-phone-budget-v1.png",
+      "path": "public/assets/maths/ma11-phone-budget-v1.png",
+      "brief": 248,
+      "lesson": "e05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        820,
+        1500
+      ],
+      "qa": {
+        "result": "passed: cheaper-model distinction,480/400px pairing and alpha checks",
+        "observations": [
+          "Front view and lighting match reused phone; camera dot replaces speaker/notch treatment.",
+          "No screen content, lettering or people."
+        ],
+        "evidence": [
+          "work/brief248/e05-phone-comparison-paper-dark-paper.jpg",
+          "work/brief248/e05-phone-comparison-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Budget phone delivered at native1036x1518. Matte dark-blue plastic, thicker bezels, round camera dot and blank screen read as a cheaper model beside unchanged ma12-phone-v1.png at480/400px tall; same400px-tall comparison also checked. Paper/dark alpha checks pass. Reused phone SHA recorded.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/e05-generation.json",
+    "work/brief248/e05-phone-comparison-qa.json",
+    "work/brief248/e05-reused-phone-hash.json",
+    "work/brief248/e05-phone-comparison-paper-dark-paper.jpg",
+    "work/brief248/e05-phone-comparison-paper-dark-dark.jpg"
+  ]
+}

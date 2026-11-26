@@ -1,0 +1,98 @@
+{
+  "brief": 238,
+  "design": "i04",
+  "assets": [
+    {
+      "name": "ma12-fundraiser-board-v1.png",
+      "path": "public\\assets\\maths\\ma12-fundraiser-board-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-31452984-b832-4c07-ae6c-8bb52e39643f.png",
+      "generatorNativeSize": [
+        819,
+        1920
+      ],
+      "nativeSize": [
+        900,
+        2400
+      ],
+      "sha256": "f773f04fc6c53764aab08a144b25a70c77badfc34fe7bdb377c22f6c87e2bb7b",
+      "alphaBox": [
+        271,
+        193,
+        621,
+        2207
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "anchors": {
+        "tubeInsideBox": [
+          390,
+          260,
+          510,
+          1900
+        ],
+        "bulbCentre": [
+          450,
+          2040
+        ],
+        "bulbInnerRadius": 120,
+        "neckBox": [
+          438,
+          1900,
+          462,
+          1923
+        ],
+        "halfHeightFillY": 1080,
+        "tubeSpan": 1640
+      },
+      "operations": [
+        "Uniformaspect-preservingreductionto541x1267",
+        "Extendedstraightplywoodbody801pxwithgeneratedwhitewood/borderpixels;noexistingprofiledeformed",
+        "Matchedinteriorstencilwithgeneratedwhiteplywoodtextureandpaintedtealedge;exactalphaopeningguides",
+        "Addedshortempty24pxwideneckacrossspecified20pxgap;noendpoints shifted"
+      ],
+      "uniformResampling": true,
+      "nonuniformStretch": false,
+      "profileWarped": false,
+      "visualQAInspected": true,
+      "qa": "work\\brief238\\i04-fill-qa.jpg",
+      "apertureChecks": {
+        "tubeCentre": 0,
+        "neckCentre": 0,
+        "bulbCentre": 0
+      },
+      "marginPass": true,
+      "state": "delivered",
+      "findings": [
+        {
+          "id": "238-I04-TUBE-BULB-CONNECTION",
+          "severity": "build follow-up",
+          "detail": "Artwork has neck438..462,y1900..1923. Coded fill must include it;no endpoint guide moved."
+        }
+      ]
+    }
+  ],
+  "prompts": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Asset ma12-fundraiser-board-v1.png. One handmade school fundraising board shaped like a huge thermometer,on two short timber legs,straight-on centred isolated on true transparent alpha. Intended900x2400px very tall portrait. White painted plywood with thin soft colourful border (muted teal/coral),fine ink and watercolour,visible wood edges,not a real laboratory thermometer. Empty clear central tube and empty round bulb,NO red liquid. Exact final guide:innerstraighttube x390to510,y260to1900;round innerbulb centred(450,2040),radius120. Tube andbulb visually connected via a short20pxneck fromy1900to1920,the explicit endpoints remain separate as given;do not movebulbup. Plywood borderaroundtubeandbulb,twosmallfeetbelow. Allscalemarkings andwords will be coded later,so NO ticks,numbers,dollar signs,letters,text,schoolname,logos,iconsorwriting anywhere. Atleast8%clearoutermargin. Nopeople,hands,background,groundshadow,glow,water or addeddecorations. Empty tube interior needs light/clear blank space for coded fill. Keep the tube visually straight and the bulb a circle.",
+    "transparent_background": true,
+    "localFinishing": "User explicitly authorised matching outlines and exact ratios. Uniform downsampling, native-pixel body extension and precise interior stencil."
+  },
+  "observations": {
+    "inspected": true,
+    "qaNotes": "Paper300/760px tall,black/white edges and half-height coded red test fill inspected. Exact tube/bulb openings and a24px-wide20px connector preserve stated endpoints.8%margins pass;no text/ticks/red in delivered plate. The earlier20pxgapfinding is bridged physically in this artwork;builder must include neck in coded fill mask. No scene/source edits.",
+    "qaFiles": [
+      "work/brief238/i04-fill-qa.jpg"
+    ],
+    "reviewSummary": "0 blockers,1 tube/bulb connection finding;art now includes a measured connector,coded build pending",
+    "findings": [
+      {
+        "id": "238-I04-TUBE-BULB-CONNECTION",
+        "severity": "build follow-up",
+        "detail": "Artwork has neck438..462,y1900..1923. Coded fill must include it;no endpoint guide moved."
+      }
+    ]
+  },
+  "sourceDesignSha256": "7d13199f09f46b3f06fc17b5e92ddc10d2a7c5a68e9808fe6d15a91d99c08543"
+}

@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d06a",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "0b8cd3135a0b69f281b54f8a9ff3b8a06a44efd883e97e222513e46a92755c97",
+  "scenes": [
+    {
+      "id": "hook-thirty-answers",
+      "title": "hook: thirty different answers",
+      "voiceover": {
+        "text": "Thirty students, thirty screen times, in minutes. Seventy, ninety-five, a hundred and ten, and on up to four hundred and fifty-five. Look closely, and almost every value is different. Try to read a pattern straight from the list. Are most people around two hours? Three? It's hard to tell. A list shows every value, but it hides the shape. So why do we group data, and how do frequency tables, histograms and polygons show it?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "tally-and-table",
+      "title": "tallies and a frequency table",
+      "voiceover": {
+        "text": "Start with a simpler set, where grouping isn't needed. Our twenty sampled students told us how many screens are in their bedroom, from none to three. Count them with a tally, one mark for each answer, crossed off in fives. A tally is quick to fill in as answers arrive, and the fives make counting easy. Three students said none, seven said one, six said two, and four said three. Each count is a frequency, how many times a value occurs. Written in a table, that's a frequency table, and the frequencies add to twenty, one for each student. Here it works well, because there are only four possible values, and lots of students share each one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-group",
+      "title": "why some data need grouping",
+      "voiceover": {
+        "text": "Now try the same thing with screen time. Seventy minutes, once. Ninety-five, once. A hundred and ten, once. The table is thirty rows of ones, and it tells us nothing. When nearly every value is different, we group the values into classes and count each class instead. Here, classes sixty minutes wide work well. Sixty to under a hundred and twenty, a hundred and twenty to under a hundred and eighty, and so on, up to four hundred and eighty. Remember the survey buttons? A box for every answer, no overlaps, no gaps. Classes follow the same rule. A hundred and twenty sits in a hundred and twenty to under a hundred and eighty, never in two classes at once. Now tally again. Three, nine, seven, five, three, two and one, thirty in all. We lose the exact values, but we gain a picture we can actually read."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "class-width",
+      "title": "how wide should the classes be?",
+      "voiceover": {
+        "text": "Why sixty minutes? Watch what happens if we change the width. Classes twenty minutes wide give lots of ones and twos, and the graph looks like a picket fence. Classes two hundred minutes wide squash everything into two big bars and a lone one. Somewhere between, the shape appears. Most students sit between two and four hours, with a few much higher. A good rule is about five to ten classes, all the same width, starting at a tidy value below the smallest number, and covering the largest. That's why some datasets need grouping. Without it, we can't see the shape, and we can't analyse it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "histogram",
+      "title": "the histogram",
+      "voiceover": {
+        "text": "A histogram is a column graph for numerical data. The horizontal axis is a number line, here screen time in minutes. Each class gets a bar, and its height is the class's frequency, so a bar's height tells you how many students are in that class. Three for sixty to a hundred and twenty. Nine for the next. Then seven, five, three, two and one. Notice the bars touch. That's because the classes meet. One class ends exactly where the next one begins, so there's no gap on the number line, and no gap between the bars. The tallest bar is the class with the most students, a hundred and twenty to under a hundred and eighty minutes. Gaps between bars are for categories, like bedroom and kitchen, which we'll draw soon."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "polygon",
+      "title": "the frequency polygon",
+      "voiceover": {
+        "text": "A frequency polygon draws the same shape as a line. Put a dot in the middle of the top of each bar, at its class centre, halfway between the class's ends. Sixty to a hundred and twenty has its centre at ninety, so the first dot sits at ninety, height three. Then a hundred and fifty, height nine, and so on to four fifty. Join the dots. Then close the polygon on the axis, at the centres of the empty classes on either side, thirty and five hundred and ten. The polygon and the histogram tell the same story. The line just makes it easier to see the rise and the long, slow fall on the right. Some questions show only the polygon, so you need to read it either way."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Group it, tally it, draw it, and for numbers, the bars touch. Then the polygon's dots go in the middle of each bar top, and the line closes on the axis."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Fifteen students recorded how many apps they downloaded last week. Nought, two, one, three, one, nought, two, two, four, one, two, three, one, two, nought. Make a frequency table. Then, how many students downloaded at least two apps? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Tally the values. Nought, three times. One, four. Two, five. Three, two. And four, once. That's fifteen in total. At least two means two, three or four, so five plus two plus one, eight students. Counting only the twos, five, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Twenty food deliveries took these times in minutes. They're on the card. Complete a frequency table with classes ten to under twenty, twenty to under thirty, and so on, up to sixty to under seventy. Which class has the tallest bar on the histogram, and at what class centre is the polygon's highest point? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The frequencies are one, four, seven, five, two and one, twenty in total. Forty goes in forty to under fifty, so thirty to under forty has seven. That's the tallest bar, and its centre is thirty-five. Putting forty in the thirties and getting eight is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-cumulative",
+      "title": "handoff: cumulative frequency",
+      "voiceover": {
+        "text": "Here's our screen-time histogram and its polygon. Now a different kind of question. Four hours is two hundred and forty minutes. How many of the class used their phone for less than four hours? You could add up the bars to the left of two hundred and forty, one by one. Or you could keep a running total as you go, so the answer is waiting for you. That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

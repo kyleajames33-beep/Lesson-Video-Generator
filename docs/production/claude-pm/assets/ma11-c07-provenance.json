@@ -1,0 +1,69 @@
+{
+  "brief": 248,
+  "lesson": "c07",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-178cb841-e4fc-4fcc-ad2c-3c7390ce0d87.png",
+      "sha256": "4fd310fa58c930ba5d4d5ecf086cdb8798a31b377cd8271c8964b04b2fe77207",
+      "nativeSize": [
+        1642,
+        958
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        19,
+        94,
+        1620,
+        895
+      ],
+      "marginFractions": [
+        0.011571254567600487,
+        0.09812108559498957,
+        0.013398294762484775,
+        0.06576200417536535
+      ],
+      "evidence": [
+        "work/brief248/c07-marble-run-v2-native-paper.jpg",
+        "work/brief248/c07-marble-run-v2-native-dark.jpg",
+        "work/brief248/c07-marble-run-v2-native-white.jpg",
+        "work/brief248/c07-marble-run-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-marble-run-v1.png",
+      "path": "public/assets/maths/ma11-marble-run-v1.png",
+      "brief": 248,
+      "lesson": "c07",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1400
+      ],
+      "qa": {
+        "result": "passed: approximate parabola, rising lip,38-point profile, alpha and900/full-width checks; plot registration remains root",
+        "observations": [
+          "Candidate1 rejected for flat launch shelf. Candidate2 retains rising lip and clear tangent space.",
+          "No painted marble, text, people or background."
+        ],
+        "evidence": [
+          "work/brief248/c07-marble-run-profile-paper.jpg",
+          "work/brief248/c07-marble-run-profile-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-marble-run-v1.json"
+    }
+  ],
+  "result": "Marble run delivered at native1642x958 after revising the flat first lip. The38-point measured trace flags lip1498,276; final rising ramp quadratic fit has1.65px RMS and5.80px maximum residual. Paper/dark checks at900/full width pass. The painting is approximately parabolic; root must register the equal-unit teaching plot separately without warping the plate.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c07-generation.json",
+    "work/brief248/c07-marble-run-profile.json",
+    "work/brief248/qa-marble-run.py",
+    "work/brief248/c07-marble-run-profile-paper.jpg",
+    "work/brief248/c07-marble-run-profile-dark.jpg"
+  ]
+}

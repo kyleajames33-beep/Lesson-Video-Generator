@@ -1,0 +1,72 @@
+{
+  "id": "y11-culture-tube-v2",
+  "brief": 242,
+  "file": "public/assets/biology/y11-culture-tube-v2.png",
+  "sha256": "ecee7deadc9302dfc963d597849fbab5740cd039fb284940957dfa97d07bfff8",
+  "nativeSize": [
+    1073,
+    1466
+  ],
+  "originalPreserved": "public/assets/biology/y11-culture-tube-v1.png",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-87c21a1a-e9a1-41fe-9e5b-8d265b5cd6a5.png",
+  "initialCandidate": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a8f8109e-1ead-4d82-9342-60ec1276628c.png",
+  "prompts": [
+    "Create the repaired v2 sibling of this Year 11 Biology culture-tube plate. The reference wrongly shows THREE tubes with a large painted glow. Deliver ONE upright clear glass culture tube only, side view, with a cotton-wool plug, two-thirds filled with slightly cloudy pale straw-coloured liquid. Keep the reference's fine ink and layered watercolour style and realistic glass detail. The complete single tube and white cotton plug need a fine dark charcoal ink outline so both read clearly on cream paper. True transparent PNG outside the tube, no background, halo, glow, wash, ground, shadow or rack. No text, labels, printed numbers, scales, arrows, people, hands or faces. Native portrait aspect about 600 by 1400, with at least eight percent empty transparent margin on every side. The single tube must read at 420 px and 250 px tall. Do not include the other two tubes. Deliver y11-culture-tube-v2.png, preserving the v1 original.",
+    "Keep this exact ONE glass culture tube with cotton plug and pale straw liquid unchanged in shape, anatomy, fill level, colours and ink-watercolour style. Repair ONLY framing and empty alpha: zoom out uniformly so the complete tube INCLUDING its cotton plug occupies at most 76 percent of the canvas HEIGHT, centred vertically and horizontally in a portrait canvas. Leave at least 12 percent completely empty transparent canvas ABOVE the cotton and BELOW the glass bottom, plus generous transparent left and right margins. Do not crop any part and do not stretch. Remove all external glow, haze, wash or shadow. Fine dark ink edges remain clear on cream paper. True transparent PNG, no background, labels, numbers, scales, text, arrows, people, faces or hands. This is the final margin repair for y11-culture-tube-v2.png. ONE TUBE ONLY."
+  ],
+  "method": "Built-in image edit and margin correction. Final generated PNG copied unchanged; Python used only for QA composites and measurements.",
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAny": [
+    87,
+    110,
+    1019,
+    1394
+  ],
+  "alphaAbove1": [
+    395,
+    204,
+    676,
+    1288
+  ],
+  "anchors": {
+    "liquidSurfaceLeft": [
+      437,
+      637
+    ],
+    "liquidSurfaceRight": [
+      635,
+      637
+    ],
+    "tubeBaseCentre": [
+      537,
+      1281
+    ],
+    "cottonPlugCentre": [
+      535,
+      300
+    ]
+  },
+  "qa": {
+    "result": "pass single-tube and halo repair",
+    "evidence": [
+      "work/brief242/culture-tube-v2-native-paper.jpg",
+      "work/brief242/culture-tube-v2-native-dark.jpg",
+      "work/brief242/culture-tube-v2-420-paper.jpg",
+      "work/brief242/culture-tube-v2-420-dark.jpg",
+      "work/brief242/culture-tube-v2-250-paper.jpg",
+      "work/brief242/culture-tube-v2-250-dark.jpg"
+    ],
+    "observations": [
+      "Exactly one tube with cotton-wool plug and cloudy straw liquid, approximately two-thirds full. No rack, labels, printed data, people, hands or faces.",
+      "Native paper and dark composites clean. Cotton and glass have readable ink edges. No visible external glow.",
+      "1073 by 1466 native canvas differs from the approximate 600 by 1400 request. Object aspect preserved. Top and bottom visible margins about 14 and 12 percent.",
+      "Paper thumbnails at canvas heights 420 and 250 remain readable; actual painted object heights are approximately 310 and 185, which are smaller than the requested object display sizes.",
+      "Raw alpha includes low-alpha strays. Do not stretch the canvas to force the approximate requested size."
+    ]
+  },
+  "buildInstruction": "Fit by visible object bounds with uniform scaling. Reuse this same single tube for v30 final frame and v31 opening; check the exact joined scene.",
+  "limitation": "Static artwork check, not joined playback or whole-lesson approval."
+}

@@ -5,3 +5,10 @@
 The formula divides by r, so state r≠0 and the zero-rate case FV=nM. Scene 6 says 'r and n are both per period'; r is a rate per period but n is the number of periods, not a quantity per period. State also that the formula models a zero starting balance; an existing starting amount must be added as a separate growth term. The memory aid 'first in earns the most' assumes a positive interest rate and should be scoped accordingly.
 
 Live https://hscscience.com.au/subjects/maths-advanced/year12/financial-mathematics/lesson06.sa.html Problem 1 confirms $300 monthly, 4.8%, five years, $20,298.05 and $2,298.05 interest. Its displayed rounded intermediate 300 × 67.660 equals $20,298.00, not $20,298.05; calculate using full precision. The site's Q3(b) says later payments have up to 30 years to compound; the earlier payments do. The video correctly says early deposits, despite its author note attributing the reasoning to that source.
+
+
+### Repaired source recheck,12November2026
+
+Current source SHA256 `f4cdfa160661c182b2c94422a74c570b25942c2cebbeec05ad77793fd5d17837`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. Corrected first-deposit intermediates268.4279/267.0924. Zeroopeningbalance,ncount,andr0limitFV=nM clearlyrecorded;positive-rateconditionearliestdepositearnsmost nowexplicit. Conditions/model boundariesaccurate.
+
+Independent recount:5734characters/15scene strings,noem dashes. Changed narration andsource repair notescheckedagainst priorfullreview;unchanged numericalexamples/live-sourcechecksretained. Newboundary/roundingchecks inwork/brief240/root68-f10-f15-edge-calculations.json. Nativeartmeasurementsretained forbuilderfittingunderrootdecision30;root68readytovoice. No speechgeneratedbythisreview. Measuredtiming,builtmotionandhumanlisteningremainpending.

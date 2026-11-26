@@ -1,16 +1,11 @@
 {
   "brief": 238,
-  "state": "art-in-progress",
+  "state": "native-plates-supplied-guide-differences-retained-root68-ready-to-voice",
   "generatedWith": "built-in image_gen planned",
-  "namedNewPlateCount": 27,
+  "namedNewPlateCount": 28,
   "roughCountInBrief": 35,
   "countNote": "The19asset briefs name27distinct new numbered plates. Reused objects and previous235coaster are not new commissions. No extra plates invented.",
-  "blockedDesigns": [
-    "i01",
-    "i07",
-    "i11",
-    "i13"
-  ],
+  "blockedDesigns": [],
   "assets": [
     {
       "name": "ma12-skateboard-side-v1.png",
@@ -628,7 +623,8 @@
           "severity": "learning/build blocker",
           "detail": "Observed native350pxgrowth composite at t5:middle/bottom shoots cross the shelf boards and project into the pot above.420px soil spacing minus the pot/shelf height leaves insufficient350pxclearance. Exact guide soilpositions are preserved. Root needs a physical staging/geometry decision before a full visual or recording pass;do not silently change C offsets or14px/cm."
         }
-      ]
+      ],
+      "usage": "superseded and unused by i01 Revision4;preserve existing file"
     },
     {
       "name": "ma12-bean-shoot-v1.png",
@@ -1110,14 +1106,58 @@
       ],
       "description": " (2400 × 1200 px): one white freestanding bath with straight, upright inner walls, seen exactly side-on and empty, with its near side drawn as a clean cut-away section so the inside of the bath shows (the build draws the water inside it); a chrome mixer tap and spout standing at the left end with the spout's mouth above the rim, pointing down into the bath; a plug hole at the bottom near the right end with its plug lying beside it on a short chain (so the plug is out). **Paint the inside to this guide:** the inner floor flat at y = 900 px and the inner rim at y = 420 px (480 px of inner depth); the inner walls vertical at x = 420 and x = 2000 px (1580 px long). Codex reports, in file pixels, the inner floor, the inner rim, both inner walls, the centre of the spout's mouth and the centre of the plug hole.",
       "exists": false,
-      "path": "public/assets/maths/ma12-bathtub-v1.png",
-      "state": "held-design-blocker",
+      "path": "public\\assets\\maths\\ma12-bathtub-v1.png",
+      "state": "delivered-native-guide-differences-reported",
       "nativeSizeTarget": [
         2400,
         1200
       ],
       "profileNeverWarp": false,
-      "actualMeasurements": null
+      "actualMeasurements": null,
+      "lesson": "i07",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-8b4d8271-917e-4ceb-bf23-1866f0b35df4.png",
+      "sha256": "09bc8a8d335c9225875aeb787b89bf5efd1c13ebafffe4f58812e7604fe939ec",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alpha128Box": [
+        157,
+        115,
+        1589,
+        800
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-bathtub-v1-four-backgrounds.jpg",
+      "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+      "anchors": {
+        "innerWallsXApprox": [
+          331,
+          1445
+        ],
+        "innerRimYApprox": 325,
+        "innerFloorYApprox": 605,
+        "spoutMouthApprox": [
+          463,
+          281
+        ],
+        "plugHoleCentreApprox": [
+          1305,
+          590
+        ]
+      },
+      "geometryFinding": "At equivalent2400px-wide guide,inner walls~448/1955,rim440,floor819 differ from420/2000/420/900 by more than4px. Inner cavity remains rectangular;quarter-depth test uses actual measured bounds. Strict guide not passed.",
+      "visualQAInspected": true,
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-bathtub-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i07-quarter-fill-guide-qa.jpg"
+      ],
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i07-provenance.json",
+      "previousState": "held-native-guide-mismatch",
+      "geometryDisposition": "Owner explicitly instructed voicing repaired designs after root decision68. Decision30/brief238: report measured native geometry;builder fits coded curve to plate without warping. Geometry finding retained;no claim of4px compliance or built playback approval."
     },
     {
       "name": "ma12-car-park-entry-v1.png",
@@ -1433,14 +1473,39 @@
       ],
       "description": " (2400 × 1500 px): a small rectangular backyard pool seen from a high three-quarter view, filled with clear blue water, with pale stone coping and a narrow timber deck strip on two sides. At one end a vertical tiled wall drops to a short flat deep section; from there the floor rises in a smooth, gently curving slope (concave down: steep at first, flattening as it nears the surface) up to a shallow \"beach\" edge where the water meets the floor at the far end. The slope must be visible through the water. No people, toys, ladders, signs or furniture; the ground patch ends in a soft transparent edge; no sky, fences or houses.",
       "exists": false,
-      "path": "public/assets/maths/ma12-beach-entry-pool-v1.png",
-      "state": "held-design-blocker",
+      "path": "public\\assets\\maths\\ma12-beach-entry-pool-v1.png",
+      "state": "delivered",
       "nativeSizeTarget": [
         2400,
         1500
       ],
       "profileNeverWarp": false,
-      "actualMeasurements": null
+      "actualMeasurements": null,
+      "lesson": "i11",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-a3aae5ca-2cdc-4a16-903e-44ff82918569.png",
+      "sha256": "8cc77f3f7fa7ede1b006396e0b9e8636ce082878a838ca108e5e3f1147233d7c",
+      "nativeSize": [
+        1585,
+        992
+      ],
+      "alpha128Box": [
+        107,
+        111,
+        1474,
+        876
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-beach-entry-pool-v1-four-backgrounds.jpg",
+      "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+      "visualQAInspected": true,
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-beach-entry-pool-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i11-profile-guide-qa.jpg"
+      ],
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i11-provenance.json"
     },
     {
       "name": "ma12-pool-cutaway-v1.png",
@@ -1449,14 +1514,128 @@
       ],
       "description": " (1600 × 760 px): the same pool cut straight across lengthwise and seen exactly side-on, as a clean cutaway: the vertical deep-end wall on the left, a flat deep-end floor, then the rising ramp, then the deck. **No water** (the water is drawn by code). The concrete shell is shown in section (grey concrete with a thin pale tile line on the inner surface), with soil texture beyond it. **Paint the inner surface to the profile table in the design's Decisions (Revision 2) at 400 px per metre**: wall x = 0 from y = 0 up to the coping at y = 1.15 m; floor y = 0 from x = 0 to x = 1 m; ramp y = ln x through (1, 0), (1.25, 0.223), (1.5, 0.405), (2, 0.693), (2.5, 0.916), (e ≈ 2.718, 1); deck at y = 1.15 m from x = e to x = 3.2 m. Each table point within 4 px. Codex reports, in file pixels: the origin (the inside corner where the wall meets the floor), the measured pixel position of each table point, and the coping and deck lines.",
       "exists": false,
-      "path": "public/assets/maths/ma12-pool-cutaway-v1.png",
-      "state": "held-design-blocker",
+      "path": "public\\assets\\maths\\ma12-pool-cutaway-v1.png",
+      "state": "delivered-native-guide-differences-reported",
       "nativeSizeTarget": [
         1600,
         760
       ],
       "profileNeverWarp": true,
-      "actualMeasurements": null
+      "actualMeasurements": null,
+      "lesson": "i11",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-06971e7c-c83c-4afb-8ff5-e1e7d4c4336e.png",
+      "sha256": "f550c5d59f03ff8939aa9ff21be510fb750e47786f205730e6ffce8f3822e063",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alpha128Box": [
+        77,
+        170,
+        1697,
+        761
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-pool-cutaway-v1-four-backgrounds.jpg",
+      "operations": "Generator-native PNG copied byte for byte. No pixel edits,stretching or profile warp. QA composites only.",
+      "anchors": {
+        "originApprox": [
+          210,
+          632
+        ],
+        "floorEndApprox": [
+          620,
+          632
+        ],
+        "copingYApprox": 190,
+        "deckYApprox": 190,
+        "profilePoints": [
+          {
+            "metres": [
+              1,
+              0
+            ],
+            "expectedFilePoint": [
+              610,
+              632
+            ],
+            "measuredSurfaceY": 636.0,
+            "verticalErrorPixels": 4.0
+          },
+          {
+            "metres": [
+              1.25,
+              0.223
+            ],
+            "expectedFilePoint": [
+              710,
+              542.8
+            ],
+            "measuredSurfaceY": 584.0,
+            "verticalErrorPixels": 41.200000000000045
+          },
+          {
+            "metres": [
+              1.5,
+              0.405
+            ],
+            "expectedFilePoint": [
+              810,
+              470.0
+            ],
+            "measuredSurfaceY": 508.0,
+            "verticalErrorPixels": 38.0
+          },
+          {
+            "metres": [
+              2,
+              0.693
+            ],
+            "expectedFilePoint": [
+              1010,
+              354.8
+            ],
+            "measuredSurfaceY": 392.0,
+            "verticalErrorPixels": 37.19999999999999
+          },
+          {
+            "metres": [
+              2.5,
+              0.916
+            ],
+            "expectedFilePoint": [
+              1210,
+              265.59999999999997
+            ],
+            "measuredSurfaceY": 308.0,
+            "verticalErrorPixels": 42.400000000000034
+          },
+          {
+            "metres": [
+              2.718281828459045,
+              1
+            ],
+            "expectedFilePoint": [
+              1297,
+              232
+            ],
+            "measuredSurfaceY": 282.0,
+            "verticalErrorPixels": 50.0
+          }
+        ]
+      },
+      "geometryFinding": "400px/metre equal-unit log profile has measured surface errors greater than4px. Rounded ramp start and low ramp surface miss exact ln(x) guide. Candidate stays held;no profile warp.",
+      "visualQAInspected": true,
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-pool-cutaway-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i11-profile-guide-qa.jpg"
+      ],
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i11-provenance.json",
+      "previousState": "held-native-guide-mismatch",
+      "geometryDisposition": "Owner explicitly instructed voicing repaired designs after root decision68. Decision30/brief238: report measured native geometry;builder fits coded curve to plate without warping. Geometry finding retained;no claim of4px compliance or built playback approval."
     },
     {
       "name": "ma12-garden-cut-fill-v1.png",
@@ -1769,14 +1948,61 @@
       ],
       "description": " (2000 × 900 px): an indoor wall-mounted split-system air conditioner (the long white indoor unit) seen from a slight angle below and to the front, mounted on a short patch of pale painted wall, its louvre flap slightly open with a few faint cool-air lines below it. **No display digits, logos, brand names or remote control**; a small blank indicator strip only. The wall patch ends in a soft, irregular transparent edge. Codex reports, in file pixels: the unit's bounding box and a clear area on the wall patch beside it (about 400 × 160 px) for a coded readout.",
       "exists": false,
-      "path": "public/assets/maths/ma12-air-conditioner-v1.png",
-      "state": "held-design-blocker",
+      "path": "public\\assets\\maths\\ma12-air-conditioner-v1.png",
+      "state": "delivered",
       "nativeSizeTarget": [
         2000,
         900
       ],
       "profileNeverWarp": false,
-      "actualMeasurements": null
+      "actualMeasurements": null,
+      "lesson": "i13",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-355916a4-bda2-4786-b6e3-1545cfd1c249.png",
+      "sha256": "77d5376ca20fb41dddfcf48e97620c58298e520cb4f2b36931411639113c79f8",
+      "nativeSize": [
+        1754,
+        897
+      ],
+      "alpha128Box": [
+        155,
+        176,
+        1597,
+        744
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-air-conditioner-v1-four-backgrounds.jpg",
+      "operations": "Native generator PNG copied byte for byte. No resizing,stretching,warping or pixel edits. QA composites only.",
+      "visualQAInspected": true,
+      "anchors": {
+        "unitBoundingBoxApprox": [
+          219,
+          229,
+          1215,
+          611
+        ],
+        "clearWallReadoutRectangle": [
+          1230,
+          345,
+          1560,
+          505
+        ],
+        "anchorTolerancePixels": 6
+      },
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-air-conditioner-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i13-specified-sizes-qa.jpg"
+      ],
+      "deviations": [
+        "Native canvas differs from the requested canvas; preserve its actual aspect ratio."
+      ],
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i13-provenance.json",
+      "generatorNativeSize": [
+        1754,
+        897
+      ]
     },
     {
       "name": "ma12-drainage-channel-v1.png",
@@ -1785,14 +2011,65 @@
       ],
       "description": " (2000 × 1200 px): a long concrete drainage channel with a smooth, curved U-shaped (parabolic) cross-section, seen from a low three-quarter view looking along its length, so the curved end section is visible in front and the channel recedes into the distance; dry, with a thin line of damp at the bottom; short grass on both banks ending in a soft transparent edge. No water flowing, fences, signs or people. Codex reports, in file pixels: the channel's centre line at the near end and at the far end, and the near end's rim points.",
       "exists": false,
-      "path": "public/assets/maths/ma12-drainage-channel-v1.png",
-      "state": "held-design-blocker",
+      "path": "public\\assets\\maths\\ma12-drainage-channel-v1.png",
+      "state": "delivered",
       "nativeSizeTarget": [
         2000,
         1200
       ],
       "profileNeverWarp": false,
-      "actualMeasurements": null
+      "actualMeasurements": null,
+      "lesson": "i13",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-baa0dc1a-bae0-4424-9906-73b413be5c30.png",
+      "sha256": "30a1456bbc0fa1b6b3b8e1735ecd5acc86f4aecfaa77da9cd788b5b21065607e",
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "alpha128Box": [
+        124,
+        116,
+        1507,
+        871
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": "work\\brief238\\revised-plates\\ma12-drainage-channel-v1-four-backgrounds.jpg",
+      "operations": "Native generator PNG copied byte for byte. No resizing,stretching,warping or pixel edits. QA composites only.",
+      "visualQAInspected": true,
+      "anchors": {
+        "nearCentreLine": [
+          721,
+          804
+        ],
+        "farCentreLine": [
+          1370,
+          126
+        ],
+        "nearRimLeft": [
+          218,
+          404
+        ],
+        "nearRimRight": [
+          1143,
+          422
+        ],
+        "anchorTolerancePixels": 6
+      },
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-drainage-channel-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i13-specified-sizes-qa.jpg"
+      ],
+      "deviations": [
+        "Native canvas differs from the requested canvas; preserve its actual aspect ratio."
+      ],
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i13-provenance.json",
+      "generatorNativeSize": [
+        1619,
+        971
+      ]
     },
     {
       "name": "ma12-robot-vacuum-top-v1.png",
@@ -1986,14 +2263,142 @@
         "work/brief238/i14-art-qa.jpg"
       ],
       "findings": []
+    },
+    {
+      "lesson": "i01",
+      "name": "ma12-plant-stand-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-d5c4bcec-175b-473e-b7aa-4889013919cf.png",
+      "sha256": "a636aa2d017630494988d4fdbb61206b06f3739978c63c51c0a0558cc4176e03",
+      "nativeSize": [
+        1197,
+        1315
+      ],
+      "alpha128Box": [
+        91,
+        330,
+        1092,
+        1225
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "qa": [
+        "plant-stand-nov12-alpha-qa.jpg",
+        "plant-stand-nov12-growth-qa.jpg"
+      ],
+      "state": "delivered-native-guide-differences-reported",
+      "operations": "Built-in image generator,new plate then edge-cleanup edit. Final PNG copied byte-for-byte;only QA composites resized/overlaid. No final pixel edits.",
+      "anchors": {
+        "soil": [
+          {
+            "soilCentre": [
+              276.0,
+              865
+            ],
+            "soilStrip": [
+              190,
+              865,
+              362,
+              865
+            ]
+          },
+          {
+            "soilCentre": [
+              596.0,
+              612
+            ],
+            "soilStrip": [
+              505,
+              612,
+              687,
+              612
+            ]
+          },
+          {
+            "soilCentre": [
+              910.0,
+              346
+            ],
+            "soilStrip": [
+              817,
+              346,
+              1003,
+              346
+            ]
+          }
+        ],
+        "postsBaseFloorYApprox": 1180
+      },
+      "geometryFinding": "Native1197x1315 painting differs from requested1640x1800. Soil spacing about258px;floor-to-bottom-soil about315px. Does not certify a global14px/cm map or4px guide. Builder must fit measured native plate under rootdecision30 and verify actual heights;no plate warp.",
+      "path": "public\\assets\\maths\\ma12-plant-stand-v1.png",
+      "visualQAInspected": true,
+      "designs": [
+        "i01"
+      ],
+      "qaInspected": [
+        "work\\brief238\\revised-plates\\ma12-plant-stand-v1-four-backgrounds.jpg",
+        "work\\brief238\\revised-plates\\i01-growth-guide-qa.jpg"
+      ],
+      "provenance": "docs\\production\\claude-pm\\assets\\ma12-i01-provenance.json",
+      "previousState": "held-native-guide-mismatch",
+      "geometryDisposition": "Owner explicitly instructed voicing repaired designs after root decision68. Decision30/brief238: report measured native geometry;builder fits coded curve to plate without warping. Geometry finding retained;no claim of4px compliance or built playback approval.",
+      "soil": [
+        {
+          "soilCentre": [
+            276.0,
+            865
+          ],
+          "soilStrip": [
+            190,
+            865,
+            362,
+            865
+          ]
+        },
+        {
+          "soilCentre": [
+            596.0,
+            612
+          ],
+          "soilStrip": [
+            505,
+            612,
+            687,
+            612
+          ]
+        },
+        {
+          "soilCentre": [
+            910.0,
+            346
+          ],
+          "soilStrip": [
+            817,
+            346,
+            1003,
+            346
+          ]
+        }
+      ],
+      "floorPostsBaseYApprox": 1180,
+      "uncertaintyPixels": 4,
+      "requestedCanvas": [
+        1640,
+        1800
+      ],
+      "strictGuidePassed": false,
+      "promptFile": "work\\brief238\\revised-plates\\plant-stand-nov12-prompts.json",
+      "inspection": "Four-background alpha QA and112/224/350pixel growth at300/770pixel heights inspected. Isolated empty pots,clean composite edges,clear shoot air,no timber contact. Generator preview displayed colored hidden-alpha RGB;actual composites show no colored fringe. Geometry differences retained for builder fitting.",
+      "clearAirColumns": "Observed clearaboveallthreepots;400pixel requestedwidth cannot be certified ondifferentnativecanvas.",
+      "marginFinding": "Native canvas and margins differ fromrequestedguide;no claim of8percent compliance."
     }
   ],
   "authorisedLocalFinishing": "User explicitly approved local pixel edits,including outlines,ratios,transparent padding and tile seams. Profiles never warped.",
   "sourceInventory": "work/brief238/asset-brief-inventory.json",
   "anchorComparison": "docs\\production\\claude-pm\\checks\\brief238-anchor-comparison.md",
   "counts": {
-    "delivered": 22,
-    "held": 5,
-    "pending": 0
+    "supplied": 28,
+    "geometryHeld": 3
   }
 }

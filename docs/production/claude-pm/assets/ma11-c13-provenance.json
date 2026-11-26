@@ -1,0 +1,67 @@
+{
+  "brief": 248,
+  "lesson": "c13",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-e058f48d-885c-41b2-84d0-4114a46b5151.png",
+      "sha256": "123925242e4ae9ee94c40d73188c577a9aa3d01728135c6cbe3aac894f1a64af",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        112,
+        1774,
+        887
+      ],
+      "marginFractions": [
+        0.0,
+        0.1262683201803833,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief248/c13-beach-day-v2-native-paper.jpg",
+        "work/brief248/c13-beach-day-v2-native-dark.jpg",
+        "work/brief248/c13-beach-day-v2-native-white.jpg",
+        "work/brief248/c13-beach-day-v2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-beach-day-v1.png",
+      "path": "public/assets/maths/ma11-beach-day-v1.png",
+      "brief": 248,
+      "lesson": "c13",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1200
+      ],
+      "qa": {
+        "result": "passed: object counts, empty-of-people scene, sky fade, alpha and900/full-width checks",
+        "observations": [
+          "Candidate1 replaced because sky ended abruptly at horizon. Candidate2 supplies a soft transparent fade.",
+          "Landscape intentionally fills side and bottom edges."
+        ],
+        "evidence": [
+          "work/brief248/c13-beach-v2-qa-paper-dark-paper.jpg",
+          "work/brief248/c13-beach-v2-qa-paper-dark-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Beach delivered at native1774x887 after adding the missing pale sky fade. Two surfboards, pair of plain red-over-yellow patrol flags, umbrellas, towels and cooler are readable at900/full width; no people. Sky fades to transparent across the upper band, with solid landscape to the bottom and side edges. Paper/dark alpha checks pass.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c13-generation.json",
+    "work/brief248/c13-beach-v2-qa.json",
+    "work/brief248/c13-beach-v2-qa-paper-dark-paper.jpg",
+    "work/brief248/c13-beach-v2-qa-paper-dark-dark.jpg"
+  ]
+}

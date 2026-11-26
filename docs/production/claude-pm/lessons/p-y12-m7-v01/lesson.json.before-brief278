@@ -1,0 +1,158 @@
+{
+  "id": "phys-y12-m7-v01",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "72483bb6ed2b6257639d0a666d7412b7025a7e8d42d6c1f528c0f92b6f825006",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (yes, it works the other way)",
+      "voiceover": {
+        "text": "Here's where we left off. A changing magnetic field creates an electric field that curls round it. Now flip it. Could a changing electric field create a magnetic field? In the 1860s, James Clerk Maxwell said yes, and wrote both ideas into one set of equations. Then something remarkable fell out of the maths: a wave made of electric and magnetic fields, with a speed you could calculate. Make your prediction. What do you think that speed turned out to match? It matched the speed of light."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "unification",
+      "title": "one theory for both fields",
+      "voiceover": {
+        "text": "Before Maxwell, electricity and magnetism were already linked. A current makes a magnetic field, and a changing magnetic field makes an electric field. Maxwell added the missing piece. Picture a capacitor charging. No charge crosses the gap between the plates, but the electric field in the gap is growing. Maxwell's equations say that changing electric field makes a magnetic field that curls round the gap, just as a current would. So each kind of field can create the other. One theory now described both. That's what unification means: one set of rules explaining things once treated separately."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "self-sustaining-wave",
+      "title": "a wave that carries itself",
+      "voiceover": {
+        "text": "Now put the two pieces together. A changing electric field makes a changing magnetic field. That changing magnetic field makes a changing electric field, a little further out. And that makes another changing magnetic field, and so on. Each field keeps creating the other, so the disturbance travels by itself. Nothing has to carry it, no air, no water, no medium at all. That's an electromagnetic wave. The electric field and the magnetic field are at right angles to each other, and both are at right angles to the direction the wave travels. So it's a transverse wave. And the two fields rise and fall together, in phase."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "production",
+      "title": "what starts the wave",
+      "voiceover": {
+        "text": "So what starts the wave? Accelerating charge. In a radio antenna, an alternating voltage drives electrons up and down, many millions of times a second. They speed up, slow down and reverse, so they're always accelerating. Their changing electric field launches the chain of changing fields, and the wave travels outwards. The wave's frequency is the frequency of the charges' oscillation. A charge sitting still has a steady electric field, with no wave. A charge moving at constant velocity is a steady current, with a steady magnetic field, and still no wave. Only accelerating charges radiate."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "predicted-speed",
+      "title": "the speed falls out of the maths",
+      "voiceover": {
+        "text": "Here's the part that convinced people. Maxwell's equations fix the wave's speed in a vacuum. It's one over the square root of two constants multiplied together. Mu nought, the permeability of free space, sets how strongly currents make magnetic fields. Epsilon nought, the permittivity of free space, sets how strongly charges make electric fields. Both had been measured with coils and capacitors, in experiments that had nothing to do with light. Multiply them, take the square root, and take one over that. You get about three point zero zero times ten to the eight metres per second. That already matched measurements of the speed of light. So Maxwell concluded that light is an electromagnetic wave."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hertz",
+      "title": "testing the prediction",
+      "voiceover": {
+        "text": "A prediction needs testing. About twenty years later, Heinrich Hertz made a spark jump back and forth across a gap, driving charges to oscillate very fast. Across the room, a separate loop of wire with a tiny gap sparked too, with no wires between them. He'd sent and received an electromagnetic wave. He measured its wavelength, and he knew its frequency, so he could use v equals f lambda. Picture a frequency of five times ten to the seven hertz, and a wavelength of six metres. Then the speed is three times ten to the eight metres per second. Hertz's waves also reflected, refracted and could be polarised, just like light."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "em-family",
+      "title": "one family, one speed",
+      "voiceover": {
+        "text": "So light is one member of a whole family. Radio waves, microwaves, infrared, visible light, ultraviolet, X-rays and gamma rays are all electromagnetic waves. In a vacuum, they all travel at the same speed, c, about three times ten to the eight metres per second, whatever their frequency. What changes is the frequency and the wavelength, linked by c equals f lambda. Higher frequency means shorter wavelength."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the chain. Change E, make B. Change B, make E. Shake a charge, and it runs off at c."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Outline how Maxwell's theory predicted that electromagnetic waves exist, and how it predicted their speed. Then explain why the predicted speed led to the conclusion that light is an electromagnetic wave. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "A changing electric field creates a magnetic field, and a changing magnetic field creates an electric field, so each regenerates the other, and a wave travels with no medium. The theory gave its speed as one over root mu nought epsilon nought, from constants measured in electrical experiments. That came out at about three times ten to the eight metres per second, equal to the measured speed of light, so light must be an electromagnetic wave. The classic slip is saying Maxwell measured the speed of light. He calculated it, from electricity and magnetism."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A radio station transmits at ninety-eight point five megahertz. Describe how its antenna produces the wave, and calculate the wavelength. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "An alternating voltage makes electrons in the antenna oscillate at ninety-eight point five megahertz. These accelerating charges create changing electric and magnetic fields that regenerate each other and travel outwards at c. Lambda equals c over f, three times ten to the eight over ninety-eight point five times ten to the six, which is about three point zero five metres. The slip is forgetting to change megahertz into hertz, which gives an answer a million times too big."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So Maxwell connected electricity and magnetism to light, because his equations predicted a self-sustaining wave of fields, and calculated its speed to be the speed of light. But three times ten to the eight metres per second is enormous. Light crosses a three metre room in about ten nanoseconds. So how could anyone measure a speed like that? How can a time-and-distance measurement reveal the speed of light?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

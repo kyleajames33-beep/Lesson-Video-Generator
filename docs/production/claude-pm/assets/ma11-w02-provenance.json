@@ -1,0 +1,129 @@
+{
+  "brief": 247,
+  "lesson": "w02",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-0135df08-7b3e-4392-aaff-9676821b65d1.png",
+      "sha256": "6234d27282d8a1ae58aebe4ad67cb2e9da44f8c6df17ed0474ddb2d0d24ea25e",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        130,
+        128,
+        1407,
+        930
+      ],
+      "marginFractions": [
+        0.08463541666666667,
+        0.125,
+        0.083984375,
+        0.091796875
+      ],
+      "evidence": [
+        "work/brief247/chocolate-block-revised-native-paper.jpg",
+        "work/brief247/chocolate-block-revised-native-dark.jpg",
+        "work/brief247/chocolate-block-revised-native-white.jpg",
+        "work/brief247/chocolate-block-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-chocolate-block-v1.png",
+      "path": "public/assets/maths/ma11-chocolate-block-v1.png",
+      "brief": 247,
+      "lesson": "w02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "static 24-piece handoff pass; w02 grid and row animation held",
+        "observations": [
+          "Native paper/dark and 300/600 px comparisons inspected. Exactly four rows of six faces, no text or people.",
+          "Visible cell widths 209 to 221 px; heights 190 to 205 px. Mean width/height 1.0675, so the requested identical-square grid is not achieved.",
+          "After translation only, row edge errors at 2000 px equivalent are 3.91, 5.21, 14.32 and 9.11 px. No stretching or artificial pass."
+        ],
+        "evidence": [
+          "work/brief247/chocolate-registration.json",
+          "work/brief247/chocolate-row-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-chocolate-block-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-85bd3064-aa9c-44ca-8f6d-c21368baf6fa.png",
+      "sha256": "984480423edb56ed8be59d388c42cf7aae99e563af32e79ddbcd6d26dc1479dd",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        129,
+        127,
+        1408,
+        353
+      ],
+      "marginFractions": [
+        0.083984375,
+        0.1240234375,
+        0.08333333333333333,
+        0.6552734375
+      ],
+      "evidence": [
+        "work/brief247/chocolate-row-revised-native-paper.jpg",
+        "work/brief247/chocolate-row-revised-native-dark.jpg",
+        "work/brief247/chocolate-row-revised-native-white.jpg",
+        "work/brief247/chocolate-row-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-chocolate-row-v1.png",
+      "path": "work/brief247/ma11-chocolate-row-v1-revised.png",
+      "brief": 247,
+      "lesson": "w02",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1400
+      ],
+      "qa": {
+        "result": "failed 3 px row registration; retained candidate only",
+        "observations": [
+          "Native paper/dark and 300/600 px comparisons inspected. Exactly four rows of six faces, no text or people.",
+          "Visible cell widths 209 to 221 px; heights 190 to 205 px. Mean width/height 1.0675, so the requested identical-square grid is not achieved.",
+          "After translation only, row edge errors at 2000 px equivalent are 3.91, 5.21, 14.32 and 9.11 px. No stretching or artificial pass."
+        ],
+        "evidence": [
+          "work/brief247/chocolate-registration.json",
+          "work/brief247/chocolate-row-registration-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/ma11-chocolate-row-v1-sidecar.json"
+    }
+  ],
+  "result": "Whole 24-piece chocolate block delivered for w01 handoff, with measured grooves. The separately painted row still fails the 3 px registration test after a second version; cells also vary in size. w02 row-splitting and exact algebra-grid overlay remain held for root, not cleared by the static block. Failed row stays in work/brief247. No approved fallback is specified for this row in the rulings, so none was invented.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/chocolate-registration.json",
+    "work/brief247/check-chocolate.py",
+    "work/brief247/chocolate-grid-paper.jpg",
+    "work/brief247/chocolate-grid-dark.jpg",
+    "work/brief247/chocolate-row-registration-paper.jpg",
+    "work/brief247/chocolate-row-registration-dark.jpg",
+    "work/brief247/chocolate-size-paper.jpg",
+    "work/brief247/chocolate-size-dark.jpg",
+    "work/brief247/chocolate-size-transforms.json"
+  ]
+}

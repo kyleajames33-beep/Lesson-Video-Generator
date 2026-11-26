@@ -1,0 +1,70 @@
+{
+  "id": "b2c-paramecium-v2",
+  "brief": 242,
+  "file": "public/assets/biology/b2c-paramecium-v2.png",
+  "sha256": "c3713e602f62c72256d27f03a46286ca67cd8898bcc7ce579fc5fe5579bc9368",
+  "nativeSize": [
+    1536,
+    1024
+  ],
+  "originalPreserved": "public/assets/biology/b2c-paramecium-v1.png",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-326a1bb2-b940-462f-94b8-d4ecf05f688d.png",
+  "prompt": "Background and alpha repair of this exact educational Paramecium illustration. Keep the same single horizontal slipper-shaped organism, orientation, fine ink-watercolour texture, pale gold cytoplasm, cilia all around, oral groove on lower side, large kidney-shaped purple macronucleus and small round micronucleus, two star-shaped contractile vacuoles, and food vacuoles. Preserve their positions and all biological features as closely as possible. Remove the ENTIRE opaque black background and the broad cream glow around the organism. All empty exterior, including spaces BETWEEN individual cilia, must be truly transparent PNG alpha. Retain each cilium with a fine dark ink edge readable on cream paper. No external haze, halo, wash, shadow or backdrop. No text, labels, numbers, arrows, people, human faces or hands. Native landscape aspect, complete organism including cilia inside canvas with at least eight percent clear margin. Deliver a new sibling b2c-paramecium-v2.png and preserve v1.",
+  "method": "Built-in image edit, final PNG copied unchanged. Python used only for QA composites and measurements.",
+  "alphaRange": [
+    0,
+    254
+  ],
+  "alphaAny": [
+    0,
+    19,
+    1528,
+    1024
+  ],
+  "alphaAbove1": [
+    92,
+    257,
+    1442,
+    766
+  ],
+  "anchors": {
+    "cellCentre": [
+      768,
+      510
+    ],
+    "macronucleus": [
+      755,
+      502
+    ],
+    "micronucleus": [
+      881,
+      520
+    ],
+    "leftContractileVacuole": [
+      298,
+      460
+    ],
+    "rightContractileVacuole": [
+      1269,
+      503
+    ],
+    "oralGroove": [
+      772,
+      659
+    ]
+  },
+  "qa": {
+    "result": "pass black backing and broad glow removal",
+    "evidence": [
+      "work/brief242/paramecium-v2-native-paper.jpg",
+      "work/brief242/paramecium-v2-native-dark.jpg"
+    ],
+    "observations": [
+      "Actual paper and dark composites have clear spaces between individual cilia and no broad backing or halo. Fine pale cilia are retained anatomy.",
+      "Slipper shape, oral groove, two nuclei, two star-shaped contractile vacuoles and food vacuoles preserved in position and orientation. Brush detail is regenerated, not pixel identity.",
+      "No people, human faces, hands, labels, numbers or question data.",
+      "Native 1536 by 1024 remains landscape 3:2. Visible side margins are about six percent, below the requested eight; leave extra scene padding. Raw alpha-1 strays enlarge bounds but are invisible in actual composites."
+    ]
+  },
+  "limitation": "Static plate approval only. Recheck native aspect, label anchors and actual scene motion; no whole-lesson voice clearance."
+}

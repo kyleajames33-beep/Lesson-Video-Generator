@@ -1,0 +1,60 @@
+{
+  "id": "y11-saltmarsh-snail-v2",
+  "brief": 242,
+  "file": "public/assets/biology/y11-saltmarsh-snail-v2.png",
+  "sha256": "457784b9be45fc94af95fa0131b0071d733fefd28e9dcd71f63f75782924798a",
+  "nativeSize": [
+    1341,
+    1173
+  ],
+  "originalPreserved": "public/assets/biology/y11-saltmarsh-snail-v1.png",
+  "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-78024d09-7c20-4d70-9807-94faa017dda3.png",
+  "method": "Built-in image generation; PNG copied unchanged. Python for QA composites and measurements only.",
+  "prompt": "Scientific educational plate of small Australian Salinator-type saltmarsh air-breathing snail. Side view facing right, plain brown/grey-brown rounded shell with low short spire, subtle spiral whorls, no bold bands. Compact foot beneath shell, short blunt tentacles, eyes at bases, no long garden-snail eye stalks. Fine dark ink and muted layered watercolour, no ground. Roughly 800 by 700 landscape with eight percent clear margins. No text, scale, labels, numbers, arrows, people, faces, hands, shadow, halo, glow, wash or white border. True alpha. Original v1 preserved.",
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    191,
+    244,
+    1147,
+    918
+  ],
+  "anchors": {
+    "shellCentre": [
+      572,
+      540
+    ],
+    "spire": [
+      481,
+      294
+    ],
+    "footCentre": [
+      689,
+      866
+    ],
+    "head": [
+      1035,
+      785
+    ]
+  },
+  "qa": {
+    "result": "static brief morphology and alpha pass",
+    "observations": [
+      "Plain brown shell without bold bands, short spire, compact foot and short blunt tentacles with basal eye shown. No garden-snail long eye stalks.",
+      "Native paper/dark composites are clean, no ground or exterior halo. More than eight percent clear margins.",
+      "Same 1341 by 1173 native canvas as rejected v1. Generated teaching illustration, not an authenticated species voucher or micrograph. Do not add an unsupported precise species identification.",
+      "Scene insertion and root choice to replace the estuary fallback remain pending; no whole-lesson approval."
+    ],
+    "evidence": [
+      "work\\brief242\\saltmarsh-snail-v2-native-paper.jpg",
+      "work\\brief242\\saltmarsh-snail-v2-native-dark.jpg"
+    ]
+  },
+  "references": [
+    "https://molluscsoftasmania.org.au/project/salinator-fragilis/",
+    "https://publications.australian.museum/taxonomy-and-anatomy-of-amphiboloidea-gastropoda-heterobranchia-archaeopulmonata/"
+  ],
+  "referenceScope": "Museum taxonomy and habitat context consulted; design requests a generic Salinator-type snail, not a diagnostic species portrait."
+}

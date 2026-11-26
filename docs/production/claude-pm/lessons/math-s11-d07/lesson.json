@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d07",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "ea9f3ca7efa1f4a38c4cd2ef5baba26d81c2a26d73c108f7f6c96e98ab5ebb35",
+  "scenes": [
+    {
+      "id": "hook-should-bars-touch",
+      "title": "hook: should these bars touch?",
+      "voiceover": {
+        "text": "Here's where our twenty students charge their phones. A histogram's bars touch, because the classes meet on a number line. But there's no number line under bedroom and kitchen. Nothing sits halfway between them. So these data need a different graph, and a different kind of table. And every dataset raises the same question. Which graph suits a dataset, including categorical data and spreadsheet graphs?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "categorical-tables",
+      "title": "categorical data in tables",
+      "voiceover": {
+        "text": "Start with the table. Categorical data are counted, so a frequency table works, with one row for each category. A percentage column makes the counts easier to compare. Twelve of twenty is sixty per cent in the bedroom. Five of twenty, twenty-five per cent, in the kitchen. Then ten per cent and five per cent, adding to a hundred. Tables can also count two categorical variables at once. This is a two-way table. Down the side, where the phone charges. Across the top, how students get to school. Five bus students charge in the bedroom, and seven from nearby. One bus student charges elsewhere, and seven from nearby. The totals check everything. Twelve and eight down the side, six and fourteen across the bottom, twenty in the corner."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "column-graphs",
+      "title": "column graphs: gaps, and keeping order",
+      "voiceover": {
+        "text": "Now graph it. A column graph has one column for each category, with gaps between them, because the categories are separate. The heights are the frequencies, and the vertical axis starts at nought, or the columns would mislead. Give it a title, and label both axes. Because phone location is nominal, the order of the columns doesn't matter. Sorting them, largest first, makes the graph easier to read. But not every categorical variable can be sorted. How rested do students feel? Not at all, a little, somewhat, quite, very. That's ordinal. Sort those columns by height, and the order that gave them meaning is gone. Ordinal data keep their order."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "spreadsheet",
+      "title": "a spreadsheet organises and graphs",
+      "voiceover": {
+        "text": "A spreadsheet can do the organising and the graphing. Put the twenty raw answers in one column, exactly as they came in. Then let the spreadsheet count them. COUNTIF counts the cells in a range that match what you ask for. Equals COUNTIF, B two to B twenty-one, bedroom, gives twelve. Do the same for each category. For the percentage, divide by twenty, and format the cell as a percentage. Then select the categories and counts, and insert a column chart. Add a title and axis labels, because the spreadsheet won't choose good ones for you. For numerical data, like screen time, you'd make a histogram instead, with the gaps set to zero, like last time. The spreadsheet makes the chart, but you still choose which chart is right."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "choosing-a-graph",
+      "title": "choosing a graph",
+      "voiceover": {
+        "text": "So how do you choose a graph for one dataset? Name the data type first. Remember the type tree? It decides most of the choice. Categorical data go in a column graph. If the categories are parts of one whole, like how a budget is split, a sector graph or a divided bar chart also works. Numerical data with a small number of values suit a dot plot, one dot per value above a number line, or a stem-and-leaf plot, which keeps every value. Numerical data with many values get grouped, into a histogram. And if the data change over time, like sales each day, a line graph joins the points in time order, so you can see the rise and fall. Then justify your choice by naming the type of data and what the graph lets you see."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "four-datasets",
+      "title": "four datasets, four graphs",
+      "voiceover": {
+        "text": "Let's try four. Where phones charge is categorical, so a column graph, because it compares the categories side by side. The hours of sleep of our twenty students are numerical, with only a few different values, so a dot plot, because it shows every value and where they bunch up. The screen times of thirty students are numerical with almost all different values, so a histogram, because grouping shows the shape. And a phone's battery level every hour of a day changes over time, so a line graph, because it shows the battery running down. One graph per student, for screen time, would be the slip. Thirty columns of one show nothing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Name the data type first, then choose the graph. Categories get gaps. Numbers on a number line touch. And change over time goes along a line."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Twenty-five students named their favourite streaming genre. Comedy nine, drama four, reality seven, and documentary five. Write each as a percentage of the twenty-five students. Then, in a column graph of these data, should the columns touch? Explain. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Divide each count by twenty-five. Comedy thirty-six per cent, drama sixteen, reality twenty-eight, and documentary twenty, adding to a hundred. The columns shouldn't touch. Genres are categories, with nothing between them on a number line, so the columns have gaps. Saying yes, like a histogram, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Choose the most suitable graph for each dataset, and justify your choice. One, a café's coffee sales each day for four weeks. Two, the masses of sixty apples from an orchard. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Daily sales change over time, so a line graph, because it shows the rise and fall from day to day. Apple mass is continuous numerical, with sixty values, so group them into a histogram, because grouping shows the shape. A column for every apple is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-reading-graphs",
+      "title": "handoff: reading statistical graphs",
+      "voiceover": {
+        "text": "Choosing a graph is half the skill. The other half is reading one, because in an exam, the graph is usually already drawn. Here's a cricket scoreboard showing a batter's fifteen scores as a stem-and-leaf plot, and around it, a dot plot, a line graph, a sector graph and a divided bar chart. Each one is built to answer a different kind of question. What does each one tell us? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

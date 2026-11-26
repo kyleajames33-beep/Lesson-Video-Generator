@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v04.md",
+  "sourceSha256": "57165c02b6d93ded8cba2c038f8edae95abf82777be630acc07ab934fb8f5058",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's our electron beam, curving inside a magnetic field, without speeding up or slowing down. But a magnetic field doesn't always push. Put a proton in the same field, sitting still. Then fire it along the field lines. Then fire it across them. Which of these feel a force? Make your prediction.",
+      "audioFile": "public/audio/phys-y12-m6-v04/hook.wav"
+    },
+    {
+      "id": "when-force",
+      "text": "Only one of them. The proton sitting still feels nothing, because a magnetic field only pushes on charges that are moving. Fired straight along the field lines, it feels nothing either, and carries on in a straight line. Fired across the field lines, it's pushed sideways. That's a big contrast with an electric field, which pushes on a charge even when it's sitting still.",
+      "audioFile": "public/audio/phys-y12-m6-v04/when-force.wav"
+    },
+    {
+      "id": "dots-crosses",
+      "text": "Magnetic fields are three dimensional, so on a flat page, we need symbols. A cross means the field points into the page, like the tail feathers of an arrow flying away from you. A dot means the field points out of the page, like the tip of an arrow coming towards you. Turn our view to face the page, and these field lines become a grid of crosses. Exam questions almost always draw magnetic fields this way.",
+      "audioFile": "public/audio/phys-y12-m6-v04/dots-crosses.wav"
+    },
+    {
+      "id": "size",
+      "text": "How big is the force? F equals q v B sine theta. q is the charge, v is the speed, B is the magnetic field strength in teslas, and theta is the angle between the velocity and the field. Another way to see it: only the part of the velocity across the field counts, v perpendicular. Cos is close, so the part across the field, opposite theta, takes sine. It's v sine theta. At ninety degrees, sine theta is one, so the force is biggest, q v B. Along the field, theta is zero, sine zero is zero, and there's no force at all.",
+      "audioFile": "public/audio/phys-y12-m6-v04/size.wav"
+    },
+    {
+      "id": "direction",
+      "text": "The direction is the strange part. The force is at right angles to both the velocity and the field. To find it for a positive charge, you can use the right-hand palm rule. Point your thumb along the velocity, and your fingers along the field. Your palm faces the way the force pushes. For a positive charge moving right, with the field into the page, the force is up.",
+      "audioFile": "public/audio/phys-y12-m6-v04/direction.wav"
+    },
+    {
+      "id": "negative-charge",
+      "text": "For a negative charge, like an electron, the force is the other way. So an electron moving right, in a field into the page, is pushed down. Same field, same direction of motion, opposite charge, so the opposite push. That's why our electron beam curved downwards. Find the direction for a positive charge first, then reverse it for a negative one.",
+      "audioFile": "public/audio/phys-y12-m6-v04/negative-charge.wav"
+    },
+    {
+      "id": "worked-electron",
+      "text": "Let's put numbers in. An electron moves to the right at three point zero times ten to the six metres per second, at right angles to a field of zero point zero five oh tesla, pointing into the page. The force is q v B, one point six oh two times ten to the minus nineteen, times three times ten to the six, times zero point zero five. That's two point four times ten to the minus fourteen newtons. For a positive charge it would point up, so for the electron, it points down.",
+      "audioFile": "public/audio/phys-y12-m6-v04/worked-electron.wav"
+    },
+    {
+      "id": "angle",
+      "text": "Now tilt the electron's path, so it moves at thirty degrees to the field. Sine thirty is a half, so the force halves, to one point two times ten to the minus fourteen newtons. At sixty degrees, it's about two point oh eight. Lined up with the field, it's zero. The force depends on sine theta, so doubling the angle doesn't double the force.",
+      "audioFile": "public/audio/phys-y12-m6-v04/angle.wav"
+    },
+    {
+      "id": "aurora",
+      "text": "You can see this rule at work in the sky. Charged particles stream out from the Sun at high speed. Where they meet Earth's magnetic field head on, moving across the field lines, they're pushed sideways and steered away. Some charged particles collect in the space around Earth, and get sped up there. Near the poles, the field lines dip down into the Earth. The part of a particle's velocity along the field lines feels no force at all, so these fast particles can travel along the lines, down into the upper atmosphere. There they hit gas molecules and make them glow. That's the aurora.",
+      "audioFile": "public/audio/phys-y12-m6-v04/aurora.wav"
+    },
+    {
+      "id": "always-sideways",
+      "text": "Here's the thing to notice. The force is always at right angles to the velocity. It never points along the motion, so it never pushes the charge forwards, or holds it back. It only ever pushes sideways. Hold on to that, because it's the key to the next video.",
+      "audioFile": "public/audio/phys-y12-m6-v04/always-sideways.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "To remember when there's a force: still, no force. Along the field, no force. Across the field, full force, q v B. And for direction, find it for a positive charge, then flip it for a negative one.",
+      "audioFile": "public/audio/phys-y12-m6-v04/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A proton moves at five point zero times ten to the five metres per second, at thirty degrees to a uniform magnetic field of zero point four zero tesla. Calculate the magnitude of the magnetic force on it. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v04/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "F equals q v B sine theta. That's one point six oh two times ten to the minus nineteen, times five times ten to the five, times zero point four, times sine thirty, which is a half. So the force is one point six times ten to the minus fourteen newtons. The classic slip is using cosine instead of sine, which gives two point eight times ten to the minus fourteen.",
+      "audioFile": "public/audio/phys-y12-m6-v04/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. An electron moves up the page, through a uniform magnetic field pointing out of the page. What's the direction of the force on it? And what would the force be if the same electron moved out of the page instead? Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v04/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "For a positive charge, thumb up the page and fingers out of the page give a palm facing right. The electron is negative, so the force on it points to the left. Moving out of the page, it travels along the field, so the force is zero. The classic slip is forgetting to reverse for the electron, and answering right.",
+      "audioFile": "public/audio/phys-y12-m6-v04/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So a magnetic field pushes only on a charge moving across it, with a force q v B sine theta, at right angles to the motion. As the particle turns, the force turns with it, and keeps pushing sideways. So does the particle speed up? Why does a perpendicular magnetic field bend a path without increasing speed?",
+      "audioFile": "public/audio/phys-y12-m6-v04/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v04/key-notes.wav"
+    }
+  ]
+}

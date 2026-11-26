@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "fcb2e86db9976ca61868ca375a008b8860c34d88dae53f7d5cf0a37bc37da2a2",
+  "sourceDesignSha256": "6e43ce24bb98d4c323668818e791fc80619a3e9b2f4ec7ec504a5514c1f91aad",
   "scenes": [
     {
       "id": "hook",
@@ -15,8 +15,18 @@
       "holdSeconds": 3,
       "holdKind": "countdown",
       "planningResponseInterval": {
-        "countdownSeconds": 3
-      }
+        "countdownSeconds": 3,
+        "afterText": "Make your prediction.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Make your prediction.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "volts-per-turn",
@@ -35,7 +45,7 @@
         "text": "So the voltage follows the turns. More turns on the secondary, and the voltage goes up. That's a step-up transformer. Fewer turns on the secondary, and the voltage goes down. That's a step-down transformer. The lab power pack has one inside, turning two hundred and thirty volts from the power point into a few volts for your experiment. And at power stations, step-up transformers raise the voltage for the transmission lines. One thing never changes. The output alternates at the same frequency as the supply, fifty hertz in Australia."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 3,
       "holdKind": "visual"
     },
     {
@@ -65,7 +75,7 @@
         "text": "Now put the two rules together. The voltage goes up by the turns ratio, and the power stays the same. So the current has to go down by the same ratio. In symbols, I p over I s equals N s over N p. The turns are flipped. Try it live, with a load that takes ten watts. Give the secondary fifty, one hundred, two hundred, then four hundred turns. The voltage climbs, the current falls, and their product stays at ten watts. A step-up transformer steps the current down, and a step-down transformer steps the current up. It can't raise both. That's the exchange, voltage for current."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
+      "holdSeconds": 3,
       "holdKind": "visual"
     },
     {

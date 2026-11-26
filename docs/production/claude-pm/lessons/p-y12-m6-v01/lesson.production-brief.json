@@ -2,7 +2,7 @@
   "schemaVersion": 4,
   "source": {
     "lessonPath": "docs/production/claude-pm/lessons/p-y12-m6-v01/lesson.json",
-    "lessonSha256": "b84c114ca73e7762fd68225062a3936154b6558e535285e7a190984a0299360a"
+    "lessonSha256": "21ecdb849e42f473fae69a338ea5a2b8a33e64cba8277cf6744dbb5ece329a5d"
   },
   "progression": {
     "planPath": "docs/production/course-progression-plan-2026-10-09.md",
@@ -38,12 +38,13 @@
       "teachingReason": "Here are the two plates we ended on last time. The top plate is positive, the bottom one negative, and there's a voltage across them. A proton between them accelerates steadily, like a dropped ball. So here's the puzzle. Double the voltage, and what happens to its acceleration? Keep the voltage, but pull the plates twice as far apart. Or swap the proton for an electron. Make your predictions now.",
       "narrationCue": "voltage / apart / electron / now",
       "motionPurpose": "opens on m5-v23's final frame (see \"Opening frame\"); the \"+q\" label rewrites as \"proton (+)\". The proton accelerates from rest towards the bottom plate (violet \"a\" arrow) and resets. On \"voltage\" a ghost copy of the plates appears with \"2V\" and a \"?\" on its acceleration arrow; on \"apart\" a second ghost with the gap stretched \"2d\" and \"?\"; on \"electron\" a third ghost with an electron \"(−)\" and \"?\" on both the length and direction of its arrow. On \"now\" the 3 s `Countdown` runs beside chips \"a doubles / halves / no change\" under each ghost. Anchor (Revision 2): from the first sentence the painted high-voltage supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) slides in at the left with two coded leads to the plates, its display window reading \"100 V\" (52 px, navy). Hand tags: blue \"+ to −\" beside the field arrows, and violet \"steady push, steady a\" with a pen arrow to the proton's arrow.",
-      "motionRole": "explain",
+      "motionRole": "hold",
       "onScreenChange": "opens on m5-v23's final frame (see \"Opening frame\"); the \"+q\" label rewrites as \"proton (+)\". The proton accelerates from rest towards the bottom plate (violet \"a\" arrow) and resets. On \"voltage\" a ghost copy of the plates appears with \"2V\" and a \"?\" on its acceleration arrow; on \"apart\" a second ghost with the gap stretched \"2d\" and \"?\"; on \"electron\" a third ghost with an electron \"(−)\" and \"?\" on both the length and direction of its arrow. On \"now\" the 3 s `Countdown` runs beside chips \"a doubles / halves / no change\" under each ghost. Anchor (Revision 2): from the first sentence the painted high-voltage supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) slides in at the left with two coded leads to the plates, its display window reading \"100 V\" (52 px, navy). Hand tags: blue \"+ to −\" beside the field arrows, and violet \"steady push, steady a\" with a pen arrow to the proton's arrow.",
       "motionTools": [
-        "Source diagrams, painted plates and cue-directed changes"
+        "Source diagrams, painted plates and cue-directed changes",
+        "Countdown"
       ],
-      "holdPurpose": "Retain the design's 0 second hold."
+      "holdPurpose": "3 second response hold immediately after \"Make your predictions now.\". Countdown starts with the inserted silence."
     },
     {
       "sceneId": "uniform-field",
@@ -260,10 +261,10 @@
   ],
   "scriptReview": {
     "status": "pass",
-    "reviewer": "Existing passed current source review",
+    "reviewer": "Brief276 freshness and error check; prior independent science review retained",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v01/recording-source-check.json",
-      "sha256": "d1bd8889334a2243977fc2d6e4aede12ef34175509793b0d8860df1a2b240adf"
+      "sha256": "bfeacc7f03dacd19ed9c7d1e21c1a0a8fd0346bba983797d51d4bcdcbbe0af54"
     }
   },
   "studentLearningReview": {
@@ -271,7 +272,7 @@
     "reviewer": "Existing independent learning review and current source readiness",
     "evidence": {
       "path": "work/brief259/physics/P6/phys-y12-m6-v01/recording-source-check.json",
-      "sha256": "d1bd8889334a2243977fc2d6e4aede12ef34175509793b0d8860df1a2b240adf"
+      "sha256": "bfeacc7f03dacd19ed9c7d1e21c1a0a8fd0346bba983797d51d4bcdcbbe0af54"
     }
   },
   "voicedPreview": {

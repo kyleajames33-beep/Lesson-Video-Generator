@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d16",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "a53e63dab740d682cbb8ddedd2e578e408d0c2365d0eedcac2e2d761abe1749b",
+  "scenes": [
+    {
+      "id": "hook-one-picture",
+      "title": "hook: five numbers, one picture",
+      "voiceover": {
+        "text": "Five numbers sum up our twenty nights of sleep. Three, six and a half, seven and a half, eight, and nine and a half. On a number line they already hint at a shape, a short middle, and a long stretch to the left. Turn them into a picture, and you can read the centre, the spread and the shape in a single glance. That picture is a box plot. So how do we draw and read a box plot, including from a histogram or dot plot?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "drawing-box-plot",
+      "title": "drawing a box plot",
+      "voiceover": {
+        "text": "A box plot is a picture of the five-number summary. Start with a number line, with a scale that covers the data. Draw a box from Q one to Q three, here from six and a half to eight. Draw a line inside the box at the median, seven and a half. Then draw the whiskers, lines out from the box to the minimum, three, and the maximum, nine and a half. That's it. Five numbers, one box, and two whiskers. Some box plots show unusual values as separate dots, and we'll meet those later. For now, the whiskers reach the smallest and largest values."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "quarter-in-each",
+      "title": "a quarter in each section",
+      "voiceover": {
+        "text": "Here's the key to reading a box plot. The five numbers split the data into four sections, and each section holds about a quarter of the values. Watch the twenty dots drop in. Five land between three and six and a half. Five between six and a half and seven and a half. Five between seven and a half and eight. And five between eight and nine and a half. The left whisker is long, but it holds no more students than the short part of the box. Length shows spread, not how many. So about a quarter slept six and a half hours or less. The middle half slept between six and a half and eight. And at least half slept seven and a half hours or more. The long left whisker and the median sitting nearer Q three both point to a tail on the left, so the data are negatively skewed. Saying the left whisker holds the most students is a classic slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conclusions",
+      "title": "what can we conclude?",
+      "voiceover": {
+        "text": "Now use it to answer our question. The guideline for people aged fourteen to seventeen is eight to ten hours. The median is seven and a half, below eight, so more than half our sample slept less than the guideline. In fact, Q three is eight, so about three quarters slept eight hours or less. That's a conclusion, a statement about the data we have. An inference goes further, to the population. It suggests that many Year 11 students at our school sleep less than the guideline on school nights. Notice the careful word, suggests, because this was one sample of twenty, on one night."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "from-dot-plot-and-histogram",
+      "title": "box plots from a dot plot and a histogram",
+      "voiceover": {
+        "text": "Exam questions often give a dot plot or a histogram instead of a list. You can still find the quartiles, by counting. Here's the bowler's wickets from sixteen matches. Count dots from the left. Q one is between the fourth and fifth dots, both one wicket. The median is between the eighth and ninth, both two. Q three is between the twelfth and thirteenth, both three. So the box goes from one to three, with a line at two, and whiskers to nought and five. A histogram where each bar is a single value works the same way, with a running total. The screens histogram has bars of three, seven, six and four. The running totals are three, ten, sixteen and twenty. The fifth and sixth values are ones, so Q one is one. The tenth is one and the eleventh is two, so the median is one and a half. And the fifteenth and sixteenth are twos, so Q three is two. If the bars are grouped classes, you can only estimate the quartiles."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "digital-tools",
+      "title": "with digital tools",
+      "voiceover": {
+        "text": "Apps and spreadsheets can draw box plots too. Paste in the values, choose box plot, and it appears. Check two settings before you trust it. First, how it finds the quartiles, because some tools use a slightly different rule from the halves method. Second, whether it shows unusual values as separate dots. Some do that automatically, and then the whisker stops short of the minimum. Draw it by hand once, and you'll know what the tool should show."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Five numbers, one box, two whiskers. Each section holds about a quarter of the data. And a long whisker, or a median that's off-centre, points to the tail."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A dot plot shows the points a basketball player scored in twelve games. Eight, ten, ten, twelve, thirteen, fourteen, fourteen, fifteen, sixteen, eighteen, twenty and twenty-four. Find the five-number summary, and describe the box plot you would draw. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Twelve values, so the median is between the sixth and seventh, fourteen and fourteen, fourteen. Q one is between the third and fourth, ten and twelve, so eleven. Q three is between sixteen and eighteen, seventeen. So a box from eleven to seventeen, a line at fourteen, and whiskers to eight and twenty-four. Taking ten for Q one is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A box plot of the battery life of a phone model, in hours, shows a minimum of nine, Q one fourteen, a median of sixteen, Q three seventeen, and a maximum of nineteen. What percentage of the phones lasted fourteen hours or more? And describe the shape of the distribution. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Fourteen is Q one, so a quarter of the phones are below it, and three quarters, seventy-five per cent, lasted fourteen hours or more. The left whisker is five hours long, against two on the right, and the median sits closer to Q three, so it's negatively skewed. Answering fifty per cent is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-parallel",
+      "title": "handoff: parallel box plots",
+      "voiceover": {
+        "text": "One box plot describes one group. But our investigation compared two. Draw both groups on the same scale, one above the other. The bedroom group's box sits lower, and stretches further left. The elsewhere group's box sits higher, and it's narrower. How do you compare two box plots properly, centre, spread and shape? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

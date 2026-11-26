@@ -9,3 +9,10 @@ Should fix 240-F07-NEGATIVE-FIRST, scene 7: “A negative r adds to the bottom, 
 Should fix 240-F07-ZERO-RATIO, attempt 2: x = 0 is included in the answer, giving the convergent series 1 + 0 + 0 + …, but f05 and the quoted syllabus definition exclude r = 0 from a GP. The numerical limiting sum at zero is 1. Resolve the course-definition boundary explicitly: either address this zero series separately as a convergent special case or align the question and stated GP domain with the nonzero-ratio convention. Do not silently remove a mathematically convergent case.
 
 The bounce gap and total-distance distinction support the limiting-sum idea, and alternating terms and nonconvergent examples contrast the condition. Question cards keep the requested work visible. Written f06/f07/f08 joins match the Revision 2 design. The bounce and ratio sliders, colour roles, framed aid and worked examples meet the visual standard as proposed; actual movement, |r| boundary transitions, text fit and timing need built playback. Sixteen scenes total 5,804 spoken characters; marked cues appear in written visual order; no em dash. Entire-course anchor audit and plates remain pending. No design, narration, scene, speech or commit changes.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `a584d472fb586c5504f63692023868c2cd6fc220039279a6bf72116d5e83ba09`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. The smaller-than-first-term claim is scoped to a positive first term.16/3<8. At ratio0 the series1+0+...still sums1, and the screen distinguishes that from the course GP definition. Both findings resolved.
+
+Recount:5841characters in16spoken strings; all declared counts agree, no em dash. New narration scenes:7. Exact strings and cues in work/brief240/f07-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

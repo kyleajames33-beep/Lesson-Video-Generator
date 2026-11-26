@@ -9,3 +9,10 @@ Independent values in `work/brief240/f03-calculations.json` confirm 120 tins, 1,
 The live source lesson https://hscscience.com.au/subjects/maths-advanced/year12/sequences-and-series/lesson03.sa was opened in Chrome during f02 review. Its Problem 2 visibly asks the same 4, 9, 14 threshold question; its later solution steps and the other claimed site examples have not yet been checked in this f03 pass. The all-course anchor audit remains pending. No voiced or integrated playback claim.
 
 Source follow-up, 11 Nov: direct browser inspection confirms lesson 03 SA2 asks for the sum of integers 50 to 200 inclusive, with n=151 and answer 18,875. Problem 2c and card 07 were also checked in the status hand-in. The earlier paragraph describes the partial state before this follow-up.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `34b8d7f1bfa7c8bab005f281556eceba1b43163fa0fe7e0402fa02b3ed23f11e`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. Pairing is now a guarantee for arithmetic sequences rather than an exclusive property. The non-AP counterexample1,4,2,5 has both paired totals6. Source finding resolved.
+
+Recount:5776characters in15spoken strings; all declared counts agree, no em dash. New narration scenes:9. Exact strings and cues in work/brief240/f03-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

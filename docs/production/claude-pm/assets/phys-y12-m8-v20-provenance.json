@@ -1,0 +1,158 @@
+{
+  "design": "phys-y12-m8-v20",
+  "brief193": {
+    "assets": [
+      {
+        "key": "y12p-linac-tunnel-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-771f09e2-1605-4da0-9765-de9ee32c89f2.png",
+        "sha256": "0a70d111b463428f15f02e3b6c9f6e70f6228a67b6971671eb0b939447217ecd",
+        "dimensions": [
+          1774,
+          887
+        ],
+        "alphaExtrema": [
+          0,
+          254
+        ],
+        "alphaBounds": {
+          "1": [
+            0,
+            0,
+            1774,
+            887
+          ],
+          "8": [
+            24,
+            15,
+            1756,
+            878
+          ],
+          "64": [
+            41,
+            30,
+            1743,
+            867
+          ],
+          "128": [
+            49,
+            34,
+            1735,
+            861
+          ],
+          "192": [
+            58,
+            39,
+            1729,
+            855
+          ],
+          "250": [
+            86,
+            54,
+            1703,
+            838
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-linac-tunnel-v1-composites.jpg",
+        "state": "delivered native PNG;static composite QA passed",
+        "design": "phys-y12-m8-v20",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "url": "https://www6.slac.stanford.edu/topics/lcls-x-ray-correlation-spectroscopy-xcs",
+          "local": "work/brief193/references/slac-copper-linac.jpg",
+          "detail": "SLAC copper beamline photograph inspected for physical supports/proportions. New painted tunnel,not a historical photograph; no modern orange superconducting cryomodules."
+        },
+        "publicAssetDelivered": true,
+        "path": "public/assets/physics/y12p-linac-tunnel-v1.png",
+        "anchors": {
+          "vanishingPointApprox": [
+            335,
+            493
+          ]
+        },
+        "anchorCoordinates": "Native pixels,approximate feature positions. Confirm against coded overlay in scene;not calibrated measurements.",
+        "nativeSizeQualification": "Brief specifies approximate dimensions;actual native dimensions retained without upsampling."
+      },
+      {
+        "key": "y12p-cloud-chamber-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-fe8598a9-67e6-4f05-a65d-4f0a951f6543.png",
+        "sha256": "c31c1c1be2bd751188d01976edbf8ce44369ee85ac0f52bdb5ebec81d06d3d28",
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": {
+          "1": [
+            33,
+            9,
+            1410,
+            1062
+          ],
+          "8": [
+            426,
+            146,
+            1033,
+            957
+          ],
+          "64": [
+            427,
+            147,
+            1033,
+            956
+          ],
+          "128": [
+            427,
+            147,
+            1033,
+            956
+          ],
+          "192": [
+            427,
+            147,
+            1032,
+            956
+          ],
+          "250": [
+            428,
+            148,
+            1031,
+            955
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-cloud-chamber-v1-composites.jpg",
+        "state": "delivered native PNG;static composite QA passed",
+        "design": "phys-y12-m8-v20",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "url": "https://collection.sciencemuseumgroup.org.uk/objects/co5535/wilson-expansion-apparatus-expansion-apparatus",
+          "local": "work/brief193/references/wilson-expansion-1981-2175.jpg",
+          "detail": "Museum Wilson expansion apparatus1981-2175,1912-13,Cambridge Scientific Instrument Co. One expansion construction,empty observation window,no arbitrary magnet. Reference photo credited Science Museum Group,CC BY-NC-SA4; generated painted illustration is not the reference photograph."
+        },
+        "publicAssetDelivered": true,
+        "path": "public/assets/physics/y12p-cloud-chamber-v1.png",
+        "anchors": {
+          "observationRegionApprox": [
+            575,
+            181,
+            858,
+            238
+          ],
+          "observationRegionCentre": [
+            716.5,
+            209.5
+          ]
+        },
+        "anchorCoordinates": "Native pixels,approximate feature positions. Confirm against coded overlay in scene;not calibrated measurements.",
+        "nativeSizeQualification": "Brief specifies approximate dimensions;actual native dimensions retained without upsampling."
+      }
+    ],
+    "reuse": "work/brief193/asset-reuse-notes.json"
+  }
+}

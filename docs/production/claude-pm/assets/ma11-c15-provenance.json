@@ -1,0 +1,79 @@
+{
+  "brief": 248,
+  "lesson": "c15",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-a4d820e0-a2ee-4583-b179-7374fb9663fc.png",
+      "sha256": "11c37595aef77a90aaa49fcf4112cd32385adab7a4235fb3462e7d50d8995237",
+      "nativeSize": [
+        1927,
+        816
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        173,
+        87,
+        1762,
+        768
+      ],
+      "marginFractions": [
+        0.08977685521536066,
+        0.10661764705882353,
+        0.08562532433834977,
+        0.058823529411764705
+      ],
+      "evidence": [
+        "work/brief248/c15-pump-track-native-paper.jpg",
+        "work/brief248/c15-pump-track-native-dark.jpg",
+        "work/brief248/c15-pump-track-native-white.jpg",
+        "work/brief248/c15-pump-track-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-pump-track-v1.png",
+      "path": "work/brief248/c15-pump-track-candidate1.png",
+      "brief": 248,
+      "lesson": "c15",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2600,
+        1100
+      ],
+      "qa": {
+        "result": "held: prescribed cubic-profile tolerance failed after2attempts",
+        "observations": [
+          "Candidate1 maximum6.403px; candidate2 maximum7.403px against4px tolerance.",
+          "Subject and alpha checks otherwise pass at900/full width. No public PNG installed."
+        ],
+        "evidence": [
+          "work/brief248/c15-pump-track-profile-paper.jpg",
+          "work/brief248/c15-pump-track-v2-profile-paper.jpg",
+          "work/brief248/c15-pump-track-profile-dark.jpg",
+          "work/brief248/c15-pump-track-v2-profile-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief248/ma11-pump-track-v1-sidecar.json"
+    }
+  ],
+  "result": "Pump track held from public delivery. Two built-in imagegen attempts retain the intended crest/hollow but miss the4px prescribed cubic-profile tolerance: maximum6.403px(candidate1),7.403px(candidate2) at quarter-metre samples with vertical scale exactly twice horizontal. Best candidate and measured sidecar remain in work for root. No PNG warp or formula/design edit. Root must resolve before formula-bound use; maths report also records the author-only roller-door derivative coefficient error.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c15-generation-part1.json",
+    "work/brief248/c15-generation-part2.json",
+    "work/brief248/c15-pump-track-profile.json",
+    "work/brief248/c15-pump-track-v2-profile.json",
+    "work/brief248/c15-pump-track-candidate2.png",
+    "work/brief248/c15-pump-track-v2-candidate-measurements.json",
+    "work/brief248/qa-pump-track.py",
+    "work/brief248/c15-guide-metadata.json",
+    "work/brief248/c15-pump-track-layout-guide.png",
+    "work/brief248/c15-pump-track-profile-paper.jpg",
+    "work/brief248/c15-pump-track-v2-profile-paper.jpg",
+    "work/brief248/c15-pump-track-profile-dark.jpg",
+    "work/brief248/c15-pump-track-v2-profile-dark.jpg"
+  ]
+}

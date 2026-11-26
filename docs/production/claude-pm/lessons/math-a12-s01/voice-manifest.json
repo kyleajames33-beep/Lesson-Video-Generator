@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-s01.md",
+  "sourceSha256": "0cc46cf0672dc50810e72d47af7e7da939fd849a5102c693b39d154ca0fd4e75",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "This video starts something new: random variables. Here's a die from a board game, rolled two hundred times. A four came up thirty-eight times. Let's watch all two hundred rolls land, and fill in the other faces. Four came up more than any other face. So is the die fair? Before we can answer, we need to know what the counts from a fair die should look like. That's what a probability distribution tells us. So how do data, and a model, each give us a distribution?",
+      "audioFile": "public/audio/math-a12-s01/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "First, a name for the number we're recording. A random variable is a number decided by the outcome of a chance experiment. Here, X is the number on the top face. It's discrete, which means its values are separate, and we can list them: one, two, three, four, five and six. We write P of X equals four for the probability that X takes the value four. Capital X is the variable, and small x stands for any one of its values. When it's clear which variable we mean, we just write P of x.",
+      "audioFile": "public/audio/math-a12-s01/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now turn the counts into probabilities. Divide each count by the number of rolls, two hundred. Thirty-eight out of two hundred is zero point one nine. That fraction of the rolls is called a relative frequency. Now watch the bars. Every bar is divided by the same number, so the shape doesn't change, only the scale. These numbers are estimates, so we write approximately equals, not equals. A relative frequency describes these two hundred rolls. The probability belongs to the die itself. Replay the rolls and watch the estimate for a four. After ten rolls it read zero point four. After fifty, it was already near zero point two. More rolls usually give a better estimate.",
+      "audioFile": "public/audio/math-a12-s01/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Add the six unrounded estimates and you get exactly one. But adding them only shows that it happens. Here's why it has to happen. Every roll lands on exactly one face. No roll is counted twice, and none is missed. So the six counts add to two hundred, the total number of rolls. Divide that total by two hundred, and you get one. That works for a complete, one-value-per-trial count, so unrounded estimates from data always add to one. Rounded ones can be a little off.",
+      "audioFile": "public/audio/math-a12-s01/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "What we've built is a probability distribution. It's the set of values X can take, together with the probability of each value. We show it two ways. A table gives the exact numbers we calculate with. A bar graph shows the shape. The bars stand apart, because X takes no values in between. Every probability must be between zero and one, and together they must add to one. Both checks matter. These three numbers add to one, but minus zero point four can't be a probability, so this list isn't a distribution.",
+      "audioFile": "public/audio/math-a12-s01/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Data is one way to get a distribution. A model is the other: reasoning about how the experiment works. If the die is fair, its six faces are equally likely, so each value has probability one sixth, before a single roll. So in a question, if you're given counts, you're estimating from data. If you're told how the experiment works, you're using a model. Now compare. The data gave zero point one nine for a four. The model says one sixth, about zero point one six seven. That's almost five more fours than a fair die would average. Is that a big gap? Here are three runs of two hundred rolls from a simulated fair die. Look how much their bars wobble. In each of these fair runs, some face is further from thirty-three than our four is. So a gap this size happens easily with a fair die. That's an illustration, not a formal test, but these data aren't strong evidence that the die is unfair.",
+      "audioFile": "public/audio/math-a12-s01/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Often there's no data, just a description, and we generate the distribution ourselves. Toss a fair coin three times, and let X be the number of heads. Each sequence of tosses gives exactly one value of X. Step one, list the values. X can be zero, one, two or three. Step two, find each probability. There are eight equally likely sequences, and three of them have exactly one head, so P of one is three eighths. Step three, check. One eighth, three eighths, three eighths and one eighth are each between zero and one, and they add to one. The graph shows something the table hides. It's symmetric, and the middle values are three times as likely as the ends.",
+      "audioFile": "public/audio/math-a12-s01/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a way to remember why it all adds to one. One trial, one value. Every trial gives exactly one value of X, so the counts add to the number of trials, and the probabilities add to one. If your probabilities don't add to one, check your list of values, and your counting.",
+      "audioFile": "public/audio/math-a12-s01/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. A spinner numbered one to four is spun two hundred and fifty times. Estimate P of X equals two, then explain why the four estimates add to one. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s01/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Two came up seventy times out of two hundred and fifty, so P of X equals two is approximately zero point two eight. For the reason, don't just add the four estimates. Each spin lands on exactly one number, so the counts add to two hundred and fifty, and dividing by two hundred and fifty gives one. Adding the estimates to get one shows it, but it doesn't explain it.",
+      "audioFile": "public/audio/math-a12-s01/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. A bag holds two red and two yellow counters, and two are drawn together. Find the probability distribution of X, the number of red counters drawn. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s01/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "X can be zero, one or two. Call the counters red one, red two, yellow one and yellow two. There are six possible pairs, all equally likely. One pair has no reds, four pairs have one red, and one pair has two reds. So the probabilities are one sixth, four sixths and one sixth, and they add to one. One third each is wrong. Three values don't have to be equally likely.",
+      "audioFile": "public/audio/math-a12-s01/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So data give a distribution through relative frequencies, and a model gives it by reasoning about how the experiment works, here with equally likely outcomes. Next, a question. For one fair die, all six bars are the same height. Now tear a page at random off a desk calendar. The date could be anything from the first to the thirty-first. Are those dates equally likely too?",
+      "audioFile": "public/audio/math-a12-s01/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-s01/scene-14.wav"
+    }
+  ]
+}

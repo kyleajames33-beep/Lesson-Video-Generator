@@ -1,0 +1,79 @@
+{
+  "design": "phys-y12-m8-v19",
+  "brief193": {
+    "assets": [
+      {
+        "key": "y12p-tokamak-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-72ae718e-61ef-4494-ae4c-6d3406012de0.png",
+        "sha256": "b5b348841468f92ebad2d1ae56c00f6da12f2121fc9fde72f0e56ef6b9763b13",
+        "dimensions": [
+          1513,
+          1040
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": {
+          "1": [
+            0,
+            3,
+            1445,
+            1000
+          ],
+          "8": [
+            161,
+            74,
+            1346,
+            963
+          ],
+          "64": [
+            162,
+            75,
+            1346,
+            962
+          ],
+          "128": [
+            162,
+            75,
+            1345,
+            962
+          ],
+          "192": [
+            162,
+            76,
+            1345,
+            961
+          ],
+          "250": [
+            163,
+            78,
+            1344,
+            961
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-tokamak-v1-composites.jpg",
+        "state": "delivered native PNG;static composite QA passed",
+        "design": "phys-y12-m8-v19",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "url": "https://www.iter.org/sites/default/files/education/2_3_Introduction_to_ITER_8XZLYY_v1_0.pdf",
+          "detail": "ITER-style toroidal vessel,D-shaped coils and separated plasma torus; schematic painted cutaway,not a measured ITER construction record."
+        },
+        "publicAssetDelivered": true,
+        "path": "public/assets/physics/y12p-tokamak-v1.png",
+        "anchors": {
+          "plasmaRingCentreApprox": [
+            770,
+            532
+          ]
+        },
+        "anchorCoordinates": "Native pixels,approximate feature positions. Confirm against coded overlay in scene;not calibrated measurements.",
+        "nativeSizeQualification": "Brief specifies approximate dimensions;actual native dimensions retained without upsampling."
+      }
+    ],
+    "reuse": "work/brief193/asset-reuse-notes.json"
+  }
+}

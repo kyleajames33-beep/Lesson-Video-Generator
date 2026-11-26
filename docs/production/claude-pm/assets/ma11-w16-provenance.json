@@ -1,0 +1,128 @@
+{
+  "brief": 247,
+  "lesson": "w16",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-71e43540-712d-4dea-9c06-0bb33983f9a5.png",
+      "sha256": "bf7ff1776e3c6c0073a59e677191c9e2ea4a170f0bfab15fedb6693029554d56",
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        78,
+        180,
+        1540,
+        923
+      ],
+      "marginFractions": [
+        0.04817788758492897,
+        0.18537590113285274,
+        0.04879555281037678,
+        0.04943357363542739
+      ],
+      "evidence": [
+        "work/brief247/w16-polytunnel-end-candidate1-native-paper.jpg",
+        "work/brief247/w16-polytunnel-end-candidate1-native-dark.jpg",
+        "work/brief247/w16-polytunnel-end-candidate1-native-white.jpg",
+        "work/brief247/w16-polytunnel-end-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-polytunnel-end-v1.png",
+      "path": "public/assets/maths/ma11-polytunnel-end-v1.png",
+      "brief": 247,
+      "lesson": "w16",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        900
+      ],
+      "qa": {
+        "result": "qualified: exact profile fails, measured-profile fallback required",
+        "observations": [
+          "Paper and dark 1200px-wide model composites inspected. Clean alpha edges, no raw-preview colour fringe, no text or people.",
+          "Closed zip door and seedlings present on end plate. Bare hoop interior clear.",
+          "Red model curve visibly falls inside painted hoop. Preserve native pixels and aspect ratio."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-paper.jpg",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-polytunnel-end-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-92d14f8a-677a-4b5f-8bb9-230952f4cac6.png",
+      "sha256": "60407f40463a6014526aaffe018bcf78b4032502c761b8c2f923baee8c3dc848",
+      "nativeSize": [
+        1620,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        76,
+        176,
+        1544,
+        927
+      ],
+      "marginFractions": [
+        0.04691358024691358,
+        0.18125643666323377,
+        0.04691358024691358,
+        0.04531410916580844
+      ],
+      "evidence": [
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-paper.jpg",
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-dark.jpg",
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-white.jpg",
+        "work/brief247/w16-polytunnel-hoop-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-polytunnel-hoop-v1.png",
+      "path": "public/assets/maths/ma11-polytunnel-hoop-v1.png",
+      "brief": 247,
+      "lesson": "w16",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1500,
+        900
+      ],
+      "qa": {
+        "result": "qualified: exact profile fails, measured-profile fallback required",
+        "observations": [
+          "Paper and dark 1200px-wide model composites inspected. Clean alpha edges, no raw-preview colour fringe, no text or people.",
+          "Closed zip door and seedlings present on end plate. Bare hoop interior clear.",
+          "Red model curve visibly falls inside painted hoop. Preserve native pixels and aspect ratio."
+        ],
+        "evidence": [
+          "public/assets/maths/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/ma11-polytunnel-v1.json",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-paper.jpg",
+          "work/brief247/w15-w31/w16-polytunnel-1200-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-polytunnel-hoop-v1.json"
+    }
+  ],
+  "result": "Two native polytunnel plates delivered for static joins and the stated measured-profile fallback. Both miss the exact equal-scale model (85.94 and 88.94 px maximum, tolerance 27.16 px); mathematical overlay is held for root. Bare pipe redraw differs by up to 6 px at the sampled edge, and canvas widths differ by 1 px, so do not cross-fade as an exact registered pair. Plastic interior is partly transparent. No resampling or warp.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "public/assets/maths/ma11-polytunnel-v1.json",
+    "work/brief247/w15-w31/ma11-polytunnel-v1.json",
+    "work/brief247/w15-w31/w16-polytunnel-1200-model-paper.jpg",
+    "work/brief247/w15-w31/w16-polytunnel-1200-model-dark.jpg"
+  ]
+}

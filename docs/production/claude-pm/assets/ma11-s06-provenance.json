@@ -1,0 +1,124 @@
+{
+  "brief": 249,
+  "lesson": "s06",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-206a1c59-ef63-44da-a838-b6b962bd88a2.png",
+      "sha256": "b7118c950f93f17e81ea0186290287be499a01b7598cf1b3b0207583e42531d8",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        275,
+        44,
+        612,
+        1752
+      ],
+      "marginFractions": [
+        0.3100338218714769,
+        0.02480270574971815,
+        0.3100338218714769,
+        0.012401352874859075
+      ],
+      "evidence": [
+        "work/brief249/s06-light-native-paper.jpg",
+        "work/brief249/s06-light-native-dark.jpg",
+        "work/brief249/s06-light-native-white.jpg",
+        "work/brief249/s06-light-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-traffic-light-v1.png",
+      "path": "public/assets/maths/ma11-traffic-light-v1.png",
+      "brief": 249,
+      "lesson": "s06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        2000
+      ],
+      "qa": {
+        "result": "Three unlit dull-glass lamps, correct red/amber/green order, complete housing/pole.900/native paper/dark alpha inspected. Painted circle approximation recorded, code must clip beneath visors.",
+        "evidence": [
+          "work/brief249/s06-light-native-black.jpg",
+          "work/brief249/s06-light-native-dark.jpg",
+          "work/brief249/s06-light-native-paper.jpg",
+          "work/brief249/s06-light-native-white.jpg",
+          "work/brief249/s06-light-qa-paper-dark-dark.jpg",
+          "work/brief249/s06-light-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-traffic-light-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-b4a8bf2f-3f77-49cf-bd1f-f6cf8ad5f906.png",
+      "sha256": "7c5885e42e1006f07e49112b0ceee1ae9cb60adb2e2482b61ec99d193f1146a9",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        32,
+        34,
+        1226,
+        1224
+      ],
+      "marginFractions": [
+        0.025518341307814992,
+        0.02711323763955343,
+        0.022328548644338118,
+        0.023923444976076555
+      ],
+      "evidence": [
+        "work/brief249/s06-bag-native-paper.jpg",
+        "work/brief249/s06-bag-native-dark.jpg",
+        "work/brief249/s06-bag-native-white.jpg",
+        "work/brief249/s06-bag-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-counter-bag-v1.png",
+      "path": "public/assets/maths/ma11-counter-bag-v1.png",
+      "brief": 249,
+      "lesson": "s06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1200
+      ],
+      "qa": {
+        "result": "Open drawstring cloth bag, three grey counter tops with no visible colour distinction.900/native paper/dark alpha clean, complete strings and bag.",
+        "evidence": [
+          "work/brief249/s06-bag-native-black.jpg",
+          "work/brief249/s06-bag-native-dark.jpg",
+          "work/brief249/s06-bag-native-paper.jpg",
+          "work/brief249/s06-bag-native-white.jpg",
+          "work/brief249/s06-bag-qa-paper-dark-dark.jpg",
+          "work/brief249/s06-bag-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Unlit traffic signal and neutral counter bag delivered at native887x1774and1254square. Three lamp centres/radii recorded with5px painted-boundary uncertainty; root masks illumination under the visors. Open bag shows three dull grey counter tops with no distinguishable colours.900/native paper/dark subject and alpha checks pass. Signal900px QA is1.47percent above native width; production unchanged.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/s06-light-candidate-measurements.json",
+    "work/brief249/s06-light-generation.json",
+    "work/brief249/s06-light-geometry.json",
+    "work/brief249/s06-light-qa.json",
+    "work/brief249/s06-bag-candidate-measurements.json",
+    "work/brief249/s06-bag-generation.json",
+    "work/brief249/s06-bag-qa.json"
+  ]
+}

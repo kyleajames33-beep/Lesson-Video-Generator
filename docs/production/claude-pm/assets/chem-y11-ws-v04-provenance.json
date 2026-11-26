@@ -1,0 +1,74 @@
+{
+  "design": "chem-y11-ws-v04",
+  "sourceSHA256": "65b52cd72cc9379c35f43066095bd13093a113590d69a42b595d70ac2cb15217",
+  "newRequests": [
+    {
+      "design": "chem-y11-ws-v04",
+      "file": "y11c-burette-upturned-end-v1.png",
+      "status": "delivered for designer inspection with qualifications",
+      "reason": "See per-design provenance and QA for native dimensions, alpha and alignment limits.",
+      "sha256": "874cfd8a991bc5d33173c7b7459d9e6bd107242c9d3c0542403fcfd44f917ae7",
+      "nativeSize": [
+        887,
+        1774
+      ]
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-ws-v04",
+      "reference": "public/assets/chemistry/y11c-burette-upturned-end-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-ws-v04",
+      "reference": "public/assets/chemistry/y11c-cuso4-crucible-blue-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-cuso4-crucible-blue-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "generationTool": null,
+  "status": "review hand-in, new painting pending stated pass condition",
+  "assets": [
+    {
+      "key": "burette-end",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-be053765-306c-427e-bc66-c8624abb5920.png",
+      "size": [
+        887,
+        1774
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        256,
+        253,
+        623,
+        1462
+      ],
+      "minMarginAbove16": 0.14261555806087936,
+      "startBBoxAbove16": [
+        256,
+        256,
+        622,
+        1460
+      ],
+      "file": "public/assets/chemistry/y11c-burette-upturned-end-v1.png",
+      "nativeSize": [
+        887,
+        1774
+      ],
+      "sha256": "874cfd8a991bc5d33173c7b7459d9e6bd107242c9d3c0542403fcfd44f917ae7",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native dimensions differ from request, no resampling or stretching. Faint low-alpha noise may extend outside the painted bounds. Actual scene integration and source corrections remain pending.",
+      "QA": "Start/end paper/dark 300 px composites and midpoint overlay inspected. Apparatus bounds vary by up to 3 native pixels. Gas column is illustrative; coded readout/window must establish the stated volume. No exact calibrated glass-scale claim."
+    }
+  ],
+  "sourceReviewQualification": "Findings remain open. M2-v06 current Revision 2 is distinct from its reviewed Revision 1. Painting is not source, recording or practical approval."
+}

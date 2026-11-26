@@ -1,0 +1,1196 @@
+{
+  "lesson": "chem-y11-m1-v06",
+  "wave": 1,
+  "sourceSha256": "b873f7074ae13afd2a3887063418eb2f06054956cad3049f1158f6781220268e",
+  "measuredPath": "work/brief236/wave1/chem-y11-m1-v06/voiced/lesson.json",
+  "measuredSha256": "357108fb4c06a1f31d8eefbbf6946de5d72a3d8af22253bb9c8a6041d3302e20",
+  "characters": 6041,
+  "totalSeconds": 448.9,
+  "under570": true,
+  "newRequests": 9,
+  "cachedTakes": 1,
+  "inputTokens": 1308,
+  "outputTokens": 9370,
+  "costUsd": 0.08498399999999999,
+  "worstWordGap": {
+    "scene": "attempt-2",
+    "seconds": 1.064000000000135,
+    "after": "change.",
+    "before": "Pause"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v06/hook.wav",
+      "seconds": 26.114,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "together",
+          "start": 14.923999999999989,
+          "end": 15.192444444444433
+        },
+        {
+          "text": "salt",
+          "start": 19.95899999999999,
+          "end": 20.11979999999999
+        },
+        {
+          "text": "back",
+          "start": 25.45200000000007,
+          "end": 25.644800000000068
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7219999999999995,
+        "after": "together.",
+        "before": "After"
+      },
+      "peakFraction": 0.892791748046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 6.607999999999997,
+          "end": 6.667999999999997,
+          "score": 0.459
+        },
+        {
+          "word": "Here's",
+          "start": 10.405999999999988,
+          "end": 10.686999999999987,
+          "score": 0.292
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, chromatography showed which dyes were in an ink, but not how much of each one was there. Today we'll answer the how much question, with a mixture we can actually weigh. Here's twenty point zero zero grams of dry sand and table salt, stirred together. After we separate it, what fraction of this mixture was sand, and what fraction was salt? The answer comes from two kinds of measurement: the mass you start with, and the masses you get back.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "weigh-by-difference",
+      "audio": "public/audio/chem-y11-m1-v06/weigh-by-difference.wav",
+      "seconds": 31.85,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "too",
+          "start": 5.631,
+          "end": 5.766
+        },
+        {
+          "text": "grams",
+          "start": 9.228999999999992,
+          "end": 9.513999999999992
+        },
+        {
+          "text": "grams",
+          "start": 13.210999999999993,
+          "end": 13.445999999999993
+        },
+        {
+          "text": "sand",
+          "start": 20.967000000000077,
+          "end": 21.26800000000008
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7250000000000547,
+        "after": "difference.",
+        "before": "The"
+      },
+      "peakFraction": 0.844512939453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.323,
+          "end": 0.485,
+          "score": 0.486
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a practical detail that matters. You can't tip the salt onto the balance, so you weigh its container too. The empty basin was forty-five point one two grams. With the dry salt in it, it reads fifty-nine point one two grams. Subtract, and the salt alone is fourteen point zero zero grams. That's called weighing by difference. The dried sand gets the same treatment on its watch glass: twenty-seven point three five grams, minus twenty-one point three five grams for the empty glass, gives six point zero zero grams of sand.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "percentage",
+      "audio": "public/audio/chem-y11-m1-v06/percentage.wav",
+      "seconds": 31.396,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "hundred",
+          "start": 10.934,
+          "end": 11.1615
+        },
+        {
+          "text": "percent",
+          "start": 19.148999999999987,
+          "end": 19.481499999999986
+        },
+        {
+          "text": "percent",
+          "start": 26.212000000000064,
+          "end": 26.546250000000065
+        },
+        {
+          "text": "check",
+          "start": 30.713000000000015,
+          "end": 30.930500000000016
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9239999999999533,
+        "after": "percent.",
+        "before": "And"
+      },
+      "peakFraction": 0.822906494140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 16.844999999999988,
+          "end": 16.904999999999987,
+          "score": 0.377
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Now the fraction. Percentage by mass, which the syllabus calls percentage by weight, is the mass of one component, divided by the mass of the whole mixture, times one hundred. For the sand, that's six point zero zero over twenty point zero zero, times a hundred, which is thirty point zero percent. For the salt, fourteen point zero zero over twenty point zero zero gives seventy point zero percent. And together they make one hundred percent, which is a useful check.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "conservation",
+      "audio": "public/audio/chem-y11-m1-v06/conservation.wav",
+      "seconds": 26.264,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "matter",
+          "start": 19.547999999999995,
+          "end": 19.770857142857135
+        },
+        {
+          "text": "with",
+          "start": 25.62200000000003,
+          "end": 25.75080000000003
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9060000000000059,
+        "after": "first.",
+        "before": "And"
+      },
+      "peakFraction": 0.857940673828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weighed",
+          "start": 7.734999999999988,
+          "end": 7.955999999999988,
+          "score": 0.498
+        },
+        {
+          "word": "are",
+          "start": 12.892999999999988,
+          "end": 12.952999999999987,
+          "score": 0.17
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Why divide by the twenty grams you started with? Because the question is about the original mixture, so the whole is what you weighed first. And here's why the check works. Filtering and evaporating are physical changes. They move the sand and the salt into different containers, but they don't create or destroy any matter. So if nothing is lost along the way, the masses you get back must add up to the mass you started with.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "loss-run",
+      "audio": "public/audio/chem-y11-m1-v06/loss-run.wav",
+      "seconds": 29.1,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "salt",
+          "start": 14.037999999999988,
+          "end": 14.263599999999988
+        },
+        {
+          "text": "percent",
+          "start": 16.95,
+          "end": 17.283375
+        },
+        {
+          "text": "missing",
+          "start": 28.41800000000007,
+          "end": 28.681375000000074
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000111,
+        "after": "salt.",
+        "before": "The"
+      },
+      "peakFraction": 0.85064697265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 1.25,
+          "end": 1.472,
+          "score": 0.481
+        },
+        {
+          "word": "zero",
+          "start": 19.459999999999997,
+          "end": 19.741,
+          "score": 0.48
+        },
+        {
+          "word": "four",
+          "start": 26.13100000000007,
+          "end": 26.33100000000007,
+          "score": 0.405
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Real practicals are rarely that tidy. Another group starts with twenty-five point zero zero grams of the same kind of mixture. They get back eight point zero zero grams of sand, and sixteen point zero zero grams of salt. The sand is thirty-two point zero percent, and the salt is sixty-four point zero percent. Add those, and you've only accounted for ninety-six point zero percent. One gram, which is four point zero percent of the mixture, is missing.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v06/prediction.wav",
+      "seconds": 12.749,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 12.043999999999995,
+          "end": 12.19483333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.866000000000005,
+        "after": "to?",
+        "before": "Have"
+      },
+      "peakFraction": 0.85089111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.0520000000000005,
+          "end": 2.0720000000000005,
+          "score": 0
+        },
+        {
+          "word": "will",
+          "start": 9.42199999999999,
+          "end": 9.56299999999999,
+          "score": 0.454
+        },
+        {
+          "word": "Have",
+          "start": 11.861999999999995,
+          "end": 11.942999999999996,
+          "score": 0.331
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Quick prediction. Suppose a group weighs its sand while it's still a little damp. Will the percentage of sand come out too high, or too low? And what will the two percentages add up to? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "extra-mass",
+      "audio": "public/audio/chem-y11-m1-v06/extra-mass.wav",
+      "seconds": 27.825,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "sand",
+          "start": 2.6350000000000007,
+          "end": 2.876000000000001
+        },
+        {
+          "text": "percent",
+          "start": 7.88399999999999,
+          "end": 8.14912499999999
+        },
+        {
+          "text": "water",
+          "start": 17.76099999999999,
+          "end": 17.96183333333332
+        },
+        {
+          "text": "match",
+          "start": 27.10300000000007,
+          "end": 27.33716666666674
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000001017,
+        "after": "water.",
+        "before": "The"
+      },
+      "peakFraction": 0.851898193359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "as",
+          "start": 4.886000000000001,
+          "end": 4.926,
+          "score": 0
+        },
+        {
+          "word": "weigh",
+          "start": 23.131000000000082,
+          "end": 23.332000000000082,
+          "score": 0.469
+        },
+        {
+          "word": "heat",
+          "start": 24.19500000000007,
+          "end": 24.41600000000007,
+          "score": 0.482
+        },
+        {
+          "word": "row",
+          "start": 26.582000000000072,
+          "end": 26.86200000000007,
+          "score": 0.156
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Too high. The balance can't tell sand from water, so the water gets counted as sand. And that pushes the total above one hundred percent. So the total is a clue in both directions. Below one hundred means something was lost. Above one hundred means something extra was weighed, and it's usually water. The fix is drying to constant mass. Heat it, let it cool, and weigh it. Then heat and weigh again, until two readings in a row match.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "audio": "public/audio/chem-y11-m1-v06/memory-line.wav",
+      "seconds": 14.76,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "rest",
+          "start": 5.815999999999997,
+          "end": 6.024799999999996
+        },
+        {
+          "text": "mass",
+          "start": 9.305999999999997,
+          "end": 9.586999999999996
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7430000000000003,
+        "after": "rest.",
+        "before": "Each"
+      },
+      "peakFraction": 0.84552001953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.404,
+          "end": 0.626,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the whole method in one line. Divide by what you started with, then account for the rest. Each component's percentage uses the original mass on the bottom, and whatever is left over tells you about loss, or about extra mass.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v06/attempt-1.wav",
+      "seconds": 21.16,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.7250000000000725,
+        "after": "recovered.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.88665771484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 2,
+      "pronunciationText": "Your turn. A fifteen point zero zero gram mixture of chalk and table salt is separated. The student recovers four point two zero grams of dry chalk and ten point five zero grams of dry salt. Calculate the percentage by mass of each component in the original mixture, and the percentage that was not recovered. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v06/feedback-1.wav",
+      "seconds": 27.4,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 6.762,
+          "end": 7.060375
+        },
+        {
+          "text": "percent",
+          "start": 13.518999999999988,
+          "end": 13.834874999999988
+        },
+        {
+          "text": "recovered",
+          "start": 19.331999999999997,
+          "end": 19.674899999999997
+        },
+        {
+          "text": "completely",
+          "start": 26.55500000000006,
+          "end": 27.048636363636422
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7420000000000613,
+        "after": "recovered.",
+        "before": "The"
+      },
+      "peakFraction": 0.89227294921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.455,
+          "end": 4.515,
+          "score": 0.342
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Chalk is four point two zero over fifteen point zero zero, times a hundred, which is twenty-eight point zero percent. Salt is ten point five zero over fifteen point zero zero, which is seventy point zero percent. Together that's ninety-eight point zero percent, so two point zero percent was not recovered. The slip to avoid is dividing by fourteen point seven zero, the total you got back. That hides the loss completely.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v06/feedback-2.wav",
+      "seconds": 23.629,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 2.485,
+          "end": 2.783375
+        },
+        {
+          "text": "weighed",
+          "start": 10.269999999999987,
+          "end": 10.533374999999987
+        },
+        {
+          "text": "weighing",
+          "start": 18.803999999999984,
+          "end": 19.089333333333315
+        },
+        {
+          "text": "mistake",
+          "start": 22.78400000000009,
+          "end": 23.118250000000092
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8839999999999968,
+        "after": "minutes.",
+        "before": "Dry"
+      },
+      "peakFraction": 0.905426025390625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "so",
+          "start": 9.104999999999986,
+          "end": 9.144999999999987,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Sand comes out at forty-one point two percent, and salt at sixty-two point five percent. That adds to one hundred and three point seven percent, so something extra was weighed. The most likely cause is water left in the sand, because it was dried for only ten minutes. Dry it to constant mass before weighing. Calling the extra mass a third substance is the classic mistake.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v06/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v06/hook.wav",
+      "seconds": 26.114,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "together",
+          "start": 14.923999999999989,
+          "end": 15.192444444444433
+        },
+        {
+          "text": "salt",
+          "start": 19.95899999999999,
+          "end": 20.11979999999999
+        },
+        {
+          "text": "back",
+          "start": 25.45200000000007,
+          "end": 25.644800000000068
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7219999999999995,
+        "after": "together.",
+        "before": "After"
+      },
+      "peakFraction": 0.892791748046875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "the",
+          "start": 6.607999999999997,
+          "end": 6.667999999999997,
+          "score": 0.459
+        },
+        {
+          "word": "Here's",
+          "start": 10.405999999999988,
+          "end": 10.686999999999987,
+          "score": 0.292
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, chromatography showed which dyes were in an ink, but not how much of each one was there. Today we'll answer the how much question, with a mixture we can actually weigh. Here's twenty point zero zero grams of dry sand and table salt, stirred together. After we separate it, what fraction of this mixture was sand, and what fraction was salt? The answer comes from two kinds of measurement: the mass you start with, and the masses you get back.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "separation-recall",
+      "audio": "public/audio/chem-y11-m1-v06/separation-recall.wav",
+      "seconds": 29.196,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "doesn't",
+          "start": 6.448999999999994,
+          "end": 6.695749999999993
+        },
+        {
+          "text": "residue",
+          "start": 10.179999999999989,
+          "end": 10.51337499999999
+        },
+        {
+          "text": "container",
+          "start": 28.410000000000053,
+          "end": 28.827600000000054
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7240000000000357,
+        "after": "drying.",
+        "before": "Now"
+      },
+      "peakFraction": 0.827484130859375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "You've seen this separation before, so here it is in fast forward. Add water, and the salt dissolves while the sand doesn't. Pour it through filter paper, and the sand stays behind as the residue, while the salty liquid, the filtrate, runs through. Rinse the sand with a little water to wash off any salt, then dry it. The filtrate goes into an evaporating basin, and we heat it gently until most of the water has gone, then leave it somewhere warm to finish drying. Now each component sits in its own container.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "weigh-by-difference",
+      "audio": "public/audio/chem-y11-m1-v06/weigh-by-difference.wav",
+      "seconds": 31.85,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "too",
+          "start": 5.631,
+          "end": 5.766
+        },
+        {
+          "text": "grams",
+          "start": 9.228999999999992,
+          "end": 9.513999999999992
+        },
+        {
+          "text": "grams",
+          "start": 13.210999999999993,
+          "end": 13.445999999999993
+        },
+        {
+          "text": "sand",
+          "start": 20.967000000000077,
+          "end": 21.26800000000008
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7250000000000547,
+        "after": "difference.",
+        "before": "The"
+      },
+      "peakFraction": 0.844512939453125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.323,
+          "end": 0.485,
+          "score": 0.486
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here's a practical detail that matters. You can't tip the salt onto the balance, so you weigh its container too. The empty basin was forty-five point one two grams. With the dry salt in it, it reads fifty-nine point one two grams. Subtract, and the salt alone is fourteen point zero zero grams. That's called weighing by difference. The dried sand gets the same treatment on its watch glass: twenty-seven point three five grams, minus twenty-one point three five grams for the empty glass, gives six point zero zero grams of sand.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "percentage",
+      "audio": "public/audio/chem-y11-m1-v06/percentage.wav",
+      "seconds": 31.396,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "hundred",
+          "start": 10.934,
+          "end": 11.1615
+        },
+        {
+          "text": "percent",
+          "start": 19.148999999999987,
+          "end": 19.481499999999986
+        },
+        {
+          "text": "percent",
+          "start": 26.212000000000064,
+          "end": 26.546250000000065
+        },
+        {
+          "text": "check",
+          "start": 30.713000000000015,
+          "end": 30.930500000000016
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9239999999999533,
+        "after": "percent.",
+        "before": "And"
+      },
+      "peakFraction": 0.822906494140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 16.844999999999988,
+          "end": 16.904999999999987,
+          "score": 0.377
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Now the fraction. Percentage by mass, which the syllabus calls percentage by weight, is the mass of one component, divided by the mass of the whole mixture, times one hundred. For the sand, that's six point zero zero over twenty point zero zero, times a hundred, which is thirty point zero percent. For the salt, fourteen point zero zero over twenty point zero zero gives seventy point zero percent. And together they make one hundred percent, which is a useful check.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "conservation",
+      "audio": "public/audio/chem-y11-m1-v06/conservation.wav",
+      "seconds": 26.264,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "matter",
+          "start": 19.547999999999995,
+          "end": 19.770857142857135
+        },
+        {
+          "text": "with",
+          "start": 25.62200000000003,
+          "end": 25.75080000000003
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9060000000000059,
+        "after": "first.",
+        "before": "And"
+      },
+      "peakFraction": 0.857940673828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "weighed",
+          "start": 7.734999999999988,
+          "end": 7.955999999999988,
+          "score": 0.498
+        },
+        {
+          "word": "are",
+          "start": 12.892999999999988,
+          "end": 12.952999999999987,
+          "score": 0.17
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Why divide by the twenty grams you started with? Because the question is about the original mixture, so the whole is what you weighed first. And here's why the check works. Filtering and evaporating are physical changes. They move the sand and the salt into different containers, but they don't create or destroy any matter. So if nothing is lost along the way, the masses you get back must add up to the mass you started with.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "loss-run",
+      "audio": "public/audio/chem-y11-m1-v06/loss-run.wav",
+      "seconds": 29.1,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "salt",
+          "start": 14.037999999999988,
+          "end": 14.263599999999988
+        },
+        {
+          "text": "percent",
+          "start": 16.95,
+          "end": 17.283375
+        },
+        {
+          "text": "missing",
+          "start": 28.41800000000007,
+          "end": 28.681375000000074
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000111,
+        "after": "salt.",
+        "before": "The"
+      },
+      "peakFraction": 0.85064697265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "are",
+          "start": 1.25,
+          "end": 1.472,
+          "score": 0.481
+        },
+        {
+          "word": "zero",
+          "start": 19.459999999999997,
+          "end": 19.741,
+          "score": 0.48
+        },
+        {
+          "word": "four",
+          "start": 26.13100000000007,
+          "end": 26.33100000000007,
+          "score": 0.405
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Real practicals are rarely that tidy. Another group starts with twenty-five point zero zero grams of the same kind of mixture. They get back eight point zero zero grams of sand, and sixteen point zero zero grams of salt. The sand is thirty-two point zero percent, and the salt is sixty-four point zero percent. Add those, and you've only accounted for ninety-six point zero percent. One gram, which is four point zero percent of the mixture, is missing.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "loss-causes",
+      "audio": "public/audio/chem-y11-m1-v06/loss-causes.wav",
+      "seconds": 27.466,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "paper",
+          "start": 13.150999999999986,
+          "end": 13.36933333333332
+        },
+        {
+          "text": "hard",
+          "start": 17.162,
+          "end": 17.3388
+        },
+        {
+          "text": "basin",
+          "start": 20.712000000000085,
+          "end": 20.962833333333418
+        },
+        {
+          "text": "happened",
+          "start": 26.584000000000106,
+          "end": 26.851555555555663
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9020000000000223,
+        "after": "basin.",
+        "before": "So"
+      },
+      "peakFraction": 0.8795166015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "So where did it go? It didn't vanish, and it isn't a mystery third substance. It's mass that never made it into the final containers. Some salty solution stays behind, wetting the beaker, the funnel and the filter paper. A little solution can spit out of the basin if it's heated too hard. And some crystals stay stuck to the glass rod or the basin. So report the missing percentage honestly, and name where the losses most likely happened.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v06/prediction.wav",
+      "seconds": 12.749,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 12.043999999999995,
+          "end": 12.19483333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.866000000000005,
+        "after": "to?",
+        "before": "Have"
+      },
+      "peakFraction": 0.85089111328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.0520000000000005,
+          "end": 2.0720000000000005,
+          "score": 0
+        },
+        {
+          "word": "will",
+          "start": 9.42199999999999,
+          "end": 9.56299999999999,
+          "score": 0.454
+        },
+        {
+          "word": "Have",
+          "start": 11.861999999999995,
+          "end": 11.942999999999996,
+          "score": 0.331
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Quick prediction. Suppose a group weighs its sand while it's still a little damp. Will the percentage of sand come out too high, or too low? And what will the two percentages add up to? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "extra-mass",
+      "audio": "public/audio/chem-y11-m1-v06/extra-mass.wav",
+      "seconds": 27.825,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "sand",
+          "start": 2.6350000000000007,
+          "end": 2.876000000000001
+        },
+        {
+          "text": "percent",
+          "start": 7.88399999999999,
+          "end": 8.14912499999999
+        },
+        {
+          "text": "water",
+          "start": 17.76099999999999,
+          "end": 17.96183333333332
+        },
+        {
+          "text": "match",
+          "start": 27.10300000000007,
+          "end": 27.33716666666674
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000001017,
+        "after": "water.",
+        "before": "The"
+      },
+      "peakFraction": 0.851898193359375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "as",
+          "start": 4.886000000000001,
+          "end": 4.926,
+          "score": 0
+        },
+        {
+          "word": "weigh",
+          "start": 23.131000000000082,
+          "end": 23.332000000000082,
+          "score": 0.469
+        },
+        {
+          "word": "heat",
+          "start": 24.19500000000007,
+          "end": 24.41600000000007,
+          "score": 0.482
+        },
+        {
+          "word": "row",
+          "start": 26.582000000000072,
+          "end": 26.86200000000007,
+          "score": 0.156
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Too high. The balance can't tell sand from water, so the water gets counted as sand. And that pushes the total above one hundred percent. So the total is a clue in both directions. Below one hundred means something was lost. Above one hundred means something extra was weighed, and it's usually water. The fix is drying to constant mass. Heat it, let it cool, and weigh it. Then heat and weigh again, until two readings in a row match.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "audio": "public/audio/chem-y11-m1-v06/memory-line.wav",
+      "seconds": 14.76,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "rest",
+          "start": 5.815999999999997,
+          "end": 6.024799999999996
+        },
+        {
+          "text": "mass",
+          "start": 9.305999999999997,
+          "end": 9.586999999999996
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7430000000000003,
+        "after": "rest.",
+        "before": "Each"
+      },
+      "peakFraction": 0.84552001953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.404,
+          "end": 0.626,
+          "score": 0.497
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the whole method in one line. Divide by what you started with, then account for the rest. Each component's percentage uses the original mass on the bottom, and whatever is left over tells you about loss, or about extra mass.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v06/attempt-1.wav",
+      "seconds": 21.16,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.7250000000000725,
+        "after": "recovered.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.88665771484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 2,
+      "pronunciationText": "Your turn. A fifteen point zero zero gram mixture of chalk and table salt is separated. The student recovers four point two zero grams of dry chalk and ten point five zero grams of dry salt. Calculate the percentage by mass of each component in the original mixture, and the percentage that was not recovered. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v06/feedback-1.wav",
+      "seconds": 27.4,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 6.762,
+          "end": 7.060375
+        },
+        {
+          "text": "percent",
+          "start": 13.518999999999988,
+          "end": 13.834874999999988
+        },
+        {
+          "text": "recovered",
+          "start": 19.331999999999997,
+          "end": 19.674899999999997
+        },
+        {
+          "text": "completely",
+          "start": 26.55500000000006,
+          "end": 27.048636363636422
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7420000000000613,
+        "after": "recovered.",
+        "before": "The"
+      },
+      "peakFraction": 0.89227294921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.455,
+          "end": 4.515,
+          "score": 0.342
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Chalk is four point two zero over fifteen point zero zero, times a hundred, which is twenty-eight point zero percent. Salt is ten point five zero over fifteen point zero zero, which is seventy point zero percent. Together that's ninety-eight point zero percent, so two point zero percent was not recovered. The slip to avoid is dividing by fourteen point seven zero, the total you got back. That hides the loss completely.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v06/attempt-2.wav",
+      "seconds": 25.28,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 1.064000000000135,
+        "after": "change.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.884307861328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A ten point zero zero gram mixture of sand and salt is separated. The sand is dried in an oven for only ten minutes, then weighed at four point one two grams. The dry salt weighs six point two five grams. Calculate the percentage of each component, then explain why the total isn't one hundred percent, and how the method should change. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v06/feedback-2.wav",
+      "seconds": 23.629,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "percent",
+          "start": 2.485,
+          "end": 2.783375
+        },
+        {
+          "text": "weighed",
+          "start": 10.269999999999987,
+          "end": 10.533374999999987
+        },
+        {
+          "text": "weighing",
+          "start": 18.803999999999984,
+          "end": 19.089333333333315
+        },
+        {
+          "text": "mistake",
+          "start": 22.78400000000009,
+          "end": 23.118250000000092
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8839999999999968,
+        "after": "minutes.",
+        "before": "Dry"
+      },
+      "peakFraction": 0.905426025390625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "so",
+          "start": 9.104999999999986,
+          "end": 9.144999999999987,
+          "score": 0
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Sand comes out at forty-one point two percent, and salt at sixty-two point five percent. That adds to one hundred and three point seven percent, so something extra was weighed. The most likely cause is water left in the sand, because it was dried for only ten minutes. Dry it to constant mass before weighing. Calling the extra mass a third substance is the classic mistake.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v06/handoff.wav",
+      "seconds": 20.571,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "element",
+          "start": 19.828999999999986,
+          "end": 20.109874999999985
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8429999999999946,
+        "after": "apart.",
+        "before": "Next"
+      },
+      "peakFraction": 0.865753173828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "So by separating a mixture and weighing the parts, we found how much of it was salt. But salt itself is a compound. Its sodium and chlorine are bonded together in a fixed ratio, so no filter can pull them apart. Next time, we'll see how the formula alone tells us what fraction of a compound's mass comes from each element.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v06/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

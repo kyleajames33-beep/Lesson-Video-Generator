@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-t02.md",
+  "sourceSha256": "fab7819a294c56ed003c02f58c21a9a110c96f0609baa3643b6fe2463c776bf9",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-how-long",
+      "text": "Here's the overnight coach. It leaves at twenty-three forty-eight and gets in at nought one twenty-five. How long is the trip? Try subtracting, nought one twenty-five take away twenty-three forty-eight, and you get a negative number, because the clock went back to zero at midnight. A quick guess says one hour thirty-five, which is close, but wrong. Elapsed time means the time that passes between a start and a finish. So how do we calculate elapsed time reliably, even when a trip crosses midnight?",
+      "audioFile": "public/audio/math-s11-t02/hook-how-long.wav"
+    },
+    {
+      "id": "count-up",
+      "text": "The safest method is to count up, in hops, like a ruler laid along the clock. Put the start and the finish on a time line. Hop first to the next whole hour. From twenty-three forty-eight to midnight is twelve minutes. Midnight is just a stop on the way, nought nought nought nought, and the count carries on. Then hop whole hours. Midnight to nought one hundred is one hour. Then hop the minutes left, from nought one hundred to nought one twenty-five, twenty-five minutes. Now add the hops. Twelve minutes, one hour and twenty-five minutes is one hour thirty-seven minutes. Counting up never needs a negative number, and it never asks you to subtract minutes that are too small. You only ever add, and every hop lands on a whole hour, so the sixties look after themselves.",
+      "audioFile": "public/audio/math-s11-t02/count-up.wav"
+    },
+    {
+      "id": "daytime-trip",
+      "text": "It works the same in the daytime. A bus leaves at ten forty-seven am and arrives at two twenty-three pm. First, put both in twenty-four-hour time, ten forty-seven and fourteen twenty-three, so the afternoon is clearly later. Hop to eleven hundred, that's thirteen minutes. Hop to fourteen hundred, three hours. Hop to fourteen twenty-three, twenty-three minutes. Thirteen plus twenty-three is thirty-six, so the trip is three hours thirty-six minutes. Here's the slip. Fourteen twenty-three minus ten forty-seven on a calculator is three hundred and seventy-six, which looks like three hours seventy-six minutes. That can't be right, because an hour has sixty minutes, not a hundred. If you do subtract, borrow an hour. Fourteen twenty-three is the same as thirteen hours and eighty-three minutes, because one hour is sixty minutes. Eighty-three minus forty-seven is thirty-six, and thirteen minus ten is three, the same answer.",
+      "audioFile": "public/audio/math-s11-t02/daytime-trip.wav"
+    },
+    {
+      "id": "add-duration",
+      "text": "Sometimes you know the start and the length of the trip, and you want the finish. A coach leaves at twenty-one fifty, and the trip takes eight hours twenty minutes. Add the hours first. Twenty-one fifty plus eight hours would be twenty-nine fifty, but the clock only goes to twenty-four. Midnight is both twenty-four hundred at the end of one day and nought nought hundred at the start of the next. So take away twenty-four hours, and it's nought five fifty, the next day. Then add the twenty minutes, and the coach arrives at nought six ten the next morning. Whenever a time goes past twenty-four hundred, take off twenty-four hours, and move on one day.",
+      "audioFile": "public/audio/math-s11-t02/add-duration.wav"
+    },
+    {
+      "id": "timetable",
+      "text": "Timetables put a lot of times in one table. Here's an example bus timetable. Each column is one bus, called a service, and each row is a stop. Read down a column to follow one bus. Service A leaves Town Centre at nought seven forty-three and reaches Beach at nought eight twenty-nine. Count up. Seventeen minutes to eight o'clock, then twenty-nine more, so forty-six minutes. Now a real question. You reach the Uni stop at nought eight forty. Which bus can you catch? Look along the Uni row. Service A left at nought eight fourteen, so it's gone. Service B leaves at nought eight forty-three, so you wait three minutes, and it reaches Beach at nought eight fifty-eight. Down a column follows one bus. Along a row compares the buses at one stop.",
+      "audioFile": "public/audio/math-s11-t02/timetable.wav"
+    },
+    {
+      "id": "shift",
+      "text": "Elapsed time pays the bills, too. A casual shift starts at five forty-five pm and finishes at twelve fifteen am. In twenty-four-hour time, that's seventeen forty-five to nought nought fifteen, so it crosses midnight. Hop fifteen minutes to eighteen hundred, six hours to midnight, then fifteen minutes more. Eighteen hundred to midnight is six whole hours, because this midnight is twenty-four hundred, the end of the day. That's six hours thirty minutes, or six point five hours. At the example rate of twenty-eight dollars forty an hour, the shift pays a hundred and eighty-four dollars sixty.",
+      "audioFile": "public/audio/math-s11-t02/shift.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's elapsed time in one card. Count up. Hop to the next o'clock, then whole hours, then the minutes left, and add the hops. Midnight is just a stop on the way.",
+      "audioFile": "public/audio/math-s11-t02/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A night bus leaves at ten forty pm and arrives at two oh five am. How long is the trip? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-t02/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "In twenty-four-hour time, that's twenty-two forty to nought two oh five. Hop twenty minutes to twenty-three hundred, three hours to nought two hundred, then five minutes. That's three hours twenty-five minutes. Subtracting the wrong way round, twenty-two forty minus nought two oh five, gives twenty hours thirty-five, and that's the slip.",
+      "audioFile": "public/audio/math-s11-t02/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Use the same bus timetable. You reach the Hospital stop at nought eight thirty. Which service can you catch, when does it reach Beach, and how long do you wait at the stop? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-t02/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Along the Hospital row, Service A left at nought seven fifty-eight, and Service B at nought eight twenty-seven, both before you arrived. So you catch Service C at nought nine twelve, and it reaches Beach at nought nine forty-four. From nought eight thirty to nought nine twelve is a forty-two minute wait. Picking Service B, which has already gone, is the slip.",
+      "audioFile": "public/audio/math-s11-t02/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So that's elapsed time. Count up in hops, and let midnight be a stop on the way. When you step off the bus, your phone's map drops a pin and shows two numbers, minus thirty-three point eight six, and one hundred and fifty-one point two one. Those two numbers say exactly where you are on Earth. What do they mean? Latitude and longitude are next.",
+      "audioFile": "public/audio/math-s11-t02/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-t02/key-notes.wav"
+    }
+  ]
+}

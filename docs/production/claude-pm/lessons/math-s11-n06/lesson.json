@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-n06",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "3b707780a1008138bf02e9a09dfe5147c002cfeac92ea0bc981041d368bbfc17",
+  "scenes": [
+    {
+      "id": "hook-obvious-route",
+      "title": "hook: the obvious route",
+      "voiceover": {
+        "text": "Here's the van's delivery network. The depot is S, the customer is T, and the numbers are minutes. Which way is quickest? Your eye goes straight to S, A, T. It's only two roads, four minutes plus six, ten minutes. But fewer roads doesn't always mean less time. There might be a route with more turns that's actually quicker. Delivery apps and map apps solve exactly this, thousands of times a second. On a small network you could list every route, but that gets out of hand fast. So how do we find the shortest path through a network, every time?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "first-to-arrive",
+      "title": "the idea: first to arrive is quickest",
+      "voiceover": {
+        "text": "Here's the idea behind the method. Imagine the van could split, and send a copy down every road at once, all driving at the same speed. The first copy to reach a stop has found the quickest way there. It's like ripples spreading from a stone dropped in a pond, reaching the nearest places first. So we work outwards from the start, giving each stop a label, the shortest time found so far. Then we lock in whichever stop has the smallest label, because nothing could reach it any faster. Any other route to it would have to go through a stop that's already at least as far, and then travel further still. Then we use that stop to update its neighbours. Each lock-in is final. Keep going until the finish is locked in."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "label-run",
+      "title": "running the method",
+      "voiceover": {
+        "text": "Let's do it properly. S starts at nought, and it's locked in. From S, A is four and B is two. Write those as labels. The smallest unlocked label is B, two, so lock B in. Now update B's neighbours. A through B is two plus one, three, which beats four, so A's label drops to three. C through B is two plus five, seven. The smallest unlocked label is now A, three. Lock it in. A's neighbours. C through A is three plus three, six, which beats seven. T through A is three plus six, nine. Next smallest is C, six. Lock it. T through C is six plus two, eight, which beats nine. The only stop left is T, at eight. Lock it in. The shortest time from S to T is eight minutes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "trace-back",
+      "title": "tracing back the path",
+      "voiceover": {
+        "text": "But which route is it? Work backwards from the finish. T's label of eight came from C, because six plus two is eight. C's six came from A, three plus three. A's three came from B, two plus one. And B's two came straight from S. So the shortest path is S, B, A, C, T. You can check it by adding the weights along it, two, one, three and two, which is eight. Four roads, eight minutes, and it beats the obvious-looking S, A, T by two minutes. The shortest path isn't the one with the fewest edges. It's the one with the smallest total weight."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "one-way-network",
+      "title": "a one-way network",
+      "voiceover": {
+        "text": "The same method works when roads are one-way. Here's a small town's bus network, with one-way roads and times in minutes. The bus starts at A and needs to reach E. A is nought. Following the arrows, C gets three and B gets eight. Lock in C, three. From C, B is three plus two, five, which beats eight. And D is three plus nine, twelve. Lock in B, five. From B, D is five plus six, eleven, which beats twelve. Lock in D, eleven. From D, E is eleven plus four, fifteen. Lock it in. Now trace back. E came from D, D from B, B from C, and C from A. So the shortest path is A, C, B, D, E, fifteen minutes. Notice it goes through C to reach B, even though there's a road straight from A to B. The direct road takes eight minutes, and the way round takes five."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "tidy-method",
+      "title": "keeping the method tidy",
+      "voiceover": {
+        "text": "A few things keep the method tidy. Set it out as a table, with one column per vertex, so every label is written down. Only ever lock in the smallest label, never a bigger one. A label only ever goes down, never up, and once a stop is locked in, you never touch it again. In a directed network, like the bus, only follow the arrows when you update. And the networks you'll meet have at most ten vertices, so the table never gets too big. For a tiny network, listing routes is fine. For anything bigger, the labels are safer, because they can't miss a route."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's shortest paths in one card. Label outwards from the start. Lock in the smallest label, then update its neighbours. When the finish is locked, trace back to read the path."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A cyclist rides from P to S. The times between junctions, in minutes, are P Q five, P R two, R Q one, Q S four, and R S seven. Find the shortest path from P to S, and its time. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "P is nought. R gets two and Q gets five. Lock R, two. Q through R is three, which beats five, and S through R is nine. Lock Q, three. S through Q is three plus four, seven, which beats nine. So the shortest path is P, R, Q, S, seven minutes. Taking P, R, S because it has fewer roads gives nine, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. The network shows travel times, in minutes, between seven places, A to G. Use the labelling method to find the shortest path from A to G, and its length. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The labels lock in like this. A nought, B three, C five, because B to C is two. D eight, through C. E ten, through D. F fourteen. And G fifteen, through E, which beats sixteen through F. Trace back from G, through E, D, C and B, to A. So the shortest path is A, B, C, D, E, G, fifteen minutes. A, C, E, G, with the fewest roads, is nineteen, and that's the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: when shortest isn't best",
+      "voiceover": {
+        "text": "So that's the shortest path. Label, lock, update, then trace back. The shortest path answers one question, the least distance or time. Real trips have other things to weigh up. So is the shortest path always the best one to take? What if it runs along a toll road, or a road that floods after rain, or straight up a steep hill on a bike? Sometimes a longer path is the better choice. When is the shortest path not the best path? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

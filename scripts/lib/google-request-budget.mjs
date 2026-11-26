@@ -8,3 +8,12 @@ export function googleQuotaDay(value = new Date()) {
   return day.toISOString().slice(0,10);
 }
 export const requestsInGoogleQuotaDay = (entries, now = new Date()) => entries.filter(entry=>googleQuotaDay(entry.at)===googleQuotaDay(now));
+
+// A spending limit requires review even after the next daily request reset.
+export function isGoogleSpeechSpendCap(message) {
+  return /BUDGET_EXCEEDED|\bspend(?:ing)? cap\b|billing budget (?:exceeded|exhausted)|(?:spend(?:ing)?|budget|billing).{0,40}(?:cap|limit).{0,40}(?:reached|hit|exceeded|exhausted)|(?:reached|hit|exceeded|exhausted).{0,40}(?:spend(?:ing)?|budget|billing).{0,40}(?:cap|limit)/i.test(message);
+}
+
+export function isGoogleSpeechLimit(message) {
+  return isGoogleSpeechSpendCap(message) || /RESOURCE_EXHAUSTED|\b429\b|quota (?:exceeded|exhausted)|daily.{0,40}(?:limit|quota)/i.test(message);
+}

@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "7d9ef052e7d6300216482d4704de1cf62c62fa0f5c91c9dc51398a2b46a622c3",
+  "numbers": {
+    "sourceSha256": "7d9ef052e7d6300216482d4704de1cf62c62fa0f5c91c9dc51398a2b46a622c3",
+    "characters": 5867,
+    "emDashes": 0,
+    "invisibleFunctionApply": 0,
+    "freshScenePartsMatchAudit": true,
+    "rows": [
+      {
+        "sideMm": 10,
+        "coresMm": [
+          2,
+          2,
+          2
+        ],
+        "meanCoreMm": 2.0,
+        "meanDepthMm": 4.0,
+        "changedPercentFromMeanCore": 99.2,
+        "roundedPercent": 99,
+        "surfaceToVolumePerCm": 6.0
+      },
+      {
+        "sideMm": 20,
+        "coresMm": [
+          12,
+          13,
+          11
+        ],
+        "meanCoreMm": 12.0,
+        "meanDepthMm": 4.0,
+        "changedPercentFromMeanCore": 78.4,
+        "roundedPercent": 78,
+        "surfaceToVolumePerCm": 3.0
+      },
+      {
+        "sideMm": 30,
+        "coresMm": [
+          22,
+          21,
+          23
+        ],
+        "meanCoreMm": 22.0,
+        "meanDepthMm": 4.0,
+        "changedPercentFromMeanCore": 60.56296296296296,
+        "roundedPercent": 61,
+        "surfaceToVolumePerCm": 2.0
+      }
+    ],
+    "workedTwoCm": {
+      "whole": 8,
+      "core": 1.7279999999999998,
+      "changed": 6.272
+    },
+    "cuttingError": {
+      "side": 2.1,
+      "volume": 9.261000000000001,
+      "increasePercent": 15.762500000000014
+    },
+    "attempt": {
+      "sideCm": 4,
+      "depthMm": 2,
+      "coreCm": 3.6,
+      "coreVolume": 46.656,
+      "changedVolume": 17.344,
+      "changedPercent": 27.1
+    },
+    "assetBriefConflict": {
+      "beakerPhrase": "0.4 of the1cm cube half-width",
+      "impliedDepthMm": 2,
+      "requiredByLessonAndCutFacesMm": 4,
+      "correctHalfWidthFraction": 0.8
+    },
+    "scope": "Independent numerical and fresh-source check; no configured depth slider, core gauge or stopwatch playback approval."
+  },
+  "rejectedCutCandidates": [
+    {
+      "file": "work/brief242/bio-fa2-v03-candidates/cut-face-candidate-1.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-142d9cae-f278-487e-8c7c-6775a163c2ff.png",
+      "sha256": "f17f6a05689022a2c4db706a1c889ed2dbefdbe9f6fa33a74ce8974d327aa424",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "outlineDetection": "RGB each below180, alpha above150 within manual per-face regions. Precision approximately3px; includes thickness ledge in vertical box.",
+      "faces": [
+        {
+          "darkOutlineBox": [
+            154,
+            332,
+            375,
+            568
+          ],
+          "width": 221,
+          "heightIncludingLedge": 236
+        },
+        {
+          "darkOutlineBox": [
+            533,
+            247,
+            919,
+            651
+          ],
+          "width": 386,
+          "heightIncludingLedge": 404
+        },
+        {
+          "darkOutlineBox": [
+            1054,
+            154,
+            1639,
+            745
+          ],
+          "width": 585,
+          "heightIncludingLedge": 591
+        }
+      ],
+      "widthRatios": [
+        1.0,
+        1.746606334841629,
+        2.6470588235294117
+      ],
+      "requiredRatios": [
+        1,
+        2,
+        3
+      ],
+      "accepted": false
+    },
+    {
+      "file": "work/brief242/bio-fa2-v03-candidates/cut-face-candidate-2.png",
+      "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-b00a2937-82dd-4144-985a-75da58a23236.png",
+      "sha256": "bbb1217416e0ed5336a1cba7260d69bdf8ee1106090745f3ddcd4834406f0123",
+      "nativeSize": [
+        1774,
+        887
+      ],
+      "outlineDetection": "RGB each below180, alpha above150 within manual per-face regions. Precision approximately3px; includes thickness ledge in vertical box.",
+      "faces": [
+        {
+          "darkOutlineBox": [
+            273,
+            359,
+            454,
+            554
+          ],
+          "width": 181,
+          "heightIncludingLedge": 195
+        },
+        {
+          "darkOutlineBox": [
+            579,
+            286,
+            902,
+            625
+          ],
+          "width": 323,
+          "heightIncludingLedge": 339
+        },
+        {
+          "darkOutlineBox": [
+            986,
+            208,
+            1483,
+            703
+          ],
+          "width": 497,
+          "heightIncludingLedge": 495
+        }
+      ],
+      "widthRatios": [
+        1.0,
+        1.7845303867403315,
+        2.74585635359116
+      ],
+      "requiredRatios": [
+        1,
+        2,
+        3
+      ],
+      "accepted": false
+    }
+  ],
+  "acceptedNewAgarPlates": [],
+  "outstanding": [
+    "y11-agar-cubes-cut-v1.png",
+    "y11-agar-cubes-tile-v1.png",
+    "y11-agar-beakers-start-v1.png",
+    "y11-agar-beakers-10min-v1.png"
+  ],
+  "paperTowel": "Not present. Design names rinse-beaker-only fallback; no towel delivery claimed.",
+  "scope": "Three existing native records plus failed generated cut-face attempts. No accepted measured cube set or recording clearance."
+}

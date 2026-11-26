@@ -173,3 +173,41 @@ Held total: 52,450 characters in 9 designs, not voiced until repaired and checke
   - m2-v09: 2.00 ÷ 100.09 × 44.01 = 0.879 g.
 - Final scan of all 36 edited designs: no U+2014, every bold cue quoted in spoken order, and a stated headline equal to the sum of scene strings.
 - This is a source readiness check only. Plates, built motion, the exact voiced preview, caption fit and human listening remain separate gates.
+
+## Brief260 readiness addendum (21 November2026)
+
+The nine Module1 repairs supersede the historical 7 November held decision for the repair findings. Brief260 requires an exact match to the latest checked source before a design enters wave7. The source check below admits one design and stops eight source mismatches. A zero-blocker repair review alone does not bypass that stop rule.
+
+| Lesson | Latest check | Exact current source match | Wave7 |
+| --- | --- | --- | --- |
+| chem-y11-m1-v18 | c-y11-m1-v18-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v19 | c-y11-m1-v19-upgrade-error-check.md | Y | Ready |
+| chem-y11-m1-v20 | c-y11-m1-v20-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v22 | c-y11-m1-v22-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v23 | c-y11-m1-v23-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v24 | c-y11-m1-v24-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v25 | c-y11-m1-v25-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v26 | c-y11-m1-v26-rev2-error-check.md | N | Held: source hash mismatch |
+| chem-y11-m1-v27 | c-y11-m1-v27-rev2-error-check.md | N | Held: source hash mismatch |
+
+v19: brief242 confirms the oxide-ion source repair, with 0 blockers and 0 should-fix items. Its current source hash matches exactly.
+v25: the scene5 heat-slider onset is a builder item with no narration change. The current file still needs the source-mismatch stop resolved.
+All nine repairs have review evidence; eight current files do not match the hashes named in their brief237 checks. Unchanged narration is reported separately and is not treated as an exact source pass. Details and differing scenes: `work/brief260/source-comparisons.json`. No new speech, independent review or listening pass is claimed.
+
+## Brief263 current-source addendum (24 November 2026)
+
+The nine wave 7 sources now pass their current-source error checks. The earlier source mismatches have been inspected. V25's heat-slider repair is present in its active instructions. No speech requested.
+
+| Lesson | Current source SHA256 | Check | Ready |
+| --- | --- | --- | --- |
+| chem-y11-m1-v18 | 3a444852204bfaac83b831fefd02e3de25728481c775f61336c7a966ae05fa63 | c-y11-m1-v18-brief263-error-check.md | Y |
+| chem-y11-m1-v19 | 92d0c58db530cab23c02d1c6fef4a26bbef66fc420fbcc1785a38912279a5089 | c-y11-m1-v19-brief263-error-check.md | Y |
+| chem-y11-m1-v20 | 5ebf85b5ccb10c7b2f416cb6a6ba94016e3fcfbcf8842b258071d629606acd4e | c-y11-m1-v20-brief263-error-check.md | Y |
+| chem-y11-m1-v22 | a23dde97c37b7c5873ecef7387b28fb004342afcca0df753848e48447a0189e5 | c-y11-m1-v22-brief263-error-check.md | Y |
+| chem-y11-m1-v23 | fc8f0be46ebecdb9bd94239b9c82f83dfbfaa9ae0f4d8e9d3f3973a5e0f3c4cc | c-y11-m1-v23-brief263-error-check.md | Y |
+| chem-y11-m1-v24 | ea7abe794d7a06aac952139729242591e49550be1fb03f783ee347e507a36827 | c-y11-m1-v24-brief263-error-check.md | Y |
+| chem-y11-m1-v25 | 82ac01263282b7e4e9b28c944ca6de89ef049ff3cc000dfde0dbcb6aa0066ea5 | c-y11-m1-v25-brief263-error-check.md | Y |
+| chem-y11-m1-v26 | 9ba6487f49f66e0872ff9c3c75544a9a62cb9278316df733793c8a5cf9c9b73d | c-y11-m1-v26-brief263-error-check.md | Y |
+| chem-y11-m1-v27 | 16a2147081f14144f2980e52117f045947fcc255270badae93868c1e28daebb6 | c-y11-m1-v27-brief263-error-check.md | Y |
+
+M3-v06 remains unprepared pending its learning review and the reported denaturation correction.

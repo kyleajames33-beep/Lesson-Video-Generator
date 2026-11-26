@@ -19,3 +19,14 @@ Should fix 238-I07-STALE-UNITS: old Numbers used, boundary/route and teaching-ch
 The nine visual-standard items are present in the proposal: immediate painted bath; purposeful strip/refinement/notation/shape/balance/fold stages; linked clock, volume and signed sums; fixed rate/sign colours;52px working/44px givens; hand tags; g01 task/givens/rows/framed answers/crossed slips; framed mnemonic and five notes; cancellation despite substantial area. Notes advances735-894px at40px show no clear source-fit contradiction beside a half-frame card. Actual layout and motion remain untested.
 
 Anchor check: everyday bath filling with plug out is distinct from rain collection and vase geometry. Constant drain and linear tap are stated model assumptions in author notes, not unsupported drainage physics. 36 gained/4 lost describe positive/negative NET-flow pieces, not gross tap/drain totals64/32. Preserve those labels in the build. i06 opening and i08 moving-end final-frame contracts agree.5775characters/16scenes,no em dashes,estimated518s,notes45s,not measured. Bathtub plate, speech and exact voiced learning review pending.
+
+
+### Current source repair recheck,11November2026
+
+Current source SHA256 `4d3b39828dbe9de55cc917992d3b3cc2bf25e517ee57601b3a7e2f1a7376a5b8`. Result:0 blockers,0 remaining source should-fix findings in the repaired scope. The nonpositive-integral rule now gives<=0 and makes strict negativity conditional on a continuous nonzero region over a<b. Zero function is correctly included. For12-2t, six positive left strips,one zero andone negative are correct at n8; left/right sums at n256 are32.25/31.75. New long cue uniquely identifies the left value. Triangle0..6 gives36 and6..8 gives-4,total32litres over8minutes. Old seconds wording corrected. Source blockers resolved; bathtub geometry pending.
+
+Independent current recount:5861characters,16scene strings,declared total matches. Strings/cues in work/brief238/i07-repaired-source.json. Earlier blocker disposition is superseded for this source revision only; actual plate geometry,voiced timing and built playback are separate gates. No speech or source edit.
+
+### Revised artwork geometry check,11November2026
+
+Source repair result above remains unchanged. Current candidate PNGs supplied with native measurements and paper/dark/black/white checks. At equivalent2400px-wide guide,inner walls~448/1955,rim440,floor819 differ from420/2000/420/900 by more than4px. Inner cavity remains rectangular;quarter-depth test uses actual measured bounds. Strict guide not passed. Strict geometric guide has not passed;keep artwork/recording hold for this lesson until corrected or root resolves the guide. Details docs\production\claude-pm\assets\ma12-i07-provenance.json. No completed speech regenerated.

@@ -1,0 +1,81 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/hms-y12-m3-v18.md",
+  "sourceSha256": "2281e9e6e7636b064dfee49b4871b305db147eb00a311d2f3ff1d419f293b989",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "So, how is big data shaping our health? Every subsidised prescription dispensed in Australia is recorded. So is every hospital admission, every subsidised medical visit, every cancer diagnosis and every vaccination. Write down two useful things we could learn by linking those records. Then two things you'd never want anyone to do with them. And what would have to be in place first?",
+      "audioFile": "public/audio/hms-y12-m3-v18/hook.wav"
+    },
+    {
+      "id": "uses-linkage",
+      "text": "Big data means datasets so large and varied that they show patterns no single record can. It's used five ways. First, and biggest, just knowing what's happening. Every trend in this course comes from linked national data. Second, surveillance, like spotting outbreaks and rare medicine side effects. Third, planning and evaluation. Fourth, prediction: who's at high risk, so attention goes there first. Fifth, research: does a treatment work in real life, not just in a trial? Most of the value comes from data linkage, joining records about the same person from different sources. A prescribing record says what was dispensed. Linked to hospital and death records, it says whether the medicine helped or harmed. And that's exactly where the privacy risk is greatest. The benefit and the risk have the same source.",
+      "audioFile": "public/audio/hms-y12-m3-v18/uses-linkage.wav"
+    },
+    {
+      "id": "spending",
+      "text": "Does it reduce spending? Answer honestly. Some savings are real. It avoids repeat tests. It can prevent avoidable admissions, if someone follows up. It reveals low-value care and unwarranted variation, the same operation done at very different rates in similar populations. And it targets programs at the people most likely to benefit. But the claim is weakest in four places. Prediction isn't intervention. Knowing who'll be readmitted saves nothing unless something's funded to act. Finding more disease often costs more, though that's a health gain. The data systems themselves are expensive. And some savings just move to another funder. So the honest version is that big data improves the value of spending more reliably than it cuts the total.",
+      "audioFile": "public/audio/hms-y12-m3-v18/spending.wav"
+    },
+    {
+      "id": "disease",
+      "text": "How is it used to cure and manage disease? It finds causes, because rare and small effects only show up across huge numbers of people. It powers precision medicine, matching treatment to a person's features, like choosing a cancer drug from the tumour's genes. It speeds research and follows outcomes for years. It shows how treatments work in everyone, including older people and people with several conditions, who trials often leave out. It helps services spot patients drifting out of control before they end up in hospital. One caution. If a dataset under-represents some groups, like rural communities or Aboriginal and Torres Strait Islander Peoples, its conclusions fit them worse. So collecting representative data is an equity step, not paperwork.",
+      "audioFile": "public/audio/hms-y12-m3-v18/disease.wav"
+    },
+    {
+      "id": "privacy",
+      "text": "So what protects the people inside the data? First, two meanings. Privacy is your right to control information about yourself. Confidentiality is the duty not to share what was given in trust. Now the measures. Collect only what's needed, and don't keep it forever. De-identify it, removing names, but know that's imperfect. Re-identification can happen when age, postcode and dates are combined, especially for rare conditions or small towns.",
+      "audioFile": "public/audio/hms-y12-m3-v18/privacy.wav"
+    },
+    {
+      "id": "access-measures",
+      "text": "Give access for a stated purpose, only the fields needed, with every look logged. Trusted staff isn't a control. Have an independent body approve each new use. Encrypt and monitor it. Make penalties real. And where possible, send the question to the data instead of copying the data out. Stronger privacy means less can be learned, so the line has to be drawn deliberately. One serious breach can cost the public trust that every future use depends on.",
+      "audioFile": "public/audio/hms-y12-m3-v18/access-measures.wav"
+    },
+    {
+      "id": "shaping",
+      "text": "Notice the syllabus says shaping, not just helping. Big data shapes health in four ways. It decides what's visible, because a problem that's measured becomes a policy problem, and splitting data by group is how an inequity becomes something the system must answer for. It shifts care from reacting to anticipating. It changes what treatment means, from the group average to the person. And it moves power to whoever holds and analyses the data. Public bodies with oversight ask the population's questions. Companies ask the questions worth money. So big data is one of the biggest opportunities in health, but it's not automatically a benefit. It depends on representative data, someone funded to act, trusted rules, and attention to who benefits.",
+      "audioFile": "public/audio/hms-y12-m3-v18/shaping.wav"
+    },
+    {
+      "id": "memory",
+      "text": "Two things to remember. Linkage is the same source for benefit and risk. And big data buys better value, not less spending.",
+      "audioFile": "public/audio/hms-y12-m3-v18/memory.wav"
+    },
+    {
+      "id": "attempt",
+      "text": "Two exam questions. First. Use one: publishing cancer screening rates for small local areas, to find gaps. Use two: giving a company access to de-identified records to develop a diagnostic tool. For each, name the benefit, the privacy risk, and one protection you'd insist on. Pause here to answer.",
+      "audioFile": "public/audio/hms-y12-m3-v18/attempt.wav"
+    },
+    {
+      "id": "feedback-one",
+      "text": "Small-area rates find communities that screening is missing. The risk is re-identification, because in a tiny area a few people can be recognised, so suppress very small counts. The company's tool might help diagnosis. The risks are re-identification and unexpected commercial use, so require independent approval, and keep the data in place. The classic mistake is saying de-identified means safe.",
+      "audioFile": "public/audio/hms-y12-m3-v18/feedback-one.wav"
+    },
+    {
+      "id": "attempt-two",
+      "text": "Second. A local council asks for hospital data on asthma admissions by street, to decide where to put air quality monitors and plant trees. Examine how this could shape health, and name two privacy measures it needs. Pause here to answer.",
+      "audioFile": "public/audio/hms-y12-m3-v18/attempt-two.wav"
+    },
+    {
+      "id": "feedback-two",
+      "text": "It makes a hidden pattern visible, so action goes where asthma is worst, often poorer streets near busy roads, which could narrow a gap. But a street is small enough to identify families. So group the data to larger areas or suppress small counts, and give it for this stated purpose only, with an independent approval. The classic mistake is naming privacy without a measure.",
+      "audioFile": "public/audio/hms-y12-m3-v18/feedback-two.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So name the use, test the saving claim, check whose data is missing, and match each risk to a measure. That closes our look at technology and data. Now sort the same data a different way. Not by hospital or medicine, but by seventeen global goals. What are the SDGs, and why does health need education?",
+      "audioFile": "public/audio/hms-y12-m3-v18/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/hms-y12-m3-v18/key-notes.wav"
+    }
+  ]
+}

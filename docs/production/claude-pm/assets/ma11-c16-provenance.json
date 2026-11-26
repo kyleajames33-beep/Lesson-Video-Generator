@@ -1,0 +1,136 @@
+{
+  "brief": 248,
+  "lesson": "c16",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-247a2eb4-5071-415f-a537-219f15a0b3f3.png",
+      "sha256": "a4041b0baa7b9aa8c3799092e1d8a88a400b67310110c3eee5cf18483c542474",
+      "nativeSize": [
+        1053,
+        1493
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        83,
+        94,
+        966,
+        1412
+      ],
+      "marginFractions": [
+        0.0788224121557455,
+        0.06296048225050234,
+        0.08262108262108261,
+        0.05425318151373074
+      ],
+      "evidence": [
+        "work/brief248/c16-hot-air-balloon-native-paper.jpg",
+        "work/brief248/c16-hot-air-balloon-native-dark.jpg",
+        "work/brief248/c16-hot-air-balloon-native-white.jpg",
+        "work/brief248/c16-hot-air-balloon-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-hot-air-balloon-v1.png",
+      "path": "public/assets/maths/ma11-hot-air-balloon-v1.png",
+      "brief": 248,
+      "lesson": "c16",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1200,
+        1700
+      ],
+      "qa": {
+        "result": "passed: subject, alpha,900/full-width and two-height composites; paddock native aspect recorded",
+        "observations": [
+          "Separate sprites placed with uniform scales only.",
+          "Root owns metric height mapping, sky and playback. Paddock outer landscape edges are intentional."
+        ],
+        "evidence": [
+          "work/brief248/c16-balloon-qa-paper-dark-paper.jpg",
+          "work/brief248/c16-paddock-qa-paper-dark-paper.jpg",
+          "work/brief248/c16-balloon-paddock-paper.jpg",
+          "work/brief248/c16-balloon-qa-paper-dark-dark.jpg",
+          "work/brief248/c16-paddock-qa-paper-dark-dark.jpg",
+          "work/brief248/c16-balloon-paddock-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-fe1e97b7-d0ed-4465-af27-dc3b333eea37.png",
+      "sha256": "28067a5a1089bdf397dd632ab949a8073f761baaeae0627cb601ddf844868b16",
+      "nativeSize": [
+        2172,
+        724
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        49,
+        2172,
+        724
+      ],
+      "marginFractions": [
+        0.0,
+        0.06767955801104972,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief248/c16-launch-paddock-native-paper.jpg",
+        "work/brief248/c16-launch-paddock-native-dark.jpg",
+        "work/brief248/c16-launch-paddock-native-white.jpg",
+        "work/brief248/c16-launch-paddock-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-launch-paddock-v1.png",
+      "path": "public/assets/maths/ma11-launch-paddock-v1.png",
+      "brief": 248,
+      "lesson": "c16",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2600,
+        500
+      ],
+      "qa": {
+        "result": "passed: subject, alpha,900/full-width and two-height composites; paddock native aspect recorded",
+        "observations": [
+          "Separate sprites placed with uniform scales only.",
+          "Root owns metric height mapping, sky and playback. Paddock outer landscape edges are intentional."
+        ],
+        "evidence": [
+          "work/brief248/c16-balloon-qa-paper-dark-paper.jpg",
+          "work/brief248/c16-paddock-qa-paper-dark-paper.jpg",
+          "work/brief248/c16-balloon-paddock-paper.jpg",
+          "work/brief248/c16-balloon-qa-paper-dark-dark.jpg",
+          "work/brief248/c16-paddock-qa-paper-dark-dark.jpg",
+          "work/brief248/c16-balloon-paddock-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false
+    }
+  ],
+  "result": "Hot-air balloon and launch paddock delivered at native1053x1493 and2172x724. Teal/amber envelope, basket and burner frame, no people or glow. Paddock is a3:1 native strip rather than requested5.2:1; preserve proportion, with transparent sky area and landscape continuing to side/bottom edges.900/full-width and two-height paper/dark composites pass. Formula-bound pump-track dependency remains held under c15; this artwork does not clear that join.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c16-generation-part1.json",
+    "work/brief248/c16-generation-part2.json",
+    "work/brief248/c16-balloon-qa.json",
+    "work/brief248/c16-paddock-qa.json",
+    "work/brief248/c16-composite-registration.json",
+    "work/brief248/qa-balloon-paddock.py",
+    "work/brief248/c16-balloon-qa-paper-dark-paper.jpg",
+    "work/brief248/c16-paddock-qa-paper-dark-paper.jpg",
+    "work/brief248/c16-balloon-paddock-paper.jpg",
+    "work/brief248/c16-balloon-qa-paper-dark-dark.jpg",
+    "work/brief248/c16-paddock-qa-paper-dark-dark.jpg",
+    "work/brief248/c16-balloon-paddock-dark.jpg"
+  ]
+}

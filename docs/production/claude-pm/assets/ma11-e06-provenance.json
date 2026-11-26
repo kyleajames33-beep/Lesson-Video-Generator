@@ -1,0 +1,69 @@
+{
+  "brief": 248,
+  "lesson": "e06",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-8d57e526-9015-4a8c-8458-04dab8a4fbd2.png",
+      "sha256": "5c02d15e34b541d678173d212936b0b5c059ed7a6d23b8acb03d5cf292de962e",
+      "nativeSize": [
+        1619,
+        971
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        51,
+        22,
+        1554,
+        959
+      ],
+      "marginFractions": [
+        0.03150092649783817,
+        0.02265705458290422,
+        0.04014823965410747,
+        0.012358393408856848
+      ],
+      "evidence": [
+        "work/brief248/e06-bike-lock-native-paper.jpg",
+        "work/brief248/e06-bike-lock-native-dark.jpg",
+        "work/brief248/e06-bike-lock-native-white.jpg",
+        "work/brief248/e06-bike-lock-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-bike-lock-v1.png",
+      "path": "public/assets/maths/ma11-bike-lock-v1.png",
+      "brief": 248,
+      "lesson": "e06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        1200
+      ],
+      "qa": {
+        "result": "passed: four flat level windows, equal coded safe areas, digit fit and alpha checks",
+        "observations": [
+          "Painted window widths differ by at most2native pixels; identical inset rectangles fit all four.",
+          "No painted digits, text, people or logo."
+        ],
+        "evidence": [
+          "work/brief248/e06-lock-windows-paper.jpg",
+          "work/brief248/e06-lock-windows-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-bike-lock-v1.json"
+    }
+  ],
+  "result": "Bike lock delivered at native1619x971. Four level blank dial windows have measured widths95..97px and common86px height; equal inset88x76safe rectangles recorded. At1000px width these54.35x46.94boxes fit52px coded test digits.1000/native-width paper/dark alpha checks pass. PNG remains blank; root draws and changes digits.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/e06-generation.json",
+    "work/brief248/e06-lock-windows.json",
+    "work/brief248/qa-bike-lock.py",
+    "work/brief248/e06-lock-windows-paper.jpg",
+    "work/brief248/e06-lock-windows-dark.jpg"
+  ]
+}

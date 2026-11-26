@@ -1,0 +1,186 @@
+{
+  "design": "chem-y11-m2-v17",
+  "sourceSHA256": "a666a40a2a23c602c943b519d8455a045ac084e9bda8d83f4f624f0651aaec29",
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "biology/m6-water-bath-tube-v1.png",
+      "resolvedReference": "biology/m6-water-bath-tube-v1.png",
+      "paths": [
+        "public/assets/biology/m6-water-bath-tube-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "biology/y11-gas-syringe-rig-v1.png",
+      "resolvedReference": "biology/y11-gas-syringe-rig-v1.png",
+      "paths": [
+        "public/assets/biology/y11-gas-syringe-rig-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "c4a-syringe-barrel-v1.png",
+      "resolvedReference": "c4a-syringe-barrel-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-barrel-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "c4a-syringe-plunger-v1.png",
+      "resolvedReference": "c4a-syringe-plunger-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-plunger-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "c8-pressure-vessel-v1.png",
+      "resolvedReference": "c8-pressure-vessel-v1.png",
+      "paths": [
+        "public/assets/chemistry/c8-pressure-vessel-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "phys-y11-data-logger-v1.png",
+      "resolvedReference": "phys-y11-data-logger-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-data-logger-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "phys-y11-force-sensor-v1.png",
+      "resolvedReference": "phys-y11-force-sensor-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-force-sensor-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "phys-y11-sealed-syringes-v1.png",
+      "resolvedReference": "phys-y11-sealed-syringes-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-sealed-syringes-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "public/assets/chemistry/c4a-syringe-barrel-v1.png",
+      "resolvedReference": "public/assets/chemistry/c4a-syringe-barrel-v1.png",
+      "paths": [
+        "public/assets/chemistry/c4a-syringe-barrel-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "public/assets/chemistry/c8-thermometer-hot-v1.png",
+      "resolvedReference": "public/assets/chemistry/c8-thermometer-hot-v1.png",
+      "paths": [
+        "public/assets/chemistry/c8-thermometer-hot-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "public/assets/chemistry/m8-beaker-hotplate-clear-v1.png",
+      "resolvedReference": "public/assets/chemistry/m8-beaker-hotplate-clear-v1.png",
+      "paths": [
+        "public/assets/chemistry/m8-beaker-hotplate-clear-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "public/assets/physics/phys-y11-data-logger-v1.png",
+      "resolvedReference": "public/assets/physics/phys-y11-data-logger-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-data-logger-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v17",
+      "reference": "y11c-gas-pressure-sensor-v1.png",
+      "resolvedReference": "y11c-gas-pressure-sensor-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "newRequests": [
+    {
+      "design": "chem-y11-m2-v17",
+      "file": "y11c-gas-pressure-sensor-v1.png",
+      "status": "delivered for designer inspection",
+      "sha256": "11f58a66aed3868a89aaa34e910b07231158d0d9fe1692b01987e83581e8c66b",
+      "nativeSize": [
+        1671,
+        941
+      ],
+      "qa": "docs/production/claude-pm/assets/brief182-qa"
+    }
+  ],
+  "reuseQA": "docs/production/claude-pm/assets/brief182-qa/README.md",
+  "reviewReports": [
+    "checks/c-y11-m2-v17-learning-review.md",
+    "checks/c-y11-m2-v17-science-check.md"
+  ],
+  "qualification": "Source corrections remain open. Existence/placement checks do not establish voiced playback or method approval.",
+  "assets": [
+    {
+      "key": "sensor",
+      "source": "exec-32eee784-af9f-4c89-b75c-70f9e17c5ffb.png",
+      "file": "public/assets/chemistry/y11c-gas-pressure-sensor-v1.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-32eee784-af9f-4c89-b75c-70f9e17c5ffb.png",
+      "nativeSize": [
+        1671,
+        941
+      ],
+      "sha256": "11f58a66aed3868a89aaa34e910b07231158d0d9fe1692b01987e83581e8c66b",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "paintedBBoxAbove16": [
+        247,
+        323,
+        1671,
+        810
+      ],
+      "minMarginAbove16": 0.0,
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection",
+      "qualification": "Native output dimensions preserved, without upsampling or stretching. Faint low-alpha noise can extend beyond painted bounds. Source findings and voiced-preview checks remain open. Visible alignment does not establish pixel identity.",
+      "pixelCoordinates": {
+        "luerTip": [
+          258,
+          470
+        ],
+        "cableEnd": [
+          1670,
+          785.0
+        ]
+      },
+      "coordinateStatus": "Estimated luer-tip centre from native image. Cable-end centre measured from alpha above 16 at rightmost column. Verify actual coded joins.",
+      "marginQualification": "Cable intentionally exits right edge. Other painted bounds have clear margins; left fitting begins at x247 on 1671px canvas."
+    }
+  ],
+  "brief242Recheck": {
+    "date": "2026-11-16",
+    "record": "docs/production/claude-pm/assets/brief242-chem-m2-v17-native-qa-16-nov.json",
+    "reviewedSourceSha256": "ee3dfcd5b0242e6e94aea83e1393ea79d1daea6745b0a4ca2bb32588a6535b5b",
+    "result": "Two new native sensor/logger records; sidecar joins checked and a safe inner logger-screen rectangle recorded. Both new question-picture groups reveal no answer data. All 16 narration strings remain unchanged (5,759 characters). Build hold: the bath image has a watch-glass cover across the mouth; root must resolve syringe/thermometer immersion in scene 15 and the M2 v18 handoff. No whole-lesson clearance."
+  }
+}

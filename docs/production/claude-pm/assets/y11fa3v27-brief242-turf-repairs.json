@@ -1,0 +1,88 @@
+[
+  {
+    "id": "y11-turf-patchy-topdown-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-turf-patchy-topdown-v2.png",
+    "sha256": "e1af8bd05b22fb7c080d8e24410ceccc67847c09c3b17a52a1f3811456e7763b",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sourceMode": "RGB",
+    "alphaRange": [
+      255,
+      255
+    ],
+    "originalPreserved": "public\\assets\\biology\\y11-turf-patchy-topdown-v1.png",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-4ce9578d-337a-471f-b154-2f513f6686b4.png",
+    "method": "Built-in image edit; generated PNG copied unchanged. Opaque full-canvas texture explicitly requested by FA3 v27 asset brief.",
+    "prompt": "Border repair only. Preserve top-down short narrow mown turf, same blade scale and irregular roughly half-cover patches on damp dark brown soil. Remove complete white frame on four sides by extending matching texture to canvas boundaries. Full-bleed opaque 1254 square, no white or transparent margins, frame, vignette, shadow, broadleaf plants, flowers, objects, grids, labels, people or question data. Fine ink-watercolour. No stretching; original v1 retained.",
+    "anchors": {
+      "centre": [
+        627,
+        627
+      ],
+      "topLeft": [
+        0,
+        0
+      ],
+      "bottomRight": [
+        1253,
+        1253
+      ]
+    },
+    "qa": {
+      "result": "static border removal pass",
+      "observations": [
+        "Visual inspection of the final native square confirms texture reaches every edge with no white frame.",
+        "Opaque full-canvas texture is intentional under FA3 v27 asset brief, distinct from isolated-object alpha requirements.",
+        "Top-down view and short-blade scale retained, no broadleaf plants or printed question data.",
+        "Generated brush detail is not pixel identity. Fit under the separate quadrat with uniform scaling. Exact percentage-cover counts must come from the selected counted squares/model, not an invented measurement of this texture."
+      ]
+    },
+    "limitation": "Static background only; overlay registration, percentage readouts and final scene playback remain pending."
+  },
+  {
+    "id": "y11-turf-dense-topdown-v2",
+    "brief": 242,
+    "file": "public/assets/biology/y11-turf-dense-topdown-v2.png",
+    "sha256": "60d8a729641df55afea699774b029f4ad0af2053848358a59b51b2fbcf9c620a",
+    "nativeSize": [
+      1254,
+      1254
+    ],
+    "sourceMode": "RGB",
+    "alphaRange": [
+      255,
+      255
+    ],
+    "originalPreserved": "public\\assets\\biology\\y11-turf-dense-topdown-v1.png",
+    "generatedSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-6277c839-2833-4352-9e8a-c2f1da78b2ea.png",
+    "method": "Built-in image edit; generated PNG copied unchanged. Opaque full-canvas texture explicitly requested by FA3 v27 asset brief.",
+    "prompt": "Border repair only. Preserve top-down short narrow mown turf, same blade scale and nearly continuous dense grass on dry pale soil with tiny bare specks. Remove complete white frame on four sides by extending matching texture to canvas boundaries. Full-bleed opaque 1254 square, no white or transparent margins, frame, vignette, shadow, broadleaf plants, flowers, objects, grids, labels, people or question data. Fine ink-watercolour. No stretching; original v1 retained.",
+    "anchors": {
+      "centre": [
+        627,
+        627
+      ],
+      "topLeft": [
+        0,
+        0
+      ],
+      "bottomRight": [
+        1253,
+        1253
+      ]
+    },
+    "qa": {
+      "result": "static border removal pass",
+      "observations": [
+        "Visual inspection of the final native square confirms texture reaches every edge with no white frame.",
+        "Opaque full-canvas texture is intentional under FA3 v27 asset brief, distinct from isolated-object alpha requirements.",
+        "Top-down view and short-blade scale retained, no broadleaf plants or printed question data.",
+        "Generated brush detail is not pixel identity. Fit under the separate quadrat with uniform scaling. Exact percentage-cover counts must come from the selected counted squares/model, not an invented measurement of this texture."
+      ]
+    },
+    "limitation": "Static background only; overlay registration, percentage readouts and final scene playback remain pending."
+  }
+]

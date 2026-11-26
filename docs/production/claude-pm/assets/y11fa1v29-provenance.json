@@ -1,0 +1,172 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "f0af9c169d83decd7848c590219e69921b9df6c1640ba4eaf76925817b6d455c",
+  "diagnostic": {
+    "date": "2026-11-17",
+    "scope": "Static diagnostic only. No production pixels edited, no playback.",
+    "priorMeiosisRecords": [
+      {
+        "file": "public/assets/biology/cd-m1-prophase-v1.png",
+        "sha256": "4be31afff0699ff8fee3a8f43a85a4713735e839297c76febf6fbc20a6e66ef3",
+        "priorShaMatches": true,
+        "chromosomeCount": 4
+      },
+      {
+        "file": "public/assets/biology/cd-m1-metaphase-v1.png",
+        "sha256": "2d6f754d743e0bc642d0b53cde1c760382aa848a7d16ed1faa95d0144d260b02",
+        "priorShaMatches": true,
+        "chromosomeCount": 4
+      },
+      {
+        "file": "public/assets/biology/cd-m1-anaphase-v1.png",
+        "sha256": "28cbc9ad13b3c1fa489840ba00eb329193e2a8ab61c39bf3c5ae8de5d0bc8eb3",
+        "priorShaMatches": true,
+        "chromosomeCount": 4
+      },
+      {
+        "file": "public/assets/biology/cd-m1-telophase-v1.png",
+        "sha256": "4760218288b9598744bbe933177a656c39004ad3abbd11e7654d073fb7e2b5b6",
+        "priorShaMatches": true,
+        "chromosomeCount": 4
+      },
+      {
+        "file": "public/assets/biology/cd-pair-metaphase-v1.png",
+        "sha256": "df5b2510cece3eccf399ef6ee401b519c41fcd4e44fdb749377d3155016fe4e3",
+        "priorShaMatches": true,
+        "chromosomeCount": 4
+      },
+      {
+        "file": "public/assets/biology/cd-pair-anaphase-v1.png",
+        "sha256": "e097a2c4f456778d6af24ea93d2f37e0111cc5f3f6197540244a1b991ead8ec6",
+        "priorShaMatches": true,
+        "chromosomeCount": 8
+      },
+      {
+        "file": "public/assets/biology/cd-four-cells-v1.png",
+        "sha256": "3896151ffddf1a7a38244632609e4cba4cf31f17e0428e17956924178a00397a",
+        "priorShaMatches": true,
+        "chromosomeCount": 8
+      }
+    ],
+    "stageJoins": [
+      {
+        "files": [
+          "cd-m1-telophase-v1.png",
+          "cd-pair-prophase-v1.png"
+        ],
+        "alphaIoU": 0.49560691160381704,
+        "changedVisibleRGBA": 1626070
+      },
+      {
+        "files": [
+          "cd-pair-prophase-v1.png",
+          "cd-pair-metaphase-v1.png"
+        ],
+        "alphaIoU": 0.9227626954734645,
+        "changedVisibleRGBA": 867475
+      },
+      {
+        "files": [
+          "cd-pair-anaphase-v1.png",
+          "cd-pair-telophase-v1.png"
+        ],
+        "alphaIoU": 0.7320709997215791,
+        "changedVisibleRGBA": 840434
+      },
+      {
+        "files": [
+          "cd-pair-telophase-v1.png",
+          "cd-four-cells-v1.png"
+        ],
+        "alphaIoU": 0.11700715756529201,
+        "changedVisibleRGBA": 2852603
+      }
+    ],
+    "crossingProtection": [
+      {
+        "pair": [
+          "a",
+          "b"
+        ],
+        "protectedOutsideRectangle": [
+          620,
+          280,
+          1370,
+          1700
+        ],
+        "changedVisibleRGBAOutside": 1338682,
+        "changedVisibleRGBATotal": 2400809
+      },
+      {
+        "pair": [
+          "a",
+          "c"
+        ],
+        "protectedOutsideRectangle": [
+          620,
+          280,
+          1370,
+          1700
+        ],
+        "changedVisibleRGBAOutside": 1347760,
+        "changedVisibleRGBATotal": 2412201
+      }
+    ],
+    "aliases": {
+      "interphaseEmptySameAsInterphase": true
+    },
+    "modelTracker": [
+      [
+        1,
+        4,
+        8
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        4,
+        2,
+        2
+      ]
+    ],
+    "humanTracker": [
+      [
+        1,
+        46,
+        92
+      ],
+      [
+        2,
+        23,
+        46
+      ],
+      [
+        4,
+        23,
+        23
+      ]
+    ],
+    "chromatidTree": [
+      8,
+      [
+        4,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ]
+    ]
+  },
+  "anchors": "docs/production/claude-pm/assets/y11fa1v29-anchors.json",
+  "scope": "Static QA and manual label guides. No production PNG, narration or scene edits.",
+  "emptyProphase": "Held: chromosome-shaped transparent holes, not filled cytoplasm.",
+  "questionAnaphase": "At520 whole-canvas pixels, each of four moving chromosomes has two visibly diverging arms at a common gold knob. Schematic sisters are distinguishable; exact preview still pending.",
+  "crossingEdges": "Fine red-brown painted rim visible on dark. No broad white cutout halo. Background/envelope pixels differ between states.",
+  "modelKit": "White sheet is deliberately opaque within a transparent exterior. No pencil line, matching revision3. Two long X models exchange one distal segment each; two short X models and two spare loops."
+}

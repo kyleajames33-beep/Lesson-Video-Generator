@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-s07.md",
+  "sourceSha256": "831272b700107971f520fced50e9677ac7a584f332aa837cdf73aba3fefe9c0d",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with this flat density, from one to five. We'll find its height soon. First, here's where flat densities come from. A bus comes every ten minutes, and you turn up at a random moment, so every point in the ten-minute gap is equally likely. How long will you wait? Let's simulate two hundred arrivals, and sort their waits into one-minute classes. The bars come out roughly level. Any wait from zero to ten minutes can happen, and no stretch of waiting times is more likely than another of the same width. So what does the density look like? And how tall is it?",
+      "audioFile": "public/audio/math-a12-s07/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Equally likely has a precise meaning here. Take any two intervals of the same width, say from one to three minutes and from six to eight. They must carry the same probability. Slide a window of width two anywhere within zero to ten, and its probability can't change. On a density, probability is area. So equal widths with equal areas means equal heights. The density has to be flat: a constant height c, from zero to ten, and zero outside, because a wait below zero or above ten can't happen.",
+      "audioFile": "public/audio/math-a12-s07/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Now, how tall? The total area under any density is one. Here the area is a rectangle, ten wide and c tall, so ten times c equals one, and c is one tenth. That height means a tenth of the probability per minute: each minute of the interval holds a tenth of the total. The same works on any interval from a to b. The rectangle is b minus a wide, so its height must be one over b minus a. We didn't choose that height. Total probability one forced it.",
+      "audioFile": "public/audio/math-a12-s07/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "So what's the chance you wait less than four minutes? That's the area from zero to four. It's four wide and one tenth tall, which is zero point four. And between three and seven minutes? Also four wide, so also zero point four. For a uniform model, a probability is just the fraction of the interval that's covered. Where the interval sits doesn't matter, only its width. It's the same idea on any interval. If X is uniform from two to ten, the whole width is eight. So the chance X is between four and seven is three eighths.",
+      "audioFile": "public/audio/math-a12-s07/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Here's a surprise. The narrower the interval, the taller the density has to be. What if X is uniform on a short interval, from zero to a half? The rectangle is only a half wide. So to have area one, its height must be two. A density of two is fine. It isn't a probability. Probability is area, and the area is still exactly one.",
+      "audioFile": "public/audio/math-a12-s07/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "What about the cumulative distribution function? Back at the bus stop, F of t is the area to the left of t. As t moves right, the area grows by the same amount every minute, because the height never changes. So F climbs in a straight line, from zero at the start to one at the end. On any interval from a to b, F of x is x minus a, over b minus a. Before a it stays at zero, and after b it stays at one. You can check this with an integral too. F of x is the integral from a to x of one over b minus a, which gives the same x minus a, over b minus a.",
+      "audioFile": "public/audio/math-a12-s07/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now back to the flat density from one to five. Say it's the time a train waits at a platform, uniform between one and five minutes. The interval is four wide, so the density is one quarter from one to five, and zero elsewhere. Then F of t is the integral of a quarter from one up to t, which is t minus one, over four. The chance the train waits more than three and a half minutes is one minus F of three and a half. That's one minus two point five over four, which is zero point three seven five. And the chance it waits between two and four minutes is three quarters minus one quarter, a half. That's two of the four minutes, so a half makes sense.",
+      "audioFile": "public/audio/math-a12-s07/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "This should feel familiar. A fair die spreads a total probability of one equally over six values, so each gets one sixth. A continuous uniform spreads it evenly over an interval, so its height is one over the width. And because the density is flat, no value is higher than any other. So a uniform distribution has no single mode.",
+      "audioFile": "public/audio/math-a12-s07/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "When is this a good model? When nothing makes one part of the interval more likely than another. Turning up at a random moment for a bus that comes exactly every ten minutes fits. The rounding error, when you round a length to the nearest centimetre, often fits too, anywhere from minus a half to a half, if the lengths aren't bunched near whole numbers. But a reaction time doesn't. Those times bunched up in the middle, as the histogram showed. A flat model would give the extreme times far too much probability. And a bus wait doesn't fit either if you've checked the timetable, because then you'd arrive just before the bus.",
+      "audioFile": "public/audio/math-a12-s07/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's a way to remember it. Flat, so one over the width. And the probability is the width you want, inside the interval, over the whole width.",
+      "audioFile": "public/audio/math-a12-s07/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Write down the density, and find this probability. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s07/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "The interval is five wide, so f of x is one fifth between three and eight, and zero elsewhere. From four to six point five is two point five wide, so the probability is two point five over five, which is a half. A height of one eighth is wrong. The width is eight minus three, not eight.",
+      "audioFile": "public/audio/math-a12-s07/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. Find k, then find the probability. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-s07/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "More than six minutes is the part from six up to k. So k minus six, over k, is zero point two five. Then k minus six is a quarter of k, so three quarters of k is six, and k is eight. So P of X less than three is three eighths. Six over k equals zero point two five is wrong. That's the chance of less than six minutes, and it gives k equals twenty-four.",
+      "audioFile": "public/audio/math-a12-s07/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So a uniform density is flat, its height is forced to be one over the width, and its probabilities are fractions of the interval. Next, a new question. Think of the train's flat density as a shape resting on a beam. Where would it balance? And for a density that isn't flat, how do we find the balance point, and the spread?",
+      "audioFile": "public/audio/math-a12-s07/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-s07/scene-16.wav"
+    }
+  ]
+}

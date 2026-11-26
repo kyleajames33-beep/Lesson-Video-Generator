@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-17",
+  "sourceSha256": "a4cb1e70f63b2c0fc5fdfbaada59ce03d668410f40f7cc311a365743490a7548",
+  "diagnostic": {
+    "banana": {
+      "size": [
+        2330,
+        1197
+      ],
+      "changedVisibleRGBA": 69172,
+      "changedRGBWhereBothAlphaAbove200": 0,
+      "alphaChangedPixels": 132838,
+      "removedAbove1": 69172
+    },
+    "binucleate": {
+      "interphaseAlphaAbove1Area": 2498352,
+      "binucleateAlphaAbove1Area": 1931653,
+      "sameNativeScaleAreaRatio": 0.7731708742402992,
+      "relativeUniformScaleFor1point4Area": 1.3456319029533002,
+      "emptyAlphaIoU": 0.9888498920362807
+    },
+    "counter": {
+      "cells": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "normalGenerations": [
+        46,
+        46,
+        46
+      ],
+      "noMeiosisGenerations": [
+        46,
+        92,
+        184
+      ],
+      "percentEndpointCheck": "If equal blocks imply a fixed16-cell capacity,2 cells is12.5%, not10%. Formula/rounding or nonlinear-area model must be specified before simulation approval."
+    },
+    "scope": "Native measurements and static context only. Same-scale alpha area is a raster proxy, not biological cell area."
+  },
+  "anchors": "docs/production/claude-pm/assets/y11fa1v31-anchors.json",
+  "inheritedHeldPlate": "cd-four-cells-crossover-v1.png: see v30 palette failure",
+  "scope": "Static plate/context QA only. No production pixels changed.",
+  "sources": [
+    {
+      "url": "https://www.agriculture.gov.au/pests-diseases-weeds/plant/panama-disease-tropical-race-4",
+      "checked": "2026-11-17",
+      "supports": "TR4 infects Cavendish, Australia most-grown variety; distribution includes NT and Queensland."
+    },
+    {
+      "url": "https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/biosecurity/plants/priority-pest-disease/panama-disease",
+      "checked": "2026-11-17",
+      "supports": "Northern Territory detection and severe commercial impact. Recheck distribution at recording."
+    }
+  ]
+}

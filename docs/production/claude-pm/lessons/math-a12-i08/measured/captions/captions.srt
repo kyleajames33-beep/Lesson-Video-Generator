@@ -1,0 +1,815 @@
+1
+00:00:00,241 --> 00:00:03,232
+Here's the graph of three minus t, shaded
+
+2
+00:00:03,292 --> 00:00:05,179
+from zero up to x equals two.
+
+3
+00:00:06,106 --> 00:00:06,835
+Let's give it a meaning.
+
+4
+00:00:07,684 --> 00:00:10,051
+A shopping centre car park opens at nine.
+
+5
+00:00:10,995 --> 00:00:13,722
+For t hours after that, cars arrive faster
+
+6
+00:00:13,743 --> 00:00:15,888
+than they leave, at a net rate of
+
+7
+00:00:16,090 --> 00:00:18,355
+three minus t hundred cars an hour.
+
+8
+00:00:19,199 --> 00:00:21,686
+After noon that rate is negative, so more
+
+9
+00:00:21,727 --> 00:00:23,029
+cars leave than arrive.
+
+10
+00:00:23,933 --> 00:00:26,940
+The shaded signed area is A of x,
+
+11
+00:00:27,422 --> 00:00:29,627
+the integral from zero to x of three
+
+12
+00:00:29,709 --> 00:00:30,991
+minus t, d t.
+
+13
+00:00:31,875 --> 00:00:34,429
+It counts the extra cars, in hundreds, since
+
+14
+00:00:34,510 --> 00:00:34,751
+nine.
+
+15
+00:00:35,635 --> 00:00:38,040
+We use t inside the integral, so that
+
+16
+00:00:38,282 --> 00:00:39,804
+x is free to be the moving end.
+
+17
+00:00:40,850 --> 00:00:41,494
+Think for a moment.
+
+18
+00:00:42,160 --> 00:00:44,851
+When does A grow fastest, and when is
+
+19
+00:00:44,872 --> 00:00:46,037
+the car park fullest?
+
+20
+00:00:49,701 --> 00:00:52,491
+Let's track A with shapes, like last video.
+
+21
+00:00:53,415 --> 00:00:55,983
+Up to one, the region is a trapezium
+
+22
+00:00:56,083 --> 00:00:58,711
+with heights three and two, so A of
+
+23
+00:00:58,952 --> 00:01:00,016
+one is two and a half.
+
+24
+00:01:00,797 --> 00:01:02,781
+Up to two, it's a trapezium with heights
+
+25
+00:01:02,942 --> 00:01:05,407
+three and one, so A of two is
+
+26
+00:01:05,507 --> 00:01:05,768
+four.
+
+27
+00:01:06,590 --> 00:01:08,635
+Up to three, it's a triangle, so A
+
+28
+00:01:08,696 --> 00:01:10,160
+of three is four and a half.
+
+29
+00:01:11,003 --> 00:01:13,368
+Past three, the graph is below the axis,
+
+30
+00:01:13,650 --> 00:01:15,233
+so new strips subtract.
+
+31
+00:01:15,876 --> 00:01:17,906
+A of four is four, and A of
+
+32
+00:01:18,028 --> 00:01:19,354
+six is back to zero.
+
+33
+00:01:20,160 --> 00:01:22,269
+Plot these points, and A of x makes
+
+34
+00:01:22,310 --> 00:01:24,078
+a smooth curve, like a hill.
+
+35
+00:01:24,729 --> 00:01:26,721
+Now compare the hill with the height of
+
+36
+00:01:26,762 --> 00:01:27,566
+the graph below it.
+
+37
+00:01:28,371 --> 00:01:30,479
+At the start, the height is three, the
+
+38
+00:01:30,500 --> 00:01:33,109
+biggest it gets, and A climbs fastest.
+
+39
+00:01:33,974 --> 00:01:36,185
+At three, the height is zero, and A
+
+40
+00:01:36,206 --> 00:01:37,713
+is flat, at the top of the hill.
+
+41
+00:01:38,356 --> 00:01:40,160
+That's noon, and the car park is at
+
+42
+00:01:40,201 --> 00:01:42,686
+its fullest, because cars have stopped piling up.
+
+43
+00:01:43,550 --> 00:01:46,036
+After that, the height is negative, and A
+
+44
+00:01:46,118 --> 00:01:46,417
+falls.
+
+45
+00:01:47,321 --> 00:01:50,006
+At x equals one, A has gradient two,
+
+46
+00:01:50,509 --> 00:01:52,011
+and the height there is two.
+
+47
+00:01:52,874 --> 00:01:55,420
+It looks like the gradient of A equals
+
+48
+00:01:55,481 --> 00:01:57,344
+the height of the graph, at every x.
+
+49
+00:01:58,324 --> 00:01:58,811
+Here's why.
+
+50
+00:01:59,540 --> 00:02:00,262
+Call the graph
+
+51
+00:02:00,843 --> 00:02:00,924
+f,
+
+52
+00:02:01,585 --> 00:02:04,112
+so f of t is three minus t.
+
+53
+00:02:05,014 --> 00:02:07,098
+Move the end from x to a little
+
+54
+00:02:07,179 --> 00:02:08,723
+further, x plus h.
+
+55
+00:02:09,545 --> 00:02:12,534
+A gains one thin strip, with width h.
+
+56
+00:02:13,256 --> 00:02:15,481
+Its height is about f of x, so
+
+57
+00:02:15,681 --> 00:02:17,986
+A grows by about f of x times
+
+58
+00:02:18,307 --> 00:02:18,347
+h.
+
+59
+00:02:19,250 --> 00:02:19,771
+Divide by h,
+
+60
+00:02:20,354 --> 00:02:22,743
+and the gradient of the chord on A
+
+61
+00:02:23,145 --> 00:02:24,369
+is about f of x.
+
+62
+00:02:25,073 --> 00:02:26,980
+That's the gradient from first principles.
+
+63
+00:02:27,924 --> 00:02:30,232
+At x equals one, with h equal to
+
+64
+00:02:30,293 --> 00:02:32,921
+a half, the chord's gradient is one point
+
+65
+00:02:32,982 --> 00:02:33,624
+seven five.
+
+66
+00:02:34,347 --> 00:02:36,417
+With h equal to a tenth, it's one
+
+67
+00:02:36,458 --> 00:02:37,463
+point nine five.
+
+68
+00:02:38,267 --> 00:02:38,386
+As h
+
+69
+00:02:38,908 --> 00:02:41,994
+shrinks, the strip's top gets flatter, because the
+
+70
+00:02:42,016 --> 00:02:43,097
+curve is continuous.
+
+71
+00:02:43,559 --> 00:02:46,076
+So the gradient becomes exactly f of x.
+
+72
+00:02:46,795 --> 00:02:50,464
+So differentiating the accumulated area gives back the
+
+73
+00:02:50,505 --> 00:02:50,725
+height.
+
+74
+00:02:51,508 --> 00:02:53,792
+In words, the area grows at a rate
+
+75
+00:02:54,073 --> 00:02:55,997
+equal to the height at its moving edge.
+
+76
+00:02:56,780 --> 00:02:58,884
+If f is a rate, the amount built
+
+77
+00:02:58,985 --> 00:03:00,929
+up so far grows at that rate.
+
+78
+00:03:01,632 --> 00:03:03,175
+For the car park, the count of extra
+
+79
+00:03:03,236 --> 00:03:05,601
+cars grows at the net rate cars come
+
+80
+00:03:05,662 --> 00:03:05,721
+in.
+
+81
+00:03:06,666 --> 00:03:07,069
+Check it here.
+
+82
+00:03:07,775 --> 00:03:10,464
+The trapezium from zero to x has heights
+
+83
+00:03:10,686 --> 00:03:13,656
+three and three minus x, and width x.
+
+84
+00:03:14,199 --> 00:03:15,120
+So A of x
+
+85
+00:03:15,622 --> 00:03:18,188
+is three x, minus a half x squared.
+
+86
+00:03:18,971 --> 00:03:21,618
+Its derivative is three minus x, the graph
+
+87
+00:03:21,639 --> 00:03:22,240
+we started with.
+
+88
+00:03:22,843 --> 00:03:25,251
+So A is a primitive of f.
+
+89
+00:03:26,041 --> 00:03:28,070
+Is this only a trick for straight lines?
+
+90
+00:03:28,795 --> 00:03:29,419
+Try a curve.
+
+91
+00:03:30,043 --> 00:03:33,159
+Shade under t squared, from zero up to
+
+92
+00:03:33,179 --> 00:03:33,219
+x.
+
+93
+00:03:34,404 --> 00:03:36,725
+This time we can't use simple shapes, so
+
+94
+00:03:36,745 --> 00:03:39,407
+a graphing application adds up very thin strips
+
+95
+00:03:39,467 --> 00:03:41,727
+for us, and plots A of x as
+
+96
+00:03:41,949 --> 00:03:42,409
+x moves.
+
+97
+00:03:43,132 --> 00:03:45,365
+Watch the gradient of A as a point
+
+98
+00:03:45,407 --> 00:03:45,909
+moves along.
+
+99
+00:03:46,614 --> 00:03:49,346
+It traces x squared, as closely as the
+
+100
+00:03:49,387 --> 00:03:49,949
+strips allow.
+
+101
+00:03:50,653 --> 00:03:52,359
+Try it in a graphing app: move x
+
+102
+00:03:52,541 --> 00:03:52,901
+and watch.
+
+103
+00:03:53,745 --> 00:03:55,749
+And a primitive of x squared is x
+
+104
+00:03:55,850 --> 00:03:58,676
+cubed over three, which matches the plotted curve.
+
+105
+00:03:59,338 --> 00:04:02,047
+The edge-strip reason didn't need a straight line.
+
+106
+00:04:02,551 --> 00:04:04,317
+It only needed a continuous curve.
+
+107
+00:04:05,028 --> 00:04:07,196
+What if we start counting at ten o'clock,
+
+108
+00:04:07,579 --> 00:04:09,567
+t equals one, instead of nine?
+
+109
+00:04:10,370 --> 00:04:12,771
+Every value of A loses the same piece,
+
+110
+00:04:13,152 --> 00:04:15,472
+the trapezium from zero to one, which is
+
+111
+00:04:15,573 --> 00:04:17,093
+two and a half, the two hundred and
+
+112
+00:04:17,134 --> 00:04:19,115
+fifty cars that came in before ten.
+
+113
+00:04:19,856 --> 00:04:22,687
+So the whole curve slides down by two
+
+114
+00:04:22,708 --> 00:04:24,755
+and a half, and none of its gradients
+
+115
+00:04:24,836 --> 00:04:25,217
+change.
+
+116
+00:04:26,001 --> 00:04:28,212
+At x equals two, the gradient is still
+
+117
+00:04:28,514 --> 00:04:29,498
+one, the height there.
+
+118
+00:04:30,183 --> 00:04:32,227
+A different start gives a different primitive,
+
+119
+00:04:32,790 --> 00:04:34,233
+one that differs by a constant.
+
+120
+00:04:34,796 --> 00:04:36,584
+That's the plus C from primitives.
+
+121
+00:04:37,351 --> 00:04:38,061
+Now the big result.
+
+122
+00:04:38,649 --> 00:04:40,078
+Take any primitive F of f.
+
+123
+00:04:41,670 --> 00:04:44,239
+Any two primitives differ by a constant, so
+
+124
+00:04:44,501 --> 00:04:46,528
+F of x equals A of x, plus
+
+125
+00:04:46,609 --> 00:04:46,749
+C.
+
+126
+00:04:47,693 --> 00:04:48,173
+At the start,
+
+127
+00:04:48,675 --> 00:04:51,240
+A of a is zero, because no strips
+
+128
+00:04:51,261 --> 00:04:51,942
+have been added yet.
+
+129
+00:04:52,624 --> 00:04:54,988
+So F of b, minus F of a,
+
+130
+00:04:55,450 --> 00:04:57,875
+is A of b plus C, minus C.
+
+131
+00:04:58,577 --> 00:05:00,927
+The constants cancel, and that leaves A of
+
+132
+00:05:01,008 --> 00:05:01,208
+b,
+
+133
+00:05:01,731 --> 00:05:02,775
+the integral from a to b.
+
+134
+00:05:04,304 --> 00:05:06,156
+That's the Fundamental Theorem of Calculus.
+
+135
+00:05:07,001 --> 00:05:09,366
+For a continuous f, the integral from a
+
+136
+00:05:09,728 --> 00:05:11,492
+to b of f of x, d x,
+
+137
+00:05:11,914 --> 00:05:14,499
+equals F of b minus F of a,
+
+138
+00:05:14,861 --> 00:05:16,063
+for any primitive F.
+
+139
+00:05:16,868 --> 00:05:18,254
+We write it with square brackets:
+
+140
+00:05:18,838 --> 00:05:20,224
+F of x, from a to b.
+
+141
+00:05:20,822 --> 00:05:22,416
+Now check the earlier results.
+
+142
+00:05:23,222 --> 00:05:25,771
+The trolley's strips settled near two point six
+
+143
+00:05:25,791 --> 00:05:26,373
+six seven.
+
+144
+00:05:26,975 --> 00:05:29,662
+A primitive of x squared is x cubed
+
+145
+00:05:29,822 --> 00:05:30,444
+over three,
+
+146
+00:05:30,945 --> 00:05:33,091
+so the integral from zero to two is
+
+147
+00:05:33,271 --> 00:05:34,896
+eight thirds, minus zero.
+
+148
+00:05:35,437 --> 00:05:37,166
+That's about two point six six seven.
+
+149
+00:05:38,072 --> 00:05:39,623
+The rain gauge's strips settled on one.
+
+150
+00:05:40,530 --> 00:05:43,034
+A primitive of cos x is sine x,
+
+151
+00:05:43,796 --> 00:05:46,280
+and sine of pi over two, minus sine
+
+152
+00:05:46,321 --> 00:05:48,003
+of zero, is exactly one.
+
+153
+00:05:48,724 --> 00:05:51,451
+And the bath's thirty-two litres come from twelve
+
+154
+00:05:51,491 --> 00:05:53,015
+t minus t squared.
+
+155
+00:05:53,777 --> 00:05:56,365
+Ninety-six minus sixty-four is thirty-two.
+
+156
+00:05:57,128 --> 00:05:59,534
+So instead of adding thousands of strips, we
+
+157
+00:05:59,554 --> 00:06:01,619
+need two values of one primitive.
+
+158
+00:06:02,370 --> 00:06:03,441
+Here's the pair to remember.
+
+159
+00:06:04,190 --> 00:06:06,514
+Differentiate the area, and you get the height.
+
+160
+00:06:07,236 --> 00:06:09,319
+Integrate the rate, and you get the change.
+
+161
+00:06:10,021 --> 00:06:11,745
+The first is why the second works.
+
+162
+00:06:14,437 --> 00:06:14,881
+Your turn.
+
+163
+00:06:15,606 --> 00:06:17,410
+A of x is the integral from two
+
+164
+00:06:17,432 --> 00:06:19,296
+to x, of the square root of one
+
+165
+00:06:19,337 --> 00:06:20,860
+plus t cubed, d t.
+
+166
+00:06:21,704 --> 00:06:22,607
+Find A of two,
+
+167
+00:06:23,130 --> 00:06:24,314
+and A prime of two.
+
+168
+00:06:24,978 --> 00:06:25,780
+Pause here to answer.
+
+169
+00:06:39,975 --> 00:06:42,727
+A of two is zero, because from two
+
+170
+00:06:42,788 --> 00:06:44,435
+to two there's no strip at all.
+
+171
+00:06:45,279 --> 00:06:47,622
+For the gradient, the area grows at the
+
+172
+00:06:47,724 --> 00:06:48,724
+height of its edge,
+
+173
+00:06:49,307 --> 00:06:51,390
+so A prime of x is the square
+
+174
+00:06:51,431 --> 00:06:53,153
+root of one plus x cubed.
+
+175
+00:06:53,996 --> 00:06:56,041
+At two, that's the square root of nine,
+
+176
+00:06:56,223 --> 00:06:57,205
+which is three.
+
+177
+00:06:58,150 --> 00:07:00,648
+A prime of two equals two is wrong.
+
+178
+00:07:01,172 --> 00:07:03,888
+It differentiates the square root, instead of reading
+
+179
+00:07:03,930 --> 00:07:04,311
+the height.
+
+180
+00:07:05,970 --> 00:07:06,413
+Last one.
+
+181
+00:07:07,239 --> 00:07:10,628
+Use the Fundamental Theorem of Calculus to evaluate
+
+182
+00:07:10,670 --> 00:07:13,377
+the integral from one to three, of three
+
+183
+00:07:13,639 --> 00:07:14,901
+x squared, d x.
+
+184
+00:07:15,630 --> 00:07:16,601
+Pause here to answer.
+
+185
+00:07:27,396 --> 00:07:29,852
+A primitive of three x squared is x
+
+186
+00:07:29,934 --> 00:07:30,295
+cubed.
+
+187
+00:07:30,718 --> 00:07:33,440
+So the integral is three cubed, minus one
+
+188
+00:07:33,481 --> 00:07:36,724
+cubed, which is twenty-seven minus one, or twenty-six.
+
+189
+00:07:37,449 --> 00:07:38,254
+Any primitive works.
+
+190
+00:07:38,698 --> 00:07:40,526
+Add five to it, and the fives cancel.
+
+191
+00:07:41,271 --> 00:07:42,298
+Twenty-seven is wrong.
+
+192
+00:07:42,802 --> 00:07:44,391
+It forgets to subtract F of one.
+
+193
+00:07:46,041 --> 00:07:48,145
+So the area grows at the height of
+
+194
+00:07:48,205 --> 00:07:48,646
+its edge,
+
+195
+00:07:49,147 --> 00:07:51,392
+and that turns a definite integral into a
+
+196
+00:07:51,432 --> 00:07:53,557
+primitive, evaluated at two ends.
+
+197
+00:07:54,438 --> 00:07:56,360
+Next, we'll use it on all kinds of
+
+198
+00:07:56,400 --> 00:07:58,882
+integrals, and some of them have negative ends.
+
+199
+00:07:59,647 --> 00:07:59,959
+Here's one.
+
+200
+00:08:00,668 --> 00:08:03,585
+One third, minus negative two cubed over three.
+
+201
+00:08:04,451 --> 00:08:05,538
+Where do the minus signs go?
+
+202
+00:08:08,161 --> 00:08:09,025
+Here are the key notes.
+
+203
+00:08:09,427 --> 00:08:10,975
+Pause the video if you need more time
+
+204
+00:08:11,016 --> 00:08:11,478
+to copy them.

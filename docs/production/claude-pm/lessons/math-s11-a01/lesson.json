@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-a01",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "7dc09f52db227ba930cb6a134d526862cf1a0b6e1f286384265fec8f1e84309f",
+  "scenes": [
+    {
+      "id": "hook-one-ribbon",
+      "title": "hook: one ribbon, three numbers",
+      "voiceover": {
+        "text": "Like money, measuring works in tens, hundreds and thousands, and ten millimetres make a centimetre. Here's a ribbon. Measure it in metres, and it's one point eight five. In centimetres, it's a hundred and eighty-five. In millimetres, it's eighteen hundred and fifty. Same ribbon, three different numbers. You'll meet this everywhere, in recipes, at the hardware store, and in exam questions that mix their units. So when you change the unit, which way does the number go, and by how much?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "length-ladder",
+      "title": "the length ladder",
+      "voiceover": {
+        "text": "Every metric unit is a base unit with a prefix in front. The prefix tells you its size. Milli means one thousandth, so a millimetre is a thousandth of a metre. Centi means one hundredth, so a centimetre is a hundredth of a metre. And kilo means a thousand, not a hundred, so a kilometre is a thousand metres. Put them in a ladder, with the biggest at the top. Ten millimetres make a centimetre, a hundred centimetres make a metre, and a thousand metres make a kilometre. It helps to picture them. A bank card is just under a millimetre thick. A triple-A battery is about a centimetre wide. A metre is a bit taller than a kitchen bench, and a kilometre is two and a half laps of a running track. Watch one metre change its name. It's a hundred centimetres, a thousand millimetres, or nought point nought nought one of a kilometre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "multiply-or-divide",
+      "title": "which way: multiply or divide?",
+      "voiceover": {
+        "text": "Back to the ribbon, one point eight five metres. To centimetres, you're going down the ladder to a smaller unit. Smaller units fit into the ribbon more times, so the number gets bigger, and you multiply. Times a hundred moves the decimal point two places to the right, so one point eight five times a hundred is a hundred and eighty-five centimetres. Times a thousand gives eighteen hundred and fifty millimetres. Now go back the other way. Eighteen fifty millimetres to metres is going up the ladder to a bigger unit. Bigger units fit fewer times, so you divide by a thousand, and get one point eight five metres. If you multiply by mistake, you'd say the ribbon is one million eight hundred and fifty thousand metres, which is about twice the drive from Sydney to Brisbane. Always ask, does my answer make sense?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "units-must-match",
+      "title": "units must match",
+      "voiceover": {
+        "text": "Converting matters most when you calculate. A fun run is five kilometres, on a four hundred metre track. How many laps is that? Five divided by four hundred gives nought point nought one two five laps, and that's clearly wrong. The five is in kilometres and the four hundred is in metres, so you're dividing apples by oranges. Match the units first. Five kilometres is five thousand metres. Five thousand divided by four hundred is twelve and a half laps. Before any calculation, check that every measurement is in the same unit."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mass",
+      "title": "mass: grams, kilograms and tonnes",
+      "voiceover": {
+        "text": "Mass, how heavy something is, uses grams, with the same prefixes. A milligram is a thousandth of a gram, a kilogram is a thousand grams, and a tonne is a thousand kilograms. So every step in the mass ladder is a thousand. A bag of mandarins on the scale reads one point three five kilograms. In grams, multiply by a thousand, thirteen hundred and fifty grams. A muesli bar has ninety-five milligrams of sodium. In grams, divide by a thousand, nought point nought nine five grams. And a ute carries forty-five bags of sand at twenty kilograms each. That's nine hundred kilograms, or nought point nine of a tonne. Mixed units need matching before you add them, too. Three parcels weigh four hundred and fifty grams, one point two kilograms and eight hundred grams. In kilograms, that's nought point four five, plus one point two, plus nought point eight, which is two point four five kilograms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "capacity",
+      "title": "capacity: millilitres to megalitres",
+      "voiceover": {
+        "text": "Capacity is how much a container holds. It uses litres, and again, every step is a thousand. A thousand millilitres make a litre, a thousand litres make a kilolitre, and a thousand kilolitres make a megalitre. Mega means a million, so a megalitre is a million litres. This jug holds one point five litres, which is fifteen hundred millilitres. A rainwater tank holds five thousand litres, which is five kilolitres. Now watch the tank fill, counted in millilitres. Five million millilitres, the same water as five kilolitres. And farm dams are measured in megalitres. Twelve megalitres is twelve thousand kilolitres, or twelve million litres. That's as much water as twenty-four hundred of those tanks."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's the whole idea in one line. Going down the ladder to a smaller unit, there are more of them, so multiply. Going up to a bigger unit, there are fewer of them, so divide. And before you add, subtract or divide two measurements, make their units match."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A roll of ribbon holds twenty-five metres. How many forty centimetre pieces can be cut from it? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Match the units first. Twenty-five metres is twenty-five hundred centimetres, and twenty-five hundred divided by forty is sixty-two point five. Half a piece isn't a piece, so it's sixty-two pieces. Dividing twenty-five by forty is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A café uses a hundred and eighty millilitres of milk in each latte. How many full lattes can be made from a two litre bottle? And how many litres of milk do forty-five lattes need? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Two litres is two thousand millilitres, and two thousand divided by a hundred and eighty is eleven point one, so eleven full lattes. Forty-five times a hundred and eighty is eight thousand one hundred millilitres, which is eight point one litres. Dividing by a hundred to get eighty-one litres is the slip. A litre is a thousand millilitres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So converting is about which way you go, and how big each step is. But here's a puzzle. A metre is a hundred centimetres. So is a square metre a hundred square centimetres? Look at this floor tile, and think about it. That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

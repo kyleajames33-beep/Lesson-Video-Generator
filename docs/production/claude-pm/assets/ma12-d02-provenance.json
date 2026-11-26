@@ -1,0 +1,179 @@
+{
+  "brief": 235,
+  "design": "math-a12-d02",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-coin-jar-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-dd0e73d0-bc24-4014-8cbb-176e37b99a23.png",
+      "nativeSize": [
+        1049,
+        1500
+      ],
+      "sha256": "84c4ff8b3ceb53dea0613b74466898dd5bd9b475a6c076f3a1f77adb4e42c107",
+      "alphaBox": [
+        148,
+        157,
+        895,
+        1330
+      ],
+      "visibleAlphaBoxThreshold8": [
+        149,
+        157,
+        895,
+        1330
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "centre": [
+          524.5,
+          750.0
+        ]
+      },
+      "resampled": false,
+      "generatorNativeSize": [
+        1049,
+        1500
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-coin-jar-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Retained base jar geometry",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    },
+    {
+      "path": "public/assets/maths/ma12-coin-jar-full-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f888bfc7-7590-452f-af93-9e492c31f73c.png",
+      "nativeSize": [
+        1049,
+        1500
+      ],
+      "sha256": "1b1f5afe5c824f18f6185ff662923045a0584289da5725ec773dfc096c9c29a5",
+      "alphaBox": [
+        148,
+        157,
+        895,
+        1330
+      ],
+      "visibleAlphaBoxThreshold8": [
+        149,
+        157,
+        895,
+        1330
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "centre": [
+          524.5,
+          750.0
+        ]
+      },
+      "resampled": false,
+      "generatorNativeSize": [
+        1049,
+        1500
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-coin-jar-full-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Retained base jar outside the feathered coin-interior mask; replaced only interior coins",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    },
+    {
+      "path": "public/assets/maths/ma12-coin-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-f8599d4d-eb12-4057-bef3-02d6a486529b.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "ee75084755fe8955448e74bb84ba5407ae1d359bf6bc163eeed6816faee107f1",
+      "alphaBox": [
+        241,
+        283,
+        981,
+        999
+      ],
+      "visibleAlphaBoxThreshold8": [
+        241,
+        283,
+        981,
+        999
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "centre": [
+          627.0,
+          627.0
+        ]
+      },
+      "resampled": false,
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-coin-v1.png",
+        "translation": [
+          0,
+          0
+        ],
+        "operations": [
+          "Retained native coin; builder uses uniform sprite scale to match jar coins",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    }
+  ],
+  "state": "finished-plates-delivered",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "pairCheck": {
+    "sameCanvas": true,
+    "outsideCoinMaskPixelIdentical": true
+  },
+  "coinAt40Pixels": "Inspected, clearly legible",
+  "commonScale": "Use coin sprite uniform scale0.25 relative to jar to match a roughly185px jar coin; native generator canvases preserved"
+}

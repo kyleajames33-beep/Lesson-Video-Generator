@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-n01",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "11225e2d54cf27e473e29a403ad8881959eebb63659c8b9ca6789ce60c54499b",
+  "scenes": [
+    {
+      "id": "hook-dots-lines",
+      "title": "hook: dots and lines",
+      "voiceover": {
+        "text": "Here's Australia's flight map from last time, with the clocks taken away. Seven cities, and ten routes joining them. Notice what's left. It doesn't matter how far apart the cities sit on the page, or which way the lines point. What matters is which cities are joined. That's the idea behind a network, one of the most useful pictures in maths. Airlines, map apps and phone companies all work with pictures like this. So what is a network, and where do networks show up in real life?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "vertices-edges",
+      "title": "vertices and edges",
+      "voiceover": {
+        "text": "A network is a collection of objects joined by connections. Each object is drawn as a dot, called a vertex. More than one are called vertices. Each connection is drawn as a line between two vertices, called an edge. In the flight network, each city is a vertex, and each route is an edge. Count them. Seven vertices and ten edges. An edge always joins exactly two vertices, and it only says those two are connected. How long a line is drawn doesn't matter at all. You can fly straight from Perth to Sydney, so there's an edge. You can't fly straight from Hobart to Darwin in this network, so there's no edge. But you can still get there by changing planes, moving from vertex to vertex along the edges. Hobart to Melbourne, Melbourne to Adelaide, Adelaide to Darwin."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "same-network",
+      "title": "the same network, a different drawing",
+      "voiceover": {
+        "text": "Here's the surprise. Watch the dots move. Perth slides to the right, Hobart floats to the top, and the lines stretch and bend to follow. It looks completely different, but every city is still joined to exactly the same cities as before. So it's the same network. A network only records what's connected to what. Distances, compass directions and the shapes of roads are left out, unless we write them on. That's why a network diagram usually isn't drawn to scale. That's exactly what a train map does. It squashes and straightens the real tracks, because a passenger only needs to know which stations connect, and in what order. Two drawings show the same network whenever they have the same vertices joined by the same edges, even if the lines cross."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "real-networks",
+      "title": "networks all around us",
+      "voiceover": {
+        "text": "Once you start looking, networks are everywhere. Mobile phone towers pass signals to each other. Each tower is a vertex, and each link between two towers is an edge. A rail trail for bikes has junctions and paths. The junctions are vertices, and the paths between them are edges. A town's water pipes join the reservoir, the pumping stations and the streets. A delivery van has a list of stops, and the roads between stops are the edges. A school's classrooms and corridors, the stops on a bus route, even the links between web pages, it's the same idea. Even a social media app is a network. Each account is a vertex, and each connection between two accounts is an edge. The trick is always the same question. What are the objects, and what joins them? Answer that, and you can draw the network."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "what-networks-decide",
+      "title": "what networks help us decide",
+      "voiceover": {
+        "text": "So why bother drawing them? Because a network turns a messy real situation into a picture we can reason about. Here are four questions networks help answer. First, is everything still connected if one link fails? Say storms close the Sydney to Brisbane route. Take that edge away. Can you still get from Sydney to Brisbane? Yes, by going Sydney, Adelaide, Darwin, Brisbane. Engineers ask exactly this about power lines and phone links, so that one failure doesn't cut a whole town off. Second, which place is best connected? Adelaide, Melbourne and Sydney each join four others, so they make good hubs. Third, what's the shortest or quickest route between two places? And fourth, what's the cheapest way to link every place, like laying fibre to every tower? We'll answer each of those in this strand, one at a time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "draw-from-words",
+      "title": "drawing a network from a description",
+      "voiceover": {
+        "text": "Let's draw one from words. A rail trail has five junctions, A, B, C, D and E. Paths join A and B, A and C, B and D, C and D, C and E, and D and E. Always start with the vertices. Draw five dots and label them. Then add the edges one at a time, ticking each one off as you go. A to B, A to C, B to D, C to D, C to E, D to E. That's five vertices and six edges. Count again at the end. Six paths in the description, six lines on the page, so nothing's missing. Where you put the dots is up to you. Spread them out, so the lines don't cross more than they need to."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So here's networks in one card. Dots for things, lines for links. A network only cares what's joined to what, not where the dots sit on the page. Same connections, same network."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A bike park has four junctions, P, Q, R and S. Paths join P and Q, P and R, Q and R, Q and S, and R and S. Draw the network, and say how many vertices and edges it has. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Four dots first, then the five paths as lines. That's four vertices and five edges. Q and R are the busiest, each joined to three others. Saying four edges, one for each junction, is the slip. Count the lines, not the dots."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Here are two drawings. Do they show the same network? Give a reason. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Check the connections, not the looks. In both drawings, A joins B, C and D. B joins A and C. C joins A, B and D. And D joins A and C. Same vertices, same edges, so it's the same network. Saying they're different because two lines cross is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff: degree, direction and weight",
+      "voiceover": {
+        "text": "So that's what a network is. Dots for things, lines for links. But real links aren't all the same. Some streets are one-way, and every road has a length, or a travel time. A delivery van in a busy town needs both. How do we count a vertex's connections, and show directions and weights on a network? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

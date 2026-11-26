@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v17a.md",
+  "sourceSha256": "9c49543b9c46e499b79048f07cedc32e066423a33d9db7591c80fa3b375dd674",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time ended with our motor being turned from outside, working as a generator. We'll look at its output next time. First, let's test the motor effect and the motor at the bench. Here's a magnet on an electronic balance, and a stiff copper wire clamped so it runs through the magnet's gap without touching it. Switch on three amps, and the reading jumps from zero to zero point seven seven grams. Nothing is touching the magnet. So what's pushing it down? Have a think.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/hook.wav"
+    },
+    {
+      "id": "balance-reads-force",
+      "text": "It's the wire. By the right-hand palm rule, the field pushes the current in the wire upwards. And by Newton's third law, the wire pushes down on the magnet just as hard. So the balance weighs the motor effect. Change grams to kilograms and multiply by g, and that's about zero point zero zero seven five newtons. The wire crosses the field at ninety degrees, so F equals l I B sine theta becomes F equals B I l, and the force should be proportional to the current.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/balance-reads-force.wav"
+    },
+    {
+      "id": "fair-test",
+      "text": "The current is the independent variable. We change it with a rheostat and read it on the ammeter. The dependent variable is the change in the balance reading. Everything else stays fixed: the same magnet in the same spot on the pan, so B stays the same, the same wire through the same stretch of the gap, so the length in the field stays the same, and the wire clamped square to the magnet, so it can't sag or twist, and the angle stays at ninety degrees. That makes it a valid test: it measures the current's effect alone.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/fair-test.wav"
+    },
+    {
+      "id": "measuring",
+      "text": "With everything connected and switched off, zero the balance. Then switch on, read the ammeter and the balance together, and switch off again. Current warms the wire, its resistance rises, and the current drifts. Then reverse the current. The reading should drop below zero by the same amount. Say it reads plus zero point seven nine, then minus zero point seven five. A zero drift lifts both readings by the same amount, so averaging their sizes cancels it, giving zero point seven seven grams.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/measuring.wav"
+    },
+    {
+      "id": "risk-check",
+      "text": "A quick risk check. Use a low voltage supply, and keep the rheostat in the circuit so the current can't run away. At five amps the wire and the rheostat get hot, so switch off between readings and don't touch them.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/risk-check.wav"
+    },
+    {
+      "id": "repeats",
+      "text": "At each current, take three readings. At three amps, say they're zero point seven six, zero point seven seven and zero point seven eight grams. That's zero point seven seven, plus or minus zero point zero one. The balance reads to zero point zero one grams, so at one amp, where the change is only about a quarter of a gram, that's nearly four percent uncertainty. Close repeats make the results reliable, meaning a repeat gives the same answer. Bigger readings shrink that percentage.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/repeats.wav"
+    },
+    {
+      "id": "graph-gradient",
+      "text": "Here are sample values for processing practice. Convert each change to a force, and plot force against current. The points fall on a straight line through the origin, so the force is proportional to the current. F equals B l times I, so the gradient is B l, about zero point zero zero two five newtons per amp. The wire has five centimetres in the field, so B is about zero point zero five zero tesla. Add a second pair of magnets beside the first, doubling that length, and the gradient doubles.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/graph-gradient.wav"
+    },
+    {
+      "id": "rig-limits",
+      "text": "Two limits. A straight line only supports F equals B I l for the currents and the magnet you tested. And this rig can't test sine theta. Turn the magnet, and the wire crosses the gap on a slant, so more of it sits in the field. The length grows as sine theta shrinks, and the force hardly changes. To test the angle, the whole wire has to stay inside one wide, uniform field.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/rig-limits.wav"
+    },
+    {
+      "id": "motor-parts",
+      "text": "Now the motor. Here's a simple DC motor: a coil on an axle between two magnets, with a split ring and brushes, wired to a supply, an ammeter and a rheostat. Swap the supply leads, and it spins the other way. Swap the magnets, and it reverses again. Reversing the current, or the field, reverses the forces on the coil's sides, just as the palm rule says.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/motor-parts.wav"
+    },
+    {
+      "id": "torque-split-ring",
+      "text": "Start the coil from rest at one amp, then again at two amps, using the rheostat. With more current, it picks up speed more quickly. More current means more torque, because torque equals n I A B sine theta. Now swap the split ring for two whole rings, so the current in the coil never reverses. The coil rocks back and forth and stops face on. Put the split ring back and park the coil face on, and it won't start by itself. That's the dead point, where the torque is zero.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/torque-split-ring.wav"
+    },
+    {
+      "id": "back-emf",
+      "text": "Last, the current, on our motor at six volts. Hold the flywheel still with the wooden block and switch on for a moment. The ammeter reads three amps. The coil isn't turning, so there's no back emf, and its resistance is six over three, two ohms. Now let it go. As it speeds up, the current falls to zero point eight zero amps. From last time, back emf is V minus I R, six minus zero point eight zero times two, which is four point four volts. Press the block on again, and the current climbs back towards three amps.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/back-emf.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's the idea that makes the balance work. The magnet pushes the wire, and the wire pushes the magnet.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A wire carries two point five amps at right angles to a magnet's field, with four point zero centimetres of it in the field. The magnet sits on a balance, and its reading rises by zero point four nine grams. Calculate the magnetic field strength. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "First, the force. Zero point four nine grams is zero point zero zero zero four nine kilograms, times nine point eight, about zero point zero zero four eight newtons. Then B equals F over I l, which is zero point zero zero four eight over two point five times zero point zero four zero, about zero point zero four eight tesla. Leaving it in grams gives forty-eight tesla, far too big.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A small DC motor runs on a six point zero volt supply. With the shaft held still, the current is two point four amps. When it runs steadily, the current is zero point six zero amps. Calculate the coil's resistance and the back emf while it's running. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "With the shaft held still, the coil isn't turning, so there's no back emf, and R is six point zero over two point four, two point five ohms. Running, the back emf is six point zero minus zero point six zero times two point five, which is four point five volts. The slip is finding R from the running current, which gives ten ohms and no back emf at all.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the bench backs up the models: the force grows in step with the current, and each motor part does its job. Now back to where we left the motor, turned by an outside drive and wired to an oscilloscope. Its back emf is now its output. So what shape is that output?",
+      "audioFile": "public/audio/phys-y12-m6-v17a/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v17a/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "phys-y12-m6-v07",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "6a1ea0b09bd6373ca0dc5c94b4d06a7f03f360e973dc461c0f139b1186cd5f8c",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (the swinging rod)",
+      "voiceover": {
+        "text": "Last time ended on this picture. A wire crosses a magnetic field, and every electron drifting inside it feels a sideways push. So does the wire itself get pushed? Here's a real copper rod, hanging on two light leads between the poles of a strong magnet. The north pole is on top, so the field points straight down. Close the switch, and a current flows through the rod from left to right. The rod swings away from us. Now reverse the current. Which way will it swing this time? Towards us. But this rod has no overall charge. So why does a magnetic field push on it at all?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "inside-the-wire",
+      "title": "inside the wire",
+      "voiceover": {
+        "text": "Let's look from above. From up here, the field points away from us, into the screen, so we draw it as crosses, just as in earlier videos. Now zoom into the rod. The metal ions stay put, but free electrons drift slowly along it, the opposite way to the conventional current. Each drifting electron is a moving charge in a magnetic field, so each one feels a sideways push. The electrons can't leave the metal, so they push on the rest of the rod, and the whole rod moves. A neutral wire feels a force because of the moving charges inside it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "adding-pushes",
+      "title": "adding up the pushes",
+      "voiceover": {
+        "text": "So how big is the total force? Say a charge Q flows through the rod in a time t. The current is I equals Q over t. In that same time, the charges drift the length of rod that's inside the field, so their speed is l over t. Each moving charge gets a push of q v B, so all of them together get Q times v times B. Now swap in Q equals I t, and v equals l over t. The t's cancel, and the force is B I l. Here l is only the length of wire inside the field, called the active length."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "first-calculation",
+      "title": "a first calculation",
+      "voiceover": {
+        "text": "Let's try it. A rod has thirty centimetres inside a field of zero point zero five zero tesla, and carries four point zero amps straight across the field. F equals B I l, so that's zero point zero five zero times four point zero times zero point three zero, which is zero point zero six zero newtons. That's about the weight of a six gram mass. Small, but enough to swing a light rod."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "angle",
+      "title": "the angle: only the part across the field",
+      "voiceover": {
+        "text": "But that's only true when the current runs straight across the field. Let's lay the field flat across the screen, and turn the wire so its current makes an angle theta with the field. Split the current's direction into two parts. One part runs across the field, and those charges get pushed. The other part runs along the field, and a charge moving along a field feels no force at all. So the force is B I l sine theta, which you'll also see written as F equals l I perpendicular B. At thirty degrees, sine is a half, so our force halves to zero point zero three zero newtons. At ninety degrees, it's the biggest it can be, B I l. And when the current runs along the field, theta is zero, and there's no force, however big the current."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "palm-rule",
+      "title": "which way: the right-hand palm rule",
+      "voiceover": {
+        "text": "Which way is the push? It's always at right angles to both the current and the field. To choose between the two possible directions, use the right-hand palm rule. Thumb along the conventional current, fingers along the field, and the palm pushes in the direction of the force. On our rod from above, thumb to the right, fingers into the screen, so the palm faces up the screen. Reverse the current, or reverse the field, and the force reverses. Reverse both, and it's back where it started. And the electrons give the same answer. They move the opposite way, but their charge is negative too, so the two flips cancel."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "loudspeaker",
+      "title": "the loudspeaker",
+      "voiceover": {
+        "text": "Here's where this force earns its keep. Inside a loudspeaker, a coil of wire sits in the gap of a ring-shaped magnet. The field points outwards from the centre, like the spokes of a wheel. Say the coil has eighty turns, each two point zero centimetres across, in a field of zero point four zero tesla, carrying zero point five zero amps. In this ideal model, all of the wire is in the field, at right angles to it. One turn is pi times the diameter, about zero point zero six three metres, so eighty turns give about five point zero three metres of wire. Then F equals B I l, about one point zero newton. Every piece of the coil is pushed the same way, along its axis, so the cone moves in or out. Make the current reverse back and forth, and the cone vibrates. That's sound."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "checks-memory-aid",
+      "title": "two checks and a way to remember",
+      "voiceover": {
+        "text": "Two quick checks for exam questions. Theta is the angle between the current and the field, not between the wire and the bench. And count only the length of wire that's inside the field. Here's a way to remember the angle rule. Across the field, full force. Along the field, no force."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A straight wire carries a current of two point five amps, and forty centimetres of it lies inside a uniform magnetic field of zero point one five tesla. Calculate the force on the wire when the current is at right angles to the field, and when it's at thirty degrees to the field. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "At right angles, F equals B I l, zero point one five times two point five times zero point four zero, which is zero point one five newtons. At thirty degrees, multiply by sine thirty, a half, giving zero point zero seven five newtons. The classic slip is using cos thirty, which gives about zero point one three. Theta is between the current and the field, so it's sine."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A wire carries a current into the page, in a uniform magnetic field that points to the right. State the direction of the force on the wire. Then state the force on the wire if it's turned to lie along the field. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Thumb into the page, fingers to the right, and the palm faces down the page. So the force is towards the bottom of the page. Lying along the field, theta is zero, so the force is zero, however large the current. The slip is saying the force points along the field, like an electric force. A magnetic force is always at right angles to the field."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a current in a magnetic field feels a force, because every moving charge in it does. But a current also makes a magnetic field of its own. Put two current-carrying wires side by side, and each one sits in the other's field. So do they pull together, or push apart?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

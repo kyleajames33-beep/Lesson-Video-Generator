@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d12",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "ecb22a626e8bde84255ca7a3c29d0d1395cb29e2160abba24ee3bc6bcfab4bc9",
+  "scenes": [
+    {
+      "id": "hook-which-is-typical",
+      "title": "hook: which one is typical?",
+      "voiceover": {
+        "text": "The mean says seven point two hours. The median and the mode both say seven and a half. Eleven of our twenty students slept more than the mean. So if a newspaper asked how much a typical Year 11 student sleeps, which number would you give? Each measure has strengths, and each can mislead. The right choice depends on the data, and on what the reader needs to know. So when is the mean, median or mode the right measure of centre?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mean-follows",
+      "title": "the mean follows the extremes",
+      "voiceover": {
+        "text": "Start with the mean. Its strength is that it uses every value. That's also its weakness, because every value includes the extreme ones. Watch the three hour night. Drag it up to seven hours, and the mean climbs to seven point four. Drag it down to one hour, and the mean falls to seven point one. The median doesn't move at all. It only cares which value sits in the middle, not how far away the extremes are. So the mean follows the extremes, and the median stays with the middle. The mean is the right choice when the data are roughly symmetric, with no extreme values, or when you need a total, because mean times how many gives the total back. Saying the mean is always best, because it uses every value, is a slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "median-skewed",
+      "title": "the median for skewed data",
+      "voiceover": {
+        "text": "The median's strength is the opposite. It isn't pulled by extreme values, so it's the better choice when data are skewed. Screen time is positively skewed. Its mean is about two hundred and nineteen minutes, but its median is two hundred, because the few heavy users at the top pull the mean up. House prices are the classic case. In a street of seven houses, six sell for between six hundred thousand and seven hundred and fifty thousand dollars, and one mansion sells for two and a half million. The mean is about nine hundred and twenty-nine thousand, more than all six ordinary houses. The median is six hundred and eighty thousand, a typical house. That's why news reports quote the median house price. The median's weakness is that it ignores how extreme the extremes are."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mode-categories",
+      "title": "the mode for categories and popularity",
+      "voiceover": {
+        "text": "The mode is the only measure that works for every kind of category. A club ordering hoodies wants to know which size to stock most of. Last season it sold eight small, fifteen medium, twelve large and five extra large. A mean size makes no sense, and even with numbered sizes, a mean shoe size of eight point seven fits nobody. The mode, medium, is exactly what the club needs. Sizes do have an order, so a median size exists, but it still wouldn't tell the club what sells most. The mode's weaknesses are that there may be no mode, or several, and the most common value isn't always near the middle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "shape-decides",
+      "title": "shape decides",
+      "voiceover": {
+        "text": "Shape tells you which to choose, and why. When data are symmetric, the mean and the median sit close together, so either works, and the mean is usually given. Stretch a tail out to the right, and the mean is pulled towards the tail, above the median. Stretch it left, and the mean falls below the median, just like our sleep data, seven point two against seven point five. If you're not sure of the shape, compare the mean and the median. A big gap between them is a warning. So skewed data, or data with extreme values, call for the median. Symmetric data suit the mean."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fits-or-misleads",
+      "title": "uses that fit, and uses that mislead",
+      "voiceover": {
+        "text": "Out in the real world, measures of centre are used well and badly. Fits. A real estate report quotes the median house price, because prices are skewed. Fits. A shop stocks the mode, the most popular size. Fits. A phone review quotes the mean battery life from a hundred test runs that were roughly symmetric. Misleads. A café advertises an average pay of over a thousand dollars a week, when most staff earn under seven hundred, because the manager's pay drags the mean up. Misleads. Comparing one group's mean with another group's median, which isn't a fair comparison. Whenever you choose, say why, using the shape of the data."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Skewed data or extreme values, use the median. Symmetric data, use the mean. Categories, use the mode. And remember why. The mean is pulled towards the tail, while the median stays with the middle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Six resale listings for the same concert ticket are ninety dollars, ninety-five, ninety-five, a hundred, a hundred and ten, and six hundred and thirty. Find the mean and the median. Then, which better describes a typical resale price? Justify your choice. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The total is eleven hundred and twenty, so the mean is a hundred and eighty-six dollars sixty-seven. The median is halfway between ninety-five and a hundred, ninety-seven dollars fifty cents. The median is better, because the six hundred and thirty dollar listing pulls the mean above five of the six prices. Choosing the mean because it uses every value is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Choose the most appropriate measure of centre, and justify it. One, the phone case colour a shop should stock most of. Two, the typical time callers wait on a helpline, where a few wait over an hour. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Colour is categorical, and the shop wants the most popular, so the mode. The waiting times are positively skewed by the few long waits, and the median isn't pulled up by them, so the median. Choosing the mean, because it's the average, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-spread",
+      "title": "handoff: range and standard deviation",
+      "voiceover": {
+        "text": "Centre isn't the whole story. Two buses both run four minutes late on average, over six school days. Bus A is three, four or five minutes late, every day. Bus B is sometimes on time, and sometimes eight minutes late. Same mean, but you'd only trust one of them. To tell them apart, we need to measure spread. That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

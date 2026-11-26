@@ -1,0 +1,154 @@
+{
+  "brief": 235,
+  "design": "math-a12-d06",
+  "generatedWith": "Built-in image_gen followed by user-authorised local pixel finishing",
+  "qaRecipe": "work/brief235/make-final-qa.py",
+  "fullVideoReleaseApproval": false,
+  "assets": [
+    {
+      "path": "public/assets/maths/ma12-bike-crankset-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-11bd2b88-baf5-40d4-857b-d487dd16046e.png",
+      "nativeSize": [
+        1500,
+        1500
+      ],
+      "sha256": "e2bd7cbcead61e2a5dd93f16b1db56fda90229244de33f9ea937b0f67b251308",
+      "alphaBox": [
+        149,
+        392,
+        1351,
+        1087
+      ],
+      "visibleAlphaBoxThreshold8": [
+        149,
+        392,
+        1351,
+        1087
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "crankBoltEstimate": [
+          750,
+          750
+        ],
+        "leftSpindleEstimate": [
+          201,
+          750
+        ],
+        "rightSpindleEstimate": [
+          1302,
+          750
+        ],
+        "crankLengthEstimate": 550,
+        "chainringOuterRadiusEstimate": 350
+      },
+      "resampled": false,
+      "generatorNativeSize": [
+        1254,
+        1254
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-bike-crankset-v1.png",
+        "translation": [
+          123,
+          115
+        ],
+        "operations": [
+          "Translated crank bolt to square canvas centre",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    },
+    {
+      "path": "public/assets/maths/ma12-bike-pedal-v1.png",
+      "generatorSource": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-affc6fd5-8a98-497a-9606-17b1e38b7c7c.png",
+      "nativeSize": [
+        2000,
+        1000
+      ],
+      "sha256": "c581387e7e3dfac277a250e2799decfff626ae2aa365a4da98282f380e541e10",
+      "alphaBox": [
+        397,
+        363,
+        1603,
+        608
+      ],
+      "visibleAlphaBoxThreshold8": [
+        397,
+        363,
+        1603,
+        608
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "state": "finished-plates-delivered",
+      "anchors": {
+        "spindleHoleEstimate": [
+          1000,
+          500
+        ]
+      },
+      "resampled": false,
+      "generatorNativeSize": [
+        1774,
+        887
+      ],
+      "localFinishing": {
+        "authorisation": "User explicitly approved local pixel edits on8November2026",
+        "original": "work\\brief235\\native-before-finishing\\ma12-bike-pedal-v1.png",
+        "translation": [
+          113,
+          8
+        ],
+        "operations": [
+          "Translated spindle hole to canvas centre",
+          "Low-alpha exterior noise removed",
+          "Transparent canvas padding only; no whole-plate stretching"
+        ]
+      },
+      "visualQAInspected": true,
+      "wholePlateResized": false
+    }
+  ],
+  "state": "finished-plates-delivered",
+  "visualQAInspected": true,
+  "finalQaFolder": "work/brief235/final-qa",
+  "finishingRecord": "work/brief235/local-finishing.json",
+  "authorisation": "User explicitly approved local pixel finishing on8November2026",
+  "fullBuiltPreview": "pending",
+  "speechGenerated": false,
+  "sourceEdits": false,
+  "compositeRecipe": "Final QA recipe make-final-qa.py; crank scale0.25 on50px shell gives175px ring; pedal scale0.045, kept level at0/45/90degrees",
+  "reusedPlates": [
+    {
+      "path": "public/assets/chemistry/y11c-bike-frame-v1.png",
+      "nativeSize": [
+        1484,
+        1060
+      ],
+      "sha256": "7761c43e93ad90e4644b2aafa695896ce34b47cf871b63071811b0d269c29940",
+      "changed": false,
+      "visuallyInspected": true
+    },
+    {
+      "path": "public/assets/chemistry/y11c-bike-wheel-v1.png",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "sha256": "790665dafcf549d96ad53f7c25f9c6b414a27c357ae260b3efe7c6a8b53ed9b9",
+      "changed": false,
+      "visuallyInspected": true
+    }
+  ]
+}

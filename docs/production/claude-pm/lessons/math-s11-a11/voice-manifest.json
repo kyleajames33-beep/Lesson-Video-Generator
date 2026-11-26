@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a11.md",
+  "sourceSha256": "369705c8b079285b161c16f88e871e68af0ec3129564780f93604c8fcb6ae77f",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-no-formula",
+      "text": "This garden pond has a wobbly edge. It isn't a circle, or a rectangle, or any shape with a name, so there's no formula for its area. But you can still measure it. Lay a tape along it, and measure how wide it is at a few evenly spaced places. Surveyors, landscapers and pool builders do exactly this. Can a handful of widths tell us the area, and even how much water it holds? Yes, approximately. So how does the trapezoidal rule estimate an irregular area, or a volume?",
+      "audioFile": "public/audio/math-s11-a11/hook-no-formula.wav"
+    },
+    {
+      "id": "one-application",
+      "text": "Start with something simpler. A block of land has a straight front, eighteen metres wide, and two parallel side boundaries at right angles to it, twenty-eight metres and thirty-four metres long. The back is a bit curved. Pretend the back is straight. Then the block is a trapezium, and you know its area from earlier, the average of the two parallel sides, times the distance between them. In symbols, A is about equal to h over two, times d f plus d l. Here d f is the first length, twenty-eight. D l is the last length, thirty-four. And h is the perpendicular distance between them, eighteen. Half of eighteen is nine, and twenty-eight plus thirty-four is sixty-two. Nine times sixty-two is about five hundred and fifty-eight square metres. We say about, because the real back boundary isn't quite straight. The rule gives an estimate, a close answer, not an exact one. It's printed on the reference sheet.",
+      "audioFile": "public/audio/math-s11-a11/one-application.wav"
+    },
+    {
+      "id": "four-applications",
+      "text": "One trapezium is fine for a block with one curved side. The pond curves everywhere, so cut it into strips. Measure the width every two metres along its eight metre length. The widths are nought, three point two, four point one, three point six, and nought again, because the pond comes to a point at each end. That's four strips, so apply the rule four times. Each strip has its own first and last length, and h is two, the gap between widths. Strip one, two over two times nought plus three point two, is three point two. Strip two, three point two plus four point one, is seven point three. Strip three, four point one plus three point six, is seven point seven. Strip four, three point six plus nought, is three point six. A zero width just makes that strip a triangle, and the rule still works. Add the four, and the pond is about twenty-one point eight square metres. Forgetting to halve h doubles every strip, and that's the slip.",
+      "audioFile": "public/audio/math-s11-a11/four-applications.wav"
+    },
+    {
+      "id": "more-strips",
+      "text": "Why bother with four strips? Watch what happens with fewer. With just one application across the whole pond, the first and last widths are both nought, so the estimate is nought square metres, which is useless. With two applications, four metres wide, you get sixteen point four. With four, twenty-one point eight. Each chord cuts straight across the curve, so narrower strips hug the edge more closely, and the slivers we're getting wrong get smaller. The syllabus asks for up to four applications, and four strips usually give a good estimate.",
+      "audioFile": "public/audio/math-s11-a11/more-strips.wav"
+    },
+    {
+      "id": "pond-water",
+      "text": "Now the water. If the pond is about nought point six of a metre deep all over, its volume is its area times its depth, just like a prism. Twenty-one point eight times nought point six is about thirteen point nought eight cubic metres. Every cubic metre is a kilolitre, so the pond holds about thirteen point nought eight kilolitres, a bit over thirteen thousand litres. That's the area rule doing a volume job. If the depth changed a lot from place to place, one depth wouldn't do. You'd measure a cross-section instead, and that's exactly what the next example does.",
+      "audioFile": "public/audio/math-s11-a11/pond-water.wav"
+    },
+    {
+      "id": "channel-capacity",
+      "text": "Here's one where the shape changes across, but stays the same along. A concrete drainage channel is one point two metres across, and its depth is measured every nought point three of a metre: nought, nought point two five, nought point three two, nought point two six, and nought. Four strips, so four applications, each with h over two equal to nought point one five. The four areas add to nought point two four nine square metres. That's the cross-section. The channel runs fifty metres, so when it's full it holds nought point two four nine times fifty, about twelve point four five cubic metres, or twelve point four five kilolitres of water. Area, volume and capacity, all from the same rule.",
+      "audioFile": "public/audio/math-s11-a11/channel-capacity.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's the trapezoidal rule in words. Average the two ends, times the gap. Do it once for each strip, up to four times, and add them up.",
+      "audioFile": "public/audio/math-s11-a11/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A paddock lies between two parallel fences, a hundred and ten metres and ninety-five metres long, which are eighty metres apart. Use one application of the trapezoidal rule to estimate its area in hectares. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Eighty over two is forty, and a hundred and ten plus ninety-five is two hundred and five. Forty times two oh five is eight thousand two hundred square metres, which is nought point eight two hectares. Forgetting to halve the eighty is the slip.",
+      "audioFile": "public/audio/math-s11-a11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A garden bed's widths are measured every one point five metres: two metres, two point six metres, and two point two metres. Use two applications of the trapezoidal rule to estimate its area. Then mulch is spread eight centimetres deep. Estimate the volume of mulch in cubic metres. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "H over two is nought point seven five. The two strips are three point four five and three point six, so about seven point nought five square metres. Eight centimetres is nought point nought eight of a metre, so the mulch is about nought point five six four cubic metres. Not halving h is the slip.",
+      "audioFile": "public/audio/math-s11-a11/feedback-2.wav"
+    },
+    {
+      "id": "handoff-strand-close",
+      "text": "That's Applications of measurement done, from millimetres to megalitres, and from a box to a pond with no formula. Every unit we've used steps by tens, hundreds or thousands. But time doesn't. Sixty seconds make a minute, and sixty minutes make an hour. How do we convert time, when the steps are sixties? That's next.",
+      "audioFile": "public/audio/math-s11-a11/handoff-strand-close.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a11/key-notes.wav"
+    }
+  ]
+}

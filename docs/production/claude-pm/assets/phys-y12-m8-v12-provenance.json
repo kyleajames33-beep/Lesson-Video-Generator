@@ -1,0 +1,75 @@
+{
+  "design": "phys-y12-m8-v12",
+  "brief193": {
+    "assets": [
+      {
+        "key": "y12p-electron-diffraction-tube-v1",
+        "original": "C:/Users/kygs/.codex/generated_images/01a1afb5-b1d8-7473-b343-bd98a258d950/exec-5799f7f7-c798-4519-bc6a-5e903e2c58f3.png",
+        "sha256": "85a38bd0ad2c72eee8402461500a8d9fd337c3407e2809d683b92a12d9821c3e",
+        "dimensions": [
+          1920,
+          819
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "alphaBounds": {
+          "1": [
+            81,
+            12,
+            1900,
+            803
+          ],
+          "8": [
+            128,
+            16,
+            1751,
+            800
+          ],
+          "64": [
+            128,
+            17,
+            1750,
+            798
+          ],
+          "128": [
+            129,
+            17,
+            1750,
+            798
+          ],
+          "192": [
+            129,
+            18,
+            1749,
+            797
+          ],
+          "250": [
+            130,
+            19,
+            1747,
+            796
+          ]
+        },
+        "qaComposite": "docs/production/claude-pm/assets/brief193-qa/y12p-electron-diffraction-tube-v1-composites.jpg",
+        "state": "held,native long side below2400px",
+        "design": "phys-y12-m8-v12",
+        "originalPreserved": true,
+        "qa": "Actual400px composites inspected on cream,navy and white. No people,hands,text,logos or baked scientific overlays. No deterministic pixel cleanup,crop,stretch,padding or upsampling. Very low-alpha residue is retained and bounds at multiple thresholds are recorded.",
+        "pending": "Actual desktop/phone scene fit,animation placement and playback;static QA is not motion or release approval.",
+        "reference": {
+          "detail": "Original generation following the exact school-apparatus brief."
+        },
+        "publicAssetDelivered": false,
+        "candidatePath": "docs/production/claude-pm/assets/brief193-candidates/y12p-electron-diffraction-tube-v1-held.png",
+        "holds": [
+          "Requested native long side at least2400px;generation returned smaller native canvas.",
+          "Glass remains visibly frosted on navy;clear-glass treatment needs repair."
+        ],
+        "anchors": "Pending final accepted native plate;do not build from held candidate."
+      }
+    ],
+    "reuse": "work/brief193/asset-reuse-notes.json"
+  }
+}

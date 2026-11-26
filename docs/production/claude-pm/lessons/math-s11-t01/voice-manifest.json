@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-t01.md",
+  "sourceSha256": "52b950f36f92342f43bea3ca1d46a17d3f1557452c7ed43b55b9d53f8ec0ba59",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-steps-of-sixty",
+      "text": "Every unit we've measured so far steps by tens, hundreds or thousands. Time doesn't. Sixty seconds make a minute, and sixty minutes make an hour. Here's where that bites. This song runs for two hundred seconds. Type two hundred divided by sixty into a calculator, and you get three point three three. So is the song three minutes and thirty-three seconds? No. The player says three minutes and twenty seconds. Three point three three minutes is right, but the point three three is part of a minute, not thirty-three seconds. So how do we convert between seconds, minutes and hours, and between twelve-hour and twenty-four-hour time?",
+      "audioFile": "public/audio/math-s11-t01/hook-steps-of-sixty.wav"
+    },
+    {
+      "id": "time-ladder",
+      "text": "Start with a ladder, just like the metric ones. Hours at the top, then minutes, then seconds. Each step is sixty. Going down to a smaller unit, you need more of them, so you multiply by sixty. Going up to a bigger unit, you need fewer, so you divide by sixty. The rule is the same as before. Only the number has changed. So one hour is sixty minutes, and each of those minutes is sixty seconds. One hour is sixty times sixty seconds, which is three thousand six hundred seconds. That's worth knowing by heart. A two hour movie is two times three thousand six hundred, seven thousand two hundred seconds. A seven minute ad break is seven times sixty, four hundred and twenty seconds. The slip is the metric habit. Times a hundred would make an hour a hundred minutes.",
+      "audioFile": "public/audio/math-s11-t01/time-ladder.wav"
+    },
+    {
+      "id": "leftovers",
+      "text": "Going up the ladder is where time gets tricky, because the division often doesn't come out even. Back to the song. Sixty goes into two hundred three times. That's a hundred and eighty seconds, with twenty seconds left over. The leftover didn't make a full minute, so it stays as seconds. The song is three minutes and twenty seconds. Same idea one rung higher. A playlist runs for a hundred and forty-five minutes. Sixty goes in twice, that's a hundred and twenty minutes, with twenty-five left. So it's two hours and twenty-five minutes. On a calculator, do it in two steps. Two hundred divided by sixty is three point three three. Keep the three whole minutes. Then multiply the decimal part, nought point three three recurring, by sixty, and the twenty seconds come back. Leftovers are the next unit down, never the digits after the point.",
+      "audioFile": "public/audio/math-s11-t01/leftovers.wav"
+    },
+    {
+      "id": "decimal-hours",
+      "text": "Sometimes you do want a decimal, and that's for pay. A timesheet records hours as one number, because pay is hours times the rate. Take a shift of three hours forty-five minutes. Forty-five minutes is forty-five sixtieths of an hour, nought point seven five, so the shift is three point seven five hours. Going back, two point four hours is two hours and nought point four of an hour. Nought point four times sixty is twenty-four minutes, so it's two hours twenty-four minutes. Here's why it matters. A casual shift runs five hours twenty-four minutes, at an example rate of twenty-eight dollars forty an hour. Twenty-four minutes is nought point four of an hour, so that's five point four hours, and the pay is a hundred and fifty-three dollars thirty-six. Type five point two four instead, and the pay comes out a hundred and forty-eight dollars eighty-two, four dollars fifty-four short.",
+      "audioFile": "public/audio/math-s11-t01/decimal-hours.wav"
+    },
+    {
+      "id": "clock-24",
+      "text": "Now the other half of time, the clock itself. A twelve-hour clock goes round twice a day, so nine fifteen could be morning or night, and we add am or pm, before noon or after noon, to tell them apart. A twenty-four-hour clock counts the hours straight through the day, from midnight, nought nought nought nought, to one minute before the next midnight, twenty-three fifty-nine. The midnight that ends a day is sometimes written twenty-four hundred. Train timetables, flight boards and many phones use it, because there's no am or pm to get wrong. Morning times keep their digits, written with four digits, so nine fifteen am is nought nine fifteen. Afternoon and evening times add twelve to the hour, because twelve hours have already passed since midnight. Seven forty-five pm is nineteen forty-five. To go back, take twelve off any hour from thirteen up, and write pm. Twenty-two fifty-eight is ten fifty-eight pm.",
+      "audioFile": "public/audio/math-s11-t01/clock-24.wav"
+    },
+    {
+      "id": "noon-midnight",
+      "text": "The trap is the twelves. Twelve noon is the middle of the day. It's had twelve hours since midnight, no more, so it's twelve hundred, and twelve thirty pm is twelve thirty. Nothing gets added, because the afternoon hasn't started yet. Midnight is where the count starts, so twelve am is nought nought hundred, and twelve ten am is nought nought ten. Here's the slip. Twelve thirty pm written as nought nought thirty. That's the middle of the night, not lunchtime.",
+      "audioFile": "public/audio/math-s11-t01/noon-midnight.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's time in one card. Time counts in sixties, and a leftover is the next unit down. After noon, add twelve. Noon stays twelve hundred, and midnight is nought nought hundred.",
+      "audioFile": "public/audio/math-s11-t01/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A podcast episode runs for four thousand five hundred seconds. Write its length in hours and minutes, then in decimal hours. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-t01/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Four thousand five hundred divided by sixty is seventy-five minutes. That's one hour, with fifteen minutes left over, so one hour fifteen minutes. Fifteen minutes is a quarter of an hour, so it's one point two five hours. Dividing by a hundred, to get forty-five minutes, is the slip.",
+      "audioFile": "public/audio/math-s11-t01/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Write six oh five pm in twenty-four-hour time. Then write nought nought forty in twelve-hour time. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-t01/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Six oh five pm is after noon, so add twelve, and it's eighteen oh five. Nought nought forty is forty minutes after midnight, so it's twelve forty am. Calling it twelve forty pm puts it at lunchtime, and that's the slip.",
+      "audioFile": "public/audio/math-s11-t01/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So that's time units, sixties on the ladder, and twenty-four hours on the clock. Now let's put them to work. An overnight coach leaves at twenty-three forty-eight and arrives at nought one twenty-five. How long is the trip? You can't just subtract, because the clock goes back to zero at midnight. Finding elapsed time is next.",
+      "audioFile": "public/audio/math-s11-t01/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-t01/key-notes.wav"
+    }
+  ]
+}

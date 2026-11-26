@@ -1,0 +1,140 @@
+{
+  "design": "phys-y12-m7-v01",
+  "sourceSha256": "c4faf62647bd8c09b6a7467b25bf68b44ea096a9dfdaae76d6bbc1e2280f664b",
+  "new": [
+    {
+      "key": "spark-gap-transmitter",
+      "name": "y12p-spark-gap-transmitter-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-89503db9-73a1-44ba-b85a-c5e9228a4cbc.png",
+      "sha256": "38d30f79c548bd3ee6230f4e2dbafb5d00090628117ed5d410e5f93d899558f3",
+      "size": [
+        1683,
+        935
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        56,
+        45,
+        1619,
+        935
+      ],
+      "visibleBoundsAt16": [
+        203,
+        261,
+        1480,
+        743
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.1206,
+        0.2791,
+        0.1206,
+        0.2053
+      ],
+      "anchors": {
+        "sparkGapCentre": [
+          842,
+          322
+        ],
+        "rodLineY": 322,
+        "tolerancePixels": 8
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/spark-gap-transmitter.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-spark-gap-transmitter-v1.png"
+    },
+    {
+      "key": "spark-loop-receiver",
+      "name": "y12p-spark-loop-receiver-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-e0dcf967-3ac0-4c39-8558-8edbb7989419.png",
+      "sha256": "6064c2fd24d388e630cbe7f5aab504bec1371cffeb92142bc6c8b22c026f5a89",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        0,
+        25,
+        1224,
+        1244
+      ],
+      "visibleBoundsAt16": [
+        289,
+        183,
+        954,
+        1095
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.2305,
+        0.1459,
+        0.2392,
+        0.1268
+      ],
+      "anchors": {
+        "sparkGapCentre": [
+          625,
+          201
+        ],
+        "loopCentre": [
+          624,
+          527
+        ],
+        "loopRadiusApprox": 332,
+        "tolerancePixels": 8
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/spark-loop-receiver.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-spark-loop-receiver-v1.png"
+    }
+  ],
+  "reuse": [
+    {
+      "reference": "phys-y11-dipole-receiver-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-dipole-receiver-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-radio-mast-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-radio-mast-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-spark-gap-transmitter-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spark-gap-transmitter-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-spark-loop-receiver-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spark-loop-receiver-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "nativeAspectRatioPreserved": true,
+  "newImagesTool": "image_gen.imagegen",
+  "humanListening": "not applicable to static art; pending for lesson",
+  "builtMotion": "pending",
+  "conditionalFilament": "Existing phys-y11-filament-lamp-v1.png has true varying alpha0..254 and a clean visible composite; no replacement requested.",
+  "optionalPolariser": "Root permitted coded discs as fallback; optional painted mount not generated."
+}

@@ -1,0 +1,149 @@
+{
+  "id": "math-s11-d05",
+  "fps": 30,
+  "subject": "Mathematics Standard",
+  "yearLevel": 11,
+  "sourceDesignSha256": "ca0d6d5200f0b6747a7bf1ccfbde0b5fa5cb74c7a6ffd27b7b911742568ee925",
+  "scenes": [
+    {
+      "id": "hook-averaging-columns",
+      "title": "hook: which columns can we average?",
+      "voiceover": {
+        "text": "Here's our record sheet. Every column is a variable, something that changes from one student to the next. Hours of sleep, screens in the bedroom, where the phone charges, how rested they feel, and how they get to school. Try averaging each column. Sleep, fine. Screens, fine. But what's the average of bedroom and kitchen? It makes no sense. Before we can display or analyse any of this, we need to know what type of data each column holds. So is this data numerical or categorical, discrete or continuous, nominal or ordinal?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "arithmetic-test",
+      "title": "numerical or categorical: the arithmetic test",
+      "voiceover": {
+        "text": "The first question sorts everything. Does arithmetic on the answers make sense? If the answers are numbers you count or measure, and adding or averaging them means something, the variable is numerical. Hours of sleep and screens in the bedroom are numerical. If the answers are groups or labels, the variable is categorical. Where the phone charges, how rested you feel, and how you get to school are all categorical. You can count how many students said bedroom, but you can't add bedroom to kitchen. Those counts are numbers, but the answers themselves aren't. That's the arithmetic test."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "discrete-continuous",
+      "title": "numerical: discrete or continuous",
+      "voiceover": {
+        "text": "Numerical variables split again. Is the number counted, or measured? Screens in the bedroom is counted. You can have two screens or three, but not two and a half, so the values are separate, with gaps between them. That's discrete. Hours of sleep is measured. Someone might sleep seven hours thirty-two minutes and ten seconds. Any value in a range is possible, limited only by how precisely you measure it. That's continuous. Time, distance, mass and temperature are all measured, so they're all continuous. Here's the trap. We wrote sleep to the nearest half hour, so the answers look like separate steps. But the sleep itself didn't come in steps. Rounding changes how a value is written, not what kind of variable it is. Sleep is still continuous."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "nominal-ordinal",
+      "title": "categorical: nominal or ordinal",
+      "voiceover": {
+        "text": "Categorical variables split too. Is there a natural order? How rested do you feel has answers not at all, a little, somewhat, quite, and very. They go in order, so the variable is ordinal. Where the phone charges, bedroom, kitchen, lounge or other, has no natural order. You could list them any way. That's nominal, which just means names. Getting to school, by bus or nearby, is nominal as well. The order matters for what you can say. With ordinal data, you can say one student is more rested than another. With nominal data, you can only say they're different, or count how many fall in each category."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "labels-and-formats",
+      "title": "numbers that are labels, and questions that decide",
+      "voiceover": {
+        "text": "Two traps live at the edges. First, some numbers are really labels. A postcode like twenty-seven fifty is written in digits, but the average of two postcodes is nonsense. Jersey numbers are the same. They're categorical, nominal. Second, the same question can give either type, depending on how the answers are collected. Remember the sleep question's buttons? Under seven, seven to under eight, and so on. Collected that way, the answers are ordered groups, so the data are ordinal categorical. Ask people to type a number of hours instead, and the data are numerical and continuous. Screens work the same way. Count them, and you get discrete numerical data. Offer none, one, or two or more, and you get ordinal categories. How you ask decides the type of data you get."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "sheet-classified",
+      "title": "the record sheet, classified",
+      "voiceover": {
+        "text": "Let's finish the record sheet. Sleep in hours, numerical and continuous. Screens in the bedroom, numerical and discrete. Where the phone charges, categorical and nominal. How rested, categorical and ordinal. And how students get to school, categorical and nominal. Every column now has a type. Writing the type beside each column is a habit worth keeping. That matters straight away, because the type decides which tables and graphs we can use, and which calculations make sense."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the card. Count it or measure it, and it's numerical. Name it, and it's categorical. Then, counted is discrete, measured is continuous, ordered labels are ordinal, and just names are nominal."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Classify each variable fully. A, the number of songs in a playlist. B, the time taken to download an app. C, a person's favourite streaming service. D, a hotel's star rating. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Songs are counted, so numerical and discrete. Download time is measured, so numerical and continuous. A streaming service is a name, so categorical and nominal. And star ratings are ordered labels, so categorical and ordinal. Calling stars discrete numerical, because they're numbers, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A gym wants to know how far members travel to the gym. Write one way to ask that gives numerical data, and one way that gives categorical data. Classify each one fully. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10,
+        "afterText": "Pause here to answer.",
+        "countdownStartsWithHold": true
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Ask how far do you travel, in kilometres, with a box for the number. That's numerical and continuous, because distance is measured. Or offer under two kilometres, two to under five, and five or more. That's categorical and ordinal, because the groups have an order. Saying both are numerical, because both mention kilometres, is the slip."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-grouping",
+      "title": "handoff: grouping data",
+      "voiceover": {
+        "text": "We know our types. Now let's display some data. Here's a new set. A Year 11 maths class of thirty checked their phones' screen time for yesterday. This phone says two hours twenty-five, which is a hundred and forty-five minutes. Screen time is numerical and continuous, and here are all thirty answers in minutes. Almost every one is different. A table with thirty rows, each with a count of one, tells us nothing. So how do we group the data to see its shape? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

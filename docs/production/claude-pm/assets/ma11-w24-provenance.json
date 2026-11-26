@@ -1,0 +1,139 @@
+{
+  "brief": 247,
+  "lesson": "w24",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-8ec39861-1c38-4a1e-bf53-4ee4808819c9.png",
+      "sha256": "c384fdc0128a280bbb849a63c26e5ad4f13c95bba55057baf3235443ffe600b9",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        13,
+        1239,
+        1243
+      ],
+      "marginFractions": [
+        0.0,
+        0.01036682615629984,
+        0.011961722488038277,
+        0.008771929824561403
+      ],
+      "evidence": [
+        "work/brief247/w24-dartboard-candidate1-native-paper.jpg",
+        "work/brief247/w24-dartboard-candidate1-native-dark.jpg",
+        "work/brief247/w24-dartboard-candidate1-native-white.jpg",
+        "work/brief247/w24-dartboard-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-dartboard-v1.png",
+      "path": "public/assets/maths/ma11-dartboard-v1.png",
+      "brief": 247,
+      "lesson": "w24",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2000,
+        2000
+      ],
+      "qa": {
+        "result": "qualified: explicit measured-wire fallback",
+        "observations": [
+          "Board inspected at400px and760px, with nominal and measured-circle overlays. Full plain black number band has no numbers.",
+          "Dart has a silver grooved barrel, blue flights, one visible sharp steel tip and no printed marks.",
+          "Paper and dark composites have clean alpha edges without raw-preview colour fringe. Board opaque bounds1226x1225px read as face-on circle.",
+          "Native PNGs copied without production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w24-generation.json",
+          "work/brief247/w15-w31/w24-dartboard-geometry.json",
+          "work/brief247/w15-w31/w24-dart-sidecar.json",
+          "work/brief247/w15-w31/w24-board-circles-paper.jpg",
+          "work/brief247/w15-w31/w24-board-circles-dark.jpg",
+          "work/brief247/w15-w31/w24-dart-join-paper.jpg",
+          "work/brief247/w15-w31/w24-dart-join-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-dartboard-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-ec63513c-6ce8-4cc2-b0e8-0a728c913691.png",
+      "sha256": "6d2f2948ed1d8fb1e8ea45dc655238e56f49eaa47bcca6443bb4b37be5732b91",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        71,
+        70,
+        1206,
+        1201
+      ],
+      "marginFractions": [
+        0.05661881977671451,
+        0.05582137161084529,
+        0.03827751196172249,
+        0.04226475279106858
+      ],
+      "evidence": [
+        "work/brief247/w24-dart-candidate1-native-paper.jpg",
+        "work/brief247/w24-dart-candidate1-native-dark.jpg",
+        "work/brief247/w24-dart-candidate1-native-white.jpg",
+        "work/brief247/w24-dart-candidate1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-dart-v1.png",
+      "path": "public/assets/maths/ma11-dart-v1.png",
+      "brief": 247,
+      "lesson": "w24",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        900,
+        900
+      ],
+      "qa": {
+        "result": "passed subject, alpha and tip-registration checks",
+        "observations": [
+          "Board inspected at400px and760px, with nominal and measured-circle overlays. Full plain black number band has no numbers.",
+          "Dart has a silver grooved barrel, blue flights, one visible sharp steel tip and no printed marks.",
+          "Paper and dark composites have clean alpha edges without raw-preview colour fringe. Board opaque bounds1226x1225px read as face-on circle.",
+          "Native PNGs copied without production resampling or stretching."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w24-generation.json",
+          "work/brief247/w15-w31/w24-dartboard-geometry.json",
+          "work/brief247/w15-w31/w24-dart-sidecar.json",
+          "work/brief247/w15-w31/w24-board-circles-paper.jpg",
+          "work/brief247/w15-w31/w24-board-circles-dark.jpg",
+          "work/brief247/w15-w31/w24-dart-join-paper.jpg",
+          "work/brief247/w15-w31/w24-dart-join-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-dart-v1.json"
+    }
+  ],
+  "result": "Dartboard and dart delivered. Twenty alternating sectors confirmed visually and by angular sampling. Measured double outer R=507.67px; treble inner radius279.88px misses nominal298.63px by18.75px (3.69%R), so apply the explicit measured-wire fallback: coded10cm circle centre(620.63,628.60), scale27.988px/cm. Other decorative ring ratios differ too and are recorded; this is not a full nominal-dimensions pass. Native circle fits have only a few pixels radial residual. Dart tip(75,1196) was attached6cm right and8cm down in paper/dark QA, exactly279.88px from the fitted centre, on the measured wire. No warping.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/w15-w31/w24-generation.json",
+    "work/brief247/w15-w31/w24-dartboard-geometry.json",
+    "work/brief247/w15-w31/w24-dart-sidecar.json",
+    "work/brief247/w15-w31/w24-board-circles-paper.jpg",
+    "work/brief247/w15-w31/w24-board-circles-dark.jpg",
+    "work/brief247/w15-w31/w24-dart-join-paper.jpg",
+    "work/brief247/w15-w31/w24-dart-join-dark.jpg"
+  ]
+}

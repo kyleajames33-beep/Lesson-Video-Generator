@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v02.md",
+  "sourceSha256": "3bcbb4fea178614b779028a25057c96fc83fca0a09847509635c185140163703",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's our electron again, at the entrance to the plates. This time it's fired in sideways, parallel to the plates, at three times ten to the seven metres per second. As it moves across, it's pushed steadily upwards, towards the positive plate. Its path curves, just like a ball thrown sideways off a cliff, only upside down. Is that a coincidence? Straight line, parabola or circle: what shape is the path?",
+      "audioFile": "public/audio/phys-y12-m6-v02/hook.wav"
+    },
+    {
+      "id": "two-motions",
+      "text": "Split the motion in two, the way we did for projectiles. Along the plates, there's no force, so the horizontal velocity stays constant. Across the plates, the force is q E, the same everywhere in the uniform field, so the electron has a constant acceleration, a equals q E over m, starting from zero vertical speed. One clock runs both motions. That's exactly a projectile, with q E over m in place of g, so the path is a parabola.",
+      "audioFile": "public/audio/phys-y12-m6-v02/two-motions.wav"
+    },
+    {
+      "id": "comparison",
+      "text": "But there are three differences. The size. Here, a is about three and a half times ten to the fifteen metres per second squared, hundreds of trillions of times g, which is why we ignore gravity. The mass. Every ball falls with the same g, but the electric acceleration depends on charge and mass, so different particles follow different paths. And the direction. Gravity always pulls down, but the electric force flips with the sign of the charge, so a proton fired in at the same speed curves downwards, and bends far less.",
+      "audioFile": "public/audio/phys-y12-m6-v02/comparison.wav"
+    },
+    {
+      "id": "time-inside",
+      "text": "Let's measure it. The plates are five centimetres long and two centimetres apart, with four hundred volts across them, so the field is two times ten to the four volts per metre. The electron enters on the centre line. How long is it between the plates? Only the horizontal motion decides that. Time equals length over horizontal speed, zero point zero five metres over three times ten to the seven, which is one point six seven times ten to the minus nine seconds. The sideways push doesn't change that time at all.",
+      "audioFile": "public/audio/phys-y12-m6-v02/time-inside.wav"
+    },
+    {
+      "id": "deflection",
+      "text": "Across the plates, it starts with zero vertical speed, so the deflection is y equals a half a t squared. The acceleration, q E over m, is three point five two times ten to the fifteen metres per second squared. Put in the time, and y is four point eight nine times ten to the minus three metres, just under five millimetres. Will it hit a plate? It entered on the centre line, so it has one centimetre of room. Five millimetres is less than ten, so it gets out.",
+      "audioFile": "public/audio/phys-y12-m6-v02/deflection.wav"
+    },
+    {
+      "id": "exit-velocity",
+      "text": "What's its velocity as it leaves? The horizontal part is still three times ten to the seven. The vertical part is a times t, five point eight six times ten to the six metres per second. Combine them with Pythagoras, and the speed is three point oh six times ten to the seven, a little faster than it went in. The angle above the horizontal is the inverse tan of v y over v x, about eleven degrees. Notice that the field has sped it up. Hold on to that, we'll need it next time.",
+      "audioFile": "public/audio/phys-y12-m6-v02/exit-velocity.wav"
+    },
+    {
+      "id": "after-plates",
+      "text": "Once it leaves the plates, the force stops. With no force, Newton's first law says it moves in a straight line, along its exit direction. That's how an old cathode ray tube aimed its beam at the screen. With a screen twenty centimetres past the plates, the electron lands about four point four centimetres above the centre line. Stretch that straight line backwards, and it points back to the middle of the plates.",
+      "audioFile": "public/audio/phys-y12-m6-v02/after-plates.wav"
+    },
+    {
+      "id": "factors",
+      "text": "Put the steps together, and the deflection is q E L squared, over two m v squared. That shows what matters. A stronger field gives a bigger push. Longer plates give more time, and the deflection grows with the length squared, so doubling the length would give four times the deflection, and this electron would hit the plate. A faster electron spends less time inside, so doubling its speed gives a quarter of the deflection. And a heavier particle, like a proton, bends far less.",
+      "audioFile": "public/audio/phys-y12-m6-v02/factors.wav"
+    },
+    {
+      "id": "plate-hit",
+      "text": "Now slow the electron down to one times ten to the seven metres per second, a third of the speed. It spends three times as long inside, so its deflection would be nine times bigger, about four point four centimetres. But there's only one centimetre of room. So it hits the positive plate, about two point four centimetres along. To check for a hit, compare the deflection with the room to the plate, half the gap for a centre-line entry.",
+      "audioFile": "public/audio/phys-y12-m6-v02/plate-hit.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "To remember it: same shape as a projectile, but swap g for q E over m, and let the charge's sign choose the direction. Along the plates, steady. Across the plates, speeding up. One clock for both.",
+      "audioFile": "public/audio/phys-y12-m6-v02/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. An electron enters midway between two horizontal plates, moving parallel to them at two point five times ten to the seven metres per second. The plates are six point zero centimetres long and three point zero centimetres apart, with a hundred and fifty volts across them, and the top plate positive. Show that the electron leaves without hitting a plate, and find the angle of its velocity as it leaves. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v02/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Here a is eight point seven nine times ten to the fourteen, and the electron is inside for two point four nanoseconds. So the deflection is two point five three millimetres, well under the fifteen millimetres of room, and it gets out. v y is a t, two point one one times ten to the six, so the angle is about four point eight degrees. The classic slip is using y over L, which gives two point four.",
+      "audioFile": "public/audio/phys-y12-m6-v02/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A proton enters a uniform electric field at right angles to the field, and a cricket ball is thrown horizontally near Earth's surface. Give two similarities and two differences between their trajectories. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v02/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Similarities. Both move at constant velocity along the entry direction, with constant acceleration across it, so both paths are parabolas. Differences. The proton's acceleration, q E over m, depends on its charge, its mass and the field, while every ball has the same g. And the proton's direction depends on its charge's sign, while gravity always pulls down. The classic slip is describing each one without comparing.",
+      "audioFile": "public/audio/phys-y12-m6-v02/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So between the plates, the electron moved like a projectile, and it left a little faster than it went in. The field did work on it. That's our next question. How does a potential difference set a particle's speed?",
+      "audioFile": "public/audio/phys-y12-m6-v02/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v02/key-notes.wav"
+    }
+  ]
+}

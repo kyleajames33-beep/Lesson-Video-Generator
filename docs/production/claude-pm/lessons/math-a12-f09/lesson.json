@@ -1,0 +1,174 @@
+{
+  "id": "math-a12-f09",
+  "fps": 30,
+  "status": "Brief240 reviewed narration input; no speech or build",
+  "sourceDesignSha256": "c962735626dfb2b3f874bb1e4878469391e0dcc53150938f5e6722fdcfdafe29",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (what goes under the question mark?)",
+      "voiceover": {
+        "text": "Here's a first car loan. You borrow thirty thousand dollars for a used car, and each month interest of zero point six per cent is added, so the balance is multiplied by one point zero zero six. Then your six hundred dollar repayment comes off. So what do you owe now? And next month, will more of your six hundred dollars go towards the debt, less, or the same? Make a guess."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "one month of a loan",
+      "voiceover": {
+        "text": "The principal is the amount you borrow, and the balance is the amount you still owe. In a reducing-balance loan, interest is charged on the balance you still owe, not on the amount you first borrowed. The rate is seven point two per cent a year, compounded monthly, so each month's rate r is seven point two over twelve, which is zero point six per cent. Each month, first the interest is added, so the balance is multiplied by one plus r. Then the repayment comes off. So you now owe twenty-nine thousand five hundred and eighty dollars."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the recurrence",
+      "voiceover": {
+        "text": "That one month is the whole rule. Call the balance after n months A sub n, so A zero is the thirty thousand you borrowed. A rule that gives the next value from the one before is called a recurrence. Here, A sub n plus one equals one plus r, times A sub n, minus M, the repayment. Without the repayment, this would just be compound interest. So a reducing-balance loan is a compound interest loan with a repayment taken off every period. And interest comes first, because the repayment is made at the end of the month."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "a balance table",
+      "voiceover": {
+        "text": "Here are three months in a table. Each row's interest is zero point six per cent of what's owed at the start. In month one, that's one hundred and eighty dollars, so the repayment pays off four hundred and twenty dollars of the debt. In month two, the balance is lower, so the interest is one hundred and seventy-seven dollars forty-eight, leaving four hundred and twenty-two dollars fifty-two for the debt. In month three, the interest is one hundred and seventy-four dollars ninety-four, rounded to the cent, and the balance falls to twenty-eight thousand, seven hundred and thirty-two dollars forty-two."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "why each month pays off more",
+      "voiceover": {
+        "text": "So, each month, a little more of the repayment goes towards the debt. The repayment stays the same, but the interest is charged on a smaller balance each time. Less interest means more of the six hundred dollars is left to reduce the balance, and that makes the next balance smaller again. This works because six hundred dollars is more than the interest. If it weren't, the balance wouldn't fall. Now run all five years. By the end, the interest is only a few dollars a month. The sixtieth repayment is just three hundred and seventy-four dollars eighty-one, and the car is paid off."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "unfolding the rule",
+      "voiceover": {
+        "text": "Now find the pattern behind the table. A one is thirty thousand times one point zero zero six, minus six hundred. For A two, multiply all of that by one point zero zero six, then take off another six hundred. That's thirty thousand times one point zero zero six squared, minus six hundred times one point zero zero six, minus six hundred. In A three, the loan has grown for three months. The first repayment has been off the balance for two months, so it has stopped two months of interest. The last has stopped none at all."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a geometric series inside the balance",
+      "voiceover": {
+        "text": "So after n months, you owe thirty thousand times one point zero zero six to the n, minus six hundred times a sum: one, plus one point zero zero six, plus one point zero zero six squared, up to the power n minus one. It's a geometric series with first term one, ratio one point zero zero six, and n terms. Its sum is one point zero zero six to the n, minus one, all over one point zero zero six minus one, which is zero point zero zero six. Notice the ratio is one plus r, not r itself."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "what the formula says",
+      "voiceover": {
+        "text": "In general, A sub n equals P times one plus r to the n, minus M times one plus r to the n, minus one, all over r. Read it as two pieces. The first is what the loan would grow to with compound interest and no repayments. The second is the repayments, each grown by interest from the month it was paid, because paying it stopped that much debt from growing. What you owe is the difference. For three months it gives twenty-eight thousand, seven hundred and thirty-two dollars forty-two, the same as the table."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "a whole loan",
+      "voiceover": {
+        "text": "Now zoom out to a home loan: four hundred thousand dollars at five per cent a year, compounded monthly, repaid over thirty years at two thousand one hundred and forty-seven dollars twenty-nine a month. In the first month, more than three quarters of the repayment is interest. So the balance falls slowly at first, then faster and faster. You don't owe less than half until about twenty years."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember each month of a loan. Grow, then pay. The balance grows by the interest, times one plus r, and then the repayment comes off, minus M."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A loan of twelve thousand dollars has interest at six per cent a year, compounded monthly. It's repaid at two hundred and fifty dollars a month. How much is owed after two months? Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The monthly rate is half a per cent. After one month, the balance is twelve thousand and sixty, minus two hundred and fifty, which is eleven thousand eight hundred and ten. After two months, it's eleven thousand six hundred and nineteen dollars and five cents. Eleven thousand five hundred is wrong. It takes off two repayments, but forgets the interest added each month."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A loan of fifty thousand dollars has interest at four point eight per cent a year, compounded monthly, with repayments of nine hundred dollars a month. Show that the amount owing after n months is fifty thousand times one point zero zero four to the n, minus two hundred and twenty-five thousand, times one point zero zero four to the n, minus one. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-14",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The repayments give nine hundred times a geometric series with ratio one point zero zero four and n terms. Its sum is one point zero zero four to the n, minus one, over zero point zero zero four, and nine hundred over zero point zero zero four is two hundred and twenty-five thousand. Using zero point zero zero four as the ratio is wrong. The ratio is one plus r."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a reducing-balance loan is compound interest with a repayment taken off every period, and its balance falls slowly at first, then faster. Here's the home loan again, cleared in thirty years. What if you paid two thousand five hundred dollars a month instead? How much sooner would it be gone?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-16",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

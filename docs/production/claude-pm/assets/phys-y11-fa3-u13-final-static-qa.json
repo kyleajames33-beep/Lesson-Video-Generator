@@ -1,0 +1,48 @@
+[
+  {
+    "id": "phys-y11-bell-jar-v1-brief242-static-qa",
+    "brief": 242,
+    "file": "public/assets/physics/phys-y11-bell-jar-v1.png",
+    "sha256": "35ba492d1ad58085f5b1c699e21d79ac25da99eea6d345b6481f2b7c7ab3688c",
+    "nativeSize": [
+      2172,
+      724
+    ],
+    "alphaRange": [
+      0,
+      255
+    ],
+    "qa": {
+      "result": "pass static check",
+      "observations": [
+        "The grey ink-and-wash jar is readable on paper and dark. Its glass interior is transparent and its base and tap have painted texture. Keep the existing treatment for this enclosure; no wholesale style repaint is warranted. The actual jar is about 560 px tall in its wide canvas, so fit by the object bounds, preserve aspect and check the composited plates.",
+        "No people, hands, faces or question data."
+      ],
+      "method": "Native-aspect paper and dark composites inspected in memory; delivered pixels unchanged."
+    },
+    "limitation": "Actual scene composition and playback remain to be checked."
+  },
+  {
+    "id": "phys-y11-filament-lamp-v2-brief242-static-qa",
+    "brief": 242,
+    "file": "public/assets/physics/phys-y11-filament-lamp-v2.png",
+    "sha256": "eed2d9c636decc3785ee03d76cb042393089d1cb3f4ae55db8c32a7426fb0427",
+    "nativeSize": [
+      1536,
+      1024
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "qa": {
+      "result": "pass static check",
+      "observations": [
+        "Paper and dark edges are clean. No external glow or stray coloured pixels visible. The filament, supports and glass remain visible; no text, scales or printed question data. Keep v2, preserving v1.",
+        "No people, hands, faces or question data."
+      ],
+      "method": "Native-aspect paper and dark composites inspected in memory; delivered pixels unchanged."
+    },
+    "limitation": "Actual scene composition and playback remain to be checked."
+  }
+]

@@ -1,0 +1,15 @@
+# Brief 242: Biology FA1 v19 derived layers and induced-fit reconciliation
+
+17 November 2026.
+
+Narration unchanged at 5,932 characters, no em dash. Four new native QA records: enzyme-alone and substrate-alone derived layers, lock/key and thermometer. Native paper/dark inspected, native aspect, true outer alpha, no people, lettering or numerical question data. Whole liver is explicitly unused, not a missing plate.
+
+Derived layers recombine at unchanged 2000-square origins with zero visible RGBA differences and zero alpha differences from m5x-enzyme-substrate-v1.png. RGB beneath fully transparent pixels is excluded from this test. Original substrate bounding-box centre is approximately (1470.5,1035.5); v18 bound gold centre is (1320.5,1035.5), a translation of (-150,0) native pixels. Keep the full common canvas transform rather than fitting each isolated painted bound independently. Enzyme and substrate read clearly at 480px canvas width, preserving their relative scale and original positions. Exact path, pocket contact and release remain playback checks.
+
+Plain brass lock and separate steel key read at 300px width; neither has a brand, face or number. This is a static analogy prop, without a measured mechanical keyway or exact insertion path. Thermometer reads at 300px width and has a baked red column, with no scale or number. It is suitable as the final-frame temperature cue. A later moving column requires root to mask the painted column or use its coded instrument rather than drawing a second column over it.
+
+The five induced-fit files are already delivered despite stale source lists saying missing. All current SHA256 hashes match y11fa1v19-provenance.json. Its existing holds remain: actual 1254-square canvas, not requested 2000; open/closed far-body mask IoU 0.99418 and RGB difference 8.50/255, not an identical far side; closed-gold versus isolated-substrate IoU 0.95590; near-miss has 18 overlapping opaque pixels even after the [0,-25] loose-open translation. Products still need an outward release translation. Do not clear a matched-set dissolve or repeat painting just because the older Assets paragraph says undelivered. Root resolves the documented registration findings. Separate uniform scaling is needed between 2000-square lock-and-key art and 1254-square induced-fit art; no native-coordinate interchange is valid.
+
+Fit tally must count encounters, bindings and product events from one configured sequence. Scene 9's end counts are substrate 2,2,2 and near miss 2,0,0, for this drawn example. A loose approach must not increment binding or product. Near miss must keep its changed lobe and lilac-grey role through every outline test; shape-only success is not universal enzyme specificity. Question diagrams, dashed tests, current reading load and the joins to v18/v20 still need the built scene. No configured simulation, playback, listening, whole-lesson voice clearance or source edits.
+
+Evidence: `assets/brief242-bio-fa1-v19-native-qa-17-nov.json`. Reviewed design SHA256: `77c36bc9da88b26965125192d8f2cbb32767225d226386b306f6f1aa6ad72b4f`. No source edits or whole-lesson clearance.

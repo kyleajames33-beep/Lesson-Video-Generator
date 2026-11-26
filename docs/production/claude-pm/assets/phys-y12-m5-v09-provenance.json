@@ -1,0 +1,257 @@
+{
+  "design": "phys-y12-m5-v09",
+  "sourceSHA256": "2a56fc7e001bce22cc863d5a2c09199ed69abf771482154f0234327f5a191bec",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "phys-y11-protractor-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-protractor-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "phys-y11-scrapyard-crane-magnet-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-scrapyard-crane-magnet-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "public/assets/physics/phys-y11-crane-load-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-crane-load-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "y12p-nut-plate-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-nut-plate-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "y12p-spanner-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spanner-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    },
+    {
+      "design": "phys-y12-m5-v09",
+      "reference": "y12p-tower-crane-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-tower-crane-v1.png"
+      ],
+      "exists": true,
+      "held": false,
+      "role": "specified plate or inspected alternative"
+    }
+  ],
+  "assets": [
+    {
+      "key": "nut",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b9ae558b-1e5b-4565-a9e6-c78108c35f06.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        378,
+        389,
+        876,
+        863
+      ],
+      "minMarginAbove16": 0.3014354066985646,
+      "sha256": "724f5228c10c3345fceb1691fe883c2a0ae53ff92aba24dab798aa2d7b9090d8",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-b9ae558b-1e5b-4565-a9e6-c78108c35f06.png",
+      "file": "public/assets/physics/y12p-nut-plate-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1254,
+          1254
+        ],
+        "centre": [
+          627,
+          626
+        ],
+        "acrossFlats_px": 210,
+        "acrossCorners_px": 230,
+        "plateBoundsApprox": [
+          378,
+          389,
+          876,
+          863
+        ],
+        "inspection": "Top view, horizontal top and bottom nut faces. Mounting plate is about2.3times across-flats width, below requested about3times. Ring fit will be checked at common native scale."
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "spanner-fixed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-f31d7bf2-e697-452c-8b73-690c78e9174d.png",
+      "size": [
+        2172,
+        724
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        158,
+        183,
+        1993,
+        543
+      ],
+      "minMarginAbove16": 0.072744014732965,
+      "sha256": "2de61e42cf10d21ba682534ebe35bc13ffc36c5937640b2348c0f165b02fabe4",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-f31d7bf2-e697-452c-8b73-690c78e9174d.png",
+      "file": "public/assets/physics/y12p-spanner-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          2172,
+          724
+        ],
+        "ringCentre": [
+          330.1,
+          363.69
+        ],
+        "holeBounds": [
+          215,
+          244,
+          444,
+          483
+        ],
+        "forceApplication": [
+          1710,
+          363.69
+        ],
+        "ringToForce_px": 1379.9,
+        "representedDistance_m": 0.25,
+        "pixelsPerMetre": 5519.6,
+        "centreline_deg": 0,
+        "nutPlacementAtSameScale": [
+          -296.9,
+          -262.31
+        ],
+        "qualification": "Ring fit is judged from common-scale registered overlay, not separate fitted thumbnail sizes. No final asset was rescaled."
+      },
+      "clearMargin8PercentPass": false,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    },
+    {
+      "key": "crane-proportion-final",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-56b9d2b5-9be6-42aa-9d8d-0b8fb050655b.png",
+      "size": [
+        1448,
+        1086
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "bboxAbove16": [
+        127,
+        100,
+        1322,
+        990
+      ],
+      "minMarginAbove16": 0.08701657458563536,
+      "sha256": "2d05ace407f157cbb4c6067b28df7c84a9b66c1d6d9e29d12cfe543980b54bac",
+      "generatedPath": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-56b9d2b5-9be6-42aa-9d8d-0b8fb050655b.png",
+      "file": "public/assets/physics/y12p-tower-crane-v1.png",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "status": "delivered for designer inspection with documented differences",
+      "coordinates": {
+        "nativeCanvas": [
+          1448,
+          1086
+        ],
+        "mastAtJib": [
+          395,
+          336
+        ],
+        "hookAttachment": [
+          1200,
+          550
+        ],
+        "counterweightCentre": [
+          234,
+          336
+        ],
+        "groundLine_y": 985,
+        "rightArm_px": 805,
+        "leftArm_px": 161,
+        "ratioFromRoundedAnchors": 5,
+        "requiredArmRatio": 5,
+        "anchorInspectionTolerance_px": 3,
+        "qualification": "Final correction selected after initial ratios about5.23 and4.7 were rejected. Rounded visually inspected anchors give5:1, within about3native pixels per painted centre. This is painting registration, not pixel-exact metrology. Use the same anchors for coded distance brackets and inspect their actual scene positions.",
+        "loadSourceAttachment": [
+          500,
+          211
+        ],
+        "qaLoadUniformScale": 0.24
+      },
+      "clearMargin8PercentPass": true,
+      "qa": "docs/production/claude-pm/assets/brief187-qa",
+      "qualification": "Native dimensions retained without stretching or upsampling. See coordinate notes, README and margin measurements; designer acceptance, scene integration, motion and listening remain pending.",
+      "promptFiles": [
+        "work/brief187/plate-prompts-wave1.json",
+        "work/brief187/plate-prompts-wave2.json",
+        "work/brief187/plate-prompts-wave3.json",
+        "work/brief187/plate-prompts-wave4.json",
+        "work/brief187/plate-prompts-wave5.json",
+        "work/brief187/plate-prompts-wave6.json"
+      ]
+    }
+  ],
+  "heldRequests": [],
+  "qa": "docs/production/claude-pm/assets/brief187-qa",
+  "status": "source findings, documented art differences and exact voiced-preview checks remain open"
+}

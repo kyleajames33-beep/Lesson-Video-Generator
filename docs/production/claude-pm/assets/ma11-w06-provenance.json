@@ -1,0 +1,124 @@
+{
+  "brief": 247,
+  "lesson": "w06",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-904dd941-e8b9-4420-a1cc-f6747076c762.png",
+      "sha256": "791cff6898a73c631e624bb35b9cc07cc5bb4e9c67168861f4c7478aad8045ad",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        292,
+        257,
+        734,
+        1283
+      ],
+      "marginFractions": [
+        0.28515625,
+        0.16731770833333334,
+        0.283203125,
+        0.16471354166666666
+      ],
+      "evidence": [
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-paper.jpg",
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-dark.jpg",
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-white.jpg",
+        "work/brief247/ma11-travel-card-reader-v1-reframed-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-travel-card-reader-v1.png",
+      "path": "public/assets/maths/ma11-travel-card-reader-v1.png",
+      "brief": 247,
+      "lesson": "w06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        2200
+      ],
+      "qa": {
+        "result": "static pass; coded balance-display fit held",
+        "observations": [
+          "Blank reader screen and unlabelled tap pad; card has a wave and contactless symbol, no text, balance or network logo. No people or faces.",
+          "Native paper/dark and 300/600 px comparisons inspected. The reader has clear margins over 16 percent. Card major painted margins exceed 11 percent; very low-alpha specks remain recorded, with no visible halo.",
+          "Reader display is too small for the full balance at the requested 52 px text when the whole plate is only 520 px tall. Root must resolve that composition."
+        ],
+        "evidence": [
+          "work/brief247/travel-card-size-paper.jpg",
+          "work/brief247/travel-card-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-travel-card-reader-v1.json"
+    },
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-7f663602-4b78-4e50-b714-c9183804dd0d.png",
+      "sha256": "0a48090248539cb7c7056b0e2d52fbec28d816fc936f93f2d6ef9a093bfc3a22",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        161,
+        1363,
+        863
+      ],
+      "marginFractions": [
+        0.0,
+        0.1572265625,
+        0.11263020833333333,
+        0.1572265625
+      ],
+      "evidence": [
+        "work/brief247/ma11-travel-card-v1-native-paper.jpg",
+        "work/brief247/ma11-travel-card-v1-native-dark.jpg",
+        "work/brief247/ma11-travel-card-v1-native-white.jpg",
+        "work/brief247/ma11-travel-card-v1-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-travel-card-v1.png",
+      "path": "public/assets/maths/ma11-travel-card-v1.png",
+      "brief": 247,
+      "lesson": "w06",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        900
+      ],
+      "qa": {
+        "result": "static pass",
+        "observations": [
+          "Blank reader screen and unlabelled tap pad; card has a wave and contactless symbol, no text, balance or network logo. No people or faces.",
+          "Native paper/dark and 300/600 px comparisons inspected. The reader has clear margins over 16 percent. Card major painted margins exceed 11 percent; very low-alpha specks remain recorded, with no visible halo.",
+          "Reader display is too small for the full balance at the requested 52 px text when the whole plate is only 520 px tall. Root must resolve that composition."
+        ],
+        "evidence": [
+          "work/brief247/travel-card-size-paper.jpg",
+          "work/brief247/travel-card-size-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-travel-card-v1.json"
+    }
+  ],
+  "result": "Travel card and reader delivered with screen, tap-pad and card-outline sidecars. Static native and 300/600 px checks pass. Build hold: the safe screen is about 85 by 49 px at the specified 520 px plate height, too small for the full balance at 52 px type. Root must resolve the readout composition. w07 vending-machine handoff remains held by its source blocker, so w06 is not a complete build-ready art package.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/travel-reader-anchors.jpg",
+    "work/brief247/travel-card-size-paper.jpg",
+    "work/brief247/travel-card-size-dark.jpg",
+    "work/brief247/travel-card-size-transforms.json"
+  ]
+}

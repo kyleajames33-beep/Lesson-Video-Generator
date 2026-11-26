@@ -10807,3 +10807,1992 @@ Google batch ledger phys-y12-m5-v18 all new takes accepted. 8 requests, sizes 3,
 Voice continuation, 2026-11-24: Science queue stopped; inspect its voice log before retry. Cached takes retained.
 
 Root (24 Nov): queued phys-y12-m5-v16 v2; work/release-queue/phys-y12-m5-v16-v2.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 8 (route order).
+
+### Brief 265: hook refresh (25 November 2026)
+
+{
+  "brief": 265,
+  "quotaDay": "2026-11-24",
+  "requests": 1,
+  "oldSeconds": 23.923,
+  "newSeconds": 24.56,
+  "oldAudioSha256": "337ef1ea3b023b81a81ec6629c034da6072fd9c43a18e421eeee90e669ceb25e",
+  "newAudioSha256": "4de13de15128a9f9d3d7b779a1afec975184bc06165dd4eeeb886e280d967394",
+  "gate": {
+    "pass": true,
+    "seconds": 24.56,
+    "characters": 354,
+    "charactersPerSecond": 14.41368078175896,
+    "rateExempt": true,
+    "insertedWords": 0,
+    "trailingInsertedWords": 0,
+    "failures": [],
+    "audio": "work/brief265/attempt1/hook.wav",
+    "audioSha256": "4de13de15128a9f9d3d7b779a1afec975184bc06165dd4eeeb886e280d967394",
+    "evidence": "work/google-runon-checks/4de13de15128a9f9d3d7b779a1afec975184bc06165dd4eeeb886e280d967394.json"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "exitCode": 0,
+      "requests": 1,
+      "gate": {
+        "pass": true,
+        "seconds": 24.56,
+        "characters": 354,
+        "charactersPerSecond": 14.41368078175896,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "work/brief265/attempt1/hook.wav",
+        "audioSha256": "4de13de15128a9f9d3d7b779a1afec975184bc06165dd4eeeb886e280d967394",
+        "evidence": "work/google-runon-checks/4de13de15128a9f9d3d7b779a1afec975184bc06165dd4eeeb886e280d967394.json"
+      }
+    }
+  ],
+  "measuredSha256": "57bb23a5c63dd146b346e7bf2b47c6dea4a7ed58ab86d2855ffb70312dda1337",
+  "allOtherScenesCuesHoldsAndNotesIdentical": true,
+  "v11": "Already voiced with current neutral hook by P5; no request or invalidation needed",
+  "humanListening": "pending"
+}
+
+Evidence: work/brief265/preparation-diff.json, word-time-diff.json and hand-in.json. Old audio, sidecars and measured files retained with .before-brief265. Human listening pending.
+
+Brief265 final source bookkeeping: measured SHA-256 38e9cb19d83eaf18ff279023b1e9a722480130144f20dad571cbe524a3b03aa1. Other measured scene objects and validation rows are deeply identical to .before-brief265. The current P5 v09 hand-in now selects the new captions; its earlier report is preserved. V11's old billing audio and sidecars are renamed .before-brief265, and its current neutral hook remains selected.
+
+### Briefs 267 to 270: HMS checks and recording preparation (25 November 2026)
+
+No speech requested. 82 prepared designs pass the recording gate. Two Module 1 designs stop with findings. The existing recording gate returns no duration estimate; the declared source estimate is reported separately. All 12 queue and Chemistry preparation tests pass (`work/brief267/tests.tap`). Human listening remains pending.
+
+
+#### Brief 267: hms-y11-m1-v01
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `dff503edb1cb173c7caac48411baede67ac5448df320e1a7ee8423717faed38f`. Prepared: yes. Planned night: 2026-11-27.
+
+6130 characters, 16 scenes; source estimate 565 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v01-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v02
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `3c414d975105b7f71ea1b898d0ea0972c378a0af80b707350ff014038419dee3`. Prepared: yes. Planned night: 2026-11-27.
+
+5704 characters, 16 scenes; source estimate 533 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v02-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v03
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `5824f7b5a0d5b75acb5c08fe3afdcaadb1daf8ed6ac99a6d69f607f1308280fe`. Prepared: yes. Planned night: 2026-11-27.
+
+6164 characters, 16 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v03-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v04
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `c1ffaa7947e2d074cda5cb0255f52fe08906b4c415be3a533db9bb39af952092`. Prepared: yes. Planned night: 2026-11-27.
+
+5667 characters, 15 scenes; source estimate 526 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v04-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v05
+
+Check: 0 blockers, 1 should fix. Source SHA-256: `6870f8f0fee27844d4cc4691e89f1f77fc5af1cfdda78e666e435b495541e94f`. Prepared: no. Planned night: held for root source repair.
+
+5886 characters, 15 scenes; source estimate 543 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v05-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v06
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `27890e7fb5ca02d46f4781ab8813ba6371649fc4817fcdb3fd0206571ac357d8`. Prepared: yes. Planned night: 2026-11-27.
+
+5542 characters, 15 scenes; source estimate 517 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v06-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v07
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `cc97af7c87364f8691285a49d0444bc551ba1f0ecf8162ee5ebfadf438cb431d`. Prepared: yes. Planned night: 2026-11-27.
+
+5972 characters, 15 scenes; source estimate 549 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v07-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v08
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `5d392a835165cd7e4ee477fdde1bcbe56c27018ffa32c5135dc19f5b2362ff52`. Prepared: yes. Planned night: 2026-11-27.
+
+5925 characters, 15 scenes; source estimate 545 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v08-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v09
+
+Check: 0 blockers, 1 should fix. Source SHA-256: `0cc24e1d61d459f1c941fc87c999ebd29c1b3c5e53499c0424643426f74b903e`. Prepared: no. Planned night: held for root source repair.
+
+6122 characters, 17 scenes; source estimate 566 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v09-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v10
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `a2189781e122dbc1e2069f4d472312874edda50601d4989d9019124ed92686a7`. Prepared: yes. Planned night: 2026-11-27.
+
+6224 characters, 15 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v10-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v11
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `3bef3dc1a8a370e4d0659c6256ccde3b5d1dd322f62f2ee992a9f385699d1751`. Prepared: yes. Planned night: 2026-11-27.
+
+5927 characters, 14 scenes; source estimate 544 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v11-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v12
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `3c699fb290cf061069e4ad2ad6c4f57091616abaf3dcd8221c354f318beaed38`. Prepared: yes. Planned night: 2026-11-27.
+
+5620 characters, 15 scenes; source estimate 526 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v12-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v13
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `81194c69a1128a5b5580a93591cba82a024fd37b4b8f90a0df81a451bba27ac8`. Prepared: yes. Planned night: 2026-11-27.
+
+6183 characters, 15 scenes; source estimate 565 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v13-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v14
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `318da75f72fe69ad0c0b9d25a31a9ecf823c729e2decd2af3bbb36ca0c377f50`. Prepared: yes. Planned night: 2026-11-27.
+
+6108 characters, 16 scenes; source estimate 561 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v14-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v15
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `3e59dd5023de3aad74ccbadb41278835694cb84872a0083f7f3896b6e53095de`. Prepared: yes. Planned night: 2026-11-27.
+
+6129 characters, 16 scenes; source estimate 563 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v15-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v16
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `808c89cd28d445cb7886b1b4555daa9fb2e30f6f972642e5f840da11794e3aa4`. Prepared: yes. Planned night: 2026-11-28, if earlier nights succeed.
+
+6180 characters, 16 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v16-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v17
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `47195d6afdd8f43fe7b6b85f9bae9df9b0b02254aa7326cb38a08c9f34c7e61f`. Prepared: yes. Planned night: 2026-11-28, if earlier nights succeed.
+
+6075 characters, 15 scenes; source estimate 557 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v17-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 267: hms-y11-m1-v18
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `9d5c496856b5b01f5bd211dc1d307465585e9a343dad81162228e16edeebf82e`. Prepared: yes. Planned night: 2026-11-28, if earlier nights succeed.
+
+5895 characters, 14 scenes; source estimate 541 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m1-v18-brief267-error-check.md`. Details and missing-plate fallbacks: `work/brief267/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v01
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `a32591765dfd68cf9b04121e16054319b8916c9acf99c7f4a52aad6be51271e4`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6199 characters, 16 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v01-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v02
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `cdf3e3c4d14286fc7f8eb74d0c267c5b46ea4a927aca0ecdb42e417af707c223`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6194 characters, 16 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v02-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v03
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `7a72ed4a3ecf786135fa61095a0001593cb2a2c2b7a201926f8a863e6d89e5ab`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6171 characters, 17 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v03-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v04
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `5e6aa89c2a4900249458dbd5902a7d7685b9d56cec22366d884b4fed94d5d223`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6174 characters, 16 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v04-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v05
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `39feffa743f56ac37e99a92fded3b13e3470b6cc6056d4d0fced6d68e49d0955`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6146 characters, 17 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v05-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v06
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `12f95284b71af54ebb52fce62eb3a2f2506f85411985eedffa7c3b20e90048b5`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6189 characters, 16 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v06-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v07
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `39e2cbfdb842e5e4aef35202debd43ee65d09cf1b248d5ccab541ce1af128ff0`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6146 characters, 16 scenes; source estimate 566 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v07-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v08
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `7a7eb8b985eb8ac93e1ae47c923c99a020dcb5bdd9036a2a9113b551f955b9bb`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6155 characters, 16 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v08-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v09
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `77a6d27854cfdc921b66aea645ffba5995e26494be7779c479376067255606ea`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6199 characters, 16 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v09-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v10
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `777a4def6b644620c4f75f20e960a3e993dcd93995cac89e6b04edee142e0951`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6082 characters, 16 scenes; source estimate 561 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v10-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v11
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `532139e5b9463096cc8cc5ab8e9fdba05142f1dc28af2aa9cf26fd3b4af379f0`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+5958 characters, 15 scenes; source estimate 550 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v11-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v12
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `b0060defce0fedddbb7117ecbf04369a179b219a9521926988007f65aeae0b65`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6135 characters, 14 scenes; source estimate 563 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v12-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v13
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `fc79c56f6514be51c3c92a081b2b4725bf8ca6255999fdc99a9bbcb86831a144`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+5812 characters, 14 scenes; source estimate 537 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v13-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v14
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `b356f78c136c4eb7fbc550b64a2e737fa835ebeee21e35792ac245a5efc3ab1b`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6208 characters, 14 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v14-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v15
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `fc2ad02c7b9c1d2a21ebd8137ef725ef3f5c99b91005bb50267792f82abfb06c`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6132 characters, 14 scenes; source estimate 561 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v15-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v16
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `6b281c9b6d19f60a44ea064c396e447c18f91129bd2fa84e69053b43c63b060b`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6141 characters, 13 scenes; source estimate 560 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v16-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v17
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `0a27d6caac2bc74dd89150f14e2066434f5bdb63678733c2f9dd16478f528de9`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6135 characters, 13 scenes; source estimate 559 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v17-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v18
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `72b59a04ae73831015012f537e75b8fb092cd8df4ba3edb63295cb009ceb60aa`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+5809 characters, 14 scenes; source estimate 537 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v18-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v19
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `400bfc5666300fc2b5571092b1df1422546ecc02d8003b12d4d1b130440531a7`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6023 characters, 13 scenes; source estimate 551 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v19-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v20
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `be5dd46dda3ae662b43ef442689fb55b5828cba261f18c68580c93d060755cfb`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+6176 characters, 14 scenes; source estimate 564 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v20-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v21
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `beaa537831763ff1510b895ad405a5b04a570b3e521be24b3074f5b2e33e0456`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+5686 characters, 14 scenes; source estimate 528 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v21-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 268: hms-y11-m2-v22
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `65a97af992363d74127204c0e193f027e93b6607e0b0103ee55d2f8c39fac8d3`. Prepared: yes. Planned night: after HMS Module 1; date held until earlier Module 1 findings are resolved.
+
+5920 characters, 13 scenes; source estimate 543 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y11-m2-v22-brief268-error-check.md`. Details and missing-plate fallbacks: `work/brief268/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v01
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `27b0e9b7ddd547267e66c86f9af64ed37c0fcad84cef4056dd6360a3e5587775`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+5764 characters, 14 scenes; source estimate 534 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v01-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v02
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `17fb05b08a5cbc9bbf80b2c1cd25b4e4cf406ab3f4c19a8ac3d5b77fd57706c5`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6173 characters, 14 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v02-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v03
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `c9eea9067330fef3488fae6e70f05cc4032c6fd7c1497885f06c8d86486f5d04`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6118 characters, 15 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v03-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v04
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `d96e57fa33586ecb1214e5ae4386f0273b6e492f35f67d0f80982b7fed5103b6`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6192 characters, 13 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v04-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v05
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `0e7a167ca6df775c1d28d1e3cb8694d3420e7c822596db662e23227e83f2a2da`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6158 characters, 15 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v05-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v06
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `cd1d0058c32805aee5f001623b8c4cb23fffb3845decd024c629387feee9de5f`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6105 characters, 14 scenes; source estimate 564 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v06-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v07
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `f38f91bdfe3761c5eb312cb2a006e611dd7126f74a50090d2fbd966028f857d5`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6036 characters, 13 scenes; source estimate 554 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v07-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v08
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `a715196c43aefeca4b4a206c38de41b365471e3223b3483a79f1c2cd857aff72`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+5886 characters, 13 scenes; source estimate 544 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v08-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v09
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `453a26500d6226e36360189f81946faa2d7b1227647671a679dd913b28f9f5be`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6219 characters, 13 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v09-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v10
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `9f2673ccba9bf65a745b31cc2ed8a3a995f632c263334e63625e37b9416d0caa`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6161 characters, 14 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v10-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v11
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `fbff4f7c7740ef983cc07c189fdd52b3389ae9f55abc16779e1dd2b8a0006727`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6202 characters, 14 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v11-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v12
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `2fab80574ff73aa444e69062182053ed79c17f8b3988926713c960f6fa76c6f5`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6153 characters, 14 scenes; source estimate 566 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v12-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v13
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `77afce6601df53c8f7b362e5e10023dab65fc2ec4f919b5a40a3640da434f1ba`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+5939 characters, 13 scenes; source estimate 547 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v13-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v14
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `85d8ce9c1229714f25cd1e2f4771d3aa37a30708fb22af7dc561b49080f97384`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6199 characters, 14 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v14-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v15
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `5ad49763d8839ccfc7f5964746db8661bdc3cffd6290f249d6e53e6d8ff94a71`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+5881 characters, 14 scenes; source estimate 545 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v15-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v16
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `e45f1cad83f99ab152124ca70744b4ef2b99870fddfbdef47047c262a4549173`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+5991 characters, 14 scenes; source estimate 555 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v16-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v17
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `d3bbdea46bd82443bbd9954ae1a29044b6860a620bff8ebbd434c840ea7f952b`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6177 characters, 13 scenes; source estimate 564 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v17-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v18
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `2281e9e6e7636b064dfee49b4871b305db147eb00a311d2f3ff1d419f293b989`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6156 characters, 14 scenes; source estimate 566 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v18-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v19
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `9b2903cab2ce849c45758d46d8b7c622e5d80c3a90f17a47cd0ced426b7557e1`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6017 characters, 13 scenes; source estimate 552 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v19-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v20
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `bc373310e6a5b07d3f70462ef3f10da4014d63df63672bd95eb073bd777bf86c`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6176 characters, 13 scenes; source estimate 564 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v20-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v21
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `af9f516fc8e02e970936e876f6310998a02ce3ef3aa731421a94ec3155048558`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6244 characters, 13 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v21-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+#### Brief 269: hms-y12-m3-v22
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `b69c24f9779581c13ff341f03a216cd72a77cb2d23c56c9d91262cae3ad85905`. Prepared: yes. Planned night: after HMS Module 2; date held until earlier Module 1 findings are resolved.
+
+6247 characters, 13 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m3-v22-brief269-error-check.md`. Details and missing-plate fallbacks: `work/brief269/hand-in.json`.
+
+
+Release rechecks: `checks/brief269-release-rechecks.md`.
+
+
+#### Brief 270: hms-y12-m4-v01
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `bb80beebc9026735cdbbe6a96e045fb5c693827b2193b9dc882965c1cfedf696`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6151 characters, 14 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v01-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v02
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `fedaa002607ea0f7af61df06ab9b36d364af819f72e961077cc79a16abb78eec`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6156 characters, 14 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v02-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v03
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `59bc7a151658afa9eb76fcd6a0d65f15fd77927876ed656bc8014e9086d57a27`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6187 characters, 13 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v03-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v04
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `a696a49e1caea6481d395cea8e6d6add19619e70ea630c92e133e8b2c50495b6`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6226 characters, 13 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v04-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v05
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `a6fa917231aa8eafbbda735429e2c8d17e1381c44688513d68fe56820083b929`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6181 characters, 14 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v05-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v06
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `e19e228225e3cd20593d6963306965419c1dc994d478c73c2e3aa3637fbc5a08`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6183 characters, 14 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v06-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v07
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `398a6b555111a195c0f7081d2755fb96ab558fe01237b38402baeefcdbd60786`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6108 characters, 13 scenes; source estimate 561 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v07-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v08
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `3168722af5f466a0fdbbb982dc2db52097cb5d227dc90cb3b57999b89ef24fff`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+5959 characters, 13 scenes; source estimate 551 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v08-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v09
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `7b155c31f9b2278ca3ad3aea0f92646d4277a22000dbe1a51ea7e7b4e65c673d`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6079 characters, 14 scenes; source estimate 562 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v09-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v10
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `5900354ffeec9a42807bdbdacd55862dce53c926fbc78890a48ff4f46385b579`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6131 characters, 13 scenes; source estimate 563 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v10-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v11
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `0c88f3b836361481582dc460a7f0ffcc4734a32aa47172147ceb9d5016fefd95`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6201 characters, 13 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v11-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v12
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `e210afb18e0929dc2ed41e95af3fb53709a440967e18c44a22700f54ceaf0632`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6111 characters, 15 scenes; source estimate 566 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v12-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v13
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `51e6da92a39b7666e227bafb8f7b63f3ab1687dd8e8d75d2ea007d48da3188c7`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+5966 characters, 13 scenes; source estimate 553 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v13-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v14
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `471fb4585cf9c6cd495fa18d6193fe338d19f287937e167dbb676beb5a2a0c92`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+5955 characters, 13 scenes; source estimate 552 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v14-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v15
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `8c15659aa85d0d3f76980d174da042804f5278517b42d7417e9a76692e6cf0c9`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6150 characters, 13 scenes; source estimate 564 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v15-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v16
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `2596d9f2993681301c0526e3ef76343f592552d70f7654fe422920476b287438`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6243 characters, 13 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v16-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v17
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `32d8603428a98662cace38aef28a87074db8a9b53b403c29ce45df4efb1eb2b3`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+5968 characters, 13 scenes; source estimate 552 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v17-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v18
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `6fe141627007bfd521eac723e218d8daa98f6d1d281c72576a2379cf9c929107`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6216 characters, 13 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v18-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v19
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `9b94a7200a6c8e7fac43619f8fbdf4e226d67742a50f273790dca18210fcc958`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6214 characters, 13 scenes; source estimate 569 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v19-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v20
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `67ad2222c4417e8c26b80a7f4f5421685bc733b53f0d29427b195969aa67390b`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6189 characters, 14 scenes; source estimate 570 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v20-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v21
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `4006896ec01c449021e6bb04f553c5a5dddb6d08f18442c19a3d73d9794bcf56`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6179 characters, 13 scenes; source estimate 567 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v21-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+#### Brief 270: hms-y12-m4-v22
+
+Check: 0 blockers, 0 should fix. Source SHA-256: `ba3d36435e0abba7b4fb40934a1dad05cd5838ec4f3704180041d06d36c4d0a5`. Prepared: yes. Planned night: after HMS Module 3; date held until earlier Module 1 findings are resolved.
+
+6227 characters, 13 scenes; source estimate 568 s; recording gate duration estimate: not provided. Check: `docs/production/claude-pm/checks/h-y12-m4-v22-brief270-error-check.md`. Details and missing-plate fallbacks: `work/brief270/hand-in.json`.
+
+
+Release rechecks: `checks/brief270-release-rechecks.md`.
+
+
+The Module 4 concussion and WADA source checks pass: `checks/brief270-official-source-checks.md`. The current guideline PDF itself was read. No listening or release approval follows.
+
+
+### Brief 271: source preflight holds (25 November 2026)
+
+Official facts: `checks/maths-standard-y11-official-facts.md`. No design edits or speech. These are failed count preflights, not completed maths approvals. Full arithmetic, joins and anchor checks remain pending.
+
+
+#### Brief 271: math-s11-a01
+
+Source SHA-256 `44600567cd41704f2c601c508bbf5c51d2025f5885cd16367c7ddbebf105d775`. Count preflight: 1 should fix; scene-string sum 5738. Prepared: no. Voice: held. Check: `checks/m-s11-a01-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a02
+
+Source SHA-256 `2ee647655164ad7bf063aabf62ddeb677ab084fdadb3aee2f6c3c862e46801c7`. Count preflight: 1 should fix; scene-string sum 5608. Prepared: no. Voice: held. Check: `checks/m-s11-a02-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a03
+
+Source SHA-256 `7ef0c9e21c336a207e0eff8972aea06ed16360823880e3fd8f960df33030d498`. Count preflight: 1 should fix; scene-string sum 5425. Prepared: no. Voice: held. Check: `checks/m-s11-a03-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a04
+
+Source SHA-256 `b00316d228fc5b069b2b1bfc3b9336789b9c2a0a9b1dfbd0b5d561b13d73d2a7`. Count preflight: 1 should fix; scene-string sum 6150. Prepared: no. Voice: held. Check: `checks/m-s11-a04-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a05a
+
+Source SHA-256 `08cf9713bb9e97f3009eabaa0c9c5ddd427c61e708dcb6bf8f4994e79c6e1f0c`. Count preflight: 1 should fix; scene-string sum 5582. Prepared: no. Voice: held. Check: `checks/m-s11-a05a-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a05b
+
+Source SHA-256 `6b78aeb8863a2c48c87e9edd7c5b7368b82c88335687b9a115aca6420355f7ed`. Count preflight: 1 should fix; scene-string sum 6001. Prepared: no. Voice: held. Check: `checks/m-s11-a05b-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a06
+
+Source SHA-256 `06ca1b26f2d1c8fe4773762240e1fa583469744f5248392b26a6dcaa4e307a80`. Count preflight: 1 should fix; scene-string sum 5485. Prepared: no. Voice: held. Check: `checks/m-s11-a06-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a07
+
+Source SHA-256 `4d522657ed0890bbcee347904148600657238bc0f0c9d45ad315f1e9afe2da98`. Count preflight: 1 should fix; scene-string sum 6042. Prepared: no. Voice: held. Check: `checks/m-s11-a07-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a08
+
+Source SHA-256 `f763c00b5c5f2f2f64b70c27d4c2dd6deb788f18ab0dbc2639edf2edb4f46b79`. Count preflight: 1 should fix; scene-string sum 5601. Prepared: no. Voice: held. Check: `checks/m-s11-a08-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a09
+
+Source SHA-256 `d93b9d97e52a7ff38204cb03733b777c1845ae6315c80834ab43a75253cae706`. Count preflight: 1 should fix; scene-string sum 5573. Prepared: no. Voice: held. Check: `checks/m-s11-a09-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a10
+
+Source SHA-256 `18d8271f138f5c0b81cd4ae678f51a57160101a8a1f56e53944bdc6c3a04cd87`. Count preflight: 1 should fix; scene-string sum 5639. Prepared: no. Voice: held. Check: `checks/m-s11-a10-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-a11
+
+Source SHA-256 `6be94e910990f2f47127c820e0fc6fd53697916be0f34f55487779d95231f9d6`. Count preflight: 1 should fix; scene-string sum 5747. Prepared: no. Voice: held. Check: `checks/m-s11-a11-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m01
+
+Source SHA-256 `083b2037302abb5435bbc7ab0e16a2fe44255875795267187586fc25d253124e`. Count preflight: 1 should fix; scene-string sum 5849. Prepared: no. Voice: held. Check: `checks/m-s11-m01-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m02
+
+Source SHA-256 `86d5f771407caa3e4eec6318a42292bd1091b84bd4ec35eeee9455331f767d61`. Count preflight: 1 should fix; scene-string sum 5487. Prepared: no. Voice: held. Check: `checks/m-s11-m02-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m03
+
+Source SHA-256 `f65018929c50120378dc70f7691b2a34b433377dd8ae33ccfffac9bba0d7fa26`. Count preflight: 1 should fix; scene-string sum 5696. Prepared: no. Voice: held. Check: `checks/m-s11-m03-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m04
+
+Source SHA-256 `693d71867cc07bafdfe8c7dcb131cd38f57ff858d3e83443b2156bddd6845cea`. Count preflight: 1 should fix; scene-string sum 5627. Prepared: no. Voice: held. Check: `checks/m-s11-m04-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m05
+
+Source SHA-256 `238e01298a969492d2cc81eb1b6e6659798184237363fe04cf184757cce22556`. Count preflight: 1 should fix; scene-string sum 6229. Prepared: no. Voice: held. Check: `checks/m-s11-m05-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m06
+
+Source SHA-256 `82ef72ff1b8928733d863a60431a2ee4987f4aa58f32cb96fc77c04eb968b1d5`. Count preflight: 1 should fix; scene-string sum 6216. Prepared: no. Voice: held. Check: `checks/m-s11-m06-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m07
+
+Source SHA-256 `b439d36ca692710f24a6c1e8ce25e96fcf25b28d4f46acd366edb553006d4d53`. Count preflight: 1 should fix; scene-string sum 5950. Prepared: no. Voice: held. Check: `checks/m-s11-m07-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m08
+
+Source SHA-256 `c8e746008863e70fae2d3ccd5f74e16f19a84cf84d0e497b9ef29103f223d44d`. Count preflight: 1 should fix; scene-string sum 5737. Prepared: no. Voice: held. Check: `checks/m-s11-m08-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-m09
+
+Source SHA-256 `574d799d58898537eec36914a1f473563c9ced440bcbb7ce7050bc28e34ec61c`. Count preflight: 1 should fix; scene-string sum 5539. Prepared: no. Voice: held. Check: `checks/m-s11-m09-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n01
+
+Source SHA-256 `4cec4c92b1997747e48a6f293f53f51d60929e4b1a45e8a8e9ad1b7a031940b5`. Count preflight: 1 should fix; scene-string sum 5508. Prepared: no. Voice: held. Check: `checks/m-s11-n01-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n02
+
+Source SHA-256 `011db533f029bc9af62eecf2b618931dde4d82479a87e72d95c3d819ffcc2d7a`. Count preflight: 1 should fix; scene-string sum 5586. Prepared: no. Voice: held. Check: `checks/m-s11-n02-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n03
+
+Source SHA-256 `73ed4261680d64d1130a43eb9b03ab0e53bd358e36fb5d3b0eea7484a845dddb`. Count preflight: 1 should fix; scene-string sum 5652. Prepared: no. Voice: held. Check: `checks/m-s11-n03-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n04
+
+Source SHA-256 `84433f1ae2c8ab7a2caf055f7ebb11a80b142fb7e0f014a4991933e473fcb2f4`. Count preflight: 1 should fix; scene-string sum 5488. Prepared: no. Voice: held. Check: `checks/m-s11-n04-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n05
+
+Source SHA-256 `d122815aa6abf544637be0ab79bfcc9b5d34480eaeebf4d8603dfe905662f9cf`. Count preflight: 1 should fix; scene-string sum 5446. Prepared: no. Voice: held. Check: `checks/m-s11-n05-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n06
+
+Source SHA-256 `e64c4dd6255f6505b80cd96f19b2bac93dee60ea79f481bbd0f5acd559fe2d90`. Count preflight: 1 should fix; scene-string sum 5546. Prepared: no. Voice: held. Check: `checks/m-s11-n06-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-n07
+
+Source SHA-256 `8234e5a1371f9b2eda5ed841ba22d14aec2c287a0555fb4dc159faecbc522aa6`. Count preflight: 1 should fix; scene-string sum 5477. Prepared: no. Voice: held. Check: `checks/m-s11-n07-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-t01
+
+Source SHA-256 `61198b95fcdcd87fd9138ec070e6d9fa40ca21d259b5f94a95700909e8a289bb`. Count preflight: 1 should fix; scene-string sum 5880. Prepared: no. Voice: held. Check: `checks/m-s11-t01-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-t02
+
+Source SHA-256 `cfdb8edb69b19bf160f44e446b200815a82908724c91ad2c96d2aa9468d6f247`. Count preflight: 1 should fix; scene-string sum 5806. Prepared: no. Voice: held. Check: `checks/m-s11-t02-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-t03
+
+Source SHA-256 `fb8866cc4026916a95edcb3a75b02808c3150330f545dba2fd816657babe3592`. Count preflight: 1 should fix; scene-string sum 6030. Prepared: no. Voice: held. Check: `checks/m-s11-t03-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-t04
+
+Source SHA-256 `ec397e4e0a9b3684bfe3808f1864b0cbfa7060e21e50ebfacfae847bb83ac5ec`. Count preflight: 1 should fix; scene-string sum 5582. Prepared: no. Voice: held. Check: `checks/m-s11-t04-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-t05
+
+Source SHA-256 `538aac68ba39c8f1112e8697681914fcc07f943a9c58f183810be3bab0bd0e34`. Count preflight: 1 should fix; scene-string sum 5586. Prepared: no. Voice: held. Check: `checks/m-s11-t05-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 271: math-s11-t06
+
+Source SHA-256 `569bf752a4689043b22e966a74cc189e886c8eaa9cd6016d968d607102364b59`. Count preflight: 1 should fix; scene-string sum 5775. Prepared: no. Voice: held. Check: `checks/m-s11-t06-maths-check.md`. Full maths and joins remain pending.
+
+
+### Brief 272: source preflight holds (25 November 2026)
+
+Official facts: `checks/maths-standard-y11-official-facts.md`. No design edits or speech. These are failed count preflights, not completed maths approvals. Full arithmetic, joins and anchor checks remain pending.
+
+
+#### Brief 272: math-s11-d01
+
+Source SHA-256 `5084a5f99efe66902eb63be5af5c9978c6b9bd72aef5c54a236d9fad3f597274`. Count preflight: 1 should fix; scene-string sum 5649. Prepared: no. Voice: held. Check: `checks/m-s11-d01-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d02
+
+Source SHA-256 `4a8362496a5e8ac65fffe010e9cefa328f0c327ad85b90ff0400a24cce08abb1`. Count preflight: 1 should fix; scene-string sum 5743. Prepared: no. Voice: held. Check: `checks/m-s11-d02-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d03
+
+Source SHA-256 `790f52db4e7b170a8505992d768b1f4e4d08108f35624e90410d9a7b93cf4a5e`. Count preflight: 1 should fix; scene-string sum 5516. Prepared: no. Voice: held. Check: `checks/m-s11-d03-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d04
+
+Source SHA-256 `b3cbe9b8c8c16313f4a7a6861766386f058c43d6e370d5424e1530536934fb5b`. Count preflight: 1 should fix; scene-string sum 5635. Prepared: no. Voice: held. Check: `checks/m-s11-d04-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d05
+
+Source SHA-256 `c5ba0ff5cee24b53128456350d550c2b0a12fe2aed62b535c35d6cf2b1e7fe75`. Count preflight: 1 should fix; scene-string sum 5509. Prepared: no. Voice: held. Check: `checks/m-s11-d05-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d06a
+
+Source SHA-256 `db0f839c3b053dea1916f9e14974a0a2a465535b8ebe60eae7c1c3107760418e`. Count preflight: 1 should fix; scene-string sum 5555. Prepared: no. Voice: held. Check: `checks/m-s11-d06a-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d06b
+
+Source SHA-256 `da44cd69b2b56b6029140273afe9561313064313a1e1053acdeeadcdb30de493`. Count preflight: 1 should fix; scene-string sum 5538. Prepared: no. Voice: held. Check: `checks/m-s11-d06b-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d07
+
+Source SHA-256 `aa749b266f345e57ecb8aff07de7a3942c5b6a84dd3a4da49378c29ca3923baf`. Count preflight: 1 should fix; scene-string sum 5549. Prepared: no. Voice: held. Check: `checks/m-s11-d07-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d08
+
+Source SHA-256 `fdc526d7e392ac0da849ffad4997855634b03d6244351de08b70341cb256bc0e`. Count preflight: 1 should fix; scene-string sum 5575. Prepared: no. Voice: held. Check: `checks/m-s11-d08-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d09
+
+Source SHA-256 `e6048928038ed76032f1de86e43033388e3564c7f07b32475d088a86428f180a`. Count preflight: 1 should fix; scene-string sum 5654. Prepared: no. Voice: held. Check: `checks/m-s11-d09-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d10
+
+Source SHA-256 `5a55a7568c5d1d2026a63590227736bfab8ad8f08b23ffd7afc1332f7d6b522b`. Count preflight: 1 should fix; scene-string sum 5556. Prepared: no. Voice: held. Check: `checks/m-s11-d10-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d11
+
+Source SHA-256 `b88c610d7d0b1fb728c0c1ba6d9e9c1871916a8bdc213ae08190dd544a46e907`. Count preflight: 1 should fix; scene-string sum 5506. Prepared: no. Voice: held. Check: `checks/m-s11-d11-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d12
+
+Source SHA-256 `a85299a3db48b029d1d1ec8717525ed7a6f76c07d46471ccdfa2cde303acc3cb`. Count preflight: 1 should fix; scene-string sum 5471. Prepared: no. Voice: held. Check: `checks/m-s11-d12-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d13
+
+Source SHA-256 `ce87a1a37e183630deb0e79e4e0f2e0f9e44383d50164f0067b7247864f4f3f9`. Count preflight: 1 should fix; scene-string sum 5751. Prepared: no. Voice: held. Check: `checks/m-s11-d13-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d14
+
+Source SHA-256 `1f5405ac408cd3142ae321a96dfe69bd83e7ef5651aeca307bbfa79a9eb1e8c4`. Count preflight: 1 should fix; scene-string sum 5534. Prepared: no. Voice: held. Check: `checks/m-s11-d14-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d15
+
+Source SHA-256 `a3ad546146f1ae21143a7cc595a3c0b89de90810967420219ff1e7bd87109b20`. Count preflight: 1 should fix; scene-string sum 5490. Prepared: no. Voice: held. Check: `checks/m-s11-d15-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d16
+
+Source SHA-256 `86639d3b5974dd5fb040e76cf5b75357d7b1bedc1c19bf3fe2bb568f1f1ff15a`. Count preflight: 1 should fix; scene-string sum 5526. Prepared: no. Voice: held. Check: `checks/m-s11-d16-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d17
+
+Source SHA-256 `58d89b1ada6f8e897db34b12109992ebb6b38fb9d71ce26b22082dc0e21486f0`. Count preflight: 1 should fix; scene-string sum 5587. Prepared: no. Voice: held. Check: `checks/m-s11-d17-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d18
+
+Source SHA-256 `00eceea789d8a15eb76ab9d006cc6b35c50d40e8e1da2d97181d658452863243`. Count preflight: 1 should fix; scene-string sum 5576. Prepared: no. Voice: held. Check: `checks/m-s11-d18-maths-check.md`. Full maths and joins remain pending.
+
+
+#### Brief 272: math-s11-d19
+
+Source SHA-256 `83b83e8593dcb27e98400f71836436e303b09dffe4380e7f28b5811e4b509af7`. Count preflight: 1 should fix; scene-string sum 5496. Prepared: no. Voice: held. Check: `checks/m-s11-d19-maths-check.md`. Full maths and joins remain pending.
+
+
+Brief272 extra checks: d02 first shows the full label "140 live nearby" in scene 12. The 12/8 sleep subsets recombine exactly into the 20-value sample. d13 now teaches that extremes change sigma; Year 12 z02 and z03 retain compatible calculator/spread recalls. Population sigma and the d19 half-up display rounding are checked in `work/brief272/check-core-data.py`. The remaining recurring-data and full calculation/joins checks are not claimed complete.
+
+
+### Brief 273: banked tracks prepared and queued (25 November 2026)
+
+Current-source error check: 0 blockers, 0 should fix. Source SHA-256 `5d43eb6b04a8c72e91057c83e5dae020a75161c865485e18473bc9735c9a6dff`. 5609 characters. Prepared into `lessons/p-y12-m5-v14/` and appended after v15 in P5. Dry-run night: 2026-11-25, conditional on earlier P5 completion and request availability. Requests for this brief: 0. Recording gate passes; speech gate and measured SHA-256 pending. Current quota window already has 83 requests; all earlier P5 work retains priority. Evidence: `work/brief273/hand-in.json`. Human listening pending.
+
+### Briefs 263 to 273: current batch hand-in (25 November 2026)
+
+This batch is partially complete. The following is the current result, not a claim that all eleven briefs are finished. Designs were not edited. No agents, commits, renders or publication. Human listening remains pending. Final verification: `work/brief273/final-verification.json`. Queue and preparation tests: 12 passed, 0 failed.
+
+- Brief263: reverified the existing 21 recording preparations and preserved the m3-v06 science/learning hold.
+
+- Brief264: verified all 92 accepted asset files against their manifest hashes. The registered arm-muscle overlay remains rejected. Existing official-fact findings were reused in the later Maths fact report.
+
+- Brief265: completed v09 hook replacement with 1 Google request; machine take gate passes with no inserted or trailing words. New audio 24.560 seconds, SHA-256 `4de13de15128a9f9d3d7b779a1afec975184bc06165dd4eeeb886e280d967394`. Measured lesson SHA-256 `38e9cb19d83eaf18ff279023b1e9a722480130144f20dad571cbe524a3b03aa1`. Every other scene object and validation row is unchanged. v11 already uses the current neutral hook; no duplicate request. Old v11 billing-test take and sidecars were preserved with `.before-brief265` names. Evidence: `work/brief265/hand-in.json`.
+
+- Briefs 267 to 270: 82 HMS lessons prepared (16+22+22+22). All 82 recording gates pass. M1v05 holds for a 98 character key note, M1v09 for an en dash forbidden by brief 267. No HMS speech requested. Per-design hand-ins remain in `work/brief267` through `work/brief270`. Current concussion guideline and WADA list checks are in `checks/brief270-official-source-checks.md`; release rechecks and human listening remain required.
+
+- Brief 273: banked-tracks v14 passes the current-source error check and recording preparation, and sits after v15, last in P5. Not voiced. The current quota window has 83 requests; earlier P5 lessons need 62 planned requests and retain priority. Night dates are conditional estimates, not completed bookings or guarantees.
+
+#### Brief266: rejected anchor and remaining plates
+
+`assets/brief266-manifest.json` and `work/brief266/plate-inventory.json` list exact source uses and destinations. No new HMS public asset installed. The required brief 264 arm anchor must pass before later plates.
+
+- Rejected `work/brief266/image-attempts/arm-overlay-attempt1.png`, SHA-256 `88997e7676a8024a3979ecaba3edd51f4a0872c8aa0fee6bde3b2e4b6ce8d190`: Biceps tendon extends too far along the forearm; attachment is anatomically wrong.
+
+- Rejected `work/brief266/image-attempts/arm-overlay-attempt2.png`, SHA-256 `34f93ad7d04a650927243ddbba9bddedb743969425047c1aa768785fdbc2b9e5`: Canvas differs from the base (1012x1554 versus1001x1572); biceps and triceps tendon attachments do not register with the radius and ulna.
+
+
+All 52 leftovers for the next run (including the unresolved anchor):
+
+- `hms-arm-muscles-overlay-v1.png`. Uses: m2-v02 (anchor overlay); v03.
+
+- `hms-free-throw-line-v1.png`. Uses: m2-v16 (anchor); later v17.
+
+- `hms-tennis-racquet-ball-v1.png`. Uses: m2-v16; later v17, v18.
+
+- `hms-beep-test-cones-v1.png`. Uses: m2-v15.
+
+- `hms-pool-start-block-v1.png`. Uses: m2-v14.
+
+- `hms-heart-rate-watch-v1.png`. Uses: m2-v13 handoff; v14.
+
+- `hms-shot-and-spikes-v1.png`. Uses: m2-v11.
+
+- `hms-fuel-foods-v1.png`. Uses: m2-v11; later Y12 m4 v14.
+
+- `hms-400m-start-stagger-v1.png`. Uses: m2-v09.
+
+- `hms-golf-green-hole-v1.png`. Uses: m2-v17.
+
+- `hms-triple-jump-pit-v1.png`. Uses: m2-v17.
+
+- `hms-empty-playground-v1.png`. Uses: m2-v20 (anchor).
+
+- `hms-knee-brace-kit-bag-v1.png`. Uses: m2-v20.
+
+- `hms-dawn-park-mats-v1.png`. Uses: m2-v22 (anchor).
+
+- `hms-home-treadmill-v1.png`. Uses: m2-v22.
+
+- `hms-remote-airstrip-v1.png`. Uses: y12-m3-v03.
+
+- `hms-dental-chair-v1.png`. Uses: y12-m3-v04.
+
+- `hms-walking-frame-bench-v1.png`. Uses: y12-m3-v07.
+
+- `hms-community-bus-ramp-v1.png`. Uses: y12-m3-v07.
+
+- `hms-hospital-entrance-v1.png`. Uses: y12-m3-v08 (anchor); v09 opening.
+
+- `hms-discharge-bag-v1.png`. Uses: y12-m3-v09 (anchor).
+
+- `hms-pharmacy-counter-v1.png`. Uses: y12-m3-v11.
+
+- `hms-home-entry-ramp-v1.png`. Uses: y12-m3-v11.
+
+- `hms-supplement-shelf-v1.png`. Uses: y12-m3-v12 (anchor).
+
+- `hms-treatment-table-v1.png`. Uses: y12-m3-v12.
+
+- `hms-green-tea-cups-v1.png`. Uses: y12-m3-v13 (hook).
+
+- `hms-smoke-haze-street-v1.png`. Uses: y12-m3-v14.
+
+- `hms-home-bp-monitor-v1.png`. Uses: y12-m3-v15.
+
+- `hms-keyhole-instrument-tray-v1.png`. Uses: y12-m3-v15.
+
+- `hms-chest-xray-lightbox-v1.png`. Uses: y12-m3-v16.
+
+- `hms-server-rack-v1.png`. Uses: y12-m3-v18.
+
+- `hms-housing-near-transit-v1.png`. Uses: y12-m3-v20.
+
+- `hms-edge-estate-v1.png`. Uses: y12-m3-v20.
+
+- `hms-community-garden-v1.png`. Uses: y12-m3-v21.
+
+- `hms-gym-reception-desk-v1.png`. Uses: y12-m4-v01.
+
+- `hms-cycle-ergometer-v1.png`. Uses: y12-m4-v02 (Wingate; reused in v03).
+
+- `hms-plyo-box-v1.png`. Uses: y12-m4-v03.
+
+- `hms-weight-machine-v1.png`. Uses: y12-m4-v05.
+
+- `hms-rowing-shell-rack-v1.png`. Uses: y12-m4-v07.
+
+- `hms-archery-target-v1.png`. Uses: y12-m4-v12.
+
+- `hms-windsock-ground-v1.png`. Uses: y12-m4-v13.
+
+- `hms-scale-bottle-v1.png`. Uses: y12-m4-v14 (reused in v15).
+
+- `hms-meal-prep-container-v1.png`. Uses: y12-m4-v15 (v16 opening).
+
+- `hms-coffee-cup-scoop-v1.png`. Uses: y12-m4-v16.
+
+- `hms-ice-bath-tub-v1.png`. Uses: y12-m4-v18.
+
+- `hms-gps-vest-shoe-v1.png`. Uses: y12-m4-v19.
+
+- `hms-ankle-ligaments-v1.png`. Uses: y12-m4-v20 (reused in v21).
+
+- `hms-ice-pack-bandage-v1.png`. Uses: y12-m4-v21.
+
+- `hms-blister-pack-sharps-v1.png`. Uses: y12-m4-v22 (also v21's handoff).
+
+- `hms-sample-kit-v1.png`. Uses: y12-m4-v22.
+
+- `hms-crowded-room-v1.png`. Uses: y12-m3-v02 (Revision 2).
+
+- `hms-fibre-cross-section-v2.png`. Uses: m2-v02, m4-v08.
+
+
+#### Briefs 271 and 272: Maths sources held, full checks incomplete
+
+All 54 sources fail the required scene-string-sum character-count preflight. None was prepared or voiced. Root must apply the official facts and source repairs under these briefs' no-design-edit rule. Full Numbers-to-verify coverage, actual visual frame joins, semantic anchor comparisons and remaining copy checks are still pending. This work is not a maths recording approval.
+
+Additional checks now complete: 164 exact arithmetic spot checks across money/measurement; exhaustive simple paths and spanning trees for 19 specified graphs ; 15 dated time conversions ; 15 recurring statistics datasets; all explicit recurring 20 sleep/30 screen lists ; 151 drag stops for d19; d13 Bus B/Bus C/breakdown arithmetic; d02 full first nearby label; every description syllabus quote matches the captured official crosswalk; all 54 metadata title links agree in playlist order. These checks do not cover every Numbers-to-verify line. Evidence: `work/brief271` and `work/brief272`, especially their hand-in JSON files.
+
+The unchanged Revision 1 labels on n01, d05, d15 are explicitly authorised by their learning-resolution logs and add no new learning hold. The scan false positives and 9 confirmed cue findings are recorded in `work/brief271/source-contract-triage.json`.
+
+
+math-s11-a01, additional findings (source SHA-256 `44600567cd41704f2c601c508bbf5c51d2025f5885cd16367c7ddbebf105d775`):
+
+- {"scene": 2, "code": "cue-order", "severity": "should-fix", "message": "Visual first cues \"biggest at the top\", then returns to \"prefix\", \"Milli\", \"Centi\" and \"kilo\", which narration says earlier. Order the cue plan by the actual spoken positions. The later generic \"metres\" and \"kilometre\" cues also need explicit occurrences."}
+
+
+math-s11-a02, additional findings (source SHA-256 `2ee647655164ad7bf063aabf62ddeb677ab084fdadb3aee2f6c3c862e46801c7`):
+
+- {"scene": 12, "code": "cue-order", "severity": "should-fix", "message": "Visual lists \"cube one centimetre\" before \"litres\". Narration says litres first. Reorder the handoff visual instructions to the spoken sequence."}
+
+
+math-s11-m06, additional findings (source SHA-256 `82ef72ff1b8928733d863a60431a2ee4987f4aa58f32cb96fc77c04eb968b1d5`):
+
+- {"code": "circular-reference", "severity": "blocker", "scene": 4, "cell": "B10", "formula": "=SUM(B4:B10)"}
+
+
+math-s11-n04, additional findings (source SHA-256 `84433f1ae2c8ab7a2caf055f7ebb11a80b142fb7e0f014a4991933e473fcb2f4`):
+
+- {"scene": 4, "code": "cue-order", "severity": "should-fix", "message": "Visual puts \"Delete any one edge\" after the five-vertices/four-edges counters. Narration says the deletion sentence before Water pipes and the counters."}
+
+
+math-s11-t03, additional findings (source SHA-256 `fb8866cc4026916a95edcb3a75b02808c3150330f545dba2fd816657babe3592`):
+
+- {"scene": 6, "code": "cue-order", "severity": "should-fix", "message": "The visual lists the further-east arrow after Hobart but before Brisbane. Narration first says further east before Hobart, then says Brisbane before its second further east. Choose explicit spoken occurrences and list them in time order."}
+
+
+Brief 271 asset manifest: `assets/brief271-manifest.json`.
+
+- Delivered `public/assets/maths/ms11-desk-globe-v1.png`, SHA-256 `5330f878aefa48c120d9a0d977de7ea4ea4d2e92e456401e00bea9a0afd09123`, size 1086 x 1448, true alpha. Reviewed on paper and black.
+
+- Rejected `work/brief271/image-attempts/globe-attempt1.png`, SHA-256 `0288046fdab3a59173ff270c40ca69fa68726a0f369b78d2cb28f2038b06f194`: Top axis finial is clipped.
+
+
+math-s11-d02, additional findings (source SHA-256 `4a8362496a5e8ac65fffe010e9cefa328f0c327ad85b90ff0400a24cce08abb1`):
+
+- {"scene": 5, "code": "cue-not-verbatim", "severity": "should-fix", "message": "The cue \"different routines\" is absent from the revised narration. The cultural-practices chips need a cue from the actual sentence about siblings, shifts or practices."}
+
+
+math-s11-d04, additional findings (source SHA-256 `b3cbe9b8c8c16313f4a7a6861766386f058c43d6e370d5424e1530536934fb5b`):
+
+- {"scene": 5, "code": "cue-not-verbatim", "severity": "should-fix", "message": "The cue \"two hours\" is absent after the narration was revised to \"a smaller difference\". The headline still contains2hours on screen, but that is not a spoken cue."}
+
+
+math-s11-d05, additional findings (source SHA-256 `c5ba0ff5cee24b53128456350d550c2b0a12fe2aed62b535c35d6cf2b1e7fe75`):
+
+- {"scene": 2, "code": "cue-not-verbatim", "severity": "should-fix", "message": "The quoted cue \"Where the phone charges, how rested, how you get to school\" omits \"you feel, and\" from the spoken sentence. Use an exact shorter cue or the full actual sentence."}
+
+
+math-s11-d09, additional findings (source SHA-256 `e6048928038ed76032f1de86e43033388e3564c7f07b32475d088a86428f180a`):
+
+- {"scene": 3, "code": "cue-not-verbatim", "severity": "should-fix", "message": "The cue \"the peak is on the right\" is not verbatim: narration says \"the sleep peak is on the right\"."}
+
+
+math-s11-d13, additional findings (source SHA-256 `ce87a1a37e183630deb0e79e4e0f2e0f9e44383d50164f0067b7247864f4f3f9`):
+
+- {"scene": 12, "code": "cue-order", "severity": "should-fix", "message": "Visual lists \"a spreadsheet\" before \"Which group sleeps more\". Narration asks the group question before mentioning the spreadsheet. Reorder the handoff cue instructions."}
+
+
+Brief 272 asset manifest: `assets/brief272-manifest.json`.
+
+- Rejected `work/brief272/image-attempts/loaf-attempt1.png`, SHA-256 `474a2c21025a50cf61bddc16a8507c75f9d1bf7867519288af403da1d720fb36`: Photographic appearance and large surrounding orange glow fail the house style and clean alpha silhouette.
+
+- Rejected `work/brief272/image-attempts/loaf-attempt2.png`, SHA-256 `212a45b5d4ab2b0e157f8ac1488b6473b3da29e6b6e03ac94e9ecd3b5eadc2e8`: Large orange glow remains outside the bread silhouette.
+
+- Rejected `work/brief272/image-attempts/loaf-attempt3.png`, SHA-256 `132c6f0f7d308f6d8f649b2efc5d098aaa8d6ba117d33b3d33df93d987910c33`: Background-removal edit still retains a large coloured glow outside the bread silhouette.
+
+- The d14 loaf is still missing. Keep its author-approved question-card fallback. No rejected loaf was installed.
+
+
+Root source application is still required for the official facts, including m05fees, m07example tariffs, a11reference-sheet wording and d01/d16/d19sleep guideline. The current fact report distinguishes confirmed values, dated example sources and values not confirmed: `checks/maths-standard-y11-official-facts.md`.
+
+
+Remaining work: resolve arm registration, then paint 52 HMS plates in course order; replace the rejected loaf; root repairs the 2 HMS and 54 Maths count findings plus the substantive m06 and cue/fact findings; finish all 54 full Maths/anchor/frame-join reviews; prepare and queue only passed Maths; let the existing daily voice queue complete earlier P5 before v14. No human listening or release approval is supplied by this batch.
+
+Root (25 Nov): queued phys-y12-m5-v09 v2; work/release-queue/phys-y12-m5-v09-v2.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 8 (route order).
+
+Root (25 Nov): queued phys-y12-m5-v11 v2; work/release-queue/phys-y12-m5-v11-v2.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 9 (route order).
+
+Root (25 Nov): queued phys-y12-m5-v12 v2; work/release-queue/phys-y12-m5-v12-v2.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 10 (route order).
+
+Root (25 Nov): queued phys-y12-m5-v13 v3; work/release-queue/phys-y12-m5-v13-v3.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 11 (route order).
+
+Root (25 Nov): queued phys-y12-m5-v17 v2; work/release-queue/phys-y12-m5-v17-v2.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 13 (route order).
+
+Root (25 Nov): queued phys-y12-m5-v18 v2; work/release-queue/phys-y12-m5-v18-v2.json. Root sampled playback pass; playlist PLAiTrkKUKKxE position 14 (route order).
+
+## Brief 276: Physics prepared-input freshness, 25 November 2026
+
+Compared all 28 unvoiced, prepared Module 5 and 6 lessons. Refreshed four stale narration scenes: m6-v04 size (5709 characters total), m6-v07 angle (6068), m6-v09 normal (5652), m6-v16 torque-formula (6527). Current strings were copied exactly, without editing designs.
+
+Added 19 explicit holds across 15 unvoiced lessons. Old changed files are retained with `.before-brief276`. The 25 November notes on m6-v01, v05 and v07 change no narration. Notes remain 45 seconds in all under the later revision.
+
+Root finding: m6-v04 scene size puts the bold theta visual cue before Cos is close, although the new speech says Cos is close first. Its current prepared text is refreshed, but its recording review is pending and source readiness is false, so the worker stops before speech. Root must reorder those visual instructions and request a fresh check. No design edited.
+
+m5-v18 has canonical measured narration, despite no completed hand-in. Its recorded package and prepared inputs are preserved. Its missing 3 second hook countdown is reported for the builder; this brief does not alter its measured timeline or captions. m6-v17a is not prepared and remains brief 277 work.
+
+Verification: 28 exact source/input/manifest/audit comparisons; 27 recording gates pass, m6-v04 deliberately held. Evidence: `work/brief276/comparison.json`, `refresh-results.json`, `verification.json`, and per-lesson `checks/p-y12-*-brief276-error-check.md`. These are freshness and changed-passage checks with prior science/learning reviews retained, not new full science reviews. No speech requests, commits, renders or listening.
+
+Nightly configuration and lesson order unchanged. Dry run: 25 November P5, 62 planned requests; 26 November C7, 74; 27 November HMS Module 1, 96. Those estimates reserve no retries and do not grant approval to held designs. P6 has no firm date in this three-night plan.
+
+| Lesson | Prepared state | Planned voicing night | Added holds |
+| --- | --- | --- | --- |
+| phys-y12-m5-v01 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v02 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v03 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v04 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v05 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v06 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v07 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v08 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v09 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v10 | current | 2026-11-25 at 19:00 Australia/Sydney (estimate) | None |
+| phys-y12-m5-v11 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v12 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v13 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v14 | current | 2026-11-25 at 19:00 Australia/Sydney (estimate) | None |
+| phys-y12-m5-v15 | current | 2026-11-25 at 19:00 Australia/Sydney (estimate) | None |
+| phys-y12-m5-v16 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v17 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v18 | already voiced, preserved | Already voiced; preserved | None |
+| phys-y12-m5-v19 | re-prepared | 2026-11-25 at 19:00 Australia/Sydney (estimate) | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v19/lesson.json`: `0235a2ae3812fe47466f07e6eff7d717b89db4535d5d7af9d7b9fa2129ae6274`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v19/voice-manifest.json`: `5244c57d2ef9b349747c4b7c6f10e4901e0d28e4a0ab2b8d99f9e56a94a88060`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v19/lesson.production-brief.json`: `0ced8e3377b59cae447594cc80b19702feee557d17a4fc120b19ae4d49c26f3a`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v19/source-audit.json`: `c5c9e83a8505aeec52d320239d5a1c71769787e3c0652fa349292670580b96d9`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v19/recording-source-check.json`: `f9a8b395baf624996e0514058cd6ef2207defe0174c13e54f4ad3e34406a435b`.
+
+| phys-y12-m5-v20 | re-prepared | 2026-11-25 at 19:00 Australia/Sydney (estimate) | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v20/lesson.json`: `cc17cc6a49941c37b763601458904512c412f0aaf4ce6c06cbc21cbccb7fe4a0`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v20/voice-manifest.json`: `e68b675dfcb62ae4491aaae275874f8c76fabcac28e1856ec4473fb3cb50ab7c`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v20/lesson.production-brief.json`: `1b6b3e7e8e1a459d0c6230cde71ea63617062c60f341273694f5753367f57e7c`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v20/source-audit.json`: `c6bb8327c74c41bca6e90314e7b9898aaced60247fb90e212c17c1ae2fcbb134`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v20/recording-source-check.json`: `4d85609fad0b95e43824219a8c0e4103298e26b6abbf8b644f906026d1e76164`.
+
+| phys-y12-m5-v21 | re-prepared | 2026-11-25 at 19:00 Australia/Sydney (estimate) | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v21/lesson.json`: `91400d5f4df314ecd609da278f81c984763eccf91d9867ff8ca07f5d31f2a74d`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v21/voice-manifest.json`: `8deb2a4f8778df60c82769d94c6a52f0337b8eec509346c213e1bb66473dc167`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v21/lesson.production-brief.json`: `23090abeadcb08f6231da7577154b12aaa196635066ff062ee60f9ea13755b45`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v21/source-audit.json`: `8a22d82aed78f5f7476c772e86f289f848a57548d405b5349495172d72b4d4ab`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v21/recording-source-check.json`: `fead6b195ed5004bd3a349bd46aaf42cdd9df2f2d46a21107a54a7f6112f44c4`.
+
+| phys-y12-m5-v22 | re-prepared | 2026-11-25 at 19:00 Australia/Sydney (estimate) | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v22/lesson.json`: `8f25461951ac7752bbcb50daf79295e89ca4466b878d5d62143d0114a8f2bb64`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v22/voice-manifest.json`: `ddd7ee33cc2372e73248829f055ba9cdd5c9bc1db01176ea127adf0a5291bad1`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v22/lesson.production-brief.json`: `221d87400e74c84994ef6e06dd54380bf57a230fd5c96c76d21ae53e31fbc952`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v22/source-audit.json`: `c2851552df7ffdbb36eaf7a072adad36fcd863d8a87fa7fbfb899483ef8293b3`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v22/recording-source-check.json`: `1c65869ce4e3125f02d33a7147e3b9918f58e476f21a99150d09712ee2d2cc4a`.
+
+| phys-y12-m5-v23 | re-prepared | 2026-11-25 at 19:00 Australia/Sydney (estimate) | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v23/lesson.json`: `42b1bbfc1d8617e0dcd623327d293f630326f7db2832bc455b808f8f67172298`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v23/voice-manifest.json`: `2affbee380e382112e676274eeac6b76343a9055c3c21c72feb66f78bfb20190`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m5-v23/lesson.production-brief.json`: `047867a8a8e0728535fdc0b42eb43dfde8f6147b5bf5c0f06363cc8f3a4ee978`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v23/source-audit.json`: `6ae854e0570edd1d6ad6130b97d40e766b10f287d3d67956f13b3390780c42a2`.
+
+
+SHA-256 `work/brief259/physics/P5/phys-y12-m5-v23/recording-source-check.json`: `fda71d213e7852f335b9a759e34bfc9bfe915d389705b4e4b0966a0485b6750e`.
+
+| phys-y12-m6-v01 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v01/lesson.json`: `84ecc4561635b71359e511064ad6391587d605ea43510b3cfe11c816f3d1cbae`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v01/voice-manifest.json`: `4e8b90961c8c24349eb3bb6bfb9d0d44716a3df39e10f6ac1773fe6338385ef4`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v01/lesson.production-brief.json`: `da9ff7e5882343eeda9bb45ec266c4596df93f448ebfde27158d567abc418743`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v01/source-audit.json`: `1fa06459f212e7941a9b1ce985c8aba590861623e2da3cc2848abf141f2aa2ed`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v01/recording-source-check.json`: `2878dc9b4b867ed0f05e6a4e8ae98db95a479185f96a89c1b7d7063783b801eb`.
+
+| phys-y12-m6-v02 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v02/lesson.json`: `03ff988b1091c9aadf414211add38e72194dfc28f622f590e53c3c8861b47905`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v02/voice-manifest.json`: `0cb7ecc35e0644ce90143030ff1f8b0870d6af31fd31b0de513bfc6e7e7af52d`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v02/lesson.production-brief.json`: `ee9bfbb07ca67a33e6334485e17514eacf5c8513cfd52babb4715c9fbd06e68e`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v02/source-audit.json`: `14a44f921cca6b34f2efa50d87405802fb5afb78552f323d6fc60c9a807b7362`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v02/recording-source-check.json`: `d800d3a766229f348ca32f735c6801a18333bd8e0388f6c378e56cc964ba657b`.
+
+| phys-y12-m6-v03 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v03/lesson.json`: `46f060f1f50c3efdffb1c58b786bb62356e29ce8f86a41f41a826050f77b30c5`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v03/voice-manifest.json`: `8f986f14525674ed4f815801f6a642b0c14c79697c9cb3be655a04a9ebf6eb0c`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v03/lesson.production-brief.json`: `e9d9af81f80650a34137438161013295821ba653cd26ac098f575d1bc8297862`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v03/source-audit.json`: `eb7d7af58ad06e26cc2c140fa36949025505b9e4d50ae6904b44e176618de962`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v03/recording-source-check.json`: `806dd5d1b9f155ad1ba145683cd76378425f0750ff4873518bb6dc56b041f494`.
+
+| phys-y12-m6-v04 | re-prepared, held for root | Held for root cue-order repair | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v04/lesson.json`: `ae6580f7942ebfc970d37f1996a46ba93ff8a5fcc9844f9a4d46f777c9a3517a`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v04/voice-manifest.json`: `445ed5a0eaa570478144dad30ff77f1ac10c121220d8e0fbe1a4257c59f38acd`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v04/lesson.production-brief.json`: `f80d32fdcd5ff7076b7e088d03f29bb001a1c41e2b6669c0d618d4c0110934f5`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v04/source-audit.json`: `66d8b2b130a6ead13733c79e182d4fed328de192b48c6b97f91acaec8696f6c5`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v04/recording-source-check.json`: `bb2c2575e08d889b80d340658102cd00d85c4efdd6f17079fdbe24f083cc92b8`.
+
+| phys-y12-m6-v05 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v05/lesson.json`: `469e189bb4c1db8349f5950f57b6e6964bcd5ae8aeccf8db82af98e993840e98`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v05/voice-manifest.json`: `e90d577931fec444ea3a8b5349621949b14919698e112d32e04101cfdfc28d13`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v05/lesson.production-brief.json`: `4d353ded8ee7cda0b5a508468fbf3fdd0ceb271ca463c1fec8069ee9fe5a1538`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v05/source-audit.json`: `c9547aa94880c4b191c713bab427db338d747b481a75311b7bdc392aaddc40d3`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v05/recording-source-check.json`: `240fe7f56f7cc0ccb5d293ad89e4bd68e65e233abd3239cf3c96f89fd39c16b6`.
+
+| phys-y12-m6-v06 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | hook: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v06/lesson.json`: `0275b0267b413ef9c2ff2e90e917e5caf885c5fbc141f4cf211524d5b0977833`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v06/voice-manifest.json`: `febb258b58f4ec0daad51d112dc529aa7ef88a7c5005a4dd5b78792d48a5e3e6`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v06/lesson.production-brief.json`: `4a15b63d4bfe90e28144dfb54c1759360d109a2a8dd497c71e5bda73ce1e534c`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v06/source-audit.json`: `4a5a1ea09facb206383a63f5fc788ebb7eccc9dcdaacf5662d89b28ea4c85942`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v06/recording-source-check.json`: `366fc27e7cba93f141e0455aa4693337f7f20683089a172f23b937652234e17b`.
+
+| phys-y12-m6-v07 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v07/lesson.json`: `4a7b4a8f459e365c4f3950f9b68f39491511845b2f1e600b21b2ad95db4782f2`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v07/voice-manifest.json`: `826b3317e75a36c87de0ccdc3cd8a8ba342f0af84ace5e6cd3b9d4e15fa1875f`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v07/lesson.production-brief.json`: `8b23ca20fb8a16aa20dc466cbecca053653af9b16c4208695efecb9d18f993ac`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v07/source-audit.json`: `cf37456560e363c5d4549e6f9f75810efb5593b7abef97740e1419d7acb88c84`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v07/recording-source-check.json`: `8512593c7e91211de3fa50366d2f86e23734cabb783aa0f78fe49a9e5c5655f8`.
+
+| phys-y12-m6-v08 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v08/lesson.json`: `092b368e5f34163a9ba06c3c394a6ca9ae3bd96635caed7f793476aa32dd7d45`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v08/voice-manifest.json`: `db580250b19bf6a18e9854e7f75047c68aa9278e69b53997c9afd0315f6739e1`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v08/lesson.production-brief.json`: `a42756c16b5ac181ca94977947c81d3d68d91e3e1e8198c9efd7930b25306e9d`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v08/source-audit.json`: `68d00e55319049118764e4406e0589fd485c1f59a304e88999c917e652423606`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v08/recording-source-check.json`: `194ef522cffc3d9920ca50a99097b03e795b6cc5ce26bb9612e792574c9a0525`.
+
+| phys-y12-m6-v09 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v09/lesson.json`: `33292acb44c17bb2cf97400bc2cb9bbf0c6b9d804d880dbe15e296ee9da77e87`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v09/voice-manifest.json`: `72d671133d3a9e41f528ed2bb77868ddfbe65808d759c5bc6eab06539783a6d7`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v09/lesson.production-brief.json`: `78f76df22b22bfc2860f7f45828c03c0603e3b30dba5e3b8fe9e282cd4366b2e`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v09/source-audit.json`: `153453b1a06399c3842f590079995d791cb02e675b3532007b9a8c5aac5c6544`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v09/recording-source-check.json`: `9708e8a931eab55331c4e372daef0da6d92b9aea15b82c512d8db0013e0d9c5e`.
+
+| phys-y12-m6-v10 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v10/lesson.json`: `e96f12267eddf979019a0b6a43b474f46c3303749fb797f37faba51147248a0d`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v10/voice-manifest.json`: `1d81243640d8c436d75b2c7ff696482faf0c0f1d80d3e0e333e8dac290bf9253`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v10/lesson.production-brief.json`: `f14e21b1af74a3251467d3c425dd6ee3ab2863a8404ef241ec378753e997b796`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v10/source-audit.json`: `f97e2adb691ea44e6cda446f19a626132096b4218ce0cc8d27fe7f216d464999`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v10/recording-source-check.json`: `b5899e692fa866e173e3b8cfa3d978aa5e402f3c8ffa88336d60b6551630196e`.
+
+| phys-y12-m6-v11 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v11/lesson.json`: `b2e7fb6d419de29cc0d6137ee0cd754a0e4194e1a5feecce709eaf07d37c0769`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v11/voice-manifest.json`: `ea8f6f267d2ad6c0f8814854a902cad51d7950aa4c4d374d2ddbbe9998a2b6c0`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v11/lesson.production-brief.json`: `b34b38e358270f2246f26c9c46d1aa1becece4b48b49b05e4de7fc0c7b8dc2c2`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v11/source-audit.json`: `2a0d818cd0b18838c18dfa7569ec08df76e7d5688f59de0d3906aeeb11320e09`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v11/recording-source-check.json`: `0978ab72666348215ea8aac5bc13d0e1c6f2d6508779fd5ed4c78c22efa9be57`.
+
+| phys-y12-m6-v12 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v12/lesson.json`: `0acde11fead869c9c62a04d1c0304d0a02d23b289d436079047b38da49989fe8`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v12/voice-manifest.json`: `31ef3853e794065459c938f05e5fd9b73d6e0275efc989e67ea9ba5d333fb2ab`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v12/lesson.production-brief.json`: `3eb8d62e5bdc453a0d9919417a25a9e143ec5fcc6c3162c73db151584905acf6`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v12/source-audit.json`: `579c64baa668ea3b3db532a83ac10cea3f5ba23a5f91428d4a9fc08b22519425`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v12/recording-source-check.json`: `8b267fb8bfb41788c9940ac9784aa773ef2163f37e373f33e744c7727533a031`.
+
+| phys-y12-m6-v13 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | step-up-down: 0 to 3 s; current-ratio: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v13/lesson.json`: `783275f0f7b4f57e7c7c5df3a51faa9d2e9760f695aed9ec1cfc351a0d285650`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v13/voice-manifest.json`: `7b8e3bd40ab9747be2f1bd2246213da4bb13d9dbd5dc2c838b9e5d9d3c117b42`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v13/lesson.production-brief.json`: `d5b0e30c7e7708111d6eee18ec98346c305a2667248d464059c9172e5e52beb8`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v13/source-audit.json`: `d76ca456fd09758952bfaf0bc23c4fe467d596b0d8f390c8f2226558dabd71f2`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v13/recording-source-check.json`: `1259ba5534936b8f7a7a5b17b5278f09d04278ddd1b695a91d9eb80fc00a86c7`.
+
+| phys-y12-m6-v14 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | efficiency: 0 to 3 s; copper-heating: 0 to 2 s; laminations: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v14/lesson.json`: `f26632b0a7a75728efd59d06ebcd13ab0b6b7b762f5bb7a47bc41c24569e28f7`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v14/voice-manifest.json`: `3d1df0bba967275d032dcc68e123da6e9cd49a29d515362a88713f51ac13f1c6`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v14/lesson.production-brief.json`: `6901324395b625daaaa94c399f7c00e7e4c9739b177e8a0622a8dcda3ce19ab7`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v14/source-audit.json`: `ac949ca660f011c21017e34eb212c0381057d3c2f44b940dfcb7fbc5290e4d77`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v14/recording-source-check.json`: `3bc760b0883fac817b40478831b65ef99c7be1b95fc4ad34aaf4ba713c023724`.
+
+| phys-y12-m6-v15 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | square: 0 to 2 s; worked-500kv: 0 to 3 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v15/lesson.json`: `46865f573fcae3adc1dbd5029bd52afd0c90c2807eff6bf8cd64120d36867e6f`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v15/voice-manifest.json`: `6b9fb94cf5d3b403dad949a85fb86f3804ccc742766e305b7dbebb0392afc30f`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v15/lesson.production-brief.json`: `5ceae354ee8892a79e098a6dfa9fe6a3f7b8a1f1c874b9cdb977eb52d97ef280`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v15/source-audit.json`: `74477214d6e7e704a2c3b20b1a2df94198ba5992547ce73b2fc1f02ead887dde`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v15/recording-source-check.json`: `4c98bcb386bb8c157dac30ee325ee8e198f5208c21425a0d4ea1a3cb9386a595`.
+
+| phys-y12-m6-v16 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v16/lesson.json`: `ce0786914e88845a4512713ddd0dc525000f8f7f785277d4c7d5abb4eea9a9f2`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v16/voice-manifest.json`: `744290acca6ce4ddb6fb3d745065c3fb29e7ee78d74c864c1bbf1cac98fd3f6b`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v16/lesson.production-brief.json`: `03c976bfd9822c620a07c997283feae9936557bc6b70523fa50fb3ad42546059`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v16/source-audit.json`: `282ee5e25463c0f988406ab754791c38866cabfd4284190baa88cb4c8ae8a88b`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v16/recording-source-check.json`: `0e4a7683bcf0a25c3e3edb05cb1a481ed94469669a71a2bac282e501056f917f`.
+
+| phys-y12-m6-v17 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | spinning-up: 0 to 2 s |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v17/lesson.json`: `d30c1a13374450ca0d69137e3c7d496afa72c66f8208816b5bbf4dc88f62ad51`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v17/voice-manifest.json`: `ed7b356173285f72e253ca853099111366454ebb0459141398e41b10a0f90543`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v17/lesson.production-brief.json`: `1688e92ea7dcb565d6499dbb20c0c76e00f56108b1163e092bf510e2f8c0bde3`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v17/source-audit.json`: `f015b9162f2a07d15284f38d8f8326263cca5478d476d704db938d79ccf8eff6`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v17/recording-source-check.json`: `b9f6ffa41e53c4fbeb9fd6f86839f9ddfc4953de7db907075ed97fdb27900fcb`.
+
+| phys-y12-m6-v17a | not prepared | Brief 277 pending | None |
+| phys-y12-m6-v18 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v18/lesson.json`: `58b39ba3066db5cc76e1ccaf2d6fa19272c8ae7c13612739fd1f5b3352228bf9`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v18/voice-manifest.json`: `8bd29a6104832c7a3a1eec841ea7e1511da6f84f25c4f81d84ee801f276b2d86`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v18/lesson.production-brief.json`: `1bbea5a90839d58d63a298efda2a76ae04c445e0fa374495c6aa6e1b351af59d`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v18/source-audit.json`: `e3c081c585a26148f7c92c96747d2a093e29483b15fb10e8e638a1e3f80d4c94`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v18/recording-source-check.json`: `6cc38ccb8f08ec7cbcb1a95a8c75e9bf265585ab28794af3eef381e497191cde`.
+
+| phys-y12-m6-v19 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v19/lesson.json`: `bd05e8e0e731bcead2428ddc8db78bcb64af19b61c98674b5839472648fa758f`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v19/voice-manifest.json`: `36aeb0e5639ee3d29d3c58f62f5619fc113a3880cd3fce4aab04a41b17f40755`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v19/lesson.production-brief.json`: `c67b8475664dedd93ff4d0345132ee58856fbbb567308d39928edc23a2d60bb5`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v19/source-audit.json`: `c381e84f39fb8fc1b88df46728ff75afde447bcac80fb218d12c150cce9052dd`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v19/recording-source-check.json`: `2c3610a25e37c437c1163299074f90e0fe0cbeaac4576df53dd5c3f6fea182ad`.
+
+| phys-y12-m6-v20 | re-prepared | P6, existing route order after earlier queued stages; date not yet estimated | None |
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v20/lesson.json`: `84e8a48f9237548c7e0b1e04c36a0864053d850824d2df686a143b7e5ffd2de8`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v20/voice-manifest.json`: `97636226aa9b44ece5689dffc5054c6da2f41e9ebf05cbb9ba40eb7f6e6e1668`.
+
+
+SHA-256 `docs/production/claude-pm/lessons/p-y12-m6-v20/lesson.production-brief.json`: `4dde4f74b942c082e7ad2bab041a3e38290877d63da409154f5368fb29a6208b`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v20/source-audit.json`: `2f05cec2685171ff95448038d0936cc2e07699312c1fed96ce785c1b958661cd`.
+
+
+SHA-256 `work/brief259/physics/P6/phys-y12-m6-v20/recording-source-check.json`: `182e1d20db046fbfb96ec7d39f913e7cea4e0ecfacecf2ff26406e23d617807f`.
+
+
+Remaining brief order from owner: 274, then 275, then 277. Human listening stays pending.
+
+# Brief 279: disk cleanup
+
+26 November 2026. No renders, still generation or speech ran during cleanup. No active render or voicing worker was found. No file changed within 24 hours was deleted.
+
+Removed 6.472 GB (6.027 GiB), 3500 files. C: free space: 4.763 GB before inventory; 4.757 GB immediately before deletion; 11.232 GB after. Windows disk-usage measurements are equivalent to df; powershell Get-PSDrive C was also checked.
+
+The manifest was written before deletion. Every individual file was resolved inside work, checked again for age and SHA-256, and matched to a retained copy before unlinking. No recursive directory removal. Rebuild by copying the exact retained file back to its recorded path. JSON, Markdown, logs, prompts, scripts and small files stay.
+
+Manifest: `work/brief279/deleted-manifest.json`. Before/after inventories: `work/brief279/inventory-before.json` and `inventory-after.json`.
+
+| Deletion category | GB removed |
+| --- | --- |
+| duplicate media | 4.997 |
+| duplicate copied web bundle | 1.475 |
+
+Safe deletion estimates, before deletion: copied-bundle duplicates 1.475 GB; other duplicates 4.997 GB. The 0.000300 GB of eligible old cache audio is included in those duplicates, not additional. Unique bundles, unique render intermediates and unique rejected attempts were kept because exact rebuilding, replacement or rejection was not established. Their independently approved deletion estimate is zero.
+
+## Every work folder over 200 MB before cleanup
+
+| Folder | Before GB | Contents |
+| --- | --- | --- |
+| work\brief245 | 3.103 | Checked release masters and playback evidence, copied bundles and media, render settings and captions. |
+| work\google-tts-cache | 3.020 | Whole-scene speech cache with alignment and request metadata. Recent entries stay; only an old verified duplicate was removed. |
+| work\brief239 | 2.339 | Maths render packages, copied web bundles, captions and visual checks. |
+| work\brief124 | 2.144 | WhisperX Python environment plus alignment scripts and checks. The speech generator explicitly uses this environment. |
+| work\brief241 | 2.072 | Checked Chemistry and Maths render packages, copied bundles, source snapshots and captions. |
+| work\google-batch-voice | 1.913 | Batch request audio and quality reports, including unique requests and incomplete delivery records. |
+| work\brief235 | 0.598 | Plate candidates, original prompts, source artwork and inspection sheets. |
+| work\root-playback-sample | 0.581 | Sampled exact-release frames and playback inspection evidence, some changed within 24 hours. |
+| work\brief242 | 0.565 | Plate candidates, source prompts, paper/dark inspection sheets and provenance. |
+| work\brief196 | 0.514 | Earlier Biology release checks, endpoint frames, frame scans and backup evidence. |
+| work\brief229 | 0.484 | Biology checked masters, render settings, caption and frame checks. |
+| work\brief230 | 0.439 | Biology checked masters, copied public media, captions and frame checks. |
+| work\brief228 | 0.404 | Biology and Chemistry render packages, reference syllabus and playback snapshots. |
+| work\brief227 | 0.324 | Pilot narration and render checks, copied public assets and master backup records. |
+| work\brief223 | 0.296 | Chemistry render packages, captions and visual checks. |
+| work\brief247 | 0.286 | Plate candidates, inspection sheets and provenance. |
+| work\brief198 | 0.273 | Biology replacement release packages, visual checks and backup records. |
+| work\brief204 | 0.257 | Biology replacement release packages, visual checks and backup records. |
+| work\voice-batch-pilot | 0.252 | Speech pilot scripts, models, capture audio and alignment results. |
+| work\m5v68 | 0.251 | Frozen entry scripts, historical web runtimes and visual-grade evidence. |
+| work\brief200 | 0.250 | Biology replacement packages, frame sheets and backup records. |
+| work\brief264 | 0.229 | Accepted/rejected artwork, prompts, inspections, provenance and mirror records. |
+| work\brief205 | 0.223 | Biology release packages, checked masters and backup records. |
+| work\m5v911 | 0.212 | Frozen entry scripts, historical web runtimes and visual-grade evidence. |
+| work\brief201 | 0.210 | Source, generated media and production checks; unique files kept. |
+| work\brief249 | 0.209 | Source, generated media and production checks; unique files kept. |
+| work\brief231 | 0.201 | Source, generated media and production checks; unique files kept. |
+
+## Top 10 remaining folders
+
+| Folder | GB |
+| --- | --- |
+| work\google-tts-cache | 3.020 |
+| work\brief245 | 2.665 |
+| work\brief124 | 2.144 |
+| work\brief239 | 1.500 |
+| work\brief241 | 1.037 |
+| work\google-batch-voice | 0.876 |
+| work\root-playback-sample | 0.565 |
+| work\brief242 | 0.541 |
+| work\brief196 | 0.511 |
+| work\brief230 | 0.287 |
+
+## Retained folders over 500 MB
+
+- work\google-tts-cache, 3.020 GB: Whole-scene speech cache with alignment and request metadata. Recent entries stay; only an old verified duplicate was removed.
+- work\brief245, 2.665 GB: Checked release masters and playback evidence, copied bundles and media, render settings and captions.
+- work\brief124, 2.144 GB: WhisperX Python environment plus alignment scripts and checks. The speech generator explicitly uses this environment.
+- work\brief239, 1.500 GB: Maths render packages, copied web bundles, captions and visual checks.
+- work\brief241, 1.037 GB: Checked Chemistry and Maths render packages, copied bundles, source snapshots and captions.
+- work\google-batch-voice, 0.876 GB: Batch request audio and quality reports, including unique requests and incomplete delivery records.
+- work\root-playback-sample, 0.565 GB: Sampled exact-release frames and playback inspection evidence, some changed within 24 hours.
+- work\brief242, 0.541 GB: Plate candidates, source prompts, paper/dark inspection sheets and provenance.
+- work\brief196, 0.511 GB: Earlier Biology release checks, endpoint frames, frame scans and backup evidence.
+
+No owner decision is needed for this completed deletion. Further recovery from the Python environment, unique caches or historical preview runtimes needs a specific replacement or rebuild plan first. No extra material was copied to nearly-full Drive.
+
+## Brief 278: m6-v04 released and Physics hook holds, 26 November 2026
+
+m6-v04: 0 blockers, 0 should fix. Source SHA-256 f8a43bd57b4cc71d3103d2ab78b7c7c1531ede301904e1130264e68319cae13e. Every narration string is unchanged. Final Revision3a cues follow the actual bold-word positions. Source readiness and recording gate pass. Module6 route order stays unchanged. Planned night: P6 in its existing route position after earlier stages; no firm date in the next-three-night estimate.
+
+Prepared 54 unvoiced prediction hooks across Modules5 to8. Forty have narration after the prompt: the assembler now inserts the response gap before that narration. Each countdown starts at the inserted interval. The original take stays intact; later alignment and captions shift by3seconds. New assembly receipts preserve original audio, alignment and generation hashes, and the Physics worker mirrors those dependencies. No new speech requested. Twelve tests pass; exact voiced playback and human listening remain pending.
+
+| Lesson | Hold starts after |
+| --- | --- |
+| phys-y12-m5-v19 | Have a think. |
+| phys-y12-m5-v20 | Have a think. |
+| phys-y12-m5-v21 | Have a think. |
+| phys-y12-m5-v22 | Have a think. |
+| phys-y12-m5-v23 | Have a think. |
+| phys-y12-m5-v10 | Make a prediction. |
+| phys-y12-m5-v15 | Make a prediction. |
+| phys-y12-m5-v14 | Make a prediction. |
+| phys-y12-m6-v01 | Make your predictions now. |
+| phys-y12-m6-v02 | Straight line, parabola or circle: what shape is the path? |
+| phys-y12-m6-v03 | Make a prediction. |
+| phys-y12-m6-v04 | Make your prediction. |
+| phys-y12-m6-v05 | Make your predictions. |
+| phys-y12-m6-v06 | And would protons at that speed get through too? |
+| phys-y12-m6-v07 | Which way will it swing this time? |
+| phys-y12-m6-v09 | Make your prediction. |
+| phys-y12-m6-v10 | Make your prediction. |
+| phys-y12-m6-v11 | Make your prediction. |
+| phys-y12-m6-v12 | Make your prediction. |
+| phys-y12-m6-v13 | Make your prediction. |
+| phys-y12-m6-v16 | Make your prediction. |
+| phys-y12-m6-v17 | Make your prediction. |
+| phys-y12-m6-v18 | Make your prediction. |
+| phys-y12-m6-v19 | Make your prediction. |
+| phys-y12-m6-v20 | Make your prediction. |
+| phys-y12-m6-v08 | Make your prediction. |
+| phys-y12-m6-v15 | Hold on to your answer. |
+| phys-y12-m7-v01 | Make your prediction. |
+| phys-y12-m7-v04 | Make your prediction. |
+| phys-y12-m7-v05 | Make your prediction. |
+| phys-y12-m7-v06 | Make your prediction. |
+| phys-y12-m7-v07 | Make your prediction. |
+| phys-y12-m7-v08 | Make your prediction. |
+| phys-y12-m7-v10 | Make your prediction. |
+| phys-y12-m7-v12 | Make your prediction. |
+| phys-y12-m7-v13 | Make your prediction. |
+| phys-y12-m7-v14 | Make your prediction. |
+| phys-y12-m7-v15 | Make your prediction. |
+| phys-y12-m7-v16 | Make your prediction. |
+| phys-y12-m7-v03 | Make your prediction. |
+| phys-y12-m7-v02 | Make your prediction. |
+| phys-y12-m8-v03 | Make your prediction. |
+| phys-y12-m8-v04 | Make your prediction. |
+| phys-y12-m8-v05 | Make your prediction. |
+| phys-y12-m8-v06 | Make your prediction. |
+| phys-y12-m8-v08 | Make your prediction. |
+| phys-y12-m8-v10 | Make your prediction. |
+| phys-y12-m8-v18 | Make your prediction. |
+| phys-y12-m8-v19 | Make your prediction. |
+| phys-y12-m8-v21 | Make your prediction. |
+| phys-y12-m8-v22 | Make your prediction. |
+| phys-y12-m8-v02 | Make your prediction. |
+| phys-y12-m8-v20 | Make your prediction. |
+| phys-y12-m8-v01 | Make your prediction. |
+
+Files: work/brief278/hand-in.json, work/brief278/tests.tap, checks/p-y12-m6-v04-brief278-error-check.md, scripts/lib/google-response-hold.mjs, the shared timing helper and Physics worker. Prior prepared inputs and audits have .before-brief278 copies.
+
+Next: brief274, then275, then277.
+
+### Brief 274: plates and repaired HMS checks (26 November 2026)
+
+Delivered and inspected 54 plates: three Physics and 51 HMS. Manifest: `assets/brief274-manifest.json`. Existing artwork preserved. Both combined arm edits failed exact bone registration and insertion clarity; stopped after two attempts as instructed. The original bones are unchanged. Root action: code muscles against the original. Retained prompts, candidates and 50 percent overlays in `work/brief274/arm-attempt1.json` and `arm-attempt2.json`.
+
+HMS M1 v05: 0 blockers, 0 should fix; prepared. Source SHA-256 `b31da387ec7dde6f4b98b4105d5eea52a403ff79aba5cf505b74040507c23b84`.
+HMS M1 v09: 0 blockers, 0 should fix; prepared. Source SHA-256 `4e9ae9be4deec34316f96645337130287dc582e2a2479a5ccf8d942531cf0795`.
+Both restored in route order. Planned night 28 November, conditional on earlier P5 and C7 completion and available requests. Amended dry run: `work/brief274/amended-dry-run.json`. No speech requested. Human listening pending. Preparation evidence: `work/brief274/hms/hand-in.json`.
+
+### Brief 275: current Maths Standard re-check (26 November 2026)
+
+All 54 source preflights pass. Full written maths, source-contract, join and anchor checks are recorded per design. 53 recording packages prepared and recording gates pass. d13 is held for one should-fix: scene 4 deviation arms must read 1, 0, 0, 0, 0, 1 for the ordered Bus A dots, rather than 1, 0, 0, 0, 1, 0. No design was edited.
+
+The revised $16,647, $43,687 and $11,226 totals pass; B13 gives $10,816 without a circular reference. m08's $761.21 reuse agrees with m07. HyperFormula calculated m06/m08 formula dependencies and what-ifs. All enumerated network answers, dated offsets, recurring samples, population sigma, halves quartiles and 151 drag stops pass. Evidence: `work/brief275/hand-in.json` and its check files. New Zealand GST confirmed at 15% in the official-facts addendum.
+
+Plate manifests: `assets/brief271-manifest.json` and `assets/brief272-manifest.json`. All other named plates exist. Two further loaf attempts failed the halo check; d14 retains its approved question-card fallback. No speech requested. Earlier queued work and the earlier Maths tail must finish before these 53 lessons. Prepared route order: `work/brief275/preparation.json`. No firm voicing night can be assigned yet. Measured lessons and human listening remain pending.
+
+#### Brief 275: math-s11-m01
+
+Check: 0 blockers, 0 should fix. SHA-256 `8a3fb476650374182186f4ca8f5b5b67c988ec5df32ae0b9bb4b29f027e56758`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m01-maths-check.md`.
+
+#### Brief 275: math-s11-m02
+
+Check: 0 blockers, 0 should fix. SHA-256 `c600610c5454bd229e4b515189a05ff91af41e4b4fc2fed81e54602b9ebce100`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m02-maths-check.md`.
+
+#### Brief 275: math-s11-m03
+
+Check: 0 blockers, 0 should fix. SHA-256 `4138667bc21423721c109d9aede75d0f34793c99919e601368935deb5f3dd1f6`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m03-maths-check.md`.
+
+#### Brief 275: math-s11-m04
+
+Check: 0 blockers, 0 should fix. SHA-256 `8a42b074c86b2fb967a0aed358be1b268074169b27297d850292f9d649017796`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m04-maths-check.md`.
+
+#### Brief 275: math-s11-m05
+
+Check: 0 blockers, 0 should fix. SHA-256 `159b836c7a23ad3b7559c8be84ae24f5bec89e80641e438d1ba2b2ee5d572ad2`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m05-maths-check.md`.
+
+#### Brief 275: math-s11-m06
+
+Check: 0 blockers, 0 should fix. SHA-256 `dc6711243a5d3af1e5fae5023b1c2644a16b4ae51f56e74222b5e31dfe2d0ce8`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m06-maths-check.md`.
+
+#### Brief 275: math-s11-m07
+
+Check: 0 blockers, 0 should fix. SHA-256 `70f9046af37aa806e3408776d8bd05697dc0e7b1ec7b243cf044bc7a106ec07a`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m07-maths-check.md`.
+
+#### Brief 275: math-s11-m08
+
+Check: 0 blockers, 0 should fix. SHA-256 `0d3b3a55512b94b4fd07aa933569ff576e21ff556ee81e215a4a62de3ab49566`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m08-maths-check.md`.
+
+#### Brief 275: math-s11-m09
+
+Check: 0 blockers, 0 should fix. SHA-256 `b5dd7003b3548dfc596b9cf2e21bafad05c94aeb4162c74b51e698c965c3fcbe`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-m09-maths-check.md`.
+
+#### Brief 275: math-s11-a01
+
+Check: 0 blockers, 0 should fix. SHA-256 `7dc09f52db227ba930cb6a134d526862cf1a0b6e1f286384265fec8f1e84309f`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a01-maths-check.md`.
+
+#### Brief 275: math-s11-a02
+
+Check: 0 blockers, 0 should fix. SHA-256 `393bb3d08625bd51967cbb743fd8b2cda4c9daf43340db037424601f1cc086cc`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a02-maths-check.md`.
+
+#### Brief 275: math-s11-a03
+
+Check: 0 blockers, 0 should fix. SHA-256 `51117e1b393e82d2fb12bd12083111182a4ed599f282173be632d959636f75c5`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a03-maths-check.md`.
+
+#### Brief 275: math-s11-a04
+
+Check: 0 blockers, 0 should fix. SHA-256 `d8d70465c7d7216657753f41edf202a09bc25bcb56a93a79a0b62c8850ea4795`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a04-maths-check.md`.
+
+#### Brief 275: math-s11-a05a
+
+Check: 0 blockers, 0 should fix. SHA-256 `036df725b0d7149bbe9899036344b8e8a87cab884414dd6455eff07ba130ec65`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a05a-maths-check.md`.
+
+#### Brief 275: math-s11-a05b
+
+Check: 0 blockers, 0 should fix. SHA-256 `8e5eed93928d7b5514a489a5f11195f9d165c2fc60787a6d87d08f0b14ee03df`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a05b-maths-check.md`.
+
+#### Brief 275: math-s11-a06
+
+Check: 0 blockers, 0 should fix. SHA-256 `c4a6056a57216b53ff5ff0eaec9427d53b6121289ab6f017306a71813c3245e7`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a06-maths-check.md`.
+
+#### Brief 275: math-s11-a07
+
+Check: 0 blockers, 0 should fix. SHA-256 `8ce624cd81b3cd9ad861839933abf95040c5c5109624168a47f1b85ae7b47d06`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a07-maths-check.md`.
+
+#### Brief 275: math-s11-a08
+
+Check: 0 blockers, 0 should fix. SHA-256 `c91f4f37c210cb641394b71c39bcb70a143645eacaa8dd705c0f22211349bad0`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a08-maths-check.md`.
+
+#### Brief 275: math-s11-a09
+
+Check: 0 blockers, 0 should fix. SHA-256 `9ab54fc67168dccc24405ac18c91d10a047726460f07397690c0c2c8b533b74a`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a09-maths-check.md`.
+
+#### Brief 275: math-s11-a10
+
+Check: 0 blockers, 0 should fix. SHA-256 `6d13ac28e3f60747f3164e478c0ebbc38f276eaa0bc5d3bff1b4ed6924666daa`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a10-maths-check.md`.
+
+#### Brief 275: math-s11-a11
+
+Check: 0 blockers, 0 should fix. SHA-256 `369705c8b079285b161c16f88e871e68af0ec3129564780f93604c8fcb6ae77f`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-a11-maths-check.md`.
+
+#### Brief 275: math-s11-t01
+
+Check: 0 blockers, 0 should fix. SHA-256 `52b950f36f92342f43bea3ca1d46a17d3f1557452c7ed43b55b9d53f8ec0ba59`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-t01-maths-check.md`.
+
+#### Brief 275: math-s11-t02
+
+Check: 0 blockers, 0 should fix. SHA-256 `fab7819a294c56ed003c02f58c21a9a110c96f0609baa3643b6fe2463c776bf9`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-t02-maths-check.md`.
+
+#### Brief 275: math-s11-t03
+
+Check: 0 blockers, 0 should fix. SHA-256 `439dc8bd252e9c842f0718c1370fb380b7cd8d78824e7a2940f33cc86827ca7a`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-t03-maths-check.md`.
+
+#### Brief 275: math-s11-t04
+
+Check: 0 blockers, 0 should fix. SHA-256 `b52d534210360641703f78c3e99252e31f144a09cd20ff187aa05c795344411b`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-t04-maths-check.md`.
+
+#### Brief 275: math-s11-t05
+
+Check: 0 blockers, 0 should fix. SHA-256 `bd6e6d3969072b3083ffc77391a137e154c7db01568936a9a90ea17e887c4d9a`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-t05-maths-check.md`.
+
+#### Brief 275: math-s11-t06
+
+Check: 0 blockers, 0 should fix. SHA-256 `99d02400e7185cf9da106c599c90ed5710925cb207bea64a9355925c1bf9a60c`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-t06-maths-check.md`.
+
+#### Brief 275: math-s11-n01
+
+Check: 0 blockers, 0 should fix. SHA-256 `11225e2d54cf27e473e29a403ad8881959eebb63659c8b9ca6789ce60c54499b`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n01-maths-check.md`.
+
+#### Brief 275: math-s11-n02
+
+Check: 0 blockers, 0 should fix. SHA-256 `ca7cf93045a04e606cbc94a35559c041424a1d1f28402e34e3ee6cba1d42c986`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n02-maths-check.md`.
+
+#### Brief 275: math-s11-n03
+
+Check: 0 blockers, 0 should fix. SHA-256 `09f19a2cc99c2a2f3960cd985e3b0e8cefcc6bf83a58b55ab5ec3427685ca0eb`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n03-maths-check.md`.
+
+#### Brief 275: math-s11-n04
+
+Check: 0 blockers, 0 should fix. SHA-256 `be89b02893e70018a4d994593ae823fe4c821fdc113966cbcec0089aa8a8ea75`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n04-maths-check.md`.
+
+#### Brief 275: math-s11-n05
+
+Check: 0 blockers, 0 should fix. SHA-256 `8159ad577a617017c59e3f082df3f662cb8a37b3433cd2bd9c6dbaaa182ab1c9`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n05-maths-check.md`.
+
+#### Brief 275: math-s11-n06
+
+Check: 0 blockers, 0 should fix. SHA-256 `3b707780a1008138bf02e9a09dfe5147c002cfeac92ea0bc981041d368bbfc17`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n06-maths-check.md`.
+
+#### Brief 275: math-s11-n07
+
+Check: 0 blockers, 0 should fix. SHA-256 `e880bd3601bf8fec034ddebff3f043974331ad839ef096ef53fb7e81def7f2f8`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-n07-maths-check.md`.
+
+#### Brief 275: math-s11-d01
+
+Check: 0 blockers, 0 should fix. SHA-256 `c3b1915dc538ba271524c2f872d94e01e7455146678894644166bde2171fa847`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d01-maths-check.md`.
+
+#### Brief 275: math-s11-d02
+
+Check: 0 blockers, 0 should fix. SHA-256 `84e2efa35f734192f837056c1e7cebdd9a2f420e79f62632de652800a3042199`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d02-maths-check.md`.
+
+#### Brief 275: math-s11-d03
+
+Check: 0 blockers, 0 should fix. SHA-256 `56cb986d241838cc5314245f4bfffc58db6a2a0112c6d3b58c2e6d21af9b5ecb`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d03-maths-check.md`.
+
+#### Brief 275: math-s11-d04
+
+Check: 0 blockers, 0 should fix. SHA-256 `febc341eed9e4cb6f7d20411aa56d498849e0079d81385b384302dd487fe7e81`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d04-maths-check.md`.
+
+#### Brief 275: math-s11-d05
+
+Check: 0 blockers, 0 should fix. SHA-256 `ca0d6d5200f0b6747a7bf1ccfbde0b5fa5cb74c7a6ffd27b7b911742568ee925`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d05-maths-check.md`.
+
+#### Brief 275: math-s11-d06a
+
+Check: 0 blockers, 0 should fix. SHA-256 `0b8cd3135a0b69f281b54f8a9ff3b8a06a44efd883e97e222513e46a92755c97`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d06a-maths-check.md`.
+
+#### Brief 275: math-s11-d06b
+
+Check: 0 blockers, 0 should fix. SHA-256 `201c501b4173425000f7fdb446b85ce20a9b9471e3e5265435a9ca47c6dd15ab`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d06b-maths-check.md`.
+
+#### Brief 275: math-s11-d07
+
+Check: 0 blockers, 0 should fix. SHA-256 `ea9f3ca7efa1f4a38c4cd2ef5baba26d81c2a26d73c108f7f6c96e98ab5ebb35`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d07-maths-check.md`.
+
+#### Brief 275: math-s11-d08
+
+Check: 0 blockers, 0 should fix. SHA-256 `649608cae950b3f973c4656ca1abec80363e526ea00c8611d73a08c1385ef7f4`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d08-maths-check.md`.
+
+#### Brief 275: math-s11-d09
+
+Check: 0 blockers, 0 should fix. SHA-256 `7c5c6bb5097f4597ef8cd84b287a798433df3090ce2537d42485caf6f5d31c70`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d09-maths-check.md`.
+
+#### Brief 275: math-s11-d10
+
+Check: 0 blockers, 0 should fix. SHA-256 `f8c657903584f87e638bef25075f1af0e27a8126a8f71efc1d0c2a022f2985b8`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d10-maths-check.md`.
+
+#### Brief 275: math-s11-d11
+
+Check: 0 blockers, 0 should fix. SHA-256 `a50fa964343e62426dde58d0d2fa6155f49b426c3bf540c949c48d5016d5f4e5`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d11-maths-check.md`.
+
+#### Brief 275: math-s11-d12
+
+Check: 0 blockers, 0 should fix. SHA-256 `ecb22a626e8bde84255ca7a3c29d0d1395cb29e2160abba24ee3bc6bcfab4bc9`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d12-maths-check.md`.
+
+#### Brief 275: math-s11-d13
+
+Check: 0 blockers, 1 should fix. SHA-256 `b165e72de16ea9e74f7bec999a65104d5cd1d37e943dcae688e234cd7d66cbc2`. Prepared: no. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d13-maths-check.md`.
+
+#### Brief 275: math-s11-d14
+
+Check: 0 blockers, 0 should fix. SHA-256 `5553934f28f876b5ca1d1f11633f3c3d4655f03e3553cf8d4c37f00eda066abb`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d14-maths-check.md`.
+
+#### Brief 275: math-s11-d15
+
+Check: 0 blockers, 0 should fix. SHA-256 `686dfeef8d56da48d36692f5fe01912ab870426e3e1319a0b67f10486b2149f1`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d15-maths-check.md`.
+
+#### Brief 275: math-s11-d16
+
+Check: 0 blockers, 0 should fix. SHA-256 `a53e63dab740d682cbb8ddedd2e578e408d0c2365d0eedcac2e2d761abe1749b`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d16-maths-check.md`.
+
+#### Brief 275: math-s11-d17
+
+Check: 0 blockers, 0 should fix. SHA-256 `5431ee461242195c134e32440974dc4de7803d734a4596df51478130585ba0fd`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d17-maths-check.md`.
+
+#### Brief 275: math-s11-d18
+
+Check: 0 blockers, 0 should fix. SHA-256 `faf2478ebbf3b19d7330393324dbaf99c17d7d6051cf968bb18a383b87491369`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d18-maths-check.md`.
+
+#### Brief 275: math-s11-d19
+
+Check: 0 blockers, 0 should fix. SHA-256 `bdbc2de7258961a9bdc530d1ef0c9093fe036d9b3ac1edb17fbce4737258e7bd`. Prepared: yes. Planned night: After the existing Maths tail and all earlier queued voicing. No firm date while predecessors are unfinished. Human listening pending. Review: `docs/production/claude-pm/checks/m-s11-d19-maths-check.md`.
+
+### Brief 277: Physics m6-v17a checks and cut layers (26 November 2026)
+
+Source SHA-256 `a48ca9d30877c8a92590bc164ef2e8ce93d6bce9ce8c88b241fa110c1bcdd270`. Narration 6609 characters, 18 scenes. Physics check: 0 blockers, 0 should fix; 40 independent numeric substitutions pass, including 30-degree clearance, reversed-current drift and held-still R. Direct lesson 07 quotations match the read-only clone. Error check: 0 blockers, 1 should fix. Scene 11's motor readings need the illustrative-values label required by error-check item 3. Root correction required; no design edit made.
+
+Delivered three native 1536x1024 motor layers: red magnet, blue magnet and magnet-free base. Actual final inspection sheets viewed on paper and dark board at 400 px. Magnets are cut from original pixels. Generated wood is used only inside the removed footprints; coil, axle, ring, brushes, terminals and all pixels outside the removal masks remain byte-identical. Magnet centres: red (438.5, 443.0), blue (1094.0, 440.5). Manifest and file hashes: `assets/brief277-manifest.json`; provenance: `assets/phys-y12-m6-v17a-provenance.json`. The inherited source halo is recorded, not claimed newly corrected.
+
+Cradle not painted: the design's asset brief requires passed physics and error checks. Its anchors and pan-fit inspection wait with it. Not prepared or voiced. Candidate audit: `work/brief259/physics/candidates/phys-y12-m6-v17a/source-audit.json`. Requested position remains between v17 and v18 in P6 after source repair and re-check. Planned night held, no firm date. No speech requested. Human listening pending. Hand-in: `work/brief277/hand-in.json`.

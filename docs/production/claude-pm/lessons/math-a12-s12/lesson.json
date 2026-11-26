@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-s12",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "20141e1e1507ed33f21b673a27b1c65fda6d88eafd7ef400596aaabe22912246",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (working backwards)",
+      "voiceover": {
+        "text": "Last video ended with this question. Until now, we've known the mean and the standard deviation, and found a probability. This time the probability is fixed. The filling machine has a dial that sets the mean fill. Only one percent of bottles can be under four ninety, sigma stays at eight, and the mean is the unknown. Where must the dial be set?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "a probability fixes zed",
+      "voiceover": {
+        "text": "Here's the key idea. Turn the dial up, and the bell slides to the right, so four ninety ends up further out in the tail, and the tail gets smaller. At a mean of five hundred, the tail was zero point one zero five six. Fill two hundred bottles there, and in one simulated run, nineteen come up short. Keep turning, and at some point the tail is exactly one percent. In sigmas, every normal curve is the same curve. So a one percent tail always ends the same number of sigmas below the mean, whatever the mean is. That number is a zed score. So the job is to find the zed first, then the mean."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "reading the table backwards",
+      "voiceover": {
+        "text": "The table gives areas to the left, for positive zeds. A one percent tail on the left mirrors a one percent tail on the right. And a right tail of one percent means ninety-nine percent to the left. So search inside the table for zero point nine nine. At two point three two it's zero point nine eight nine eight, and at two point three three it's zero point nine nine zero one. Zero point nine nine zero one is closer, so zed is about two point three three. Four ninety is below the mean, so zed is negative: minus two point three three."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "solving for the mean",
+      "voiceover": {
+        "text": "Now put it into the zed score formula. Zed is x minus mu, over sigma, so minus two point three three equals four ninety minus mu, all over eight. Multiply by eight: four ninety minus mu is minus eighteen point six four. So mu is five hundred and eight point six four millilitres. With the table's rounding, that leaves a tail just under one percent, so it meets the limit. In words, four ninety has to sit two point three three standard deviations, eighteen point six four millilitres, below the mean."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "checking the direction",
+      "voiceover": {
+        "text": "Check it forwards. Four ninety minus five oh eight point six four, over eight, is minus two point three three, and the tail is one minus zero point nine nine zero one, zero point zero zero nine nine. That's just under one percent. Fill two hundred bottles at this setting, and only two come up short. And the picture agrees: a higher mean moves the bell away from four ninety, so the tail shrinks. So, using the table's zed, a setting of five hundred and eight point six four is safe. If you round, round up."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "the spread from the empirical rule",
+      "voiceover": {
+        "text": "The spread can be the unknown instead. Bolts are made with a mean length of fifty millimetres, and a bolt is rejected if it's more than one millimetre from fifty. Right now sigma is zero point five, so the limits sit at two sigma, and about five percent are rejected. The maker wants that down to about zero point three percent. That means ninety-nine point seven percent inside, which is three sigma. So the one millimetre limits must be three standard deviations from the mean. Three sigma equals one, so sigma is one third of a millimetre. Shrinking sigma squeezes the bell, and the tails pull inside the limits."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a maximum spread from the table",
+      "voiceover": {
+        "text": "When the percentage isn't on a whole sigma, use the table. Cereal boxes must hold at least three seventy-five grams. The mean is three eighty, and fewer than zero point five percent can be underweight. What's the largest sigma allowed? A left tail of zero point zero zero five mirrors to zero point nine nine five to the left. The table gives zero point nine nine four nine at two point five seven, and zero point nine nine five one at two point five eight, so zed is about minus two point five seven five. Then five over sigma is two point five seven five, so sigma is about one point nine four grams. To one decimal place, round down to one point nine. Round up to two, and the tail grows to about zero point six percent, which fails."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "two levers for one condition",
+      "voiceover": {
+        "text": "So there are two levers for the same condition. Keep sigma at two grams instead, and the mean has to move up. Three seventy-five minus mu, over two, is minus two point five seven five, so mu is three seventy-five plus five point one five, which is three hundred and eighty point one five. That's just short, so round up to three hundred and eighty point one six grams. Either move the mean away from the limit, or shrink the spread."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember the method. Area to zed, then zed to the unknown. Find the zed from the probability first, then solve for the mean or sigma, and check the direction on a sketch."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the mean. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Two percent on the left mirrors to zero point nine eight, and zero point nine seven nine eight is closer, so zed is minus two point oh five, negative because a thousand grams is below the mean. Sigma is three, so mu is a thousand plus six point one five, about one thousand and six point one five grams. A thousand minus six point one five is wrong. It puts the mean below the cut-off."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find sigma. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Four percent above fifty-seven leaves zero point nine six below it, so zed is one point seven five, positive because fifty-seven is above the mean. Seven over sigma is one point seven five, so sigma is about four hours. A zed of minus one point seven five is wrong. It makes sigma negative, and a standard deviation can't be negative."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a probability fixes a zed score, and the zed score fixes the unknown mean or spread. That's the last of the normal distribution videos. You can now go from values to probabilities, and from probabilities back to the mean or sigma. Later practice videos mix these skills with the rest of the course."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

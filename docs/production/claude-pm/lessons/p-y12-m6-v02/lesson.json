@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "3bcbb4fea178614b779028a25057c96fc83fca0a09847509635c185140163703",
+  "sourceDesignSha256": "ddee9ec8fb452d9c692e6fbbe7d430c328bcf0cf768d1486723e931bca210d44",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Here's our electron again, at the entrance to the plates. This time it's fired in sideways, parallel to the plates, at three times ten to the seven metres per second. As it moves across, it's pushed steadily upwards, towards the positive plate. Its path curves, just like a ball thrown sideways off a cliff, only upside down. Is that a coincidence? Straight line, parabola or circle: what shape is the path?"
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Straight line, parabola or circle: what shape is the path?",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Straight line, parabola or circle: what shape is the path?",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "two-motions",

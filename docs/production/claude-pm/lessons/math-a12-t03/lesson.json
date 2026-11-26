@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-t03",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "4fec3a550286e0649c6158e43bc662f1f6d7d2eaed7a6655d9df31c87ec94165",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (two readings and a repeating pattern)",
+      "voiceover": {
+        "text": "Here are two readings from the tide board at a harbour boat ramp: high tide, seven and a half metres, at time zero, and low tide, one and a half metres, six hours later. The water keeps rising and falling in the same pattern, about twice a day. A quantity that repeats like that is called periodic, and a transformed cos curve can describe it. Let's build that curve one feature at a time."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "midline and amplitude from high and low",
+      "voiceover": {
+        "text": "Start with the middle. The water swings as far above its middle level as below it, so the midline is halfway between high and low: seven point five plus one point five, over two, is four point five. The amplitude is the distance from the midline up to high tide: seven point five minus one point five, over two, is three. So the curve runs from four point five minus three, up to four point five plus three."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "the period, and b",
+      "voiceover": {
+        "text": "Now the period. We assume the tide follows a smooth cos-shaped wave, and that these are consecutive tides, so high to low is only half a cycle, and a full cycle, high back to high, takes twelve hours. For one cycle, the inside, a times t, has to grow by two pi. So a is two pi divided by twelve, which is pi over six. That's the period rule, read backwards: a equals two pi over the period."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "choose the curve: cos starts at its peak",
+      "voiceover": {
+        "text": "Which curve should we use? At time zero the water is at its highest, and the cos curve starts at its peak. So no slide is needed: h equals three cos of pi t over six, plus four point five. Check the other measurement. At t equals six, the inside is pi, cos pi is minus one, and h is minus three plus four point five: one point five, low tide. A sine model works too, with plus pi over two inside, which slides it left by three hours, but cos is simpler here."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "use the model: the level after four hours",
+      "voiceover": {
+        "text": "Now use the model. What's the water level four hours after high tide? The inside is four pi over six, which is two pi over three. Cos of two pi over three is exactly minus a half, so h is minus one point five plus four point five: three metres. On the graph, the water is below the midline and still falling, as it should be, two hours before low tide."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "solve: when is the level 5.25 m?",
+      "voiceover": {
+        "text": "Harder question: when is the water level five point two five metres, in the first twelve hours? There's one cycle, and the level is between low and high, so expect two times. Three cos of pi t over six, plus four point five, equals five point two five, so cos of pi t over six is a quarter. A quarter isn't an exact value, so use inverse cos on a calculator, in radians: pi t over six is about one point three one eight, and t is about two point five two hours. By symmetry, the other angle is two pi minus that, so t is about nine point four eight. So a boat that needs the level at least five and a quarter metres can come in for about the first two and a half hours, and again from about nine and a half hours until twelve, in this first cycle. The model repeats that every twelve hours."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "a second situation: a turning wheel makes a wave",
+      "voiceover": {
+        "text": "Remember the Ferris wheel seat? Here's one with numbers: radius ten metres, its centre twelve metres above the ground, turning once every sixty seconds. Follow one cabin, starting at the bottom. As the wheel turns, its height traces a wave. Midline twelve, amplitude ten, and period sixty, so a is two pi over sixty, pi over thirty. It starts at the lowest point, so we need the cos curve turned upside down: h equals twelve minus ten cos of pi t over thirty. Check: at thirty seconds, h is twenty two, the top."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "an exact solve: when is the cabin 17 m up?",
+      "voiceover": {
+        "text": "When is the cabin seventeen metres up, in the first turn? Twelve minus ten cos equals seventeen, so cos of pi t over thirty is minus a half. That's an exact value. Cos is minus a half at two pi over three and four pi over three, so t is twenty seconds, or forty seconds. On the wheel, those are the two moments the cabin passes seventeen metres, once on the way up, and once on the way down."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid: middle, half, period, start",
+      "voiceover": {
+        "text": "Here's a checklist for a sinusoidal model, a periodic quantity shaped like a smooth sine wave. Middle, half, period, start. The midline is the middle of the max and the min. The amplitude is half the gap between them. a is two pi over the period. And the start picks the curve: cos if it starts at a max, minus cos if it starts at a min, and sine if it starts in the middle, going up."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. In a coastal town, the longest day has fourteen and a half hours of daylight, and the shortest day, six months later, has nine and a half. Assume a sinusoidal pattern, with these as consecutive extremes. Let t be the number of months after the longest day, and model the daylight hours as D equals k cos a t, plus c. Find k, a and c, then find D when t equals two. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The midline c is the middle of fourteen and a half and nine and a half: twelve. The amplitude k is half the gap: two point five. Six months is half a cycle, so the period is twelve months and a is pi over six. At t equals two, cos of pi over three is a half, so D is twelve plus one point two five: thirteen point two five hours. An amplitude of five uses the whole gap, not half."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A buoy's height, in metres, is h equals one point five sine of pi t over eight, plus three, where t is in seconds. Find the first two times after t equals zero when h is three point seven five. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "One point five sine of pi t over eight is point seven five, so sine of pi t over eight is a half. Sine is a half at pi over six and five pi over six. Multiply by eight over pi: t is four thirds of a second, and twenty thirds of a second. Pi over six is the angle inside, not the time."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a sinusoidal model needs a midline, an amplitude, a period and a starting point. The water level only ranges from one and a half to seven and a half metres, so an ordinary axis shows it well. Next, quantities that range over many powers of ten. Here's a phone's storage: a text message, a photo, a film and the whole phone, on one ordinary ruler. Can you even see the text?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

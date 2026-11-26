@@ -1,0 +1,154 @@
+{
+  "id": "math-a12-f11",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "6e4ef0954528fea7205b87d52159d80b9cbf9e1f8a515b671ff36a5038da72be",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (fifty repayments?)",
+      "voiceover": {
+        "text": "Last video ended here. A used motorbike is bought with a twenty thousand dollar loan, at seven point two per cent a year, compounded monthly, repaid at four hundred dollars a month. A quick guess is twenty thousand divided by four hundred, which is fifty repayments. But the first month's interest is a hundred and twenty dollars, so only two hundred and eighty dollars of that repayment pays off the bike. Is it fifty repayments, about sixty, or more than seventy? Make a guess. Here's the race. Without interest, the loan would be gone at fifty. With interest, it takes sixty."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "paid off means zero",
+      "voiceover": {
+        "text": "So how do we find that exactly? Start with what repaid means. After the last repayment, the balance is zero. And we already have a formula for the balance after n repayments. A sub n equals P times one plus r to the n, minus M times one plus r to the n, minus one, all over r. Here P is twenty thousand, r is zero point zero zero six, and M is four hundred. So we set A sub n equal to zero, and this time the unknown is n."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "solving for the term",
+      "voiceover": {
+        "text": "Multiply both sides by r, and the first month's interest, one hundred and twenty dollars, appears. Gather the powers, and you get two hundred and eighty times one point zero zero six to the n equals four hundred. So one point zero zero six to the n is ten sevenths. Take logs of both sides, and n comes down from the power. n is log of ten sevenths over log one point zero zero six, about fifty-nine point six two. This only works because four hundred is more than the interest. If it only matched the interest, we'd divide by zero, and the balance would never change. If it were less, the right side would be negative, and no power could equal it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "rounding up and the total",
+      "voiceover": {
+        "text": "Fifty-nine point six two repayments isn't possible, so which whole number? After fifty-nine repayments, there's still two hundred and forty-eight dollars thirty-eight owing. So the loan needs sixty repayments, and the last one is smaller, just two hundred and forty-nine dollars eighty-seven, once a month's interest is added. Always round the term up. The total actually paid is fifty-nine lots of four hundred, plus that last repayment, which is twenty-three thousand, eight hundred and forty-nine dollars eighty-seven cents. Take away the twenty thousand borrowed, and the bike cost three thousand, eight hundred and forty-nine dollars eighty-seven in interest."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "turning it around: the repayment",
+      "voiceover": {
+        "text": "Now turn it around. Say you want the bike paid off in exactly four years, which is forty-eight repayments. What should each repayment be? Set A forty-eight equal to zero, and now M is the unknown. Add the repayment term to both sides, so the loan's growth equals the repayments' growth. Then multiply both sides by r, and divide by the bracket. That gives M equals P r times one plus r to the n, all over one plus r to the n, minus one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "the repayment and the total",
+      "voiceover": {
+        "text": "Here P r is the same one hundred and twenty, and one point zero zero six to the forty-eight is about one point three three. So M is one hundred and twenty times that power, over the power minus one, which is four hundred and eighty dollars seventy-eight cents, to the nearest cent. That's about eighty dollars more each month. But forty-eight of them add to about twenty-three thousand and seventy-seven dollars, about seven hundred and seventy dollars less than before. The debt is gone sooner, so there's less interest altogether."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "the amount still owing",
+      "voiceover": {
+        "text": "One more question. At four hundred dollars a month, how much is still owed on the bike after two years? That's after twenty-four repayments, so use the same formula with n equal to twenty-four. Twenty thousand times one point zero zero six to the twenty-four, minus four hundred times the bracket, over zero point zero zero six, gives twelve thousand, seven hundred and ninety-five dollars twenty-six cents. That's forty per cent of the time, but only about thirty-six per cent of the loan is paid off, because the early repayments carried the most interest."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the idea behind three of the four calculations. Paid off means A sub n equals zero. Set it to zero, then solve for what's missing. For the amount still owing, just work out A sub n."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A loan of two hundred and fifty thousand dollars has interest at six per cent a year, compounded monthly. It's repaid in equal monthly repayments over twenty years. Find the monthly repayment, to the nearest cent, and the total amount paid. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Here r is half a per cent a month and n is two hundred and forty, so P r is one thousand two hundred and fifty. So M is one thousand two hundred and fifty, times one point zero zero five to the two hundred and forty, over that power minus one. That's one thousand seven hundred and ninety-one dollars eight cents, and with two hundred and forty equal repayments, the total paid is four hundred and twenty-nine thousand, eight hundred and fifty-nine dollars twenty. Two hundred and fifty thousand over two hundred and forty is wrong. It doesn't even cover the first month's interest."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A loan of eighteen thousand dollars has interest at six per cent a year, compounded monthly. It's repaid at five hundred dollars a month. How many monthly repayments are needed to repay the loan? Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The first month's interest is ninety dollars, so one point zero zero five to the n is five hundred over four hundred and ten, which is fifty over forty-one. Taking logs, n is about thirty-nine point seven nine. Round up, so it's forty repayments. Thirty-nine is wrong. After thirty-nine repayments, there's still about three hundred and ninety-three dollars owing."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So one formula answers all four questions: set the balance to zero for three of them, and just work it out for the amount still owing. Now turn the money around. Instead of borrowing, you save towards your first apartment: two hundred dollars at the end of every month, in an account that earns interest. How much will you have after five years?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

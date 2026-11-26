@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-f15.md",
+  "sourceSha256": "32570d72e7bbf13a58fb3670ad9fe9ccb7a79058ebbaf8feabb1753aebcf1f6e",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with a goal. You're saving for a holiday, and you want six thousand dollars in two years, from deposits at the end of every month, at six per cent a year, compounded monthly. How much should each deposit be? A quick guess is six thousand divided by twenty-four months, which is two hundred and fifty dollars. Is the real answer more than that, or less? Make a guess.",
+      "audioFile": "public/audio/math-a12-f15/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Every problem in this video uses the same model, so check its conditions first. Does the account start at zero, with a positive interest rate? Are the payments equal, and made at the end of each period? Do r and n match how often the payments are made? Is the future value read at the end of a period, straight after a payment? And what does the question want at the end: rounding to the cent, a whole number of periods, or more growth after the payments stop? This video solves one problem for each of those conditions.",
+      "audioFile": "public/audio/math-a12-f15/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Here, the payments are monthly, so r is zero point zero zero five, and n is twenty-four. Put the goal in for the future value, and M is the unknown. Six thousand equals M, times one point zero zero five to the twenty-four, minus one, over zero point zero zero five. That fraction is about twenty-five point four three, so divide by it. M is two hundred and thirty-five dollars and ninety-two cents, to the nearest cent. That's a little less than the guess, because interest adds about three hundred and thirty-eight dollars. But watch the goal. Two hundred and thirty-five dollars ninety-two reaches only five thousand, nine hundred and ninety-nine dollars ninety-one. It falls nine cents short. To be sure of reaching a goal, round up, to two hundred and thirty-five dollars ninety-three.",
+      "audioFile": "public/audio/math-a12-f15/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Over a longer time, interest does far more. Say the goal is six hundred thousand dollars in thirty years, at the same rate. Dividing by three hundred and sixty months suggests one thousand, six hundred and sixty-six dollars sixty-seven. But the same steps give five hundred and ninety-seven dollars and thirty cents to the nearest cent, so round up to five hundred and ninety-seven dollars thirty-one. You deposit about two hundred and fifteen thousand dollars, and interest adds about three hundred and eighty-five thousand.",
+      "audioFile": "public/audio/math-a12-f15/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Next, a different payment period. Four hundred and fifty dollars goes in at the end of every fortnight, for twenty-five years, at six point four per cent a year, compounded fortnightly. There are twenty-six fortnights in a year, so r is zero point zero six four, divided by twenty-six, and n is twenty-six times twenty-five, which is six hundred and fifty. Keep r as that exact fraction. Rounded to zero point zero zero two four six two, it would add about a hundred and thirty-five dollars after six hundred and fifty periods. The future value is seven hundred and twenty thousand, eight hundred and eighty-five dollars and thirty-two cents.",
+      "audioFile": "public/audio/math-a12-f15/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now the time is the unknown. Back to the holiday, but you can only spare two hundred dollars a month. How many deposits until you reach six thousand? Set six thousand equal to two hundred, times one point zero zero five to the n, minus one, over zero point zero zero five. Rearranging gives one point zero zero five to the n equals one point one five. The unknown is a power, so take logs. n is log one point one five over log one point zero zero five, which is about twenty-eight point zero two. But in this model, the balance only changes at each month's end, when the interest and a deposit go in. After twenty-eight deposits it's five thousand, nine hundred and ninety-four dollars ninety, still short. So round up. It takes twenty-nine deposits.",
+      "audioFile": "public/audio/math-a12-f15/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The last condition is payments that stop. Say you deposit two hundred and fifty dollars a month for two years, which grows to six thousand, three hundred and fifty-seven dollars ninety-nine. Then the trip moves a year later. The deposits stop, but the money stays in at the same rate. That's two stages. The annuity formula covers the deposits. After that, it's plain compound interest, so multiply by one point zero zero five to the twelve. The final balance is six thousand, seven hundred and fifty dollars fourteen. Using the annuity formula for three years would count twelve deposits that were never made.",
+      "audioFile": "public/audio/math-a12-f15/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a way to keep the steps in order. Match, model, finish. Match r and n to the payment period. Write the model, with the target or the unknown in its place. Then finish with the question's condition: round the right way, use whole periods, or grow what's left.",
+      "audioFile": "public/audio/math-a12-f15/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. Find the smallest quarterly deposit that reaches the target. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f15/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Quarterly means r is zero point zero four four over four, which is zero point zero one one, and n is twenty-four. Dividing thirty thousand by the series factor gives just over one thousand and ninety-nine dollars and seven cents, so round up, to one thousand and ninety-nine dollars and eight cents. Twelve hundred and fifty dollars is wrong. It divides thirty thousand by twenty-four, and ignores the interest.",
+      "audioFile": "public/audio/math-a12-f15/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. Find the final balance. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f15/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Two stages. The ten deposits grow to twenty-four thousand and twelve dollars twenty-one. Then five years of compound interest. Times one point zero four to the five gives twenty-nine thousand, two hundred and fourteen dollars fifty-three. Forty thousand and forty-seven dollars is wrong. It treats the plan as fifteen years of deposits, so it counts five that were never made.",
+      "audioFile": "public/audio/math-a12-f15/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So every annuity problem is the same model, with its conditions checked: match, model, finish. That's the end of the finance videos. Next, something new. A die is rolled two hundred times, and the four comes up thirty-eight times. Is the die fair? To answer that, you need to know what the counts should look like.",
+      "audioFile": "public/audio/math-a12-f15/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-f15/scene-14.wav"
+    }
+  ]
+}

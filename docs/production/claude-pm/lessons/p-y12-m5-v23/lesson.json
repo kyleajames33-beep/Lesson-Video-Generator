@@ -3,7 +3,7 @@
   "fps": 30,
   "subject": "Physics",
   "yearLevel": 12,
-  "sourceDesignSha256": "a97a452cf0635a254bcae237e606eb1791ff4ea9830f5bd67e8a98ea5912493f",
+  "sourceDesignSha256": "4e280897c1d7ef28b8911278f65dc7478e051ef5ff33f1b5f374e6ba5d01c700",
   "scenes": [
     {
       "id": "hook",
@@ -12,8 +12,21 @@
         "text": "Launch a probe straight up from Earth's surface, with no air, and no engine after launch. At five kilometres per second, it climbs about one thousand six hundred kilometres before falling back. At ten kilometres per second, it gets about twenty-five thousand kilometres up, and still falls back. Is there a launch speed where it never comes back at all, and does that speed have to be infinite? Have a think."
       },
       "durationInFrames": 1,
-      "holdSeconds": 0,
-      "holdKind": "visual"
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3,
+        "afterText": "Have a think.",
+        "countdownStartsWithHold": true
+      },
+      "plannedInlineHolds": [
+        {
+          "afterText": "Have a think.",
+          "seconds": 3,
+          "countdown": true,
+          "implementation": "The timing assembler inserts silence after the aligned prompt, shifts later captions and sets responseHold to the inserted interval. This replaces the trailing response hold."
+        }
+      ]
     },
     {
       "id": "energy-trade",

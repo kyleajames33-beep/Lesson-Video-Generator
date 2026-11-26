@@ -1,0 +1,228 @@
+{
+  "design": "phys-y12-m5-v15",
+  "sourceSHA256": "20ea577bc48188ffcb50411284397f85d34db595c4cf1d4e8e43a2a3a72f58f7",
+  "reuse": [
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-boss-crossbar-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-boss-crossbar-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-dashboard-cluster-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-dashboard-cluster-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-mass-hanger-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-mass-hanger-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-paper-clip-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-paper-clip-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": true
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-ramp-plank-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-ramp-plank-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-retort-stand-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-retort-stand-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "phys-y11-slotted-masses-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-slotted-masses-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "public/assets/chemistry/m5x-stopper-v1.png",
+      "paths": [
+        "public/assets/chemistry/m5x-stopper-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "public/assets/physics/phys-y11-car-top-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-car-top-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "public/assets/physics/phys-y11-steel-ball-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-steel-ball-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "public/assets/physics/phys-y11-wooden-block-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-wooden-block-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    },
+    {
+      "design": "phys-y12-m5-v15",
+      "reference": "y12p-tube-clamp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-tube-clamp-v1.png"
+      ],
+      "exists": true,
+      "resolutionNote": "",
+      "heldUse": false
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "tube-clamp",
+      "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-93ae6e13-8513-4d44-9723-bf3b9f4d44a1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha16Bounds": [
+        127,
+        332,
+        1124,
+        942
+      ],
+      "marginFraction": [
+        0.10127591706539076,
+        0.2647527910685805,
+        0.10366826156299841,
+        0.24880382775119617
+      ],
+      "file": "public/assets/physics/y12p-tube-clamp-v1.png",
+      "sha256": "3efad2f07fe678fb34d202287ebeaae2d8148c12ec76da33ba63f288fbfafb34",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "coordinateSystem": "native pixels, origin top left, x right, y down",
+      "measurement": "Estimated on viewed native PNG. Confirm in coded scene before production approval.",
+      "anchors": {
+        "rodLeftEnd": [
+          128,
+          637
+        ],
+        "rodCentreLine": [
+          [
+            128,
+            637
+          ],
+          [
+            460,
+            637
+          ]
+        ],
+        "tubeTopOpening": [
+          860,
+          347
+        ],
+        "tubeBottomOpening": [
+          861,
+          930
+        ],
+        "note": "Empty tube, open ends. QA assembly mirrors existing boss crossbar horizontally so its short round stub reaches right. Do not use the knurled screw as the rod socket. Apparatus method remains blocked."
+      },
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; actual scene integration pending",
+      "qa": "docs/production/claude-pm/assets/brief188-qa",
+      "qualification": "Generated native dimensions retained. No stretching, upsampling or scripted creative modification. Approximate nominal requested sizes are not exact output sizes."
+    }
+  ],
+  "qa": "docs/production/claude-pm/assets/brief188-qa",
+  "holds": "Source findings unresolved. v16 method blocked. Old paper clip backdrop confirmed in v15/v16; clean replacement request requires Claude/root decision, no replacement painted.",
+  "motionListeningRelease": "pending",
+  "brief224": {
+    "paperClip": {
+      "key": "paper-clip",
+      "file": "public/assets/physics/y12p-paper-clip-v1.png",
+      "generatedPath": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-a19967e3-1da5-452e-bdf4-c8e5d74dea07.png",
+      "brief": 224,
+      "date": "2026-11-07",
+      "sha256": "7b05f1ef4719be0704637db47511c1af23abfdf94e01ed041f5fe3cfa1262aaa",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alpha128Box": [
+        498,
+        178,
+        751,
+        1077
+      ],
+      "anchors": {
+        "top": [
+          626.5,
+          178
+        ],
+        "bottom": [
+          626.0,
+          1076
+        ]
+      },
+      "marginCheck": "At least8percent clear margin at alpha128 on each edge; no native resize or upscale",
+      "holeAlphaSamples": {
+        "centre": 0,
+        "upperLoop": 0
+      },
+      "qa": "docs/production/claude-pm/assets/brief224-qa/paper-clip-final-composites.jpg",
+      "state": "delivered native PNG; static QA passed"
+    },
+    "originalPreserved": "public/assets/physics/phys-y11-paper-clip-v1.png"
+  }
+}

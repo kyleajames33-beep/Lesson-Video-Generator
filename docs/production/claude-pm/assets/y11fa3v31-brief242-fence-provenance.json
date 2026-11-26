@@ -1,0 +1,62 @@
+{
+  "file": "public/assets/biology/y11-dingo-fence-v1.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-ef1c5cf7-d81d-4766-b34e-93af29bbdd56.png",
+  "lesson": "bio-y11-fa3-v31",
+  "title": "Biology FA3 v31 dingo fence",
+  "requestedSize": [
+    1000,
+    1500
+  ],
+  "reference": "public/assets/biology/y11-semi-arid-rangeland-v1.png",
+  "reportName": "y11b-fa3-v31-upgrade-plate-check.md",
+  "provenanceName": "y11fa3v31-brief242-fence-provenance.json",
+  "anchors": {
+    "nearestPostBase": [
+      312,
+      1362
+    ],
+    "fenceVanishingPoint": [
+      760,
+      552
+    ],
+    "nearestPostTop": [
+      310,
+      239
+    ]
+  },
+  "prompt": "Create a new narrow upright biology scene plate y11-dingo-fence-v1, portrait approximately1000x1500. Reference is ONLY for Australian semi-arid flat country, red-earth and saltbush palette, fine ink and softly painted realist style. A tall wire-netting DINGO FENCE about1.8metres high, made of fine rectangular-mesh netting supported by alternating weathered timber and plain steel posts, seen close beside it, running dead straight away from viewer toward one distant vanishing point at the horizon. Nearest whole post at bottom left/centre; fence narrows rapidly toward horizon near upper right/centre. Show the FULL nearest post from top to ground, no cropped wire or posts. Landscape on BOTH sides is the SAME flat red-earth semi-arid ground with a few low grey-green saltbushes; do not imply one side is greener or more barren. The asset is a NARROW UPRIGHT vignette that can stand between two landscape cards. Only a narrow natural wedge of ground under the fence, no vast solid rectangular background or painted sky; true transparent exterior and transparent through visible gaps above the horizon. Fine dark-ink outline makes pale wire legible on cream paper. Generous at least8percent empty margin around whole vignette. No animals, dingoes, kangaroos, people, hands, faces, signs, vehicles, gate, text, numbers, labels, barbed-wire closeup, diagram arrows, glow, halo or white border. Gentle upper-left daylight. True transparent PNG. Never stretch.",
+  "qa": {
+    "result": "static pass with margin and scene-fit limits",
+    "observations": [
+      "Full nearest timber post, alternating timber/steel supports and netting recede to one vanishing point. Similar country and vegetation on both sides, no animals or implied experimental values.",
+      "Actual native paper and dark composites inspected: mesh gaps above horizon are transparent, edges have no external glow or matte, no text, people or faces.",
+      "Returned 1024 by 1536 preserves requested 2:3 aspect. Side margins about three percent and bottom about six percent fall below eight; add scene padding.",
+      "Landscape vignette fits portrait canvas, but actual placement between the two rangeland plates remains pending."
+    ],
+    "evidence": [
+      "work/brief242/dingo-fence-native-paper.jpg",
+      "work/brief242/dingo-fence-native-dark.jpg"
+    ]
+  },
+  "reportText": "Delivered `public/assets/biology/y11-dingo-fence-v1.png` and sidecar with nearest-post base and vanishing-point anchors. Wire mesh and alternating timber/steel supports run across similar country on both sides. No animals, signs, labels or question data.\n\nActual native paper and dark composites pass static QA, including clear mesh gaps above the horizon. Returned 1024 by 1536 preserves the requested 2:3 aspect. Side margins about three percent and bottom about six percent need extra scene padding. The assembled comparison layout and exact fit between the two landscapes remain build checks.",
+  "statusText": "Delivered y11-dingo-fence-v1.png, sidecar, provenance and manifest. Full nearest post, netting and alternating supports; similar country on both sides and no animals. Actual native paper/dark static QA passes. Native 1024 by 1536, narrow side/bottom margins disclosed. Placement between the landscape cards remains pending.",
+  "id": "y11-dingo-fence-v1",
+  "brief": 242,
+  "sha256": "0e17c5d49f185907da96589357239a82035952a92d3516cef0ea4d63d7e93092",
+  "nativeSize": [
+    1024,
+    1536
+  ],
+  "alphaRange": [
+    0,
+    254
+  ],
+  "alphaAbove1": [
+    32,
+    226,
+    998,
+    1436
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false
+}

@@ -1,0 +1,580 @@
+WEBVTT
+
+00:00:00.282 --> 00:00:01.690
+Last video ended here.
+
+00:00:02.252 --> 00:00:04.498
+The integral of sine x, from zero to
+
+00:00:04.558 --> 00:00:07.366
+two pi, is zero, because the arch below
+
+00:00:07.406 --> 00:00:09.272
+the axis cancels the arch above.
+
+00:00:10.114 --> 00:00:12.522
+Picture sine t as the velocity of a
+
+00:00:12.623 --> 00:00:15.452
+lift, in floors per second, over two pi
+
+00:00:15.514 --> 00:00:15.854
+seconds.
+
+00:00:16.557 --> 00:00:18.426
+For the first half, it rises two floors.
+
+00:00:18.790 --> 00:00:20.584
+For the second half, it comes back down
+
+00:00:20.645 --> 00:00:20.826
+two.
+
+00:00:21.471 --> 00:00:23.236
+It ends where it started, so its net
+
+00:00:23.277 --> 00:00:24.319
+change is zero.
+
+00:00:24.942 --> 00:00:27.326
+But it still travelled four floors, and the
+
+00:00:27.367 --> 00:00:30.092
+shaded region has area four, two for each
+
+00:00:30.213 --> 00:00:30.413
+arch.
+
+00:00:31.196 --> 00:00:34.074
+The integral keeps signs, and the area doesn't.
+
+00:00:34.777 --> 00:00:37.684
+So how do signed integrals differ from total
+
+00:00:37.826 --> 00:00:40.151
+area, and how do we find the area
+
+00:00:40.293 --> 00:00:42.057
+when part of the region is below the
+
+00:00:42.158 --> 00:00:42.458
+axis?
+
+00:00:43.048 --> 00:00:44.355
+Start with the easy case.
+
+00:00:45.039 --> 00:00:47.245
+When the curve stays on or above the
+
+00:00:47.327 --> 00:00:47.667
+axis,
+
+00:00:48.189 --> 00:00:50.978
+every strip has a positive height, so every
+
+00:00:51.039 --> 00:00:51.941
+strip adds area.
+
+00:00:52.845 --> 00:00:54.951
+Then the area and the integral are the
+
+00:00:55.012 --> 00:00:55.633
+same number.
+
+00:00:56.337 --> 00:00:56.537
+Take
+
+00:00:57.080 --> 00:00:59.953
+y equals two x plus one, from one
+
+00:01:00.054 --> 00:01:00.495
+to three.
+
+00:01:01.359 --> 00:01:04.667
+Earlier, we found this trapezium's area, ten, by
+
+00:01:04.708 --> 00:01:05.188
+geometry.
+
+00:01:05.931 --> 00:01:06.772
+Now with a primitive,
+
+00:01:07.435 --> 00:01:10.481
+x squared plus x, it's twelve minus two,
+
+00:01:10.803 --> 00:01:11.263
+which is ten.
+
+00:01:12.007 --> 00:01:14.663
+Same number, because nothing is below the axis.
+
+00:01:15.435 --> 00:01:17.042
+Now a region below the axis.
+
+00:01:17.506 --> 00:01:20.198
+Take y equals x squared minus four, from
+
+00:01:20.280 --> 00:01:21.002
+zero to two.
+
+00:01:21.868 --> 00:01:23.652
+On this stretch the curve is under the
+
+00:01:23.754 --> 00:01:26.321
+axis, so every height is negative, and every
+
+00:01:26.403 --> 00:01:27.907
+strip adds a negative amount.
+
+00:01:28.750 --> 00:01:31.538
+A primitive is x cubed over three, minus
+
+00:01:31.619 --> 00:01:32.160
+four x.
+
+00:01:32.803 --> 00:01:35.207
+At two that's eight thirds minus eight, which
+
+00:01:35.268 --> 00:01:37.813
+is minus sixteen thirds, and at zero it's
+
+00:01:37.954 --> 00:01:38.274
+zero.
+
+00:01:38.897 --> 00:01:41.223
+So the integral is minus sixteen thirds.
+
+00:01:41.906 --> 00:01:43.562
+But an area can't be negative.
+
+00:01:44.288 --> 00:01:46.879
+A strip's area uses its length, and here
+
+00:01:46.901 --> 00:01:48.447
+the length is minus the height.
+
+00:01:48.930 --> 00:01:50.699
+So the area is the integral with its
+
+00:01:50.780 --> 00:01:52.649
+sign removed, sixteen thirds.
+
+00:01:53.334 --> 00:01:55.342
+We write it as the absolute value of
+
+00:01:55.383 --> 00:01:57.692
+the integral, or as minus the integral.
+
+00:01:58.221 --> 00:02:00.309
+What happens when the curve crosses the axis?
+
+00:02:01.113 --> 00:02:02.887
+Stretch the same curve out to three.
+
+00:02:03.512 --> 00:02:05.497
+It crosses at two, and from two to
+
+00:02:05.558 --> 00:02:06.801
+three it's above the axis.
+
+00:02:07.444 --> 00:02:09.321
+That piece has integral seven thirds.
+
+00:02:10.088 --> 00:02:12.200
+Now the whole integral, from zero to three,
+
+00:02:12.602 --> 00:02:13.386
+is minus three.
+
+00:02:13.909 --> 00:02:16.564
+And minus three is seven thirds, minus sixteen
+
+00:02:16.604 --> 00:02:16.886
+thirds.
+
+00:02:17.711 --> 00:02:19.841
+So the integral is the area above the
+
+00:02:19.943 --> 00:02:21.771
+axis, minus the area below it.
+
+00:02:22.354 --> 00:02:25.181
+That's the lift's net change, floors up minus
+
+00:02:25.222 --> 00:02:25.742
+floors down.
+
+00:02:26.465 --> 00:02:27.651
+But it's not the area.
+
+00:02:28.417 --> 00:02:30.987
+For the area, like the floors travelled, take
+
+00:02:31.149 --> 00:02:32.795
+each piece on its own and make it
+
+00:02:32.856 --> 00:02:33.257
+positive.
+
+00:02:33.941 --> 00:02:36.877
+Sixteen thirds plus seven thirds is twenty-three thirds.
+
+00:02:37.662 --> 00:02:38.749
+Often there's no graph.
+
+00:02:39.532 --> 00:02:40.953
+Find the area bounded by y
+
+00:02:41.514 --> 00:02:44.138
+equals x squared minus four x plus three,
+
+00:02:44.538 --> 00:02:47.122
+the x-axis, and the lines x equals zero
+
+00:02:47.422 --> 00:02:48.343
+and x equals four.
+
+00:02:49.207 --> 00:02:51.325
+First, find where the curve meets the axis.
+
+00:02:51.967 --> 00:02:55.092
+It factorises as x minus one, times x
+
+00:02:55.153 --> 00:02:57.657
+minus three, so the zeros are one and
+
+00:02:57.717 --> 00:02:57.937
+three.
+
+00:02:58.681 --> 00:03:00.514
+They split the interval into three pieces.
+
+00:03:01.160 --> 00:03:02.578
+Test a value in each piece.
+
+00:03:03.243 --> 00:03:05.389
+At zero, y is three, positive.
+
+00:03:05.913 --> 00:03:08.389
+At two, y is minus one, negative.
+
+00:03:08.953 --> 00:03:11.263
+At four, y is three, positive.
+
+00:03:12.006 --> 00:03:13.332
+Now integrate each piece.
+
+00:03:13.814 --> 00:03:16.506
+The answers are four thirds, minus four thirds,
+
+00:03:16.749 --> 00:03:17.612
+and four thirds.
+
+00:03:18.397 --> 00:03:20.528
+Make each one positive and add, so the
+
+00:03:20.650 --> 00:03:21.493
+area is four.
+
+00:03:22.278 --> 00:03:24.345
+The single integral from zero to four is
+
+00:03:24.386 --> 00:03:27.035
+only four thirds, because the middle piece cancels
+
+00:03:27.157 --> 00:03:27.698
+one of the others.
+
+00:03:28.308 --> 00:03:30.254
+The same method works for every function in
+
+00:03:30.295 --> 00:03:30.675
+the course.
+
+00:03:31.279 --> 00:03:33.150
+Take y equals e to the x, minus
+
+00:03:33.211 --> 00:03:34.378
+two, from zero to one.
+
+00:03:34.981 --> 00:03:36.465
+It meets the axis where e to the
+
+00:03:36.586 --> 00:03:38.772
+x is two, so x is the natural
+
+00:03:38.813 --> 00:03:41.039
+log of two, about zero point six nine.
+
+00:03:41.783 --> 00:03:44.193
+At zero, y is minus one, so the
+
+00:03:44.214 --> 00:03:45.761
+first piece is below the axis.
+
+00:03:46.465 --> 00:03:46.865
+At one,
+
+00:03:47.408 --> 00:03:49.575
+y is e minus two, which is positive.
+
+00:03:50.377 --> 00:03:52.199
+With the primitive e to the x minus
+
+00:03:52.260 --> 00:03:55.184
+two x, the first piece is one, minus
+
+00:03:55.265 --> 00:03:57.247
+two times the natural log of two, which
+
+00:03:57.309 --> 00:03:57.768
+is negative.
+
+00:03:58.370 --> 00:04:00.836
+The second is e minus four, plus two
+
+00:04:00.877 --> 00:04:01.999
+times the natural log of two.
+
+00:04:02.684 --> 00:04:04.397
+Make the first one positive and add.
+
+00:04:04.862 --> 00:04:07.751
+The area is e minus five, plus four
+
+00:04:07.793 --> 00:04:09.036
+times the natural log of two,
+
+00:04:09.559 --> 00:04:10.822
+about zero point four nine.
+
+00:04:11.426 --> 00:04:13.395
+Keep the log exact all the way through,
+
+00:04:13.718 --> 00:04:15.064
+and round only at the end.
+
+00:04:15.756 --> 00:04:17.949
+This difference has a meaning when the graph
+
+00:04:17.990 --> 00:04:18.633
+is a velocity.
+
+00:04:19.297 --> 00:04:21.521
+Take the car with velocity twelve minus two
+
+00:04:21.622 --> 00:04:23.886
+t metres per second, from zero to eight
+
+00:04:23.927 --> 00:04:24.247
+seconds.
+
+00:04:25.110 --> 00:04:26.757
+Its integral is thirty-two metres.
+
+00:04:27.320 --> 00:04:29.732
+That's the displacement, where the car ends up
+
+00:04:29.794 --> 00:04:30.899
+compared with where it started.
+
+00:04:31.543 --> 00:04:33.395
+But the car stops at six seconds and
+
+00:04:33.416 --> 00:04:34.060
+then reverses.
+
+00:04:34.845 --> 00:04:37.252
+Forward from zero to six, it travels thirty-six
+
+00:04:37.294 --> 00:04:37.554
+metres.
+
+00:04:38.036 --> 00:04:40.081
+From six to eight, the integral is minus
+
+00:04:40.142 --> 00:04:42.126
+four, so it travels four metres back.
+
+00:04:42.850 --> 00:04:45.543
+The total distance is thirty-six plus four, which
+
+00:04:45.604 --> 00:04:46.427
+is forty metres.
+
+00:04:47.132 --> 00:04:48.821
+Displacement is the signed integral.
+
+00:04:49.284 --> 00:04:50.690
+Distance is the area.
+
+00:04:51.463 --> 00:04:52.659
+Here's a way to remember the method.
+
+00:04:53.363 --> 00:04:54.184
+Find the zeros,
+
+00:04:54.865 --> 00:04:55.206
+split,
+
+00:04:55.907 --> 00:04:56.708
+flip the negatives,
+
+00:04:57.229 --> 00:04:57.750
+then add.
+
+00:04:58.532 --> 00:04:59.962
+The integral keeps the signs.
+
+00:05:00.505 --> 00:05:02.798
+The area makes every piece positive.
+
+00:05:05.376 --> 00:05:05.780
+Your turn.
+
+00:05:06.345 --> 00:05:08.428
+Find the area of the region bounded by
+
+00:05:08.789 --> 00:05:11.513
+y equals x times x minus two, the
+
+00:05:11.694 --> 00:05:14.538
+x-axis, and the lines x equals zero and
+
+00:05:14.759 --> 00:05:15.559
+x equals four.
+
+00:05:16.184 --> 00:05:17.150
+Pause here to answer.
+
+00:05:27.736 --> 00:05:29.653
+The zeros are zero and two.
+
+00:05:30.258 --> 00:05:32.266
+From zero to two, the curve is below
+
+00:05:32.327 --> 00:05:34.335
+the axis, and the integral is minus four
+
+00:05:34.396 --> 00:05:34.736
+thirds.
+
+00:05:35.501 --> 00:05:37.272
+From two to four, it's above, and the
+
+00:05:37.293 --> 00:05:38.601
+integral is twenty thirds.
+
+00:05:39.225 --> 00:05:40.652
+Make both positive and add.
+
+00:05:41.357 --> 00:05:44.311
+Four thirds plus twenty thirds is twenty-four thirds,
+
+00:05:44.493 --> 00:05:45.055
+which is eight.
+
+00:05:45.821 --> 00:05:46.887
+Sixteen thirds is wrong.
+
+00:05:47.331 --> 00:05:49.363
+That's the signed integral, where the piece below
+
+00:05:49.384 --> 00:05:50.590
+the axis subtracts.
+
+00:05:52.376 --> 00:05:52.859
+Last one.
+
+00:05:53.705 --> 00:05:55.871
+The graph shows y equals f of x,
+
+00:05:56.153 --> 00:05:57.436
+from zero to six.
+
+00:05:58.099 --> 00:06:00.125
+The region from zero to two is above
+
+00:06:00.186 --> 00:06:01.810
+the axis, with area five.
+
+00:06:02.493 --> 00:06:04.344
+The region from two to six is below
+
+00:06:04.405 --> 00:06:05.913
+the axis, with area three.
+
+00:06:06.778 --> 00:06:08.743
+Find the integral from zero to six of
+
+00:06:09.025 --> 00:06:10.649
+f, and the total area.
+
+00:06:11.476 --> 00:06:12.346
+Pause here to answer.
+
+00:06:23.201 --> 00:06:25.547
+The integral counts the region below the axis
+
+00:06:25.667 --> 00:06:28.274
+as negative, so it's five minus three, which
+
+00:06:28.314 --> 00:06:28.695
+is two.
+
+00:06:29.437 --> 00:06:32.200
+The total area counts both as positive, so
+
+00:06:32.280 --> 00:06:34.062
+it's five plus three, which is eight.
+
+00:06:35.025 --> 00:06:36.302
+Eight for the integral is wrong.
+
+00:06:36.867 --> 00:06:38.956
+It treats the region below the axis as
+
+00:06:39.036 --> 00:06:39.679
+if it were above.
+
+00:06:41.335 --> 00:06:44.040
+So the integral is above minus below, and
+
+00:06:44.061 --> 00:06:46.326
+the area adds every piece as positive.
+
+00:06:47.271 --> 00:06:49.043
+Every region so far has sat against the
+
+00:06:49.185 --> 00:06:49.647
+x-axis.
+
+00:06:50.211 --> 00:06:50.871
+Here's a different one:
+
+00:06:51.432 --> 00:06:53.893
+the region between y equals the natural log
+
+00:06:53.914 --> 00:06:56.435
+of x, the y-axis, and the lines y
+
+00:06:56.676 --> 00:06:58.717
+equals zero and y equals one.
+
+00:07:00.141 --> 00:07:02.148
+Our strips stood up from the x-axis.
+
+00:07:02.692 --> 00:07:04.205
+Here, they'd have to lie sideways.
+
+00:07:04.933 --> 00:07:06.286
+So how do we find this area?
+
+00:07:09.335 --> 00:07:10.137
+Here are the key notes.
+
+00:07:10.781 --> 00:07:12.508
+Pause the video if you need more time
+
+00:07:12.570 --> 00:07:13.051
+to copy them.

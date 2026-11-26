@@ -1,0 +1,80 @@
+{
+  "file": "public/assets/biology/y11-gas-syringe-plunger-v1.png",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-a6b4287f-3872-4346-908d-09867f4a537d.png",
+  "lesson": "bio-y11-fa1-v21",
+  "title": "Biology FA1 v21 separate gas-syringe plunger",
+  "requestedSize": [
+    2400,
+    1400
+  ],
+  "reference": "public/assets/biology/y11-gas-syringe-rig-v1.png",
+  "reportName": "y11b-fa1-v21-upgrade-plunger-check.md",
+  "provenanceName": "y11fa1v21-brief242-plunger-provenance.json",
+  "anchors": {
+    "gasSideFaceCentre": [
+      716,
+      416
+    ],
+    "shaftAxis": [
+      [
+        716,
+        416
+      ],
+      [
+        1540,
+        416
+      ]
+    ],
+    "thumbDiscCentre": [
+      1577,
+      416
+    ],
+    "referenceRigCanvas": [
+      2400,
+      1400
+    ],
+    "referenceRigBarrelUsableXApprox": [
+      1280,
+      2000
+    ],
+    "referenceRigAxisYApprox": 277,
+    "illustrativeUniformScaleToRig": 0.85
+  },
+  "placement": "Different native canvas from rig. Place using gas-side face anchor and uniform scale, never stretch. Barrel front wall and metal clamp need proper foreground masking; test full reading range in scene.",
+  "prompt": "Initial: create only the removable clear/ground glass gas-syringe plunger matching reference rig, horizontal side view, closed flat gas-side face left, integral thumb disc right, no barrel or other apparatus, same paint and light, true transparent alpha, no halo, text, numbers or people. Refine this isolated horizontal GLASS GAS SYRINGE PLUNGER part. Keep same1920x819 transparent canvas, centre line abouty416, left gas-face centre x796 and right thumb-disc centre x1570, same clear glass style. Required fit change: reduce the long cylindrical shaft diameter from about150pixels to about110pixels while preserving its full length about760pixels. Shaft top near361,bottom471. Thumb disc may stay about190pixels tall. Left end MUST be a CLOSED FLAT solid ground-glass piston face, not an open hollow tube. Show subtle pale frosted texture over that closed elliptical face and frosted shaft, no dark open hole and no concentric empty rim. Cylinder remains long and straight, no needle, no black rubber, no printed scale. All actual glass fully inside generous transparent margin. No background, glow, haze, external white fringe, shadow, text, labels, people or hands. This is only a removable plunger to fit inside the existing empty barrel, not a second syringe barrel.",
+  "qa": {
+    "result": "static part pass; moving assembly pending",
+    "observations": [
+      "Closed flat frosted glass gas-side face and long horizontal shaft, integral thumb disc; no printed graduations, rubber piston, needle or people.",
+      "Actual paper/dark native composites inspected, no external halo or matte. Full part has generous clear margin.",
+      "Returned 1919 by 820 differs from requested rig canvas 2400 by 1400. Not a drop-in identical-canvas part; anchor placement and uniform scale are required.",
+      "QA-only preview at uniform scale 0.85 fits approximate barrel bore and full stroke length. It deliberately reveals unresolved layer ordering: plunger drawn above metal clamp. Builder must mask foreground clamp/barrel and verify full travel. No complete assembly approval."
+    ],
+    "evidence": [
+      "work/brief242/plunger-final-native-paper.jpg",
+      "work/brief242/plunger-final-native-dark.jpg",
+      "work/brief242/plunger-fit-preview.jpg"
+    ]
+  },
+  "reportText": "Delivered `public/assets/biology/y11-gas-syringe-plunger-v1.png` and sidecar with gas-side face and reference barrel anchors. Static paper/dark QA passes: closed frosted glass face, straight shaft, thumb disc, clean alpha and no labels or people.\n\nReturned 1919 by 820 differs from the requested 2400 by 1400 shared rig canvas. Use anchor placement and uniform scaling; it is not a drop-in same-canvas part. A QA-only preview at scale 0.85 shows a plausible bore/length fit, but also the foreground clamp being covered by the plunger. Proper clamp/barrel masking and the complete moving reading range remain required before assembly approval. The preview is evidence of fit and the remaining issue, not an approved final frame.",
+  "statusText": "Delivered separate y11-gas-syringe-plunger-v1.png, sidecar, provenance and manifest. Actual native paper/dark static part QA passes. Returned 1919 by 820 differs from rig canvas; face-anchor placement and uniform scale required. QA fit preview records foreground clamp/barrel masking still needed. No moving assembly approval.",
+  "id": "y11-gas-syringe-plunger-v1",
+  "brief": 242,
+  "sha256": "403028b450968199394d2ad5c826615de1802a680a255809621e125b35dba3c7",
+  "nativeSize": [
+    1919,
+    820
+  ],
+  "alphaRange": [
+    0,
+    255
+  ],
+  "alphaAbove1": [
+    691,
+    282,
+    1625,
+    541
+  ],
+  "method": "Built-in image generation. PNG copied unchanged; Python only for QA measurements/composites.",
+  "wholeLessonClearance": false
+}

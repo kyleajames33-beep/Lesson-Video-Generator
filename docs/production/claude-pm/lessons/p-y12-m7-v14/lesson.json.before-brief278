@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m7-v14",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "1f2a7872f81e3f453ee36b090dfda287a0698e72cdf50933c8caa98ba6de1d2c",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (12 light-years or 7.2?)",
+      "voiceover": {
+        "text": "Here's where we stopped. In Earth's frame, the star is twelve light years away, and the trip at zero point eight c takes fifteen years. The ship's clock reads nine years, and in the ship's frame the star rushes towards it at zero point eight c. So for the ship, the distance is only seven point two light years, shorter by exactly gamma, one point six seven. So is the space between Earth and the star being squashed? Make your prediction. Nothing is pushed or squashed at all. So why can a moving distance be shorter without an object being crushed?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "contraction-proper-length",
+      "title": "length contraction and proper length",
+      "voiceover": {
+        "text": "This is length contraction. A length measured in a frame where the object is moving is shorter than its length at rest, by the factor gamma. On your data sheet, l equals l zero times the square root of one minus v squared over c squared, which is the same as l zero over gamma. l zero is the proper length, the length in the frame where the object is at rest. Earth and the star are at rest in Earth's frame, so twelve light years is the proper length. Proper length is always the longest."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "derivation",
+      "title": "where it comes from",
+      "voiceover": {
+        "text": "Where does it come from? Time a spacecraft as it passes a marker beacon on a space station. In the station's frame, the nose passes the beacon, then the tail passes, both at the same place, so the beacon's clock measures proper time, t zero. The station's length for the ship is v times t zero. In the ship's frame, the beacon slides along the hull, from nose to tail, taking the longer time, gamma t zero. So the ship's own length is v times gamma t zero. Divide them, and the station measures l zero over gamma. Length contraction comes straight out of time dilation."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "measure-moving-length",
+      "title": "measuring a moving length",
+      "voiceover": {
+        "text": "There's a catch in measuring anything that moves. You have to mark both ends at the same time, in your frame. Mark the nose, wait, then mark the tail, and the ship has moved, so your answer is wrong. And here's the key. Observers in different frames don't agree on which distant events happen at the same time. So they don't agree on which pair of end marks gives the length. That's why each frame gets a different, correct answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "not-crushed",
+      "title": "nothing is crushed, yet it's real",
+      "voiceover": {
+        "text": "Now the crushing question. Nothing pushes on the ship. No force acts, and no atoms are squeezed. On board, every ruler gives the full length, l zero, as always. And it's reciprocal. The ship measures the station's rulers as shorter too. They can't both be squashed. That doesn't make it fake. In the station's frame, the ship really is shorter. Length depends on the frame, just as time does, and in no frame does anything feel squeezed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "perpendicular",
+      "title": "only along the motion",
+      "voiceover": {
+        "text": "Contraction only happens along the direction of motion. Lengths at right angles don't change. Here's why. Put identical rings on two spacecraft flying straight at each other. If sideways lengths shrank, each ship would say the other's ring is smaller and passes inside its own. They can't both be right, so sideways lengths can't change. That's why the light clock's mirrors stayed d apart."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-ship",
+      "title": "worked example: a passing spacecraft",
+      "voiceover": {
+        "text": "Let's calculate. A spacecraft is one hundred metres long at rest, and passes a space station at zero point eight c. What length does the station measure? Gamma at zero point eight c is one point six seven, so l is one hundred over one point six seven, sixty metres. Its height, at right angles to the motion, is unchanged. And on board, the ship is still one hundred metres long."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-docking",
+      "title": "worked example: just fitting a docking bay",
+      "voiceover": {
+        "text": "Now the other way round. How fast must the ship go for the station to measure it as eighty metres, so it just fits a docking bay of that length? Gamma must be one hundred over eighty, one point two five. Rearrange gamma, and v equals c times the square root of one minus one over gamma squared. That's the square root of one minus zero point six four, which is zero point six. So v is zero point six c."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "muons-own-frame",
+      "title": "the muons in their own frame",
+      "voiceover": {
+        "text": "Remember the muons. In Earth's frame, the atmosphere is fifteen kilometres deep and the muon's clock runs slow, so its mean lifetime stretches to twenty two microseconds, and some last the whole fifty microsecond trip. Now take the muon's frame. The muon is at rest and lives its normal two point two microseconds. The atmosphere rushes up at zero point nine nine five c, contracted to fifteen over ten, one point five kilometres. Crossing that takes about five microseconds, again about two point three average lifetimes. Same journey in lifetimes, same survivors, so both frames agree on what the detector counts."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "one-effect-per-frame",
+      "title": "one effect per frame",
+      "voiceover": {
+        "text": "Notice who uses what. Earth's frame uses time dilation, because the muon's clock is the one moving. The muon's frame uses length contraction, because the atmosphere is the one moving. Keep every distance and time you combine from the same frame. And the factor gamma is the same in both stories."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Proper length is the longest. Proper time is the shortest. Both belong to the frame where the thing being measured is at rest."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A spacecraft is one hundred and fifty metres long and twenty metres wide, measured at rest. It passes a space station at zero point nine zero c, moving along its length. Calculate the length and the width of the spacecraft measured by the station. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Gamma at zero point nine zero c is two point two nine, so the length is one hundred and fifty over two point two nine, about sixty five metres. The width is at right angles to the motion, so it stays twenty metres. The slip is multiplying by gamma, which gives a longer ship. A moving length is always shorter."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Muons are produced ten kilometres above sea level and travel down at zero point nine nine eight c, where gamma is fifteen point eight. Their mean lifetime at rest is two point two microseconds. In the muon's frame, calculate the thickness of the atmosphere, and the time it takes to pass, and compare it with the mean lifetime. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "In the muon's frame, the atmosphere is contracted. Ten kilometres over fifteen point eight is about six hundred and thirty metres. At zero point nine nine eight c, that passes in about two point one microseconds, about one mean lifetime, so many muons survive. The slip is dilating the muon's lifetime in its own frame. Its own clock always reads two point two microseconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "Every result so far has the same factor, gamma, and gamma grows without limit as speed approaches c. So what happens if we just keep pushing? Fire the ship's engines and leave them on. The thrust adds momentum every second, for as long as you like. So why does ever more momentum fail to push mass to light speed?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

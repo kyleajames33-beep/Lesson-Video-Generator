@@ -1,0 +1,177 @@
+{
+  "design": "phys-y12-m7-v11",
+  "sourceSha256": "11a91cf944e84c7325fb7de7e88e8f3843a9ce0073f403435391e88542133897",
+  "new": [
+    {
+      "key": "spacecraft",
+      "name": "y12p-spacecraft-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-655b2aef-a7ea-41e1-ab77-f3b58de29ef0.png",
+      "sha256": "c7ac07e78b66af067d5b09d690cf7d7a64247edd11b6d30765ba4d7826069cf7",
+      "size": [
+        2048,
+        768
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        147,
+        25,
+        1859,
+        742
+      ],
+      "visibleBoundsAt16": [
+        285,
+        138,
+        1768,
+        587
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.1392,
+        0.1797,
+        0.1367,
+        0.2357
+      ],
+      "anchors": {
+        "nozzleOpeningCentreApprox": [
+          306,
+          420
+        ],
+        "nozzleOpeningEllipseApprox": [
+          285,
+          345,
+          329,
+          499
+        ],
+        "hullRectForOverlayApprox": [
+          520,
+          330,
+          1620,
+          510
+        ],
+        "tolerancePixels": 8
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/spacecraft.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-spacecraft-v1.png"
+    },
+    {
+      "key": "spacecraft-exhaust",
+      "name": "y12p-spacecraft-exhaust-v1.png",
+      "original": "C:\\Users\\kygs\\.codex\\generated_images\\01a1afb5-b1d8-7473-b343-bd98a258d950\\exec-19c5d53b-2b81-4057-85ae-9be28127d856.png",
+      "sha256": "fe8d33b031025454dbd85da0c5ac15c202bb907a2a437df99091d56e3f7d0b0f",
+      "size": [
+        2048,
+        768
+      ],
+      "alphaExtrema": [
+        0,
+        253
+      ],
+      "alphaBounds": [
+        0,
+        55,
+        1554,
+        696
+      ],
+      "visibleBoundsAt16": [
+        33,
+        350,
+        326,
+        486
+      ],
+      "status": "delivered native PNG; static QA checked; built motion pending",
+      "visibleMarginsFraction": [
+        0.0161,
+        0.4557,
+        0.8408,
+        0.3672
+      ],
+      "anchors": {
+        "sameCanvasAsShip": true,
+        "brightTipApprox": [
+          321,
+          412
+        ],
+        "noShipOrHullPixels": true,
+        "placement": "Same origin and same uniform scale as ship. Composite inspected at1344px wide: tip lies inside nozzle opening and plume does not touch hull.",
+        "tolerancePixels": 10
+      },
+      "qa": "docs/production/claude-pm/assets/brief191-qa/spacecraft-exhaust.jpg",
+      "noPeopleHandsFacesTextOrLogosObserved": true,
+      "compositeInspection": "Inspected at400px wide on paper #f5efdf, board #17292c and white. Visible object edges clean; no coloured fringe, backdrop or external ground shadow.",
+      "nativeUnaltered": true,
+      "actualSizeDiffersFromNominal": true,
+      "path": "public/assets/physics/y12p-spacecraft-exhaust-v1.png"
+    }
+  ],
+  "reuse": [
+    {
+      "reference": "phys-y11-light-meter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-light-meter-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "phys-y11-rocket-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-rocket-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-digital-multimeter-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-digital-multimeter-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-bench-lamp-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-bench-lamp-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-photocell-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-photocell-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-spacecraft-exhaust-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spacecraft-exhaust-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "reference": "y12p-spacecraft-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-spacecraft-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "nativeAspectRatioPreserved": true,
+  "newImagesTool": "image_gen.imagegen",
+  "humanListening": "not applicable to static art; pending for lesson",
+  "builtMotion": "pending",
+  "conditionalFilament": "Existing phys-y11-filament-lamp-v1.png has true varying alpha0..254 and a clean visible composite; no replacement requested.",
+  "optionalPolariser": "Root permitted coded discs as fallback; optional painted mount not generated."
+}

@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m6-v20",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "f02dcd977b5987e4a8e86fd67f583134f295f109c276bea2a3bf6a3937b33d64",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (it stops, but copper isn't magnetic)",
+      "voiceover": {
+        "text": "Here's the copper plate, swinging into the field. With the magnet in place, the plate stops within a few swings. Take the magnet away, and the same plate swings on and on. But copper isn't magnetic. Hold a magnet still against a copper plate, and there's no pull at all. So what's slowing it? Make your prediction. Is copper weakly attracted to the magnet, or are currents induced in the copper? It's induced currents."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "eddy-currents",
+      "title": "currents inside solid metal",
+      "voiceover": {
+        "text": "The plate has no wires, but it's full of closed paths. Picture any loop drawn inside the copper. Where the copper is moving into the field, the flux through loops there is increasing. That induces an emf, and because copper conducts, a current swirls round inside the metal. A current induced in a loop inside a solid piece of metal is called an eddy current, like a swirl in a stream. Where the copper is moving out of the field, the flux through loops there is decreasing, so the eddy current swirls the other way."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "pushes-back",
+      "title": "the field pushes back",
+      "voiceover": {
+        "text": "Each eddy current flows partly inside the field. That part of the current feels a force, the motor effect. Work out the direction for both swirls, and both forces point backwards, against the motion. That's Lenz's law: the eddy currents oppose the change causing them, the plate's motion through the field. Coming in, it pushes back. Going out, it pulls back. Either way, the plate is braked, and nothing touches it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy",
+      "title": "where the energy goes",
+      "voiceover": {
+        "text": "So where does the swinging plate's energy go? Within each swing, kinetic and gravitational energy keep trading places, but their total falls with every pass through the field. The braking force works against the motion, taking that energy away from the plate. That energy drives the eddy currents round the copper. Copper has some resistance, so the currents heat it, at a rate of I squared R. Kinetic energy becomes electrical energy, which becomes heat. No energy is lost. It's only transformed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "copper-tube",
+      "title": "a magnet in a copper tube",
+      "voiceover": {
+        "text": "The same idea works in a tube. Drop a strong magnet down a copper tube, and it drifts down slowly. Below the magnet, the flux through each ring of copper is increasing, so an eddy current there repels it. Above the magnet, the flux is decreasing, so the eddy current there attracts it. Both forces point up. It speeds up until that upward force equals its weight, then falls at a steady terminal speed. In a plastic tube, nothing conducts, so it simply falls, thirty centimetres in about a quarter of a second. In copper, its lost gravitational energy becomes heat, not kinetic energy."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cut-the-paths",
+      "title": "cut the paths",
+      "voiceover": {
+        "text": "Now cut slots into the plate, like the teeth of a comb. The slots break the big loops into small ones. A small loop encloses less changing flux, so it has a smaller emf, and its narrow path has more resistance. So the currents are much smaller, the braking force drops, and the slotted plate swings much longer. A long slot down a copper tube does the same, and the magnet falls much faster. Small eddy currents still flow, though. It's the same idea as laminated transformer cores."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "no-motion-no-brake",
+      "title": "no motion, no brake",
+      "voiceover": {
+        "text": "Here's an important limit. Braking needs motion. The force comes from a changing flux, so the slower the conductor moves, the weaker the force. As a train slows down, its magnetic brake fades, and it can't hold the train still. A friction brake has to finish the stop, and hold it. For the same reason, a magnet can't float at rest over a still copper sheet. With nothing moving, the flux doesn't change, and there's no force at all. Magnetic braking resists motion. It can't make things levitate."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "coaster-brakes",
+      "title": "roller-coaster brakes",
+      "voiceover": {
+        "text": "Roller coasters use magnetic brakes for slowing down. Copper fins under the car pass between rows of strong magnets. Picture a three tonne car arriving at twenty metres per second. Slowing it to five metres per second takes away about five point six times ten to the five joules of kinetic energy, and all of it becomes heat in the fins. In the usual range of speeds, faster fins mean stronger braking, so the brake works hardest at the start, and the stop feels smooth. With no contact, nothing wears out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "motors-and-brakes",
+      "title": "motors and brakes, the same law",
+      "voiceover": {
+        "text": "Now connect this to the motor. In a DC motor, the back emf opposes the supply, so the supply has to do work, and that work becomes mechanical energy. In a magnetic brake, the eddy currents oppose the motion, so the motion does the work, and that becomes electrical energy, then heat. It's the same law, running the other way. Some electric trains brake by running their motors as generators, sending the energy back to the supply instead of into heat. That's regenerative braking."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. No motion, no eddies, no brake. Faster motion, stronger eddies, stronger brake."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A roller coaster car is slowed by a magnetic brake. Copper fins on the car pass between strong magnets. Explain, with reference to Lenz's law, how the brake slows the car, and apply the law of conservation of energy to the braking. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "As the fins move through the field, the flux through loops in the copper changes, inducing eddy currents. By Lenz's law, they oppose the motion. The currents sit in the field, so they feel a force against the car's motion. The car's kinetic energy becomes electrical energy in the eddy currents, then heat in the fins, through their resistance. The classic slip is saying the magnets attract the copper. Copper isn't magnetic. It's the induced currents that are pushed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A magnet is dropped down a vertical copper tube. An identical magnet is dropped down an identical tube with a narrow slot cut along its whole length. Compare the motion of the two magnets, and explain the difference. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "In the solid tube, large eddy currents circle the tube, opposing the fall, so the magnet falls slowly, at a steady speed. The slot cuts those circular paths, so only small eddy currents flow. The opposing force is much smaller, and that magnet falls much faster, close to free fall. The slip is saying the slot stops all eddy currents. Small ones still flow."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff (end of Module 6)",
+      "voiceover": {
+        "text": "So a moving conductor is braked without contact, because the changing flux induces eddy currents, and Lenz's law turns their force against the motion. One question is left. In the tube, there's no battery and no wire. So what pushes the charges round in circles? A changing magnetic field creates an electric field that curls round it, and that field drives the current. Now flip the idea. Could a changing electric field create a magnetic field? If so, each field could keep making the other, and travel off through space. How did Maxwell connect electricity and magnetism to light?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

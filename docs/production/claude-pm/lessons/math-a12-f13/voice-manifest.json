@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-f13.md",
+  "sourceSha256": "f4cdfa160661c182b2c94422a74c570b25942c2cebbeec05ad77793fd5d17837",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended with this question. Two hundred dollars goes into a super account at the end of every month for five years, earning a steady six per cent a year, compounded monthly. That's sixty deposits, twelve thousand dollars in total. Will the balance be exactly twelve thousand, a little more, or a lot more? Make a guess. You could run last video's rule sixty times, but that's slow. There's a faster way, if you follow each deposit on its own.",
+      "audioFile": "public/audio/math-a12-f13/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Take the very last deposit. It goes in at the end of month sixty, and the balance is read straight away, so it earns no interest at all. It's worth two hundred dollars. The one before it has one month to grow, so it's two hundred times one point zero zero five, which is two hundred and one dollars. Now the very first deposit. It goes in at the end of month one, so it has fifty-nine months to grow. It's worth two hundred times one point zero zero five to the fifty-nine, about two hundred and sixty-eight dollars forty-three. Every deposit earns interest for a different length of time.",
+      "audioFile": "public/audio/math-a12-f13/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So the future value is every deposit, together with the interest it has earned, all added up. Write them newest first. Two hundred, plus two hundred times one point zero zero five, plus two hundred times one point zero zero five squared, and so on, up to two hundred times one point zero zero five to the fifty-nine. That's sixty terms, one for each deposit. And each term is the one before it, times one point zero zero five.",
+      "audioFile": "public/audio/math-a12-f13/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "That's a geometric series. Its first term is two hundred, its ratio is one point zero zero five, and it has sixty terms. You already have its sum, from the sequences videos: a times r to the n, minus one, over r minus one, where r was the ratio. Here that's two hundred times one point zero zero five to the sixty, minus one, all over zero point zero zero five. That's thirteen thousand, nine hundred and fifty-four dollars and one cent. So it's a little more than twelve thousand. Five years isn't long, and the average deposit sits in the account for only about two and a half years, so the interest stays fairly small. On the statement, the extra one thousand, nine hundred and fifty-four dollars and one cent is the earnings.",
+      "audioFile": "public/audio/math-a12-f13/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Does this agree with the month-by-month rule from last video? Use three deposits instead of sixty. The sum is two hundred times one point zero zero five cubed, minus one, over zero point zero zero five. That's six hundred and three dollars and one cent, exactly the balance the rule gave after three months. The rule adds month by month. The sum adds deposit by deposit. They're the same balance.",
+      "audioFile": "public/audio/math-a12-f13/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "In general, if M goes in at the end of each period, with interest at r per period, then the future value after n periods is M times one plus r to the n, minus one, all over r. The ratio of the series is one plus r, not r, so its bottom line, one plus r minus one, is just r. The formula has conditions. Payments come at the end of each period. The future value is read at the end of the last period, straight after the last payment. The account starts at zero, r is the rate per period, and n counts the periods.",
+      "audioFile": "public/audio/math-a12-f13/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Let's use it. Three hundred dollars is deposited at the end of each month, at four point eight per cent a year, compounded monthly. What is the balance after five years? First match the period. The rate per month is zero point zero zero four, and five years is sixty months. So the future value is three hundred times one point zero zero four to the sixty, minus one, over zero point zero zero four. That's twenty thousand, two hundred and ninety-eight dollars and five cents. You put in eighteen thousand dollars, so the interest is two thousand, two hundred and ninety-eight dollars and five cents.",
+      "audioFile": "public/audio/math-a12-f13/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Super runs for decades, so keep the same plan going for thirty years. You put in a hundred and eight thousand dollars, but the balance reaches two hundred and forty thousand, six hundred and forty-four dollars and twenty-four cents. Why so much? The early deposits have decades to grow, and the interest they earn starts earning interest too. Watch the gap between what you put in and what you have. It widens every year. After about twenty-six years, the interest has overtaken everything you put in.",
+      "audioFile": "public/audio/math-a12-f13/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's a way to build the sum. Last in earns nothing. With a positive rate, first in earns the most. List the deposits from the last to the first, and each one is the one before, times one plus r. That's n terms, first term M, and ratio one plus r.",
+      "audioFile": "public/audio/math-a12-f13/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. Write this future value as a sum, then find it. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f13/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "The last deposit earns nothing, and the first earns four years of interest. So the sum is nine hundred, plus nine hundred times one point zero five, up to nine hundred times one point zero five to the fourth. That's four thousand, nine hundred and seventy-three dollars and seven cents. Five thousand, two hundred and twenty-one dollars seventy-two is wrong. It pays every deposit at the start.",
+      "audioFile": "public/audio/math-a12-f13/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. Find the future value, and the interest earned. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f13/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Monthly deposits need a monthly rate, zero point zero zero three, and n is twenty-four months. So the future value is six thousand, two hundred and eleven dollars sixty-three, and the interest is two hundred and eleven dollars sixty-three. Five hundred and nine dollars is wrong. It uses the yearly rate and two periods, and it's less than the deposits themselves.",
+      "audioFile": "public/audio/math-a12-f13/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So a future value is a geometric sum, with one term for each payment and ratio one plus r. Back to three hundred dollars a month for five years, now in a savings app. What would make the biggest difference: a bigger deposit, a higher rate, more years, or some money in the account to start?",
+      "audioFile": "public/audio/math-a12-f13/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-f13/scene-15.wav"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "file": "public/assets/biology/y11-earth-small-v1.png",
+    "nativeSize": [
+      1200,
+      1200
+    ],
+    "alphaRange": [
+      0,
+      254
+    ],
+    "alphaAbove1": [
+      119,
+      108,
+      1081,
+      1092
+    ],
+    "clearMarginFractionAbove1": [
+      0.09916666666666667,
+      0.09,
+      0.09916666666666667,
+      0.09
+    ],
+    "evidence": [
+      "work/brief242/y11-earth-small-v1-native-paper.jpg",
+      "work/brief242/y11-earth-small-v1-native-dark.jpg"
+    ],
+    "id": "y11-earth-small-v1-brief242-native-qa",
+    "brief": 242,
+    "sha256": "554712c647355bc134425c1e4226b80d660fc48643181f6ddf3f1a3cc4126c5c",
+    "qa": {
+      "result": "native static alpha and small-size context pass",
+      "observations": [
+        "Painted globe reads at200px, no glow or labels. Coded wrap and exact v23/v25 joins remain unapproved.",
+        "Actual native paper and dark composites inspected. Native aspect retained. No whole-lesson clearance."
+      ],
+      "evidence": [
+        "work/brief242/y11-earth-small-v1-native-paper.jpg",
+        "work/brief242/y11-earth-small-v1-native-dark.jpg"
+      ]
+    }
+  }
+]

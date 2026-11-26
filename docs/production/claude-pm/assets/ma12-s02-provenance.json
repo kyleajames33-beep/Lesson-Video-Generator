@@ -1,0 +1,64 @@
+{
+  "brief": 240,
+  "assets": [
+    {
+      "name": "ma12-die-red-v1.png",
+      "path": "public/assets/maths/ma12-die-red-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-be5adca2-b103-44c9-9d00-3abbfd985ddb.png",
+      "designs": [
+        "s02"
+      ],
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "requestedSize": [
+        2048,
+        2048
+      ],
+      "sha256": "ba4308ec86774cf1dd63db5cd14bbb6ef1594f1370660c8d709138bb1ce64676",
+      "alphaBox": [
+        0,
+        69,
+        1222,
+        1254
+      ],
+      "alpha32Box": [
+        264,
+        252,
+        1021,
+        1058
+      ],
+      "approxBasePoint": [
+        642.5,
+        1057
+      ],
+      "topY": 252,
+      "visualQAInspected": true,
+      "state": "delivered-native-with-reported-deviations",
+      "operations": [
+        "Byte-for-byte copy; no scaling,stretching or pixel edit"
+      ],
+      "visiblePips": {
+        "top": 1,
+        "left": 2,
+        "right": 3
+      },
+      "profileFinding": "Native1254canvas differs from2048reference. Matching display width normalises the pair; exact source-pixel size and outline identity are not certified.",
+      "findings": [
+        "Native canvas differs from requested; actual dimensions and anchors supplied, no stretching.",
+        "Native1254canvas differs from2048reference. Matching display width normalises the pair; exact source-pixel size and outline identity are not certified."
+      ],
+      "meaningfulMarginFractions": [
+        0.21052631578947367,
+        0.20095693779904306,
+        0.18580542264752792,
+        0.15629984051036683
+      ],
+      "anchorUncertaintyPx": 15,
+      "sourceAssetBrief": "docs/production/claude-pm/lessons/math-a12-s02.md",
+      "generationMethod": "Built-in image generation; requested plate description in source asset brief. Native output byte copied."
+    }
+  ],
+  "note": "Native aspect preserved; source review findings retained; no speech or render"
+}

@@ -1,0 +1,141 @@
+{
+  "design": "chem-y11-ws-v07",
+  "sourceSHA256": "1d4269716aab9d9c7fdb46c5dca0af5e39d96a7e9d69605bf0b7d6e5f70acab7",
+  "newRequests": [
+    {
+      "file": "y11c-flask-chips-acid-plug-v1.png",
+      "designs": [
+        "chem-y11-m2-v08",
+        "chem-y11-m2-v09",
+        "chem-y11-ws-v07"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reviewCondition": "Open loose-plug geometry unaffected by the capped-method blocker; show the approved fallback, no capped replacement.",
+      "artifact": {
+        "candidate": "work\\brief181\\flask-still-candidate-v2.png",
+        "generatedOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-0ac4a46d-234e-4db6-9e58-7067345e78c2.png",
+        "sha256": "6d12feb7182290b56b167ee1a452849717da5cf8bd2ef52425794d2c63b41cfa",
+        "size": [
+          1106,
+          1422
+        ],
+        "visibleBoundsAlpha16": [
+          271,
+          255,
+          834,
+          1193
+        ],
+        "minimumVisibleMarginFraction": 0.16104078762306612,
+        "alphaZeroFraction": 0.7925151901277522,
+        "lowAlphaPixelCount": 6462,
+        "file": "public\\assets\\chemistry\\y11c-flask-chips-acid-plug-v1.png",
+        "generationTool": "Built-in image_gen.imagegen",
+        "qa": "Pass on paper, dark and white at300px canvas width;600px paper inspected; midpoint overlays visually aligned; balance placement inspected",
+        "qualifications": [
+          "Native canvas1106x1422, not approximately1400x1800 requested",
+          "Visible bounds differ by up to2 native pixels; no visible double outline in300px midpoint composites, pixel identity not claimed",
+          "Some near-transparent alpha noise remains outside visible bounds; no visible coloured fringe in the inspected composites"
+        ]
+      }
+    },
+    {
+      "file": "y11c-flask-chips-acid-plug-fizz-v1.png",
+      "designs": [
+        "chem-y11-m2-v08",
+        "chem-y11-m2-v09",
+        "chem-y11-ws-v07"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reviewCondition": "Matched open-flask pair, geometry independent of reported calculation/copy corrections.",
+      "artifact": {
+        "candidate": "work\\brief181\\flask-fizz-candidate-v1.png",
+        "generatedOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-488565e5-f670-46be-b3b5-a6978a3d083b.png",
+        "sha256": "10ed89035c9396a09cf14b5f52ea26d0b262315f685653ee318f31b87129f56f",
+        "size": [
+          1106,
+          1422
+        ],
+        "visibleBoundsAlpha16": [
+          271,
+          254,
+          833,
+          1195
+        ],
+        "minimumVisibleMarginFraction": 0.15963431786216598,
+        "alphaZeroFraction": 0.791235251778434,
+        "lowAlphaPixelCount": 6832,
+        "file": "public\\assets\\chemistry\\y11c-flask-chips-acid-plug-fizz-v1.png",
+        "generationTool": "Built-in image_gen.imagegen",
+        "qa": "Pass on paper, dark and white at300px canvas width;600px paper inspected; midpoint overlays visually aligned; balance placement inspected",
+        "qualifications": [
+          "Native canvas1106x1422, not approximately1400x1800 requested",
+          "Visible bounds differ by up to2 native pixels; no visible double outline in300px midpoint composites, pixel identity not claimed",
+          "Some near-transparent alpha noise remains outside visible bounds; no visible coloured fringe in the inspected composites"
+        ]
+      }
+    },
+    {
+      "file": "y11c-flask-acid-plug-spent-v1.png",
+      "designs": [
+        "chem-y11-m2-v09",
+        "chem-y11-ws-v07"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reviewCondition": "Same flask, plug and fill, chips absent. Also use before adding chips; no fourth acid-only flask is requested.",
+      "artifact": {
+        "candidate": "work\\brief181\\flask-spent-candidate-v1.png",
+        "generatedOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-b5a19319-2f8f-42e9-abee-a87e49734789.png",
+        "sha256": "07903ede2753292ba7d470e768668dbeba55f34c7fbd00f1556816cc335f6166",
+        "size": [
+          1106,
+          1422
+        ],
+        "visibleBoundsAlpha16": [
+          271,
+          254,
+          835,
+          1195
+        ],
+        "minimumVisibleMarginFraction": 0.15963431786216598,
+        "alphaZeroFraction": 0.7894282051868977,
+        "lowAlphaPixelCount": 8341,
+        "file": "public\\assets\\chemistry\\y11c-flask-acid-plug-spent-v1.png",
+        "generationTool": "Built-in image_gen.imagegen",
+        "qa": "Pass on paper, dark and white at300px canvas width;600px paper inspected; midpoint overlays visually aligned; balance placement inspected",
+        "qualifications": [
+          "Native canvas1106x1422, not approximately1400x1800 requested",
+          "Visible bounds differ by up to2 native pixels; no visible double outline in300px midpoint composites, pixel identity not claimed",
+          "Some near-transparent alpha noise remains outside visible bounds; no visible coloured fringe in the inspected composites"
+        ]
+      }
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-ws-v07",
+      "reference": "public/assets/chemistry/y11c-cuso4-crucible-lid-white-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-cuso4-crucible-lid-white-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-ws-v07",
+      "reference": "public/assets/chemistry/y11c-top-pan-balance-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-top-pan-balance-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-ws-v07",
+      "reference": "y11c-flask-acid-plug-spent-v1.png",
+      "paths": [],
+      "exists": false
+    }
+  ],
+  "generationTool": null,
+  "status": "source reviews handed in; painting not yet done",
+  "assetHandInSourceSHA256": "1d4269716aab9d9c7fdb46c5dca0af5e39d96a7e9d69605bf0b7d6e5f70acab7",
+  "sourceStillMatchesReviewAtAssetHandIn": true
+}

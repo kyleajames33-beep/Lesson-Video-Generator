@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-a10.md",
+  "sourceSha256": "6d13ac28e3f60747f3164e478c0ebbc38f276eaa0bc5d3bff1b4ed6924666daa",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-how-many-cones",
+      "text": "Here's an ice-cream cone, and a cylinder with exactly the same radius and the same height. Just the wafer part, so ignore the ice cream for now. The cylinder is exactly as wide as the cone's top, and exactly as tall. Fill the cone with water and pour it into the cylinder. How many cones does it take to fill it? Most people guess two, because the cone looks like about half. Have a guess before we pour. Then we'll see why pyramids and cones hold a third of a prism, and how spheres compare.",
+      "audioFile": "public/audio/math-s11-a10/hook-how-many-cones.wav"
+    },
+    {
+      "id": "three-pours",
+      "text": "Watch. One cone of water fills the cylinder a third of the way. Two cones, two thirds. And three cones fill it exactly. So a cone holds a third of the cylinder with the same base and height. The pour shows it for this cone, and it's been proved for any cone and its matching cylinder, big or small. It's always three. Why less than half? Remember the slice stack from last time. For a cylinder, every slice is the same circle. But a cone's slices shrink all the way to a point at the top, the apex, so most of its volume is down near the base, and the narrow top holds very little. Here, the cylinder is pi times three squared times ten, ninety pi. A third of that is thirty pi, about ninety-four point two five cubic centimetres. So for a cone, the volume is a third, times the area of the base, times the height.",
+      "audioFile": "public/audio/math-s11-a10/three-pours.wav"
+    },
+    {
+      "id": "pyramids",
+      "text": "A pyramid is a solid with a flat base, whose sides slope up to meet at a point. A cone is really just a pyramid with a circle for a base. The same rule works for every one of them. A glass skylight is shaped like a pyramid, one point two metres square at the base and nought point nine of a metre high. The box around it would hold one point two times one point two times nought point nine. The pyramid holds a third of that. A third of one point four four times nought point nine is nought point four three two cubic metres of air under the glass. Every solid that comes to a point holds a third of the prism around it. It doesn't matter whether the base is a square, a rectangle, a triangle or a circle.",
+      "audioFile": "public/audio/math-s11-a10/pyramids.wav"
+    },
+    {
+      "id": "perpendicular-height",
+      "text": "The height in that formula is the perpendicular height, straight down from the apex at right angles to the base. Sometimes a question gives you the slant height instead, the length along the sloping side. A cone-shaped garden planter has a base radius of thirty centimetres, and its sloping side is fifty centimetres long. The radius, the height and the slope make a right-angled triangle, with the slope as the hypotenuse. So the height is the square root of fifty squared minus thirty squared, forty centimetres. Now the volume is a third, times pi times thirty squared, times forty. That's twelve thousand pi, about thirty-seven thousand seven hundred cubic centimetres, or thirty-seven point seven litres of potting mix. Using fifty as the height is the slip. That's the sloping side, not the height.",
+      "audioFile": "public/audio/math-s11-a10/perpendicular-height.wav"
+    },
+    {
+      "id": "spheres",
+      "text": "Spheres have their own rule, and it comes with a surprise. Take a watermelon twenty-four centimetres across, and drop it into a cylinder that fits it snugly, twenty-four across and twenty-four tall. Melons float, so put the lid on to hold it down, then fill the gaps with water. The water that fits around the melon is exactly a third of the cylinder. So the sphere takes up exactly two thirds. Work it through, and two thirds of that cylinder comes out as four thirds, pi, r cubed. That's the sphere's volume. The radius is twelve, so it's four thirds times pi times twelve cubed, about seven thousand two hundred and thirty-eight cubic centimetres. That's seven point two four litres of melon. Notice it's r cubed, not squared, because it's a volume. Half a sphere, a hemisphere, is two thirds pi r cubed.",
+      "audioFile": "public/audio/math-s11-a10/spheres.wav"
+    },
+    {
+      "id": "ice-cream-composite",
+      "text": "Composite solids add their parts, just as before. Back to the ice cream. Say the cone is three centimetres in radius and ten high, with a hemisphere scoop of the same radius sitting on top. The cone is thirty pi, from earlier. The scoop is two thirds of pi times three cubed, eighteen pi. Together that's forty-eight pi, about a hundred and fifty point eight cubic centimetres of ice cream. List the parts, find each one, then add. Composite solids can take parts away too. A cone-shaped hole drilled into a block is the block minus a cone, with the same plan.",
+      "audioFile": "public/audio/math-s11-a10/ice-cream-composite.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So, here's the rule for anything with a point. Pointy solids hold a third of their box or cylinder. And a sphere holds two thirds of its cylinder. Always use the height straight down from the point.",
+      "audioFile": "public/audio/math-s11-a10/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A pile of sand is a cone with a base radius of one point five metres and a height of one point two metres. Find its volume, correct to two decimal places. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a10/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "A third, times pi times one point five squared, times one point two, is nought point nine pi, about two point eight three cubic metres. Leaving out the third gives eight point four eight, the whole cylinder, and that's the slip.",
+      "audioFile": "public/audio/math-s11-a10/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A mixing bowl is a hemisphere with an inside radius of twelve centimetres. How many litres does it hold, correct to two decimal places? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-a10/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Two thirds, times pi, times twelve cubed, is eleven fifty-two pi, about three thousand six hundred and nineteen cubic centimetres. Divide by a thousand, three point six two litres. Squaring the radius instead of cubing it is the slip.",
+      "audioFile": "public/audio/math-s11-a10/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So every solid so far has had a formula, as long as it's a shape with a name. Real things rarely come with neat edges, though. What about a garden pond with a wobbly edge? It isn't a circle, or a rectangle, or anything with a name. You can measure across it with a tape, but no formula fits the shape. How do we find its area, and how much water it holds? That's next.",
+      "audioFile": "public/audio/math-s11-a10/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-a10/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "brief": 264,
+  "date": "2026-11-24",
+  "sourceBrief": "docs/production/claude-pm/codex-prompts/264-plates-and-fact-checks-batch.md",
+  "assets": [
+    {
+      "name": "y12p-circular-track-top-v1.png",
+      "path": "public/assets/physics/y12p-circular-track-top-v1.png",
+      "requestedDestination": "public/assets/physics/y12p-circular-track-top-v1.png",
+      "status": "accepted",
+      "sha256": "853c4f6185f0d92ee99449cf241e27d41148e66764032582d999892d3ba2fbf7",
+      "size": [
+        1254,
+        1254
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "opaqueBoundingBox": [
+        191,
+        194,
+        1055,
+        1060
+      ],
+      "sourceBrief": "docs/production/claude-pm/codex-prompts/264-plates-and-fact-checks-batch.md",
+      "sourceBriefSha256": "ea5f647ac016970e2b555e2c093578d8857a4e1d0aac6d2d0e68fbda974ff087",
+      "tool": "image_gen.imagegen",
+      "alphaCheck": "work/brief264/qa/y12p-circular-track-top-v1-alpha.json",
+      "visualReview": "Inspected individually on paper and black backgrounds; no people, human hands, human faces or branding",
+      "pixelsModifiedAfterGeneration": false,
+      "nativeAspectPreserved": true,
+      "generatorOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1fa8e-f9da-74a2-91fe-65bd7f205a8f\\exec-6929fcba-72cf-4739-a064-66ee31481f5e.png",
+      "prompt": "Edit the reference painted circular asphalt track. Preserve the fine ink and grey watercolour surface and the orthographic circular geometry. Reposition and uniformly reduce the entire road ring so there is a completely transparent margin of at least 15 percent of the square canvas on every edge. Keep a fully transparent centre hole. Remove every stray speck, white paper fragment and halo outside the road edges: the alpha silhouette must follow the clean outer and inner curbs. No new objects, no text, arrows or cars. No white matte or cast shadow. Keep the real painted curb, not a white outline. Output a square PNG with genuine alpha, and do not stretch the track.",
+      "generationRecords": "work/brief264/generation-records.jsonl"
+    }
+  ],
+  "qualification": "Plate inspection only. No design edits, speech, renders or lesson approval."
+}

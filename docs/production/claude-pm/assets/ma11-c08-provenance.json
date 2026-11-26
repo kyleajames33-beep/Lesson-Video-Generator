@@ -1,0 +1,71 @@
+{
+  "brief": 248,
+  "lesson": "c08",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-408bba42-7e17-4fef-a45e-cb5f183d82a7.png",
+      "sha256": "09cf7639bbcf21b8f9c43538707edf6ce6cc800c6152b2b45ea9e58a1852c6c4",
+      "nativeSize": [
+        1920,
+        819
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        51,
+        54,
+        1788,
+        741
+      ],
+      "marginFractions": [
+        0.0265625,
+        0.06593406593406594,
+        0.06875,
+        0.09523809523809523
+      ],
+      "evidence": [
+        "work/brief248/c08-driveway-native-paper.jpg",
+        "work/brief248/c08-driveway-native-dark.jpg",
+        "work/brief248/c08-driveway-native-white.jpg",
+        "work/brief248/c08-driveway-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-driveway-v1.png",
+      "path": "public/assets/maths/ma11-driveway-v1.png",
+      "brief": 248,
+      "lesson": "c08",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        2400,
+        1000
+      ],
+      "qa": {
+        "result": "passed:7-point model match within4px, subject, alpha and1400/full-width checks",
+        "observations": [
+          "Measured native profile uses the same pixels-per-metre scale horizontally and vertically.",
+          "Empty garage, lawn under concrete, no people, text or cars."
+        ],
+        "evidence": [
+          "work/brief248/c08-driveway-profile-paper.jpg",
+          "work/brief248/c08-driveway-profile-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-driveway-v1.json"
+    }
+  ],
+  "result": "Driveway delivered at native1920x819. The7 measured metre points match(9x\u00b2-x\u00b3)/96 within2.46px using one157.6667px/m scale, fixed actual horizontal endpoints and vertical translation only. Dense profile maximum error3.74px. Paper/dark checks at1400/full width and alpha pass. No production stretching or warping.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c08-generation.json",
+    "work/brief248/c08-driveway-profile.json",
+    "work/brief248/qa-driveway.py",
+    "work/brief248/c08-guide-metadata.json",
+    "work/brief248/c08-driveway-layout-guide.png",
+    "work/brief248/c08-driveway-profile-paper.jpg",
+    "work/brief248/c08-driveway-profile-dark.jpg"
+  ]
+}

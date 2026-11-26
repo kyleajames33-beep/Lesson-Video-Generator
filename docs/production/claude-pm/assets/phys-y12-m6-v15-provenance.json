@@ -1,0 +1,281 @@
+{
+  "design": "phys-y12-m6-v15",
+  "sourceSHA256": "19d81598cb2895fb15b678afdc74bc1bab98e36638c37401fef6864e584d0b2d",
+  "reuse": [
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "phys-y11-desk-fan-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-desk-fan-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "phys-y11-power-station-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-station-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "public/assets/physics/phys-y11-house-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-house-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "public/assets/physics/phys-y11-low-voltage-supply-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-low-voltage-supply-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "public/assets/physics/phys-y11-power-point-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-point-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "public/assets/physics/phys-y11-power-station-v2.png",
+      "paths": [
+        "public/assets/physics/phys-y11-power-station-v2.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "public/assets/physics/phys-y11-transmission-tower-v1.png",
+      "paths": [
+        "public/assets/physics/phys-y11-transmission-tower-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "y12p-dc-motor-model-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-dc-motor-model-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "y12p-pole-transformer-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-pole-transformer-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    },
+    {
+      "design": "phys-y12-m6-v15",
+      "reference": "y12p-substation-v1.png",
+      "paths": [
+        "public/assets/physics/y12p-substation-v1.png"
+      ],
+      "exists": true,
+      "requiredRaster": true
+    }
+  ],
+  "newAssets": [
+    {
+      "key": "substation-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-3f5bf335-e890-4f57-980d-6473c0e11b97.png",
+      "size": [
+        1663,
+        946
+      ],
+      "bbox": [
+        302,
+        162,
+        1361,
+        804
+      ],
+      "marginFraction": [
+        0.18159951894167167,
+        0.17124735729386892,
+        0.18159951894167167,
+        0.15010570824524314
+      ],
+      "alphaZeroFraction": 0.7260185939722781,
+      "file": "public/assets/physics/y12p-substation-v1.png",
+      "sha256": "10929569e5bbf8ead046248aa103807f382070bc2f0c1aa2a7dc5a95646c1ba3",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "bushingCentresApprox": [
+          [
+            737,
+            270
+          ],
+          [
+            840,
+            281
+          ],
+          [
+            936,
+            291
+          ]
+        ],
+        "note": "Outside fence view. Representative equipment, not a measured substation plan."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "pole-transformer-framed",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-5dbca14d-2477-435d-a5e6-ff91d1509146.png",
+      "size": [
+        1003,
+        1568
+      ],
+      "bbox": [
+        251,
+        285,
+        768,
+        1312
+      ],
+      "marginFraction": [
+        0.2502492522432702,
+        0.18176020408163265,
+        0.23429710867397807,
+        0.16326530612244897
+      ],
+      "alphaZeroFraction": 0.8858984271674771,
+      "file": "public/assets/physics/y12p-pole-transformer-v1.png",
+      "sha256": "5a5e6f18b8b1e5f38c5f73e1d2740446d90650fc81bef637fb3822678cf794eb",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "poleCap": [
+          439,
+          286
+        ],
+        "poleFoot": [
+          439,
+          1310
+        ],
+        "tankApprox": [
+          455,
+          655,
+          575,
+          858
+        ],
+        "note": "Three insulators on crossarm, cylindrical tank and side outgoing conductors. Scale entire pole uniformly."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    },
+    {
+      "key": "dc-motor-model-twohalves",
+      "path": "C:/Users/kygs/.codex/generated_images/01a1ad61-ecc1-77c3-947e-e410b4047acc/exec-e4bd12a4-a221-4510-a56c-3d619cfe1b83.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "bbox": [
+        236,
+        159,
+        1297,
+        898
+      ],
+      "marginFraction": [
+        0.15364583333333334,
+        0.1552734375,
+        0.15559895833333334,
+        0.123046875
+      ],
+      "alphaZeroFraction": 0.6438891092936198,
+      "file": "public/assets/physics/y12p-dc-motor-model-v1.png",
+      "sha256": "bfc8d0d396ec57b8520d136586f1565540092cc7a5a789472cfc707a0c30614f",
+      "generatedBy": "built-in image_gen",
+      "date": "2026-11-06",
+      "anchors": {
+        "shaftAxisApprox": [
+          [
+            768,
+            240
+          ],
+          [
+            768,
+            739
+          ]
+        ],
+        "commutatorCentreApprox": [
+          768,
+          701
+        ],
+        "brushContactApprox": [
+          [
+            694,
+            701
+          ],
+          [
+            841,
+            701
+          ]
+        ],
+        "terminalCentresApprox": [
+          [
+            493,
+            771
+          ],
+          [
+            1043,
+            771
+          ]
+        ],
+        "coilOuterApprox": [
+          [
+            640,
+            327
+          ],
+          [
+            893,
+            327
+          ],
+          [
+            959,
+            576
+          ],
+          [
+            574,
+            576
+          ]
+        ],
+        "note": "Corrected coil plane contains common shaft. Two copper half-cylinder segments with opposing insulating gaps. This static apparatus plate is not the coded rotating motor. Coil depth foreshortened; contacts and geometry need inspection at actual scene size."
+      },
+      "coordinateSystem": "native pixels, origin top-left, x right, y down",
+      "qa": "docs/production/claude-pm/assets/brief190-qa",
+      "clearMargin8PercentPass": true,
+      "status": "delivered for designer inspection; source findings and actual scene playback pending",
+      "qualification": "Unchanged native generated PNG. Requested nominal canvas dimensions differ; no upsampling, stretching or scripted creative image edits. Approximate painted geometry and pair differences documented."
+    }
+  ],
+  "assemblyChecks": "work/brief190/assembly-checks.json",
+  "pairDiagnostics": "work/brief190/pair-diagnostics.json",
+  "qa": "docs/production/claude-pm/assets/brief190-qa",
+  "gates": "Source findings unresolved. Exact voiced preview, human listening, full-speed motion and release pending."
+}

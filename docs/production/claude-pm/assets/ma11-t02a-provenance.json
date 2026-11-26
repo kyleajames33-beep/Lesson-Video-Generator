@@ -1,0 +1,66 @@
+{
+  "brief": 249,
+  "lesson": "t02a",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-fb6a0b9b-a99b-4889-8cdb-814a305a56cc.png",
+      "sha256": "f57cb9574830c084aca6f12426c196f51761dc4f414f4c308599e1b5600d2f07",
+      "nativeSize": [
+        1024,
+        1536
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        309,
+        32,
+        707,
+        1516
+      ],
+      "marginFractions": [
+        0.3017578125,
+        0.020833333333333332,
+        0.3095703125,
+        0.013020833333333334
+      ],
+      "evidence": [
+        "work/brief249/t02a-yacht-top-native-paper.jpg",
+        "work/brief249/t02a-yacht-top-native-dark.jpg",
+        "work/brief249/t02a-yacht-top-native-white.jpg",
+        "work/brief249/t02a-yacht-top-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-yacht-top-v1.png",
+      "path": "public/assets/maths/ma11-yacht-top-v1.png",
+      "brief": 249,
+      "lesson": "t02a",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        600,
+        900
+      ],
+      "qa": {
+        "result": "passed: top view, map-size readability, subject and alpha",
+        "evidence": [
+          "work/brief249/t02a-yacht-top-native-black.jpg",
+          "work/brief249/t02a-yacht-top-native-dark.jpg",
+          "work/brief249/t02a-yacht-top-native-paper.jpg",
+          "work/brief249/t02a-yacht-top-native-white.jpg",
+          "work/brief249/t02a-yacht-top-qa-paper-dark-dark.jpg",
+          "work/brief249/t02a-yacht-top-qa-paper-dark-paper.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-yacht-top-v1.json"
+    }
+  ],
+  "result": "Top-view yacht delivered at native1024x1536. Bow points up, empty timber/white deck and cream sails match the side yacht. Bow tip516,34 and hull centre516,770 recorded. Paper/dark native and120px map-size checks pass. Large transparent side margins mean the painted hull is about47px wide in a120px whole-file view; direction remains clear. The apparent brown wash in the raw preview is fully transparent in paper/dark composites.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief249/t02a-yacht-top-generation.json",
+    "work/brief249/t02a-yacht-top-qa.json"
+  ]
+}

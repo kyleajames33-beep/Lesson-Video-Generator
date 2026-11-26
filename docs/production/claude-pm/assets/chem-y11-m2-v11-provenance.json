@@ -1,0 +1,131 @@
+{
+  "design": "chem-y11-m2-v11",
+  "sourceSHA256": "ae5f56096149a1614bc91c90d1f38dacad9a68bae9b4550fdfdf51e8a9490a9a",
+  "newRequests": [
+    {
+      "file": "y11c-evaporating-basin-dry-salt-v1.png",
+      "designs": [
+        "chem-y11-m2-v11"
+      ],
+      "status": "delivered with visual QA and recorded qualifications",
+      "reviewCondition": "Dry final residue needed; retain existing wet-crystal plate for earlier stages. Non-asset copy findings do not change geometry.",
+      "artifact": {
+        "candidate": "work\\brief181\\basin-dry-salt-candidate-v1.png",
+        "source": "public\\assets\\chemistry\\y11c-evaporating-basin-crystals-v1.png",
+        "generatedOriginal": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-69b3c43f-e02b-462b-8565-24e657d6ca22.png",
+        "sha256": "cb301c410139d59bf5322321044a51a417693b95fda3e93161559d165d4a12a5",
+        "size": [
+          1402,
+          1122
+        ],
+        "sourceSize": [
+          1402,
+          1122
+        ],
+        "visibleBoundsAlpha16": [
+          293,
+          369,
+          1064,
+          770
+        ],
+        "sourceVisibleBoundsAlpha16": [
+          294,
+          370,
+          1063,
+          769
+        ],
+        "state": "Visual QA pass on paper/dark; dry residue, same native canvas and nearly matching bounds, no exact-pixel claim",
+        "qualification": "Native image copied without raster editing. Exact pixel identity of the generated outline is not claimed; inspect at native aspect and uniform scale.",
+        "file": "public\\assets\\chemistry\\y11c-evaporating-basin-dry-salt-v1.png"
+      }
+    }
+  ],
+  "reuse": [
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "c11-cuso4-beaker-dissolved-v1.png",
+      "paths": [
+        "public/assets/chemistry/c11-cuso4-beaker-dissolved-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "m6-analytical-balance-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-analytical-balance-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "public/assets/chemistry/m6-volumetric-flask-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-volumetric-flask-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "public/assets/chemistry/m6-volumetric-pipette-filler-v1.png",
+      "paths": [
+        "public/assets/chemistry/m6-volumetric-pipette-filler-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "public/assets/chemistry/y11c-evaporating-basin-empty-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-evaporating-basin-empty-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "public/assets/chemistry/y11c-top-pan-balance-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-top-pan-balance-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "y11c-beaker-colourless-solution-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "y11c-evaporating-basin-crystals-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-evaporating-basin-crystals-v1.png"
+      ],
+      "exists": true
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "y11c-evaporating-basin-dry-salt-v1.png",
+      "paths": [],
+      "exists": false
+    },
+    {
+      "design": "chem-y11-m2-v11",
+      "reference": "y11c-evaporating-basin-hotplate-v1.png",
+      "paths": [
+        "public/assets/chemistry/y11c-evaporating-basin-hotplate-v1.png"
+      ],
+      "exists": true
+    }
+  ],
+  "generationTool": null,
+  "status": "source reviews handed in; painting not yet done",
+  "assetHandInSourceSHA256": "ae5f56096149a1614bc91c90d1f38dacad9a68bae9b4550fdfdf51e8a9490a9a",
+  "sourceStillMatchesReviewAtAssetHandIn": true,
+  "brief242Recheck": {
+    "date": "2026-11-14",
+    "record": "docs/production/claude-pm/assets/y11c-m2-v11-native-qa.json",
+    "reviewedSourceSha256": "23969475bb2320eab442c8aec7bee7705bc94da3d350b3f799dd7b4f13f77bc3",
+    "result": "BLOCKER for scene 7: analytical-balance artwork already includes a beaker of white powder. The design instead weighs an empty evaporating basin, then the same basin with dry salt. A blank numerical display does not resolve the vessel mismatch. Root must specify a suitable plate or approved composition; no repaint or design edit made here. Dry-salt basin passes static paper/dark content and alpha checks, with no visible liquid; exact nearly-dry to dry transition remains unpassed. Both basin plates share a 1402 by 1122 canvas, but matching size does not prove matching hardware. Painted mat and the basin-on-balance contact need build review. Prior static QA for clear beaker, pipette, flask, other basin stages, top-pan balance, clear bottle and water glass remains limited to its original scope. Blue beaker excluded. No whole-lesson or voicing clearance inferred."
+  }
+}

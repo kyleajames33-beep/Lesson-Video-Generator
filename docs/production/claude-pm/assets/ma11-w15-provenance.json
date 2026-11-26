@@ -1,0 +1,70 @@
+{
+  "brief": 247,
+  "lesson": "w15",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-c16ac0e3-e47b-4fce-82ea-1b6e450b92c0.png",
+      "sha256": "44668ebc4bcbae92493d47cc330ec413247d7aeeede167e866cc00ac8cf48ac7",
+      "nativeSize": [
+        1341,
+        1173
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        147,
+        249,
+        1182,
+        1125
+      ],
+      "marginFractions": [
+        0.10961968680089486,
+        0.21227621483375958,
+        0.1185682326621924,
+        0.04092071611253197
+      ],
+      "evidence": [
+        "work/brief247/w15-fountain-candidate2-native-paper.jpg",
+        "work/brief247/w15-fountain-candidate2-native-dark.jpg",
+        "work/brief247/w15-fountain-candidate2-native-white.jpg",
+        "work/brief247/w15-fountain-candidate2-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-drinking-fountain-v1.png",
+      "path": "work/brief247/w15-w31/w15-fountain-candidate2.png",
+      "brief": 247,
+      "lesson": "w15",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1400
+      ],
+      "qa": {
+        "result": "held for geometry",
+        "observations": [
+          "Native 1341 x 1173 RGBA, alpha 0 to 255; actual paper and dark composites have clean edges without the raw-preview colour fringe.",
+          "At 820 px tall, apparatus and water stream read clearly, but the red model overlay visibly misses the painted arc.",
+          "No people, text, logos or faces. Native dimensions preserved. No production image edits outside built-in imagegen."
+        ],
+        "evidence": [
+          "work/brief247/w15-w31/w15-fountain-820-model-paper.jpg",
+          "work/brief247/w15-w31/w15-fountain-820-model-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/w15-w31/ma11-drinking-fountain-v1-sidecar.json"
+    }
+  ],
+  "result": "Fountain candidate held after two attempts: endpoints differ by 71 px and the equal-scale profile misses by up to 119.72 px against a 13.38 px tolerance. No public PNG delivered. A curve fit alone cannot make unequal endpoint heights teach the specified model. Root must resolve the geometry before build. The w14 high hammock remains a static join plate only; w16 end plate is in progress.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/w15-w31/w15-fountain-generation.json",
+    "work/brief247/w15-w31/w15-fountain-candidate1.png",
+    "work/brief247/w15-w31/w15-fountain-geometry.json",
+    "work/brief247/w15-w31/w15-fountain-820-model-paper.jpg",
+    "work/brief247/w15-w31/w15-fountain-820-model-dark.jpg"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "brief": 178,
+  "design": "chem-y11-m1-v14",
+  "sourceSha256": "eebb5facaa59adaeff2f33b4e3d3bf7116c68c73cb7cfda33bd412b72d76ba00",
+  "manifest": "brief178-manifest.json",
+  "entries": [
+    {
+      "key": "178-trough",
+      "file": "y11c-trough-water-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-099166b5-9010-49b3-b869-8a77d390d38c.png",
+      "prompt": "Paint ONE school chemistry production asset. Landscape 12:7. Wide SHALLOW clear glass laboratory trough or crystallising dish, low three-quarter front view slightly above so broad elliptical water surface is visible. Two-thirds full of clear colourless water, empty of all other contents. Broad ellipse, not a tall beaker. No indicator colour. Fine ink outlines and realistic layered watercolour, pale blue-grey glass or steel, warm subtle highlights. Object occupies central 65 percent canvas with generous transparent space on all edges, true alpha background and clean edges. No text, labels, symbols, people, hands, faces, backdrop, glow or ground shadow. File y11c-trough-water-v1.png",
+      "path": "public/assets/chemistry/y11c-trough-water-v1.png",
+      "sha256": "52aa0844307e3e2132b405a22b9babe627b465cad4932d34bea0545205f6a255",
+      "size": [
+        1499,
+        1049
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "clearMarginFraction": [
+        0.0,
+        0.0,
+        0.01067378252168112,
+        0.0
+      ],
+      "status": "candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected on paper and dark phone contact; no people, hands, faces or text. Native composites saved. No clean-edge clearance.",
+      "additionalFinding": "Matched perspective candidate only. Check overlays; outlines are not pixel identical. Base glass contains pale blue painted wash and stray edge alpha.",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "approval": "Source-only reviews and art candidates. QA, safety, playback and listening holds remain.",
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m1-v14-v15-native-qa.json",
+    "result": "Remaining water trough passes static QA; earlier sample and gas-jar checks reused. One-pixel state-canvas difference remains. No whole-lesson clearance."
+  }
+}

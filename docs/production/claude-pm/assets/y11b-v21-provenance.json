@@ -1,0 +1,69 @@
+{
+  "brief": 242,
+  "lesson": "bio-y11-fa1-v21",
+  "date": "2026-11-13",
+  "plates": [
+    {
+      "id": "y11-gas-syringe-rig-v1",
+      "file": "public/assets/biology/y11-gas-syringe-rig-v1.png",
+      "nativeSize": [
+        2400,
+        1400
+      ],
+      "sha256": "f6a0ccb79dedb85001c8c7e9bcc0b5441a9c85b2f253d9316553f5a620f6f744",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "qa": {
+        "result": "static pass for stated explanatory use; no repaint",
+        "observations": [
+          "Native paper and dark plus 300 and 600 pixel paper previews inspected. No surrounding halo or matte in actual composites, so no alpha repaint needed.",
+          "No people, hands or faces. Glass/apparatus readable at 300 pixels, finer details clearer at 600.",
+          "Rig contains five potato discs and an empty barrel, so it is only the running-reaction state; use the new pre-mix flask before mixing. Separate plunger still missing.",
+          "No claim that scale marks or physical volumes are measured question data. Actual scene overlays and motion remain pending."
+        ],
+        "evidence": [
+          "work/brief242/y11-gas-syringe-rig-v1-native-paper.jpg",
+          "work/brief242/y11-gas-syringe-rig-v1-native-dark.jpg",
+          "work/brief242/y11-gas-syringe-rig-v1-300px.jpg",
+          "work/brief242/y11-gas-syringe-rig-v1-600px.jpg"
+        ]
+      }
+    },
+    {
+      "id": "y11-catalase-apparatus-v1",
+      "file": "public/assets/biology/y11-catalase-apparatus-v1.png",
+      "nativeSize": [
+        1536,
+        1024
+      ],
+      "sha256": "e3e215959d627bdad548d21294b33d716e4bb18a4a98f93c7a082f6dcff7a364",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "qa": {
+        "result": "static pass for stated explanatory use; no repaint",
+        "observations": [
+          "Native paper and dark plus 300 and 600 pixel paper previews inspected. No surrounding halo or matte in actual composites, so no alpha repaint needed.",
+          "No people, hands or faces. Glass/apparatus readable at 300 pixels, finer details clearer at 600.",
+          "Catalase plate has progressively stronger foam in three tubes and a thermometer with unnumbered ticks. Suitable for the stated explanatory callback, not an unseen question with neutral apparatus.",
+          "No claim that scale marks or physical volumes are measured question data. Actual scene overlays and motion remain pending."
+        ],
+        "evidence": [
+          "work/brief242/y11-catalase-apparatus-v1-native-paper.jpg",
+          "work/brief242/y11-catalase-apparatus-v1-native-dark.jpg",
+          "work/brief242/y11-catalase-apparatus-v1-300px.jpg",
+          "work/brief242/y11-catalase-apparatus-v1-600px.jpg"
+        ]
+      }
+    }
+  ],
+  "newPremixProvenance": "assets/y11fa1v21-brief242-premix-flask-provenance.json",
+  "plunger": {
+    "delivered": "public/assets/biology/y11-gas-syringe-plunger-v1.png",
+    "provenance": "assets/y11fa1v21-brief242-plunger-provenance.json",
+    "state": "Static part pass; different canvas, scene placement and foreground masking pending"
+  }
+}

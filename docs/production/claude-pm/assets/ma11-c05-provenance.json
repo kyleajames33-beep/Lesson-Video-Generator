@@ -1,0 +1,182 @@
+{
+  "brief": 248,
+  "lesson": "c05",
+  "assets": [
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-6f180540-9297-443a-9128-2d1e7cdfca64.png",
+      "sha256": "9d7ab47928bcfc1e62b8c673aecd3b0a1d1ecf9f3dc99294b09c7e04139fc50d",
+      "nativeSize": [
+        1173,
+        1341
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        49,
+        1173,
+        1341
+      ],
+      "marginFractions": [
+        0.0,
+        0.036539895600298286,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief248/c05-water-balloon-balcony-native-paper.jpg",
+        "work/brief248/c05-water-balloon-balcony-native-dark.jpg",
+        "work/brief248/c05-water-balloon-balcony-native-white.jpg",
+        "work/brief248/c05-water-balloon-balcony-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-water-balloon-balcony-v1.png",
+      "path": "public/assets/maths/ma11-water-balloon-balcony-v1.png",
+      "brief": 248,
+      "lesson": "c05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: requested composite is static only; painted balloon does not follow flight model",
+        "observations": [
+          "Requested static balcony and separate blue balloon sprite delivered, plus a clean background sibling for motion. Balcony native1173x1341; sprite1161x1354. Floor point690,829 and lawnY1277 give149.333px/m for3m. The balloon painted above the railing is at about5.87m on that scale, above the model maximum3.8m, so the requested composite is static illustration only. Use clean sibling with sprite centred at568,740 and computed height3+4t-5t^2 for the flight.400/700tall paper/dark proofs show the exact3m start,3.8m apex,2m at1s and0at1.27178s. Root owns the clean-layer choice and join registration; no design or scene changed. Clean background is a repaint, not a pixel-identical extraction. Alpha composites are clean despite hiddenRGB fringe in raw previews."
+        ],
+        "evidence": [
+          "work/brief248/c05-balloon-flight-paper.jpg",
+          "work/brief248/c05-balloon-flight-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-water-balloon-balcony-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-7455294b-feeb-4406-84b4-80dd9a89cc32.png",
+      "sha256": "a588f50e5ff1f654e7668aa2a3b76e093bab9fefc58b2e6a6b0c0cee16be01f8",
+      "nativeSize": [
+        1161,
+        1354
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        269,
+        240,
+        866,
+        1078
+      ],
+      "marginFractions": [
+        0.23169681309216192,
+        0.17725258493353027,
+        0.2540913006029285,
+        0.2038404726735598
+      ],
+      "evidence": [
+        "work/brief248/c05-water-balloon-native-paper.jpg",
+        "work/brief248/c05-water-balloon-native-dark.jpg",
+        "work/brief248/c05-water-balloon-native-white.jpg",
+        "work/brief248/c05-water-balloon-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-water-balloon-v1.png",
+      "path": "public/assets/maths/ma11-water-balloon-v1.png",
+      "brief": 248,
+      "lesson": "c05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        240,
+        280
+      ],
+      "qa": {
+        "result": "passed: blue movable sprite and alpha",
+        "observations": [
+          "Requested static balcony and separate blue balloon sprite delivered, plus a clean background sibling for motion. Balcony native1173x1341; sprite1161x1354. Floor point690,829 and lawnY1277 give149.333px/m for3m. The balloon painted above the railing is at about5.87m on that scale, above the model maximum3.8m, so the requested composite is static illustration only. Use clean sibling with sprite centred at568,740 and computed height3+4t-5t^2 for the flight.400/700tall paper/dark proofs show the exact3m start,3.8m apex,2m at1s and0at1.27178s. Root owns the clean-layer choice and join registration; no design or scene changed. Clean background is a repaint, not a pixel-identical extraction. Alpha composites are clean despite hiddenRGB fringe in raw previews."
+        ],
+        "evidence": [
+          "work/brief248/c05-balloon-flight-paper.jpg",
+          "work/brief248/c05-balloon-flight-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-water-balloon-v1.json"
+    },
+    {
+      "source": "C:/Users/kygs/.codex/generated_images/01a1e32d-1c8e-7d00-8f75-c2e3a2106bda/exec-32ac42d1-0138-4536-8a9e-4d2735a25722.png",
+      "sha256": "4739d9f933b0a3a949507a396c66bbb2039206ac067c6d71da218e461244255a",
+      "nativeSize": [
+        1173,
+        1341
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "paintedBoundsAbove1": [
+        0,
+        21,
+        1173,
+        1341
+      ],
+      "marginFractions": [
+        0.0,
+        0.015659955257270694,
+        0.0,
+        0.0
+      ],
+      "evidence": [
+        "work/brief248/c05-water-balloon-balcony-clean-native-paper.jpg",
+        "work/brief248/c05-water-balloon-balcony-clean-native-dark.jpg",
+        "work/brief248/c05-water-balloon-balcony-clean-native-white.jpg",
+        "work/brief248/c05-water-balloon-balcony-clean-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-water-balloon-balcony-clean-v1.png",
+      "path": "public/assets/maths/ma11-water-balloon-balcony-clean-v1.png",
+      "brief": 248,
+      "lesson": "c05",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1400,
+        1600
+      ],
+      "qa": {
+        "result": "qualified: clean background prepared for computed flight; root integration pending",
+        "observations": [
+          "Requested static balcony and separate blue balloon sprite delivered, plus a clean background sibling for motion. Balcony native1173x1341; sprite1161x1354. Floor point690,829 and lawnY1277 give149.333px/m for3m. The balloon painted above the railing is at about5.87m on that scale, above the model maximum3.8m, so the requested composite is static illustration only. Use clean sibling with sprite centred at568,740 and computed height3+4t-5t^2 for the flight.400/700tall paper/dark proofs show the exact3m start,3.8m apex,2m at1s and0at1.27178s. Root owns the clean-layer choice and join registration; no design or scene changed. Clean background is a repaint, not a pixel-identical extraction. Alpha composites are clean despite hiddenRGB fringe in raw previews."
+        ],
+        "evidence": [
+          "work/brief248/c05-balloon-flight-paper.jpg",
+          "work/brief248/c05-balloon-flight-dark.jpg"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "public/assets/maths/ma11-water-balloon-balcony-clean-v1.json"
+    }
+  ],
+  "result": "Requested static balcony and separate blue balloon sprite delivered, plus a clean background sibling for motion. Balcony native1173x1341; sprite1161x1354. Floor point690,829 and lawnY1277 give149.333px/m for3m. The balloon painted above the railing is at about5.87m on that scale, above the model maximum3.8m, so the requested composite is static illustration only. Use clean sibling with sprite centred at568,740 and computed height3+4t-5t^2 for the flight.400/700tall paper/dark proofs show the exact3m start,3.8m apex,2m at1s and0at1.27178s. Root owns the clean-layer choice and join registration; no design or scene changed. Clean background is a repaint, not a pixel-identical extraction. Alpha composites are clean despite hiddenRGB fringe in raw previews.",
+  "sourceReview": "Source findings remain as recorded in the independent maths check and root rulings. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief248/c05-balcony-geometry.json",
+    "work/brief248/c05-balcony-qa.json",
+    "work/brief248/c05-calculations.json",
+    "work/brief248/c05-generation-part1.json",
+    "work/brief248/c05-generation-part2.json",
+    "work/brief248/c05-sprite-qa.json",
+    "work/brief248/c05-water-balloon-balcony-candidate-measurements.json",
+    "work/brief248/c05-water-balloon-balcony-clean-candidate-measurements.json",
+    "work/brief248/c05-water-balloon-candidate-measurements.json",
+    "work/brief248/c05-balcony-paper-dark-dark.jpg",
+    "work/brief248/c05-balcony-paper-dark-paper.jpg",
+    "work/brief248/c05-sprite-paper-dark-dark.jpg",
+    "work/brief248/c05-sprite-paper-dark-paper.jpg"
+  ]
+}

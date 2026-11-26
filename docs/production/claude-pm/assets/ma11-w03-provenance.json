@@ -1,0 +1,71 @@
+{
+  "brief": 247,
+  "lesson": "w03",
+  "assets": [
+    {
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1e32d-1c8e-7d00-8f75-c2e3a2106bda\\exec-4037995e-3812-4768-bf1e-a8015911af36.png",
+      "sha256": "9379155e9b51a9642f6b5fb2a5200d8b20f9ee9631254eb406c4ae1bf41b45a3",
+      "nativeSize": [
+        1254,
+        1254
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "paintedBoundsAbove1": [
+        114,
+        99,
+        1200,
+        1254
+      ],
+      "marginFractions": [
+        0.09090909090909091,
+        0.07894736842105263,
+        0.0430622009569378,
+        0.0
+      ],
+      "evidence": [
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-paper.jpg",
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-dark.jpg",
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-white.jpg",
+        "work/brief247/ma11-softball-diamond-top-v1-revised-native-black.jpg"
+      ],
+      "scope": "Measurements and QA composites only; not approval.",
+      "name": "ma11-softball-diamond-top-v1.png",
+      "path": "work/brief247/ma11-softball-diamond-top-v1-revised.png",
+      "brief": 247,
+      "lesson": "w03",
+      "method": "built-in imagegen",
+      "requestedSize": [
+        1600,
+        1600
+      ],
+      "qa": {
+        "result": "held after revision",
+        "observations": [
+          "Softball diamond revised to four bases in correct orientation, but held: each side fails the 0.5 percent diagonal/square tolerance (errors 0.57 to 1.21 percent). Dark-background grass edge also has a pale fringe. Both candidates remain in work/brief247; no plate or exact-square clearance for w02 handoff. Root must resolve geometry and alpha."
+        ],
+        "evidence": [
+          "work/brief247/softball-geometry.json",
+          "work/brief247/softball-square-overlay.jpg",
+          "work/brief247/diamond-size-paper.jpg",
+          "work/brief247/diamond-size-dark.jpg",
+          "work/brief247/diamond-size-transforms.json"
+        ]
+      },
+      "nativeDimensionsPreserved": true,
+      "resampledProductionImage": false,
+      "sidecar": "work/brief247/ma11-softball-diamond-top-v1-sidecar.json"
+    }
+  ],
+  "result": "Softball diamond revised to four bases in correct orientation, but held: each side fails the 0.5 percent diagonal/square tolerance (errors 0.57 to 1.21 percent). Dark-background grass edge also has a pale fringe. Both candidates remain in work/brief247; no plate or exact-square clearance for w02 handoff. Root must resolve geometry and alpha.",
+  "sourceReview": "Source findings remain as recorded in the learning review. Artwork QA does not clear speech or playback.",
+  "extraEvidence": [
+    "work/brief247/softball-geometry.json",
+    "work/brief247/softball-square-overlay.jpg",
+    "work/brief247/diamond-size-paper.jpg",
+    "work/brief247/diamond-size-dark.jpg",
+    "work/brief247/diamond-size-transforms.json"
+  ]
+}

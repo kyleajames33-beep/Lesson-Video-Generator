@@ -1,0 +1,76 @@
+{
+  "mathPronunciation": true,
+  "source": "docs/production/claude-pm/lessons/math-s11-t03.md",
+  "sourceSha256": "439dc8bd252e9c842f0718c1370fb380b7cd8d78824e7a2940f33cc86827ca7a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook-two-numbers",
+      "text": "Here's the pin your phone dropped. Minus thirty-three point eight six, and one hundred and fifty-one point two one. Those two numbers find this exact spot, and only this spot, anywhere on Earth. Ships, planes, emergency services and every map app use the same system. But why two numbers, and why is one of them negative? Every place on Earth has a latitude and a longitude. So how do latitude and longitude pin down any place on Earth?",
+      "audioFile": "public/audio/math-s11-t03/hook-two-numbers.wav"
+    },
+    {
+      "id": "latitude",
+      "text": "Start with the equator, the imaginary line around the middle of the Earth, halfway between the North and South Poles. Latitude says how far north or south of the equator a place is. It's measured as an angle, in degrees, from the centre of the Earth. The equator is nought degrees. The North Pole is ninety degrees north, and the South Pole is ninety degrees south, so latitude never goes past ninety. Lines of equal latitude run around the globe, flat and parallel to the equator, like the rungs of a ladder. They're called parallels. Sydney is about thirty-four degrees south, a bit over a third of the way from the equator to the South Pole. Cape Town, in South Africa, is on almost the same parallel, so it's the same distance from the equator.",
+      "audioFile": "public/audio/math-s11-t03/latitude.wav"
+    },
+    {
+      "id": "longitude",
+      "text": "Latitude alone isn't enough, because the thirty-four degrees south line goes all the way around the world. So we need a second number, for east and west. Longitude lines run from pole to pole, like the segments of an orange. They're called meridians. One of them was chosen as the start, nought degrees, the prime meridian, which runs through Greenwich in London. Longitude says how far east or west of the prime meridian a place is, again as an angle from the centre of the Earth. It goes up to a hundred and eighty degrees east, and a hundred and eighty degrees west, which meet on the far side of the world. Sydney is about a hundred and fifty-one degrees east. Where the thirty-four south parallel crosses the hundred and fifty-one east meridian, there's Sydney.",
+      "audioFile": "public/audio/math-s11-t03/longitude.wav"
+    },
+    {
+      "id": "coordinates-grid-map",
+      "text": "Put the two together, and you have a place's coordinates. Latitude comes first, then longitude, each with its letter. Sydney is about thirty-three point nine degrees south, one hundred and fifty-one point two degrees east. Without a phone, you can read coordinates off a map of Australia with a grid of parallels and meridians, every ten degrees. Which city is at about thirty-two degrees south, one hundred and sixteen degrees east? Go down from the equator to just past thirty south, then across to a bit more than halfway between one hundred and ten and one hundred and twenty east, and you land on Perth. Going the other way, Darwin sits between ten and twenty south, a little past ten, and between one hundred and thirty and one hundred and forty east, just past one thirty. So Darwin is at about twelve and a half degrees south, one hundred and thirty-one degrees east.",
+      "audioFile": "public/audio/math-s11-t03/coordinates-grid-map.wav"
+    },
+    {
+      "id": "map-app",
+      "text": "Map apps write the same coordinates as decimals, and they use signs instead of letters. A minus latitude means south, and a minus longitude means west. So the pin's minus thirty-three point eight six is thirty-three point eight six degrees south, and one hundred and fifty-one point two one, with no minus, is east. That's the harbour in Sydney. It works the other way, too. Type coordinates into the search bar, and the app drops a pin on that exact place. The slip is dropping the minus sign. Thirty-three point eight six north is out in the Pacific Ocean, nowhere near Sydney. Atlases often split a degree into sixty minutes, just like an hour. So thirty-three degrees fifty-two minutes south is thirty-three and fifty-two sixtieths of a degree, about thirty-three point eight seven degrees south.",
+      "audioFile": "public/audio/math-s11-t03/map-app.wav"
+    },
+    {
+      "id": "compare-places",
+      "text": "The two numbers also let you compare places at a glance. A bigger latitude, north or south, means further from the equator. A bigger east longitude means further east, at least up to a hundred and eighty. Hobart, at about forty-three south, is further from the equator than Sydney, which is part of why it's cooler. Brisbane, at about a hundred and fifty-three east, is a little further east than Sydney, so the Sun reaches its highest point there a little earlier. East and west turn out to matter for time.",
+      "audioFile": "public/audio/math-s11-t03/compare-places.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "So here's latitude and longitude in one card. Lat is flat: the parallels run around the globe, north or south of the equator. Longitude lines are long, pole to pole, east or west of Greenwich. And latitude always comes first.",
+      "audioFile": "public/audio/math-s11-t03/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A map app shows a pin at minus twenty-seven point four seven, one hundred and fifty-three point nought three. Write its coordinates using north or south and east or west, and name the two hemispheres it's in. Pause here to answer.",
+      "audioFile": "public/audio/math-s11-t03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The latitude is negative, so it's south, twenty-seven point four seven degrees south. The longitude is positive, so it's one hundred and fifty-three point nought three degrees east. That's the southern and eastern hemispheres, and it's Brisbane. Writing twenty-seven point four seven north is the slip.",
+      "audioFile": "public/audio/math-s11-t03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Darwin is at about twelve point five degrees south, one hundred and thirty point eight degrees east. Adelaide is at about thirty-four point nine degrees south, one hundred and thirty-eight point six degrees east. Which city is further from the equator, and which is further east? Pause here to answer.",
+      "audioFile": "public/audio/math-s11-t03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Latitude measures distance from the equator, and thirty-four point nine is more than twelve point five, so Adelaide is further from the equator. A bigger east longitude is further east, and one hundred and thirty-eight point six beats one hundred and thirty point eight, so Adelaide is further east too. Picking Darwin as further from the equator is the slip.",
+      "audioFile": "public/audio/math-s11-t03/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So that's latitude and longitude. Latitude for north and south, longitude for east and west, and latitude first. Now here's something odd. As the Earth turns, the Sun reaches Sydney, at a hundred and fifty-one east, before it reaches Perth, at a hundred and sixteen east. So noon arrives at different moments along different meridians. How does longitude decide the time? That's next.",
+      "audioFile": "public/audio/math-s11-t03/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-s11-t03/key-notes.wav"
+    }
+  ]
+}

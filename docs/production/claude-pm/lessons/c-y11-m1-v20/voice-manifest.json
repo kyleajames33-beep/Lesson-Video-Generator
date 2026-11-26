@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "source": "docs/production/claude-pm/lessons/chem-y11-m1-v20.md",
+  "sourceSha256": "5ebf85b5ccb10c7b2f416cb6a6ba94016e3fcfbcf8842b258071d629606acd4e",
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, we built formulas from ion charges. Now let's go the other way, from a formula to a name. Here's why it matters. These two powders are both made of nothing but copper and oxygen. One is red, and one is black. If you asked for copper oxide, which one would you get? A good name has to point to exactly one compound. That's what the naming rules do.",
+      "audioFile": "public/audio/chem-y11-m1-v20/hook.wav"
+    },
+    {
+      "id": "ionic-or-covalent",
+      "text": "These rules come from IUPAC, the International Union of Pure and Applied Chemistry, so chemists everywhere use the same names. The first step is always the same. Look at the elements. A metal with a non-metal, or the ammonium ion, means an ionic compound, made of ions. Only non-metals means a covalent compound, where the atoms share electrons instead. The two kinds are named in different ways.",
+      "audioFile": "public/audio/chem-y11-m1-v20/ionic-or-covalent.wav"
+    },
+    {
+      "id": "binary-ionic",
+      "text": "Start with the simplest ionic compounds, made of two elements. Name the metal first, unchanged. Then change the ending of the non-metal's name, so chlorine becomes chloride, oxygen becomes oxide, and sulfur becomes sulfide. So N a C l is sodium chloride, and M g O is magnesium oxide. Notice there are no numbers in these names. Sodium and magnesium each form only one ion, so the charges already fix the ratio.",
+      "audioFile": "public/audio/chem-y11-m1-v20/binary-ionic.wav"
+    },
+    {
+      "id": "prediction",
+      "text": "Quick prediction. What's the name of K two O, made from potassium and oxygen? Have a think.",
+      "audioFile": "public/audio/chem-y11-m1-v20/prediction.wav"
+    },
+    {
+      "id": "stock-numeral",
+      "text": "It's potassium oxide. In the naming route we'll use, ionic names don't count ions, because the charges already do that job. But copper can form two different ions, so copper oxide could mean either powder. The fix is a Roman numeral, in brackets after the metal's name, giving the charge on the metal ion. This is called a Stock numeral. It's the metal's charge, also called its oxidation state, and not the number of atoms.",
+      "audioFile": "public/audio/chem-y11-m1-v20/stock-numeral.wav"
+    },
+    {
+      "id": "copper-oxides",
+      "text": "To find the numeral, work backwards from the anion, as we did last time. In C u O, one oxide ion is minus two, so the copper is plus two. That's copper two oxide, the black powder. In C u two O, the same minus two is shared between two coppers, so each one is plus one. That's copper one oxide, the red powder. The two in the formula counts the coppers. The one in the name is their charge.",
+      "audioFile": "public/audio/chem-y11-m1-v20/copper-oxides.wav"
+    },
+    {
+      "id": "which-metals",
+      "text": "Which metals need a numeral? Mostly the transition metals, like iron and copper, plus a few others, like lead and tin, that can form more than one ion. So F e C l three is iron three chloride, and F e two O three, the iron oxide in rust, is iron three oxide. A metal with only one charge needs no numeral, so sodium, magnesium and aluminium don't get one.",
+      "audioFile": "public/audio/chem-y11-m1-v20/which-metals.wav"
+    },
+    {
+      "id": "polyatomic",
+      "text": "Next, polyatomic ions. Each one keeps its own name, so you name it as a whole, and never split it into elements. N a two S O four is sodium sulfate. Calcium nitrate is the compound from last time. And when ammonium is the positive ion, it goes first, like a metal, as in ammonium carbonate. Names like sulfate, nitrate and carbonate tell you the ion contains oxygen. So calling sodium sulfate sodium sulfide is a classic slip, because sulfide means sulfur on its own.",
+      "audioFile": "public/audio/chem-y11-m1-v20/polyatomic.wav"
+    },
+    {
+      "id": "covalent-prefixes",
+      "text": "Now the covalent compounds, made of non-metals only. Here there are no ions, so there are no charges to fix the ratio. Carbon and oxygen, for example, can join as C O, or as C O two. So the name itself must count the atoms, using prefixes. Mono means one, di means two, tri three, tetra four, penta five, and hexa six. C O two is carbon dioxide. C O is carbon monoxide. We drop mono from the first element, so it's not monocarbon monoxide.",
+      "audioFile": "public/audio/chem-y11-m1-v20/covalent-prefixes.wav"
+    },
+    {
+      "id": "more-covalent",
+      "text": "Two more. S O three is sulfur trioxide. N two O four has two nitrogens and four oxygens, so it's dinitrogen tetroxide. You'll often hear monoxide and tetroxide with a vowel dropped, just to make them easier to say.",
+      "audioFile": "public/audio/chem-y11-m1-v20/more-covalent.wav"
+    },
+    {
+      "id": "contrast",
+      "text": "So here's the big contrast. In an ionic name, a Roman numeral gives the metal's charge. In a covalent name, a prefix gives the number of atoms. You'll also see names like copper dichloride in other books. They count the ions instead, and they're valid IUPAC names too. Here, we use the numeral route. Ionic: name the charge if it can change. Covalent: count the atoms.",
+      "audioFile": "public/audio/chem-y11-m1-v20/contrast.wav"
+    },
+    {
+      "id": "run-through",
+      "text": "Let's run three formulas through the whole method. F e S O four. Iron is a metal, so it's ionic. Sulfate is minus two, so the iron is plus two, which makes it iron two sulfate. P C l five. Phosphorus and chlorine are both non-metals, so it's covalent, and we count the atoms. It's phosphorus pentachloride. Last, A l, bracket O H, close bracket, three. Aluminium is a metal with only one charge, so there's no numeral and no prefix. It's simply aluminium hydroxide.",
+      "audioFile": "public/audio/chem-y11-m1-v20/run-through.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Give the IUPAC names of P b O two, S F six, and F e two, bracket S O four, close bracket, three. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v20/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Lead can form more than one ion. Two oxide ions make minus four, so the lead is plus four, lead four oxide. S F six is two non-metals, so we count the atoms, sulfur hexafluoride. In the last one, three sulfates make minus six, shared by two irons, so each iron is plus three, iron three sulfate. Writing iron two sulfate, because of the two in the formula, is the slip.",
+      "audioFile": "public/audio/chem-y11-m1-v20/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student names C u C l two as copper chloride, and S O three as sulfur oxide. Explain why neither name is good enough, and give a correct name for each. Pause here to answer.",
+      "audioFile": "public/audio/chem-y11-m1-v20/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Copper can form two ions, so copper chloride could mean C u C l or C u C l two. Here, two chlorides make minus two, so the copper is plus two, copper two chloride. Sulfur oxide has the same problem. It could mean S O two or S O three, so the name must count the oxygens. It's sulfur trioxide. Leaving out a charge that can change is the trap.",
+      "audioFile": "public/audio/chem-y11-m1-v20/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Notice why we needed two systems at all. Sodium chloride is made of ions, but carbon dioxide is made of atoms that share electrons. So why do some atoms hand electrons over completely, while others share them? It comes down to how strongly each atom pulls on electrons. That's next time.",
+      "audioFile": "public/audio/chem-y11-m1-v20/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/chem-y11-m1-v20/key-notes.wav"
+    }
+  ]
+}

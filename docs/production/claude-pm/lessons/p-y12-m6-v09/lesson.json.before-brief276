@@ -1,0 +1,168 @@
+{
+  "id": "phys-y12-m6-v09",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "710b4976eb7eae1500f7b550187699af0cc1405ac2ce28cc874949b03194c97c",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (turn the loop)",
+      "voiceover": {
+        "text": "Here's a square loop of wire in a uniform magnetic field. When the loop faces the field square on, lots of field passes through it. Now turn the loop until it's edge on to the field. What happens to the amount of field passing through it? Make your prediction. It falls, all the way to zero. The field hasn't changed, and neither has the size of the loop. Only its direction has. So why does turning a loop change the field passing through it?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "rain",
+      "title": "a loop in the rain",
+      "voiceover": {
+        "text": "Picture the same loop held out in steady rain that falls straight down. Hold it flat, facing the sky, and the most rain falls through it. Tilt it, and less gets through. Turn it on its edge, and none does, even though it's the same loop in the same rain. Magnetic field passes through a loop in the same way. What matters is how much of the loop's area faces the field."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flux",
+      "title": "magnetic flux",
+      "voiceover": {
+        "text": "That amount has a name, magnetic flux. It measures how much magnetic field passes through an area. When the field goes straight through, at right angles to the loop's surface, the flux is just the field strength times the area. Phi equals B A. Flux is measured in webers. One weber is one tesla times one square metre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "normal",
+      "title": "the normal and the part that goes through",
+      "voiceover": {
+        "text": "To describe a tilted loop, we use its normal. That's an arrow sticking straight out of the loop's face, at right angles to its surface. Theta is the angle between the field and this normal. Now split the field into two parts. The part along the normal goes through the loop. The part along the surface just skims across it, and never goes through. The part that goes through is B cos theta, so the flux is B A cos theta. You'll also see it written as B parallel times A, where B parallel is the part of the field parallel to the normal."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "turning",
+      "title": "turning the loop",
+      "voiceover": {
+        "text": "Now watch the flux as the loop turns. Facing the field square on, theta is zero, cos zero is one, and the flux is the biggest it can be, B A. At sixty degrees, cos is a half, so the flux halves. Edge on, theta is ninety degrees, cos is zero, and the flux is zero. Keep turning, and the field passes through from the other side, so we call the flux negative. Turned right round, it's minus B A. That's why orientation matters. Turning the loop changes how much of the field goes through it, even though B and A stay exactly the same."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-example",
+      "title": "a worked example",
+      "voiceover": {
+        "text": "Here's an example. A flat circular coil of radius four point zero centimetres sits in a field of zero point three zero tesla, at right angles to the plane of the coil. Its area is pi r squared, about five point zero three times ten to the minus three square metres. The field goes straight through, so theta is zero, and the flux is about one point five times ten to the minus three webers. Now turn the coil until its plane makes forty degrees with the field. Careful here. Theta is measured from the normal, not the plane, so theta is ninety minus forty, fifty degrees. The flux is B A cos fifty, about nine point seven times ten to the minus four webers."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "angle-trap",
+      "title": "the angle trap",
+      "voiceover": {
+        "text": "That's the most common trap in flux questions. If you're given the angle between the field and the plane of the loop, call it alpha. The normal is at ninety degrees minus alpha, so the flux becomes B A sine alpha. For example, a plane at thirty degrees to the field has its normal at sixty degrees, and the flux is half of B A. So always ask, what angle does the field make with the normal? Field at right angles to the plane means the most flux. Field along the plane means none at all."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "three-ways",
+      "title": "three ways to change flux",
+      "voiceover": {
+        "text": "So flux can change in three ways. Change the field strength, for example by moving a magnet closer, or switching on an electromagnet. Change the area inside the field, by stretching the loop, or sliding it part of the way out of the field. Or change the angle, by turning the loop. But sliding a loop sideways, while it stays completely inside a uniform field, changes nothing. Same B, same A inside the field, same angle, so the same flux."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Face on, full flux. Edge on, no flux. And always measure theta from the normal."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A flat loop of area zero point zero two zero square metres is in a uniform magnetic field of zero point six zero tesla, with the field at right angles to the plane of the loop. Calculate the flux through the loop. Then calculate the flux after the loop has turned through sixty degrees from this position. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Field at right angles to the plane is along the normal, so theta is zero, and the flux is B A, zero point six zero times zero point zero two zero, which is zero point zero one two webers. Turned through sixty degrees, theta is sixty, so the flux halves to zero point zero zero six zero webers. The slip is using sine sixty. Theta starts at zero and grows to sixty, so it's cos."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A rectangular loop measures ten centimetres by five point zero centimetres, in a uniform magnetic field of zero point four zero tesla. The plane of the loop makes an angle of thirty degrees with the field. Calculate the magnetic flux through the loop. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The area is zero point one zero times zero point zero five zero, five point zero times ten to the minus three square metres. The plane is at thirty degrees, so the normal is at sixty. The flux is zero point four zero times the area times cos sixty, one point zero times ten to the minus three webers. The slip is putting thirty straight into cos. Thirty is the angle to the plane, not the normal."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So flux changes when the field, the area or the angle changes. Michael Faraday found that a changing flux is exactly what makes a current flow. Connect a coil to a sensitive meter, and bring a magnet near it. When does the needle move?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

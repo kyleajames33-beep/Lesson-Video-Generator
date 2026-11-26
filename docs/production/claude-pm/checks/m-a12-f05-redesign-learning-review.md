@@ -9,3 +9,10 @@ Should fix 240-F05-EVEN-GAP, scene 8 and key note 5: an even gap does not always
 Should fix 240-F05-GROWTH-SIGN, scene 5 and key note 3: “r > 1 grows, 0 < r < 1 shrinks” omits the sign of the initial term. For a negative first term, r > 1 makes values more negative, while 0 < r < 1 makes them increase towards zero. State growth and decay for positive starting values or specify magnitudes. The plotted examples use positive a and are correct.
 
 The folded paper anchors repeated multiplication and the n − 1 count. Both worked cases and attempts expose meaningful errors; the later even-gap attempt has both valid answers. The handwritten, colour, stage-change, simulation and worked-example features are specified. Actual paper plate, graph slider, layout and timing are not checked. The slider must not imply the excluded r = 0 is a valid GP. The f04/f05/f06 written joins match. Fifteen scene strings total 6,015 characters; bold cues are found in written visual order; no em dash. About 548 seconds is an estimate. The whole-course anchor comparison and plates remain pending. No speech, source edits or commits.
+
+
+### Revision3 source repair check,11November2026
+
+Current source SHA256 `cd3e0ba2d6a2ed37bd443245f80a8b8cc43bce748551b9974ba828503ec7e753`. Result for the repaired source:0 blockers,0 remaining should-fix findings in this revision. Positive first term is stated for shrinking positive terms. Even-gap inference now requires a positive quotient; a negative even-power result has no real ratio. Both findings resolved.
+
+Recount:6100characters in15spoken strings; all declared counts agree, no em dash. New narration scenes:5, 8. Exact strings and cues in work/brief240/f05-rev3-voice-source.json; independent calculations in work/brief240/rev3-independent-checks.json. Earlier source/live-site findings are historical where superseded here. Plate geometry findings and built playback remain separate; no speech or source edit.

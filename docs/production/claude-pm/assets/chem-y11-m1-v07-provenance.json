@@ -1,0 +1,64 @@
+{
+  "brief": 177,
+  "design": "chem-y11-m1-v07",
+  "sourceSha256": "37604dd8aa8a709dcf8df43633468dc1277bfdd92ee798e9ee29d78a61c29df2",
+  "manifest": "brief177-manifest.json",
+  "entries": [
+    {
+      "key": "177-crucible",
+      "file": "y11c-cuso4-crucible-blue-v1.png",
+      "prompt": "Edit the referenced transparent PNG with EXACT same 1280x1920 canvas, all crucible, triangle, tripod, burner geometry and positions unchanged pixel registered. Replace ONLY white powder inside crucible with vivid bright blue angular translucent copper(II) sulfate pentahydrate crystals filling same level. Remove blue burner flame so burner is unlit with barrel top visible. Preserve every other line and alpha transparency. No steam, people, text or background. File y11c-cuso4-crucible-blue-v1.png.",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-5ff943b7-730e-4b3d-b24c-8cd2b5e7c95a.png",
+      "path": "public/assets/chemistry/y11c-cuso4-crucible-blue-v1.png",
+      "sha256": "1b5072fabb9a7219b95b47f9e5c6cc84ddf2ea06852e8520228e67a8dd8779e5",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "clearMarginFraction": [
+        0.0,
+        0.046223958333333336,
+        0.017578125,
+        0.0
+      ],
+      "status": "painted candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected in generated image and paper/dark phone contact. No people, hands, faces or text. Native composites saved; clean-edge clearance not passed.",
+      "additionalFinding": "Diffuse haze outside object; does not meet clean-alpha requirement. Canvas is 1024x1536 rather than the original 1280x1920. Three-way exact overlay fails."
+    },
+    {
+      "key": "177-cruciblelit",
+      "file": "y11c-cuso4-crucible-blue-lit-v1.png",
+      "prompt": "Edit referenced PNG for matched animation state. Same exact canvas dimensions and object positions and scale. Keep every common outline of crucible, blue crystals, triangle, tripod, burner absolutely unchanged. Add ONLY a small blue Bunsen flame at the burner top, matching the original white-powder reference. No steam. Remove background haze, true alpha outside apparatus. No background, people, hands, faces, labels, numbers or text. File y11c-cuso4-crucible-blue-lit-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ab4e-565a-7770-bc59-accdb937e087\\exec-c8e54944-61a9-4196-b564-4bde5a4ec59e.png",
+      "path": "public/assets/chemistry/y11c-cuso4-crucible-blue-lit-v1.png",
+      "sha256": "ecc106ae0f4e299ca403d54e6551f03a96419a1e00aa4274f3a6bdbfe2bba62d",
+      "size": [
+        1024,
+        1536
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "clearMarginFraction": [
+        0.0634765625,
+        0.050130208333333336,
+        0.02734375,
+        0.0
+      ],
+      "status": "painted candidate, QA hold: clear alpha margin below 8%",
+      "inspection": "Subject inspected in generated image and paper/dark phone contact. No people, hands, faces or text. Native composites saved; clean-edge clearance not passed.",
+      "additionalFinding": "Diffuse haze outside object; does not meet clean-alpha requirement."
+    }
+  ],
+  "approval": "QA holds remain; not approved.",
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m1-v07-v09-native-qa.json",
+    "result": "Actual exterior alpha rechecked; stated margin and pair-registration limits remain."
+  }
+}

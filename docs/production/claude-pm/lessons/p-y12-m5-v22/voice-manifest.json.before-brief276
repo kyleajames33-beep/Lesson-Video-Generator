@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v22.md",
+  "sourceSha256": "41f03b5af19377606a604f4e348ccfccaffce0756c514657da837eb83b40407a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "A five hundred kilogram satellite is in a circular orbit, seven thousand kilometres from Earth's centre, moving at about seven point five six kilometres per second. To lift it higher, its engine pushes it forwards, and it speeds up. But once it settles into a circular orbit twice as far out, it's moving at only five point three five kilometres per second, slower than when it started. The engine added energy. So where did it go? Have a think.",
+      "audioFile": "public/audio/phys-y12-m5-v22/hook.wav"
+    },
+    {
+      "id": "kinetic",
+      "text": "Let's build the satellite's energy one piece at a time. First, kinetic energy. In a circular orbit, gravity supplies the centripetal force, so v squared equals big G M over r. Put that into a half m v squared, and the kinetic energy is big G M m over two r. It's positive, and it gets smaller as r gets bigger, because higher orbits are slower. Notice the satellite's mass doesn't cancel this time, so energy does depend on m.",
+      "audioFile": "public/audio/phys-y12-m5-v22/kinetic.wav"
+    },
+    {
+      "id": "potential",
+      "text": "Next, potential energy. From last time, U is minus big G M m over r, with zero at infinity. Compare the sizes: U is exactly twice as big as the kinetic energy, and it's negative. Higher up, U is less negative, so moving out, U rises while K falls.",
+      "audioFile": "public/audio/phys-y12-m5-v22/potential.wav"
+    },
+    {
+      "id": "total",
+      "text": "Now add them. Big G M m over two r, plus minus big G M m over r, gives a total energy of minus big G M m over two r. It's negative, which means the satellite is bound: it doesn't have enough energy to reach infinity. And here's the key. A bigger r makes this total less negative, so a higher orbit has more total energy. In fact, the total is exactly minus the kinetic energy. Lose speed, and the total goes up.",
+      "audioFile": "public/audio/phys-y12-m5-v22/total.wav"
+    },
+    {
+      "id": "three-curves",
+      "text": "On a graph against r, the kinetic energy curve sits above zero, and the potential energy curve sits below, twice as deep. The total sits halfway between the potential energy and zero, a mirror image of the kinetic energy. Move outwards, and all three curves head towards zero. Kinetic energy falls, but potential and total energy rise.",
+      "audioFile": "public/audio/phys-y12-m5-v22/three-curves.wav"
+    },
+    {
+      "id": "worked-energies",
+      "text": "Let's put numbers on our satellite. Big G M m is two point zero zero one times ten to the seventeen. At seven times ten to the six metres, the kinetic energy is one point four three times ten to the ten joules, the potential energy is minus two point eight six times ten to the ten, and the total is minus one point four three times ten to the ten. Double the radius, and every value halves. So the kinetic energy falls by seven point one five times ten to the nine joules, the potential energy rises by twice that, and the total rises by seven point one five times ten to the nine joules. That rise is the energy the engines had to supply.",
+      "audioFile": "public/audio/phys-y12-m5-v22/worked-energies.wav"
+    },
+    {
+      "id": "where-it-went",
+      "text": "So here's where the energy went. The potential energy rose by one point four three times ten to the ten joules. Half of that came from the engines. The other half came from the kinetic energy the satellite lost as it climbed. So the engines paid for only half the climb, and the satellite's own speed paid for the rest. A higher orbit is slower, and it still costs energy.",
+      "audioFile": "public/audio/phys-y12-m5-v22/where-it-went.wav"
+    },
+    {
+      "id": "burn-vs-state",
+      "text": "But hold on, the engine did make it faster. That's true at the moment of the burn. But the satellite isn't on a circle any more. It coasts outwards on a stretched path, and like a ball thrown upwards, it slows as it climbs, trading kinetic energy for potential energy. When it reaches the higher radius, a second burn pushes it into the new circle. Only that final circular state is slower than the original one.",
+      "audioFile": "public/audio/phys-y12-m5-v22/burn-vs-state.wav"
+    },
+    {
+      "id": "ellipse-energy",
+      "text": "The same trade happens on any elliptical orbit. With no engines and no air, the total energy stays constant. As a planet or a comet falls in towards the Sun, its potential energy drops, so its kinetic energy rises, and it speeds up. That's the energy side of Kepler's second law. Far from the Sun it's the reverse, and the comet crawls. Nothing is lost, the energy just changes form.",
+      "audioFile": "public/audio/phys-y12-m5-v22/ellipse-energy.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the shortcut for circular orbits: the total energy is minus the kinetic energy. So slower means more total energy. Higher is slower, but higher costs more. And between two circles, the kinetic energy you lose always equals the energy you supply.",
+      "audioFile": "public/audio/phys-y12-m5-v22/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. An eight hundred kilogram satellite is in a circular orbit five hundred kilometres above Earth's surface. Calculate its kinetic energy, its gravitational potential energy and its total energy, using the data sheet values. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v22/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "First, r equals six point eight seven one times ten to the six metres. Big G M m is three point two zero two times ten to the seventeen. So U is minus four point six six times ten to the ten joules, the kinetic energy is half its size, plus two point three three times ten to the ten, and the total is minus two point three three times ten to the ten joules. The classic slip is using five hundred kilometres as r.",
+      "audioFile": "public/audio/phys-y12-m5-v22/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A satellite in a low circular orbit slowly loses energy to air drag, and gradually spirals down through lower circular orbits. Explain why its speed increases, even though drag removes energy. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v22/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Drag removes energy, so the total energy becomes more negative. Total energy is minus big G M m over two r, so a more negative total means a smaller radius. And in a smaller circular orbit the speed is higher, because v squared equals big G M over r. As it drops, gravity does twice as much work on it as drag takes away. The slip is thinking drag must slow it down.",
+      "audioFile": "public/audio/phys-y12-m5-v22/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Every circular orbit has a negative total energy, so it's bound. To escape completely, a craft needs a total energy of at least zero. So what's the slowest launch speed that gets it there, with no more help from an engine? That's next, along with how it compares with the speed of a circular orbit.",
+      "audioFile": "public/audio/phys-y12-m5-v22/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v22/key-notes.wav"
+    }
+  ]
+}

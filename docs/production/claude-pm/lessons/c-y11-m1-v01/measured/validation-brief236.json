@@ -1,0 +1,1464 @@
+{
+  "lesson": "chem-y11-m1-v01",
+  "wave": 1,
+  "sourceSha256": "a9af81673d6551c3db0786a14ebea9a9792baf914e2606d3f66e11694a827231",
+  "measuredPath": "work/brief236/wave1/chem-y11-m1-v01/voiced/lesson.json",
+  "measuredSha256": "2a814ab15b3b171a2541439d009187ca67df35d51c00388afe1389019934f297",
+  "characters": 6287,
+  "totalSeconds": 499.6,
+  "under570": true,
+  "newRequests": 16,
+  "cachedTakes": 0,
+  "inputTokens": 1399,
+  "outputTokens": 10743,
+  "costUsd": 0.09738650000000001,
+  "worstWordGap": {
+    "scene": "compound",
+    "seconds": 1.2629999999998347,
+    "after": "one.",
+    "before": "That"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v01/hook.wav",
+      "seconds": 30.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "gas",
+          "start": 2.83,
+          "end": 3.0107500000000003
+        },
+        {
+          "text": "particles",
+          "start": 21.989000000000072,
+          "end": 22.53100000000007
+        },
+        {
+          "text": "apart",
+          "start": 29.71900000000001,
+          "end": 29.953166666666675
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8819999999999855,
+        "after": "which.",
+        "before": "But"
+      },
+      "peakFraction": 0.872802734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 28.939000000000007,
+          "end": 28.979000000000006,
+          "score": 0.486
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here are three sealed jars of colourless gas. One holds pure oxygen, one holds pure carbon dioxide, and one holds ordinary air. They look exactly the same, so looking won't tell you which is which. But chemists sort every sample into a few kinds, and the sorting doesn't depend on how it looks. It depends on the particles inside. So let's zoom in, and see how particles tell an element, a compound and a mixture apart.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "substance-or-mixture",
+      "audio": "public/audio/chem-y11-m1-v01/substance-or-mixture.wav",
+      "seconds": 37.6,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "together",
+          "start": 11.633999999999988,
+          "end": 11.937111111111099
+        },
+        {
+          "text": "atoms",
+          "start": 18.00699999999999,
+          "end": 18.224499999999992
+        },
+        {
+          "text": "substance",
+          "start": 20.775000000000116,
+          "end": 21.216000000000115
+        },
+        {
+          "text": "dioxide",
+          "start": 30.58300000000007,
+          "end": 31.02137500000007
+        },
+        {
+          "text": "mixture",
+          "start": 36.85799999999996,
+          "end": 37.17387499999996
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8429999999999644,
+        "after": "substance.",
+        "before": "Now"
+      },
+      "peakFraction": 0.91558837890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.798000000000116,
+          "end": 21.818000000000115,
+          "score": 0
+        },
+        {
+          "word": "or",
+          "start": 34.51099999999996,
+          "end": 34.61099999999996,
+          "score": 0.42
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Start with the first split. A substance is one particular kind of matter, with its own kind of particle. In jar A, every particle is identical: two oxygen atoms joined together. Jar B is the same idea. Every particle is one carbon atom joined to two oxygen atoms. A sample that contains only one substance is called a pure substance. Now look at the air. There are different kinds of particle here: mostly nitrogen, some oxygen, a little argon and carbon dioxide, all moving around separately. A sample with two or more substances mixed together is a mixture.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "element",
+      "audio": "public/audio/chem-y11-m1-v01/element.wav",
+      "seconds": 29.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "oxygen",
+          "start": 14.01799999999999,
+          "end": 14.310285714285703
+        },
+        {
+          "text": "atom",
+          "start": 21.460000000000008,
+          "end": 21.681000000000008
+        },
+        {
+          "text": "symbol",
+          "start": 28.798000000000048,
+          "end": 29.056000000000047
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9290000000000305,
+        "after": "compound.",
+        "before": "Iron"
+      },
+      "peakFraction": 0.823211669921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 6.915999999999986,
+          "end": 7.056999999999986,
+          "score": 0.469
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Pure substances split again. Oxygen is an element. An element is a substance made of only one kind of atom. Here, each particle happens to be a molecule, two atoms joined together, but both atoms are oxygen. So a molecule doesn't make something a compound. Iron is an element too. In a piece of iron, every atom is an iron atom. Elements are the substances listed in the periodic table, and an element's formula has just one symbol.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "compound",
+      "audio": "public/audio/chem-y11-m1-v01/compound.wav",
+      "seconds": 42.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "two",
+          "start": 4.594999999999999,
+          "end": 4.855999999999998
+        },
+        {
+          "text": "oxygen",
+          "start": 13.530999999999985,
+          "end": 13.911999999999985
+        },
+        {
+          "text": "one",
+          "start": 16.415999999999983,
+          "end": 16.535999999999984
+        },
+        {
+          "text": "reaction",
+          "start": 41.51599999999991,
+          "end": 41.908888888888804
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.2629999999998347,
+        "after": "one.",
+        "before": "That"
+      },
+      "peakFraction": 0.840850830078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 1.547,
+          "end": 1.567,
+          "score": 0
+        },
+        {
+          "word": "is",
+          "start": 18.16100000000008,
+          "end": 18.22100000000008,
+          "score": 0.418
+        },
+        {
+          "word": "are",
+          "start": 30.139000000000053,
+          "end": 30.19900000000005,
+          "score": 0.329
+        },
+        {
+          "word": "one",
+          "start": 31.822000000000052,
+          "end": 31.88200000000005,
+          "score": 0
+        },
+        {
+          "word": "to",
+          "start": 31.90200000000005,
+          "end": 31.942000000000053,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 39.28799999999991,
+          "end": 39.32799999999992,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Carbon dioxide is a compound. A compound is a substance made of two or more elements, chemically bonded together in a fixed ratio. Every carbon dioxide particle has one carbon atom bonded to two oxygen atoms, so the ratio is always one to two. Water is a compound too, always two hydrogen atoms to one oxygen. Some compounds, like table salt, aren't made of separate molecules at all. Charged particles called ions, sodium and chloride, are packed in a lattice, always one to one. That fixed ratio is what marks a compound. And because its atoms are bonded, you can only split a compound into its elements with a chemical reaction.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "mixture",
+      "audio": "public/audio/chem-y11-m1-v01/mixture.wav",
+      "seconds": 31.36,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "out",
+          "start": 16.41899999999999,
+          "end": 16.49399999999999
+        },
+        {
+          "text": "spoonful",
+          "start": 21.89300000000002,
+          "end": 22.321444444444463
+        },
+        {
+          "text": "mixture",
+          "start": 23.439000000000018,
+          "end": 23.76000000000002
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0639999999999814,
+        "after": "properties.",
+        "before": "Here"
+      },
+      "peakFraction": 0.8436279296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.592000000000017,
+          "end": 21.612000000000016,
+          "score": 0.376
+        },
+        {
+          "word": "a",
+          "start": 30.5580000000001,
+          "end": 30.5980000000001,
+          "score": 0.49
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "A mixture is different. Its substances are just mingled, so each one keeps its own particles and its own properties. Here are iron filings stirred into yellow sulfur powder. The iron and the sulfur aren't bonded to each other, so a magnet can pull the iron straight out. And there's no fixed recipe. You could mix in a pinch of sulfur or a whole spoonful, and it's still a mixture of iron and sulfur. Proportions that can change are called variable composition, and that's a mark of a mixture.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v01/prediction.wav",
+      "seconds": 16.08,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 15.508999999999997,
+          "end": 15.66233333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7240000000000006,
+        "after": "prediction.",
+        "before": "This"
+      },
+      "peakFraction": 0.843292236328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 4.094,
+          "end": 4.2540000000000004,
+          "score": 0.474
+        },
+        {
+          "word": "Have",
+          "start": 15.305999999999996,
+          "end": 15.406999999999996,
+          "score": 0.413
+        },
+        {
+          "word": "a",
+          "start": 15.447999999999997,
+          "end": 15.488999999999995,
+          "score": 0.277
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Quick prediction. This jar holds oxygen molecules and carbon dioxide molecules, moving around together. It contains only carbon and oxygen atoms. So is it an element, a compound or a mixture? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction-answer",
+      "audio": "public/audio/chem-y11-m1-v01/prediction-answer.wav",
+      "seconds": 25.52,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "particle",
+          "start": 1.9040000000000001,
+          "end": 2.2896
+        },
+        {
+          "text": "molecules",
+          "start": 12.962999999999996,
+          "end": 13.423999999999996
+        },
+        {
+          "text": "change",
+          "start": 22.42699999999999,
+          "end": 22.73642857142856
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6629999999999883,
+        "after": "atoms.",
+        "before": "There"
+      },
+      "peakFraction": 0.849151611328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.488,
+          "end": 0.529,
+          "score": 0.493
+        },
+        {
+          "word": "are",
+          "start": 9.730999999999998,
+          "end": 9.790999999999997,
+          "score": 0.334
+        },
+        {
+          "word": "a",
+          "start": 23.491000000000017,
+          "end": 23.53100000000002,
+          "score": 0.451
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "It's a mixture. Look at the particles, not the list of atoms. There are two different kinds of particle here. Inside each carbon dioxide molecule, the atoms are bonded in a fixed ratio. But the carbon dioxide molecules aren't bonded to the oxygen molecules. And you could add more oxygen, or less, so the overall ratio of carbon to oxygen can change. In a compound, it never can.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "homogeneous-heterogeneous",
+      "audio": "public/audio/chem-y11-m1-v01/homogeneous-heterogeneous.wav",
+      "seconds": 35.36,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 10.751999999999988,
+          "end": 11.204699999999988
+        },
+        {
+          "text": "mixture",
+          "start": 17.53399999999999,
+          "end": 17.81487499999999
+        },
+        {
+          "text": "other",
+          "start": 29.895000000000074,
+          "end": 30.04583333333341
+        },
+        {
+          "text": "region",
+          "start": 34.215999999999994,
+          "end": 34.516999999999996
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.947000000000056,
+        "after": "too.",
+        "before": "Now"
+      },
+      "peakFraction": 0.864654541015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "they're",
+          "start": 3.077,
+          "end": 3.258,
+          "score": 0.457
+        },
+        {
+          "word": "Air",
+          "start": 20.37000000000001,
+          "end": 20.51100000000001,
+          "score": 0.417
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Mixtures split once more, by how evenly they're mixed. Stir salt into water until it disappears. The salt breaks up into its ions, and they spread evenly between the water molecules. Every drop has the same composition, and you can't see separate parts. That's a homogeneous mixture, the same all the way through. Air is one too. Now look at the iron and sulfur again. There are grey patches and yellow patches, and a scoop from one side isn't the same as a scoop from the other. That's a heterogeneous mixture. Its composition differs from region to region.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "uniform-not-pure",
+      "audio": "public/audio/chem-y11-m1-v01/uniform-not-pure.wav",
+      "seconds": 36.88,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "pure",
+          "start": 13.002999999999991,
+          "end": 13.29179999999999
+        },
+        {
+          "text": "nickel",
+          "start": 25.45100000000009,
+          "end": 25.674714285714373
+        },
+        {
+          "text": "compound",
+          "start": 35.9169999999999,
+          "end": 36.291222222222125
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8040000000000163,
+        "after": "trap.",
+        "before": "Gold-coloured"
+      },
+      "peakFraction": 0.8431396484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.201,
+          "end": 0.402,
+          "score": 0.434
+        },
+        {
+          "word": "are",
+          "start": 5.825999999999993,
+          "end": 5.886999999999994,
+          "score": 0.406
+        },
+        {
+          "word": "a",
+          "start": 12.259999999999991,
+          "end": 12.29999999999999,
+          "score": 0.488
+        },
+        {
+          "word": "a",
+          "start": 33.8509999999999,
+          "end": 33.8909999999999,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the classic exam trap. Pure water and salt water look identical. Both are clear and uniform. But uniform only tells you a mixture is homogeneous. It doesn't tell you a sample is pure. The salt water is still two substances, and you can make it saltier or less salty. Alloys are another trap. Gold-coloured Australian coins are mostly copper, with some aluminium and nickel. Those atoms are spread evenly, but the proportions are chosen by the maker, not fixed by a formula. So an alloy is a homogeneous mixture, not a compound.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-aid",
+      "audio": "public/audio/chem-y11-m1-v01/memory-aid.wav",
+      "seconds": 29.6,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "mixture",
+          "start": 11.002999999999988,
+          "end": 11.284749999999988
+        },
+        {
+          "text": "compound",
+          "start": 19.870000000000083,
+          "end": 20.317111111111195
+        },
+        {
+          "text": "heterogeneous",
+          "start": 28.54900000000008,
+          "end": 29.168357142857225
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7050000000000001,
+        "after": "one?",
+        "before": "Is"
+      },
+      "peakFraction": 0.943511962890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 12.128999999999989,
+          "end": 12.148999999999988,
+          "score": 0.083
+        },
+        {
+          "word": "the",
+          "start": 24.75300000000002,
+          "end": 24.81400000000002,
+          "score": 0.176
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's a way to sort any sample. Ask the same question three times: just one? Is there just one substance? If yes, it's pure, and if not, it's a mixture. For a pure substance, is there just one element? Then it's an element. Two or more, bonded in a fixed ratio, make a compound. And for a mixture, is it just one region, the same all the way through? Then it's homogeneous. If not, it's heterogeneous.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v01/attempt-1.wav",
+      "seconds": 22.2,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.9839999999999929,
+        "after": "particles.",
+        "before": "Solid"
+      },
+      "peakFraction": 0.875244140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.814,
+          "end": 4.8340000000000005,
+          "score": 0
+        },
+        {
+          "word": "S",
+          "start": 13.771999999999991,
+          "end": 13.791999999999993,
+          "score": 0
+        },
+        {
+          "word": "eight",
+          "start": 13.912999999999993,
+          "end": 14.254999999999992,
+          "score": 0.418
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. Classify each sample as an element, a compound, a homogeneous mixture or a heterogeneous mixture, and justify each answer using its particles. Solid sulfur, made of S eight molecules. Glucose, C six H twelve O six. And sand stirred into water. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v01/feedback-1.wav",
+      "seconds": 26.56,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "atom",
+          "start": 3.476,
+          "end": 3.676
+        },
+        {
+          "text": "molecule",
+          "start": 11.82599999999999,
+          "end": 12.200222222222212
+        },
+        {
+          "text": "region",
+          "start": 18.161999999999992,
+          "end": 18.43714285714285
+        },
+        {
+          "text": "count",
+          "start": 25.853000000000087,
+          "end": 26.03800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8430000000000035,
+        "after": "molecule.",
+        "before": "Sand"
+      },
+      "peakFraction": 0.845489501953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.069000000000077,
+          "end": 21.110000000000078,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Sulfur is an element. Each molecule has eight atoms, but they're all sulfur, one kind of atom. Glucose is a compound, three elements bonded in a fixed ratio in every molecule. Sand in water is a heterogeneous mixture, two substances, with the sand in its own region. The classic slip is calling sulfur a compound because its molecule has eight atoms. It's the kinds of atom that count.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v01/attempt-2.wav",
+      "seconds": 23.6,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8220000000000063,
+        "after": "through.",
+        "before": "The"
+      },
+      "peakFraction": 0.83489990234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "other",
+          "start": 8.186999999999992,
+          "end": 8.346999999999992,
+          "score": 0.468
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A student makes two sugar solutions. One has five grams of sugar in every hundred grams of solution, and the other has fifteen grams in every hundred grams. Both are clear and look the same all the way through. The student says sugar solution is a pure substance, because it's uniform. Evaluate this claim. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v01/feedback-2.wav",
+      "seconds": 22.32,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 8.215999999999987,
+          "end": 8.677999999999987
+        },
+        {
+          "text": "other",
+          "start": 14.580999999999984,
+          "end": 14.71516666666665
+        },
+        {
+          "text": "pure",
+          "start": 15.34399999999999,
+          "end": 15.54699999999999
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.105,
+        "after": "wrong.",
+        "before": "Uniform"
+      },
+      "peakFraction": 0.819580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 17.950000000000024,
+          "end": 17.990000000000023,
+          "score": 0.489
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The claim is wrong. Uniform tells you it's a homogeneous mixture, not a pure substance. There are two kinds of particle, sugar molecules and water molecules. And the composition changes, five percent sugar in one and fifteen percent in the other. A pure substance can't do that. So it's a homogeneous mixture. Clear and uniform never proves pure.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v01/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v01/hook.wav",
+      "seconds": 30.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "gas",
+          "start": 2.83,
+          "end": 3.0107500000000003
+        },
+        {
+          "text": "particles",
+          "start": 21.989000000000072,
+          "end": 22.53100000000007
+        },
+        {
+          "text": "apart",
+          "start": 29.71900000000001,
+          "end": 29.953166666666675
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8819999999999855,
+        "after": "which.",
+        "before": "But"
+      },
+      "peakFraction": 0.872802734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 28.939000000000007,
+          "end": 28.979000000000006,
+          "score": 0.486
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here are three sealed jars of colourless gas. One holds pure oxygen, one holds pure carbon dioxide, and one holds ordinary air. They look exactly the same, so looking won't tell you which is which. But chemists sort every sample into a few kinds, and the sorting doesn't depend on how it looks. It depends on the particles inside. So let's zoom in, and see how particles tell an element, a compound and a mixture apart.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "substance-or-mixture",
+      "audio": "public/audio/chem-y11-m1-v01/substance-or-mixture.wav",
+      "seconds": 37.6,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "together",
+          "start": 11.633999999999988,
+          "end": 11.937111111111099
+        },
+        {
+          "text": "atoms",
+          "start": 18.00699999999999,
+          "end": 18.224499999999992
+        },
+        {
+          "text": "substance",
+          "start": 20.775000000000116,
+          "end": 21.216000000000115
+        },
+        {
+          "text": "dioxide",
+          "start": 30.58300000000007,
+          "end": 31.02137500000007
+        },
+        {
+          "text": "mixture",
+          "start": 36.85799999999996,
+          "end": 37.17387499999996
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8429999999999644,
+        "after": "substance.",
+        "before": "Now"
+      },
+      "peakFraction": 0.91558837890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.798000000000116,
+          "end": 21.818000000000115,
+          "score": 0
+        },
+        {
+          "word": "or",
+          "start": 34.51099999999996,
+          "end": 34.61099999999996,
+          "score": 0.42
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Start with the first split. A substance is one particular kind of matter, with its own kind of particle. In jar A, every particle is identical: two oxygen atoms joined together. Jar B is the same idea. Every particle is one carbon atom joined to two oxygen atoms. A sample that contains only one substance is called a pure substance. Now look at the air. There are different kinds of particle here: mostly nitrogen, some oxygen, a little argon and carbon dioxide, all moving around separately. A sample with two or more substances mixed together is a mixture.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "element",
+      "audio": "public/audio/chem-y11-m1-v01/element.wav",
+      "seconds": 29.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "oxygen",
+          "start": 14.01799999999999,
+          "end": 14.310285714285703
+        },
+        {
+          "text": "atom",
+          "start": 21.460000000000008,
+          "end": 21.681000000000008
+        },
+        {
+          "text": "symbol",
+          "start": 28.798000000000048,
+          "end": 29.056000000000047
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9290000000000305,
+        "after": "compound.",
+        "before": "Iron"
+      },
+      "peakFraction": 0.823211669921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "one",
+          "start": 6.915999999999986,
+          "end": 7.056999999999986,
+          "score": 0.469
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Pure substances split again. Oxygen is an element. An element is a substance made of only one kind of atom. Here, each particle happens to be a molecule, two atoms joined together, but both atoms are oxygen. So a molecule doesn't make something a compound. Iron is an element too. In a piece of iron, every atom is an iron atom. Elements are the substances listed in the periodic table, and an element's formula has just one symbol.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "compound",
+      "audio": "public/audio/chem-y11-m1-v01/compound.wav",
+      "seconds": 42.48,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "two",
+          "start": 4.594999999999999,
+          "end": 4.855999999999998
+        },
+        {
+          "text": "oxygen",
+          "start": 13.530999999999985,
+          "end": 13.911999999999985
+        },
+        {
+          "text": "one",
+          "start": 16.415999999999983,
+          "end": 16.535999999999984
+        },
+        {
+          "text": "reaction",
+          "start": 41.51599999999991,
+          "end": 41.908888888888804
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.2629999999998347,
+        "after": "one.",
+        "before": "That"
+      },
+      "peakFraction": 0.840850830078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 1.547,
+          "end": 1.567,
+          "score": 0
+        },
+        {
+          "word": "is",
+          "start": 18.16100000000008,
+          "end": 18.22100000000008,
+          "score": 0.418
+        },
+        {
+          "word": "are",
+          "start": 30.139000000000053,
+          "end": 30.19900000000005,
+          "score": 0.329
+        },
+        {
+          "word": "one",
+          "start": 31.822000000000052,
+          "end": 31.88200000000005,
+          "score": 0
+        },
+        {
+          "word": "to",
+          "start": 31.90200000000005,
+          "end": 31.942000000000053,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 39.28799999999991,
+          "end": 39.32799999999992,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Carbon dioxide is a compound. A compound is a substance made of two or more elements, chemically bonded together in a fixed ratio. Every carbon dioxide particle has one carbon atom bonded to two oxygen atoms, so the ratio is always one to two. Water is a compound too, always two hydrogen atoms to one oxygen. Some compounds, like table salt, aren't made of separate molecules at all. Charged particles called ions, sodium and chloride, are packed in a lattice, always one to one. That fixed ratio is what marks a compound. And because its atoms are bonded, you can only split a compound into its elements with a chemical reaction.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "mixture",
+      "audio": "public/audio/chem-y11-m1-v01/mixture.wav",
+      "seconds": 31.36,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "out",
+          "start": 16.41899999999999,
+          "end": 16.49399999999999
+        },
+        {
+          "text": "spoonful",
+          "start": 21.89300000000002,
+          "end": 22.321444444444463
+        },
+        {
+          "text": "mixture",
+          "start": 23.439000000000018,
+          "end": 23.76000000000002
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0639999999999814,
+        "after": "properties.",
+        "before": "Here"
+      },
+      "peakFraction": 0.8436279296875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.592000000000017,
+          "end": 21.612000000000016,
+          "score": 0.376
+        },
+        {
+          "word": "a",
+          "start": 30.5580000000001,
+          "end": 30.5980000000001,
+          "score": 0.49
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "A mixture is different. Its substances are just mingled, so each one keeps its own particles and its own properties. Here are iron filings stirred into yellow sulfur powder. The iron and the sulfur aren't bonded to each other, so a magnet can pull the iron straight out. And there's no fixed recipe. You could mix in a pinch of sulfur or a whole spoonful, and it's still a mixture of iron and sulfur. Proportions that can change are called variable composition, and that's a mark of a mixture.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v01/prediction.wav",
+      "seconds": 16.08,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 15.508999999999997,
+          "end": 15.66233333333333
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7240000000000006,
+        "after": "prediction.",
+        "before": "This"
+      },
+      "peakFraction": 0.843292236328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 4.094,
+          "end": 4.2540000000000004,
+          "score": 0.474
+        },
+        {
+          "word": "Have",
+          "start": 15.305999999999996,
+          "end": 15.406999999999996,
+          "score": 0.413
+        },
+        {
+          "word": "a",
+          "start": 15.447999999999997,
+          "end": 15.488999999999995,
+          "score": 0.277
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Quick prediction. This jar holds oxygen molecules and carbon dioxide molecules, moving around together. It contains only carbon and oxygen atoms. So is it an element, a compound or a mixture? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction-answer",
+      "audio": "public/audio/chem-y11-m1-v01/prediction-answer.wav",
+      "seconds": 25.52,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "particle",
+          "start": 1.9040000000000001,
+          "end": 2.2896
+        },
+        {
+          "text": "molecules",
+          "start": 12.962999999999996,
+          "end": 13.423999999999996
+        },
+        {
+          "text": "change",
+          "start": 22.42699999999999,
+          "end": 22.73642857142856
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.6629999999999883,
+        "after": "atoms.",
+        "before": "There"
+      },
+      "peakFraction": 0.849151611328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 0.488,
+          "end": 0.529,
+          "score": 0.493
+        },
+        {
+          "word": "are",
+          "start": 9.730999999999998,
+          "end": 9.790999999999997,
+          "score": 0.334
+        },
+        {
+          "word": "a",
+          "start": 23.491000000000017,
+          "end": 23.53100000000002,
+          "score": 0.451
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "It's a mixture. Look at the particles, not the list of atoms. There are two different kinds of particle here. Inside each carbon dioxide molecule, the atoms are bonded in a fixed ratio. But the carbon dioxide molecules aren't bonded to the oxygen molecules. And you could add more oxygen, or less, so the overall ratio of carbon to oxygen can change. In a compound, it never can.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "homogeneous-heterogeneous",
+      "audio": "public/audio/chem-y11-m1-v01/homogeneous-heterogeneous.wav",
+      "seconds": 35.36,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 10.751999999999988,
+          "end": 11.204699999999988
+        },
+        {
+          "text": "mixture",
+          "start": 17.53399999999999,
+          "end": 17.81487499999999
+        },
+        {
+          "text": "other",
+          "start": 29.895000000000074,
+          "end": 30.04583333333341
+        },
+        {
+          "text": "region",
+          "start": 34.215999999999994,
+          "end": 34.516999999999996
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.947000000000056,
+        "after": "too.",
+        "before": "Now"
+      },
+      "peakFraction": 0.864654541015625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "they're",
+          "start": 3.077,
+          "end": 3.258,
+          "score": 0.457
+        },
+        {
+          "word": "Air",
+          "start": 20.37000000000001,
+          "end": 20.51100000000001,
+          "score": 0.417
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Mixtures split once more, by how evenly they're mixed. Stir salt into water until it disappears. The salt breaks up into its ions, and they spread evenly between the water molecules. Every drop has the same composition, and you can't see separate parts. That's a homogeneous mixture, the same all the way through. Air is one too. Now look at the iron and sulfur again. There are grey patches and yellow patches, and a scoop from one side isn't the same as a scoop from the other. That's a heterogeneous mixture. Its composition differs from region to region.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "uniform-not-pure",
+      "audio": "public/audio/chem-y11-m1-v01/uniform-not-pure.wav",
+      "seconds": 36.88,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "pure",
+          "start": 13.002999999999991,
+          "end": 13.29179999999999
+        },
+        {
+          "text": "nickel",
+          "start": 25.45100000000009,
+          "end": 25.674714285714373
+        },
+        {
+          "text": "compound",
+          "start": 35.9169999999999,
+          "end": 36.291222222222125
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8040000000000163,
+        "after": "trap.",
+        "before": "Gold-coloured"
+      },
+      "peakFraction": 0.8431396484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.201,
+          "end": 0.402,
+          "score": 0.434
+        },
+        {
+          "word": "are",
+          "start": 5.825999999999993,
+          "end": 5.886999999999994,
+          "score": 0.406
+        },
+        {
+          "word": "a",
+          "start": 12.259999999999991,
+          "end": 12.29999999999999,
+          "score": 0.488
+        },
+        {
+          "word": "a",
+          "start": 33.8509999999999,
+          "end": 33.8909999999999,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's the classic exam trap. Pure water and salt water look identical. Both are clear and uniform. But uniform only tells you a mixture is homogeneous. It doesn't tell you a sample is pure. The salt water is still two substances, and you can make it saltier or less salty. Alloys are another trap. Gold-coloured Australian coins are mostly copper, with some aluminium and nickel. Those atoms are spread evenly, but the proportions are chosen by the maker, not fixed by a formula. So an alloy is a homogeneous mixture, not a compound.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-aid",
+      "audio": "public/audio/chem-y11-m1-v01/memory-aid.wav",
+      "seconds": 29.6,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "mixture",
+          "start": 11.002999999999988,
+          "end": 11.284749999999988
+        },
+        {
+          "text": "compound",
+          "start": 19.870000000000083,
+          "end": 20.317111111111195
+        },
+        {
+          "text": "heterogeneous",
+          "start": 28.54900000000008,
+          "end": 29.168357142857225
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7050000000000001,
+        "after": "one?",
+        "before": "Is"
+      },
+      "peakFraction": 0.943511962890625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 12.128999999999989,
+          "end": 12.148999999999988,
+          "score": 0.083
+        },
+        {
+          "word": "the",
+          "start": 24.75300000000002,
+          "end": 24.81400000000002,
+          "score": 0.176
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here's a way to sort any sample. Ask the same question three times: just one? Is there just one substance? If yes, it's pure, and if not, it's a mixture. For a pure substance, is there just one element? Then it's an element. Two or more, bonded in a fixed ratio, make a compound. And for a mixture, is it just one region, the same all the way through? Then it's homogeneous. If not, it's heterogeneous.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v01/attempt-1.wav",
+      "seconds": 22.2,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.9839999999999929,
+        "after": "particles.",
+        "before": "Solid"
+      },
+      "peakFraction": 0.875244140625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 4.814,
+          "end": 4.8340000000000005,
+          "score": 0
+        },
+        {
+          "word": "S",
+          "start": 13.771999999999991,
+          "end": 13.791999999999993,
+          "score": 0
+        },
+        {
+          "word": "eight",
+          "start": 13.912999999999993,
+          "end": 14.254999999999992,
+          "score": 0.418
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. Classify each sample as an element, a compound, a homogeneous mixture or a heterogeneous mixture, and justify each answer using its particles. Solid sulfur, made of S eight molecules. Glucose, C six H twelve O six. And sand stirred into water. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v01/feedback-1.wav",
+      "seconds": 26.56,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "atom",
+          "start": 3.476,
+          "end": 3.676
+        },
+        {
+          "text": "molecule",
+          "start": 11.82599999999999,
+          "end": 12.200222222222212
+        },
+        {
+          "text": "region",
+          "start": 18.161999999999992,
+          "end": 18.43714285714285
+        },
+        {
+          "text": "count",
+          "start": 25.853000000000087,
+          "end": 26.03800000000009
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8430000000000035,
+        "after": "molecule.",
+        "before": "Sand"
+      },
+      "peakFraction": 0.845489501953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.069000000000077,
+          "end": 21.110000000000078,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Sulfur is an element. Each molecule has eight atoms, but they're all sulfur, one kind of atom. Glucose is a compound, three elements bonded in a fixed ratio in every molecule. Sand in water is a heterogeneous mixture, two substances, with the sand in its own region. The classic slip is calling sulfur a compound because its molecule has eight atoms. It's the kinds of atom that count.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v01/attempt-2.wav",
+      "seconds": 23.6,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8220000000000063,
+        "after": "through.",
+        "before": "The"
+      },
+      "peakFraction": 0.83489990234375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "other",
+          "start": 8.186999999999992,
+          "end": 8.346999999999992,
+          "score": 0.468
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. A student makes two sugar solutions. One has five grams of sugar in every hundred grams of solution, and the other has fifteen grams in every hundred grams. Both are clear and look the same all the way through. The student says sugar solution is a pure substance, because it's uniform. Evaluate this claim. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v01/feedback-2.wav",
+      "seconds": 22.32,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "molecules",
+          "start": 8.215999999999987,
+          "end": 8.677999999999987
+        },
+        {
+          "text": "other",
+          "start": 14.580999999999984,
+          "end": 14.71516666666665
+        },
+        {
+          "text": "pure",
+          "start": 15.34399999999999,
+          "end": 15.54699999999999
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.105,
+        "after": "wrong.",
+        "before": "Uniform"
+      },
+      "peakFraction": 0.819580078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 17.950000000000024,
+          "end": 17.990000000000023,
+          "score": 0.489
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "The claim is wrong. Uniform tells you it's a homogeneous mixture, not a pure substance. There are two kinds of particle, sugar molecules and water molecules. And the composition changes, five percent sugar in one and fifteen percent in the other. A pure substance can't do that. So it's a homogeneous mixture. Clear and uniform never proves pure.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v01/handoff.wav",
+      "seconds": 15.92,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "sample",
+          "start": 15.217999999999996,
+          "end": 15.493142857142852
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8849999999999989,
+        "after": "measure.",
+        "before": "Pure"
+      },
+      "peakFraction": 0.864959716796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "In the lab, though, you can't see particles. So we need evidence we can actually measure. Pure water and salt water look the same, but heat them and they don't behave the same. Next time, we'll find out what melting and boiling can tell us about a sample.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v01/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

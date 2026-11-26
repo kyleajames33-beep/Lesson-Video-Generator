@@ -1,0 +1,86 @@
+{
+  "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1b24b-b35d-73a2-91c3-6120d9aa4344\\exec-185af793-5c7d-4f6b-a0ce-3557a6d1975d.png",
+  "generatorNativeSize": [
+    2172,
+    724
+  ],
+  "finalNativeSize": [
+    2400,
+    800
+  ],
+  "sha256": "7192c705aed64072974fa6e7aaba5b8896a0149783d2e6c08d401757eb78164e",
+  "alphaBox": [
+    310,
+    275,
+    2090,
+    602
+  ],
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "wheelBottomMeasurements": [
+    {
+      "contactYLastOpaquePixel": 600,
+      "opaqueBottomSpan": [
+        671,
+        683
+      ],
+      "contactCentreX": 677.0
+    },
+    {
+      "contactYLastOpaquePixel": 600,
+      "opaqueBottomSpan": [
+        1716,
+        1727
+      ],
+      "contactCentreX": 1721.5
+    }
+  ],
+  "operations": [
+    "Removed isolated alpha below8",
+    "Added transparent padding114pxleft/right,38pxtop/bottom;no resizing or stretching"
+  ],
+  "visualQAInspected": true,
+  "qa": "work\\brief238\\d15-skateboard-qa.jpg",
+  "qaObservation": "Paper300/640px,white640px,black300px inspected:two visible wheels,matching baseline,horizontal maple deck,clean edge at display sizes,no rider/text/shadow. Native pixels retained.",
+  "anchors": {
+    "wheelContacts": [
+      [
+        677,
+        601
+      ],
+      [
+        1721.5,
+        601
+      ]
+    ],
+    "rotationContactMidpoint": [
+      1199.25,
+      601
+    ],
+    "deckStraightTopEdge": [
+      [
+        800,
+        334
+      ],
+      [
+        1600,
+        334
+      ]
+    ],
+    "topEdgeSamplingNote": "Central grip edge y334;shoulders rise into kicked ends;handdrawn shoulder variation1-2px."
+  },
+  "marginPass": true,
+  "wholePlateResized": false,
+  "profileWarped": false,
+  "prompt": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: scientific-educational. Project asset ma12-skateboard-side-v1.png for a Maths lesson. Generate one ordinary street skateboard isolated on a genuinely transparent background, in fine ink outline and warm restrained watercolour matching the referenced coaster's materials and line finish. Reference image is style only; do not copy its vehicle or seats. Exactly orthographic side elevation, horizontal centred deck, nose left tail right, both ends gently kicked up, natural maple laminated edge, thin black grip tape top edge, two metal trucks, exactly two visible near wheels, off-white identical circular wheels. Both wheel bottoms exactly on the same horizontal contact line. Intended final canvas 2400 x 800 (3:1). Keep the whole board within the central 80% canvas width and 65% height, including clear margins at least8% all sides. Entire board visible. No perspective, extra rear wheels, rider, people, hands, feet, shoes, text, labels, scale marks, numbers, logos, stickers, graphics, background, ground shadow or glow. Keep deck sufficiently horizontal to report top-edge line and both wheel contact points.",
+    "styleReference": "public/assets/maths/ma12-coaster-car-v1.png",
+    "transparent_background": true
+  },
+  "path": "public\\assets\\maths\\ma12-skateboard-side-v1.png",
+  "state": "delivered",
+  "findings": []
+}

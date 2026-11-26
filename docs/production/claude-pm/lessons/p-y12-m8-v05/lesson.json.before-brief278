@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m8-v05",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "eb01912f5a82cc4ba6369c86dc046159f4fe6614431416a6edfb6cf142a847e5",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (heavier, lighter or the same?)",
+      "voiceover": {
+        "text": "Most stars sit on the main sequence, turning hydrogen into helium in their cores. Four hydrogen nuclei go in, and one helium nucleus comes out. Does the helium have more mass than the four hydrogens, less, or the same? Make your prediction. Less, by about zero point seven per cent, the figure we used for the Sun. So why do main-sequence stars release energy by combining light nuclei?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "ignition-balance",
+      "title": "how a star switches on",
+      "voiceover": {
+        "text": "First, how a star switches on. A cloud of gas, mostly hydrogen, collapses under its own gravity. As it falls inwards, gravitational potential energy becomes thermal energy, and the core heats up. At about ten million kelvin, the core starts fusing hydrogen, and the star ignites. Now the hot core pushes outwards with pressure, balancing gravity pulling inwards. That balance makes a main-sequence star. And it corrects itself. If fusion runs too fast, the core expands and cools, and fusion slows down."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fusion-hard",
+      "title": "why fusion is hard",
+      "voiceover": {
+        "text": "Fusing protons is hard. They're both positive, so they repel each other. Only at millions of kelvin do they move fast enough to get close, and even then, most bounce off. The force that holds a nucleus together only reaches about the width of a proton, so protons must almost touch. That's why fusion needs such a hot, dense core, and why the Sun burns slowly enough to last about ten billion years."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "binding-energy",
+      "title": "less than its parts",
+      "voiceover": {
+        "text": "So why does energy come out? Protons and neutrons, called nucleons, attract each other through the strong nuclear force. When they come together, they drop into a lower energy state, like a ball dropping into a hole, and that energy leaves. So a nucleus has less mass than its separate parts. The energy you'd need to pull it apart again is its binding energy. For helium four, that's twenty-eight point three MeV, about seven MeV for every nucleon."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "binding-curve",
+      "title": "climbing the curve",
+      "voiceover": {
+        "text": "Now plot binding energy per nucleon against mass number. It climbs steeply for light nuclei, peaks near iron, then slowly falls. Climbing the curve means the nucleons end up more tightly bound, so the products have less mass, and energy is released. Hydrogen one is a single proton, with no binding energy at all, and helium four is up at seven MeV per nucleon. So joining hydrogen into helium is a big climb, and a big release of energy. That's why combining light nuclei gives out energy."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "pp-chain",
+      "title": "the proton-proton chain",
+      "voiceover": {
+        "text": "In the Sun, the main route is the proton-proton chain. Step one, two protons fuse into deuterium. One proton turns into a neutron, giving out a positron and a neutrino. This step is very slow, and it's the main reason the Sun lasts so long. Step two, deuterium fuses with another proton to make helium three, giving out a gamma ray photon. Steps one and two happen twice. Step three, two helium three nuclei fuse into helium four, and two protons are set free."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "conservation",
+      "title": "checking the balance",
+      "voiceover": {
+        "text": "Every step balances. Take step one. On the left, two nucleons, and a charge of plus two. On the right, deuterium has two nucleons and a charge of plus one, and the positron carries the other plus one. The neutrino keeps a third quantity balanced, which you'll meet in a later video. Add up the whole chain, and four hydrogen nuclei become one helium four, two positrons and two neutrinos. The positrons soon annihilate with electrons, adding more gamma rays."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-energy",
+      "title": "how much energy?",
+      "voiceover": {
+        "text": "Now the energy. Use atomic masses, which include the electrons, so the annihilation energy is counted too. Four hydrogen atoms have a mass of four point zero three one three u. A helium four atom has four point zero zero two six. The difference is zero point zero two eight seven u. One u is worth nine hundred and thirty-one point five MeV, so the energy released is about twenty-six point seven MeV. That's zero point seven per cent of the mass, the same figure we used for the Sun."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cno-cycle",
+      "title": "a second route",
+      "voiceover": {
+        "text": "Stars more than about one point three times the Sun's mass mostly use a second route, the CNO cycle. A carbon twelve nucleus captures a proton, then another, then another, and another, turning into nitrogen and oxygen along the way, with two steps giving out a positron and a neutrino. At the last step, the nucleus splits into helium four and carbon twelve, the same carbon it started with. Carbon is a catalyst. It helps, but it isn't used up. The net result is the same, four protons into one helium four, and the same twenty-six point seven MeV."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "cno-temperature",
+      "title": "why the bigger stars use it",
+      "voiceover": {
+        "text": "Why do massive stars use it? Carbon has six protons, so at the same distance, a proton approaching it is repelled about six times as strongly. That needs a hotter core, above about seventeen million kelvin. The Sun's core is about fifteen million kelvin, so the proton-proton chain supplies about ninety-nine per cent of its energy. In twenty twenty, a detector deep under a mountain in Italy caught neutrinos from the Sun's CNO cycle, confirming the last one per cent. Massive stars have hotter cores, so for them, the CNO cycle dominates."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Four protons in, one helium out, zero point seven per cent lighter. And the CNO cycle just borrows carbon."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. In the last step of the proton-proton chain, two helium three nuclei fuse to form helium four and two protons. Using the atomic masses given, calculate the energy released, in MeV. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Reactants, two helium threes, six point zero three two zero five eight u. Products, a helium four and two hydrogens, six point zero one eight two five three u. The difference is zero point zero one three eight zero five u, about twelve point nine MeV. The slip is forgetting the two protons on the right, which gives an impossible answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Compare the proton-proton chain and the CNO cycle as ways of releasing energy in main-sequence stars. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Both turn four protons into one helium four, with the same loss of mass and the same energy. The proton-proton chain builds helium directly from protons, while the CNO cycle uses carbon as a catalyst, returned at the end. Carbon's bigger charge means the CNO cycle needs hotter cores, so it dominates in massive stars, not the Sun. The slip is saying the CNO cycle uses up carbon."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-v06",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So stars shine by climbing the binding energy curve, from hydrogen to helium. But the core's hydrogen doesn't last forever. When it runs out, the core is mostly helium. Can a star keep climbing, towards carbon, oxygen, even iron? That depends on its mass. So how does stellar mass change the elements a star can make?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

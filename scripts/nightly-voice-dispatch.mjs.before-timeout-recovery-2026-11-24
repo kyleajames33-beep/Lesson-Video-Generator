@@ -1,0 +1,52 @@
+// Brief 259 queue. Default/dry-run mode cannot invoke the speech generator.
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {spawnSync} from 'node:child_process';
+import {randomUUID} from 'node:crypto';
+import {googleQuotaDay,isGoogleSpeechLimit,isGoogleSpeechSpendCap} from './lib/google-request-budget.mjs';
+import {readVoiceJson,selectNightModule,threeNightVoicePlan} from './lib/nightly-voice-plan.mjs';
+
+const config=readVoiceJson('docs/production/claude-pm/nightly-voice-order.json'),day=googleQuotaDay();
+const W='work/brief259',LOCK='work/brief245/root/stills.lock';fs.mkdirSync(W,{recursive:true});
+if(process.argv[2]!=='--execute'){
+  const result=threeNightVoicePlan(config);
+  result.priorityRepairs=(config.priorityRepairs??[]).map(r=>({...r,state:fs.existsSync(r.handIn)?'handed in':'pending before all lessons'}));
+  fs.writeFileSync(W+'/next-three-nights.json',JSON.stringify(result,null,2)+'\n');
+  console.log(JSON.stringify(result,null,2));process.exit(0);
+}
+assert.equal(process.env.GOOGLE_TTS_SCHEDULED_DISPATCH,day,'Only the scheduled nightly parent can execute this queue');
+if(day<config.newOrderNotBeforeQuotaDay){console.log('Preserved wave2 quota window: new order starts after tonight.');process.exit(0);}
+let chosen;
+for(const stage of config.stages){if(!fs.existsSync(stage.aggregate)){chosen=stage;break;}}
+if(!chosen){console.log('Configured science queue complete. Return to the existing later-Maths tail.');process.exit(6);}
+const rows=readVoiceJson(chosen.preparation),status=chosen.status&&readVoiceJson(chosen.status);
+if(!rows.length){console.log(`Readiness hold: ${chosen.id}; ${status?.pendingReadiness?.length??0} designs await root review.`);process.exit(3);}
+const group=selectNightModule(rows,chosen,r=>fs.existsSync(`${chosen.workRoot}/${r.lesson}/hand-in.json`));
+if(!group.rows.length&&status?.pendingReadiness?.length){console.log('Readiness hold: remaining designs excluded from '+chosen.id);process.exit(3);}
+function resourcesReady(){
+  if(fs.existsSync(LOCK))return false;
+  const p=spawnSync('powershell.exe',['-NoProfile','-NonInteractive','-Command',"$vm=Get-CimInstance Win32_OperatingSystem;$jobs=@(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\" | Where-Object {$_.CommandLine -match 'generate-google-audio[.]mjs|render-explainer[.]mjs|render-isolated[.]mjs|pre-render-nov09[.]mjs'});[Console]::Write(($vm.FreePhysicalMemory.ToString()+','+$vm.FreeVirtualMemory.ToString()+','+$jobs.Count.ToString()))"],{encoding:'utf8',windowsHide:true});
+  const [physical,virtual,jobs]=p.stdout.trim().split(',').map(Number);return p.status===0&&physical>=.8*1024*1024&&virtual>=2.5*1024*1024&&jobs===0;
+}
+while(!resourcesReady()){if(googleQuotaDay()!==day)process.exit(4);await new Promise(r=>setTimeout(r,30000));}
+const token=randomUUID();fs.mkdirSync(LOCK);fs.writeFileSync(LOCK+'/owner.json',JSON.stringify({brief:259,task:chosen.id,pid:process.pid,token}));
+try{
+  const file=W+'/'+day+'-'+chosen.id+'.log',fd=fs.openSync(file,'a');
+  const args=chosen.type==='physics'?['scripts/voice-physics-recording-wave.mjs',chosen.wave,'--execute']:
+    ['work/brief236/voice-wave-status.mjs',String(chosen.wave)];
+  const began=Date.now();
+  const p=spawnSync(process.execPath,args,{windowsHide:true,env:{...process.env,GOOGLE_TTS_BATCH_MODE:'1',GOOGLE_TTS_NIGHT_MODULE:group.moduleId??'',GOOGLE_TTS_LOCK_TOKEN:token},stdio:['ignore',fd,fd]});fs.closeSync(fd);
+  if(p.error||p.status!==0){
+    let log=fs.readFileSync(file,'utf8').slice(-6000);
+    const failed=rows.find(r=>!fs.existsSync(`${chosen.workRoot}/${r.lesson}/hand-in.json`));
+    const voiceLog=failed&&`${chosen.workRoot}/${failed.lesson}/voice.log`;
+    if(voiceLog&&fs.existsSync(voiceLog)&&fs.statSync(voiceLog).mtimeMs>=began)log+='\n'+fs.readFileSync(voiceLog,'utf8').slice(-4500);
+    if(isGoogleSpeechSpendCap(log))process.exitCode=5;
+    else if(isGoogleSpeechLimit(log)||/quotaFits|daily99request|quota stop/i.test(log))process.exitCode=4;
+    else if(p.status===3)process.exitCode=3;
+    else throw Error('Voice stage '+chosen.id+' stopped. Inspect '+file+' before retry.');
+  }else if(chosen.type==='physics'&&readVoiceJson(chosen.status).pendingReadiness.length)process.exitCode=3;
+  else console.log('Night module completed: '+group.moduleId+'. Next module waits for the next quota night.');
+}finally{
+  assert.equal(readVoiceJson(LOCK+'/owner.json').token,token);fs.unlinkSync(LOCK+'/owner.json');fs.rmdirSync(LOCK);
+}

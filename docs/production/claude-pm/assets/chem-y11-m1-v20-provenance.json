@@ -1,0 +1,242 @@
+{
+  "priorProvenance": {
+    "design": "chem-y11-m1-v20",
+    "sourceSHA256": "f752e6b93f48a671dd1e5da299475dececf7b28491a97ecb7cf8a082dc956134",
+    "newPlates": [
+      {
+        "design": "chem-y11-m1-v20",
+        "filename": "y11c-copper-oxide-black-v1.png",
+        "status": "pending source repairs and reference checks; not painted",
+        "reason": "The design asset brief requires learning/science/error checks to pass before painting. This source revision has unresolved findings or reference checks. No substitute artwork or approval claimed."
+      },
+      {
+        "design": "chem-y11-m1-v20",
+        "filename": "y11c-copper-oxide-red-v1.png",
+        "status": "pending source repairs and reference checks; not painted",
+        "reason": "The design asset brief requires learning/science/error checks to pass before painting. This source revision has unresolved findings or reference checks. No substitute artwork or approval claimed."
+      }
+    ],
+    "existingAssets": [
+      {
+        "design": "chem-y11-m1-v20",
+        "reference": "m5x-ppt-cuoh2-blue-v1.png",
+        "paths": [
+          "public/assets/chemistry/m5x-ppt-cuoh2-blue-v1.png"
+        ],
+        "exists": true,
+        "status": "existing file, visual fitness still to inspect"
+      },
+      {
+        "design": "chem-y11-m1-v20",
+        "reference": "public/assets/chemistry/y11c-rusty-nail-v1.png",
+        "paths": [],
+        "exists": false,
+        "status": "missing/requested dependency"
+      },
+      {
+        "design": "chem-y11-m1-v20",
+        "reference": "y11c-copper-oxide-black-v1.png",
+        "paths": [],
+        "exists": false,
+        "status": "missing/requested dependency"
+      },
+      {
+        "design": "chem-y11-m1-v20",
+        "reference": "y11c-copper-oxide-red-v1.png",
+        "paths": [],
+        "exists": false,
+        "status": "missing/requested dependency"
+      },
+      {
+        "design": "chem-y11-m1-v20",
+        "reference": "y11c-watch-glass-v1.png",
+        "paths": [
+          "public/assets/chemistry/y11c-watch-glass-v1.png"
+        ],
+        "exists": true,
+        "status": "existing file, visual fitness still to inspect"
+      }
+    ],
+    "generationTool": null,
+    "status": "review hand-in; new painting pending stated review-pass condition",
+    "assets": [
+      {
+        "key": "red-oxide",
+        "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-c9df0b95-5d95-4364-8c97-48cbf1f8d03d.png",
+        "size": [
+          1564,
+          1006
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bboxAbove16": [
+          136,
+          278,
+          1419,
+          747
+        ],
+        "minMarginAbove16": 0.08695652173913043,
+        "file": "public/assets/chemistry/y11c-copper-oxide-red-v1.png",
+        "design": "chem-y11-m1-v20",
+        "sha256": "0646555bcbd5a053e1708005683faca7e671af5d4541445be84965320c7f3385",
+        "generatedBy": "built-in image_gen",
+        "status": "delivered for designer inspection",
+        "date": "2026-11-06",
+        "QA": "Paper, dark and white alpha-aware composites inspected at400px. Oxide pair native canvas matches and midpoint overlay inspected; outline bounds differ by2px.",
+        "qualification": "Native dimensions retained, no resampling. Requested dimensions differ. Alpha may contain faint noise beyond the painted bounds. Source findings remain open."
+      },
+      {
+        "key": "black-oxide",
+        "path": "C:\\Users\\kygs\\.codex\\generated_images\\01a1ad61-ecc1-77c3-947e-e410b4047acc\\exec-16f82cb2-2763-44de-ad55-91df200c0555.png",
+        "size": [
+          1564,
+          1006
+        ],
+        "alphaExtrema": [
+          0,
+          255
+        ],
+        "bboxAbove16": [
+          136,
+          276,
+          1419,
+          748
+        ],
+        "minMarginAbove16": 0.08695652173913043,
+        "file": "public/assets/chemistry/y11c-copper-oxide-black-v1.png",
+        "design": "chem-y11-m1-v20",
+        "sha256": "f796041d4ee990a3ad50e9a3c852362413b7e8818bd11c5cb5a9de9026d1ddb3",
+        "generatedBy": "built-in image_gen",
+        "status": "delivered for designer inspection",
+        "date": "2026-11-06",
+        "QA": "Paper, dark and white alpha-aware composites inspected at400px. Oxide pair native canvas matches and midpoint overlay inspected; outline bounds differ by2px.",
+        "qualification": "Native dimensions retained, no resampling. Requested dimensions differ. Alpha may contain faint noise beyond the painted bounds. Source findings remain open."
+      }
+    ],
+    "newRequests": [
+      {
+        "design": "chem-y11-m1-v20",
+        "filename": "y11c-copper-oxide-black-v1.png",
+        "status": "delivered for designer inspection with qualifications",
+        "reason": "See provenance for native-size, alpha and pair-alignment limits. Source corrections remain open.",
+        "sha256": "f796041d4ee990a3ad50e9a3c852362413b7e8818bd11c5cb5a9de9026d1ddb3",
+        "nativeSize": [
+          1564,
+          1006
+        ],
+        "qa": "docs/production/claude-pm/assets/brief179-qa/"
+      },
+      {
+        "design": "chem-y11-m1-v20",
+        "filename": "y11c-copper-oxide-red-v1.png",
+        "status": "delivered for designer inspection with qualifications",
+        "reason": "See provenance for native-size, alpha and pair-alignment limits. Source corrections remain open.",
+        "sha256": "0646555bcbd5a053e1708005683faca7e671af5d4541445be84965320c7f3385",
+        "nativeSize": [
+          1564,
+          1006
+        ],
+        "qa": "docs/production/claude-pm/assets/brief179-qa/"
+      }
+    ],
+    "sourceReviewStatus": "Findings remain open. Asset delivery is not recording or practical-method approval."
+  },
+  "brief237NewPlates": [
+    {
+      "name": "y11c-lead-dioxide-v1.png",
+      "lesson": "chem-y11-m1-v20",
+      "path": "public/assets/chemistry/y11c-lead-dioxide-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-87bb48c3-b459-40b4-8ebc-2255ac14fb51.png",
+      "sha256": "07e8701614d894c274e4e9eaa4044ce2ba0cdc0f29a8ceaf286e4ebac1d90ead",
+      "nativeSize": [
+        1565,
+        1005
+      ],
+      "requestedSize": [
+        1564,
+        1006
+      ],
+      "dimensionsMatch": false,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        0,
+        21,
+        1545,
+        979
+      ],
+      "alpha16Box": [
+        136,
+        275,
+        1420,
+        749
+      ],
+      "meaningfulMarginPass": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling, stretching or pixel editing"
+      ],
+      "state": "delivered-native-with-dimension-and-low-alpha-margin-deviations",
+      "visualQAInspected": true,
+      "qa": "work\\brief237\\y11c-lead-dioxide-v1-qa.jpg",
+      "findings": [
+        "Generated native dimensions differ slightly from requested canvas; do not stretch.",
+        "Meaningful object clears 8 percent; very low alpha specks mean a strict all-alpha clear-margin claim is not made.",
+        "Paper,dark,black,white QA at400px wide: no detached halo visibly apparent."
+      ]
+    },
+    {
+      "name": "y11c-copper-chloride-crystals-v1.png",
+      "lesson": "chem-y11-m1-v20",
+      "path": "public/assets/chemistry/y11c-copper-chloride-crystals-v1.png",
+      "source": "C:\\Users\\kygs\\.codex\\generated_images\\01a1c504-bf62-78e1-b782-2734925dfb02\\exec-97f8970a-2100-48d4-8067-14916d38171d.png",
+      "sha256": "d2c9e07e21a75834a533611a78c3d63ca88d95da4080599e09fb1443ad8cb770",
+      "nativeSize": [
+        1565,
+        1005
+      ],
+      "requestedSize": [
+        1564,
+        1006
+      ],
+      "dimensionsMatch": false,
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "alphaBox": [
+        114,
+        54,
+        1533,
+        908
+      ],
+      "alpha16Box": [
+        136,
+        275,
+        1419,
+        748
+      ],
+      "meaningfulMarginPass": true,
+      "operations": [
+        "Byte-for-byte copy; no resampling, stretching or pixel editing"
+      ],
+      "state": "delivered-native-with-dimension-and-low-alpha-margin-deviations",
+      "visualQAInspected": true,
+      "qa": "work\\brief237\\y11c-copper-chloride-crystals-v1-qa.jpg",
+      "findings": [
+        "Generated native dimensions differ slightly from requested canvas; do not stretch.",
+        "Meaningful object clears 8 percent; very low alpha specks mean a strict all-alpha clear-margin claim is not made.",
+        "Paper,dark,black,white QA at400px wide: no detached halo visibly apparent."
+      ]
+    }
+  ],
+  "reviewDate": "2026-11-11",
+  "brief242Recheck": {
+    "date": "2026-11-13",
+    "record": "docs/production/claude-pm/assets/y11c-m1-v19-v20-native-qa.json",
+    "result": "Five main sample plates pass static checks; both requested question pictures are delivered. Watch-glass canvases differ by one pixel and exact registration remains pending. Two unused/fallback references excluded. No whole-lesson clearance."
+  }
+}

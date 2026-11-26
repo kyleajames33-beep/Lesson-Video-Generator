@@ -1,0 +1,1192 @@
+[
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "hook",
+    "text": "Last time, we saw that the rows and columns of the periodic table follow electron shells. Here's a puzzle from that table. Sodium and chlorine sit in the same row. A chlorine atom has six more protons and six more electrons than a sodium atom. So you'd expect it to be bigger. It's not. Chlorine's atom is much smaller. And go down a column, from lithium to potassium, and atoms get larger. So why does atomic radius change across a period and down a group?",
+    "expectedText": "Last time, we saw that the rows and columns of the periodic table follow electron shells. Here's a puzzle from that table. Sodium and chlorine sit in the same row. A chlorine atom has six more protons and six more electrons than a sodium atom. So you'd expect it to be bigger. It's not. Chlorine's atom is much smaller. And go down a column, from lithium to potassium, and atoms get larger. So why does atomic radius change across a period and down a group?",
+    "seconds": 30.484,
+    "comparison": {
+      "pass": true,
+      "allowed": [],
+      "mismatches": [],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "fe196476519e65dfd13fe398ceb5f6859d9c3cde7a9a38d5f9ad9716cb451f40"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "measuring-radius",
+    "text": "An atom has no hard edge, so chemists measure the distance between the nuclei of two identical atoms bonded together, and take half. That's the atomic radius. It's tiny, so we use picometres. A picometre is a millionth of a millionth of a metre. Every value we compare today is measured the same way, so the comparison is fair.",
+    "expectedText": "An atom has no hard edge, so chemists measure the distance between the nuclei of two identical atoms bonded together, and take half. That's the atomic radius. It's tiny, so we use picometres. A picometre is a millionth of a millionth of a metre. Every value we compare today is measured the same way, so the comparison is fair.",
+    "seconds": 21.377,
+    "comparison": {
+      "pass": false,
+      "allowed": [
+        {
+          "expected": "metre",
+          "recognised": "meter",
+          "wordIndex": 43
+        }
+      ],
+      "mismatches": [
+        {
+          "expected": "picometres",
+          "recognised": "pica",
+          "wordIndex": 32
+        },
+        {
+          "expected": "",
+          "recognised": "meters",
+          "wordIndex": 33
+        },
+        {
+          "expected": "picometre",
+          "recognised": "pica",
+          "wordIndex": 34
+        },
+        {
+          "expected": "",
+          "recognised": "meter",
+          "wordIndex": 35
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "f908582f7c0f647db9a863aefc54fd8fdd055c6c87c1b97ce3fcdc104c9956b4"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "two-effects",
+    "text": "Two things decide how close the outer electrons sit. The first is the nucleus. Its positive protons attract the negative electrons, and more protons pull harder. The second is shielding. Inner electrons sit between the nucleus and the outer electrons, and their repulsion cancels part of the nucleus's pull. A simple way to estimate the pull an outer electron feels is the core charge: the number of protons, minus the number of inner electrons. For sodium, that's eleven minus ten, so plus one. Exam answers call this net pull the effective nuclear charge.",
+    "expectedText": "Two things decide how close the outer electrons sit. The first is the nucleus. Its positive protons attract the negative electrons, and more protons pull harder. The second is shielding. Inner electrons sit between the nucleus and the outer electrons, and their repulsion cancels part of the nucleus's pull. A simple way to estimate the pull an outer electron feels is the core charge: the number of protons, minus the number of inner electrons. For sodium, that's eleven minus ten, so plus one. Exam answers call this net pull the effective nuclear charge.",
+    "seconds": 35.219,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "pull",
+          "recognised": "pour",
+          "wordIndex": 24
+        },
+        {
+          "expected": "inner",
+          "recognised": "ina",
+          "wordIndex": 30
+        },
+        {
+          "expected": "nucleus's",
+          "recognised": "nucleus",
+          "wordIndex": 47
+        },
+        {
+          "expected": "pull",
+          "recognised": "as",
+          "wordIndex": 48
+        },
+        {
+          "expected": "",
+          "recognised": "paul",
+          "wordIndex": 49
+        },
+        {
+          "expected": "pull",
+          "recognised": "paul",
+          "wordIndex": 55
+        },
+        {
+          "expected": "an",
+          "recognised": "and",
+          "wordIndex": 56
+        },
+        {
+          "expected": "inner",
+          "recognised": "ina",
+          "wordIndex": 72
+        },
+        {
+          "expected": "",
+          "recognised": "electrons",
+          "wordIndex": 74
+        },
+        {
+          "expected": "pull",
+          "recognised": "pool",
+          "wordIndex": 88
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "0c94286480aef6c83eb8c1cd5c7d115f1585a9fc737afb4faf52513212f8f688"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "across-period",
+    "text": "Now go across Period three, from sodium to chlorine. Each step adds one proton to the nucleus. The new electron goes into the same third shell, so the inner shells don't change, and there are still ten inner electrons. So the core charge climbs, from plus one for sodium to plus seven for chlorine. A stronger pull on the same shell draws the outer electrons closer, and the atom gets smaller.",
+    "expectedText": "Now go across Period three, from sodium to chlorine. Each step adds one proton to the nucleus. The new electron goes into the same third shell, so the inner shells don't change, and there are still ten inner electrons. So the core charge climbs, from plus one for sodium to plus seven for chlorine. A stronger pull on the same shell draws the outer electrons closer, and the atom gets smaller.",
+    "seconds": 26.497,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "pull",
+          "recognised": "pool",
+          "wordIndex": 56
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "895369c3290e2b100d0c66752f5488f82e7e380153c7b5d49011bd23b0419145"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "more-electrons",
+    "text": "Hang on, chlorine has more electrons. Shouldn't they take up more room? The extra electrons all go into the same outer shell, and electrons in the same shell barely shield each other. So the nucleus's extra pull wins. More electrons in the same shell doesn't mean a bigger atom.",
+    "expectedText": "Hang on, chlorine has more electrons. Shouldn't they take up more room? The extra electrons all go into the same outer shell, and electrons in the same shell barely shield each other. So the nucleus's extra pull wins. More electrons in the same shell doesn't mean a bigger atom.",
+    "seconds": 17.768,
+    "comparison": {
+      "pass": true,
+      "allowed": [],
+      "mismatches": [],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "cfa8672ff03c3c2323a159012a00a0cd62d2beee3a6081bc342fbac9fd7f0d80"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "prediction",
+    "text": "Quick prediction. Lithium and potassium are both in Group one. Potassium has sixteen more protons pulling on its electrons. So which atom is larger? Have a think.",
+    "expectedText": "Quick prediction. Lithium and potassium are both in Group one. Potassium has sixteen more protons pulling on its electrons. So which atom is larger? Have a think.",
+    "seconds": 11.295,
+    "comparison": {
+      "pass": true,
+      "allowed": [],
+      "mismatches": [],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "6cc871ea23979852dae8a6ca17976731d7dcca54b5dac5b1468c8c06e4168999"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "down-group",
+    "text": "Potassium. Going down Group one, each element has one more occupied shell than the one above, so its outer electron sits further from the nucleus. Yes, potassium has more protons, but it also has more inner electrons shielding them. Its core charge is nineteen minus eighteen, plus one, the same as lithium's. With the same core charge, the extra shell wins. So atomic radius increases down a group.",
+    "expectedText": "Potassium. Going down Group one, each element has one more occupied shell than the one above, so its outer electron sits further from the nucleus. Yes, potassium has more protons, but it also has more inner electrons shielding them. Its core charge is nineteen minus eighteen, plus one, the same as lithium's. With the same core charge, the extra shell wins. So atomic radius increases down a group.",
+    "seconds": 27.396,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "lithium's",
+          "recognised": "lithiums",
+          "wordIndex": 51
+        },
+        {
+          "expected": "",
+          "recognised": "group",
+          "wordIndex": 68
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "3188c05efc2b5705eecc6955b212a98ac2b14828ec984b5074fe52f46d785ade"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "exam-language",
+    "text": "In an exam, don't just say the atom gets smaller. Name the cause. Across a period, the number of protons increases while electrons go into the same shell, so the stronger effective nuclear charge pulls the outer electrons closer. Down a group, each element has an extra occupied shell, so the outer electrons are further from the nucleus.",
+    "expectedText": "In an exam, don't just say the atom gets smaller. Name the cause. Across a period, the number of protons increases while electrons go into the same shell, so the stronger effective nuclear charge pulls the outer electrons closer. Down a group, each element has an extra occupied shell, so the outer electrons are further from the nucleus.",
+    "seconds": 21.934,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "",
+          "recognised": "further",
+          "wordIndex": 55
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "b2523cd526b41ab729b4ef03be70a798f383f61a2f48d13ec77d1d746dafba56"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "atoms-to-ions",
+    "text": "Atoms can also gain or lose electrons to form ions. When sodium loses its one outer electron, it doesn't just lose a dot. It loses the whole third shell. Its outer electrons are now in the second shell, and the sodium ion is much smaller. Chlorine goes the other way. It gains one electron into its outer shell, but the nucleus still has seventeen protons. The extra electron adds repulsion between the outer electrons, so they spread out, and the chloride ion is larger.",
+    "expectedText": "Atoms can also gain or lose electrons to form ions. When sodium loses its one outer electron, it doesn't just lose a dot. It loses the whole third shell. Its outer electrons are now in the second shell, and the sodium ion is much smaller. Chlorine goes the other way. It gains one electron into its outer shell, but the nucleus still has seventeen protons. The extra electron adds repulsion between the outer electrons, so they spread out, and the chloride ion is larger.",
+    "seconds": 30.63,
+    "comparison": {
+      "pass": true,
+      "allowed": [],
+      "mismatches": [],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "c97bb2a412790d345a4ce738a62a0faadde3e8435feadccffe649d298636634a"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "isoelectronic",
+    "text": "So is it all about how many electrons there are? Look at five ions that each have exactly ten electrons: oxide, fluoride, sodium, magnesium and aluminium ions. They're called isoelectronic, which means same number of electrons. Their sizes still fall, because the number of protons rises, from eight up to thirteen. More protons pull the same ten electrons in tighter. So electron count alone never tells you the size. Protons and shells matter too.",
+    "expectedText": "So is it all about how many electrons there are? Look at five ions that each have exactly ten electrons: oxide, fluoride, sodium, magnesium and aluminium ions. They're called isoelectronic, which means same number of electrons. Their sizes still fall, because the number of protons rises, from eight up to thirteen. More protons pull the same ten electrons in tighter. So electron count alone never tells you the size. Protons and shells matter too.",
+    "seconds": 32.684,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "protons",
+          "recognised": "proton's",
+          "wordIndex": 69
+        },
+        {
+          "expected": "shells",
+          "recognised": "shell's",
+          "wordIndex": 71
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "077505d2141a5aed536a9a024b5637b1180f9e99ef08b76b86d08853026e0303"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "memory-line",
+    "text": "So here's the pattern to keep. Across a period, same shells, stronger pull, smaller atoms. Down a group, one more shell each step, larger atoms.",
+    "expectedText": "So here's the pattern to keep. Across a period, same shells, stronger pull, smaller atoms. Down a group, one more shell each step, larger atoms.",
+    "seconds": 11.036,
+    "comparison": {
+      "pass": true,
+      "allowed": [],
+      "mismatches": [],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "8a7e32b068e6eee768e45da4fd98e5f18c79005643ddac6b009352ccc6500b76"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "attempt-1",
+    "text": "Your turn. The atomic radius of magnesium is one hundred and forty-one picometres, and the atomic radius of sulfur is one hundred and five picometres. Explain why sulfur atoms are smaller, even though they contain more electrons. Pause here to answer.",
+    "expectedText": "Your turn. The atomic radius of magnesium is one hundred and forty-one picometres, and the atomic radius of sulfur is one hundred and five picometres. Explain why sulfur atoms are smaller, even though they contain more electrons. Pause here to answer.",
+    "seconds": 17.88,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "picometres",
+          "recognised": "picometers",
+          "wordIndex": 12
+        },
+        {
+          "expected": "picometres",
+          "recognised": "picometers",
+          "wordIndex": 23
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "d35d129cb3aa1213ed9644454cf8ced10e9185a8e9aaf7b14089318e41d25844"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "feedback-1",
+    "text": "Both are in Period three, so their outer electrons are in the same third shell. Sulfur has sixteen protons to magnesium's twelve, with ten inner electrons in each, so its core charge is plus six, not plus two. That stronger pull draws the outer shell closer. Saying sulfur has fewer shells is the slip. They have the same number.",
+    "expectedText": "Both are in Period three, so their outer electrons are in the same third shell. Sulfur has sixteen protons to magnesium's twelve, with ten inner electrons in each, so its core charge is plus six, not plus two. That stronger pull draws the outer shell closer. Saying sulfur has fewer shells is the slip. They have the same number.",
+    "seconds": 22.24,
+    "comparison": {
+      "pass": true,
+      "allowed": [],
+      "mismatches": [],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "309f93538bd5af84d110942a28ab595eebf89ea41caac0d70ee83e977ce4bbbf"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "attempt-2",
+    "text": "Last one. An oxygen atom has a radius of sixty-six picometres. Predict whether an oxide ion, O two minus, is larger or smaller than an oxygen atom, and explain your prediction. Pause here to answer.",
+    "expectedText": "Last one. An oxygen atom has a radius of sixty-six picometres. Predict whether an oxide ion, O two minus, is larger or smaller than an oxygen atom, and explain your prediction. Pause here to answer.",
+    "seconds": 14.48,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "picometres",
+          "recognised": "picometers",
+          "wordIndex": 11
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "55a073e77dcf498bc5643bf824cc007ce45ec72590a080bae6dab86057f21dd4"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "feedback-2",
+    "text": "Larger. The oxide ion has the same eight protons, but two extra electrons in the same outer shell. More repulsion between the outer electrons, with the same nuclear pull, spreads them out. In fact it's one hundred and forty picometres. The classic slip is saying the ion gains a new shell. It doesn't. Two comma six becomes two comma eight, still two shells.",
+    "expectedText": "Larger. The oxide ion has the same eight protons, but two extra electrons in the same outer shell. More repulsion between the outer electrons, with the same nuclear pull, spreads them out. In fact it's one hundred and forty picometres. The classic slip is saying the ion gains a new shell. It doesn't. Two comma six becomes two comma eight, still two shells.",
+    "seconds": 24.728,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "pull",
+          "recognised": "pool",
+          "wordIndex": 28
+        },
+        {
+          "expected": "picometres",
+          "recognised": "picometers",
+          "wordIndex": 38
+        },
+        {
+          "expected": "two",
+          "recognised": "twenty",
+          "wordIndex": 52
+        },
+        {
+          "expected": "comma",
+          "recognised": "",
+          "wordIndex": 53
+        },
+        {
+          "expected": "two",
+          "recognised": "twenty",
+          "wordIndex": 56
+        },
+        {
+          "expected": "comma",
+          "recognised": "",
+          "wordIndex": 57
+        }
+      ],
+      "numbersMatch": false,
+      "pausePresent": true,
+      "expectedNumbers": [
+        "eight",
+        "|",
+        "two",
+        "|",
+        "one",
+        "hundred",
+        "forty",
+        "|",
+        "two",
+        "|",
+        "six",
+        "|",
+        "two",
+        "|",
+        "eight",
+        "|",
+        "two"
+      ],
+      "heardNumbers": [
+        "eight",
+        "|",
+        "two",
+        "|",
+        "one",
+        "hundred",
+        "forty",
+        "|",
+        "twenty",
+        "six",
+        "|",
+        "twenty",
+        "eight",
+        "|",
+        "two"
+      ]
+    },
+    "expectedPass": true,
+    "audioSha256": "3f7658d669589ae63d5e6d1f2be7e1abb459e02b99fd0af9c326ed136f3c4705"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "handoff",
+    "text": "Notice what this means. A small atom with a strong pull, like chlorine, holds its outer electrons tightly. A big atom with a weak pull, like sodium, holds its outer electron loosely. So how much energy does it take to pull an electron off an atom, and how strongly does an atom pull on electrons it shares? Next time, we'll see how first ionisation energy and electronegativity follow the same atomic structure.",
+    "expectedText": "Notice what this means. A small atom with a strong pull, like chlorine, holds its outer electrons tightly. A big atom with a weak pull, like sodium, holds its outer electron loosely. So how much energy does it take to pull an electron off an atom, and how strongly does an atom pull on electrons it shares? Next time, we'll see how first ionisation energy and electronegativity follow the same atomic structure.",
+    "seconds": 28.232,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "pull",
+          "recognised": "pool",
+          "wordIndex": 10
+        },
+        {
+          "expected": "pull",
+          "recognised": "pool",
+          "wordIndex": 24
+        },
+        {
+          "expected": "ionisation",
+          "recognised": "ionization",
+          "wordIndex": 63
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "0eeeba68bf984a82111b3f5abb32776f96821333b6fd76f69f773b58534671f8"
+  },
+  {
+    "lesson": "c-y11-m1-v13",
+    "scene": "key-notes",
+    "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+    "expectedText": "Here are the key notes. Pause the video if you need more time to copy them.",
+    "seconds": 4.24,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "key",
+          "recognised": "keynotes",
+          "wordIndex": 3
+        },
+        {
+          "expected": "notes",
+          "recognised": "",
+          "wordIndex": 4
+        }
+      ],
+      "numbersMatch": true,
+      "pausePresent": true
+    },
+    "expectedPass": true,
+    "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5"
+  },
+  {
+    "lesson": "c-y11-m1-v14",
+    "scene": "across-period",
+    "text": "Now go across Period three. From sodium to argon, the first ionisation energy generally rises, from four hundred and ninety-six, to fifteen hundred and twenty-one kilojoules per mole. That's the same cause as last time. The core charge climbs while the electrons stay in the same shell, so the atoms get smaller, and the outer electrons are held more tightly. It takes more energy to pull one off. Removing chlorine's outer electron takes about two and a half times the energy needed for sodium's.",
+    "expectedText": "Now go across Period three. From sodium to argon, the first ionisation energy generally rises, from four hundred and ninety-six, to fifteen hundred and twenty-one kilojoules per mole. That's the same cause as last time. The core charge climbs while the electrons stay in the same shell, so the atoms get smaller, and the outer electrons are held more tightly. It takes more energy to pull one off. Removing chlorine's outer electron takes about two and a half times the energy needed for sodium's.",
+    "seconds": 70.814,
+    "comparison": {
+      "pass": false,
+      "allowed": [],
+      "mismatches": [
+        {
+          "expected": "ionisation",
+          "recognised": "ionization",
+          "wordIndex": 11
+        },
+        {
+          "expected": "fifteen",
+          "recognised": "one",
+          "wordIndex": 21
+        },
+        {
+          "expected": "",
+          "recognised": "thousand",
+          "wordIndex": 22
+        },
+        {
+          "expected": "",
+          "recognised": "five",
+          "wordIndex": 22
+        },
+        {
+          "expected": "sodium's",
+          "recognised": "sodiums",
+          "wordIndex": 83
+        },
+        {
+          "expected": "",
+          "recognised": "now",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "look",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "at",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "electro",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "negativity",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "which",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "is",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "quite",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "different",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "from",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "first",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "ionization",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "energy",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "this",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "is",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "a",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "measure",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "of",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "how",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "strongly",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "an",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "atom",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "attracts",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "a",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "bonding",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "pair",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "of",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "electrons",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "in",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "a",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "chemical",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "bond",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "to",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "imagine",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "this",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "you",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "need",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "to",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "think",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "about",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "that",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "bond",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "as",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "a",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "shared",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "pair",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "almost",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "like",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "a",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "tug",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "of",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "war",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "in",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "this",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "case",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "chlorine",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "is",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "much",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "better",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "at",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "winning",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "because",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "it",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "has",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "that",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "high",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "core",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "charge",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "that",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "means",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "chlorine",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "pulls",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "the",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "shared",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "electrons",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "right",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "over",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "toward",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "itself",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "electronigativity",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "explains",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "why",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "chlorine",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "is",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "so",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "keen",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "to",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "react",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "with",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "anything",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "that",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "has",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "a",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "loose",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "electron",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "like",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "sodium",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "one",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "concept",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "measures",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "stripping",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "an",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "electron",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "away",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "and",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "the",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "other",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "measures",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "attracting",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "them",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "in",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "bonds",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "but",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "both",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "are",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "fundamentally",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "driven",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "by",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "the",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "structure",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "of",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "the",
+          "wordIndex": 84
+        },
+        {
+          "expected": "",
+          "recognised": "atom",
+          "wordIndex": 84
+        }
+      ],
+      "numbersMatch": false,
+      "pausePresent": true,
+      "expectedNumbers": [
+        "three",
+        "|",
+        "four",
+        "hundred",
+        "ninety",
+        "six",
+        "|",
+        "fifteen",
+        "hundred",
+        "twenty",
+        "one",
+        "|",
+        "one",
+        "|",
+        "two"
+      ],
+      "heardNumbers": [
+        "three",
+        "|",
+        "four",
+        "hundred",
+        "ninety",
+        "six",
+        "|",
+        "one",
+        "thousand",
+        "five",
+        "hundred",
+        "twenty",
+        "one",
+        "|",
+        "one",
+        "|",
+        "two",
+        "|",
+        "one"
+      ]
+    },
+    "expectedPass": false,
+    "audioSha256": "dfa2f02e232b200ae156de6c182b1c7d472fc70cfba941970cf6c7a3709adc51"
+  }
+]

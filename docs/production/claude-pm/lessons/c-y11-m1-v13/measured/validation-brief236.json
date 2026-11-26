@@ -1,0 +1,921 @@
+{
+  "lesson": "chem-y11-m1-v13",
+  "wave": 2,
+  "sourceSha256": "1249a90967d62291ff1cd42fced78342c58335bcb8cb5e80512138c75f74838d",
+  "measuredPath": "work/brief236/wave2/chem-y11-m1-v13/voiced/lesson.json",
+  "measuredSha256": "5b84fe4a37f967294160d7b3a0dbf381663fffd020fc8d154a9d836f3018c76e",
+  "characters": 5597,
+  "totalSeconds": 448.1333333333333,
+  "under570": true,
+  "newRequests": 8,
+  "cachedTakes": 1,
+  "inputTokens": 1203,
+  "outputTokens": 9347,
+  "costUsd": 0.08472450000000001,
+  "worstWordGap": {
+    "scene": "exam-language",
+    "seconds": 1.0009999999999994,
+    "after": "closer.",
+    "before": "Down"
+  },
+  "machineFlags": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v13/hook.wav",
+      "seconds": 30.484,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "bigger",
+          "start": 17.12799999999999,
+          "end": 17.31914285714285
+        },
+        {
+          "text": "smaller",
+          "start": 20.462000000000053,
+          "end": 20.796250000000054
+        },
+        {
+          "text": "larger",
+          "start": 24.867000000000075,
+          "end": 25.178142857142934
+        },
+        {
+          "text": "group",
+          "start": 29.762000000000008,
+          "end": 29.946166666666677
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8130000000000379,
+        "after": "bigger.",
+        "before": "It's"
+      },
+      "peakFraction": 0.860107421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.977999999999988,
+          "end": 5.997999999999988,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 28.47900000000001,
+          "end": 28.53900000000001,
+          "score": 0.19
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, we saw that the rows and columns of the periodic table follow electron shells. Here's a puzzle from that table. Sodium and chlorine sit in the same row. A chlorine atom has six more protons and six more electrons than a sodium atom. So you'd expect it to be bigger. It's not. Chlorine's atom is much smaller. And go down a column, from lithium to potassium, and atoms get larger. So why does atomic radius change across a period and down a group?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "two-effects",
+      "audio": "public/audio/chem-y11-m1-v13/two-effects.wav",
+      "seconds": 35.219,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "pull",
+          "start": 9.752999999999993,
+          "end": 9.973999999999993
+        },
+        {
+          "text": "electrons",
+          "start": 13.06899999999999,
+          "end": 13.54999999999999
+        },
+        {
+          "text": "one",
+          "start": 30.775000000000077,
+          "end": 30.880750000000077
+        },
+        {
+          "text": "charge",
+          "start": 34.49500000000006,
+          "end": 34.788142857142915
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7419999999999973,
+        "after": "electrons.",
+        "before": "For"
+      },
+      "peakFraction": 0.849273681640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "pull",
+          "start": 9.752999999999993,
+          "end": 9.973999999999993,
+          "score": 0.462
+        },
+        {
+          "word": "outer",
+          "start": 15.21599999999999,
+          "end": 15.396999999999991,
+          "score": 0.493
+        },
+        {
+          "word": "For",
+          "start": 27.866000000000078,
+          "end": 27.96600000000008,
+          "score": 0.299
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Two things decide how close the outer electrons sit. The first is the nucleus. Its positive protons attract the negative electrons, and more protons pull harder. The second is shielding. Inner electrons sit between the nucleus and the outer electrons, and their repulsion cancels part of the nucleus's pull. A simple way to estimate the pull an outer electron feels is the core charge: the number of protons, minus the number of inner electrons. For sodium, that's eleven minus ten, so plus one. Exam answers call this net pull the effective nuclear charge.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "exam-language",
+      "audio": "public/audio/chem-y11-m1-v13/exam-language.wav",
+      "seconds": 21.934,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "closer",
+          "start": 14.066999999999986,
+          "end": 14.376428571428558
+        },
+        {
+          "text": "nucleus",
+          "start": 20.892999999999986,
+          "end": 21.261374999999987
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0009999999999994,
+        "after": "closer.",
+        "before": "Down"
+      },
+      "peakFraction": 0.8446044921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "just",
+          "start": 1.57,
+          "end": 1.691,
+          "score": 0.333
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "In an exam, don't just say the atom gets smaller. Name the cause. Across a period, the number of protons increases while electrons go into the same shell, so the stronger effective nuclear charge pulls the outer electrons closer. Down a group, each element has an extra occupied shell, so the outer electrons are further from the nucleus.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "audio": "public/audio/chem-y11-m1-v13/memory-line.wav",
+      "seconds": 11.036,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 5.988000000000001,
+          "end": 6.221333333333334
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7809999999999864,
+        "after": "atoms.",
+        "before": "Down"
+      },
+      "peakFraction": 0.8272705078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.5230000000000006,
+          "end": 2.5630000000000006,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 7.289999999999988,
+          "end": 7.329999999999988,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So here's the pattern to keep. Across a period, same shells, stronger pull, smaller atoms. Down a group, one more shell each step, larger atoms.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v13/attempt-1.wav",
+      "seconds": 17.88,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8660000000000004,
+        "after": "turn.",
+        "before": "The"
+      },
+      "peakFraction": 0.8272705078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 4.518000000000001,
+          "end": 4.578,
+          "score": 0.022
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. The atomic radius of magnesium is one hundred and forty-one picometres, and the atomic radius of sulfur is one hundred and five picometres. Explain why sulfur atoms are smaller, even though they contain more electrons. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v13/feedback-2.wav",
+      "seconds": 24.728,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "picometres",
+          "start": 14.568999999999996,
+          "end": 15.118999999999996
+        },
+        {
+          "text": "shells",
+          "start": 23.886000000000084,
+          "end": 24.126000000000086
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000004,
+        "after": "picometres.",
+        "before": "The"
+      },
+      "peakFraction": 1,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "It",
+          "start": 19.708000000000048,
+          "end": 19.748000000000047,
+          "score": 0.044
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Larger. The oxide ion has the same eight protons, but two extra electrons in the same outer shell. More repulsion between the outer electrons, with the same nuclear pull, spreads them out. In fact it's one hundred and forty picometres. The classic slip is saying the ion gains a new shell. It doesn't. Two comma six becomes two comma eight, still two shells.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v13/handoff.wav",
+      "seconds": 28.232,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "structure",
+          "start": 27.550000000000118,
+          "end": 27.892900000000118
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.861000000000125,
+        "after": "shares?",
+        "before": "Next"
+      },
+      "peakFraction": 0.8330078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.0970000000000004,
+          "end": 3.1370000000000005,
+          "score": 0.499
+        },
+        {
+          "word": "it",
+          "start": 20.086999999999993,
+          "end": 20.226999999999993,
+          "score": 0.448
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Notice what this means. A small atom with a strong pull, like chlorine, holds its outer electrons tightly. A big atom with a weak pull, like sodium, holds its outer electron loosely. So how much energy does it take to pull an electron off an atom, and how strongly does an atom pull on electrons it shares? Next time, we'll see how first ionisation energy and electronegativity follow the same atomic structure.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v13/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/chem-y11-m1-v13/hook.wav",
+      "seconds": 30.484,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "bigger",
+          "start": 17.12799999999999,
+          "end": 17.31914285714285
+        },
+        {
+          "text": "smaller",
+          "start": 20.462000000000053,
+          "end": 20.796250000000054
+        },
+        {
+          "text": "larger",
+          "start": 24.867000000000075,
+          "end": 25.178142857142934
+        },
+        {
+          "text": "group",
+          "start": 29.762000000000008,
+          "end": 29.946166666666677
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8130000000000379,
+        "after": "bigger.",
+        "before": "It's"
+      },
+      "peakFraction": 0.860107421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 5.977999999999988,
+          "end": 5.997999999999988,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 28.47900000000001,
+          "end": 28.53900000000001,
+          "score": 0.19
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Last time, we saw that the rows and columns of the periodic table follow electron shells. Here's a puzzle from that table. Sodium and chlorine sit in the same row. A chlorine atom has six more protons and six more electrons than a sodium atom. So you'd expect it to be bigger. It's not. Chlorine's atom is much smaller. And go down a column, from lithium to potassium, and atoms get larger. So why does atomic radius change across a period and down a group?",
+      "humanListening": "pending"
+    },
+    {
+      "id": "measuring-radius",
+      "audio": "public/audio/chem-y11-m1-v13/measuring-radius.wav",
+      "seconds": 21.377,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "half",
+          "start": 7.955,
+          "end": 8.1798
+        },
+        {
+          "text": "metre",
+          "start": 12.220999999999991,
+          "end": 12.495999999999992
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.743999999999998,
+        "after": "metre.",
+        "before": "Every"
+      },
+      "peakFraction": 0.814971923828125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "An atom has no hard edge, so chemists measure the distance between the nuclei of two identical atoms bonded together, and take half. That's the atomic radius. It's tiny, so we use picometres. A picometre is a millionth of a millionth of a metre. Every value we compare today is measured the same way, so the comparison is fair.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "two-effects",
+      "audio": "public/audio/chem-y11-m1-v13/two-effects.wav",
+      "seconds": 35.219,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "pull",
+          "start": 9.752999999999993,
+          "end": 9.973999999999993
+        },
+        {
+          "text": "electrons",
+          "start": 13.06899999999999,
+          "end": 13.54999999999999
+        },
+        {
+          "text": "one",
+          "start": 30.775000000000077,
+          "end": 30.880750000000077
+        },
+        {
+          "text": "charge",
+          "start": 34.49500000000006,
+          "end": 34.788142857142915
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7419999999999973,
+        "after": "electrons.",
+        "before": "For"
+      },
+      "peakFraction": 0.849273681640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "pull",
+          "start": 9.752999999999993,
+          "end": 9.973999999999993,
+          "score": 0.462
+        },
+        {
+          "word": "outer",
+          "start": 15.21599999999999,
+          "end": 15.396999999999991,
+          "score": 0.493
+        },
+        {
+          "word": "For",
+          "start": 27.866000000000078,
+          "end": 27.96600000000008,
+          "score": 0.299
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Two things decide how close the outer electrons sit. The first is the nucleus. Its positive protons attract the negative electrons, and more protons pull harder. The second is shielding. Inner electrons sit between the nucleus and the outer electrons, and their repulsion cancels part of the nucleus's pull. A simple way to estimate the pull an outer electron feels is the core charge: the number of protons, minus the number of inner electrons. For sodium, that's eleven minus ten, so plus one. Exam answers call this net pull the effective nuclear charge.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "across-period",
+      "audio": "public/audio/chem-y11-m1-v13/across-period.wav",
+      "seconds": 26.497,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "electrons",
+          "start": 13.646999999999988,
+          "end": 14.079899999999988
+        },
+        {
+          "text": "chlorine",
+          "start": 19.568999999999985,
+          "end": 19.944111111111095
+        },
+        {
+          "text": "smaller",
+          "start": 25.69400000000008,
+          "end": 26.00987500000008
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7839999999999887,
+        "after": "chlorine.",
+        "before": "Each"
+      },
+      "peakFraction": 0.935333251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Now go across Period three, from sodium to chlorine. Each step adds one proton to the nucleus. The new electron goes into the same third shell, so the inner shells don't change, and there are still ten inner electrons. So the core charge climbs, from plus one for sodium to plus seven for chlorine. A stronger pull on the same shell draws the outer electrons closer, and the atom gets smaller.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "more-electrons",
+      "audio": "public/audio/chem-y11-m1-v13/more-electrons.wav",
+      "seconds": 17.768,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "atom",
+          "start": 17.204999999999984,
+          "end": 17.381799999999984
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7829999999999924,
+        "after": "wins.",
+        "before": "More"
+      },
+      "peakFraction": 0.841583251953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Hang on, chlorine has more electrons. Shouldn't they take up more room? The extra electrons all go into the same outer shell, and electrons in the same shell barely shield each other. So the nucleus's extra pull wins. More electrons in the same shell doesn't mean a bigger atom.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "prediction",
+      "audio": "public/audio/chem-y11-m1-v13/prediction.wav",
+      "seconds": 11.295,
+      "holdSeconds": 3,
+      "cues": [
+        {
+          "text": "think",
+          "start": 10.726999999999991,
+          "end": 10.896166666666657
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.5870000000000015,
+        "after": "larger?",
+        "before": "Have"
+      },
+      "peakFraction": 0.8050537109375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Quick prediction. Lithium and potassium are both in Group one. Potassium has sixteen more protons pulling on its electrons. So which atom is larger? Have a think.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "down-group",
+      "audio": "public/audio/chem-y11-m1-v13/down-group.wav",
+      "seconds": 27.396,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "nucleus",
+          "start": 8.552,
+          "end": 8.937875
+        },
+        {
+          "text": "wins",
+          "start": 23.37100000000007,
+          "end": 23.66060000000007
+        },
+        {
+          "text": "group",
+          "start": 26.65100000000006,
+          "end": 26.852666666666728
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8629999999999871,
+        "after": "nucleus.",
+        "before": "Yes,"
+      },
+      "peakFraction": 0.8319091796875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Potassium. Going down Group one, each element has one more occupied shell than the one above, so its outer electron sits further from the nucleus. Yes, potassium has more protons, but it also has more inner electrons shielding them. Its core charge is nineteen minus eighteen, plus one, the same as lithium's. With the same core charge, the extra shell wins. So atomic radius increases down a group.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "exam-language",
+      "audio": "public/audio/chem-y11-m1-v13/exam-language.wav",
+      "seconds": 21.934,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "closer",
+          "start": 14.066999999999986,
+          "end": 14.376428571428558
+        },
+        {
+          "text": "nucleus",
+          "start": 20.892999999999986,
+          "end": 21.261374999999987
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.0009999999999994,
+        "after": "closer.",
+        "before": "Down"
+      },
+      "peakFraction": 0.8446044921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "just",
+          "start": 1.57,
+          "end": 1.691,
+          "score": 0.333
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "In an exam, don't just say the atom gets smaller. Name the cause. Across a period, the number of protons increases while electrons go into the same shell, so the stronger effective nuclear charge pulls the outer electrons closer. Down a group, each element has an extra occupied shell, so the outer electrons are further from the nucleus.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "atoms-to-ions",
+      "audio": "public/audio/chem-y11-m1-v13/atoms-to-ions.wav",
+      "seconds": 30.63,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "smaller",
+          "start": 15.202999999999989,
+          "end": 15.571374999999989
+        },
+        {
+          "text": "larger",
+          "start": 29.929000000000055,
+          "end": 30.220428571428627
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000004,
+        "after": "smaller.",
+        "before": "Chlorine"
+      },
+      "peakFraction": 0.861083984375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 0,
+      "pronunciationText": "Atoms can also gain or lose electrons to form ions. When sodium loses its one outer electron, it doesn't just lose a dot. It loses the whole third shell. Its outer electrons are now in the second shell, and the sodium ion is much smaller. Chlorine goes the other way. It gains one electron into its outer shell, but the nucleus still has seventeen protons. The extra electron adds repulsion between the outer electrons, so they spread out, and the chloride ion is larger.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "isoelectronic",
+      "audio": "public/audio/chem-y11-m1-v13/isoelectronic.wav",
+      "seconds": 32.684,
+      "holdSeconds": 0,
+      "cues": [
+        {
+          "text": "ions",
+          "start": 4.954999999999995,
+          "end": 5.254999999999995
+        },
+        {
+          "text": "tighter",
+          "start": 25.443000000000012,
+          "end": 25.794750000000015
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8840000000001034,
+        "after": "tighter.",
+        "before": "So"
+      },
+      "peakFraction": 0.841033935546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "So is it all about how many electrons there are? Look at five ions that each have exactly ten electrons: oxide, fluoride, sodium, magnesium and aluminium ions. They're called isoelectronic, which means same number of electrons. Their sizes still fall, because the number of protons rises, from eight up to thirteen. More protons pull the same ten electrons in tighter. So electron count alone never tells you the size. Protons and shells matter too.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "memory-line",
+      "audio": "public/audio/chem-y11-m1-v13/memory-line.wav",
+      "seconds": 11.036,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "atoms",
+          "start": 5.988000000000001,
+          "end": 6.221333333333334
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7809999999999864,
+        "after": "atoms.",
+        "before": "Down"
+      },
+      "peakFraction": 0.8272705078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.5230000000000006,
+          "end": 2.5630000000000006,
+          "score": 0.498
+        },
+        {
+          "word": "a",
+          "start": 7.289999999999988,
+          "end": 7.329999999999988,
+          "score": 0.498
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "So here's the pattern to keep. Across a period, same shells, stronger pull, smaller atoms. Down a group, one more shell each step, larger atoms.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/chem-y11-m1-v13/attempt-1.wav",
+      "seconds": 17.88,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8660000000000004,
+        "after": "turn.",
+        "before": "The"
+      },
+      "peakFraction": 0.8272705078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "and",
+          "start": 4.518000000000001,
+          "end": 4.578,
+          "score": 0.022
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Your turn. The atomic radius of magnesium is one hundred and forty-one picometres, and the atomic radius of sulfur is one hundred and five picometres. Explain why sulfur atoms are smaller, even though they contain more electrons. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/chem-y11-m1-v13/feedback-1.wav",
+      "seconds": 22.24,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "shell",
+          "start": 4.593,
+          "end": 4.843833333333333
+        },
+        {
+          "text": "closer",
+          "start": 17.252999999999993,
+          "end": 17.563285714285705
+        },
+        {
+          "text": "number",
+          "start": 21.732000000000024,
+          "end": 21.92314285714288
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.966000000000065,
+        "after": "closer.",
+        "before": "Saying"
+      },
+      "peakFraction": 0.888275146484375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Both are in Period three, so their outer electrons are in the same third shell. Sulfur has sixteen protons to magnesium's twelve, with ten inner electrons in each, so its core charge is plus six, not plus two. That stronger pull draws the outer shell closer. Saying sulfur has fewer shells is the slip. They have the same number.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/chem-y11-m1-v13/attempt-2.wav",
+      "seconds": 14.48,
+      "holdSeconds": 10,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.6020000000000003,
+        "after": "ion,",
+        "before": "O"
+      },
+      "peakFraction": 0.849517822265625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "requestAttempts": 1,
+      "pronunciationText": "Last one. An oxygen atom has a radius of sixty-six picometres. Predict whether an oxide ion, O two minus, is larger or smaller than an oxygen atom, and explain your prediction. Pause here to answer.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/chem-y11-m1-v13/feedback-2.wav",
+      "seconds": 24.728,
+      "holdSeconds": 1,
+      "cues": [
+        {
+          "text": "picometres",
+          "start": 14.568999999999996,
+          "end": 15.118999999999996
+        },
+        {
+          "text": "shells",
+          "start": 23.886000000000084,
+          "end": 24.126000000000086
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8230000000000004,
+        "after": "picometres.",
+        "before": "The"
+      },
+      "peakFraction": 1,
+      "fullScaleSamples": 1,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "It",
+          "start": 19.708000000000048,
+          "end": 19.748000000000047,
+          "score": 0.044
+        }
+      ],
+      "requestAttempts": 1,
+      "pronunciationText": "Larger. The oxide ion has the same eight protons, but two extra electrons in the same outer shell. More repulsion between the outer electrons, with the same nuclear pull, spreads them out. In fact it's one hundred and forty picometres. The classic slip is saying the ion gains a new shell. It doesn't. Two comma six becomes two comma eight, still two shells.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/chem-y11-m1-v13/handoff.wav",
+      "seconds": 28.232,
+      "holdSeconds": 2,
+      "cues": [
+        {
+          "text": "structure",
+          "start": 27.550000000000118,
+          "end": 27.892900000000118
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.861000000000125,
+        "after": "shares?",
+        "before": "Next"
+      },
+      "peakFraction": 0.8330078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 3.0970000000000004,
+          "end": 3.1370000000000005,
+          "score": 0.499
+        },
+        {
+          "word": "it",
+          "start": 20.086999999999993,
+          "end": 20.226999999999993,
+          "score": 0.448
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Notice what this means. A small atom with a strong pull, like chlorine, holds its outer electrons tightly. A big atom with a weak pull, like sodium, holds its outer electron loosely. So how much energy does it take to pull an electron off an atom, and how strongly does an atom pull on electrons it shares? Next time, we'll see how first ionisation energy and electronegativity follow the same atomic structure.",
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/chem-y11-m1-v13/key-notes.wav",
+      "seconds": 4.24,
+      "holdSeconds": 40.733333333333334,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "requestAttempts": 0,
+      "pronunciationText": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "humanListening": "pending"
+    }
+  ],
+  "cuesTimingPass": true,
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "limits": "Forced alignment,audio peaks and silence flags do not establish human listening,complete word recognition or pronunciation quality."
+}

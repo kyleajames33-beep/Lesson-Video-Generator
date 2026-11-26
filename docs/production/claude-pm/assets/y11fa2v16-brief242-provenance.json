@@ -1,0 +1,86 @@
+{
+  "id": "y11-digestive-tract-v2",
+  "brief": 242,
+  "file": "public/assets/biology/y11-digestive-tract-v2.png",
+  "sha256": "670f7e42c9a4d7b7878175ef6603982782291c00fa236b1167822b7ddabbe4a7",
+  "createdAt": "2026-11-13T06:24:33.770158+00:00",
+  "method": "Built-in image generation with stomach plate style reference; targeted clear-margin edit. Generated PNG copied unchanged, no pixel editing.",
+  "generatedSource": "C:/Users/kygs/.codex/generated_images/01a1c504-bf62-78e1-b782-2734925dfb02/exec-bfbc5559-5732-46b7-9775-9f0a406909b2.png",
+  "replaces": "y11-digestive-tract-v1.png, retained rejected file; root no-face repair for bio-y11-fa2-v16/v17",
+  "nativeSize": [
+    1052,
+    1494
+  ],
+  "requestedSize": [
+    1400,
+    2000
+  ],
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "alphaBoxAnyNonzero": [
+    0,
+    87,
+    1036,
+    1494
+  ],
+  "alphaBoxAbove1": [
+    204,
+    174,
+    819,
+    1327
+  ],
+  "alphaBoxAbove8": [
+    206,
+    176,
+    816,
+    1324
+  ],
+  "anchors": {
+    "oesophagusOpening": [
+      550,
+      188
+    ],
+    "liver": [
+      391,
+      477
+    ],
+    "gallBladder": [
+      297,
+      609
+    ],
+    "stomach": [
+      703,
+      561
+    ],
+    "pancreas": [
+      575,
+      744
+    ],
+    "smallIntestine": [
+      525,
+      999
+    ],
+    "rectalOpening": [
+      515,
+      1317
+    ]
+  },
+  "qa": {
+    "nativeBlack": "Generated transparent plate inspected on dark display",
+    "nativeWhite": "work/brief242/digestive-v2-native-white.png",
+    "nativePaper": "work/brief242/digestive-v2-native-paper.png",
+    "display600": "work/brief242/digestive-v2-600px-paper.png",
+    "observations": [
+      "Isolated connected organs, no face, lips, teeth, tongue, mouth cavity, body outline or torso.",
+      "Liver viewer left, stomach viewer right, gallbladder, pancreas, small intestine, enclosing colon and rectum distinguishable. No labels or question data.",
+      "No visible halo on native white/paper or dark display. Visible organ bounds have over11percent vertical clear margin.",
+      "Native1052x1494 differs from approximate1400x2000 brief; preserve native ratio and fit code to measured organ anchors.",
+      "Alpha1/255 isolated stray pixels extend raw bounds to left/bottom edge; above1/255 organ bounds204,174,819,1327. This technical deviation is disclosed, no falsely claimed all-zero margin. No pixel cleanup applied."
+    ],
+    "result": "Visual no-face repair passes; native-size and near-transparent-pixel deviations disclosed. Builder still grades actual fit."
+  },
+  "limitations": "Plate QA only; no completed scene build or playback approval."
+}

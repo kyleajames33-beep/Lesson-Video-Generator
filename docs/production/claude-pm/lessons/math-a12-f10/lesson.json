@@ -1,0 +1,154 @@
+{
+  "id": "math-a12-f10",
+  "fps": 30,
+  "status": "Root68 repaired source operational recording input;not voiced or built",
+  "sourceDesignSha256": "45866aa94da0a7c83fae6bf328e262e7f63b34ec7d971bfef87b31ee0c1a1a59",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (how much sooner?)",
+      "voiceover": {
+        "text": "Here's a home loan of four hundred thousand dollars at five per cent a year, compounded monthly. Repaying two thousand one hundred and forty-seven dollars twenty-nine a month clears it in thirty years. That time is called the term. A mortgage calculator shows it straight away. Now suppose you pay two thousand five hundred dollars a month instead. That's about three hundred and fifty dollars more. How much sooner is the loan gone? Less than a year, two to five years, or more than five years? Make a guess."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "where the extra goes",
+      "voiceover": {
+        "text": "Look at the first month. The interest is charged on the four hundred thousand you owe, so it's one thousand six hundred and sixty-six dollars sixty-seven either way, rounded to the cent. Paying more can't change this month's interest. So every extra dollar goes straight to the debt. At the thirty-year repayment, the debt falls by four hundred and eighty dollars sixty-two. At two thousand five hundred, it falls by eight hundred and thirty-three dollars thirty-three, nearly twice as much. And it doesn't stop there. The lower balance means less interest next month, and every month after, so even more of each repayment goes to the debt."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "running it on the calculator",
+      "voiceover": {
+        "text": "To see the whole loan, let a digital tool do the months. A mortgage calculator, or a spreadsheet, runs the recurrence row after row: multiply by one plus r, then subtract the repayment. Slide the repayment up to two thousand five hundred, and the balance reaches zero at the two hundred and sixty-fifth repayment. That last one only needs five hundred and forty dollars fifty-seven. That's twenty-two years and one month, so the loan is gone about eight years sooner. So the answer to the guess is more than five years. That last repayment is smaller because, by then, what's owed plus its interest is less than a full repayment."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "reading a given graph",
+      "voiceover": {
+        "text": "Here's a graph made the same way, for four different repayments. Each curve ends where its balance reaches zero, so you can read each term off the time axis. Thirty years, about twenty-two, about sixteen, and about thirteen. Each step up is another five hundred dollars a month. But the first five hundred saves almost six years, and the next saves only about three. On these curves, each extra five hundred dollars buys less time than the one before."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "the interest-only line",
+      "voiceover": {
+        "text": "Why do the savings shrink? Only the part of a repayment above the interest pays the debt down. The first month's interest here is about one thousand six hundred and sixty-six dollars sixty-seven. Pay exactly that interest, and the balance stays at four hundred thousand for ever. That's called an interest-only repayment. Pay any less, and the balance grows. Now plot the term against the repayment. Just above the interest-only line, a small extra amount makes a huge difference, from about seventy-nine years at seventeen hundred dollars to about thirty-six at two thousand. Far above it, the curve flattens, and extra money buys only a little time."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "changing the rate",
+      "voiceover": {
+        "text": "Now keep the repayment at two thousand five hundred and change the interest rate. Each rate is a separate loan, fixed from the first month. At five per cent, it takes about twenty-two years. At four per cent, about nineteen. At six per cent, about twenty-seven, and at seven per cent, nearly thirty-nine. So a rate rise of one point adds about five years, but a fall of one point saves only about three. Here's why. A higher rate raises the interest-only line, so less of the same repayment is left for the debt. And the closer that line gets to your repayment, the faster the term grows."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "when a rate rise stops the loan",
+      "voiceover": {
+        "text": "This matters most for someone paying the thirty-year repayment. With a rate fixed at six per cent from the start, paying two thousand one hundred and forty-seven dollars twenty-nine stretches the term to almost forty-five years. At six and a half per cent, the first month's interest is two thousand one hundred and sixty-six dollars sixty-seven. That's more than the repayment, so the balance grows, and the loan is never repaid. A loan only shrinks when the repayment is more than the interest on the balance."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the idea in one line. Only what's left after the interest pays the loan down. A bigger repayment leaves more. A higher rate leaves less. And if nothing's left, the loan never shrinks."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A loan of two hundred thousand dollars has interest at six per cent a year, compounded monthly. The borrower repays one thousand dollars a month. Explain why the loan is never repaid. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-10",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The monthly rate is half a per cent, so the first month's interest is half a per cent of two hundred thousand, which is one thousand dollars. That's the whole repayment. None of it reduces the debt, so the balance is still two hundred thousand next month, and the same thing happens every month. Two hundred months is wrong. Dividing the loan by the repayment ignores the interest."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. The graph shows the time taken to repay a four hundred thousand dollar loan at five per cent a year, compounded monthly, for different monthly repayments. Use the graph to estimate the monthly repayment needed to repay the loan in fifteen years. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-12",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Find fifteen years on the term axis, go across to the curve, then down to the repayment axis. It's about three thousand one hundred and sixty dollars a month. Doubling the thirty-year repayment, to about four thousand three hundred, is wrong. Halving the term doesn't double the repayment, because the shorter loan pays much less interest."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So paying more shortens a loan, and a higher rate lengthens it, but never evenly, because only the part above the interest pays the debt down. Calculators and graphs find terms for you. But how do you find one exactly, by hand? Here's a used motorbike, bought with a loan of twenty thousand dollars at seven point two per cent a year, compounded monthly. The repayments are four hundred dollars a month. How many will it take?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}
