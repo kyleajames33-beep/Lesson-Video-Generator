@@ -295,3 +295,7 @@ This section overrides earlier text. Sources: `../checks/m-s11-d13-maths-check.m
 - **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
 - **Narration changed: no.**
 - No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+## Revision 3b (root, 26 November 2026): brief 275 should fix
+
+Scene 4 visual: Bus A's deviation arms are labelled in dot-plot order, left to right: "1, 0, 0, 0, 0, 1" (not "1, 0, 0, 0, 1, 0"). The data, deviations, sums and sigma are unchanged. No narration change. This section overrides earlier text.

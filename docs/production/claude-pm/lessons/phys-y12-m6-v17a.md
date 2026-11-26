@@ -480,3 +480,7 @@ Memory aid (framed card beside the notes, hand lettering, amber and navy as in s
 - Open decision 3 (the angle claim) stays with the Codex physics check, now with the 30° turn and the 3.0 cm gap.
 - Codex asset items 1 (cradle) and 2 (motor magnet layers) wait for the physics and error checks and the owner's go-ahead.
 - Exact voiced student review and human listening remain pending; this revision is design text only.
+
+## Revision 2a (root, 26 November 2026): brief 277 should fix
+
+Scene 11 visual: the motor ammeter readings (running and held-still starting currents) carry the screen tag "illustrative values", in the same style as the cradle sample data. No narration change. This section overrides earlier text.
