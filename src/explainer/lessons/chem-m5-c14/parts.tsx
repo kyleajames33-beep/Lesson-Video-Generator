@@ -55,7 +55,7 @@ export const drift = (f: number, ph: number, amp = 9): [number, number] => [Math
 
 // ---------- ratio-true swarm lens: crystal floor, dissolved ions, whole formula units leaving and rejoining ----------
 export type Unit = {at: number; kind: 'leave' | 'join' | 'split'; slot?: number; ring?: number; tags?: number; life?: number};
-export type Rain = {at: number; ion: string; n: number; every?: number; partner?: string};
+export type Rain = {at: number; ion: string; n: number; every?: number; partner?: string; partnerCount?: 1 | 2};
 export type SwarmProps = {
 	cx: number; cy: number; r: number; at: number; out?: number;
 	cat: string; an: string; k?: 1 | 2;
@@ -143,7 +143,12 @@ export const SwarmLens: React.FC<SwarmProps> = ({cx, cy, r, at, out, cat, an, k 
 			const y0 = cy - r - 40;
 			const [dx, dy] = drift(f - t0, ph, 8 * u);
 			rainIons.push(<LIon key={'ra' + i} x={tx + dx} y={y0 + (ty - y0) * u + dy} ion={rain.ion} scale={scale} rot={ph} />);
-			if (rain.partner) rainIons.push(<LIon key={'rp' + i} x={px - dx} y={y0 - 30 + (py - y0 + 30) * u - dy} ion={rain.partner} scale={scale * 0.85} grey={0.7} rot={ph + 1} />);
+			// One counterion by default (NaCl); two for a divalent added ion (Na2SO4).
+			if (rain.partner) for (let p = 0; p < (rain.partnerCount ?? 1); p++) {
+				const offsetX = p === 0 ? 0 : -96 * scale;
+				const offsetY = p === 0 ? 0 : -70 * scale;
+				rainIons.push(<LIon key={'rp' + i + '-' + p} x={px + offsetX - dx} y={y0 - 30 + (py + offsetY - y0 + 30) * u - dy} ion={rain.partner} scale={scale * 0.85} grey={0.7} rot={ph + 1} />);
+			}
 		}
 	}
 	const speckEls: React.ReactNode[] = [];
